@@ -1,0 +1,72 @@
+---
+he:
+  booking_ical:
+    summary: "%{service} ב- %{client}"
+  booking_mailer:
+    cancellation:
+      header: היי %{name}
+      info: הזמנתך ל- %{title} ב- %{time_range} בוטלה.
+      subject: ההזמנה בוטלה
+    confirmation:
+      header: היי %{name}
+      info: הזמנת %{title} %{time_range}.
+      link: מידע נוסף על ההזמנה שלך
+      link_cancellation_info: ואפשרויות ביטול
+      resource_info: 'הזמנה באמצעות: %{resource}.'
+      subject: הזמנה חדשה
+      subject_service: הזמנה עבור %{service}
+    declined:
+      body: |-
+        היי,
+
+        הזמנתך לא אושרה.
+      subject: ההזמנה נדחתה
+    modification:
+      header: היי %{name}
+      info: 'ההזמנה שלך שונתה ל: %{title} %{time_range}.'
+      link: מידע נוסף על ההזמנה שלך
+      link_cancellation_info: ואפשרויות ביטול
+      resource_info: 'הזמנה באמצעות: %{resource}.'
+      subject: ההזמנה שונתה
+    request_card:
+      header: היי %{name}
+      info: לתשלום ההזמנה שלך, אנא הוסף את פרטי כרטיס האשראי שלך.
+      link: הוסף כרטיס תשלום
+      subject: הוסף את פרטי התשלום שלך
+    verification:
+      footer: 'חשוב: ההזמנה טרם הושלמה. אם לא תאמת את ההזמנה על ידי לחיצה על הקישור למעלה בתוך %{expires_in} דקות ההזמנה שלך תפוג.'
+      header: להשלמת הזמנתך של %{title} %{time_range} עליך לאשר את הזמנתך על ידי לחיצה על הקישור למטה.
+      link: אשר הזמנה
+      subject: אנא אשר את הזמנתך
+  booking_sms:
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        הזמנה חדשה של {{booking.resource.title}} מאת {{booking.person.name}}. {{booking.title}} בתאריך {{booking.time_range}}
+        לעשות תוכניות
+      booking_type_attendance: |-
+        הרשמה חדשה ל- {{booking.event.full_title}} {{booking.time_range}} מאת {{booking.person.name}}.
+        לעשות תוכניות
+    cancellation: הזמנתכם ב- {{booking.booked_from}} בוטלה.
+    confirmation: ביצעת הזמנה עבור {{booking.title}} {{booking.booked_from}}.
+    declined: בקשתך להזמנה של {{booking.title}} {{booking.booked_from}} לא אושרה. בבקשה נסה שוב.
+    modification: 'הזמנתך שונתה: {{booking.title}} {{booking.booked_from}}.'
+    reminder: 'תזכורת: הזמנה {% אם booking.service! = אפס%} מ- {{booking.title}} {% endif%} {{booking.booked_from}}.'
+    request_card: אנא הוסף את פרטי התשלום שלך בכתובת %{url}
+    signature: |2-
+
+      {{booking.client.name}}
+    verification: "{{booking.verification_code}} הוא קוד האימות שלך להזמנת {{booking.title}}."
+  person_mailer:
+    export:
+      subject: ייצוא נתונים
+    perishable_token:
+      body: |-
+        להתחברות לחץ על הקישור למטה:
+
+        %{link}
+      subject: התחבר ל- MakePlans
+  person_sms:
+    perishable_token: "{{perishable_token}} הוא הקוד שלך לאימות."
+    signature: |2-
+
+      {{ שם הלקוח }}

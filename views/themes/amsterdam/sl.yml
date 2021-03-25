@@ -1,0 +1,37 @@
+sl:
+  amsterdam:
+    generic:
+      step:
+        hotstepper: 'Korak %{step} od %{steps}'
+        next_confirm: 'Naprej'
+        next_verify: 'Potrjujem rezervacijo'
+        previous_date: 'Zamenjaj termin'
+    bookings:
+      create:
+        verification_sent_title: 'Prosimo potrdite vaš email naslov'
+        verification_sent_body: 'Na naslov %{email} smo poslali sporočilo. Prosimo, odprite svojo elektronsko pošto in kliknite na povezavo v sporočilu, da potrdite svoj naslov.'
+      new:
+        form_info:  'Podatke bomo uporabili za morebitno preverjanje vaše rezervacije termina za %{service}, %{booking}.'
+        reserve_resource: 'Rezervacija za %{resource}'
+        enter_info: 'Moji kontaktni podatki'
+        authentication:
+          logged_in_as: "Prijavljeni ste pod imenom %{person}"
+          not_current_person_html: 'Ali niste <span data-name="">%{person}?</span>?'
+      show:
+        title: 'Rezervacija je potrjena.'
+        body: "Hvala za potrditev, z veseljem vas pričakujemo."
+    services:
+     time_day_available:
+       select_time: 'Izberite termin za %{service}'
+       dateselector: 'Izbira datuma'
+       no_availability: 'V tem času ni prostih terminov.'
+       next_available_date_html: 'Naslednji možen datum je %{next_available_date}.'
+       no_selection: 'Prosim, izberite enega od razpoložljivih terminov.'
+     weekday_available:
+       select_time: 'Izberite termin za %{service}'
+       next_week: 'prihodnji teden'
+       prev_week: 'prejšnji teden'
+       dateselector: 'Izbira datuma'
+       no_availability: 'V tem času ni prostih terminov.'
+       next_available_date_html: 'Naslednji možen datum je %{next_available_date}.'
+       no_selection: 'Prosim, izberite enega od razpoložljivih terminov.'

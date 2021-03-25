@@ -1,0 +1,55 @@
+---
+en:
+  bookings:
+    sms_code:
+      incorrect_code: Incorrect code
+  clients:
+    new:
+      first_user: This is your personal password. You can add more users later.
+      free_trial_info: 14 day free trial. No obligations. No credit card required.
+      headline: Get started with online booking
+      logged_in_as: You are logged in as %{name}.
+      read_legal: Terms and conditions for usage of this service
+      recaptcha: Sorry to trouble you but we have to verify your registration with Google Recaptcha. Please fill in your password again and then submit the form.
+      subdomain_info: Your unique address (URL) where your customers can book online.
+      subdomain_not_website_warning: 'OOPS: This is the address for your new booking site. Do NOT enter the URL to your existing website. If you are in doubt just enter your company name here.'
+      submit: Register my account
+      title: Register for your online booking account
+      user_email: Work email
+      user_info: Your user login
+    rejected:
+      headline: Registration rejected
+      info: Sorry but our system has marked your registration as spam. Please contact us to register an account.
+      title: Registration rejected
+  oauth:
+    callback:
+      header: Connect to account
+  user:
+    select_client:
+      header: Select account
+  user_password_resets:
+    create:
+      header: Reset your password
+      info: We have now sent you an email. To confirm your password reset you must click on the link in the email.
+      signup_html: No account? <a href="%{url}">Get started now.</a>
+    edit:
+      header: Please enter your new password
+      signup_html: No account? <a href="%{url}">Get started now.</a>
+      submit: Save password
+    new:
+      header: Forgot your password?
+      signup_html: No account? <a href="%{url}">Get started now.</a>
+      submit: Send email
+  user_sessions:
+    handle_authenticated_user:
+      success: Logged in successfully
+    new:
+      forgot_link: Forgot your password?
+      header: Login
+      incorrect: Incorrect credentials
+      login: Login
+      remember_me: Remember me
+      signup_html: No account? <a href="%{url}">Get started now.</a>
+    rotp_verification_code:
+      header: Login with two-factor authentication
+      submit: Login

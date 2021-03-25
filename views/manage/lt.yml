@@ -1,0 +1,781 @@
+---
+lt:
+  layouts:
+    design:
+      activate_account_footer: "%{days_left} dienų liko nuo jūsų bandymo. Spustelėkite, kad suaktyvintumėte."
+      trial_expired: Jūsų teismas baigėsi.
+  manage:
+    agenda:
+      calendar:
+        ignore_capacity_confirm: Per šį laikotarpį jau yra kita rezervacija. Ar tikrai norite išsaugoti?
+        listWeek: sąrašą
+        opening_hours:
+          add: "+ pridėti"
+          add_to_existing: "+ pridėti"
+          closed_all_week: Uždarytas visas laikotarpis
+          dates: Datos
+          from: Nuo
+          open: Atviras
+          remove_existing: pašalinti
+          reset: Atstatyti
+          title: Koreguokite prieinamumą
+          to: iki
+        resourceTimeGridDay: diena (padalinta)
+        resourceTimelineDay: laiko juosta
+        resources: Ištekliai
+        services: Paslaugos
+      list:
+        awaiting_confirmation:
+          one: "%{count} rezervacija patvirtinti."
+          other: "%{count} išlygos patvirtinti."
+        busy: Užsiėmes
+        do_filtering: Suaktyvinti filtrą
+        filter: Filtravimas
+        headline: Susitikimų rodymas
+        month: Rodyti mėnesį
+        no_reservations: Jokių išlygų
+        reset_filter: Iš naujo nustatyti filtrą
+        resources: Ištekliai
+        services: Paslaugos
+        this_and_next_month: Nuo šiandien iki kito mėnesio pabaigos
+        this_and_next_week: Nuo šiandien iki kitos savaitės pabaigos
+    billing:
+      charge:
+        charge_details: Atsižvelgdami į dabartinį naudojimą, mes kiekvieną mėnesį apmokestinsime jūsų kreditinę kortelę %{price}.
+        charge_details_default: Mėnesio kaina yra %{price} už išteklius.
+        charge_details_sms: 'Taip pat būsite apmokestinti už SMS naudojimą: %{price}.'
+        process: Visas mokėjimas
+        processing: Prašau palauk...
+      credit_card_form:
+        billing_info: Kai pridėsite savo kreditinės kortelės duomenis, mes kiekvieną mėnesį apmokestinsime jūsų kortelę pagal mūsų svetainėje nurodytas kainas. Pirmasis sandoris bus atliktas nedelsiant. Galite bet kada atšaukti prenumeratą.
+        header: Mokėjimo informacija
+        trial_expired: Bandomasis laikotarpis baigėsi. Norėdami toliau naudoti MakePlans, suaktyvinkite savo paskyrą.
+      credit_card_info:
+        header: Įveskite išsamią kredito kortelės informaciją
+        submit: Išsaugokite kreditinę kortelę
+      edit_invoice_info:
+        activate_info: Norėdami užbaigti paskyros suaktyvinimą, užpildykite šią formą
+        billing_email_info: Jei norite, kad sąskaitą faktūrą išsiųstume el. Paštu kitu adresu nei %{email}, prašome įvesti el. Laišką čia.
+        billing_name_info: Jei norite, kad išrašytume sąskaitą kitai įmonei nei %{name}, prašome įvesti vardą čia.
+        header: Jūsų atsiskaitymo informacija
+      info:
+        add_link: Suaktyvinti sąskaitą - įveskite kredito kortelės duomenis
+        add_new_link: Ar norite atnaujinti savo kreditinės kortelės duomenis?
+        billing_info: Iš mūsų gausite sąskaitą faktūrą, kurią turite sumokėti rankiniu būdu
+        billing_order_ref: 'Sąskaitoje faktūroje bus jūsų nuoroda: %{billing_order_ref}'
+        change_from_invoice: Įveskite savo kreditinės kortelės duomenis, kad nereikėtų mokėti rankiniu būdu kiekvieną kartą, kai išrašome sąskaitą faktūrą jūsų sąskaitai
+        charge_details: Atsižvelgdami į dabartinį naudojimą, mes kiekvieną mėnesį nuskaičiuosime jūsų kreditinę kortelę %{price}.
+        charge_details_default: Mėnesio kaina yra %{price} už išteklius.
+        charge_details_sms: 'Taip pat būsite apmokestinti už SMS naudojimą: %{price}.'
+        current_info: Jūsų kreditinės kortelės informacija saugiai saugoma mūsų atsiskaitymo partnerio juostoje. Jūsų saugoma kortelė yra %{brand}, kurios numeris baigiasi %{last_4}, ir galiojimo laikas baigiasi %{expire_month} / %{expire_year}.
+        demo_ends_at: Jūsų paskyra bus automatiškai išaktyvinta naudojant %{demo_ends_at}.
+        edit_info_link: Ar norite pakeisti atsiskaitymo informaciją?
+        edit_link: Ar norite atnaujinti savo kreditinės kortelės duomenis?
+        email_recipent: Sąskaitą faktūrą išsiųsime el. Paštu %{email}.
+        info_header: 'Jūsų atsiskaitymo informacija:'
+        paid_until: Už jūsų sąskaitą mokama iki %{paid_until}.
+        pause: Pristabdykite paskyrą, kai baigsis dabartinė prenumerata.
+        pause_confirm: Ar tikrai norite sulaikyti paskyrą? Paskyra bus automatiškai išaktyvinta naudojant %{paid_until}.
+        reactivate: Šiuo metu jūsų paskyra veikia bandomuoju režimu. Norėdami toliau naudoti MakePlans, turite iš naujo suaktyvinti savo paskyrą
+        reactivate_link: Iš naujo suaktyvinkite paskyrą
+        sms_credits_available: Turite %{credits} SMS balansą.
+        vat_no: Registruotas PVM kodas yra %{vat_no}
+        vat_no_missing: Nėra PVM.
+      paying_account_required:
+        activate_account: Suaktyvinkite paskyrą dabar
+        info: Norint naudoti šią funkciją reikia suaktyvinti jūsų paskyrą.
+      processing:
+        activated: Jūsų paskyra dabar suaktyvinta :) Dėkojame, kad naudojatės MakePlans.
+        error: Nepavyko patvirtinti mokėjimo. Susisiekite su klientų aptarnavimo tarnyba.
+        info: Palaukite, kol apmokestinsime jūsų mokėjimo kortelę. Tai gali užtrukti iki vienos minutės. Kai procesas bus baigtas, iš mūsų gausite el. Laišką.
+    bookings:
+      create_recurring:
+        headline: Generuojamos %{count} rezervacijos ...
+        link: Rodyti sąrašą
+      destroy_recurring:
+        headline: Visos pasikartojančios rezervacijos pagal šį modelį buvo pašalintos
+      fiken:
+        delayed_info: Kol užsakymas bus sukurtas Fiken, praeis šiek tiek laiko. Nebandykite sugeneruoti užsakymo dar kartą, jei MakePlans programoje nėra matoma Fiken informacija.
+        header: Kontaktuojantis Fikenas ...
+        to_booking: Rodyti užsakymą
+      form_appointment:
+        add_reminder_sms: Siųsti SMS priminimą
+        confirmation_send_email: Siųsti patvirtinimą el. Paštu
+        confirmation_send_sms: Siųsti SMS patvirtinimą
+        customer_info: Išsami kliento informacija
+        email: El
+        first_available: Pirmasis prieinamas
+        headline_create: Pridėti naują rezervaciją
+        headline_create_recurring: Pridėti naują rezervaciją
+        headline_edit: Keisti rezervaciją
+        headline_new: Pridėti naują rezervaciją
+        ignore_capacity: Sutaupykite, net jei esate užimtas
+        modification_send_email: Siųsti el. Pašto pakeitimą
+        modification_send_sms: Siųsti SMS modifikaciją
+        no_service: Nepasirinkta jokia paslauga
+        notification_send_email: Siųsti pranešimą el. Paštu
+        notification_send_sms: Siųsti SMS pranešimą
+        person_create_info: Ieškokite esamo kliento arba sukurkite naują, įvesdami vardą.
+        person_none_selected: Nepasirinktas joks klientas
+        recurring_enabled: Pakartokite su modeliu
+        recurring_member: Ši rezervacija yra pasikartojančio modelio dalis.
+        reservation_type_other: Užsiėmes
+        reservation_type_person: Kliento rezervacija
+        send_confirmation: 'Patvirtinimas:'
+        send_modification: 'Modifikacija:'
+        send_notification: 'Pranešimas:'
+        send_reminder: 'Priminimas:'
+        sms: trumpoji žinutė
+      form_attendance:
+        add_reminder_sms: Siųsti SMS priminimą
+        confirmation_send_email: Siųsti patvirtinimą el. Paštu
+        confirmation_send_sms: Siųsti SMS patvirtinimą
+        email: El
+        headline_create: Pridėti palydovą
+        headline_edit: Keisti rezervaciją
+        headline_new: Pridėti palydovą
+        modification_send_email: Siųsti el. Pašto pakeitimą
+        modification_send_sms: Siųsti SMS modifikaciją
+        notification_send_email: Siųsti pranešimą el. Paštu
+        notification_send_sms: Siųsti SMS pranešimą
+        person_create_info: Ieškokite esamo kliento arba sukurkite naują, įvesdami vardą.
+        person_none_selected: Nepasirinktas joks klientas
+        send_confirmation: 'Patvirtinimas:'
+        send_modification: 'Modifikacija:'
+        send_notification: 'Pranešimas:'
+        send_reminder: 'Priminimas:'
+        sms: trumpoji žinutė
+      izettle:
+        close_info: Uždarykite šį langą, kad grįžtumėte į užsakymą.
+        error: "IZettle klaida: %{error}"
+        result_header: "iZettle"
+        success: Mokėjimas užregistruotas.
+      show:
+        booked_from: Nuo
+        booked_to: iki
+        count: Žmonių skaičius
+        fiken:
+          create_invoice: Sukurkite sąskaitą faktūrą Fiken
+          created: Sąskaita yra sukurta Fiken
+          open_invoice: Atidaryti sąskaitą faktūrą Fiken
+          processing: "Fiken kuriama sąskaita faktūra. Tai gali užtrukti kelias minutes."
+        izettle:
+          pay: Gaukite mokėjimą naudodami iZettle
+          progress_link: Jei norite tęsti, spustelėkite čia.
+        log: Žurnalas
+        paid_with:
+          braintree: Mokama su Braintree
+          stripe: Mokama su juostele
+          vipps: Vipps
+        person:
+          address: Adresas
+          email: El
+          phone_number: Telefono numeris
+        recurring_member: Ši rezervacija yra pasikartojančio modelio dalis.
+        refund:
+          stripe: Juostelė
+        request_card:
+          processing: Mokėjimo nuoroda siunčiama klientui
+          send: Siųsti mokėjimo nuorodą klientui
+        send_sms: Siųsti SMS
+        show_in_calendar: Rodyti kalendoriuje
+        stripe:
+          pay: Mokėkite su juostele
+          processing: Operacija apdorojama. Tai gali užtrukti iki 1-2 minučių.
+        tfso:
+          create_invoice: Sukurkite užsakymą 24SevenOffice
+          open_invoice: Atidarykite užsakymą 24SevenOffice
+          processing: Užsakymas kuriamas 24SevenOffice. Tai gali užtrukti kelias minutes.
+        vipps:
+          processing: Apdorojimas
+          refund: Grąžinti pinigus
+        visma_eaccounting:
+          create_invoice: Sukurkite užsakymą Visma el. Apskaitoje
+          created: Sąskaita yra sukurta Visma eAccounting
+          processing: Užsakymas kuriamas Visma eAccounting. Tai gali užtrukti kelias minutes.
+      show_recurring:
+        delete_all: Ištrinti viską
+        headline: Visos pasikartojančios išlygos pagal šį modelį
+      state_changer:
+        state: Valstija
+      unconfirmed:
+        headline: Patvirtinimo išlygų sąrašas
+        no_reservations: Jokių išlygų, kurioms reikia patvirtinimo
+      widget:
+        booked_from: Nuo
+        booked_to: iki
+        description: apibūdinimas
+        person:
+          address: Adresas
+          email: El
+          phone_number: Telefono numeris
+      widget_list:
+        busy: Užsiėmes
+        no_bookings: "%{start} nėra jokių rezervacijų"
+        no_bookings_range: Nėra jokių rezervacijų nuo %{start} iki %{end}
+    categories:
+      blank:
+        get_started: Šiuo metu nesate sukūrę jokių kategorijų. Todėl visos paslaugos yra užsakymo svetainės sąraše. Jei norite suskirstyti savo paslaugas, pirmiausia sukurkite kategoriją.
+        header: Nėra pridėtų kategorijų
+        info: Jei siūlote daug paslaugų, jas galima suskirstyti į kelis lygius. Kategorijos bus rodomos užsakymo svetainėje, todėl klientas turi pasirinkti kategoriją prieš rodant pasirinktos kategorijos paslaugas. Paslaugą galima rodyti keliose kategorijose.
+      form:
+        has_services: Rodo šias paslaugas
+        no_parent_id: ''
+      index:
+        header: Kategorijos
+      list_menu:
+        list: Kategorijos
+      show:
+        custom_data: 'Tinkinti duomenys:'
+        has_services: 'Rodo šias paslaugas:'
+    client:
+      cancel:
+        confirm_message: Paskutinis šansas. Ar tikrai esate įsitikinę, kad norite ištrinti savo sąskaitą su visais savo duomenimis?
+        disable_link: Taip, ištrinkite visus mano duomenis.
+        header: Ar tikrai norite ištrinti savo sąskaitą?
+        i_love_makeplans: Ne, noriu toliau naudoti MakePlans.
+        info: Visi jūsų paskyros duomenys bus ištrinti. Ar tikrai norite tęsti?
+        pause: Ar verčiau nustatyti savo paskyros pristabdymą? Jūs nemokėsite mėnesio mokesčio, o paskyra bus prieinama, kai būsite pasirengę vėl naudoti MakePlans.
+        pause_link: Galite pristabdyti savo sąskaitą atsiskaitymo puslapyje.
+      configuration:
+        header: "MakePlans sąranka"
+        intro: Čia galite sukonfigūruoti MakePlans ir kaip tai turėtų veikti jums. Galite pridėti paslaugų ir kategorijų, kurias siūlote užsakymo svetainėje, koreguoti prieinamumą, keisti siunčiamus pranešimus (SMS ir el. Paštą), pridėti daugiau vartotojų ir koreguoti daugelį kitų nustatymų MakePlans.
+        menu_info: Pasirinkite iš meniu kairėje pusėje. Jei turite klausimų apie koregavimą, susisiekite su klientų aptarnavimo tarnyba.
+        trial_info: Tai bandomoji sąskaita - spustelėkite čia, kad suaktyvintumėte
+      edit:
+        custom_messages_info_html: Atitinkamus duomenis galite sujungti čia. Norėdami gauti daugiau informacijos, apsilankykite <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> .
+      edit_booking_site:
+        booking_form_info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_site_info_html: Jūsų užsakymo svetainę rasite adresu %{url}.
+        cancellation: Atšaukimas
+        cancellation_info: Atšaukti galima tik prieš atšaukimo laikotarpį. Iš anksto apmokėtų rezervacijų atšaukti negalima.
+        cancellation_period_info: 'Pavyzdys: ''24 valandos prieš'' (atšaukti galima tik likus 24 valandoms iki rezervacijos pradžios).'
+        first_bookable_period_info: 'Pavyzdys: ''per dvi valandas'' (pirmas laisvas laikas yra po dviejų valandų) arba ''08: 00 rytoj'' (pirmas laisvas laikas rytoj ryte 8 val.)'
+        future_bookable_period_info: 'Pavyzdys: ''po dviejų mėnesių'' (galima užsisakyti tik kitus du mėnesius) arba ''Penktadienis vidurnaktį'' (galima rezervuoti tik iki penktadienio penktadienio).'
+        header: Atnaujinkite rezervavimo svetainę
+        interval_rounding:
+          default: Numatyta sistema (artimiausia 5 minučių žymė)
+          five: Arčiausiai 5 minučių
+          halfhour: Artimiausias pusvalandis
+          hour: Artimiausia valanda
+          none: Be apvalinimo (nerekomenduojama)
+          quarter: Artimiausias ketvirtis
+          ten: Arčiausiai 10 minučių
+          twenty: Arčiausiai 20 minučių
+        remove_logo: Pašalinti logotipą
+        settings:
+          allow_person_cookie: Leiskite atsiminti patikrintą klientą iki kito apsilankymo naudojant slapukus.
+          google_tag_manager: "Google žymų tvarkyklės sudėtinio rodinio ID"
+          select_resource: Papildomas žingsnis pasirenkant išteklius
+        verification_methods:
+          email: El
+          facebook: Taip pat leiskite patvirtinti naudojant Facebook Connect.
+          none: Nėra patvirtinimo (nerekomenduojama)
+          sms: SMS (rekomenduojama)
+      edit_communication:
+        email: El
+        header: Keisti išeinantį smulkinimą
+        settings:
+          custom_email_sending: Visiškai nepaisykite el. Laiškų, kurių turinys yra žemiau (kitaip turinys tiesiog įterpiamas į standartinį el. Laišką)
+          custom_sms_sending: Visiškai nepaisykite SMS su toliau pateiktu turiniu (kitaip turinys tiesiog įterpiamas į standartinę SMS)
+          dont_include_icalendar_attachment: Neįtraukite iCalendar priedo
+        sms: trumpoji žinutė
+      edit_company:
+        api:
+          enable: Suaktyvinti API
+          enable_warning: Ar tikrai norite suaktyvinti API? API raktas suteikia visišką programinę prieigą prie jūsų paskyros.
+          info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+          not_enabled: Neaktyvuota
+        app_secret_info: Programos paslaptis, skirta žiniatinklio kabliams
+        delete_account_html: Ar tikrai norite ištrinti savo sąskaitą? <a href="%{link}">Taip, tęskite</a>
+        delete_label: Ištrinti paskyrą
+        domain_info: Galima naudoti savo URL, pvz., Booking.YOURDOMAIN.com. Norėdami gauti daugiau informacijos, susisiekite su klientų aptarnavimo tarnyba
+        header: Keisti paskyros informaciją
+        payment_provider:
+          info_html: Prieš užpildant rezervaciją rezervavimo svetainėje, galima reikalauti apmokėjimo pas vieną iš integruotų mokėjimo paslaugų teikėjų. Mes rekomenduojame <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe“</a> kuri yra gera paslauga, kurią galite greitai pradėti naudoti be jokių fiksuotų išlaidų. Jūs taip pat turite nurodyti reikiamą informaciją apie pasirinktą mokėjimo paslaugų teikėją skiltyje "Integracijos".
+          none: Nė vienas
+        purge_data_info: 'Ši funkcija automatiškai ištrins seną asmens identifikavimo informaciją (klientai ir rezervacijos). Įveskite ištrinimo datos tekstą, palyginti su dabartine data. Pavyzdys: ''prieš 6 mėnesius'' arba ''prieš 2 metus''.'
+        subdomain_info: Jūsų unikalus adresas (URL), kur klientai gali rezervuoti
+      edit_fields:
+        appointment_form_info: Ši forma skirta tik rankiniam rezervacijų įvedimui. Norėdami pakeisti rezervacijos formą užsakymo svetainėje, atlikite tai 'rezervavimo svetainės' nustatymuose. Jei pasirinktoje rezervavimo formoje naudojami pasirinktiniai laukai, jie taip pat turėtų būti įtraukti čia.
+        booking_form_info: Norėdami pakeisti, eikite į rezervavimo svetainės nustatymus.
+        custom_form_info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        header: Keisti pasirinktinius laukus
+      edit_person_notifications:
+        automatic_messages: Automatiniai pranešimai (administratoriaus sistemoje ir API)
+        cancellation_email: Atšaukdami rezervaciją, siųskite el. Laišką
+        cancellation_sms: Atšaukdami rezervaciją, siųskite SMS žinutę
+        confirmation_email: Siųsti el. Laišką kuriant rezervaciją
+        confirmation_sms: Kurdami rezervaciją, siųskite SMS
+        default: Automatinis, pagrįstas patikros metodu
+        default_reminder_sms: Automatinis, atsižvelgiant į priminimo siuntimo nustatymą
+        disable: Išjungti
+        header: Kliento pranešimai
+        modification_email: Siųskite el. Laišką keisdami rezervaciją
+        modification_sms: Keisdami rezervaciją, siųskite SMS
+        outgoing_messages_info: "MakePlans siūlys išsiųsti el. Laišką / SMS (kad ir ką nustatytumėte kaip patvirtinimo metodą), kai kuriate, keičiate ar atšaukiate rezervaciją. Kai kurie pranešimai, pvz., Atšaukimas, įvyksta automatiškai. Galite išjungti automatinius pranešimus (pvz., Perkeldami rezervaciją vilkdami ją kalendoriuje, atšaukdami arba kurdami naują rezervaciją naudodami API) arba deaktyvuokite pasiūlymą siųsti pranešimus forma pakeisdami toliau pateiktus nustatymus. Pastaba: tai netaikoma rezervavimo svetainei. Užsakymo svetainė visada automatiškai išsiųs pranešimus pagal jūsų patikrinimo metodą."
+        reminder_sms: Siųsti priminimą SMS
+        reminder_sms_info: Siuntėjo vardas yra 'MakePlans'. Norėdami pakeisti siuntėjo vardą, susisiekite su klientų aptarnavimo tarnyba.
+        sms_reminder_time_info: 'SMS išsiunčiamos prieš dieną prieš užsakymą vidurdienį. Jei norite tai pakeisti, pakeiskite žemiau esantį lauką. Pavyzdys: ''dvi valandos prieš'' (SMS siunčiamos likus dviem valandoms iki rezervacijos) arba ''8 val. Vakar'' (priminimo SMS bus išsiųsta 8 val. Prieš dieną prieš užsakymą)'
+      edit_user_notifications:
+        approvement_email: Pranešimas el. Paštu apie naujas rezervavimo užklausas
+        automatic_messages: Automatiniai pranešimai
+        default: Aktyvus (numatytasis)
+        disable: Išjungta
+        email: El
+        header: Vartotojo pranešimai
+        mail_notification_info: Norėdami pranešti daugiau nei vienam asmeniui, naudokite kabliataškį, kad atskirtumėte el. Pašto adresus.
+        notification_email: Pranešimas el. Paštu apie naują rezervaciją
+        notification_sms: SMS pranešimas apie naują rezervaciją
+        outgoing_messages_info: Jei nustatėte rankiniu būdu patvirtinti naujas rezervacijas iš rezervavimo svetainės, jums bus pranešta el. Paštu apie kiekvieną naują užsakymo užklausą. Jei nenorite gauti šių pranešimų arba jei patvirtinimas atliekamas naudojant išorinę programą (API), galite ją išjungti toliau.
+        sms: trumpoji žinutė
+      edit_ux:
+        calendar: Kalendorius
+        header: UX
+        info: Vaizdiniai nustatymai
+        settings:
+          calendar_hide_weekends: Slėpti savaitgalius
+          calendar_slot_duration: Lizdo trukmė
+          calendar_slot_label_interval: Vietų etikečių intervalas
+      export_info:
+        data_types:
+          bookings: Rezervacijos
+          events: Įvykiai
+          people: Klientai
+        executed: Eksportas dabar siunčiamas jūsų el. Pašto adresu.
+        header: Eksportuoti duomenis iš MakePlans
+        info: Gausite el. Laišką su CSV failo priedu.
+      import:
+        header: Importuoti duomenis
+        info: Į MakePlans galima importuoti tokius duomenis kaip klientai. Norėdami gauti daugiau informacijos, susisiekite su palaikymo tarnyba.
+      promote:
+        booking_button_html_info: Norėdami įterpti rezervavimo mygtuką į savo svetainę, nukopijuokite žemiau esantį HTML kodą. Jei jums reikia pagalbos, susisiekite su savo interneto dizaineriu.
+        booking_button_html_preview: Užsakymo mygtuko peržiūra
+        booking_button_text: Mygtuko tekstas
+        booking_button_text_default_value: Užsakymas internetu
+        booking_iframe: "Iframe užsakymo svetainei"
+        booking_link: Užsakymo svetainės nuoroda
+        booking_link_title: Internetinis susitikimų rezervavimas ir planavimas
+        booking_site_info_html: Jūsų užsakymo svetainę rasite adresu %{url}.
+        generate_booking_button: Sugeneruokite savo svetainės rezervavimo mygtuką
+        header: Reklamuokite savo rezervavimo svetainę
+      tools:
+        header: Jūsų paskyros įrankiai
+        link:
+          purge_data: Ištrinkite senus duomenis
+          sms_all: Siųsti SMS visiems klientams
+    events:
+      create_recurring:
+        headline: Generuojami %{count} įvykiai ...
+        link: Rodyti sąrašą
+      destroy_recurring:
+        headline: Visi pasikartojantys šio modelio įvykiai buvo pašalinti
+      email_participants:
+        copy_info: 'Arba galite nukopijuoti žemiau esančius adresus ir įklijuoti juos į nematomosios kopijos lauką naujame el. Laiške:'
+        headline: Siųsti el. Laišką visiems dalyviams
+        open_email_client: Atidarykite el. Pašto klientą
+      form:
+        headline_create: Pridėti naują įvykį
+        headline_create_recurring: Pridėti naują įvykį
+        headline_edit: Keisti įvykį
+        headline_new: Pridėti naują įvykį
+        recurring_enabled: Pakartokite su modeliu
+        recurring_member: Šis įvykis yra pasikartojančio modelio dalis.
+      show:
+        attendants_html:
+          one: viena rezervacija
+          other: 'išlygos: <strong>%{count}</strong>'
+          zero: jokių išlygų
+        download_attendance_csv: Eksportuoti dalyvių sąrašą kaip CSV
+        email_confirm: Dalyvių sąrašas bus išsiųstas jums el. Paštu. Ar norite tęsti?
+        fully_booked: Renginys yra visiškai užsakytas
+        recurring_member: Šis įvykis yra pasikartojančio modelio dalis.
+        send_email_to_all: Siųsti el. Laišką visiems palydovams
+        send_sms: Siųsti SMS
+        show_in_calendar: Rodyti kalendoriuje
+        show_inactive_html: Nerodomos neaktyvios %{count} rezervacijos. <a href="%{href}">Ar norite juos parodyti?</a>
+        show_only_active_html: Į sąrašą įtrauktos neaktyvios %{count} rezervacijos. <a href="%{href}">Ar norite rodyti tik aktyvias rezervacijas?</a>
+        signup_link: Registracijos nuoroda
+        sms_all_participants: Siųsti SMS visiems dalyviams
+      show_recurring:
+        delete_all: Ištrinti viską
+        headline: Visi pasikartojantys įvykiai pagal šį modelį
+      widget:
+        capacity_details:
+          one: Galimas vienas dalyvis iš viso %{capacity}.
+          other: "%{count} dalyvauja viso %{capacity}."
+          zero: Dalyvių nėra. %{capacity} įmanoma.
+        end: Baigiasi
+        start: Prasideda
+      widget_list:
+        no_events: "%{start} nėra jokių įvykių"
+        no_events_range: Nėra esamų įvykių nuo %{start} iki %{end}
+    integrations:
+      account_connected: Prisijunkite prie šios paskyros.
+      braintree:
+        cse_key: Cse raktas
+        environment: Aplinka
+        merchant_id: Prekybininkas
+        private_key: Privatus raktas
+        production: Gamyba
+        public_key: Viešasis raktas
+        sandbox: Smėlio dėžė
+      campaign_monitor:
+        api_key: API raktas
+        connect_info: Pasirinkite adresatų sąrašą, kuriame nauji klientai bus pridėti kaip antriniai.
+        list_id: Sąrašo ID
+      confrere:
+        client_id: Kliento ID
+        client_secret: Kliento paslaptis
+        connect_info: Prisijungta prie Conferere
+        setup_info: Kad integracija veiktų, MakePlans šaltinis turi būti prijungtas prie Conferere vartotojo.
+      connect_error: Nepavyko užbaigti integracijos. Ištrinkite integraciją ir bandykite dar kartą.
+      connected: Ši paslauga prijungta.
+      dokus:
+        account: Sąskaita
+        password: Slaptažodis
+        username: Vartotojo vardas
+      extensor:
+        activate: Pradėkite naudotis Extensor Online Booking integracija
+        activate_settings_2: Suaktyvinkite Extensor Online Booking 2 versijos nustatymus
+        activate_settings_3: Suaktyvinkite Extensor Online Booking 3 versijos nustatymus
+        info: Norėdami suaktyvinti sinchronizavimą su Extensor, turite įdiegti Extensor Online Booking. Norėdami pradėti procesą, spustelėkite toliau pateiktą nuorodą. Su jumis susisieks Extensor.
+        reactive_settings: Iš naujo suaktyvinkite nustatymus nuo Extensor internetinio rezervavimo.
+        version: "MakePlans sukonfigūruota veikti su Extensor Online Booking versija %{version}."
+      fakturo:
+        password: Slaptažodis
+        username: Vartotojo vardas
+      fiken:
+        active: Aktyvus
+        api_not_activated: "Fiken turite suaktyvinti API."
+        connected_bank_account: banko sąskaita
+        connected_company: Įmonė
+        email: Vartotojo vardas (epost)
+        income_account: Pajamų sąskaita
+        password: Slaptažodis
+        select_bank_account: Pasirinkite banko sąskaitą, kuri bus rodoma sąskaitoje faktūroje
+        select_company: Pasirinkite įmonę
+        service_linked: Prisijunkite prie Fiken produkto
+        service_links: 'Kiekviena paslauga turi būti prijungta prie Fiken gaminio, kad būtų galima sukurti užsakymą Fiken. Atkreipkite dėmesį: kaina yra paimta iš Fiken, o ne iš MakePlans. Turite įsitikinti, kad kaina abiejose programose yra identiška.'
+        service_not_linked: NE prijungtas prie Fiken produkto.
+        vat_type: PVM tipo
+      headline: Integracija su %{integration}
+      highrise:
+        account: Padomenis (YOURACCOUNT.highrisehq.com - prašome įvesti tik YOURACCOUNT)
+        connect_info: 'Pasirinkite paskyrą, kurioje bus pridėti nauji klientai:'
+        password: API raktas
+      izettle:
+        active: Aktice
+        info: Norėdami naudoti iZettle, prašome apibrėžti jūsų teikiamos paslaugos kainą. Tada rezervacijoje bus galima spustelėti "atlikti mokėjimą naudojant iZettle".
+      mailchimp:
+        account: Sąrašo ID
+        connect_info: Pasirinkite adresatų sąrašą, kuriame nauji klientai bus pridėti kaip antriniai.
+        password: API raktas
+      mailerlite:
+        api_key: API raktas
+        select_group: Pasirinkite grupę, prie kurios bus pridėti nauji klientai.
+      mailmojo:
+        account: Sąrašo ID
+        username: Paskyros vartotojo vardas
+      not_authenticated: Nepavyko prisijungti. Patikrinkite savo įgaliojimus.
+      oauth_connect: Prisijunkite prie paslaugos
+      quickpay:
+        environment: Aplinka
+        md5_secret: MD5 paslaptis
+        merchant_id: Prekybininko ID
+        production: Gamyba
+        test: Testas
+      selected_option: Pasirinkta
+      stripe:
+        payment_info: Už visas operacijas MakePlans išskaičiuoja %{application_fee_percent}% sandorio mokestį.
+        receipt_email: Išsiųskite klientui kvitą iš Stripe
+      tfso:
+        add_to_crm_manually: Pridėkite klientą CRM rankiniu būdu
+        distribution_method: 'Paskirstymo metodas:'
+        distribution_methods:
+          EMail: El
+          ElectronicInvoice: EHF
+          Print: Spausdinti
+          Unchanged: Nepakeistas
+        invoice_payment_time: 'Apmokėjimo laikas:'
+        invoice_state: 'Užsakymo būsena:'
+        invoice_states:
+          Draft: Juodraštis
+          ForInvoicing: Dėl sąskaitų faktūrų išrašymo
+          Invoice: Sąskaita faktūra
+          Offer: Pasiūlymas
+        password: API slaptažodis
+        service_linked: Prisijunkite prie produkto 24SevenOffice
+        service_links: Kiekviena MakePlans paslauga turi būti prijungta prie 24SevenOffice produkto, kad būtų galima įsijungti. Atkreipkite dėmesį, kad kaina atsiimama iš 24SevenOffice produkto, o ne iš MakePlans. Turite įsitikinti, kad šios dvi kainos yra tapačios. Norėdami nustatyti produkto ID iš 24SevenOffice, eikite į paslaugą.
+        service_not_linked: NĖRA prijungtas prie 24SevenOffice produkto
+        type_groups: 'Pardavimo tipas užsakymui:'
+        username: API vartotojo vardas
+      vipps:
+        client_id: Kliento ID
+        client_secret: Kliento paslaptis
+        merchant_serial_nr: Prekybininko serijos Nr
+        vipps_subscription_key: "Vipps prenumeratos raktas"
+      visma_eaccounting:
+        active: Aktyvus
+        connect_info: Prijungta prie %{name}
+        connected_payment_id: 'Apmokėjimo sąlygos: %{name}'
+        customer_attributes_info: 'Atkreipkite dėmesį: norint Visma el. Apskaitos registruoti naują klientą reikia pašto kodo ir miesto. Jei šių verčių nėra, užsakymo iš užsakymo sugeneruoti neįmanoma.'
+        select_terms_of_payment: 'Pasirinkite standartines mokėjimo sąlygas naujiems klientams:'
+        service_linked: Prisijungta prie Visma el. Apskaitos produkto
+        service_links: Kiekviena MakePlans paslauga turi būti prijungta prie Visma eAccounting produkto, kad būtų įgalintas sąskaitų faktūrų išrašymas. Atkreipkite dėmesį, kad kainą gauta iš Visma eAccounting, o ne MakePlans. Turite įsitikinti, kad kaina yra vienoda abiejose sistemose.
+        service_not_linked: NEJUNGTA prie Visma el. Apskaitos produkto
+      zapier:
+        info_html: Norėdami prijungti MakePlans prie Zapier, Zapier sukurkite <a href="%{url}" target="_blank">naują Zap on Zapier</a> .
+      zoom:
+        connect_info: Prisijungta
+    people:
+      form:
+        merge_action: Sujunkite šiuos du klientus
+        merge_action_email: Šis el. Pašto adresas jau išsaugotas kitame kliente. Ar norite sujungti šiuos du klientus, kad %{email} bus naudojamas kaip el. Pašto adresas?
+        merge_action_info: Visos rezervacijos bus išsaugotos, tačiau vienas iš klientų bus ištrintas. Galite pasirinkti, kuri kliento informacija bus saugoma.
+        merge_action_phone_number: Šis telefono numeris jau saugomas kitame kliente. Ar norite sujungti šiuos du klientus, kad %{phone_number} bus naudojamas kaip telefono numeris?
+        merge_button: Sujungti ir išsaugoti
+        merge_info: 'Vietoj to naudokite:'
+      index:
+        delete_warning: Ar tikrai norite ištrinti %{person}?
+        filter: Filtravimas
+        headline: Klientai
+        send_sms: Siųsti SMS
+      show:
+        bookings_for: Rezervacijos %{name}
+        card_saved_with:
+          stripe: Mokėjimo kortelė išsaugota naudojant juostą
+        change_tfso_customer: Pakeiskite 24SevenOffice kliento ID.
+        export: Duomenų eksportavimas el. Paštu klientui
+        export_executed: Eksporto byla išsiųsta klientui.
+        no_reservations: Nerado jokių išlygų
+        send_sms: Siųsti SMS
+      tfso_connect_company:
+        create: Sukurkite naują klientą 24SevenOffice
+        header: Prisijunkite prie kliento 24SevenOffice
+        search: Arba ieškokite tarp esamų klientų
+        search_matched_headline: Suradote esamus klientus 24SevenOffice CRM. Spustelėkite vardą, kad susietumėte šį MakePlans klientą su klientu 24SevenOffice CRM.
+        search_query: Vardo paieška
+        stream_placeholder: Ieškoma 24SevenOffice CRM. Prašau palauk. Tai gali užtrukti iki 1-2 minučių.
+    profile:
+      activate_rotp:
+        enable_rotp: Suaktyvinti 2FA
+        generate_header: Suaktyvinti patvirtinimą dviem veiksmais (2FA)
+        generate_info: Nuskaitykite žemiau esantį QR kodą mobiliuoju telefonu naudodami Google autentifikavimo priemonę ar kitą 2FA programą.
+        verify_code: 'Įveskite kodą, kad patikrintumėte:'
+      deactivate_rotp:
+        deactivate_rotp: Pašalinkite 2FA
+        verify_code: 'Įveskite kodą, kad patikrintumėte:'
+      show:
+        change_password: Keisti slaptažodį
+        rotp:
+          disable_link: Išjunkite patvirtinimą dviem veiksmais
+          disable_warning: Ar tikrai norite išjungti patvirtinimą dviem veiksmais?
+          enable_link: Suaktyvinkite patvirtinimą dviem veiksmais
+          enable_warning: Jei suaktyvinsite patvirtinimą dviem veiksmais, visada turite patvirtinti kiekvieną prisijungimą naudodami kodą iš savo mobiliojo telefono programos. Ar tikrai norite įgalinti šią funkciją?
+          regenerate_link: Atkurkite patvirtinimo dviem veiksmais raktą
+          regenerate_warning: Jei atkuriate patvirtinimo dviem veiksmais raktą, esamas raktas nebeveiks ir turite nustatyti savo programą naudodami naują kodą. Ar tikrai norite tęsti?
+          submit_button: Prisijungti
+          verification_code_header: Dviejų pakopų patvirtinimas
+    purge_data:
+      destroy:
+        header: Seni duomenys dabar ištrinami.
+        processing: Dabar duomenys bus ištrinti. Gali praeiti kelios minutės, kol jis bus apdorotas.
+      index:
+        header: Ištrinkite senus duomenis
+        info: 'Šis functino ištrins senus asmens duomenis. Galite nurodyti ištrinimo datą. Šie duomenys bus ištrinti:'
+        not_deleted: Duomenų ištrynimas nesukels išorinės integracijos.
+        processing: Apdorojimas
+        purge: IŠTRINTI DUOMENIS
+        purge_1: Visos rezervacijos, kurios baigiasi iki nurodytos datos.
+        purge_2: Visi klientai, kurie nėra atnaujinti iki nurodytos datos ir kurie neturi rezervacijų po nurodytos datos.
+        purge_3: Taip pat bus ištrinti visi žurnalai ir metaduomenys, susiję su šiais duomenimis.
+        purge_before: Ištrinti duomenis prieš datą
+    reports:
+      stats:
+        all: Visi ištekliai
+        booking_word: rezervacija
+        bookings: išlygos
+        bookings_per_day: Rezervacijos per dieną
+        day: Diena
+        no_reservations: Jokių išlygų
+    resources:
+      form:
+        availability: Numatytasis pasiekiamumas
+        external_info:
+          confrere_user_id: Įtraukti vartotoją
+          zoom_user_id: Mastelio vartotojas
+        from: nuo
+        mail_notification_info: Norėdami pranešti daugiau nei vienam asmeniui, naudokite kabliataškį, kad atskirtumėte el. Pašto adresus.
+        offers: Siūlomos šios paslaugos užsakymo svetainėje
+        to: iki
+      index:
+        header: Ištekliai
+      list_menu:
+        list: Ištekliai
+      show:
+        availability: 'Numatytasis pasiekiamumas:'
+        capacity: 'Talpa:'
+        closed: Negalima užsisakyti internetu.
+        custom_data: 'Tinkinti laukai:'
+        ical:
+          activated_html: Suaktyvinta prieiga prie šio šaltinio naudojant iCalendar. Nuoroda į iCalendar kanalą yra %{link}
+          disable: Išjunkite iCalendar sklaidos kanalą
+          enable: Suaktyvinkite iCalendar kanalą
+          info: "iCalendar sklaidos kanale bus rodomi susitikimai iš šio šaltinio MakePlans programose kitose kalendoriaus programose, tokiose kaip Microsoft Oulook, Google Calendar, iPhone arba Android. Tik skaityti, visi pakeitimai turi būti atlikti MakePlans."
+          not_activated: Neaktyvuota
+        icalfeed: "iCalendar sklaidos kanalas:"
+        offers: 'Užsakymo svetainėje siūlo šias paslaugas:'
+    services:
+      custom_communication:
+        custom_communication_info: Čia galite nurodyti pasirinktinį turinį, kuris siunčiamas už kiekvieną naują šio įvykio tipo rezervaciją. Jei įvedamas turinys, jis pakeis numatytąjį turinį skiltyje "Ryšys". Tuščiuose laukuose bus naudojamas numatytasis turinys
+        custom_communication_show: Rodyti išeinančio ryšio turinį
+      custom_form:
+        custom_form_info_html: Galite nurodyti pasirinktinę šios paslaugos rezervavimo formą. Ši forma pakeis numatytąją formą, apibrėžtą skiltyje "Rezervavimo svetainė". Dokumentaciją galite rasti adresu<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> . Arba susisiekite su klientų aptarnavimo tarnyba.
+        custom_form_show: Rodyti pasirinktinę rezervacijos formą
+      form_appointment:
+        booking_site_settings: Užsakymo svetainės nustatymai
+        days: dienų
+        interval_rounding:
+          default: Numatytasis paskyros nustatymas
+          five: Spintos penkios minutės
+          halfhour: Užsidaro pusvalandį
+          hour: Artimiausia valanda
+          none: Be apvalinimo (nerekomenduojama)
+          quarter: Artimiausias ketvirtis
+          ten: Arčiausiai dešimties minučių
+          twenty: Arčiausiai 20 minučių
+        max_slots_default: Neribota
+        minutes: minučių
+        next_interval_default: Pagal rezervacijos trukmę
+        offered_by: Siūlomi šie ištekliai
+        payment: Mokėjimas
+        settings:
+          hide_all_available: Turi pasirinkti konkretų šaltinį ("rodyti visus turimus" bus paslėpta)
+          hide_resources: Slėpti mygtuką, kad pasirinktumėte šaltinį (jis bus atsitiktinai pasirinktas pagal galimus išteklius)
+          hide_slot_end: Slėpti pabaigos laiką
+          select_resource: Papildomas žingsnis pasirenkant išteklius
+      form_attendance:
+        booking_site_settings: Užsakymo svetainės nustatymai
+        days: Dienos
+        default_values: Žemiau rasite numatytuosius nustatymus, kuriuos galima pakeisti kiekvienam jūsų sukurtam įvykiui.
+        minutes: Protokolas
+        offered_by: Gali pasiūlyti šie kalendoriai
+        payment: Mokėjimas
+      index:
+        appointment:
+          header: Paslaugos
+        attendance:
+          header: Įvykių tipai
+        days: dienų
+        header: Paslaugos
+        minutes: minučių
+      integrations:
+        external_info:
+          fiken_product_href: Prisijunkite prie Fiken produkto
+          tfso_product_id: 24SevenOffice produkto ID
+          visma_eaccounting_article_id: Prisijunkite prie Visma eAccounting produkto
+      list_menu:
+        list_appointment: Paslaugos
+        list_attendance: Įvykių tipai
+      show:
+        custom_data: 'Tinkinti duomenys:'
+        days: dienų
+        description: 'Apibūdinimas:'
+        interval: 'Rezervacijos trukmė:'
+        minutes: minučių
+        no_providers: 'Svarbu: šios paslaugos neteikia jokie šaltiniai ir ji nebus rodoma užsakymo svetainėje. Spustelėkite čia, kad pridėtumėte paslaugų teikėjus.'
+        not_in_category: Užsakymo svetainėje naudojate kategorijas ir ši paslauga nėra susieta su kategorija. Todėl ši paslauga šiuo metu nematoma užsakymo svetainėje. Spustelėkite čia, jei norite tvarkyti savo kategorijas.
+        offered: 'Siūlomi šie ištekliai:'
+        price: 'Kaina:'
+        show_on_booking_site: Atidarykite paslaugą rezervavimo svetainėje
+    setup:
+      appointment_services:
+        add: Pridėk kitą
+        footer_html: Paslaugų <strong>paskyrimų</strong> buvo terminuotuose, pavyzdžiui, 30 minučių ir galima užsisakyti per fiksuotų darbo valandų, pavyzdžiui, 09:00-15:00 Nuo pirmadienio iki penktadienio. Pavyzdžiai yra konsultacijos ir nuoma.
+        header_html: Puiku, pradėkime!<br> Pirmiausia pridėkite savo paslaugas susitikimams.
+        minutes: minučių
+        submit: Tęsti
+      attendance_services:
+        add: Pridėk kitą
+        footer_html: "<strong>Attandenace</strong> renginiuose, kursuose ir užsiėmimuose. Įvyksta tam tikru laiku, pvz., Rugsėjo 14 d., Nuo 15 iki 19, arba iki antradienio, 19.30 val. Data ir laikas bus nurodyti vėliau."
+        header_html: Puiku, pradėkime!<br> Pirmiausia leidžia pridėti lankomumo paslaugas.
+        submit: Tęsti
+      completed:
+        header_html: Sveikiname - jūs užsisakėte svetainę dabar!
+      completed_appointment:
+        info_html: Jūsų užsakymo svetainė dabar sukonfigūruota adresu %{href}. Čia jūsų klientai gali užsisakyti internetu. Mes taip pat išsiuntėme jums el. Laišką su šia informacija. Be užsakymo svetainės, kalendoriuje taip pat galite rankiniu būdu įvesti susitikimus.
+        to_calendar: Nuveskite mane į kalendorių
+      completed_attendance:
+        info_html: Jūsų užsakymo svetainę bus galima rasti adresu %{href}. Bet pirmiausia turite pridėti savo pirmąjį renginį, kurį bus galima užsisakyti.
+        new_event: Gerai, sukurkime mano pirmąjį renginį
+      resources:
+        add: Pridėk kitą
+        footer_html: Ištekliai gali būti darbuotojas, kambarys ar objektas. Šaltinio pavadinimas yra darbuotojo vardas arba vardas, pvz., ''Mažas posėdžių kambarys'' arba ''Projektorius Nr. 4''. Kiekviena rezervacija priklauso vienam šaltiniui.
+        from: nuo
+        header_html: Beveik baigta!</br> Tiesiog pridėkite keletą išteklių ir būsite pasirengę.
+        save: Sutaupyti
+        submit: Padaryta!
+        to: iki
+        working_hours: Prieinamumas
+        working_hours_header: ''
+      start:
+        add_services_for: Apibrėžkite paslaugas
+        appointments: Paskyrimai
+        appointments_info_html: Pavyzdžiui, chiropraktiko konsultacijos, kirpimas, masažas, nuoma ar kitos paslaugos, kurių darbo laikas yra nustatytas.
+        attendances: Dalyvavimas
+        attendances_info_html: Dalyvavimui renginiuose, kursuose, užsiėmimuose ar kituose lankymuose tam tikru laiku. Arba vieną kartą, arba kartojasi kaip kiekvieną antradienį.
+        footer_html: Paslauga yra tai, ką siūlote savo klientams ir kuri bus rodoma užsakymo svetainėje. Apibrėžkite susitikimų, kurių darbo laikas yra fiksuotas, arba dalyvavimo tam tikru laiku paslaugas.
+        header_html: Sveiki atvykę į MakePlans.<br> Pradėkite pridėdami savo paslaugas
+    shared:
+      recurring:
+        enabled: Pakartokite kelis kartus su šablonu
+        freq:
+          monthly: Kas mėnesį
+          weekly: Kas savaitę
+          yearly: Kasmet
+        freq_label: Laikotarpis
+        interval_label: Dažnis
+        length:
+          count: Įvykiai
+          until: Prieš pasimatymą
+        length_label: Iki
+    sms:
+      create:
+        header: SMS išsiųsta
+        sms_sent: 'Žemiau pateiktas pranešimas buvo išsiųstas %{recipents_count} gavėjams:'
+        to_booking: Grįžti į rezervaciją
+      insufficient_credits:
+        buy: Įsigykite SMS
+        info: Norėdami išsiųsti, turite iš anksto sumokėti %{needed} SMS kreditus. Turite %{credits} kreditų.
+      new:
+        header: 'Siųsti SMS %{recipents_count} gavėjams:'
+        message: Pranešimas
+        processing: Siunčiama ...
+        send: Siųsti
+        sms_info: Ilgesnių nei 160 simbolių pranešimų kaina apskaičiuojama už 160 simbolių. 200 simbolių žinutės kaina yra 2 SMS už pranešimą. Klientas gaus kaip 1 SMS.
+        warning:
+          all: 'SVARBU: Dabar siųsite VISIEMS savo klientams.'
+          confirm: Ar tikrai norite išsiųsti šį pranešimą?
+          event: 'SVARBU: Dabar išsiųsite visiems šio renginio dalyviams.'
+    sms_credits:
+      charge:
+        process: Užbaigtas pirkimas.
+        processing: Prašau palauk...
+      index:
+        buy: Pirkite daugiau SMS kreditų
+        sms_credits_available: Turite %{credits} SMS kreditų.
+      purchase_form:
+        buy: Pirkimas
+        header: Įsigykite SMS kreditus
+        offer: "%{discount}% nuolaida."
+        quantity: "%{quantity} SMS."
+        total: 'Iš viso: %{sum}'
+    users:
+      index:
+        header: Vartotojai
+      list_menu:
+        list: Vartotojai
+      show:
+        remove_access: Pašalinti prieigą
+        remove_access_confirm: Ar tikrai norite pašalinti šio vartotojo prieigą prie šios paskyros?

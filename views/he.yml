@@ -1,0 +1,54 @@
+---
+he:
+  bookings:
+    sms_code:
+      incorrect_code: קוד שגוי
+  clients:
+    new:
+      first_user: זו הסיסמה האישית שלך. תוכל להוסיף משתמשים נוספים מאוחר יותר.
+      free_trial_info: ניסיון חינם למשך 14 יום. ללא התחייבויות. אין צורך בכרטיס אשראי.
+      headline: התחל בעבודה עם הזמנה מקוונת
+      logged_in_as: אתה מחובר כ- %{name}.
+      read_legal: תנאים והגבלות לשימוש בשירות זה
+      recaptcha: מצטער להציק לך, אך עלינו לאמת את הרשמתך ב- Google Recaptcha. אנא מלא את הסיסמה שלך שוב והגש את הטופס.
+      subdomain_info: הכתובת (URL) הייחודית שלך בה הלקוחות שלך יכולים להזמין באינטרנט.
+      submit: רשום את החשבון שלי
+      title: הירשם לחשבון ההזמנה המקוון שלך
+      user_email: דוא"ל עבודה
+      user_info: כניסה למשתמש שלך
+    rejected:
+      headline: ההרשמה נדחתה
+      info: מצטער, אך המערכת שלנו סימנה את הרישום שלך כספאם. אנא צרו איתנו קשר לרישום חשבון.
+      title: ההרשמה נדחתה
+  oauth:
+    callback:
+      header: התחבר לחשבון
+  user:
+    select_client:
+      header: בחר חשבון
+  user_password_resets:
+    create:
+      header: לאפס את הסיסמה שלך
+      info: כעת שלחנו לך דוא"ל. כדי לאשר את איפוס הסיסמה שלך עליך ללחוץ על הקישור בדוא"ל.
+      signup_html: אין חשבון? <a href="%{url}">תתחיל עכשיו.</a>
+    edit:
+      header: אנא הכנס את הסיסמה החדשה שלך
+      signup_html: אין חשבון? <a href="%{url}">תתחיל עכשיו.</a>
+      submit: שמור סיסמא
+    new:
+      header: שכחת ססמה?
+      signup_html: אין חשבון? <a href="%{url}">תתחיל עכשיו.</a>
+      submit: שלח אימייל
+  user_sessions:
+    handle_authenticated_user:
+      success: התחברת בהצלחה
+    new:
+      forgot_link: שכחת ססמה?
+      header: התחברות
+      incorrect: אישורים שגויים
+      login: התחברות
+      remember_me: זכור אותי
+      signup_html: אין חשבון? <a href="%{url}">תתחיל עכשיו.</a>
+    rotp_verification_code:
+      header: התחבר באמצעות אימות דו-גורמי
+      submit: התחברות

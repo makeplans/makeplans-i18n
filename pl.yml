@@ -1,0 +1,226 @@
+---
+pl:
+  csv:
+    col_sep: ';'
+  activerecord:
+    attributes:
+      booking:
+        booked_from: od
+        booked_to: do
+        count: policz
+        event_id: wydarzenie
+        notes: notatki
+        person: klient
+        person_id: klient
+        resource: konsultant
+        resource_id: konsultant
+        service: usługa
+        service_id: usługa
+        title: tytuł
+        verification_code: kod weryfikacyjny
+      event:
+        booking_capacity: maksymalna dozwolona liczba osób na rezerwację
+        capacity: maksymalna dozwolona liczba osób
+        description: opis
+        ends_at: kończy się
+        first_booking_at: brak rezerwacji wcześniej
+        last_booking_at: ostatnia rezerwacja
+        resource_id: konsultant
+        service_id: usługa
+        starts_at: zaczyna się
+        title: tytuł
+      person:
+        address: adres
+        city: miasto
+        country_code: państwo
+        created_at: zarejestrowany
+        date_of_birth: data urodzenia
+        email: e-mail
+        name: imię
+        national_id_no: Narodowy numer identyfikacyjny
+        notes: notatki
+        phonenumber: numer telefonu
+        postal_code: kod pocztowy
+        state: województwo
+        street: ulica
+    errors:
+      messages:
+        illegal: nielegalny
+        invalid: jest nieważny
+        phone_invalid: nie jest prawidłowym numerem telefonu
+        time_not_available: Niedostępne do rezerwacji w tej chwili
+      models:
+        booking:
+          attributes:
+            count:
+              over_booking_capacity: Więcej niż maksymalna dozwolona liczba osób na rezerwację
+            event_id:
+              time_not_available: jest całkowicie zarezerwowany
+            person_id:
+              taken: już zapisano na to wydarzenie
+            resource_id:
+              no_availability: niedostępne w żądanym czasie
+            service_id:
+              attendance_only: tylko dla zarejestrowanych
+              not_offered: nie oferowane przez wybranego konsultanta
+            state:
+              invalid_transition: Nieprawidłowa zmiana stanu
+          fully_booked: Niedostępne w wybranym czasie.
+          time_after_future_bookable_period: Za daleko w przyszłości
+        client:
+          attributes:
+            base:
+              denied: Odmówiono
+        person:
+          missing: nie jest zapisany w Twoim profilu klienta. Skontaktuj się z nami, aby to poprawić.
+          no_values_present: Wymagane jest imię i nazwisko, numer telefonu lub adres e-mail.
+        resource:
+          has_bookings: Ten konsultant zawiera rezerwacje. Nie można usunąć. Skontaktuj się z pomocą techniczną.
+        service:
+          below_minimum: musi być większa niż 1 USD, jeśli chcesz zażądać płatności
+        user:
+          attributes:
+            password:
+              incorrect: Nieprawidłowe hasło
+          current_password_incorrect: Bieżące hasło nie pasuje
+      template:
+        body: 'Operacja nie została zakończona z powodu następujących błędów:'
+        header: Wystąpiły błędy
+    models:
+      booking: spotkanie
+      category: kategoria
+      event: wydarzenie
+      external_credential: integracja
+      person: kleint
+      resource: konsultant
+      service: usługa
+      service_appointment: usługa
+      service_attendance: rodzaj wydarzenia
+      user: użytkownik
+  date:
+    formats:
+      date_month_name: "%e %B"
+      datepicker: "%d.%m.%Y"
+      day_name: "%A"
+      day_name_abbr: "%a"
+      full_date: "%A %e %B %Y"
+      month_name: "%B"
+      short_with_name: "%a %e %b"
+      short_with_name_and_year: "%a %e %b %Y"
+    moment_format: DD.MM.YYYY
+    moment_parse: D.M.YYYY
+  errors:
+    messages:
+      no_values_present: Wymagane jest imię i nazwisko, numer telefonu lub adres e-mail.
+      not_authenticated: Zostałeś wylogowany.
+      not_found: Nie można znaleźć danych. Spróbuj ponownie załadować stronę.
+      offline: Nie można połączyć się z MakePlans. Sprawdź, czy jesteś online.
+      server_error: Błąd w MakePlans
+      syntax_error: Błąd w podanej składni.
+      unknown: Nieznany błąd. Spróbuj ponownie załadować stronę.
+    models:
+      person:
+        perishable_token:
+          invalid: Błędny kod
+    stripe:
+      booking:
+        invalid: Rezerwacja wygasła lub jest nieważna. Transakcja nie została przetworzona.
+        paid: Rezerwacja już opłacona. Spróbuj odświeżyć stronę.
+      card:
+        missing: Nie można uzyskać informacji o karcie
+      processor: 'Błąd z procesora płatności: %{error}'
+      unknown: Nie można przetworzyć transakcji. Nieznany błąd.
+  generic:
+    all: wszyscy
+    at: o
+    born_abbreviation: b. %{date_of_birth}
+    default: Domyślne ustawienie systemowe
+    optional: opcjonalny
+    search: wyszukaj
+    to: do
+    today: dzisiaj
+    tomorrow: jutro
+  helpers:
+    booking:
+      action:
+        cancel: Anuluj
+        confirm: Potwierdź
+        decline: Odrzuć
+        verify: Zweryfikuj
+      state:
+        awaiting_confirmation: Oczekuje na potwierdzenie
+        awaiting_payment: Oczekuje na zapłatę
+        awaiting_verification: Oczekuje na weryfikację
+        cancelled: Anulowano
+        confirmed: Potwierdzono
+        declined: Odrzucono
+        deleted: Usunięto
+    datepicker:
+      next_month: Następny miesiąc
+      prev_month: Poprzedni miesiąc
+    label:
+      booking:
+        all_day: Cały dzień
+        booked_from: Zarezerwowano od
+        booked_to: Zarezerwowano do
+        count: Ilość osób
+        external_id: Identyfikator zewnętrzny
+        invoiced_at: Zafakturowano
+        notes: Notatki
+        paid_at: Opłacono
+        person_id: Klient
+        reminder_at: Przypomnienie
+        resource_id: Konsultant
+        service_id: Usługa
+        title: Tytuł
+        verification_code: Kod weryfikacyjny
+      person:
+        address: Adres
+        city: Miasto
+        country_code: Państwo
+        created_at: Zarejestrowano w
+        date_of_birth: Data urodzenia (dd.mm.yyyy)
+        email: E-mail
+        name: Imię
+        national_id_no: Identyfikator krajowy
+        notes: Notatki
+        phonenumber: Numer telefonu
+        postal_code: Kod pocztowy
+        provider: Połączono z kontem zewnętrznym
+        state: Województwo
+        street: Ulica
+    payment:
+      fields:
+        cvc: Kod CVC
+        errors:
+          cvc: Kod CVC jest nieprawidłowy.
+          expiration: Data ważności jest nieprawidłowa.
+          number: Numer karty jest nieprawidłowy.
+        expiration_html: Wygasa <small>(MM/YY)</small>
+        number: Numer karty
+      header: Ten formularz zostanie zaszyfrowany i bezpiecznie wysłany
+    select:
+      prompt: Wybierz
+    submit:
+      cancel: Anuluj
+      create: Stwórz %{model}
+      submit: Zapisz %{model}
+      submit_default: Zapisz
+      update: Aktualizuj %{model}
+      update_password: Zmień hasło
+  time:
+    24h: true
+    formats:
+      db: '%Y-%m-%d %H:%M'
+      long_dayname: "%A, %e %B %Y, %H:%M"
+      short_mailer: "%e. %B at %H:%M"
+      shorter: "%-d. %b %Y, %H:%M"
+      time: "%H:%M"
+      time_with_word: at %H:%M
+      timepicker: "%H:%M"
+    moment_format: HH:mm
+    timepicker_format: H:i
+  valid_email:
+    validations:
+      email:
+        invalid: jest nieważny

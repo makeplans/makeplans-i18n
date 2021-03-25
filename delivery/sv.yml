@@ -1,0 +1,70 @@
+---
+sv:
+  booking_ical:
+    summary: "%{service} hos %{client}"
+  booking_mailer:
+    cancellation:
+      header: Hej %{name}
+      info: Din bokning %{title} %{time_range} har blitt annullerad.
+      subject: Bokningen annullerad
+    confirmation:
+      header: Hej %{name}
+      info: Du har bokat %{title} %{time_range}.
+      link: Mer information om din bokning
+      link_cancellation_info: och möjlighet till avbokning
+      resource_info: 'Bokning på: %{resource}.'
+      subject: Ny bokning
+      subject_service: Bokning av %{service}
+    declined:
+      body: |-
+        Hej,
+
+        Din bokning kunde inte bekräftas.
+      subject: Bokning ej godkänd
+    modification:
+      header: Hej %{name}
+      info: 'Din bokning har ändrats till: %{title} %{time_range}.'
+      link: Mer information om din bokning
+      link_cancellation_info: och möjlighet till avbokning
+      resource_info: 'Bokning på: %{resource}.'
+      subject: Bokning ändrad
+    request_card:
+      header: Hej %{name}
+      info: För att enkelt betala för din bokning kan du lägga till dina kortuppgifter.
+      link: Lägg till betalkort
+      subject: Betala din bokning
+    verification:
+      footer: 'Viktigt: Bokningen är ännu inte genomförd. Om du inte bekräftar din bokning genom att klicka på länken ovan inom %{expires_in} minuter, kan bokningen upphöra att gälla.'
+      header: För att slutföra din bokning av %{title} %{time_range} måste du bekräfta den genom att klicka på länken nedan.
+      link: Bekräfta bokning
+      subject: Vänligen bekräfta din bokning
+  booking_sms:
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Ny bokning hos {{ booking.resource.title }} av {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        Ny påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
+        MakePlans
+    cancellation: Din bokning den {{ booking.booked_from }} har avbokats.
+    confirmation: Du har bokat {{ booking.title }} {{ booking.booked_from }}.
+    declined: Din bokningsförfrågan för {{ booking.title }} {{ booking.booked_from }} godkändes inte. Vänligen försök igen.
+    modification: 'Din bokning har ändrats: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Påminnelse: Bokning {% if booking.service != nil %}av {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: 'Du kan registrera din betalningsinformation här: %{url}'
+    signature: |2-
+
+      {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} är din kod för att bekräfta bokningen av {{ booking.title }}."
+  person_mailer:
+    export:
+      subject: Exportera från MakePlans
+    perishable_token:
+      body: |-
+        Klicka på länken nedan för att logga in.
+
+        %{link}
+      subject: Logga in på MakePlans
+  person_sms:
+    perishable_token: "{{ perishable_token }} är din inloggningskod."
+    signature: "\\n{{ client.name }}"

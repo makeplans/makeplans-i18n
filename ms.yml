@@ -1,0 +1,447 @@
+---
+ms:
+  activerecord:
+    attributes:
+      booking:
+        booked_from: dari
+        booked_to: ke
+        count: mengira
+        event_id: peristiwa
+        notes: komen
+        person: pelanggan
+        person_id: pelanggan
+        resource: sumber
+        resource_id: sumber
+        service: perkhidmatan
+        service_id: perkhidmatan
+        title: tajuk
+        verification_code: kod pengesahan
+      category:
+        title: tajuk
+      client:
+        future_bookable_period: Tempoh boleh tempah masa depan
+        mail_notification_recipient: alamat e-mel untuk pemberitahuan
+        mailer_sender: Alamat pengirim e-mel
+        phone_number: Nombor telefon
+        purge_data_period: Tempoh penghapusan automatik
+      client_user_link:
+        role: Peranan
+      client_user_link/role:
+        admin: Pentadbir
+        manager: Pengurus
+        staff: Pekerja
+      event:
+        booking_capacity: maksimum orang yang dibenarkan setiap tempahan
+        capacity: orang maksimum dibenarkan
+        description: penerangan
+        ends_at: berakhir pada
+        first_booking_at: tiada tempahan sebelum ini
+        last_booking_at: tempahan terakhir sebelum ini
+        resource_id: sumber
+        service_id: perkhidmatan
+        starts_at: bermula pada
+        title: tajuk
+      person:
+        address: alamat
+        city: bandar
+        country_code: negara
+        created_at: berdaftar
+        date_of_birth: tarikh lahir
+        email: e-mel
+        name: nama
+        national_id_no: Nombor Pengenalan Kebangsaan
+        notes: nota
+        phonenumber: nombor telefon
+        postal_code: Poskod
+        state: negeri
+        street: jalan
+      resource:
+        capacity: kapasiti
+        mail_notification_recipient: alamat e-mel untuk pemberitahuan
+        title: tajuk
+      service:
+        payment_required: memerlukan pembayaran awal
+        price: harga
+        title: tajuk
+      user:
+        rotp_verification_code: kod pengesahan
+    errors:
+      messages:
+        chronic_syntax_error: ralat sintaks sila lihat https://github.com/mojombo/chronic#examples
+        icalendar_invalid: Tiada kejadian atau corak iCalendar yang tidak sah
+        icalendar_over_limit: Terlalu banyak kejadian. Maksimum 731.
+        illegal: haram
+        invalid: tidak sah
+        phone_invalid: bukan nombor telefon yang sah
+        time_not_available: Tidak tersedia untuk tempahan buat masa ini
+      models:
+        booking:
+          attributes:
+            count:
+              over_booking_capacity: Lebih daripada maksimum orang yang dibenarkan setiap tempahan
+            event_id:
+              time_not_available: ditempah sepenuhnya
+            person_id:
+              taken: sudah mendaftar untuk acara ini
+            resource_id:
+              no_availability: tidak boleh didapati pada waktu yang diminta
+            service_id:
+              attendance_only: hanya untuk pendaftaran
+              not_offered: tidak ditawarkan oleh sumber yang dipilih
+            state:
+              invalid_transition: Perubahan keadaan tidak sah
+          fully_booked: Tidak tersedia pada masa yang dipilih.
+          time_after_future_bookable_period: Terlalu jauh di masa hadapan
+        client:
+          attributes:
+            base:
+              denied: Ditolak
+        person:
+          missing: tidak disimpan di profil pelanggan anda. Sila hubungi kami untuk membetulkannya.
+          no_values_present: Nama, nombor telefon atau e-mel diperlukan.
+        resource:
+          has_bookings: Sumber ini mempunyai tempahan. Tidak dapat dipadamkan. Sila hubungi sokongan.
+        service:
+          below_minimum: mesti lebih dari 1 USD jika anda mahu memerlukan pembayaran
+        user:
+          attributes:
+            password:
+              incorrect: Kata laluan salah
+          current_password_incorrect: Kata laluan semasa tidak sepadan
+      template:
+        body: 'Operasi tidak selesai kerana kesalahan berikut:'
+        header: Kesalahan berlaku
+    models:
+      booking: janji temu
+      category: kategori
+      event: peristiwa
+      external_credential: penyatuan
+      person: pelanggan
+      resource: sumber
+      service: perkhidmatan
+      service_appointment: perkhidmatan
+      service_attendance: jenis acara
+      user: pengguna
+  errors:
+    messages:
+      no_values_present: Nama, nombor telefon atau e-mel diperlukan.
+      not_authenticated: Anda telah log keluar.
+      not_found: Tidak dapat mencari data. Cuba muatkan semula halaman.
+      offline: Tidak dapat menyambung ke MakePlans. Sila periksa bahawa anda berada dalam talian.
+      server_error: Ralat dalam MakePlans
+      syntax_error: Ralat dalam sintaks yang disediakan.
+      unknown: Ralat tidak diketahui. Cuba muatkan semula halaman.
+    models:
+      person:
+        perishable_token:
+          invalid: kod salah
+    stripe:
+      booking:
+        invalid: Tempahan telah tamat atau tidak sah. Transaksi tidak diproses.
+        paid: Tempahan sudah dibayar. Cuba muat semula halaman.
+      card:
+        missing: Tidak dapat mendapatkan maklumat kad
+      processor: 'Ralat dari pemproses pembayaran kami: %{error}'
+      unknown: Tidak dapat memproses transaksi. Ralat tidak diketahui.
+  generic:
+    all: semua
+    at: di
+    born_abbreviation: b. %{date_of_birth}
+    default: Lalai sistem
+    optional: pilihan
+    search: Cari
+    to: ke
+    today: hari ini
+    tomorrow: esok
+  helpers:
+    booking:
+      action:
+        cancel: Batal
+        confirm: Sahkan
+        decline: Tolak
+        verify: Sahkan
+      state:
+        awaiting_confirmation: Menunggu pengesahan
+        awaiting_payment: Menunggu Pembayaran
+        awaiting_verification: Menunggu pengesahan
+        cancelled: Dibatalkan
+        confirmed: Disahkan
+        declined: Menolak
+        deleted: Dipadamkan
+    datepicker:
+      next_month: Bulan depan
+      prev_month: Bulan lepas
+    label:
+      booking:
+        all_day: Sepanjang hari
+        booked_from: Ditempah dari
+        booked_to: Ditempah ke
+        count: Bilangan orang
+        external_id: ID Luaran
+        invoiced_at: Diinvois
+        notes: Catatan
+        paid_at: Dibayar
+        person_id: Pelanggan
+        reminder_at: Peringatan
+        resource_id: Sumber
+        service_id: Perkhidmatan
+        title: Tajuk
+        verification_code: Kod pengesahan
+      category:
+        parent_id: Kategori ibu bapa
+        title: Tajuk
+      client:
+        address: Alamat pelawat
+        allow_cancellation: Benarkan pembatalan oleh pelanggan
+        api_key: Kekunci API (untuk penyatuan luaran)
+        app_secret: Rahsia akaun
+        appointment_form: Medan tempahan tersuai
+        billing_city: Bandar
+        billing_country_code: Negara
+        billing_email: Alamat e-mel untuk invois
+        billing_id: ID dalam sistem invois
+        billing_invoice: Hantar invois dan bukannya kad kredit
+        billing_name: nama syarikat
+        billing_order_ref: Rujukan invois anda
+        billing_payment_id: ID dalam sistem pembayaran
+        billing_period: Sebulan untuk invois
+        billing_postal_code: Poskod
+        billing_state: Nyatakan
+        billing_street: Jalan
+        billing_vat_no: PPN nr
+        booking_form: Borang tempahan tersuai
+        cancellation_period: Tempoh pembatalan
+        category_form: Medan kategori tersuai
+        closed_for_holidays: Tutup pada hari cuti umum
+        confirm_manually: Tempahan mesti diluluskan oleh pentadbir
+        country_code: Negara
+        css_url: CSS tersuai (URL mestilah HTTPS)
+        currency: Mata Wang
+        email: Alamat emel
+        email_notification: Terima pemberitahuan e-mel untuk setiap tempahan baru
+        event_form: Medan acara tersuai
+        first_bookable_period: Jangan biarkan tempahan sehingga
+        footer: Kaki
+        future_bookable_period: Jangan benarkan tempahan selepas
+        google_analytics: ID penjejakan Analitis Google
+        interval_rounding: Pembundaran lalai ke masa tersedia seterusnya untuk tempahan
+        locale: Bahasa (Juga menentukan format nombor dan tarikh)
+        logo: Logo
+        mail_cancellation: Teks dalam e-mel pembatalan
+        mail_cancellation_subject: Subjek dalam e-mel pembatalan
+        mail_confirmation: Teks dalam e-mel pengesahan
+        mail_confirmation_subject: Subjek dalam e-mel pengesahan
+        mail_modification: Teks dalam e-mel pengubahsuaian
+        mail_modification_subject: Subjek dalam e-mel pengubahsuaian
+        mail_notification_recipient: Alamat e-mel untuk pemberitahuan
+        mail_verification: Teks dalam e-mel pengesahan
+        mail_verification_subject: Subjek dalam e-mel pengesahan
+        name: Nama syarikat (tertera di laman tempahan)
+        new_booking_text: Teks dipaparkan di halaman pengesahan
+        new_user_text: Teks dipaparkan sebelum borang tempahan
+        payment_provider: Pembekal pembayaran (Untuk tempahan prabayar)
+        person_form: Medan pelanggan tersuai
+        phone_number: Nombor telefon untuk pemberitahuan
+        public_access: Laman web tempahan tersedia untuk orang ramai
+        purge_data_period: Pemadaman automatik maklumat peribadi yang dapat dikenal pasti
+        reminder_sms: Hantar peringatan SMS
+        resource_form: Medan sumber tersuai
+        service_form: Bidang perkhidmatan tersuai
+        service_template: Gaya kalendar
+        service_templates:
+          time_day_available: Hari
+          week_available: Sepanjang minggu
+          weekday_available: Hari kerja
+        sms_cancellation: Teks dalam SMS pembatalan
+        sms_confirmation: Teks dalam SMS pengesahan
+        sms_modification: Teks dalam SMS pengubahsuaian
+        sms_notification: Terima SMS untuk setiap tempahan baru
+        sms_reminder: Teks dalam peringatan SMS
+        sms_reminder_time: Masa untuk peringatan SMS
+        sms_verification: Teks dalam SMS pengesahan
+        subdomain: URL (subdomain)
+        template: Tema reka bentuk
+        time_zone: Zon masa
+        verification_method: Kaedah pengesahan untuk tempahan baru
+      event:
+        all_day: Sepanjang hari
+        booking_capacity: Jumlah atendan maksimum setiap tempahan
+        capacity: Jumlah atendan maksimum
+        description: Penerangan
+        ends_at: Berakhir pada
+        first_booking_at: Tiada pendaftaran sebelum ini
+        last_booking_at: Tiada pendaftaran selepas itu
+        payment_required: Pembayaran diperlukan
+        price: Harga termasuk semua cukai
+        published: Kelihatan di laman tempahan
+        resource_id: Sumber
+        service_id: Jenis acara
+        starts_at: Bermula pada
+        title_html: Tajuk yang ditentukan <small>pilihan</small>
+      person:
+        address: Alamat
+        city: Bandar
+        country_code: Negara
+        created_at: Berdaftar di
+        date_of_birth: Tarikh lahir (dd.mm.yyyy)
+        email: E-mel
+        name: Nama
+        national_id_no: Nombor ID kebangsaan
+        notes: Catatan
+        phonenumber: Nombor telefon
+        postal_code: Poskod
+        provider: Bersambung ke akaun luaran
+        state: Nyatakan
+        street: Jalan
+        tfso_company_id: ID pelanggan 24SO
+      resource:
+        capacity: Jumlah tempahan maksimum pada masa yang sama
+        mail_notification_recipient: Alamat e-mel untuk pemberitahuan
+        title: Tajuk
+      service:
+        booking_capacity: Jumlah maksimum orang bagi setiap tempahan
+        booking_form: Borang tempahan tersuai
+        capacity: Jumlah kehadiran maksimum
+        description: Penerangan
+        has_day_booking: Jenis masa
+        has_day_booking_label:
+          'false': min
+          'true': hari-hari
+        interval: Tempoh tempahan
+        interval_rounding: Pembundaran untuk masa yang tersedia seterusnya
+        mail_cancellation: Teks dalam e-mel pembatalan
+        mail_confirmation: Teks dalam e-mel pengesahan
+        mail_modification: Teks dalam e-mel pengubahsuaian
+        mail_verification: Teks dalam e-mel pengesahan
+        max_slots: Jumlah slot maksimum untuk setiap tempahan
+        next_interval: Slot tersedia setiap
+        payment_required: Memerlukan pembayaran
+        price: Harga termasuk cukai
+        published: Tunjukkan di laman web tempahan
+        same_day: Benarkan tempahan selama beberapa hari
+        sms_cancellation: Teks dalam SMS pembatalan
+        sms_confirmation: Teks dalam SMS pengesahan
+        sms_modification: Teks dalam SMS pengubahsuaian
+        sms_reminder: Teks dalam SMS peringatan
+        sms_verification: Teks dalam SMS pengesahan
+        template: Templat kalendar
+        templates:
+          default: Lalai
+          time_day_available: Hari
+          week_available: Sepanjang minggu
+          weekday_available: Hari kerja
+        title: Tajuk
+      user:
+        current_password: Kata laluan semasa
+        email: E-mel
+        name: Nama
+        password: Kata Laluan
+        phonenumber: Nombor telefon
+        rotp_verification_code: Kod pengesahan
+    link:
+      add: Tambah
+      back: Belakang
+      booking:
+        new: Tempahan baru
+      category:
+        new: Kategori baru
+      create: Buat
+      delete: Padam
+      delete_confirm: Adakah anda pasti ingin memadam?
+      edit: Edit
+      event:
+        new: Acara baru
+        new_attendant: Tambah petugas
+      person:
+        new: Pelanggan baru
+      resource:
+        new: Sumber baru
+      service:
+        new_appointment: Perkhidmatan baru
+        new_attendance: Jenis acara baru
+      setup:
+        skip: Penyediaan manual
+        step_html: "<strong>Langkah %{step}</strong> dari %{max_steps}"
+      user:
+        new: Pengguna baru
+      view: Pandangan
+    menu:
+      agenda: Agenda
+      calendar: Kalendar
+      logout: Log keluar
+      people: Pelanggan
+      profile: Profil
+      reports: Laporan
+      setup: Persediaan
+    menu_setup:
+      billing: Pengebilan
+      bookingsite: Laman tempahan
+      categories: Kategori
+      communication: Komunikasi
+      company: Akaun
+      export: Eksport
+      fields: Bidang-bidang khas
+      import: Import
+      integrations: Kesepaduan
+      person_notifications: Pemberitahuan - pelanggan
+      promote: Mempromosikan
+      resources: Sumber
+      service_appointments: Perkhidmatan
+      service_attendances: Jenis acara
+      sms_credits: Kredit SMS
+      tools: Alat
+      user_notifications: Pemberitahuan - pengguna
+      users: Pengguna
+      ux: UX
+    payment:
+      fields:
+        cvc: CVC
+        errors:
+          cvc: CVC tidak sah.
+          expiration: Tarikh luput tidak sah.
+          number: Nombor kad tidak sah.
+        expiration_html: Tamat tempoh <small>(MM / YY)</small>
+        number: Nombor kad
+      header: Borang ini akan dienkripsi dan dihantar dengan selamat
+    select:
+      prompt: Sila pilih
+    submit:
+      cancel: Batal
+      create: Buat %{model}
+      submit: Jimat %{model}
+      submit_default: Jimat
+      update: Kemas kini %{model}
+      update_password: Tukar kata laluan
+  service:
+    admin:
+      invoice_client:
+        errors:
+          nothing_to_invoice: Akaun belum siap untuk penginvoisan. Pastikan anda mempunyai sekurang-kurangnya satu sumber.
+        invoice_text: Penggunaan tempahan janji temu dalam talian MakePlans
+  title:
+    actions:
+      edit: Edit
+      update: Kemas kini
+  user:
+    password_reset:
+      expired: Tamat tempoh
+      no_email_found: Tidak dijumpai e-mel
+  valid_email:
+    validations:
+      email:
+        invalid: tidak sah
+  worker:
+    integration_slack:
+      fallback: Temujanji baru dibuat dalam MakePlans
+      footer: API MakePlans
+      pretext: "%{person} membuat janji temu pada %{booked_from}"
+      title: Lihat janji temu di MakePlans
+    integration_tfso_list_companies:
+      errors:
+        no_results: Tidak ada pelanggan yang ada.
+    integration_tfso_order:
+      errors:
+        already_created: Sudah dibuat.
+        no_company: Pelanggan telah dihapuskan di 24SevenOffice. Anda mesti mengaktifkan semula pelanggan di 24SevenOffice untuk meneruskan.
+        no_product: Produk telah dipadamkan di 24SevenOffice. Anda mesti mengaktifkan semula produk di 24SevenOffice atau menyambungkan perkhidmatan ke produk baru dari MakePlans sebelum anda dapat meneruskannya.
+        product_not_defined_on_service: Perkhidmatan ini tidak disambungkan ke produk di 24SevenOffice.

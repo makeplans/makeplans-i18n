@@ -1,0 +1,40 @@
+nl:
+  csv:
+    col_sep: ';'
+  date:
+    formats:
+      short_with_name: ! '%a %e. %b'
+      short_with_name_and_year: ! '%a %e. %b %Y'
+      month_name: ! '%B'
+      day_name: '%A'
+      day_name_abbr: '%a'
+      datepicker: '%d.%m.%Y'
+      full_date: '%A %d. %B %Y'
+      date_month_name: "%e %B"
+  time:
+    formats:
+      time: ! '%H:%M'
+      time_with_word: ! 'kl. %H:%M'
+      timepicker: ! '%H:%M'
+      long_dayname: '%A, %e. %B %Y, %H:%M'
+      short_mailer: "%e. %B kl. %H:%M"
+    timepicker_format: 'H:i'
+    moment_format: 'HH:mm'
+    24h: true
+  helpers:
+    select:
+      prompt: Maak een keuze
+    submit:
+      create: "%{model} toevoegen"
+      submit: "%{model} opslaan"
+      update: "%{model} bijwerken"
+    label:
+      booking:
+        notes: Notitie
+        verification_code: Verificatiecode
+      person:
+        name: Naam
+        email: Email
+        phonenumber: Mobiel telefoonnummer
+  generic:
+    optional: optioneel

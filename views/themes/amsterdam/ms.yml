@@ -1,0 +1,185 @@
+---
+ms:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: Kami akan mengesahkan tempahan anda secara manual. Anda akan menerima %{verification_method} apabila kami telah memproses permintaan anda.
+        body_automatic_sync: Kami kini memeriksa tempahan anda. Anda akan menerima %{verification_method} apabila kami telah memproses permintaan anda.
+        title: Menunggu pengesahan
+        title_automatic_sync: Memeriksa tempahan
+        verification_method:
+          authenticated: pemberitahuan
+          email: e-mel
+          none: pemberitahuan
+          sms: SMS
+      awaiting_payment:
+        body: Tunggu sementara kami mengesahkan transaksi.
+        error: Kami tidak dapat mengesahkan pembayaran anda. Sila hubungi khidmat pelanggan dengan nombor rujukan %{booking_id}.
+        title: Mengesahkan pembayaran anda
+      awaiting_verification:
+        verification_delivery_error: Kami tidak dapat menghantar e-mel kepada anda. Adakah anda pasti memasukkan alamat e-mel yang betul?
+        verification_delivery_not_processed: Kami sedang mengalami beberapa kelewatan dalam sistem kami. Tunggu sementara kami menghantar e-mel anda.
+        verification_sent_body: Kami telah menghantar e-mel ke %{email}. Ikuti untuk mengesahkan tempahan anda. Ini membantu kami memastikan anda bukan robot.
+        verification_sent_title: Sila sahkan alamat emel anda
+      declined:
+        body: Maaf kami tidak dapat menyetujui permintaan tempahan anda. Sila cuba slot waktu lain atau hubungi kami.
+        title: Tempahan anda tidak diluluskan
+      expired:
+        header: Tempahan tamat
+        info: Tempahan mesti disahkan dalam %{expires_in} minit. Sila cuba lagi.
+      new:
+        authentication:
+          authenticating: Mengesahkan ...
+          logged_in_as: Anda log masuk sebagai %{person}
+          logged_in_with_fb_html: Log masuk di Facebook sebagai <span data-name="">tidak diketahui</span> . Klik "Sahkan tempahan" untuk mengesahkan tempahan anda.
+          login_with_facebook_html: Sebagai alternatif anda boleh %{fb_link}.
+          login_with_facebook_link: sahkan secara automatik dengan Facebook
+          not_current_person_html: Adakah anda tidak <span data-name="">%{person}?</span> ?
+          remember_me: Adakah anda mahu kami mengingati anda di mesin ini menggunakan kuki?
+        enter_info: Masukkan maklumat
+        errors_header: Sila isi medan yang diperlukan.
+        form_info: Ini akan digunakan untuk mengesahkan tempahan anda dari %{service}, %{booking}.
+        price_info: 'Harga: %{price}'
+        reserve_resource: Tempahan untuk %{resource}
+      no_person:
+        body: 'Hubungi kami untuk maklumat lebih lanjut. Ralat: Sambungan pelanggan dikeluarkan'
+        title: Ralat
+      payment:
+        awaiting:
+          body: Tunggu sementara kami mengesahkan transaksi.
+          error: Kami tidak dapat mengesahkan pembayaran anda. Sila hubungi khidmat pelanggan di https://makeplans.net dengan nombor rujukan %{booking_id}.
+          title: Mengesahkan pembayaran anda
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC tidak sah.
+            expiration: Tarikh luput tidak sah.
+            number: Nombor kad tidak sah.
+          expiration_html: Tamat tempoh <small>(MM / YY)</small>
+          number: Nombor kad
+        form_footer_html: Kad kredit anda akan dicaj dengan <span class="payment-amount">%{amount}</span> .
+        form_header: Borang ini dihantar dienkripsi.
+        header: Pembayaran
+        info: Untuk menyelesaikan tempahan %{service}, anda mesti membayar dengan kad kredit anda.
+      show:
+        add_card: Tambahkan kad kredit anda untuk membayar secara automatik selepas membuat tempahan
+        add_to_calendar: Tambahkan tempahan ke kalendar anda
+        body: Anda sudah selesai. Tempahan telah dibuat.
+        cancel: Batalkan tempahan
+        cancel_confirmation: Adakah anda pasti mahu membatalkan tempahan ini?
+        paid: Anda mempunyai prabayar %{paid_amount}.
+        remember_me: Adakah anda mahu kami mengingati anda di mesin ini menggunakan kuki?
+        title: Tempahan anda disahkan!
+      sms_code:
+        header: Sahkan tempahan
+        incorrect_code: kod salah
+        verify_sms_code: Kami telah menghantar SMS ke %{phonenumber} dengan kod pengesahan. Sila masukkan kod dalam borang untuk mengesahkan tempahan. Ini diperlukan untuk menyelesaikan tempahan.
+    events:
+      index:
+        none_available: Tiada acara yang tersedia.
+      show:
+        before_first_booking: Anda tidak boleh mendaftar untuk acara ini sebelum %{first_booking_at}.
+        book: Daftar untuk acara ini
+        full: Acara ini penuh.
+        past_last_booking: Tidak mungkin lagi untuk mendaftar ke acara ini.
+        started: Acara ini sudah selesai.
+    generic:
+      dateselector: Pilih tarikh
+      earlier: lebih awal
+      payment:
+        add_card_details_html: Maklumat kad anda tidak akan disimpan bersama kami tetapi dihantar dienkripsi ke %{provider} untuk transaksi dan penyimpanan yang selamat.
+        add_card_footer_html: Kad anda tidak akan dicaj sekarang
+        add_card_header: Simpan kad
+        add_card_info: Tambahkan kad pembayaran anda supaya anda dapat membayar dengan mudah dan automatik setelah membuat tempahan.
+        add_card_submit: Simpan kad
+        awaiting:
+          body: Tunggu sementara kami mengesahkan transaksi.
+          error: Kami tidak dapat mengesahkan pembayaran anda. Sila hubungi khidmat pelanggan di http://makeplans.net dengan nombor rujukan %{booking_id}.
+          title: Mengesahkan pembayaran anda
+        form_footer_html: Kad kredit anda akan dikenakan caj <span class="payment-amount">%{amount}</span> .
+        form_header: Borang ini dihantar dienkripsi.
+        header: Pembayaran
+        info: Untuk melengkapkan tempahan %{service} %{booking} anda mesti membayar dengan kad kredit anda.
+        payment_details_html: Jumlah yang dipaparkan adalah dalam %{currency}. Kami tidak menyimpan butiran kad kredit anda tetapi menghantarnya disulitkan ke %{provider} untuk pemprosesan dan penyimpanan yang selamat.
+        payment_received: "%{paid_amount} telah dibayar pada %{paid_at}."
+      step:
+        cancel: Batal
+        completed: Selesai!
+        hotstepper: Langkah %{step} daripada %{steps}
+        next_confirm: 'Seterusnya: Pengesahan'
+        next_payment: Bayar
+        next_time: 'Seterusnya: Pilih masa'
+        next_verify: Sahkan tempahan
+        previous: langkah sebelumnya
+        previous_date: Tukar masa
+        previous_service: Tukar perkhidmatan
+    layouts:
+      application:
+        authenticated: 'Log masuk sebagai: %{name}'
+        demo_ended: Demo MakePlans telah tamat.
+        footer:
+          privacy_policy: Dasar privasi
+          support: Sokongan
+        login: Tempahan anda
+        meta:
+          description: Tempahan temu janji dalam talian untuk %{name}
+          keywords: penjadualan, janji temu, tempahan, pendaftaran, makeplans
+        powered_by: Tempahan oleh
+        powered_by_title: Tempahan janji temu, penjadualan dan pendaftaran acara / kelas
+        title: Tempahan dalam talian untuk %{name}
+    people:
+      credit_card_added:
+        body: Kad anda akan diproses apabila tempahan selesai. Maklumat kad disimpan dengan selamat dengan rakan pembayaran kami Stripe.
+        title: Kad anda telah disimpan
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Kod pengesahan
+        remember_me: Ingat saya pada mesin ini.
+        submit: Log masuk
+      not_found:
+        info_html: Anda tidak didaftarkan sebagai pelanggan. Selesaikan <a href="/">tempahan</a> terlebih dahulu.
+      perishable_token_action_required:
+        info_html: Kami telah menghantar e-mel kepada anda. Sila klik pada pautan untuk log masuk.
+      perishable_token_form:
+        not_available_for_this_verification_method: Tidak ada.
+        submit: Terima kod
+    profile:
+      show:
+        header: Tempahan anda
+        logout: Log keluar
+        new_booking: Tempahan baru
+    providers:
+      index:
+        show_all_available: Tunjukkan semua yang ada
+        show_only_selected: 'Atau hanya tunjukkan dari kalendar yang dipilih:'
+    services:
+      index:
+        none_available: Tidak ada perkhidmatan yang tersedia.
+      show:
+        book: Buat tempahan
+      time_day_available:
+        any_resource: Pertama tersedia
+        dateselector: Pilih tarikh
+        earlier: Lebih awal
+        gap_warning: Untuk memilih beberapa slot, slot ini mestilah tanpa jurang.
+        later: Kemudian
+        max_slots_warning: Tidak boleh menempah lebih daripada slot waktu %{max_slots}
+        multiple_slots_info: Untuk memilih beberapa slot terlebih dahulu pilih waktu mula dan kemudian slot akhir.
+        next_available_date_html: Tarikh seterusnya yang tersedia ialah %{next_available_date}
+        next_date: Hari berikutnya
+        no_availability: Tiada ketersediaan pada tarikh yang dipilih. Sila cuba tarikh yang lain.
+        no_selection: Sila pilih masa yang ada.
+        select_time: "%{service} - pilih masa yang ada"
+      weekday_available:
+        dateselector: Pilih tarikh
+        gap_warning: Untuk memilih beberapa slot, slot ini mestilah tanpa jurang.
+        max_slots_warning: Tidak boleh menempah lebih daripada slot waktu %{max_slots}
+        multiple_slots_info: Untuk memilih beberapa slot terlebih dahulu pilih waktu mula dan kemudian slot akhir.
+        next_available_date_html: Tarikh seterusnya yang tersedia ialah %{next_available_date}
+        next_week: Minggu depan
+        no_availability: Tiada ketersediaan pada tarikh yang dipilih. Sila cuba tarikh yang lain.
+        no_selection: Sila pilih masa yang ada.
+        prev_week: Minggu lepas
+        select_resource: Tunjukkan kalendar
+        select_time: "%{service} - pilih masa yang ada"
+        show_all: Tunjukkan semua yang ada

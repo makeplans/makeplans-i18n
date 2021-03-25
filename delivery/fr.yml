@@ -1,0 +1,72 @@
+---
+fr:
+  booking_ical:
+    summary: "%{service} à %{client}"
+  booking_mailer:
+    cancellation:
+      header: Salut %{name}
+      info: Votre réservation pour %{title} à %{time_range} a été annulée.
+      subject: Réservation annulée
+    confirmation:
+      header: Salut %{name}
+      info: Vous avez réservé %{title} %{time_range}.
+      link: Plus d'informations sur votre réservation
+      link_cancellation_info: et options d'annulation
+      resource_info: 'Réservation avec: %{resource}.'
+      subject: Nouvelle réservation
+      subject_service: Réservation pour %{service}
+    declined:
+      body: |-
+        Salut,
+
+        Votre réservation n'a pas été confirmée.
+      subject: Réservation refusée
+    modification:
+      header: Salut %{name}
+      info: 'Votre réservation a été modifiée pour: %{title} %{time_range}.'
+      link: Plus d'informations sur votre réservation
+      link_cancellation_info: et options d'annulation
+      resource_info: 'Réservation avec: %{resource}.'
+      subject: Réservation modifiée
+    request_card:
+      header: Salut %{name}
+      info: Pour régler facilement votre réservation, veuillez ajouter les détails de votre carte de crédit.
+      link: Ajouter une carte de paiement
+      subject: Ajoutez vos informations de paiement
+    verification:
+      footer: 'Important: la réservation n''est pas encore terminée. Si vous ne vérifiez pas la réservation en cliquant sur le lien ci-dessus dans les %{expires_in} minutes, votre réservation pourrait expirer.'
+      header: Pour finaliser votre réservation de %{title} %{time_range}, vous devez confirmer votre réservation en cliquant sur le lien ci-dessous.
+      link: Confirmer la réservation
+      subject: Veuillez confirmer votre réservation
+  booking_sms:
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Nouvelle réservation de {{ booking.resource.title }} par {{ booking.person.name }}. {{ booking.title }} sur {{ booking.time_range }}
+        Faire des plans
+      booking_type_attendance: |-
+        Nouvelle inscription pour {{ booking.event.full_title }} {{ booking.time_range }} par {{ booking.person.name }}.
+        Faire des plans
+    cancellation: Votre réservation sur {{ booking.booked_from }} a été annulée.
+    confirmation: Vous avez effectué une réservation pour {{ booking.title }} {{ booking.booked_from }}.
+    declined: Votre demande de réservation de {{ booking.title }} {{ booking.booked_from }} n'a pas été approuvée. Veuillez réessayer.
+    modification: 'Votre réservation a été modifiée: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Rappel: Réservation {% if booking.service != nil %}of {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: Veuillez ajouter vos informations de paiement à %{url}
+    signature: |2-
+
+      {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} est votre code de vérification pour la réservation de {{ booking.title }}."
+  person_mailer:
+    export:
+      subject: Export de données
+    perishable_token:
+      body: |-
+        Pour vous connecter, cliquez sur le lien ci-dessous:
+
+        %{link}
+      subject: Connectez-vous pour MakePlans
+  person_sms:
+    perishable_token: "{{ perishable_token }} est votre code d'authentification."
+    signature: |2-
+
+      {{ client.name }}

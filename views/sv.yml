@@ -1,0 +1,54 @@
+---
+sv:
+  bookings:
+    sms_code:
+      incorrect_code: Felaktig kod
+  clients:
+    new:
+      first_user: Det här är ditt personliga lösenord. Du kan lägga till fler användare senare.
+      free_trial_info: 14 dagars gratis testperiod. Inga skyldigheter. Inget kreditkort behövs.
+      headline: Kom igång med onlinebokning
+      logged_in_as: Du är inloggad som %{name}.
+      read_legal: Regler och villkor för användning av denna tjänst
+      recaptcha: Vi måste verifiera din registrering hos Google Recaptcha. Ange ditt lösenord igen och tryck på registerknappen igen.
+      subdomain_info: Din unika adress (URL) där dina kunder kan göra onlinebokningar.
+      submit: Registrera mitt konto
+      title: Registrera ditt eget bokningskonto online
+      user_email: Jobb-e-post
+      user_info: Ditt personliga användarkonto
+    rejected:
+      headline: Registrering blockerad
+      info: Tyvärr, men vårt system har blockerat din registrering som skräppost. Kontakta oss för att registrera ett konto.
+      title: Registrering blockerad
+  oauth:
+    callback:
+      header: Anslut till konto
+  user:
+    select_client:
+      header: välj konto
+  user_password_resets:
+    create:
+      header: Återställ ditt lösenord
+      info: Vi har nu skickat ett e-postmeddelande till dig. För att bekräfta återställningen av ditt lösenord måste du klicka på länken i e-postmeddelandet.
+      signup_html: Inget konto? <a href="%{url}">Kom igång nu.</a>
+    edit:
+      header: Vänligen skriv in ditt nya lösenord
+      signup_html: Inget konto? <a href="%{url}">Kom igång nu.</a>
+      submit: Spara lösenord
+    new:
+      header: Glömt ditt lösenord?
+      signup_html: Inget konto? <a href="%{url}">Kom igång nu.</a>
+      submit: Skicka e-post
+  user_sessions:
+    handle_authenticated_user:
+      success: Inloggningen lyckades
+    new:
+      forgot_link: Glömt ditt lösenord?
+      header: Logga in
+      incorrect: Ogiltiga inloggningsuppgifter
+      login: Logga in
+      remember_me: Kom ihåg mig
+      signup_html: Inget konto? <a href="%{url}">Kom igång nu.</a>
+    rotp_verification_code:
+      header: Logga in med tvåfaktorsautentisering
+      submit: Logga in

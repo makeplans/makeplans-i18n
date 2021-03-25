@@ -1,0 +1,255 @@
+---
+en:
+  booking_ical:
+    summary_admin: "%{service} for %{person}"
+  booking_user_mailer:
+    booking_info:
+      customer_info: Customer info
+    notification_cancellation:
+      body: "%{name} has cancelled reservation of %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Cancellation for %{resource}
+      booking_type_attendance:
+        subject_resource: Cancellation for %{title}
+      link: To view this reservation please go to
+    notification_confirmation:
+      appointment:
+        body: "%{name} has reserved %{title} %{time_range}."
+      attendance:
+        body: "%{name} has signed up for %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: New reservation for %{resource}
+      booking_type_attendance:
+        subject_resource: New signup for %{title}
+      link: To view this reservation please go to
+    request_approvement:
+      body: "%{name} wants to reserve %{title} %{time_range}."
+      link: To approve or reject this reservation please go to
+      subject_resource: New request for %{resource}
+  client_mailer:
+    charge_failed:
+      body: |-
+        Hi,
+
+        We tried to process your payment for using MakePlans but received the following error: %{error}
+
+        Please log into your MakePlans to ensure your card is valid.
+
+        %{url}
+
+        Your account will be deactivated soon if the payment is not successful.
+
+        Thanks,
+        MakePlans
+      subject: 'ACTION REQUIRED: Problem processing your payment'
+    charge_give_up:
+      body: |-
+        Hi,
+
+        WARNING: Your account is now deactivated.
+
+        We tried to process your payment for using MakePlans but received the following error: %{error}
+
+        Please log into your MakePlans to ensure your card is valid to reactive your account:
+
+        %{url}
+
+        Thanks,
+        MakePlans
+      subject: 'ACTION REQUIRED: Account deactivated'
+    charge_requires_action:
+      body: |-
+        Hi,
+
+        Please confirm the payment for using MakePlans. Your account will be disabled soon unless the payment is comfirmed.
+
+        %{url}
+
+        Thanks,
+        MakePlans
+      subject: 'ACTION REQUIRED: Please confirm payment'
+    charge_succeded:
+      body: |-
+        We have charged your credit card for using MakePlans. Please see attached receipt for the payment of invoice #%{invoice_nr}.
+
+        Please note that this invoice is already paid. No further action is necessary.
+
+        Your account: %{subdomain}
+
+        Thank you for using MakePlans.
+      filename: 'MakePlans AS %{invoice_date} receipt #%{invoice_nr}'
+      subject: Your receipt for using MakePlans
+    deactivated:
+      body: |-
+        Hi there,
+
+        I'm Espen, the founder of MakePlans. Sorry to see that you deactivated your MakePlans account.
+
+        Were there any features missing or why did you choose to no longer use MakePlans? If you have any feedback for us I would glady listen so we can improve our product. Or did you find MakePlans a bit confusing to set up or use? I can help you configure your account. In addition I can give you two months free usage if you are willing to give MakePlans another go.
+
+        Just reply to this email and I can follow up.
+
+        Regardless; have a good day and thanks for trying out MakePlans.
+      subject: 'CRITICAL: MakePlans account deactivated'
+    no_bookings:
+      body: |-
+        Hi,
+
+        Last week you signed up for MakePlans. It's a service for online appointment booking.
+
+        I noticed there are no bookings in your account yet. Why not make add a test booking in the administration system to see if MakePlans works for you?
+        To add a booking just go to %{url}.
+
+
+        If you are unsure about how to configure your account or have any questions about how the booking process works just reply to this email and we can help you :)
+      subject: No bookings yet
+    not_setup:
+      body: |-
+        Hi,
+
+        Yesterday you signed up for MakePlans. It's a service for online appointment booking.
+
+        I noticed you didn't complete the setup for your account. Perhaps you didn't have the time for it, if so why not complete it now?
+        Just go to %{url} to complete the setup - it only takes 45 seconds.
+
+        Or do you have any questions about using MakePlans or how to best configure your account? Just reply to this email and we can help you out :)
+      subject: Complete your MakePlans setup
+    setup_completed:
+      contact_us_html: And if you have any questions just email us at %{mail}
+      footer: MakePlans
+      header: Your customers can now book online!
+      info: You have now configured your MakePlans account and is now ready to accept online bookings from your customers.
+      next_steps: 'Next steps:'
+      step_1: Complete a test-booking to verify that all texts and outgoing messages are correct.
+      step_2: When you are ready put a link on your website to the booking site.
+      step_3: Also let your other customers know that they can now book online.
+      subject: Your customers can now book online with MakePlans
+    signup:
+      contact_us_html: If you have any questions please contact us at %{mail} or just reply to this email.
+      extra: Extra functionality in MakePlans
+      extra_info: 'It''s great that you want to offer online booking for your clients. In addition MakePlans can offer you and your clients many types of extra functionality:'
+      feature_1: Your clients can receive a reminder SMS before the appointment.
+      feature_2: Require credit card payment when booking.
+      feature_3: Store extra information on the reservation or customer with custom fields.
+      feature_4: MakePlans is integrated with many third party applications such as CRM and email newsletter applications.
+      footer: Hope you enjoy using MakePlans
+      header: Welcome to MakePlans!
+      link_info: This is where you will find your calendar with an overview of all reservations as well as being able to configure your account.
+      registered: 'You have now registered for a free test account at:'
+      subject: Welcome to MakePlans
+    trial_expire_warning:
+      body: |-
+        Hi,
+
+        Just letting you know that your MakePlans trial will expire in 3 days.
+
+        To have your customers book online without interruptions please activate your account now.
+
+        Activate account:
+        %{url}
+
+        Haven't had a chance to properly test it out yet? Reply to this email and we can extend your trial.
+      subject: Trial about to end - please activate account
+    trial_expired:
+      body: |-
+        Hi,
+
+        Your MakePlans trial has now ended.
+
+        It is now no longer possible for your customers to make a booking. You must activate your account to enable your booking site.
+
+        Activate account:
+        %{url}
+
+        Haven't had a chance to properly test it out yet? Reply to this email and we can extend your trial.
+      subject: Your MakePlans trial account has ended
+    trial_sms_credits_balance_reached:
+      body: |-
+        Hi,
+
+        Your trial of MakePlans has a limit of sending %{sms_balance_limit} SMS. You have now passed that limit.
+
+        To continue using MakePlans please activate your account.
+
+        Activate account:
+        %{url}
+
+        Alternatively you can log in to your account and change the verification method from SMS to e-mail and disable SMS reminders.
+      subject: 'ACTION REQUIRED: You have used all your SMS credits'
+    trial_sms_credits_balance_warning:
+      body: |-
+        Hi,
+
+        Your trial of MakePlans has a limit of sending %{sms_balance_limit} SMS. You have currently sent %{sms_balance}.
+
+        If you want to ensure that SMS are sent please activate your account.
+        When you reach %{sms_balance_limit} messages your account will no longer send SMS unless you activate your account.
+
+        Activate account:
+        %{url}
+
+        Alternatively you can log in to your account and change the verification method from SMS to e-mail and disable SMS reminders.
+      subject: Your SMS credits are running out
+    sms_credits_balance_reached:
+      body: |-
+        Hi,
+
+        Your MakePlans account has a limit of sending %{sms_balance_limit} SMS. You have now passed that limit.
+
+        SMS is no longer being sent from your account.
+
+        Purchase SMS credits:
+        %{url}
+
+        Alternatively you can log in to your account and change the verification method from SMS to e-mail and disable SMS reminders.
+      subject: 'ACTION REQUIRED: You have used all your SMS credits'
+    sms_credits_balance_warning:
+      body: |-
+        Hi,
+
+        Your MakePlans account has a limit of sending %{sms_balance_limit} SMS. You have currently sent %{sms_balance}.
+
+        When you reach %{sms_balance_limit} messages your account will no longer send SMS unless you purchase more SMS credits.
+
+        Purchase SMS credits:
+        %{url}
+
+        Alternatively you can log in to your account and change the verification method from SMS to e-mail and disable SMS reminders.
+      subject: Your SMS credits are running out
+  layouts:
+    booking_user_mailer:
+      footer: Automatically generated by MakePlans.
+  user_mailer:
+    add_user:
+      body: |-
+        Hi,
+
+        Welcome to MakePlans.
+
+        Click the link below to define a password.
+
+        %{link}
+      subject: Added as user in MakePlans
+    export:
+      body: |-
+        Hi,
+
+        See attached file for exported data from MakePlans.
+
+        Thanks for using MakePlans
+      subject: Export from MakePlans
+    link_user:
+      body: |-
+        Hi,
+
+        You now have access to the %{client} account in MakePlans.
+
+        Visit %{link} to log in.
+
+        MakePlans
+      subject: Access to account in MakePlans
+    password_reset:
+      footer: MakePlans
+      info: You or someone else have requested your MakePlans password to be reset. To complete the password reset please click the link below.
+      link: Reset my MakePlans password.
+      subject: Reset password

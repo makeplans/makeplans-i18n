@@ -1,0 +1,185 @@
+---
+es:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: Confirmaremos manualmente su reservación. Recibirá %{verification_method} cuando hayamos procesado su solicitud.
+        body_automatic_sync: Ahora estamos comprobando su reservación. Recibirá %{verification_method} cuando hayamos procesado su solicitud.
+        title: Pendiente de confirmación
+        title_automatic_sync: Comprobando reservación
+        verification_method:
+          authenticated: una notificación
+          email: un correo electrónico
+          none: una notificación
+          sms: un SMS
+      awaiting_payment:
+        body: Espere mientras verificamos la transacción.
+        error: No podemos verificar su pago. Póngase en contacto con el servicio de atención al cliente con el número de referencia %{booking_id}.
+        title: Verificando su pago
+      awaiting_verification:
+        verification_delivery_error: No pudimos enviarle un correo electrónico. ¿Está seguro de haber ingresado la dirección de correo electrónico correcta?
+        verification_delivery_not_processed: Actualmente estamos experimentando algunos retrasos en nuestros sistemas. Espere mientras entregamos su correo electrónico.
+        verification_sent_body: Hemos enviado un correo electrónico a %{email}. Sígalo para verificar su reservación. Nos ayuda a asegurarnos de que no eres un robot.
+        verification_sent_title: Por favor confirme su dirección de correo electrónico
+      declined:
+        body: Lo sentimos, no pudimos aprobar su solicitud de reservación. Intente con otro intervalo de tiempo o contáctenos.
+        title: Tu reservación no fue aprobada
+      expired:
+        header: Reserva caducada
+        info: Las reservas deben verificarse en %{expires_in} minutos. Inténtalo de nuevo.
+      new:
+        authentication:
+          authenticating: Autenticando ...
+          logged_in_as: Estás conectado como %{person}
+          logged_in_with_fb_html: Inició sesión en Facebook como <span data-name="">desconocido</span> . Haga clic en "Confirmar reservación" para verificar su reservación.
+          login_with_facebook_html: Alternativamente, puede %{fb_link}.
+          login_with_facebook_link: verificar automáticamente con Facebook
+          not_current_person_html: ¿No eres <span data-name="">%{person}?</span> ?
+          remember_me: "¿Quiere que le recordemos en esta máquina usando una cookie?"
+        enter_info: Ingrese información
+        errors_header: Por favor complete los campos requeridos.
+        form_info: Esto se utilizará para verificar su reservación de %{service}, %{booking}.
+        price_info: 'Precio: %{price}'
+        reserve_resource: Reserva para %{resource}
+      no_person:
+        body: 'Contáctenos para mas información. Error: se eliminó la conexión del cliente'
+        title: Error
+      payment:
+        awaiting:
+          body: Espere mientras verificamos la transacción.
+          error: No podemos verificar su pago. Comuníquese con el servicio al cliente en https://makeplans.net con el número de referencia %{booking_id}.
+          title: Verificando su pago
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC no es válido.
+            expiration: La fecha de vencimiento no es válida.
+            number: El número de tarjeta no es válido.
+          expiration_html: Caduca <small>(MM / AA)</small>
+          number: Número de tarjeta
+        form_footer_html: Su tarjeta de crédito se cargará con <span class="payment-amount">%{amount}</span> .
+        form_header: Este formulario se envía encriptado.
+        header: Pago
+        info: Para completar la reservación de %{service} debes pagar con tu tarjeta de crédito.
+      show:
+        add_card: Agregue su tarjeta de crédito para pagar automáticamente después de la reservación
+        add_to_calendar: Agrega la reservación a tu calendario
+        body: Ya terminaste. Se ha realizado la reservación.
+        cancel: Cancelar la reservación
+        cancel_confirmation: "¿Estás seguro de que deseas cancelar esta reservación?"
+        paid: Ha pagado por adelantado %{paid_amount}.
+        remember_me: "¿Quiere que le recordemos en esta máquina usando una cookie?"
+        title: "¡Su reservacion esta confirmada!"
+      sms_code:
+        header: Confirmar reservación
+        incorrect_code: código incorrecto
+        verify_sms_code: Hemos enviado un SMS a %{phonenumber} con un código de verificación. Por favor ingrese el código en el formulario para verificar la reservación. Esto es necesario para completar la reservación.
+    events:
+      index:
+        none_available: No hay eventos disponibles.
+      show:
+        before_first_booking: No es posible registrarse para este evento antes de %{first_booking_at}.
+        book: Regístrate para este evento
+        full: Este evento está lleno.
+        past_last_booking: Ya no es posible inscribirse en este evento.
+        started: Este evento ya se completó.
+    generic:
+      dateselector: Seleccione fecha
+      earlier: más temprano
+      payment:
+        add_card_details_html: Los datos de su tarjeta no se almacenarán con nosotros, pero se enviarán encriptados a %{provider} para una transacción y almacenamiento seguros.
+        add_card_footer_html: Su tarjeta no se cargará ahora
+        add_card_header: Guardar tarjeta
+        add_card_info: Agregue su tarjeta de pago para que pueda pagar fácil y automáticamente después de la reservación.
+        add_card_submit: Guardar tarjeta
+        awaiting:
+          body: Espere mientras verificamos la transacción.
+          error: No podemos verificar su pago. Comuníquese con el servicio al cliente en http://makeplans.net con el número de referencia %{booking_id}.
+          title: Verificando su pago
+        form_footer_html: Su tarjeta de crédito se cargará con <span class="payment-amount">%{amount}</span> .
+        form_header: Este formulario se envía encriptado.
+        header: Pago
+        info: Para completar la reservación de %{service} %{booking} debes pagar con tu tarjeta de crédito.
+        payment_details_html: La cantidad mostrada está en %{currency}. No almacenamos los datos de su tarjeta de crédito, pero los enviamos cifrados a %{provider} para su procesamiento y almacenamiento seguros.
+        payment_received: "%{paid_amount} se pagó en %{paid_at}."
+      step:
+        cancel: Cancelar
+        completed: "¡Terminado!"
+        hotstepper: Paso %{step} de %{steps}
+        next_confirm: 'Siguiente: Confirmación'
+        next_payment: Pagar
+        next_time: 'Siguiente: seleccione una hora'
+        next_verify: Confirmar reservación
+        previous: paso anterior
+        previous_date: Cambio de hora
+        previous_service: Cambiar servicio
+    layouts:
+      application:
+        authenticated: 'Conectado como: %{name}'
+        demo_ended: La demostración de MakePlans ha expirado.
+        footer:
+          privacy_policy: Política de privacidad
+          support: Apoyo
+        login: Tus reservas
+        meta:
+          description: Reserva de cita online para %{name}
+          keywords: programación, cita, reservación, inscripciones, makeplans
+        powered_by: Reserva por
+        powered_by_title: Reserva de citas, programación y registro de eventos / clases
+        title: Reserva online para %{name}
+    people:
+      credit_card_added:
+        body: Su tarjeta será procesada cuando se complete la reservación. Los datos de la tarjeta se almacenan de forma segura con nuestro socio de pagos Stripe.
+        title: Tu tarjeta fue guardada
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Código de verificación
+        remember_me: Recuérdame en esta máquina.
+        submit: Iniciar sesión
+      not_found:
+        info_html: No estás registrado como cliente. Primero complete <a href="/">una reservación</a> .
+      perishable_token_action_required:
+        info_html: Le hemos enviado un correo electrónico. Haga clic en el enlace para iniciar sesión.
+      perishable_token_form:
+        not_available_for_this_verification_method: No disponible.
+        submit: Recibir código
+    profile:
+      show:
+        header: Tus reservas
+        logout: Cerrar sesión
+        new_booking: Nueva reservación
+    providers:
+      index:
+        show_all_available: Mostrar todos los disponibles
+        show_only_selected: 'O solo mostrar desde el calendario seleccionado:'
+    services:
+      index:
+        none_available: No hay servicios disponibles.
+      show:
+        book: Hacer una reservación
+      time_day_available:
+        any_resource: Primero disponible
+        dateselector: Seleccione fecha
+        earlier: Más temprano
+        gap_warning: Para seleccionar múltiples ranuras, estas ranuras deben estar sin espacios.
+        later: Más tarde
+        max_slots_warning: No se pueden reservar más de %{max_slots} intervalos de tiempo
+        multiple_slots_info: Para seleccionar múltiples ranuras, primero elija la hora de inicio y luego la hora de finalización.
+        next_available_date_html: La próxima fecha disponible es %{next_available_date}
+        next_date: Día siguiente
+        no_availability: No hay disponibilidad en la fecha seleccionada. Intente con otra fecha.
+        no_selection: Seleccione un horario disponible.
+        select_time: "%{service} - seleccione el tiempo disponible"
+      weekday_available:
+        dateselector: Seleccione fecha
+        gap_warning: Para seleccionar múltiples ranuras, estas ranuras deben estar sin espacios.
+        max_slots_warning: No se pueden reservar más de %{max_slots} intervalos de tiempo
+        multiple_slots_info: Para seleccionar múltiples ranuras, primero elija la hora de inicio y luego la hora de finalización.
+        next_available_date_html: La próxima fecha disponible es %{next_available_date}
+        next_week: La próxima semana
+        no_availability: No hay disponibilidad en la fecha seleccionada. Intente con otra fecha.
+        no_selection: Seleccione una hora disponible.
+        prev_week: Semana pasada
+        select_resource: Mostrar calendario
+        select_time: "%{service} - seleccione el tiempo disponible"
+        show_all: Mostrar todos los disponibles

@@ -1,0 +1,72 @@
+---
+pl:
+  booking_ical:
+    summary: "%{service} z %{client}"
+  booking_mailer:
+    cancellation:
+      subject: Rezerwacja anulowana
+      header: Cześć %{name}
+      info: Twoja rezerwacja %{title} %{time_range} została anulowana.
+    confirmation:
+      subject: Nowa rezerwacja
+      subject_service: Rezerwacja na %{service}
+      header: Cześć %{name}
+      info: Zarezerwowano %{title} %{time_range}.
+      resource_info: 'Rezerwacja na: %{resource}.'
+      link: Więcej informacji o rezerwacji
+      link_cancellation_info: 'możliwość anulowania'
+    declined:
+      subject: Rezerwacja została odrzucona
+      body: |2-
+        Cześć,
+
+        Twoja rezerwacja nie została potwierdzona.
+    modification:
+      subject: Modyfikacja rezerwacji
+      header: Cześć %{name}
+      info: 'Twoja rezerwacja została zmieniona na: %{title} %{time_range}.'
+      resource_info: 'Rezerwacja na: %{resource}.'
+      link: Więcej informacji o rezerwacji
+      link_cancellation_info: 'możliwość anulowania'
+    request_card:
+      subject: Szczegóły płatności
+      header: Cześć %{name}
+      info: Aby łatwo opłacić rezerwację, dodaj dane karty kredytowej.
+      link: dodaj kartę kredytową
+    verification:
+      subject: Potwierdź rezerwację
+      header: 'Aby potwierdzić rezerwację %{title} %{time_range} kliknij link poniżej.'
+      link: 'Potwierdź rezerwację'
+      footer: 'Ważne: rezerwacja nie została jeszcze zakończona. Jeśli nie zweryfikujesz rezerwacji, klikając powyższy link w ciągu %{expires_in} minut Twoja rezerwacja może wygasnąć.'
+  booking_sms:
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Nowa rezerwacja na {{ booking.resource.title }} dokonana przez {{ booking.person.name }}. {{ booking.title }} na {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        Nowa rejestracja na {{ booking.event.full_title }} {{ booking.time_range }} dokonana przez {{ booking.person.name }}.
+        MakePlans
+    cancellation: Twoja rezerwacja na {{ booking.booked_from }} została anulowana.
+    confirmation: Dokonano rezerwacji na {{ booking.title }} {{ booking.booked_from }}.
+    declined: Twoja rezerwacja {{ booking.title }} {{ booking.booked_from }} nie została zatwierdzona. Spróbuj ponownie.
+    modification: 'Twoja rezerwacja została zmieniona: {{ booking.title }} {{ booking.booked_from }}. '
+    reminder: 'Przypomnienie: Rezerwacja {% if booking.service != nil %} {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: Dodaj informacje o płatności pod adresem %{url}
+    signature: |2-
+
+      {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} to Twój kod weryfikacyjny do rezerwacji {{ booking.title }}."
+  person_mailer:
+    export:
+      subject: Eksport danych
+    perishable_token:
+      subject: Zaloguj się na MakePlans
+      body: |2-
+        Aby się zalogować kliknij w poniższy link:
+
+        %{link}
+  person_sms:
+    perishable_token: "{{ perishable_token }} to Twój kod do uwierzytelnienia."
+    signature: |2-
+
+      {{ client.name }}

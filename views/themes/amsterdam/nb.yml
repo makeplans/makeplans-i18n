@@ -1,0 +1,186 @@
+---
+nb:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: Vi må bekrefte din reservasjon manuelt. Du vil motta %{verification_method} når vi har behandlet forespørselen.
+        body_automatic_sync: Reservasjonen kontrolleres nå i vårt system. Du vil motta %{verification_method} når reservasjonen er bekreftet.
+        title: Venter på bekreftelse
+        title_automatic_sync: Kontrollerer reservasjon
+        verification_method:
+          authenticated: en beskjed
+          email: en epost
+          none: en beskjed
+          sms: en SMS
+      awaiting_payment:
+        body: Vennligst vent mens transaksjonen bekreftes.
+        error: Vi klarte ikke å bekrefte at betaling ble gjennomført. Kontakt kundeservice og oppgi referansenummer %{booking_id}.
+        title: Kontrollerer betaling
+      awaiting_verification:
+        verification_delivery_error: Vi klarte ikke å sende ut epost. Er du sikker på at du har brukt riktig adresse?
+        verification_delivery_not_processed: For tiden kø i våre systemer. Vennligst vent mens vi prøver å sende ut epost.
+        verification_sent_body: Vi har nå sendt en epost til %{email} med en link som du må klikke på for å bekrefte din reservasjon.
+        verification_sent_title: Bekreft din epost-adresse
+      declined:
+        body: Beklager men din reservasjon ble ikke godkjent. Prøv et annet tidspunkt eller ta kontakt.
+        title: Reservasjonen ble ikke godkjent
+      expired:
+        header: Reservasjonen er utløpt
+        info: Reservasjonen må verifiseres i løpet av %{expires_in} minutter. Vennligst prøv igjen.
+      new:
+        authentication:
+          authenticating: Autentiserer...
+          logged_in_as: Du er logget inn som %{person}
+          logged_in_with_fb_html: Innlogget på Facebook som <span data-name="">ukjent</span>. Klikk "Bekreft reservasjon" for å verifisere.
+          login_with_facebook_html: Alternativt kan du %{fb_link}.
+          login_with_facebook_link: bekrefte automatisk med Facebook
+          not_current_person_html: Er du ikke <span data-name="">%{person}</span>?
+          remember_me: Vil du at vi skal huske deg på denne maskinen til neste gang du skal reservere her?
+        date_format: 'Vennligst skriv inn dato på følgende format: %{format}'
+        enter_info: Fyll inn personalia
+        errors_header: Du må fylle ut alle påkrevde felter.
+        form_info: Dette vil bli brukt for å verifisere reservasjonen din av %{service}, %{booking}.
+        price_info: 'Pris: %{price}'
+        reserve_resource: Reservasjon hos %{resource}.
+      no_person:
+        body: 'Kontakt oss for mer info. Feil: Kundekobling fjernet.'
+        title: Feil
+      payment:
+        awaiting:
+          body: Vennligst vent mens vi sjekker transaksjonen.
+          error: Vi klarte ikke å verifisere din betaling. Kontakt kundeservice på https://makeplans.net med referansenummer %{booking_id}
+          title: Sjekker din betaling
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC er ikke gyldig.
+            expiration: Utløpsdato er ikke gyldig
+            number: Kortnummer er ikke gyldig
+          expiration_html: Utløpsdato <small>(MM/YY)</small>
+          number: Kortnummer
+        form_footer_html: Ditt kort vil bli belastet <span class="payment-amount">%{amount}</span>.
+        form_header: Dette skjemaet sendes kryptert.
+        header: Betaling
+        info: For å fullføre reservasjon av %{service} så må du betalt med ditt kort.
+      show:
+        add_card: Legg til kredittkort for å betale automatisk etter endt avtale.
+        add_to_calendar: Legg til avtalen i din kalender.
+        body: Du er nå ferdig. Reservasjonen er gjennomført.
+        cancel: Kanseller avtale
+        cancel_confirmation: Er du sikkert på at du vil kansellere denne reservasjonen?
+        paid: Du har forhåndsbetalt %{paid_amount}.
+        remember_me: Vil du at vi skal huske deg på denne maskinen til neste gang du skal reservere her?
+        title: Reservasjonen din er bekreftet!
+      sms_code:
+        header: Bekreft reservasjon
+        incorrect_code: Feil kode
+        verify_sms_code: Du vil nå motta en SMS på telefonnr %{phonenumber} med en kode. Skriv inn koden i skjemaet under for å bekrefte reservasjonen. Dette er nødvendig for å fullføre reservasjonen - uten å gjøre dette vil ikke reserverasjonen bli gjennomført.
+    events:
+      index:
+        none_available: Ingen arrangementer tilgjengelig.
+      show:
+        before_first_booking: Det er ikke mulig å melde seg på dette arrangementet før %{first_booking_at}.
+        book: Meld deg på dette arrangementet.
+        full: Dette arrangementet er fullt.
+        past_last_booking: Det er ikke lenger mulig å melde seg på dette arrangementet.
+        started: Dette arrangementet er ferdig.
+    generic:
+      dateselector: Velg dato
+      earlier: tidligere
+      payment:
+        add_card_details_html: Din kortinformasjon lagres ikke hos oss men sendes kryptert over til %{provider} for sikker gjennomføring av transaksjon og lagring.
+        add_card_footer_html: Kortet blir ikke belastet nå
+        add_card_header: Lagre kredittkort
+        add_card_info: Legg til ditt kredittkort slik at du enkelt og automatisk kan betale etter endt avtale.
+        add_card_submit: Lagre kort
+        awaiting:
+          body: Vennligst vent mens transaksjonen bekreftes.
+          error: Vi klarte ikke å bekrefte at betaling ble gjennomført. Kontakt kundeservice via https://makeplans.no og oppgi referansenummer %{booking_id}.
+          title: Kontrollerer betaling
+        form_footer_html: Ditt kredittkort vil bli belastet med <span class="payment-amount">%{amount}</span>.
+        form_header: Dette skjemaet sendes kryptert.
+        header: Betaling
+        info: For å gjennomføre reservasjon av %{service} %{booking} må du betale med ditt kredittkort.
+        payment_details_html: Beløpet er oppgitt i %{currency} og inkluderer merverdiavgift. Din kortinformasjon lagres ikke hos oss men sendes kryptert over til %{provider} for sikker gjennomføring av transaksjon og lagring.
+        payment_received: "%{paid_amount} ble betalt %{paid_at}."
+      step:
+        cancel: Avbryt
+        completed: Ferdig!
+        hotstepper: Steg %{step} av %{steps}
+        next_confirm: 'Neste: Bekreftelse'
+        next_payment: Betal
+        next_time: 'Neste: Velg tidspunkt'
+        next_verify: Bekreft reservasjon
+        previous: forrige steg
+        previous_date: Endre tidspunkt
+        previous_service: Endre tjeneste
+    layouts:
+      application:
+        authenticated: 'Innlogget som: %{name}'
+        demo_ended: Prøveperioden for MakePlans er over.
+        footer:
+          privacy_policy: Personvern
+          support: Kundeservice
+        login: Din side
+        meta:
+          description: Nettbasert timebestilling for %{name}
+          keywords: timebestilling, nettbasert, reservere, bestille, påmelding, online booking, online timebestilling, makeplans
+        powered_by: Utviklet av
+        powered_by_title: Online timebestilling og påmelding
+        title: Online timebestilling for %{name}
+    people:
+      credit_card_added:
+        body: Ditt kort vil bli belastet når reservasjon er gjennomført. Kortinfo lagres trygt hos vår betalingspartner Stripe.
+        title: Ditt kort ble lagret
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Verifiseringskode
+        remember_me: Husk meg på denne maskinen.
+        submit: Login
+      not_found:
+        info_html: Du er ikke registrert som kunde. For å bli kunde må du <a href="/">gjennomføre en booking</a>.
+      perishable_token_action_required:
+        info_html: Vi har sendt deg en epost. Klikk på linken for å logge inn.
+      perishable_token_form:
+        not_available_for_this_verification_method: Ikke tilgjengelig
+        submit: Motta kode
+    profile:
+      show:
+        header: Dine reservasjoner
+        logout: Logg ut
+        new_booking: Ny reservasjon
+    providers:
+      index:
+        show_all_available: Vis alle ledige
+        show_only_selected: 'Eller vis kun fra ønsket kalender:'
+    services:
+      index:
+        none_available: Ingen tjenester tilgjengelig.
+      show:
+        book: Reserver
+      time_day_available:
+        any_resource: Første ledige
+        dateselector: Velg dato
+        earlier: Tidligere
+        gap_warning: For å velge flere slotter så må disse være sammenhengende uten opphold.
+        later: Senere
+        max_slots_warning: Du kan ikke velge flere enn %{max_slots} blokker.
+        multiple_slots_info: For å velge flere slotter så velg først start og så slutt tidspunkt.
+        next_available_date_html: Neste ledige dato er %{next_available_date}.
+        next_date: Neste dag
+        no_availability: Ingen ledige tidspunkt på denne dagen.
+        no_selection: Du må velge et tidspunkt for å gå videre.
+        select_time: Velg tidspunkt for %{service}
+      weekday_available:
+        dateselector: Velg dato
+        gap_warning: For å velge flere slotter så må disse være sammenhengende uten opphold.
+        max_slots_warning: Du kan ikke velge flere enn %{max_slots} blokker.
+        multiple_slots_info: For å velge flere slotter så velg først start og så slutt tidspunkt.
+        next_available_date_html: Neste ledige dato er %{next_available_date}.
+        next_week: Neste uke
+        no_availability: Ingen ledige tidspunkt på denne dagen.
+        no_selection: Du må velge et tidspunkt for å gå videre.
+        prev_week: Forrige uke
+        select_resource: Velg kalender
+        select_time: Velg tidspunkt for %{service}
+        show_all: Vis alle tilgjengelige

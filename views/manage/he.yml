@@ -1,0 +1,782 @@
+---
+he:
+  layouts:
+    design:
+      activate_account_footer: נותרו %{days_left} ימים מהמשפט. לחץ להפעלה.
+      trial_expired: המשפט שלך הסתיים.
+  manage:
+    agenda:
+      calendar:
+        ignore_capacity_confirm: יש כבר הסתייגות נוספת במסגרת הזמן הזו. האם אתה בטוח שברצונך לחסוך?
+        listWeek: רשימה
+        opening_hours:
+          add: "+ הוסף"
+          add_to_existing: "+ הוסף"
+          closed_all_week: סגור כל התקופה
+          dates: תאריכים
+          from: מ
+          open: לִפְתוֹחַ
+          remove_existing: לְהַסִיר
+          reset: אִתחוּל
+          title: התאם זמינות
+          to: ל
+        resourceTimeGridDay: יום (מחולק)
+        resourceTimelineDay: ציר זמן
+        resources: אֶמְצָעִי
+        services: שירותים
+      list:
+        all_day: כל היום
+        awaiting_confirmation:
+          one: הזמנת %{count} לאישור.
+          other: הזמנות %{count} לאישור.
+        busy: עסוק
+        do_filtering: הפעל את המסנן
+        filter: סִנוּן
+        headline: הצגת פגישות
+        month: הצגת חודש
+        no_reservations: אין הזמנות
+        reset_filter: אפס את המסנן
+        resources: אֶמְצָעִי
+        services: שירותים
+        this_and_next_month: מהיום ועד סוף החודש הבא
+        this_and_next_week: מהיום ועד סוף השבוע הבא
+    billing:
+      charge:
+        charge_details: בהתבסס על השימוש הנוכחי אנו נחייב את כרטיס האשראי שלך %{price} בכל חודש.
+        charge_details_default: המחיר החודשי הוא %{price} לכל משאב.
+        charge_details_sms: 'תחויב גם בגין שימוש ב- SMS: %{price}.'
+        process: תשלום הושלם
+        processing: המתן בבקשה...
+      credit_card_form:
+        billing_info: בעת הוספת פרטי כרטיס האשראי שלך, אנו נחייב את כרטיסך מדי חודש בהתבסס על המחירים הנקובים באתרנו. העסקה הראשונה תבוצע באופן מיידי. אתה יכול לבטל את המנוי שלך בכל עת.
+        header: פרטי תשלום
+        trial_expired: תקופת הניסיון שלך פג. אנא הפעל את חשבונך כדי להמשיך להשתמש ב- MakePlans.
+      credit_card_info:
+        header: הזן פרטי כרטיס אשראי
+        submit: שמור כרטיס אשראי
+      edit_invoice_info:
+        activate_info: להשלמת הפעלת חשבונך מלא טופס זה
+        billing_email_info: אם ברצונך שנשלח את החשבונית בדוא"ל לכתובת דוא"ל אחרת מ- %{email} אנא הכנס את הדוא"ל כאן.
+        billing_name_info: אם אתה רוצה שנחייב חברה אחרת מ- %{name} אנא הזן את השם כאן.
+        header: פרטי החיוב שלך
+      info:
+        add_link: הפעל חשבון - הזן פרטי כרטיס אשראי
+        add_new_link: האם אתה רוצה לעדכן את פרטי כרטיס האשראי שלך?
+        billing_info: תקבל מאתנו חשבונית שעליך לשלם באופן ידני
+        billing_order_ref: 'החשבונית תכלול את ההפניה שלך: %{billing_order_ref}'
+        change_from_invoice: הזן את פרטי כרטיס האשראי שלך כדי שלא תצטרך לשלם באופן ידני בכל פעם שאנחנו מחייבים את חשבונך
+        charge_details: בהתבסס על השימוש הנוכחי אנו נחייב את כרטיס האשראי שלך %{price} בכל חודש.
+        charge_details_default: המחיר החודשי הוא %{price} לכל משאב.
+        charge_details_sms: 'תחויב גם בגין שימוש ב- SMS: %{price}.'
+        current_info: פרטי כרטיס האשראי שלך נשמרים בצורה מאובטחת אצל שותף החיוב שלנו Stripe. הכרטיס המאוחסן שלך הוא %{brand} כאשר המספר מסתיים ב- %{last_4} ותוקפו יפוג %{expire_month} / %{expire_year}.
+        demo_ends_at: חשבונך יושבת אוטומטית ב- %{demo_ends_at}.
+        edit_info_link: האם ברצונך לשנות את פרטי החיוב שלך?
+        edit_link: האם אתה רוצה לעדכן את פרטי כרטיס האשראי שלך?
+        email_recipent: אנו נשלח את החשבונית באימייל לכתובת %{email}.
+        info_header: 'פרטי החיוב שלך:'
+        paid_until: החשבון שלך משולם עד %{paid_until}.
+        pause: השהה את החשבון עם סיום המנוי הנוכחי.
+        pause_confirm: האם אתה בטוח שברצונך להשהות את החשבון? החשבון יושבת אוטומטית ב- %{paid_until}.
+        reactivate: חשבונך נמצא כעת במצב ניסיון. עליך להפעיל מחדש את חשבונך כדי להמשיך להשתמש ב- MakePlans
+        reactivate_link: הפעל מחדש את החשבון
+        sms_credits_available: יש לך יתרה של %{credits} SMS.
+        vat_no: מס מע"מ רשום הוא %{vat_no}
+        vat_no_missing: לא הוזן מע"מ.
+      paying_account_required:
+        activate_account: הפעל חשבון כעת
+        info: תכונה זו מחייבת הפעלת חשבונך.
+      processing:
+        activated: חשבונך מופעל כעת :) תודה על השימוש ב- MakePlans.
+        error: לא ניתן לאמת את התשלום. אנא צרו קשר עם שירות הלקוחות.
+        info: אנא המתן בזמן שאנו מחייבים את כרטיס התשלום שלך. זה יכול לקחת עד דקה. תקבל מאימייל מאיתנו עם סיום התהליך.
+    bookings:
+      create_recurring:
+        headline: יוצר הזמנות %{count} ...
+        link: הצג רשימה
+      destroy_recurring:
+        headline: כל ההזמנות החוזרות ונשנות בתבנית זו הוסרו
+      fiken:
+        delayed_info: ייקח זמן מה עד ההזמנה תיווצר בפיקן. אל תנסה ליצור את ההזמנה שוב אם לא נראה מידע מ- Fiken ב- MakePlans.
+        header: מתמודד עם פיקן ...
+        to_booking: הצג הזמנה
+      form_appointment:
+        add_reminder_sms: שלח תזכורת SMS
+        confirmation_send_email: שלח אישור בדוא"ל
+        confirmation_send_sms: שלח אישור SMS
+        customer_info: פרטי לקוח
+        email: אימייל
+        first_available: הראשון זמין
+        headline_create: הוסף הזמנה חדשה
+        headline_create_recurring: הוסף הזמנה חדשה
+        headline_edit: שנה הזמנה
+        headline_new: הוסף הזמנה חדשה
+        ignore_capacity: שמור גם אם תפוס
+        modification_send_email: שלח שינוי בדוא"ל
+        modification_send_sms: שלח שינוי SMS
+        no_service: לא נבחר שירות
+        notification_send_email: שלח הודעת דוא"ל
+        notification_send_sms: שלח הודעת SMS
+        person_create_info: חפש לקוח קיים או צור לקוח חדש על ידי הזנת שם.
+        person_none_selected: לא נבחר לקוח
+        recurring_enabled: חזור על כך בעזרת תבנית
+        recurring_member: הסתייגות זו היא חלק מדפוס חוזר.
+        reservation_type_other: עסוק
+        reservation_type_person: הזמנת לקוח
+        send_confirmation: 'אִשׁוּר:'
+        send_modification: 'שינוי:'
+        send_notification: 'הוֹדָעָה:'
+        send_reminder: 'תִזכּוֹרֶת:'
+        sms: סמס
+      form_attendance:
+        add_reminder_sms: שלח תזכורת SMS
+        confirmation_send_email: שלח אישור בדוא"ל
+        confirmation_send_sms: שלח אישור SMS
+        email: אימייל
+        headline_create: הוסף מלווה
+        headline_edit: שנה הזמנה
+        headline_new: הוסף מלווה
+        modification_send_email: שלח שינוי בדוא"ל
+        modification_send_sms: שלח שינוי SMS
+        notification_send_email: שלח הודעת דוא"ל
+        notification_send_sms: שלח הודעת SMS
+        person_create_info: חפש לקוח קיים או צור לקוח חדש על ידי הזנת שם.
+        person_none_selected: לא נבחר לקוח
+        send_confirmation: 'אִשׁוּר:'
+        send_modification: 'שינוי:'
+        send_notification: 'הוֹדָעָה:'
+        send_reminder: 'תִזכּוֹרֶת:'
+        sms: סמס
+      izettle:
+        close_info: סגור חלון זה כדי לחזור להזמנה.
+        error: 'שגיאה מ- iZettle: %{error}'
+        result_header: iZettle
+        success: תשלום רשום.
+      show:
+        booked_from: מ
+        booked_to: ל
+        count: מספר אנשים
+        fiken:
+          create_invoice: צור חשבונית ב- Fiken
+          created: נוצרת חשבונית ב- Fiken
+          open_invoice: פתיחת חשבונית ב- Fiken
+          processing: נוצרת חשבונית ב- Fiken. זה יכול לקחת כמה דקות.
+        izettle:
+          pay: קבל תשלום באמצעות iZettle
+          progress_link: לחץ כאן כדי להמשיך.
+        log: עֵץ
+        paid_with:
+          braintree: משולם עם בריינטרי
+          stripe: משולם בפס
+          vipps: Vipps
+        person:
+          address: כתובת
+          email: אימייל
+          phone_number: מספר טלפון
+        recurring_member: הסתייגות זו היא חלק מתבנית המתחדשת.
+        refund:
+          stripe: פס
+        request_card:
+          processing: קישור תשלום נשלח ללקוח
+          send: שלח קישור תשלום ללקוח
+        send_sms: שלח מסרון
+        show_in_calendar: הצג בלוח השנה
+        stripe:
+          pay: שלם עם פס
+          processing: העסקה עובדת. זה יכול לקחת עד 1-2 דקות.
+        tfso:
+          create_invoice: צור הזמנה ב- 24SevenOffice
+          open_invoice: הזמנה פתוחה ב- 24SevenOffice
+          processing: ההזמנה נוצרת ב- 24SevenOffice. זה יכול לקחת כמה דקות.
+        vipps:
+          processing: מעבד
+          refund: הֶחזֵר
+        visma_eaccounting:
+          create_invoice: צור הזמנה ב- Visma eAccounting
+          created: חשבונית נוצרת ב- Visma eAccounting
+          processing: ההזמנה נוצרת ב- Visma eAccounting. זה יכול לקחת כמה דקות.
+      show_recurring:
+        delete_all: מחק הכל
+        headline: כל ההזמנות החוזרות ונשנות בתבנית זו
+      state_changer:
+        state: מדינה
+      unconfirmed:
+        headline: רשימת הסתייגויות לאישור
+        no_reservations: אין הסתייגויות הדורשות אישור
+      widget:
+        booked_from: מ
+        booked_to: ל
+        description: תיאור
+        person:
+          address: כתובת
+          email: אימייל
+          phone_number: מספר טלפון
+      widget_list:
+        busy: עסוק
+        no_bookings: אין הזמנה קיימת ב- %{start}
+        no_bookings_range: אין הזמנות קיימות מ- %{start} ל- %{end}
+    categories:
+      blank:
+        get_started: נכון לעכשיו לא יצרת אף קטגוריה. לכן כל השירותים נמצאים ברשימה באתר ההזמנות. אם אתה רוצה לסווג את השירותים שלך התחל ביצירת קטגוריה.
+        header: לא נוספו קטגוריות
+        info: אם אתם מציעים שירותים רבים ניתן לסווג אותם במספר רמות. קטגוריות יוצגו באתר ההזמנות ולכן על הלקוח לבחור קטגוריה לפני הצגת השירותים בקטגוריה שנבחרה. ניתן להציג שירות במספר קטגוריות.
+      form:
+        has_services: מציג שירותים אלה
+        no_parent_id: ''
+      index:
+        header: קטגוריות
+      list_menu:
+        list: קטגוריות
+      show:
+        custom_data: 'נתונים מותאמים אישית:'
+        has_services: 'מציג שירותים אלה:'
+    client:
+      cancel:
+        confirm_message: ההזדמנות האחרונה. האם אתה בטוח לחלוטין שברצונך למחוק את חשבונך עם כל הנתונים שלך?
+        disable_link: כן, אנא מחק את כל הנתונים שלי.
+        header: האם אתה בטוח שברצונך למחוק את חשבונך?
+        i_love_makeplans: לא, אני רוצה להמשיך להשתמש ב- MakePlans.
+        info: כל הנתונים בחשבונך יימחקו. האם אתה בטוח שאתה רוצה להמשיך?
+        pause: האם אתה מעדיף להפסיק את חשבונך? לא תשלם תשלום חודשי וחשבונך יהיה זמין כאשר תהיה מוכן להשתמש ב- MakePlans שוב.
+        pause_link: תוכל להשהות את חשבונך בדף החיוב.
+      configuration:
+        header: הגדרת MakePlans
+        intro: זה המקום שבו אתה יכול להגדיר את MakePlans וכיצד זה אמור לעבוד עבורך. באפשרותך להוסיף שירותים וקטגוריות שאתה מציע באתר ההזמנות, לשנות את הזמינות, לשנות את ההודעות היוצאות (SMS ודואר אלקטרוני), להוסיף משתמשים נוספים ולהתאים הגדרות רבות אחרות ב- MakePlans.
+        menu_info: בחר מהתפריט בצד שמאל. אם יש לך שאלות לגבי אופן ביצוע התאמות אנא פנה לשירות הלקוחות.
+        trial_info: זהו חשבון ניסיון - לחץ כאן להפעלה
+      edit:
+        custom_messages_info_html: תוכל למזג נתונים רלוונטיים כאן. למידע נוסף אנא עיין <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">בכתובת https://github.com/makeplans/makeplans-custom-messages</a> .
+      edit_booking_site:
+        booking_form_info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_site_info_html: אתר ההזמנות שלך זמין בכתובת %{url}.
+        cancellation: ביטול
+        cancellation_info: ביטול יכול להתבצע רק לפני תקופת הביטול. לא ניתן לבטל הזמנות ששולמו מראש.
+        cancellation_period_info: 'דוגמה: ''24 שעות לפני ''(ניתן לבטל רק 24 שעות לפני תחילת ההזמנה).'
+        first_bookable_period_info: 'דוגמה: ''בעוד שעתיים'' (הזמן הפנוי הראשון הוא בעוד שעתיים) או ''08: 00 מחר ''(הזמן הפנוי הראשון הוא בשעה 8:00 מחר בבוקר).'
+        future_bookable_period_info: 'דוגמה: ''בעוד חודשיים'' (אפשר להזמין רק את החודשיים הבאים) או ''שישי בחצות'' (אפשר להזמין רק לפני חצות ביום שישי).'
+        header: עדכן את אתר ההזמנות
+        interval_rounding:
+          default: ברירת מחדל של המערכת (הסימן הכי קרוב לחמש דקות)
+          five: סימן הדקה הקרוב ביותר
+          halfhour: חצי שעה הכי קרוב
+          hour: השעה הכי קרובה
+          none: ללא עיגול (לא מומלץ)
+          quarter: הרובע הכי קרוב
+          ten: הסימן הכי קרוב ל -10 דקות
+          twenty: הסימן הכי קרוב ל -20 דקות
+        remove_logo: הסר את הלוגו
+        settings:
+          allow_person_cookie: אפשר לאפשרות לזכור לקוח מאומת עד לביקור הבא עם שימוש בעוגיות.
+          google_tag_manager: מזהה מכולה של מנהל התגים של Google
+          select_resource: שלב נוסף לבחירת המשאב
+        verification_methods:
+          email: אימייל
+          facebook: אפשר גם אימות באמצעות Facebook Connect.
+          none: ללא אימות (לא מומלץ)
+          sms: SMS (מומלץ)
+      edit_communication:
+        email: אימייל
+        header: שנה התחברות יוצאת
+        settings:
+          custom_email_sending: עקוף לחלוטין הודעות דוא"ל עם תוכן למטה (אחרת תוכן פשוט מוכנס לדוא"ל רגיל)
+          custom_sms_sending: עקוף לחלוטין SMS עם תוכן למטה (אחרת התוכן פשוט מוכנס ב- SMS רגיל)
+          dont_include_icalendar_attachment: אל תכלול קובץ מצורף של iCalendar
+        sms: סמס
+      edit_company:
+        api:
+          enable: הפעל את ה- API
+          enable_warning: האם אתה בטוח שברצונך להפעיל את ה- API? מפתח ה- API נותן גישה פרוגרמטית מלאה לחשבונך.
+          info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+          not_enabled: לא הופעל
+        app_secret_info: סוד אפליקציה למאפייני ווב-ווקים
+        delete_account_html: האם אתה בטוח שברצונך למחוק את חשבונך? <a href="%{link}">כן, המשך</a>
+        delete_label: מחק חשבון
+        domain_info: אפשר להשתמש בכתובת אתר משלך, כמו booking.YOURDOMAIN.com, אנא צרו קשר עם שירות הלקוחות לקבלת מידע נוסף
+        header: שנה את פרטי החשבון
+        payment_provider:
+          info_html: ניתן לדרוש תשלום לפני השלמת ההזמנה באתר ההזמנות באמצעות אחד מספקי התשלומים המשולבים. אנו ממליצים על <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe</a> שהוא שירות טוב שתוכל להתחיל איתו במהירות ללא עלויות קבועות. עליך לציין את המידע הנדרש עבור ספק התשלומים שנבחר ב"אינטגרציות ".
+          none: אף אחד
+        purge_data_info: 'תכונה זו תמחק באופן אוטומטי מידע מזהה אישי ישן (לקוחות והזמנות). הזן טקסט לתאריך המחיקה ביחס לתאריך הנוכחי. דוגמה: ''לפני 6 חודשים'' או ''לפני שנתיים''.'
+        subdomain_info: הכתובת (URL) הייחודית שלך בה הלקוחות שלך יכולים לבצע הזמנות
+      edit_fields:
+        appointment_form_info: טופס זה מיועד להזמנה ידנית בלבד. לשינוי טופס ההזמנה באתר ההזמנה אנא עשה זאת בהגדרות 'אתר הזמנות'. אם טופס ההזמנה המותאם אישית משתמש בשדות מותאמים אישית, יש לכלול אותם גם כאן.
+        booking_form_info: אנא היכנס להגדרות של אתר ההזמנות לשינוי.
+        custom_form_info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        header: שנה שדות מותאמים אישית
+      edit_person_notifications:
+        automatic_messages: הודעות אוטומטיות (במערכת הניהול וב- API)
+        cancellation_email: שלח אימייל בעת ביטול ההזמנה
+        cancellation_sms: שלח SMS בעת ביטול ההזמנה
+        confirmation_email: שלח אימייל בעת יצירת הזמנה
+        confirmation_sms: שלח SMS בעת יצירת הזמנה
+        default: אוטומטית על בסיס שיטת אימות
+        default_reminder_sms: אוטומטי בהתבסס על הגדרת שליחת תזכורת
+        disable: השבת
+        header: התראות לקוח
+        modification_email: שלח אימייל בעת שינוי ההזמנה
+        modification_sms: שלח SMS בעת שינוי ההזמנה
+        outgoing_messages_info: 'MakePlans יציע לשלוח דוא"ל / SMS (כל מה שתגדיר כשיטת אימות) בעת יצירת, שינוי או ביטול הזמנה. הודעות מסוימות כגון ביטול מתרחשות באופן אוטומטי. באפשרותך לבטל הודעות אוטומטיות (למשל בעת העברת הזמנה על ידי גרירתו ליומן, ביטול או יצירת הזמנה חדשה באמצעות ה- API) או ביטול ההצעה למשלוח הודעות בטופס על ידי שינוי ההגדרות שלמטה. הערה: זה לא חל על אתר ההזמנות. אתר ההזמנות ישלח תמיד באופן אוטומטי הודעות על פי שיטת האימות שלך.'
+        reminder_sms: שלח SMS לתזכורת
+        reminder_sms_info: שם השולח הוא 'MakePlans'. פנה לשירות הלקוחות כדי לשנות את שם השולח.
+        sms_reminder_time_info: 'SMS נשלח בצהריים יום לפני ההזמנה. אם ברצונך לשנות זאת אנא שנה את השדה למטה. דוגמה: ''שעתיים לפני'' (SMS נשלח שעתיים לפני ההזמנה) או ''8:00 אתמול'' (SMS התזכורת יישלח בשמונה בבוקר יום לפני ההזמנה)'
+      edit_user_notifications:
+        approvement_email: הודעת דוא"ל לבקשות הזמנות חדשות
+        automatic_messages: הודעות אוטומטיות
+        default: פעיל (ברירת מחדל)
+        disable: נָכֶה
+        email: אימייל
+        header: התראות משתמש
+        mail_notification_info: כדי להודיע על יותר מאדם אחד אנא השתמש בנקודתיים למחצה כדי להפריד בין כתובות דוא"ל.
+        notification_email: הודעה בדוא"ל להזמנה חדשה
+        notification_sms: הודעת SMS להזמנה חדשה
+        outgoing_messages_info: אם הגדרת להגדיר ידנית הזמנות חדשות מאתר ההזמנות תקבל הודעה בדוא"ל על כל בקשת הזמנה חדשה. אם אינך מעוניין לקבל התראות אלה או אם האישור נעשה באמצעות יישום חיצוני (API) ניתן להשבית אותו למטה.
+        sms: סמס
+      edit_ux:
+        calendar: לוּחַ שָׁנָה
+        header: UX
+        info: הגדרות חזותיות
+        settings:
+          calendar_hide_weekends: הסתר סופי שבוע
+          calendar_slot_duration: משך הזמן
+          calendar_slot_label_interval: מרווח תווית חריץ
+      export_info:
+        data_types:
+          bookings: הזמנות
+          events: אירועים
+          people: לקוחות
+        executed: הייצוא נשלח כעת לכתובת הדוא"ל שלך.
+        header: ייצא נתונים מ- MakePlans
+        info: תקבל דוא"ל עם קובץ קובץ CSV.
+      import:
+        header: ייבא נתונים
+        info: ניתן לייבא נתונים כגון לקוחות ל- MakePlans. צור קשר עם התמיכה למידע נוסף.
+      promote:
+        booking_button_html_info: כדי להכניס את כפתור ההזמנה באתר האינטרנט שלך אנא העתק את קוד ה- HTML למטה. אם אתה זקוק לעזרה אנא פנה למעצב האינטרנט שלך.
+        booking_button_html_preview: תצוגה מקדימה של כפתור ההזמנה
+        booking_button_text: טקסט כפתור
+        booking_button_text_default_value: הזמנה באינטרנט
+        booking_iframe: Iframe עבור אתר ההזמנות
+        booking_link: קישור לאתר ההזמנות
+        booking_link_title: הזמנה ותזמון פגישות מקוונות
+        booking_site_info_html: אתר ההזמנות שלך זמין בכתובת %{url}.
+        generate_booking_button: צור כפתור הזמנה לאתר שלך
+        header: קדם את אתר ההזמנות שלך
+      tools:
+        header: כלים לחשבונך
+        link:
+          purge_data: מחק נתונים ישנים
+          sms_all: שלח SMS לכל הלקוחות
+    events:
+      create_recurring:
+        headline: יוצר אירועי %{count} ...
+        link: הצג רשימה
+      destroy_recurring:
+        headline: כל האירועים החוזרים ונשנים בתבנית זו הוסרו
+      email_participants:
+        copy_info: 'לחלופין תוכלו להעתיק את הכתובות שלהלן ולהדביק אותן בשדה ה- bcc בהודעת דואר אלקטרוני חדשה:'
+        headline: שלחו דוא"ל לכל המשתתפים
+        open_email_client: פתח לקוח דוא"ל
+      form:
+        headline_create: הוסף אירוע חדש
+        headline_create_recurring: הוסף אירוע חדש
+        headline_edit: שנה אירוע
+        headline_new: הוסף אירוע חדש
+        recurring_enabled: חזור על כך בעזרת תבנית
+        recurring_member: אירוע זה הוא חלק מתבנית חוזרת.
+      show:
+        attendants_html:
+          one: הסתייגות אחת
+          other: 'הסתייגויות: <strong>%{count}</strong>'
+          zero: אין הזמנות
+        download_attendance_csv: ייצא את רשימת הנוכחות כ- CSV
+        email_confirm: רשימת הנוכחות תישלח אליך בדוא"ל. האם אתה רוצה להמשיך?
+        fully_booked: האירוע בתפוסה מלאה
+        recurring_member: אירוע זה הוא חלק מתבנית חוזרת.
+        send_email_to_all: שלחו דוא"ל לכלל הדיילים
+        send_sms: שלח מסרון
+        show_in_calendar: הצג בלוח השנה
+        show_inactive_html: לא מציג הזמנות לא פעולות של %{count}. <a href="%{href}">האם אתה רוצה להראות את אלה?</a>
+        show_only_active_html: הרשימה כוללת הזמנות לא פעילות של %{count}. <a href="%{href}">האם אתה רוצה להציג רק הזמנות פעיל?</a>
+        signup_link: קישור הרשמה
+        sms_all_participants: שלח SMS לכל המשתתפים
+      show_recurring:
+        delete_all: מחק הכל
+        headline: כל האירועים החוזרים על עצמם בתבנית זו
+      widget:
+        capacity_details:
+          one: משתתף אחד בסך הכל האפשרי של %{capacity}.
+          other: "%{count} attends של סך הכל %{capacity} אפשרי."
+          zero: אין Attendes. %{capacity} אפשרי.
+        end: מסתיים
+        start: מתחיל
+      widget_list:
+        no_events: אין אירועים קיימים ב- %{start}
+        no_events_range: אין אירועים קיימים מ- %{start} ל- %{end}
+    integrations:
+      account_connected: התחבר לחשבון זה.
+      braintree:
+        cse_key: מפתח Cse
+        environment: סביבה
+        merchant_id: סוֹחֵר
+        private_key: מפתח פרטי
+        production: הפקה
+        public_key: מפתח ציבורי
+        sandbox: ארגז חול
+      campaign_monitor:
+        api_key: מפתח API
+        connect_info: 'בחר רשימת תפוצה שבה מתווספים לקוחות חדשים כמנויים:'
+        list_id: מזהה רשימה
+      confrere:
+        client_id: זיהוי לקוח
+        client_secret: סוד הלקוח
+        connect_info: מחובר ל- Confrere
+        setup_info: משאב ב- MakePlans חייב להיות מחובר למשתמש ב- Confrere כדי שהאינטגרציה תפעל.
+      connect_error: לא ניתן להשלים את האינטגרציה. מחק את השילוב ונסה שוב.
+      connected: שירות זה מחובר.
+      dokus:
+        account: חֶשְׁבּוֹן
+        password: סיסמה
+        username: שם משתמש
+      extensor:
+        activate: התחל להשתמש בשילוב הזמנות מקוונות של Extensor
+        activate_settings_2: הפעל את ההגדרות עבור הזמנה מקוונת של Extensor בגרסה 2
+        activate_settings_3: הפעל הגדרות עבור Extensor הזמנה מקוונת גרסה 3
+        info: כדי להפעיל סינכרוניזציה עם Extensor עליך להתקין את ההזמנה Online Extensor. לחץ על הקישור למטה כדי להתחיל בתהליך. אליך יצור קשר באמצעות Extensor.
+        reactive_settings: הפעל מחדש את ההגדרות לפני הזמנה מקוונת של Extensor.
+        version: MakePlans מוגדר לעבוד עם גרסת %{version} של Extensor Online Booking.
+      fakturo:
+        password: סיסמה
+        username: שם משתמש
+      fiken:
+        active: פָּעִיל
+        api_not_activated: עליך להפעיל את ה- API ב- Fiken.
+        connected_bank_account: חשבון בנק
+        connected_company: חֶברָה
+        email: שם משתמש (פרסום)
+        income_account: חשבון הכנסה
+        password: סיסמה
+        select_bank_account: בחר חשבון בנק שיוצג בחשבונית
+        select_company: בחר חברה
+        service_linked: התחבר למוצר ב- Fiken
+        service_links: 'יש לחבר כל שירות למוצר ב- Fiken כדי לאפשר ליצור הזמנה ב- Fiken. שימו לב: המחיר נלקח מ- Fiken - לא מ- MakePlans. עליכם לוודא שהמחיר בשתי היישומים זהה.'
+        service_not_linked: לא מחובר למוצר ב- Fiken.
+        vat_type: סוג מע"מ
+      headline: שילוב עם %{integration}
+      highrise:
+        account: תת-דומיין (YOURACCOUNT.highrisehq.com - הזן רק את ACCOUNT שלך)
+        connect_info: 'בחר חשבון שבו מתווספים לקוחות חדשים:'
+        password: מפתח API
+      izettle:
+        active: אקטיס
+        info: כדי להשתמש ב- iZettle אנא הגדר מחיר על השירות שאתה מספק. לאחר מכן ניתן יהיה ללחוץ על "בצע תשלום באמצעות iZettle" בהזמנה.
+      mailchimp:
+        account: מזהה רשימה
+        connect_info: 'בחר רשימת תפוצה שבה מתווספים לקוחות חדשים כמנויים:'
+        password: מפתח API
+      mailerlite:
+        api_key: מפתח API
+        select_group: בחר קבוצה שאליה יתווספו לקוחות חדשים.
+      mailmojo:
+        account: מזהה רשימה
+        username: שם משתמש בחשבון
+      not_authenticated: לא מצליח להתחבר. בדוק את אישוריך.
+      oauth_connect: התחבר לשירות
+      quickpay:
+        environment: סביבה
+        md5_secret: MD5 סוד
+        merchant_id: זיהוי סוחר
+        production: הפקה
+        test: מִבְחָן
+      selected_option: נבחר
+      stripe:
+        payment_info: עבור כל העסקאות דמי עסקה בסך %{application_fee_percent} מנוכים על ידי MakePlans.
+        receipt_email: שלחו קבלה ללקוח מפס
+      tfso:
+        add_to_crm_manually: הוסף לקוח ב- CRM באופן ידני
+        distribution_method: 'שיטת הפצה:'
+        distribution_methods:
+          EMail: אימייל
+          ElectronicInvoice: EHF
+          Print: הדפס
+          Unchanged: ללא שינוי
+        invoice_payment_time: 'זמן תשלום:'
+        invoice_state: 'מצב הזמנה:'
+        invoice_states:
+          Draft: טְיוּטָה
+          ForInvoicing: לחשבונית
+          Invoice: חשבונית
+          Offer: הַצָעָה
+        password: סיסמת API
+        service_linked: התחבר למוצר ב- 24SevenOffice
+        service_links: כל שירות ב- MakePlans חייב להיות מחובר למוצר ב- 24SevenOffice כדי לאפשר הפעלה. שים לב שהמחיר מוחזר מהמוצר ב- 24SevenOffice - לא מ- MakePlans. עליכם לוודא ששני המחירים הללו זהים. עבור לשירות להגדרת מזהה מוצר מ- 24SevenOffice.
+        service_not_linked: לא מחובר למוצר ב- 24SevenOffice
+        type_groups: 'סוג מכירה להזמנה:'
+        username: שם משתמש API
+      vipps:
+        client_id: זיהוי לקוח
+        client_secret: סוד הלקוח
+        merchant_serial_nr: מספר סידורי סוחר
+        vipps_subscription_key: מפתח מנוי Vipps
+      visma_eaccounting:
+        active: פָּעִיל
+        connect_info: מחובר ל- %{name}
+        connected_payment_id: 'תנאי תשלום: %{name}'
+        customer_attributes_info: 'שימו לב: חשבונאות אלקטרונית של Visma דורשת מיקוד ועיר כדי לרשום לקוח חדש. אם ערכים אלה אינם קיימים לא ניתן ליצור הזמנה מהזמנה.'
+        select_terms_of_payment: 'אנא בחר בתנאי תשלום רגילים ללקוחות חדשים:'
+        service_linked: מחובר למוצר ב- Visma eAccounting
+        service_links: כל שירות ב- MakePlans חייב להיות מחובר למוצר ב- Visma eAccount כדי לאפשר חשבונית. שים לב שהמחיר נשלף מ- Visma eAccounting - לא MakePlans. עליכם לוודא שהמחיר זהה בשתי המערכות.
+        service_not_linked: לא מחובר למוצר ב- Visma eAccounting
+      zapier:
+        info_html: כדי לחבר את MakePlans ל- Zapier אנא הכינו <a href="%{url}" target="_blank">Zap חדש ב- Zapier</a> .
+      zoom:
+        connect_info: מְחוּבָּר
+    people:
+      form:
+        merge_action: למזג את שני הלקוחות הללו
+        merge_action_email: כתובת דוא"ל זו כבר נשמרה אצל לקוח אחר. האם ברצונך למזג את שני הלקוחות הללו כך ש- %{email} ישמש ככתובת הדואר האלקטרוני?
+        merge_action_info: כל ההזמנות יישמרו אך אחד הלקוחות יימחק. אתה יכול לבחור איזה פרטי לקוח יישמר.
+        merge_action_phone_number: מספר טלפון זה כבר מאוחסן אצל לקוח אחר. האם ברצונך למזג את שני הלקוחות הללו ל- %{phone_number} ישמש כמספר הטלפון?
+        merge_button: למזג ולשמור
+        merge_info: 'במקום זאת השתמש:'
+      index:
+        delete_warning: האם אתה בטוח שברצונך למחוק את %{person}?
+        filter: סִנוּן
+        headline: לקוחות
+        send_sms: שלח מסרון
+      show:
+        bookings_for: הזמנות עבור %{name}
+        card_saved_with:
+          stripe: כרטיס תשלום נשמר באמצעות פס
+        change_tfso_customer: שנה את מזהה הלקוח 24SevenOffice.
+        export: ייצוא נתונים בדוא"ל ללקוח
+        export_executed: קובץ הייצוא נשלח ללקוח.
+        no_reservations: לא מצאתי שום הסתייגויות
+        send_sms: שלח מסרון
+      tfso_connect_company:
+        create: צור לקוח חדש ב- 24SevenOffice
+        header: התחבר ללקוח ב- 24SevenOffice
+        search: או חפש בקרב לקוחות קיימים
+        search_matched_headline: מצא לקוחות קיימים ב- 24SevenOffice CRM. לחץ על השם כדי לחבר לקוח זה ב- MakePlans ללקוח ב- 24SevenOffice CRM.
+        search_query: חיפוש שם
+        stream_placeholder: מחפש ב- 24SevenOffice CRM. המתן בבקשה. זה יכול לקחת עד 1-2 דקות.
+    profile:
+      activate_rotp:
+        enable_rotp: הפעל את 2FA
+        generate_header: הפעל אימות דו-שלבי (2FA)
+        generate_info: סרוק את קוד ה- QR שלמטה באמצעות הטלפון הנייד שלך באמצעות מאמת גוגל או אפליקציית 2FA אחרת.
+        verify_code: 'הזן קוד לאימות:'
+      deactivate_rotp:
+        deactivate_rotp: הסר את 2FA
+        verify_code: 'הזן קוד לאימות:'
+      show:
+        change_password: שנה סיסמה
+        rotp:
+          disable_link: השבת אימות דו-שלבי
+          disable_warning: האם אתה בטוח שברצונך להשבית אימות דו-שלבי?
+          enable_link: הפעל אימות דו-שלבי
+          enable_warning: אם תפעיל אימות דו-שלבי עליך תמיד לאמת כל כניסה באמצעות קוד מאפליקציית הטלפון הנייד שלך. האם אתה בטוח שברצונך להפעיל תכונה זו?
+          regenerate_link: צור מחדש מפתח אימות דו-שלבי
+          regenerate_warning: אם תחדש את מפתח האימות הדו-שלבי, המפתח הקיים כבר לא יעבוד ועליך להגדיר את האפליקציה שלך עם הקוד החדש. האם אתה בטוח שאתה רוצה להמשיך?
+          submit_button: התחברות
+          verification_code_header: אימות דו שלבי
+    purge_data:
+      destroy:
+        header: נתונים ישנים נמחקים כעת.
+        processing: כעת הנתונים יימחקו. עשויים לחלוף מספר דקות עד לעיבודו.
+      index:
+        header: מחק נתונים ישנים
+        info: 'פונקציה זו תמחק נתונים אישיים ישנים. באפשרותך לציין את תאריך המחיקה. הנתונים הבאים יימחקו:'
+        not_deleted: מחיקת נתונים לא תגרום לשילובים חיצוניים.
+        processing: מעבד
+        purge: מחק נתונים
+        purge_1: כל ההזמנות מסתיימות לפני התאריך שצוין.
+        purge_2: כל הלקוחות שלא עודכנו לפני התאריך שצוין ואין להם שום הזמנות לאחר התאריך שצוין.
+        purge_3: כל היומנים והמטא-נתונים הקשורים לנתונים אלה יימחקו.
+        purge_before: מחק נתונים לפני התאריך
+    reports:
+      stats:
+        all: כל המשאבים
+        booking_word: הזמנה
+        bookings: הסתייגויות
+        bookings_per_day: הזמנות ליום
+        day: יְוֹם
+        no_reservations: אין הזמנות
+    resources:
+      form:
+        availability: זמינות ברירת מחדל
+        external_info:
+          confrere_user_id: משתמש כונן
+          zoom_user_id: משתמש זום
+        from: מ
+        mail_notification_info: כדי להודיע על יותר מאדם אחד אנא השתמש בנקודתיים למחצה כדי להפריד בין כתובות דוא"ל.
+        offers: מציע את השירותים הבאים באתר ההזמנות
+        to: ל
+      index:
+        header: אֶמְצָעִי
+      list_menu:
+        list: אֶמְצָעִי
+      show:
+        availability: 'זמינות ברירת מחדל:'
+        capacity: 'קיבולת:'
+        closed: לא זמין להזמנה מקוונת.
+        custom_data: 'שדות מותאמים אישית:'
+        ical:
+          activated_html: הגישה למשאב זה באמצעות iCalendar מופעלת. הקישור לעדכון iCalendar הוא %{link}
+          disable: השבת את העדכון של iCalendar
+          enable: הפעל את העדכון של iCalendar
+          info: iCalendar-feed יציג פגישות ממשאב זה ב- MakePlans ביישומי לוח שנה אחרים כגון Microsoft Oulook, Google Calendar, iPhone או Android. לקריאה בלבד, כל השינויים חייבים להתבצע ב- MakePlans.
+          not_activated: לא הופעל
+        icalfeed: 'עדכון iCalendar:'
+        offers: 'מציע את השירותים הבאים באתר ההזמנות:'
+    services:
+      custom_communication:
+        custom_communication_info: כאן תוכלו לציין תוכן מותאם אישית אשר נשלח לכל הזמנה חדשה מסוג אירוע זה. אם תוכן מוזן הוא יעקוף את תוכן ברירת המחדל תחת "תקשורת". שדות ריקים ישתמשו בתוכן ברירת מחדל
+        custom_communication_show: הראה תוכן לתקשורת יוצאת
+      custom_form:
+        custom_form_info_html: אתה יכול לציין טופס הזמנה מותאם אישית עבור שירות זה. טופס זה יעקוף את טופס ברירת המחדל המוגדר תחת "אתר הזמנות". תיעוד ניתן למצוא בכתובת<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> , לחלופין פנה לשירות הלקוחות לקבלת סיוע.
+        custom_form_show: הצג טופס הזמנה מותאם אישית
+      form_appointment:
+        booking_site_settings: הגדרות לאתר ההזמנות
+        days: ימים
+        interval_rounding:
+          default: הגדרת חשבון ברירת מחדל
+          five: ארונות חמש דקות
+          halfhour: נסגר חצי שעה
+          hour: השעה הכי קרובה
+          none: ללא עיגול (לא מומלץ)
+          quarter: הרובע הכי קרוב
+          ten: הכי קרוב עשר דקות
+          twenty: הסימן הכי קרוב ל -20 דקות
+        max_slots_default: ללא הגבלה
+        minutes: דקות
+        next_interval_default: על פי אורך ההזמנה
+        offered_by: מוצע על ידי המשאבים הבאים
+        payment: תַשְׁלוּם
+        settings:
+          hide_all_available: יש לבחור משאב ספציפי ('הצג את כל הזמינים' יוסתר)
+          hide_resources: כפתור הסתר לבחירת משאב (ייבחר באופן אקראי לפי בין המקורות הזמינים)
+          hide_slot_end: הסתר את זמן הסיום
+          select_resource: שלב נוסף לבחירת המשאב
+      form_attendance:
+        booking_site_settings: הגדרות לאתר ההזמנות
+        days: ימים
+        default_values: להלן תמצא הגדרות ברירת מחדל שניתן לשנות עבור כל אירוע שתיצור.
+        minutes: דקות
+        offered_by: ניתן להציע על ידי לוחות השנה הבאים
+        payment: תַשְׁלוּם
+      index:
+        appointment:
+          header: שירותים
+        attendance:
+          header: סוגי אירועים
+        days: ימים
+        header: שירותים
+        minutes: דקות
+      integrations:
+        external_info:
+          fiken_product_href: התחבר למוצר ב- Fiken
+          tfso_product_id: מזהה מוצר 24SevenOffice
+          visma_eaccounting_article_id: התחבר למוצר ב- Visma eAccounting
+      list_menu:
+        list_appointment: שירותים
+        list_attendance: סוגי אירועים
+      show:
+        custom_data: 'נתונים מותאמים אישית:'
+        days: ימים
+        description: 'תיאור:'
+        interval: 'אורך ההזמנה:'
+        minutes: דקות
+        no_providers: 'חשוב: שירות זה אינו מוצע על ידי שום משאבים ולא יוצג באתר ההזמנה. לחץ כאן להוספת ספקים.'
+        not_in_category: אתה משתמש בקטגוריות באתר ההזמנות ושירות זה אינו מקושר לקטגוריה. כתוצאה מכך שירות זה אינו נראה כרגע באתר ההזמנות. לחץ כאן לניהול הקטגוריות שלך.
+        offered: 'מוצע על ידי המשאבים הבאים:'
+        price: 'מחיר:'
+        show_on_booking_site: שירות פתוח באתר ההזמנות
+    setup:
+      appointment_services:
+        add: להוסיף עוד
+        footer_html: 'שירות <strong>לפגישות</strong> משך קבוע, כגון 30 דקות, וניתן להזמין אותו בשעות פתיחה קבועות, כגון 9: 00-15: 00 בימים שני-שישי. דוגמאות לכך הן ייעוץ והשכרה.'
+        header_html: נהדר, בואו נתחיל!<br> ראשית הוסף את השירותים שלך לפגישות.
+        minutes: דקות
+        submit: לְהַמשִׁיך
+      attendance_services:
+        add: להוסיף עוד
+        footer_html: "<strong>Attandenace</strong> באירועים, קורסים ושיעורים. מתרחש בשעה מסוימת כגון 14 בספטמבר בין השעות 15:00 עד 19:00 או יום שלישי בערב בשעה 19:30. התאריך והשעה יצוינו בהמשך."
+        header_html: נהדר, בוא נתחיל!<br> ראשית מאפשר להוסיף שירותים לנוכחות.
+        submit: לְהַמשִׁיך
+      completed:
+        header_html: מזל טוב - אתר ההזמנות שלך הופעל עכשיו!
+      completed_appointment:
+        info_html: אתר ההזמנות שלך מוגדר כעת ב- %{href}. זה המקום שבו הלקוחות שלך יכולים להזמין באינטרנט. שלחנו לך גם דוא"ל עם מידע זה. בנוסף לאתר ההזמנות תוכלו להזין פגישות באופן ידני ביומן שלכם.
+        to_calendar: קח אותי ללוח השנה
+      completed_attendance:
+        info_html: אתר ההזמנות שלך יהיה זמין בכתובת %{href}. אך ראשית עליך להוסיף את האירוע הראשון שלך שיהיה זמין להזמנה.
+        new_event: אוקיי, בואו ניצור את האירוע הראשון שלי
+      resources:
+        add: להוסיף עוד
+        footer_html: משאב יכול להיות עובד, חדר או אובייקט. כותרת המשאב היא שם העובד או שם נתון כגון 'חדר ישיבות קטן' או 'מקרן מס' 4 '. כל הזמנה שייכת למשאב אחד.
+        from: מ
+        header_html: כמעט סיימתי!</br> פשוט הוסף כמה משאבים ואתה מוכן.
+        save: להציל
+        submit: בוצע!
+        to: ל
+        working_hours: זמינות
+        working_hours_header: ''
+      start:
+        add_services_for: הגדר שירותים עבור
+        appointments: פגישות
+        appointments_info_html: למשל התייעצות בכירופרקטור, תספורת, עיסוי, השכרה או שירותים אחרים עם שעות פתיחה קבועות.
+        attendances: נוֹכְחוּת
+        attendances_info_html: להשתתפות באירועים, קורסים, שיעורים או נוכחות אחרת בזמנים ספציפיים. או פעם אחת או חוזרת כמו בכל יום שלישי.
+        footer_html: שירות הוא משהו שאתה מציע ללקוחות שלך ויוצג באתר ההזמנות. הגדר שירותים לפגישות בהן שעות פתיחה קבועות או להשתתפות המתרחשת בשעה מסוימת.
+        header_html: ברוך הבא ל- MakePlans.<br> התחל בהוספת השירותים שלך
+    shared:
+      recurring:
+        enabled: חזור על כך מספר פעמים עם תבנית
+        freq:
+          monthly: יַרחוֹן
+          weekly: שְׁבוּעִי
+          yearly: שְׁנָתִי
+        freq_label: פרק זמן
+        interval_label: תדירות
+        length:
+          count: מופעים
+          until: לפני תאריך
+        length_label: עד
+    sms:
+      create:
+        header: SMS נשלח
+        sms_sent: 'ההודעה למטה נשלחה למקבלי %{recipents_count}:'
+        to_booking: חזרה להזמנה
+      insufficient_credits:
+        buy: רכישת SMS
+        info: עליך לשלם מראש זיכויים ל- %{needed} כדי שתוכל לשלוח. יש לך זיכויים %{credits}.
+      new:
+        header: 'שלח SMS למקבלי %{recipents_count}:'
+        message: הוֹדָעָה
+        processing: שְׁלִיחָה...
+        send: לִשְׁלוֹחַ
+        sms_info: עבור הודעות שאורכן עולה על 160 תווים העלות מחושבת על 160 תווים. עלות להודעה בת 200 תווים היא 2 SMS להודעה. הלקוח יקבל כסמס אחד.
+        warning:
+          all: 'חשוב: כעת תשלח לכל הלקוחות שלך.'
+          confirm: האם אתה בטוח שברצונך לשלוח הודעה זו?
+          event: 'חשוב: כעת תשלח לכל המשתתפים לאירוע זה.'
+    sms_credits:
+      charge:
+        process: השלם רכישה.
+        processing: המתן בבקשה...
+      index:
+        buy: קנה זיכויים נוספים ב- SMS
+        sms_credits_available: יש לך זיכויים ל- %{credits} SMS.
+      purchase_form:
+        buy: לִרְכּוֹשׁ
+        header: רכישת זיכויים ב- SMS
+        offer: "%{discount}% הנחה."
+        quantity: "%{quantity} SMS."
+        total: 'סה"כ: %{sum}'
+    users:
+      index:
+        header: משתמשים
+      list_menu:
+        list: משתמשים
+      show:
+        remove_access: הסר גישה
+        remove_access_confirm: האם אתה בטוח שברצונך להסיר גישה לחשבון זה עבור משתמש זה?

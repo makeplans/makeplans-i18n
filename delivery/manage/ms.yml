@@ -1,0 +1,229 @@
+---
+ms:
+  booking_ical:
+    summary_admin: "%{service} untuk %{person}"
+  booking_user_mailer:
+    booking_info:
+      customer_info: Maklumat pelanggan
+    notification_cancellation:
+      body: "%{name} telah membatalkan tempahan %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Pembatalan untuk %{resource}
+      booking_type_attendance:
+        subject_resource: Pembatalan untuk %{title}
+      link: Untuk melihat tempahan ini sila ke
+    notification_confirmation:
+      appointment:
+        body: "%{name} telah menempah %{title} %{time_range}."
+      attendance:
+        body: "%{name} telah mendaftar untuk %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Tempahan baru untuk %{resource}
+      booking_type_attendance:
+        subject_resource: Pendaftaran baru untuk %{title}
+      link: Untuk melihat tempahan ini sila ke
+    request_approvement:
+      body: "%{name} mahu menempah %{title} %{time_range}."
+      link: Untuk meluluskan atau menolak tempahan ini, sila pergi ke
+      subject_resource: Permintaan baru untuk %{resource}
+  client_mailer:
+    charge_failed:
+      body: |-
+        Hai,
+
+        Kami cuba memproses pembayaran anda kerana menggunakan MakePlans tetapi menerima ralat berikut: %{error}
+
+        Sila masuk ke MakePlans anda untuk memastikan kad anda sah.
+
+        %{url}
+
+        Akaun anda akan dinyahaktifkan segera sekiranya pembayaran tidak berjaya.
+
+        Terima kasih,
+        Membuat perancangan
+      subject: 'KRITIKAL: Masalah memproses pembayaran anda'
+    charge_give_up:
+      body: |-
+        Hai,
+
+        PERINGATAN: Akaun anda kini dinyahaktifkan.
+
+        Kami cuba memproses pembayaran anda kerana menggunakan MakePlans tetapi menerima ralat berikut: %{error}
+
+        Sila masuk ke MakePlans anda untuk memastikan kad anda sah untuk mengaktifkan semula akaun anda:
+
+        %{url}
+
+        Terima kasih,
+        Membuat perancangan
+      subject: 'KRITIKAL: Akaun dinyahaktifkan'
+    charge_requires_action:
+      body: |-
+        Hai,
+
+        Sila sahkan pembayaran untuk menggunakan MakePlans. Akaun anda akan dilumpuhkan tidak lama lagi kecuali pembayarannya disahkan.
+
+        %{url}
+
+        Terima kasih,
+        Membuat perancangan
+      subject: 'KRITIKAL: Sila sahkan pembayaran'
+    charge_succeded:
+      body: |-
+        Kami telah mengenakan kad kredit anda kerana menggunakan MakePlans. Sila lihat resit terlampir untuk pembayaran invois # %{invoice_nr}.
+
+        Harap maklum bahawa invois ini sudah dibayar. Tidak perlu tindakan selanjutnya.
+
+        Akaun anda: %{subdomain}
+
+        Terima kasih kerana menggunakan MakePlans.
+      filename: 'Resit MakePlans AS %{invoice_date} # %{invoice_nr}'
+      subject: Resit anda untuk menggunakan MakePlans
+    deactivated:
+      body: |-
+        Hai,
+
+        Saya Espen, pengasas MakePlans. Maaf kerana anda telah mematikan akaun MakePlans anda.
+
+        Adakah terdapat ciri yang hilang atau mengapa anda memilih untuk tidak lagi menggunakan MakePlans? Sekiranya anda mempunyai maklum balas untuk kami, saya dengan senang hati akan mendengarnya agar kami dapat meningkatkan produk kami. Atau adakah anda mendapati MakePlans agak membingungkan untuk disiapkan atau digunakan? Saya boleh membantu anda mengkonfigurasi akaun anda. Sebagai tambahan, saya dapat memberi anda penggunaan percuma selama dua bulan jika anda bersedia memberikan MakePlans lagi.
+
+        Cuma balas e-mel ini dan saya boleh membuat susulan.
+
+        Tidak kira; semoga berjaya dan terima kasih kerana mencuba MakePlans.
+      subject: 'KRITIKAL: Akaun MakePlans dinyahaktifkan'
+    no_bookings:
+      body: |-
+        Hai,
+
+        Minggu lalu anda mendaftar untuk MakePlans. Ia adalah perkhidmatan untuk tempahan janji temu dalam talian.
+
+        Saya perhatikan belum ada tempahan di akaun anda. Mengapa tidak membuat penambahan tempahan ujian dalam sistem pentadbiran untuk melihat apakah MakePlans berfungsi untuk anda?
+        Untuk menambah tempahan pergi ke %{url}.
+
+
+        Sekiranya anda tidak pasti tentang cara mengkonfigurasi akaun anda atau mempunyai pertanyaan mengenai bagaimana proses tempahan berfungsi, balas e-mel ini dan kami dapat membantu anda :)
+      subject: Belum ada tempahan
+    not_setup:
+      body: |-
+        Hai,
+
+        Semalam anda mendaftar untuk MakePlans. Ini adalah perkhidmatan untuk tempahan janji temu dalam talian.
+
+        Saya perhatikan anda tidak menyelesaikan persediaan untuk akaun anda. Mungkin anda tidak mempunyai masa untuk itu, jika ya mengapa tidak menyelesaikannya sekarang?
+        Cukup pergi ke %{url} untuk menyelesaikan persediaan - hanya memerlukan 45 saat.
+
+        Atau adakah anda mempunyai pertanyaan mengenai penggunaan MakePlans atau cara mengkonfigurasi akaun anda dengan sebaik-baiknya? Cukup balas e-mel ini dan kami dapat membantu anda :)
+      subject: Selesaikan persediaan MakePlans anda
+    setup_completed:
+      contact_us_html: Sekiranya anda mempunyai sebarang pertanyaan, hantarkan e-mel kepada kami di %{mail}
+      footer: Membuat perancangan
+      header: Pelanggan anda kini boleh membuat tempahan dalam talian!
+      info: Anda kini telah mengkonfigurasi akaun MakePlans anda dan kini bersedia untuk menerima tempahan dalam talian dari pelanggan anda.
+      next_steps: 'Langkah seterusnya:'
+      step_1: Lengkapkan tempahan-ujian untuk mengesahkan bahawa semua teks dan mesej keluar betul.
+      step_2: Apabila anda sudah siap meletakkan pautan di laman web anda ke laman web tempahan.
+      step_3: Beritahu juga pelanggan anda yang lain bahawa mereka kini boleh membuat tempahan dalam talian.
+      subject: Pelanggan anda kini boleh membuat tempahan dalam talian dengan MakePlans
+    signup:
+      contact_us_html: Sekiranya anda mempunyai sebarang pertanyaan, sila hubungi kami di %{mail} atau balas e-mel ini.
+      extra: Fungsi tambahan dalam MakePlans
+      extra_info: 'Hebatnya anda ingin menawarkan tempahan dalam talian untuk pelanggan anda. Sebagai tambahan, MakePlans dapat menawarkan kepada anda dan pelanggan anda banyak jenis fungsi tambahan:'
+      feature_1: Pelanggan anda dapat menerima SMS peringatan sebelum janji temu.
+      feature_2: Memerlukan pembayaran kad kredit semasa membuat tempahan.
+      feature_3: Simpan maklumat tambahan pada tempahan atau pelanggan dengan bidang tersuai.
+      feature_4: MakePlans disatukan dengan banyak aplikasi pihak ketiga seperti CRM dan aplikasi buletin e-mel.
+      footer: Semoga anda seronok menggunakan MakePlans
+      header: Selamat Datang di MakePlans!
+      link_info: Di sinilah anda akan menemui kalendar anda dengan gambaran keseluruhan semua tempahan dan juga dapat mengkonfigurasi akaun anda.
+      registered: 'Anda kini telah mendaftar untuk akaun ujian percuma di:'
+      subject: Selamat datang ke MakePlans
+    trial_expire_warning:
+      body: |-
+        Hai,
+
+        Hanya untuk memberitahu anda bahawa percubaan MakePlans anda akan tamat dalam 3 hari.
+
+        Untuk membuat pelanggan membuat tempahan dalam talian tanpa gangguan, sila aktifkan akaun anda sekarang.
+
+        Aktifkan akaun:
+        %{url}
+
+        Belum berkesempatan untuk mengujinya dengan betul? Balas e-mel ini dan kami boleh melanjutkan percubaan anda.
+      subject: Percubaan akan berakhir - sila aktifkan akaun
+    trial_expired:
+      body: |-
+        Hai,
+
+        Percubaan MakePlans anda kini telah berakhir.
+
+        Kini pelanggan anda tidak boleh membuat tempahan lagi. Anda mesti mengaktifkan akaun anda untuk mengaktifkan laman tempahan anda.
+
+        Aktifkan akaun:
+        %{url}
+
+        Belum berkesempatan untuk mengujinya dengan betul? Balas e-mel ini dan kami boleh melanjutkan percubaan anda.
+      subject: Akaun percubaan MakePlans anda telah berakhir
+    trial_sms_credits_balance_reached:
+      body: |-
+        Hai,
+
+        Percubaan MakePlans anda mempunyai had menghantar SMS %{sms_balance_limit}. Anda kini telah melepasi had itu.
+
+        Untuk terus menggunakan MakePlans sila aktifkan akaun anda.
+
+        Aktifkan akaun:
+        %{url}
+
+        Sebagai alternatif anda boleh log masuk ke akaun anda dan menukar kaedah pengesahan dari SMS ke e-mel dan mematikan peringatan SMS.
+      subject: Anda telah menggunakan semua kredit SMS anda
+    trial_sms_credits_balance_warning:
+      body: |-
+        Hai,
+
+        Percubaan MakePlans anda mempunyai had menghantar SMS %{sms_balance_limit}. Anda kini telah menghantar %{sms_balance}.
+
+        Sekiranya anda ingin memastikan bahawa SMS dihantar sila aktifkan akaun anda.
+        Apabila anda mencapai mesej %{sms_balance_limit}, akaun anda tidak akan lagi menghantar SMS melainkan anda mengaktifkan akaun anda.
+
+        Aktifkan akaun:
+        %{url}
+
+        Sebagai alternatif anda boleh log masuk ke akaun anda dan menukar kaedah pengesahan dari SMS ke e-mel dan mematikan peringatan SMS.
+      subject: Kredit SMS anda hampir habis
+  layouts:
+    booking_user_mailer:
+      footer: Dihasilkan secara automatik oleh MakePlans.
+  user_mailer:
+    add_user:
+      body: |-
+        Hai,
+
+        Selamat datang ke MakePlans.
+
+        Klik pautan di bawah untuk menentukan kata laluan.
+
+        %{link}
+      subject: Ditambahkan sebagai pengguna dalam MakePlans
+    export:
+      body: |-
+        Hai,
+
+        Lihat fail terlampir untuk data yang dieksport dari MakePlans.
+
+        Terima kasih kerana menggunakan MakePlans
+      subject: Eksport dari MakePlans
+    link_user:
+      body: |-
+        Hai,
+
+        Anda kini mempunyai akses ke akaun %{client} di MakePlans.
+
+        Lawati %{link} untuk log masuk.
+
+        Membuat perancangan
+      subject: Akses ke akaun di MakePlans
+    password_reset:
+      footer: Membuat perancangan
+      info: Anda atau orang lain telah meminta kata laluan MakePlans anda diset semula. Untuk menyelesaikan penetapan semula kata laluan sila klik pautan di bawah.
+      link: Tetapkan semula kata laluan MakePlans saya.
+      subject: Menetapkan semula kata laluan

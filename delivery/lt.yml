@@ -1,0 +1,72 @@
+---
+lt:
+  booking_ical:
+    summary: "%{service} ties %{client}"
+  booking_mailer:
+    cancellation:
+      header: Sveiki, %{name}
+      info: Jūsų %{title} rezervacija svetainėje %{time_range} atšaukta.
+      subject: Rezervacija atšaukta
+    confirmation:
+      header: Sveiki, %{name}
+      info: Jūs rezervavote %{title} %{time_range}.
+      link: Daugiau informacijos apie užsakymą
+      link_cancellation_info: ir atšaukimo galimybės
+      resource_info: 'Rezervacija: %{resource}.'
+      subject: Nauja rezervacija
+      subject_service: Rezervacija %{service}
+    declined:
+      body: |-
+        Sveiki,
+
+        Jūsų rezervacija nebuvo patvirtinta.
+      subject: Rezervacija atmesta
+    modification:
+      header: Sveiki, %{name}
+      info: 'Jūsų rezervacija pakeista į: %{title} %{time_range}.'
+      link: Daugiau informacijos apie užsakymą
+      link_cancellation_info: ir atšaukimo galimybės
+      resource_info: 'Rezervacija: %{resource}.'
+      subject: Rezervacija pakeista
+    request_card:
+      header: Sveiki, %{name}
+      info: Norėdami lengvai sumokėti rezervaciją, prašome pridėti savo kredito kortelės duomenis.
+      link: Pridėti mokėjimo kortelę
+      subject: Pridėkite mokėjimo informaciją
+    verification:
+      footer: 'Svarbu: rezervacija dar nebaigta. Jei nepatvirtinsite rezervacijos spustelėdami aukščiau esančią nuorodą per %{expires_in} minutes, jūsų užsakymas gali galioti.'
+      header: Norėdami užbaigti %{title} %{time_range} užsakymą, turite patvirtinti savo rezervaciją spustelėdami žemiau esančią nuorodą.
+      link: Patvirtinkite rezervaciją
+      subject: Prašome patvirtinti savo rezervaciją
+  booking_sms:
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Nauja {{booking.resource.title}} rezervacija, kurią pateikė {{booking.person.name}}. {{booking.title}} {{booking.time_range}}
+        MakePlans
+      booking_type_attendance: |-
+        Naujas {{booking.event.full_title}} {{booking.time_range}} prisiregistravimas {{booking.person.name}}.
+        MakePlans
+    cancellation: Jūsų užsakymas {{booking.booked_from}} buvo atšauktas.
+    confirmation: Jūs rezervavote {{booking.title}} {{booking.booked_from}}.
+    declined: Jūsų užklausa rezervuoti {{booking.title}} {{booking.booked_from}} nebuvo patvirtinta. Prašau, pabandykite dar kartą.
+    modification: 'Jūsų rezervacija pakeista: {{booking.title}} {{booking.booked_from}}.'
+    reminder: 'Priminimas: rezervavimas {% if booking.service != Nulis%} iš {{booking.title}} {% endif%} {{booking.booked_from}}.'
+    request_card: 'Pridėkite mokėjimo informaciją šiuo adresu: %{url}'
+    signature: |2-
+
+      {{booking.client.name}}
+    verification: "{{booking.verification_code}} yra jūsų {{booking.title}} rezervacijos patvirtinimo kodas."
+  person_mailer:
+    export:
+      subject: Duomenų eksportas
+    perishable_token:
+      body: |-
+        Norėdami prisijungti, spustelėkite toliau pateiktą nuorodą:
+
+        %{link}
+      subject: Prisijunkite prie MakePlans
+  person_sms:
+    perishable_token: "{{perishable_token}} yra jūsų autentifikavimo kodas."
+    signature: |2-
+
+      {{ Kliento vardas }}

@@ -1,0 +1,789 @@
+---
+sv:
+  layouts:
+    design:
+      activate_account_footer: "%{days_left} dagar kvar av testperioden. Klicka för att aktivera."
+      trial_expired: Testperioden är över
+  manage:
+    agenda:
+      calendar:
+        availability: Justera tillgängligheten för den här perioden
+        ignore_capacity_confirm: Det finns redan en bokning inom denna tidsram. Är du säker på att du vill spara?
+        listWeek: Lista
+        opening_hours:
+          add: "+ lägg till"
+          add_to_existing: "+ lägg till"
+          closed_all_week: Stängt hela perioden
+          dates: Datum
+          from: Från
+          open: Öppna
+          remove_existing: ta bort
+          reset: Återställ
+          title: Justera tillgänglighet
+          to: Till
+        resourceTimeGridDay: Dag (delad)
+        resourceTimelineDay: Tidslinje
+        resources: Resurser
+        services: Tjänster
+      list:
+        all_day: Hela dagen
+        awaiting_confirmation:
+          one: "%{count}-reservation väntar på godkännande."
+          other: "%{count}-reservationer väntar på godkännande."
+        busy: Upptagen
+        do_filtering: Aktivera filter
+        filter: Filtrering
+        headline: Visar kalenderhändelser
+        month: Visa månad
+        no_reservations: Inga bokningar
+        reset_filter: Nollställ filter
+        resources: Resurser
+        services: Tjänster
+        this_and_next_month: Från idag till slutet av nästa månad
+        this_and_next_week: Från idag till slutat av nästa vecka
+    billing:
+      charge:
+        charge_details: Baserat på aktuella inställningar är månadspriset %{price}.
+        charge_details_default: Månadspriset är %{price} per resurs.
+        charge_details_sms: 'Du kommer också att debiteras för att använda SMS: %{price}.'
+        process: Betala
+        processing: Vänta...
+      credit_card_form:
+        billing_info: När du anger kortinformation debiterar vi kortet varje månad baserat på de aktuella priserna på vår webbplats. Den första transaktionen kommer att genomföras omedelbart. Du kan stänga ditt konto när som helst.
+        header: Betalningsuppgifter
+        trial_expired: Din provperiod är över. Du måste aktivera ditt konto för att fortsätta använda MakePlans.
+      credit_card_info:
+        header: Ange kreditkortsuppgifter
+        submit: Spara kreditkort
+      edit_invoice_info:
+        activate_info: Fyll i det här formuläret för att slutföra kontoaktivering
+        billing_email_info: Om du vill att vi skickar fakturan till en annan e-postadress än %{email} vänligen fyll i e-postadressen här.
+        billing_name_info: Om du vill att vi ska fakturera ett annat företag än %{name} vänligen fyll i namnet här.
+        header: Fakturauppgifter
+      info:
+        add_link: Aktivera konto - Ange kortuppgifter
+        add_new_link: Vill du förnya dina kortuppgifter?
+        billing_info: Du kommer att få en faktura av oss som du måste betala manuellt
+        billing_order_ref: 'Fakturan innehåller din referens: %{billing_order_ref}'
+        change_from_invoice: Lägg in kortuppgifterna, så slipper du göra en manuell betalning varje gång vi skickar en faktura
+        charge_details: Baserat på nuvarande användning kommer vi att debitera ditt kort %{price} varje månad.
+        charge_details_default: Månadsavgift är %{price} per resurs.
+        charge_details_sms: 'Du kommer också att debiteras för SMS-användning: %{price}.'
+        current_info: Dina kortuppgifter lagras säkert hos vår betalningspartner Stripe. Ditt %{brand} sparade kortnummer slutar på %{last_4} och går ut %{expire_month}/%{expire_year}.
+        demo_ends_at: Kontot inaktiveras automatiskt %{demo_ends_at}.
+        edit_info_link: Vill du ändra dina faktureringsuppgifter?
+        edit_link: Vill du förnya dina kortuppgifter?
+        email_recipent: Vi kommer att skicka fakturan till %{email}.
+        info_header: 'Dina faktureringsuppgifter:'
+        paid_until: Kontot betalas fram till %{paid_until}.
+        pause: Pausa kontot efter att den betalade perioden har avslutats.
+        pause_confirm: Är du säker på att du vill pausa kontot? Kontot inaktiveras automatiskt %{paid_until}.
+        reactivate: Ditt konto är ett demo-konto, du måste återaktivera kontot för att använda MakePlans.
+        reactivate_link: Återaktivera konto
+        sms_credits_available: 'SMS-saldot är: %{credits}.'
+        vat_no: Registrerat momsnummer är %{vat_no}
+        vat_no_missing: Inget momsregistreringsnummer inlagt.
+      paying_account_required:
+        activate_account: Aktivera ditt konto nu.
+        info: Denna funktion kräver ett aktiverat konto.
+      processing:
+        activated: Ditt konto är nu aktiverat :) Tack för att du använder MakePlans.
+        error: Vi kunde inte bekräfta att betalningen gjordes. Kontakta Kundservice.
+        info: Vänta medan vi debiterar ditt kreditkort. Det kan ta upp till en minut. Du kommer att få ett mejl från oss när processen är klar.
+    bookings:
+      create_recurring:
+        headline: Genererar %{count} bokningar...
+        link: Visa lista
+      destroy_recurring:
+        headline: Alla upprepade bokningar inom detta mönster har tagits bort
+      fiken:
+        delayed_info: Det kan ta en stund innan fakturan skapas i Fiken. Försök inte skapa en faktura igen om information från Fiken inte syns i MakePlans.
+        header: Kontakter nu Fiken ...
+        to_booking: Visa reservation
+      form_appointment:
+        add_reminder_sms: Skicka påminnelse på SMS
+        confirmation_send_email: Skicka bekräftelse på e-post
+        confirmation_send_sms: Skicka bekräftelse på SMS
+        customer_info: Kunduppgifter
+        email: E-post
+        first_available: Först tillgänglig
+        headline_create: Lägg till ny bokning
+        headline_create_recurring: Skapa ny reservation
+        headline_edit: Ändra bokning
+        headline_new: Lägg till ny bokning
+        ignore_capacity: Spara även om upptagen
+        modification_send_email: Skicka ändring på e-post
+        modification_send_sms: Skicka ändring på SMS
+        no_service: Ingen tjänst vald
+        notification_send_email: Skicka avisering via e-post
+        notification_send_sms: Skicka avisering via SMS
+        person_create_info: Sök efter en befintlig kund eller skapa en ny genom att ange namn.
+        person_none_selected: Ingen kund vald
+        recurring_enabled: Upprepa med mönster
+        recurring_member: Denna reservation är en del av ett återkommande mönster.
+        reservation_type_other: Upptagen
+        reservation_type_person: Kundbokning
+        send_confirmation: 'Bekräftelse:'
+        send_modification: 'Förändra:'
+        send_notification: 'Lägga märke till:'
+        send_reminder: 'Påminnelse:'
+        sms: SMS
+      form_attendance:
+        add_reminder_sms: Skicka påminnelse på SMS
+        confirmation_send_email: Skicka bekräftelse på e-post
+        confirmation_send_sms: Skicka bekräftelse på SMS
+        email: E-post
+        headline_create: Lägg till deltagare
+        headline_edit: Ändra bokning
+        headline_new: Lägg till deltagare
+        modification_send_email: Skicka ändring på e-post
+        modification_send_sms: Skicka ändring på SMS
+        notification_send_email: Skicka avisering via e-post
+        notification_send_sms: Skicka avisering via SMS
+        person_create_info: Sök efter en befintlig kund eller skapa en ny genom att ange namn.
+        person_none_selected: Ingen kund vald
+        send_confirmation: 'Bekräftelse:'
+        send_modification: 'Förändra:'
+        send_notification: 'Lägga märke till:'
+        send_reminder: 'Påminnelse:'
+        sms: SMS
+      izettle:
+        close_info: Stäng det här fönstret för att återgå till bokningen.
+        error: 'Fel från iZettle: %{error}'
+        result_header: iZettle
+        success: Betalning registrerad.
+      show:
+        booked_from: Från
+        booked_to: Till
+        count: Antal
+        fiken:
+          create_invoice: Skapa en faktura i Fiken
+          created: En faktura har skapats i Fiken
+          open_invoice: Öppna faktura i Fiken
+          processing: En faktura skapas i Fiken. Det kan ta upp till 1-2 minuter.
+        izettle:
+          pay: Ta emot betalning med iZettle
+          progress_link: Klicka här för att fortsätta.
+        log: Historik
+        paid_with:
+          braintree: Betalas med Braintree
+          stripe: Betalas med Stripe
+          vipps: Vipps
+        person:
+          address: Adress
+          email: E-post
+          phone_number: Telefonnummer
+        recurring_member: Denna reservation är en del av ett återkommande mönster.
+        refund:
+          stripe: Rand
+        request_card:
+          processing: Betalningslänken skickas till kunden
+          send: Skicka betalningslänk till kund
+        send_sms: Skicka sms
+        show_in_calendar: Visa i kalendern
+        stripe:
+          pay: Betala med Stripe
+          processing: Betalning sker på Stripe. Det kan ta upp till 1-2 minuter.
+        tfso:
+          create_invoice: Skapa beställningar i 24SevenOffice
+          open_invoice: Öppna order i 24SevenOffice
+          processing: Beställningar skapas i 24SevenOffice. Det kan ta upp till 1-2 minuter.
+        vipps:
+          processing: Behandlar
+          refund: Återbetalat belopp
+        visma_eaccounting:
+          create_invoice: Skapa erbjudanden i Visma eAccounting
+          created: Erbjudanden har skapats i Visma eAccounting
+          processing: Erbjudanden skapas i Visma eAccounting. Det kan ta upp till 1-2 minuter.
+      show_recurring:
+        delete_all: Radera alla
+        headline: Alla upprepade bokningar inom detta mönster
+      state_changer:
+        state: Status
+      unconfirmed:
+        headline: Lista över obekräftade reservationer
+        no_reservations: Inga obekräftade reservationer hittades
+      widget:
+        booked_from: Från
+        booked_to: Till
+        description: Beskrivning
+        person:
+          address: Adress
+          email: E-post
+          phone_number: Telefonnummer
+      widget_list:
+        busy: Upptagen
+        no_bookings: Inga befintliga bokningar på %{start}
+        no_bookings_range: Inga befintliga bokningar från %{start} till %{end}
+    categories:
+      blank:
+        get_started: Du har för närvarande inga kategorier. Alla tjänster visas alltså i en lista på bokningssidan. Om du vill kategorisera dina tjänster kan du skapa en ny kategori.
+        header: Inga kategorier har lagts till
+        info: Om du har många tjänster kan du kategorisera dem på flera nivåer. Kategorier visas på bokningssidan så att kunden väljer kategorin innan tjänsten inom den valda kategorin visas. Det är möjligt att visa en tjänst i flera kategorier.
+      form:
+        has_services: Visar följande tjänster
+        no_parent_id: ''
+      index:
+        header: Kategorier
+      list_menu:
+        list: Kategorier
+      show:
+        custom_data: 'Anpassade fält:'
+        has_services: 'Visar följande tjänster:'
+    client:
+      api:
+        enable: Aktivera API
+        enable_warning: Är du säker på att du vill aktivera API? API-nyckeln ger full programmatisk tillgång till ditt konto.
+        info_html: Kontakta kundtjänst om du behöver hjälp. Dokumentation finns på <a href="https://developer.makeplans.net">https://developer.makeplans.net</a>.
+        not_enabled: Inte aktiverad
+      cancel:
+        confirm_message: Sista chansen. Är du säker på att du vill ta bort kontot med all din data?
+        disable_link: Ja, jag vill att alla mina data ska raderas.
+        header: Är du säker på att du vill ta bort ditt konto?
+        i_love_makeplans: Nej, jag fortsätter att använda MakePlans.
+        info: Om du tar bort ditt konto kommer all din information att raderas. Är du säker på att du vill göra det här?
+        pause: Kanske vill du lägga ditt konto i spärr? Du behöver inte betala varje månad, men kontot är fortfarande tillgängligt när du behöver använda MakePlans igen vid ett senare tillfälle.
+        pause_link: Du kan göra det på betalningssidan.
+      configuration:
+        header: Konfigurera MakePlans
+        intro: Här kan du konfigurera MakePlans och anpassa det för dig. Du kan lägga till tjänster och kategorier som du erbjuder på bokningssidan, anpassa öppettider, ändra utgående meddelanden (SMS och e-post), lägga till fler användare och anpassa många andra inställningar i MakePlans.
+        menu_info: Välj i menyn till vänster. Om du har några frågor angående hur man gör ändringar, vänligen kontakta kundtjänst.
+        trial_info: Detta är ett demo-konto - klicka här för att aktivera
+      edit:
+        custom_messages_info_html: Du kan infoga relevant information här. För mer information, vänligen gå till <a href="https://github.com/makeplans/makeplans-custom-messages">https://github.com/makeplans/makeplans-custom-messages</a>.
+      edit_booking_site:
+        booking_form_info_html: Kontakta kundtjänst om du behöver hjälp. Dokumentation finns på <a href="https://github.com/makeplans/makeplans-custom-forms">https://github.com/makeplans/makeplans-custom-forms</a>.
+        booking_site_info_html: Din bokningssida finns tillgänglig på %{url}.
+        cancellation: Annullering
+        cancellation_info: Avbokning kan endast göras före avbokningsfristen. Förbetalda bokningar kan inte annulleras.
+        cancellation_period_info: 'Ange på engelska. Tiden är relaterad till bokningens starttid. Exempel: ''24 timmar före ''(endast möjligt att avboka 24 timmar innan bokningen börjar). Om ingen avbokningsfrist anges kan kunden avbryta tills bokningen börjar.'
+        first_bookable_period_info: 'Skriv på engelska. Exempel: ''in two hours'' (första lediga tid är om två timmar) eller ''08:00 tomorrow'' (första lediga tiden är kl. 8:00 imorgon bitti).'
+        future_bookable_period_info: 'Skriv på engelska. Exempel: ''in two months'' (endast möjligt att boka de kommande två månaderna) eller ''Friday at midnight'' (endast möjligt att boka före midnatt på fredag).'
+        header: Ändra bokningssidan
+        interval_rounding:
+          default: Systemstandard (Närmaste femte minuten)
+          five: Närmaste femte minuten
+          halfhour: Närmaste halvtimmen
+          hour: Närmaste heltimmen
+          none: Ingen avrundning (rekommenderas inte)
+          quarter: Närmaste kvarten
+          ten: Närmaste tionde minuten
+          twenty: Närmaste tjugonde minuten
+        remove_logo: Ta bort loggan
+        settings:
+          allow_person_cookie: Tillåt möjligheten att komma ihåg verifierade kunder till nästa besök med hjälp av cookies.
+          google_tag_manager: Google Tag Manager-behållar-ID
+          select_resource: Extra steg för val av resurser
+        verification_methods:
+          email: E-post
+          facebook: Tillåt även verifikation med Facebook Connect.
+          none: Ingen verifikation (rekommenderas inte)
+          sms: SMS (rekommenderas)
+      edit_communication:
+        email: E-post
+        header: Ändra utgående kommunikation
+        settings:
+          custom_email_sending: Skriv över e-postmeddelanden med innehållet nedan (annars läggs innehållet till i standardmallen för e-post)
+          custom_sms_sending: Åsidosätt hela SMS med innehållet nedan (annars kommer innehållet bara att anges i den vanliga SMS-mallen)
+          dont_include_icalendar_attachment: Ta inte med iCalendar-bilagor
+        sms: SMS
+      edit_company:
+        delete_account_html: Vill du ta bort ditt konto? <a href="%{link}">Fortsätta</a>
+        delete_label: Radera konto
+        domain_info: Det är möjligt att använda din egen URL, till exempel booking.DINDOMÄN.com, vänligen kontakta kundtjänst för mer information.
+        header: Ändra kontouppgifter
+        payment_provider:
+          info_html: Det är möjligt att kräva förskottsbetalning på bokningssidan genom att använda någon av de integrerade betalningsleverantörerna. Vi rekommenderar <a href="https://stripe.com">Stripe</a> som är en bra tjänst som du snabbt kan komma igång med, utan några fasta avgifter. Du måste också ange den information som krävs för vald betalningsleverantör i "Integrationer".
+          none: Ingen
+        purge_data_info: 'Denna funktion raderar automatiskt gammal personlig information (kunder och bokningar). Ange på engelska, då kommer raderingsdatumet att vara relativt det aktuella datumet. Ex.: ''6 månader sedan'' eller ''2 år sedan''.'
+        subdomain_info: Din unika adress (URL) där dina kunder kan göra bokningar
+      edit_fields:
+        appointment_form_info: Detta formulär är endast för manuell inmatning av bokningar. För att ändra bokningsformuläret på bokningssidan, vänligen gör det i inställningarna för 'Bokningssida'. Om bokningsformuläret har anpassade fält, ska även dessa inkluderas här.
+        booking_form_info: Anpassade bokningsfält gäller även för det offentliga bokningsformuläret. Vänligen gå till inställningar för bokningssidan för att göra ändringar.
+        custom_form_info_html: Kontakta kundtjänst om du behöver hjälp. Dokumentation finns på <a href="https://github.com/makeplans/makeplans-custom-forms">https://github.com/makeplans/makeplans-custom-forms</a>.
+        header: Redigera anpassade fält
+      edit_person_notifications:
+        automatic_messages: Automatiska utskick (administrationssystem och API)
+        cancellation_email: Skicka ett mejl när du avbryter en bokning
+        cancellation_sms: Skicka SMS när du avbryter en bokning
+        confirmation_email: Skicka ett e-postmeddelande när du skapar en bokning
+        confirmation_sms: Skicka SMS när du skapar en reservation
+        default: Baseras automatiskt på verifieringsmetod
+        default_reminder_sms: Baseras automatiskt på inställningen för påminnelser
+        disable: Inaktivera
+        header: Redigera aviseringar
+        modification_email: Skicka ett e-postmeddelande när du ändrar en bokning
+        modification_sms: Skicka ett SMS när du ändrar en bokning
+        outgoing_messages_info: 'MakePlans föreslår att du skickar e-post / SMS (vad du har ställt in som verifieringsmetod) när du skapar, ändrar eller avbryter en bokning. Vissa utskick, t.ex. avbokning av bokningar, sker också automatiskt. Du kan inaktivera automatiska utskick (t.ex. när du flyttar en bokning i en kalender, avbryter eller skapar en reservation med API: n) eller inaktiverar förslag för att skicka in formulär genom att ändra inställningarna nedan. OBS! Detta gäller inte bokningssidan. Bokningssidan skickas alltid ut automatiskt baserat på verifieringsmetod.'
+        reminder_sms: Skickar påminnelse via SMS
+        reminder_sms_info: Avsändaren är "MakePlans". Kontakta kundtjänst för att byta till en annan avsändare.
+        sms_reminder_time_info: 'SMS skickas ut kl 12:00 dagen före bokningstiden. Fyll i fältet nedan om du vill skicka ut vid en annan tidpunkt. Ange på engelska. Ex: "två timmar före" (SMS skickas ut två timmar före bokning) eller "08:00 igår" (8 på morgonen dagen före bokning).'
+      edit_user_notifications:
+        approvement_email: E-post av en ny bokningsförfrågan
+        automatic_messages: Automatiska utskick
+        default: Aktiverad (standard)
+        disable: Inaktivera
+        email: E-post
+        header: Redigera aviseringar
+        mail_notification_info: För att skicka varningar till flera personer, använd semikolon för att separera e-postadresser.
+        notification_email: Skicka ett mejl när du gör en ny bokning
+        notification_sms: Skicka SMS med ny bokning
+        outgoing_messages_info: Om du har ställt in nya bokningar som ska godkännas av administratören kommer MakePlans automatiskt att meddela dig via e-post om nya bokningsförfrågningar. Om du inte vill ha en sådan anmälan eller om godkännande sker automatiskt via ett externt system (API) kan du inaktivera detta nedan.
+        sms: SMS
+      edit_ux:
+        calendar: Kalender
+        header: UX
+        info: Dessa är endast visuella inställningar.
+        settings:
+          calendar_hide_weekends: Dölj helger
+          calendar_slot_duration: Varaktighet för lediga tider
+          calendar_slot_label_interval: Intervall för lediga tider
+      export_info:
+        data_types:
+          bookings: Bokningar
+          events: Händelser
+          people: Kunder
+        executed: Exportfilen skickas nu till din e-postadress.
+        header: Exportera data från MakePlans
+        info: Du kommer att få ett e-postmeddelande med en bifogad CSV-fil.
+      import:
+        header: Importera data
+        info: Det är möjligt att importera data, som exempelvis kunder, i MakePlans. Kontakta kundtjänst för mer information.
+      promote:
+        booking_button_html_info: För att infoga din bokningsknapp på din webbplats, vänligen kopiera HTML-koden nedan. Om du behöver hjälp, vänligen kontakta din webbdesigner.
+        booking_button_html_preview: Förhandsvisning av bokningsknapp
+        booking_button_text: Knapptext
+        booking_button_text_default_value: Onlinebokning
+        booking_iframe: Iframe för bokningssidan
+        booking_link: Länk för bokningssidan
+        booking_link_title: Onlinebokning og eventregistrering
+        booking_site_info_html: Din bokningssida finns tillgänglig på %{url}.
+        generate_booking_button: Generera bokningsknapp för din webbplats
+        header: Marknadsför din bokningssida
+      tools:
+        header: Olika funktioner för ditt konto
+        link:
+          purge_data: Ta bort gamla data
+          sms_all: Skicka SMS till alla dina kunder
+    events:
+      create_recurring:
+        headline: Genererar %{count} händelser...
+        link: Visa lista
+      destroy_recurring:
+        headline: Alla upprepade händelser inom detta mönster har tagits bort
+      email_participants:
+        copy_info: 'Alternativt kan du kopiera adresserna nedan och klistra in dem i fältet blindkopia i ett nytt e-postmeddelande:'
+        headline: Skicka e-post till alla deltagare
+        open_email_client: Öppna e-postprogram
+      form:
+        headline_create: Lägg till ny händelse
+        headline_create_recurring: Skapa ett nytt evenemang
+        headline_edit: Redigera händelser
+        headline_new: Lägg till ny händelse
+        recurring_enabled: Upprepa med mönster
+        recurring_member: Denna händelse är en del av ett upprepat mönster.
+      show:
+        attendants_html:
+          one: en bokning
+          other: 'bokningar: <strong>%{count}</strong>'
+          zero: inga bokningar
+        download_attendance_csv: Ladda ner deltagarlista som CSV
+        email_confirm: Deltagarlistan skickas till dig via e-post. Vill du fortsätta?
+        fully_booked: Evenemanget är fullbokat
+        recurring_member: Denna händelse är en del av ett upprepat mönster.
+        send_email_to_all: Skicka e-post till alla deltagare
+        send_sms: Skicka sms
+        show_in_calendar: Visa i kalendern
+        show_inactive_html: Visar inte %{count} inaktiva bokningar. <a href="%{href}">Vill du visa dessa?</a>
+        show_only_active_html: Listan inkluderar %{count} inaktiva bokningar. <a href="%{href}">Vill du endast visa aktiva bokningar?</a>
+        signup_link: Registreringslänk
+        sms_all_participants: Skicka SMS till alla deltagare
+      show_recurring:
+        delete_all: Radera alla
+        headline: Alla upprepade händelser inom detta mönster
+      widget:
+        capacity_details:
+          one: En registrerade sig av totalt %{capacity} möjligt.
+          other: "%{count} angiven av totalt %{capacity} möjligt."
+          zero: Ingen registrerade sig. %{capacity} möjligt.
+        end: Slutar
+        start: Startar
+      widget_list:
+        no_events: Inga befintliga händelser på %{start}
+        no_events_range: Inga befintliga händelser från %{start} till %{end}
+    integrations:
+      account_connected: Ansluten till det här kontot.
+      braintree:
+        cse_key: Cse-tangent
+        environment: Miljö
+        merchant_id: Handlare
+        private_key: Privat nyckel
+        production: Produktion
+        public_key: Offentlig nyckel
+        sandbox: Sandlåda
+      campaign_monitor:
+        api_key: API-nyckel
+        connect_info: 'Välj e-postlista där nya kunder läggs till som prenumeration:'
+        list_id: Lista över ID
+      confrere:
+        client_id: Klient ID
+        client_secret: Kundhemlighet
+        connect_info: Ansluten till Confrere
+        setup_info: En resurs i MakePlans måste vara ansluten till en användare i Confrere för att integrationen ska fungera.
+      connect_error: Det går inte att slutföra integrationen. Var vänlig ta bort den och försök igen.
+      connected: Den här tjänsten är ansluten.
+      dokus:
+        account: konto
+        password: Lösenord
+        username: Användarnamn
+      extensor:
+        activate: Börja använda Extensor-integration
+        activate_settings_2: Aktivera inställningar för Extensor Online-bokning version 2
+        activate_settings_3: Aktivera inställningar för Extensor onlinebokning version 3
+        activate_settings_4: Aktivera Extensor Online-bokningsversion 4-inställningar
+        info: För att möjliggöra synkronisering med Extensor krävs installation av Extensor Online-bokning. Klicka på länken nedan för att starta processen. Du kommer att kontaktas av Extensor.
+        reactive_settings: Återaktivera inställningarna för onlinebokning för Extensor.
+        version: MakePlans är inställd på att fungera med version %{version} av Extensor Online Booking.
+      fakturo:
+        password: Lösenord
+        username: Användarnamn
+      fiken:
+        active: Aktiva
+        api_not_activated: Du måste aktivera API-modulen i Fiken.
+        connected_bank_account: bankkonto
+        connected_company: Företag
+        email: Användarnamn (e-post)
+        income_account: Redovisningskonto
+        password: Lösenord
+        select_bank_account: Välj det bankkonto som ska visas för betalning på fakturan
+        select_company: Välj företag
+        service_linked: Ansluten till produkten i Fiken
+        service_links: 'Varje tjänst måste vara länkad till en produkt i Fiken för att det ska vara möjligt att skapa en faktura. OBS: Priset erhålls från Fiken - inte från MakePlans. Du måste se till att priset i båda systemen är identiskt.'
+        service_not_linked: INTE ansluten till produkten i Fiken
+        vat_type: Moms typ
+      headline: Integration med %{integration}
+      highrise:
+        account: Subdomän (DITTKONTO.highrisehq.com - fyll endast i DITTKONTO)
+        connect_info: 'Välj konto där nya kunder läggs till:'
+        password: API-nyckel
+      izettle:
+        active: Aktiva
+        info: För att använda iZettle vänligen ange ett pris för den tjänst du erbjuder. Det blir då möjligt att klicka på "betala med iZettle" på en bokning.
+      mailchimp:
+        account: Lista över ID
+        connect_info: 'Välj e-postlista där nya kunder läggs till som prenumeration:'
+        password: API-nyckel
+      mailerlite:
+        api_key: API-nyckel
+        select_group: Välj gruppen till vilken nya kunder överförs i MailerLite
+      mailmojo:
+        account: Lista över ID
+        username: Användarnamn
+      not_authenticated: Det gick inte att ansluta. Kontrollera användarnamn och lösenord.
+      oauth_connect: Anslut till tjänst
+      quickpay:
+        environment: Miljö
+        md5_secret: MD5 Secret
+        merchant_id: Merchant ID
+        production: Produktion
+        test: Testa
+      selected_option: Vald
+      stripe:
+        payment_info: MakePlans drar av en transaktionsavgift på %{application_fee_percent}% för alla transaktioner.
+        receipt_email: Skicka kvitto till kunden från Stripe
+      tfso:
+        add_to_crm_manually: Lägg till ny kund till CRM manuellt
+        distribution_method: 'Distributionsmetod:'
+        distribution_methods:
+          EMail: E-post
+          ElectronicInvoice: EHF
+          Print: Utskrift
+          Unchanged: Oförändrad
+        invoice_payment_time: 'Betalningstid:'
+        invoice_state: 'Orderstatus:'
+        invoice_states:
+          Draft: Förslag
+          ForInvoicing: För fakturering
+          Invoice: Faktureras
+          Offer: Erbjudande
+        password: API-lösenord
+        service_linked: Ansluten till produkten i 24SevenOffice
+        service_links: 'Varje tjänst måste vara länkad till en produkt i 24SevenOffice för att kunna skapa en faktura. OBS: Priset erhålls från 24SevenOffice - inte från MakePlans. Du måste se till att priset i båda systemen är identiskt. Gå till en tjänst och definiera produkt-ID från 24SevenOffice.'
+        service_not_linked: INTE ansluten till produkten i 24SevenOffice
+        type_groups: 'Försäljningstyp för beställning:'
+        username: API-användarnamn
+      vipps:
+        client_id: Klient ID
+        client_secret: Kundhemlighet
+        merchant_serial_nr: Handlarens serienummer
+        vipps_subscription_key: Vipps prenumerationsnyckel
+      visma_eaccounting:
+        active: Aktiva
+        connect_info: Länkat till konto %{name}
+        connected_payment_id: 'Betalningsvillkor: %{name}'
+        customer_attributes_info: 'OBS: Visma eAccounting kräver en postnummer och postadress för att en kund ska kunna skapas. Om dessa värden inte fylls i går det inte att skapa en faktura från en bokning.'
+        select_terms_of_payment: 'Välj standardbetalningsvillkor för nya kunder:'
+        service_linked: Ansluten till produkten i Visma eAccounting
+        service_links: 'Varje tjänst måste vara länkad till en produkt i Visma eAccounting för att kunna skapa en faktura. OBS: Priset erhålls från Visma eAccounting - inte från MakePlans. Du måste se till att priset i båda systemen är identiskt.'
+        service_not_linked: INTE ansluten till produkten i Visma eAccounting
+      zapier:
+        info_html: För att ansluta MakePlans till Zapier måste du <a href="%{url}" target="_blank">skapa en ny Zap i Zapier</a> .
+      zoom:
+        connect_info: Ansluten
+    people:
+      form:
+        merge_action: Kombinera dessa två kundprofiler
+        merge_action_email: Den här e-postadressen är redan lagrad på en annan kund. Vill du kombinera dessa kunder så att %{email} blir den aktuella e-postadressen?
+        merge_action_info: Alla bokningar behålls men en kundprofil tas bort. Du kan välja vilken kundinformation som är giltig.
+        merge_action_national_id_no: Detta födelse nummer är redan lagrat på en annan kund. Vill du kombinera dessa kunder så att %{national_id_no} blir det aktuella födelsenumret?
+        merge_action_phone_number: Detta telefonnummer är redan lagrat på en annan kund. Vill du kombinera dessa kunder så att %{phone_number} blir det aktuella telefonnumret?
+        merge_button: Kombinera och spara
+        merge_info: 'Använd istället:'
+      index:
+        delete_warning: Är du säker på att du vill ta bort %{person}?
+        filter: Filtrering
+        headline: Kunder
+        send_sms: Skicka sms
+      show:
+        bookings_for: Bokningar för %{name}
+        card_saved_with:
+          stripe: Betalkort lagrat på Stripe
+        change_tfso_customer: Ändra 24SO kundnummer.
+        export: Skicka export av data till kund
+        export_executed: Exportfilen skickas nu till kunden.
+        no_reservations: Hittade inga bokningar
+        send_sms: Skicka sms
+      tfso_connect_company:
+        create: Skapa ett nytt företag i 24SevenOffice
+        header: Anslut till kund från 24SevenOffice
+        search: Eller sök bland befintliga kunder
+        search_matched_headline: Hittade befintliga kunder i 24SevenOffice CRM. Tryck på namn för att ansluta denna kund i MakePlans till kund i 24SevenOffice CRM.
+        search_query: Sök efter namn
+        stream_placeholder: Söker i 24SevenOffice. Vänta. Det kan ta upp till 1-2 minuter.
+    profile:
+      activate_rotp:
+        enable_rotp: Aktivera 2FA
+        generate_header: Aktivera tvåstegsverifiering
+        generate_info: Skanna QR-koden nedan med din mobiltelefon med Google Authenticator eller någon annan 2FA-app.
+        verify_code: 'Ange verifieringskod:'
+      deactivate_rotp:
+        deactivate_rotp: Inaktivera 2FA
+        verify_code: 'Ange verifieringskod:'
+      edit_password:
+        verify_code: 'Ange verifieringskod:'
+      show:
+        change_password: Byt lösenord
+        rotp:
+          disable_link: Inaktivera tvåstegsverifiering
+          disable_warning: Är du säker på att du vill inaktivera tvåstegsverifieringen?
+          enable_link: Aktivera tvåstegsverifiering
+          enable_warning: Om du aktiverar tvåstegsverifiering måste du alltid kontrollera varje inloggning med en kod från din mobilapp. Är du säker på att du vill aktivera den här funktionen?
+          regenerate_link: Förnya tvåstegsverifieringsnyckeln
+          regenerate_warning: Om du förnyar tvåstegsverifieringsnyckeln kommer den nuvarande nyckeln att sluta fungera och du kommer behöva konfigurera din app med den nya koden. Är du säker på att du vill fortsätta?
+          submit_button: Logga in
+          verification_code_header: Tvåstegsverifiering
+    purge_data:
+      destroy:
+        header: Gamla data kommer nu att raderas
+        processing: Data kommer nu att raderas. Det kan ta några minuter innan operationen är klar.
+      index:
+        header: Ta bort gamla data
+        info: 'Den här funktionen tar bort gammal personlig information. Du väljer vilket datum du vill ansöka om borttagning. Följande data kommer att raderas:'
+        not_deleted: Radering av data utlöser inte externa integrationer.
+        purge: RADERA DATA
+        purge_1: Alla bokningar med slutdatum före angivet datum.
+        purge_2: Alla kunder som inte har ändrats före det angivna datumet och som inte har bokat efter det angivna datumet.
+        purge_3: All historik relaterad till denna information kommer också att raderas.
+        purge_before: Radera data före datum
+        warning: Är du säker på att du vill ta bort all data före det angivna datumet? Det är inte möjligt att ångra denna åtgärd.
+    reports:
+      stats:
+        all: Alla resurser
+        booking_word: bokning
+        bookings: bokningar
+        bookings_per_day: Bokningar per dag
+        day: Dag
+        no_reservations: Inga bokningar
+    resources:
+      form:
+        availability: Standardläge för tillgänglighet
+        external_info:
+          confrere_user_id: Bekräfta användare
+          zoom_user_id: Zooma användare
+        from: från
+        mail_notification_info: För att skicka varningar till flera personer, använd semikolon för att separera e-postadresser.
+        offers: Erbjuder följande tjänster på bokningssidan
+        to: till
+      index:
+        header: Resurser
+      list_menu:
+        list: Resurser
+      show:
+        availability: 'Standardläge för tillgänglighet:'
+        capacity: 'Kapacitet:'
+        closed: Ej tillgängligt för online bokning av möten.
+        custom_data: 'Anpassade fält:'
+        ical:
+          activated_html: Tillgång till den här resursen med iCalendar är aktiverat. Länken till iCalendar-feed är %{link}
+          disable: Inaktivera iCalendar-feed
+          enable: Aktivera iCalendar-feed
+          info: Med iCalendar-feed kan du visa möten från resursen i MakePlans i andra kalenderprogram, som exempelvis Microsoft Oulook, Google Calendar, iPhone eller Android. Skrivskyddad, alla ändringar måste göras i MakePlans.
+          not_activated: Inte aktiverad
+        icalfeed: 'iCalendar-feed:'
+        offers: 'Erbjuder följande tjänster på bokningssidan:'
+    services:
+      custom_communication:
+        custom_communication_info: Här kan du ange eget innehåll som skickas ut med varje bokning av denna händelsetyp. Dessa texter kommer då att skriva över standardtexterna under "Kommunikation". Tomma fält kommer använda standardtexter.
+        custom_communication_show: Visa innehåll för utgående kommunikation
+      custom_form:
+        custom_form_info_html: Här kan du ange ett anpassat formulär för bokning av denna tjänst. Formuläret åsidosätter sedan standardformuläret som definierats under "Bokningssida". Dokumentation finns på<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> , eller kontakta kundtjänst för hjälp.
+        custom_form_show: Visa anpassat formulär
+      form_appointment:
+        booking_site_settings: Inställningar för bokningssidan
+        days: dagar
+        interval_rounding:
+          default: Standardinställning för konto
+          five: Närmaste femte minut
+          halfhour: Närmaste halvtimme
+          hour: Närmaste heltimme
+          none: Ingen avrundning (rekommenderas inte)
+          quarter: Närmaste kvart
+          ten: Närmaste tionde minut
+          twenty: Närmaste tjugonde minut
+        max_slots_default: Obegränsat
+        minutes: minuter
+        next_interval_default: Tjänstens varaktighet
+        offered_by: Erbjuds av följande resurser
+        payment: Betalning
+        settings:
+          hide_all_available: Måste välja specifik resurs ('visa alla tillgängliga' är dolda)
+          hide_resources: Göm knappen för att välja resurs (kommer slumpmässigt att välja bland de tillgängliga resurser)
+          hide_slot_end: Göm sluttid
+          select_resource: Extra steg för val av resurser
+      form_attendance:
+        booking_site_settings: Inställningar för bokningssidan
+        days: Dagar
+        default_values: Inställningarna nedan är standardvärden som kan ändras för varje händelse du skapar.
+        minutes: Minuter
+        offered_by: Kan erbjudas av följande resurser
+        payment: Betalning
+      index:
+        appointment:
+          header: Tjänster
+        attendance:
+          header: Händelsetyper
+        days: dagar
+        header: Tjänster
+        minutes: minuter
+      integrations:
+        external_info:
+          fiken_product_href: Anslut till produkten i Fiken
+          tfso_product_id: 24SevenOffice-produkt-id
+          visma_eaccounting_article_id: Anslut till produkten i Visma eAccounting
+      list_menu:
+        list_appointment: Tjänster
+        list_attendance: Händelsetyp
+      show:
+        custom_data: 'Anpassade fält:'
+        days: dagar
+        description: 'Beskrivning:'
+        interval: 'Bokningens längd:'
+        minutes: minuter
+        no_providers: 'OBS: Denna tjänst erbjuds inte av några resurser och visas därför inte på bokningssidan. Klicka här för att lägga till leverantörer.'
+        not_in_category: OBS! Du använder kategorier på bokningssidan och den här tjänsten läggs inte till i en kategori. Denna tjänst visas därför inte på bokningssidan. Klicka här för att hantera kategorier.
+        offered: 'Erbjuds av följande resurser:'
+        price: 'Pris:'
+        show_on_booking_site: Öppna bokningssidan för den här tjänsten
+    setup:
+      appointment_services:
+        add: Lägg till fler
+        footer_html: En tjänst för <strong>tidsbokning</strong> har en fast varaktighet, till exempel 30 minuter, och kan bokas inom fasta öppettider, till exempel 9:00–15:00 måndag–fredag. Exempelvis konsultation och uthyrning.
+        header_html: Toppen, då kör vi!<br>Börja med att lägga till dina tjänster för tidsbokning.
+        minutes: minuter
+        submit: Fortsätt
+      attendance_services:
+        add: Lägg till fler
+        footer_html: "<strong>Deltagande</strong> på event, kurser eller lektioner. Sker vid en särskild tidpunkt, exempelvis den 14 september från kl. 15:00–19:00 eller varje tisdag kl. 19:30. Datumet och tiden kommer att specificeras senare."
+        header_html: Toppen, då kör vi!<br>Börja med att lägga till tjänster för deltagande.
+        submit: Fortsätt
+      completed:
+        header_html: Grattis - din bokningssida är nu live!
+      completed_appointment:
+        info_html: Din bokningssida är nu tillgänglig på %{href}. Här kan dina kunder göra bokningar online. Du har även fått ett e-postmeddelande med denna information. Du kan nu även manuellt lägga till möten i din kalender.
+        to_calendar: Skicka mig till kalendern
+      completed_attendance:
+        info_html: Din bokningssida kommer att finnas tillgänglig på %{href}. Men först måste du lägga till det första eventet som kommer att vara tillgängligt för bokning.
+        new_event: Okej, skapa mitt första event
+      resources:
+        add: Lägg till fler
+        footer_html: 'En resurs kan vara en anställd, ett rum eller ett objekt. Resursens titel är den anställdes namn eller ett givet namn som till exempel ''Lilla mötesrummet'' eller ''Projektor #4''. Varje bokning hör till en kalender.'
+        from: från
+        header_html: Nästan klart!</br>Lägg bara till några resurser så är du igång.
+        save: Spara
+        submit: Klart!
+        to: till
+        working_hours: Öppettider
+        working_hours_header: ''
+      start:
+        add_services_for: Ange tjänster för
+        appointments: Tidsbokning
+        appointments_info_html: Exempelvis konsultation hos kiropraktor, hårklippning, massage, uthyrning eller andra tjänster med fasta öppettider.
+        attendances: Deltagande
+        attendances_info_html: För att delta i event, kurser, lektioner eller andra deltaganden vid bestämda tider. Antingen en gång eller till exempel återkommande varje tisdag.
+        footer_html: En tjänst är något du erbjuder dina kunder och kommer att visas på bokningssidan. Ange tjänster för tidsbokning som har fasta öppettider eller för deltagande vid en viss tidpunkt.
+        header_html: Välkommen till MakePlans.<br>Börja med att lägga till dina tjänster
+    shared:
+      recurring:
+        enabled: Upprepa flera gånger med ett mönster
+        freq:
+          monthly: En gång i månaden
+          weekly: Varje vecka
+          yearly: Årlig
+        freq_label: Period
+        interval_label: Frekvens (vardera)
+        length:
+          count: Efter nummer
+          until: Före datum
+        length_label: Slutar
+    sms:
+      create:
+        header: SMS skickat
+        sms_sent: 'Följande meddelande skickades till %{recipents_count}-mottagare:'
+        to_booking: Tillbaka till bokningen
+      insufficient_credits:
+        buy: Köp mer SMS
+        info: Du måste förköpa %{needed} SMS för att skicka. Du har %{credits}.
+      new:
+        header: Skicka SMS till %{recipents_count}-mottagare
+        message: Meddelande
+        processing: Skickar ...
+        send: Skicka
+        sms_info: För meddelanden på mer än 160 tecken beräknas kostnaden per 160 tecken. Kostnaden för text på 200 tecken blir då 2 SMS per meddelande. Mottagaren kommer att få detta som ett SMS.
+        warning:
+          all: 'OBS: Du skickar nu till ALLA kunder.'
+          confirm: Är du säker på att du vill skicka?
+          event: 'OBS: Du skickar nu till alla deltagare i detta evenemang.'
+    sms_credits:
+      charge:
+        process: Göra ett köp.
+        processing: Vänta...
+      index:
+        buy: Köp mer SMS
+        sms_credits_available: Du har %{credits} SMS-meddelanden tillgängliga.
+      purchase_form:
+        buy: köpa
+        header: Förköp SMS
+        offer: "%{discount}% rabatt"
+        quantity: "%{quantity} SMS."
+        total: 'Totalt: %{sum}'
+    users:
+      index:
+        header: Användare
+      list_menu:
+        list: Användare
+      show:
+        remove_access: Ta bort användare
+        remove_access_confirm: Är du säker på att du vill ta bort åtkomst till den här användaren?
+    web_hooks:
+      index:
+        app_secret_info_html: Hemlig kod för att verifiera webbhooks

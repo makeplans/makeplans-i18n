@@ -1,0 +1,72 @@
+---
+ms:
+  booking_ical:
+    summary: "%{service} di %{client}"
+  booking_mailer:
+    cancellation:
+      header: Hai %{name}
+      info: Tempahan anda untuk %{title} di %{time_range} telah dibatalkan.
+      subject: Tempahan dibatalkan
+    confirmation:
+      header: Hai %{name}
+      info: Anda telah menempah %{title} %{time_range}.
+      link: Maklumat lanjut mengenai tempahan anda
+      link_cancellation_info: dan pilihan pembatalan
+      resource_info: 'Tempahan dengan: %{resource}.'
+      subject: Tempahan baru
+      subject_service: Tempahan untuk %{service}
+    declined:
+      body: |-
+        Hai,
+
+        Tempahan anda tidak disahkan.
+      subject: Tempahan ditolak
+    modification:
+      header: Hai %{name}
+      info: 'Tempahan anda telah diubah menjadi: %{title} %{time_range}.'
+      link: Maklumat lanjut mengenai tempahan anda
+      link_cancellation_info: dan pilihan pembatalan
+      resource_info: 'Tempahan dengan: %{resource}.'
+      subject: Tempahan diubah suai
+    request_card:
+      header: Hai %{name}
+      info: Untuk membayar tempahan anda dengan mudah, sila tambahkan maklumat kad kredit anda.
+      link: Tambahkan kad pembayaran
+      subject: Tambahkan maklumat pembayaran anda
+    verification:
+      footer: 'Penting: Tempahan belum selesai. Sekiranya anda tidak mengesahkan tempahan dengan mengklik pautan di atas dalam %{expires_in} minit, tempahan anda mungkin akan tamat.'
+      header: Untuk menyelesaikan tempahan %{title} %{time_range} anda, anda mesti mengesahkan tempahan anda dengan mengklik pautan di bawah.
+      link: Sahkan tempahan
+      subject: Sila sahkan tempahan anda
+  booking_sms:
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Tempahan baru {{ booking.resource.title }} oleh {{ booking.person.name }}. {{ booking.title }} pada {{ booking.time_range }}
+        Membuat perancangan
+      booking_type_attendance: |-
+        Pendaftaran baru untuk {{ booking.event.full_title }} {{ booking.time_range }} oleh {{ booking.person.name }}.
+        Membuat perancangan
+    cancellation: Tempahan anda di {{ booking.booked_from }} telah dibatalkan.
+    confirmation: Anda telah membuat tempahan untuk {{ booking.title }} {{ booking.booked_from }}.
+    declined: Permintaan anda untuk tempahan {{ booking.title }} {{ booking.booked_from }} tidak diluluskan. Sila cuba lagi.
+    modification: 'Tempahan anda telah diubah suai: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Peringatan: Tempahan {% if booking.service != nil %}of {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: Sila tambah maklumat pembayaran anda di %{url}
+    signature: |2-
+
+      {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} adalah kod pengesahan anda untuk tempahan {{ booking.title }}."
+  person_mailer:
+    export:
+      subject: Eksport data
+    perishable_token:
+      body: |-
+        Untuk log masuk klik pautan di bawah:
+
+        %{link}
+      subject: Log masuk untuk MakePlans
+  person_sms:
+    perishable_token: "{{ perishable_token }} adalah kod anda untuk pengesahan."
+    signature: |2-
+
+      {{ client.name }}

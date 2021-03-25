@@ -1,0 +1,41 @@
+nl:
+  amsterdam:
+    generic:
+      title: 'Online boeken voor %{name}'
+      powered_by: 'Provided by'
+      dateselector: 'Selecteer datum'
+      earlier: 'eerder'
+      demo_ended: 'De MarketPlans demo is verlopen.'
+      step:
+        hotstepper: 'Stap %{step} van %{steps}'
+        next_time: 'Volgende: Selecteer een tijd'
+        next_confirm: 'Volgende: Bevestigen'
+        next_verify: 'Bevestig Reservering'
+        next_payment: 'Betaal'
+        previous: 'vorige stap'
+        previous_service: 'Verander service'
+        previous_date: 'verander tijd'
+        completed: 'Afgerond!'
+        cancel: 'Annuleer'
+    bookings:
+      new:
+        form_info:  'Dit zal gebruikt worden om uw verzoek te verifiëren %{service}, %{booking}.'
+        enter_info: 'Informatie toevoegen'
+      show:
+        add_to_calendar: Voeg deze reservering toe aan uw agenda
+        body: U bent klaar. De boeking is gemaakt.
+        cancel: Annuleer Reservering
+        remember_me: Wilt de gegevens bewaren door het plaatsen van een cookie?
+        title: Uw reservering is bevestigd
+      sms_code:
+        verify_sms_code: "We hebben een SMS gestuurd naar %{phonenumber} met een verificatiecode. Voer de code hier in om uw reservering te bevestigen. Dit is vereist om de reservering af te ronden."
+    services:
+      slots:
+      time_day_available:
+        dateselector: 'Selecteer een datum'
+        select_time: '%{service} - selecteer een beschikbare tijd'
+      weekday_available:
+        select_time: '%{service}  - selecteer een beschikbare tijd'
+        next_week: Volgende week
+        prev_week: Previous week
+        dateselector: 'Selecteer een datum'

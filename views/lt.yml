@@ -1,0 +1,54 @@
+---
+lt:
+  bookings:
+    sms_code:
+      incorrect_code: Neteisingas kodas
+  clients:
+    new:
+      first_user: Tai jūsų asmeninis slaptažodis. Vėliau galite pridėti daugiau vartotojų.
+      free_trial_info: 14 dienų nemokamas bandymas. Jokių įsipareigojimų. Kredito kortelės nereikia.
+      headline: Pradėkite rezervuoti internetu
+      logged_in_as: Jūs esate prisijungę kaip %{name}.
+      read_legal: Šios paslaugos naudojimo sąlygos
+      recaptcha: Atsiprašome, kad jums iškilo problemų, bet mes turime patvirtinti jūsų registraciją Google Recaptcha. Prašome dar kartą užpildyti slaptažodį ir pateikti formą.
+      subdomain_info: Jūsų unikalus adresas (URL), kur klientai gali užsisakyti internetu.
+      submit: Užregistruokite mano sąskaitą
+      title: Registruokitės į savo internetinę užsakymo sąskaitą
+      user_email: Darbo el. Paštas
+      user_info: Jūsų vartotojo prisijungimas
+    rejected:
+      headline: Registracija atmesta
+      info: Deja, bet mūsų sistema pažymėjo jūsų registraciją kaip šlamštą. Norėdami užregistruoti sąskaitą, susisiekite su mumis.
+      title: Registracija atmesta
+  oauth:
+    callback:
+      header: Prisijunkite prie paskyros
+  user:
+    select_client:
+      header: Pasirinkite paskyrą
+  user_password_resets:
+    create:
+      header: Atstatyti slaptažodį
+      info: Dabar mes jums išsiuntėme el. Laišką. Norėdami patvirtinti slaptažodį iš naujo, turite spustelėti el. Laiške esančią nuorodą.
+      signup_html: Nėra paskyros? <a href="%{url}">Pradėk dabar.</a>
+    edit:
+      header: Įveskite naują slaptažodį
+      signup_html: Nėra paskyros? <a href="%{url}">Pradėk dabar.</a>
+      submit: Išsaugoti slaptažodį
+    new:
+      header: Pamiršai slaptažodį?
+      signup_html: Nėra paskyros? <a href="%{url}">Pradėk dabar.</a>
+      submit: Siųsti laišką
+  user_sessions:
+    handle_authenticated_user:
+      success: Sėkmingai prisijungėte
+    new:
+      forgot_link: Pamiršai slaptažodį?
+      header: Prisijungti
+      incorrect: Neteisingi įgaliojimai
+      login: Prisijungti
+      remember_me: Prisimink mane
+      signup_html: Nėra paskyros? <a href="%{url}">Pradėk dabar.</a>
+    rotp_verification_code:
+      header: Prisijunkite naudodami dviejų veiksnių autentifikavimą
+      submit: Prisijungti

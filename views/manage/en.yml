@@ -1,0 +1,801 @@
+---
+en:
+  layouts:
+    design:
+      activate_account_footer: "%{days_left} days left of your trial. Click to activate."
+      trial_expired: Your trial is over.
+  manage:
+    agenda:
+      calendar:
+        availability: Adjust availability for this period
+        ignore_capacity_confirm: There is already another reservation within this timeframe. Are you sure you want to save?
+        listWeek: list
+        opening_hours:
+          add: "+ add"
+          add_to_existing: "+ add"
+          closed_all_week: Closed all period
+          dates: Dates
+          from: From
+          open: Open
+          remove_existing: remove
+          reset: Reset
+          title: Adjust availability
+          to: To
+        resourceTimeGridDay: day (divided)
+        resourceTimelineDay: timeline
+        resources: Resources
+        services: Services
+      list:
+        all_day: All day
+        awaiting_confirmation:
+          one: "%{count} reservation for approval."
+          other: "%{count} reservations for approval."
+        busy: Busy
+        do_filtering: Activate filter
+        filter: Filtering
+        headline: Displaying appointments
+        month: Show month
+        no_reservations: No reservations
+        reset_filter: Reset filter
+        resources: Resources
+        services: Services
+        this_and_next_month: From today until end of next month
+        this_and_next_week: From today until end of next week
+    billing:
+      charge:
+        charge_details: Based on current usage we will charge your credit card %{price} each month.
+        charge_details_default: Monthly price is %{price} per resource.
+        charge_details_sms: 'You will also be charged for SMS usage: %{price}.'
+        process: Complete payment
+        processing: Please wait...
+      credit_card_form:
+        billing_info: When you add your credit card details we will charge your card every month based on the prices stated on our website. The first transaction will be performed immediately. You can cancel your subscription at any time.
+        header: Payment information
+        trial_expired: Your trial has expired. Please active your account to continue using MakePlans.
+      credit_card_info:
+        header: Enter credit card details
+        submit: Save credit card
+      edit_invoice_info:
+        activate_info: To complete your account activation please fill out this form
+        billing_email_info: If you want us to email the invoice to another email adress than %{email} please enter the email here.
+        billing_name_info: If you want to us to bill another company than %{name} please enter the name here.
+        header: Your billing info
+      info:
+        add_link: Activate account - Enter credit card details
+        add_new_link: Do you want to update your credit card details?
+        billing_info: You will receive an invoice from us that you need to pay manually
+        billing_order_ref: 'The invoice will include your reference: %{billing_order_ref}'
+        change_from_invoice: Enter your credit card details so you do not have to pay manually every time we invoice your account
+        charge_details: Based on current usage we will charge your credit card %{price} each month.
+        charge_details_default: Monthly price is %{price} per resource.
+        charge_details_sms: 'You will also be charged for SMS usage: %{price}.'
+        current_info: Your credit card details are securely stored with our billing partner Stripe. Your stored card is %{brand} with number ending in %{last_4} and expires %{expire_month}/%{expire_year}.
+        demo_ends_at: Your account will automatically be deactivated on %{demo_ends_at}.
+        edit_info_link: Do you want to modify your billing information?
+        edit_link: Do you want to update your credit card details?
+        email_recipent: We will email the invoice to %{email}.
+        info_header: 'Your billing info:'
+        paid_until: Your account is paid for until %{paid_until}.
+        pause: Pause the account when the current subscription ends.
+        pause_confirm: Are you sure you want to put the account on hold? The account will automatically be deactivated on %{paid_until}.
+        reactivate: Your account is currently in trial mode. You must reactivate your account to continue to use MakePlans
+        reactivate_link: Reactivate account
+        sms_credits_available: You have a balance of %{credits} SMS.
+        vat_no: Registered VAT no is %{vat_no}
+        vat_no_missing: No VAT no entered.
+      paying_account_required:
+        activate_account: Activate account now
+        info: This feature requires your account to be activated.
+      processing:
+        activated: Your account is now activated :) Thanks for using MakePlans.
+        error: Unable to verify payment. Please contact customer service.
+        info: Please wait while we charge your payment card. This can take up to one minutes. You will receive an email from us when the process is completed.
+    bookings:
+      create_recurring:
+        headline: Generating %{count} reservations...
+        link: Show list
+      destroy_recurring:
+        headline: All repeating reservations within this pattern was removed
+      fiken:
+        delayed_info: It will take some time before the order is created in Fiken. Do not try to generate the order again if no information from Fiken is visible in MakePlans.
+        header: Contating Fiken...
+        to_booking: Show booking
+      form_appointment:
+        add_reminder_sms: Send SMS reminder
+        confirmation_send_email: Send email confirmation
+        confirmation_send_sms: Send SMS confirmation
+        customer_info: Customer details
+        email: Email
+        first_available: First available
+        headline_create: Add new reservation
+        headline_create_recurring: Add new reservation
+        headline_edit: Modify reservation
+        headline_new: Add new reservation
+        ignore_capacity: Save even if occupied
+        modification_send_email: Send email modification
+        modification_send_sms: Send SMS modification
+        no_service: No service selected
+        notification_send_email: Send email notification
+        notification_send_sms: Send SMS notification
+        person_create_info: Search for existing customer or create a new one by entering name.
+        person_none_selected: No customer selected
+        recurring_enabled: Repeat with a pattern
+        recurring_member: This reservation is part of a recurring pattern.
+        reservation_type_other: Busy
+        reservation_type_person: Customer reservation
+        send_confirmation: 'Confirmation:'
+        send_modification: 'Modification:'
+        send_notification: 'Notification:'
+        send_reminder: 'Reminder:'
+        sms: SMS
+      form_attendance:
+        add_reminder_sms: Send SMS reminder
+        confirmation_send_email: Send email confirmation
+        confirmation_send_sms: Send SMS confirmation
+        email: Email
+        headline_create: Add attendant
+        headline_edit: Modify reservation
+        headline_new: Add attendant
+        modification_send_email: Send email modification
+        modification_send_sms: Send SMS modification
+        notification_send_email: Send email notification
+        notification_send_sms: Send SMS notification
+        person_create_info: Search for existing customer or create a new one by entering name.
+        person_none_selected: No customer selected
+        send_confirmation: 'Confirmation:'
+        send_modification: 'Modification:'
+        send_notification: 'Notification:'
+        send_reminder: 'Reminder:'
+        sms: SMS
+      izettle:
+        close_info: Close this window to go back to the booking.
+        error: 'Error from iZettle: %{error}'
+        result_header: iZettle
+        success: Payment registered.
+      show:
+        booked_from: From
+        booked_to: To
+        created_by: Created by %{user}
+        count: Number of people
+        fiken:
+          create_invoice: Create invoice in Fiken
+          created: Invoice is created in Fiken
+          open_invoice: Open invoice in Fiken
+          processing: Invoice is being created in Fiken. This can take a few minutes.
+        izettle:
+          pay: Receive payment with iZettle
+          progress_link: Click here to continue.
+        log: Log
+        paid_with:
+          braintree: Paid with Braintree
+          stripe: Paid with Stripe
+          vipps: Vipps
+        person:
+          address: Address
+          email: Email
+          phone_number: Phone number
+        recurring_member: This reservation is part of a recurruring pattern.
+        refund: Refund paid amount
+        request_card:
+          processing: Payment link is being sent to customer
+          send: Send payment link to customer
+        send_sms: Send SMS
+        show_in_calendar: Show in calendar
+        stripe:
+          pay: Pay with Stripe
+          processing: Transaction is processing. This can take up to 1-2 minutes.
+        tfso:
+          create_invoice: Create order in 24SevenOffice
+          open_invoice: Open order in 24SevenOffice
+          processing: Order is being created in 24SevenOffice. This can take a few minutes.
+        vipps:
+          processing: Processing
+        visma_eaccounting:
+          create_invoice: Create order in Visma eAccounting
+          created: Invoice is created in Visma eAccounting
+          processing: The order is being created in Visma eAccounting. This can take a few minutes.
+      show_recurring:
+        delete_all: Delete all
+        headline: All repeating reservations within this pattern
+      state_changer:
+        state: State
+      unconfirmed:
+        headline: List of reservations for approval
+        no_reservations: No reservations that requires approval
+      widget:
+        booked_from: From
+        booked_to: To
+        description: Description
+        person:
+          address: Address
+          email: Email
+          phone_number: Phone number
+      widget_list:
+        busy: Busy
+        no_bookings: No existing reservation on %{start}
+        no_bookings_range: No existing reservations from %{start} to %{end}
+    categories:
+      blank:
+        get_started: Currently you have not created any categories. All services are therefore in a list on the bookingsite. If you want to categorise your services start by creating a category.
+        header: No categories added
+        info: If you are offering many services it is possible to categorise them in multiple levels. Categories will be shown on the bookingsite so the customer must choose a category before the services within chosen category are shown. It is possible to show a service in multiple categories.
+      form:
+        has_services: Shows these services
+        no_parent_id: ''
+      index:
+        header: Categories
+      list_menu:
+        list: Categories
+      show:
+        custom_data: 'Custom data:'
+        has_services: 'Shows these services:'
+    client:
+      api:
+        disable: Do you want to disable the API?
+        disable_warning: Are you sure you want to disable the API? The API-key will become invalid and the API unavailable.
+        enable: Do you want to enable the API?
+        enable_warning: Are you sure you want to activate the API? The API-key gives full programmatic access to your account.
+        enabled: The API is enabled.
+        header: API
+        info_html: Contact customer service for help. Documentation is available at <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a>.
+        not_enabled: The API is not enabled.
+      cancel:
+        confirm_message: Last chance. Are you absolutely sure that you want to delete your account with all your data?
+        disable_link: Yes, please delete all my data.
+        header: Are you sure you want to delete your account?
+        i_love_makeplans: No, I want to continue using MakePlans.
+        info: All data in your account will be deleted. Are you sure you want to continue?
+        pause: Would you rather set your account on pause? You will not pay a monthly fee and your account will be available when you are ready to use MakePlans again.
+        pause_link: You can pause your account on the billing page.
+      configuration:
+        header: MakePlans setup
+        intro: This is where you can configure MakePlans and how it should work for you. You can add services and categories that you offer on the booking site, adjust availability, change the outgoing messages (SMS and email), add more users and adjust many other settings in MakePlans.
+        menu_info: Select from the menu on the left side. If you have any questions about how to make adjustment please contact customer service.
+        trial_info: This is a trial account - click here to activate
+      edit:
+        custom_messages_info_html: You can merge relevant data here. For more information please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>.
+      edit_booking_site:
+        booking_form_info_html: Contact customer service for help. Documentation is available at <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>.
+        booking_site_info_html: Your booking site is available at %{url}.
+        booking_site_locale_default: Use account language
+        cancellation: Cancellation
+        cancellation_info: Cancellation can only be performed before the cancellation period. Reservations that are prepaid cannot be cancelled.
+        cancellation_period_info: 'Example: ''24 hours before'' (only possible to cancel 24 hours before the reservation starts).'
+        first_bookable_period_info: 'Example: ''in two hours'' (first available time is in two hours) or ''08:00 tomorrow'' (first available time is at 8AM tomorrow morning).'
+        future_bookable_period_info: 'Example: ''in two months'' (only possible to book the next two months) or ''Friday at midnight'' (only possible to reserve before midnight on Friday).'
+        header: Update booking site
+        interval_rounding:
+          default: System default (Closest 5 minute mark)
+          five: Closest 5 minute mark
+          halfhour: Closest half hour
+          hour: Closest hour
+          none: No rounding (Not recommended)
+          quarter: Closest quarter
+          ten: Closest 10 minute mark
+          twenty: Closest 20 minute mark
+        remove_logo: Remove logo
+        settings:
+          allow_person_cookie: Allow possiblity to remember verified customer until next visit with the use of cookies.
+          google_tag_manager: Google Tag Manager container ID
+          select_resource: Extra step for selecting resource
+        verification_methods:
+          email: Email
+          facebook: Also allow verification with Facebook Connect.
+          none: No verification (not recommended)
+          sms: SMS (Recommended)
+      edit_communication:
+        email: Email
+        header: Modify outgoing comminication
+        settings:
+          custom_email_sending: Completely override emails with content below (otherwise content is just inserted in standard email)
+          custom_sms_sending: Completely override SMS with content below (otherwise content is just inserted in standard SMS)
+          dont_include_icalendar_attachment: Do not include iCalendar attachment
+        sms: SMS
+      edit_company:
+        delete_account_html: Are you sure you want to delete your account? <a href="%{link}">Yes, continue</a>
+        delete_label: Delete account
+        domain_info: It is possible to utilize your own URL, like booking.YOURDOMAIN.com, please contact customer service for more information
+        header: Modify account information
+        payment_provider:
+          info_html: It is possible to require payment before completing a reservation on the booking site by using one of the integrated payment providers. We recommend <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe</a> which is a good service that you can quickly get started with without any fixed costs. You must also specify the required information for chosen payment provider in "Integrations".
+          none: None
+        purge_data_info: 'This feature will automatically delete old personal identifiable information (customers and reservations). Enter text for deletion date relative to current date. Example: ''6 months ago'' or ''2 years ago''.'
+        subdomain_info: Your unique address (URL) where your customers can make reservations
+      edit_fields:
+        appointment_form_info: This form is only for manual entry of reservations. To modify the reservation form on the booking site please do so on the settings for 'Booking site'. If the custom reservation form uses custom fields those should also be included here.
+        booking_form_info: Please go to the settings for the booking site to modify.
+        custom_form_info_html: Contact customer service for help. Documentation is available at <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>.
+        header: Modify custom fields
+      edit_person_notifications:
+        automatic_messages: Automatic messages (In the admin system and the API)
+        cancellation_email: Send email when cancelling reservation
+        cancellation_sms: Send SMS when cancelling reservation
+        confirmation_email: Send email when creating reservation
+        confirmation_sms: Send SMS when creating reservation
+        default: Automatic based on verification method
+        default_reminder_sms: Automatic based on setting for sending reminder
+        disable: Deactivate
+        header: Customer notifications
+        modification_email: Send email when modifying reservation
+        modification_sms: Send SMS when modifying reservation
+        outgoing_messages_info: 'MakePlans will suggest to send email/SMS (whatever you set up as verification method) when you create, modify or cancel a reservation. Some messages such as cancellation occurs automatically. You can deactivate automatic messages (for example when moving a reservation by dragging it in the calendar, cancellation or creating a new reservation using the API) or deactivate suggestion to send messages in the form by changing the settings below. Note: This does not apply to the booking site. The booking site will always automatically send messages based on your verificaiton method.'
+        reminder_sms: Send reminder SMS
+        reminder_sms_info: The sender name is 'MakePlans'. Contact customer service to change the sender name.
+        sms_reminder_time_info: 'SMS is sent out at noon the day before the reservation. If you want to change this please modify the field below. Example: ''two hours before'' (SMS is sent out two hours before the reservation) or ''8am yesterday'' (the reminder SMS will be sent at 8am the day before the reservation)'
+      edit_user_notifications:
+        approvement_email: Email notification for new reservation requests
+        automatic_messages: Automatic messages
+        default: Active (Default)
+        disable: Disabled
+        email: Email
+        header: User notifications
+        mail_notification_info: To notify more than one person please use semi-colon to separate email addresses.
+        notification_email: Email notification for new reservation
+        notification_sms: SMS notification for new reservation
+        outgoing_messages_info: If you have set up to manually apporve new reservations from the booking site you will be notified via email for every new reservation request. If you do not want to receive these notifications or if approvement is done using an external application (API) it is possible to deactivate it below.
+        sms: SMS
+      edit_ux:
+        calendar: Calendar
+        header: UX
+        info: Visual settings
+        settings:
+          calendar_hide_weekends: Hide weekends
+          calendar_slot_duration: Slot duration
+          calendar_slot_label_interval: Slot label interval
+      export_info:
+        data_types:
+          bookings: Reservations
+          events: Events
+          people: Customers
+        executed: The export is now being sent to your email-address.
+        header: Export data from MakePlans
+        info: You will receive an email with a CSV-file attachment.
+      import:
+        header: Import data
+        info: It is possible to import data such as customers into MakePlans. Contact support for more information.
+      promote:
+        booking_button_html_info: To insert the booking button on your website please copy the HTML-code below. If you need help please contact your web-designer.
+        booking_button_html_preview: Booking button preview
+        booking_button_text: Button text
+        booking_button_text_default_value: Online booking
+        booking_iframe: Iframe for the bookingsite
+        booking_link: Link for the bookingsite
+        booking_link_title: Online appointment booking and scheduling
+        booking_site_info_html: Your booking site is available at %{url}.
+        generate_booking_button: Generate booking button for your website
+        header: Promote your booking site
+      tools:
+        header: Tools for your account
+        link:
+          purge_data: Delete old data
+          sms_all: Send SMS to all customers
+    events:
+      create_recurring:
+        headline: Generating %{count} events...
+        link: Show list
+      destroy_recurring:
+        headline: All repeating events within this pattern was removed
+      email_participants:
+        copy_info: 'Alternatively you can copy the addresses below and paste them into the bcc-field in a new email message:'
+        headline: Email all participants
+        open_email_client: Open email client
+      form:
+        headline_create: Add new event
+        headline_create_recurring: Add new event
+        headline_edit: Modify event
+        headline_new: Add new event
+        recurring_enabled: Repeat with a pattern
+        recurring_member: This event is part of a repeating pattern.
+      show:
+        attendants_html:
+          one: one reservation
+          other: 'reservations: <strong>%{count}</strong>'
+          zero: no reservations
+        download_attendance_csv: Export attendance list as CSV
+        email_confirm: Attendance list will be emailed to you. Do you want to continue?
+        fully_booked: The event is fully booked
+        recurring_member: This event is part of a repeating pattern.
+        send_email_to_all: Email all attendants
+        send_sms: Send SMS
+        show_in_calendar: Show in calendar
+        show_inactive_html: Not showing %{count} inactive reservations. <a href="%{href}">Do you want to show these?</a>
+        show_only_active_html: List includes %{count} inactive reservations. <a href="%{href}">Do you only want to show active reservations?</a>
+        signup_link: Signup link
+        sms_all_participants: Send SMS to all participants
+      show_recurring:
+        delete_all: Delete all
+        headline: All repeating events within this pattern
+      widget:
+        capacity_details:
+          one: One attende of total %{capacity} possible.
+          other: "%{count} attendes of total %{capacity} possible."
+          zero: No attendes. %{capacity} possible.
+        end: Ends
+        start: Starts
+      widget_list:
+        no_events: No existing events on %{start}
+        no_events_range: No existing events from %{start} to %{end}
+    integrations:
+      account_connected: Connect to this account.
+      braintree:
+        cse_key: Cse key
+        environment: Environment
+        merchant_id: Merchant
+        private_key: Private key
+        production: Production
+        public_key: Public key
+        sandbox: Sandbox
+      campaign_monitor:
+        api_key: API-key
+        connect_info: 'Select a mailing list where new customers are added as subscibers:'
+        list_id: List ID
+      confrere:
+        client_id: Client ID
+        client_secret: Client Secret
+        connect_info: Connected to Confrere
+        setup_info: A resource in MakePlans must be connected to a user in Confrere for the integration to function.
+      connect_error: Unable to complete integration. Please delete the integration and try again.
+      connected: This service is connected.
+      dokus:
+        account: Account
+        password: Password
+        username: Username
+      extensor:
+        activate: Start using the Extensor Online Booking integration
+        activate_settings_2: Activate settings for Extensor Online Booking version 2
+        activate_settings_3: Activate settings for Extensor Online Booking version 3
+        info: To activate syncronization with Extensor you must install Extensor Online Booking. Click the link below to start the process. You will be contacted by Extensor.
+        reactive_settings: Reactivate settings fro Extensor Online Booking.
+        version: MakePlans is configured to work with version %{version} of Extensor Online Booking.
+      fakturo:
+        password: Password
+        username: Username
+      fiken:
+        active: Active
+        api_not_activated: You must activate the API in Fiken.
+        connected_bank_account: Bank account
+        connected_company: Company
+        email: Username (epost)
+        income_account: Income account
+        password: Password
+        select_bank_account: Choose bank account to be displayed on the invoice
+        select_company: Choose company
+        service_linked: Connect to product in Fiken
+        service_links: 'Every service must be connected to a product in Fiken to make it possible to create an order in Fiken. Please note: Price is fetched from Fiken - not from MakePlans. You must ensure that price in both applications are identical.'
+        service_not_linked: NOT connected to a product in Fiken.
+        vat_type: VAT-type
+      headline: Integration with %{integration}
+      highrise:
+        account: Subdomain (YOURACCOUNT.highrisehq.com - please only enter YOURACCOUNT)
+        connect_info: 'Choose account where new customers are added:'
+        password: API-key
+      index:
+        api: API
+        web_hooks: Webhooks
+      izettle:
+        active: Aktice
+        info: To use iZettle please define a price on the service you provide. It will then be possible to click "make payment with iZettle" on a reservation.
+      mailchimp:
+        account: List ID
+        connect_info: 'Select a mailing list where new customers are added as subscibers:'
+        password: API-key
+      mailerlite:
+        api_key: API-key
+        select_group: Choose group where new customers will be added to.
+      mailmojo:
+        account: List-ID
+        username: Account username
+      not_authenticated: Unable to connect. Check your credentials.
+      oauth_connect: Connect to service
+      quickpay:
+        environment: Environment
+        md5_secret: MD5 Secret
+        merchant_id: Merchant ID
+        production: Production
+        test: Test
+      selected_option: Selected
+      sendy:
+        connect_info_html: New customers will be subscribed to list with id <em>%{list_id}</em> on installation %{api_url}
+      stripe:
+        payment_info: For all transactions a platform fee of %{application_fee_percent}% is deducted by MakePlans.
+        receipt_email: Send a receipt to the customer from Stripe
+      tfso:
+        add_to_crm_manually: Add customer in CRM manually
+        distribution_method: 'Distribution method:'
+        distribution_methods:
+          EMail: Email
+          ElectronicInvoice: EHF
+          Print: Print
+          Unchanged: Unchanged
+        invoice_payment_time: 'Payment time:'
+        invoice_state: 'Order state:'
+        invoice_states:
+          Draft: Draft
+          ForInvoicing: For invoicing
+          Invoice: Invoiced
+          Offer: Offer
+        password: API-Password
+        service_linked: Connect to product in 24SevenOffice
+        service_links: Each service in MakePlans must be connected to a product in 24SevenOffice to enable invocing. Please note that the price is retrived from the product in 24SevenOffice - not from MakePlans. You must ensure that these two prices are identical. Go to a service to define a product id from 24SevenOffice.
+        service_not_linked: NOT connected to a product in 24SevenOffice
+        type_groups: 'Sales type for order:'
+        username: API-Username
+      vipps:
+        client_id: Client ID
+        client_secret: Client secret
+        merchant_serial_nr: Merchant serial nr
+        vipps_subscription_key: Vipps Subscription Key
+      visma_eaccounting:
+        active: Active
+        connect_info: Connected to %{name}
+        connected_payment_id: 'Payment terms: %{name}'
+        customer_attributes_info: 'Please note: Visma eAccounting requires postal code and city to register a new customer. If these values are not present it is not possible to generate a order from a booking.'
+        select_terms_of_payment: 'Please choose standard payment terms for new customers:'
+        service_linked: Connected to a product in Visma eAccounting
+        service_links: Every service in MakePlans must be connected to a product in Visma eAccount to enable invoicing. Please note that price is retrieved from Visma eAccounting - not MakePlans. You must ensure that price is identical in both systems.
+        service_not_linked: NOT connected to a product in Visma eAccounting
+      zapier:
+        info_html: To connect MakePlans to Zapier please make a <a href="%{url}" target="_blank">new Zap on Zapier</a>.
+      zoom:
+        connect_info: Connected
+    message_templates:
+      index:
+        header: Message templates
+        intro: This is where you will find more complex message templates that can be send out after a reservation is confirmed, before it starts or after it is completed. Please note that these messages are sent in addition to the standard messages like confirmation and reminder. Only use this function if you want to for example send an additional reminder, multiple confirmation messages (like email in addition to SMS) or a follow-up message.
+    people:
+      form:
+        merge_action: Merge these two customers
+        merge_action_email: This email address is already saved on another customer. Do you want to merge these two customers so %{email} will be used as the e-mail address?
+        merge_action_info: All reservations will be kept but one of the customers will be deleted. You can choose which customer information that will be kept.
+        merge_action_phone_number: This phone number is already stored on another customer. Do you want to merge these two customers to %{phone_number} will be used as the phone number?
+        merge_button: Merge and save
+        merge_info: 'Instead use: '
+      index:
+        delete_warning: Are you sure you want to delete %{person}?
+        filter: Filtering
+        headline: Customers
+        send_sms: Send SMS
+      show:
+        bookings_for: Reservations for %{name}
+        card_saved_with:
+          stripe: Payment card saved with Stripe
+        change_tfso_customer: Change 24SevenOffice customer ID.
+        export: Email export of data to customer
+        export_executed: The export file has been sent to the customer.
+        no_reservations: Found no reservations
+        send_sms: Send SMS
+      tfso_connect_company:
+        create: Create new customer in 24SevenOffice
+        header: Connect to customer in 24SevenOffice
+        search: Or search among existing customers
+        search_matched_headline: Found existing customers in 24SevenOffice CRM. Click the name to connect this customer in MakePlans to the customer in 24SevenOffice CRM.
+        search_query: Name search
+        stream_placeholder: Searching in 24SevenOffice CRM. Please wait. This could take up to 1-2 minutes.
+    profile:
+      activate_rotp:
+        enable_rotp: Activate 2FA
+        generate_header: Activate 2-step verification (2FA)
+        generate_info: Scan the QR-code below with your mobile phone with Google Authenticator or another 2FA-app.
+        verify_code: 'Enter code to verify:'
+      deactivate_rotp:
+        deactivate_rotp: Remove 2FA
+        verify_code: 'Enter code to verify:'
+      edit_password:
+        verify_code: 'Enter code to verify:'
+      show:
+        change_password: Modify password
+        rotp:
+          disable_link: Deactivate 2-step verification
+          disable_warning: Are you sure you want to deactivate 2-step verification?
+          enable_link: Activate 2-step verification
+          enable_warning: If you activate 2-step verification you must always verify each login with a code from your mobile phone app. Are you sure you want to enable this feature?
+          regenerate_link: Regenerate 2-step verification key
+          regenerate_warning: If you regenerate the 2-step verification key the existing key will no longer work and you have to set up your app with the new code. Are you sure you want to continue?
+          submit_button: Login
+          verification_code_header: 2-step verification
+    purge_data:
+      destroy:
+        header: Old data is now being deleted.
+        processing: Data will now be deleted. It could take a few minutes before it is processed.
+      index:
+        header: Delete old data
+        info: 'This functino will delete old personal data. You can specify the date for deletion. The following data will be deleted:'
+        not_deleted: Data deletion will not trigger external integrations.
+        processing: Processing
+        purge: DELETE DATA
+        purge_1: All reservations ending before the specified date.
+        purge_2: All customers that is not updated before the specified date and who do not have any reservations after the specified date.
+        purge_3: All logs and metadata related to these data will also be deleted.
+        purge_before: Delete data before date
+    reports:
+      stats:
+        all: All resources
+        booking_word: reservation
+        bookings: reservations
+        bookings_per_day: Reservations per day
+        day: Day
+        no_reservations: No reservations
+    resources:
+      form:
+        availability: Default availability
+        external_info:
+          confrere_user_id: Confrere user
+          zoom_user_id: Zoom user
+        from: from
+        mail_notification_info: To notify more than one person please use semi-colon to separate email addresses.
+        offers: Offers the following services on the booking site
+        to: to
+      index:
+        header: Resources
+      list_menu:
+        list: Resources
+      show:
+        availability: 'Default availability:'
+        capacity: 'Capacity:'
+        closed: Not available for online booking.
+        custom_data: 'Custom fields:'
+        ical:
+          activated_html: Access to this resource with iCalendar is activated. The link to the iCalendar-feed is %{link}
+          disable: Deactivate iCalendar-feed
+          enable: Activate iCalendar-feed
+          info: iCalendar-feed will show appointments from this resource in MakePlans in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in MakePlans.
+          not_activated: Not activated
+        icalfeed: 'iCalendar-feed:'
+        offers: 'Offers the following services on the booking site:'
+    services:
+      custom_communication:
+        custom_communication_info: Here you can specify custom content which is sent for each new reservation of this event type. If content is entered it will override the default content under "Communication". Empty fields will use default content
+        custom_communication_show: Show content for outgoing communication
+      custom_form:
+        custom_form_info_html: You can specify a custom reservation form for this service. This form will override the default form defined under "Booking site". Documentation can be found at <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>, alternatively contact customer service for assistance.
+        custom_form_show: Show custom reservation form
+      form_appointment:
+        booking_site_settings: Settings for the booking site
+        days: days
+        interval_rounding:
+          default: Default account setting
+          five: Closets five minutes
+          halfhour: Closes half hour
+          hour: Closest hour
+          none: No rounding (not recommended)
+          quarter: Closest quarter
+          ten: Closest ten minutes
+          twenty: Closest 20 minute mark
+        max_slots_default: Unlimited
+        minutes: minutes
+        next_interval_default: According to duration
+        offered_by: Offered by the following resources
+        payment: Payment
+        settings:
+          hide_all_available: Must select specific resource ('show all available' will be hidden)
+          hide_resources: Hide button for selecting resource (will be randomly selected by among available resources)
+          hide_slot_end: Hide end-time
+          select_resource: Extra step for selecting resource
+      form_attendance:
+        booking_site_settings: Settings for the booking site
+        days: Days
+        default_values: Below you will find default settings that can be changed for each event you create.
+        minutes: Minutes
+        offered_by: Can be offered by the following calenders
+        payment: Payment
+      index:
+        appointment:
+          header: Services
+        attendance:
+          header: Event types
+        days: days
+        header: Services
+        minutes: minutes
+      integrations:
+        external_info:
+          fiken_product_href: Connect to a product in Fiken
+          tfso_product_id: 24SevenOffice product id
+          visma_eaccounting_article_id: Connect to a product in Visma eAccounting
+      list_menu:
+        list_appointment: Services
+        list_attendance: Event types
+      show:
+        custom_data: 'Custom data:'
+        days: days
+        description: 'Description:'
+        interval: 'Duration:'
+        minutes: minutes
+        no_providers: 'Important: This service is not offered by any resources and will not be shown on the booking site. Click here to add providers.'
+        not_in_category: You are using categories on the booking site and this service is not linked to a category. As a result this service is at the moment not visible on the booking site. Click here to manage your categories.
+        offered: 'Offered by the following resources:'
+        price: 'Price:'
+        show_on_booking_site: Open service on booking site
+    setup:
+      appointment_services:
+        add: Add another
+        footer_html: A service for <strong>appointments</strong> has a fixed duration, such as 30 minutes, and can be booked within fixed opening hours, such as 9AM-3PM Monday-Friday. Examples are consultation and rental.
+        header_html: Great, let's get started!<br>First add your services for appointments.
+        minutes: minutes
+        submit: Continue
+      attendance_services:
+        add: Add another
+        footer_html: "<strong>Attandenace</strong> at events, coures and classes. Occurs at a specific time such as September 14 from 3PM to 7PM or evey Tuesday at 7.30PM. The date and time will be specified later."
+        header_html: Great, let's get started!<br>First lets add services for attendance.
+        submit: Continue
+      completed:
+        header_html: Congratulations - you booking site is now live!
+      completed_appointment:
+        info_html: Your booking site is now configured at %{href}. This is where your customers can book online. We have also sent you an email with this information. In addition to the booking site you can also manually enter appointments in your calendar.
+        to_calendar: Take me to the calendar
+      completed_attendance:
+        info_html: Your booking site will be available at %{href}. But first you need to add your first event that will be available for booking.
+        new_event: Ok, let's create my first event
+      resources:
+        add: Add another
+        footer_html: 'A resource can be an employee, a room or an object. The title of the resource is the name of the employee or a given name such as ''Small meeting room'' or ''Projector #4''. Each reservation belongs to one resource.'
+        from: from
+        header_html: Almost finished!</br>Just add some resources and you are ready.
+        save: Save
+        submit: Done!
+        to: to
+        working_hours: Availability
+        working_hours_header: ''
+      start:
+        add_services_for: Define services for
+        appointments: Appointments
+        appointments_info_html: For example consultation at chiropractor, haircut, massage, rental or other services with fixed opening hours.
+        attendances: Attendance
+        attendances_info_html: For attendance at events, courses, classes or other attendances at specific times. Either once or recurring like every Tuesday.
+        footer_html: A service is something you offer to your customers and will be shown on the booking site. Define services for appointments which have fixed opening hours or for attendance which occurs at a specific time.
+        header_html: Welcome to MakePlans.<br>Start by adding your services
+    shared:
+      recurring:
+        enabled: Repeat multiple times with a pattern
+        freq:
+          monthly: Monthly
+          weekly: Weekly
+          yearly: Yearly
+        freq_label: Period
+        interval_label: Frequency
+        length:
+          count: Occurences
+          until: Before date
+        length_label: Until
+    sms:
+      create:
+        header: SMS sent
+        sms_sent: 'The message below was sent to %{recipents_count} receipients:'
+        to_booking: Back to reservation
+      insufficient_credits:
+        buy: Purchase SMS
+        info: You must pre pay %{needed} SMS-credits to be able to send. You have %{credits} credits.
+      new:
+        header: 'Send SMS to %{recipents_count} recipients:'
+        message: Message
+        processing: Sending...
+        send: Send
+        sms_info: For messages longer than 160 characters the cost is calculated pr 160 character. Cost for a 200 character message is 2 SMS per message. The customer will receive as 1 SMS.
+        warning:
+          all: 'IMPORTANT: You will now send to ALL of your customers.'
+          confirm: Are you sure you want to send this message?
+          event: 'IMPORTANT: You will now send to all participants to this event.'
+    sms_credits:
+      charge:
+        process: Complete purchase.
+        processing: Please wait...
+      index:
+        buy: Buy more SMS credits
+        sms_credits_available: You have %{credits} SMS credits available.
+      purchase_form:
+        buy: Purchase
+        header: Purchase SMS credits
+        offer: "%{discount}% discount."
+        quantity: "%{quantity} SMS."
+        total: 'Total: %{sum}'
+    users:
+      index:
+        header: Users
+      list_menu:
+        list: Users
+      show:
+        remove_access: Remove access
+        remove_access_confirm: Are you sure you want to remove access to this account for this user?
+    web_hooks:
+      index:
+        app_secret_info_html: App secret for veryifing webhooks. See <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">documentation</a> for details.
+        header: Webhooks

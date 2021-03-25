@@ -1,0 +1,185 @@
+---
+sv:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: Vi måste bekräfta din bokning manuellt. Du kommer att få %{verification_method} när vi har behandlat din förfrågan.
+        body_automatic_sync: Bokningen är nu kontrollerad i vårt system. Du kommer att få %{verification_method} när bokningen har bekräftats.
+        title: Väntar på bekräftelse
+        title_automatic_sync: Kontrollerar bokningen
+        verification_method:
+          authenticated: ett meddelande
+          email: en email
+          none: ett meddelande
+          sms: och SMS
+      awaiting_payment:
+        body: Vänligen vänta medan vi kontrollerar transaktionen.
+        error: Vi kan tyvärr inte bekräfta din betalning. Vänligen kontakta kundtjänst och uppge referensnummer %{booking_id}.
+        title: Kontrollerar din betalning
+      awaiting_verification:
+        verification_delivery_error: Det gick inte att skicka e-post till dig. Är du säker på att du angett rätt e-postadress?
+        verification_delivery_not_processed: Vi upplever just nu en del förseningar i våra system. Vänligen vänta medan vi skickar ditt e-postmeddelande.
+        verification_sent_body: Vi har skickat ett e-postmeddelande till %{email}. Klicka på länken för att bekräfta din bokning. Det hjälper oss att kontrollera att du inte är en robot.
+        verification_sent_title: Vänligen bekräfta din e-postadress
+      declined:
+        body: Tyvärr, din bokning godkändes inte. Försök en annan gång eller ta kontakt.
+        title: Reservationen godkändes inte
+      expired:
+        header: Bokningen har förfallit
+        info: Bokningar måste bekräftas inom %{expires_in} minuter. Vänligen försök igen.
+      new:
+        authentication:
+          authenticating: Autentisering...
+          logged_in_as: Du är inloggad som %{person}
+          logged_in_with_fb_html: Inloggad på Facebook som <span data-name="">okänd</span>. Klicka på "Bekräfta bokning" för att godkänna din reservation.
+          login_with_facebook_html: Alternativt kan du %{fb_link}.
+          login_with_facebook_link: bekräfta automatiskt med Facebook
+          not_current_person_html: Är du inte <span data-name="">%{person}?</span>?
+          remember_me: Vill du att vi ska komma ihåg dig på den här maskinen tills nästa gång du bokar här?
+        enter_info: Fyll i uppgifter
+        errors_header: Vänligen fyll i de obligatoriska fälten.
+        form_info: Detta kommer att användas för att bekräfta din bokning av %{service}, %{booking}.
+        price_info: 'Pris: %{price}'
+        reserve_resource: Bokning hos %{resource}.
+      no_person:
+        body: 'Kontakta oss för mer info. Fel: Kundanslutning borttagen.'
+        title: Fel
+      payment:
+        awaiting:
+          body: Var vänlig vänta medan vi kontrollerar transaktionen.
+          error: Vi kan tyvärr inte bekräfta din betalning. Vänligen kontakta kundtjänst på https://makeplans.net och uppge referensnummer %{booking_id}.
+          title: Kontrollerar din betalning
+        fields:
+          cvc: CVC
+          errors:
+            cvc: Ogiltig CVC-kod.
+            expiration: Ogiltigt utgångsdatum.
+            number: Ogiltigt kortnummer.
+          expiration_html: Utgår <small>(MM/YY)</small>
+          number: Kortnummer
+        form_footer_html: Ditt kreditkort kommer att debiteras med <span class="payment-amount">%{amount}</span>.
+        form_header: Formuläret skickas krypterat.
+        header: Betalning
+        info: För att slutföra bokningen av %{service} måste du betala med ditt kreditkort.
+      show:
+        add_card: Lägg till kreditkort för att betala automatiskt efter uppsägning.
+        add_to_calendar: Lägg till det här mötet i din kalender.
+        body: Du är klar. Bokningen är genomförd.
+        cancel: Avbryt avtal
+        cancel_confirmation: Är du säker på att du vill avbryta den här bokningen?
+        paid: Du har förbetalt %{paid_amount}.
+        remember_me: Vill du bli ihågkommen på den här datorn med hjälp av cookies?
+        title: Bokningen är slutförd och bekräftad!
+      sms_code:
+        header: Bekräfta bokning
+        incorrect_code: Felaktig kod
+        verify_sms_code: Vi har skickat ett SMS till %{phonenumber} med en kontrollkod. Vänligen ange koden i formuläret för att bekräfta bokningen, annars kommer bokningen inte att slutföras.
+    events:
+      index:
+        none_available: Inga evenemang tillgängliga.
+      show:
+        before_first_booking: Det är inte möjligt att registrera sig för detta evenemang före %{first_booking_at}.
+        book: Registrera dig för detta evenemang.
+        full: Detta evenemang är fullt.
+        past_last_booking: Det är inte längre möjligt att anmäla sig till detta evenemang.
+        started: Denna händelse är över.
+    generic:
+      dateselector: Välj datum
+      earlier: tidigare
+      payment:
+        add_card_details_html: Din kortinformation lagras inte hos oss men skickas krypterad till %{provider} för säker transaktion och lagring.
+        add_card_footer_html: Kortet laddas inte nu
+        add_card_header: Spara kreditkort
+        add_card_info: Lägg till ditt kreditkort så att du enkelt och automatiskt kan betala efter avtalet.
+        add_card_submit: Spara kort
+        awaiting:
+          body: Var vänlig vänta medan vi kontrollerar transaktionen.
+          error: Vi kan tyvärr inte bekräfta din betalning. Vänligen kontakta kundtjänst på https://makeplans.net och uppge referensnummer %{booking_id}.
+          title: Kontrollerar betalning
+        form_footer_html: Ditt kreditkort kommer att debiteras med <span class="payment-amount">%{amount}</span>.
+        form_header: Detta formulär skickas krypterat.
+        header: Betalning
+        info: För att slutföra bokningen av %{service} %{booking} måste du betala med ditt kreditkort.
+        payment_details_html: Beloppet anges i %{currency} och inkluderar moms. Din kortinformation lagras inte hos oss utan skickas krypterad till %{provider} för säker transaktion och lagring.
+        payment_received: "%{paid_amount} betalades %{paid_at}."
+      step:
+        cancel: Avbryt
+        completed: Klart!
+        hotstepper: Steg %{step} av %{steps}
+        next_confirm: 'Nästa: Bekräftelse'
+        next_payment: Betala
+        next_time: 'Nästa: Välj en tid'
+        next_verify: Bekräfta bokning
+        previous: föregående steg
+        previous_date: Ändra tid
+        previous_service: Ändra tjänst
+    layouts:
+      application:
+        authenticated: 'Inloggad som: %{name}'
+        demo_ended: Provperioden hos MakePlans har upphört.
+        footer:
+          privacy_policy: Personuppgiftsbehandling
+          support: Kundservice
+        login: Din sida
+        meta:
+          description: Onlinebokning for %{name}
+          keywords: Onlinebokning, nettbasert, reservere, bestille, påmelding, online booking, online timebestilling, makeplans
+        powered_by: Tillhandahållen av
+        powered_by_title: Onlinebokning
+        title: Onlinebokning för %{name}
+    people:
+      credit_card_added:
+        body: Ditt kort kommer att debiteras när bokningen görs. Kortinformation lagras säkert hos vår betalningspartner Stripe.
+        title: Ditt kort sparades
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Verifierings kod
+        remember_me: Kom ihåg mig på den här maskinen.
+        submit: Logga in
+      not_found:
+        info_html: Du är inte registrerad som kund. För att bli kund måste du <a href="/">slutföra en bokning</a> .
+      perishable_token_action_required:
+        info_html: Vi har skickat ett mejl till dig. Klicka på länken för att logga in.
+      perishable_token_form:
+        not_available_for_this_verification_method: Inte tillgänglig
+        submit: Ta emot kod
+    profile:
+      show:
+        header: Dina reservationer
+        logout: logga ut
+        new_booking: Ny reservation
+    providers:
+      index:
+        show_all_available: Visa alla tillgängliga
+        show_only_selected: 'Eller visa endast från önskad kalender:'
+    services:
+      index:
+        none_available: Inga tjänster tillgängliga.
+      show:
+        book: Boka
+      time_day_available:
+        any_resource: Första lediga
+        dateselector: Välj datum
+        earlier: Tidigare
+        gap_warning: För att välja flera slott måste dessa vara kontinuerliga utan dröjsmål.
+        later: Senare
+        max_slots_warning: Du kan inte boka fler än %{max_slots} tider.
+        multiple_slots_info: För att välja fler slott, välj först start- och sluttid.
+        next_available_date_html: Nästa lediga datum är %{next_available_date}
+        next_date: Nästa dag
+        no_availability: Inga lediga tider på valt datum. Vänligen försök med ett annat datum.
+        no_selection: Vänligen välj en ledig tid.
+        select_time: "%{service} - välj ledig tid"
+      weekday_available:
+        dateselector: Välj datum
+        gap_warning: För att välja flera slott måste dessa vara kontinuerliga utan dröjsmål.
+        max_slots_warning: Du kan inte boka fler än %{max_slots} tider.
+        multiple_slots_info: För att välja fler slott, välj först start- och sluttid.
+        next_available_date_html: Nästa lediga datum är %{next_available_date}
+        next_week: Nästa vecka
+        no_availability: Inga lediga tider på valt datum. Vänligen försök med ett annat datum.
+        no_selection: Vänligen välj en ledig tid.
+        prev_week: Föregående vecka
+        select_resource: Visa kalender
+        select_time: "%{service} - välj en ledig tid"
+        show_all: Visa alla tillgängliga

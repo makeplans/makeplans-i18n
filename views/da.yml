@@ -1,0 +1,54 @@
+---
+da:
+  bookings:
+    sms_code:
+      incorrect_code: Forkert kode
+  clients:
+    new:
+      first_user: Dette er din personlige adgangskode. Du kan tilføje flere brugere senere.
+      free_trial_info: 14-dages gratis prøveversion af den fulde version af MakePlans. Ingen forpligtelser.
+      headline: Kom godt i gang med online aftale booking
+      logged_in_as: Du er logget ind som %{name}.
+      read_legal: Læs servicevilkårene
+      recaptcha: Vi er nødt til at bekræfte din registrering hos Google Recaptcha. Indtast din adgangskode igen, og tryk på knappen Registrer igen.
+      subdomain_info: Din unikke adresse (URL), hvor dine kunder kan booke.
+      submit: Opret konto
+      title: Registrer din egen online reservationsside
+      user_email: Arbejds email
+      user_info: Din bruger skal logge ind
+    rejected:
+      headline: Registrering blokeret
+      info: Beklager, men vores system har blokeret din registrering som spam. Kontakt os for at registrere en konto.
+      title: Registrering blokeret
+  oauth:
+    callback:
+      header: Link til konto
+  user:
+    select_client:
+      header: vælg Konto
+  user_password_resets:
+    create:
+      header: Nulstil din adgangskode
+      info: Vi har nu sendt dig en e-mail. Du skal klikke på linket i e-mailen for at bekræfte, at du vil nulstille din adgangskode.
+      signup_html: Har du ikke en konto? <a href="%{url}">Gå i gang nu.</a>
+    edit:
+      header: Indtast din nye adgangskode
+      signup_html: Har du ikke en konto? <a href="%{url}">Gå i gang nu.</a>
+      submit: Gem adgangskode
+    new:
+      header: glemt kodeord?
+      signup_html: Har du ikke en konto? <a href="%{url}">Gå i gang nu.</a>
+      submit: Send e-mail
+  user_sessions:
+    handle_authenticated_user:
+      success: Login lykkedes
+    new:
+      forgot_link: Glemt din adgangskode?
+      header: Log på
+      incorrect: Forkert e-mail eller adgangskode
+      login: Log på
+      remember_me: Husk mig
+      signup_html: Har du ikke en konto? <a href="%{url}">Gå i gang nu.</a>
+    rotp_verification_code:
+      header: Log ind med tofaktorautentificering
+      submit: Log ind

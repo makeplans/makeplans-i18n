@@ -1,0 +1,72 @@
+---
+nb:
+  booking_ical:
+    summary: "%{service} hos %{client}"
+  booking_mailer:
+    cancellation:
+      header: Hei %{name}
+      info: Din reservasjon hos oss %{title} %{time_range} har blitt kansellert.
+      subject: Reservasjon kansellert
+    confirmation:
+      header: Hei %{name}
+      info: Du har reservert %{title} %{time_range}.
+      link: Mer informasjon om din booking
+      link_cancellation_info: og mulighet til kansellering
+      resource_info: 'Reservasjon hos: %{resource}.'
+      subject: Ny reservasjon
+      subject_service: Reservasjon av %{service}
+    declined:
+      body: |-
+        Hei,
+
+        Din reservasjon ble ikke godkjent.
+      subject: Reservasjon ikke godkjent
+    modification:
+      header: Hei %{name}
+      info: 'Din reservasjon hos oss har blitt endret til: %{title} %{time_range}.'
+      link: Mer informasjon om din booking
+      link_cancellation_info: og mulighet til kansellering
+      resource_info: 'Reservasjon hos: %{resource}.'
+      subject: Reservasjon endret
+    request_card:
+      header: Hei %{name}
+      info: For enkelt å kunne betale for din reservasjon så kan du legge til dine kortdetaljer.
+      link: Legg til betalingskort
+      subject: Betal din reservasjon
+    verification:
+      footer: 'OBS: Reserverasjonen er ikke fullført. Hvis du ikke klikker på linken ovenfor i løpet av %{expires_in} minutter vil reservasjonen din kanselleres.'
+      header: For å fullføre din reservering av %{title} %{time_range} må du bekrefte reservasjonen ved å klikke på linken under.
+      link: Bekreft reservasjon
+      subject: Bekreft din reservasjon
+  booking_sms:
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Ny reservasjon hos {{ booking.resource.title }} av {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        Ny påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
+        MakePlans
+    cancellation: Din reservasjon hos oss {{ booking.booked_from }} har blitt kansellert.
+    confirmation: Du har reservert {{ booking.title }} {{ booking.booked_from }}.
+    declined: Din forespørsel for reservasjon av {{ booking.title }} {{ booking.booked_from }} ble dessverre ikke godkjent. Prøv et annet tidspunkt.
+    modification: 'Din reservasjon hos oss har blitt endret: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Påminnelse: Reservasjon {% if booking.service != nil %}av {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: 'Du kan registrere din betalingsinformasjon her: %{url}'
+    signature: |2-
+
+      Mvh {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} er din kode for å verifisere reservasjon av {{ booking.title }}."
+  person_mailer:
+    export:
+      subject: Eksport fra MakePlans
+    perishable_token:
+      body: |-
+        For å logge inn klikk på linken nedenfor:
+
+        %{link}
+      subject: Login til MakePlans
+  person_sms:
+    perishable_token: "{{ perishable_token }} er din kode for innlogging."
+    signature: |2-
+
+      Mvh {{ client.name }}

@@ -1,0 +1,55 @@
+---
+nb:
+  bookings:
+    sms_code:
+      incorrect_code: Feil kode
+  clients:
+    new:
+      first_user: Dette er ditt personlige passord. Du kan legge til flere brukere senere.
+      free_trial_info: 14-dagers gratis test av fullverdig versjon av MakePlans. Ingen forpliktelser.
+      headline: Kom i gang med online timebestilling
+      logged_in_as: Du er innlogget som %{name}.
+      read_legal: Les vilkår for bruk av tjenesten
+      recaptcha: Vi må verifisere din registrering med Google Recaptcha. Skriv inn passordet ditt en gang til og trykk på registrer-knappen igjen.
+      subdomain_info: Din unike adresse (URL) hvor dine kunder kan reservere.
+      subdomain_not_website_warning: 'OBS: Her kan du skrive inn adressen til din nye bookingside. Du skal IKKE skrive inn din eksisterende nettside. Hvis du er i tvil så skriv inn ditt firmanavn.'
+      submit: Register min konto
+      title: Registrer din egen online bookingside
+      user_email: Jobb-epost
+      user_info: Din bruker for å logge inn
+    rejected:
+      headline: Registrering blokkert
+      info: Beklager men vårt system har blokkert din registrering som spam. Kontakt oss for å registrere en konto.
+      title: Registrering blokkert
+  oauth:
+    callback:
+      header: Knytt til konto
+  user:
+    select_client:
+      header: Velg konto
+  user_password_resets:
+    create:
+      header: Nullstill ditt passord
+      info: Vi har nå sendt deg en epost. Du må klikke på linken i eposten for å bekrefte at du vil nullstille ditt passord.
+      signup_html: Har du ikke konto? <a href="%{url}">Kom i gang nå.</a>
+    edit:
+      header: Skriv inn ditt nye passord
+      signup_html: Har du ikke konto? <a href="%{url}">Kom i gang nå.</a>
+      submit: Lagre passord
+    new:
+      header: Glemt passordet?
+      signup_html: Har du ikke konto? <a href="%{url}">Kom i gang nå.</a>
+      submit: Send epost
+  user_sessions:
+    handle_authenticated_user:
+      success: Innlogging vellykket
+    new:
+      forgot_link: Har du glemt passordet?
+      header: Login
+      incorrect: Feil epost eller passord
+      login: Login
+      remember_me: Husk meg
+      signup_html: Har du ikke konto? <a href="%{url}">Kom i gang nå.</a>
+    rotp_verification_code:
+      header: Logg inn med to-faktor autentisering
+      submit: Logg inn

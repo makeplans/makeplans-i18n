@@ -1,0 +1,475 @@
+---
+sv:
+  activerecord:
+    attributes:
+      booking:
+        booked_from: från
+        booked_to: till
+        count: siffra
+        event_id: arrangemang
+        notes: Kommentarer
+        person: kund
+        person_id: kund
+        resource: resurs
+        resource_id: resurs
+        service: service
+        service_id: service
+        title: titel
+        verification_code: verifierings kod
+      category:
+        title: titel
+      client:
+        future_bookable_period: framtida bokningsperiod
+        mail_notification_recipient: e-postadresser för avisering
+        mailer_sender: e-postavsändare
+        phone_number: telefonnummer
+        purge_data_period: Automatisk raderingsperiod
+      client_user_link:
+        role: roll
+      client_user_link/role:
+        admin: Administratör
+        manager: Chef
+        staff: Anställd
+      event:
+        booking_capacity: maximalt antal deltagare per bokning
+        capacity: maximalt antal deltagare
+        description: beskrivning
+        ends_at: sluttid
+        first_booking_at: ingen registrering före
+        last_booking_at: senaste registrering före
+        resource_id: resurs
+        service_id: service
+        starts_at: starttid
+        title: titel
+      person:
+        address: adress
+        city: stad
+        country_code: Land
+        created_at: registrerad
+        date_of_birth: födelsedatum
+        email: e-post
+        name: namn
+        national_id_no: Födelsedatum
+        notes: anteckningar
+        phonenumber: telefonnummer
+        postal_code: postnummer
+        state: län
+        street: gata
+      resource:
+        capacity: kapacitet
+        mail_notification_recipient: e-postadresser för avisering
+        title: titel
+      service:
+        payment_required: kräver förskottsbetalning
+        price: pris
+        title: titel
+      user:
+        current_password: Nuvarande lösenord
+        password: Lösenord
+        password_confirmation: lösenordsbekräftelse
+        rotp_verification_code: Verifikationskod
+    errors:
+      messages:
+        chronic_syntax_error: syntaxfel se https://github.com/mojombo/chronic#examples
+        icalendar_invalid: Inga genererade möten eller fel i iCalendar-definitionen
+        icalendar_over_limit: För många genererade avtal - max är 731
+        illegal: olaglig
+        invalid: är ogiltig
+        phone_invalid: är inte ett giltigt telefonnummer
+        time_not_available: Inte tillgänglig för bokning just nu
+      models:
+        booking:
+          attributes:
+            count:
+              over_booking_capacity: Mer än högsta tillåtna antal per bokning
+            event_id:
+              time_not_available: är full
+            person_id:
+              taken: är redan registrerad för detta evenemang.
+            resource_id:
+              no_availability: inte tillgänglig vid vald tid
+            service_id:
+              attendance_only: är endast för registrering
+              not_offered: erbjuds inte av vald resurs
+            state:
+              invalid_transition: Ogiltig statusändring
+          fully_booked: Ej tillgängligt vid vald tidpunkt
+          time_after_future_bookable_period: För långt fram i tiden
+        client:
+          attributes:
+            base:
+              denied: avvisade
+        person:
+          missing: lagras inte i din kundprofil. Kontakta oss för att åtgärda detta.
+          no_values_present: Du måste ange namn, telefonnummer eller e-post.
+        resource:
+          has_bookings: Den här kalendern har aktiva bokningar och kan inte raderas. Vänligen kontakta kundtjänst.
+        service:
+          below_minimum: måste vara högre än 3 NOK om du ska kräva förskottsbetalning.
+        user:
+          attributes:
+            password:
+              incorrect: Fel lösenord
+          current_password_incorrect: Nuvarande lösenord är felaktigt
+      template:
+        body: 'Åtgärden kunde inte slutföras på grund av följande fel:'
+        header: Fel uppstod
+    models:
+      booking: bokning
+      category: kategori
+      event: händelse
+      external_credential: integration
+      person: kund
+      resource: resurs
+      service: tjänst
+      service_appointment: tjänst
+      service_attendance: typ av händelse
+      user: användare
+  csv:
+    col_sep: ";"
+  date:
+    formats:
+      date_month_name: "%-d %B"
+      datepicker: "%d.%m.%Y"
+      day_name: "%A"
+      day_name_abbr: "%a"
+      full_date: "%A %-d. %B %Y"
+      month_name: "%B"
+      short_with_name: "%a %-d. %b"
+      short_with_name_and_year: "%a %-d. %b %Y"
+    moment_format: DD.MM.YYYY
+  errors:
+    messages:
+      no_values_present: Namn, telefonnummer eller e-postadress krävs.
+      not_authenticated: Du har loggats ut.
+      not_found: Ingen information hittad. Försök ladda sidan igen. Kontakta kundtjänst om problemet kvarstår.
+      offline: Det gick inte att kontakta MakePlans. Kontrollera att du är online.
+      server_error: Error i MakePlans
+      syntax_error: Syntaxfel
+      unknown: Okänt fel. Försök ladda sidan igen. Kontakta kundtjänst om problemet kvarstår.
+    models:
+      person:
+        perishable_token:
+          invalid: Fel kod
+    stripe:
+      booking:
+        invalid: Bokningen har upphört att gälla eller är ogiltig. Transaktionen slutfördes inte.
+        paid: Bokningen har redan betalats. Försök att uppdatera sidan.
+      card:
+        missing: Det gick inte att hitta kortinformation
+      processor: 'Felmeddelande från vår betalningspartner: %{error}'
+      unknown: Det gick inte att slutföra transaktionen. Okänt fel.
+  generic:
+    all: alla
+    at: hos
+    born_abbreviation: f. %{date_of_birth}
+    default: Systemstandard
+    optional: valfritt
+    search: Sök
+    to: till
+    today: idag
+    tomorrow: imorgon
+  helpers:
+    booking:
+      action:
+        cancel: Annullera
+        confirm: Godkänna
+        decline: Avvisa
+        verify: Kontrollera
+      state:
+        awaiting_confirmation: Väntar på godkännande
+        awaiting_payment: Väntar på betalning
+        awaiting_verification: Väntar på verifiering
+        cancelled: Inställt
+        confirmed: Bekräftad
+        declined: avvisade
+        deleted: Tog bort
+    datepicker:
+      next_month: Nästa månad
+      prev_month: Förra månaden
+    label:
+      booking:
+        all_day: Hela dagen
+        booked_from: Startdatum
+        booked_to: Slutdatum
+        count: Antal
+        external_id: Externt ID
+        invoiced_at: Faktureras
+        notes: Anteckningar
+        paid_at: Betalat
+        person_id: Kund
+        reminder_at: Påminnelse
+        resource_id: Resurs
+        service_id: Tjänst
+        title: Titel
+        verification_code: Verifikationskod
+      category:
+        parent_id: Huvudkategori
+        title: Titel
+      client:
+        address: Besöksadress
+        allow_cancellation: Tillåten avbokning av kunden
+        api_key: API-nyckel (för extern integration)
+        app_secret: Hemlig verifieringskod
+        appointment_form: Anpassade bokningsfälter
+        billing_city: Stad
+        billing_country_code: Land
+        billing_email: E-postadress för faktura
+        billing_id: ID i fakturasystem
+        billing_invoice: Skicka en faktura istället för kortbetalning
+        billing_name: Företagsnamn
+        billing_order_ref: Din fakturareferens
+        billing_payment_id: ID i betalningssystem
+        billing_period: Månader som ska faktureras
+        billing_postal_code: Postnummer
+        billing_state: Stat (utanför Sverige)
+        billing_street: Gata
+        billing_vat_no: Momsregistreringsnummer
+        booking_form: Anpassat bokningsformulär
+        cancellation_period: Avbokningsfrist
+        category_form: Anpassade kategorifält
+        closed_for_holidays: Stängt på helgdagar
+        confirm_manually: Bokningar måste godkännas av en administratör
+        country_code: Land
+        css_url: URL till CSS (måste vara HTTPS)
+        currency: Valuta
+        email: E-postadress
+        email_notification: Ta emot e-postmeddelande för varje ny bokning
+        event_form: Anpassade händelsefält
+        first_bookable_period: Tillåt inga bokningar förrän
+        footer: Sidfot
+        future_bookable_period: Tillåt inga bokningar efter
+        google_analytics: Google Analytics tracking ID
+        interval_rounding: Standardavrundning till nästa lediga bokningstillfälle
+        locale: Språk (Definierar även nummer och datumformat)
+        logo: Logga
+        mail_cancellation: Text i avbokningsmail
+        mail_cancellation_subject: Ämne i avbokningsmail
+        mail_confirmation: Text i bekräftelsemail
+        mail_confirmation_subject: Ämne i bekräftelsemail
+        mail_modification: Text i e-post som skickas vid ändring
+        mail_modification_subject: Ämne i e-post som skickas vid ändring
+        mail_notification_recipient: E-postadresser för aviseringar
+        mail_verification: Text i verifikationsmail
+        mail_verification_subject: Ämne i verifikationsmail
+        mailer_sender: E-post avsändare
+        name: Företagsnamn (visas på bokningssidan)
+        new_booking_text: Text som visas på bekräftelsesidan
+        new_user_text: Text som visas före bokningsformulär
+        payment_provider: Betalningsleverantör (För förskottsbetalning av bokningar)
+        person_form: Anpassade kundfält
+        phone_number: Telefonnummer för SMS-avisering
+        public_access: Bokningssidan är tillgänglig för allmänheten
+        purge_data_period: Automatisk radering av personlig information
+        reminder_sms: Skicka påminnelse på SMS
+        resource_form: Anpassade resursfält
+        service_form: Anpassade tjänstefält
+        service_template: Kalendermall
+        service_templates:
+          time_day_available: Dag
+          week_available: Hela veckan
+          weekday_available: Veckodagar
+        sms_cancellation: Text i SMS som skickas vid avbokning
+        sms_confirmation: Text i SMS som skickas vid bekräftelse
+        sms_modification: Text i SMS som skickas vid ändring
+        sms_notification: Ta emot SMS för varje ny bokning
+        sms_reminder: Påminnelsetext i SMS
+        sms_reminder_time: Dags för påminnelse om SMS
+        sms_verification: Text i SMS som skickas vid verifikation
+        subdomain: URL-adress (subdomän)
+        template: Designtema
+        time_zone: Tidszon
+        verification_method: Bekräftelsemetod för nya bokningar
+      event:
+        all_day: Hela dagen
+        booking_capacity: Max antal deltagare per bokning
+        capacity: Max antal deltagare
+        description: Beskrivning
+        ends_at: Slutar
+        first_booking_at: Ingen registrering före
+        last_booking_at: Ingen registrering efter
+        payment_required: Begär förskottsbetalning
+        price: Pris inklusive moms.
+        published: Synlig på bokningssidan
+        resource_id: Resurs
+        service_id: Händelsetyp
+        starts_at: Startar
+        title_html: Specificerad titel är <small>valfritt</small>
+      person:
+        address: Adress
+        city: Stad
+        country_code: Land
+        created_at: Registrerad
+        date_of_birth: Födelsedatum
+        email: E-post
+        name: Namn
+        national_id_no: Personnummer
+        notes: Anteckningar
+        phonenumber: Telefonnummer
+        postal_code: Postnummer
+        provider: Associerat med externt konto
+        state: Län/Stat
+        street: Gata
+        tfso_company_id: 24SO kundnr.
+      resource:
+        capacity: Max antal bokningar vid samma tidpunkt
+        mail_notification_recipient: E-postadresser för anmälan
+        title: Titel
+      service:
+        booking_capacity: Max antal personer per bokning
+        booking_form: Anpassat bokningsformulär
+        capacity: Maximalt antal deltagare
+        description: Beskrivning
+        has_day_booking: Tidstyp
+        has_day_booking_label:
+          'false': min
+          'true': dagar
+        interval: Bokningens längd
+        interval_rounding: Avrundning till nästa lediga bokningstillfälle
+        mail_cancellation: Text i avbokningsmail
+        mail_confirmation: Text i bekräftelsemail
+        mail_modification: Text i e-post som skickas vid ändring
+        mail_verification: Text i verifikationsmail
+        max_slots: Max antal tidsluckor per bokning
+        next_interval: Fritid vardera
+        payment_required: Kräv betalning (vänligen ställ in betalningsleverantör)
+        price: Pris
+        published: Synlig på bokningssidan
+        same_day: Tillåt bokningar över flera dagar
+        sms_cancellation: Text i SMS som skickas vid avbokning
+        sms_confirmation: Text i SMS som skickas vid bekräftelse
+        sms_modification: Text i SMS som skickas vid ändring
+        sms_reminder: Text i SMS skickas med påminnelse
+        sms_verification: Text i SMS som skickas vid verifikation
+        template: Kalendermall
+        templates:
+          default: Standard
+          time_day_available: Dag
+          week_available: Hela veckan
+          weekday_available: Veckodagar
+        title: Titel
+      user:
+        current_password: Nuvarande lösenord
+        email: E-post
+        name: Namn
+        password: Lösenord
+        password_confirmation: lösenordsbekräftelse
+        phonenumber: Telefonnummer
+        rotp_verification_code: Verifierings kod
+    link:
+      add: Lägg till
+      back: Tillbaka
+      booking:
+        new: Ny bokning
+      category:
+        new: Ny kategori
+      create: Skapa
+      delete: Radera
+      delete_confirm: Är du säker på att du vill radera?
+      edit: Ändra
+      event:
+        new: Ny händelse
+        new_attendant: Lägg till deltagare
+      person:
+        new: Ny kund
+      resource:
+        new: Ny resurs
+      service:
+        new_appointment: Ny tjänst
+        new_attendance: Ny händelsetyp
+      setup:
+        skip: Manuell inställning
+        step_html: "<strong>Steg %{step}</strong> av %{max_steps}"
+      user:
+        new: Ny användare
+      view: Vis
+    menu:
+      agenda: Agenda
+      calendar: Kalender
+      logout: Logga ut
+      people: Kunder
+      profile: Profil
+      reports: Rapporter
+      setup: Inställning
+    menu_setup:
+      billing: Betalning
+      bookingsite: Bokningssida
+      categories: Kategorier
+      communication: Kommunikation
+      company: Konto
+      export: Export
+      fields: Anpassade fält
+      import: Import
+      integrations: Integrationer
+      person_notifications: Aviseringar
+      promote: Marknadsför
+      resources: Resurser
+      service_appointments: Tjänster
+      service_attendances: Händelsetyp
+      sms_credits: SMS-balans
+      tools: Verktyg
+      user_notifications: Aviseringar
+      users: Användare
+      ux: UX
+    payment:
+      fields:
+        cvc: CVC
+        errors:
+          cvc: Ogiltig CVC-kod.
+          expiration: Ogiltigt utgångsdatum.
+          number: Ogiltigt kortnummer.
+        expiration_html: Utgår <small>(MM/YY)</small>
+        number: Kortnummer
+      header: Detta formulär kommer att skickas krypterat
+    select:
+      prompt: Vänligen välj
+    submit:
+      cancel: Annullera
+      create: Skapa %{model}
+      submit: Spara %{model}
+      submit_default: Spara
+      update: Uppdatera %{model}
+      update_password: Byt lösenord
+  service:
+    admin:
+      invoice_client:
+        errors:
+          nothing_to_invoice: Kontot är inte klart för fakturering. Minst en resurs krävs.
+        invoice_text: Användning av MakePlans onlinebokningsbokning
+  time:
+    24h: true
+    formats:
+      long_dayname: "%A, %-d. %B %Y, %H:%M"
+      short_mailer: "%-d. %B kl. %H:%M"
+      time: "%H:%M"
+      time_with_word: kl. %H:%M
+      timepicker: "%H:%M"
+    moment_format: HH:mm
+    timepicker_format: H:i
+  title:
+    actions:
+      edit: Ändra
+      update: Ändra
+  user:
+    password_reset:
+      expired: Utgånget
+      no_email_found: Inget e-postmeddelande hittades
+  valid_email:
+    validations:
+      email:
+        invalid: är ogiltig
+  worker:
+    integration_slack:
+      fallback: En ny bokning genomfördes i MakePlans
+      footer: MakePlans API
+      pretext: "%{person} har bokat tid den %{booked_from}"
+      title: Visa bokningen i MakePlans
+    integration_tfso_list_companies:
+      errors:
+        no_results: Hittade inga befintliga företag.
+    integration_tfso_order:
+      errors:
+        already_created: Redan skapad
+        no_company: Kunden har raderats i 24SevenOffice. Du måste återaktivera kunden i 24SevenOffice innan du kan fortsätta.
+        no_product: Produkten har tagits bort i 24SevenOffice. Du måste återaktivera produkten i 24SevenOffice eller ansluta tjänsten till en ny produkt från MakePlans innan du kan fortsätta.
+        product_not_defined_on_service: Tjänsten i MakePlans är inte ansluten till en produkt i 24SevenOffice.

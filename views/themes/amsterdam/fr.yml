@@ -1,0 +1,186 @@
+---
+fr:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: Nous confirmerons manuellement votre réservation. Vous recevrez %{verification_method} lorsque nous aurons traité votre demande.
+        body_automatic_sync: Nous vérifions maintenant votre réservation. Vous recevrez %{verification_method} lorsque nous aurons traité votre demande.
+        title: En attente de confirmation
+        title_automatic_sync: Vérification de la réservation
+        verification_method:
+          authenticated: une notification
+          email: un email
+          none: une notification
+          sms: un SMS
+      awaiting_payment:
+        body: Veuillez patienter pendant que nous vérifions la transaction.
+        error: Nous ne pouvons pas vérifier votre paiement. Veuillez contacter le service client avec le numéro de référence %{booking_id}.
+        title: Vérification de votre paiement
+      awaiting_verification:
+        verification_delivery_error: Nous n'avons pas pu vous envoyer un e-mail. Êtes-vous sûr d'avoir saisi la bonne adresse e-mail?
+        verification_delivery_not_processed: Nous subissons actuellement des retards dans nos systèmes. Veuillez patienter pendant que nous envoyons votre e-mail.
+        verification_sent_body: Nous avons envoyé un e-mail à %{email}. Suivez-le pour vérifier votre réservation. Cela nous aide à nous assurer que vous n'êtes pas un robot.
+        verification_sent_title: Merci de confirmer votre adresse e-mail
+      declined:
+        body: Désolé, nous n'avons pas pu approuver votre demande de réservation. Veuillez essayer un autre créneau horaire ou contactez-nous.
+        title: Votre réservation n'a pas été approuvée
+      expired:
+        header: Réservation expirée
+        info: Les réservations doivent être vérifiées dans les %{expires_in} minutes. Veuillez réessayer.
+      new:
+        authentication:
+          authenticating: Authentification ...
+          logged_in_as: Vous êtes connecté en tant que %{person}
+          logged_in_with_fb_html: Connecté sur Facebook comme <span data-name="">inconnu</span> . Cliquez sur «Confirmer la réservation» pour vérifier votre réservation.
+          login_with_facebook_html: Vous pouvez également %{fb_link}.
+          login_with_facebook_link: vérifier automatiquement avec Facebook
+          not_current_person_html: N'êtes-vous pas <span data-name="">%{person}?</span> ?
+          remember_me: Voulez-vous que nous nous souvenions de vous sur cette machine à l'aide d'un cookie?
+        date_format: 'Veuillez saisir un format de date valide: %{format}'
+        enter_info: Entrez les informations
+        errors_header: Veuillez remplir les champs obligatoires.
+        form_info: Cela sera utilisé pour vérifier votre réservation de %{service}, %{booking}.
+        price_info: 'Prix: %{price}'
+        reserve_resource: Réservation pour %{resource}
+      no_person:
+        body: 'Contactez nous pour plus d''informations. Erreur: connexion client supprimée'
+        title: Erreur
+      payment:
+        awaiting:
+          body: Veuillez patienter pendant que nous vérifions la transaction.
+          error: Nous ne pouvons pas vérifier votre paiement. Veuillez contacter le service client sur https://makeplans.net avec le numéro de référence %{booking_id}.
+          title: Vérification de votre paiement
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC n'est pas valide.
+            expiration: La date d'expiration n'est pas valide.
+            number: Le numéro de carte n'est pas valide.
+          expiration_html: Expire le <small>(MM / AA)</small>
+          number: Numéro de carte
+        form_footer_html: Votre carte de crédit sera débitée de <span class="payment-amount">%{amount}</span> .
+        form_header: Ce formulaire est envoyé crypté.
+        header: Paiement
+        info: Pour compléter la réservation de %{service}, vous devez payer avec votre carte de crédit.
+      show:
+        add_card: Ajoutez votre carte de crédit pour payer automatiquement après la réservation
+        add_to_calendar: Ajoutez la réservation à votre calendrier
+        body: Vous avez terminé. La réservation a été effectuée.
+        cancel: Annuler une réservation
+        cancel_confirmation: Êtes-vous sûr de vouloir annuler cette réservation?
+        paid: Vous avez prépayé %{paid_amount}.
+        remember_me: Voulez-vous que nous nous souvenions de vous sur cette machine à l'aide d'un cookie?
+        title: Votre réservation est confirmée!
+      sms_code:
+        header: Confirmer la réservation
+        incorrect_code: code incorrect
+        verify_sms_code: Nous avons envoyé un SMS à %{phonenumber} avec un code de vérification. Veuillez saisir le code dans le formulaire pour vérifier la réservation. Ceci est nécessaire pour terminer la réservation.
+    events:
+      index:
+        none_available: Aucun événement disponible.
+      show:
+        before_first_booking: Il n'est pas possible de s'inscrire à cet événement avant %{first_booking_at}.
+        book: Inscrivez-vous à cet événement
+        full: Cet événement est complet.
+        past_last_booking: Il n'est plus possible de s'inscrire à cet événement.
+        started: Cet événement est déjà terminé.
+    generic:
+      dateselector: Sélectionner une date
+      earlier: plus tôt
+      payment:
+        add_card_details_html: Les détails de votre carte ne seront pas stockés chez nous mais sont envoyés cryptés à %{provider} pour une transaction et un stockage sécurisés.
+        add_card_footer_html: Votre carte ne sera pas débitée maintenant
+        add_card_header: Enregistrer la carte
+        add_card_info: Ajoutez votre carte de paiement afin de pouvoir payer facilement et automatiquement après la réservation.
+        add_card_submit: Enregistrer la carte
+        awaiting:
+          body: Veuillez patienter pendant que nous vérifions la transaction.
+          error: Nous ne pouvons pas vérifier votre paiement. Veuillez contacter le service client sur http://makeplans.net avec le numéro de référence %{booking_id}.
+          title: Vérification de votre paiement
+        form_footer_html: Votre carte de crédit sera débitée de <span class="payment-amount">%{amount}</span> .
+        form_header: Ce formulaire est envoyé crypté.
+        header: Paiement
+        info: Pour compléter la réservation de %{service} %{booking}, vous devez payer avec votre carte de crédit.
+        payment_details_html: Le montant affiché est en %{currency}. Nous ne stockons pas les détails de votre carte de crédit, mais les envoyons cryptés à %{provider} pour un traitement et un stockage sécurisés.
+        payment_received: "%{paid_amount} a été payé le %{paid_at}."
+      step:
+        cancel: Annuler
+        completed: Complété!
+        hotstepper: Étape %{step} de %{steps}
+        next_confirm: 'Suivant: Confirmation'
+        next_payment: Payer
+        next_time: 'Suivant: sélectionnez une heure'
+        next_verify: Confirmer la réservation
+        previous: étape précédente
+        previous_date: Changer le temps
+        previous_service: Changer de service
+    layouts:
+      application:
+        authenticated: 'Connecté en tant que: %{name}'
+        demo_ended: La démo MakePlans a expiré.
+        footer:
+          privacy_policy: Politique de confidentialité
+          support: Soutien
+        login: Vos réservations
+        meta:
+          description: Prise de rendez-vous en ligne pour %{name}
+          keywords: planification, rendez-vous, réservation, inscriptions, makeplans
+        powered_by: Réservation par
+        powered_by_title: Prise de rendez-vous, planification et inscriptions à des événements / cours
+        title: Réservation en ligne pour %{name}
+    people:
+      credit_card_added:
+        body: Votre carte sera traitée lorsque la réservation sera terminée. Les détails de la carte sont stockés en toute sécurité avec notre partenaire de paiement Stripe.
+        title: Votre carte a été enregistrée
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Code de vérification
+        remember_me: Souviens-toi de moi sur cette machine.
+        submit: Connexion
+      not_found:
+        info_html: Vous n'êtes pas enregistré en tant que client. Effectuez d'abord <a href="/">une réservation</a> .
+      perishable_token_action_required:
+        info_html: Nous vous avons envoyé un e-mail. Veuillez cliquer sur le lien pour vous connecter.
+      perishable_token_form:
+        not_available_for_this_verification_method: Pas disponible.
+        submit: Recevoir le code
+    profile:
+      show:
+        header: Vos réservations
+        logout: Se déconnecter
+        new_booking: Nouvelle réservation
+    providers:
+      index:
+        show_all_available: Afficher tout disponible
+        show_only_selected: 'Ou afficher uniquement à partir du calendrier sélectionné:'
+    services:
+      index:
+        none_available: Aucun service disponible.
+      show:
+        book: Faire une réservation
+      time_day_available:
+        any_resource: Première disponible
+        dateselector: Sélectionner une date
+        earlier: Plus tôt
+        gap_warning: Pour sélectionner plusieurs emplacements, ces emplacements doivent être sans espaces.
+        later: Plus tard
+        max_slots_warning: Impossible de réserver plus de plages horaires %{max_slots}
+        multiple_slots_info: Pour sélectionner plusieurs créneaux, choisissez d'abord l'heure de début puis le créneau de fin.
+        next_available_date_html: La prochaine date disponible est %{next_available_date}
+        next_date: Le prochain jour
+        no_availability: Aucune disponibilité à la date sélectionnée. Veuillez essayer une autre date.
+        no_selection: Veuillez sélectionner une heure disponible.
+        select_time: "%{service} - sélectionnez le temps disponible"
+      weekday_available:
+        dateselector: Sélectionner une date
+        gap_warning: Pour sélectionner plusieurs emplacements, ces emplacements doivent être sans espaces.
+        max_slots_warning: Impossible de réserver plus de plages horaires %{max_slots}
+        multiple_slots_info: Pour sélectionner plusieurs créneaux, choisissez d'abord l'heure de début puis le créneau de fin.
+        next_available_date_html: La prochaine date disponible est %{next_available_date}
+        next_week: La semaine prochaine
+        no_availability: Aucune disponibilité à la date sélectionnée. Veuillez essayer une autre date.
+        no_selection: Veuillez sélectionner une heure disponible.
+        prev_week: Semaine précédente
+        select_resource: Afficher le calendrier
+        select_time: "%{service} - sélectionnez le temps disponible"
+        show_all: Afficher tout disponible

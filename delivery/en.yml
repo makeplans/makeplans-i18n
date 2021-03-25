@@ -1,0 +1,72 @@
+---
+en:
+  booking_ical:
+    summary: "%{service} at %{client}"
+  booking_mailer:
+    cancellation:
+      header: Hi %{name}
+      info: Your reservation for %{title} at %{time_range} has been cancelled.
+      subject: Reservation cancelled
+    confirmation:
+      header: Hi %{name}
+      info: You have reserved %{title} %{time_range}.
+      link: More info about your booking
+      link_cancellation_info: and cancellation options
+      resource_info: 'Reservation with: %{resource}.'
+      subject: New reservation
+      subject_service: Reservation for %{service}
+    declined:
+      body: |-
+        Hi,
+
+        Your reservation was not confirmed.
+      subject: Reservation declined
+    modification:
+      header: Hi %{name}
+      info: 'Your reservation has been changed to: %{title} %{time_range}.'
+      link: More info about your booking
+      link_cancellation_info: and cancellation options
+      resource_info: 'Reservation with: %{resource}.'
+      subject: Reservation modified
+    request_card:
+      header: Hi %{name}
+      info: To easily pay your reservation please add your credit card details.
+      link: Add payment card
+      subject: Add your payment info
+    verification:
+      footer: 'Important: The reservation is not yet completed. If you do not verifiy the reservation by clicking the link above within %{expires_in} minutes your reservation might expire.'
+      header: To complete your booking of %{title} %{time_range} you must confirm your reservation by clicking the link below.
+      link: Confirm reservation
+      subject: Please confirm your reservation
+  booking_sms:
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        New reservation of {{ booking.resource.title }} by {{ booking.person.name }}. {{ booking.title }} on {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        New signup for {{ booking.event.full_title }} {{ booking.time_range }} by {{ booking.person.name }}.
+        MakePlans
+    cancellation: Your reservation on {{ booking.booked_from }} has been cancelled.
+    confirmation: You have made a reservation for {{ booking.title }} {{ booking.booked_from }}.
+    declined: Your request for reservation of {{ booking.title }} {{ booking.booked_from }} was not approved. Please try again.
+    modification: 'Your reservation has been modified: {{ booking.title }} {{ booking.booked_from }}. '
+    reminder: 'Reminder: Reservation {% if booking.service != nil %}of {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: Please add your payment info at %{url}
+    signature: |2-
+
+      {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} is your verification code for the reservation of {{ booking.title }}."
+  person_mailer:
+    export:
+      subject: Data export
+    perishable_token:
+      body: |-
+        To login click the link below:
+
+        %{link}
+      subject: Login for MakePlans
+  person_sms:
+    perishable_token: "{{ perishable_token }} is your code for authentication."
+    signature: |2-
+
+      {{ client.name }}

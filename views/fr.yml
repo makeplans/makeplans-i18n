@@ -1,0 +1,54 @@
+---
+fr:
+  bookings:
+    sms_code:
+      incorrect_code: code incorrect
+  clients:
+    new:
+      first_user: Ceci est votre mot de passe personnel. Vous pouvez ajouter d'autres utilisateurs plus tard.
+      free_trial_info: Essai gratuit de 14 jours. Aucune obligation. Pas de carte de crédit nécessaire.
+      headline: Commencez avec la réservation en ligne
+      logged_in_as: Vous êtes connecté en tant que %{name}.
+      read_legal: Termes et conditions d'utilisation de ce service
+      recaptcha: Désolé de vous déranger, mais nous devons vérifier votre inscription sur Google Recaptcha. Veuillez saisir à nouveau votre mot de passe, puis soumettre le formulaire.
+      subdomain_info: Votre adresse unique (URL) à laquelle vos clients peuvent réserver en ligne.
+      submit: Enregistrer mon compte
+      title: Inscrivez-vous à votre compte de réservation en ligne
+      user_email: Email de travail
+      user_info: Votre login utilisateur
+    rejected:
+      headline: Inscription rejetée
+      info: Désolé, mais notre système a marqué votre inscription comme spam. Veuillez nous contacter pour créer un compte.
+      title: Inscription rejetée
+  oauth:
+    callback:
+      header: Connectez-vous au compte
+  user:
+    select_client:
+      header: Sélectionnez un compte
+  user_password_resets:
+    create:
+      header: réinitialisez votre mot de passe
+      info: Nous vous avons maintenant envoyé un e-mail. Pour confirmer la réinitialisation de votre mot de passe, vous devez cliquer sur le lien dans l'e-mail.
+      signup_html: Pas de compte? <a href="%{url}">Commencez maintenant.</a>
+    edit:
+      header: Veuillez saisir votre nouveau mot de passe
+      signup_html: Pas de compte? <a href="%{url}">Commencez maintenant.</a>
+      submit: Sauvegarder le mot de passe
+    new:
+      header: Mot de passe oublié?
+      signup_html: Pas de compte? <a href="%{url}">Commencez maintenant.</a>
+      submit: Envoyer un e-mail
+  user_sessions:
+    handle_authenticated_user:
+      success: Connecté avec succès
+    new:
+      forgot_link: Mot de passe oublié?
+      header: Connexion
+      incorrect: Identifiants incorrects
+      login: Connexion
+      remember_me: Souviens-toi de moi
+      signup_html: Pas de compte? <a href="%{url}">Commencez maintenant.</a>
+    rotp_verification_code:
+      header: Connexion avec authentification à deux facteurs
+      submit: Connexion

@@ -1,0 +1,225 @@
+---
+sv:
+  booking_ical:
+    summary_admin: "%{service} för %{person}"
+  booking_user_mailer:
+    booking_info:
+      customer_info: Kundinformation
+    notification_cancellation:
+      body: "%{name} har annullerat bokningen %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Avbokning för %{resource}
+      booking_type_attendance:
+        subject_resource: Avbokning för %{title}
+      link: För att se denna bokning, gå till
+    notification_confirmation:
+      appointment:
+        body: "%{name} har bokat %{title} %{time_range}."
+      attendance:
+        body: "%{name} har bokat %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Ny bokning för %{resource}
+      booking_type_attendance:
+        subject_resource: Ny bokning för %{title}
+      link: För att visa bokningen, gå till
+    request_approvement:
+      body: "%{name} vill boka %{title} %{time_range}."
+      link: För att godkänna eller avvisa den här bokningen, gå till
+      subject_resource: Ny begäran om %{resource}
+  client_mailer:
+    charge_failed:
+      body: |-
+        Hej,
+
+        Vi kunde inte debitera ditt kreditkort för att använda ditt MakePlans-konto.
+
+        Felet som inträffade var följande: %{error}
+
+        Trevligt om du kan logga in på ditt MakePlans-konto och kontrollera att kortinformationen du har angett är korrekt.
+
+        %{url}
+
+        Kontot inaktiveras snart om betalningen inte slutförs.
+
+        Tack,
+        Planera
+      subject: Problem med att ladda ditt kreditkort
+    charge_give_up:
+      subject: 'KRITISKT: Konto inaktiverat'
+    charge_requires_action:
+      body: |-
+        Hej,
+
+        Du måste bekräfta betalningen för att kunna använda MakePlans. Ditt konto kommer snart att inaktiveras såvida inte betalningen bekräftas.
+
+        %{url}
+
+        Tack,
+        Planera
+      subject: 'KRITISKA: Acceptera betalning'
+    charge_succeded:
+      body: |-
+        Vi har nu debiterat ditt kreditkort för att använda MakePlans. Se bifogat kvitto för faktura # %{invoice_nr}.
+
+        Denna faktura har redan betalats.
+
+        Ditt konto: %{subdomain}
+
+        Tack för att du använder MakePlans.
+      filename: 'MakePlans AS %{invoice_date} kvitto # %{invoice_nr}'
+      subject: Kvitto för användning av MakePlans
+    deactivated:
+      body: |-
+        Hej,
+
+        Espen från MakePlans här. Se att du har inaktiverat ditt konto.
+
+        Var det några funktioner som du tror saknades i MakePlans eller varför valde du att inte fortsätta med systemet? Vi välkomnar feedback så att vi kan förbättra produkten.
+        Eller var det svårt att använda MakePlans? I så fall kan jag hjälpa dig att ställa in ditt konto och ge dig en introduktion till hur det fungerar.
+        Dessutom kan jag erbjuda dig två månaders gratis användning om du vill ge oss ytterligare en chans.
+
+        Svara bara på det här e-postmeddelandet så kan jag följa upp ytterligare.
+
+        Oavsett; ha en bra dag framåt och tack för att du testat MakePlans.
+      subject: Inaktiverat MakePlans-konto
+    no_bookings:
+      body: |-
+        Hej,
+
+        Förra veckan registrerade du dig för att använda MakePlans, en onlinebokningsansökan.
+
+        Jag ser att du inte har gjort några reservationer än. För att se hur MakePlans fungerar kan du enkelt ange en reservation som ett test.
+        För att göra en ny bokning, gå till %{url}.
+
+        Om du är osäker på hur du ställer in ditt konto eller hur bokningsprocessen fungerar är det bara att svara på det här e-postmeddelandet så hjälper vi dig komma igång :)
+
+        Hälsningar
+        Planera
+      subject: Inga reservationer än
+    not_setup:
+      body: |-
+        Hej,
+
+        Igår registrerade du dig för att använda MakePlans, en ansökan om onlinebokning av möten.
+
+        Jag märkte att du inte har konfigurerat ditt konto än. Har du bara inte haft tid eller var det något du undrade om MakePlans?
+        Gå till %{url} för att komma igång med din egen bokningssida nu. Det tar bara 45 sekunder och du är redo att använda onlinebokningsbokningar.
+
+        Svara på det här e-postmeddelandet om du har några frågor eller behöver hjälp med att slutföra konfigurationen av ditt konto.
+
+        Hälsningar
+        Planera
+      subject: Slutför installationen av ditt MakePlans-konto
+    setup_completed:
+      contact_us_html: Om du har några frågor, skriv gärna till oss på %{mail}.
+      footer: MakePlans
+      header: Dina kunder kan nu boka online!
+      info: Du har nu konfigurerat ditt MakePlans-konto och kan nu ta emot onlinebokningar från dina kunder.
+      next_steps: 'Nästa steg:'
+      step_1: Gör en testbokning för att kontrollera att alla texter och utgående meddelanden är korrekta.
+      step_2: När du är klar, placera en länk till din bokningssida på din webbplats.
+      step_3: Berätta även för dina andra kunder att de nu kan boka online.
+      subject: Dina kunder kan nu boka online med MakePlans
+    signup:
+      contact_us_html: Om du har några frågor, skriv gärna till oss på %{mail} eller svara på det här e-postmeddelandet.
+      extra: Extrafunktioner i MakePlans
+      extra_info: 'Vi är glada att du vill ge dina kunder möjligheten att boka online. Utöver det kan MakePlans också erbjuda dig och dina kunder många andra extrafunktioner:'
+      feature_1: Dina kunder kan få ett påminnelse-SMS före den avtalade tiden.
+      feature_2: Kräva kortbetalning vid bokningstillfället.
+      feature_3: Spara extra information om bokningen eller kunden med hjälp av anpassade fält.
+      feature_4: MakePlans är integrerat med många tredjepartsprogram, som exempelvis CRM och program för e-postnyhetsbrev.
+      footer: Vi hoppas att du får glädje av MakePlans
+      header: Välkommen till MakePlans!
+      link_info: Här hittar du din kalender med en översikt av alla dina bokningar och här kan du även konfigurera ditt konto.
+      registered: 'Du har nu registrerat dig för ett gratis testkonto hos:'
+      subject: Välkommen till MakePlans
+    trial_expire_warning:
+      body: |-
+        Hej,
+
+        Vill bara påminna dig om att testperioden på MakePlans löper ut om tre dagar.
+
+        Om du vill att dina kunder ska kunna boka utan problem i framtiden måste du aktivera ditt konto.
+
+        Aktivera ditt konto nu:
+        %{url}
+
+        Har du inte haft tid att testa MakePlans? Svara på det här e-postmeddelandet så kan vi förlänga testperioden.
+      subject: Din provperiod är snart över
+    trial_expired:
+      body: |-
+        Hej,
+
+        Testperioden för MakePlans är nu över.
+
+        Det är inte längre för dina kunder att göra bokningar på bokningssidan. Du måste aktivera ditt konto nu för att de ska kunna reservera.
+
+        Aktivera ditt konto nu:
+        %{url}
+
+        Har du inte haft tid att testa MakePlans? Svara på det här e-postmeddelandet så kan vi förlänga testperioden.
+      subject: Testperioden för MakePlans är över
+    trial_sms_credits_balance_reached:
+      body: |-
+        Hej,
+
+        Ditt testkonto för MakePlans har nu överskridit gränsen för skickat SMS %{sms_balance_limit}.
+
+        Ditt konto kommer inte att kunna skicka fler SMS. Om du vill fortsätta använda MakePlans måste du aktivera ditt konto.
+
+        Aktivera ditt konto här:
+        %{url}
+
+        Alternativt kan du logga in på ditt konto och ändra verifieringsmetoden från SMS till e-post och inaktivera SMS-påminnelser.
+      subject: Du kan inte skicka mer SMS
+    trial_sms_credits_balance_warning:
+      body: |-
+        Hej,
+
+        Under testperioden för ditt MakePlans-konto har du möjlighet att skicka %{sms_balance_limit} SMS.
+        Du har nu skickat %{sms_balance}.
+
+        För att säkerställa att sändningen av SMS inte slutar bör du aktivera ditt MakePlans-konto så snart som möjligt.
+
+        Aktivera ditt konto här:
+        %{url}
+
+        Alternativt kan du logga in på ditt konto och ändra verifieringsmetoden från SMS till e-post och inaktivera SMS-påminnelser.
+      subject: Du har snart skickat för många SMS
+  layouts:
+    booking_user_mailer:
+      footer: Genereras automatiskt av MakePlans.
+  user_mailer:
+    add_user:
+      body: |-
+        Hej,
+
+        Välkommen till MakePlans.
+
+        Klicka på länken nedan för att välja ett lösenord.
+
+        %{link}
+      subject: Tillagd som användare i MakePlans
+    export:
+      body: |-
+        Hej,
+
+        Se bifogad fil för exporterad data från MakePlans.
+
+        Tack för att du använder MakePlans
+      subject: Export från MakePlans
+    link_user:
+      body: |-
+        Hej,
+
+        Du har nu tillgång till kontot %{client} i MakePlans.
+
+        Besök %{link} för att logga in.
+
+        MakePlans
+      subject: Tillgång till konto i MakePlans
+    password_reset:
+      footer: MakePlans
+      info: Du eller någon annan har valt att återställa ditt lösenord hos MakePlans. För att slutföra återställningen, klicka på länken nedan.
+      link: Återställ mitt MakePlans-lösenord.
+      subject: Återställ lösenord

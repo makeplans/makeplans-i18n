@@ -1,0 +1,185 @@
+---
+lt:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: Mes rankiniu būdu patvirtinsime jūsų rezervaciją. Kai gausime jūsų užklausą, gausite %{verification_method}.
+        body_automatic_sync: Dabar tikriname jūsų rezervaciją. Kai gausime jūsų užklausą, gausite %{verification_method}.
+        title: Laukiama patvirtinimo
+        title_automatic_sync: Tikrinama rezervacija
+        verification_method:
+          authenticated: pranešimas
+          email: Elektroninis laiškas
+          none: pranešimas
+          sms: SMS
+      awaiting_payment:
+        body: Palaukite, kol patikrinsime operaciją.
+        error: Mes negalime patvirtinti jūsų mokėjimo. Kreipkitės į klientų aptarnavimo tarnybą, nurodydami nuorodos numerį %{booking_id}.
+        title: Mokėjimo patvirtinimas
+      awaiting_verification:
+        verification_delivery_error: Nepavyko jums išsiųsti el. Laiško. Ar tikrai įvedėte teisingą el. Pašto adresą?
+        verification_delivery_not_processed: Šiuo metu patiriame tam tikrų vėlavimų savo sistemose. Palaukite, kol išsiųsime jūsų el. Laišką.
+        verification_sent_body: Išsiuntėme el. Laišką adresu %{email}. Vykdykite jį, kad patvirtintumėte užsakymą. Tai padeda mums įsitikinti, kad nesate robotas.
+        verification_sent_title: Prašome patvirtinti savo el. pašto adresą
+      declined:
+        body: Deja, mums nepavyko patvirtinti jūsų užsakymo užklausos. Pabandykite kitą laiko juostą arba susisiekite su mumis.
+        title: Jūsų rezervacija nebuvo patvirtinta
+      expired:
+        header: Užsakymas baigėsi
+        info: Užsakymai turi būti patvirtinti per %{expires_in} minučių. Prašau, pabandykite dar kartą.
+      new:
+        authentication:
+          authenticating: Autentifikuojama ...
+          logged_in_as: Jūs esate prisijungę kaip %{person}
+          logged_in_with_fb_html: Facebook prisijungė kaip <span data-name="">nežinomas</span> . Norėdami patvirtinti savo rezervaciją, spustelėkite "Patvirtinti rezervaciją".
+          login_with_facebook_html: Arba galite %{fb_link}.
+          login_with_facebook_link: patikrinkite automatiškai naudodami Facebook
+          not_current_person_html: Ar nesate <span data-name="">%{person}?</span> ?
+          remember_me: Ar norite, kad mes prisimintume jus šiame kompiuteryje naudodami slapuką?
+        enter_info: Įveskite informaciją
+        errors_header: Užpildykite privalomus laukus.
+        form_info: Tai bus naudojama jūsų %{service}, %{booking} rezervacijai patvirtinti.
+        price_info: 'Kaina: %{price}'
+        reserve_resource: Rezervacija %{resource}
+      no_person:
+        body: 'Susisiekite su mumis ir gaukite daugiau informacijos. Klaida: Kliento ryšys pašalintas'
+        title: Klaida
+      payment:
+        awaiting:
+          body: Palaukite, kol patikrinsime operaciją.
+          error: Mes negalime patvirtinti jūsų mokėjimo. Susisiekite su klientų aptarnavimo tarnyba https://makeplans.net nurodydami nuorodos numerį %{booking_id}.
+          title: Mokėjimo patvirtinimas
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC negalioja.
+            expiration: Galiojimo data netinkama.
+            number: Kortelės numeris neteisingas.
+          expiration_html: Baigiasi <small>(MM / MM)</small>
+          number: Kortelės numeris
+        form_footer_html: Jūsų kredito kortelė bus apmokestinta <span class="payment-amount">%{amount}</span> .
+        form_header: Ši forma siunčiama užšifruota.
+        header: Mokėjimas
+        info: Norėdami užbaigti %{service} rezervaciją, turite sumokėti kreditine kortele.
+      show:
+        add_card: Pridėkite savo kredito kortelę, kad sumokėtumėte automatiškai po rezervacijos
+        add_to_calendar: Pridėkite rezervaciją prie savo kalendoriaus
+        body: Jūs baigėte. Užsakymas atliktas.
+        cancel: Atšaukti rezervaciją
+        cancel_confirmation: Ar tikrai norite atšaukti šią rezervaciją?
+        paid: Iš anksto sumokėjote %{paid_amount}.
+        remember_me: Ar norite, kad prisimintume jus šiame kompiuteryje naudodami slapuką?
+        title: Jūsų rezervacija patvirtinta!
+      sms_code:
+        header: Patvirtinkite rezervaciją
+        incorrect_code: Neteisingas kodas
+        verify_sms_code: Išsiuntėme SMS žinutę su patvirtinimo kodu %{phonenumber}. Prašome įvesti kodą formoje, kad patvirtintumėte užsakymą. Tai reikalinga norint užbaigti rezervaciją.
+    events:
+      index:
+        none_available: Nėra jokių renginių.
+      show:
+        before_first_booking: Neįmanoma užsiregistruoti į šį įvykį anksčiau nei %{first_booking_at}.
+        book: Užsiregistruokite į šį įvykį
+        full: Šis įvykis yra pilnas.
+        past_last_booking: Užsiregistruoti į šį įvykį nebeįmanoma.
+        started: Šis įvykis jau baigtas.
+    generic:
+      dateselector: Pasirinkite datą
+      earlier: anksčiau
+      payment:
+        add_card_details_html: Jūsų kortelės informacija nebus saugoma pas mus, tačiau ji bus siunčiama šifruota į %{provider} saugiai operacijai ir saugojimui.
+        add_card_footer_html: Dabar jūsų kortelė nebus apmokestinta
+        add_card_header: Išsaugoti kortelę
+        add_card_info: Pridėkite mokėjimo kortelę, kad galėtumėte lengvai ir automatiškai atsiskaityti atlikę užsakymą.
+        add_card_submit: Išsaugoti kortelę
+        awaiting:
+          body: Palaukite, kol patikrinsime operaciją.
+          error: 'Mes negalime patvirtinti jūsų mokėjimo. Susisiekite su klientų aptarnavimo tarnyba šiuo adresu: http://makeplans.net, nurodydami nuorodos numerį %{booking_id}.'
+          title: Mokėjimo patvirtinimas
+        form_footer_html: Jūsų kredito kortelė bus apmokestinta <span class="payment-amount">%{amount}</span> .
+        form_header: Ši forma siunčiama užšifruota.
+        header: Mokėjimas
+        info: Norėdami užbaigti %{service} %{booking} rezervaciją, turite sumokėti kreditine kortele.
+        payment_details_html: Rodoma suma yra %{currency}. Mes nesaugome jūsų kreditinės kortelės informacijos, bet siunčiame ją šifruotu adresu %{provider} saugiam apdorojimui ir saugojimui.
+        payment_received: "%{paid_amount} buvo sumokėta už %{paid_at}."
+      step:
+        cancel: Atšaukti
+        completed: Baigta!
+        hotstepper: Žingsnis %{step} iš %{steps}
+        next_confirm: 'Kitas: patvirtinimas'
+        next_payment: Mokėk
+        next_time: 'Kitas: Pasirinkite laiką'
+        next_verify: Patvirtinkite rezervaciją
+        previous: ankstesnis žingsnis
+        previous_date: Keisti laiką
+        previous_service: Keisti paslaugą
+    layouts:
+      application:
+        authenticated: 'Prisijungėte kaip: %{name}'
+        demo_ended: "MakePlans demonstracinės versijos galiojimas baigėsi."
+        footer:
+          privacy_policy: Privatumo politika
+          support: Parama
+        login: Jūsų rezervacijos
+        meta:
+          description: Internetinis susitikimų rezervavimas %{name}
+          keywords: planavimas, paskyrimas, rezervavimas, registracija, makeplans
+        powered_by: Užsakymas
+        powered_by_title: Paskyrimų rezervavimas, planavimas ir registracija į renginius / klases
+        title: Užsakymas internetu %{name}
+    people:
+      credit_card_added:
+        body: Jūsų kortelė bus apdorota atlikus užsakymą. Kortelės duomenys saugiai saugomi pas mūsų mokėjimo partnerį Stripe.
+        title: Jūsų kortelė buvo išsaugota
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Patvirtinimo kodas
+        remember_me: Prisimink mane šioje mašinoje.
+        submit: Prisijungti
+      not_found:
+        info_html: Jūs nesate registruotas kaip klientas. Pirmiausia užpildykite <a href="/">rezervaciją</a> .
+      perishable_token_action_required:
+        info_html: Mes atsiuntėme jums el. Laišką. Norėdami prisijungti, spustelėkite nuorodą.
+      perishable_token_form:
+        not_available_for_this_verification_method: Nepasiekiamas.
+        submit: Gauti kodą
+    profile:
+      show:
+        header: Jūsų rezervacijos
+        logout: Atsijungti
+        new_booking: Nauja rezervacija
+    providers:
+      index:
+        show_all_available: Rodyti visus turimus
+        show_only_selected: 'Arba rodyti tik iš pasirinkto kalendoriaus:'
+    services:
+      index:
+        none_available: Paslaugų nėra.
+      show:
+        book: Užsisakykite
+      time_day_available:
+        any_resource: Pirmasis prieinamas
+        dateselector: Pasirinkite datą
+        earlier: Anksčiau
+        gap_warning: Norėdami pasirinkti kelis laiko tarpsnius, šie lizdai turi būti be tarpų.
+        later: Vėliau
+        max_slots_warning: Negalima rezervuoti daugiau nei %{max_slots} laiko intervalų
+        multiple_slots_info: Norėdami pasirinkti kelis laiko tarpsnius, pirmiausia pasirinkite pradžios laiką, tada pabaigos laiką.
+        next_available_date_html: Kita galima data yra %{next_available_date}
+        next_date: Kita diena
+        no_availability: Pasirinktą dieną nėra laisvų vietų. Pabandykite kitą datą.
+        no_selection: Pasirinkite galimą laiką.
+        select_time: "%{service} - pasirinkite galimą laiką"
+      weekday_available:
+        dateselector: Pasirinkite datą
+        gap_warning: Norėdami pasirinkti kelis laiko tarpsnius, šie lizdai turi būti be tarpų.
+        max_slots_warning: Negalima rezervuoti daugiau nei %{max_slots} laiko intervalų
+        multiple_slots_info: Norėdami pasirinkti kelis laiko tarpsnius, pirmiausia pasirinkite pradžios laiką, tada pabaigos laiką.
+        next_available_date_html: Kita galima data yra %{next_available_date}
+        next_week: Kitą savaitę
+        no_availability: Pasirinktą dieną nėra laisvų vietų. Pabandykite kitą datą.
+        no_selection: Pasirinkite galimą laiką.
+        prev_week: Praeita savaite
+        select_resource: Rodyti kalendorių
+        select_time: "%{service} - pasirinkite galimą laiką"
+        show_all: Rodyti visus turimus

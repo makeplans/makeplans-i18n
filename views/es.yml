@@ -1,0 +1,54 @@
+---
+es:
+  bookings:
+    sms_code:
+      incorrect_code: código incorrecto
+  clients:
+    new:
+      first_user: Esta es su contraseña personal. Puede agregar más usuarios más tarde.
+      free_trial_info: Prueba gratuita de 14 días. Sin obligaciones. No se requiere tarjeta de crédito.
+      headline: Empiece con la reservación online
+      logged_in_as: Estás conectado como %{name}.
+      read_legal: Términos y condiciones para el uso de este servicio
+      recaptcha: Lamento molestarlo, pero tenemos que verificar su registro con Google Recaptcha. Por favor, ingrese su contraseña nuevamente y luego envíe el formulario.
+      subdomain_info: Su dirección única (URL) donde sus clientes pueden reservar en línea.
+      submit: Registrar mi cuenta
+      title: Regístrese para obtener su cuenta de reservación en línea
+      user_email: Correo electrónico de trabajo
+      user_info: Nombre del usuario
+    rejected:
+      headline: Registro rechazado
+      info: Lo sentimos, pero nuestro sistema ha marcado su registro como spam. Por favor contáctenos para registrar una cuenta.
+      title: Registro rechazado
+  oauth:
+    callback:
+      header: Conectarse a la cuenta
+  user:
+    select_client:
+      header: Seleccionar cuenta
+  user_password_resets:
+    create:
+      header: Restablecer su contraseña
+      info: Ahora le hemos enviado un correo electrónico. Para confirmar el restablecimiento de su contraseña, debe hacer clic en el enlace del correo electrónico.
+      signup_html: ¿No tienes cuenta? <a href="%{url}">Empieza ahora.</a>
+    edit:
+      header: Ingrese su nueva contraseña
+      signup_html: ¿No tienes cuenta? <a href="%{url}">Empieza ahora.</a>
+      submit: Guardar contraseña
+    new:
+      header: "¿Olvidaste tu contraseña?"
+      signup_html: ¿No tienes cuenta? <a href="%{url}">Empieza ahora.</a>
+      submit: Enviar correo electrónico
+  user_sessions:
+    handle_authenticated_user:
+      success: Conectado con éxito
+    new:
+      forgot_link: "¿Olvidaste tu contraseña?"
+      header: Iniciar sesión
+      incorrect: credenciales incorrectas
+      login: Iniciar sesión
+      remember_me: Recuérdame
+      signup_html: ¿No tienes cuenta? <a href="%{url}">Empieza ahora.</a>
+    rotp_verification_code:
+      header: Iniciar sesión con autenticación de dos factores
+      submit: Iniciar sesión

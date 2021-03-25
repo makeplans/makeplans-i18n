@@ -1,0 +1,186 @@
+---
+en:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: We will manually confirm your reservation. You will receive %{verification_method} when we have processed your request.
+        body_automatic_sync: We are now checking your reservation. You will receive %{verification_method} when we have processed your request.
+        title: Awaiting confirmation
+        title_automatic_sync: Checking reservation
+        verification_method:
+          authenticated: a notification
+          email: an email
+          none: a notification
+          sms: a SMS
+      awaiting_payment:
+        body: Please wait while we verify the transaction.
+        error: We are unable to verify your payment. Please contact customer service with the reference number %{booking_id}.
+        title: Verifying your payment
+      awaiting_verification:
+        verification_delivery_error: We were unable to email you. Are you sure you entered the correct email address?
+        verification_delivery_not_processed: We are currently experincing some delays in our systems. Please wait while we are deliving your email.
+        verification_sent_body: We have sent an email to %{email}. Follow it to verify your booking. It helps us make sure you’re not a robot.
+        verification_sent_title: Please confirm your email address
+      declined:
+        body: Sorry we were unable to approve your reservation request. Please try another timeslot or contact us.
+        title: Your reservation was not approved
+      expired:
+        header: Booking expired
+        info: Bookings must be verified within %{expires_in} minutes. Please try again.
+      new:
+        authentication:
+          authenticating: Authenticating...
+          logged_in_as: You are logged in as %{person}
+          logged_in_with_fb_html: Logged in on Facebook as <span data-name="">unknown</span>. Click "Confirm reservation" to verify your reservation.
+          login_with_facebook_html: Alternatively you can %{fb_link}.
+          login_with_facebook_link: verify automatically with Facebook
+          not_current_person_html: Are you not <span data-name="">%{person}?</span>?
+          remember_me: Do you want us to remember you on this machine using a cookie?
+        date_format: 'Please enter valid date format: %{format}'
+        enter_info: Enter information
+        errors_header: Please fill out the required fields.
+        form_info: This will be used to verify your reservation of %{service}, %{booking}.
+        price_info: 'Price: %{price}'
+        reserve_resource: Reservation for %{resource}
+      no_person:
+        body: 'Contact us for more info. Error: Customer connection removed'
+        title: Error
+      payment:
+        awaiting:
+          body: Please wait while we verify the transaction.
+          error: We are unable to verify your payment. Please contact customer service at https://makeplans.net with the reference number %{booking_id}.
+          title: Verifying your payment
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC is not valid.
+            expiration: Expiration date is not valid.
+            number: Card number is not valid.
+          expiration_html: Expires <small>(MM/YY)</small>
+          number: Card number
+        form_footer_html: Your credit card will be charged with <span class="payment-amount">%{amount}</span>.
+        form_header: This form is sent encrypted.
+        header: Payment
+        info: To complete the reservation of %{service} you must pay with your credit card.
+      show:
+        add_card: Add your credit card to pay automatically after the reservation
+        add_to_calendar: Add the reservation to your calendar
+        body: You're done. The booking has been made.
+        cancel: Cancel reservation
+        cancel_confirmation: Are you sure you want to cancel this reservation?
+        paid: You have prepaid %{paid_amount}.
+        remember_me: Do you want us to remember you on this machine using a cookie?
+        title: Your reservation is confirmed!
+      sms_code:
+        header: Confirm reservation
+        incorrect_code: Incorrect code
+        verify_sms_code: We have sent a SMS to %{phonenumber} with a verification code. Please enter the code in the form to verify the reservation. This is required to complete the reservation.
+    events:
+      index:
+        none_available: No events available.
+      show:
+        before_first_booking: It is not possible to sign up for this event before %{first_booking_at}.
+        book: Sign up for this event
+        full: This event is full.
+        past_last_booking: It is no longer possible to sign up for this event.
+        started: This event is already completed.
+    generic:
+      dateselector: Select date
+      earlier: earlier
+      payment:
+        add_card_details_html: Your card details will not be stored with us but is sent encrypted to %{provider} for secure transaction and storage.
+        add_card_footer_html: Your card will not be charged now
+        add_card_header: Save card
+        add_card_info: Add your payment card so you can easily and automatically pay after the booking.
+        add_card_submit: Save card
+        awaiting:
+          body: Please wait while we verify the transaction.
+          error: We are unable to verify your payment. Please contact customer service at http://makeplans.net with the reference number %{booking_id}.
+          title: Verifying your payment
+        form_footer_html: Your credit card will be charged with <span class="payment-amount">%{amount}</span>.
+        form_header: This form is sent encrypted.
+        header: Payment
+        info: To complete the reservation of %{service} %{booking} you must pay with your credit card.
+        payment_details_html: The displayed amount is in %{currency}. We do not store your credit card details but send it encrypted over to %{provider} for secure processing and storage.
+        payment_received: "%{paid_amount} was paid on %{paid_at}."
+      step:
+        cancel: Cancel
+        completed: Completed!
+        hotstepper: Step %{step} of %{steps}
+        next_confirm: 'Next: Confirmation'
+        next_payment: Pay
+        next_time: 'Next: Select a time'
+        next_verify: Confirm reservation
+        previous: previous step
+        previous_date: Change time
+        previous_service: Change service
+    layouts:
+      application:
+        authenticated: 'Logged in as: %{name}'
+        demo_ended: The MakePlans demo has expired.
+        footer:
+          privacy_policy: Privacy policy
+          support: Support
+        login: Your reservations
+        meta:
+          description: Online appointment booking for %{name}
+          keywords: scheduling, appointment, booking, signups, makeplans
+        powered_by: Made by
+        powered_by_title: Appointment booking, scheduling and event/class signups
+        title: Online booking for %{name}
+    people:
+      credit_card_added:
+        body: Your card will be processed when the booking is completed. The card details are stored safely with our payment partner Stripe.
+        title: Your card was saved
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Verification code
+        remember_me: Remember me on this machine.
+        submit: Log in
+      not_found:
+        info_html: You are not registered as a customer. Complete <a href="/">a booking</a> first.
+      perishable_token_action_required:
+        info_html: We have sent you an email. Please click on the link to log in.
+      perishable_token_form:
+        not_available_for_this_verification_method: Not available.
+        submit: Receive code
+    profile:
+      show:
+        header: Your reservations
+        logout: Log out
+        new_booking: New reservation
+    providers:
+      index:
+        show_all_available: Show all available
+        show_only_selected: 'Or only show from selected calendar:'
+    services:
+      index:
+        none_available: No services available.
+      show:
+        book: Make a booking
+      time_day_available:
+        any_resource: First available
+        dateselector: Select date
+        earlier: Earlier
+        gap_warning: To select multiple slots these slots have to be without gaps.
+        later: Later
+        max_slots_warning: Cannot reserve more than %{max_slots} timeslots
+        multiple_slots_info: To select multiple slots first choose the start time then the ending slot.
+        next_available_date_html: Next available date is %{next_available_date}
+        next_date: Next day
+        no_availability: No availability on selected date. Please try another date.
+        no_selection: Please select an available time.
+        select_time: "%{service} - select available time"
+      weekday_available:
+        dateselector: Select date
+        gap_warning: To select multiple slots these slots have to be without gaps.
+        max_slots_warning: Cannot reserve more than %{max_slots} timeslots
+        multiple_slots_info: To select multiple slots first choose the start time then the ending slot.
+        next_available_date_html: Next available date is %{next_available_date}
+        next_week: Next week
+        no_availability: No availability on selected date. Please try another date.
+        no_selection: Please select an available time.
+        prev_week: Previous week
+        select_resource: Show calendar
+        select_time: "%{service}  - select available time"
+        show_all: Show all available

@@ -1,0 +1,447 @@
+---
+he:
+  activerecord:
+    attributes:
+      booking:
+        booked_from: מ
+        booked_to: ל
+        count: לספור
+        event_id: מִקרֶה
+        notes: הערות
+        person: צרכן
+        person_id: צרכן
+        resource: מַשׁאָב
+        resource_id: מַשׁאָב
+        service: שֵׁרוּת
+        service_id: שֵׁרוּת
+        title: כותרת
+        verification_code: קוד אימות
+      category:
+        title: כותרת
+      client:
+        future_bookable_period: תקופה שניתן להזמין בעתיד
+        mail_notification_recipient: כתובות דוא"ל להודעה
+        mailer_sender: כתובת השולח בדוא"ל
+        phone_number: מספר טלפון
+        purge_data_period: תקופת מחיקה אוטומטית
+      client_user_link:
+        role: תַפְקִיד
+      client_user_link/role:
+        admin: מנהל
+        manager: מנהל
+        staff: עוֹבֵד
+      event:
+        booking_capacity: מקסימום אנשים המותרים להזמנה
+        capacity: מקסימום אנשים מותרים
+        description: תיאור
+        ends_at: מסתיים בשעה
+        first_booking_at: אין הזמנה לפני
+        last_booking_at: ההזמנה האחרונה לפני
+        resource_id: מַשׁאָב
+        service_id: שֵׁרוּת
+        starts_at: מתחיל ב
+        title: כותרת
+      person:
+        address: כתובת
+        city: עִיר
+        country_code: מדינה
+        created_at: רשום
+        date_of_birth: תאריך לידה
+        email: אימייל
+        name: שֵׁם
+        national_id_no: מספר תעודת זהות
+        notes: הערות
+        phonenumber: מספר טלפון
+        postal_code: מיקוד
+        state: מדינה
+        street: רְחוֹב
+      resource:
+        capacity: קיבולת
+        mail_notification_recipient: כתובות דוא"ל להודעה
+        title: כותרת
+      service:
+        payment_required: דורשים תשלום מראש
+        price: מחיר
+        title: כותרת
+      user:
+        rotp_verification_code: קוד אימות
+    errors:
+      messages:
+        chronic_syntax_error: שגיאת תחביר אנא עיין https://github.com/mojombo/chronic#examples
+        icalendar_invalid: אין התרחשויות או תבנית iCalendar לא חוקית
+        icalendar_over_limit: יותר מדי מקרים. מקסימום הוא 731.
+        illegal: בִּלתִי חוּקִי
+        invalid: לא תקף
+        phone_invalid: אינו מספר טלפון חוקי
+        time_not_available: לא ניתן להזמין בשלב זה
+      models:
+        booking:
+          attributes:
+            count:
+              over_booking_capacity: יותר ממקסימום אנשים המותרים להזמנה
+            event_id:
+              time_not_available: בתפוסה מלאה
+            person_id:
+              taken: כבר נרשמת לאירוע זה
+            resource_id:
+              no_availability: לא זמין בזמן המבוקש
+            service_id:
+              attendance_only: מיועד רק להרשמות
+              not_offered: לא מוצע על ידי המשאב שנבחר
+            state:
+              invalid_transition: שינוי מצב לא חוקי
+          fully_booked: לא זמין בזמן שנבחר.
+          time_after_future_bookable_period: רחוק מדי קדימה בעתיד
+        client:
+          attributes:
+            base:
+              denied: נדחה
+        person:
+          missing: לא נשמר בפרופיל הלקוח שלך. אנא פנה אלינו לתיקון.
+          no_values_present: יש להזין שם, מספר טלפון או אימייל.
+        resource:
+          has_bookings: למשאב זה יש הזמנות. לא ניתן למחוק. אנא צרו קשר עם התמיכה.
+        service:
+          below_minimum: חייב להיות יותר מ- 1 דולר אם אתה רוצה לדרוש תשלום
+        user:
+          attributes:
+            password:
+              incorrect: סיסמת Incorret
+          current_password_incorrect: הסיסמה הנוכחית אינה תואמת
+      template:
+        body: 'הפעולה לא הושלמה עקב השגיאות הבאות:'
+        header: אירעו שגיאות
+    models:
+      booking: קביעת פגישה
+      category: קטגוריה
+      event: מִקרֶה
+      external_credential: שילוב
+      person: צרכן
+      resource: מַשׁאָב
+      service: שֵׁרוּת
+      service_appointment: שֵׁרוּת
+      service_attendance: סוג אירוע
+      user: מִשׁתַמֵשׁ
+  direction: rtl
+  errors:
+    messages:
+      no_values_present: יש להזין שם, מספר טלפון או אימייל.
+      not_authenticated: נותקת מהמערכת.
+      not_found: לא ניתן למצוא נתונים. נסה לטעון מחדש את הדף.
+      offline: לא ניתן להתחבר ל- MakePlans. אנא בדוק שאתה מחובר.
+      server_error: שגיאה ב- MakePlans
+      syntax_error: שגיאה בתחביר שסופק.
+      unknown: שגיאה לא ידועה. נסה לטעון מחדש את הדף.
+    models:
+      person:
+        perishable_token:
+          invalid: קוד שגוי
+    stripe:
+      booking:
+        invalid: ההזמנה פג או שאינה חוקית. העסקה לא עובדה.
+        paid: ההזמנה כבר בתשלום. נסה לרענן את הדף.
+      card:
+        missing: לא ניתן לקבל את פרטי הכרטיס
+      processor: 'שגיאה ממעבד התשלומים שלנו: %{error}'
+      unknown: לא ניתן לעבד את העסקה. שגיאה לא ידועה.
+  generic:
+    all: את כל
+    at: בְּ-
+    born_abbreviation: ב. %{date_of_birth}
+    default: ברירת מחדל של המערכת
+    optional: אופציונאלי
+    search: לחפש
+    to: ל
+    today: היום
+    tomorrow: מָחָר
+  helpers:
+    booking:
+      action:
+        cancel: לְבַטֵל
+        confirm: לְאַשֵׁר
+        decline: יְרִידָה
+        verify: תאשר
+      state:
+        awaiting_confirmation: אישור ממתין
+        awaiting_payment: ממתין לתשלום
+        awaiting_verification: מחכה לאישור
+        cancelled: מבוטל
+        confirmed: מְאוּשָׁר
+        declined: נדחה
+        deleted: נמחק
+    datepicker:
+      next_month: חודש הבא
+      prev_month: חודש שעבר
+    label:
+      booking:
+        all_day: כל היום
+        booked_from: הוזמן מ
+        booked_to: הוזמן ל
+        count: מספר אנשים
+        external_id: תעודת זהות חיצונית
+        invoiced_at: חשבונית
+        notes: הערות
+        paid_at: שולם
+        person_id: צרכן
+        reminder_at: תִזכּוֹרֶת
+        resource_id: מַשׁאָב
+        service_id: שֵׁרוּת
+        title: כותרת
+        verification_code: קוד אימות
+      category:
+        parent_id: קטגורית הורים
+        title: כותרת
+      client:
+        address: כתובת ביקור
+        allow_cancellation: אפשר ביטולים על ידי הלקוח
+        api_key: מפתח API (לשילובים חיצוניים)
+        app_secret: סוד חשבון
+        appointment_form: שדות הזמנות בהתאמה אישית
+        billing_city: עִיר
+        billing_country_code: מדינה
+        billing_email: כתובת דוא"ל לחשבונית
+        billing_id: תעודת זהות במערכת חשבוניות
+        billing_invoice: שלח חשבונית במקום כרטיס אשראי
+        billing_name: שם החברה
+        billing_order_ref: הפניה לחשבונית שלך
+        billing_payment_id: תעודת זהות במערכת התשלומים
+        billing_period: חודשים לחשבונית
+        billing_postal_code: מיקוד
+        billing_state: מדינה
+        billing_street: רְחוֹב
+        billing_vat_no: מס מע"מ
+        booking_form: טופס הזמנה מותאם אישית
+        cancellation_period: תקופת ביטול
+        category_form: שדות קטגוריה מותאמים אישית
+        closed_for_holidays: סגור בחגים ציבוריים
+        confirm_manually: הזמנות חייבות להיות מאושרות על ידי מנהל מערכת
+        country_code: מדינה
+        css_url: CSS מותאם אישית (כתובת האתר חייבת להיות HTTPS)
+        currency: מַטְבֵּעַ
+        email: כתובת דוא"ל
+        email_notification: קבל הודעה בדוא"ל על כל הזמנה חדשה
+        event_form: שדות אירועים בהתאמה אישית
+        first_bookable_period: אל תאפשר הזמנות עד
+        footer: כותרת תחתונה
+        future_bookable_period: אל תאפשר הזמנות לאחר
+        google_analytics: מזהה מעקב של Google Analytics
+        interval_rounding: עיגול ברירת מחדל לשעה הבאה הזמינה להזמנה
+        locale: שפה (מגדיר גם עיצוב מספר ותאריך)
+        logo: סֵמֶל
+        mail_cancellation: שלח הודעת דוא"ל לביטול
+        mail_cancellation_subject: נושא בדוא"ל ביטול
+        mail_confirmation: טקסט בהודעת אישור
+        mail_confirmation_subject: הנושא בדוא"ל האישור
+        mail_modification: טקסט בדוא"ל שינוי
+        mail_modification_subject: נושא בדוא"ל שינוי
+        mail_notification_recipient: כתובות דוא"ל להודעה
+        mail_verification: טקסט בדוא"ל אימות
+        mail_verification_subject: נושא בדוא"ל אימות
+        name: שם החברה (מוצג באתר ההזמנה)
+        new_booking_text: טקסט המוצג בדף האישור
+        new_user_text: טקסט המוצג לפני טופס ההזמנה
+        payment_provider: ספק תשלומים (להזמנות ששולמו מראש)
+        person_form: שדות לקוחות בהתאמה אישית
+        phone_number: מספר טלפון להודעה
+        public_access: אתר ההזמנות זמין לציבור
+        purge_data_period: מחיקה אוטומטית של מידע המאפשר זיהוי אישי
+        reminder_sms: שלח תזכורות SMS
+        resource_form: שדות משאבים מותאמים אישית
+        service_form: שדות שירות בהתאמה אישית
+        service_template: סגנון לוח שנה
+        service_templates:
+          time_day_available: יְוֹם
+          week_available: כל השבוע
+          weekday_available: ימי חול
+        sms_cancellation: טקסט ב- SMS לביטול
+        sms_confirmation: טקסט ב- SMS אישור
+        sms_modification: טקסט ב- SMS לשינוי
+        sms_notification: קבל SMS לכל הזמנה חדשה
+        sms_reminder: טקסט בתזכורת SMS
+        sms_reminder_time: זמן לתזכורת SMS
+        sms_verification: טקסט ב- SMS לאימות
+        subdomain: כתובת אתר (תת דומיין)
+        template: נושא עיצובי
+        time_zone: אזור זמן
+        verification_method: שיטת אימות להזמנות חדשות
+      event:
+        all_day: כל היום
+        booking_capacity: מספר מלווים לכל הזמנה
+        capacity: מספר מקסימום של מלווים
+        description: תיאור
+        ends_at: מסתיים בשעה
+        first_booking_at: אין הרשמות לפני כן
+        last_booking_at: אין הרשמות לאחר
+        payment_required: נדרש תשלום
+        price: מחיר כולל כל המסים
+        published: גלוי באתר ההזמנות
+        resource_id: מַשׁאָב
+        service_id: סוג אירוע
+        starts_at: מתחיל ב
+        title_html: כותרת מוגדרת <small>אופציונלית</small>
+      person:
+        address: כתובת
+        city: עִיר
+        country_code: מדינה
+        created_at: רשום ב
+        date_of_birth: תאריך הלידה (יום / חודש / שנה)
+        email: אימייל
+        name: שֵׁם
+        national_id_no: מספר תעודת זהות
+        notes: הערות
+        phonenumber: מספר טלפון
+        postal_code: מיקוד
+        provider: מחובר לחשבון חיצוני
+        state: מדינה
+        street: רְחוֹב
+        tfso_company_id: מזהה לקוח 24SO
+      resource:
+        capacity: מספר הזמנות מקסימלי בו זמנית
+        mail_notification_recipient: כתובות דוא"ל להודעה
+        title: כותרת
+      service:
+        booking_capacity: מספר מקסימום של אנשים להזמנה
+        booking_form: טופס הזמנה מותאם אישית
+        capacity: מספר מלווים מקסימלי
+        description: תיאור
+        has_day_booking: סוג זמן
+        has_day_booking_label:
+          'false': דקה
+          'true': ימים
+        interval: אורך ההזמנה
+        interval_rounding: עיגול למועד הפנוי הבא
+        mail_cancellation: שלח הודעת דוא"ל לביטול
+        mail_confirmation: טקסט בהודעת אישור
+        mail_modification: טקסט בדוא"ל שינוי
+        mail_verification: טקסט בדוא"ל אימות
+        max_slots: מספר חריצים מקסימלי להזמנה
+        next_interval: חריץ זמין בכל
+        payment_required: דרוש תשלום
+        price: מחיר כולל מיסים
+        published: הצג באתר ההזמנות
+        same_day: אפשר הזמנה על פני מספר ימים
+        sms_cancellation: טקסט ב- SMS לביטול
+        sms_confirmation: טקסט ב- SMS אישור
+        sms_modification: טקסט ב- SMS לשינוי
+        sms_reminder: טקסט בתזכורת SMS
+        sms_verification: טקסט ב- SMS לאימות
+        template: תבנית לוח שנה
+        templates:
+          default: בְּרִירַת מֶחדָל
+          time_day_available: יְוֹם
+          week_available: כל השבוע
+          weekday_available: ימי חול
+        title: כותרת
+      user:
+        current_password: סיסמה נוכחית
+        email: אימייל
+        name: שֵׁם
+        password: סיסמה
+        phonenumber: מספר טלפון
+    link:
+      add: לְהוֹסִיף
+      back: חזור
+      booking:
+        new: הזמנה חדשה
+      category:
+        new: קטגוריה חדשה
+      create: לִיצוֹר
+      delete: לִמְחוֹק
+      delete_confirm: אתה בטוח שאתה רוצה למחוק?
+      edit: לַעֲרוֹך
+      event:
+        new: אירוע חדש
+        new_attendant: הוסף מלווה
+      person:
+        new: לקוח חדש
+      resource:
+        new: משאב חדש
+      service:
+        new_appointment: שירות חדש
+        new_attendance: סוג אירוע חדש
+      setup:
+        skip: התקנה ידנית
+        step_html: "<strong>שלב %{step}</strong> של %{max_steps}"
+      user:
+        new: משתמש חדש
+      view: נוף
+    menu:
+      agenda: סֵדֶר הַיוֹם
+      calendar: לוּחַ שָׁנָה
+      logout: להתנתק
+      people: לקוחות
+      profile: פּרוֹפִיל
+      reports: דיווחים
+      setup: להכין
+    menu_setup:
+      billing: חיוב
+      bookingsite: אתר הזמנות
+      categories: קטגוריות
+      communication: תִקשׁוֹרֶת
+      company: חֶשְׁבּוֹן
+      export: יְצוּא
+      fields: שדות בהתאמה אישית
+      import: יְבוּא
+      integrations: אינטגרציות
+      person_notifications: התראות - לקוח
+      promote: לקדם
+      resources: אֶמְצָעִי
+      service_appointments: שירותים
+      service_attendances: סוגי אירועים
+      sms_credits: זיכויים ב- SMS
+      tools: כלים
+      user_notifications: התראות - משתמש
+      users: משתמשים
+      ux: UX
+    payment:
+      fields:
+        cvc: CVC
+        errors:
+          cvc: CVC אינו תקף.
+          expiration: תאריך התפוגה אינו תקף.
+          number: מספר הכרטיס אינו תקף.
+        expiration_html: תפוג <small>(MM / YY)</small>
+        number: מספר כרטיס
+      header: טופס זה יוצפן ויישלח בצורה מאובטחת
+    select:
+      prompt: בבקשה תבחר
+    submit:
+      cancel: לְבַטֵל
+      create: צור %{model}
+      submit: שמור %{model}
+      submit_default: להציל
+      update: עדכן %{model}
+      update_password: שנה סיסמא
+  service:
+    admin:
+      invoice_client:
+        errors:
+          nothing_to_invoice: החשבון לא מוכן לחשבונית. אנא ודא שיש לך לפחות משאב אחד.
+        invoice_text: שימוש בהזמנת פגישות מקוונת של MakePlans
+  title:
+    actions:
+      edit: לַעֲרוֹך
+      update: עדכון
+  user:
+    password_reset:
+      expired: לא בתוקף
+      no_email_found: לא נמצא אימייל
+  valid_email:
+    validations:
+      email:
+        invalid: לא תקף
+  worker:
+    integration_slack:
+      fallback: נקבע פגישה חדשה ב- MakePlans
+      footer: API של MakePlans
+      pretext: "%{person} קבע תור ב- %{booked_from}"
+      title: צפו בפגישה ב- MakePlans
+    integration_tfso_list_companies:
+      errors:
+        no_results: לא נמצאו לקוחות קיימים.
+    integration_tfso_order:
+      errors:
+        already_created: כבר נוצר.
+        no_company: הלקוח נמחק ב- 24SevenOffice. עליך להפעיל מחדש את הלקוח ב- 24SevenOffice כדי להמשיך.
+        no_product: המוצר נמחק ב- 24SevenOffice. עליך להפעיל מחדש את המוצר ב- 24SevenOffice או לחבר את השירות למוצר חדש מ- MakePlans לפני שתוכל להמשיך.
+        product_not_defined_on_service: שירות זה אינו מחובר למוצר ב- 24SevenOffice.

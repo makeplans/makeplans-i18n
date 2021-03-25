@@ -1,0 +1,54 @@
+---
+ms:
+  bookings:
+    sms_code:
+      incorrect_code: kod salah
+  clients:
+    new:
+      first_user: Ini adalah kata laluan peribadi anda. Anda boleh menambahkan lebih banyak pengguna kemudian.
+      free_trial_info: Percubaan percuma 14 hari. Tiada tanggungjawab. Kad kredit tidak diperlukan.
+      headline: Mulakan dengan tempahan dalam talian
+      logged_in_as: Anda log masuk sebagai %{name}.
+      read_legal: Terma dan syarat penggunaan perkhidmatan ini
+      recaptcha: Maaf menyusahkan anda tetapi kami harus mengesahkan pendaftaran anda dengan Google Recaptcha. Sila isi semula kata laluan anda dan kemudian hantarkan borang.
+      subdomain_info: Alamat unik (URL) tempat pelanggan anda boleh membuat tempahan dalam talian.
+      submit: Daftar akaun saya
+      title: Daftar untuk akaun tempahan dalam talian anda
+      user_email: E-mel kerja
+      user_info: Log masuk pengguna anda
+    rejected:
+      headline: Pendaftaran ditolak
+      info: Maaf, tetapi sistem kami telah menandakan pendaftaran anda sebagai spam. Sila hubungi kami untuk mendaftarkan akaun.
+      title: Pendaftaran ditolak
+  oauth:
+    callback:
+      header: Sambung ke akaun
+  user:
+    select_client:
+      header: Pilih akaun
+  user_password_resets:
+    create:
+      header: Menetapkan semula kata laluan anda
+      info: Kami kini telah menghantar e-mel kepada anda. Untuk mengesahkan tetapan semula kata laluan anda, anda mesti mengklik pautan dalam e-mel.
+      signup_html: Tiada akaun? <a href="%{url}">Mulakan sekarang.</a>
+    edit:
+      header: Sila masukkan kata laluan baru anda
+      signup_html: Tiada akaun? <a href="%{url}">Mulakan sekarang.</a>
+      submit: Simpan katalaluan
+    new:
+      header: Lupa kata laluan anda?
+      signup_html: Tiada akaun? <a href="%{url}">Mulakan sekarang.</a>
+      submit: Menghantar e-mel
+  user_sessions:
+    handle_authenticated_user:
+      success: Log masuk berjaya
+    new:
+      forgot_link: Lupa kata laluan anda?
+      header: Log masuk
+      incorrect: Kelayakan yang tidak betul
+      login: Log masuk
+      remember_me: Ingat saya
+      signup_html: Tiada akaun? <a href="%{url}">Mulakan sekarang.</a>
+    rotp_verification_code:
+      header: Log masuk dengan pengesahan dua faktor
+      submit: Log masuk

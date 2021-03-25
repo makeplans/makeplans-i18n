@@ -1,0 +1,484 @@
+---
+fr:
+  activerecord:
+    attributes:
+      booking:
+        booked_from: de
+        booked_to: à
+        count: compter
+        event_id: un événement
+        notes: commentaires
+        person: client
+        person_id: client
+        resource: Ressource
+        resource_id: Ressource
+        service: un service
+        service_id: un service
+        title: Titre
+        verification_code: code de vérification
+      category:
+        title: Titre
+      client:
+        future_bookable_period: Période de réservation future
+        mail_notification_recipient: adresse (s) e-mail de notification
+        mailer_sender: Adresse de l'expéditeur de l'e-mail
+        phone_number: Numéro de téléphone
+        purge_data_period: Période de suppression automatique
+      client_user_link:
+        role: Rôle
+      client_user_link/role:
+        admin: Administrateur
+        manager: Directeur
+        staff: Employé
+      event:
+        booking_capacity: personnes maximum autorisées par réservation
+        capacity: personnes maximum autorisées
+        description: la description
+        ends_at: fini à
+        first_booking_at: pas de réservation avant
+        last_booking_at: dernière réservation avant
+        resource_id: Ressource
+        service_id: un service
+        starts_at: commence à
+        title: Titre
+      message_template:
+        delivery_timing: livrer à
+        delivery_type: type de livraison
+        message_type: type de message
+        subject: matière
+        template: modèle
+      message_template/delivery_type:
+        email: e-mail
+        sms: SMS
+      message_template/message_type:
+        confirmation: confirmation
+        follow_up: suivre
+        reminder: rappel
+      person:
+        address: adresse
+        city: ville
+        country_code: de campagne
+        created_at: inscrit
+        date_of_birth: date de naissance
+        email: e-mail
+        name: Nom
+        national_id_no: numéro d'identification national
+        notes: Remarques
+        phonenumber: numéro de téléphone
+        postal_code: code postal
+        state: Etat
+        street: rue
+      resource:
+        capacity: capacité
+        mail_notification_recipient: adresse (s) e-mail de notification
+        title: Titre
+      service:
+        payment_required: exiger un pré-paiement
+        price: le prix
+        title: Titre
+      user:
+        rotp_verification_code: code de vérification
+      web_hook:
+        event: Événement
+        target_url: Cible URL
+    errors:
+      messages:
+        chronic_syntax_error: erreur de syntaxe, veuillez consulter https://github.com/mojombo/chronic#examples
+        icalendar_invalid: Aucune occurrence ou modèle iCalendar non valide
+        icalendar_over_limit: Trop d'occurrences. Max est 731.
+        illegal: illégal
+        invalid: est invalide
+        phone_invalid: n'est pas un numéro de téléphone valide
+        time_not_available: Non disponible à la réservation pour le moment
+      models:
+        booking:
+          attributes:
+            count:
+              over_booking_capacity: Plus que le nombre maximum de personnes autorisées par réservation
+            event_id:
+              time_not_available: est complet
+            person_id:
+              taken: déjà inscrit à cet événement
+            resource_id:
+              no_availability: non disponible à l'heure demandée
+            service_id:
+              attendance_only: est uniquement pour les inscriptions
+              not_offered: non offert par la ressource choisie
+            state:
+              invalid_transition: Changement d'état non valide
+          fully_booked: Non disponible à l'heure sélectionnée.
+          time_after_future_bookable_period: Trop loin dans le futur
+        client:
+          attributes:
+            base:
+              denied: Refusé
+        person:
+          missing: n'est pas enregistré sur votre profil client. Veuillez nous contacter pour le corriger.
+          no_values_present: Votre nom, numéro de téléphone ou e-mail est requis.
+        resource:
+          has_bookings: Cette ressource a des réservations. Ne peut pas être supprimé. Veuillez contacter le support.
+        service:
+          below_minimum: doit être supérieur à 1 USD si vous souhaitez exiger un paiement
+        user:
+          attributes:
+            password:
+              incorrect: Mot de passe incorret
+          current_password_incorrect: Le mot de passe actuel ne correspond pas
+      template:
+        body: 'L''opération n''a pas été terminée en raison des erreurs suivantes:'
+        header: Des erreurs se sont produites
+    models:
+      booking: rendez-vous
+      category: Catégorie
+      event: un événement
+      external_credential: l'intégration
+      message_template: modèle de message
+      person: client
+      resource: Ressource
+      service: un service
+      service_appointment: un service
+      service_attendance: type d'événement
+      user: utilisateur
+      web_hook: webhook
+  errors:
+    messages:
+      no_values_present: Votre nom, numéro de téléphone ou e-mail est requis.
+      not_authenticated: Vous avez été déconnecté.
+      not_found: Impossible de trouver les données. Essayez de recharger la page.
+      offline: Impossible de se connecter à MakePlans. Veuillez vérifier que vous êtes en ligne.
+      server_error: Erreur dans MakePlans
+      syntax_error: Erreur dans la syntaxe fournie.
+      unknown: Erreur inconnue. Essayez de recharger la page.
+    models:
+      person:
+        perishable_token:
+          invalid: code incorrect
+    stripe:
+      booking:
+        invalid: La réservation a expiré ou n'est pas valide. Transaction non traitée.
+        paid: Réservation déjà payée. Essayez de rafraîchir la page.
+      card:
+        missing: Impossible d'obtenir les informations sur la carte
+      processor: 'Erreur de notre processeur de paiement: %{error}'
+      unknown: Impossible de traiter la transaction. Erreur inconnue.
+  generic:
+    all: tout
+    at: à
+    born_abbreviation: b. %{date_of_birth}
+    default: Défaut du système
+    optional: optionnel
+    search: Chercher
+    to: à
+    today: aujourd'hui
+    tomorrow: demain
+  helpers:
+    booking:
+      action:
+        cancel: Annuler
+        confirm: Confirmer
+        decline: Déclin
+        verify: Vérifier
+      state:
+        awaiting_confirmation: En attente de confirmation
+        awaiting_payment: En attente de paiement
+        awaiting_verification: En attente de vérification
+        cancelled: Annulé
+        confirmed: Confirmé
+        declined: Diminué
+        deleted: Supprimé
+    datepicker:
+      next_month: Le mois prochain
+      prev_month: Le mois précédent
+    label:
+      booking:
+        all_day: Toute la journée
+        booked_from: Réservé depuis
+        booked_to: Réservé à
+        count: Nombre de personnes
+        external_id: ID externe
+        invoiced_at: Facturé
+        notes: Remarques
+        paid_at: Payé
+        person_id: Client
+        reminder_at: Rappel
+        resource_id: Ressource
+        service_id: Un service
+        title: Titre
+        verification_code: Code de vérification
+      category:
+        parent_id: Catégorie Parentale
+        title: Titre
+      client:
+        address: Adresse de visite
+        allow_cancellation: Autoriser les annulations par le client
+        api_key: Clé API (pour les intégrations externes)
+        app_secret: Secret de compte
+        appointment_form: Champs de réservation personnalisés
+        billing_city: Ville
+        billing_country_code: De campagne
+        billing_email: Adresse e-mail pour la facture
+        billing_id: ID dans le système de facturation
+        billing_invoice: Envoyer une facture au lieu d'une carte de crédit
+        billing_name: Nom de la compagnie
+        billing_order_ref: Votre référence de facture
+        billing_payment_id: ID dans le système de paiement
+        billing_period: Mois pour facturer
+        billing_postal_code: Code postal
+        billing_state: État
+        billing_street: rue
+        billing_vat_no: N ° TVA
+        booking_form: Formulaire de réservation personnalisé
+        cancellation_period: Période d'annulation
+        category_form: Champs de catégorie personnalisés
+        closed_for_holidays: Fermé les jours fériés
+        confirm_manually: Les réservations doivent être approuvées par un administrateur
+        country_code: De campagne
+        css_url: CSS personnalisé (l'URL doit être HTTPS)
+        currency: Devise
+        email: Adresse e-mail
+        email_notification: Recevez une notification par e-mail pour chaque nouvelle réservation
+        event_form: Champs d'événement personnalisés
+        first_bookable_period: Ne pas autoriser les réservations avant
+        footer: Bas de page
+        future_bookable_period: Ne pas autoriser les réservations après
+        google_analytics: ID de suivi Google Analytics
+        interval_rounding: Arrondi par défaut à la prochaine heure disponible pour la réservation
+        locale: Langue (définit également le formatage des nombres et des dates)
+        logo: Logo
+        mail_cancellation: Texte dans l'e-mail d'annulation
+        mail_cancellation_subject: Objet dans l'e-mail d'annulation
+        mail_confirmation: Texte dans l'e-mail de confirmation
+        mail_confirmation_subject: Objet dans l'e-mail de confirmation
+        mail_modification: Texte dans l'e-mail de modification
+        mail_modification_subject: Objet dans l'e-mail de modification
+        mail_notification_recipient: Adresse (s) e-mail pour la notification
+        mail_verification: Texte dans l'e-mail de vérification
+        mail_verification_subject: Objet dans l'e-mail de vérification
+        name: Nom de l'entreprise (indiqué sur le site de réservation)
+        new_booking_text: Texte affiché sur la page de confirmation
+        new_user_text: Texte affiché avant le formulaire de réservation
+        payment_provider: Fournisseur de paiement (pour les réservations prépayées)
+        person_form: Champs client personnalisés
+        phone_number: Numéro de téléphone pour notification
+        public_access: Le site de réservation est accessible au public
+        purge_data_period: Suppression automatique des informations personnelles identifiables
+        reminder_sms: Envoyer des rappels par SMS
+        resource_form: Champs de ressources personnalisés
+        service_form: Champs de service personnalisés
+        service_template: Style de calendrier
+        service_templates:
+          time_day_available: Jour
+          week_available: Toute la semaine
+          weekday_available: Jours de la semaine
+        sms_cancellation: Texte dans le SMS d'annulation
+        sms_confirmation: Texte dans le SMS de confirmation
+        sms_modification: Texte dans le SMS de modification
+        sms_notification: Recevez des SMS à chaque nouvelle réservation
+        sms_reminder: Texte dans le rappel par SMS
+        sms_reminder_time: Heure du rappel par SMS
+        sms_verification: Texte dans le SMS de vérification
+        subdomain: URL (sous-domaine)
+        template: Thème de conception
+        time_zone: Fuseau horaire
+        verification_method: Méthode de vérification pour les nouvelles réservations
+      event:
+        all_day: Toute la journée
+        booking_capacity: Max nr de préposés par réservation
+        capacity: Max nr de préposés
+        description: Description
+        ends_at: Fini à
+        first_booking_at: Aucune inscription avant
+        last_booking_at: Aucune inscription après
+        payment_required: Paiement Requis
+        price: Prix toutes taxes comprises
+        published: Visible sur le site de réservation
+        resource_id: Ressource
+        service_id: Type d'événement
+        starts_at: Commence à
+        title_html: Titre spécifié <small>facultatif</small>
+      message_template:
+        delivery_timing: Livrer à
+        delivery_type: Type de livraison
+        message_type: Type de message
+        subject: Sujet
+        template: Modèle
+      message_template/delivery_type:
+        email: E-mail
+        sms: SMS
+      message_template/message_type:
+        confirmation: Confirmation
+        follow_up: Suivre
+        reminder: Rappel
+      person:
+        address: Adresse
+        city: Ville
+        country_code: De campagne
+        created_at: Enregistré au
+        date_of_birth: Date de naissance (jj / mm / aaaa)
+        email: E-mail
+        name: Nom
+        national_id_no: Numéro national d'identité
+        notes: Remarques
+        phonenumber: numéro de téléphone portable
+        postal_code: Code postal
+        provider: Connecté à un compte externe
+        state: État
+        street: rue
+        tfso_company_id: Identifiant client 24SO
+      resource:
+        capacity: Nombre maximum de réservations en même temps
+        mail_notification_recipient: Adresse (s) e-mail pour la notification
+        title: Titre
+      service:
+        booking_capacity: Nombre maximum de personnes par réservation
+        booking_form: Formulaire de réservation personnalisé
+        capacity: Nombre maximum de préposés
+        description: Description
+        has_day_booking: Type d'heure
+        has_day_booking_label:
+          'false': min
+          'true': jours
+        interval: Durée de la réservation
+        interval_rounding: Arrondi pour la prochaine heure disponible
+        mail_cancellation: Texte dans l'e-mail d'annulation
+        mail_confirmation: Texte dans l'e-mail de confirmation
+        mail_modification: Texte dans l'e-mail de modification
+        mail_verification: Texte dans l'e-mail de vérification
+        max_slots: Nombre maximum d'emplacements par réservation
+        next_interval: Emplacement disponible tous les
+        payment_required: Exiger un paiement
+        price: Prix TTC
+        published: Afficher sur le site de réservation
+        same_day: Autoriser la réservation sur plusieurs jours
+        sms_cancellation: Texte dans le SMS d'annulation
+        sms_confirmation: Texte dans le SMS de confirmation
+        sms_modification: Texte dans le SMS de modification
+        sms_reminder: Texte dans le SMS de rappel
+        sms_verification: Texte dans le SMS de vérification
+        template: Modèle de calendrier
+        templates:
+          default: Défaut
+          time_day_available: Jour
+          week_available: Toute la semaine
+          weekday_available: Jours de la semaine
+        title: Titre
+      user:
+        current_password: Mot de passe actuel
+        email: E-mail
+        name: Nom
+        password: Mot de passe
+        phonenumber: Numéro de téléphone
+        rotp_verification_code: Code de vérification
+      web_hook:
+        event: Événement
+        target_url: Cible URL
+    link:
+      add: Ajouter
+      back: Retour
+      booking:
+        new: Nouvelle réservation
+      category:
+        new: Nouvelle catégorie
+      create: Créer
+      delete: Effacer
+      delete_confirm: Etes-vous sûr que vous voulez supprimer?
+      edit: Éditer
+      event:
+        new: Nouvel évènement
+        new_attendant: Ajouter un opérateur
+      person:
+        new: Nouveau client
+      resource:
+        new: Nouvelle ressource
+      service:
+        new_appointment: Nouveau service
+        new_attendance: Nouveau type d'événement
+      setup:
+        skip: Configuration manuelle
+        step_html: "<strong>Étape %{step}</strong> de %{max_steps}"
+      user:
+        new: Nouvel utilisateur
+      view: Vue
+      web_hook:
+        new: Nouveau webhook
+    menu:
+      agenda: Ordre du jour
+      calendar: Calendrier
+      logout: Se déconnecter
+      people: Clients
+      profile: Profil
+      reports: Rapports
+      setup: Installer
+    menu_setup:
+      billing: Facturation
+      bookingsite: Site de réservation
+      categories: Catégories
+      communication: la communication
+      company: Compte
+      export: Exportation
+      fields: Les champs personnalisés
+      import: Importer
+      integrations: Intégrations
+      message_templates: Modèles de message
+      person_notifications: Notifications - client
+      promote: Promouvoir
+      resources: Ressources
+      service_appointments: Prestations de service
+      service_attendances: Types d'événements
+      sms_credits: Crédits SMS
+      tools: Outils
+      user_notifications: Notifications - utilisateur
+      users: Utilisateurs
+      ux: UX
+    payment:
+      fields:
+        cvc: CVC
+        errors:
+          cvc: CVC n'est pas valide.
+          expiration: La date d'expiration n'est pas valide.
+          number: Le numéro de carte n'est pas valide.
+        expiration_html: Expire le <small>(MM / AA)</small>
+        number: Numéro de carte
+      header: Ce formulaire sera crypté et envoyé en toute sécurité
+    select:
+      prompt: Veuillez sélectionner
+    submit:
+      cancel: Annuler
+      create: Créer %{model}
+      submit: Sauvegarder %{model}
+      submit_default: Sauvegarder
+      update: Mettre à jour %{model}
+      update_password: Changer le mot de passe
+  service:
+    admin:
+      invoice_client:
+        errors:
+          nothing_to_invoice: Compte pas prêt pour la facturation. Veuillez vous assurer que vous disposez d'au moins une ressource.
+        invoice_text: Utilisation de la prise de rendez-vous en ligne MakePlans
+  title:
+    actions:
+      edit: Éditer
+      update: Mettre à jour
+  user:
+    password_reset:
+      expired: Expiré
+      no_email_found: Aucun e-mail trouvé
+  valid_email:
+    validations:
+      email:
+        invalid: est invalide
+  worker:
+    integration_slack:
+      fallback: Un nouveau rendez-vous a été pris dans MakePlans
+      footer: API MakePlans
+      pretext: "%{person} a pris rendez-vous sur %{booked_from}"
+      title: Afficher le rendez-vous dans MakePlans
+    integration_tfso_list_companies:
+      errors:
+        no_results: Aucun client existant trouvé.
+    integration_tfso_order:
+      errors:
+        already_created: Déjà créé.
+        no_company: Le client a été supprimé dans 24SevenOffice. Vous devez réactiver le client dans 24SevenOffice pour continuer.
+        no_product: Le produit a été supprimé dans 24SevenOffice. Vous devez réactiver le produit dans 24SevenOffice ou connecter le service à un nouveau produit de MakePlans avant de pouvoir continuer.
+        product_not_defined_on_service: Ce service n'est pas connecté à un produit dans 24SevenOffice.

@@ -1,0 +1,169 @@
+---
+cs:
+  amsterdam:
+    generic:
+      dateselector: Vyberte datum
+      earlier: dříve
+      payment:
+        awaiting:
+          body: Počkejte prosím, než transakci ověříme.
+          error: Nemůžeme ověřit vaši platbu. Kontaktujte zákaznický servis na adrese http://makeplans.net s referenčním číslem %{booking_id}.
+          title: Ověření platby
+        form_footer_html: Na vaši kreditní kartu bude účtováno <span class="payment-amount">%{amount}</span> .
+        form_header: Tento formulář je odeslán šifrovaný.
+        header: Způsob platby
+        info: Pro dokončení rezervace %{service} musíte zaplatit kreditní kartou.
+        payment_details_html: Zobrazená částka je v %{currency}. Údaje o vaší kreditní kartě neuchováváme, ale zašleme je zašifrovanou do %{provider} pro bezpečné zpracování a uložení.
+      step:
+        cancel: zrušení
+        completed: Dokončeno!
+        hotstepper: Krok %{step} %{steps}
+        next_confirm: 'Další: Potvrzení'
+        next_payment: Platit
+        next_time: 'Další: Vyberte čas'
+        next_verify: Potvrdit rezervaci
+        previous: předchozí krok
+        previous_date: Změnit čas
+        previous_service: Změnit službu
+    bookings:
+      awaiting_confirmation:
+        body: Vaši rezervaci potvrdíme ručně. Jakmile zpracováme vaši žádost, obdržíte %{verification_method}.
+        body_automatic_sync: Nyní kontrolujeme vaši rezervaci. Jakmile zpracováme vaši žádost, obdržíte %{verification_method}.
+        title: Čeká na potvrzení
+        title_automatic_sync: Probíhá kontrola rezervace
+        verification_method:
+          authenticated: oznámení
+          email: e-mail
+          none: oznámení
+          sms: SMS
+      awaiting_payment:
+        body: Počkejte prosím, než transakci ověříme.
+        error: Nemůžeme ověřit vaši platbu. Kontaktujte zákaznický servis s referenčním číslem %{booking_id}.
+        title: Ověření platby
+      awaiting_verification:
+        verification_delivery_error: Nepodařilo se vám poslat e-mail. Opravdu jste zadali správnou e-mailovou adresu?
+        verification_delivery_not_processed: V současné době dochází k určitým zpožděním v našich systémech. Počkejte prosím, dokud nevybereme váš e-mail.
+        verification_sent_body: Poslali jsme e-mail na %{email}. Postupujte podle toho a ověřte svou rezervaci. Pomáhá nám ujistit se, že nejste robot.
+        verification_sent_title: Prosím potvrďte vaší emailovou adresu
+      declined:
+        body: Litujeme, ale nemohli jsme vaši žádost o rezervaci schválit. Zkuste prosím jiný časový rozvrh nebo nás kontaktujte.
+        title: Vaše rezervace nebyla schválena
+      expired:
+        header: Platnost rezervace vypršela
+        info: Rezervace musí být ověřena do %{expires_in} minut. Prosím zkuste to znovu.
+      new:
+        authentication:
+          authenticating: Ověřování ...
+          logged_in_as: Jste přihlášeni jako %{person}
+          logged_in_with_fb_html: Přihlášen na Facebooku jako <span data-name="">neznámý</span> . Potvrďte rezervaci kliknutím na tlačítko "Potvrdit rezervaci".
+          login_with_facebook_html: Případně můžete %{fb_link}.
+          login_with_facebook_link: ověřit automaticky pomocí Facebooku
+          not_current_person_html: Nejste <span data-name="">%{person}?</span> ?
+        enter_info: Zadejte informace
+        errors_header: Vyplňte prosím povinná pole.
+        form_info: To bude použito k ověření vaší rezervace %{service}, %{booking}.
+        price_info: 'Cena: %{price}'
+        reserve_resource: Rezervace pro %{resource}
+      payment:
+        awaiting:
+          body: Počkejte prosím, než transakci ověříme.
+          error: Nemůžeme ověřit vaši platbu. Kontaktujte zákaznický servis na adrese https://makeplans.net s referenčním číslem %{booking_id}.
+          title: Ověření platby
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC není platné.
+            expiration: Datum vypršení platnosti není platné.
+            number: Číslo karty není platné.
+          expiration_html: Platnost vyprší <small>(MM / RR)</small>
+          number: Číslo karty
+        form_footer_html: Na vaši kreditní kartu bude účtováno <span class="payment-amount">%{amount}</span> .
+        form_header: Tento formulář je odeslán šifrovaný.
+        header: Způsob platby
+        info: Pro dokončení rezervace %{service} musíte zaplatit kreditní kartou.
+      show:
+        add_card: Přidejte svou kreditní kartu k automatickému zaplacení po rezervaci
+        add_to_calendar: Přidejte rezervaci do svého kalendáře
+        body: Jsi hotový. Rezervace byla provedena.
+        cancel: Zrušit rezervaci
+        cancel_confirmation: Opravdu chcete zrušit tuto rezervaci?
+        paid: Máte předplacenou %{paid_amount}.
+        remember_me: Chcete, abychom si vás na tomto stroji pamatovali pomocí cookie?
+        title: Vaše rezervace je potvrzena!
+      sms_code:
+        header: Potvrdit rezervaci
+        incorrect_code: nesprávný kód
+        verify_sms_code: Poslali jsme SMS na %{phonenumber} s ověřovacím kódem. Pro ověření rezervace zadejte kód do formuláře. To je nutné pro dokončení rezervace.
+    events:
+      index:
+        none_available: Nejsou k dispozici žádné události.
+      show:
+        before_first_booking: Není možné se zaregistrovat na tuto událost před %{first_booking_at}.
+        full: Tato událost je plná.
+        past_last_booking: K této události již není možné se zaregistrovat.
+        started: Tato událost je již dokončena.
+    layouts:
+      application:
+        authenticated: 'Přihlášen jako: %{name}'
+        demo_ended: Ukázka MakePlans vypršela.
+        footer:
+          privacy_policy: Zásady ochrany osobních údajů
+          support: Podpěra, podpora
+        login: Vaše rezervace
+        meta:
+          description: Online rezervace schůzek pro %{name}
+          keywords: plánování, jmenování, rezervace, registrace, makeplans
+        powered_by: Rezervace od
+        powered_by_title: Rezervace schůzek, plánování a registrace událostí / tříd
+        title: Online rezervace ubytování %{name}
+    people:
+      credit_card_added:
+        body: Po dokončení rezervace bude vaše karta zpracována. Údaje o kartě jsou bezpečně uloženy u našeho platebního partnera Stripe.
+        title: Vaše karta byla uložena
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Ověřovací kód
+        remember_me: Pamatujte si mě na tomto stroji.
+        submit: Přihlásit se
+      not_found:
+        info_html: Nejste zaregistrováni jako zákazník. Nejprve dokončete <a href="/">rezervaci</a> .
+      perishable_token_action_required:
+        info_html: Poslali jsme vám e-mail. Kliknutím na odkaz se přihlaste.
+      perishable_token_form:
+        submit: Přijmout kód
+    profile:
+      show:
+        header: Vaše rezervace
+        logout: Odhlásit se
+        new_booking: Nová rezervace
+    providers:
+      index:
+        show_all_available: Zobrazit vše k dispozici
+        show_only_selected: 'Nebo zobrazit pouze z vybraného kalendáře:'
+    services:
+      time_day_available:
+        any_resource: První k dispozici
+        dateselector: Vyberte datum
+        earlier: Dříve
+        gap_warning: Pro výběr více slotů musí být tyto sloty bez mezer.
+        later: Později
+        max_slots_warning: Nelze rezervovat více než %{max_slots} timeslots
+        multiple_slots_info: Chcete-li vybrat více slotů, nejprve vyberte počáteční čas a pak koncový slot.
+        next_available_date_html: Další dostupné datum je %{next_available_date}
+        next_date: Další den
+        no_availability: Ve vybraný den není k dispozici žádná dostupnost. Zkuste prosím jiné datum.
+        no_selection: Vyberte prosím čas.
+        select_time: "%{service} - vyberte dostupný čas"
+      weekday_available:
+        dateselector: Vyberte datum
+        gap_warning: Pro výběr více slotů musí být tyto sloty bez mezer.
+        max_slots_warning: Nelze rezervovat více než %{max_slots} timeslots
+        multiple_slots_info: Chcete-li vybrat více slotů, nejprve vyberte počáteční čas a pak koncový slot.
+        next_available_date_html: Další dostupné datum je %{next_available_date}
+        next_week: Příští týden
+        no_availability: Ve vybraný den není k dispozici žádná dostupnost. Zkuste prosím jiné datum.
+        no_selection: Vyberte prosím čas.
+        prev_week: Minulý týden
+        select_resource: Zobrazit kalendář
+        select_time: "%{service} - vyberte dostupný čas"
+        show_all: Zobrazit vše k dispozici

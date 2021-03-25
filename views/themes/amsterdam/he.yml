@@ -1,0 +1,185 @@
+---
+he:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: אנו נאשר ידנית את הזמנתך. לאחר שתעבד את בקשתך תקבל %{verification_method}.
+        body_automatic_sync: אנו בודקים כעת את הזמנתך. לאחר שתעבד את בקשתך תקבל %{verification_method}.
+        title: אישור ממתין
+        title_automatic_sync: בודק הזמנה
+        verification_method:
+          authenticated: הודעה
+          email: דואר אלקטרוני
+          none: הודעה
+          sms: SMS
+      awaiting_payment:
+        body: אנא המתן בזמן שאנו מאמתים את העסקה.
+        error: אין באפשרותנו לאמת את התשלום שלך. אנא צרו קשר עם שירות הלקוחות עם מספר ההתייחסות %{booking_id}.
+        title: מאמת את התשלום שלך
+      awaiting_verification:
+        verification_delivery_error: לא הצלחנו לשלוח לך דוא"ל. האם אתה בטוח שהזנת את כתובת הדוא"ל הנכונה?
+        verification_delivery_not_processed: כרגע אנו חווים כמה עיכובים במערכות שלנו. אנא המתן בזמן שאנו שולחים את הדוא"ל שלך.
+        verification_sent_body: שלחנו אימייל ל- %{email}. עקוב אחריו כדי לאמת את הזמנתך. זה עוזר לנו לוודא שאתה לא רובוט.
+        verification_sent_title: אנא אמת את כתובת המייל שלך
+      declined:
+        body: מצטערים, לא הצלחנו לאשר את בקשת ההזמנה שלך. אנא נסה את לוח הזמנים אחר או צור איתנו קשר.
+        title: הזמנתך לא אושרה
+      expired:
+        header: ההזמנה פג
+        info: יש לאמת הזמנות תוך דקות %{expires_in}. בבקשה נסה שוב.
+      new:
+        authentication:
+          authenticating: מאמת ...
+          logged_in_as: אתה מחובר כ- %{person}
+          logged_in_with_fb_html: נכנס לפייסבוק כלא <span data-name="">ידוע</span> . לחץ על "אשר הזמנה" כדי לאמת את הזמנתך.
+          login_with_facebook_html: לחלופין תוכלו %{fb_link}.
+          login_with_facebook_link: לאמת אוטומטית באמצעות פייסבוק
+          not_current_person_html: האם אתה לא <span data-name="">%{person}?</span> ?
+          remember_me: האם אתה רוצה שנזכור אותך במכונה זו באמצעות עוגיה?
+        enter_info: הזן מידע
+        errors_header: אנא מלא את השדות הנדרשים.
+        form_info: זה ישמש לאימות ההזמנה שלך של %{service}, %{booking}.
+        price_info: 'מחיר: %{price}'
+        reserve_resource: הזמנה עבור %{resource}
+      no_person:
+        body: 'צרו איתנו קשר למידע נוסף. שגיאה: חיבור הלקוח הוסר'
+        title: שְׁגִיאָה
+      payment:
+        awaiting:
+          body: אנא המתן בזמן שאנו מאמתים את העסקה.
+          error: אין באפשרותנו לאמת את התשלום שלך. אנא צרו קשר עם שירות הלקוחות בכתובת https://makeplans.net עם מספר ההתייחסות %{booking_id}.
+          title: מאמת את התשלום שלך
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC אינו תקף.
+            expiration: תאריך התפוגה אינו תקף.
+            number: מספר הכרטיס אינו תקף.
+          expiration_html: תפוג <small>(MM / YY)</small>
+          number: מספר כרטיס
+        form_footer_html: כרטיס האשראי שלך יחויב ב- <span class="payment-amount">%{amount}</span> .
+        form_header: טופס זה נשלח מוצפן.
+        header: תַשְׁלוּם
+        info: כדי להשלים את ההזמנה של %{service} עליך לשלם בכרטיס האשראי שלך.
+      show:
+        add_card: הוסף את כרטיס האשראי שלך כדי לשלם אוטומטית לאחר ההזמנה
+        add_to_calendar: הוסף את ההזמנה ליומן שלך
+        body: אתה סיימת. ההזמנה בוצעה.
+        cancel: ביטול הזמנה
+        cancel_confirmation: האם אתה בטוח שברצונך לבטל הזמנה זו?
+        paid: יש לך %{paid_amount} ששולמו מראש.
+        remember_me: האם אתה רוצה שנזכור אותך במכונה זו באמצעות עוגיה?
+        title: הזמנתכם אושרה!
+      sms_code:
+        header: אשר הזמנה
+        incorrect_code: קוד שגוי
+        verify_sms_code: שלחנו SMS אל %{phonenumber} עם קוד אימות. אנא הכנס את הקוד בטופס לאימות ההזמנה. זה נדרש להשלמת ההזמנה.
+    events:
+      index:
+        none_available: אין אירועים זמינים.
+      show:
+        before_first_booking: לא ניתן להירשם לאירוע זה לפני %{first_booking_at}.
+        book: הירשם לאירוע זה
+        full: האירוע הזה מלא.
+        past_last_booking: כבר לא ניתן להירשם לאירוע זה.
+        started: אירוע זה כבר הושלם.
+    generic:
+      dateselector: בחר תאריך
+      earlier: קודם לכן
+      payment:
+        add_card_details_html: פרטי הכרטיס שלך לא יאוחסנו אצלנו אך נשלחים מוצפנים ל- %{provider} לצורך עסקה ואחסון מאובטחים.
+        add_card_footer_html: כרטיסך לא יחויב כעת
+        add_card_header: שמור כרטיס
+        add_card_info: הוסף את כרטיס התשלום שלך כדי שתוכל לשלם בקלות ובאופן אוטומטי לאחר ההזמנה.
+        add_card_submit: שמור כרטיס
+        awaiting:
+          body: אנא המתן בזמן שאנו מאמתים את העסקה.
+          error: אין באפשרותנו לאמת את התשלום שלך. אנא צרו קשר עם שירות הלקוחות בכתובת http://makeplans.net עם מספר ההתייחסות %{booking_id}.
+          title: מאמת את התשלום שלך
+        form_footer_html: כרטיס האשראי שלך יחויב ב- <span class="payment-amount">%{amount}</span> .
+        form_header: טופס זה נשלח מוצפן.
+        header: תַשְׁלוּם
+        info: כדי להשלים את ההזמנה של %{service} %{booking} עליך לשלם בכרטיס האשראי שלך.
+        payment_details_html: הסכום המוצג הוא ב- %{currency}. אנו לא שומרים את פרטי כרטיס האשראי שלך אלא שולחים אותם מוצפנים אל %{provider} לצורך עיבוד ואחסון מאובטח.
+        payment_received: "%{paid_amount} שולם ב- %{paid_at}."
+      step:
+        cancel: לְבַטֵל
+        completed: הושלם!
+        hotstepper: שלב %{step} של %{steps}
+        next_confirm: 'הבא: אישור'
+        next_payment: לְשַׁלֵם
+        next_time: 'הבא: בחר זמן'
+        next_verify: אשר הזמנה
+        previous: צעד קודם
+        previous_date: שנה זמן
+        previous_service: החלפת שירות
+    layouts:
+      application:
+        authenticated: 'מחובר כ: %{name}'
+        demo_ended: ההפגנה של MakePlans פג.
+        footer:
+          privacy_policy: מדיניות הפרטיות
+          support: תמיכה
+        login: ההזמנות שלך
+        meta:
+          description: הזמנת פגישה מקוונת עבור %{name}
+          keywords: תזמון, פגישה, הזמנה, הרשמות, תוכניות ייצור
+        powered_by: הזמנה מאת
+        powered_by_title: הזמנת פגישות, תזמון והרשמות לאירועים / כיתות
+        title: הזמנה מקוונת עבור %{name}
+    people:
+      credit_card_added:
+        body: הכרטיס שלך יעובד לאחר השלמת ההזמנה. פרטי הכרטיס נשמרים בבטחה אצל שותף התשלומים שלנו Stripe.
+        title: הכרטיס שלך נשמר
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: קוד אימות
+        remember_me: זכור אותי במכונה זו.
+        submit: התחברות
+      not_found:
+        info_html: אינך רשום כלקוח. מלא תחילה <a href="/">הזמנה</a> .
+      perishable_token_action_required:
+        info_html: שלחנו לך דוא"ל. אנא לחץ על הקישור בכניסה.
+      perishable_token_form:
+        not_available_for_this_verification_method: לא זמין.
+        submit: קבל קוד
+    profile:
+      show:
+        header: ההזמנות שלך
+        logout: להתנתק
+        new_booking: הזמנה חדשה
+    providers:
+      index:
+        show_all_available: הצג את כל הזמינים
+        show_only_selected: 'או הצג רק מלוח השנה שנבחר:'
+    services:
+      index:
+        none_available: אין שירותים זמינים.
+      show:
+        book: בצע הזמנה
+      time_day_available:
+        any_resource: הראשון זמין
+        dateselector: בחר תאריך
+        earlier: מוקדם יותר
+        gap_warning: כדי לבחור מספר חריצים חריצים אלה צריכים להיות ללא פערים.
+        later: מאוחר יותר
+        max_slots_warning: לא ניתן לשריין יותר מ- %{max_slots} פעמים
+        multiple_slots_info: כדי לבחור מספר חריצים בחר תחילה את שעת ההתחלה ואז את חריץ הסיום.
+        next_available_date_html: התאריך הזמין הבא הוא %{next_available_date}
+        next_date: היום הבא
+        no_availability: אין זמינות בתאריך שנבחר. אנא נסה תאריך אחר.
+        no_selection: אנא בחר זמן פנוי.
+        select_time: "%{service} - בחר זמן זמין"
+      weekday_available:
+        dateselector: בחר תאריך
+        gap_warning: כדי לבחור חריצים מרובים חריצים אלה צריכים להיות ללא פערים.
+        max_slots_warning: לא ניתן לשריין יותר מ- %{max_slots} פעמים
+        multiple_slots_info: כדי לבחור מספר משבצות בחר תחילה את שעת ההתחלה ואז את משבצת הסיום.
+        next_available_date_html: התאריך הזמין הבא הוא %{next_available_date}
+        next_week: שבוע הבא
+        no_availability: אין זמינות בתאריך שנבחר. אנא נסה תאריך אחר.
+        no_selection: אנא בחר זמן פנוי.
+        prev_week: שבוע שעבר
+        select_resource: הצג לוח שנה
+        select_time: "%{service} - בחר זמן זמין"
+        show_all: הצג את כל הזמינים

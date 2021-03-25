@@ -1,0 +1,8 @@
+---
+nl:
+  booking_mailer:
+    confirmation:
+      subject: Nieuwe reservering
+      subject_service: Reservering voor %{service}
+      header: Beste %{name}
+      info: Hierbij bevestigen wij de reservering voor %{title} %{time_range}.
