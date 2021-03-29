@@ -1,0 +1,255 @@
+---
+lv:
+  booking_ical:
+    summary_admin: "%{service} %{person}"
+  booking_user_mailer:
+    booking_info:
+      customer_info: Informācija par klientu
+    notification_cancellation:
+      body: "%{name} ir atcēlis %{title} %{time_range} rezervāciju."
+      booking_type_appointment:
+        subject_resource: "%{resource} atcelšana"
+      booking_type_attendance:
+        subject_resource: "%{title} atcelšana"
+      link: Lai apskatītu šo rezervāciju, lūdzu, dodieties uz
+    notification_confirmation:
+      appointment:
+        body: "%{name} ir rezervējis %{title} %{time_range}."
+      attendance:
+        body: "%{name} ir reģistrējies %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Jauna rezervācija vietnei %{resource}
+      booking_type_attendance:
+        subject_resource: Jauna reģistrēšanās vietnei %{title}
+      link: Lai apskatītu šo rezervāciju, lūdzu, dodieties uz
+    request_approvement:
+      body: "%{name} vēlas rezervēt %{title} %{time_range}."
+      link: Lai apstiprinātu vai noraidītu šo rezervāciju, lūdzu, dodieties uz
+      subject_resource: Jauns pieprasījums %{resource}
+  client_mailer:
+    charge_failed:
+      body: |-
+        Sveiki,
+
+        Mēs mēģinājām apstrādāt jūsu maksājumu par MakePlans izmantošanu, taču saņēmām šādu kļūdu: %{error}
+
+        Lūdzu, piesakieties savā MakePlans, lai pārliecinātos, ka jūsu karte ir derīga.
+
+        %{url}
+
+        Ja maksājums nebūs veiksmīgs, jūsu konts drīz tiks deaktivizēts.
+
+        Paldies,
+        MakePlans
+      subject: 'NEPIECIEŠAMA RĪCĪBA: Apstrādājot jūsu maksājumu, radās problēma'
+    charge_give_up:
+      body: |-
+        Sveiki,
+
+        BRĪDINĀJUMS: Jūsu konts tagad ir deaktivizēts.
+
+        Mēs mēģinājām apstrādāt jūsu maksājumu par MakePlans izmantošanu, taču saņēmām šādu kļūdu: %{error}
+
+        Lūdzu, piesakieties savā MakePlans, lai pārliecinātos, ka jūsu karte ir derīga, lai atkārtoti aktivizētu jūsu kontu:
+
+        %{url}
+
+        Paldies,
+        MakePlans
+      subject: 'NEPIECIEŠAMA RĪCĪBA: konts ir deaktivizēts'
+    charge_requires_action:
+      body: |-
+        Sveiki,
+
+        Lūdzu, apstipriniet maksājumu par MakePlans izmantošanu. Jūsu konts drīz tiks atspējots, ja vien maksājums nebūs apstiprināts.
+
+        %{url}
+
+        Paldies,
+        MakePlans
+      subject: 'NEPIECIEŠAMA RĪCĪBA: Lūdzu, apstipriniet maksājumu'
+    charge_succeded:
+      body: |-
+        Mēs esam iekasējuši maksu no jūsu kredītkartes par MakePlans izmantošanu. Lūdzu, skatiet pievienoto kvīti par rēķina apmaksu # %{invoice_nr}.
+
+        Lūdzu, ņemiet vērā, ka šis rēķins jau ir apmaksāts. Turpmāka rīcība nav nepieciešama.
+
+        Jūsu konts: %{subdomain}
+
+        Paldies, ka izmantojāt MakePlans.
+      filename: 'MakePlans AS %{invoice_date} kvīts # %{invoice_nr}'
+      subject: Jūsu kvīts par MakePlans izmantošanu
+    deactivated:
+      body: |-
+        Sveiki,
+
+        Es esmu Espens, MakePlans dibinātājs. Atvainojiet, ka esat deaktivizējis savu MakePlans kontu.
+
+        Vai trūka kādas funkcijas vai kāpēc jūs izvēlējāties vairs neizmantot MakePlans? Ja jums ir kādas atsauksmes, es labprāt uzklausītu, lai mēs varētu uzlabot savu produktu. Vai arī jūs uzskatījāt, ka MakePlans ir mazliet mulsinošs, lai iestatītu vai izmantotu? Es varu jums palīdzēt konfigurēt jūsu kontu. Turklāt, ja esat gatavs dot MakePlans vēl vienu iespēju, es jums divus mēnešus varu izmantot bez maksas.
+
+        Vienkārši atbildiet uz šo e-pastu, un es varu sekot līdzi.
+
+        Neskatoties uz; lai jums laba diena un paldies, ka izmēģinājāt MakePlans.
+      subject: 'KRITISKI: MakePlans konts ir deaktivizēts'
+    no_bookings:
+      body: |-
+        Sveiki,
+
+        Pagājušajā nedēļā jūs reģistrējāties MakePlans. Tas ir tiešsaistes tikšanās rezervēšanas pakalpojums.
+
+        Es pamanīju, ka jūsu kontā vēl nav rezervāciju. Kāpēc gan nepievienot pārbaudes rezervāciju administrēšanas sistēmā, lai redzētu, vai MakePlans darbojas jums?
+        Lai pievienotu rezervāciju, dodieties uz vietni %{url}.
+
+
+        Ja neesat pārliecināts, kā konfigurēt kontu, vai jums ir kādi jautājumi par rezervēšanas procesu, vienkārši atbildiet uz šo e-pastu, un mēs varam jums palīdzēt :)
+      subject: Pagaidām nav rezervāciju
+    not_setup:
+      body: |-
+        Sveiki,
+
+        Vakar jūs reģistrējāties MakePlans. Tas ir tiešsaistes tikšanās rezervēšanas pakalpojums.
+
+        Es pamanīju, ka neesat pabeidzis sava konta iestatīšanu. Varbūt jums tam nebija laika, ja tā, tad kāpēc to nepabeigt tagad?
+        Vienkārši dodieties uz %{url}, lai pabeigtu iestatīšanu - tas aizņem tikai 45 sekundes.
+
+        Vai arī jums ir kādi jautājumi par MakePlans izmantošanu vai kā vislabāk konfigurēt kontu? Vienkārši atbildiet uz šo e-pastu, un mēs varam jums palīdzēt :)
+      subject: Pabeidziet MakePlans iestatīšanu
+    setup_completed:
+      contact_us_html: Un, ja jums ir kādi jautājumi, vienkārši nosūtiet mums e-pastu uz %{mail}
+      footer: MakePlans
+      header: Jūsu klienti tagad var rezervēt tiešsaistē!
+      info: Tagad esat konfigurējis savu MakePlans kontu un tagad esat gatavs pieņemt tiešsaistes rezervācijas no saviem klientiem.
+      next_steps: 'Nākamie soļi:'
+      step_1: Pabeidziet testa rezervāciju, lai pārliecinātos, ka visi teksti un izejošie ziņojumi ir pareizi.
+      step_2: Kad esat gatavs, savā vietnē ievietojiet saiti uz rezervācijas vietni.
+      step_3: Informējiet arī citus klientus, ka viņi tagad var rezervēt tiešsaistē.
+      subject: Jūsu klienti tagad var rezervēt tiešsaistē, izmantojot MakePlans
+    signup:
+      contact_us_html: Ja jums ir kādi jautājumi, lūdzu, sazinieties ar mums pa tālruni %{mail} vai vienkārši atbildiet uz šo e-pastu.
+      extra: Papildu funkcionalitāte MakePlans
+      extra_info: 'Ir lieliski, ka vēlaties piedāvāt tiešsaistes rezervāciju saviem klientiem. Turklāt MakePlans var piedāvāt jums un jūsu klientiem daudzu veidu papildu funkcionalitāti:'
+      feature_1: Jūsu klienti var saņemt atgādinājuma īsziņu pirms tikšanās.
+      feature_2: Rezervēšanas laikā pieprasiet norēķināties ar kredītkarti.
+      feature_3: Saglabājiet papildu informāciju rezervācijā vai klientā, izmantojot pielāgotus laukus.
+      feature_4: MakePlans ir integrēts ar daudzām trešo pušu lietojumprogrammām, piemēram, CRM un e-pasta biļetenu lietojumprogrammām.
+      footer: Ceru, ka jums patiks izmantot MakePlans
+      header: Laipni lūdzam vietnē MakePlans!
+      link_info: Šeit atradīsit savu kalendāru ar pārskatu par visām rezervācijām, kā arī iespēju konfigurēt kontu.
+      registered: 'Tagad esat reģistrējies bezmaksas testa kontam vietnē:'
+      subject: Laipni lūdzam vietnē MakePlans
+    sms_credits_balance_reached:
+      body: |-
+        Sveiki,
+
+        Jūsu MakePlans kontā ir ierobežojums sūtīt %{sms_balance_limit} īsziņas. Jūs tagad esat pārsniedzis šo robežu.
+
+        Īsziņas vairs netiek sūtītas no jūsu konta.
+
+        SMS kredītu iegāde:
+        %{url}
+
+        Varat arī pieteikties savā kontā un mainīt verifikācijas metodi no SMS uz e-pastu un atspējot SMS atgādinājumus.
+      subject: 'NEPIECIEŠAMA RĪCĪBA: Jūs esat izmantojis visus savus SMS kredītus'
+    sms_credits_balance_warning:
+      body: |-
+        Sveiki,
+
+        Jūsu MakePlans kontā ir ierobežojums sūtīt %{sms_balance_limit} īsziņas. Jūs pašlaik esat nosūtījis %{sms_balance}.
+
+        Sasniedzot %{sms_balance_limit} ziņojumus, jūsu konts vairs nesūtīs īsziņas, ja vien neiegādāsities vairāk SMS kredītu.
+
+        SMS kredītu iegāde:
+        %{url}
+
+        Varat arī pieteikties savā kontā un mainīt verifikācijas metodi no SMS uz e-pastu un atspējot SMS atgādinājumus.
+      subject: Jūsu SMS kredīti ir beigušies
+    trial_expire_warning:
+      body: |-
+        Sveiki,
+
+        Vienkārši paziņojot, ka jūsu MakePlans izmēģinājuma termiņš beigsies pēc 3 dienām.
+
+        Lai klienti rezervētu tiešsaistē bez pārtraukumiem, lūdzu, aktivizējiet savu kontu tūlīt.
+
+        Aktivizēt kontu:
+        %{url}
+
+        Vai jums vēl nav bijusi iespēja to pienācīgi pārbaudīt? Atbildiet uz šo e-pasta ziņojumu, un mēs varam pagarināt jūsu izmēģinājuma laiku.
+      subject: Izmēģinājums drīz beigsies - lūdzu, aktivizējiet kontu
+    trial_expired:
+      body: |-
+        Sveiki,
+
+        Jūsu MakePlans izmēģinājums tagad ir beidzies.
+
+        Tagad jūsu klientiem vairs nav iespējams veikt rezervāciju. Lai iespējotu rezervācijas vietni, jums jāaktivizē savs konts.
+
+        Aktivizēt kontu:
+        %{url}
+
+        Vai jums vēl nav bijusi iespēja to pienācīgi pārbaudīt? Atbildiet uz šo e-pasta ziņojumu, un mēs varam pagarināt jūsu izmēģinājuma laiku.
+      subject: Jūsu MakePlans izmēģinājuma konts ir beidzies
+    trial_sms_credits_balance_reached:
+      body: |-
+        Sveiki,
+
+        Jūsu izmēģinājuma laikā ar MakePlans ir atļauts sūtīt %{sms_balance_limit} īsziņas. Jūs tagad esat pārsniedzis šo robežu.
+
+        Lai turpinātu izmantot MakePlans, lūdzu, aktivizējiet savu kontu.
+
+        Aktivizēt kontu:
+        %{url}
+
+        Varat arī pieteikties savā kontā un mainīt verifikācijas metodi no SMS uz e-pastu un atspējot SMS atgādinājumus.
+      subject: 'NEPIECIEŠAMA RĪCĪBA: Jūs esat izmantojis visus savus SMS kredītus'
+    trial_sms_credits_balance_warning:
+      body: |-
+        Sveiki,
+
+        Jūsu izmēģinājuma programmā MakePlans ir noteikts %{sms_balance_limit} īsziņu sūtīšanas ierobežojums. Jūs pašlaik esat nosūtījis %{sms_balance}.
+
+        Ja vēlaties pārliecināties, ka īsziņas tiek nosūtītas, lūdzu, aktivizējiet savu kontu.
+        Sasniedzot %{sms_balance_limit} ziņojumus, jūsu konts vairs nesūtīs īsziņas, ja vien neaktivizēsit kontu.
+
+        Aktivizēt kontu:
+        %{url}
+
+        Varat arī pieteikties savā kontā un mainīt verifikācijas metodi no SMS uz e-pastu un atspējot SMS atgādinājumus.
+      subject: Jūsu SMS kredīti ir beigušies
+  layouts:
+    booking_user_mailer:
+      footer: Automātiski izveidojis MakePlans.
+  user_mailer:
+    add_user:
+      body: |-
+        Sveiki,
+
+        Laipni lūdzam vietnē MakePlans.
+
+        Noklikšķiniet uz saites zemāk, lai definētu paroli.
+
+        %{link}
+      subject: Pievienots kā lietotājs vietnē MakePlans
+    export:
+      body: |-
+        Sveiki,
+
+        Skatiet pievienoto failu par eksportētiem datiem no MakePlans.
+
+        Paldies, ka izmantojāt MakePlans
+      subject: Eksportēt no MakePlans
+    link_user:
+      body: |-
+        Sveiki,
+
+        Tagad jums ir piekļuve %{client} kontam vietnē MakePlans.
+
+        Lai pieteiktos, apmeklējiet vietni %{link}.
+
+        MakePlans
+      subject: Piekļuve kontam vietnē MakePlans
+    password_reset:
+      footer: MakePlans
+      info: Jūs vai kāds cits esat pieprasījis jūsu MakePlans paroles atiestatīšanu. Lai pabeigtu paroles atiestatīšanu, lūdzu, noklikšķiniet uz tālāk redzamās saites.
+      link: Atiestatīt manu MakePlans paroli.
+      subject: Atiestatīt paroli

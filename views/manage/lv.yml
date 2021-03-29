@@ -1,0 +1,801 @@
+---
+lv:
+  layouts:
+    design:
+      activate_account_footer: "%{days_left} dienas pēc izmēģinājuma. Noklikšķiniet, lai aktivizētu."
+      trial_expired: Jūsu izmēģinājums ir beidzies.
+  manage:
+    agenda:
+      calendar:
+        availability: Pielāgojiet šī perioda pieejamību
+        ignore_capacity_confirm: Šajā laika posmā jau ir cita rezervācija. Vai tiešām vēlaties saglabāt?
+        listWeek: sarakstā
+        opening_hours:
+          add: "+ pievienot"
+          add_to_existing: "+ pievienot"
+          closed_all_week: Visu periodu slēgts
+          dates: Datumi
+          from: 'No'
+          open: Atvērt
+          remove_existing: noņemt
+          reset: Atiestatīt
+          title: Pielāgojiet pieejamību
+          to: Uz
+        resourceTimeGridDay: diena (dalīta)
+        resourceTimelineDay: laika skala
+        resources: Resursi
+        services: Pakalpojumi
+      list:
+        all_day: Visu dienu
+        awaiting_confirmation:
+          one: "%{count} atruna apstiprināšanai."
+          other: "%{count} atrunas apstiprināšanai."
+        busy: Aizņemts
+        do_filtering: Aktivizēt filtru
+        filter: Filtrēšana
+        headline: Tiek parādītas tikšanās
+        month: Rādīt mēnesi
+        no_reservations: Nav atrunu
+        reset_filter: Atiestatīt filtru
+        resources: Resursi
+        services: Pakalpojumi
+        this_and_next_month: No šodienas līdz nākamā mēneša beigām
+        this_and_next_week: No šodienas līdz nākamās nedēļas beigām
+    billing:
+      charge:
+        charge_details: Pamatojoties uz pašreizējo lietojumu, mēs katru mēnesi iekasēsim maksu no jūsu kredītkartes %{price}.
+        charge_details_default: Mēneša cena ir %{price} par resursu.
+        charge_details_sms: 'No jums tiks iekasēta maksa arī par īsziņu lietošanu: %{price}.'
+        process: Pabeigt maksājumu
+        processing: Lūdzu uzgaidiet...
+      credit_card_form:
+        billing_info: Kad pievienosiet savu kredītkartes informāciju, mēs katru mēnesi no jums iekasēsim maksu, pamatojoties uz cenām, kas norādītas mūsu vietnē. Pirmais darījums tiks veikts nekavējoties. Jebkurā laikā varat anulēt abonementu.
+        header: Informācija par maksājumu
+        trial_expired: Jūsu izmēģinājums ir beidzies. Lūdzu, aktivizējiet savu kontu, lai turpinātu izmantot MakePlans.
+      credit_card_info:
+        header: Ievadiet kredītkartes datus
+        submit: Saglabāt kredītkarti
+      edit_invoice_info:
+        activate_info: Lai pabeigtu konta aktivizēšanu, lūdzu, aizpildiet šo veidlapu
+        billing_email_info: Ja vēlaties, lai rēķins pa e-pastu tiktu nosūtīts uz citu e-pasta adresi, nevis %{email}, lūdzu, ievadiet e-pastu šeit.
+        billing_name_info: Ja vēlaties, lai mēs izrakstām rēķinu citam uzņēmumam, nevis %{name}, lūdzu, ievadiet šeit vārdu.
+        header: Jūsu norēķinu informācija
+      info:
+        add_link: Aktivizēt kontu - ievadiet kredītkartes datus
+        add_new_link: Vai vēlaties atjaunināt kredītkartes datus?
+        billing_info: Jūs saņemsiet no mums rēķinu, ka jums jāmaksā manuāli
+        billing_order_ref: 'Rēķinā būs jūsu atsauce: %{billing_order_ref}'
+        change_from_invoice: Ievadiet kredītkartes datus, lai nebūtu jāmaksā manuāli katru reizi, kad izrakstām rēķinu par jūsu kontu
+        charge_details: Pamatojoties uz pašreizējo lietojumu, mēs katru mēnesi iekasēsim maksu no jūsu kredītkartes %{price}.
+        charge_details_default: Mēneša cena ir %{price} par resursu.
+        charge_details_sms: 'No jums tiks iekasēta maksa arī par īsziņu lietošanu: %{price}.'
+        current_info: Jūsu kredītkartes dati tiek droši glabāti pie mūsu norēķinu partnera Stripe. Jūsu saglabātā karte ir %{brand} ar numuru, kas beidzas ar %{last_4}, un derīguma termiņš ir %{expire_month} / %{expire_year}.
+        demo_ends_at: Vietnē %{demo_ends_at} jūsu konts tiks automātiski deaktivizēts.
+        edit_info_link: Vai vēlaties mainīt norēķinu informāciju?
+        edit_link: Vai vēlaties atjaunināt kredītkartes datus?
+        email_recipent: Mēs nosūtīsim rēķinu pa e-pastu uz %{email}.
+        info_header: 'Jūsu norēķinu informācija:'
+        paid_until: Jūsu konts tiek apmaksāts līdz %{paid_until}.
+        pause: Pārtrauciet konta darbību, kad beidzas pašreizējais abonements.
+        pause_confirm: Vai tiešām vēlaties aizturēt kontu? Vietnē %{paid_until} konts tiks automātiski deaktivizēts.
+        reactivate: Jūsu konts pašlaik ir izmēģinājuma režīmā. Lai turpinātu izmantot MakePlans, jums jāaktivizē savs konts
+        reactivate_link: Atkārtoti aktivizējiet kontu
+        sms_credits_available: Jums ir %{credits} īsziņu atlikums.
+        vat_no: Reģistrētais PVN numurs ir %{vat_no}
+        vat_no_missing: PVN nav ievadīts.
+      paying_account_required:
+        activate_account: Aktivizējiet kontu tūlīt
+        info: Lai izmantotu šo funkciju, ir jāaktivizē jūsu konts.
+      processing:
+        activated: Jūsu konts tagad ir aktivizēts :) Paldies, ka izmantojāt MakePlans.
+        error: Nevar pārbaudīt maksājumu. Lūdzu, sazinieties ar klientu apkalpošanas centru.
+        info: Lūdzu, uzgaidiet, kamēr mēs iekasēsim maksu no jūsu maksājumu kartes. Tas var ilgt vienu minūti. Kad process būs pabeigts, jūs saņemsiet no mums e-pastu.
+    bookings:
+      create_recurring:
+        headline: Notiek %{count} rezervāciju ģenerēšana ...
+        link: Rādīt sarakstu
+      destroy_recurring:
+        headline: Visas atkārtotās atrunas šajā modelī tika noņemtas
+      fiken:
+        delayed_info: Paies zināms laiks, līdz pasūtījums tiks izveidots Fiken. Nemēģiniet vēlreiz ģenerēt pasūtījumu, ja MakePlans nav redzama informācija no Fiken.
+        header: Kas attiecas uz Fiken ...
+        to_booking: Rādīt rezervāciju
+      form_appointment:
+        add_reminder_sms: Sūtīt SMS atgādinājumu
+        confirmation_send_email: Nosūtīt apstiprinājumu pa e-pastu
+        confirmation_send_sms: Sūtīt īsziņu apstiprinājumu
+        customer_info: Informācija par klientu
+        email: E-pasts
+        first_available: Pirmais pieejams
+        headline_create: Pievienot jaunu rezervāciju
+        headline_create_recurring: Pievienot jaunu rezervāciju
+        headline_edit: Mainīt rezervāciju
+        headline_new: Pievienot jaunu rezervāciju
+        ignore_capacity: Ietaupiet pat tad, ja esat aizņemts
+        modification_send_email: Nosūtīt modifikācijas e-pastu
+        modification_send_sms: Sūtīt SMS modifikāciju
+        no_service: Nav izvēlēts neviens pakalpojums
+        notification_send_email: Sūtīt paziņojumu pa e-pastu
+        notification_send_sms: Sūtīt SMS paziņojumu
+        person_create_info: Meklējiet esošo klientu vai izveidojiet jaunu, ievadot vārdu.
+        person_none_selected: Nav izvēlēts neviens klients
+        recurring_enabled: Atkārtojiet ar paraugu
+        recurring_member: Šī rezervācija ir daļa no atkārtota modeļa.
+        reservation_type_other: Aizņemts
+        reservation_type_person: Klienta rezervācija
+        send_confirmation: 'Apstiprinājums:'
+        send_modification: 'Modifikācija:'
+        send_notification: 'Paziņojums:'
+        send_reminder: 'Atgādinājums:'
+        sms: īsziņa
+      form_attendance:
+        add_reminder_sms: Sūtīt SMS atgādinājumu
+        confirmation_send_email: Nosūtīt apstiprinājumu pa e-pastu
+        confirmation_send_sms: Nosūtīt īsziņu apstiprinājumu
+        email: E-pasts
+        headline_create: Pievienot pavadoni
+        headline_edit: Mainīt rezervāciju
+        headline_new: Pievienot pavadoni
+        modification_send_email: Nosūtīt e-pasta izmaiņas
+        modification_send_sms: Sūtīt SMS modifikāciju
+        notification_send_email: Sūtīt paziņojumu pa e-pastu
+        notification_send_sms: Sūtīt SMS paziņojumu
+        person_create_info: Meklējiet esošo klientu vai izveidojiet jaunu, ievadot vārdu.
+        person_none_selected: Nav izvēlēts neviens klients
+        send_confirmation: 'Apstiprinājums:'
+        send_modification: 'Modifikācija:'
+        send_notification: 'Paziņojums:'
+        send_reminder: 'Atgādinājums:'
+        sms: īsziņa
+      izettle:
+        close_info: Aizveriet šo logu, lai atgrieztos pie rezervācijas.
+        error: 'Kļūda no iZettle: %{error}'
+        result_header: iZettle
+        success: Maksājums reģistrēts.
+      show:
+        booked_from: 'No'
+        booked_to: Uz
+        count: Cilvēku skaits
+        created_by: Izveidoja %{user}
+        fiken:
+          create_invoice: Izveidot rēķinu Fiken
+          created: Rēķins tiek izveidots Fiken
+          open_invoice: Atvērts rēķins Fiken
+          processing: Fiken tiek veidots rēķins. Tas var aizņemt dažas minūtes.
+        izettle:
+          pay: Saņemiet maksājumu ar iZettle
+          progress_link: Noklikšķiniet šeit, lai turpinātu.
+        log: Žurnāls
+        paid_with:
+          braintree: Maksāja ar Braintree
+          stripe: Maksāja ar Stripe
+          vipps: VIPI
+        person:
+          address: Adrese
+          email: E-pasts
+          phone_number: Telefona numurs
+        recurring_member: Šī rezervācija ir daļa no atkārtota modeļa.
+        refund: Atmaksātā summa
+        request_card:
+          processing: Maksājuma saite tiek nosūtīta klientam
+          send: Nosūtīt maksājuma saiti klientam
+        send_sms: Sūtīt īsziņu
+        show_in_calendar: Rādīt kalendārā
+        stripe:
+          pay: Maksājiet ar Stripe
+          processing: Darījums tiek apstrādāts. Tas var ilgt līdz 1-2 minūtēm.
+        tfso:
+          create_invoice: Izveidojiet pasūtījumu 24SevenOffice
+          open_invoice: Atvērt pasūtījumu 24SevenOffice
+          processing: Pasākums tiek veidots vietnē 24SevenOffice. Tas var aizņemt dažas minūtes.
+        vipps:
+          processing: Apstrāde
+        visma_eaccounting:
+          create_invoice: Izveidojiet pasūtījumu Visma e-grāmatvedībā
+          created: Rēķins tiek izveidots Visma eAccounting
+          processing: Pasūtījums tiek veidots Visma eAccounting. Tas var aizņemt dažas minūtes.
+      show_recurring:
+        delete_all: Dzēst visus
+        headline: Visas atkārtotās atrunas šajā modelī
+      state_changer:
+        state: Valsts
+      unconfirmed:
+        headline: Rezervāciju saraksts apstiprināšanai
+        no_reservations: Nav atrunu, kurai nepieciešama apstiprināšana
+      widget:
+        booked_from: 'No'
+        booked_to: Uz
+        description: Apraksts
+        person:
+          address: Adrese
+          email: E-pasts
+          phone_number: Telefona numurs
+      widget_list:
+        busy: Aizņemts
+        no_bookings: Vietnei %{start} nav rezervācijas
+        no_bookings_range: No %{start} uz %{end} nav esošu rezervāciju
+    categories:
+      blank:
+        get_started: Pašlaik jūs neesat izveidojis nevienu kategoriju. Tāpēc visi pakalpojumi ir rezervācijas vietnes sarakstā. Ja vēlaties kategorizēt savus pakalpojumus, vispirms izveidojiet kategoriju.
+        header: Nav pievienota neviena kategorija
+        info: Ja jūs piedāvājat daudz pakalpojumu, ir iespējams tos kategorizēt vairākos līmeņos. Kategorijas tiks parādītas rezervācijas vietnē, tāpēc klientam jāizvēlas kategorija, pirms tiek parādīti izvēlētās kategorijas pakalpojumi. Pakalpojumu ir iespējams parādīt vairākās kategorijās.
+      form:
+        has_services: Parāda šos pakalpojumus
+        no_parent_id: ''
+      index:
+        header: Kategorijas
+      list_menu:
+        list: Kategorijas
+      show:
+        custom_data: 'Pielāgoti dati:'
+        has_services: 'Parāda šos pakalpojumus:'
+    client:
+      api:
+        disable: Vai vēlaties atspējot API?
+        disable_warning: Vai tiešām vēlaties atspējot API? API atslēga kļūs nederīga, un API nebūs pieejama.
+        enable: Vai vēlaties iespējot API?
+        enable_warning: Vai tiešām vēlaties aktivizēt API? API atslēga nodrošina pilnu programmatisku piekļuvi jūsu kontam.
+        enabled: API ir iespējota.
+        header: API
+        info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+        not_enabled: API nav iespējota.
+      cancel:
+        confirm_message: Pēdējā iespēja. Vai esat pilnīgi pārliecināts, ka vēlaties dzēst kontu ar visiem datiem?
+        disable_link: Jā, lūdzu, izdzēsiet visus manus datus.
+        header: Vai tiešām vēlaties dzēst savu kontu?
+        i_love_makeplans: Nē, es vēlos turpināt izmantot MakePlans.
+        info: Visi jūsu konta dati tiks dzēsti. Vai tiešām vēlaties turpināt?
+        pause: Vai jūs drīzāk iestatāt sava konta pauzi? Jūs nemaksāsit mēneša maksu, un jūsu konts būs pieejams, kad būsiet gatavs atkal izmantot MakePlans.
+        pause_link: Norēķinu lapā varat pārtraukt sava konta darbību.
+      configuration:
+        header: MakePlans iestatīšana
+        intro: Šeit jūs varat konfigurēt MakePlans un kā tam vajadzētu darboties jums. Rezervēšanas vietnē varat pievienot pakalpojumus un kategorijas, kuras jūs piedāvājat, pielāgot pieejamību, mainīt izejošos ziņojumus (SMS un e-pastu), pievienot vairāk lietotāju un pielāgot daudzus citus iestatījumus vietnē MakePlans.
+        menu_info: Kreisajā pusē esošajā izvēlnē atlasiet. Ja jums ir kādi jautājumi par korekciju, lūdzu, sazinieties ar klientu apkalpošanas centru.
+        trial_info: Šis ir izmēģinājuma konts - noklikšķiniet šeit, lai aktivizētu
+      edit:
+        custom_messages_info_html: Attiecīgos datus varat sapludināt šeit. Lai iegūtu papildinformāciju, lūdzu, apmeklējiet vietni <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> .
+      edit_booking_site:
+        booking_form_info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_site_info_html: Jūsu rezervācijas vietne ir pieejama vietnē %{url}.
+        booking_site_locale_default: Izmantojiet konta valodu
+        cancellation: Anulēšana
+        cancellation_info: Anulēšanu var veikt tikai pirms atcelšanas perioda. Priekšapmaksas rezervācijas nevar atcelt.
+        cancellation_period_info: 'Piemērs: “24 stundas pirms” (atcelt var tikai 24 stundas pirms rezervācijas sākuma).'
+        first_bookable_period_info: 'Piemērs: “pēc divām stundām” (pirmais pieejamais laiks ir pēc divām stundām) vai “08:00 rīt” (pirmais pieejamais laiks ir rīt no rīta plkst. 8:00).'
+        future_bookable_period_info: 'Piemērs: “pēc diviem mēnešiem” (iespējams rezervēt tikai nākamos divus mēnešus) vai “Piektdiena pusnaktī” (iespējams rezervēt tikai līdz piektdienas pusnaktij).'
+        header: Atjaunināt rezervēšanas vietni
+        interval_rounding:
+          default: Sistēmas noklusējums (tuvākā 5 minūšu atzīme)
+          five: Tuvākā 5 minūšu atzīme
+          halfhour: Tuvākā pusstunda
+          hour: Tuvākā stunda
+          none: Nav noapaļošanas (nav ieteicams)
+          quarter: Tuvākais ceturksnis
+          ten: Tuvākā 10 minūšu atzīme
+          twenty: Tuvākā 20 minūšu atzīme
+        remove_logo: Noņemt logotipu
+        settings:
+          allow_person_cookie: Ļaujiet atcerēties pārbaudīto klientu līdz nākamajam apmeklējumam, izmantojot sīkdatnes.
+          google_tag_manager: Google tagu pārvaldnieka konteinera ID
+          select_resource: Papildu solis resursa atlasei
+        verification_methods:
+          email: E-pasts
+          facebook: Atļaujiet verifikāciju arī ar Facebook Connect.
+          none: Nav verifikācijas (nav ieteicams)
+          sms: SMS (ieteicams)
+      edit_communication:
+        email: E-pasts
+        header: Mainīt izejošo smalcināšanu
+        settings:
+          custom_email_sending: Pilnībā ignorēt e-pastus ar zemāk esošo saturu (pretējā gadījumā saturs tiek vienkārši ievietots standarta e-pastā)
+          custom_sms_sending: Pilnībā ignorēt īsziņu ar zemāk esošo saturu (pretējā gadījumā saturs tiek vienkārši ievietots standarta īsziņās)
+          dont_include_icalendar_attachment: Neiekļaujiet iCalendar pielikumu
+        sms: īsziņa
+      edit_company:
+        delete_account_html: Vai tiešām vēlaties dzēst savu kontu? <a href="%{link}">Jā, turpiniet</a>
+        delete_label: Dzēst kontu
+        domain_info: Ir iespējams izmantot savu vietrādi URL, piemēram, booking.YOURDOMAIN.com, lai iegūtu papildinformāciju, lūdzu, sazinieties ar klientu servisu
+        header: Mainīt konta informāciju
+        payment_provider:
+          info_html: Pirms rezervēšanas pabeigšanas rezervācijas vietnē ir iespējams pieprasīt samaksu, izmantojot kādu no integrētajiem maksājumu pakalpojumu sniedzējiem. Mēs iesakām <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe,</a> kas ir labs pakalpojums, ar kuru jūs varat ātri sākt darbu bez fiksētām izmaksām. Sadaļā "Integrācijas" jums jānorāda arī nepieciešamā informācija par izvēlēto maksājumu nodrošinātāju.
+          none: Nav
+        purge_data_info: 'Šī funkcija automātiski izdzēsīs veco personu identificējošo informāciju (klienti un rezervācijas). Ievadiet dzēšanas datuma tekstu attiecībā pret pašreizējo datumu. Piemērs: “pirms 6 mēnešiem” vai “pirms 2 gadiem”.'
+        subdomain_info: Jūsu unikālā adrese (URL), kur klienti var rezervēt
+      edit_fields:
+        appointment_form_info: Šī veidlapa paredzēta tikai rezervāciju manuālai ievadīšanai. Lai mainītu rezervācijas veidlapu rezervācijas vietnē, lūdzu, dariet to sadaļā “Rezervēšanas vietne”. Ja pielāgotās rezervācijas veidlapā tiek izmantoti pielāgoti lauki, tie arī jāiekļauj šeit.
+        booking_form_info: Lūdzu, dodieties uz rezervācijas vietnes iestatījumiem, lai mainītu.
+        custom_form_info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        header: Mainīt pielāgotos laukus
+      edit_person_notifications:
+        automatic_messages: Automātiski ziņojumi (administrēšanas sistēmā un API)
+        cancellation_email: Atceļot rezervāciju, nosūtiet e-pastu
+        cancellation_sms: Atceļot rezervāciju, sūtiet īsziņu
+        confirmation_email: Nosūtot e-pastu, veidojot rezervāciju
+        confirmation_sms: Veidojot rezervāciju, nosūtiet īsziņu
+        default: Automātiska, pamatojoties uz verifikācijas metodi
+        default_reminder_sms: Automātiska, pamatojoties uz iestatījumu atgādinājuma nosūtīšanai
+        disable: Deaktivizēt
+        header: Klientu paziņojumi
+        modification_email: Sūtiet e-pastu, mainot rezervāciju
+        modification_sms: Modificējot rezervāciju, sūtiet īsziņu
+        outgoing_messages_info: MakePlans ieteiks nosūtīt e-pastu / īsziņu (neatkarīgi no tā, ko iestatījāt kā verifikācijas metodi), kad izveidojat, modificējat vai atceļat rezervāciju. Daži ziņojumi, piemēram, atcelšana, notiek automātiski. Varat deaktivizēt automātiskos ziņojumus (piemēram, pārvietojot rezervāciju, velkot to kalendārā, atceļot vai izveidojot jaunu rezervāciju, izmantojot API) vai deaktivizēt ieteikumu sūtīt ziņojumus formā, mainot zemāk esošos iestatījumus. Piezīme. Tas neattiecas uz rezervēšanas vietni. Rezervēšanas vietne vienmēr automātiski nosūtīs ziņojumus, pamatojoties uz jūsu verificēšanas metodi.
+        reminder_sms: Nosūtīt atgādinājuma īsziņu
+        reminder_sms_info: Sūtītāja vārds ir “MakePlans”. Lai mainītu sūtītāja vārdu, sazinieties ar klientu apkalpošanas centru.
+        sms_reminder_time_info: 'SMS tiek izsūtīts pusdienlaikā dienu pirms rezervācijas. Ja vēlaties to mainīt, lūdzu, modificējiet zemāk esošo lauku. Piemērs: “divas stundas pirms” (īsziņa tiek izsūtīta divas stundas pirms rezervācijas) vai “8:00 vakar” (atgādinājuma īsziņa tiks nosūtīta plkst. 8:00 dienu pirms rezervācijas)'
+      edit_user_notifications:
+        approvement_email: E-pasts par jauniem rezervēšanas pieprasījumiem
+        automatic_messages: Automātiskas ziņas
+        default: Aktīvs (noklusējums)
+        disable: Atspējots
+        email: E-pasts
+        header: Lietotāju paziņojumi
+        mail_notification_info: Lai paziņotu vairāk nekā vienai personai, lūdzu, izmantojiet semikolu, lai nošķirtu e-pasta adreses.
+        notification_email: E-pasta paziņojums par jaunu rezervāciju
+        notification_sms: SMS paziņojums par jaunu rezervāciju
+        outgoing_messages_info: Ja esat iestatījis manuāli apstiprināt jaunas rezervācijas no rezervēšanas vietnes, jums tiks paziņots pa e-pastu par katru jaunu rezervācijas pieprasījumu. Ja jūs nevēlaties saņemt šos paziņojumus vai ja apstiprināšana tiek veikta, izmantojot ārēju lietojumprogrammu (API), to iespējams deaktivizēt zemāk.
+        sms: īsziņa
+      edit_ux:
+        calendar: Kalendārs
+        header: UX
+        info: Vizuālie iestatījumi
+        settings:
+          calendar_hide_weekends: Paslēpt nedēļas nogales
+          calendar_slot_duration: Slota ilgums
+          calendar_slot_label_interval: Slota etiķetes intervāls
+      export_info:
+        data_types:
+          bookings: Atrunas
+          events: Notikumi
+          people: Klienti
+        executed: Eksports tagad tiek nosūtīts uz jūsu e-pasta adresi.
+        header: Eksportējiet datus no MakePlans
+        info: Jūs saņemsiet e-pastu ar CSV faila pielikumu.
+      import:
+        header: Importēt datus
+        info: MakePlans ir iespējams importēt tādus datus kā klienti. Lai iegūtu papildinformāciju, sazinieties ar atbalsta dienestu.
+      promote:
+        booking_button_html_info: Lai savā vietnē ievietotu rezervēšanas pogu, lūdzu, nokopējiet zemāk esošo HTML kodu. Ja jums nepieciešama palīdzība, lūdzu, sazinieties ar savu tīmekļa dizaineru.
+        booking_button_html_preview: Rezervēšanas pogas priekšskatījums
+        booking_button_text: Pogas teksts
+        booking_button_text_default_value: Rezervēšana tiešsaistē
+        booking_iframe: Iframe rezervācijas vietnei
+        booking_link: Saite rezervēšanas vietnei
+        booking_link_title: Tiešsaistes tikšanās rezervēšana un plānošana
+        booking_site_info_html: Jūsu rezervācijas vietne ir pieejama vietnē %{url}.
+        generate_booking_button: Ģenerējiet rezervēšanas pogu savai vietnei
+        header: Reklamējiet savu rezervācijas vietni
+      tools:
+        header: Rīki jūsu kontam
+        link:
+          purge_data: Dzēst vecos datus
+          sms_all: Sūti SMS visiem klientiem
+    events:
+      create_recurring:
+        headline: Notiek %{count} notikumu ģenerēšana ...
+        link: Rādīt sarakstu
+      destroy_recurring:
+        headline: Visi atkārtotie notikumi šajā modelī tika noņemti
+      email_participants:
+        copy_info: 'Varat arī nokopēt tālāk norādītās adreses un ielīmēt tās jaunā e-pasta ziņojuma laukā Diskrētā kopija:'
+        headline: Nosūtīt pa e-pastu visiem dalībniekiem
+        open_email_client: Atvērt e-pasta klientu
+      form:
+        headline_create: Pievienot jaunu notikumu
+        headline_create_recurring: Pievienot jaunu notikumu
+        headline_edit: Mainīt notikumu
+        headline_new: Pievienot jaunu notikumu
+        recurring_enabled: Atkārtojiet ar paraugu
+        recurring_member: Šis notikums ir daļa no atkārtota modeļa.
+      show:
+        attendants_html:
+          one: viena rezervācija
+          other: 'atrunas: <strong>%{count}</strong>'
+          zero: nav atrunu
+        download_attendance_csv: Eksportēt apmeklējumu sarakstu kā CSV
+        email_confirm: Apmeklējumu saraksts jums tiks nosūtīts pa e-pastu. Vai vēlaties turpināt?
+        fully_booked: Pasākums ir pilnībā rezervēts
+        recurring_member: Šis notikums ir daļa no atkārtota modeļa.
+        send_email_to_all: Nosūtīt pa e-pastu visiem pavadoņiem
+        send_sms: Sūtīt īsziņu
+        show_in_calendar: Rādīt kalendārā
+        show_inactive_html: Nerāda %{count} neaktīvas rezervācijas. <a href="%{href}">Vai vēlaties parādīt šos?</a>
+        show_only_active_html: Sarakstā ir iekļautas neaktīvas rezervācijas %{count}. <a href="%{href}">Vai vēlaties parādīt tikai aktīvās rezervācijas?</a>
+        signup_link: Reģistrēšanās saite
+        sms_all_participants: Nosūtiet īsziņu visiem dalībniekiem
+      show_recurring:
+        delete_all: Dzēst visus
+        headline: Visi atkārtotie notikumi šajā modelī
+      widget:
+        capacity_details:
+          one: Iespējams viens apmeklētājs no kopējā %{capacity}.
+          other: "%{count} iespējamo kopējo %{capacity} apmeklējumu skaits."
+          zero: Nav apmeklētāju. %{capacity} iespējams.
+        end: Beidzas
+        start: Sākas
+      widget_list:
+        no_events: Vietnē %{start} nav esošu notikumu
+        no_events_range: Nav esošu notikumu no %{start} līdz %{end}
+    integrations:
+      account_connected: Izveidojiet savienojumu ar šo kontu.
+      braintree:
+        cse_key: Cse atslēga
+        environment: Vide
+        merchant_id: Tirgotājs
+        private_key: Privātā atslēga
+        production: Ražošana
+        public_key: Publiskā atslēga
+        sandbox: Smilšu kaste
+      campaign_monitor:
+        api_key: API atslēga
+        connect_info: 'Atlasiet adresātu sarakstu, kur jauni klienti tiek pievienoti kā apakšsūķētāji:'
+        list_id: Saraksta ID
+      confrere:
+        client_id: Klienta ID
+        client_secret: Klienta noslēpums
+        connect_info: Savienots ar Confrere
+        setup_info: Lai integrācija darbotos, MakePlans resursam jābūt savienotam ar Conferere lietotāju.
+      connect_error: Nevar pabeigt integrāciju. Lūdzu, izdzēsiet integrāciju un mēģiniet vēlreiz.
+      connected: Šis pakalpojums ir savienots.
+      dokus:
+        account: Konts
+        password: Parole
+        username: Lietotājvārds
+      extensor:
+        activate: Sāciet izmantot Extensor Online Booking integrāciju
+        activate_settings_2: Aktivizējiet Extensor Online Booking 2. versijas iestatījumus
+        activate_settings_3: Aktivizējiet iestatījumus Extensor Online Booking versijai 3
+        info: Lai aktivizētu sinhronizāciju ar Extensor, jāinstalē Extensor Online Booking. Noklikšķiniet uz saites zemāk, lai sāktu procesu. Ar jums sazināsies Extensor.
+        reactive_settings: Atkārtoti aktivizējiet iestatījumus no ekstensora tiešsaistes rezervēšanas.
+        version: MakePlans ir konfigurēts darbam ar Extensor Online Booking versiju %{version}.
+      fakturo:
+        password: Parole
+        username: Lietotājvārds
+      fiken:
+        active: Aktīvs
+        api_not_activated: Jums ir jāaktivizē API Fiken.
+        connected_bank_account: bankas konts
+        connected_company: Uzņēmums
+        email: Lietotājvārds (epost)
+        income_account: Ienākumu konts
+        password: Parole
+        select_bank_account: Izvēlieties bankas kontu, kas tiks parādīts rēķinā
+        select_company: Izvēlieties uzņēmumu
+        service_linked: Savienojiet ar produktu Fiken
+        service_links: 'Katram pakalpojumam jābūt savienotam ar produktu Fiken, lai varētu izveidot pasūtījumu Fiken. Lūdzu, ņemiet vērā: Cena tiek iegūta no Fiken, nevis no MakePlans. Jums jāpārliecinās, ka cena abās lietojumprogrammās ir identiska.'
+        service_not_linked: NAV savienots ar produktu Fiken.
+        vat_type: PVN veids
+      headline: Integrācija ar %{integration}
+      highrise:
+        account: Apakšdomēns (YOURACCOUNT.highrisehq.com - lūdzu, ievadiet tikai YOURACCOUNT)
+        connect_info: 'Izvēlieties kontu, kurā tiek pievienoti jauni klienti:'
+        password: API atslēga
+      index:
+        api: API
+        web_hooks: Tīmekļa saites
+      izettle:
+        active: Aktice
+        info: Lai izmantotu iZettle, lūdzu, norādiet pakalpojumu cenu. Pēc tam rezervācijā būs iespējams noklikšķināt uz "veikt maksājumu ar iZettle".
+      mailchimp:
+        account: Saraksta ID
+        connect_info: 'Atlasiet adresātu sarakstu, kur jauni klienti tiek pievienoti kā apakšsūķētāji:'
+        password: API atslēga
+      mailerlite:
+        api_key: API atslēga
+        select_group: Izvēlieties grupu, kurai tiks pievienoti jauni klienti.
+      mailmojo:
+        account: Saraksta ID
+        username: Konta lietotājvārds
+      not_authenticated: Nevar pieslēgties. Pārbaudiet savus akreditācijas datus.
+      oauth_connect: Izveidojiet savienojumu ar pakalpojumu
+      quickpay:
+        environment: Vide
+        md5_secret: MD5 noslēpums
+        merchant_id: Tirgotāja ID
+        production: Ražošana
+        test: Pārbaude
+      selected_option: Atlasīts
+      sendy:
+        connect_info_html: Jaunie klienti tiks abonēti sarakstam ar ID <em>%{list_id}</em> instalācijā %{api_url}
+      stripe:
+        payment_info: Par visiem darījumiem MakePlans atskaita platformas maksu %{application_fee_percent}%.
+        receipt_email: Nosūtiet klientam kvīti no Stripe
+      tfso:
+        add_to_crm_manually: Pievienojiet klientu CRM manuāli
+        distribution_method: 'Izplatīšanas metode:'
+        distribution_methods:
+          EMail: E-pasts
+          ElectronicInvoice: EHF
+          Print: Drukāt
+          Unchanged: Nemainīts
+        invoice_payment_time: 'Maksājuma laiks:'
+        invoice_state: 'Pasūtījuma statuss:'
+        invoice_states:
+          Draft: Melnraksts
+          ForInvoicing: Par rēķiniem
+          Invoice: Rēķins
+          Offer: Piedāvājums
+        password: API parole
+        service_linked: Izveidojiet savienojumu ar produktu 24SevenOffice
+        service_links: Katram pakalpojumam pakalpojumā MakePlans jābūt savienotam ar produktu 24SevenOffice, lai iespējotu izsaukšanu. Lūdzu, ņemiet vērā, ka cena tiek iegūta no produkta 24SevenOffice, nevis no MakePlans. Jums jāpārliecinās, ka šīs divas cenas ir identiskas. Dodieties uz pakalpojumu, lai definētu produkta ID no 24SevenOffice.
+        service_not_linked: NAV savienots ar produktu 24SevenOffice
+        type_groups: 'Pārdošanas veids pasūtījumam:'
+        username: API lietotājvārds
+      vipps:
+        client_id: Klienta ID
+        client_secret: Klienta noslēpums
+        merchant_serial_nr: Tirgotāja sērijas nr
+        vipps_subscription_key: Vipps abonēšanas atslēga
+      visma_eaccounting:
+        active: Aktīvs
+        connect_info: Savienots ar %{name}
+        connected_payment_id: 'Apmaksas nosacījumi: %{name}'
+        customer_attributes_info: 'Lūdzu, ņemiet vērā: Lai reģistrētu jaunu klientu, Visma e-grāmatvedībai ir nepieciešams pasta indekss un pilsēta. Ja šīs vērtības nav norādītas, pasūtījumu nevar izveidot no rezervācijas.'
+        select_terms_of_payment: 'Lūdzu, izvēlieties standarta maksājuma noteikumus jaunajiem klientiem:'
+        service_linked: Savienots ar produktu Visma eAccounting
+        service_links: Katram pakalpojumam MakePlans ir jābūt savienotam ar produktu Visma eAccount, lai iespējotu rēķinu izrakstīšanu. Lūdzu, ņemiet vērā, ka cena tiek iegūta no Visma eAccounting, nevis no MakePlans. Jums jāpārliecinās, ka cena ir identiska abās sistēmās.
+        service_not_linked: NAV savienots ar produktu Visma eAccounting
+      zapier:
+        info_html: Lai izveidotu MakePlans savienojumu ar Zapier, lūdzu, izveidojiet <a href="%{url}" target="_blank">jaunu Zapier uz Zapier</a> .
+      zoom:
+        connect_info: Savienots
+    message_templates:
+      index:
+        header: Ziņojumu veidnes
+        intro: Šeit atradīsit sarežģītākas ziņojumu veidnes, kuras var nosūtīt pēc rezervācijas apstiprināšanas, pirms tās sākuma vai pēc tās pabeigšanas. Lūdzu, ņemiet vērā, ka šie ziņojumi tiek nosūtīti papildus standarta ziņojumiem, piemēram, apstiprinājumam un atgādinājumam. Izmantojiet šo funkciju tikai tad, ja vēlaties, piemēram, nosūtīt papildu atgādinājumu, vairākus apstiprinājuma ziņojumus (piemēram, e-pastu papildus SMS) vai papildu ziņojumu.
+    people:
+      form:
+        merge_action: Apvienojiet šos divus klientus
+        merge_action_email: Šī e-pasta adrese jau ir saglabāta citam klientam. Vai vēlaties apvienot šos divus klientus, lai %{email} tiktu izmantota kā e-pasta adrese?
+        merge_action_info: Visas rezervācijas tiks saglabātas, bet viens no klientiem tiks izdzēsts. Jūs varat izvēlēties, kura klienta informācija tiks saglabāta.
+        merge_action_phone_number: Šis tālruņa numurs jau ir saglabāts citam klientam. Vai vēlaties apvienot šos divus klientus, lai %{phone_number} tiks izmantots kā tālruņa numurs?
+        merge_button: Apvienot un saglabāt
+        merge_info: 'Tā vietā izmantojiet:'
+      index:
+        delete_warning: Vai tiešām vēlaties dzēst %{person}?
+        filter: Filtrēšana
+        headline: Klienti
+        send_sms: Sūtīt īsziņu
+      show:
+        bookings_for: "%{name} rezervācijas"
+        card_saved_with:
+          stripe: Norēķinu karte saglabāta ar Stripe
+        change_tfso_customer: Mainiet 24SevenOffice klienta ID.
+        export: Datu eksportēšana pa e-pastu klientam
+        export_executed: Eksporta fails ir nosūtīts klientam.
+        no_reservations: Nav atrunu
+        send_sms: Sūtīt īsziņu
+      tfso_connect_company:
+        create: Izveidojiet jaunu klientu 24SevenOffice
+        header: Sazinieties ar klientu 24SevenOffice
+        search: Vai arī meklējiet starp esošajiem klientiem
+        search_matched_headline: Atrasti esošie klienti 24SevenOffice CRM. Noklikšķiniet uz nosaukuma, lai savienotu šo klientu MakePlans ar klientu 24SevenOffice CRM.
+        search_query: Vārda meklēšana
+        stream_placeholder: Meklēšana 24SevenOffice CRM. Lūdzu uzgaidiet. Tas var ilgt līdz 1-2 minūtēm.
+    profile:
+      activate_rotp:
+        enable_rotp: Aktivizēt 2FA
+        generate_header: Aktivizēt divpakāpju verifikāciju (2FA)
+        generate_info: Skenējiet zemāk esošo QR kodu ar savu mobilo tālruni, izmantojot Google Authenticator vai citu lietotni 2FA.
+        verify_code: 'Ievadiet kodu, lai pārbaudītu:'
+      deactivate_rotp:
+        deactivate_rotp: Noņemiet 2FA
+        verify_code: 'Ievadiet kodu, lai pārbaudītu:'
+      edit_password:
+        verify_code: 'Ievadiet kodu, lai pārbaudītu:'
+      show:
+        change_password: Mainīt paroli
+        rotp:
+          disable_link: Deaktivizējiet divpakāpju verifikāciju
+          disable_warning: Vai tiešām vēlaties deaktivizēt divpakāpju verifikāciju?
+          enable_link: Aktivizējiet divpakāpju verifikāciju
+          enable_warning: Ja aktivizējat divpakāpju verifikāciju, jums vienmēr ir jāpārbauda katra pieteikšanās, izmantojot mobilā tālruņa lietotnes kodu. Vai tiešām vēlaties iespējot šo funkciju?
+          regenerate_link: Atjaunojiet divpakāpju verifikācijas atslēgu
+          regenerate_warning: Ja atjaunojat divpakāpju verifikācijas atslēgu, esošā atslēga vairs nedarbosies, un lietotne ir jāiestata ar jauno kodu. Vai tiešām vēlaties turpināt?
+          submit_button: Pieslēgties
+          verification_code_header: Divpakāpju verifikācija
+    purge_data:
+      destroy:
+        header: Vecie dati tagad tiek dzēsti.
+        processing: Dati tagad tiks dzēsti. Var paiet dažas minūtes, līdz tā tiek apstrādāta.
+      index:
+        header: Dzēst vecos datus
+        info: 'Šis functino izdzēsīs vecos personas datus. Jūs varat norādīt dzēšanas datumu. Tiks dzēsti šādi dati:'
+        not_deleted: Datu dzēšana neizraisīs ārēju integrāciju.
+        processing: Apstrāde
+        purge: DZĒST DATUS
+        purge_1: Visas rezervācijas, kas beidzas pirms norādītā datuma.
+        purge_2: Visi klienti, kuri nav atjaunināti pirms norādītā datuma un kuriem pēc norādītā datuma nav rezervāciju.
+        purge_3: Tiks dzēsti arī visi žurnāli un metadati, kas saistīti ar šiem datiem.
+        purge_before: Dzēst datus pirms datuma
+    reports:
+      stats:
+        all: Visi resursi
+        booking_word: rezervācija
+        bookings: atrunas
+        bookings_per_day: Rezervācijas dienā
+        day: Diena
+        no_reservations: Nav atrunu
+    resources:
+      form:
+        availability: Noklusējuma pieejamība
+        external_info:
+          confrere_user_id: Piešķirt lietotāju
+          zoom_user_id: Tālummaiņas lietotājs
+        from: 'no'
+        mail_notification_info: Lai paziņotu vairāk nekā vienai personai, lūdzu, izmantojiet semikolu, lai nošķirtu e-pasta adreses.
+        offers: Rezervēšanas vietnē tiek piedāvāti šādi pakalpojumi
+        to: uz
+      index:
+        header: Resursi
+      list_menu:
+        list: Resursi
+      show:
+        availability: 'Noklusējuma pieejamība:'
+        capacity: 'Jauda:'
+        closed: Nav pieejams tiešsaistes rezervēšanai.
+        custom_data: 'Pielāgoti lauki:'
+        ical:
+          activated_html: Ir aktivizēta piekļuve šim resursam, izmantojot iCalendar. Saite uz iCalendar plūsmu ir %{link}
+          disable: Deaktivizējiet iCalendar plūsmu
+          enable: Aktivizējiet iCalendar plūsmu
+          info: iCalendar plūsmā tiks rādītas tikšanās no šī resursa MakePlans citās kalendāra lietojumprogrammās, piemēram, Microsoft Oulook, Google Calendar, iPhone eller Android. Tikai lasāms, visas izmaiņas jāveic MakePlans.
+          not_activated: Nav aktivizēts
+        icalfeed: 'iCalendar plūsma:'
+        offers: 'Rezervēšanas vietnē tiek piedāvāti šādi pakalpojumi:'
+    services:
+      custom_communication:
+        custom_communication_info: Šeit jūs varat norādīt pielāgotu saturu, kas tiek nosūtīts katrai jaunai šī notikuma veida rezervācijai. Ja saturs tiek ievadīts, tas pārspēj noklusējuma saturu sadaļā "Komunikācija". Tukšos laukos tiks izmantots noklusējuma saturs
+        custom_communication_show: Rādīt izejošās saziņas saturu
+      custom_form:
+        custom_form_info_html: Šim pakalpojumam varat norādīt pielāgotu rezervācijas veidlapu. Šī veidlapa ignorēs noklusējuma veidlapu, kas definēta sadaļā "Rezervēšanas vietne". Dokumentāciju var atrast vietnē<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> , vai arī sazinieties ar klientu servisu, lai saņemtu palīdzību.
+        custom_form_show: Rādīt pielāgotu rezervēšanas veidlapu
+      form_appointment:
+        booking_site_settings: Rezervācijas vietnes iestatījumi
+        days: dienas
+        interval_rounding:
+          default: Noklusējuma konta iestatījums
+          five: Skapji piecas minūtes
+          halfhour: Aizver pusstundu
+          hour: Tuvākā stunda
+          none: Nav noapaļošanas (nav ieteicams)
+          quarter: Tuvākais ceturksnis
+          ten: Tuvākās desmit minūtes
+          twenty: Tuvākā 20 minūšu atzīme
+        max_slots_default: Neierobežots
+        minutes: minūtes
+        next_interval_default: Pēc ilguma
+        offered_by: Piedāvā šādi resursi
+        payment: Maksājums
+        settings:
+          hide_all_available: Jāizvēlas konkrēts resurss (tiks paslēpts 'rādīt visus pieejamos')
+          hide_resources: Slēpt resursa izvēles pogu (tiks nejauši izvēlēta starp pieejamajiem resursiem)
+          hide_slot_end: Slēpt beigu laiku
+          select_resource: Papildu solis resursa atlasei
+      form_attendance:
+        booking_site_settings: Rezervācijas vietnes iestatījumi
+        days: Dienas
+        default_values: Zemāk jūs atradīsit noklusējuma iestatījumus, kurus var mainīt katram izveidotajam notikumam.
+        minutes: Protokols
+        offered_by: Var piedāvāt šādi kalendāri
+        payment: Maksājums
+      index:
+        appointment:
+          header: Pakalpojumi
+        attendance:
+          header: Pasākumu veidi
+        days: dienas
+        header: Pakalpojumi
+        minutes: minūtes
+      integrations:
+        external_info:
+          fiken_product_href: Savienojiet ar produktu Fiken
+          tfso_product_id: 24SevenOffice produkta id
+          visma_eaccounting_article_id: Izveidojiet savienojumu ar produktu Visma eAccounting
+      list_menu:
+        list_appointment: Pakalpojumi
+        list_attendance: Pasākumu veidi
+      show:
+        custom_data: 'Pielāgoti dati:'
+        days: dienas
+        description: 'Apraksts:'
+        interval: 'Ilgums:'
+        minutes: minūtes
+        no_providers: 'Svarīgi: šo pakalpojumu nepiedāvā nekādi resursi, un tas netiks rādīts rezervācijas vietnē. Noklikšķiniet šeit, lai pievienotu pakalpojumu sniedzējus.'
+        not_in_category: Jūs izmantojat kategorijas rezervācijas vietnē, un šis pakalpojums nav saistīts ar kategoriju. Rezultātā šis pakalpojums pašlaik nav redzams rezervēšanas vietnē. Noklikšķiniet šeit, lai pārvaldītu savas kategorijas.
+        offered: 'Piedāvā šādi resursi:'
+        price: 'Cena:'
+        show_on_booking_site: Atvērt pakalpojumu rezervēšanas vietnē
+    setup:
+      appointment_services:
+        add: Pievienojiet citu
+        footer_html: "<strong>Tikšanās pakalpojumam</strong> ir noteikts ilgums, piemēram, 30 minūtes, un to var rezervēt noteiktā darba laikā, piemēram, no pulksten 9:00 līdz 15:00 no pirmdienas līdz piektdienai. Piemēri ir konsultācijas un noma."
+        header_html: Lieliski, sāksim!<br> Vispirms pievienojiet savus pakalpojumus tikšanās reizēm.
+        minutes: minūtes
+        submit: Turpināt
+      attendance_services:
+        add: Pievienojiet citu
+        footer_html: "<strong>Attandenace</strong> pasākumos, kursos un nodarbībās. Notiek noteiktā laikā, piemēram, 14. septembrī no pulksten 15:00 līdz 19:00 vai līdz otrdienas plkst. 19:30. Datums un laiks tiks precizēts vēlāk."
+        header_html: Lieliski, sāksim!<br> Vispirms ļauj pievienot pakalpojumus apmeklēšanai.
+        submit: Turpināt
+      completed:
+        header_html: Apsveicam - jūs rezervēšanas vietne tagad darbojas!
+      completed_appointment:
+        info_html: Jūsu rezervācijas vietne tagad ir konfigurēta %{href}. Šeit klienti var rezervēt tiešsaistē. Mēs arī nosūtījām jums e-pastu ar šo informāciju. Papildus rezervēšanas vietnei kalendārā varat arī manuāli ievadīt tikšanās.
+        to_calendar: Aizved mani uz kalendāru
+      completed_attendance:
+        info_html: Jūsu rezervācijas vietne būs pieejama vietnē %{href}. Bet vispirms jums jāpievieno pirmais pasākums, kuru būs iespējams rezervēt.
+        new_event: Labi, izveidosim manu pirmo pasākumu
+      resources:
+        add: Pievienojiet citu
+        footer_html: Resurss var būt darbinieks, istaba vai objekts. Resursa nosaukums ir darbinieka vārds vai vārds, piemēram, “Mazā sanāksmju telpa” vai “Projektors Nr. 4”. Katra rezervācija pieder vienam resursam.
+        from: 'no'
+        header_html: Gandriz beidzies!</br> Vienkārši pievienojiet dažus resursus, un esat gatavs.
+        save: Saglabāt
+        submit: Gatavs!
+        to: uz
+        working_hours: Pieejamība
+        working_hours_header: ''
+      start:
+        add_services_for: Definējiet pakalpojumus
+        appointments: Iecelšana
+        appointments_info_html: Piemēram, konsultācija pie chiropractor, frizūra, masāža, noma vai citi pakalpojumi ar noteiktu darba laiku.
+        attendances: Apmeklējums
+        attendances_info_html: Par pasākumu, kursu, nodarbību vai citu apmeklējumu apmeklēšanu noteiktā laikā. Vai nu vienu reizi, vai atkārtojas kā katru otrdienu.
+        footer_html: Pakalpojums ir tas, ko jūs piedāvājat saviem klientiem, un tas tiks parādīts rezervācijas vietnē. Definējiet pakalpojumus tikšanās reizēm, kurām ir noteikts darba laiks, vai apmeklējumiem, kas notiek noteiktā laikā.
+        header_html: Laipni lūdzam vietnē MakePlans.<br> Vispirms pievienojiet savus pakalpojumus
+    shared:
+      recurring:
+        enabled: Atkārtojiet vairākas reizes ar paraugu
+        freq:
+          monthly: Katru mēnesi
+          weekly: Iknedēļas
+          yearly: Katru gadu
+        freq_label: Periods
+        interval_label: Biežums
+        length:
+          count: Gadījumi
+          until: Pirms datuma
+        length_label: Līdz
+    sms:
+      create:
+        header: SMS nosūtīts
+        sms_sent: 'Tālāk redzamais ziņojums tika nosūtīts adresātiem %{recipents_count}:'
+        to_booking: Atpakaļ pie rezervācijas
+      insufficient_credits:
+        buy: Iegādājieties īsziņu
+        info: Lai varētu nosūtīt, jums iepriekš jāapmaksā %{needed} īsziņu kredīti. Jums ir %{credits} kredīti.
+      new:
+        header: 'Sūtīt īsziņu %{recipents_count} adresātiem:'
+        message: Ziņojums
+        processing: Notiek sūtīšana ...
+        send: Nosūtīt
+        sms_info: Ziņojumiem, kuru garums pārsniedz 160 rakstzīmes, maksa tiek aprēķināta par 160 rakstzīmēm. Maksa par 200 rakstzīmju ziņojumu ir 2 īsziņas par ziņojumu. Klients saņems kā 1 īsziņu.
+        warning:
+          all: 'SVARĪGI: jūs tagad nosūtīsit visiem saviem klientiem.'
+          confirm: Vai tiešām vēlaties nosūtīt šo ziņojumu?
+          event: 'SVARĪGI: Tagad jūs nosūtīsit visiem dalībniekiem uz šo pasākumu.'
+    sms_credits:
+      charge:
+        process: Pabeigt pirkumu.
+        processing: Lūdzu uzgaidiet...
+      index:
+        buy: Pērciet vairāk SMS kredītu
+        sms_credits_available: Jums ir pieejami %{credits} īsziņu kredīti.
+      purchase_form:
+        buy: Pirkt
+        header: Iegādājieties SMS kredītus
+        offer: "%{discount}% atlaide."
+        quantity: "%{quantity} SMS."
+        total: 'Kopā: %{sum}'
+    users:
+      index:
+        header: Lietotāji
+      list_menu:
+        list: Lietotāji
+      show:
+        remove_access: Noņemt piekļuvi
+        remove_access_confirm: Vai tiešām vēlaties noņemt šī lietotāja piekļuvi šim kontam?
+    web_hooks:
+      index:
+        app_secret_info_html: Lietotnes noslēpums, kas ļauj ļoti stiprināt tīmekļa āķus. Sīkāku informāciju <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">skatiet dokumentācijā.</a>
+        header: Tīmekļa saites

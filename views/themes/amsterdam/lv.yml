@@ -1,0 +1,186 @@
+---
+lv:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: Mēs manuāli apstiprināsim jūsu rezervāciju. Kad saņemsim jūsu pieprasījumu, jūs saņemsit %{verification_method}.
+        body_automatic_sync: Mēs tagad pārbaudām jūsu rezervāciju. Kad saņemsim jūsu pieprasījumu, jūs saņemsit %{verification_method}.
+        title: Gaida apstiprinājumu
+        title_automatic_sync: Pārbauda rezervāciju
+        verification_method:
+          authenticated: paziņojums
+          email: e-pasts
+          none: paziņojums
+          sms: īsziņu
+      awaiting_payment:
+        body: Lūdzu, uzgaidiet, kamēr mēs pārbaudīsim darījumu.
+        error: Mēs nevaram pārbaudīt jūsu maksājumu. Lūdzu, sazinieties ar klientu apkalpošanas dienestu ar atsauces numuru %{booking_id}.
+        title: Maksājuma pārbaude
+      awaiting_verification:
+        verification_delivery_error: Mēs nevarējām jums nosūtīt e-pastu. Vai tiešām esat ievadījis pareizo e-pasta adresi?
+        verification_delivery_not_processed: Pašlaik mēs piedzīvojam dažas kavēšanās mūsu sistēmās. Lūdzu, uzgaidiet, kamēr mēs nosūtīsim jūsu e-pastu.
+        verification_sent_body: Mēs nosūtījām e-pastu uz %{email}. Izpildiet to, lai pārbaudītu rezervāciju. Tas mums palīdz pārliecināties, ka jūs neesat robots.
+        verification_sent_title: Lūdzu, apstipriniet savu e-pasta adresi
+      declined:
+        body: Diemžēl mēs nevarējām apstiprināt jūsu rezervācijas pieprasījumu. Lūdzu, izmēģiniet citu laika grafiku vai sazinieties ar mums.
+        title: Jūsu rezervācija netika apstiprināta
+      expired:
+        header: Rezervācijas derīguma termiņš ir beidzies
+        info: Rezervācijas ir jāpārbauda %{expires_in} minūšu laikā. Lūdzu mēģiniet vēlreiz.
+      new:
+        authentication:
+          authenticating: Notiek autentificēšana ...
+          logged_in_as: Jūs esat pieteicies kā %{person}
+          logged_in_with_fb_html: Facebook pieteicies kā <span data-name="">nezināms</span> . Noklikšķiniet uz "Apstiprināt rezervāciju", lai apstiprinātu rezervāciju.
+          login_with_facebook_html: Alternatīvi jūs varat %{fb_link}.
+          login_with_facebook_link: pārbaudīt automātiski, izmantojot Facebook
+          not_current_person_html: Vai jūs neesat <span data-name="">%{person}?</span> ?
+          remember_me: Vai vēlaties, lai mēs atcerētos jūs šajā mašīnā, izmantojot sīkfailu?
+        date_format: 'Lūdzu, ievadiet derīgu datuma formātu: %{format}'
+        enter_info: Ievadiet informāciju
+        errors_header: Lūdzu, aizpildiet obligātos laukus.
+        form_info: Tas tiks izmantots, lai pārbaudītu rezervāciju %{service}, %{booking}.
+        price_info: 'Cena: %{price}'
+        reserve_resource: Rezervācija %{resource}
+      no_person:
+        body: 'Sazinieties ar mums, lai iegūtu vairāk informācijas. Kļūda: klienta savienojums ir noņemts'
+        title: Kļūda
+      payment:
+        awaiting:
+          body: Lūdzu, uzgaidiet, kamēr mēs pārbaudīsim darījumu.
+          error: Mēs nevaram pārbaudīt jūsu maksājumu. Lūdzu, sazinieties ar klientu servisu vietnē https://makeplans.net ar atsauces numuru %{booking_id}.
+          title: Maksājuma pārbaude
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC nav derīgs.
+            expiration: Derīguma termiņš nav derīgs.
+            number: Kartes numurs nav derīgs.
+          expiration_html: Derīguma termiņš <small>(MM / GG)</small>
+          number: Kartes numurs
+        form_footer_html: No jūsu kredītkartes tiks iekasēta <span class="payment-amount">%{amount}</span> .
+        form_header: Šī veidlapa tiek nosūtīta šifrēta.
+        header: Maksājums
+        info: Lai pabeigtu %{service} rezervāciju, jums jāmaksā ar savu kredītkarti.
+      show:
+        add_card: Pievienojiet savu kredītkarti, lai pēc rezervācijas veiktu automātisku samaksu
+        add_to_calendar: Pievienojiet rezervāciju savam kalendāram
+        body: Jūs esat pabeidzis. Rezervācija ir veikta.
+        cancel: Atcelt rezervāciju
+        cancel_confirmation: Vai tiešām vēlaties atcelt šo rezervāciju?
+        paid: Jums ir priekšapmaksa %{paid_amount}.
+        remember_me: Vai vēlaties, lai mēs atcerētos jūs šajā mašīnā, izmantojot sīkfailu?
+        title: Jūsu rezervācija ir apstiprināta!
+      sms_code:
+        header: Apstipriniet rezervāciju
+        incorrect_code: Nepareizs kods
+        verify_sms_code: Mēs esam nosūtījuši īsziņu uz %{phonenumber} ar verifikācijas kodu. Lūdzu, ievadiet kodu veidlapā, lai pārbaudītu rezervāciju. Tas ir nepieciešams, lai pabeigtu rezervāciju.
+    events:
+      index:
+        none_available: Nav pieejami pasākumi.
+      show:
+        before_first_booking: Pirms %{first_booking_at} nevar reģistrēties šim notikumam.
+        book: Reģistrējieties šim pasākumam
+        full: Šis pasākums ir pilns.
+        past_last_booking: Reģistrēties šim pasākumam vairs nav iespējams.
+        started: Šis pasākums jau ir pabeigts.
+    generic:
+      dateselector: Atlasiet datumu
+      earlier: agrāk
+      payment:
+        add_card_details_html: Jūsu kartes informācija netiks glabāta pie mums, bet tā tiks nosūtīta šifrēti uz %{provider} drošai transakcijai un glabāšanai.
+        add_card_footer_html: Tagad no jūsu kartes netiks iekasēta maksa
+        add_card_header: Saglabāt karti
+        add_card_info: Pievienojiet savu maksājumu karti, lai pēc rezervēšanas varētu ērti un automātiski norēķināties.
+        add_card_submit: Saglabāt karti
+        awaiting:
+          body: Lūdzu, uzgaidiet, kamēr mēs pārbaudīsim darījumu.
+          error: Mēs nevaram pārbaudīt jūsu maksājumu. Lūdzu, sazinieties ar klientu servisu vietnē http://makeplans.net ar atsauces numuru %{booking_id}.
+          title: Maksājuma pārbaude
+        form_footer_html: No jūsu kredītkartes tiks iekasēta <span class="payment-amount">%{amount}</span> .
+        form_header: Šī veidlapa tiek nosūtīta šifrēta.
+        header: Maksājums
+        info: Lai pabeigtu %{service} %{booking} rezervāciju, jums jāmaksā ar savu kredītkarti.
+        payment_details_html: Parādītā summa ir %{currency}. Mēs neglabājam jūsu kredītkartes datus, bet nosūtīt to šifrētu uz %{provider} drošai apstrādei un uzglabāšanai.
+        payment_received: "%{paid_amount} tika samaksāts par %{paid_at}."
+      step:
+        cancel: Atcelt
+        completed: Pabeigts!
+        hotstepper: Solis %{step} no %{steps}
+        next_confirm: 'Nākamais: apstiprinājums'
+        next_payment: Maksā
+        next_time: 'Nākamais: izvēlieties laiku'
+        next_verify: Apstipriniet rezervāciju
+        previous: iepriekšējais solis
+        previous_date: Mainīt laiku
+        previous_service: Mainīt pakalpojumu
+    layouts:
+      application:
+        authenticated: 'Pieslēdzies kā: %{name}'
+        demo_ended: MakePlans demonstrācijas termiņš ir beidzies.
+        footer:
+          privacy_policy: Privātuma politika
+          support: Atbalsts
+        login: Jūsu atrunas
+        meta:
+          description: Tiešsaistes rezervācija %{name}
+          keywords: plānošana, tikšanās, rezervēšana, reģistrēšanās, makplāni
+        powered_by: Ražots
+        powered_by_title: Tikšanās rezervēšana, plānošana un pieteikšanās uz pasākumiem / klasēm
+        title: Tiešsaistes rezervācija vietnei %{name}
+    people:
+      credit_card_added:
+        body: Kad rezervēšana būs pabeigta, jūsu karte tiks apstrādāta. Kartes dati tiek droši glabāti pie mūsu maksājumu partnera Stripe.
+        title: Jūsu karte tika saglabāta
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Pārbaudes kods
+        remember_me: Atcerieties mani šajā mašīnā.
+        submit: Pieslēgties
+      not_found:
+        info_html: Jūs neesat reģistrējies kā klients. Vispirms pabeidziet <a href="/">rezervāciju.</a>
+      perishable_token_action_required:
+        info_html: Mēs nosūtījām jums e-pastu. Lūdzu, noklikšķiniet uz saites, lai pieteiktos.
+      perishable_token_form:
+        not_available_for_this_verification_method: Nav pieejams.
+        submit: Saņemt kodu
+    profile:
+      show:
+        header: Jūsu atrunas
+        logout: Izlogoties
+        new_booking: Jauna rezervācija
+    providers:
+      index:
+        show_all_available: Parādīt visu pieejamo
+        show_only_selected: 'Vai arī rādīt tikai no atlasītā kalendāra:'
+    services:
+      index:
+        none_available: Nav pieejami pakalpojumi.
+      show:
+        book: Veiciet rezervāciju
+      time_day_available:
+        any_resource: Pirmais pieejams
+        dateselector: Atlasiet datumu
+        earlier: Agrāk
+        gap_warning: Lai atlasītu vairākas laika nišas, šīm vietām jābūt bez atstarpēm.
+        later: Vēlāk
+        max_slots_warning: Nevar rezervēt vairāk par %{max_slots} laika nišām
+        multiple_slots_info: Lai atlasītu vairākas laika nišas, vispirms izvēlieties sākuma laiku, pēc tam beigu laiku.
+        next_available_date_html: Nākamais pieejamais datums ir %{next_available_date}
+        next_date: Nākamā diena
+        no_availability: Atlasītajā datumā nav pieejama. Lūdzu, mēģiniet citu datumu.
+        no_selection: Lūdzu, atlasiet pieejamo laiku.
+        select_time: "%{service} - atlasiet pieejamo laiku"
+      weekday_available:
+        dateselector: Atlasiet datumu
+        gap_warning: Lai atlasītu vairākas laika nišas, šīm vietām jābūt bez atstarpēm.
+        max_slots_warning: Nevar rezervēt vairāk par %{max_slots} laika nišām
+        multiple_slots_info: Lai atlasītu vairākas laika nišas, vispirms izvēlieties sākuma laiku, pēc tam beigu laiku.
+        next_available_date_html: Nākamais pieejamais datums ir %{next_available_date}
+        next_week: Nākamnedēļ
+        no_availability: Atlasītajā datumā nav pieejama. Lūdzu, mēģiniet citu datumu.
+        no_selection: Lūdzu, atlasiet pieejamo laiku.
+        prev_week: Iepriekšējā nedēļa
+        select_resource: Rādīt kalendāru
+        select_time: "%{service} - atlasiet pieejamo laiku"
+        show_all: Parādīt visu pieejamo
