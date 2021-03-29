@@ -1,0 +1,186 @@
+---
+ru:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: Мы подтвердим ваше бронирование вручную. Вы получите %{verification_method}, когда мы обработаем ваш запрос.
+        body_automatic_sync: Сейчас мы проверяем ваше бронирование. Вы получите %{verification_method}, когда мы обработаем ваш запрос.
+        title: Ожидание подтверждения
+        title_automatic_sync: Проверка бронирования
+        verification_method:
+          authenticated: уведомление
+          email: электронное письмо
+          none: уведомление
+          sms: SMS
+      awaiting_payment:
+        body: Подождите, пока мы проверим транзакцию.
+        error: Мы не можем подтвердить ваш платеж. Обратитесь в службу поддержки клиентов по справочному номеру %{booking_id}.
+        title: Проверка вашего платежа
+      awaiting_verification:
+        verification_delivery_error: Нам не удалось отправить вам электронное письмо. Вы уверены, что ввели правильный адрес электронной почты?
+        verification_delivery_not_processed: В настоящее время в наших системах наблюдаются некоторые задержки. Подождите, пока мы доставим ваше письмо.
+        verification_sent_body: Мы отправили письмо на адрес %{email}. Следуйте по нему, чтобы подтвердить свое бронирование. Это помогает нам убедиться, что вы не робот.
+        verification_sent_title: Подтвердите ваш имейл, пожалуйста
+      declined:
+        body: К сожалению, мы не смогли одобрить ваш запрос на бронирование. Пожалуйста, попробуйте другой временной интервал или свяжитесь с нами.
+        title: Ваше бронирование не было одобрено
+      expired:
+        header: Срок бронирования истек
+        info: Бронирование должно быть подтверждено в течение %{expires_in} минут. Пожалуйста, попробуйте еще раз.
+      new:
+        authentication:
+          authenticating: Аутентификация ...
+          logged_in_as: Вы вошли как %{person}
+          logged_in_with_fb_html: Вы вошли в Facebook как <span data-name="">неизвестный</span> . Нажмите «Подтвердить бронирование», чтобы подтвердить свое бронирование.
+          login_with_facebook_html: В качестве альтернативы вы можете %{fb_link}.
+          login_with_facebook_link: автоматически подтверждать через Facebook
+          not_current_person_html: Вы не <span data-name="">%{person}?</span> ?
+          remember_me: Вы хотите, чтобы мы запоминали вас на этой машине с помощью файлов cookie?
+        date_format: 'Введите допустимый формат даты: %{format}'
+        enter_info: Введите информацию
+        errors_header: Пожалуйста, заполните обязательные поля.
+        form_info: Это будет использоваться для подтверждения вашего резервирования %{service}, %{booking}.
+        price_info: 'Цена: %{price}'
+        reserve_resource: Бронирование на %{resource}
+      no_person:
+        body: 'Для дополнительной информации свяжитесь с нами. Ошибка: подключение клиента удалено'
+        title: Ошибка
+      payment:
+        awaiting:
+          body: Подождите, пока мы проверим транзакцию.
+          error: Мы не можем подтвердить ваш платеж. Обратитесь в службу поддержки клиентов по адресу https://makeplans.net, указав номер ссылки %{booking_id}.
+          title: Проверка вашего платежа
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC недействителен.
+            expiration: Срок годности недействителен.
+            number: Номер карты недействителен.
+          expiration_html: Срок действия истекает <small>(ММ / ГГ)</small>
+          number: Номер карты
+        form_footer_html: С вашей кредитной карты будет <span class="payment-amount">снята сумма %{amount}</span> .
+        form_header: Эта форма отправляется в зашифрованном виде.
+        header: Оплата
+        info: Чтобы завершить бронирование %{service}, вы должны заплатить кредитной картой.
+      show:
+        add_card: Добавьте свою кредитную карту для автоматической оплаты после бронирования
+        add_to_calendar: Добавьте бронирование в свой календарь
+        body: Готово. Бронирование было сделано.
+        cancel: Отмена бронирования
+        cancel_confirmation: Вы уверены, что хотите отменить это бронирование?
+        paid: У вас есть предоплата %{paid_amount}.
+        remember_me: Вы хотите, чтобы мы запоминали вас на этой машине с помощью файлов cookie?
+        title: Ваше бронирование подтверждено!
+      sms_code:
+        header: Подтвердить бронирование
+        incorrect_code: неверный код
+        verify_sms_code: Мы отправили SMS на %{phonenumber} с проверочным кодом. Пожалуйста, введите код в форму для подтверждения бронирования. Это необходимо для завершения бронирования.
+    events:
+      index:
+        none_available: Нет доступных событий.
+      show:
+        before_first_booking: Невозможно зарегистрироваться на это событие до %{first_booking_at}.
+        book: Запишитесь на это мероприятие
+        full: Это мероприятие полно.
+        past_last_booking: Записаться на это мероприятие больше нельзя.
+        started: Это мероприятие уже завершено.
+    generic:
+      dateselector: Выберите дату
+      earlier: ранее
+      payment:
+        add_card_details_html: Данные вашей карты не будут храниться у нас, а будут отправлены в зашифрованном виде на %{provider} для безопасной транзакции и хранения.
+        add_card_footer_html: Ваша карта сейчас не будет снята
+        add_card_header: Сохранить карту
+        add_card_info: Добавьте свою платежную карту, чтобы вы могли легко и автоматически расплачиваться после бронирования.
+        add_card_submit: Сохранить карту
+        awaiting:
+          body: Подождите, пока мы проверим транзакцию.
+          error: Мы не можем подтвердить ваш платеж. Обратитесь в службу поддержки клиентов на http://makeplans.net, указав номер ссылки %{booking_id}.
+          title: Проверка вашего платежа
+        form_footer_html: С вашей кредитной карты будет <span class="payment-amount">снята сумма %{amount}</span> .
+        form_header: Эта форма отправляется в зашифрованном виде.
+        header: Оплата
+        info: Чтобы завершить бронирование %{service} %{booking}, вы должны заплатить кредитной картой.
+        payment_details_html: Отображаемая сумма в %{currency}. Мы не храним данные вашей кредитной карты, а отправляем их в зашифрованном виде на %{provider} для безопасной обработки и хранения.
+        payment_received: "%{paid_amount} был оплачен на %{paid_at}."
+      step:
+        cancel: Отмена
+        completed: Завершенный!
+        hotstepper: Шаг %{step} из %{steps}
+        next_confirm: 'Далее: Подтверждение'
+        next_payment: Платить
+        next_time: 'Далее: Выберите время'
+        next_verify: Подтвердить бронирование
+        previous: предыдущий шаг
+        previous_date: Время смены
+        previous_service: Изменить услугу
+    layouts:
+      application:
+        authenticated: 'Вы вошли как: %{name}'
+        demo_ended: Срок действия демоверсии MakePlans истек.
+        footer:
+          privacy_policy: Политика конфиденциальности
+          support: Служба поддержки
+        login: Ваши бронирования
+        meta:
+          description: Онлайн-запись на прием для %{name}
+          keywords: планирование, встреча, бронирование, подписки, makeplans
+        powered_by: Сделан
+        powered_by_title: Запись на прием, расписание и запись на мероприятие / класс
+        title: Онлайн бронирование на %{name}
+    people:
+      credit_card_added:
+        body: Ваша карта будет обработана после завершения бронирования. Данные карты надежно хранятся у нашего платежного партнера Stripe.
+        title: Ваша карта была сохранена
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Проверяющий код
+        remember_me: Запомни меня на этой машине.
+        submit: Авторизоваться
+      not_found:
+        info_html: Вы не зарегистрированы в качестве покупателя. Сначала завершите <a href="/">бронирование.</a>
+      perishable_token_action_required:
+        info_html: Мы отправили вам электронное письмо. Пожалуйста, нажмите на ссылку, чтобы войти в систему.
+      perishable_token_form:
+        not_available_for_this_verification_method: Недоступен.
+        submit: Получить код
+    profile:
+      show:
+        header: Ваши бронирования
+        logout: Выйти
+        new_booking: Новое бронирование
+    providers:
+      index:
+        show_all_available: Показать все доступные
+        show_only_selected: 'Или показывать только из выбранного календаря:'
+    services:
+      index:
+        none_available: Нет доступных услуг.
+      show:
+        book: Сделать заказ
+      time_day_available:
+        any_resource: Первый доступный
+        dateselector: Выберите дату
+        earlier: Ранее
+        gap_warning: Чтобы выбрать несколько слотов, эти слоты должны быть без зазоров.
+        later: Потом
+        max_slots_warning: Невозможно зарезервировать более %{max_slots} временных интервалов
+        multiple_slots_info: Чтобы выбрать несколько слотов, сначала выберите время начала, а затем конечный слот.
+        next_available_date_html: Следующая доступная дата - %{next_available_date}
+        next_date: Следующий день
+        no_availability: Нет свободных мест на выбранную дату. Пожалуйста, попробуйте другое свидание.
+        no_selection: Пожалуйста, выберите доступное время.
+        select_time: "%{service} - выбрать доступное время"
+      weekday_available:
+        dateselector: Выберите дату
+        gap_warning: Чтобы выбрать несколько слотов, эти слоты должны быть без зазоров.
+        max_slots_warning: Невозможно зарезервировать более %{max_slots} временных интервалов
+        multiple_slots_info: Чтобы выбрать несколько слотов, сначала выберите время начала, а затем конечный слот.
+        next_available_date_html: Следующая доступная дата - %{next_available_date}
+        next_week: На следующей неделе
+        no_availability: Нет свободных мест на выбранную дату. Пожалуйста, попробуйте другое свидание.
+        no_selection: Пожалуйста, выберите доступное время.
+        prev_week: Прошлая неделя
+        select_resource: Показать календарь
+        select_time: "%{service} - выбрать доступное время"
+        show_all: Показать все доступные
