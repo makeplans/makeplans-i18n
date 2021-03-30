@@ -197,6 +197,9 @@ en:
       show_recurring:
         delete_all: Delete all
         headline: All repeating reservations within this pattern
+      status_changer:
+        cancel: Cancel reservation
+        status: Set status
       state_changer:
         state: State
       unconfirmed:
