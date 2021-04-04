@@ -135,7 +135,7 @@ en:
         user:
           attributes:
             password:
-              incorrect: Incorret password
+              incorrect: Incorrect password
           current_password_incorrect: Current password does not match
       template:
         body: 'The operation was not completed due to the following errors:'
