@@ -1,0 +1,500 @@
+---
+ru:
+  activerecord:
+    attributes:
+      booking:
+        booked_from: из
+        booked_to: к
+        count: считать
+        event_id: мероприятие
+        notes: Комментарии
+        person: клиент
+        person_id: клиент
+        resource: ресурс
+        resource_id: ресурс
+        service: служба
+        service_id: служба
+        title: заглавие
+        verification_code: код подтверждения
+      booking/state:
+        awaiting_confirmation: Ожидание подтверждения
+        awaiting_payment: Ожидание оплаты
+        awaiting_verification: Ожидает подтверждения
+        cancelled: Отменено
+        confirmed: Подтвержденный
+        declined: Отклоненный
+        deleted: Удалено
+      booking/status:
+        checked_in: Отметился
+        completed: Завершенный
+        in_progress: Началось
+        no_show: Не показывать
+      category:
+        title: заглавие
+      client:
+        future_bookable_period: Будущий период бронирования
+        mail_notification_recipient: адрес (а) электронной почты для уведомления
+        mailer_sender: Адрес отправителя электронной почты
+        phone_number: Номер телефона
+        purge_data_period: Период автоматического удаления
+      client_user_link:
+        role: Роль
+      client_user_link/role:
+        admin: Администратор
+        manager: Управляющий делами
+        staff: Сотрудник
+      event:
+        booking_capacity: максимальное количество людей, разрешенных на бронирование
+        capacity: максимальное количество разрешенных людей
+        description: описание
+        ends_at: заканчивается в
+        first_booking_at: без бронирования раньше
+        last_booking_at: последнее бронирование перед
+        resource_id: ресурс
+        service_id: служба
+        starts_at: начинается в
+        title: заглавие
+      message_template:
+        delivery_timing: доставить в
+        delivery_type: тип доставки
+        message_type: тип сообщения
+        subject: тема
+        template: шаблон
+      message_template/delivery_type:
+        email: Эл. адрес
+        sms: SMS
+      message_template/message_type:
+        confirmation: подтверждение
+        follow_up: следовать за
+        reminder: напоминание
+      person:
+        address: адрес
+        city: город
+        country_code: страна
+        created_at: зарегистрированный
+        date_of_birth: Дата рождения
+        email: Эл. адрес
+        name: имя
+        national_id_no: Национальный идентификационный номер
+        notes: ноты
+        phonenumber: номер телефона
+        postal_code: Почтовый Код
+        state: состояние
+        street: улица
+      resource:
+        capacity: емкость
+        mail_notification_recipient: адрес (а) электронной почты для уведомления
+        title: заглавие
+      service:
+        payment_required: требовать предоплату
+        price: цена
+        title: заглавие
+      user:
+        rotp_verification_code: код подтверждения
+      web_hook:
+        event: Мероприятие
+        target_url: Целевой URL
+    errors:
+      messages:
+        chronic_syntax_error: синтаксическая ошибка, см. https://github.com/mojombo/chronic#examples
+        icalendar_invalid: Нет вхождений или недействительный шаблон iCalendar
+        icalendar_over_limit: Слишком много повторов. Максимум 731.
+        illegal: незаконный
+        invalid: является недействительным
+        phone_invalid: не действительный номер телефона
+        time_not_available: В настоящее время недоступно для бронирования
+      models:
+        booking:
+          attributes:
+            count:
+              over_booking_capacity: Допускается более чем максимальное количество человек на бронирование
+            event_id:
+              time_not_available: полностью забронирован
+            person_id:
+              taken: уже подписались на это мероприятие
+            resource_id:
+              no_availability: недоступен в указанное время
+            service_id:
+              attendance_only: только для подписок
+              not_offered: не предлагается выбранным ресурсом
+            state:
+              invalid_transition: Неверное изменение состояния
+          fully_booked: Недоступно в выбранное время.
+          time_after_future_bookable_period: Слишком далеко в будущем
+        client:
+          attributes:
+            base:
+              denied: Отклонен
+        person:
+          missing: не сохраняется в вашем профиле клиента. Свяжитесь с нами, чтобы исправить это.
+          no_values_present: Необходимо указать имя, номер телефона или адрес электронной почты.
+        resource:
+          has_bookings: На этом ресурсе есть заказы. Невозможно удалить. Обратитесь в службу поддержки.
+        service:
+          below_minimum: должно быть больше 1 доллара США, если вы хотите потребовать оплату
+        user:
+          attributes:
+            password:
+              incorrect: Неверный пароль
+          current_password_incorrect: Текущий пароль не совпадает
+      template:
+        body: 'Операция не была завершена из-за следующих ошибок:'
+        header: Произошли ошибки
+    models:
+      booking: встреча
+      category: категория
+      event: мероприятие
+      external_credential: интеграция
+      message_template: шаблон сообщения
+      person: клиент
+      resource: ресурс
+      service: служба
+      service_appointment: служба
+      service_attendance: тип события
+      user: Пользователь
+      web_hook: перехватчик
+  errors:
+    messages:
+      no_values_present: Необходимо указать имя, номер телефона или адрес электронной почты.
+      not_authenticated: Вы вышли из системы.
+      not_found: Не удалось найти данные. Попробуйте перезагрузить страницу.
+      offline: Невозможно подключиться к MakePlans. Пожалуйста, убедитесь, что вы в сети.
+      server_error: Ошибка в MakePlans
+      syntax_error: Ошибка в предоставленном синтаксисе.
+      unknown: Неизвестная ошибка. Попробуйте перезагрузить страницу.
+    models:
+      person:
+        perishable_token:
+          invalid: неверный код
+    stripe:
+      booking:
+        invalid: Бронирование истекло или недействительно. Транзакция не обработана.
+        paid: Бронирование уже оплачено. Попробуйте обновить страницу.
+      card:
+        missing: Невозможно получить информацию о карте
+      processor: 'Ошибка нашего платежного процессора: %{error}'
+      unknown: Невозможно обработать транзакцию. Неизвестная ошибка.
+  generic:
+    all: все
+    at: в
+    born_abbreviation: б. %{date_of_birth}
+    default: Системные установки по умолчанию
+    optional: по желанию
+    search: Поиск
+    to: к
+    today: сегодня
+    tomorrow: завтра
+  helpers:
+    booking:
+      action:
+        cancel: Отмена
+        confirm: Подтверждать
+        decline: Отклонить
+        verify: Проверять
+      state:
+        awaiting_confirmation: Ожидание подтверждения
+        awaiting_payment: Ожидание оплаты
+        awaiting_verification: Ожидает подтверждения
+        cancelled: Отменено
+        confirmed: Подтвержденный
+        declined: Отклоненный
+        deleted: Удалено
+    datepicker:
+      next_month: Следующий месяц
+      prev_month: Прошлый месяц
+    label:
+      booking:
+        all_day: Весь день
+        booked_from: Забронировано из
+        booked_to: Забронировано на
+        count: Число людей
+        external_id: Внешний ID
+        invoiced_at: Выставлен счет
+        notes: Ноты
+        paid_at: Оплаченный
+        person_id: Клиент
+        reminder_at: Напоминание
+        resource_id: Ресурс
+        service_id: Услуга
+        terms_accepted: Я одобряю условия
+        title: Заголовок
+        verification_code: Проверяющий код
+      category:
+        parent_id: Родительская категория
+        title: Заголовок
+      client:
+        address: Адрес для посещения
+        allow_cancellation: Разрешить отмену клиентом
+        api_key: API-ключ (для внешних интеграций)
+        app_secret: Секрет учетной записи
+        appointment_form: Пользовательские поля бронирования
+        billing_city: Город
+        billing_country_code: Страна
+        billing_email: Адрес электронной почты для выставления счета
+        billing_id: ID в системе выставления счетов
+        billing_invoice: Отправлять счет вместо кредитной карты
+        billing_name: Название организации
+        billing_order_ref: Ссылка на ваш счет-фактуру
+        billing_payment_id: ID в платежной системе
+        billing_period: Месяцы до выставления счета
+        billing_postal_code: Почтовый индекс
+        billing_state: Состояние
+        billing_street: улица
+        billing_vat_no: НДС №
+        booking_form: Индивидуальная форма бронирования
+        cancellation_period: Срок отмены
+        category_form: Поля настраиваемых категорий
+        closed_for_holidays: Закрыт в праздничные дни
+        confirm_manually: Бронирование должно быть одобрено администратором.
+        country_code: Страна
+        css_url: Пользовательский CSS (URL-адрес должен быть HTTPS)
+        currency: Валюта
+        email: Адрес электронной почты
+        email_notification: Получать уведомление по электронной почте о каждом новом бронировании
+        event_form: Пользовательские поля событий
+        first_bookable_period: Не разрешать бронирование до
+        footer: Нижний колонтитул
+        future_bookable_period: Не разрешать бронирование после
+        google_analytics: Идентификатор отслеживания Google Analytics
+        interval_rounding: Округление по умолчанию до следующего доступного времени для бронирования
+        locale: Язык (также определяет форматирование чисел и даты)
+        logo: Логотип
+        mail_cancellation: Текст в электронном письме об отмене
+        mail_cancellation_subject: Тема в электронном письме об отмене
+        mail_confirmation: Текст в электронном письме с подтверждением
+        mail_confirmation_subject: Тема письма с подтверждением
+        mail_modification: Текст в электронном письме с изменениями
+        mail_modification_subject: Тема в электронном письме с изменениями
+        mail_notification_recipient: Электронный адрес (а) для уведомления
+        mail_verification: Текст в электронном письме с подтверждением
+        mail_verification_subject: Тема письма с подтверждением
+        name: Название компании (указано на сайте бронирования)
+        new_booking_text: Текст, отображаемый на странице подтверждения
+        new_user_text: Текст отображается перед формой бронирования
+        payment_provider: Платежный провайдер (для бронирования с предоплатой)
+        person_form: Настраиваемые поля клиента
+        phone_number: Телефон для уведомления
+        public_access: Сайт бронирования доступен для всех
+        purge_data_period: Автоматическое удаление личной информации, позволяющей установить личность
+        reminder_sms: Отправлять SMS-напоминания
+        resource_form: Настраиваемые поля ресурсов
+        service_form: Пользовательские сервисные поля
+        service_template: Стиль календаря
+        service_templates:
+          time_day_available: День
+          week_available: Всю неделю
+          weekday_available: Будни
+        sms_cancellation: Текст в SMS об отмене
+        sms_confirmation: Текст в подтверждающем SMS
+        sms_modification: Текст в модификационном SMS
+        sms_notification: Получать SMS для каждого нового бронирования
+        sms_reminder: Текст в SMS-напоминании
+        sms_reminder_time: Время для SMS-напоминания
+        sms_verification: Текст в проверочном SMS
+        subdomain: URL (поддомен)
+        template: Тема оформления
+        terms: Условия
+        time_zone: Часовой пояс
+        verification_method: Метод подтверждения для новых бронирований
+      event:
+        all_day: Весь день
+        booking_capacity: Максимальное количество обслуживающего персонала на бронирование
+        capacity: Макс кол-во обслуживающего персонала
+        description: Описание
+        ends_at: Заканчивается в
+        first_booking_at: Раньше не регистрировалось
+        last_booking_at: Никаких регистраций после
+        payment_required: Требуется оплата
+        price: Цена с учетом всех налогов
+        published: Видно на сайте бронирования
+        resource_id: Ресурс
+        service_id: Тип события
+        starts_at: Начинается в
+        title_html: Указанный заголовок <small>необязательный</small>
+      message_template:
+        delivery_timing: Доставить в
+        delivery_type: Тип доставки
+        message_type: Тип сообщения
+        subject: Тема
+        template: Шаблон
+      message_template/delivery_type:
+        email: Эл. адрес
+        sms: SMS
+      message_template/message_type:
+        confirmation: Подтверждение
+        follow_up: Следовать за
+        reminder: Напоминание
+      person:
+        address: Адрес
+        city: Город
+        country_code: Страна
+        created_at: Зарегистрировано на
+        date_of_birth: Дата рождения (дд.мм.гггг)
+        email: Эл. адрес
+        name: Имя
+        national_id_no: Национальный идентификационный номер
+        notes: Ноты
+        phonenumber: номер мобильного телефона
+        postal_code: Почтовый Код
+        provider: Подключен к внешней учетной записи
+        state: Состояние
+        street: улица
+        tfso_company_id: Идентификатор клиента 24SO
+      resource:
+        capacity: Максимальное количество бронирований одновременно
+        mail_notification_recipient: Электронный адрес (а) для уведомления
+        title: Заголовок
+      service:
+        booking_capacity: Максимальное количество человек на бронирование
+        booking_form: Индивидуальная форма бронирования
+        capacity: Максимальное количество обслуживающего персонала
+        description: Описание
+        has_day_booking: Тип времени
+        has_day_booking_label:
+          'false': мин
+          'true': дней
+        interval: Продолжительность
+        interval_rounding: Округление до следующего доступного времени
+        mail_cancellation: Текст в электронном письме об отмене
+        mail_confirmation: Текст в электронном письме с подтверждением
+        mail_modification: Текст в электронном письме с изменениями
+        mail_verification: Текст в электронном письме с подтверждением
+        max_slots: Максимальное количество слотов на бронирование
+        next_interval: Доступный слот каждый
+        payment_required: Требовать оплаты
+        price: Цена с учетом налогов
+        published: Показать на сайте бронирования
+        same_day: Разрешить бронирование на несколько дней
+        sms_cancellation: Текст в SMS об отмене
+        sms_confirmation: Текст в подтверждающем SMS
+        sms_modification: Текст в модификационном SMS
+        sms_reminder: Текст в напоминании SMS
+        sms_verification: Текст в проверочном SMS
+        template: Шаблон календаря
+        templates:
+          default: По умолчанию
+          time_day_available: День
+          week_available: Всю неделю
+          weekday_available: Будни
+        title: Заголовок
+      user:
+        current_password: Действующий пароль
+        email: Эл. адрес
+        name: Имя
+        password: Пароль
+        phonenumber: Номер телефона
+        rotp_verification_code: Проверяющий код
+      web_hook:
+        event: Мероприятие
+        target_url: Целевой URL
+    link:
+      add: Добавлять
+      back: Назад
+      booking:
+        new: Новое бронирование
+      cancel_confirm: Вы уверены, что хотите отменить?
+      category:
+        new: Новая категория
+      create: Создавать
+      delete: Удалить
+      delete_confirm: Вы уверены, что хотите удалить?
+      edit: Редактировать
+      event:
+        new: Новое событие
+        new_attendant: Добавить дежурного
+      person:
+        new: Новый покупатель
+      resource:
+        new: Новый ресурс
+      service:
+        new_appointment: Новая услуга
+        new_attendance: Новый тип события
+      setup:
+        skip: Ручная настройка
+        step_html: "<strong>Шаг %{step}</strong> из %{max_steps}"
+      user:
+        new: Новый пользователь
+      view: Вид
+      web_hook:
+        new: Новый вебхук
+    menu:
+      agenda: Повестка дня
+      calendar: Календарь
+      logout: Выйти
+      people: Клиенты
+      profile: Профиль
+      reports: Отчеты
+      setup: Настраивать
+    menu_setup:
+      billing: Биллинг
+      bookingsite: Сайт бронирования
+      categories: Категории
+      communication: Коммуникация
+      company: Счет
+      export: Экспорт
+      fields: Настраиваемые поля
+      import: импорт
+      integrations: Интеграции
+      message_templates: Шаблоны сообщений
+      person_notifications: Уведомления - клиент
+      promote: Продвигать
+      resources: Ресурсы
+      service_appointments: Услуги
+      service_attendances: Типы событий
+      sms_credits: SMS-кредиты
+      tools: Инструменты
+      user_notifications: Уведомления - пользователь
+      users: Пользователи
+      ux: UX
+    payment:
+      fields:
+        cvc: CVC
+        errors:
+          cvc: CVC недействителен.
+          expiration: Срок годности недействителен.
+          number: Номер карты недействителен.
+        expiration_html: Срок действия истекает <small>(ММ / ГГ)</small>
+        number: Номер карты
+      header: Эта форма будет зашифрована и отправлена безопасно.
+    select:
+      prompt: Пожалуйста выберите
+    submit:
+      cancel: Отмена
+      create: Создать %{model}
+      submit: Сохранить %{model}
+      submit_default: Сохранить
+      update: Обновить %{model}
+      update_password: Изменить пароль
+  service:
+    admin:
+      invoice_client:
+        errors:
+          nothing_to_invoice: Аккаунт не готов к выставлению счетов. Убедитесь, что у вас есть хотя бы один ресурс.
+        invoice_text: Использование онлайн-записи MakePlans
+  title:
+    actions:
+      edit: Редактировать
+      update: Обновлять
+  user:
+    password_reset:
+      expired: Истекший
+      no_email_found: Электронная почта не найдена
+  valid_email:
+    validations:
+      email:
+        invalid: является недействительным
+  worker:
+    integration_slack:
+      fallback: В MakePlans назначена новая встреча
+      footer: MakePlans API
+      pretext: "%{person} назначил встречу на %{booked_from}"
+      title: Просмотр встречи в MakePlans
+    integration_tfso_list_companies:
+      errors:
+        no_results: Существующих клиентов не найдено.
+    integration_tfso_order:
+      errors:
+        already_created: Уже создано.
+        no_company: Клиент удален в 24SevenOffice. Чтобы продолжить, необходимо повторно активировать клиента в 24SevenOffice.
+        no_product: Продукт удален из 24SevenOffice. Вы должны повторно активировать продукт в 24SevenOffice или подключить услугу к новому продукту от MakePlans, прежде чем вы сможете продолжить.
+        product_not_defined_on_service: Эта услуга не связана с продуктом в 24SevenOffice.

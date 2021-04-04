@@ -1,0 +1,72 @@
+---
+ru:
+  booking_ical:
+    summary: "%{service} при %{client}"
+  booking_mailer:
+    cancellation:
+      header: Привет %{name}
+      info: Ваше бронирование на %{title} по адресу %{time_range} было отменено.
+      subject: Бронирование отменено
+    confirmation:
+      header: Привет %{name}
+      info: Вы зарезервировали %{title} %{time_range}.
+      link: Подробнее о вашем бронировании
+      link_cancellation_info: и варианты отмены
+      resource_info: 'Бронирование через: %{resource}.'
+      subject: Новое бронирование
+      subject_service: Бронирование на %{service}
+    declined:
+      body: |-
+        Привет,
+
+        Ваше бронирование не было подтверждено.
+      subject: Бронирование отклонено
+    modification:
+      header: Привет %{name}
+      info: 'Ваше бронирование было изменено на: %{title} %{time_range}.'
+      link: Подробнее о вашем бронировании
+      link_cancellation_info: и варианты отмены
+      resource_info: 'Бронирование через: %{resource}.'
+      subject: Бронирование изменено
+    request_card:
+      header: Привет %{name}
+      info: Чтобы упростить оплату бронирования, укажите данные своей кредитной карты.
+      link: Добавить платежную карту
+      subject: Добавьте информацию о платеже
+    verification:
+      footer: 'Важно: бронирование еще не завершено. Если вы не подтвердите бронирование, щелкнув ссылку выше в течение %{expires_in} минут, ваше бронирование может истечь.'
+      header: Чтобы завершить бронирование %{title} %{time_range}, вы должны подтвердить свое бронирование, щелкнув ссылку ниже.
+      link: Подтвердить бронирование
+      subject: Пожалуйста, подтвердите ваше бронирование
+  booking_sms:
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Новое бронирование {{ booking.resource.title }} by {{ booking.person.name }}. {{ booking.title }} на {{ booking.time_range }}
+        Строить планы
+      booking_type_attendance: |-
+        Новая подписка на {{ booking.event.full_title }} {{ booking.time_range }} от {{ booking.person.name }}.
+        Строить планы
+    cancellation: Ваше бронирование на {{ booking.booked_from }} было отменено.
+    confirmation: Вы сделали заказ на {{ booking.title }} {{ booking.booked_from }}.
+    declined: Ваш запрос на бронирование {{ booking.title }} {{ booking.booked_from }} не был одобрен. Пожалуйста, попробуйте еще раз.
+    modification: 'Ваше бронирование было изменено: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Напоминание: резервирование {% if booking.service != nil %}of {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: Пожалуйста, добавьте свои платежные данные на %{url}
+    signature: |2-
+
+      {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} - это ваш проверочный код для резервирования {{ booking.title }}."
+  person_mailer:
+    export:
+      subject: Экспорт данных
+    perishable_token:
+      body: |-
+        Для входа нажмите ссылку ниже:
+
+        %{link}
+      subject: Войти в MakePlans
+  person_sms:
+    perishable_token: "{{ perishable_token }} - это ваш код для аутентификации."
+    signature: |2-
+
+      {{ client.name }}
