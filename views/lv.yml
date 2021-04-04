@@ -1,0 +1,55 @@
+---
+lv:
+  bookings:
+    sms_code:
+      incorrect_code: Nepareizs kods
+  clients:
+    new:
+      first_user: Šī ir jūsu personiskā parole. Vēlāk jūs varat pievienot vairāk lietotāju.
+      free_trial_info: 14 dienu bezmaksas izmēģinājums. Nav pienākumu. Kredītkarte nav nepieciešama.
+      headline: Sāciet rezervēšanu tiešsaistē
+      logged_in_as: Jūs esat pieteicies kā %{name}.
+      read_legal: Noteikumi un nosacījumi šī pakalpojuma izmantošanai
+      recaptcha: Atvainojiet, ka sagādāju jums problēmas, taču mums ir jāpārbauda jūsu reģistrācija pakalpojumā Google Recaptcha. Lūdzu, vēlreiz aizpildiet savu paroli un pēc tam iesniedziet veidlapu.
+      subdomain_info: Jūsu unikālā adrese (URL), kur klienti var rezervēt tiešsaistē.
+      subdomain_not_website_warning: 'OOPS: Šī ir jūsu jaunās rezervācijas vietnes adrese. NEVADIET esošās vietnes URL. Ja jums ir šaubas, vienkārši ievadiet šeit sava uzņēmuma nosaukumu.'
+      submit: Reģistrēt manu kontu
+      title: Reģistrējieties savam tiešsaistes rezervācijas kontam
+      user_email: Darba e-pasts
+      user_info: Jūsu lietotāja pieteikšanās
+    rejected:
+      headline: Reģistrācija noraidīta
+      info: Diemžēl mūsu sistēma ir atzīmējusi jūsu reģistrāciju kā mēstuli. Lūdzu, sazinieties ar mums, lai reģistrētu kontu.
+      title: Reģistrācija noraidīta
+  oauth:
+    callback:
+      header: Izveidojiet savienojumu ar kontu
+  user:
+    select_client:
+      header: Atlasiet kontu
+  user_password_resets:
+    create:
+      header: Atiestatiet paroli
+      info: Tagad mēs esam nosūtījuši jums e-pastu. Lai apstiprinātu paroles atiestatīšanu, jums jānoklikšķina uz saites e-pastā.
+      signup_html: Nav konta? <a href="%{url}">Sāc tagad.</a>
+    edit:
+      header: Lūdzu, ievadiet jauno paroli
+      signup_html: Nav konta? <a href="%{url}">Sāc tagad.</a>
+      submit: Saglabāt paroli
+    new:
+      header: Aizmirsi savu paroli?
+      signup_html: Nav konta? <a href="%{url}">Sāc tagad.</a>
+      submit: Sūtīt e-pastu
+  user_sessions:
+    handle_authenticated_user:
+      success: Veiksmīgi pieteicies
+    new:
+      forgot_link: Aizmirsi savu paroli?
+      header: Pieslēgties
+      incorrect: Nepareizi akreditācijas dati
+      login: Pieslēgties
+      remember_me: Atceries mani
+      signup_html: Nav konta? <a href="%{url}">Sāc tagad.</a>
+    rotp_verification_code:
+      header: Piesakieties ar divu faktoru autentifikāciju
+      submit: Pieslēgties

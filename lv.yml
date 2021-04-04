@@ -1,0 +1,500 @@
+---
+lv:
+  activerecord:
+    attributes:
+      booking:
+        booked_from: 'no'
+        booked_to: līdz
+        count: skaits
+        event_id: pasākums
+        notes: piezīmes
+        person: klients
+        person_id: klients
+        resource: resurss
+        resource_id: resurss
+        service: pakalpojums
+        service_id: pakalpojums
+        title: nosaukums
+        verification_code: verifikācijas kods
+      booking/state:
+        awaiting_confirmation: Gaida apstiprinājumu
+        awaiting_payment: Gaida samaksu
+        awaiting_verification: Gaida verifikāciju
+        cancelled: Atcelts
+        confirmed: Apstiprināts
+        declined: Noraidīts
+        deleted: Dzēsts
+      booking/status:
+        checked_in: Reģistrējies pieņemšanā
+        completed: Pabeigts
+        in_progress: Tiek apkalpots
+        no_show: Nav ieradies
+      category:
+        title: nosaukums
+      client:
+        future_bookable_period: Nākotnē rezervējamais periods
+        mail_notification_recipient: e-pasta adrese(s) paziņojumiem
+        mailer_sender: E-pasta sūtītāja adrese
+        phone_number: Telefona numurs
+        purge_data_period: Automātiskās dzēšanas periods
+      client_user_link:
+        role: Loma
+      client_user_link/role:
+        admin: Administrators
+        manager: Vadītājs
+        staff: Darbinieks
+      event:
+        booking_capacity: maksimāli atļautais cilvēku skaits vienā rezervācijā
+        capacity: maksimāli atļautie cilvēki
+        description: apraksts
+        ends_at: beidzas
+        first_booking_at: nav rezervāciju pirms
+        last_booking_at: pēdējā rezervācija pirms
+        resource_id: resurss
+        service_id: pakalpojums
+        starts_at: sākas
+        title: nosaukums
+      message_template:
+        delivery_timing: piegādes laiks
+        delivery_type: piegādes veids
+        message_type: ziņojuma veids
+        subject: priekšmets
+        template: šablons
+      message_template/delivery_type:
+        email: e-pasts
+        sms: īsziņa
+      message_template/message_type:
+        confirmation: apstiprinājums
+        follow_up: sekojums/papildinājums
+        reminder: atgādinājums
+      person:
+        address: adrese
+        city: pilsēta
+        country_code: valsts
+        created_at: reģistrēts
+        date_of_birth: dzimšanas datums
+        email: e-pasts
+        name: vārds
+        national_id_no: naacionālais personīgais identifikācijas numurs
+        notes: piezīmes
+        phonenumber: telefona numurs
+        postal_code: pasta indekss
+        state: reģionālā iedalījuma vienība
+        street: iela
+      resource:
+        capacity: kapacitāte
+        mail_notification_recipient: e-pasta adrese(s) paziņojumiem
+        title: nosaukums
+      service:
+        payment_required: pieprasīt priekšapmaksu
+        price: cena
+        title: nosaukums
+      user:
+        rotp_verification_code: verifikācijas kods
+      web_hook:
+        event: Notikums
+        target_url: Mērķa URL
+    errors:
+      messages:
+        chronic_syntax_error: sintakses kļūda, lūdzu skatiet https://github.com/mojombo/chronic#examples
+        icalendar_invalid: Nav rezultātu, vai arī nederīgi iCalendar dati
+        icalendar_over_limit: Pārāk daudz rezultātu. Maks. ir 731.
+        illegal: neatbilstošs
+        invalid: nederīgs
+        phone_invalid: nederīgs tālruņa numurs
+        time_not_available: Izvēlētajā laikā nav pieejams rezervācijai
+      models:
+        booking:
+          attributes:
+            count:
+              over_booking_capacity: Vairāk nekā maksimālais atļautais cilvēku skaits vienā rezervācijā
+            event_id:
+              time_not_available: ir pilnībā rezervēts
+            person_id:
+              taken: jau reģistrējies šim pasākumam
+            resource_id:
+              no_availability: nav pieejams pieprasītajā laikā
+            service_id:
+              attendance_only: ir paredzēta tikai reģistrēšanās reizēm
+              not_offered: nepiedāvā izvēlētais resurss
+            state:
+              invalid_transition: Nederīgas stāvokļa izmaiņas
+          fully_booked: Nav pieejams izvēlētajā laikā.
+          time_after_future_bookable_period: Pārāk tālu nākotnē
+        client:
+          attributes:
+            base:
+              denied: Noraidīts
+        person:
+          missing: nav saglabāts jūsu klienta profilā. Lūdzu, sazinieties ar mums, lai to labotu.
+          no_values_present: Nepieciešams vārds, tālruņa numurs vai e-pasts.
+        resource:
+          has_bookings: Šim resursam ir rezervācijas. Nevar izdzēst. Lūdzu, sazinieties ar atbalsta dienestu.
+        service:
+          below_minimum: jābūt vairāk par 1 USD, ja vēlaties pieprasīt samaksu
+        user:
+          attributes:
+            password:
+              incorrect: Nepareiza parole
+          current_password_incorrect: Pašreizējā parole nesakrīt
+      template:
+        body: 'Darbība netika pabeigta sekojošo kļūdu dēļ:'
+        header: Radās kļūdas
+    models:
+      booking: pieraksts
+      category: kategorija
+      event: pasākums
+      external_credential: integrācija
+      message_template: ziņojuma šablons
+      person: klients
+      resource: resurss
+      service: pakalpojums
+      service_appointment: pakalpojuma pieraksts
+      service_attendance: pasākuma veids
+      user: lietotājs
+      web_hook: webhook
+  errors:
+    messages:
+      no_values_present: Nepieciešams vārds, tālruņa numurs vai e-pasts.
+      not_authenticated: Jūs esat atslēdzies no sistēmas.
+      not_found: Nevar atrast datus. Mēģiniet atkārtoti ielādēt lapu.
+      offline: Nevar izveidot savienojumu ar MakePlans. Lūdzu, pārbaudiet, vai esat tiešsaistē.
+      server_error: Kļūda MakePlans
+      syntax_error: Kļūda sniegtajā sintaksē.
+      unknown: Nezināma kļūda. Mēģiniet atkārtoti ielādēt lapu.
+    models:
+      person:
+        perishable_token:
+          invalid: Nepareizs kods
+    stripe:
+      booking:
+        invalid: Rezervācijas derīguma termiņš ir beidzies vai tā nav derīga. Darījums nav apstrādāts.
+        paid: Rezervācija jau apmaksāta. Mēģiniet atkārtoti ielādēt lapu.
+      card:
+        missing: Nevar iegūt kartes informāciju
+      processor: 'Kļūda no mūsu maksājumu apstrādātāja: %{error}'
+      unknown: Nevar apstrādāt darījumu. Nezināma kļūda.
+  generic:
+    all: visi
+    at: plkst
+    born_abbreviation: dz. %{date_of_birth}
+    default: Sistēmas noklusējums
+    optional: izvēles kārtā
+    search: Meklēt
+    to: līdz
+    today: šodien
+    tomorrow: rīt
+  helpers:
+    booking:
+      action:
+        cancel: Atcelt
+        confirm: Apstiprināt
+        decline: Noraidīt
+        verify: Verificēt
+      state:
+        awaiting_confirmation: Gaida apstiprinājumu
+        awaiting_payment: Gaida samaksu
+        awaiting_verification: Gaida verifikāciju
+        cancelled: Atcelts
+        confirmed: Apstiprināts
+        declined: Noraidīts
+        deleted: Izdzēsts
+    datepicker:
+      next_month: Nākamais mēnesis
+      prev_month: Iepriekšējais mēnesis
+    label:
+      booking:
+        all_day: Visu dienu
+        booked_from: Rezervēts no
+        booked_to: Rezervēts līdz
+        count: Cilvēku skaits
+        external_id: Ārējais ID
+        invoiced_at: Rēķ. piestādīts
+        notes: Piezīmes
+        paid_at: Apmaksāts
+        person_id: Klients
+        reminder_at: Atgādinājums
+        resource_id: Resurss
+        service_id: Pakalpojums
+        terms_accepted: Apstiprinu, ka esmu iepazinies noteikumiem un pieņemu tos
+        title: Nosaukums
+        verification_code: Verifikācijas kods
+      category:
+        parent_id: Virskategorija
+        title: Nosaukums
+      client:
+        address: Apmeklējuma adrese
+        allow_cancellation: Atļaut klienta ievadītu atcelšanu
+        api_key: API atslēga (ārējai integrācijai)
+        app_secret: Konta noslēpums
+        appointment_form: Pielāgoti rezervācijas lauki
+        billing_city: Pilsēta
+        billing_country_code: Valsts
+        billing_email: E-pasta adrese rēķinam
+        billing_id: ID rēķinu sistēmā
+        billing_invoice: Sūtīt rēķinu, nevis kredītkarti
+        billing_name: Kompānijas nosaukums
+        billing_order_ref: Jūsu rēķina atsauce
+        billing_payment_id: ID maksājumu sistēmā
+        billing_period: Mēneši līdz rēķinam
+        billing_postal_code: Pasta indekss
+        billing_state: Reģionālā iedalījuma vienība
+        billing_street: Iela
+        billing_vat_no: PVN nr
+        booking_form: Pielāgota rezervācijas veidlapa
+        cancellation_period: Anulēšanas periods
+        category_form: Pielāgoti kategorijas lauki
+        closed_for_holidays: Svētku dienās slēgts
+        confirm_manually: Rezervācijas jāapstiprina administratoram
+        country_code: Valsts
+        css_url: Pielāgots CSS (URL jābūt HTTPS)
+        currency: Valūta
+        email: Epasta adrese
+        email_notification: Saņemiet e-pasta paziņojumu par katru jauno rezervāciju
+        event_form: Pielāgoti notikuma lauki
+        first_bookable_period: Neatļaut rezervēt līdz
+        footer: Kājene (footer)
+        future_bookable_period: Neatļaut rezervēt pēc
+        google_analytics: Google Analytics izsekošanas ID
+        interval_rounding: Noapaļošana uz nākamo pieejamo rezervēšanas laiku pēc noklusējuma
+        locale: Valoda (nosaka arī numuru un datuma formatējumu)
+        logo: Logotips
+        mail_cancellation: Teksts atcelšanas e-pastā
+        mail_cancellation_subject: Temats atcelšanas e-pastā
+        mail_confirmation: Īsziņa apstiprinājuma e-pastā
+        mail_confirmation_subject: Temats apstiprinājuma e-pastā
+        mail_modification: Teksts labojuma e-pastā
+        mail_modification_subject: Temats labojuma e-pastā
+        mail_notification_recipient: E-pasta adrese(s) paziņošanai
+        mail_verification: Teksts verifikācijas e-pastā
+        mail_verification_subject: Temats verifikācijas e-pastā
+        name: Uzņēmuma nosaukums (redzams rezervācijas vietnē)
+        new_booking_text: Apstiprinājuma lapā redzamais teksts
+        new_user_text: Teksts, kas tiek parādīts pirms rezervācijas veidlapas
+        payment_provider: Maksājumu nodrošinātājs (priekšapmaksas rezervācijām)
+        person_form: Pielāgoti klienta lauki
+        phone_number: Tālruņa numurs paziņojumiem
+        public_access: Rezervēšanas vietne publiski pieejama
+        purge_data_period: Automātiska personu identificējošas informācijas dzēšana
+        reminder_sms: Sūtīt SMS atgādinājumus
+        resource_form: Pielāgotu resursu lauki
+        service_form: Pielāgotu pakalpojumu lauki
+        service_template: Kalendāra stils
+        service_templates:
+          time_day_available: Diena
+          week_available: Visu nedēļu
+          weekday_available: Darba dienas
+        sms_cancellation: Teksts atcelšanas īsziņā
+        sms_confirmation: Teksts apstiprinājuma īsziņā
+        sms_modification: Teksts labojuma īsziņā
+        sms_notification: Saņemiet īsziņu par katru jauno rezervāciju
+        sms_reminder: Teksts atgādinājuma īsziņā
+        sms_reminder_time: Laiks atgādinājuma īsziņām
+        sms_verification: Teksts verifikācijas īsziņā
+        subdomain: URL (apakšdomēns)
+        template: Dizaina tēma
+        terms: Noteikumi
+        time_zone: Laika zona
+        verification_method: Verifikācijas metode jaunām rezervācijām
+      event:
+        all_day: Visu dienu
+        booking_capacity: Maks. dalībnieku skaits vienā rezervācijā
+        capacity: Maks. dalībnieku skaits
+        description: Apraksts
+        ends_at: Beidzas
+        first_booking_at: Nav pierakstu pirms
+        last_booking_at: Nav pierakstu pēc
+        payment_required: Nepieciešams maksājums
+        price: Cena iekļaujot nodokļus
+        published: Redzams rezervācijas vietnē
+        resource_id: Resurss
+        service_id: Pasākuma veids
+        starts_at: Sākas
+        title_html: Norādītais nosaukums <small>nav obligāts</small>
+      message_template:
+        delivery_timing: Piegādāt
+        delivery_type: Piegādes veids
+        message_type: Ziņojuma veids
+        subject: Temats
+        template: Šablons
+      message_template/delivery_type:
+        email: E-pasts
+        sms: Īsziņa
+      message_template/message_type:
+        confirmation: Apstiprinājums
+        follow_up: Sekojums/papildinājums
+        reminder: Atgādinājums
+      person:
+        address: Adrese
+        city: Pilsēta
+        country_code: Valsts
+        created_at: Reģistrēts
+        date_of_birth: Dzimšanas datums (dd.mm.gggg)
+        email: E-pasts
+        name: Vārds
+        national_id_no: Nacionālais personīgais identifikācijas numurs
+        notes: Piezīmes
+        phonenumber: Mobilā tālruņa numurs
+        postal_code: Pasta indekss
+        provider: Savienots ar ārējo kontu
+        state: Reģionālā iedalījuma vienība
+        street: Iela
+        tfso_company_id: 24SO klienta ID
+      resource:
+        capacity: Maksimālais rezervāciju skaits vienlaikus
+        mail_notification_recipient: E-pasta adrese(s) ziņojumiem
+        title: Nosaukums
+      service:
+        booking_capacity: Maksimālais cilvēku skaits vienā rezervācijā
+        booking_form: Pielāgota rezervācijas veidlapa
+        capacity: Maksimālais dalībnieku skaits
+        description: Apraksts
+        has_day_booking: Laika tips
+        has_day_booking_label:
+          'false': min
+          'true': dienas
+        interval: Ilgums
+        interval_rounding: Noapaļošana uz nākamo pieejamo laiku
+        mail_cancellation: Teksts atcelšanas e-pastā
+        mail_confirmation: Īsziņa apstiprinājuma e-pastā
+        mail_modification: Teksts labojuma e-pastā
+        mail_verification: Teksts verifikācijas e-pastā
+        max_slots: Maksimālais vietu skaits vienā rezervācijā
+        next_interval: Vieta pieejama ik
+        payment_required: Pieprasīt samaksu
+        price: Cena iekļaujot nodokļus
+        published: Rādīt rezervācijas vietnē
+        same_day: Atļaut rezervēšanu vairāku dienu laikā
+        sms_cancellation: Teksts atcelšanas īsziņā
+        sms_confirmation: Teksts apstiprinājuma īsziņā
+        sms_modification: Teksts labojuma īsziņā
+        sms_reminder: Teksts atgādinājuma īsziņā
+        sms_verification: Teksts verifikācijas īsziņā
+        template: Kalendāra šablons
+        templates:
+          default: Noklusējums
+          time_day_available: Diena
+          week_available: Visu nedēļu
+          weekday_available: Darba dienas
+        title: Nosaukums
+      user:
+        current_password: Pašreizējā parole
+        email: E-pasts
+        name: Vārds
+        password: Parole
+        phonenumber: Telefona numurs
+        rotp_verification_code: Verifikācijas kods
+      web_hook:
+        event: Notikums
+        target_url: Mērķa URL
+    link:
+      add: Pievienot
+      back: Atpakaļ
+      booking:
+        new: Jauna rezervācija
+      cancel_confirm: Esat pārliecināti, ka vēlaties atcelt?
+      category:
+        new: Jauna kategorija
+      create: Izveidot
+      delete: Dzēst
+      delete_confirm: Esat pārliecināti, ka vēlaties dzēst?
+      edit: Rediģēt
+      event:
+        new: Jauns pasākums
+        new_attendant: Pievienot apmeklētāju
+      person:
+        new: Jauns klients
+      resource:
+        new: Jauns resurss
+      service:
+        new_appointment: Jauns pakalpojums
+        new_attendance: Jauns pasākuma veids
+      setup:
+        skip: Manuāla iestatīšana
+        step_html: "<strong>%{step}. solis</strong> no %{max_steps}"
+      user:
+        new: Jauns lietotājs
+      view: Skatīt
+      web_hook:
+        new: Jauns webhook
+    menu:
+      agenda: Darba kārtība
+      calendar: Kalendārs
+      logout: Atslēgties
+      people: Klienti
+      profile: Profils
+      reports: Ziņojumi
+      setup: Uzstādījumi
+    menu_setup:
+      billing: Norēķini
+      bookingsite: Rezervēšanas vietne
+      categories: Kategorijas
+      communication: Komunikācija
+      company: Konts
+      export: Eksportēt
+      fields: Pielāgotie lauki
+      import: Importēt
+      integrations: Integrācijas
+      message_templates: Ziņojumu šabloni
+      person_notifications: Paziņojumi - klientu
+      promote: Publiskie resursi
+      resources: Resursi
+      service_appointments: Pakalpojumi
+      service_attendances: Pasākumu veidi
+      sms_credits: SMS priekšapmaksa
+      tools: Rīki
+      user_notifications: Paziņojumi - lietotāju
+      users: Lietotāji
+      ux: Lietotāju interfeiss
+    payment:
+      fields:
+        cvc: CVC
+        errors:
+          cvc: CVC nav derīgs.
+          expiration: Derīguma termiņš nav derīgs.
+          number: Kartes numurs nav derīgs.
+        expiration_html: Derīguma termiņš <small>(MM / GG)</small>
+        number: Kartes numurs
+      header: Šī veidlapa tiks šifrēta un droši nosūtīta
+    select:
+      prompt: Lūdzu izvēlieties
+    submit:
+      cancel: Atcelt
+      create: Izveidot %{model}
+      submit: Saglabāt %{model}
+      submit_default: Saglabāt
+      update: Atjaunot %{model}
+      update_password: Mainīt paroli
+  service:
+    admin:
+      invoice_client:
+        errors:
+          nothing_to_invoice: Konts nav gatavs rēķinu sagatavošanai. Lūdzu, pārliecinieties, vai jums ir vismaz viens resurss.
+        invoice_text: MakePlans tiešsaistes rezervācijas izmantošana
+  title:
+    actions:
+      edit: Rediģēt
+      update: Atjaunot
+  user:
+    password_reset:
+      expired: Beidzies termiņš
+      no_email_found: Netika atrasts e-pasts
+  valid_email:
+    validations:
+      email:
+        invalid: nav derīgs
+  worker:
+    integration_slack:
+      fallback: Vietnē MakePlans tika izveidots jauns pieraksts
+      footer: MakePlans API
+      pretext: "%{person} izveidoja pierakstu %{booked_from}"
+      title: Skatiet pierakstu vietnē MakePlans
+    integration_tfso_list_companies:
+      errors:
+        no_results: Nav atrasti esošie klienti.
+    integration_tfso_order:
+      errors:
+        already_created: Jau izveidots.
+        no_company: Klients ir izdzēsts vietnē 24SevenOffice. Lai turpinātu, 24SevenOffice ir jāaktivizē klients.
+        no_product: Produkts ir izdzēsts vietnē 24SevenOffice. Lai turpinātu, jums ir atkārtoti jāaktivizē produkts 24SevenOffice vai jāsavieno pakalpojums ar jaunu produktu no MakePlans.
+        product_not_defined_on_service: Šis pakalpojums nav savienots ar produktu 24SevenOffice.
