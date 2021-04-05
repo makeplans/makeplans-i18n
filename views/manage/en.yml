@@ -545,6 +545,9 @@ en:
       index:
         header: Message templates
         intro: This is where you will find more complex message templates that can be send out after a reservation is confirmed, before it starts or after it is completed. Please note that these messages are sent in addition to the standard messages like confirmation and reminder. Only use this function if you want to for example send an additional reminder, multiple confirmation messages (like email in addition to SMS) or a follow-up message.
+      form:
+        delivery_timing_info: 'Write in plain English. Example.: ''two hours before'' (message is sent two hours before) or ''08:00 tomorrow'' (at 8AM the day after). Delivery timing is relative based on the the message type: confirmation - booking created_at, reminder - booking booked_from, follow_up - booking booked_to.'
+        template_info_html: You can merge inn dynamic values. Please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> for details.
     people:
       form:
         merge_action: Merge these two customers
