@@ -6,7 +6,7 @@
       month_name: '%B'
       day_name: '%A'
       day_name_abbr: '%a'
-      datepicker: '%m/%d/%y'
+      datepicker: '%m/%d/%Y'
       full_date: '%A, %-d %B %Y'
       date_month_name: "%-d %B"
     moment_format: 'MM/DD/YYYY'
