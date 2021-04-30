@@ -420,6 +420,10 @@ en:
         no_events_range: No existing events from %{start} to %{end}
     integrations:
       account_connected: Connect to this account.
+      bestrx:
+        enable: Enable
+        api_url: 'The URL to the API is %{api_url}'
+        api_key: 'The API-key is %{api_key}'
       braintree:
         cse_key: Cse key
         environment: Environment
