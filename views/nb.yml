@@ -52,4 +52,5 @@ nb:
       signup_html: Har du ikke konto? <a href="%{url}">Kom i gang nå.</a>
     rotp_verification_code:
       header: Logg inn med to-faktor autentisering
+      info: Bruk koden som genereres av din 2FA-applikasjon.
       submit: Logg inn
