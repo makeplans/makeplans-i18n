@@ -14,6 +14,7 @@ sv:
         resource_id: resurs
         service: service
         service_id: service
+        terms_accepted: villkor
         title: titel
         verification_code: verifierings kod
       category:
@@ -201,6 +202,7 @@ sv:
         reminder_at: Påminnelse
         resource_id: Resurs
         service_id: Tjänst
+        terms_accepted: Jag godkänner villkoren
         title: Titel
         verification_code: Verifikationskod
       category:
