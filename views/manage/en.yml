@@ -423,7 +423,7 @@ en:
       bestrx:
         enable: Enable
         api_url: 'The URL to the API is %{api_url}'
-        api_key: 'The API-key is %{api_key}'
+        api_key: 'The API-key is %{api_key}'
       braintree:
         cse_key: Cse key
         environment: Environment
