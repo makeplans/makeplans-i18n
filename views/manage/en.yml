@@ -676,6 +676,7 @@ en:
         next_interval_default: According to duration
         offered_by: Offered by the following resources
         payment: Payment
+        price_placeholder: Price not set
         settings:
           hide_all_available: Must select specific resource ('show all available' will be hidden)
           hide_resources: Hide button for selecting resource (will be randomly selected by among available resources)

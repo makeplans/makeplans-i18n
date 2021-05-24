@@ -665,6 +665,7 @@ nb:
         next_interval_default: Varighet på tjenesten
         offered_by: Tilbys av følgende ressurser
         payment: Betaling
+        price_placeholder: Pris ikke satt
         settings:
           hide_all_available: Må velge spesifikk ressurs ('vis all ledige' skjules)
           hide_resources: Skjul knappen for å velge ressurs (vilkårlig ledig ressurs blir automatisk valgt)

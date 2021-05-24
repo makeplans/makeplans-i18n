@@ -135,7 +135,10 @@ nb:
         resource:
           has_bookings: Denne ressursen har aktive reservasjoner og kan dermed ikke slettes. Kontakt kundeservice.
         service:
-          below_minimum: må være høyere enn 3 NOK hvis du skal kreve forhåndsbetaling.
+          attributes:
+            price:
+              payment_price_required: må være satt hvis du skal kreve forhåndsbetaling
+              below_minimum: må være høyere enn 3 NOK hvis du skal kreve forhåndsbetaling.
         user:
           attributes:
             password:
