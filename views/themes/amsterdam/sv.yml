@@ -65,7 +65,7 @@ sv:
         add_card: Lägg till kreditkort för att betala automatiskt efter uppsägning.
         add_to_calendar: Lägg till det här mötet i din kalender.
         body: Du är klar. Bokningen är genomförd.
-        cancel: Avbryt avtal
+        cancel: Avbryt bokning
         cancel_confirmation: Är du säker på att du vill avbryta den här bokningen?
         paid: Du har förbetalt %{paid_amount}.
         remember_me: Vill du bli ihågkommen på den här datorn med hjälp av cookies?
@@ -90,7 +90,7 @@ sv:
         add_card_details_html: Din kortinformation lagras inte hos oss men skickas krypterad till %{provider} för säker transaktion och lagring.
         add_card_footer_html: Kortet laddas inte nu
         add_card_header: Spara kreditkort
-        add_card_info: Lägg till ditt kreditkort så att du enkelt och automatiskt kan betala efter avtalet.
+        add_card_info: Lägg till ditt kreditkort så att du enkelt och automatiskt kan betala efter bokningen.
         add_card_submit: Spara kort
         awaiting:
           body: Var vänlig vänta medan vi kontrollerar transaktionen.
