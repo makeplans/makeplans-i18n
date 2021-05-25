@@ -327,6 +327,7 @@ en:
         sms_reminder_time_info: 'SMS is sent out at noon the day before the reservation. If you want to change this please modify the field below. Example: ''two hours before'' (SMS is sent out two hours before the reservation) or ''8am yesterday'' (the reminder SMS will be sent at 8am the day before the reservation)'
       edit_user_notifications:
         approvement_email: Email notification for new reservation requests
+        approvement_sms: SMS notification for new reservation requests
         automatic_messages: Automatic messages
         default: Active (Default)
         disable: Disabled

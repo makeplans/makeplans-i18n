@@ -39,6 +39,26 @@ en:
       link: Confirm reservation
       subject: Please confirm your reservation
   booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        ACTION NEEDED: Reservation request by {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} on {{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        MakePlans
+      booking_type_attendance: |-
+        ACTION NEEDED: Signup request by {{ booking.person.name }} for {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        MakePlans
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        CANCELLATION: {{ booking.person.name }} has cancelled their booking of {{ booking.resource.title }} - {{ booking.title }} on {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        CANCELLATION: {{ booking.person.name }} has cancelled their Signup for {{ booking.event.full_title }} {{ booking.time_range }}.
+        MakePlans
     admin_notification_confirmation:
       booking_type_appointment: |-
         New reservation of {{ booking.resource.title }} by {{ booking.person.name }}. {{ booking.title }} on {{ booking.time_range }}
@@ -49,7 +69,7 @@ en:
     cancellation: Your reservation on {{ booking.booked_from }} has been cancelled.
     confirmation: You have made a reservation for {{ booking.title }} {{ booking.booked_from }}.
     declined: Your request for reservation of {{ booking.title }} {{ booking.booked_from }} was not approved. Please try again.
-    modification: 'Your reservation has been modified: {{ booking.title }} {{ booking.booked_from }}. '
+    modification: 'Your reservation has been modified: {{ booking.title }} {{ booking.booked_from }}.'
     reminder: 'Reminder: Reservation {% if booking.service != nil %}of {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
     request_card: Please add your payment info at %{url}
     signature: |2-

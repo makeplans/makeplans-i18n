@@ -323,6 +323,7 @@ nb:
         sms_reminder_time_info: 'SMS sendes ut kl. 12.00 dagen før reservasjonstidspunktet. Hvis du ønsker å sende ut på et annet tidspunkt fyll ut feltet nedenfor. Skriv inn på engelsk. Eks.: ''two hours before'' (SMS sendes ut to timer før reservasjon) eller ''08:00 yesterday'' (kl. 8 dagen før reservasjon).'
       edit_user_notifications:
         approvement_email: Utsendelse av epost ved ny reservasjonforespørsel
+        approvement_sms: Utsendelse av SMS ved ny reservasjonforespørsel
         automatic_messages: Automatiske utsendelser
         default: Aktivert (Standard)
         disable: Deaktiver
