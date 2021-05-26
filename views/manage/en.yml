@@ -349,6 +349,8 @@ en:
       export_info:
         data_types:
           bookings: Reservations
+          bookings_visible: Reservations (including cancellations)
+          bookings_all: Reservations (all)
           events: Events
           people: Customers
         executed: The export is now being sent to your email-address.

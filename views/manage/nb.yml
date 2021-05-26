@@ -344,7 +344,9 @@ nb:
           calendar_slot_label_interval: Tidsvisning for slot ved hvert X minutt
       export_info:
         data_types:
-          bookings: Reservasjoner
+          bookings: Reservasjoner (kun aktive)
+          bookings_visible: Reservasjoner (inkludert kansellerte)
+          bookings_all: Reservasjoner (alle)
           events: Arrangementer
           people: Kunder
         executed: Eksportfilen sendes nå til din epost-adresse.
