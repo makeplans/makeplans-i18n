@@ -153,6 +153,7 @@ en:
         result_header: iZettle
         success: Payment registered.
       show:
+        amount: Total price
         booked_from: From
         booked_to: To
         created_by: Created by %{user}

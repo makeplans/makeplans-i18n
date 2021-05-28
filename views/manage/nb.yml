@@ -153,6 +153,7 @@ nb:
         result_header: iZettle
         success: Betaling registrert.
       show:
+        amount: Total pris
         booked_from: Fra
         booked_to: Til
         created_by: Opprettet av %{user}
