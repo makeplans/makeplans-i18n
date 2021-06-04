@@ -42,11 +42,11 @@ nb:
         phone_number: telefonnummer
         purge_data_period: Automatisk sletteperiode
       client_user_link:
-        role: rolle
+        role: tilgangsnivå
       client_user_link/role:
-        admin: Administrator
-        manager: Leder
-        staff: Ansatt
+        admin: full tilgang
+        manager: enkelt oppsett
+        staff: kun kalender
       event:
         booking_capacity: maks antall deltagere per reservasjon
         capacity: maks antall deltagere
@@ -324,11 +324,11 @@ nb:
         time_zone: Tidssone
         verification_method: Verifiseringsmetode ved ny reservasjon
       client_user_link:
-        role: Rolle
+        role: Tilgangsnivå
       client_user_link/role:
-        admin: Administrator
-        manager: Leder
-        staff: Ansatt
+        admin: Full tilgang
+        manager: Enkelt oppsett
+        staff: Kun kalendar
       event:
         all_day: Hele dagen
         booking_capacity: Maks antall deltagere per reservasjon

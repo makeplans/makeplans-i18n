@@ -38,11 +38,11 @@ en:
         phone_number: Phone number
         purge_data_period: Automatic delete period
       client_user_link:
-        role: Role
+        role: access level
       client_user_link/role:
-        admin: Administrator
-        manager: Manager
-        staff: Employee
+        admin: full access
+        manager: basic setup
+        staff: only calendar
       event:
         booking_capacity: maximum people allowed per booking
         capacity: maximum people allowed
@@ -235,6 +235,12 @@ en:
       category:
         parent_id: Parent category
         title: Title
+      client_user_link:
+        role: Access level
+      client_user_link/role:
+        admin: Full access
+        manager: Basic setup
+        staff: Only calendar
       client:
         address: Visiting address
         allow_cancellation: Allow cancellations by customer
