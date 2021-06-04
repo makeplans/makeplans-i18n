@@ -40,7 +40,7 @@ nb:
         mail_notification_recipient: epost-adresser for varsling
         mailer_sender: epost-avsender
         phone_number: telefonnummer
-        purge_data_period: Automatisk sletteperiode
+        purge_data_period: automatisk sletteperiode
       client_user_link:
         role: tilgangsnivå
       client_user_link/role:

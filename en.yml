@@ -32,11 +32,11 @@ en:
       category:
         title: title
       client:
-        future_bookable_period: Future bookable period
+        future_bookable_period: future bookable period
         mail_notification_recipient: email address(es) for notification
-        mailer_sender: Email sender address
-        phone_number: Phone number
-        purge_data_period: Automatic delete period
+        mailer_sender: email sender address
+        phone_number: phone number
+        purge_data_period: automatic delete period
       client_user_link:
         role: access level
       client_user_link/role:
