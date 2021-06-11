@@ -3,6 +3,9 @@ en:
   booking_ical:
     summary: "%{service} at %{client}"
   booking_occurrence_mailer:
+    cancel:
+      body: 'Your bookings of %{title} for the following times has been cancelled:'
+      subject: 'Cancelled reservations'
     create:
       body: 'You have reserved %{title} for the following times:'
       subject: 'New reservations'

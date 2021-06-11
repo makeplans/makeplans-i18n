@@ -91,11 +91,13 @@ nb:
         error: Vi klarte ikke å bekrefte at betaling ble gjennomført. Kontakt kundeservice.
         info: Vennligst vent mens vi belaster ditt kredittkort. Dette kan ta opp mot et minutt. Du vil motta en epost fra oss når prosessen er ferdig.
     bookings:
+      cancel_recurring:
+        headline: Alle fremtidige reservasjoner i dette mønsteret ble slettet
       create_recurring:
         headline: Genererer %{count} reservasjoner...
         link: Vis liste
       destroy_recurring:
-        headline: Alle avtaler i dette mønsteret ble slettet
+        headline: Alle reservasjoner i dette mønsteret ble slettet
       fiken:
         delayed_info: Det kan ta litt tid før fakturaen opprettes i Fiken. Ikke prøv å opprette faktura en gang til hvis informasjon fra Fiken ikke er synlig i MakePlans.
         header: Kontakter nå Fiken...
@@ -196,8 +198,9 @@ nb:
           created: Tilbud er opprettet i Visma eAccounting
           processing: Tilbud opprettes i Visma eAccounting. Dette kan ta opptil 1-2 minutter.
       show_recurring:
+        cancel_all_future: Kansellerer alle fremtidige reservasjoner
         delete_all: Slett alle
-        headline: Alle gjentagende avtaler innenfor dette mønsteret
+        headline: Alle gjentagende reservasjoner innenfor dette mønsteret
       status_changer:
         cancel: Kansellerer reservasjon
         status: Sett status

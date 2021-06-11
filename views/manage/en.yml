@@ -91,11 +91,14 @@ en:
         error: Unable to verify payment. Please contact customer service.
         info: Please wait while we charge your payment card. This can take up to one minutes. You will receive an email from us when the process is completed.
     bookings:
+      cancel_recurring:
+        headline: All future reservations within this repeating pattern was removed
+        list_recurring: See list of reservations within this repeating pattern.
       create_recurring:
         headline: Generating %{count} reservations...
         link: Show list
       destroy_recurring:
-        headline: All repeating reservations within this pattern was removed
+        headline: All reservations within this repeating pattern was removed
       fiken:
         delayed_info: It will take some time before the order is created in Fiken. Do not try to generate the order again if no information from Fiken is visible in MakePlans.
         header: Contating Fiken...
@@ -196,6 +199,7 @@ en:
           created: Invoice is created in Visma eAccounting
           processing: The order is being created in Visma eAccounting. This can take a few minutes.
       show_recurring:
+        cancel_all_future: Cancel all future appointments
         delete_all: Delete all
         headline: All repeating reservations within this pattern
       status_changer:

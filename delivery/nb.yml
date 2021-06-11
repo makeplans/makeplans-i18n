@@ -3,6 +3,9 @@ nb:
   booking_ical:
     summary: "%{service} hos %{client}"
   booking_occurrence_mailer:
+    cancel:
+      body: 'Dine reservasjoner av %{title} har blitt kansellert:'
+      subject: 'Kansellerte reservasjoner'
     create:
       body: 'Du har reservert %{title} til følgende tider:'
       subject: 'Nye reservasjoner'
