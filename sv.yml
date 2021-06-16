@@ -45,7 +45,7 @@ sv:
       person:
         address: adress
         city: stad
-        country_code: Land
+        country_code: land
         created_at: registrerad
         date_of_birth: födelsedatum
         email: e-post
@@ -307,7 +307,7 @@ sv:
         name: Namn
         national_id_no: Personnummer
         notes: Anteckningar
-        phonenumber: Telefonnummer
+        phonenumber: Mobilnummer
         postal_code: Postnummer
         provider: Associerat med externt konto
         state: Län/Stat
