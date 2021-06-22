@@ -198,6 +198,8 @@ en:
           create_invoice: Create order in Visma eAccounting
           created: Invoice is created in Visma eAccounting
           processing: The order is being created in Visma eAccounting. This can take a few minutes.
+        zoom:
+          start_meeting: Start Zoom meeting
       show_recurring:
         cancel_all_future: Cancel all future appointments
         delete_all: Delete all

@@ -197,6 +197,8 @@ nb:
           create_invoice: Opprett tilbud i Visma eAccounting
           created: Tilbud er opprettet i Visma eAccounting
           processing: Tilbud opprettes i Visma eAccounting. Dette kan ta opptil 1-2 minutter.
+        zoom:
+          start_meeting: Start Zoom-møte
       show_recurring:
         cancel_all_future: Kansellerer alle fremtidige reservasjoner
         delete_all: Slett alle
