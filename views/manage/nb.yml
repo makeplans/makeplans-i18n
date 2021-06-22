@@ -113,6 +113,7 @@ nb:
         headline_create_recurring: Opprett ny reservasjon
         headline_edit: Endre reservasjon
         headline_new: Opprett ny reservasjon
+        headline_update: Endre reservasjon
         ignore_capacity: Lagre selv om opptatt
         modification_send_email: Send endring på epost
         modification_send_sms: Send endring på SMS
@@ -138,6 +139,7 @@ nb:
         headline_create: Legg til ny deltager
         headline_edit: Endre reservasjon
         headline_new: Legg til ny deltager
+        headline_update: Endre reservasjon
         modification_send_email: Send endring på epost
         modification_send_sms: Send endring på SMS
         notification_send_email: Send varsel på epost
