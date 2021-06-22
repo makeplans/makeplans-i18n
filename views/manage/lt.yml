@@ -220,7 +220,6 @@ lt:
         info: Jei siūlote daug paslaugų, jas galima suskirstyti į kelis lygius. Kategorijos bus rodomos užsakymo svetainėje, todėl klientas turi pasirinkti kategoriją prieš rodant pasirinktos kategorijos paslaugas. Paslaugą galima rodyti keliose kategorijose.
       form:
         has_services: Rodo šias paslaugas
-        no_parent_id: ''
       index:
         header: Kategorijos
       list_menu:

@@ -221,7 +221,6 @@ lv:
         info: Ja jūs piedāvājat daudz pakalpojumu, ir iespējams tos kategorizēt vairākos līmeņos. Kategorijas tiks parādītas rezervācijas vietnē, tāpēc klientam jāizvēlas kategorija, pirms tiek parādīti izvēlētās kategorijas pakalpojumi. Pakalpojumu ir iespējams parādīt vairākās kategorijās.
       form:
         has_services: Parāda šos pakalpojumus
-        no_parent_id: ''
       index:
         header: Kategorijas
       list_menu:

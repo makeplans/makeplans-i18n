@@ -231,7 +231,7 @@ en:
         info: If you are offering many services it is possible to categorise them in multiple levels. Categories will be shown on the bookingsite so the customer must choose a category before the services within chosen category are shown. It is possible to show a service in multiple categories.
       form:
         has_services: Shows these services
-        no_parent_id: ''
+        no_parent_id: TOP LEVEL
       index:
         header: Categories
       list_menu:

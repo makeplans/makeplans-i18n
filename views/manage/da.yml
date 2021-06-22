@@ -221,7 +221,6 @@ da:
         info: Hvis du har mange tjenester, kan du kategorisere dem på flere niveauer. Kategorier vises på reservationssiden, så kunden vælger kategorien, før tjenesten inden for den valgte kategori vises. Det er muligt at vise en tjeneste i flere kategorier.
       form:
         has_services: Viser følgende tjenester
-        no_parent_id: ''
       index:
         header: Kategorier
       list_menu:

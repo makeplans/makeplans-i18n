@@ -230,7 +230,7 @@ nb:
         info: Har du mange tjenester kan du kategorisere dem på flere nivåer. Kategorier vil vises på bookingsiden slik at kunden velger kategori før tjenesten innenfor valgt kategori vises. Det er mulig å vise en tjeneste i flere kategorier.
       form:
         has_services: Viser følgende tjenester
-        no_parent_id: ''
+        no_parent_id: TOPPNIVÅ
       index:
         header: Kategorier
       list_menu:

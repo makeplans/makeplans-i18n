@@ -221,7 +221,6 @@ fr:
         info: Si vous offrez de nombreux services, il est possible de les classer en plusieurs niveaux. Les catégories seront affichées sur le site de réservation, de sorte que le client doit choisir une catégorie avant que les services de la catégorie choisie ne soient affichés. Il est possible d'afficher un service dans plusieurs catégories.
       form:
         has_services: Affiche ces services
-        no_parent_id: ''
       index:
         header: Catégories
       list_menu:

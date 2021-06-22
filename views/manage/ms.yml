@@ -222,7 +222,6 @@ ms:
         info: Sekiranya anda menawarkan banyak perkhidmatan adalah mungkin untuk mengkategorikannya dalam pelbagai peringkat. Kategori akan ditunjukkan di laman tempahan sehingga pelanggan mesti memilih kategori sebelum perkhidmatan dalam kategori yang dipilih ditunjukkan. Adalah mungkin untuk menunjukkan perkhidmatan dalam pelbagai kategori.
       form:
         has_services: Menunjukkan perkhidmatan ini
-        no_parent_id: ''
       index:
         header: Kategori
       list_menu:

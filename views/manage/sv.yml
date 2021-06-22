@@ -222,7 +222,6 @@ sv:
         info: Om du har många tjänster kan du kategorisera dem på flera nivåer. Kategorier visas på bokningssidan så att kunden väljer kategorin innan tjänsten inom den valda kategorin visas. Det är möjligt att visa en tjänst i flera kategorier.
       form:
         has_services: Visar följande tjänster
-        no_parent_id: ''
       index:
         header: Kategorier
       list_menu:
