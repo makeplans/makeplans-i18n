@@ -147,6 +147,12 @@ nb:
         not_available_for_this_verification_method: Ikke tilgjengelig
         submit: Motta kode
     profile:
+      credit_card_list:
+        add_card: Legg til nytt kort
+        title: Dine lagrede betalingskort
+        body: Dette er dine lagrede betalingsmuligheter. Du kan legge til eller fjerne kort som du ønsker.
+        card_info: '%{brand} med kortnr som ender med %{last_4} og utløper %{expire_month}/%{expire_year}.'
+        remove_card: Fjern dette kortet
       show:
         header: Dine reservasjoner
         logout: Logg ut

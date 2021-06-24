@@ -147,6 +147,12 @@ en:
         not_available_for_this_verification_method: Not available.
         submit: Receive code
     profile:
+      credit_card_list:
+        add_card: Add new card
+        title: Your stored payment methods
+        body: These are your stored payment cards. If you want you can add a new card or delete any of the existing ones.
+        card_info: '%{brand} with number ending in %{last_4} and expires %{expire_month}/%{expire_year}.'
+        remove_card: Remove this card
       show:
         header: Your reservations
         logout: Log out
