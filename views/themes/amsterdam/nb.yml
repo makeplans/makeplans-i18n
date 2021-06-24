@@ -103,6 +103,8 @@ nb:
         info: For å gjennomføre reservasjon av %{service} %{booking} må du betale med ditt kredittkort.
         payment_details_html: Beløpet er oppgitt i %{currency} og inkluderer merverdiavgift. Din kortinformasjon lagres ikke hos oss men sendes kryptert over til %{provider} for sikker gjennomføring av transaksjon og lagring.
         payment_received: "%{paid_amount} ble betalt %{paid_at}."
+        new_card: Legg til nytt kort
+        save_card: Lagre kort
       step:
         cancel: Avbryt
         completed: Ferdig!

@@ -103,6 +103,8 @@ en:
         info: To complete the reservation of %{service} %{booking} you must pay with your credit card.
         payment_details_html: The displayed amount is in %{currency}. We do not store your credit card details but send it encrypted over to %{provider} for secure processing and storage.
         payment_received: "%{paid_amount} was paid on %{paid_at}."
+        new_card: Enter new card
+        save_card: Save card
       step:
         cancel: Cancel
         completed: Completed!
