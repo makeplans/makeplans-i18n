@@ -157,6 +157,7 @@ nb:
         header: Dine reservasjoner
         logout: Logg ut
         new_booking: Ny reservasjon
+        payment_methods: Lagrede betalingskort
     providers:
       index:
         show_all_available: Vis alle ledige

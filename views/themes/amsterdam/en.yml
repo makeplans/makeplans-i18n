@@ -157,6 +157,7 @@ en:
         header: Your reservations
         logout: Log out
         new_booking: New reservation
+        payment_methods: Stored payment methods
     providers:
       index:
         show_all_available: Show all available
