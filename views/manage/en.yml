@@ -505,6 +505,11 @@ en:
         account: List-ID
         username: Account username
       not_authenticated: Unable to connect. Check your credentials.
+      notion:
+        connected_to: Connected to database with id %{database_id}
+        select_database: Select database
+        sharing_info: 'Please share at least one database with the MakePlans integration'
+        database_info: 'The database must be set up with the following properties: Name, Email (type: email), Phone (type: phone).'
       oauth_connect: Connect to service
       quickpay:
         environment: Environment
