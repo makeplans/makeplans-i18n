@@ -561,7 +561,8 @@ en:
       zapier:
         info_html: To connect MakePlans to Zapier please make a <a href="%{url}" target="_blank">new Zap on Zapier</a>.
       zoom:
-        connect_info: Connected
+        session_type: Zoom session type for events
+        info: For this integration to work you must connect a resource to a user in Zoom and have at least one service with Zoom enabled.
     message_templates:
       index:
         header: Message templates
@@ -719,6 +720,7 @@ en:
           fiken_product_href: Connect to a product in Fiken
           tfso_product_id: 24SevenOffice product id
           visma_eaccounting_article_id: Connect to a product in Visma eAccounting
+          zoom_create_session: Automatically create a Zoom meeting for this service
       list_menu:
         list_appointment: Services
         list_attendance: Event types
