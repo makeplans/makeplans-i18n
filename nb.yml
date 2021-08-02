@@ -252,6 +252,7 @@ nb:
         api_key: API-nøkkel (til eksterne integrasjoner)
         app_secret: Hemmelig verifiseringskode
         appointment_form: Egendefinerte reservasjonsfelter
+        awaiting_confirmation_text: Tekst som vises når booking krever godkjenning
         billing_city: By
         billing_country_code: Land
         billing_email: Epost-adresse for faktura

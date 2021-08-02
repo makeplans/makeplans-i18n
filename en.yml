@@ -249,6 +249,7 @@ en:
         api_key: API-key (for external integrations)
         app_secret: Account secret
         appointment_form: Custom reservation fields
+        awaiting_confirmation_text: Text displayed when booking is waiting for confirmation
         billing_city: City
         billing_country_code: Country
         billing_email: Email address for invoice
