@@ -181,6 +181,8 @@ en:
       person:
         perishable_token:
           invalid: Incorrect code
+          no_identifier: Missing email or phone number.
+          expired: Code expired. Please try again.
     stripe:
       booking:
         invalid: Reservation has expired or is invalid. Transaction not processed.
