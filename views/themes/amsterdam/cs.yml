@@ -164,6 +164,6 @@ cs:
         no_availability: Ve vybraný den není k dispozici žádná dostupnost. Zkuste prosím jiné datum.
         no_selection: Vyberte prosím čas.
         prev_week: Minulý týden
-        select_resource: Zobrazit kalendář
+        select_resource: Zobrazit %{resource_title}
         select_time: "%{service} - vyberte dostupný čas"
         show_all: Zobrazit vše k dispozici

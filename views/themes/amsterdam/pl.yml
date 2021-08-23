@@ -180,6 +180,6 @@ pl:
         no_availability: Brak dostępności w wybranym dniu. Wybierz inną datę.
         no_selection: Wybierz dostępny czas.
         prev_week: Poprzedni tydzień
-        select_resource: Pokaż kalendarz
+        select_resource: Pokaż %{resource_title}
         select_time: "%{service}  - Wybierz dostępny czas"
         show_all: Pokaż wszystkie dostępne

@@ -180,6 +180,6 @@ ms:
         no_availability: Tiada ketersediaan pada tarikh yang dipilih. Sila cuba tarikh yang lain.
         no_selection: Sila pilih masa yang ada.
         prev_week: Minggu lepas
-        select_resource: Tunjukkan kalendar
+        select_resource: Tunjukkan %{resource_title}
         select_time: "%{service} - pilih masa yang ada"
         show_all: Tunjukkan semua yang ada

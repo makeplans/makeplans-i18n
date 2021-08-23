@@ -180,6 +180,6 @@ sv:
         no_availability: Inga lediga tider på valt datum. Vänligen försök med ett annat datum.
         no_selection: Vänligen välj en ledig tid.
         prev_week: Föregående vecka
-        select_resource: Visa kalender
+        select_resource: Visa %{resource_title}
         select_time: "%{service} - välj en ledig tid"
         show_all: Visa alla tillgängliga

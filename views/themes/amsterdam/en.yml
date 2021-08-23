@@ -190,6 +190,6 @@ en:
         no_availability: No availability on selected date. Please try another date.
         no_selection: Please select an available time.
         prev_week: Previous week
-        select_resource: Show calendar
+        select_resource: Show %{resource_title}
         select_time: "%{service}  - select available time"
         show_all: Show all available

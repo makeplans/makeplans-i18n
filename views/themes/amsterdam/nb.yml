@@ -190,6 +190,6 @@ nb:
         no_availability: Ingen ledige tidspunkt på denne dagen.
         no_selection: Du må velge et tidspunkt for å gå videre.
         prev_week: Forrige uke
-        select_resource: Velg kalender
+        select_resource: Velg %{resource_title}
         select_time: Velg tidspunkt for %{service}
         show_all: Vis alle tilgjengelige

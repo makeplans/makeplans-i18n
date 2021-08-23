@@ -355,6 +355,7 @@ en:
           calendar_hide_weekends: Hide weekends
           calendar_slot_duration: Slot duration
           calendar_slot_label_interval: Slot label interval
+          esource_title: Custom resource title
       export_info:
         data_types:
           bookings: Reservations

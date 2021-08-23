@@ -180,6 +180,6 @@ da:
         no_availability: Ingen ledige tider.
         no_selection: Du skal vælge et tidspunkt for at fortsætte.
         prev_week: Forrige uge
-        select_resource: Vælg kalender
+        select_resource: Vælg %{resource_title}
         select_time: Vælg tid for %{service}
         show_all: Vis alle tilgængelige

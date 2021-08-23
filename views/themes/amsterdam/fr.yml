@@ -181,6 +181,6 @@ fr:
         no_availability: Aucune disponibilité à la date sélectionnée. Veuillez essayer une autre date.
         no_selection: Veuillez sélectionner une heure disponible.
         prev_week: Semaine précédente
-        select_resource: Afficher le calendrier
+        select_resource: Afficher le %{resource_title}
         select_time: "%{service} - sélectionnez le temps disponible"
         show_all: Afficher tout disponible

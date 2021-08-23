@@ -180,6 +180,6 @@ lt:
         no_availability: Pasirinktą dieną nėra laisvų vietų. Pabandykite kitą datą.
         no_selection: Pasirinkite galimą laiką.
         prev_week: Praeita savaite
-        select_resource: Rodyti kalendorių
+        select_resource: Rodyti %{resource_title}
         select_time: "%{service} - pasirinkite galimą laiką"
         show_all: Rodyti visus turimus

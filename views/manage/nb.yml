@@ -350,6 +350,7 @@ nb:
           calendar_hide_weekends: Skjul helgedager
           calendar_slot_duration: Varighet på slot (minutter)
           calendar_slot_label_interval: Tidsvisning for slot ved hvert X minutt
+          resource_title: Egen tittel for ressurs
       export_info:
         data_types:
           bookings: Reservasjoner (kun aktive)

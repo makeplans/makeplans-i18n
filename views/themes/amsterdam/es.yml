@@ -180,6 +180,6 @@ es:
         no_availability: No hay disponibilidad en la fecha seleccionada. Intente con otra fecha.
         no_selection: Seleccione una hora disponible.
         prev_week: Semana pasada
-        select_resource: Mostrar calendario
+        select_resource: Mostrar %{resource_title}
         select_time: "%{service} - seleccione el tiempo disponible"
         show_all: Mostrar todos los disponibles
