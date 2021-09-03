@@ -41,7 +41,7 @@ nb:
       link: Legg til betalingskort
       subject: Betal din reservasjon
     verification:
-      footer: 'OBS: Reserverasjonen er ikke fullført. Hvis du ikke klikker på linken ovenfor i løpet av %{expires_in} minutter vil reservasjonen din kanselleres.'
+      footer: 'OBS: Reservasjonen er ikke fullført. Hvis du ikke klikker på linken ovenfor i løpet av %{expires_in} minutter vil reservasjonen din kanselleres.'
       header: For å fullføre din reservering av %{title} %{time_range} må du bekrefte reservasjonen ved å klikke på linken under.
       link: Bekreft reservasjon
       subject: Bekreft din reservasjon
