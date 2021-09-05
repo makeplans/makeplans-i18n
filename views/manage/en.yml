@@ -418,6 +418,11 @@ en:
         show_only_active_html: List includes %{count} inactive reservations. <a href="%{href}">Do you only want to show active reservations?</a>
         signup_link: Signup link
         sms_all_participants: Send SMS to all participants
+        zoom:
+          start_meeting: Start Zoom meeting as host
+          join_meeting: Join meeting link
+          start_webinar: Start Zoom webinar as host
+          join_webinar: Join webinar link
       show_recurring:
         delete_all: Delete all
         headline: All repeating events within this pattern
