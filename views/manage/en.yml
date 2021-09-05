@@ -563,6 +563,7 @@ en:
         info_html: To connect MakePlans to Zapier please make a <a href="%{url}" target="_blank">new Zap on Zapier</a>.
       zoom:
         session_type: Zoom session type for events
+        registration_type: Registration type
         info: For this integration to work you must connect a resource to a user in Zoom and have at least one service with Zoom enabled.
     message_templates:
       index:
