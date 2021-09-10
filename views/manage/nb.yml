@@ -61,6 +61,7 @@ nb:
         billing_name_info: Hvis du ønsker at vi skal fakturere et annet firma enn %{name} så fyll inn navnet her
         header: Fakturainformasjon
       info:
+        header: Betalingsinformasjon
         add_link: Aktiver din konto - Registrer kredittkortinformasjon
         add_new_link: Ønsker du å registrere ny kredittkortinformasjon?
         billing_info: Du vil motta faktura på epost fra oss og foreta betaling manuelt.
@@ -228,8 +229,9 @@ nb:
     categories:
       blank:
         get_started: Du har foreløpig ingen kategorier. Alle tjenester vil dermed vises i en liste på bookingsiden. Hvis du vil kategorisere dine tjenester kan du opprette en ny kategori.
-        header: Ingen kategorier lagt til
+        header: Kategorier
         info: Har du mange tjenester kan du kategorisere dem på flere nivåer. Kategorier vil vises på bookingsiden slik at kunden velger kategori før tjenesten innenfor valgt kategori vises. Det er mulig å vise en tjeneste i flere kategorier.
+        no_categories: Ingen kategorier lagt til
       form:
         has_services: Viser følgende tjenester
         no_parent_id: TOPPNIVÅ
@@ -481,6 +483,8 @@ nb:
         account: Subdomain (DINKONTO.highrisehq.com - fyll inn kun DINKONTO)
         connect_info: 'Velg konto hvor nye kunder blir lagt til:'
         password: API-key
+      index:
+        header: Integrasjoner
       izettle:
         active: Aktiv
         info: For å markere en reservasjon som betalt med iZettle må du definere pris på tjenesten du tilbyr. Du kan så klikke på linken "betal med iZettle" på en reservasjon for å gjennomføre betaling med iZettle.
@@ -791,6 +795,7 @@ nb:
         process: Gjennomfør kjøp.
         processing: Vennligst vent...
       index:
+        header: SMS-balanse
         buy: Kjøp flere SMS
         sms_credits_available: Du har %{credits} SMS-meldinger tilgjengelig.
       purchase_form:

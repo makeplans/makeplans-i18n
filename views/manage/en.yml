@@ -61,6 +61,7 @@ en:
         billing_name_info: If you want to us to bill another company than %{name} please enter the name here.
         header: Your billing info
       info:
+        header: Payment details
         add_link: Activate account - Enter credit card details
         add_new_link: Do you want to update your credit card details?
         billing_info: You will receive an invoice from us that you need to pay manually
@@ -229,8 +230,9 @@ en:
     categories:
       blank:
         get_started: Currently you have not created any categories. All services are therefore in a list on the bookingsite. If you want to categorise your services start by creating a category.
-        header: No categories added
+        header: Categories
         info: If you are offering many services it is possible to categorise them in multiple levels. Categories will be shown on the bookingsite so the customer must choose a category before the services within chosen category are shown. It is possible to show a service in multiple categories.
+        no_categories: No categories added
       form:
         has_services: Shows these services
         no_parent_id: TOP LEVEL
@@ -496,6 +498,7 @@ en:
         password: API-key
       index:
         api: API
+        header: Integrations
         web_hooks: Webhooks
       izettle:
         active: Aktice
@@ -816,6 +819,7 @@ en:
         process: Complete purchase.
         processing: Please wait...
       index:
+        header: SMS balance
         buy: Buy more SMS credits
         sms_credits_available: You have %{credits} SMS credits available.
       purchase_form:
