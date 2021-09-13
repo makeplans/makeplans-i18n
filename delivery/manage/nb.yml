@@ -1,7 +1,7 @@
 ---
 nb:
   booking_ical:
-    summary_admin: "%{service} for %{person}"
+    summary_admin: "%{person} - %{service}"
   booking_user_mailer:
     booking_info:
       customer_info: Kundeinfo
