@@ -553,9 +553,13 @@ nb:
       index:
         header: Meldingsmaler
         intro: 'Her finner du mer avanserte meldingsmaler som kan sendes ut etter at en reservasjon er bekreftet, før den starter eller etter den er gjennomført. Merk at disse meldingene sendes i tillegg til de som er satt opp som vanlige meldinger feks bekreftelse og påminnelse. Bruk kun denne funksjonen hvis du f.eks. ønsker å sende en påminnelse #2, flere typer bekreftelse (epost i tillegg til SMS) eller en melding for oppfølgning.'
+        immediately: øyeblikkelig
       form:
         delivery_timing_info: 'Skriv inn på engelsk. Eks.: ''two hours before'' (melding sendes ut to timer før tidspunkt) eller ''08:00 tomorrow'' (kl. 8 dagen dagen etter tidspunkt).'
         template_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>.
+        immediately: øyeblikkelig
+      show:
+        immediately: øyeblikkelig
     people:
       form:
         merge_action: Kombiner disse to kundeprofilene

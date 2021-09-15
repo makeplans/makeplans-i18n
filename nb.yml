@@ -59,6 +59,7 @@ nb:
         starts_at: starttidspunkt
         title: tittel
       message_template:
+        active: aktiv
         message_type: meldingstype
         delivery_type: leveringstype
         delivery_timing: leveringstidspunkt
@@ -346,6 +347,7 @@ nb:
         starts_at: Starter
         title_html: Spesifisert tittel <small>valgfritt</small>
       message_template:
+        active: Aktiv
         message_type: Meldingstype
         delivery_type: Leveringstype
         delivery_timing: Leveringstidspunkt

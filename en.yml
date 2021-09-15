@@ -55,6 +55,7 @@ en:
         starts_at: starts at
         title: title
       message_template:
+        active: active
         message_type: message type
         delivery_type: delivery type
         delivery_timing: deliver at
@@ -336,6 +337,7 @@ en:
         starts_at: Starts at
         title_html: Specified title <small>optional</small>
       message_template:
+        active: Active
         message_type: Message type
         delivery_type: Delivery type
         delivery_timing: Deliver at
