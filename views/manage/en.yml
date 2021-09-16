@@ -582,6 +582,8 @@ en:
         delivery_timing_info: 'Write in plain English. Example.: ''two hours before'' (message is sent two hours before) or ''08:00 tomorrow'' (at 8AM the day after). Delivery timing is relative based on the the message type: confirmation - booking created_at, reminder - booking booked_from, follow_up - booking booked_to.'
         template_info_html: You can merge inn dynamic values. Please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> for details.
         immediately: immediately
+        services: Services
+        services_info: 'The message template will be sent for all services unless you restrict to specific services below:'
       show:
         immediately: immediately
     people:

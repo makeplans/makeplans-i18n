@@ -558,6 +558,8 @@ nb:
         delivery_timing_info: 'Skriv inn på engelsk. Eks.: ''two hours before'' (melding sendes ut to timer før tidspunkt) eller ''08:00 tomorrow'' (kl. 8 dagen dagen etter tidspunkt).'
         template_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>.
         immediately: øyeblikkelig
+        services: Tjenester
+        services_info: 'Meldingsmalen vil gjelde for alle tjenester med mindre du begrenser utsending til enkelte tjenester:'
       show:
         immediately: øyeblikkelig
     people:
