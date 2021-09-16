@@ -626,6 +626,9 @@ en:
         verify_code: 'Enter code to verify:'
       edit_password:
         verify_code: 'Enter code to verify:'
+      no_access:
+        header: No access
+        info: Please contact the administrator of your account to access this feature.
       show:
         change_password: Modify password
         rotp:
