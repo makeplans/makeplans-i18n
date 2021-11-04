@@ -236,7 +236,7 @@ fr:
         enable_warning: Êtes-vous sûr de vouloir activer l'API? La clé API donne un accès programmatique complet à votre compte.
         enabled: L'API est activée.
         header: API
-        info_html: Contactez le service client pour obtenir de l'aide. La documentation est disponible sur <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+        info_html: Contactez le service client pour obtenir de l'aide. La documentation est disponible sur <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
         not_enabled: L'API n'est pas activée.
       cancel:
         confirm_message: Dernière chance. Êtes-vous absolument sûr de vouloir supprimer votre compte avec toutes vos données?
@@ -796,5 +796,5 @@ fr:
         remove_access_confirm: Voulez-vous vraiment supprimer l'accès à ce compte pour cet utilisateur?
     web_hooks:
       index:
-        app_secret_info_html: Secret d'application pour les webhooks très évolués. Consultez la <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">documentation</a> pour plus de détails.
+        app_secret_info_html: Secret d'application pour les webhooks très évolués. Consultez la <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">documentation</a> pour plus de détails.
         header: Webhooks

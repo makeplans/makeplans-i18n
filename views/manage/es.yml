@@ -285,7 +285,7 @@ es:
         api:
           enable: Activar API
           enable_warning: "¿Seguro que quieres activar la API? La clave API brinda acceso programático completo a su cuenta."
-          info_html: Comuníquese con el servicio al cliente para obtener ayuda. La documentación está disponible en <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+          info_html: Comuníquese con el servicio al cliente para obtener ayuda. La documentación está disponible en <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
           not_enabled: No esta activado
         app_secret_info: Secreto de la aplicación para descifrar webhooks
         delete_account_html: ¿Estás seguro de que deseas eliminar tu cuenta? <a href="%{link}">Si continuar</a>

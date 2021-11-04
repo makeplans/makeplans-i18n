@@ -45,10 +45,6 @@ lt:
         body: 'Susisiekite su mumis ir gaukite daugiau informacijos. Klaida: Kliento ryšys pašalintas'
         title: Klaida
       payment:
-        awaiting:
-          body: Palaukite, kol patikrinsime operaciją.
-          error: Mes negalime patvirtinti jūsų mokėjimo. Susisiekite su klientų aptarnavimo tarnyba https://makeplans.net nurodydami nuorodos numerį %{booking_id}.
-          title: Mokėjimo patvirtinimas
         fields:
           cvc: CVC
           errors:
@@ -92,10 +88,6 @@ lt:
         add_card_header: Išsaugoti kortelę
         add_card_info: Pridėkite mokėjimo kortelę, kad galėtumėte lengvai ir automatiškai atsiskaityti atlikę užsakymą.
         add_card_submit: Išsaugoti kortelę
-        awaiting:
-          body: Palaukite, kol patikrinsime operaciją.
-          error: 'Mes negalime patvirtinti jūsų mokėjimo. Susisiekite su klientų aptarnavimo tarnyba šiuo adresu: http://makeplans.net, nurodydami nuorodos numerį %{booking_id}.'
-          title: Mokėjimo patvirtinimas
         form_footer_html: Jūsų kredito kortelė bus apmokestinta <span class="payment-amount">%{amount}</span> .
         form_header: Ši forma siunčiama užšifruota.
         header: Mokėjimas

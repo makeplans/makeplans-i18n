@@ -45,10 +45,6 @@ pl:
         body: 'Skontaktuj się z nami, aby uzyskać więcej informacji. Błąd: połączenie klienta zostało przerwane'
         title: Błąd
       payment:
-        awaiting:
-          body: Poczekaj, aż zweryfikujemy transakcję.
-          error: Nie możemy zweryfikować Twojej płatności. Skontaktuj się z obsługą klienta pod adresem https://makeplans.net, podając numer referencyjny %{booking_id}.
-          title: Weryfikacja płatności
         fields:
           cvc: Kod CVC
           errors:
@@ -92,10 +88,6 @@ pl:
         add_card_header: Zapisz kartę
         add_card_info: Dodaj swoją kartę płatniczą, aby móc łatwo i automatycznie płacić po dokonaniu rezerwacji.
         add_card_submit: Zapisz kartę
-        awaiting:
-          body: Poczekaj, aż zweryfikujemy transakcję.
-          error: Nie możemy zweryfikować Twojej płatności. Skontaktuj się z obsługą klienta pod adresem http://makeplans.net podając numer referencyjny %{booking_id}.
-          title: Weryfikacja płatności
         form_footer_html: Twoja karta kredytowa zostanie obciążona <span class="payment-amount">%{amount}</span>.
         form_header: Ten formularz jest wysyłany w postaci zaszyfrowanej.
         header: Płatność

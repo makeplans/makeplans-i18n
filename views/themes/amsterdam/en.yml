@@ -46,10 +46,6 @@ en:
         body: 'Contact us for more info. Error: Customer connection removed'
         title: Error
       payment:
-        awaiting:
-          body: Please wait while we verify the transaction.
-          error: We are unable to verify your payment. Please contact customer service at https://makeplans.net with the reference number %{booking_id}.
-          title: Verifying your payment
         fields:
           cvc: CVC
           errors:
@@ -93,10 +89,6 @@ en:
         add_card_header: Save card
         add_card_info: Add your payment card so you can easily and automatically pay after the booking.
         add_card_submit: Save card
-        awaiting:
-          body: Please wait while we verify the transaction.
-          error: We are unable to verify your payment. Please contact customer service at http://makeplans.net with the reference number %{booking_id}.
-          title: Verifying your payment
         form_footer_html: Your credit card will be charged with <span class="payment-amount">%{amount}</span>.
         form_header: This form is sent encrypted.
         header: Payment

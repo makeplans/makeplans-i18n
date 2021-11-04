@@ -45,10 +45,6 @@ ms:
         body: 'Hubungi kami untuk maklumat lebih lanjut. Ralat: Sambungan pelanggan dikeluarkan'
         title: Ralat
       payment:
-        awaiting:
-          body: Tunggu sementara kami mengesahkan transaksi.
-          error: Kami tidak dapat mengesahkan pembayaran anda. Sila hubungi khidmat pelanggan di https://makeplans.net dengan nombor rujukan %{booking_id}.
-          title: Mengesahkan pembayaran anda
         fields:
           cvc: CVC
           errors:
@@ -92,10 +88,6 @@ ms:
         add_card_header: Simpan kad
         add_card_info: Tambahkan kad pembayaran anda supaya anda dapat membayar dengan mudah dan automatik setelah membuat tempahan.
         add_card_submit: Simpan kad
-        awaiting:
-          body: Tunggu sementara kami mengesahkan transaksi.
-          error: Kami tidak dapat mengesahkan pembayaran anda. Sila hubungi khidmat pelanggan di http://makeplans.net dengan nombor rujukan %{booking_id}.
-          title: Mengesahkan pembayaran anda
         form_footer_html: Kad kredit anda akan dikenakan caj <span class="payment-amount">%{amount}</span> .
         form_header: Borang ini dihantar dienkripsi.
         header: Pembayaran

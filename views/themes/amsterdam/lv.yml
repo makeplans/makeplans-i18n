@@ -46,10 +46,6 @@ lv:
         body: 'Sazinieties ar mums, lai iegūtu vairāk informācijas. Kļūda: klienta savienojums ir noņemts'
         title: Kļūda
       payment:
-        awaiting:
-          body: Lūdzu, uzgaidiet, kamēr mēs pārbaudīsim darījumu.
-          error: Mēs nevaram pārbaudīt jūsu maksājumu. Lūdzu, sazinieties ar klientu servisu vietnē https://makeplans.net ar atsauces numuru %{booking_id}.
-          title: Maksājuma pārbaude
         fields:
           cvc: CVC
           errors:
@@ -93,10 +89,6 @@ lv:
         add_card_header: Saglabāt karti
         add_card_info: Pievienojiet savu maksājumu karti, lai pēc rezervēšanas varētu ērti un automātiski norēķināties.
         add_card_submit: Saglabāt karti
-        awaiting:
-          body: Lūdzu, uzgaidiet, kamēr mēs pārbaudīsim darījumu.
-          error: Mēs nevaram pārbaudīt jūsu maksājumu. Lūdzu, sazinieties ar klientu servisu vietnē http://makeplans.net ar atsauces numuru %{booking_id}.
-          title: Maksājuma pārbaude
         form_footer_html: No jūsu kredītkartes tiks iekasēta <span class="payment-amount">%{amount}</span> .
         form_header: Šī veidlapa tiek nosūtīta šifrēta.
         header: Maksājums

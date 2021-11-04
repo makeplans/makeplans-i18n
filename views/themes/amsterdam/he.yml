@@ -45,10 +45,6 @@ he:
         body: 'צרו איתנו קשר למידע נוסף. שגיאה: חיבור הלקוח הוסר'
         title: שְׁגִיאָה
       payment:
-        awaiting:
-          body: אנא המתן בזמן שאנו מאמתים את העסקה.
-          error: אין באפשרותנו לאמת את התשלום שלך. אנא צרו קשר עם שירות הלקוחות בכתובת https://makeplans.net עם מספר ההתייחסות %{booking_id}.
-          title: מאמת את התשלום שלך
         fields:
           cvc: CVC
           errors:
@@ -92,10 +88,6 @@ he:
         add_card_header: שמור כרטיס
         add_card_info: הוסף את כרטיס התשלום שלך כדי שתוכל לשלם בקלות ובאופן אוטומטי לאחר ההזמנה.
         add_card_submit: שמור כרטיס
-        awaiting:
-          body: אנא המתן בזמן שאנו מאמתים את העסקה.
-          error: אין באפשרותנו לאמת את התשלום שלך. אנא צרו קשר עם שירות הלקוחות בכתובת http://makeplans.net עם מספר ההתייחסות %{booking_id}.
-          title: מאמת את התשלום שלך
         form_footer_html: כרטיס האשראי שלך יחויב ב- <span class="payment-amount">%{amount}</span> .
         form_header: טופס זה נשלח מוצפן.
         header: תַשְׁלוּם

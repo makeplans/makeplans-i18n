@@ -284,7 +284,7 @@ he:
         api:
           enable: הפעל את ה- API
           enable_warning: האם אתה בטוח שברצונך להפעיל את ה- API? מפתח ה- API נותן גישה פרוגרמטית מלאה לחשבונך.
-          info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+          info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
           not_enabled: לא הופעל
         app_secret_info: סוד אפליקציה למאפייני ווב-ווקים
         delete_account_html: האם אתה בטוח שברצונך למחוק את חשבונך? <a href="%{link}">כן, המשך</a>

@@ -46,10 +46,6 @@ nb:
         body: 'Kontakt oss for mer info. Feil: Kundekobling fjernet.'
         title: Feil
       payment:
-        awaiting:
-          body: Vennligst vent mens vi sjekker transaksjonen.
-          error: Vi klarte ikke å verifisere din betaling. Kontakt kundeservice på https://makeplans.net med referansenummer %{booking_id}
-          title: Sjekker din betaling
         fields:
           cvc: CVC
           errors:

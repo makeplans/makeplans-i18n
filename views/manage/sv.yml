@@ -233,7 +233,7 @@ sv:
       api:
         enable: Aktivera API
         enable_warning: Är du säker på att du vill aktivera API? API-nyckeln ger full programmatisk tillgång till ditt konto.
-        info_html: Kontakta kundtjänst om du behöver hjälp. Dokumentation finns på <a href="https://developer.makeplans.net">https://developer.makeplans.net</a>.
+        info_html: Kontakta kundtjänst om du behöver hjälp. Dokumentation finns på <a href="https://developer.makeplans.com">https://developer.makeplans.com</a>.
         not_enabled: Inte aktiverad
       cancel:
         confirm_message: Sista chansen. Är du säker på att du vill ta bort kontot med all din data?

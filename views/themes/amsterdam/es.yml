@@ -45,10 +45,6 @@ es:
         body: 'Contáctenos para mas información. Error: se eliminó la conexión del cliente'
         title: Error
       payment:
-        awaiting:
-          body: Espere mientras verificamos la transacción.
-          error: No podemos verificar su pago. Comuníquese con el servicio al cliente en https://makeplans.net con el número de referencia %{booking_id}.
-          title: Verificando su pago
         fields:
           cvc: CVC
           errors:
@@ -92,10 +88,6 @@ es:
         add_card_header: Guardar tarjeta
         add_card_info: Agregue su tarjeta de pago para que pueda pagar fácil y automáticamente después de la reservación.
         add_card_submit: Guardar tarjeta
-        awaiting:
-          body: Espere mientras verificamos la transacción.
-          error: No podemos verificar su pago. Comuníquese con el servicio al cliente en http://makeplans.net con el número de referencia %{booking_id}.
-          title: Verificando su pago
         form_footer_html: Su tarjeta de crédito se cargará con <span class="payment-amount">%{amount}</span> .
         form_header: Este formulario se envía encriptado.
         header: Pago

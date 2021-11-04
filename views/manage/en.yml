@@ -251,7 +251,7 @@ en:
         enable_warning: Are you sure you want to activate the API? The API-key gives full programmatic access to your account.
         enabled: The API is enabled.
         header: API
-        info_html: Contact customer service for help. Documentation is available at <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a>.
+        info_html: Contact customer service for help. Documentation is available at <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a>.
         not_enabled: The API is not enabled.
       cancel:
         confirm_message: Last chance. Are you absolutely sure that you want to delete your account with all your data?
@@ -430,9 +430,9 @@ en:
         headline: All repeating events within this pattern
       widget:
         capacity_details:
-          one: One attende of total %{capacity} possible.
-          other: "%{count} attendes of total %{capacity} possible."
-          zero: No attendes. %{capacity} possible.
+          one: One attendee of total %{capacity} possible.
+          other: "%{count} attendees of total %{capacity} possible."
+          zero: No attendees. %{capacity} possible.
         end: Ends
         start: Starts
       widget_list:
@@ -847,5 +847,5 @@ en:
         remove_access_confirm: Are you sure you want to remove access to this account for this user?
     web_hooks:
       index:
-        app_secret_info_html: App secret for veryifing webhooks. See <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">documentation</a> for details.
+        app_secret_info_html: App secret for veryifing webhooks. See <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">documentation</a> for details.
         header: Webhooks

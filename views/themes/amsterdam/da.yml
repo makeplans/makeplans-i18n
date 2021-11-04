@@ -45,10 +45,6 @@ da:
         body: 'Kontakt os for mere info. Fejl: Kundeforbindelse fjernet.'
         title: Fejl
       payment:
-        awaiting:
-          body: Vent mens vi kontrollerer transaktionen.
-          error: Vi kunne ikke bekræfte din betaling. Kontakt kundeservice på https://makeplans.net med referencenummer %{booking_id}
-          title: Kontrollerer din betaling
         fields:
           cvc: CVC
           errors:

@@ -5,10 +5,6 @@ cs:
       dateselector: Vyberte datum
       earlier: dříve
       payment:
-        awaiting:
-          body: Počkejte prosím, než transakci ověříme.
-          error: Nemůžeme ověřit vaši platbu. Kontaktujte zákaznický servis na adrese http://makeplans.net s referenčním číslem %{booking_id}.
-          title: Ověření platby
         form_footer_html: Na vaši kreditní kartu bude účtováno <span class="payment-amount">%{amount}</span> .
         form_header: Tento formulář je odeslán šifrovaný.
         header: Způsob platby
@@ -65,10 +61,6 @@ cs:
         price_info: 'Cena: %{price}'
         reserve_resource: Rezervace pro %{resource}
       payment:
-        awaiting:
-          body: Počkejte prosím, než transakci ověříme.
-          error: Nemůžeme ověřit vaši platbu. Kontaktujte zákaznický servis na adrese https://makeplans.net s referenčním číslem %{booking_id}.
-          title: Ověření platby
         fields:
           cvc: CVC
           errors:

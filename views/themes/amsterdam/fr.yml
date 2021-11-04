@@ -46,10 +46,6 @@ fr:
         body: 'Contactez nous pour plus d''informations. Erreur: connexion client supprimée'
         title: Erreur
       payment:
-        awaiting:
-          body: Veuillez patienter pendant que nous vérifions la transaction.
-          error: Nous ne pouvons pas vérifier votre paiement. Veuillez contacter le service client sur https://makeplans.net avec le numéro de référence %{booking_id}.
-          title: Vérification de votre paiement
         fields:
           cvc: CVC
           errors:
@@ -93,10 +89,6 @@ fr:
         add_card_header: Enregistrer la carte
         add_card_info: Ajoutez votre carte de paiement afin de pouvoir payer facilement et automatiquement après la réservation.
         add_card_submit: Enregistrer la carte
-        awaiting:
-          body: Veuillez patienter pendant que nous vérifions la transaction.
-          error: Nous ne pouvons pas vérifier votre paiement. Veuillez contacter le service client sur http://makeplans.net avec le numéro de référence %{booking_id}.
-          title: Vérification de votre paiement
         form_footer_html: Votre carte de crédit sera débitée de <span class="payment-amount">%{amount}</span> .
         form_header: Ce formulaire est envoyé crypté.
         header: Paiement

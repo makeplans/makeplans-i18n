@@ -45,10 +45,6 @@ sv:
         body: 'Kontakta oss för mer info. Fel: Kundanslutning borttagen.'
         title: Fel
       payment:
-        awaiting:
-          body: Var vänlig vänta medan vi kontrollerar transaktionen.
-          error: Vi kan tyvärr inte bekräfta din betalning. Vänligen kontakta kundtjänst på https://makeplans.net och uppge referensnummer %{booking_id}.
-          title: Kontrollerar din betalning
         fields:
           cvc: CVC
           errors:
@@ -92,10 +88,6 @@ sv:
         add_card_header: Spara kreditkort
         add_card_info: Lägg till ditt kreditkort så att du enkelt och automatiskt kan betala efter bokningen.
         add_card_submit: Spara kort
-        awaiting:
-          body: Var vänlig vänta medan vi kontrollerar transaktionen.
-          error: Vi kan tyvärr inte bekräfta din betalning. Vänligen kontakta kundtjänst på https://makeplans.net och uppge referensnummer %{booking_id}.
-          title: Kontrollerar betalning
         form_footer_html: Ditt kreditkort kommer att debiteras med <span class="payment-amount">%{amount}</span>.
         form_header: Detta formulär skickas krypterat.
         header: Betalning

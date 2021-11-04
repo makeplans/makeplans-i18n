@@ -236,7 +236,7 @@ lv:
         enable_warning: Vai tiešām vēlaties aktivizēt API? API atslēga nodrošina pilnu programmatisku piekļuvi jūsu kontam.
         enabled: API ir iespējota.
         header: API
-        info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+        info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
         not_enabled: API nav iespējota.
       cancel:
         confirm_message: Pēdējā iespēja. Vai esat pilnīgi pārliecināts, ka vēlaties dzēst kontu ar visiem datiem?
@@ -796,5 +796,5 @@ lv:
         remove_access_confirm: Vai tiešām vēlaties noņemt šī lietotāja piekļuvi šim kontam?
     web_hooks:
       index:
-        app_secret_info_html: Lietotnes noslēpums, kas ļauj ļoti stiprināt tīmekļa āķus. Sīkāku informāciju <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">skatiet dokumentācijā.</a>
+        app_secret_info_html: Lietotnes noslēpums, kas ļauj ļoti stiprināt tīmekļa āķus. Sīkāku informāciju <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">skatiet dokumentācijā.</a>
         header: Tīmekļa saites

@@ -285,7 +285,7 @@ ms:
         api:
           enable: Aktifkan API
           enable_warning: Adakah anda pasti mahu mengaktifkan API? Kekunci API memberikan akses penuh ke program anda ke akaun anda.
-          info_html: Hubungi khidmat pelanggan untuk mendapatkan bantuan. Dokumentasi boleh didapati di <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+          info_html: Hubungi khidmat pelanggan untuk mendapatkan bantuan. Dokumentasi boleh didapati di <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
           not_enabled: Tidak diaktifkan
         app_secret_info: Rahsia aplikasi untuk webhook yang sangat menarik
         delete_account_html: Adakah anda pasti mahu memadamkan akaun anda? <a href="%{link}">Ya, teruskan</a>

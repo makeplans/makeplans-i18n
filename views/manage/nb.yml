@@ -246,7 +246,7 @@ nb:
       api:
         enable: Aktiver API
         enable_warning: Er du sikker på at du vil aktivere API-tilgang? Med bruk av API-nøkkel har man full tilgang til å endre alt på kontoen.
-        info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a>.
+        info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a>.
         not_enabled: Ikke aktivert
       cancel:
         confirm_message: Siste sjanse. Er du helt sikker på at du vil slette kontoen med alle dine data?

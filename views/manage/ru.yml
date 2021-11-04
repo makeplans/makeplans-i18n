@@ -236,7 +236,7 @@ ru:
         enable_warning: Вы уверены, что хотите активировать API? API-ключ дает полный программный доступ к вашей учетной записи.
         enabled: API включен.
         header: API
-        info_html: Обратитесь в службу поддержки клиентов за помощью. Документация доступна на <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+        info_html: Обратитесь в службу поддержки клиентов за помощью. Документация доступна на <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
         not_enabled: API не включен.
       cancel:
         confirm_message: Последний шанс. Вы абсолютно уверены, что хотите удалить свою учетную запись со всеми своими данными?
@@ -796,5 +796,5 @@ ru:
         remove_access_confirm: Вы действительно хотите запретить этому пользователю доступ к этой учетной записи?
     web_hooks:
       index:
-        app_secret_info_html: Секрет приложения для улучшения веб-перехватчиков. Подробности см. В <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">документации</a> .
+        app_secret_info_html: Секрет приложения для улучшения веб-перехватчиков. Подробности см. В <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">документации</a> .
         header: Вебхуки

@@ -284,7 +284,7 @@ da:
         api:
           enable: Aktivér API
           enable_warning: Er du sikker på, at du vil aktivere API-adgang? Ved brug af API-nøgle har du fuld adgang til at ændre alt på kontoen.
-          info_html: Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+          info_html: Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
           not_enabled: Ikke aktiveret
         app_secret_info: Hemmelig kode til bekræftelse af webhooks
         delete_account_html: Vil du slette din konto? <a href="%{link}">Blive ved</a>

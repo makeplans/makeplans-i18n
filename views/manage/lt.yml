@@ -283,7 +283,7 @@ lt:
         api:
           enable: Suaktyvinti API
           enable_warning: Ar tikrai norite suaktyvinti API? API raktas suteikia visišką programinę prieigą prie jūsų paskyros.
-          info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu <a href="https://developer.makeplans.net" target="_blank" class="icon-link-ext">https://developer.makeplans.net</a> .
+          info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
           not_enabled: Neaktyvuota
         app_secret_info: Programos paslaptis, skirta žiniatinklio kabliams
         delete_account_html: Ar tikrai norite ištrinti savo sąskaitą? <a href="%{link}">Taip, tęskite</a>
