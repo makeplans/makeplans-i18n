@@ -274,9 +274,9 @@ en:
         booking_site_locale_default: Use account language
         cancellation: Cancellation
         cancellation_info: Cancellation can only be performed before the cancellation period. Reservations that are prepaid cannot be cancelled.
-        cancellation_period_info: 'Example: ''24 hours before'' (only possible to cancel 24 hours before the reservation starts).'
-        first_bookable_period_info: 'Example: ''in two hours'' (first available time is in two hours) or ''08:00 tomorrow'' (first available time is at 8AM tomorrow morning).'
-        future_bookable_period_info: 'Example: ''in two months'' (only possible to book the next two months) or ''Friday at midnight'' (only possible to reserve before midnight on Friday).'
+        cancellation_period_info: 'Example: ''24 hours before'' (only possible to cancel 24 hours before the reservation starts). When setting a date you must enter the full year.'
+        first_bookable_period_info: 'Example: ''in two hours'' (first available time is in two hours) or ''08:00 tomorrow'' (first available time is at 8AM tomorrow morning). When setting a date you must enter the full year.'
+        future_bookable_period_info: 'Example: ''in two months'' (only possible to book the next two months) or ''Friday at midnight'' (only possible to reserve before midnight on Friday). When setting a date you must enter the full year.'
         header: Update booking site
         interval_rounding:
           default: System default (Closest 5 minute mark)
