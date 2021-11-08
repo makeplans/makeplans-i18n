@@ -114,6 +114,17 @@ en:
 
         Or do you have any questions about using MakePlans or how to best configure your account? Just reply to this email and we can help you out :)
       subject: Complete your MakePlans setup
+    paused:
+      body: |-
+        Hi,
+
+        Your subscription to MakePlans will be paused at the end of this billing period (%{demo_ends_at}).
+        Be aware that you will be charged any transactional charges such as SMS as long as your account is active.
+
+        When your subscription is paused you can easily reactivate your account in the future.
+
+        If you have trouble getting MakePlans to work for your user case please reply to this email so we can help you configure your account and explain how you can best use MakePlans based on your requirements.
+      subject: Your account will be paused
     setup_completed:
       contact_us_html: And if you have any questions just email us at %{mail}
       footer: MakePlans
