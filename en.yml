@@ -303,6 +303,7 @@ en:
         purge_data_period: Automatic deletion of personal identifiable information
         reminder_sms: Send SMS reminders
         resource_form: Custom resource fields
+        require_terms_acceptance: Require terms to be accepted
         service_form: Custom service fields
         service_template: Calendar style
         service_templates:
@@ -318,7 +319,7 @@ en:
         sms_verification: Text in verification SMS
         subdomain: URL (subdomain)
         template: Design theme
-        terms: Terms
+        terms: Terms and conditions
         time_zone: Timezone
         verification_method: Verification method for new reservations
       event:
