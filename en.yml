@@ -70,6 +70,7 @@ en:
         follow_up: follow up
       person:
         address: address
+        blocked: Blocked for reservations
         city: city
         country_code: country
         created_at: registered
@@ -113,6 +114,7 @@ en:
               time_not_available: is fully booked
             person_id:
               taken: already signed up for this event
+              blocked: blocked for booking
             resource_id:
               no_availability: not avaiable at requested time
             service_id:
@@ -131,6 +133,7 @@ en:
         person:
           missing: is not saved on your customer profile. Please contact us to correct it.
           no_values_present: Name, phone number or email is required.
+          blocked: Your account is not able to make any bookings.
         resource:
           has_bookings: This resource has bookings. Cannot be deleted. Please contact support.
         service:
@@ -422,6 +425,7 @@ en:
       cancel_confirm: Are you sure you want to cancel?
       category:
         new: New category
+      confirm: Are you sure?
       create: Create
       delete: Delete
       delete_confirm: Are you sure you want to delete?

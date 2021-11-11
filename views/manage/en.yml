@@ -594,6 +594,8 @@ en:
         merge_action_phone_number: This phone number is already stored on another customer. Do you want to merge these two customers to %{phone_number} will be used as the phone number?
         merge_button: Merge and save
         merge_info: 'Instead use: '
+        block: Block customer for booking
+        unblock: Remove booking block
       index:
         delete_warning: Are you sure you want to delete %{person}?
         filter: Filtering

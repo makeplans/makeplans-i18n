@@ -117,6 +117,7 @@ nb:
               time_not_available: er fullt
             person_id:
               taken: er allerede påmeldt dette arrangementet.
+              blocked: blokkert for reservasjoner.
             resource_id:
               no_availability: ikke tilgjengelig på valgt tidspunkt
             service_id:
@@ -133,6 +134,7 @@ nb:
         person:
           missing: er ikke lagret på din kundeprofil. Kontakt oss for å rette opp i dette.
           no_values_present: Navn, telefonnummer eller epost er påkrevd.
+          blocked: Ikke mulig å gjøre reservasjoner med denne kontoen.
         resource:
           has_bookings: Denne ressursen har aktive reservasjoner og kan dermed ikke slettes. Kontakt kundeservice.
         service:
@@ -362,6 +364,7 @@ nb:
         follow_up: Oppfølgning
       person:
         address: Adresse
+        blocked: Blokkert for reservasjoner
         city: By
         country_code: Land
         created_at: Registrert
@@ -429,6 +432,7 @@ nb:
       cancel_confirm: Er du sikker på at du vil kansellere?
       category:
         new: Ny kategori
+      confirm: Er du sikker?
       create: Opprett
       delete: Slett
       delete_confirm: Er du sikker på at du vil slette?

@@ -571,6 +571,8 @@ nb:
         merge_action_phone_number: Dette telefonnummeret er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{phone_number} blir det gjeldene telefonnummeret?
         merge_button: Kombiner og lagre
         merge_info: 'Bruk heller: '
+        block: Blokker kunde for booking
+        unblock: Fjern blokkering av booking
       index:
         delete_warning: Er du sikker på at du vil slette %{person}?
         filter: Filtrering
