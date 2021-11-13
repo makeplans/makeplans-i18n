@@ -86,6 +86,7 @@ en:
       resource:
         capacity: capacity
         mail_notification_recipient: email address(es) for notification
+        sms_notification_recipient: phone number for notification
         title: title
       service:
         payment_required: require pre-payment
@@ -317,6 +318,7 @@ en:
         sms_confirmation: Text in confirmation SMS
         sms_modification: Text in modification SMS
         sms_notification: Receive SMS for each new reservation
+        sms_notification_recipient: Phone number for notification
         sms_reminder: Text in SMS reminder
         sms_reminder_time: Time for SMS reminder
         sms_verification: Text in verification SMS
@@ -373,6 +375,7 @@ en:
       resource:
         capacity: Max number of reservations at the same time
         mail_notification_recipient: Email address(es) for notification
+        sms_notification_recipient: Phone number for notification
         title: Title
       service:
         booking_capacity: Max number of people per reservation

@@ -89,6 +89,7 @@ nb:
       resource:
         capacity: kapasitet
         mail_notification_recipient: epost-adresser for varsling
+        sms_notification_recipient: telefonnummer for varsling
         title: tittel
       service:
         payment_required: krev forhåndsbetaling
@@ -319,6 +320,7 @@ nb:
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
         sms_modification: Tekst i SMS som blir sendt ved endring
         sms_notification: Motta varsling på SMS for hver nye reservasjon
+        sms_notification_recipient: Telefonnummer for varsling
         sms_reminder: Tekst i SMS som blir sendt ved påminnelse
         sms_reminder_time: Tidspunkt for SMS påminnelse
         sms_verification: Tekst i SMS som blir sendt ved verifisering
@@ -382,6 +384,7 @@ nb:
       resource:
         capacity: Maks antall reservasjoner på samme tidspunkt
         mail_notification_recipient: Epost-adresser for varsling
+        sms_notification_recipient: Telefonnummer for varsling
         title: Tittel
       service:
         booking_capacity: Maks antall personer per reservasjon
