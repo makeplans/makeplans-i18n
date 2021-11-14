@@ -157,7 +157,7 @@ nb:
     providers:
       index:
         show_all_available: Vis alle ledige
-        show_only_selected: 'Eller vis kun fra ønsket kalender:'
+        show_only_selected: 'Eller vis kun fra ønsket %{resource_title}:'
     services:
       index:
         none_available: Ingen tjenester tilgjengelig.

@@ -153,7 +153,7 @@ en:
     providers:
       index:
         show_all_available: Show all available
-        show_only_selected: 'Or only show from selected calendar:'
+        show_only_selected: 'Or only show from selected %{resource_title}:'
     services:
       index:
         none_available: No services available.
