@@ -704,7 +704,7 @@ en:
         interval_rounding:
           default: Default account setting
           five: Closets five minutes
-          halfhour: Closes half hour
+          halfhour: Closest half hour
           hour: Closest hour
           none: No rounding (not recommended)
           quarter: Closest quarter
