@@ -30,7 +30,7 @@ lv:
   user_password_resets:
     create:
       header: Atiestatīt paroli
-      info: Esam nosūtījuši jums e-pastu. Lai apstiprinātu paroles atiestatīšanu, jums sekojiet saitei e-pastā.
+      info: Esam nosūtījuši jums e-pastu. Lai apstiprinātu paroles atiestatīšanu, lūdzu sekojiet saitei e-pastā.
       signup_html: Nav konta? <a href="%{url}">Sāc tagad.</a>
     edit:
       header: Lūdzu, ievadiet jauno paroli
@@ -52,4 +52,5 @@ lv:
       signup_html: Nav konta? <a href="%{url}">Sāc tagad.</a>
     rotp_verification_code:
       header: Piesakieties ar divu faktoru autentifikāciju
+      info: Izmantojiet kodu, ko saņemat 2-faktoru autentifikācijas aplikācijā.
       submit: Pieslēgties
