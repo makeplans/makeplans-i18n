@@ -44,31 +44,33 @@ lv:
         manager: Vadītājs
         staff: Darbinieks
       event:
-        booking_capacity: maksimāli atļautais cilvēku skaits vienā rezervācijā
+        booking_capacity: maksimāli atļautais cilvēku skaits vienā pierakstā
         capacity: maksimāli atļautie cilvēki
         description: apraksts
         ends_at: beidzas
-        first_booking_at: nav rezervāciju pirms
-        last_booking_at: pēdējā rezervācija pirms
+        first_booking_at: nav pierakstu pirms
+        last_booking_at: pēdējais pieraksts pirms
         resource_id: resurss
         service_id: pakalpojums
         starts_at: sākas
         title: nosaukums
       message_template:
-        delivery_timing: piegādes laiks
-        delivery_type: piegādes veids
+        active: aktīvs
         message_type: ziņojuma veids
+        delivery_type: piegādes veids
+        delivery_timing: piegādes laiks
         subject: priekšmets
         template: šablons
       message_template/delivery_type:
-        email: e-pasts
         sms: īsziņa
+        email: e-pasts
       message_template/message_type:
         confirmation: apstiprinājums
-        follow_up: sekojums/papildinājums
         reminder: atgādinājums
+        follow_up: sekojums/papildinājums
       person:
         address: adrese
+        blocked: Bloķēts no pierakstīšanās
         city: pilsēta
         country_code: valsts
         created_at: reģistrēts
@@ -84,6 +86,7 @@ lv:
       resource:
         capacity: kapacitāte
         mail_notification_recipient: e-pasta adrese(s) paziņojumiem
+        sms_notification_recipient: telefona numurs paziņojumiem
         title: nosaukums
       service:
         payment_required: pieprasīt priekšapmaksu
@@ -102,16 +105,17 @@ lv:
         illegal: neatbilstošs
         invalid: nederīgs
         phone_invalid: nederīgs tālruņa numurs
-        time_not_available: Izvēlētajā laikā nav pieejams rezervācijai
+        time_not_available: Izvēlētajā laikā nav pieejams pieraksts
       models:
         booking:
           attributes:
             count:
-              over_booking_capacity: Vairāk nekā maksimālais atļautais cilvēku skaits vienā rezervācijā
+              over_booking_capacity: Vairāk nekā maksimālais atļautais cilvēku skaits vienā pierakstā
             event_id:
               time_not_available: ir pilnībā rezervēts
             person_id:
               taken: jau reģistrējies šim pasākumam
+              blocked: bloķēts no pierakstīšanās
             resource_id:
               no_availability: nav pieejams pieprasītajā laikā
             service_id:
@@ -125,12 +129,16 @@ lv:
           attributes:
             base:
               denied: Noraidīts
+        client_user_link:
+          admin_needed: Nepieciešams vismaz viens admin lietotājs uz kontu.
         person:
           missing: nav saglabāts jūsu klienta profilā. Lūdzu, sazinieties ar mums, lai to labotu.
           no_values_present: Nepieciešams vārds, tālruņa numurs vai e-pasts.
+          blocked: Jūsu konts nevar veidot jaunus pierakstus.
         resource:
-          has_bookings: Šim resursam ir rezervācijas. Nevar izdzēst. Lūdzu, sazinieties ar atbalsta dienestu.
+          has_bookings: Šim resursam ir pieraksti. To nevar dzēst. Lūdzu, sazinieties ar atbalsta dienestu.
         service:
+          payment_price_required: jāuzstāda ja vēlaties pieprasīt samaksu
           below_minimum: jābūt vairāk par 1 USD, ja vēlaties pieprasīt samaksu
         user:
           attributes:
@@ -153,6 +161,18 @@ lv:
       service_attendance: pasākuma veids
       user: lietotājs
       web_hook: webhook
+    date:
+      formats:
+        date_month_name: "%e. %B"
+      datepicker: "%Y.%m.%d"
+      day_name: "%A"
+      day_name_abbr: "%a"
+      full_date: "%A, %Y. gada %e. %B "
+      month_name: "%B"
+      short_with_name: "%a, %e. %b"
+      short_with_name_and_year: "%a, %e. %b, %Y"
+    moment_format: YYYY.MM.DD
+    moment_parse: YYYY.M.D
   errors:
     messages:
       no_values_present: Nepieciešams vārds, tālruņa numurs vai e-pasts.
@@ -166,10 +186,12 @@ lv:
       person:
         perishable_token:
           invalid: Nepareizs kods
+          no_identifier: Trūkst epasts vai tel.
+          expired: Izbeidzies koda derīguma termiņš. Lūdzu mēģiniet vēlreiz.
     stripe:
       booking:
-        invalid: Rezervācijas derīguma termiņš ir beidzies vai tā nav derīga. Darījums nav apstrādāts.
-        paid: Rezervācija jau apmaksāta. Mēģiniet atkārtoti ielādēt lapu.
+        invalid: Pieraksta derīguma termiņš ir beidzies vai tas nav derīgs. Darījums nav apstrādāts.
+        paid: Pieraksts jau apmaksāts. Mēģiniet atkārtoti ielādēt lapu.
       card:
         missing: Nevar iegūt kartes informāciju
       processor: 'Kļūda no mūsu maksājumu apstrādātāja: %{error}'
@@ -222,12 +244,19 @@ lv:
       category:
         parent_id: Virskategorija
         title: Nosaukums
+      client_user_link:
+        role: Piekļuves līmenis
+      client_user_link/role:
+        admin: Pilna piekļuve
+        manager: Pamata iestatījumi
+        staff: Tikai kalendāri
       client:
         address: Apmeklējuma adrese
         allow_cancellation: Atļaut klienta ievadītu atcelšanu
         api_key: API atslēga (ārējai integrācijai)
         app_secret: Konta noslēpums
-        appointment_form: Pielāgoti rezervācijas lauki
+        appointment_form: Pielāgoti pieraksta lauki
+        awaiting_confirmation_text: Teksts, kas redzams, kad pieraksts gaida apstiprinājumu
         billing_city: Pilsēta
         billing_country_code: Valsts
         billing_email: E-pasta adrese rēķinam
@@ -241,22 +270,22 @@ lv:
         billing_state: Reģionālā iedalījuma vienība
         billing_street: Iela
         billing_vat_no: PVN nr
-        booking_form: Pielāgota rezervācijas veidlapa
+        booking_form: Pielāgota pieraksta forma
         cancellation_period: Anulēšanas periods
         category_form: Pielāgoti kategorijas lauki
         closed_for_holidays: Svētku dienās slēgts
-        confirm_manually: Rezervācijas jāapstiprina administratoram
+        confirm_manually: Pierakstus jāapstiprina administratoram
         country_code: Valsts
         css_url: Pielāgots CSS (URL jābūt HTTPS)
         currency: Valūta
         email: Epasta adrese
-        email_notification: Saņemiet e-pasta paziņojumu par katru jauno rezervāciju
+        email_notification: Saņemiet e-pasta paziņojumu par katru jauno pierakstu
         event_form: Pielāgoti notikuma lauki
         first_bookable_period: Neatļaut rezervēt līdz
         footer: Kājene (footer)
         future_bookable_period: Neatļaut rezervēt pēc
         google_analytics: Google Analytics izsekošanas ID
-        interval_rounding: Noapaļošana uz nākamo pieejamo rezervēšanas laiku pēc noklusējuma
+        interval_rounding: Noapaļošana uz nākamo pieejamo pieraksta laiku pēc noklusējuma
         locale: Valoda (nosaka arī numuru un datuma formatējumu)
         logo: Logotips
         mail_cancellation: Teksts atcelšanas e-pastā
@@ -268,16 +297,17 @@ lv:
         mail_notification_recipient: E-pasta adrese(s) paziņošanai
         mail_verification: Teksts verifikācijas e-pastā
         mail_verification_subject: Temats verifikācijas e-pastā
-        name: Uzņēmuma nosaukums (redzams rezervācijas vietnē)
+        name: Uzņēmuma nosaukums (redzams pierakstīšanās vietnē)
         new_booking_text: Apstiprinājuma lapā redzamais teksts
-        new_user_text: Teksts, kas tiek parādīts pirms rezervācijas veidlapas
-        payment_provider: Maksājumu nodrošinātājs (priekšapmaksas rezervācijām)
+        new_user_text: Teksts, kas tiek parādīts pirms pieraksta formas
+        payment_provider: Maksājumu nodrošinātājs (priekšapmaksas pierakstiem)
         person_form: Pielāgoti klienta lauki
         phone_number: Tālruņa numurs paziņojumiem
-        public_access: Rezervēšanas vietne publiski pieejama
+        public_access: Pieraksta vietne publiski pieejama
         purge_data_period: Automātiska personu identificējošas informācijas dzēšana
         reminder_sms: Sūtīt SMS atgādinājumus
         resource_form: Pielāgotu resursu lauki
+        require_terms_acceptance: Pieprasīt piekrišanu datu politikai, lai pieņemtu 
         service_form: Pielāgotu pakalpojumu lauki
         service_template: Kalendāra stils
         service_templates:
@@ -287,7 +317,8 @@ lv:
         sms_cancellation: Teksts atcelšanas īsziņā
         sms_confirmation: Teksts apstiprinājuma īsziņā
         sms_modification: Teksts labojuma īsziņā
-        sms_notification: Saņemiet īsziņu par katru jauno rezervāciju
+        sms_notification: Saņemiet īsziņu par katru jauno pierakstu
+        sms_notification_recipient: Tel. SMS paziņojumiem 
         sms_reminder: Teksts atgādinājuma īsziņā
         sms_reminder_time: Laiks atgādinājuma īsziņām
         sms_verification: Teksts verifikācijas īsziņā
@@ -295,10 +326,10 @@ lv:
         template: Dizaina tēma
         terms: Noteikumi
         time_zone: Laika zona
-        verification_method: Verifikācijas metode jaunām rezervācijām
+        verification_method: Verifikācijas metode jauniem pierakstiem
       event:
         all_day: Visu dienu
-        booking_capacity: Maks. dalībnieku skaits vienā rezervācijā
+        booking_capacity: Maks. dalībnieku skaits vienā pierakstā
         capacity: Maks. dalībnieku skaits
         description: Apraksts
         ends_at: Beidzas
@@ -306,12 +337,13 @@ lv:
         last_booking_at: Nav pierakstu pēc
         payment_required: Nepieciešams maksājums
         price: Cena iekļaujot nodokļus
-        published: Redzams rezervācijas vietnē
+        published: Redzams pierakstīšanās vietnē
         resource_id: Resurss
         service_id: Pasākuma veids
         starts_at: Sākas
         title_html: Norādītais nosaukums <small>nav obligāts</small>
       message_template:
+        active: Active
         delivery_timing: Piegādāt
         delivery_type: Piegādes veids
         message_type: Ziņojuma veids
@@ -341,12 +373,13 @@ lv:
         street: Iela
         tfso_company_id: 24SO klienta ID
       resource:
-        capacity: Maksimālais rezervāciju skaits vienlaikus
+        capacity: Maksimālais pierakstu skaits vienlaikus
         mail_notification_recipient: E-pasta adrese(s) ziņojumiem
+        sms_notification_recipient: Tel. SMS paziņojumiem
         title: Nosaukums
       service:
-        booking_capacity: Maksimālais cilvēku skaits vienā rezervācijā
-        booking_form: Pielāgota rezervācijas veidlapa
+        booking_capacity: Maksimālais cilvēku skaits vienā pierakstā
+        booking_form: Pielāgota pierakstīšanās forma
         capacity: Maksimālais dalībnieku skaits
         description: Apraksts
         has_day_booking: Laika tips
@@ -359,12 +392,12 @@ lv:
         mail_confirmation: Īsziņa apstiprinājuma e-pastā
         mail_modification: Teksts labojuma e-pastā
         mail_verification: Teksts verifikācijas e-pastā
-        max_slots: Maksimālais vietu skaits vienā rezervācijā
+        max_slots: Maksimālais vietu skaits vienā pierakstā
         next_interval: Vieta pieejama ik
         payment_required: Pieprasīt samaksu
         price: Cena iekļaujot nodokļus
-        published: Rādīt rezervācijas vietnē
-        same_day: Atļaut rezervēšanu vairāku dienu laikā
+        published: Rādīt pierakstīšanās vietnē
+        same_day: Atļaut pierakstīšanos vairāku dienu laikā
         sms_cancellation: Teksts atcelšanas īsziņā
         sms_confirmation: Teksts apstiprinājuma īsziņā
         sms_modification: Teksts labojuma īsziņā
@@ -391,10 +424,11 @@ lv:
       add: Pievienot
       back: Atpakaļ
       booking:
-        new: Jauna rezervācija
+        new: Jauns pieraksts
       cancel_confirm: Esat pārliecināti, ka vēlaties atcelt?
       category:
         new: Jauna kategorija
+      confirm: Vai esat pārliecināti?
       create: Izveidot
       delete: Dzēst
       delete_confirm: Esat pārliecināti, ka vēlaties dzēst?
@@ -427,7 +461,7 @@ lv:
       setup: Uzstādījumi
     menu_setup:
       billing: Norēķini
-      bookingsite: Rezervēšanas vietne
+      bookingsite: Pierakstīšanās vietne
       categories: Kategorijas
       communication: Komunikācija
       company: Konts
@@ -455,7 +489,7 @@ lv:
           number: Kartes numurs nav derīgs.
         expiration_html: Derīguma termiņš <small>(MM / GG)</small>
         number: Kartes numurs
-      header: Šī veidlapa tiks šifrēta un droši nosūtīta
+      header: Šī forma tiks šifrēta un droši nosūtīta
     select:
       prompt: Lūdzu izvēlieties
     submit:
@@ -470,7 +504,19 @@ lv:
       invoice_client:
         errors:
           nothing_to_invoice: Konts nav gatavs rēķinu sagatavošanai. Lūdzu, pārliecinieties, vai jums ir vismaz viens resurss.
-        invoice_text: MakePlans tiešsaistes rezervācijas izmantošana
+        invoice_text: MakePlans tiešsaistes pierakstīšanās izmantošana
+  time:
+    24h: true
+    formats:
+      db: "%Y-%m-%d %H:%M"
+      long_dayname: "%A, %Y. gada %e. %B , %H:%M"
+      short_mailer: "%e. %B plkst. %H:%M"
+      shorter: "%Y.%m.%d. %H:%M"
+      time: "%H:%M"
+      time_with_word: plkst. %H:%M
+      timepicker: "%H:%M"
+    moment_format: HH:mm
+    timepicker_format: H:i 
   title:
     actions:
       edit: Rediģēt
@@ -488,7 +534,7 @@ lv:
       fallback: Vietnē MakePlans tika izveidots jauns pieraksts
       footer: MakePlans API
       pretext: "%{person} izveidoja pierakstu %{booked_from}"
-      title: Skatiet pierakstu vietnē MakePlans
+      title: Skatiet pierakstīšanās vietnē MakePlans
     integration_tfso_list_companies:
       errors:
         no_results: Nav atrasti esošie klienti.
