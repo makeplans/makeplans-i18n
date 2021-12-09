@@ -161,18 +161,6 @@ lv:
       service_attendance: pasākuma veids
       user: lietotājs
       web_hook: webhook
-    date:
-      formats:
-        date_month_name: "%e. %B"
-      datepicker: "%Y.%m.%d"
-      day_name: "%A"
-      day_name_abbr: "%a"
-      full_date: "%A, %Y. gada %e. %B "
-      month_name: "%B"
-      short_with_name: "%a, %e. %b"
-      short_with_name_and_year: "%a, %e. %b, %Y"
-    moment_format: YYYY.MM.DD
-    moment_parse: YYYY.M.D
   errors:
     messages:
       no_values_present: Nepieciešams vārds, tālruņa numurs vai e-pasts.
@@ -505,18 +493,6 @@ lv:
         errors:
           nothing_to_invoice: Konts nav gatavs rēķinu sagatavošanai. Lūdzu, pārliecinieties, vai jums ir vismaz viens resurss.
         invoice_text: MakePlans tiešsaistes pierakstīšanās izmantošana
-  time:
-    24h: true
-    formats:
-      db: "%Y-%m-%d %H:%M"
-      long_dayname: "%A, %Y. gada %e. %B , %H:%M"
-      short_mailer: "%e. %B plkst. %H:%M"
-      shorter: "%Y.%m.%d. %H:%M"
-      time: "%H:%M"
-      time_with_word: plkst. %H:%M
-      timepicker: "%H:%M"
-    moment_format: HH:mm
-    timepicker_format: H:i 
   title:
     actions:
       edit: Rediģēt
