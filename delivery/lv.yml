@@ -2,71 +2,98 @@
 lv:
   booking_ical:
     summary: "%{service} pie %{client}"
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Jūsu pieraksts "%{title}" ir ticis atcelts sekojošajos laikos:'
+      subject: 'Atcelti pieraksti'
+    create:
+      body: 'Jūs esat viekuši pierakstu "%{title}" sekojošajiem laikiem:'
+      subject: 'Jauni pieraksti'
   booking_mailer:
     cancellation:
-      header: Sveiks, %{name}
-      info: Jūsu rezervācija vietnei %{title} vietnē %{time_range} ir atcelta.
-      subject: Rezervācija atcelta
+      header: Sveiki, %{name}
+      body: Jūsu pieraksts "%{title}" %{time_range} ir ticis atcelts.
+      subject: Pieraksts atcelts
     confirmation:
-      header: Sveiks, %{name}
-      info: Jūs esat rezervējis %{title} %{time_range}.
-      link: Plašāka informācija par jūsu rezervāciju
-      link_cancellation_info: un atcelšanas iespējas
-      resource_info: 'Rezervācija ar: %{resource}.'
-      subject: Jauna rezervācija
-      subject_service: Rezervācija %{service}
+      header: Sveiki, %{name}
+      info: Jūs esat pierakstījušies pakalpojumam "%{title}" %{time_range}.
+      link: Plašāka informācija par jūsu pierakstu
+      link_cancellation_info: un atcelšanas iespējām
+      resource_info: 'Pieraksts pie: %{resource}.'
+      subject: Jauns pieraksts
+      subject_service: Pieraksts "%{service}"
     declined:
       body: |-
         Sveiki,
-
-        Jūsu rezervācija netika apstiprināta.
-      subject: Rezervācija noraidīta
+        
+        Jūsu pieraksts diemžēl nav ticis apstiprināts.
+      subject: Pieraksts noraidīts
     modification:
-      header: Sveiks, %{name}
-      info: 'Jūsu rezervācija ir mainīta uz: %{title} %{time_range}.'
-      link: Plašāka informācija par jūsu rezervāciju
-      link_cancellation_info: un atcelšanas iespējas
-      resource_info: 'Rezervācija ar: %{resource}.'
-      subject: Rezervācija mainīta
+      header: Sveiki, %{name}
+      info: 'Jūsu pieraksts ir mainīts uz: %{title} %{time_range}.'
+      link: Plašāka informācija par jūsu pierakstu
+      link_cancellation_info: un atcelšanas iespējām
+      resource_info: 'Pieraksts pie: %{resource}.'
+      subject: Pieraksts mainīts
     request_card:
-      header: Sveiks, %{name}
-      info: Lai ērti samaksātu rezervāciju, lūdzu, pievienojiet savu kredītkartes informāciju.
-      link: Pievienojiet maksājumu karti
-      subject: Pievienojiet savu maksājumu informāciju
+      header: Sveiki, %{name}
+      info: Lai ērti apmaksātu pierakstu, lūdzu pievienojiet savu maksājumu kartes informāciju.
+      link: Pievienot maksājumu karti
+      subject: Pievienojiet maksājumu informāciju
     verification:
-      footer: 'Svarīgi: rezervācija vēl nav pabeigta. Ja jūs nepārbaudīsit rezervāciju, noklikšķinot uz iepriekš redzamās saites %{expires_in} minūšu laikā, jūsu rezervācija var beigties.'
-      header: Lai pabeigtu %{title} %{time_range} rezervāciju, jums ir jāapstiprina rezervācija, noklikšķinot uz zemāk esošās saites.
-      link: Apstipriniet rezervāciju
-      subject: Lūdzu, apstipriniet rezervāciju
+      footer: 'Svarīgi: pieraksts vēl nav pabeigts. Ja jūs neapstiprināsiet pierakstu, sekojot iepriekš norādītajai saitei %{expires_in} minūšu laikā, jūsu pieraksta laika rezervācija var beigties.'
+      header: Lai pabeigtu pierakstu %{title} %{time_range}, jums to jāapstiprina , sekojot zemāk norādītajai saitei.
+      link: Apstiprināt pierakstu
+      subject: Lūdzu, apstipriniet pierakstu
   booking_sms:
-    admin_notification_confirmation:
+    admin_notification_approvement:
       booking_type_appointment: |-
-        Jauna {{ booking.resource.title }} rezervācija, ko veic {{ booking.person.name }}. {{ booking.title }} uz {{ booking.time_range }}
+        NEPIECIEŠAMA DARBĪBA: Pieraksta formu aizpildījis(-usi) {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} {{ booking.time_range }}
+        
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+        
         MakePlans
       booking_type_attendance: |-
-        Jauna reģistrēšanās {{ booking.event.full_title }} {{ booking.time_range }} ar {{ booking.person.name }}.
+        NEPIECIEŠAMA DARBĪBA: Pasākuma pieraksta formu aizpildījis(-usi) {{ booking.person.name }}, pasākumam {{ booking.event.full_title }} {{ booking.time_range }}.
+        
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+        
         MakePlans
-    cancellation: Jūsu rezervācija vietnē {{ booking.booked_from }} ir atcelta.
-    confirmation: Jūs esat rezervējis {{ booking.title }} {{ booking.booked_from }}.
-    declined: Jūsu pieprasījums rezervēt {{ booking.title }} {{ booking.booked_from }} netika apstiprināts. Lūdzu mēģiniet vēlreiz.
-    modification: 'Jūsu rezervācija ir mainīta: {{ booking.title }} {{ booking.booked_from }}.'
-    reminder: 'Atgādinājums: {{ booking.title }} {% if booking.service != nil %} rezervācija {% endif %}{{ booking.booked_from }}.'
-    request_card: Lūdzu, pievienojiet savu maksājumu informāciju vietnē %{url}
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        ATCĒLUMS: {{ booking.person.name }} atcēlis(-usi) pierakstu pie {{ booking.resource.title }} - {{ booking.title }} {{ booking.time_range }}.
+        MakePlans
+      booking_type_attendance: |-
+        ATCĒLUMS: {{ booking.person.name }} atcēlis(-usi) pierakstu uz {{ booking.event.full_title }} {{ booking.time_range }}.
+        MakePlans
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Jauns {{ booking.resource.title }} pieraksts. Pierakstījies(-usies) {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        Jauna pieraksts uz {{ booking.event.full_title }} {{ booking.time_range }}. Pierakstījies(-usies) {{ booking.person.name }}.
+        MakePlans
+    cancellation: Jūsu pieraksts vietnē {{ booking.booked_from }} ticis atcelts.
+    confirmation: Jūs esat pierakstījušies {{ booking.title }} {{ booking.booked_from }}.
+    declined: Jūsu pieprasījums rezervēt {{ booking.title }} {{ booking.booked_from }} netika apstiprināts. Lūdzu mēģiniet vēlreiz, vai sazinieties ar pakalpojuma sniedzēju.
+    modification: 'Jūsu pieraksts ticis mainīts: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Atgādinājums: {% if booking.service != nil %} pieraksts {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: Lūdzu, pievienojiet savu maksājumu datus vietnē %{url}
     signature: |2-
-
+    
       {{ booking.client.name }}
-    verification: "{{ booking.verification_code }} ir jūsu verifikācijas kods {{ booking.title }} rezervēšanai."
+    verification: "{{ booking.verification_code }} Jūsu pakalpojuma {{ booking.title }} pieraksta rezervācijas kods ir {{ booking.verification_code }}."
   person_mailer:
     export:
       subject: Datu eksportēšana
     perishable_token:
       body: |-
-        Lai pieteiktos, noklikšķiniet uz tālāk redzamās saites:
-
+        Lai pieteiktos, klikšķiniet sekojošo saiti:
+        
         %{link}
       subject: Piesakieties MakePlans
   person_sms:
-    perishable_token: "{{ perishable_token }} ir jūsu kods autentifikācijai."
+    perishable_token: "{{ perishable_token }} ir jūsu autentifikācijas kods."
     signature: |2-
-
+    
       {{ client.name }}
