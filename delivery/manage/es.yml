@@ -114,6 +114,17 @@ es:
 
         ¿O tiene alguna pregunta sobre el uso de MakePlans o sobre cómo configurar mejor su cuenta? Solo responde a este correo electrónico y te ayudaremos :)
       subject: Completa la configuración de MakePlans
+    paused:
+      body: |-
+        Hola,
+
+        Su suscripción a MakePlans se detendrá al final de este período de facturación (%{demo_ends_at}).
+        Tenga en cuenta que se le cobrará cualquier cargo transaccional, como SMS, siempre que su cuenta esté activa.
+
+        Cuando su suscripción está en pausa, puede reactivar fácilmente su cuenta en el futuro.
+
+        Si tiene problemas para hacer que MakePlans funcione para su caso de usuario, responda a este correo electrónico para que podamos ayudarlo a configurar su cuenta y explicar cómo puede usar MakePlans de la mejor manera en función de sus requisitos.
+      subject: Su cuenta será pausada
     setup_completed:
       contact_us_html: Y si tiene alguna pregunta, envíenos un correo electrónico a %{mail}
       footer: MakePlans
@@ -137,6 +148,32 @@ es:
       link_info: Aquí es donde encontrará su calendario con una descripción general de todas las reservaciones, además de poder configurar su cuenta.
       registered: 'Ahora se ha registrado para obtener una cuenta de prueba gratuita en:'
       subject: Bienvenido a MakePlans
+    sms_credits_balance_reached:
+      body: |-
+        Hola,
+
+        Su cuenta MakePlans tiene un límite de envío de SMS %{sms_balance_limit}. Ahora ha pasado ese límite.
+
+        Ya no se envían SMS desde su cuenta.
+
+        Comprar créditos de SMS:
+        %{url}
+
+        Alternativamente, puede iniciar sesión en su cuenta y cambiar el método de verificación de SMS a correo electrónico y deshabilitar los recordatorios por SMS.
+      subject: 'ACCIÓN REQUERIDA: Ha utilizado todos sus créditos de SMS'
+    sms_credits_balance_warning:
+      body: |-
+        Hola,
+
+        Su cuenta MakePlans tiene un límite de envío de SMS %{sms_balance_limit}. Actualmente has enviado %{sms_balance}.
+
+        Cuando llegue a los mensajes %{sms_balance_limit}, su cuenta ya no enviará SMS a menos que compre más créditos para SMS.
+
+        Comprar créditos de SMS:
+        %{url}
+
+        Alternativamente, puede iniciar sesión en su cuenta y cambiar el método de verificación de SMS a correo electrónico y deshabilitar los recordatorios por SMS.
+      subject: Tus créditos de SMS se están agotando
     trial_expire_warning:
       body: |-
         Hola,

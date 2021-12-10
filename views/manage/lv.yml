@@ -74,6 +74,7 @@ lv:
         edit_info_link: Vai vēlaties mainīt norēķinu informāciju?
         edit_link: Vai vēlaties atjaunināt kredītkartes datus?
         email_recipent: Mēs nosūtīsim rēķinu pa e-pastu uz %{email}.
+        header: Maksājumu informācija
         info_header: 'Jūsu norēķinu informācija:'
         paid_until: Jūsu konts tiek apmaksāts līdz %{paid_until}.
         pause: Pārtrauciet konta darbību, kad beidzas pašreizējais abonements.
@@ -91,6 +92,9 @@ lv:
         error: Nevar pārbaudīt maksājumu. Lūdzu, sazinieties ar klientu apkalpošanas centru.
         info: Lūdzu, uzgaidiet, kamēr mēs iekasēsim maksu no jūsu maksājumu kartes. Tas var ilgt vienu minūti. Kad process būs pabeigts, jūs saņemsiet no mums e-pastu.
     bookings:
+      cancel_recurring:
+        headline: Visas turpmākās rezervācijas šajā atkārtotajā shēmā tika noņemtas
+        list_recurring: Skatiet atrunu sarakstu šajā atkārtotajā shēmā.
       create_recurring:
         headline: Notiek %{count} rezervāciju ģenerēšana ...
         link: Rādīt sarakstu
@@ -111,6 +115,7 @@ lv:
         headline_create_recurring: Pievienot jaunu rezervāciju
         headline_edit: Mainīt rezervāciju
         headline_new: Pievienot jaunu rezervāciju
+        headline_update: Mainīt rezervāciju
         ignore_capacity: Ietaupiet pat tad, ja esat aizņemts
         modification_send_email: Nosūtīt modifikācijas e-pastu
         modification_send_sms: Sūtīt SMS modifikāciju
@@ -136,6 +141,7 @@ lv:
         headline_create: Pievienot pavadoni
         headline_edit: Mainīt rezervāciju
         headline_new: Pievienot pavadoni
+        headline_update: Mainīt rezervāciju
         modification_send_email: Nosūtīt e-pasta izmaiņas
         modification_send_sms: Sūtīt SMS modifikāciju
         notification_send_email: Sūtīt paziņojumu pa e-pastu
@@ -153,6 +159,7 @@ lv:
         result_header: iZettle
         success: Maksājums reģistrēts.
       show:
+        amount: Kopējā cena
         booked_from: 'No'
         booked_to: Uz
         count: Cilvēku skaits
@@ -194,11 +201,17 @@ lv:
           create_invoice: Izveidojiet pasūtījumu Visma e-grāmatvedībā
           created: Rēķins tiek izveidots Visma eAccounting
           processing: Pasūtījums tiek veidots Visma eAccounting. Tas var aizņemt dažas minūtes.
+        zoom:
+          start_meeting: Sāciet Zoom sapulci
       show_recurring:
+        cancel_all_future: Atcelt visas turpmākās tikšanās
         delete_all: Dzēst visus
         headline: Visas atkārtotās atrunas šajā modelī
       state_changer:
         state: Valsts
+      status_changer:
+        cancel: Atcelt rezervāciju
+        status: Iestatīt statusu
       unconfirmed:
         headline: Rezervāciju saraksts apstiprināšanai
         no_reservations: Nav atrunu, kurai nepieciešama apstiprināšana
@@ -219,8 +232,10 @@ lv:
         get_started: Pašlaik jūs neesat izveidojis nevienu kategoriju. Tāpēc visi pakalpojumi ir rezervācijas vietnes sarakstā. Ja vēlaties kategorizēt savus pakalpojumus, vispirms izveidojiet kategoriju.
         header: Nav pievienota neviena kategorija
         info: Ja jūs piedāvājat daudz pakalpojumu, ir iespējams tos kategorizēt vairākos līmeņos. Kategorijas tiks parādītas rezervācijas vietnē, tāpēc klientam jāizvēlas kategorija, pirms tiek parādīti izvēlētās kategorijas pakalpojumi. Pakalpojumu ir iespējams parādīt vairākās kategorijās.
+        no_categories: Kategorijas nav pievienotas
       form:
         has_services: Parāda šos pakalpojumus
+        no_parent_id: AUGSTĀKAIS LĪMENIS
       index:
         header: Kategorijas
       list_menu:
@@ -323,6 +338,7 @@ lv:
         sms_reminder_time_info: 'SMS tiek izsūtīts pusdienlaikā dienu pirms rezervācijas. Ja vēlaties to mainīt, lūdzu, modificējiet zemāk esošo lauku. Piemērs: “divas stundas pirms” (īsziņa tiek izsūtīta divas stundas pirms rezervācijas) vai “8:00 vakar” (atgādinājuma īsziņa tiks nosūtīta plkst. 8:00 dienu pirms rezervācijas)'
       edit_user_notifications:
         approvement_email: E-pasts par jauniem rezervēšanas pieprasījumiem
+        approvement_sms: SMS paziņojums par jauniem rezervācijas pieprasījumiem
         automatic_messages: Automātiskas ziņas
         default: Aktīvs (noklusējums)
         disable: Atspējots
@@ -341,9 +357,12 @@ lv:
           calendar_hide_weekends: Paslēpt nedēļas nogales
           calendar_slot_duration: Slota ilgums
           calendar_slot_label_interval: Slota etiķetes intervāls
+          esource_title: Pielāgota resursa nosaukums
       export_info:
         data_types:
           bookings: Atrunas
+          bookings_all: Rezervācijas (visas)
+          bookings_visible: Rezervācijas (tostarp atcelšanas)
           events: Notikumi
           people: Klienti
         executed: Eksports tagad tiek nosūtīts uz jūsu e-pasta adresi.
@@ -401,6 +420,11 @@ lv:
         show_only_active_html: Sarakstā ir iekļautas neaktīvas rezervācijas %{count}. <a href="%{href}">Vai vēlaties parādīt tikai aktīvās rezervācijas?</a>
         signup_link: Reģistrēšanās saite
         sms_all_participants: Nosūtiet īsziņu visiem dalībniekiem
+        zoom:
+          join_meeting: Saite pievienoties sapulcei
+          join_webinar: Pievienojieties vebināra saitei
+          start_meeting: Sāciet Zoom sapulci kā rīkotāju
+          start_webinar: Sāciet Zoom tīmekļa semināru kā saimniekdatoru
       show_recurring:
         delete_all: Dzēst visus
         headline: Visi atkārtotie notikumi šajā modelī
@@ -416,6 +440,10 @@ lv:
         no_events_range: Nav esošu notikumu no %{start} līdz %{end}
     integrations:
       account_connected: Izveidojiet savienojumu ar šo kontu.
+      bestrx:
+        api_key: API atslēga ir %{api_key}
+        api_url: API-URL ir %{api_url}
+        enable: Iespējot
       braintree:
         cse_key: Cse atslēga
         environment: Vide
@@ -470,6 +498,7 @@ lv:
         password: API atslēga
       index:
         api: API
+        header: Integrācijas
         web_hooks: Tīmekļa saites
       izettle:
         active: Aktice
@@ -485,6 +514,11 @@ lv:
         account: Saraksta ID
         username: Konta lietotājvārds
       not_authenticated: Nevar pieslēgties. Pārbaudiet savus akreditācijas datus.
+      notion:
+        connected_to: Savienots ar datu bāzi ar id %{database_id}
+        database_info: 'Datu bāzei jābūt iestatītai ar šādiem rekvizītiem: Vārds, E-pasts (tips: e-pasts), Tālrunis (tips: tālrunis).'
+        select_database: Izvēlieties datu bāzi
+        sharing_info: Lūdzu, kopīgojiet vismaz vienu datu bāzi ar MakePlans integrāciju
       oauth_connect: Izveidojiet savienojumu ar pakalpojumu
       quickpay:
         environment: Vide
@@ -537,18 +571,32 @@ lv:
         info_html: Lai izveidotu MakePlans savienojumu ar Zapier, lūdzu, izveidojiet <a href="%{url}" target="_blank">jaunu Zapier uz Zapier</a> .
       zoom:
         connect_info: Savienots
+        info: Lai šī integrācija darbotos, jums ir jāsavieno resurss ar lietotāju programmā Zoom un jābūt vismaz vienam pakalpojumam ar iespējotu tālummaiņu.
+        registration_type: Reģistrācijas veids
+        session_type: Tālummaiņas sesijas veids pasākumiem
     message_templates:
+      form:
+        delivery_timing_info: 'Rakstiet vienkāršā angļu valodā. Piemērs.: "divas stundas pirms" (ziņa tiek nosūtīta divas stundas pirms) vai "08:00 rīt" (plkst. 8:00 nākamajā dienā). Piegādes laiks ir relatīvs atkarībā no ziņojuma veida: apstiprinājums - rezervācija izveidota_atgādinājums - rezervācija rezervēta_no, sekošana - rezervācija rezervēta_uz.'
+        immediately: nekavējoties
+        services: Pakalpojumi
+        services_info: 'Ziņojuma veidne tiks nosūtīta visiem pakalpojumiem, ja vien tālāk neaprobežosities ar konkrētiem pakalpojumiem:'
+        template_info_html: Varat apvienot viesu nama dinamiskās vērtības. Plašāku informāciju skatiet <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">vietnē https://github.com/makeplans/makeplans-custom-messages</a> .
       index:
         header: Ziņojumu veidnes
+        immediately: nekavējoties
         intro: Šeit atradīsit sarežģītākas ziņojumu veidnes, kuras var nosūtīt pēc rezervācijas apstiprināšanas, pirms tās sākuma vai pēc tās pabeigšanas. Lūdzu, ņemiet vērā, ka šie ziņojumi tiek nosūtīti papildus standarta ziņojumiem, piemēram, apstiprinājumam un atgādinājumam. Izmantojiet šo funkciju tikai tad, ja vēlaties, piemēram, nosūtīt papildu atgādinājumu, vairākus apstiprinājuma ziņojumus (piemēram, e-pastu papildus SMS) vai papildu ziņojumu.
+      show:
+        immediately: nekavējoties
     people:
       form:
+        block: Bloķēt klientu rezervēšanai
         merge_action: Apvienojiet šos divus klientus
         merge_action_email: Šī e-pasta adrese jau ir saglabāta citam klientam. Vai vēlaties apvienot šos divus klientus, lai %{email} tiktu izmantota kā e-pasta adrese?
         merge_action_info: Visas rezervācijas tiks saglabātas, bet viens no klientiem tiks izdzēsts. Jūs varat izvēlēties, kura klienta informācija tiks saglabāta.
         merge_action_phone_number: Šis tālruņa numurs jau ir saglabāts citam klientam. Vai vēlaties apvienot šos divus klientus, lai %{phone_number} tiks izmantots kā tālruņa numurs?
         merge_button: Apvienot un saglabāt
         merge_info: 'Tā vietā izmantojiet:'
+        unblock: Noņemt rezervācijas bloku
       index:
         delete_warning: Vai tiešām vēlaties dzēst %{person}?
         filter: Filtrēšana
@@ -581,6 +629,9 @@ lv:
         verify_code: 'Ievadiet kodu, lai pārbaudītu:'
       edit_password:
         verify_code: 'Ievadiet kodu, lai pārbaudītu:'
+      no_access:
+        header: Nav piekļuves
+        info: Lūdzu, sazinieties ar sava konta administratoru, lai piekļūtu šai funkcijai.
       show:
         change_password: Mainīt paroli
         rotp:
@@ -665,6 +716,7 @@ lv:
         next_interval_default: Pēc ilguma
         offered_by: Piedāvā šādi resursi
         payment: Maksājums
+        price_placeholder: Cena nav noteikta
         settings:
           hide_all_available: Jāizvēlas konkrēts resurss (tiks paslēpts 'rādīt visus pieejamos')
           hide_resources: Slēpt resursa izvēles pogu (tiks nejauši izvēlēta starp pieejamajiem resursiem)
@@ -690,6 +742,7 @@ lv:
           fiken_product_href: Savienojiet ar produktu Fiken
           tfso_product_id: 24SevenOffice produkta id
           visma_eaccounting_article_id: Izveidojiet savienojumu ar produktu Visma eAccounting
+          zoom_create_session: Automātiski izveidot šī pakalpojuma tālummaiņas sapulci
       list_menu:
         list_appointment: Pakalpojumi
         list_attendance: Pasākumu veidi
@@ -779,6 +832,7 @@ lv:
         processing: Lūdzu uzgaidiet...
       index:
         buy: Pērciet vairāk SMS kredītu
+        header: SMS atlikums
         sms_credits_available: Jums ir pieejami %{credits} īsziņu kredīti.
       purchase_form:
         buy: Pirkt

@@ -36,6 +36,7 @@ sv:
           login_with_facebook_link: bekräfta automatiskt med Facebook
           not_current_person_html: Är du inte <span data-name="">%{person}?</span>?
           remember_me: Vill du att vi ska komma ihåg dig på den här maskinen tills nästa gång du bokar här?
+        date_format: 'Ange giltigt datumformat: %{format}'
         enter_info: Fyll i uppgifter
         errors_header: Vänligen fyll i de obligatoriska fälten.
         form_info: Detta kommer att användas för att bekräfta din bokning av %{service}, %{booking}.
@@ -92,8 +93,10 @@ sv:
         form_header: Detta formulär skickas krypterat.
         header: Betalning
         info: För att slutföra bokningen av %{service} %{booking} måste du betala med ditt kreditkort.
+        new_card: Ange nytt kort
         payment_details_html: Beloppet anges i %{currency} och inkluderar moms. Din kortinformation lagras inte hos oss utan skickas krypterad till %{provider} för säker transaktion och lagring.
         payment_received: "%{paid_amount} betalades %{paid_at}."
+        save_card: Spara kort
       step:
         cancel: Avbryt
         completed: Klart!
@@ -136,10 +139,17 @@ sv:
         not_available_for_this_verification_method: Inte tillgänglig
         submit: Ta emot kod
     profile:
+      credit_card_list:
+        add_card: Lägg till nytt kort
+        body: Dessa är dina lagrade betalkort. Om du vill kan du lägga till ett nytt kort eller ta bort något av de befintliga.
+        card_info: "%{brand} med nummer som slutar på %{last_4} och löper ut %{expire_month}/%{expire_year}."
+        remove_card: Ta bort det här kortet
+        title: Dina lagrade betalningsmetoder
       show:
         header: Dina reservationer
         logout: logga ut
         new_booking: Ny reservation
+        payment_methods: Lagrade betalningsmetoder
     providers:
       index:
         show_all_available: Visa alla tillgängliga

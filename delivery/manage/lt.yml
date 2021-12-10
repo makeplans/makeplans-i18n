@@ -77,7 +77,7 @@ lt:
         Jūsų paskyra: %{subdomain}
 
         Dėkojame, kad naudojatės MakePlans.
-      filename: "MakePlans AS %{invoice_date} kvitas # %{invoice_nr}"
+      filename: 'MakePlans AS %{invoice_date} kvitas # %{invoice_nr}'
       subject: Jūsų kvitas už MakePlans naudojimą
     deactivated:
       body: |-
@@ -114,6 +114,17 @@ lt:
 
         Arba turite klausimų apie MakePlans naudojimą ar kaip geriausiai sukonfigūruoti savo sąskaitą? Tiesiog atsakykite į šį el. Laišką ir mes galime jums padėti :)
       subject: Užbaikite MakePlans sąranką
+    paused:
+      body: |-
+        Sveiki,
+
+        Jūsų „MakePlans“ prenumerata bus pristabdyta šio atsiskaitymo laikotarpio pabaigoje (%{demo_ends_at}).
+        Atminkite, kad būsite apmokestinti bet kokiais operacijų mokesčiais, pvz., SMS žinutėmis, kol jūsų paskyra bus aktyvi.
+
+        Kai prenumerata pristabdyta, ateityje galėsite lengvai iš naujo suaktyvinti paskyrą.
+
+        Jei kyla problemų priverčiant MakePlans veikti jūsų naudotojo atveju, atsakykite į šį el. laišką, kad galėtume padėti sukonfigūruoti paskyrą ir paaiškinti, kaip geriausiai naudoti MakePlans pagal savo poreikius.
+      subject: Jūsų paskyra bus pristabdyta
     setup_completed:
       contact_us_html: Ir jei turite klausimų, parašykite mums el. Laišką adresu %{mail}
       footer: MakePlans
@@ -131,12 +142,38 @@ lt:
       feature_1: Jūsų klientai gali gauti priminimo SMS prieš susitikimą.
       feature_2: Užsakymo metu reikia sumokėti kreditine kortele.
       feature_3: Saugokite papildomą informaciją rezervacijos vietoje arba kliente naudodami pasirinktinius laukus.
-      feature_4: "MakePlans yra integruota su daugeliu trečiųjų šalių programų, tokių kaip CRM ir el. Pašto naujienlaiškių programos."
+      feature_4: MakePlans yra integruota su daugeliu trečiųjų šalių programų, tokių kaip CRM ir el. Pašto naujienlaiškių programos.
       footer: Tikiuosi, kad jums patiks naudoti MakePlans
       header: Sveiki atvykę į MakePlans!
       link_info: Čia rasite savo kalendorių su visų rezervacijų apžvalga ir galimybę sukonfigūruoti savo sąskaitą.
       registered: 'Dabar jūs užsiregistravote į nemokamą bandomąją sąskaitą:'
       subject: Sveiki atvykę į MakePlans
+    sms_credits_balance_reached:
+      body: |-
+        Sveiki,
+
+        Jūsų MakePlans paskyroje nustatytas %{sms_balance_limit} SMS siuntimo limitas. Dabar jūs peržengėte šią ribą.
+
+        SMS iš jūsų paskyros nebesiunčiama.
+
+        Pirkite SMS kreditus:
+        %{url}
+
+        Arba galite prisijungti prie savo paskyros ir pakeisti patvirtinimo būdą iš SMS į el. paštą ir išjungti SMS priminimus.
+      subject: 'BŪTINA VEIKSMAS: išnaudojote visus savo SMS kreditus'
+    sms_credits_balance_warning:
+      body: |-
+        Sveiki,
+
+        Jūsų MakePlans paskyroje nustatytas %{sms_balance_limit} SMS siuntimo limitas. Šiuo metu išsiuntėte %{sms_balance}.
+
+        Kai gausite %{sms_balance_limit} pranešimus, jūsų paskyra nebesiųs SMS, nebent įsigysite daugiau SMS kreditų.
+
+        Pirkite SMS kreditus:
+        %{url}
+
+        Arba galite prisijungti prie savo paskyros ir pakeisti patvirtinimo būdą iš SMS į el. paštą ir išjungti SMS priminimus.
+      subject: Jūsų SMS kreditai baigiasi
     trial_expire_warning:
       body: |-
         Sveiki,

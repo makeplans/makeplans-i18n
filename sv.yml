@@ -17,6 +17,19 @@ sv:
         terms_accepted: villkor
         title: titel
         verification_code: verifierings kod
+      booking/state:
+        awaiting_confirmation: Väntar på bekräftelse
+        awaiting_payment: Väntar på betalning
+        awaiting_verification: Väntar på verifiering
+        cancelled: Inställt
+        confirmed: Bekräftad
+        declined: Tackat nej
+        deleted: raderade
+      booking/status:
+        checked_in: Incheckad
+        completed: Avslutad
+        in_progress: Satte igång
+        no_show: Icke infinnande
       category:
         title: titel
       client:
@@ -42,8 +55,23 @@ sv:
         service_id: service
         starts_at: starttid
         title: titel
+      message_template:
+        active: aktiva
+        delivery_timing: leverera kl
+        delivery_type: Leverans typ
+        message_type: meddelandetyp
+        subject: ämne
+        template: mall
+      message_template/delivery_type:
+        email: e-post
+        sms: SMS
+      message_template/message_type:
+        confirmation: Bekräftelse
+        follow_up: uppföljning
+        reminder: påminnelse
       person:
         address: adress
+        blocked: Blockerad för reservationer
         city: stad
         country_code: land
         created_at: registrerad
@@ -59,6 +87,7 @@ sv:
       resource:
         capacity: kapacitet
         mail_notification_recipient: e-postadresser för avisering
+        sms_notification_recipient: telefonnummer för avisering
         title: titel
       service:
         payment_required: kräver förskottsbetalning
@@ -69,6 +98,9 @@ sv:
         password: Lösenord
         password_confirmation: lösenordsbekräftelse
         rotp_verification_code: Verifikationskod
+      web_hook:
+        event: Händelse
+        target_url: Måladress
     errors:
       messages:
         chronic_syntax_error: syntaxfel se https://github.com/mojombo/chronic#examples
@@ -86,6 +118,7 @@ sv:
             event_id:
               time_not_available: är full
             person_id:
+              blocked: spärrad för bokning
               taken: är redan registrerad för detta evenemang.
             resource_id:
               no_availability: inte tillgänglig vid vald tid
@@ -100,13 +133,18 @@ sv:
           attributes:
             base:
               denied: avvisade
+        client_user_link:
+          admin_needed: Behöver minst en administratörsanvändare på kontot.
         person:
+          blocked: Ditt konto kan inte göra några bokningar.
           missing: lagras inte i din kundprofil. Kontakta oss för att åtgärda detta.
           no_values_present: Du måste ange namn, telefonnummer eller e-post.
         resource:
           has_bookings: Den här kalendern har aktiva bokningar och kan inte raderas. Vänligen kontakta kundtjänst.
         service:
-          below_minimum: måste vara högre än 3 NOK om du ska kräva förskottsbetalning.
+          attributes:
+            below_minimum: måste vara mer än 1 USD om du vill kräva betalning
+            payment_price_required: måste ställas in om du vill kräva betalning
         user:
           attributes:
             password:
@@ -120,12 +158,14 @@ sv:
       category: kategori
       event: händelse
       external_credential: integration
+      message_template: meddelande mall
       person: kund
       resource: resurs
       service: tjänst
       service_appointment: tjänst
       service_attendance: typ av händelse
       user: användare
+      web_hook: webhook
   csv:
     col_sep: ";"
   date:
@@ -151,7 +191,9 @@ sv:
     models:
       person:
         perishable_token:
+          expired: Koden har löpt ut. Var god försök igen.
           invalid: Fel kod
+          no_identifier: E-post eller telefonnummer saknas.
     stripe:
       booking:
         invalid: Bokningen har upphört att gälla eller är ogiltig. Transaktionen slutfördes inte.
@@ -214,6 +256,7 @@ sv:
         api_key: API-nyckel (för extern integration)
         app_secret: Hemlig verifieringskod
         appointment_form: Anpassade bokningsfälter
+        awaiting_confirmation_text: Text som visas när bokningen väntar på bekräftelse
         billing_city: Stad
         billing_country_code: Land
         billing_email: E-postadress för faktura
@@ -264,6 +307,7 @@ sv:
         public_access: Bokningssidan är tillgänglig för allmänheten
         purge_data_period: Automatisk radering av personlig information
         reminder_sms: Skicka påminnelse på SMS
+        require_terms_acceptance: Kräv villkor för att accepteras
         resource_form: Anpassade resursfält
         service_form: Anpassade tjänstefält
         service_template: Kalendermall
@@ -275,13 +319,21 @@ sv:
         sms_confirmation: Text i SMS som skickas vid bekräftelse
         sms_modification: Text i SMS som skickas vid ändring
         sms_notification: Ta emot SMS för varje ny bokning
+        sms_notification_recipient: Telefonnummer för avisering
         sms_reminder: Påminnelsetext i SMS
         sms_reminder_time: Dags för påminnelse om SMS
         sms_verification: Text i SMS som skickas vid verifikation
         subdomain: URL-adress (subdomän)
         template: Designtema
+        terms: Villkor
         time_zone: Tidszon
         verification_method: Bekräftelsemetod för nya bokningar
+      client_user_link:
+        role: Åtkomstnivå
+      client_user_link/role:
+        admin: Full tillgång
+        manager: Grundläggande inställning
+        staff: Endast kalender
       event:
         all_day: Hela dagen
         booking_capacity: Max antal deltagare per bokning
@@ -297,6 +349,20 @@ sv:
         service_id: Händelsetyp
         starts_at: Startar
         title_html: Specificerad titel är <small>valfritt</small>
+      message_template:
+        active: Aktiva
+        delivery_timing: Levereras kl
+        delivery_type: Leverans typ
+        message_type: Meddelandetyp
+        subject: Ämne
+        template: Mall
+      message_template/delivery_type:
+        email: E-post
+        sms: SMS
+      message_template/message_type:
+        confirmation: Bekräftelse
+        follow_up: Uppföljning
+        reminder: Påminnelse
       person:
         address: Adress
         city: Stad
@@ -316,6 +382,7 @@ sv:
       resource:
         capacity: Max antal bokningar vid samma tidpunkt
         mail_notification_recipient: E-postadresser för anmälan
+        sms_notification_recipient: Telefonnummer för avisering
         title: Titel
       service:
         booking_capacity: Max antal personer per bokning
@@ -358,13 +425,18 @@ sv:
         password_confirmation: lösenordsbekräftelse
         phonenumber: Telefonnummer
         rotp_verification_code: Verifierings kod
+      web_hook:
+        event: Händelse
+        target_url: Måladress
     link:
       add: Lägg till
       back: Tillbaka
       booking:
         new: Ny bokning
+      cancel_confirm: Är du säker på att du vill avbryta?
       category:
         new: Ny kategori
+      confirm: Är du säker?
       create: Skapa
       delete: Radera
       delete_confirm: Är du säker på att du vill radera?
@@ -385,6 +457,8 @@ sv:
       user:
         new: Ny användare
       view: Vis
+      web_hook:
+        new: Ny webhook
     menu:
       agenda: Agenda
       calendar: Kalender
@@ -403,6 +477,7 @@ sv:
       fields: Anpassade fält
       import: Import
       integrations: Integrationer
+      message_templates: Meddelandemallar
       person_notifications: Aviseringar
       promote: Marknadsför
       resources: Resurser

@@ -38,7 +38,34 @@ da:
       header: For at gennemføre din reservation af %{title} %{time_range} skal du bekræfte din reservation ved at klikke på nedenstående link.
       link: Bekræft reservation
       subject: Bekræft din reservation
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Dine reservationer på %{title} til følgende tidspunkter er blevet annulleret:'
+      subject: Aflyste reservationer
+    create:
+      body: 'Du har reserveret %{title} til følgende tidspunkter:'
+      subject: Nye forbehold
   booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        NØDVENDIG HANDLING: Reservationsanmodning af {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} på {{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Lave planer
+      booking_type_attendance: |-
+        NØDVENDIG HANDLING: Anmodning om tilmelding af {{ booking.person.name }} for {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Lave planer
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        ANNULERING: {{ booking.person.name }} har annulleret deres reservation af {{ booking.resource.title }} - {{ booking.title }} på {{ booking.time_range }}
+        Lave planer
+      booking_type_attendance: |-
+        ANNULERING: {{ booking.person.name }} har annulleret deres tilmelding til {{ booking.event.full_title }} {{ booking.time_range }}.
+        Lave planer
     admin_notification_confirmation:
       booking_type_appointment: |-
         Ny reservation på {{booking.resource.title}} af {{booking.person.name}}. {{booking.title}} {{booking.time_range}}

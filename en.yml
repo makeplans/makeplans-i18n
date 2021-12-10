@@ -138,8 +138,9 @@ en:
         resource:
           has_bookings: This resource has bookings. Cannot be deleted. Please contact support.
         service:
-          payment_price_required: must be set if you want to require payment
-          below_minimum: must be more than 1 USD if you want to require payment
+          attributes:
+            payment_price_required: must be set if you want to require payment
+            below_minimum: must be more than 1 USD if you want to require payment
         user:
           attributes:
             password:

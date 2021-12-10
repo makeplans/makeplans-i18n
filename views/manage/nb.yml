@@ -61,7 +61,6 @@ nb:
         billing_name_info: Hvis du ønsker at vi skal fakturere et annet firma enn %{name} så fyll inn navnet her
         header: Fakturainformasjon
       info:
-        header: Betalingsinformasjon
         add_link: Aktiver din konto - Registrer kredittkortinformasjon
         add_new_link: Ønsker du å registrere ny kredittkortinformasjon?
         billing_info: Du vil motta faktura på epost fra oss og foreta betaling manuelt.
@@ -75,6 +74,7 @@ nb:
         edit_info_link: Ønsker du å endre noe av denne informasjonen?
         edit_link: Vil du endre registrert kredittkortinformasjon?
         email_recipent: Faktura vil bli sendt på epost til %{email}.
+        header: Betalingsinformasjon
         info_header: 'Vi har registrert følgende fakturainformasjon:'
         paid_until: Kontoen er betalt frem til %{paid_until}.
         pause: Sett kontoen på pause etter endt betalt periode.
@@ -94,6 +94,7 @@ nb:
     bookings:
       cancel_recurring:
         headline: Alle fremtidige reservasjoner i dette mønsteret ble slettet
+        list_recurring: Se liste over reservasjoner innenfor dette gjentatte mønsteret.
       create_recurring:
         headline: Genererer %{count} reservasjoner...
         link: Vis liste
@@ -161,8 +162,8 @@ nb:
         amount: Total pris
         booked_from: Fra
         booked_to: Til
-        created_by: Opprettet av %{user}
         count: Antall personer
+        created_by: Opprettet av %{user}
         fiken:
           create_invoice: Opprett faktura i Fiken
           created: Faktura er opprettet i Fiken
@@ -206,11 +207,11 @@ nb:
         cancel_all_future: Kansellerer alle fremtidige reservasjoner
         delete_all: Slett alle
         headline: Alle gjentagende reservasjoner innenfor dette mønsteret
+      state_changer:
+        state: Status
       status_changer:
         cancel: Kansellerer reservasjon
         status: Sett status
-      state_changer:
-        state: Status
       unconfirmed:
         headline: Liste over ubekreftede reservasjoner
         no_reservations: Fant ingen ubekreftede reservasjoner
@@ -244,8 +245,12 @@ nb:
         has_services: 'Viser følgende tjenester:'
     client:
       api:
+        disable: Vil du deaktivere API?
+        disable_warning: Er du sikker på at du vil deaktivere API? API-nøkkelen vil bli ugyldig og API-en utilgjengelig.
         enable: Aktiver API
         enable_warning: Er du sikker på at du vil aktivere API-tilgang? Med bruk av API-nøkkel har man full tilgang til å endre alt på kontoen.
+        enabled: API-en er aktivert.
+        header: API
         info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a>.
         not_enabled: Ikke aktivert
       cancel:
@@ -352,12 +357,13 @@ nb:
           calendar_hide_weekends: Skjul helgedager
           calendar_slot_duration: Varighet på slot (minutter)
           calendar_slot_label_interval: Tidsvisning for slot ved hvert X minutt
+          esource_title: Egendefinert ressurstittel
           resource_title: Egen tittel for ressurs
       export_info:
         data_types:
           bookings: Reservasjoner (kun aktive)
-          bookings_visible: Reservasjoner (inkludert kansellerte)
           bookings_all: Reservasjoner (alle)
+          bookings_visible: Reservasjoner (inkludert kansellerte)
           events: Arrangementer
           people: Kunder
         executed: Eksportfilen sendes nå til din epost-adresse.
@@ -415,6 +421,11 @@ nb:
         show_only_active_html: Listen inkluderer %{count} inaktive reservasjoner. <a href="%{href}">Vil du kun vise de som er aktive?</a>
         signup_link: Link til påmelding for kunder
         sms_all_participants: Send SMS til alle deltagere
+        zoom:
+          join_meeting: Bli med på møtelenke
+          join_webinar: Bli med på webinar-lenken
+          start_meeting: Start Zoom-møte som vert
+          start_webinar: Start Zoom webinar som vert
       show_recurring:
         delete_all: Slett alle
         headline: Alle gjentagende arrangementer innenfor dette mønsteret
@@ -430,6 +441,10 @@ nb:
         no_events_range: Ingen arrangementer fra %{start} til %{end}
     integrations:
       account_connected: Connected to this account.
+      bestrx:
+        api_key: API-nøkkelen er %{api_key}
+        api_url: URL-en til API-en er %{api_url}
+        enable: Muliggjøre
       braintree:
         cse_key: Cse key
         environment: Environment
@@ -484,7 +499,9 @@ nb:
         connect_info: 'Velg konto hvor nye kunder blir lagt til:'
         password: API-key
       index:
+        api: API
         header: Integrasjoner
+        web_hooks: Webhooks
       izettle:
         active: Aktiv
         info: For å markere en reservasjon som betalt med iZettle må du definere pris på tjenesten du tilbyr. Du kan så klikke på linken "betal med iZettle" på en reservasjon for å gjennomføre betaling med iZettle.
@@ -499,6 +516,11 @@ nb:
         account: Liste-id
         username: Brukernavn
       not_authenticated: Klarte ikke å koble til. Sjekk brukernavn og passord.
+      notion:
+        connected_to: Koblet til database med id %{database_id}
+        database_info: 'Databasen må settes opp med følgende egenskaper: Navn, E-post (type: e-post), Telefon (type: telefon).'
+        select_database: Velg database
+        sharing_info: Vennligst del minst én database med MakePlans-integrasjonen
       oauth_connect: Koble til denne tjenesten
       quickpay:
         environment: Environment
@@ -507,6 +529,8 @@ nb:
         production: Production
         test: Test
       selected_option: Valgt
+      sendy:
+        connect_info_html: Nye kunder vil abonnere på listen med id <em>%{list_id}</em> på installasjon %{api_url}
       stripe:
         payment_info: For alle transaksjoner så trekker MakePlans et plattformgebyr på %{application_fee_percent}%.
         receipt_email: Send kvittering på epost fra Stripe
@@ -549,21 +573,25 @@ nb:
         info_html: For å koble MakePlans til Zapier så må du <a href="%{url}" target="_blank">opprette en ny Zap i Zapier</a>.
       zoom:
         connect_info: Tilkoblet
+        info: For at denne integrasjonen skal fungere må du koble en ressurs til en bruker i Zoom og ha minst én tjeneste med Zoom aktivert.
+        registration_type: Registreringstype
+        session_type: Zoom-sesjonstype for hendelser
     message_templates:
-      index:
-        header: Meldingsmaler
-        intro: 'Her finner du mer avanserte meldingsmaler som kan sendes ut etter at en reservasjon er bekreftet, før den starter eller etter den er gjennomført. Merk at disse meldingene sendes i tillegg til de som er satt opp som vanlige meldinger feks bekreftelse og påminnelse. Bruk kun denne funksjonen hvis du f.eks. ønsker å sende en påminnelse #2, flere typer bekreftelse (epost i tillegg til SMS) eller en melding for oppfølgning.'
-        immediately: øyeblikkelig
       form:
         delivery_timing_info: 'Skriv inn på engelsk. Eks.: ''two hours before'' (melding sendes ut to timer før tidspunkt) eller ''08:00 tomorrow'' (kl. 8 dagen dagen etter tidspunkt).'
-        template_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>.
         immediately: øyeblikkelig
         services: Tjenester
         services_info: 'Meldingsmalen vil gjelde for alle tjenester med mindre du begrenser utsending til enkelte tjenester:'
+        template_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>.
+      index:
+        header: Meldingsmaler
+        immediately: øyeblikkelig
+        intro: 'Her finner du mer avanserte meldingsmaler som kan sendes ut etter at en reservasjon er bekreftet, før den starter eller etter den er gjennomført. Merk at disse meldingene sendes i tillegg til de som er satt opp som vanlige meldinger feks bekreftelse og påminnelse. Bruk kun denne funksjonen hvis du f.eks. ønsker å sende en påminnelse #2, flere typer bekreftelse (epost i tillegg til SMS) eller en melding for oppfølgning.'
       show:
         immediately: øyeblikkelig
     people:
       form:
+        block: Blokker kunde for booking
         merge_action: Kombiner disse to kundeprofilene
         merge_action_email: Denne e-post adressen er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{email} blir den gjeldene e-post adressen?
         merge_action_info: Alle reservasjoner vil beholdes men den ene kundeprofilen vil bli fjernet. Du kan selve velge hvilke kundeopplysninger som skal bli gjeldene.
@@ -571,7 +599,6 @@ nb:
         merge_action_phone_number: Dette telefonnummeret er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{phone_number} blir det gjeldene telefonnummeret?
         merge_button: Kombiner og lagre
         merge_info: 'Bruk heller: '
-        block: Blokker kunde for booking
         unblock: Fjern blokkering av booking
       index:
         delete_warning: Er du sikker på at du vil slette %{person}?
@@ -605,6 +632,9 @@ nb:
         verify_code: 'Tast inn kode for verifisering:'
       edit_password:
         verify_code: 'Tast inn kode for verifisering:'
+      no_access:
+        header: Ingen adgang
+        info: Kontakt administratoren for kontoen din for å få tilgang til denne funksjonen.
       show:
         change_password: Endre passord
         rotp:
@@ -624,6 +654,7 @@ nb:
         header: Slett gamle data
         info: 'Denne funksjonen vil slette gamle personopplysninger. Du velger hvilken dato som skal gjelde for sletting. Følgende data vil bli slettet:'
         not_deleted: Sletting av data vil ikke trigge eksterne integrasjoner.
+        processing: Behandling
         purge: SLETT DATA
         purge_1: Alle reservasjoner med sluttdato før spesifisert dato.
         purge_2: Alle kunder som ikke er endret før spesifisert dato og som ikke har reservasjoner etter spesifisert dato.
@@ -715,6 +746,7 @@ nb:
           fiken_product_href: Koble til produkt i Fiken
           tfso_product_id: 24SevenOffice produkt id
           visma_eaccounting_article_id: Koble til produkt i Visma eAccounting
+          zoom_create_session: Opprett automatisk et Zoom-møte for denne tjenesten
       list_menu:
         list_appointment: Tjenester
         list_attendance: Arrangementstyper
@@ -803,8 +835,8 @@ nb:
         process: Gjennomfør kjøp.
         processing: Vennligst vent...
       index:
-        header: SMS-balanse
         buy: Kjøp flere SMS
+        header: SMS-balanse
         sms_credits_available: Du har %{credits} SMS-meldinger tilgjengelig.
       purchase_form:
         buy: Kjøp
@@ -823,3 +855,4 @@ nb:
     web_hooks:
       index:
         app_secret_info_html: Hemmelige kode for å verifisere webhooks
+        header: Webhooks

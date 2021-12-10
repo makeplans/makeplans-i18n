@@ -38,7 +38,34 @@ es:
       header: Para completar su reservación de %{title} %{time_range} debe confirmar su reservación haciendo clic en el enlace de abajo.
       link: Confirmar reservación
       subject: Confirma tu reservación
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Se cancelaron sus reservas de %{title} para los siguientes horarios:'
+      subject: Reservas canceladas
+    create:
+      body: 'Ha reservado %{title} para los siguientes horarios:'
+      subject: Nuevas reservas
   booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        ACCIÓN NECESARIA: Solicitud de reserva por {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} en {{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Hacer planes
+      booking_type_attendance: |-
+        ACCIÓN NECESARIA: Solicitud de registro de {{ booking.person.name }} para {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Hacer planes
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        CANCELACIÓN: {{ booking.person.name }} ha cancelado su reserva de {{ booking.resource.title }} - {{ booking.title }} en {{ booking.time_range }}
+        Hacer planes
+      booking_type_attendance: |-
+        CANCELACIÓN: {{ booking.person.name }} ha cancelado su registro para {{ booking.event.full_title }} {{ booking.time_range }}.
+        Hacer planes
     admin_notification_confirmation:
       booking_type_appointment: |-
         Nueva reservación de {{booking.resource.title}} por {{booking.person.name}}. {{booking.title}} el {{booking.time_range}}

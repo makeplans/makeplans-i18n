@@ -74,6 +74,7 @@ ms:
         edit_info_link: Adakah anda ingin mengubah maklumat pengebilan anda?
         edit_link: Adakah anda ingin mengemas kini butiran kad kredit anda?
         email_recipent: Kami akan menghantar invois melalui e-mel ke %{email}.
+        header: Butiran pembayaran
         info_header: 'Maklumat pengebilan anda:'
         paid_until: Akaun anda dibayar sehingga %{paid_until}.
         pause: Jeda akaun semasa langganan semasa berakhir.
@@ -91,6 +92,9 @@ ms:
         error: Tidak dapat mengesahkan pembayaran. Sila hubungi perkhidmatan pelanggan.
         info: Tunggu sementara kami mengenakan kad pembayaran anda. Ini boleh memakan masa sehingga satu minit. Anda akan menerima e-mel dari kami apabila prosesnya selesai.
     bookings:
+      cancel_recurring:
+        headline: Semua tempahan masa hadapan dalam corak berulang ini telah dialih keluar
+        list_recurring: Lihat senarai tempahan dalam corak berulang ini.
       create_recurring:
         headline: Menjana tempahan %{count} ...
         link: Tunjukkan senarai
@@ -111,6 +115,7 @@ ms:
         headline_create_recurring: Tambahkan tempahan baru
         headline_edit: Ubah suai tempahan
         headline_new: Tambahkan tempahan baru
+        headline_update: Ubah suai tempahan
         ignore_capacity: Jimat walaupun dihuni
         modification_send_email: Hantar pengubahsuaian e-mel
         modification_send_sms: Hantar pengubahsuaian SMS
@@ -136,6 +141,7 @@ ms:
         headline_create: Tambah petugas
         headline_edit: Ubah suai tempahan
         headline_new: Tambah petugas
+        headline_update: Ubah suai tempahan
         modification_send_email: Hantar pengubahsuaian e-mel
         modification_send_sms: Hantar pengubahsuaian SMS
         notification_send_email: Hantarkan pemberitahuan e-mel
@@ -153,9 +159,11 @@ ms:
         result_header: iZettle
         success: Pembayaran didaftarkan.
       show:
+        amount: Harga keseluruhan
         booked_from: Dari
         booked_to: Ke
         count: Bilangan orang
+        created_by: Dicipta oleh %{user}
         fiken:
           create_invoice: Buat invois di Fiken
           created: Invois dibuat di Fiken
@@ -195,11 +203,17 @@ ms:
           create_invoice: Buat pesanan dalam Visma eAccounting
           created: Invois dibuat dalam Visma eAccounting
           processing: Pesanan dibuat dalam Visma eAccounting. Ini boleh mengambil masa beberapa minit.
+        zoom:
+          start_meeting: Mulakan mesyuarat Zum
       show_recurring:
+        cancel_all_future: Batalkan semua janji temu akan datang
         delete_all: Memadam semua
         headline: Semua tempahan berulang dalam corak ini
       state_changer:
         state: Nyatakan
+      status_changer:
+        cancel: Batalkan tempahan
+        status: Tetapkan status
       unconfirmed:
         headline: Senarai tempahan untuk kelulusan
         no_reservations: Tiada tempahan yang memerlukan kelulusan
@@ -220,8 +234,10 @@ ms:
         get_started: Buat masa ini anda belum membuat kategori. Oleh itu, semua perkhidmatan terdapat dalam senarai di tempat tempahan. Sekiranya anda ingin mengkategorikan perkhidmatan anda mulakan dengan membuat kategori.
         header: Tidak ada kategori yang ditambahkan
         info: Sekiranya anda menawarkan banyak perkhidmatan adalah mungkin untuk mengkategorikannya dalam pelbagai peringkat. Kategori akan ditunjukkan di laman tempahan sehingga pelanggan mesti memilih kategori sebelum perkhidmatan dalam kategori yang dipilih ditunjukkan. Adalah mungkin untuk menunjukkan perkhidmatan dalam pelbagai kategori.
+        no_categories: Tiada kategori ditambah
       form:
         has_services: Menunjukkan perkhidmatan ini
+        no_parent_id: TAHAP ATAS
       index:
         header: Kategori
       list_menu:
@@ -230,6 +246,15 @@ ms:
         custom_data: 'Data tersuai:'
         has_services: 'Menunjukkan perkhidmatan ini:'
     client:
+      api:
+        disable: Adakah anda mahu melumpuhkan API?
+        disable_warning: Adakah anda pasti mahu melumpuhkan API? Kunci API akan menjadi tidak sah dan API tidak tersedia.
+        enable: Adakah anda mahu mendayakan API?
+        enable_warning: Adakah anda pasti mahu mengaktifkan API? Kunci API memberikan akses penuh program kepada akaun anda.
+        enabled: API didayakan.
+        header: API
+        info_html: Hubungi perkhidmatan pelanggan untuk mendapatkan bantuan. Dokumentasi tersedia di <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        not_enabled: API tidak didayakan.
       cancel:
         confirm_message: Peluang terakhir. Adakah anda benar-benar yakin bahawa anda ingin memadamkan akaun anda dengan semua data anda?
         disable_link: Ya, hapus semua data saya.
@@ -248,6 +273,7 @@ ms:
       edit_booking_site:
         booking_form_info_html: Hubungi khidmat pelanggan untuk mendapatkan bantuan. Dokumentasi boleh didapati di<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
         booking_site_info_html: Laman web tempahan anda boleh didapati di %{url}.
+        booking_site_locale_default: Gunakan bahasa akaun
         cancellation: Pembatalan
         cancellation_info: Pembatalan hanya boleh dilakukan sebelum tempoh pembatalan. Tempahan yang dibayar di muka tidak boleh dibatalkan.
         cancellation_period_info: 'Contoh: ''24 jam sebelum'' (hanya boleh dibatalkan 24 jam sebelum tempahan bermula).'
@@ -320,6 +346,7 @@ ms:
         sms_reminder_time_info: 'SMS dihantar pada tengah hari sehari sebelum tempahan. Sekiranya anda ingin mengubahnya, ubah medan di bawah. Contoh: ''dua jam sebelum'' (SMS dihantar dua jam sebelum tempahan) atau ''8 pagi semalam'' (SMS peringatan akan dihantar pada pukul 8 pagi sehari sebelum tempahan)'
       edit_user_notifications:
         approvement_email: Pemberitahuan e-mel untuk permintaan tempahan baru
+        approvement_sms: Pemberitahuan SMS untuk permintaan tempahan baharu
         automatic_messages: Mesej automatik
         default: Aktif (Lalai)
         disable: Kurang Upaya
@@ -338,9 +365,12 @@ ms:
           calendar_hide_weekends: Sembunyikan hujung minggu
           calendar_slot_duration: Tempoh slot
           calendar_slot_label_interval: Selang label slot
+          esource_title: Tajuk sumber tersuai
       export_info:
         data_types:
           bookings: Tempahan
+          bookings_all: Tempahan (semua)
+          bookings_visible: Tempahan (termasuk pembatalan)
           events: Acara
           people: Pelanggan
         executed: Eksport kini dihantar ke alamat e-mel anda.
@@ -398,6 +428,11 @@ ms:
         show_only_active_html: Senarai merangkumi tempahan %{count} yang tidak aktif. <a href="%{href}">Adakah anda hanya mahu menunjukkan tempahan aktif?</a>
         signup_link: Pautan pendaftaran
         sms_all_participants: Hantar SMS kepada semua peserta
+        zoom:
+          join_meeting: Sertai pautan mesyuarat
+          join_webinar: Sertai pautan webinar
+          start_meeting: Mulakan mesyuarat Zum sebagai hos
+          start_webinar: Mulakan webinar Zum sebagai hos
       show_recurring:
         delete_all: Memadam semua
         headline: Semua peristiwa berulang dalam corak ini
@@ -413,6 +448,10 @@ ms:
         no_events_range: Tiada acara yang ada dari %{start} hingga %{end}
     integrations:
       account_connected: Sambung ke akaun ini.
+      bestrx:
+        api_key: Kunci API ialah %{api_key}
+        api_url: URL kepada API ialah %{api_url}
+        enable: Dayakan
       braintree:
         cse_key: Kunci Cse
         environment: Persekitaran
@@ -465,6 +504,10 @@ ms:
         account: Subdomain (YOURACCOUNT.highrisehq.com - sila masukkan YOURACCOUNT sahaja)
         connect_info: 'Pilih akaun di mana pelanggan baru ditambahkan:'
         password: Kekunci API
+      index:
+        api: API
+        header: Integrasi
+        web_hooks: Webhooks
       izettle:
         active: Aktice
         info: Untuk menggunakan iZettle sila tentukan harga pada perkhidmatan yang anda berikan. Kemudian, klik "buat pembayaran dengan iZettle" untuk membuat tempahan.
@@ -479,6 +522,11 @@ ms:
         account: Senarai-ID
         username: Nama pengguna akaun
       not_authenticated: Tidak dapat menyambung. Periksa kelayakan anda.
+      notion:
+        connected_to: Disambungkan ke pangkalan data dengan id %{database_id}
+        database_info: 'Pangkalan data mesti disediakan dengan sifat berikut: Nama, E-mel (jenis: e-mel), Telefon (jenis: telefon).'
+        select_database: Pilih pangkalan data
+        sharing_info: Sila kongsi sekurang-kurangnya satu pangkalan data dengan penyepaduan MakePlans
       oauth_connect: Sambung ke perkhidmatan
       quickpay:
         environment: Persekitaran
@@ -487,6 +535,8 @@ ms:
         production: Pengeluaran
         test: Uji
       selected_option: Terpilih
+      sendy:
+        connect_info_html: Pelanggan baharu akan melanggan senarai dengan id <em>%{list_id}</em> pada pemasangan %{api_url}
       stripe:
         payment_info: Untuk semua urus niaga, yuran transaksi sebanyak %{application_fee_percent}% ditolak oleh MakePlans.
         receipt_email: Hantarkan resit kepada pelanggan dari Stripe
@@ -529,14 +579,32 @@ ms:
         info_html: Untuk menghubungkan MakePlans ke Zapier sila buat <a href="%{url}" target="_blank">Zap baru di Zapier</a> .
       zoom:
         connect_info: Bersambung
+        info: Untuk penyepaduan ini berfungsi, anda mesti menyambungkan sumber kepada pengguna dalam Zum dan mempunyai sekurang-kurangnya satu perkhidmatan dengan Zum didayakan.
+        registration_type: Jenis pendaftaran
+        session_type: Jenis sesi zum untuk acara
+    message_templates:
+      form:
+        delivery_timing_info: 'Tulis dalam bahasa Inggeris biasa. Contoh.: ''dua jam sebelum'' (mesej dihantar dua jam sebelum) atau ''08:00 esok'' (jam 8 pagi lusa). Masa penghantaran adalah relatif berdasarkan jenis mesej: pengesahan - tempahan dibuat_pada, peringatan - tempahan ditempah_daripada, susulan - tempahan ditempah_kepada.'
+        immediately: serta merta
+        services: Perkhidmatan
+        services_info: 'Templat mesej akan dihantar untuk semua perkhidmatan melainkan anda mengehadkan kepada perkhidmatan tertentu di bawah:'
+        template_info_html: Anda boleh menggabungkan nilai dinamik penginapan. Sila lihat <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> untuk butiran.
+      index:
+        header: Templat mesej
+        immediately: serta merta
+        intro: Di sinilah anda akan menemui templat mesej yang lebih kompleks yang boleh dihantar selepas tempahan disahkan, sebelum ia bermula atau selepas ia selesai. Sila ambil perhatian bahawa mesej ini dihantar sebagai tambahan kepada mesej standard seperti pengesahan dan peringatan. Hanya gunakan fungsi ini jika anda mahu contohnya menghantar peringatan tambahan, berbilang mesej pengesahan (seperti e-mel sebagai tambahan kepada SMS) atau mesej susulan.
+      show:
+        immediately: serta merta
     people:
       form:
+        block: Sekat pelanggan untuk tempahan
         merge_action: Gabungkan dua pelanggan ini
         merge_action_email: Alamat e-mel ini sudah disimpan pada pelanggan lain. Adakah anda ingin menggabungkan dua pelanggan ini supaya %{email} akan digunakan sebagai alamat e-mel?
         merge_action_info: Semua tempahan akan disimpan tetapi salah satu pelanggan akan dihapus. Anda boleh memilih maklumat pelanggan mana yang akan disimpan.
         merge_action_phone_number: Nombor telefon ini sudah disimpan pada pelanggan lain. Adakah anda ingin menggabungkan kedua pelanggan ini ke %{phone_number} akan digunakan sebagai nombor telefon?
         merge_button: Gabungkan dan simpan
         merge_info: 'Sebaliknya gunakan:'
+        unblock: Alih keluar blok tempahan
       index:
         delete_warning: Adakah anda pasti mahu memadam %{person}?
         filter: Penapisan
@@ -569,6 +637,9 @@ ms:
         verify_code: 'Masukkan kod untuk mengesahkan:'
       edit_password:
         verify_code: 'Masukkan kod untuk mengesahkan:'
+      no_access:
+        header: Tiada akses
+        info: Sila hubungi pentadbir akaun anda untuk mengakses ciri ini.
       show:
         change_password: Ubah kata laluan
         rotp:
@@ -653,6 +724,7 @@ ms:
         next_interval_default: Mengikut tempoh tempahan
         offered_by: Ditawarkan oleh sumber berikut
         payment: Pembayaran
+        price_placeholder: Harga tidak ditetapkan
         settings:
           hide_all_available: Mesti memilih sumber tertentu ('tunjukkan semua yang ada' akan disembunyikan)
           hide_resources: Sembunyikan butang untuk memilih sumber (akan dipilih secara rawak antara sumber yang ada)
@@ -678,6 +750,7 @@ ms:
           fiken_product_href: Sambungkan ke produk di Fiken
           tfso_product_id: Id produk 24SevenOffice
           visma_eaccounting_article_id: Sambungkan ke produk di Visma eAccounting
+          zoom_create_session: Buat mesyuarat Zum untuk perkhidmatan ini secara automatik
       list_menu:
         list_appointment: Perkhidmatan
         list_attendance: Jenis acara
@@ -767,6 +840,7 @@ ms:
         processing: Sila tunggu...
       index:
         buy: Beli lebih banyak kredit SMS
+        header: Baki SMS
         sms_credits_available: Anda mempunyai kredit SMS %{credits}.
       purchase_form:
         buy: Pembelian
@@ -782,3 +856,7 @@ ms:
       show:
         remove_access: Alih keluar akses
         remove_access_confirm: Adakah anda pasti mahu membuang akses ke akaun ini untuk pengguna ini?
+    web_hooks:
+      index:
+        app_secret_info_html: Rahsia apl untuk membetulkan webhooks. Lihat <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">dokumentasi</a> untuk butiran.
+        header: Webhooks

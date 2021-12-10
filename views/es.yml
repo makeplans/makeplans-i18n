@@ -12,6 +12,7 @@ es:
       read_legal: Términos y condiciones para el uso de este servicio
       recaptcha: Lamento molestarlo, pero tenemos que verificar su registro con Google Recaptcha. Por favor, ingrese su contraseña nuevamente y luego envíe el formulario.
       subdomain_info: Su dirección única (URL) donde sus clientes pueden reservar en línea.
+      subdomain_not_website_warning: 'OOPS: esta es la dirección de su nuevo sitio de reserva. NO ingrese la URL de su sitio web existente. Si tiene alguna duda, introduzca aquí el nombre de su empresa.'
       submit: Registrar mi cuenta
       title: Regístrese para obtener su cuenta de reservación en línea
       user_email: Correo electrónico de trabajo
@@ -51,4 +52,5 @@ es:
       signup_html: ¿No tienes cuenta? <a href="%{url}">Empieza ahora.</a>
     rotp_verification_code:
       header: Iniciar sesión con autenticación de dos factores
+      info: Utilice el código generado por su aplicación 2FA.
       submit: Iniciar sesión

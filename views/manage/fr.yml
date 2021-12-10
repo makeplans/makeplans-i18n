@@ -74,6 +74,7 @@ fr:
         edit_info_link: Voulez-vous modifier vos informations de facturation?
         edit_link: Voulez-vous mettre à jour les détails de votre carte de crédit?
         email_recipent: Nous enverrons la facture par e-mail à %{email}.
+        header: Détails de paiement
         info_header: 'Vos informations de facturation:'
         paid_until: Votre compte est payé jusqu'à %{paid_until}.
         pause: Mettez le compte en pause à la fin de l'abonnement en cours.
@@ -91,6 +92,9 @@ fr:
         error: Impossible de vérifier le paiement. Veuillez contacter le service client.
         info: Veuillez patienter pendant que nous débitons votre carte de paiement. Cela peut prendre jusqu'à une minute. Vous recevrez un e-mail de notre part lorsque le processus sera terminé.
     bookings:
+      cancel_recurring:
+        headline: Toutes les futures réservations dans ce modèle répétitif ont été supprimées
+        list_recurring: Voir la liste des réservations dans ce modèle répétitif.
       create_recurring:
         headline: Génération de réservations %{count} ...
         link: Afficher la liste
@@ -111,6 +115,7 @@ fr:
         headline_create_recurring: Ajouter une nouvelle réservation
         headline_edit: Modifier la réservation
         headline_new: Ajouter une nouvelle réservation
+        headline_update: Modifier la réservation
         ignore_capacity: Économisez même si occupé
         modification_send_email: Envoyer une modification par e-mail
         modification_send_sms: Envoyer la modification SMS
@@ -136,6 +141,7 @@ fr:
         headline_create: Ajouter un opérateur
         headline_edit: Modifier la réservation
         headline_new: Ajouter un opérateur
+        headline_update: Modifier la réservation
         modification_send_email: Envoyer une modification par e-mail
         modification_send_sms: Envoyer la modification SMS
         notification_send_email: Envoyer une notification par e-mail
@@ -153,6 +159,7 @@ fr:
         result_header: iZettle
         success: Paiement enregistré.
       show:
+        amount: Prix total
         booked_from: De
         booked_to: À
         count: Nombre de personnes
@@ -194,11 +201,17 @@ fr:
           create_invoice: Créer une commande dans Visma eAccounting
           created: La facture est créée dans Visma eAccounting
           processing: La commande est en cours de création dans Visma eAccounting. Cela peut prendre quelques minutes.
+        zoom:
+          start_meeting: Démarrer la réunion Zoom
       show_recurring:
+        cancel_all_future: Annuler tous les futurs rendez-vous
         delete_all: Tout supprimer
         headline: Toutes les réservations répétées dans ce modèle
       state_changer:
         state: État
+      status_changer:
+        cancel: Annuler une réservation
+        status: Définir le statut
       unconfirmed:
         headline: Liste des réserves pour approbation
         no_reservations: Aucune réservation nécessitant une approbation
@@ -219,8 +232,10 @@ fr:
         get_started: Actuellement, vous n'avez créé aucune catégorie. Tous les services sont donc dans une liste sur le site de réservation. Si vous souhaitez classer vos services, commencez par créer une catégorie.
         header: Aucune catégorie ajoutée
         info: Si vous offrez de nombreux services, il est possible de les classer en plusieurs niveaux. Les catégories seront affichées sur le site de réservation, de sorte que le client doit choisir une catégorie avant que les services de la catégorie choisie ne soient affichés. Il est possible d'afficher un service dans plusieurs catégories.
+        no_categories: Aucune catégorie ajoutée
       form:
         has_services: Affiche ces services
+        no_parent_id: HAUT NIVEAU
       index:
         header: Catégories
       list_menu:
@@ -323,6 +338,7 @@ fr:
         sms_reminder_time_info: 'Le SMS est envoyé à midi la veille de la réservation. Si vous souhaitez changer cela, veuillez modifier le champ ci-dessous. Exemple: ''deux heures avant'' (le SMS est envoyé deux heures avant la réservation) ou ''8h hier'' (le SMS de rappel sera envoyé à 8h la veille de la réservation)'
       edit_user_notifications:
         approvement_email: Notification par e-mail pour les nouvelles demandes de réservation
+        approvement_sms: Notification SMS pour les nouvelles demandes de réservation
         automatic_messages: Messages automatiques
         default: Actif (par défaut)
         disable: Désactivée
@@ -341,9 +357,12 @@ fr:
           calendar_hide_weekends: Masquer les week-ends
           calendar_slot_duration: Durée du créneau
           calendar_slot_label_interval: Intervalle d'étiquette d'emplacement
+          esource_title: Titre de la ressource personnalisée
       export_info:
         data_types:
           bookings: Réservations
+          bookings_all: Réservations (toutes)
+          bookings_visible: Réservations (y compris les annulations)
           events: Événements
           people: Clients
         executed: L'exportation est maintenant envoyée à votre adresse e-mail.
@@ -401,6 +420,11 @@ fr:
         show_only_active_html: La liste comprend les réservations inactives %{count}. <a href="%{href}">Voulez-vous uniquement afficher les réservations actives?</a>
         signup_link: Lien d'inscription
         sms_all_participants: Envoyer des SMS à tous les participants
+        zoom:
+          join_meeting: Rejoindre le lien de la réunion
+          join_webinar: Rejoindre le lien du webinaire
+          start_meeting: Démarrer la réunion Zoom en tant qu'hôte
+          start_webinar: Démarrer le webinaire Zoom en tant qu'hôte
       show_recurring:
         delete_all: Tout supprimer
         headline: Tous les événements répétés dans ce modèle
@@ -416,6 +440,10 @@ fr:
         no_events_range: Aucun événement existant de %{start} à %{end}
     integrations:
       account_connected: Connectez-vous à ce compte.
+      bestrx:
+        api_key: La clé API est %{api_key}
+        api_url: L'URL de l'API est %{api_url}
+        enable: Activer
       braintree:
         cse_key: Touche Cse
         environment: Environnement
@@ -470,6 +498,7 @@ fr:
         password: Clé API
       index:
         api: API
+        header: Intégrations
         web_hooks: Webhooks
       izettle:
         active: Aktice
@@ -485,6 +514,11 @@ fr:
         account: ID de liste
         username: Nom d'utilisateur du compte
       not_authenticated: Impossible de se connecter. Vérifiez vos identifiants.
+      notion:
+        connected_to: Connecté à la base de données avec l'id %{database_id}
+        database_info: 'La base de données doit être configurée avec les propriétés suivantes : Nom, E-mail (type : e-mail), Téléphone (type : téléphone).'
+        select_database: Sélectionnez la base de données
+        sharing_info: Veuillez partager au moins une base de données avec l'intégration MakePlans
       oauth_connect: Connectez-vous au service
       quickpay:
         environment: Environnement
@@ -537,18 +571,32 @@ fr:
         info_html: Pour connecter MakePlans à Zapier, veuillez créer un <a href="%{url}" target="_blank">nouveau Zap sur Zapier</a> .
       zoom:
         connect_info: Lié
+        info: Pour que cette intégration fonctionne, vous devez connecter une ressource à un utilisateur dans Zoom et avoir au moins un service avec Zoom activé.
+        registration_type: Type d'inscription
+        session_type: Type de session Zoom pour les événements
     message_templates:
+      form:
+        delivery_timing_info: 'Écrivez dans un anglais simple. Exemple: "deux heures avant" (le message est envoyé deux heures avant) ou "08:00 demain" (à 8 heures le lendemain). Le délai de livraison est relatif en fonction du type de message : confirmation - réservation créée_à, rappel - réservation réservée_de, follow_up - réservation réservée_à.'
+        immediately: immédiatement
+        services: Prestations de service
+        services_info: 'Le modèle de message sera envoyé pour tous les services, sauf si vous vous limitez à des services spécifiques ci-dessous :'
+        template_info_html: Vous pouvez fusionner les valeurs dynamiques de l'auberge. Veuillez consulter <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> pour plus de détails.
       index:
         header: Modèles de message
+        immediately: immédiatement
         intro: C'est ici que vous trouverez des modèles de messages plus complexes qui peuvent être envoyés après la confirmation d'une réservation, avant son démarrage ou après son achèvement. Veuillez noter que ces messages sont envoyés en plus des messages standard comme la confirmation et le rappel. N'utilisez cette fonction que si vous souhaitez par exemple envoyer un rappel supplémentaire, plusieurs messages de confirmation (comme des e-mails en plus des SMS) ou un message de suivi.
+      show:
+        immediately: immédiatement
     people:
       form:
+        block: Bloquer le client pour la réservation
         merge_action: Fusionner ces deux clients
         merge_action_email: Cette adresse e-mail est déjà enregistrée sur un autre client. Voulez-vous fusionner ces deux clients afin que %{email} soit utilisé comme adresse e-mail?
         merge_action_info: Toutes les réservations seront conservées mais l'un des clients sera supprimé. Vous pouvez choisir les informations client qui seront conservées.
         merge_action_phone_number: Ce numéro de téléphone est déjà enregistré chez un autre client. Voulez-vous fusionner ces deux clients pour que %{phone_number} sera utilisé comme numéro de téléphone?
         merge_button: Fusionner et enregistrer
         merge_info: 'Utilisez plutôt:'
+        unblock: Supprimer le blocage de réservation
       index:
         delete_warning: Êtes-vous sûr de vouloir supprimer %{person}?
         filter: Filtration
@@ -581,6 +629,9 @@ fr:
         verify_code: 'Entrez le code pour vérifier:'
       edit_password:
         verify_code: 'Entrez le code pour vérifier:'
+      no_access:
+        header: Pas d'accès
+        info: Veuillez contacter l'administrateur de votre compte pour accéder à cette fonctionnalité.
       show:
         change_password: Modifier le mot de passe
         rotp:
@@ -665,6 +716,7 @@ fr:
         next_interval_default: Selon la durée de la réservation
         offered_by: Offert par les ressources suivantes
         payment: Paiement
+        price_placeholder: Prix non fixé
         settings:
           hide_all_available: Doit sélectionner une ressource spécifique («afficher tout disponible» sera masqué)
           hide_resources: Cacher le bouton pour sélectionner la ressource (sera sélectionné au hasard par parmi les ressources disponibles)
@@ -690,6 +742,7 @@ fr:
           fiken_product_href: Connectez-vous à un produit dans Fiken
           tfso_product_id: Identifiant du produit 24SevenOffice
           visma_eaccounting_article_id: Connectez-vous à un produit dans Visma eAccounting
+          zoom_create_session: Créer automatiquement une réunion Zoom pour ce service
       list_menu:
         list_appointment: Prestations de service
         list_attendance: Types d'événements
@@ -779,6 +832,7 @@ fr:
         processing: S'il vous plaît, attendez...
       index:
         buy: Achetez plus de crédits SMS
+        header: Solde SMS
         sms_credits_available: Vous disposez de %{credits} crédits SMS.
       purchase_form:
         buy: Acheter

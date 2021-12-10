@@ -2,7 +2,7 @@
 es:
   layouts:
     design:
-      activate_account_footer: "Restan %{days_left} días de prueba. Haga clic para activar."
+      activate_account_footer: Restan %{days_left} días de prueba. Haga clic para activar.
       trial_expired: Tu prueba ha terminado.
   manage:
     agenda:
@@ -74,6 +74,7 @@ es:
         edit_info_link: "¿Quieres modificar tu información de facturación?"
         edit_link: "¿Quieres actualizar los datos de tu tarjeta de crédito?"
         email_recipent: Enviaremos la factura por correo electrónico a %{email}.
+        header: Detalles del pago
         info_header: 'Tu información de facturación:'
         paid_until: Su cuenta se paga hasta %{paid_until}.
         pause: Pausa la cuenta cuando finaliza la suscripción actual.
@@ -91,6 +92,9 @@ es:
         error: No se pudo verificar el pago. Comuníquese con el servicio de atención al cliente.
         info: Espere mientras cargamos su tarjeta de pago. Esto puede tardar hasta un minuto. Recibirá un correo electrónico de nuestra parte cuando se complete el proceso.
     bookings:
+      cancel_recurring:
+        headline: Se eliminaron todas las reservas futuras dentro de este patrón repetitivo
+        list_recurring: Consulte la lista de reservas dentro de este patrón repetitivo.
       create_recurring:
         headline: Generando reservas %{count} ...
         link: Mostrar lista
@@ -111,6 +115,7 @@ es:
         headline_create_recurring: Agregar nueva reservación
         headline_edit: Modificar reservación
         headline_new: Agregar nueva reservación
+        headline_update: Modificar reserva
         ignore_capacity: Guardar si esta ocupado
         modification_send_email: Enviar modificación de correo electrónico
         modification_send_sms: Enviar modificación por SMS
@@ -136,6 +141,7 @@ es:
         headline_create: Agregar asistente
         headline_edit: Modificar reservación
         headline_new: Agregar asistente
+        headline_update: Modificar reserva
         modification_send_email: Enviar modificación de correo electrónico
         modification_send_sms: Enviar modificación por SMS
         notification_send_email: Enviar notificación por correo electrónico
@@ -153,9 +159,11 @@ es:
         result_header: iZettle
         success: Pago registrado.
       show:
+        amount: Precio total
         booked_from: Desde
         booked_to: A
         count: Número de personas
+        created_by: Creada por %{user}
         fiken:
           create_invoice: Crear factura en Fiken
           created: La factura se crea en Fiken
@@ -195,11 +203,17 @@ es:
           create_invoice: Crear pedido en Visma eAccounting
           created: La factura se crea en Visma eAccounting
           processing: El pedido se está creando en Visma eAccounting. Esto puede tardar unos minutos.
+        zoom:
+          start_meeting: Iniciar reunión de Zoom
       show_recurring:
+        cancel_all_future: Cancelar todas las citas futuras
         delete_all: Eliminar todos
         headline: Todas las reservas repetidas dentro de este patrón
       state_changer:
         state: Estado
+      status_changer:
+        cancel: Cancelar la reserva
+        status: Establecer estado
       unconfirmed:
         headline: Lista de reservas para aprobación
         no_reservations: Sin reservas que requieran aprobación
@@ -220,8 +234,10 @@ es:
         get_started: Actualmente no ha creado ninguna categoría. Por lo tanto, todos los servicios están en una lista en el sitio de reservación. Si desea categorizar sus servicios, comience creando una categoría.
         header: No se agregaron categorías
         info: Si ofrece muchos servicios, es posible categorizarlos en varios niveles. Las categorías se mostrarán en el sitio de reservación, por lo que el cliente debe elegir una categoría antes de que se muestren los servicios dentro de la categoría elegida. Es posible mostrar un servicio en múltiples categorías.
+        no_categories: No se agregaron categorías
       form:
         has_services: Muestra estos servicios
+        no_parent_id: NIVEL SUPERIOR
       index:
         header: Categorías
       list_menu:
@@ -230,6 +246,15 @@ es:
         custom_data: 'Datos personalizados:'
         has_services: 'Muestra estos servicios:'
     client:
+      api:
+        disable: "¿Quieres deshabilitar la API?"
+        disable_warning: "¿Está seguro de que desea deshabilitar la API? La clave API dejará de ser válida y la API no estará disponible."
+        enable: "¿Quieres habilitar la API?"
+        enable_warning: "¿Estás seguro de que deseas activar la API? La clave API brinda acceso programático completo a su cuenta."
+        enabled: La API está habilitada.
+        header: API
+        info_html: Comuníquese con el servicio de atención al cliente para obtener ayuda. La documentación está disponible en <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        not_enabled: La API no está habilitada.
       cancel:
         confirm_message: Última oportunidad. ¿Está absolutamente seguro de que desea eliminar su cuenta con todos sus datos?
         disable_link: Sí, borre todos mis datos.
@@ -248,6 +273,7 @@ es:
       edit_booking_site:
         booking_form_info_html: Comuníquese con el servicio al cliente para obtener ayuda. La documentación está disponible en<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
         booking_site_info_html: Su sitio de reservación está disponible en %{url}.
+        booking_site_locale_default: Usar el idioma de la cuenta
         cancellation: Cancelación
         cancellation_info: La cancelación solo se puede realizar antes del período de cancelación. Las reservas prepagas no se pueden cancelar.
         cancellation_period_info: 'Ejemplo: ''24 horas antes ''(solo es posible cancelar 24 horas antes de que comience la reservación).'
@@ -320,6 +346,7 @@ es:
         sms_reminder_time_info: 'El SMS se envía al mediodía del día anterior a la reservación. Si desea cambiar esto, modifique el campo a continuación. Ejemplo: ''dos horas antes'' (el SMS se envía dos horas antes de la reservación) o ''8 am ayer'' (el SMS recordatorio se enviará a las 8 am el día antes de la reservación)'
       edit_user_notifications:
         approvement_email: Notificación por correo electrónico para nuevas solicitudes de reservación
+        approvement_sms: Notificación por SMS para nuevas solicitudes de reserva
         automatic_messages: Mensajes automáticos
         default: Activo (predeterminado)
         disable: Discapacitado
@@ -338,9 +365,12 @@ es:
           calendar_hide_weekends: Ocultar fines de semana
           calendar_slot_duration: Duración de la ranura
           calendar_slot_label_interval: Intervalo de etiqueta de ranura
+          esource_title: Título de recurso personalizado
       export_info:
         data_types:
           bookings: Reservaciones
+          bookings_all: Reservas (todas)
+          bookings_visible: Reservas (incluidas cancelaciones)
           events: Eventos
           people: Clientes
         executed: La exportación ahora se envía a su dirección de correo electrónico.
@@ -398,6 +428,11 @@ es:
         show_only_active_html: La lista incluye %{count} reservas inactivas. <a href="%{href}">¿Solo quieres mostrar reservas activas?</a>
         signup_link: Enlace de registro
         sms_all_participants: Enviar SMS a todos los participantes
+        zoom:
+          join_meeting: Unirse al enlace de la reunión
+          join_webinar: Únase al enlace del seminario web
+          start_meeting: Iniciar reunión de Zoom como anfitrión
+          start_webinar: Inicie el seminario web de Zoom como anfitrión
       show_recurring:
         delete_all: Eliminar todos
         headline: Todos los eventos que se repiten dentro de este patrón
@@ -413,6 +448,10 @@ es:
         no_events_range: No existen eventos de %{start} a %{end}
     integrations:
       account_connected: Conéctese a esta cuenta.
+      bestrx:
+        api_key: La clave API es %{api_key}
+        api_url: La URL de la API es %{api_url}
+        enable: Permitir
       braintree:
         cse_key: Clave Cse
         environment: Medio ambiente
@@ -465,6 +504,10 @@ es:
         account: Subdominio (YOURACCOUNT.highrisehq.com - por favor ingrese solo SUCUENTA)
         connect_info: 'Elija la cuenta donde se agregan nuevos clientes:'
         password: Clave API
+      index:
+        api: API
+        header: Integraciones
+        web_hooks: Webhooks
       izettle:
         active: Aktice
         info: Para utilizar iZettle, defina un precio para el servicio que proporciona. Entonces será posible hacer clic en "realizar el pago con iZettle" en una reservación.
@@ -479,6 +522,11 @@ es:
         account: ID de lista
         username: nombre de usuario
       not_authenticated: No puede conectarse. Verifique sus credenciales.
+      notion:
+        connected_to: Conectado a la base de datos con id %{database_id}
+        database_info: 'La base de datos debe configurarse con las siguientes propiedades: Nombre, Correo electrónico (tipo: correo electrónico), Teléfono (tipo: teléfono).'
+        select_database: Seleccionar base de datos
+        sharing_info: Comparta al menos una base de datos con la integración de MakePlans
       oauth_connect: Conectarse al servicio
       quickpay:
         environment: Medio ambiente
@@ -487,6 +535,8 @@ es:
         production: Producción
         test: Prueba
       selected_option: Seleccionado
+      sendy:
+        connect_info_html: Los nuevos clientes se suscribirán a la lista con id <em>%{list_id}</em> en la instalación %{api_url}
       stripe:
         payment_info: MakePlans deduce una tarifa de transacción de %{application_fee_percent}% para todas las transacciones.
         receipt_email: Envíe un recibo al cliente de Stripe
@@ -529,14 +579,32 @@ es:
         info_html: Para conectar MakePlans a Zapier, haga un <a href="%{url}" target="_blank">nuevo Zap en Zapier</a> .
       zoom:
         connect_info: Conectado
+        info: Para que esta integración funcione, debe conectar un recurso a un usuario en Zoom y tener al menos un servicio con Zoom habilitado.
+        registration_type: Tipo de registro
+        session_type: Tipo de sesión de zoom para eventos
+    message_templates:
+      form:
+        delivery_timing_info: 'Escribe en un inglés sencillo. Ejemplo: ''dos horas antes'' (el mensaje se envía dos horas antes) o ''08: 00 mañana ''(a las 8 a. M. Del día siguiente). El tiempo de entrega es relativo según el tipo de mensaje: confirmación - reserva creada_en, recordatorio - reserva reservada_desde, seguimiento - reserva reservada_hasta.'
+        immediately: inmediatamente
+        services: Servicios
+        services_info: 'La plantilla de mensaje se enviará para todos los servicios a menos que restrinja los servicios específicos a continuación:'
+        template_info_html: Puede fusionar valores dinámicos inn. Consulte <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> para obtener más detalles.
+      index:
+        header: Plantillas de mensajes
+        immediately: inmediatamente
+        intro: Aquí es donde encontrará plantillas de mensajes más complejas que se pueden enviar después de que se confirme una reserva, antes de que comience o después de que se complete. Tenga en cuenta que estos mensajes se envían además de los mensajes estándar como confirmación y recordatorio. Utilice esta función solo si desea, por ejemplo, enviar un recordatorio adicional, varios mensajes de confirmación (como un correo electrónico además de un SMS) o un mensaje de seguimiento.
+      show:
+        immediately: inmediatamente
     people:
       form:
+        block: Bloquear cliente para reservar
         merge_action: Fusionar estos dos clientes
         merge_action_email: Esta dirección de correo electrónico ya está guardada en otro cliente. ¿Desea fusionar estos dos clientes para que se utilice %{email} como dirección de correo electrónico?
         merge_action_info: Se mantendrán todas las reservas, pero se eliminará uno de los clientes. Puede elegir qué información del cliente se conservará.
         merge_action_phone_number: Este número de teléfono ya está almacenado en otro cliente. ¿Desea fusionar estos dos clientes para que se utilice %{phone_number} como número de teléfono?
         merge_button: Fusionar y guardar
         merge_info: 'En su lugar use:'
+        unblock: Eliminar bloque de reserva
       index:
         delete_warning: "¿Estás seguro de que deseas eliminar %{person}?"
         filter: Filtración
@@ -569,6 +637,9 @@ es:
         verify_code: 'Ingrese el código para verificar:'
       edit_password:
         verify_code: 'Ingrese el código para verificar:'
+      no_access:
+        header: Sin acceso
+        info: Comuníquese con el administrador de su cuenta para acceder a esta función.
       show:
         change_password: Modificar la contraseña
         rotp:
@@ -653,6 +724,7 @@ es:
         next_interval_default: Según la duración de la reservación
         offered_by: Ofrecido por los siguientes recursos
         payment: Pago
+        price_placeholder: Precio no establecido
         settings:
           hide_all_available: Debe seleccionar un recurso específico (se ocultará "mostrar todos los disponibles")
           hide_resources: Ocultar botón para seleccionar recurso (se seleccionará aleatoriamente entre los recursos disponibles)
@@ -678,6 +750,7 @@ es:
           fiken_product_href: Conectarse a un producto en Fiken
           tfso_product_id: ID de producto 24SevenOffice
           visma_eaccounting_article_id: Conectarse a un producto en Visma eAccounting
+          zoom_create_session: Cree automáticamente una reunión de Zoom para este servicio
       list_menu:
         list_appointment: Servicios
         list_attendance: Tipos de eventos
@@ -767,6 +840,7 @@ es:
         processing: Por favor espera...
       index:
         buy: Compra más créditos SMS
+        header: Saldo de SMS
         sms_credits_available: Tienes %{credits} créditos SMS disponibles.
       purchase_form:
         buy: Compra
@@ -782,3 +856,7 @@ es:
       show:
         remove_access: Quitar acceso
         remove_access_confirm: "¿Está seguro de que desea eliminar el acceso a esta cuenta para este usuario?"
+    web_hooks:
+      index:
+        app_secret_info_html: Secreto de la aplicación para descifrar webhooks. Consulte la <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">documentación</a> para obtener más detalles.
+        header: Webhooks

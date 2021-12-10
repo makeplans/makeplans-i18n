@@ -16,6 +16,19 @@ fr:
         service_id: un service
         title: Titre
         verification_code: code de vérification
+      booking/state:
+        awaiting_confirmation: En attente de confirmation
+        awaiting_payment: En attente de paiement
+        awaiting_verification: En attente de vérification
+        cancelled: Annulé
+        confirmed: Confirmé
+        declined: Diminué
+        deleted: Supprimé
+      booking/status:
+        checked_in: Enregistré
+        completed: Complété
+        in_progress: A débuté
+        no_show: Pas de spectacle
       category:
         title: Titre
       client:
@@ -42,6 +55,7 @@ fr:
         starts_at: commence à
         title: Titre
       message_template:
+        active: actif
         delivery_timing: livrer à
         delivery_type: type de livraison
         message_type: type de message
@@ -56,6 +70,7 @@ fr:
         reminder: rappel
       person:
         address: adresse
+        blocked: Bloqué pour les réservations
         city: ville
         country_code: de campagne
         created_at: inscrit
@@ -71,6 +86,7 @@ fr:
       resource:
         capacity: capacité
         mail_notification_recipient: adresse (s) e-mail de notification
+        sms_notification_recipient: numéro de téléphone pour notification
         title: Titre
       service:
         payment_required: exiger un pré-paiement
@@ -98,6 +114,7 @@ fr:
             event_id:
               time_not_available: est complet
             person_id:
+              blocked: bloqué pour réservation
               taken: déjà inscrit à cet événement
             resource_id:
               no_availability: non disponible à l'heure demandée
@@ -112,13 +129,18 @@ fr:
           attributes:
             base:
               denied: Refusé
+        client_user_link:
+          admin_needed: Besoin d'au moins un utilisateur administrateur sur le compte.
         person:
+          blocked: Votre compte n'est pas en mesure de faire des réservations.
           missing: n'est pas enregistré sur votre profil client. Veuillez nous contacter pour le corriger.
           no_values_present: Votre nom, numéro de téléphone ou e-mail est requis.
         resource:
           has_bookings: Cette ressource a des réservations. Ne peut pas être supprimé. Veuillez contacter le support.
         service:
-          below_minimum: doit être supérieur à 1 USD si vous souhaitez exiger un paiement
+          attributes:
+            below_minimum: doit être supérieur à 1 USD si vous souhaitez exiger un paiement
+            payment_price_required: doit être défini si vous souhaitez exiger le paiement
         user:
           attributes:
             password:
@@ -152,7 +174,9 @@ fr:
     models:
       person:
         perishable_token:
+          expired: Code expiré. Veuillez réessayer.
           invalid: code incorrect
+          no_identifier: E-mail ou numéro de téléphone manquant.
     stripe:
       booking:
         invalid: La réservation a expiré ou n'est pas valide. Transaction non traitée.
@@ -203,6 +227,7 @@ fr:
         reminder_at: Rappel
         resource_id: Ressource
         service_id: Un service
+        terms_accepted: j'approuve les conditions
         title: Titre
         verification_code: Code de vérification
       category:
@@ -214,6 +239,7 @@ fr:
         api_key: Clé API (pour les intégrations externes)
         app_secret: Secret de compte
         appointment_form: Champs de réservation personnalisés
+        awaiting_confirmation_text: Texte affiché lorsque la réservation est en attente de confirmation
         billing_city: Ville
         billing_country_code: De campagne
         billing_email: Adresse e-mail pour la facture
@@ -263,6 +289,7 @@ fr:
         public_access: Le site de réservation est accessible au public
         purge_data_period: Suppression automatique des informations personnelles identifiables
         reminder_sms: Envoyer des rappels par SMS
+        require_terms_acceptance: Exiger que les conditions soient acceptées
         resource_form: Champs de ressources personnalisés
         service_form: Champs de service personnalisés
         service_template: Style de calendrier
@@ -274,13 +301,21 @@ fr:
         sms_confirmation: Texte dans le SMS de confirmation
         sms_modification: Texte dans le SMS de modification
         sms_notification: Recevez des SMS à chaque nouvelle réservation
+        sms_notification_recipient: Numéro de téléphone pour notification
         sms_reminder: Texte dans le rappel par SMS
         sms_reminder_time: Heure du rappel par SMS
         sms_verification: Texte dans le SMS de vérification
         subdomain: URL (sous-domaine)
         template: Thème de conception
+        terms: Termes et conditions
         time_zone: Fuseau horaire
         verification_method: Méthode de vérification pour les nouvelles réservations
+      client_user_link:
+        role: Niveau d'accès
+      client_user_link/role:
+        admin: Accès total
+        manager: Configuration de base
+        staff: Calendrier uniquement
       event:
         all_day: Toute la journée
         booking_capacity: Max nr de préposés par réservation
@@ -297,6 +332,7 @@ fr:
         starts_at: Commence à
         title_html: Titre spécifié <small>facultatif</small>
       message_template:
+        active: actif
         delivery_timing: Livrer à
         delivery_type: Type de livraison
         message_type: Type de message
@@ -328,6 +364,7 @@ fr:
       resource:
         capacity: Nombre maximum de réservations en même temps
         mail_notification_recipient: Adresse (s) e-mail pour la notification
+        sms_notification_recipient: Numéro de téléphone pour notification
         title: Titre
       service:
         booking_capacity: Nombre maximum de personnes par réservation
@@ -377,8 +414,10 @@ fr:
       back: Retour
       booking:
         new: Nouvelle réservation
+      cancel_confirm: Es-tu sûre de vouloir annuler?
       category:
         new: Nouvelle catégorie
+      confirm: Es-tu sûr?
       create: Créer
       delete: Effacer
       delete_confirm: Etes-vous sûr que vous voulez supprimer?

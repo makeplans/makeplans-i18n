@@ -38,7 +38,34 @@ he:
       header: להשלמת הזמנתך של %{title} %{time_range} עליך לאשר את הזמנתך על ידי לחיצה על הקישור למטה.
       link: אשר הזמנה
       subject: אנא אשר את הזמנתך
+  booking_occurrence_mailer:
+    cancel:
+      body: 'ההזמנות שלך של %{title} לזמנים הבאים בוטלו:'
+      subject: הזמנות בוטלו
+    create:
+      body: 'שמרת %{title} לזמנים הבאים:'
+      subject: הזמנות חדשות
   booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        דרושה פעולה: בקשת הזמנה עד {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} ב-{{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        לעשות תוכניות
+      booking_type_attendance: |-
+        דרושה פעולה: בקשת הרשמה מאת {{ booking.person.name }} עבור {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        לעשות תוכניות
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        ביטול: {{ booking.person.name }} ביטלה את ההזמנה של {{ booking.resource.title }} - {{ booking.title }} ב-{{ booking.time_range }}
+        לעשות תוכניות
+      booking_type_attendance: |-
+        ביטול: {{ booking.person.name }} ביטלה את ההרשמה ל-{{ booking.event.full_title }} {{ booking.time_range }}.
+        לעשות תוכניות
     admin_notification_confirmation:
       booking_type_appointment: |-
         הזמנה חדשה של {{booking.resource.title}} מאת {{booking.person.name}}. {{booking.title}} בתאריך {{booking.time_range}}

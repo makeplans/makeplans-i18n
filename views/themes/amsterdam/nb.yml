@@ -97,9 +97,9 @@ nb:
         form_header: Dette skjemaet sendes kryptert.
         header: Betaling
         info: For å gjennomføre reservasjon av %{service} %{booking} må du betale med ditt kredittkort.
+        new_card: Legg til nytt kort
         payment_details_html: Beløpet er oppgitt i %{currency} og inkluderer merverdiavgift. Din kortinformasjon lagres ikke hos oss men sendes kryptert over til %{provider} for sikker gjennomføring av transaksjon og lagring.
         payment_received: "%{paid_amount} ble betalt %{paid_at}."
-        new_card: Legg til nytt kort
         save_card: Lagre kort
       step:
         cancel: Avbryt
@@ -145,10 +145,10 @@ nb:
     profile:
       credit_card_list:
         add_card: Legg til nytt kort
-        title: Dine lagrede betalingskort
         body: Dette er dine lagrede betalingsmuligheter. Du kan legge til eller fjerne kort som du ønsker.
-        card_info: '%{brand} med kortnr som ender med %{last_4} og utløper %{expire_month}/%{expire_year}.'
+        card_info: "%{brand} med kortnr som ender med %{last_4} og utløper %{expire_month}/%{expire_year}."
         remove_card: Fjern dette kortet
+        title: Dine lagrede betalingskort
       show:
         header: Dine reservasjoner
         logout: Logg ut

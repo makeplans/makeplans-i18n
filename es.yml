@@ -1,7 +1,5 @@
 ---
 es:
-  csv:
-    col_sep: ';'
   activerecord:
     attributes:
       booking:
@@ -18,6 +16,19 @@ es:
         service_id: Servicio
         title: título
         verification_code: código de verificación
+      booking/state:
+        awaiting_confirmation: Pendiente de confirmación
+        awaiting_payment: En espera de pago
+        awaiting_verification: esperando verificación
+        cancelled: Cancelado
+        confirmed: Confirmado
+        declined: Rechazado
+        deleted: Eliminado
+      booking/status:
+        checked_in: Registrado
+        completed: Terminado
+        in_progress: Empezado
+        no_show: No show
       category:
         title: título
       client:
@@ -43,8 +54,23 @@ es:
         service_id: Servicio
         starts_at: empieza a
         title: título
+      message_template:
+        active: activo
+        delivery_timing: entregar en
+        delivery_type: tipo de entrega
+        message_type: Tipo de mensaje
+        subject: sujeto
+        template: plantilla
+      message_template/delivery_type:
+        email: Email
+        sms: SMS
+      message_template/message_type:
+        confirmation: confirmación
+        follow_up: hacer un seguimiento
+        reminder: recordatorio
       person:
         address: habla a
+        blocked: Bloqueado para reservas
         city: ciudad
         country_code: país
         created_at: registrado
@@ -60,6 +86,7 @@ es:
       resource:
         capacity: capacidad
         mail_notification_recipient: dirección (es) de correo electrónico para notificación
+        sms_notification_recipient: número de teléfono para notificación
         title: título
       service:
         payment_required: requerir prepago
@@ -67,6 +94,9 @@ es:
         title: título
       user:
         rotp_verification_code: Código de verificación
+      web_hook:
+        event: Evento
+        target_url: URL de destino
     errors:
       messages:
         chronic_syntax_error: error de sintaxis, consulte https://github.com/mojombo/chronic#examples
@@ -84,6 +114,7 @@ es:
             event_id:
               time_not_available: está completamente reservado
             person_id:
+              blocked: bloqueado para reservar
               taken: ya inscrito para este evento
             resource_id:
               no_availability: no disponible a la hora solicitada
@@ -98,13 +129,18 @@ es:
           attributes:
             base:
               denied: Negado
+        client_user_link:
+          admin_needed: Necesita al menos un usuario administrador en la cuenta.
         person:
+          blocked: Su cuenta no puede realizar reservas.
           missing: no se guarda en su perfil de cliente. Por favor contáctenos para corregirlo.
           no_values_present: Se requiere nombre, número de teléfono o correo electrónico.
         resource:
           has_bookings: Este recurso tiene reservas. No se puede eliminar. Póngase en contacto con el servicio de asistencia.
         service:
-          below_minimum: debe ser más de 1 USD si desea solicitar el pago
+          attributes:
+            below_minimum: debe ser más de 1 USD si desea solicitar el pago
+            payment_price_required: debe configurarse si desea solicitar el pago
         user:
           attributes:
             password:
@@ -118,12 +154,16 @@ es:
       category: categoría
       event: evento
       external_credential: integración
+      message_template: plantilla de mensaje
       person: cliente
       resource: recurso
       service: Servicio
       service_appointment: Servicio
       service_attendance: tipo de evento
       user: usuario
+      web_hook: webhook
+  csv:
+    col_sep: ";"
   date:
     formats:
       date_month_name: "%e %B"
@@ -148,7 +188,9 @@ es:
     models:
       person:
         perishable_token:
+          expired: Código caducado. Inténtalo de nuevo.
           invalid: código incorrecto
+          no_identifier: Falta el correo electrónico o el número de teléfono.
     stripe:
       booking:
         invalid: La reservación ha expirado o no es válida. Transacción no procesada.
@@ -199,6 +241,7 @@ es:
         reminder_at: Recordatorio
         resource_id: Recurso
         service_id: Servicio
+        terms_accepted: Apruebo los términos
         title: Título
         verification_code: Código de verificación
       category:
@@ -210,6 +253,7 @@ es:
         api_key: API-key (para integraciones externas)
         app_secret: Secreto de cuenta
         appointment_form: Campos de reservación personalizados
+        awaiting_confirmation_text: Texto mostrado cuando la reserva está esperando confirmación
         billing_city: Ciudad
         billing_country_code: País
         billing_email: Dirección de correo electrónico para factura
@@ -259,6 +303,7 @@ es:
         public_access: El sitio de reservación está disponible para el público
         purge_data_period: Eliminación automática de información de identificación personal
         reminder_sms: Enviar recordatorios por SMS
+        require_terms_acceptance: Requerir términos para ser aceptados
         resource_form: Campos de recursos personalizados
         service_form: Campos de servicio personalizados
         service_template: Estilo de calendario
@@ -270,13 +315,21 @@ es:
         sms_confirmation: Texto en SMS de confirmación
         sms_modification: Texto en SMS de modificación
         sms_notification: Reciba SMS por cada nueva reservación
+        sms_notification_recipient: Número de teléfono para notificación
         sms_reminder: Mensaje de texto en recordatorio de SMS
         sms_reminder_time: Hora del recordatorio por SMS
         sms_verification: Texto en SMS de verificación
         subdomain: URL (subdominio)
         template: Tema de diseño
+        terms: Términos y condiciones
         time_zone: Zona horaria
         verification_method: Método de verificación para nuevas reservas
+      client_user_link:
+        role: Nivel de acceso
+      client_user_link/role:
+        admin: Acceso completo
+        manager: Configuración básica
+        staff: Solo calendario
       event:
         all_day: Todo el dia
         booking_capacity: Max nr de asistentes por reservación
@@ -292,6 +345,20 @@ es:
         service_id: Tipo de evento
         starts_at: Empieza a
         title_html: Título especificado <small>opcional</small>
+      message_template:
+        active: Activo
+        delivery_timing: Entregar en
+        delivery_type: Tipo de entrega
+        message_type: Tipo de mensaje
+        subject: Sujeto
+        template: Plantilla
+      message_template/delivery_type:
+        email: Correo electrónico
+        sms: SMS
+      message_template/message_type:
+        confirmation: Confirmación
+        follow_up: Hacer un seguimiento
+        reminder: Recordatorio
       person:
         address: Habla a
         city: Ciudad
@@ -311,6 +378,7 @@ es:
       resource:
         capacity: Número máximo de reservas al mismo tiempo
         mail_notification_recipient: Dirección (es) de correo electrónico para notificación
+        sms_notification_recipient: Número de teléfono para notificación
         title: Título
       service:
         booking_capacity: Número máximo de personas por reservación
@@ -352,13 +420,18 @@ es:
         password: Contraseña
         phonenumber: Número de teléfono
         rotp_verification_code: Código de verificación
+      web_hook:
+        event: Evento
+        target_url: URL de destino
     link:
       add: Añadir
       back: atrás
       booking:
         new: Nueva reservación
+      cancel_confirm: "¿Estas seguro que quieres cancelar?"
       category:
         new: Nueva categoría
+      confirm: "¿Está seguro?"
       create: Crear
       delete: Eliminar
       delete_confirm: "¿Estas seguro que quieres borrarlo?"
@@ -379,6 +452,8 @@ es:
       user:
         new: Nuevo Usuario
       view: Ver
+      web_hook:
+        new: Nuevo webhook
     menu:
       agenda: Agenda
       calendar: Calendario
@@ -397,6 +472,7 @@ es:
       fields: Campos Personalizados
       import: Importar
       integrations: Integraciones
+      message_templates: Plantillas de mensajes
       person_notifications: Notificaciones - cliente
       promote: Promover
       resources: Recursos

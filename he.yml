@@ -16,6 +16,19 @@ he:
         service_id: שֵׁרוּת
         title: כותרת
         verification_code: קוד אימות
+      booking/state:
+        awaiting_confirmation: אישור ממתין
+        awaiting_payment: ממתין לתשלום
+        awaiting_verification: מחכה לאישור
+        cancelled: מבוטל
+        confirmed: מְאוּשָׁר
+        declined: נדחה
+        deleted: נמחק
+      booking/status:
+        checked_in: נרשם
+        completed: הושלם
+        in_progress: התחיל
+        no_show: אין הופעה
       category:
         title: כותרת
       client:
@@ -41,8 +54,23 @@ he:
         service_id: שֵׁרוּת
         starts_at: מתחיל ב
         title: כותרת
+      message_template:
+        active: פָּעִיל
+        delivery_timing: להעביר ב
+        delivery_type: סוג משלוח
+        message_type: סוג הודעה
+        subject: נושא
+        template: תבנית
+      message_template/delivery_type:
+        email: אימייל
+        sms: סמס
+      message_template/message_type:
+        confirmation: אִשׁוּר
+        follow_up: תתעדכן
+        reminder: תִזכּוֹרֶת
       person:
         address: כתובת
+        blocked: חסום להזמנות
         city: עִיר
         country_code: מדינה
         created_at: רשום
@@ -58,6 +86,7 @@ he:
       resource:
         capacity: קיבולת
         mail_notification_recipient: כתובות דוא"ל להודעה
+        sms_notification_recipient: מספר טלפון להתראה
         title: כותרת
       service:
         payment_required: דורשים תשלום מראש
@@ -65,6 +94,9 @@ he:
         title: כותרת
       user:
         rotp_verification_code: קוד אימות
+      web_hook:
+        event: מִקרֶה
+        target_url: כתובת אתר של יעד
     errors:
       messages:
         chronic_syntax_error: שגיאת תחביר אנא עיין https://github.com/mojombo/chronic#examples
@@ -82,6 +114,7 @@ he:
             event_id:
               time_not_available: בתפוסה מלאה
             person_id:
+              blocked: חסום להזמנה
               taken: כבר נרשמת לאירוע זה
             resource_id:
               no_availability: לא זמין בזמן המבוקש
@@ -96,13 +129,18 @@ he:
           attributes:
             base:
               denied: נדחה
+        client_user_link:
+          admin_needed: צריך לפחות משתמש מנהל אחד בחשבון.
         person:
+          blocked: החשבון שלך לא יכול לבצע הזמנות.
           missing: לא נשמר בפרופיל הלקוח שלך. אנא פנה אלינו לתיקון.
           no_values_present: יש להזין שם, מספר טלפון או אימייל.
         resource:
           has_bookings: למשאב זה יש הזמנות. לא ניתן למחוק. אנא צרו קשר עם התמיכה.
         service:
-          below_minimum: חייב להיות יותר מ- 1 דולר אם אתה רוצה לדרוש תשלום
+          attributes:
+            below_minimum: חייב להיות יותר מ-1 דולר אם ברצונך לדרוש תשלום
+            payment_price_required: יש להגדיר אם ברצונך לדרוש תשלום
         user:
           attributes:
             password:
@@ -116,12 +154,14 @@ he:
       category: קטגוריה
       event: מִקרֶה
       external_credential: שילוב
+      message_template: תבנית הודעה
       person: צרכן
       resource: מַשׁאָב
       service: שֵׁרוּת
       service_appointment: שֵׁרוּת
       service_attendance: סוג אירוע
       user: מִשׁתַמֵשׁ
+      web_hook: webhook
   direction: rtl
   errors:
     messages:
@@ -135,7 +175,9 @@ he:
     models:
       person:
         perishable_token:
+          expired: תוקף הקוד פג. בבקשה נסה שוב.
           invalid: קוד שגוי
+          no_identifier: חסר מייל או מספר טלפון.
     stripe:
       booking:
         invalid: ההזמנה פג או שאינה חוקית. העסקה לא עובדה.
@@ -186,6 +228,7 @@ he:
         reminder_at: תִזכּוֹרֶת
         resource_id: מַשׁאָב
         service_id: שֵׁרוּת
+        terms_accepted: אני מאשר את התנאים
         title: כותרת
         verification_code: קוד אימות
       category:
@@ -197,6 +240,7 @@ he:
         api_key: מפתח API (לשילובים חיצוניים)
         app_secret: סוד חשבון
         appointment_form: שדות הזמנות בהתאמה אישית
+        awaiting_confirmation_text: טקסט המוצג כאשר ההזמנה ממתינה לאישור
         billing_city: עִיר
         billing_country_code: מדינה
         billing_email: כתובת דוא"ל לחשבונית
@@ -246,6 +290,7 @@ he:
         public_access: אתר ההזמנות זמין לציבור
         purge_data_period: מחיקה אוטומטית של מידע המאפשר זיהוי אישי
         reminder_sms: שלח תזכורות SMS
+        require_terms_acceptance: דרוש תנאים כדי להתקבל
         resource_form: שדות משאבים מותאמים אישית
         service_form: שדות שירות בהתאמה אישית
         service_template: סגנון לוח שנה
@@ -257,13 +302,21 @@ he:
         sms_confirmation: טקסט ב- SMS אישור
         sms_modification: טקסט ב- SMS לשינוי
         sms_notification: קבל SMS לכל הזמנה חדשה
+        sms_notification_recipient: מספר טלפון להתראה
         sms_reminder: טקסט בתזכורת SMS
         sms_reminder_time: זמן לתזכורת SMS
         sms_verification: טקסט ב- SMS לאימות
         subdomain: כתובת אתר (תת דומיין)
         template: נושא עיצובי
+        terms: תנאים
         time_zone: אזור זמן
         verification_method: שיטת אימות להזמנות חדשות
+      client_user_link:
+        role: רמת גישה
+      client_user_link/role:
+        admin: גישה מלאה
+        manager: הגדרה בסיסית
+        staff: רק לוח שנה
       event:
         all_day: כל היום
         booking_capacity: מספר מלווים לכל הזמנה
@@ -279,6 +332,20 @@ he:
         service_id: סוג אירוע
         starts_at: מתחיל ב
         title_html: כותרת מוגדרת <small>אופציונלית</small>
+      message_template:
+        active: פָּעִיל
+        delivery_timing: מסירה ב
+        delivery_type: סוג משלוח
+        message_type: סוג הודעה
+        subject: נושא
+        template: תבנית
+      message_template/delivery_type:
+        email: אימייל
+        sms: סמס
+      message_template/message_type:
+        confirmation: אִשׁוּר
+        follow_up: תתעדכן
+        reminder: תִזכּוֹרֶת
       person:
         address: כתובת
         city: עִיר
@@ -298,6 +365,7 @@ he:
       resource:
         capacity: מספר הזמנות מקסימלי בו זמנית
         mail_notification_recipient: כתובות דוא"ל להודעה
+        sms_notification_recipient: מספר טלפון להתראה
         title: כותרת
       service:
         booking_capacity: מספר מקסימום של אנשים להזמנה
@@ -338,13 +406,19 @@ he:
         name: שֵׁם
         password: סיסמה
         phonenumber: מספר טלפון
+        rotp_verification_code: קוד אימות
+      web_hook:
+        event: מִקרֶה
+        target_url: כתובת אתר של יעד
     link:
       add: לְהוֹסִיף
       back: חזור
       booking:
         new: הזמנה חדשה
+      cancel_confirm: אתה בטוח שאתה רוצה לבטל?
       category:
         new: קטגוריה חדשה
+      confirm: האם אתה בטוח?
       create: לִיצוֹר
       delete: לִמְחוֹק
       delete_confirm: אתה בטוח שאתה רוצה למחוק?
@@ -365,6 +439,8 @@ he:
       user:
         new: משתמש חדש
       view: נוף
+      web_hook:
+        new: Webhook חדש
     menu:
       agenda: סֵדֶר הַיוֹם
       calendar: לוּחַ שָׁנָה
@@ -383,6 +459,7 @@ he:
       fields: שדות בהתאמה אישית
       import: יְבוּא
       integrations: אינטגרציות
+      message_templates: תבניות הודעות
       person_notifications: התראות - לקוח
       promote: לקדם
       resources: אֶמְצָעִי

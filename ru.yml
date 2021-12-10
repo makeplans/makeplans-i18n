@@ -55,6 +55,7 @@ ru:
         starts_at: начинается в
         title: заглавие
       message_template:
+        active: активный
         delivery_timing: доставить в
         delivery_type: тип доставки
         message_type: тип сообщения
@@ -69,6 +70,7 @@ ru:
         reminder: напоминание
       person:
         address: адрес
+        blocked: Заблокировано для бронирования
         city: город
         country_code: страна
         created_at: зарегистрированный
@@ -84,6 +86,7 @@ ru:
       resource:
         capacity: емкость
         mail_notification_recipient: адрес (а) электронной почты для уведомления
+        sms_notification_recipient: номер телефона для уведомления
         title: заглавие
       service:
         payment_required: требовать предоплату
@@ -111,6 +114,7 @@ ru:
             event_id:
               time_not_available: полностью забронирован
             person_id:
+              blocked: заблокирован для бронирования
               taken: уже подписались на это мероприятие
             resource_id:
               no_availability: недоступен в указанное время
@@ -125,13 +129,18 @@ ru:
           attributes:
             base:
               denied: Отклонен
+        client_user_link:
+          admin_needed: Требуется хотя бы один пользователь-администратор в учетной записи.
         person:
+          blocked: Ваша учетная запись не может делать никаких бронирований.
           missing: не сохраняется в вашем профиле клиента. Свяжитесь с нами, чтобы исправить это.
           no_values_present: Необходимо указать имя, номер телефона или адрес электронной почты.
         resource:
           has_bookings: На этом ресурсе есть заказы. Невозможно удалить. Обратитесь в службу поддержки.
         service:
-          below_minimum: должно быть больше 1 доллара США, если вы хотите потребовать оплату
+          attributes:
+            below_minimum: должно быть больше 1 доллара США, если вы хотите потребовать оплату
+            payment_price_required: должен быть установлен, если вы хотите требовать оплаты
         user:
           attributes:
             password:
@@ -165,7 +174,9 @@ ru:
     models:
       person:
         perishable_token:
+          expired: Срок действия кода истек. Пожалуйста, попробуйте еще раз.
           invalid: неверный код
+          no_identifier: Отсутствует адрес электронной почты или номер телефона.
     stripe:
       booking:
         invalid: Бронирование истекло или недействительно. Транзакция не обработана.
@@ -228,6 +239,7 @@ ru:
         api_key: API-ключ (для внешних интеграций)
         app_secret: Секрет учетной записи
         appointment_form: Пользовательские поля бронирования
+        awaiting_confirmation_text: Текст отображается, когда бронирование ожидает подтверждения
         billing_city: Город
         billing_country_code: Страна
         billing_email: Адрес электронной почты для выставления счета
@@ -277,6 +289,7 @@ ru:
         public_access: Сайт бронирования доступен для всех
         purge_data_period: Автоматическое удаление личной информации, позволяющей установить личность
         reminder_sms: Отправлять SMS-напоминания
+        require_terms_acceptance: Требовать принятия условий
         resource_form: Настраиваемые поля ресурсов
         service_form: Пользовательские сервисные поля
         service_template: Стиль календаря
@@ -288,6 +301,7 @@ ru:
         sms_confirmation: Текст в подтверждающем SMS
         sms_modification: Текст в модификационном SMS
         sms_notification: Получать SMS для каждого нового бронирования
+        sms_notification_recipient: Телефон для уведомления
         sms_reminder: Текст в SMS-напоминании
         sms_reminder_time: Время для SMS-напоминания
         sms_verification: Текст в проверочном SMS
@@ -296,6 +310,12 @@ ru:
         terms: Условия
         time_zone: Часовой пояс
         verification_method: Метод подтверждения для новых бронирований
+      client_user_link:
+        role: Уровень доступа
+      client_user_link/role:
+        admin: Полный доступ
+        manager: Базовая настройка
+        staff: Только календарь
       event:
         all_day: Весь день
         booking_capacity: Максимальное количество обслуживающего персонала на бронирование
@@ -312,6 +332,7 @@ ru:
         starts_at: Начинается в
         title_html: Указанный заголовок <small>необязательный</small>
       message_template:
+        active: Активный
         delivery_timing: Доставить в
         delivery_type: Тип доставки
         message_type: Тип сообщения
@@ -343,6 +364,7 @@ ru:
       resource:
         capacity: Максимальное количество бронирований одновременно
         mail_notification_recipient: Электронный адрес (а) для уведомления
+        sms_notification_recipient: Телефон для уведомления
         title: Заголовок
       service:
         booking_capacity: Максимальное количество человек на бронирование
@@ -395,6 +417,7 @@ ru:
       cancel_confirm: Вы уверены, что хотите отменить?
       category:
         new: Новая категория
+      confirm: Уверены ли вы?
       create: Создавать
       delete: Удалить
       delete_confirm: Вы уверены, что хотите удалить?

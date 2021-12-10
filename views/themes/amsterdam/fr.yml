@@ -93,8 +93,10 @@ fr:
         form_header: Ce formulaire est envoyé crypté.
         header: Paiement
         info: Pour compléter la réservation de %{service} %{booking}, vous devez payer avec votre carte de crédit.
+        new_card: Entrez une nouvelle carte
         payment_details_html: Le montant affiché est en %{currency}. Nous ne stockons pas les détails de votre carte de crédit, mais les envoyons cryptés à %{provider} pour un traitement et un stockage sécurisés.
         payment_received: "%{paid_amount} a été payé le %{paid_at}."
+        save_card: Enregistrer la carte
       step:
         cancel: Annuler
         completed: Complété!
@@ -137,10 +139,17 @@ fr:
         not_available_for_this_verification_method: Pas disponible.
         submit: Recevoir le code
     profile:
+      credit_card_list:
+        add_card: Ajouter une nouvelle carte
+        body: Ce sont vos cartes de paiement enregistrées. Si vous le souhaitez, vous pouvez ajouter une nouvelle carte ou supprimer l'une des cartes existantes.
+        card_info: "%{brand} avec un numéro se terminant par %{last_4} et expire %{expire_month}/%{expire_year}."
+        remove_card: Supprimer cette carte
+        title: Vos moyens de paiement enregistrés
       show:
         header: Vos réservations
         logout: Se déconnecter
         new_booking: Nouvelle réservation
+        payment_methods: Modes de paiement enregistrés
     providers:
       index:
         show_all_available: Afficher tout disponible

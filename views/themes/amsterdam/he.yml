@@ -36,6 +36,7 @@ he:
           login_with_facebook_link: לאמת אוטומטית באמצעות פייסבוק
           not_current_person_html: האם אתה לא <span data-name="">%{person}?</span> ?
           remember_me: האם אתה רוצה שנזכור אותך במכונה זו באמצעות עוגיה?
+        date_format: 'נא להזין פורמט תאריך חוקי: %{format}'
         enter_info: הזן מידע
         errors_header: אנא מלא את השדות הנדרשים.
         form_info: זה ישמש לאימות ההזמנה שלך של %{service}, %{booking}.
@@ -92,8 +93,10 @@ he:
         form_header: טופס זה נשלח מוצפן.
         header: תַשְׁלוּם
         info: כדי להשלים את ההזמנה של %{service} %{booking} עליך לשלם בכרטיס האשראי שלך.
+        new_card: הזן כרטיס חדש
         payment_details_html: הסכום המוצג הוא ב- %{currency}. אנו לא שומרים את פרטי כרטיס האשראי שלך אלא שולחים אותם מוצפנים אל %{provider} לצורך עיבוד ואחסון מאובטח.
         payment_received: "%{paid_amount} שולם ב- %{paid_at}."
+        save_card: שמור כרטיס
       step:
         cancel: לְבַטֵל
         completed: הושלם!
@@ -136,10 +139,17 @@ he:
         not_available_for_this_verification_method: לא זמין.
         submit: קבל קוד
     profile:
+      credit_card_list:
+        add_card: הוסף כרטיס חדש
+        body: אלו הם כרטיסי התשלום המאוחסנים שלך. אם תרצה תוכל להוסיף כרטיס חדש או למחוק כל אחד מהקיימים.
+        card_info: "%{brand} עם מספר המסתיים ב-%{last_4} ופג תוקף %{expire_month}/%{expire_year}."
+        remove_card: הסר את הכרטיס הזה
+        title: אמצעי התשלום המאוחסנים שלך
       show:
         header: ההזמנות שלך
         logout: להתנתק
         new_booking: הזמנה חדשה
+        payment_methods: אמצעי תשלום מאוחסנים
     providers:
       index:
         show_all_available: הצג את כל הזמינים

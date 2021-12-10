@@ -16,6 +16,19 @@ ms:
         service_id: perkhidmatan
         title: tajuk
         verification_code: kod pengesahan
+      booking/state:
+        awaiting_confirmation: Menunggu pengesahan
+        awaiting_payment: Menunggu Pembayaran
+        awaiting_verification: Menunggu pengesahan
+        cancelled: Dibatalkan
+        confirmed: Disahkan
+        declined: ditolak
+        deleted: Dipadamkan
+      booking/status:
+        checked_in: Daftar masuk
+        completed: Selesai
+        in_progress: Bermula
+        no_show: Tiada tunjuk
       category:
         title: tajuk
       client:
@@ -41,8 +54,23 @@ ms:
         service_id: perkhidmatan
         starts_at: bermula pada
         title: tajuk
+      message_template:
+        active: aktif
+        delivery_timing: menyampaikan di
+        delivery_type: jenis penghantaran
+        message_type: jenis mesej
+        subject: subjek
+        template: templat
+      message_template/delivery_type:
+        email: emel
+        sms: SMS
+      message_template/message_type:
+        confirmation: pengesahan
+        follow_up: susulan
+        reminder: peringatan
       person:
         address: alamat
+        blocked: Disekat untuk tempahan
         city: bandar
         country_code: negara
         created_at: berdaftar
@@ -58,6 +86,7 @@ ms:
       resource:
         capacity: kapasiti
         mail_notification_recipient: alamat e-mel untuk pemberitahuan
+        sms_notification_recipient: nombor telefon untuk pemberitahuan
         title: tajuk
       service:
         payment_required: memerlukan pembayaran awal
@@ -65,6 +94,9 @@ ms:
         title: tajuk
       user:
         rotp_verification_code: kod pengesahan
+      web_hook:
+        event: Peristiwa
+        target_url: URL sasaran
     errors:
       messages:
         chronic_syntax_error: ralat sintaks sila lihat https://github.com/mojombo/chronic#examples
@@ -82,6 +114,7 @@ ms:
             event_id:
               time_not_available: ditempah sepenuhnya
             person_id:
+              blocked: disekat untuk tempahan
               taken: sudah mendaftar untuk acara ini
             resource_id:
               no_availability: tidak boleh didapati pada waktu yang diminta
@@ -96,13 +129,18 @@ ms:
           attributes:
             base:
               denied: Ditolak
+        client_user_link:
+          admin_needed: Memerlukan sekurang-kurangnya seorang pengguna pentadbir pada akaun.
         person:
+          blocked: Akaun anda tidak boleh membuat sebarang tempahan.
           missing: tidak disimpan di profil pelanggan anda. Sila hubungi kami untuk membetulkannya.
           no_values_present: Nama, nombor telefon atau e-mel diperlukan.
         resource:
           has_bookings: Sumber ini mempunyai tempahan. Tidak dapat dipadamkan. Sila hubungi sokongan.
         service:
-          below_minimum: mesti lebih dari 1 USD jika anda mahu memerlukan pembayaran
+          attributes:
+            below_minimum: mestilah lebih daripada 1 USD jika anda ingin memerlukan pembayaran
+            payment_price_required: mesti ditetapkan jika anda ingin memerlukan pembayaran
         user:
           attributes:
             password:
@@ -116,12 +154,14 @@ ms:
       category: kategori
       event: peristiwa
       external_credential: penyatuan
+      message_template: templat mesej
       person: pelanggan
       resource: sumber
       service: perkhidmatan
       service_appointment: perkhidmatan
       service_attendance: jenis acara
       user: pengguna
+      web_hook: webhook
   errors:
     messages:
       no_values_present: Nama, nombor telefon atau e-mel diperlukan.
@@ -134,7 +174,9 @@ ms:
     models:
       person:
         perishable_token:
+          expired: Kod tamat tempoh. Sila cuba lagi.
           invalid: kod salah
+          no_identifier: Tiada e-mel atau nombor telefon.
     stripe:
       booking:
         invalid: Tempahan telah tamat atau tidak sah. Transaksi tidak diproses.
@@ -185,6 +227,7 @@ ms:
         reminder_at: Peringatan
         resource_id: Sumber
         service_id: Perkhidmatan
+        terms_accepted: Saya meluluskan syarat
         title: Tajuk
         verification_code: Kod pengesahan
       category:
@@ -196,6 +239,7 @@ ms:
         api_key: Kekunci API (untuk penyatuan luaran)
         app_secret: Rahsia akaun
         appointment_form: Medan tempahan tersuai
+        awaiting_confirmation_text: Teks dipaparkan semasa tempahan sedang menunggu pengesahan
         billing_city: Bandar
         billing_country_code: Negara
         billing_email: Alamat e-mel untuk invois
@@ -245,6 +289,7 @@ ms:
         public_access: Laman web tempahan tersedia untuk orang ramai
         purge_data_period: Pemadaman automatik maklumat peribadi yang dapat dikenal pasti
         reminder_sms: Hantar peringatan SMS
+        require_terms_acceptance: Memerlukan syarat untuk diterima
         resource_form: Medan sumber tersuai
         service_form: Bidang perkhidmatan tersuai
         service_template: Gaya kalendar
@@ -256,13 +301,21 @@ ms:
         sms_confirmation: Teks dalam SMS pengesahan
         sms_modification: Teks dalam SMS pengubahsuaian
         sms_notification: Terima SMS untuk setiap tempahan baru
+        sms_notification_recipient: Nombor telefon untuk pemberitahuan
         sms_reminder: Teks dalam peringatan SMS
         sms_reminder_time: Masa untuk peringatan SMS
         sms_verification: Teks dalam SMS pengesahan
         subdomain: URL (subdomain)
         template: Tema reka bentuk
+        terms: Terma dan syarat
         time_zone: Zon masa
         verification_method: Kaedah pengesahan untuk tempahan baru
+      client_user_link:
+        role: Tahap capaian
+      client_user_link/role:
+        admin: Akses penuh
+        manager: Persediaan asas
+        staff: Hanya kalendar
       event:
         all_day: Sepanjang hari
         booking_capacity: Jumlah atendan maksimum setiap tempahan
@@ -278,6 +331,20 @@ ms:
         service_id: Jenis acara
         starts_at: Bermula pada
         title_html: Tajuk yang ditentukan <small>pilihan</small>
+      message_template:
+        active: Aktif
+        delivery_timing: Hantar di
+        delivery_type: Jenis penghantaran
+        message_type: Jenis mesej
+        subject: Subjek
+        template: templat
+      message_template/delivery_type:
+        email: E-mel
+        sms: SMS
+      message_template/message_type:
+        confirmation: Pengesahan
+        follow_up: Susulan
+        reminder: Peringatan
       person:
         address: Alamat
         city: Bandar
@@ -297,6 +364,7 @@ ms:
       resource:
         capacity: Jumlah tempahan maksimum pada masa yang sama
         mail_notification_recipient: Alamat e-mel untuk pemberitahuan
+        sms_notification_recipient: Nombor telefon untuk pemberitahuan
         title: Tajuk
       service:
         booking_capacity: Jumlah maksimum orang bagi setiap tempahan
@@ -338,13 +406,18 @@ ms:
         password: Kata Laluan
         phonenumber: Nombor telefon
         rotp_verification_code: Kod pengesahan
+      web_hook:
+        event: Peristiwa
+        target_url: URL sasaran
     link:
       add: Tambah
       back: Belakang
       booking:
         new: Tempahan baru
+      cancel_confirm: Adakah anda pasti mahu membatalkannya?
       category:
         new: Kategori baru
+      confirm: Adakah anda pasti?
       create: Buat
       delete: Padam
       delete_confirm: Adakah anda pasti ingin memadam?
@@ -365,6 +438,8 @@ ms:
       user:
         new: Pengguna baru
       view: Pandangan
+      web_hook:
+        new: webhook baharu
     menu:
       agenda: Agenda
       calendar: Kalendar
@@ -383,6 +458,7 @@ ms:
       fields: Bidang-bidang khas
       import: Import
       integrations: Kesepaduan
+      message_templates: Templat mesej
       person_notifications: Pemberitahuan - pelanggan
       promote: Mempromosikan
       resources: Sumber

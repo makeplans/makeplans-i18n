@@ -12,6 +12,7 @@ fr:
       read_legal: Termes et conditions d'utilisation de ce service
       recaptcha: Désolé de vous déranger, mais nous devons vérifier votre inscription sur Google Recaptcha. Veuillez saisir à nouveau votre mot de passe, puis soumettre le formulaire.
       subdomain_info: Votre adresse unique (URL) à laquelle vos clients peuvent réserver en ligne.
+      subdomain_not_website_warning: 'OOPS: Il s''agit de l''adresse de votre nouveau site de réservation. N''entrez PAS l''URL de votre site Web existant. En cas de doute, entrez simplement le nom de votre entreprise ici.'
       submit: Enregistrer mon compte
       title: Inscrivez-vous à votre compte de réservation en ligne
       user_email: Email de travail
@@ -51,4 +52,5 @@ fr:
       signup_html: Pas de compte? <a href="%{url}">Commencez maintenant.</a>
     rotp_verification_code:
       header: Connexion avec authentification à deux facteurs
+      info: Utilisez le code généré par votre application 2FA.
       submit: Connexion

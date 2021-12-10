@@ -7,6 +7,7 @@ he:
   manage:
     agenda:
       calendar:
+        availability: התאם את הזמינות לתקופה זו
         ignore_capacity_confirm: יש כבר הסתייגות נוספת במסגרת הזמן הזו. האם אתה בטוח שברצונך לחסוך?
         listWeek: רשימה
         opening_hours:
@@ -73,6 +74,7 @@ he:
         edit_info_link: האם ברצונך לשנות את פרטי החיוב שלך?
         edit_link: האם אתה רוצה לעדכן את פרטי כרטיס האשראי שלך?
         email_recipent: אנו נשלח את החשבונית באימייל לכתובת %{email}.
+        header: פרטי תשלום
         info_header: 'פרטי החיוב שלך:'
         paid_until: החשבון שלך משולם עד %{paid_until}.
         pause: השהה את החשבון עם סיום המנוי הנוכחי.
@@ -90,6 +92,9 @@ he:
         error: לא ניתן לאמת את התשלום. אנא צרו קשר עם שירות הלקוחות.
         info: אנא המתן בזמן שאנו מחייבים את כרטיס התשלום שלך. זה יכול לקחת עד דקה. תקבל מאימייל מאיתנו עם סיום התהליך.
     bookings:
+      cancel_recurring:
+        headline: כל ההסתייגויות העתידיות בתוך הדפוס החוזר הזה הוסרו
+        list_recurring: ראה רשימת הסתייגויות בתוך דפוס חוזר זה.
       create_recurring:
         headline: יוצר הזמנות %{count} ...
         link: הצג רשימה
@@ -110,6 +115,7 @@ he:
         headline_create_recurring: הוסף הזמנה חדשה
         headline_edit: שנה הזמנה
         headline_new: הוסף הזמנה חדשה
+        headline_update: שנה הזמנה
         ignore_capacity: שמור גם אם תפוס
         modification_send_email: שלח שינוי בדוא"ל
         modification_send_sms: שלח שינוי SMS
@@ -135,6 +141,7 @@ he:
         headline_create: הוסף מלווה
         headline_edit: שנה הזמנה
         headline_new: הוסף מלווה
+        headline_update: שנה הזמנה
         modification_send_email: שלח שינוי בדוא"ל
         modification_send_sms: שלח שינוי SMS
         notification_send_email: שלח הודעת דוא"ל
@@ -152,9 +159,11 @@ he:
         result_header: iZettle
         success: תשלום רשום.
       show:
+        amount: מחיר סופי
         booked_from: מ
         booked_to: ל
         count: מספר אנשים
+        created_by: נוצר על ידי %{user}
         fiken:
           create_invoice: צור חשבונית ב- Fiken
           created: נוצרת חשבונית ב- Fiken
@@ -194,11 +203,17 @@ he:
           create_invoice: צור הזמנה ב- Visma eAccounting
           created: חשבונית נוצרת ב- Visma eAccounting
           processing: ההזמנה נוצרת ב- Visma eAccounting. זה יכול לקחת כמה דקות.
+        zoom:
+          start_meeting: התחל פגישת זום
       show_recurring:
+        cancel_all_future: בטל את כל הפגישות העתידיות
         delete_all: מחק הכל
         headline: כל ההזמנות החוזרות ונשנות בתבנית זו
       state_changer:
         state: מדינה
+      status_changer:
+        cancel: ביטול הזמנה
+        status: הגדר סטטוס
       unconfirmed:
         headline: רשימת הסתייגויות לאישור
         no_reservations: אין הסתייגויות הדורשות אישור
@@ -219,8 +234,10 @@ he:
         get_started: נכון לעכשיו לא יצרת אף קטגוריה. לכן כל השירותים נמצאים ברשימה באתר ההזמנות. אם אתה רוצה לסווג את השירותים שלך התחל ביצירת קטגוריה.
         header: לא נוספו קטגוריות
         info: אם אתם מציעים שירותים רבים ניתן לסווג אותם במספר רמות. קטגוריות יוצגו באתר ההזמנות ולכן על הלקוח לבחור קטגוריה לפני הצגת השירותים בקטגוריה שנבחרה. ניתן להציג שירות במספר קטגוריות.
+        no_categories: לא נוספו קטגוריות
       form:
         has_services: מציג שירותים אלה
+        no_parent_id: הרמה העליונה
       index:
         header: קטגוריות
       list_menu:
@@ -229,6 +246,15 @@ he:
         custom_data: 'נתונים מותאמים אישית:'
         has_services: 'מציג שירותים אלה:'
     client:
+      api:
+        disable: האם אתה רוצה להשבית את ה-API?
+        disable_warning: האם אתה בטוח שברצונך להשבית את ה-API? מפתח ה-API יהפוך ללא חוקי והממשק ה-API לא זמין.
+        enable: האם אתה רוצה להפעיל את ה-API?
+        enable_warning: האם אתה בטוח שברצונך להפעיל את ה-API? מפתח ה-API נותן גישה פרוגרמטית מלאה לחשבון שלך.
+        enabled: ה-API מופעל.
+        header: ממשק API
+        info_html: צור קשר עם שירות הלקוחות לקבלת עזרה. התיעוד זמין בכתובת <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        not_enabled: ה-API אינו מופעל.
       cancel:
         confirm_message: ההזדמנות האחרונה. האם אתה בטוח לחלוטין שברצונך למחוק את חשבונך עם כל הנתונים שלך?
         disable_link: כן, אנא מחק את כל הנתונים שלי.
@@ -247,6 +273,7 @@ he:
       edit_booking_site:
         booking_form_info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
         booking_site_info_html: אתר ההזמנות שלך זמין בכתובת %{url}.
+        booking_site_locale_default: השתמש בשפת החשבון
         cancellation: ביטול
         cancellation_info: ביטול יכול להתבצע רק לפני תקופת הביטול. לא ניתן לבטל הזמנות ששולמו מראש.
         cancellation_period_info: 'דוגמה: ''24 שעות לפני ''(ניתן לבטל רק 24 שעות לפני תחילת ההזמנה).'
@@ -319,6 +346,7 @@ he:
         sms_reminder_time_info: 'SMS נשלח בצהריים יום לפני ההזמנה. אם ברצונך לשנות זאת אנא שנה את השדה למטה. דוגמה: ''שעתיים לפני'' (SMS נשלח שעתיים לפני ההזמנה) או ''8:00 אתמול'' (SMS התזכורת יישלח בשמונה בבוקר יום לפני ההזמנה)'
       edit_user_notifications:
         approvement_email: הודעת דוא"ל לבקשות הזמנות חדשות
+        approvement_sms: הודעת SMS עבור בקשות הזמנה חדשות
         automatic_messages: הודעות אוטומטיות
         default: פעיל (ברירת מחדל)
         disable: נָכֶה
@@ -337,9 +365,12 @@ he:
           calendar_hide_weekends: הסתר סופי שבוע
           calendar_slot_duration: משך הזמן
           calendar_slot_label_interval: מרווח תווית חריץ
+          esource_title: כותרת משאב מותאמת אישית
       export_info:
         data_types:
           bookings: הזמנות
+          bookings_all: הזמנות (הכל)
+          bookings_visible: הזמנות (כולל ביטולים)
           events: אירועים
           people: לקוחות
         executed: הייצוא נשלח כעת לכתובת הדוא"ל שלך.
@@ -397,6 +428,11 @@ he:
         show_only_active_html: הרשימה כוללת הזמנות לא פעילות של %{count}. <a href="%{href}">האם אתה רוצה להציג רק הזמנות פעיל?</a>
         signup_link: קישור הרשמה
         sms_all_participants: שלח SMS לכל המשתתפים
+        zoom:
+          join_meeting: קישור להצטרפות לפגישה
+          join_webinar: הצטרפו לקישור לוובינר
+          start_meeting: התחל פגישת זום כמארח
+          start_webinar: התחל סמינר מקוון של זום כמארח
       show_recurring:
         delete_all: מחק הכל
         headline: כל האירועים החוזרים על עצמם בתבנית זו
@@ -412,6 +448,10 @@ he:
         no_events_range: אין אירועים קיימים מ- %{start} ל- %{end}
     integrations:
       account_connected: התחבר לחשבון זה.
+      bestrx:
+        api_key: מפתח ה-API הוא %{api_key}
+        api_url: כתובת האתר ל-API היא %{api_url}
+        enable: לְאַפשֵׁר
       braintree:
         cse_key: מפתח Cse
         environment: סביבה
@@ -464,6 +504,10 @@ he:
         account: תת-דומיין (YOURACCOUNT.highrisehq.com - הזן רק את ACCOUNT שלך)
         connect_info: 'בחר חשבון שבו מתווספים לקוחות חדשים:'
         password: מפתח API
+      index:
+        api: ממשק API
+        header: אינטגרציות
+        web_hooks: Webhooks
       izettle:
         active: אקטיס
         info: כדי להשתמש ב- iZettle אנא הגדר מחיר על השירות שאתה מספק. לאחר מכן ניתן יהיה ללחוץ על "בצע תשלום באמצעות iZettle" בהזמנה.
@@ -478,6 +522,11 @@ he:
         account: מזהה רשימה
         username: שם משתמש בחשבון
       not_authenticated: לא מצליח להתחבר. בדוק את אישוריך.
+      notion:
+        connected_to: מחובר למסד נתונים עם מזהה %{database_id}
+        database_info: 'יש להגדיר את מסד הנתונים עם המאפיינים הבאים: שם, דואר אלקטרוני (סוג: מייל), טלפון (סוג: טלפון).'
+        select_database: בחר מסד נתונים
+        sharing_info: אנא שתף לפחות מסד נתונים אחד עם שילוב MakePlans
       oauth_connect: התחבר לשירות
       quickpay:
         environment: סביבה
@@ -486,6 +535,8 @@ he:
         production: הפקה
         test: מִבְחָן
       selected_option: נבחר
+      sendy:
+        connect_info_html: "<em>לקוחות חדשים יירשמו</em> לרשימה עם מזהה %{list_id} בהתקנה %{api_url}"
       stripe:
         payment_info: עבור כל העסקאות דמי עסקה בסך %{application_fee_percent} מנוכים על ידי MakePlans.
         receipt_email: שלחו קבלה ללקוח מפס
@@ -528,14 +579,32 @@ he:
         info_html: כדי לחבר את MakePlans ל- Zapier אנא הכינו <a href="%{url}" target="_blank">Zap חדש ב- Zapier</a> .
       zoom:
         connect_info: מְחוּבָּר
+        info: כדי שהשילוב הזה יעבוד, עליך לחבר משאב למשתמש ב-Zoom ולהיות לפחות שירות אחד עם Zoom מופעל.
+        registration_type: סוג רישום
+        session_type: סוג הפעלה של זום לאירועים
+    message_templates:
+      form:
+        delivery_timing_info: 'כתוב באנגלית פשוטה. דוגמה: ''שעתיים לפני'' (ההודעה נשלחת שעתיים לפני) או ''08:00 מחר'' (בשעה 08:00 ביום שאחרי). עיתוי האספקה הוא יחסי בהתבסס על סוג ההודעה: אישור - הזמנה נוצרה_ב, תזכורת - ההזמנה הוזמנה_מאת, מעקב_ההזמנה - ההזמנה הוזמנה_ל.'
+        immediately: מיד
+        services: שירותים
+        services_info: 'תבנית ההודעה תישלח עבור כל השירותים, אלא אם תגביל לשירותים ספציפיים להלן:'
+        template_info_html: אתה יכול למזג ערכים דינמיים של אין. אנא ראה <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> לפרטים.
+      index:
+        header: תבניות הודעות
+        immediately: מיד
+        intro: כאן תמצאו תבניות הודעות מורכבות יותר שניתן לשלוח לאחר אישור ההזמנה, לפני תחילתה או לאחר השלמתה. שימו לב שהודעות אלו נשלחות בנוסף להודעות הרגילות כמו אישור ותזכורת. השתמש בפונקציה זו רק אם אתה רוצה למשל לשלוח תזכורת נוספת, מספר הודעות אישור (כמו דואר אלקטרוני בנוסף ל-SMS) או הודעת המשך.
+      show:
+        immediately: מיד
     people:
       form:
+        block: חסום לקוח להזמנה
         merge_action: למזג את שני הלקוחות הללו
         merge_action_email: כתובת דוא"ל זו כבר נשמרה אצל לקוח אחר. האם ברצונך למזג את שני הלקוחות הללו כך ש- %{email} ישמש ככתובת הדואר האלקטרוני?
         merge_action_info: כל ההזמנות יישמרו אך אחד הלקוחות יימחק. אתה יכול לבחור איזה פרטי לקוח יישמר.
         merge_action_phone_number: מספר טלפון זה כבר מאוחסן אצל לקוח אחר. האם ברצונך למזג את שני הלקוחות הללו ל- %{phone_number} ישמש כמספר הטלפון?
         merge_button: למזג ולשמור
         merge_info: 'במקום זאת השתמש:'
+        unblock: הסר את חסימת ההזמנה
       index:
         delete_warning: האם אתה בטוח שברצונך למחוק את %{person}?
         filter: סִנוּן
@@ -566,6 +635,11 @@ he:
       deactivate_rotp:
         deactivate_rotp: הסר את 2FA
         verify_code: 'הזן קוד לאימות:'
+      edit_password:
+        verify_code: 'הזן קוד לאימות:'
+      no_access:
+        header: אין גישה
+        info: אנא צור קשר עם מנהל החשבון שלך כדי לגשת לתכונה זו.
       show:
         change_password: שנה סיסמה
         rotp:
@@ -650,6 +724,7 @@ he:
         next_interval_default: על פי אורך ההזמנה
         offered_by: מוצע על ידי המשאבים הבאים
         payment: תַשְׁלוּם
+        price_placeholder: המחיר לא נקבע
         settings:
           hide_all_available: יש לבחור משאב ספציפי ('הצג את כל הזמינים' יוסתר)
           hide_resources: כפתור הסתר לבחירת משאב (ייבחר באופן אקראי לפי בין המקורות הזמינים)
@@ -675,6 +750,7 @@ he:
           fiken_product_href: התחבר למוצר ב- Fiken
           tfso_product_id: מזהה מוצר 24SevenOffice
           visma_eaccounting_article_id: התחבר למוצר ב- Visma eAccounting
+          zoom_create_session: צור באופן אוטומטי פגישת Zoom עבור שירות זה
       list_menu:
         list_appointment: שירותים
         list_attendance: סוגי אירועים
@@ -764,6 +840,7 @@ he:
         processing: המתן בבקשה...
       index:
         buy: קנה זיכויים נוספים ב- SMS
+        header: יתרת SMS
         sms_credits_available: יש לך זיכויים ל- %{credits} SMS.
       purchase_form:
         buy: לִרְכּוֹשׁ
@@ -779,3 +856,7 @@ he:
       show:
         remove_access: הסר גישה
         remove_access_confirm: האם אתה בטוח שברצונך להסיר גישה לחשבון זה עבור משתמש זה?
+    web_hooks:
+      index:
+        app_secret_info_html: סוד האפליקציה לאימות webhooks. ראה <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">תיעוד</a> לפרטים.
+        header: Webhooks

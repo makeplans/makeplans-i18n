@@ -93,8 +93,10 @@ ru:
         form_header: Эта форма отправляется в зашифрованном виде.
         header: Оплата
         info: Чтобы завершить бронирование %{service} %{booking}, вы должны заплатить кредитной картой.
+        new_card: Введите новую карту
         payment_details_html: Отображаемая сумма в %{currency}. Мы не храним данные вашей кредитной карты, а отправляем их в зашифрованном виде на %{provider} для безопасной обработки и хранения.
         payment_received: "%{paid_amount} был оплачен на %{paid_at}."
+        save_card: Сохранить карту
       step:
         cancel: Отмена
         completed: Завершенный!
@@ -137,10 +139,17 @@ ru:
         not_available_for_this_verification_method: Недоступен.
         submit: Получить код
     profile:
+      credit_card_list:
+        add_card: Добавить новую карту
+        body: Это ваши сохраненные платежные карты. При желании вы можете добавить новую карту или удалить любую из существующих.
+        card_info: "%{brand} с номером, заканчивающимся на %{last_4}, срок действия которого истекает %{expire_month} / %{expire_year}."
+        remove_card: Удалить эту карту
+        title: Ваши сохраненные способы оплаты
       show:
         header: Ваши бронирования
         logout: Выйти
         new_booking: Новое бронирование
+        payment_methods: Сохраненные способы оплаты
     providers:
       index:
         show_all_available: Показать все доступные

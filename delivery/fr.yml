@@ -38,7 +38,34 @@ fr:
       header: Pour finaliser votre réservation de %{title} %{time_range}, vous devez confirmer votre réservation en cliquant sur le lien ci-dessous.
       link: Confirmer la réservation
       subject: Veuillez confirmer votre réservation
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Vos réservations de %{title} pour les périodes suivantes ont été annulées:'
+      subject: Réservations annulées
+    create:
+      body: 'Vous avez réservé %{title} pour les heures suivantes:'
+      subject: Nouvelles réservations
   booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        ACTION NÉCESSAIRE: Demande de réservation par {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} sur {{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Faire des plans
+      booking_type_attendance: |-
+        ACTION NÉCESSAIRE: demande d'inscription par {{ booking.person.name }} pour {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Faire des plans
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        ANNULATION : {{ booking.person.name }} a annulé sa réservation de {{ booking.resource.title }} - {{ booking.title }} le {{ booking.time_range }}
+        Faire des plans
+      booking_type_attendance: |-
+        ANNULATION: {{ booking.person.name }} a annulé son inscription à {{ booking.event.full_title }} {{ booking.time_range }}.
+        Faire des plans
     admin_notification_confirmation:
       booking_type_appointment: |-
         Nouvelle réservation de {{ booking.resource.title }} par {{ booking.person.name }}. {{ booking.title }} sur {{ booking.time_range }}

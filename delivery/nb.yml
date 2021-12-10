@@ -2,13 +2,6 @@
 nb:
   booking_ical:
     summary: "%{service} hos %{client}"
-  booking_occurrence_mailer:
-    cancel:
-      body: 'Dine reservasjoner av %{title} har blitt kansellert:'
-      subject: 'Kansellerte reservasjoner'
-    create:
-      body: 'Du har reservert %{title} til følgende tider:'
-      subject: 'Nye reservasjoner'
   booking_mailer:
     cancellation:
       header: Hei %{name}
@@ -45,6 +38,13 @@ nb:
       header: For å fullføre din reservering av %{title} %{time_range} må du bekrefte reservasjonen ved å klikke på linken under.
       link: Bekreft reservasjon
       subject: Bekreft din reservasjon
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Dine reservasjoner av %{title} har blitt kansellert:'
+      subject: Kansellerte reservasjoner
+    create:
+      body: 'Du har reservert %{title} til følgende tider:'
+      subject: Nye reservasjoner
   booking_sms:
     admin_notification_approvement:
       booking_type_appointment: |-

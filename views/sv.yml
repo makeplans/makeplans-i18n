@@ -12,6 +12,7 @@ sv:
       read_legal: Regler och villkor för användning av denna tjänst
       recaptcha: Vi måste verifiera din registrering hos Google Recaptcha. Ange ditt lösenord igen och tryck på registerknappen igen.
       subdomain_info: Din unika adress (URL) där dina kunder kan göra onlinebokningar.
+      subdomain_not_website_warning: 'OOPS: Det här är adressen till din nya bokningssida. Ange INTE URL:en till din befintliga webbplats. Om du är tveksam, skriv bara ditt företagsnamn här.'
       submit: Registrera mitt konto
       title: Registrera ditt eget bokningskonto online
       user_email: Jobb-e-post
@@ -51,4 +52,5 @@ sv:
       signup_html: Inget konto? <a href="%{url}">Kom igång nu.</a>
     rotp_verification_code:
       header: Logga in med tvåfaktorsautentisering
+      info: Använd koden som genereras av din 2FA-applikation.
       submit: Logga in

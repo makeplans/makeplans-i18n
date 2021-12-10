@@ -36,6 +36,7 @@ da:
           login_with_facebook_link: bekræft automatisk med Facebook
           not_current_person_html: Er du ikke <span data-name="">%{person}</span> ?
           remember_me: Vil du have os til at huske dig på denne maskine indtil næste gang du bestiller her?
+        date_format: 'Indtast venligst gyldigt datoformat: %{format}'
         enter_info: Udfyld personlige oplysninger
         errors_header: Du skal udfylde alle krævede felter.
         form_info: Dette bruges til at bekræfte din reservation af %{service}, %{booking}.
@@ -96,8 +97,10 @@ da:
         form_header: Denne formular sendes krypteret.
         header: Betaling
         info: For at reservere for %{service} %{booking} skal du betale med dit kreditkort.
+        new_card: Indtast nyt kort
         payment_details_html: Beløbet er angivet i %{currency} og inkluderer moms. Dine kortoplysninger gemmes ikke hos os, men sendes krypteret til %{provider} for sikker transaktion og opbevaring.
         payment_received: "%{paid_amount} blev betalt %{paid_at}."
+        save_card: Gem kort
       step:
         cancel: Afbestille
         completed: Færdig!
@@ -140,10 +143,17 @@ da:
         not_available_for_this_verification_method: Ikke tilgængelig
         submit: Modtag kode
     profile:
+      credit_card_list:
+        add_card: Tilføj nyt kort
+        body: Dette er dine gemte betalingskort. Hvis du vil, kan du tilføje et nyt kort eller slette et af de eksisterende.
+        card_info: "%{brand} med nummer ender på %{last_4} og udløber %{expire_month}/%{expire_year}."
+        remove_card: Fjern dette kort
+        title: Dine gemte betalingsmetoder
       show:
         header: Dine reservationer
         logout: Log ud
         new_booking: Ny reservation
+        payment_methods: Gemte betalingsmetoder
     providers:
       index:
         show_all_available: Vis alle tilgængelige

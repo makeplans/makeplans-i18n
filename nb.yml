@@ -12,10 +12,10 @@ nb:
         person_id: kunde
         resource: ressurs
         resource_id: ressurs
-        status: status
-        state: status
         service: tjeneste
         service_id: tjeneste
+        state: status
+        status: status
         terms_accepted: vilkår
         title: tittel
         verification_code: verifikasjonskode
@@ -29,10 +29,10 @@ nb:
         deleted: Fjernet
         verification_expired: Utløpt
       booking/status:
-        checked_in: 'Ankommet'
-        in_progress: 'Påbegynt'
-        completed: 'Ferdig'
-        no_show: 'Kom ikke'
+        checked_in: Ankommet
+        completed: Ferdig
+        in_progress: Påbegynt
+        no_show: Kom ikke
       category:
         title: tittel
       client:
@@ -60,20 +60,21 @@ nb:
         title: tittel
       message_template:
         active: aktiv
-        message_type: meldingstype
-        delivery_type: leveringstype
         delivery_timing: leveringstidspunkt
+        delivery_type: leveringstype
+        message_type: meldingstype
         subject: emne
         template: mal
       message_template/delivery_type:
-        sms: SMS
         email: epost
+        sms: SMS
       message_template/message_type:
         confirmation: bekreftelse
-        reminder: påminnelse
         follow_up: oppfølgning
+        reminder: påminnelse
       person:
         address: adresse
+        blocked: Blokkert for reservasjoner
         city: by
         country_code: land
         created_at: registrert
@@ -100,6 +101,9 @@ nb:
         password: passord
         password_confirmation: passord-bekreftelse
         rotp_verification_code: verifiseringskode
+      web_hook:
+        event: Begivenhet
+        target_url: Mål-URL
     errors:
       messages:
         chronic_syntax_error: syntaksfeil se https://github.com/mojombo/chronic#examples
@@ -117,8 +121,8 @@ nb:
             event_id:
               time_not_available: er fullt
             person_id:
-              taken: er allerede påmeldt dette arrangementet.
               blocked: blokkert for reservasjoner.
+              taken: er allerede påmeldt dette arrangementet.
             resource_id:
               no_availability: ikke tilgjengelig på valgt tidspunkt
             service_id:
@@ -132,17 +136,19 @@ nb:
           attributes:
             base:
               denied: Avvist
+        client_user_link:
+          admin_needed: Trenger minst én admin-bruker på kontoen.
         person:
+          blocked: Ikke mulig å gjøre reservasjoner med denne kontoen.
           missing: er ikke lagret på din kundeprofil. Kontakt oss for å rette opp i dette.
           no_values_present: Navn, telefonnummer eller epost er påkrevd.
-          blocked: Ikke mulig å gjøre reservasjoner med denne kontoen.
         resource:
           has_bookings: Denne ressursen har aktive reservasjoner og kan dermed ikke slettes. Kontakt kundeservice.
         service:
           attributes:
             price:
-              payment_price_required: må være satt hvis du skal kreve forhåndsbetaling
               below_minimum: må være høyere enn 3 NOK hvis du skal kreve forhåndsbetaling.
+              payment_price_required: må være satt hvis du skal kreve forhåndsbetaling
         user:
           attributes:
             password:
@@ -163,6 +169,7 @@ nb:
       service_appointment: tjeneste
       service_attendance: arrangementstype
       user: bruker
+      web_hook: webhook
   csv:
     col_sep: ";"
   date:
@@ -177,7 +184,7 @@ nb:
       short_with_name_and_year: "%a %-d. %b %Y"
     moment_format: DD.MM.YYYY
     moment_parse: D.M.YYYY
-    moment_parse_visual: 'DD.MM.ÅÅÅÅ'
+    moment_parse_visual: DD.MM.ÅÅÅÅ
   errors:
     messages:
       no_values_present: Navn, telefonnummer eller epost er påkrevd.
@@ -190,7 +197,9 @@ nb:
     models:
       person:
         perishable_token:
+          expired: Koden har utløpt. Vær så snill, prøv på nytt.
           invalid: Feil kode
+          no_identifier: Mangler e-post eller telefonnummer.
     stripe:
       booking:
         invalid: Reservasjonen er utløpt eller ugyldig. Transaksjon ikke gjennomført.
@@ -241,9 +250,9 @@ nb:
         person_id: Kunde
         reminder_at: Påminnelse
         resource_id: Ressurs
-        status: Status
-        state: Status
         service_id: Tjeneste
+        state: Status
+        status: Status
         terms_accepted: Jeg godkjenner vilkårene
         title: Tittel
         verification_code: Verifikasjonskode
@@ -352,18 +361,18 @@ nb:
         title_html: Spesifisert tittel <small>valgfritt</small>
       message_template:
         active: Aktiv
-        message_type: Meldingstype
-        delivery_type: Leveringstype
         delivery_timing: Leveringstidspunkt
+        delivery_type: Leveringstype
+        message_type: Meldingstype
         subject: Emne
         template: Mal
       message_template/delivery_type:
-        sms: SMS
         email: Epost
+        sms: SMS
       message_template/message_type:
         confirmation: Bekreftelse
-        reminder: Påminnelse
         follow_up: Oppfølgning
+        reminder: Påminnelse
       person:
         address: Adresse
         blocked: Blokkert for reservasjoner
@@ -427,6 +436,9 @@ nb:
         password_confirmation: Passord-bekreftelse
         phonenumber: Telefonnummer
         rotp_verification_code: Verifiseringskode
+      web_hook:
+        event: Begivenhet
+        target_url: Mål-URL
     link:
       add: Legg til
       back: Tilbake
@@ -458,6 +470,8 @@ nb:
       user:
         new: Ny bruker
       view: Vis
+      web_hook:
+        new: Ny webhook
     menu:
       agenda: Agenda
       calendar: Kalender
@@ -475,8 +489,8 @@ nb:
       export: Eksport
       fields: Egendefinerte felter
       import: Import
-      message_templates: Meldingsmaler
       integrations: Integrasjoner
+      message_templates: Meldingsmaler
       person_notifications: Kundevarslinger
       promote: Promoter
       resources: Ressurser

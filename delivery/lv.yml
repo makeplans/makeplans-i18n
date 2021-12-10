@@ -2,17 +2,11 @@
 lv:
   booking_ical:
     summary: "%{service} pie %{client}"
-  booking_occurrence_mailer:
-    cancel:
-      body: 'Jūsu pieraksts "%{title}" ir ticis atcelts sekojošajos laikos:'
-      subject: 'Atcelti pieraksti'
-    create:
-      body: 'Jūs esat viekuši pierakstu "%{title}" sekojošajiem laikiem:'
-      subject: 'Jauni pieraksti'
   booking_mailer:
     cancellation:
-      header: Sveiki, %{name}
       body: Jūsu pieraksts "%{title}" %{time_range} ir ticis atcelts.
+      header: Sveiki, %{name}
+      info: Jūsu rezervācija %{title} %{time_range} ir atcelta.
       subject: Pieraksts atcelts
     confirmation:
       header: Sveiki, %{name}
@@ -25,7 +19,7 @@ lv:
     declined:
       body: |-
         Sveiki,
-        
+
         Jūsu pieraksts diemžēl nav ticis apstiprināts.
       subject: Pieraksts noraidīts
     modification:
@@ -45,19 +39,26 @@ lv:
       header: Lai pabeigtu pierakstu %{title} %{time_range}, jums to jāapstiprina , sekojot zemāk norādītajai saitei.
       link: Apstiprināt pierakstu
       subject: Lūdzu, apstipriniet pierakstu
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Jūsu pieraksts "%{title}" ir ticis atcelts sekojošajos laikos:'
+      subject: Atcelti pieraksti
+    create:
+      body: 'Jūs esat viekuši pierakstu "%{title}" sekojošajiem laikiem:'
+      subject: Jauni pieraksti
   booking_sms:
     admin_notification_approvement:
       booking_type_appointment: |-
         NEPIECIEŠAMA DARBĪBA: Pieraksta formu aizpildījis(-usi) {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} {{ booking.time_range }}
-        
+
         {{ booking.client.manage_unconfirmed_bookings_link }}
-        
+
         MakePlans
       booking_type_attendance: |-
         NEPIECIEŠAMA DARBĪBA: Pasākuma pieraksta formu aizpildījis(-usi) {{ booking.person.name }}, pasākumam {{ booking.event.full_title }} {{ booking.time_range }}.
-        
+
         {{ booking.client.manage_unconfirmed_bookings_link }}
-        
+
         MakePlans
     admin_notification_cancellation:
       booking_type_appointment: |-
@@ -80,7 +81,7 @@ lv:
     reminder: 'Atgādinājums: {% if booking.service != nil %} pieraksts {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
     request_card: Lūdzu, pievienojiet savu maksājumu datus vietnē %{url}
     signature: |2-
-    
+
       {{ booking.client.name }}
     verification: "{{ booking.verification_code }} Jūsu pakalpojuma {{ booking.title }} pieraksta rezervācijas kods ir {{ booking.verification_code }}."
   person_mailer:
@@ -89,11 +90,11 @@ lv:
     perishable_token:
       body: |-
         Lai pieteiktos, klikšķiniet sekojošo saiti:
-        
+
         %{link}
       subject: Piesakieties MakePlans
   person_sms:
     perishable_token: "{{ perishable_token }} ir jūsu autentifikācijas kods."
     signature: |2-
-    
+
       {{ client.name }}

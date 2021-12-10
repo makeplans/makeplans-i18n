@@ -114,6 +114,17 @@ fr:
 
         Ou avez-vous des questions sur l'utilisation de MakePlans ou comment configurer au mieux votre compte? Répondez simplement à cet e-mail et nous pouvons vous aider :)
       subject: Terminez votre configuration MakePlans
+    paused:
+      body: |-
+        Salut,
+
+        Votre abonnement à MakePlans sera suspendu à la fin de cette période de facturation (%{demo_ends_at}).
+        Sachez que tous les frais de transaction tels que les SMS vous seront facturés tant que votre compte est actif.
+
+        Lorsque votre abonnement est suspendu, vous pouvez facilement réactiver votre compte à l'avenir.
+
+        Si vous avez des difficultés à faire fonctionner MakePlans pour votre cas d'utilisateur, veuillez répondre à cet e-mail afin que nous puissions vous aider à configurer votre compte et vous expliquer comment vous pouvez utiliser au mieux MakePlans en fonction de vos besoins.
+      subject: Votre compte sera suspendu
     setup_completed:
       contact_us_html: Et si vous avez des questions, envoyez-nous un e-mail à %{mail}
       footer: Faire des plans

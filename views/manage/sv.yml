@@ -74,6 +74,7 @@ sv:
         edit_info_link: Vill du ändra dina faktureringsuppgifter?
         edit_link: Vill du förnya dina kortuppgifter?
         email_recipent: Vi kommer att skicka fakturan till %{email}.
+        header: betalningsinformation
         info_header: 'Dina faktureringsuppgifter:'
         paid_until: Kontot betalas fram till %{paid_until}.
         pause: Pausa kontot efter att den betalade perioden har avslutats.
@@ -91,6 +92,9 @@ sv:
         error: Vi kunde inte bekräfta att betalningen gjordes. Kontakta Kundservice.
         info: Vänta medan vi debiterar ditt kreditkort. Det kan ta upp till en minut. Du kommer att få ett mejl från oss när processen är klar.
     bookings:
+      cancel_recurring:
+        headline: Alla framtida reservationer inom detta återkommande mönster togs bort
+        list_recurring: Se listan över reservationer inom detta återkommande mönster.
       create_recurring:
         headline: Genererar %{count} bokningar...
         link: Visa lista
@@ -111,6 +115,7 @@ sv:
         headline_create_recurring: Skapa ny reservation
         headline_edit: Ändra bokning
         headline_new: Lägg till ny bokning
+        headline_update: Ändra reservation
         ignore_capacity: Spara även om upptagen
         modification_send_email: Skicka ändring på e-post
         modification_send_sms: Skicka ändring på SMS
@@ -136,6 +141,7 @@ sv:
         headline_create: Lägg till deltagare
         headline_edit: Ändra bokning
         headline_new: Lägg till deltagare
+        headline_update: Ändra reservation
         modification_send_email: Skicka ändring på e-post
         modification_send_sms: Skicka ändring på SMS
         notification_send_email: Skicka avisering via e-post
@@ -153,9 +159,11 @@ sv:
         result_header: iZettle
         success: Betalning registrerad.
       show:
+        amount: Totalbelopp
         booked_from: Från
         booked_to: Till
         count: Antal
+        created_by: Skapad av %{user}
         fiken:
           create_invoice: Skapa en faktura i Fiken
           created: En faktura har skapats i Fiken
@@ -195,11 +203,17 @@ sv:
           create_invoice: Skapa erbjudanden i Visma eAccounting
           created: Erbjudanden har skapats i Visma eAccounting
           processing: Erbjudanden skapas i Visma eAccounting. Det kan ta upp till 1-2 minuter.
+        zoom:
+          start_meeting: Starta Zoom-möte
       show_recurring:
+        cancel_all_future: Avbryt alla framtida möten
         delete_all: Radera alla
         headline: Alla upprepade bokningar inom detta mönster
       state_changer:
         state: Status
+      status_changer:
+        cancel: Avboka bokning
+        status: Ställ in status
       unconfirmed:
         headline: Lista över obekräftade reservationer
         no_reservations: Inga obekräftade reservationer hittades
@@ -220,8 +234,10 @@ sv:
         get_started: Du har för närvarande inga kategorier. Alla tjänster visas alltså i en lista på bokningssidan. Om du vill kategorisera dina tjänster kan du skapa en ny kategori.
         header: Inga kategorier har lagts till
         info: Om du har många tjänster kan du kategorisera dem på flera nivåer. Kategorier visas på bokningssidan så att kunden väljer kategorin innan tjänsten inom den valda kategorin visas. Det är möjligt att visa en tjänst i flera kategorier.
+        no_categories: Inga kategorier har lagts till
       form:
         has_services: Visar följande tjänster
+        no_parent_id: HÖGSTA NIVÅN
       index:
         header: Kategorier
       list_menu:
@@ -231,8 +247,12 @@ sv:
         has_services: 'Visar följande tjänster:'
     client:
       api:
+        disable: Vill du inaktivera API?
+        disable_warning: Är du säker på att du vill inaktivera API? API-nyckeln blir ogiltig och API:n otillgänglig.
         enable: Aktivera API
         enable_warning: Är du säker på att du vill aktivera API? API-nyckeln ger full programmatisk tillgång till ditt konto.
+        enabled: API:t är aktiverat.
+        header: API
         info_html: Kontakta kundtjänst om du behöver hjälp. Dokumentation finns på <a href="https://developer.makeplans.com">https://developer.makeplans.com</a>.
         not_enabled: Inte aktiverad
       cancel:
@@ -253,6 +273,7 @@ sv:
       edit_booking_site:
         booking_form_info_html: Kontakta kundtjänst om du behöver hjälp. Dokumentation finns på <a href="https://github.com/makeplans/makeplans-custom-forms">https://github.com/makeplans/makeplans-custom-forms</a>.
         booking_site_info_html: Din bokningssida finns tillgänglig på %{url}.
+        booking_site_locale_default: Använd kontospråk
         cancellation: Annullering
         cancellation_info: Avbokning kan endast göras före avbokningsfristen. Förbetalda bokningar kan inte annulleras.
         cancellation_period_info: 'Ange på engelska. Tiden är relaterad till bokningens starttid. Exempel: ''24 timmar före ''(endast möjligt att avboka 24 timmar innan bokningen börjar). Om ingen avbokningsfrist anges kan kunden avbryta tills bokningen börjar.'
@@ -319,6 +340,7 @@ sv:
         sms_reminder_time_info: 'SMS skickas ut kl 12:00 dagen före bokningstiden. Fyll i fältet nedan om du vill skicka ut vid en annan tidpunkt. Ange på engelska. Ex: "två timmar före" (SMS skickas ut två timmar före bokning) eller "08:00 igår" (8 på morgonen dagen före bokning).'
       edit_user_notifications:
         approvement_email: E-post av en ny bokningsförfrågan
+        approvement_sms: SMS-avisering för nya bokningsförfrågningar
         automatic_messages: Automatiska utskick
         default: Aktiverad (standard)
         disable: Inaktivera
@@ -337,9 +359,12 @@ sv:
           calendar_hide_weekends: Dölj helger
           calendar_slot_duration: Varaktighet för lediga tider
           calendar_slot_label_interval: Intervall för lediga tider
+          esource_title: Anpassad resurstitel
       export_info:
         data_types:
           bookings: Bokningar
+          bookings_all: Bokningar (alla)
+          bookings_visible: Bokningar (inklusive avbokningar)
           events: Händelser
           people: Kunder
         executed: Exportfilen skickas nu till din e-postadress.
@@ -397,6 +422,11 @@ sv:
         show_only_active_html: Listan inkluderar %{count} inaktiva bokningar. <a href="%{href}">Vill du endast visa aktiva bokningar?</a>
         signup_link: Registreringslänk
         sms_all_participants: Skicka SMS till alla deltagare
+        zoom:
+          join_meeting: Gå med i möteslänk
+          join_webinar: Gå med i webbinariet länk
+          start_meeting: Starta Zoom-möte som värd
+          start_webinar: Starta Zoom-webinarium som värd
       show_recurring:
         delete_all: Radera alla
         headline: Alla upprepade händelser inom detta mönster
@@ -412,6 +442,10 @@ sv:
         no_events_range: Inga befintliga händelser från %{start} till %{end}
     integrations:
       account_connected: Ansluten till det här kontot.
+      bestrx:
+        api_key: API-nyckeln är %{api_key}
+        api_url: URL:et till API:t är %{api_url}
+        enable: Gör det möjligt
       braintree:
         cse_key: Cse-tangent
         environment: Miljö
@@ -465,6 +499,10 @@ sv:
         account: Subdomän (DITTKONTO.highrisehq.com - fyll endast i DITTKONTO)
         connect_info: 'Välj konto där nya kunder läggs till:'
         password: API-nyckel
+      index:
+        api: API
+        header: Integrationer
+        web_hooks: Webhooks
       izettle:
         active: Aktiva
         info: För att använda iZettle vänligen ange ett pris för den tjänst du erbjuder. Det blir då möjligt att klicka på "betala med iZettle" på en bokning.
@@ -479,6 +517,11 @@ sv:
         account: Lista över ID
         username: Användarnamn
       not_authenticated: Det gick inte att ansluta. Kontrollera användarnamn och lösenord.
+      notion:
+        connected_to: Ansluten till databas med id %{database_id}
+        database_info: 'Databasen måste ställas in med följande egenskaper: Namn, E-post (typ: e-post), Telefon (typ: telefon).'
+        select_database: Välj databas
+        sharing_info: Vänligen dela minst en databas med MakePlans-integrationen
       oauth_connect: Anslut till tjänst
       quickpay:
         environment: Miljö
@@ -487,6 +530,8 @@ sv:
         production: Produktion
         test: Testa
       selected_option: Vald
+      sendy:
+        connect_info_html: Nya kunder kommer att prenumerera på listan med id <em>%{list_id}</em> på installation %{api_url}
       stripe:
         payment_info: MakePlans drar av en transaktionsavgift på %{application_fee_percent}% för alla transaktioner.
         receipt_email: Skicka kvitto till kunden från Stripe
@@ -529,8 +574,25 @@ sv:
         info_html: För att ansluta MakePlans till Zapier måste du <a href="%{url}" target="_blank">skapa en ny Zap i Zapier</a> .
       zoom:
         connect_info: Ansluten
+        info: För att denna integration ska fungera måste du ansluta en resurs till en användare i Zoom och ha minst en tjänst med Zoom aktiverat.
+        registration_type: Registreringstyp
+        session_type: Zoomsessionstyp för händelser
+    message_templates:
+      form:
+        delivery_timing_info: 'Skriv på vanlig engelska. Exempel: ''två timmar före'' (meddelandet skickas två timmar före) eller ''08:00 imorgon'' (kl. 8 dagen efter). Leveranstiden är relativ baserat på meddelandetypen: bekräftelse - bokning skapad_vid, påminnelse - bokning bokad_från, uppföljning - bokning bokad_till.'
+        immediately: omedelbart
+        services: Tjänster
+        services_info: 'Meddelandemallen kommer att skickas för alla tjänster såvida du inte begränsar dig till specifika tjänster nedan:'
+        template_info_html: Du kan slå samman inn dynamiska värden. Se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> för detaljer.
+      index:
+        header: Meddelandemallar
+        immediately: omedelbart
+        intro: Det är här du hittar mer komplexa meddelandemallar som kan skickas ut efter att en bokning är bekräftad, innan den startar eller efter att den är klar. Observera att dessa meddelanden skickas utöver standardmeddelanden som bekräftelse och påminnelse. Använd endast denna funktion om du till exempel vill skicka en extra påminnelse, flera bekräftelsemeddelanden (som e-post utöver SMS) eller ett uppföljningsmeddelande.
+      show:
+        immediately: omedelbart
     people:
       form:
+        block: Blockera kund för bokning
         merge_action: Kombinera dessa två kundprofiler
         merge_action_email: Den här e-postadressen är redan lagrad på en annan kund. Vill du kombinera dessa kunder så att %{email} blir den aktuella e-postadressen?
         merge_action_info: Alla bokningar behålls men en kundprofil tas bort. Du kan välja vilken kundinformation som är giltig.
@@ -538,6 +600,7 @@ sv:
         merge_action_phone_number: Detta telefonnummer är redan lagrat på en annan kund. Vill du kombinera dessa kunder så att %{phone_number} blir det aktuella telefonnumret?
         merge_button: Kombinera och spara
         merge_info: 'Använd istället:'
+        unblock: Ta bort bokningsblocket
       index:
         delete_warning: Är du säker på att du vill ta bort %{person}?
         filter: Filtrering
@@ -570,6 +633,9 @@ sv:
         verify_code: 'Ange verifieringskod:'
       edit_password:
         verify_code: 'Ange verifieringskod:'
+      no_access:
+        header: Ingen åtkomst
+        info: Kontakta administratören för ditt konto för att få tillgång till den här funktionen.
       show:
         change_password: Byt lösenord
         rotp:
@@ -589,6 +655,7 @@ sv:
         header: Ta bort gamla data
         info: 'Den här funktionen tar bort gammal personlig information. Du väljer vilket datum du vill ansöka om borttagning. Följande data kommer att raderas:'
         not_deleted: Radering av data utlöser inte externa integrationer.
+        processing: Bearbetning
         purge: RADERA DATA
         purge_1: Alla bokningar med slutdatum före angivet datum.
         purge_2: Alla kunder som inte har ändrats före det angivna datumet och som inte har bokat efter det angivna datumet.
@@ -654,6 +721,7 @@ sv:
         next_interval_default: Tjänstens varaktighet
         offered_by: Erbjuds av följande resurser
         payment: Betalning
+        price_placeholder: Pris ej satt
         settings:
           hide_all_available: Måste välja specifik resurs ('visa alla tillgängliga' är dolda)
           hide_resources: Göm knappen för att välja resurs (kommer slumpmässigt att välja bland de tillgängliga resurser)
@@ -679,6 +747,7 @@ sv:
           fiken_product_href: Anslut till produkten i Fiken
           tfso_product_id: 24SevenOffice-produkt-id
           visma_eaccounting_article_id: Anslut till produkten i Visma eAccounting
+          zoom_create_session: Skapa automatiskt ett Zoom-möte för den här tjänsten
       list_menu:
         list_appointment: Tjänster
         list_attendance: Händelsetyp
@@ -768,6 +837,7 @@ sv:
         processing: Vänta...
       index:
         buy: Köp mer SMS
+        header: SMS-saldo
         sms_credits_available: Du har %{credits} SMS-meddelanden tillgängliga.
       purchase_form:
         buy: köpa
@@ -786,3 +856,4 @@ sv:
     web_hooks:
       index:
         app_secret_info_html: Hemlig kod för att verifiera webbhooks
+        header: Webhooks

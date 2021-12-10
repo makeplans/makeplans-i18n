@@ -38,7 +38,34 @@ ms:
       header: Untuk menyelesaikan tempahan %{title} %{time_range} anda, anda mesti mengesahkan tempahan anda dengan mengklik pautan di bawah.
       link: Sahkan tempahan
       subject: Sila sahkan tempahan anda
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Tempahan anda sebanyak %{title} untuk masa berikut telah dibatalkan:'
+      subject: Tempahan dibatalkan
+    create:
+      body: 'Anda telah menempah %{title} untuk masa berikut:'
+      subject: Tempahan baru
   booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        TINDAKAN DIPERLUKAN: Permintaan tempahan oleh {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} pada {{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Membuat perancangan
+      booking_type_attendance: |-
+        TINDAKAN DIPERLUKAN: Permintaan pendaftaran oleh {{ booking.person.name }} untuk {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Membuat perancangan
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        PEMBATALAN: {{ booking.person.name }} telah membatalkan tempahan mereka {{ booking.resource.title }} - {{ booking.title }} pada {{ booking.time_range }}
+        Membuat perancangan
+      booking_type_attendance: |-
+        PEMBATALAN: {{ booking.person.name }} telah membatalkan Pendaftaran mereka untuk {{ booking.event.full_title }} {{ booking.time_range }}.
+        Membuat perancangan
     admin_notification_confirmation:
       booking_type_appointment: |-
         Tempahan baru {{ booking.resource.title }} oleh {{ booking.person.name }}. {{ booking.title }} pada {{ booking.time_range }}

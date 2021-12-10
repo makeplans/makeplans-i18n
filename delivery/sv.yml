@@ -38,7 +38,34 @@ sv:
       header: För att slutföra din bokning av %{title} %{time_range} måste du bekräfta den genom att klicka på länken nedan.
       link: Bekräfta bokning
       subject: Vänligen bekräfta din bokning
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Dina bokningar på %{title} för följande tider har annullerats:'
+      subject: Avbokade bokningar
+    create:
+      body: 'Du har reserverat %{title} för följande tider:'
+      subject: Nya reservationer
   booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        ÅTGÄRD BEHÖVS: Bokningsförfrågan senast {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} på {{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Planera
+      booking_type_attendance: |-
+        ÅTGÄRD BEHÖVS: Registreringsbegäran av {{ booking.person.name }} för {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Planera
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        AVBOKNING: {{ booking.person.name }} har avbokat sin bokning av {{ booking.resource.title }} - {{ booking.title }} den {{ booking.time_range }}
+        Planera
+      booking_type_attendance: |-
+        AVBOKNING: {{ booking.person.name }} har avbrutit sin registrering för {{ booking.event.full_title }} {{ booking.time_range }}.
+        Planera
     admin_notification_confirmation:
       booking_type_appointment: |-
         Ny bokning hos {{ booking.resource.title }} av {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}

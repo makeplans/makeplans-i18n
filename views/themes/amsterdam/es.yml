@@ -36,6 +36,7 @@ es:
           login_with_facebook_link: verificar automáticamente con Facebook
           not_current_person_html: ¿No eres <span data-name="">%{person}?</span> ?
           remember_me: "¿Quiere que le recordemos en esta máquina usando una cookie?"
+        date_format: 'Introduzca un formato de fecha válido: %{format}'
         enter_info: Ingrese información
         errors_header: Por favor complete los campos requeridos.
         form_info: Esto se utilizará para verificar su reservación de %{service}, %{booking}.
@@ -92,8 +93,10 @@ es:
         form_header: Este formulario se envía encriptado.
         header: Pago
         info: Para completar la reservación de %{service} %{booking} debes pagar con tu tarjeta de crédito.
+        new_card: Ingrese nueva tarjeta
         payment_details_html: La cantidad mostrada está en %{currency}. No almacenamos los datos de su tarjeta de crédito, pero los enviamos cifrados a %{provider} para su procesamiento y almacenamiento seguros.
         payment_received: "%{paid_amount} se pagó en %{paid_at}."
+        save_card: Guardar tarjeta
       step:
         cancel: Cancelar
         completed: "¡Terminado!"
@@ -136,10 +139,17 @@ es:
         not_available_for_this_verification_method: No disponible.
         submit: Recibir código
     profile:
+      credit_card_list:
+        add_card: Agregar nueva tarjeta
+        body: Estas son sus tarjetas de pago almacenadas. Si lo desea, puede agregar una nueva tarjeta o eliminar cualquiera de las existentes.
+        card_info: "%{brand} con número que termina en %{last_4} y expira %{expire_month} / %{expire_year}."
+        remove_card: Quitar esta tarjeta
+        title: Tus métodos de pago almacenados
       show:
         header: Tus reservas
         logout: Cerrar sesión
         new_booking: Nueva reservación
+        payment_methods: Métodos de pago almacenados
     providers:
       index:
         show_all_available: Mostrar todos los disponibles

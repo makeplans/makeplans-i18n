@@ -114,6 +114,17 @@ ms:
 
         Atau adakah anda mempunyai pertanyaan mengenai penggunaan MakePlans atau cara mengkonfigurasi akaun anda dengan sebaik-baiknya? Cukup balas e-mel ini dan kami dapat membantu anda :)
       subject: Selesaikan persediaan MakePlans anda
+    paused:
+      body: |-
+        Hai,
+
+        Langganan MakePlans anda akan dijeda pada penghujung tempoh pengebilan ini (%{demo_ends_at}).
+        Harap maklum bahawa anda akan dikenakan sebarang caj transaksi seperti SMS selagi akaun anda aktif.
+
+        Apabila langganan anda dijeda, anda boleh mengaktifkan semula akaun anda dengan mudah pada masa hadapan.
+
+        Jika anda menghadapi masalah untuk mendapatkan MakePlans untuk berfungsi untuk kes pengguna anda, sila balas e-mel ini supaya kami boleh membantu anda mengkonfigurasi akaun anda dan menerangkan cara terbaik anda boleh menggunakan MakePlans berdasarkan keperluan anda.
+      subject: Akaun anda akan dijeda
     setup_completed:
       contact_us_html: Sekiranya anda mempunyai sebarang pertanyaan, hantarkan e-mel kepada kami di %{mail}
       footer: Membuat perancangan
@@ -137,6 +148,32 @@ ms:
       link_info: Di sinilah anda akan menemui kalendar anda dengan gambaran keseluruhan semua tempahan dan juga dapat mengkonfigurasi akaun anda.
       registered: 'Anda kini telah mendaftar untuk akaun ujian percuma di:'
       subject: Selamat datang ke MakePlans
+    sms_credits_balance_reached:
+      body: |-
+        Hai,
+
+        Akaun MakePlans anda mempunyai had untuk menghantar %{sms_balance_limit} SMS. Anda kini telah melepasi had itu.
+
+        SMS tidak lagi dihantar dari akaun anda.
+
+        Beli kredit SMS:
+        %{url}
+
+        Sebagai alternatif anda boleh log masuk ke akaun anda dan menukar kaedah pengesahan daripada SMS kepada e-mel dan melumpuhkan peringatan SMS.
+      subject: 'TINDAKAN DIPERLUKAN: Anda telah menggunakan semua kredit SMS anda'
+    sms_credits_balance_warning:
+      body: |-
+        Hai,
+
+        Akaun MakePlans anda mempunyai had untuk menghantar %{sms_balance_limit} SMS. Anda telah menghantar %{sms_balance} pada masa ini.
+
+        Apabila anda mencapai mesej %{sms_balance_limit} akaun anda tidak akan menghantar SMS lagi melainkan anda membeli lebih banyak kredit SMS.
+
+        Beli kredit SMS:
+        %{url}
+
+        Sebagai alternatif anda boleh log masuk ke akaun anda dan menukar kaedah pengesahan daripada SMS kepada e-mel dan melumpuhkan peringatan SMS.
+      subject: Kredit SMS anda hampir habis
     trial_expire_warning:
       body: |-
         Hai,

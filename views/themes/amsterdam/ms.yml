@@ -36,6 +36,7 @@ ms:
           login_with_facebook_link: sahkan secara automatik dengan Facebook
           not_current_person_html: Adakah anda tidak <span data-name="">%{person}?</span> ?
           remember_me: Adakah anda mahu kami mengingati anda di mesin ini menggunakan kuki?
+        date_format: 'Sila masukkan format tarikh yang sah: %{format}'
         enter_info: Masukkan maklumat
         errors_header: Sila isi medan yang diperlukan.
         form_info: Ini akan digunakan untuk mengesahkan tempahan anda dari %{service}, %{booking}.
@@ -92,8 +93,10 @@ ms:
         form_header: Borang ini dihantar dienkripsi.
         header: Pembayaran
         info: Untuk melengkapkan tempahan %{service} %{booking} anda mesti membayar dengan kad kredit anda.
+        new_card: Masukkan kad baharu
         payment_details_html: Jumlah yang dipaparkan adalah dalam %{currency}. Kami tidak menyimpan butiran kad kredit anda tetapi menghantarnya disulitkan ke %{provider} untuk pemprosesan dan penyimpanan yang selamat.
         payment_received: "%{paid_amount} telah dibayar pada %{paid_at}."
+        save_card: Simpan kad
       step:
         cancel: Batal
         completed: Selesai!
@@ -136,10 +139,17 @@ ms:
         not_available_for_this_verification_method: Tidak ada.
         submit: Terima kod
     profile:
+      credit_card_list:
+        add_card: Tambah kad baharu
+        body: Ini ialah kad pembayaran anda yang disimpan. Jika anda mahu, anda boleh menambah kad baharu atau memadam mana-mana kad yang sedia ada.
+        card_info: "%{brand} dengan nombor berakhir dengan %{last_4} dan tamat tempoh %{expire_month}/%{expire_year}."
+        remove_card: Alih keluar kad ini
+        title: Kaedah pembayaran anda yang disimpan
       show:
         header: Tempahan anda
         logout: Log keluar
         new_booking: Tempahan baru
+        payment_methods: Kaedah pembayaran yang disimpan
     providers:
       index:
         show_all_available: Tunjukkan semua yang ada

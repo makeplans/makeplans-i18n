@@ -36,6 +36,7 @@ lt:
           login_with_facebook_link: patikrinkite automatiškai naudodami Facebook
           not_current_person_html: Ar nesate <span data-name="">%{person}?</span> ?
           remember_me: Ar norite, kad mes prisimintume jus šiame kompiuteryje naudodami slapuką?
+        date_format: 'Įveskite tinkamą datos formatą: %{format}'
         enter_info: Įveskite informaciją
         errors_header: Užpildykite privalomus laukus.
         form_info: Tai bus naudojama jūsų %{service}, %{booking} rezervacijai patvirtinti.
@@ -92,8 +93,10 @@ lt:
         form_header: Ši forma siunčiama užšifruota.
         header: Mokėjimas
         info: Norėdami užbaigti %{service} %{booking} rezervaciją, turite sumokėti kreditine kortele.
+        new_card: Įveskite naują kortelę
         payment_details_html: Rodoma suma yra %{currency}. Mes nesaugome jūsų kreditinės kortelės informacijos, bet siunčiame ją šifruotu adresu %{provider} saugiam apdorojimui ir saugojimui.
         payment_received: "%{paid_amount} buvo sumokėta už %{paid_at}."
+        save_card: Išsaugoti kortelę
       step:
         cancel: Atšaukti
         completed: Baigta!
@@ -108,7 +111,7 @@ lt:
     layouts:
       application:
         authenticated: 'Prisijungėte kaip: %{name}'
-        demo_ended: "MakePlans demonstracinės versijos galiojimas baigėsi."
+        demo_ended: MakePlans demonstracinės versijos galiojimas baigėsi.
         footer:
           privacy_policy: Privatumo politika
           support: Parama
@@ -136,10 +139,17 @@ lt:
         not_available_for_this_verification_method: Nepasiekiamas.
         submit: Gauti kodą
     profile:
+      credit_card_list:
+        add_card: Pridėti naują kortelę
+        body: Tai yra jūsų saugomos mokėjimo kortelės. Jei norite, galite pridėti naują kortelę arba ištrinti bet kurią iš esamų.
+        card_info: "%{brand}, kurio skaičius baigiasi %{last_4} ir baigiasi %{expire_month}/%{expire_year}."
+        remove_card: Pašalinkite šią kortelę
+        title: Jūsų išsaugoti mokėjimo metodai
       show:
         header: Jūsų rezervacijos
         logout: Atsijungti
         new_booking: Nauja rezervacija
+        payment_methods: Saugomi mokėjimo būdai
     providers:
       index:
         show_all_available: Rodyti visus turimus

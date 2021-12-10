@@ -114,6 +114,17 @@ lv:
 
         Vai arī jums ir kādi jautājumi par MakePlans izmantošanu vai kā vislabāk konfigurēt kontu? Vienkārši atbildiet uz šo e-pastu, un mēs varam jums palīdzēt :)
       subject: Pabeidziet MakePlans iestatīšanu
+    paused:
+      body: |-
+        Sveiki,
+
+        Jūsu MakePlans abonements tiks apturēts šī norēķinu perioda beigās (%{demo_ends_at}).
+        Ņemiet vērā, ka no jums tiks iekasēta maksa par jebkādām transakcijām, piemēram, SMS, kamēr jūsu konts būs aktīvs.
+
+        Kad abonements ir apturēts, turpmāk varēsiet viegli atkārtoti aktivizēt savu kontu.
+
+        Ja jums ir grūtības panākt, lai MakePlans darbotos jūsu lietotāja gadījumā, lūdzu, atbildiet uz šo e-pasta ziņojumu, lai mēs varētu jums palīdzēt konfigurēt jūsu kontu un izskaidrot, kā vislabāk izmantot MakePlans atbilstoši jūsu prasībām.
+      subject: Jūsu konts tiks apturēts
     setup_completed:
       contact_us_html: Un, ja jums ir kādi jautājumi, vienkārši nosūtiet mums e-pastu uz %{mail}
       footer: MakePlans

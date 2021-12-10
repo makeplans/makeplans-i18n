@@ -12,6 +12,7 @@ ms:
       read_legal: Terma dan syarat penggunaan perkhidmatan ini
       recaptcha: Maaf menyusahkan anda tetapi kami harus mengesahkan pendaftaran anda dengan Google Recaptcha. Sila isi semula kata laluan anda dan kemudian hantarkan borang.
       subdomain_info: Alamat unik (URL) tempat pelanggan anda boleh membuat tempahan dalam talian.
+      subdomain_not_website_warning: 'OOPS: Ini adalah alamat untuk tapak tempahan baharu anda. JANGAN masukkan URL ke tapak web sedia ada anda. Jika anda ragu-ragu hanya masukkan nama syarikat anda di sini.'
       submit: Daftar akaun saya
       title: Daftar untuk akaun tempahan dalam talian anda
       user_email: E-mel kerja
@@ -51,4 +52,5 @@ ms:
       signup_html: Tiada akaun? <a href="%{url}">Mulakan sekarang.</a>
     rotp_verification_code:
       header: Log masuk dengan pengesahan dua faktor
+      info: Gunakan kod yang dijana oleh aplikasi 2FA anda.
       submit: Log masuk

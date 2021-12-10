@@ -12,6 +12,7 @@ lt:
       read_legal: Šios paslaugos naudojimo sąlygos
       recaptcha: Atsiprašome, kad jums iškilo problemų, bet mes turime patvirtinti jūsų registraciją Google Recaptcha. Prašome dar kartą užpildyti slaptažodį ir pateikti formą.
       subdomain_info: Jūsų unikalus adresas (URL), kur klientai gali užsisakyti internetu.
+      subdomain_not_website_warning: 'OIP: tai yra jūsų naujos užsakymo svetainės adresas. NEĮveskite esamos svetainės URL. Jei abejojate, tiesiog įveskite čia savo įmonės pavadinimą.'
       submit: Užregistruokite mano sąskaitą
       title: Registruokitės į savo internetinę užsakymo sąskaitą
       user_email: Darbo el. Paštas
@@ -51,4 +52,5 @@ lt:
       signup_html: Nėra paskyros? <a href="%{url}">Pradėk dabar.</a>
     rotp_verification_code:
       header: Prisijunkite naudodami dviejų veiksnių autentifikavimą
+      info: Naudokite 2FA programos sugeneruotą kodą.
       submit: Prisijungti

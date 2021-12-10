@@ -45,6 +45,19 @@ sv:
         Planera
       subject: Problem med att ladda ditt kreditkort
     charge_give_up:
+      body: |-
+        Hej,
+
+        VARNING: Ditt konto är nu inaktiverat.
+
+        Vi försökte behandla din betalning för att använda MakePlans men fick följande felmeddelande: %{error}
+
+        Logga in på dina MakePlans för att säkerställa att ditt kort är giltigt för att reaktivera ditt konto:
+
+        %{url}
+
+        Tack,
+        Planera
       subject: 'KRITISKT: Konto inaktiverat'
     charge_requires_action:
       body: |-
@@ -110,6 +123,17 @@ sv:
         Hälsningar
         Planera
       subject: Slutför installationen av ditt MakePlans-konto
+    paused:
+      body: |-
+        Hej,
+
+        Din prenumeration på MakePlans kommer att pausas i slutet av denna faktureringsperiod (%{demo_ends_at}).
+        Tänk på att du kommer att debiteras alla transaktionsavgifter som SMS så länge ditt konto är aktivt.
+
+        När din prenumeration är pausad kan du enkelt återaktivera ditt konto i framtiden.
+
+        Om du har problem med att få MakePlans att fungera för ditt användarfall, vänligen svara på det här e-postmeddelandet så att vi kan hjälpa dig att konfigurera ditt konto och förklara hur du bäst kan använda MakePlans baserat på dina krav.
+      subject: Ditt konto kommer att pausas
     setup_completed:
       contact_us_html: Om du har några frågor, skriv gärna till oss på %{mail}.
       footer: MakePlans
@@ -133,6 +157,32 @@ sv:
       link_info: Här hittar du din kalender med en översikt av alla dina bokningar och här kan du även konfigurera ditt konto.
       registered: 'Du har nu registrerat dig för ett gratis testkonto hos:'
       subject: Välkommen till MakePlans
+    sms_credits_balance_reached:
+      body: |-
+        Hej,
+
+        Ditt MakePlans-konto har en gräns för att skicka %{sms_balance_limit} SMS. Du har nu passerat den gränsen.
+
+        SMS skickas inte längre från ditt konto.
+
+        Köp SMS-krediter:
+        %{url}
+
+        Alternativt kan du logga in på ditt konto och ändra verifieringsmetoden från SMS till e-post och inaktivera SMS-påminnelser.
+      subject: 'ÅTGÄRD KRÄVS: Du har använt alla dina SMS-krediter'
+    sms_credits_balance_warning:
+      body: |-
+        Hej,
+
+        Ditt MakePlans-konto har en gräns för att skicka %{sms_balance_limit} SMS. Du har för närvarande skickat %{sms_balance}.
+
+        När du når %{sms_balance_limit} meddelanden kommer ditt konto inte längre att skicka SMS om du inte köper fler SMS-krediter.
+
+        Köp SMS-krediter:
+        %{url}
+
+        Alternativt kan du logga in på ditt konto och ändra verifieringsmetoden från SMS till e-post och inaktivera SMS-påminnelser.
+      subject: Dina SMS-krediter håller på att ta slut
     trial_expire_warning:
       body: |-
         Hej,

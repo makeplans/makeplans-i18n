@@ -56,18 +56,18 @@ lv:
         title: nosaukums
       message_template:
         active: aktīvs
-        message_type: ziņojuma veids
-        delivery_type: piegādes veids
         delivery_timing: piegādes laiks
+        delivery_type: piegādes veids
+        message_type: ziņojuma veids
         subject: priekšmets
         template: šablons
       message_template/delivery_type:
-        sms: īsziņa
         email: e-pasts
+        sms: īsziņa
       message_template/message_type:
         confirmation: apstiprinājums
-        reminder: atgādinājums
         follow_up: sekojums/papildinājums
+        reminder: atgādinājums
       person:
         address: adrese
         blocked: Bloķēts no pierakstīšanās
@@ -114,8 +114,8 @@ lv:
             event_id:
               time_not_available: ir pilnībā rezervēts
             person_id:
-              taken: jau reģistrējies šim pasākumam
               blocked: bloķēts no pierakstīšanās
+              taken: jau reģistrējies šim pasākumam
             resource_id:
               no_availability: nav pieejams pieprasītajā laikā
             service_id:
@@ -132,14 +132,15 @@ lv:
         client_user_link:
           admin_needed: Nepieciešams vismaz viens admin lietotājs uz kontu.
         person:
+          blocked: Jūsu konts nevar veidot jaunus pierakstus.
           missing: nav saglabāts jūsu klienta profilā. Lūdzu, sazinieties ar mums, lai to labotu.
           no_values_present: Nepieciešams vārds, tālruņa numurs vai e-pasts.
-          blocked: Jūsu konts nevar veidot jaunus pierakstus.
         resource:
           has_bookings: Šim resursam ir pieraksti. To nevar dzēst. Lūdzu, sazinieties ar atbalsta dienestu.
         service:
-          payment_price_required: jāuzstāda ja vēlaties pieprasīt samaksu
-          below_minimum: jābūt vairāk par 1 USD, ja vēlaties pieprasīt samaksu
+          attributes:
+            below_minimum: ja vēlaties pieprasīt maksājumu, jābūt lielākai par 1 USD
+            payment_price_required: jāiestata, ja vēlaties pieprasīt samaksu
         user:
           attributes:
             password:
@@ -173,9 +174,9 @@ lv:
     models:
       person:
         perishable_token:
+          expired: Izbeidzies koda derīguma termiņš. Lūdzu mēģiniet vēlreiz.
           invalid: Nepareizs kods
           no_identifier: Trūkst epasts vai tel.
-          expired: Izbeidzies koda derīguma termiņš. Lūdzu mēģiniet vēlreiz.
     stripe:
       booking:
         invalid: Pieraksta derīguma termiņš ir beidzies vai tas nav derīgs. Darījums nav apstrādāts.
@@ -232,12 +233,6 @@ lv:
       category:
         parent_id: Virskategorija
         title: Nosaukums
-      client_user_link:
-        role: Piekļuves līmenis
-      client_user_link/role:
-        admin: Pilna piekļuve
-        manager: Pamata iestatījumi
-        staff: Tikai kalendāri
       client:
         address: Apmeklējuma adrese
         allow_cancellation: Atļaut klienta ievadītu atcelšanu
@@ -294,8 +289,8 @@ lv:
         public_access: Pieraksta vietne publiski pieejama
         purge_data_period: Automātiska personu identificējošas informācijas dzēšana
         reminder_sms: Sūtīt SMS atgādinājumus
+        require_terms_acceptance: Pieprasīt piekrišanu datu politikai, lai pieņemtu
         resource_form: Pielāgotu resursu lauki
-        require_terms_acceptance: Pieprasīt piekrišanu datu politikai, lai pieņemtu 
         service_form: Pielāgotu pakalpojumu lauki
         service_template: Kalendāra stils
         service_templates:
@@ -306,7 +301,7 @@ lv:
         sms_confirmation: Teksts apstiprinājuma īsziņā
         sms_modification: Teksts labojuma īsziņā
         sms_notification: Saņemiet īsziņu par katru jauno pierakstu
-        sms_notification_recipient: Tel. SMS paziņojumiem 
+        sms_notification_recipient: Tel. SMS paziņojumiem
         sms_reminder: Teksts atgādinājuma īsziņā
         sms_reminder_time: Laiks atgādinājuma īsziņām
         sms_verification: Teksts verifikācijas īsziņā
@@ -315,6 +310,12 @@ lv:
         terms: Noteikumi
         time_zone: Laika zona
         verification_method: Verifikācijas metode jauniem pierakstiem
+      client_user_link:
+        role: Piekļuves līmenis
+      client_user_link/role:
+        admin: Pilna piekļuve
+        manager: Pamata iestatījumi
+        staff: Tikai kalendāri
       event:
         all_day: Visu dienu
         booking_capacity: Maks. dalībnieku skaits vienā pierakstā

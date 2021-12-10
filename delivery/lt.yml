@@ -38,7 +38,34 @@ lt:
       header: Norėdami užbaigti %{title} %{time_range} užsakymą, turite patvirtinti savo rezervaciją spustelėdami žemiau esančią nuorodą.
       link: Patvirtinkite rezervaciją
       subject: Prašome patvirtinti savo rezervaciją
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Jūsų %{title} užsakymai šiems laikams buvo atšaukti:'
+      subject: Atšauktos rezervacijos
+    create:
+      body: 'Jūs rezervavote %{title} šiems laikams:'
+      subject: Naujos rezervacijos
   booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        REIKIA VEIKSMŲ: užklausa rezervuoti iki {{ booking.person.name }}. {{ booking.resource.title }} – {{ booking.title }} ant {{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Planuoti
+      booking_type_attendance: |-
+        REIKIA VEIKSMŲ: {{ booking.person.name }} užklausa užsiregistruoti {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Planuoti
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        ATŠAUKIMAS: {{ booking.person.name }} atšaukė {{ booking.resource.title }}–{{ booking.title }} užsakymą {{ booking.time_range }}
+        Planuoti
+      booking_type_attendance: |-
+        ATŠAUKIMAS: {{ booking.person.name }} atšaukė savo registraciją {{ booking.event.full_title }} {{ booking.time_range }}.
+        Planuoti
     admin_notification_confirmation:
       booking_type_appointment: |-
         Nauja {{booking.resource.title}} rezervacija, kurią pateikė {{booking.person.name}}. {{booking.title}} {{booking.time_range}}

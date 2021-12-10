@@ -1,7 +1,5 @@
 ---
 da:
-  csv:
-    col_sep: ';'
   activerecord:
     attributes:
       booking:
@@ -18,6 +16,19 @@ da:
         service_id: service
         title: titel
         verification_code: verifikationskode
+      booking/state:
+        awaiting_confirmation: Afventer bekræftelse
+        awaiting_payment: Afventer Betaling
+        awaiting_verification: Afventer bekræftelse
+        cancelled: Annulleret
+        confirmed: Bekræftet
+        declined: Afvist
+        deleted: Slettet
+      booking/status:
+        checked_in: Tjekket ind
+        completed: Færdiggjort
+        in_progress: Startede
+        no_show: Intet show
       category:
         title: titel
       client:
@@ -43,8 +54,23 @@ da:
         service_id: service
         starts_at: starttidspunkt
         title: titel
+      message_template:
+        active: aktiv
+        delivery_timing: aflevere kl
+        delivery_type: leveringstype
+        message_type: beskedtype
+        subject: emne
+        template: skabelon
+      message_template/delivery_type:
+        email: e-mail
+        sms: SMS
+      message_template/message_type:
+        confirmation: bekræftelse
+        follow_up: opfølgning
+        reminder: påmindelse
       person:
         address: adresse
+        blocked: Blokeret for reservationer
         city: by
         country_code: Land
         created_at: registreret
@@ -60,6 +86,7 @@ da:
       resource:
         capacity: kapacitet
         mail_notification_recipient: e-mail-adresser til underretning
+        sms_notification_recipient: telefonnummer til underretning
         title: titel
       service:
         payment_required: kræver forudbetaling
@@ -70,6 +97,9 @@ da:
         password: adgangskode
         password_confirmation: Kodeords bekræftelse
         rotp_verification_code: verifikationskode
+      web_hook:
+        event: Begivenhed
+        target_url: Mål-URL
     errors:
       messages:
         chronic_syntax_error: syntaksfejl se https://github.com/mojombo/chronic#examples
@@ -87,6 +117,7 @@ da:
             event_id:
               time_not_available: er fuld
             person_id:
+              blocked: spærret for booking
               taken: er allerede registreret til denne begivenhed.
             resource_id:
               no_availability: ikke tilgængelig på det valgte tidspunkt
@@ -101,13 +132,18 @@ da:
           attributes:
             base:
               denied: Afvist
+        client_user_link:
+          admin_needed: Brug for mindst én administratorbruger på kontoen.
         person:
+          blocked: Din konto er ikke i stand til at foretage reservationer.
           missing: er ikke gemt på din kundeprofil. Kontakt os for at rette op på dette.
           no_values_present: Navn, telefonnummer eller e-mail er påkrævet.
         resource:
           has_bookings: Denne ressource har aktive forbehold og kan derfor ikke slettes. Kontakt kundeservice.
         service:
-          below_minimum: skal være højere end 3 NOK, hvis du skal kræve forudbetaling.
+          attributes:
+            below_minimum: skal være mere end 1 USD, hvis du vil kræve betaling
+            payment_price_required: skal indstilles, hvis du vil kræve betaling
         user:
           attributes:
             password:
@@ -121,12 +157,16 @@ da:
       category: kategori
       event: arrangement
       external_credential: integration
+      message_template: besked skabelon
       person: kunde
       resource: ressource
       service: service
       service_appointment: service
       service_attendance: arrangementstype
       user: Bruger
+      web_hook: webhook
+  csv:
+    col_sep: ";"
   date:
     formats:
       date_month_name: "%-d %B"
@@ -151,7 +191,9 @@ da:
     models:
       person:
         perishable_token:
+          expired: Koden er udløbet. Prøv igen.
           invalid: Forkert kode
+          no_identifier: Mangler email eller telefonnummer.
     stripe:
       booking:
         invalid: Reservationen er udløbet eller er ugyldig. Transaktionen er ikke gennemført.
@@ -202,6 +244,7 @@ da:
         reminder_at: Påmindelse
         resource_id: Ressource
         service_id: Service
+        terms_accepted: Jeg godkender vilkårene
         title: Titel
         verification_code: Verifikationskode
       category:
@@ -213,6 +256,7 @@ da:
         api_key: API-nøgle (til eksterne integrationer)
         app_secret: Hemmelig verifikationskode
         appointment_form: Brugerdefinerede reservationsfelter
+        awaiting_confirmation_text: Teksten vises, når reservationen venter på bekræftelse
         billing_city: By
         billing_country_code: Land
         billing_email: Faktura-e-mail-adresse
@@ -263,6 +307,7 @@ da:
         public_access: Reservationssiden er offentligt tilgængelig
         purge_data_period: Automatisk sletning af personlige oplysninger
         reminder_sms: Send påmindelse via SMS
+        require_terms_acceptance: Kræv vilkår for at blive accepteret
         resource_form: Brugerdefinerede ressourcefelter
         service_form: Brugerdefinerede servicefelter
         service_template: Kalender skabelon
@@ -274,13 +319,21 @@ da:
         sms_confirmation: Tekst i SMS, der sendes ved bekræftelse
         sms_modification: Tekst i SMS, der sendes ved ændring
         sms_notification: Modtag besked via SMS for hver nye reservation
+        sms_notification_recipient: Telefonnummer for underretning
         sms_reminder: Tekst i SMS sendt med påmindelse
         sms_reminder_time: Tid til SMS-påmindelse
         sms_verification: Tekst i SMS, der sendes under verifikation
         subdomain: Konto-adresse (underdomæne)
         template: Design skabelon
+        terms: Vilkår og betingelser
         time_zone: Tidszone
         verification_method: Verifikationsmetode til ny reservation
+      client_user_link:
+        role: Adgangsniveau
+      client_user_link/role:
+        admin: Fuld adgang
+        manager: Grundlæggende opsætning
+        staff: Kun kalender
       event:
         all_day: Hele dagen
         booking_capacity: Maksimalt antal deltagere pr. reservation
@@ -296,6 +349,20 @@ da:
         service_id: Begivenhedstype
         starts_at: Starter
         title_html: Angivet titel <small>valgfri</small>
+      message_template:
+        active: Aktiv
+        delivery_timing: Afleveres kl
+        delivery_type: Leveringstype
+        message_type: Meddelelsestype
+        subject: Emne
+        template: Skabelon
+      message_template/delivery_type:
+        email: E-mail
+        sms: SMS
+      message_template/message_type:
+        confirmation: Bekræftelse
+        follow_up: Opfølgning
+        reminder: Påmindelse
       person:
         address: Adresse
         city: By
@@ -315,6 +382,7 @@ da:
       resource:
         capacity: Maksimalt antal reservationer på samme tid
         mail_notification_recipient: E-mail-adresser til underretning
+        sms_notification_recipient: Telefonnummer for underretning
         title: Titel
       service:
         booking_capacity: Maksimalt antal personer pr. reservation
@@ -356,13 +424,19 @@ da:
         password: Adgangskode
         password_confirmation: Kodeords bekræftelse
         phonenumber: Telefonnummer
+        rotp_verification_code: Verifikationskode
+      web_hook:
+        event: Begivenhed
+        target_url: Mål-URL
     link:
       add: tilføje
       back: Tilbage
       booking:
         new: Ny reservation
+      cancel_confirm: Er du sikker på at du vil annullere?
       category:
         new: Ny kategori
+      confirm: Er du sikker?
       create: skab
       delete: Slet
       delete_confirm: Er du sikker på, at du vil slette?
@@ -383,6 +457,8 @@ da:
       user:
         new: Ny bruger
       view: Vis
+      web_hook:
+        new: Ny webhook
     menu:
       agenda: Agenda
       calendar: Kalender
@@ -401,6 +477,7 @@ da:
       fields: Brugerdefinerede felter
       import: Importere
       integrations: Integrationer
+      message_templates: Besked skabeloner
       person_notifications: Notifikation - kunder
       promote: Promover
       resources: Ressourcer

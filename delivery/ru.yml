@@ -38,7 +38,34 @@ ru:
       header: Чтобы завершить бронирование %{title} %{time_range}, вы должны подтвердить свое бронирование, щелкнув ссылку ниже.
       link: Подтвердить бронирование
       subject: Пожалуйста, подтвердите ваше бронирование
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Ваши заказы на %{title} на следующие периоды времени были отменены:'
+      subject: Отмененные бронирования
+    create:
+      body: 'Вы зарезервировали %{title} на следующие периоды:'
+      subject: Новые бронирования
   booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        ТРЕБУЕТСЯ ДЕЙСТВИЕ: запрос на резервирование до {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} на {{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Строить планы
+      booking_type_attendance: |-
+        НЕОБХОДИМО ДЕЙСТВИЕ: запрос на регистрацию от {{ booking.person.name }} для {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Строить планы
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        ОТМЕНА: {{ booking.person.name }} отменил бронирование {{ booking.resource.title }} - {{ booking.title }} на {{ booking.time_range }}
+        Строить планы
+      booking_type_attendance: |-
+        ОТМЕНА: {{ booking.person.name }} отменил регистрацию на {{ booking.event.full_title }} {{ booking.time_range }}.
+        Строить планы
     admin_notification_confirmation:
       booking_type_appointment: |-
         Новое бронирование {{ booking.resource.title }} by {{ booking.person.name }}. {{ booking.title }} на {{ booking.time_range }}

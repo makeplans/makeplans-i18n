@@ -1,7 +1,5 @@
 ---
 lt:
-  csv:
-    col_sep: ';'
   activerecord:
     attributes:
       booking:
@@ -18,6 +16,19 @@ lt:
         service_id: paslaugą
         title: pavadinimas
         verification_code: patvirtinimo kodas
+      booking/state:
+        awaiting_confirmation: Laukiama patvirtinimo
+        awaiting_payment: Laukia apmokėjimo
+        awaiting_verification: Laukiama patvirtinimo
+        cancelled: Atšauktas
+        confirmed: Patvirtinta
+        declined: Atmesta
+        deleted: Ištrinta
+      booking/status:
+        checked_in: Užsiregistravęs
+        completed: Užbaigta
+        in_progress: Prasidėjo
+        no_show: Jokio pasirodymo
       category:
         title: pavadinimas
       client:
@@ -43,8 +54,23 @@ lt:
         service_id: paslaugą
         starts_at: prasideda nuo
         title: pavadinimas
+      message_template:
+        active: aktyvus
+        delivery_timing: pristatyti į
+        delivery_type: pristatymo tipas
+        message_type: pranešimo tipas
+        subject: tema
+        template: šabloną
+      message_template/delivery_type:
+        email: paštu
+        sms: trumpoji žinutė
+      message_template/message_type:
+        confirmation: patvirtinimas
+        follow_up: Sekti
+        reminder: priminimas
       person:
         address: adresas
+        blocked: Užblokuota rezervuoti
         city: miestas
         country_code: Šalis
         created_at: registruotas
@@ -60,6 +86,7 @@ lt:
       resource:
         capacity: talpa
         mail_notification_recipient: pašto adresas (-ai) pranešimui
+        sms_notification_recipient: telefono numeris pranešimui
         title: pavadinimas
       service:
         payment_required: reikalauti išankstinio apmokėjimo
@@ -67,6 +94,9 @@ lt:
         title: pavadinimas
       user:
         rotp_verification_code: Patvirtinimo kodas
+      web_hook:
+        event: Renginys
+        target_url: Tikslinis URL
     errors:
       messages:
         chronic_syntax_error: sintaksės klaida žr. https://github.com/mojombo/chronic#examples
@@ -84,6 +114,7 @@ lt:
             event_id:
               time_not_available: yra visiškai užsakytas
             person_id:
+              blocked: užblokuotas rezervavimui
               taken: jau užsiregistravau į šį renginį
             resource_id:
               no_availability: pageidaujamu laiku nėra
@@ -98,13 +129,18 @@ lt:
           attributes:
             base:
               denied: Paneigta
+        client_user_link:
+          admin_needed: Paskyroje reikia bent vieno administratoriaus naudotojo.
         person:
+          blocked: Jūsų paskyra negali atlikti jokių užsakymų.
           missing: nėra išsaugotas jūsų klientų profilyje. Norėdami tai ištaisyti, susisiekite su mumis.
           no_values_present: Būtinas vardas, telefono numeris arba el. Pašto adresas.
         resource:
           has_bookings: Šiame šaltinyje yra užsakymų. Negalima ištrinti. Susisiekite su palaikymo tarnyba.
         service:
-          below_minimum: turi būti didesnė nei 1 USD, jei norite reikalauti apmokėjimo
+          attributes:
+            below_minimum: turi būti didesnis nei 1 USD, jei norite reikalauti mokėjimo
+            payment_price_required: turi būti nustatytas, jei norite reikalauti mokėjimo
         user:
           attributes:
             password:
@@ -118,25 +154,31 @@ lt:
       category: Kategorija
       event: įvykis
       external_credential: integracija
+      message_template: pranešimo šabloną
       person: klientas
       resource: išteklių
       service: paslaugą
       service_appointment: paslaugą
       service_attendance: įvykio tipas
       user: Vartotojas
+      web_hook: webhook
+  csv:
+    col_sep: ";"
   errors:
     messages:
       no_values_present: Būtinas vardas, telefono numeris arba el. Pašto adresas.
       not_authenticated: Jūs buvote atjungtas.
       not_found: Nepavyko rasti duomenų. Pabandykite iš naujo įkelti puslapį.
       offline: Nepavyko prisijungti prie MakePlans. Patikrinkite, ar esate prisijungę.
-      server_error: "MakePlans klaida"
+      server_error: MakePlans klaida
       syntax_error: Pateikta sintaksės klaida.
       unknown: Nežinoma klaida. Pabandykite iš naujo įkelti puslapį.
     models:
       person:
         perishable_token:
+          expired: Kodas pasibaigęs. Prašau, pabandykite dar kartą.
           invalid: Neteisingas kodas
+          no_identifier: Trūksta el. pašto adreso arba telefono numerio.
     stripe:
       booking:
         invalid: Rezervacijos galiojimo laikas baigėsi arba jis neteisingas. Operacija neapdorota.
@@ -187,6 +229,7 @@ lt:
         reminder_at: Priminimas
         resource_id: Ištekliai
         service_id: Aptarnavimas
+        terms_accepted: Aš patvirtinu sąlygas
         title: Pavadinimas
         verification_code: Patvirtinimo kodas
       category:
@@ -198,6 +241,7 @@ lt:
         api_key: API raktas (išorinei integracijai)
         app_secret: Paskyros paslaptis
         appointment_form: Pasirinktiniai rezervavimo laukai
+        awaiting_confirmation_text: Užsakymo metu rodomas tekstas laukia patvirtinimo
         billing_city: Miestas
         billing_country_code: Šalis
         billing_email: Sąskaitos faktūros el. Pašto adresas
@@ -225,7 +269,7 @@ lt:
         first_bookable_period: Neleiskite rezervuoti iki
         footer: Poraštė
         future_bookable_period: Neleiskite rezervuoti po
-        google_analytics: "Google Analytics stebėjimo ID"
+        google_analytics: Google Analytics stebėjimo ID
         interval_rounding: Numatytasis suapvalinimas iki kito galimo rezervavimo laiko
         locale: Kalba (taip pat apibrėžia numerio ir datos formatavimą)
         logo: Logotipas
@@ -247,6 +291,7 @@ lt:
         public_access: Užsakymo svetainė yra prieinama visuomenei
         purge_data_period: Automatinis asmens identifikavimo informacijos ištrynimas
         reminder_sms: Siųsti SMS priminimus
+        require_terms_acceptance: Reikalauti, kad būtų priimtos sąlygos
         resource_form: Tinkintų išteklių laukai
         service_form: Pasirinktinių paslaugų laukai
         service_template: Kalendoriaus stilius
@@ -258,13 +303,21 @@ lt:
         sms_confirmation: Tekstas patvirtinančioje SMS žinutėje
         sms_modification: Tekstas modifikuotame SMS
         sms_notification: Gaukite SMS už kiekvieną naują rezervaciją
+        sms_notification_recipient: Telefono numeris pranešimui
         sms_reminder: Tekstas SMS priminime
         sms_reminder_time: Laikas SMS priminimui
         sms_verification: Tekstas patvirtinimo SMS žinute
         subdomain: URL (padomenis)
         template: Dizaino tema
+        terms: Taisyklės ir sąlygos
         time_zone: Laiko zona
         verification_method: Naujų išlygų tikrinimo metodas
+      client_user_link:
+        role: Prieigos lygis
+      client_user_link/role:
+        admin: Pilna prieiga
+        manager: Pagrindinė sąranka
+        staff: Tik kalendorius
       event:
         all_day: Visą dieną
         booking_capacity: Maksimalus palydovų skaičius užsakyme
@@ -280,6 +333,20 @@ lt:
         service_id: Įvykio tipas
         starts_at: Prasideda
         title_html: Nurodytas pavadinimas <small>neprivalomas</small>
+      message_template:
+        active: Aktyvus
+        delivery_timing: Pristatymas į
+        delivery_type: Pristatymo tipas
+        message_type: Pranešimo tipas
+        subject: Tema
+        template: Šablonas
+      message_template/delivery_type:
+        email: El. paštas
+        sms: trumpoji žinutė
+      message_template/message_type:
+        confirmation: Patvirtinimas
+        follow_up: Sekti
+        reminder: Priminimas
       person:
         address: Adresas
         city: Miestas
@@ -299,6 +366,7 @@ lt:
       resource:
         capacity: Didžiausias rezervacijų skaičius tuo pačiu metu
         mail_notification_recipient: El. Pašto adresas (-ai) pranešimui
+        sms_notification_recipient: Telefono numeris pranešimui
         title: Pavadinimas
       service:
         booking_capacity: Didžiausias žmonių skaičius vienoje rezervacijoje
@@ -339,13 +407,19 @@ lt:
         name: vardas
         password: Slaptažodis
         phonenumber: Telefono numeris
+        rotp_verification_code: Patvirtinimo kodas
+      web_hook:
+        event: Renginys
+        target_url: Tikslinis URL
     link:
       add: Papildyti
       back: Atgal
       booking:
         new: Nauja rezervacija
+      cancel_confirm: Ar tikrai norite atšaukti?
       category:
         new: Nauja kategorija
+      confirm: Ar tu tuo tikras?
       create: Kurti
       delete: Ištrinti
       delete_confirm: Ar esate įsitikinę, kad norite ištrinti?
@@ -366,6 +440,8 @@ lt:
       user:
         new: Naujas vartotojas
       view: Vaizdas
+      web_hook:
+        new: Naujas webhook
     menu:
       agenda: Darbotvarkė
       calendar: Kalendorius
@@ -384,6 +460,7 @@ lt:
       fields: Pasirinktiniai laukai
       import: Importuoti
       integrations: Integracijos
+      message_templates: Pranešimų šablonai
       person_notifications: Pranešimai - klientas
       promote: Skatinti
       resources: Ištekliai
@@ -418,7 +495,7 @@ lt:
       invoice_client:
         errors:
           nothing_to_invoice: Sąskaita neparengta sąskaitoms išrašyti. Įsitikinkite, kad turite bent vieną šaltinį.
-        invoice_text: "MakePlans internetinių susitikimų rezervavimo naudojimas"
+        invoice_text: MakePlans internetinių susitikimų rezervavimo naudojimas
   title:
     actions:
       edit: Redaguoti
@@ -433,8 +510,8 @@ lt:
         invalid: negalioja
   worker:
     integration_slack:
-      fallback: "MakePlans paskyrė naują paskyrimą"
-      footer: "MakePlans API"
+      fallback: MakePlans paskyrė naują paskyrimą
+      footer: MakePlans API
       pretext: "%{person} paskyrė paskyrą %{booked_from}"
       title: Peržiūrėkite susitikimą MakePlans
     integration_tfso_list_companies:

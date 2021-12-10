@@ -7,6 +7,7 @@ da:
   manage:
     agenda:
       calendar:
+        availability: Juster tilgængeligheden for denne periode
         ignore_capacity_confirm: Der er allerede en reservation på dette tidspunkt. Er du sikker på, at du vil gemme?
         listWeek: Liste
         opening_hours:
@@ -73,6 +74,7 @@ da:
         edit_info_link: Vil du ændre nogen af disse oplysninger?
         edit_link: Vil du ændre registrerede kreditkortoplysninger?
         email_recipent: Faktura sendes via e-mail til %{email}.
+        header: Betalingsoplysninger
         info_header: 'Vi har registreret følgende fakturaoplysninger:'
         paid_until: Kontoen betales indtil %{paid_until}.
         pause: Sæt kontoen på pause, når den betalte periode er afsluttet.
@@ -90,6 +92,9 @@ da:
         error: Vi kunne ikke bekræfte, at betalingen blev foretaget. Kontakt kundeservice.
         info: Vent, mens vi debiterer dit kreditkort. Dette kan tage op til et minut. Du modtager en e-mail fra os, når processen er afsluttet.
     bookings:
+      cancel_recurring:
+        headline: Alle fremtidige reservationer inden for dette gentagne mønster blev fjernet
+        list_recurring: Se listen over reservationer inden for dette gentagne mønster.
       create_recurring:
         headline: Genererer %{count}-reservationer ...
         link: Vis liste
@@ -110,6 +115,7 @@ da:
         headline_create_recurring: Opret ny reservation
         headline_edit: Skift reservation
         headline_new: Opret ny reservation
+        headline_update: Ændre reservation
         ignore_capacity: Gem selvom optaget
         modification_send_email: Send ændring via e-mail
         modification_send_sms: Send ændring via SMS
@@ -135,6 +141,7 @@ da:
         headline_create: Tilføj ny deltager
         headline_edit: Skift reservation
         headline_new: Tilføj ny deltager
+        headline_update: Ændre reservation
         modification_send_email: Send ændring via e-mail
         modification_send_sms: Send ændring via SMS
         notification_send_email: Send besked via e-mail
@@ -152,9 +159,11 @@ da:
         result_header: iZettle
         success: Betaling registreret.
       show:
+        amount: Total pris
         booked_from: Fra
         booked_to: Til
         count: Antal mennesker
+        created_by: Skabt af %{user}
         fiken:
           create_invoice: Opret en faktura i Fiken
           created: Der er oprettet en faktura i Fiken
@@ -194,11 +203,17 @@ da:
           create_invoice: Opret tilbud i Visma eAccounting
           created: Tilbud er oprettet i Visma eAccounting
           processing: Tilbud oprettes i Visma eAccounting. Dette kan tage op til 1-2 minutter.
+        zoom:
+          start_meeting: Start Zoom-møde
       show_recurring:
+        cancel_all_future: Annuller alle fremtidige aftaler
         delete_all: Slet alt
         headline: Alle tilbagevendende aftaler inden for dette mønster
       state_changer:
         state: Status
+      status_changer:
+        cancel: Annuller reservation
+        status: Indstil status
       unconfirmed:
         headline: Liste over ubekræftede forbehold
         no_reservations: Ingen ubekræftede reservationer fundet
@@ -219,8 +234,10 @@ da:
         get_started: Du har i øjeblikket ingen kategorier. Alle tjenester vises således på en liste på reservationssiden. Hvis du vil kategorisere dine tjenester, kan du oprette en ny kategori.
         header: Ingen kategorier tilføjet
         info: Hvis du har mange tjenester, kan du kategorisere dem på flere niveauer. Kategorier vises på reservationssiden, så kunden vælger kategorien, før tjenesten inden for den valgte kategori vises. Det er muligt at vise en tjeneste i flere kategorier.
+        no_categories: Ingen kategorier tilføjet
       form:
         has_services: Viser følgende tjenester
+        no_parent_id: HØJESTE NIVEAU
       index:
         header: Kategorier
       list_menu:
@@ -229,6 +246,15 @@ da:
         custom_data: 'Brugerdefinerede felter:'
         has_services: 'Viser følgende tjenester:'
     client:
+      api:
+        disable: Vil du deaktivere API'en?
+        disable_warning: Er du sikker på, at du vil deaktivere API'en? API-nøglen bliver ugyldig og API'en utilgængelig.
+        enable: Vil du aktivere API?
+        enable_warning: Er du sikker på, at du vil aktivere API'en? API-nøglen giver fuld programmatisk adgang til din konto.
+        enabled: API'en er aktiveret.
+        header: API
+        info_html: Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        not_enabled: API'en er ikke aktiveret.
       cancel:
         confirm_message: Sidste chance. Er du sikker på, at du vil slette kontoen med alle dine data?
         disable_link: Ja, jeg vil have alle mine data slettet.
@@ -247,6 +273,7 @@ da:
       edit_booking_site:
         booking_form_info_html: Det, du udfylder her, erstatter i sin helhed den standardformular, der bruges på reservationssiden. For at ændre den formular, der vises, når man opretter reservationer manuelt, gøres dette under "Brugerdefinerede felter". Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> . Husk at tilføje nødvendige felter til verifikation såsom navn og e-mail / telefonnummer.
         booking_site_info_html: Deres reservationsside er tilgængelig på %{url}.
+        booking_site_locale_default: Brug kontosprog
         cancellation: Aflysning
         cancellation_info: Afbestilling kan kun foretages inden afbestillingsfristen. Forudbetalte reservationer kan ikke annulleres.
         cancellation_period_info: 'Indtast på engelsk. Tid er relateret til starttidspunktet for reservationen. Eksempel: ''24 hours before'' (kun muligt at annullere 24 timer før reservationen begynder). Hvis der ikke er angivet nogen afbestillingsfrist, kan kunden annullere, indtil reservationen starter.'
@@ -319,6 +346,7 @@ da:
         sms_reminder_time_info: 'SMS sendes kl 12:00 dagen før reservationstidspunktet. Hvis du vil sende ud på et andet tidspunkt, skal du udfylde nedenstående felt. Indtast på engelsk. Eks: ''to timer før'' (SMS sendes to timer før reservation) eller ''08: 00 i går ''(8 om dagen dagen før reservationen).'
       edit_user_notifications:
         approvement_email: E-mail af en ny reservationsanmodning
+        approvement_sms: SMS-besked for nye reservationsanmodninger
         automatic_messages: Automatiske forsendelser
         default: Aktiveret (standard)
         disable: Deaktiver
@@ -337,9 +365,12 @@ da:
           calendar_hide_weekends: Skjul weekender
           calendar_slot_duration: Spillets varighed (minutter)
           calendar_slot_label_interval: Tidsvisning for slot hvert X minut
+          esource_title: Tilpasset ressourcetitel
       export_info:
         data_types:
           bookings: Reservationer
+          bookings_all: Reservationer (alle)
+          bookings_visible: Reservationer (inklusive aflysninger)
           events: Begivenheder
           people: Kunder
         executed: Eksportfilen sendes nu til din e-mail-adresse.
@@ -397,6 +428,11 @@ da:
         show_only_active_html: Listen inkluderer %{count} inaktive reservationer. <a href="%{href}">Vil du kun vise dem, der er aktive?</a>
         signup_link: Link til registrering for kunder
         sms_all_participants: Send SMS til alle deltagere
+        zoom:
+          join_meeting: Deltag i mødelink
+          join_webinar: Deltag i webinar link
+          start_meeting: Start Zoom-møde som vært
+          start_webinar: Start Zoom webinar som vært
       show_recurring:
         delete_all: Slet alt
         headline: Alle tilbagevendende begivenheder inden for dette mønster
@@ -412,6 +448,10 @@ da:
         no_events_range: Ingen begivenheder fra %{start} til %{end}
     integrations:
       account_connected: Forbundet til denne konto.
+      bestrx:
+        api_key: API-nøglen er %{api_key}
+        api_url: URL'en til API'en er %{api_url}
+        enable: Aktiver
       braintree:
         cse_key: Cse-nøgle
         environment: Miljø
@@ -465,6 +505,10 @@ da:
         account: Underdomæne (DINKONTO.highrisehq.com - udfyld kun DINKONTO)
         connect_info: 'Vælg konto, hvor nye kunder tilføjes:'
         password: API-nøgle
+      index:
+        api: API
+        header: Integrationer
+        web_hooks: Webhooks
       izettle:
         active: Aktiv
         info: For at markere en reservation som betalt med iZettle skal du definere prisen på den service, du tilbyder. Du kan derefter klikke på linket "betal med iZettle" på en reservation for at gennemføre betalingen med iZettle.
@@ -479,6 +523,11 @@ da:
         account: Liste-ID
         username: Brugernavn
       not_authenticated: Forbindelsen fejlede. Tjek brugernavn og adgangskode.
+      notion:
+        connected_to: Forbundet til database med id %{database_id}
+        database_info: 'Databasen skal opsættes med følgende egenskaber: Navn, Email (type: email), Telefon (type: telefon).'
+        select_database: Vælg database
+        sharing_info: Del venligst mindst én database med MakePlans-integrationen
       oauth_connect: Opret forbindelse til denne tjeneste
       quickpay:
         environment: Miljø
@@ -487,6 +536,8 @@ da:
         production: Produktion
         test: Prøve
       selected_option: Valgte
+      sendy:
+        connect_info_html: Nye kunder vil blive abonneret på listen med id <em>%{list_id}</em> på installation %{api_url}
       stripe:
         payment_info: For alle transaktioner opkræver MakePlans et gebyr på %{application_fee_percent}%.
         receipt_email: Send kvittering via e-mail fra Stripe
@@ -529,8 +580,25 @@ da:
         info_html: For at forbinde MakePlans til Zapier skal du <a href="%{url}" target="_blank">oprette en ny Zap i Zapier</a> .
       zoom:
         connect_info: Forbundet
+        info: For at denne integration skal fungere, skal du forbinde en ressource til en bruger i Zoom og have mindst én tjeneste med Zoom aktiveret.
+        registration_type: Registreringstype
+        session_type: Zoom sessionstype til begivenheder
+    message_templates:
+      form:
+        delivery_timing_info: 'Skriv på almindeligt engelsk. Eksempel: ''to timer før'' (beskeden sendes to timer før) eller ''08:00 i morgen'' (kl. 8 dagen efter). Leveringstidspunktet er relativt baseret på meddelelsestypen: bekræftelse - booking oprettet_på, påmindelse - booking booket_fra, opfølgning - booking booket_til.'
+        immediately: straks
+        services: Tjenester
+        services_info: 'Meddelelsesskabelonen sendes for alle tjenester, medmindre du begrænser dig til specifikke tjenester nedenfor:'
+        template_info_html: Du kan flette inn dynamiske værdier. Se venligst <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> for detaljer.
+      index:
+        header: Besked skabeloner
+        immediately: straks
+        intro: Det er her du finder mere komplekse beskedskabeloner, som kan udsendes efter en reservation er bekræftet, før den starter eller efter den er gennemført. Bemærk venligst, at disse beskeder sendes ud over standardbeskederne som bekræftelse og påmindelse. Brug kun denne funktion, hvis du f.eks. vil sende en ekstra påmindelse, flere bekræftelsesbeskeder (som e-mail i tillæg til SMS) eller en opfølgende besked.
+      show:
+        immediately: straks
     people:
       form:
+        block: Bloker kunde for booking
         merge_action: Kombiner disse to kundeprofiler
         merge_action_email: Denne e-mail-adresse er allerede gemt på en anden kunde. Vil du kombinere disse kunder, så %{email} bliver den aktuelle e-mail-adresse?
         merge_action_info: Alle reservationer bevares, men en kundeprofil fjernes. Du kan vælge, hvilke kundeoplysninger der er gyldige.
@@ -538,6 +606,7 @@ da:
         merge_action_phone_number: Dette telefonnummer er allerede gemt på en anden kunde. Vil du kombinere disse kunder, så %{phone_number} bliver det aktuelle telefonnummer?
         merge_button: Kombiner og gem
         merge_info: 'Brug i stedet:'
+        unblock: Fjern reservationsblok
       index:
         delete_warning: Er du sikker på, at du vil slette %{person}?
         filter: Filtrering
@@ -568,6 +637,11 @@ da:
       deactivate_rotp:
         deactivate_rotp: Deaktiver 2FA
         verify_code: 'Indsæt verifikations kode:'
+      edit_password:
+        verify_code: 'Indtast kode for at bekræfte:'
+      no_access:
+        header: Ingen adgang
+        info: Kontakt venligst administratoren af din konto for at få adgang til denne funktion.
       show:
         change_password: Skift kodeord
         rotp:
@@ -587,6 +661,7 @@ da:
         header: Slet gamle data
         info: 'Denne funktion sletter gamle personlige oplysninger. Du vælger, hvilken dato du vil ansøge om sletning. Følgende data slettes:'
         not_deleted: Sletning af data udløser ikke eksterne integrationer.
+        processing: Forarbejdning
         purge: SLET DATA
         purge_1: Alle reservationer med slutdato før angivet dato.
         purge_2: Alle kunder, der ikke har ændret sig før den angivne dato, og som ikke har forbehold efter den angivne dato.
@@ -652,6 +727,7 @@ da:
         next_interval_default: Varighed af tjeneste
         offered_by: Tilbydes af følgende ressourcer
         payment: Betaling
+        price_placeholder: Pris ikke fastsat
         settings:
           hide_all_available: Skal vælge en specifik ressource ('vis alle tilgængelige' er skjult)
           hide_resources: Skjul knappen for at vælge en ressource (enhver tilgængelig ressource vælges automatisk)
@@ -677,6 +753,7 @@ da:
           fiken_product_href: Opret forbindelse til produktet i Fiken
           tfso_product_id: 24SevenOffice produkt-id
           visma_eaccounting_article_id: Opret forbindelse til produktet i Visma eAccounting
+          zoom_create_session: Opret automatisk et Zoom-møde for denne tjeneste
       list_menu:
         list_appointment: Tjenester
         list_attendance: Begivenhedstyper
@@ -766,6 +843,7 @@ da:
         processing: Vent venligst...
       index:
         buy: Køb mere SMS
+        header: SMS-saldo
         sms_credits_available: Du har %{credits} SMS-beskeder tilgængelige.
       purchase_form:
         buy: købe
@@ -781,3 +859,7 @@ da:
       show:
         remove_access: Fjern bruger
         remove_access_confirm: Er du sikker på, at du vil fjerne adgangen til denne bruger?
+    web_hooks:
+      index:
+        app_secret_info_html: Apphemmelighed til at bekræfte webhooks. Se <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">dokumentationen</a> for detaljer.
+        header: Webhooks
