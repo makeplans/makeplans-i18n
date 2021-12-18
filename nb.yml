@@ -41,6 +41,7 @@ nb:
         mailer_sender: epost-avsender
         phone_number: telefonnummer
         purge_data_period: automatisk sletteperiode
+        terms: vilkår
       client_user_link:
         role: tilgangsnivå
       client_user_link/role:
