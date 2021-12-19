@@ -1,26 +1,27 @@
-'en-US':
+---
+en-US:
   date:
     formats:
-      short_with_name: '%a %-d %b'
-      short_with_name_and_year: '%a %-d %b %Y'
-      month_name: '%B'
-      day_name: '%A'
-      day_name_abbr: '%a'
-      datepicker: '%m/%d/%Y'
-      full_date: '%A, %-d %B %Y'
       date_month_name: "%-d %B"
-    moment_format: 'MM/DD/YYYY'
-    moment_parse: 'M/D/YYYY'
-  time:
-    formats:
-      time: "%-l:%M %p"
-      timepicker: "%-l:%M %p"
-      long_dayname: "%A, %B %-d, %Y, %-l:%M %p"
-      short_mailer: '%B %-d, %Y at %-l:%M %p'
-    timepicker_format: 'g:i A'
-    moment_format: 'h:mm A'
-    24h: false
+      datepicker: "%m/%d/%Y"
+      day_name: "%A"
+      day_name_abbr: "%a"
+      full_date: "%A, %-d %B %Y"
+      month_name: "%B"
+      short_with_name: "%a %-d %b"
+      short_with_name_and_year: "%a %-d %b %Y"
+    moment_format: MM/DD/YYYY
+    moment_parse: M/D/YYYY
   helpers:
     label:
       person:
         date_of_birth: Date of birth (mm/dd/yyyy)
+  time:
+    24h: false
+    formats:
+      long_dayname: "%A, %B %-d, %Y, %-l:%M %p"
+      short_mailer: "%B %-d, %Y at %-l:%M %p"
+      time: "%-l:%M %p"
+      timepicker: "%-l:%M %p"
+    moment_format: h:mm A
+    timepicker_format: g:i A

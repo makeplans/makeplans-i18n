@@ -75,10 +75,10 @@ pl:
         none_available: Brak dostępnych rezerwacji.
       show:
         before_first_booking: Nie ma możliwości wcześniejszego zapisania się na to wydarzenie %{first_booking_at}.
+        book: Zapisz się na to wydarzenie
         full: Rezerwacje są wykorzystane.
         past_last_booking: Nie można już zapisać się na to wydarzenie.
         started: To wydarzenie już się zakończyło.
-        book: Zapisz się na to wydarzenie
     generic:
       dateselector: Wybierz datę
       earlier: wcześniej

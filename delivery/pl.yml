@@ -4,40 +4,40 @@ pl:
     summary: "%{service} z %{client}"
   booking_mailer:
     cancellation:
-      subject: Rezerwacja anulowana
       header: Cześć %{name}
       info: Twoja rezerwacja %{title} %{time_range} została anulowana.
+      subject: Rezerwacja anulowana
     confirmation:
-      subject: Nowa rezerwacja
-      subject_service: Rezerwacja na %{service}
       header: Cześć %{name}
       info: Zarezerwowano %{title} %{time_range}.
-      resource_info: 'Rezerwacja na: %{resource}.'
       link: Więcej informacji o rezerwacji
-      link_cancellation_info: 'możliwość anulowania'
+      link_cancellation_info: możliwość anulowania
+      resource_info: 'Rezerwacja na: %{resource}.'
+      subject: Nowa rezerwacja
+      subject_service: Rezerwacja na %{service}
     declined:
-      subject: Rezerwacja została odrzucona
-      body: |2-
+      body: |-
         Cześć,
 
         Twoja rezerwacja nie została potwierdzona.
+      subject: Rezerwacja została odrzucona
     modification:
-      subject: Modyfikacja rezerwacji
       header: Cześć %{name}
       info: 'Twoja rezerwacja została zmieniona na: %{title} %{time_range}.'
-      resource_info: 'Rezerwacja na: %{resource}.'
       link: Więcej informacji o rezerwacji
-      link_cancellation_info: 'możliwość anulowania'
+      link_cancellation_info: możliwość anulowania
+      resource_info: 'Rezerwacja na: %{resource}.'
+      subject: Modyfikacja rezerwacji
     request_card:
-      subject: Szczegóły płatności
       header: Cześć %{name}
       info: Aby łatwo opłacić rezerwację, dodaj dane karty kredytowej.
       link: dodaj kartę kredytową
+      subject: Szczegóły płatności
     verification:
-      subject: Potwierdź rezerwację
-      header: 'Aby potwierdzić rezerwację %{title} %{time_range} kliknij link poniżej.'
-      link: 'Potwierdź rezerwację'
       footer: 'Ważne: rezerwacja nie została jeszcze zakończona. Jeśli nie zweryfikujesz rezerwacji, klikając powyższy link w ciągu %{expires_in} minut Twoja rezerwacja może wygasnąć.'
+      header: Aby potwierdzić rezerwację %{title} %{time_range} kliknij link poniżej.
+      link: Potwierdź rezerwację
+      subject: Potwierdź rezerwację
   booking_sms:
     admin_notification_confirmation:
       booking_type_appointment: |-
@@ -60,11 +60,11 @@ pl:
     export:
       subject: Eksport danych
     perishable_token:
-      subject: Zaloguj się na MakePlans
-      body: |2-
+      body: |-
         Aby się zalogować kliknij w poniższy link:
 
         %{link}
+      subject: Zaloguj się na MakePlans
   person_sms:
     perishable_token: "{{ perishable_token }} to Twój kod do uwierzytelnienia."
     signature: |2-

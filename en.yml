@@ -25,10 +25,10 @@ en:
         declined: Declined
         deleted: Deleted
       booking/status:
-        checked_in: 'Checked in'
-        in_progress: 'Started'
-        completed: 'Completed'
-        no_show: 'No show'
+        checked_in: Checked in
+        completed: Completed
+        in_progress: Started
+        no_show: No show
       category:
         title: title
       client:
@@ -56,18 +56,18 @@ en:
         title: title
       message_template:
         active: active
-        message_type: message type
-        delivery_type: delivery type
         delivery_timing: deliver at
+        delivery_type: delivery type
+        message_type: message type
         subject: subject
         template: template
       message_template/delivery_type:
-        sms: SMS
         email: email
+        sms: SMS
       message_template/message_type:
         confirmation: confirmation
-        reminder: reminder
         follow_up: follow up
+        reminder: reminder
       person:
         address: address
         blocked: Blocked for reservations
@@ -114,8 +114,8 @@ en:
             event_id:
               time_not_available: is fully booked
             person_id:
-              taken: already signed up for this event
               blocked: blocked for booking
+              taken: already signed up for this event
             resource_id:
               no_availability: not avaiable at requested time
             service_id:
@@ -132,15 +132,15 @@ en:
         client_user_link:
           admin_needed: Need at least one admin user on the account.
         person:
+          blocked: Your account is not able to make any bookings.
           missing: is not saved on your customer profile. Please contact us to correct it.
           no_values_present: Name, phone number or email is required.
-          blocked: Your account is not able to make any bookings.
         resource:
           has_bookings: This resource has bookings. Cannot be deleted. Please contact support.
         service:
           attributes:
-            payment_price_required: must be set if you want to require payment
             below_minimum: must be more than 1 USD if you want to require payment
+            payment_price_required: must be set if you want to require payment
         user:
           attributes:
             password:
@@ -154,8 +154,8 @@ en:
       category: category
       event: event
       external_credential: integration
-      person: customer
       message_template: message template
+      person: customer
       resource: resource
       service: service
       service_appointment: service
@@ -186,9 +186,9 @@ en:
     models:
       person:
         perishable_token:
+          expired: Code expired. Please try again.
           invalid: Incorrect code
           no_identifier: Missing email or phone number.
-          expired: Code expired. Please try again.
     stripe:
       booking:
         invalid: Reservation has expired or is invalid. Transaction not processed.
@@ -245,12 +245,6 @@ en:
       category:
         parent_id: Parent category
         title: Title
-      client_user_link:
-        role: Access level
-      client_user_link/role:
-        admin: Full access
-        manager: Basic setup
-        staff: Only calendar
       client:
         address: Visiting address
         allow_cancellation: Allow cancellations by customer
@@ -307,8 +301,8 @@ en:
         public_access: The booking site is available to the public
         purge_data_period: Automatic deletion of personal identifiable information
         reminder_sms: Send SMS reminders
-        resource_form: Custom resource fields
         require_terms_acceptance: Require terms to be accepted
+        resource_form: Custom resource fields
         service_form: Custom service fields
         service_template: Calendar style
         service_templates:
@@ -328,6 +322,12 @@ en:
         terms: Terms and conditions
         time_zone: Timezone
         verification_method: Verification method for new reservations
+      client_user_link:
+        role: Access level
+      client_user_link/role:
+        admin: Full access
+        manager: Basic setup
+        staff: Only calendar
       event:
         all_day: All day
         booking_capacity: Max nr of attendants per booking
@@ -345,18 +345,18 @@ en:
         title_html: Specified title <small>optional</small>
       message_template:
         active: Active
-        message_type: Message type
-        delivery_type: Delivery type
         delivery_timing: Deliver at
+        delivery_type: Delivery type
+        message_type: Message type
         subject: Subject
         template: Template
       message_template/delivery_type:
-        sms: SMS
         email: Email
+        sms: SMS
       message_template/message_type:
         confirmation: Confirmation
-        reminder: Reminder
         follow_up: Follow up
+        reminder: Reminder
       person:
         address: Address
         city: City

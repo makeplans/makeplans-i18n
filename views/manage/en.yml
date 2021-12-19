@@ -61,7 +61,6 @@ en:
         billing_name_info: If you want to us to bill another company than %{name} please enter the name here.
         header: Your billing info
       info:
-        header: Payment details
         add_link: Activate account - Enter credit card details
         add_new_link: Do you want to update your credit card details?
         billing_info: You will receive an invoice from us that you need to pay manually
@@ -75,6 +74,7 @@ en:
         edit_info_link: Do you want to modify your billing information?
         edit_link: Do you want to update your credit card details?
         email_recipent: We will email the invoice to %{email}.
+        header: Payment details
         info_header: 'Your billing info:'
         paid_until: Your account is paid for until %{paid_until}.
         pause: Pause the account when the current subscription ends.
@@ -162,8 +162,8 @@ en:
         amount: Total price
         booked_from: From
         booked_to: To
-        created_by: Created by %{user}
         count: Number of people
+        created_by: Created by %{user}
         fiken:
           create_invoice: Create invoice in Fiken
           created: Invoice is created in Fiken
@@ -207,11 +207,11 @@ en:
         cancel_all_future: Cancel all future appointments
         delete_all: Delete all
         headline: All repeating reservations within this pattern
+      state_changer:
+        state: State
       status_changer:
         cancel: Cancel reservation
         status: Set status
-      state_changer:
-        state: State
       unconfirmed:
         headline: List of reservations for approval
         no_reservations: No reservations that requires approval
@@ -361,8 +361,8 @@ en:
       export_info:
         data_types:
           bookings: Reservations
-          bookings_visible: Reservations (including cancellations)
           bookings_all: Reservations (all)
+          bookings_visible: Reservations (including cancellations)
           events: Events
           people: Customers
         executed: The export is now being sent to your email-address.
@@ -421,10 +421,10 @@ en:
         signup_link: Signup link
         sms_all_participants: Send SMS to all participants
         zoom:
-          start_meeting: Start Zoom meeting as host
           join_meeting: Join meeting link
-          start_webinar: Start Zoom webinar as host
           join_webinar: Join webinar link
+          start_meeting: Start Zoom meeting as host
+          start_webinar: Start Zoom webinar as host
       show_recurring:
         delete_all: Delete all
         headline: All repeating events within this pattern
@@ -441,9 +441,9 @@ en:
     integrations:
       account_connected: Connect to this account.
       bestrx:
+        api_key: The API-key is %{api_key}
+        api_url: The URL to the API is %{api_url}
         enable: Enable
-        api_url: 'The URL to the API is %{api_url}'
-        api_key: 'The API-key is %{api_key}'
       braintree:
         cse_key: Cse key
         environment: Environment
@@ -516,9 +516,9 @@ en:
       not_authenticated: Unable to connect. Check your credentials.
       notion:
         connected_to: Connected to database with id %{database_id}
-        select_database: Select database
-        sharing_info: 'Please share at least one database with the MakePlans integration'
         database_info: 'The database must be set up with the following properties: Name, Email (type: email), Phone (type: phone).'
+        select_database: Select database
+        sharing_info: Please share at least one database with the MakePlans integration
       oauth_connect: Connect to service
       quickpay:
         environment: Environment
@@ -570,31 +570,31 @@ en:
       zapier:
         info_html: To connect MakePlans to Zapier please make a <a href="%{url}" target="_blank">new Zap on Zapier</a>.
       zoom:
-        session_type: Zoom session type for events
-        registration_type: Registration type
         info: For this integration to work you must connect a resource to a user in Zoom and have at least one service with Zoom enabled.
+        registration_type: Registration type
+        session_type: Zoom session type for events
     message_templates:
-      index:
-        header: Message templates
-        intro: This is where you will find more complex message templates that can be send out after a reservation is confirmed, before it starts or after it is completed. Please note that these messages are sent in addition to the standard messages like confirmation and reminder. Only use this function if you want to for example send an additional reminder, multiple confirmation messages (like email in addition to SMS) or a follow-up message.
-        immediately: immediately
       form:
         delivery_timing_info: 'Write in plain English. Example.: ''two hours before'' (message is sent two hours before) or ''08:00 tomorrow'' (at 8AM the day after). Delivery timing is relative based on the the message type: confirmation - booking created_at, reminder - booking booked_from, follow_up - booking booked_to.'
-        template_info_html: You can merge inn dynamic values. Please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> for details.
         immediately: immediately
         services: Services
         services_info: 'The message template will be sent for all services unless you restrict to specific services below:'
+        template_info_html: You can merge inn dynamic values. Please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> for details.
+      index:
+        header: Message templates
+        immediately: immediately
+        intro: This is where you will find more complex message templates that can be send out after a reservation is confirmed, before it starts or after it is completed. Please note that these messages are sent in addition to the standard messages like confirmation and reminder. Only use this function if you want to for example send an additional reminder, multiple confirmation messages (like email in addition to SMS) or a follow-up message.
       show:
         immediately: immediately
     people:
       form:
+        block: Block customer for booking
         merge_action: Merge these two customers
         merge_action_email: This email address is already saved on another customer. Do you want to merge these two customers so %{email} will be used as the e-mail address?
         merge_action_info: All reservations will be kept but one of the customers will be deleted. You can choose which customer information that will be kept.
         merge_action_phone_number: This phone number is already stored on another customer. Do you want to merge these two customers to %{phone_number} will be used as the phone number?
         merge_button: Merge and save
         merge_info: 'Instead use: '
-        block: Block customer for booking
         unblock: Remove booking block
       index:
         delete_warning: Are you sure you want to delete %{person}?
@@ -830,8 +830,8 @@ en:
         process: Complete purchase.
         processing: Please wait...
       index:
-        header: SMS balance
         buy: Buy more SMS credits
+        header: SMS balance
         sms_credits_available: You have %{credits} SMS credits available.
       purchase_form:
         buy: Purchase

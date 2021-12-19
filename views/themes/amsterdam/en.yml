@@ -93,9 +93,9 @@ en:
         form_header: This form is sent encrypted.
         header: Payment
         info: To complete the reservation of %{service} %{booking} you must pay with your credit card.
+        new_card: Enter new card
         payment_details_html: The displayed amount is in %{currency}. We do not store your credit card details but send it encrypted over to %{provider} for secure processing and storage.
         payment_received: "%{paid_amount} was paid on %{paid_at}."
-        new_card: Enter new card
         save_card: Save card
       step:
         cancel: Cancel
@@ -141,10 +141,10 @@ en:
     profile:
       credit_card_list:
         add_card: Add new card
-        title: Your stored payment methods
         body: These are your stored payment cards. If you want you can add a new card or delete any of the existing ones.
-        card_info: '%{brand} with number ending in %{last_4} and expires %{expire_month}/%{expire_year}.'
+        card_info: "%{brand} with number ending in %{last_4} and expires %{expire_month}/%{expire_year}."
         remove_card: Remove this card
+        title: Your stored payment methods
       show:
         header: Your reservations
         logout: Log out

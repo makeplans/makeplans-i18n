@@ -148,6 +148,32 @@ en:
       link_info: This is where you will find your calendar with an overview of all reservations as well as being able to configure your account.
       registered: 'You have now registered for a free test account at:'
       subject: Welcome to MakePlans
+    sms_credits_balance_reached:
+      body: |-
+        Hi,
+
+        Your MakePlans account has a limit of sending %{sms_balance_limit} SMS. You have now passed that limit.
+
+        SMS is no longer being sent from your account.
+
+        Purchase SMS credits:
+        %{url}
+
+        Alternatively you can log in to your account and change the verification method from SMS to e-mail and disable SMS reminders.
+      subject: 'ACTION REQUIRED: You have used all your SMS credits'
+    sms_credits_balance_warning:
+      body: |-
+        Hi,
+
+        Your MakePlans account has a limit of sending %{sms_balance_limit} SMS. You have currently sent %{sms_balance}.
+
+        When you reach %{sms_balance_limit} messages your account will no longer send SMS unless you purchase more SMS credits.
+
+        Purchase SMS credits:
+        %{url}
+
+        Alternatively you can log in to your account and change the verification method from SMS to e-mail and disable SMS reminders.
+      subject: Your SMS credits are running out
     trial_expire_warning:
       body: |-
         Hi,
@@ -197,32 +223,6 @@ en:
         When you reach %{sms_balance_limit} messages your account will no longer send SMS unless you activate your account.
 
         Activate account:
-        %{url}
-
-        Alternatively you can log in to your account and change the verification method from SMS to e-mail and disable SMS reminders.
-      subject: Your SMS credits are running out
-    sms_credits_balance_reached:
-      body: |-
-        Hi,
-
-        Your MakePlans account has a limit of sending %{sms_balance_limit} SMS. You have now passed that limit.
-
-        SMS is no longer being sent from your account.
-
-        Purchase SMS credits:
-        %{url}
-
-        Alternatively you can log in to your account and change the verification method from SMS to e-mail and disable SMS reminders.
-      subject: 'ACTION REQUIRED: You have used all your SMS credits'
-    sms_credits_balance_warning:
-      body: |-
-        Hi,
-
-        Your MakePlans account has a limit of sending %{sms_balance_limit} SMS. You have currently sent %{sms_balance}.
-
-        When you reach %{sms_balance_limit} messages your account will no longer send SMS unless you purchase more SMS credits.
-
-        Purchase SMS credits:
         %{url}
 
         Alternatively you can log in to your account and change the verification method from SMS to e-mail and disable SMS reminders.

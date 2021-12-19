@@ -2,13 +2,6 @@
 en:
   booking_ical:
     summary: "%{service} at %{client}"
-  booking_occurrence_mailer:
-    cancel:
-      body: 'Your bookings of %{title} for the following times has been cancelled:'
-      subject: 'Cancelled reservations'
-    create:
-      body: 'You have reserved %{title} for the following times:'
-      subject: 'New reservations'
   booking_mailer:
     cancellation:
       header: Hi %{name}
@@ -45,6 +38,13 @@ en:
       header: To complete your booking of %{title} %{time_range} you must confirm your reservation by clicking the link below.
       link: Confirm reservation
       subject: Please confirm your reservation
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Your bookings of %{title} for the following times has been cancelled:'
+      subject: Cancelled reservations
+    create:
+      body: 'You have reserved %{title} for the following times:'
+      subject: New reservations
   booking_sms:
     admin_notification_approvement:
       booking_type_appointment: |-

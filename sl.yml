@@ -1,23 +1,24 @@
+---
 sl:
   csv:
-    col_sep: ';'
+    col_sep: ";"
   date:
     formats:
-      full_date: "%A, %d. %B %Y"
-      short_with_name: "%A %e. %b"
+      date_month_name: "%e %B"
       day_name: "%A"
       day_name_abbr: "%a"
+      full_date: "%A, %d. %B %Y"
       month_name: "%B"
-      date_month_name: "%e %B"
+      short_with_name: "%A %e. %b"
+  generic:
+    optional: neobvezno
+    to: do
   time:
+    24h: 'true'
+    form_format: HH:mm
     formats:
-      time: "%H:%M"
-      short_mailer: "%e. %B kl. %H:%M"
       long: "%A, %e. %B %Y, %H:%M"
       long_dayname: "%A, %e. %B %Y, %H:%M"
-    24h: "true"
-    form_format: "HH:mm"
-    timepicker_format: "H:i"
-  generic:
-    to: do
-    optional: neobvezno
+      short_mailer: "%e. %B kl. %H:%M"
+      time: "%H:%M"
+    timepicker_format: H:i
