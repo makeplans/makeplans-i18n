@@ -201,6 +201,8 @@ nb:
           create_invoice: Opprett tilbud i Visma eAccounting
           created: Tilbud er opprettet i Visma eAccounting
           processing: Tilbud opprettes i Visma eAccounting. Dette kan ta opptil 1-2 minutter.
+        whereby:
+          start_meeting: Start Whereby-møte
         zoom:
           start_meeting: Start Zoom-møte
       show_recurring:
@@ -569,6 +571,9 @@ nb:
         service_linked: Koblet mot produkt i Visma eAccounting
         service_links: 'Hver tjeneste må kobles mot et produkt i Visma eAccounting for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra Visma eAccounting - ikke fra MakePlans. Du må selv passe på at pris i begge systemer er identiske.'
         service_not_linked: IKKE koblet mot produkt i Visma eAccounting
+      whereby:
+        connect_info: Tilkoblet
+        setup_info: Et Whereby-møte vil bli automatisk opprettet for alle tjenester hvor Whereby er aktivert.
       zapier:
         info_html: For å koble MakePlans til Zapier så må du <a href="%{url}" target="_blank">opprette en ny Zap i Zapier</a>.
       zoom:
@@ -746,6 +751,7 @@ nb:
           fiken_product_href: Koble til produkt i Fiken
           tfso_product_id: 24SevenOffice produkt id
           visma_eaccounting_article_id: Koble til produkt i Visma eAccounting
+          whereby_create_meeting: Opprett automatisk et Whereby-møte for denne tjenesten
           zoom_create_session: Opprett automatisk et Zoom-møte for denne tjenesten
       list_menu:
         list_appointment: Tjenester
