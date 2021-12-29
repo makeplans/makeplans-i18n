@@ -37,6 +37,7 @@ en:
           not_current_person_html: Are you not <span data-name="">%{person}?</span>?
           remember_me: Do you want us to remember you on this machine using a cookie?
         date_format: 'Please enter valid date format: %{format}'
+        email_suggestion_html: '<p>Did you mean<span> %{suggestions}</span>?</p>'
         enter_info: Enter information
         errors_header: Please fill out the required fields.
         form_info: This will be used to verify your reservation of %{service}, %{booking}.
