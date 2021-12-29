@@ -132,6 +132,9 @@ en:
         client_user_link:
           admin_needed: Need at least one admin user on the account.
         person:
+          attributes:
+            national_id_no:
+              invalid_syntax_no: Enter your Norwegian fødselsnummer - 11 digits.
           blocked: Your account is not able to make any bookings.
           missing: is not saved on your customer profile. Please contact us to correct it.
           no_values_present: Name, phone number or email is required.

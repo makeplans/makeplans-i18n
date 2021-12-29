@@ -140,6 +140,9 @@ nb:
         client_user_link:
           admin_needed: Trenger minst én admin-bruker på kontoen.
         person:
+          attributes:
+            national_id_no:
+              invalid_syntax_no: Fyll inn gyldig fødselsnummer - 11 siffer.
           blocked: Ikke mulig å gjøre reservasjoner med denne kontoen.
           missing: er ikke lagret på din kundeprofil. Kontakt oss for å rette opp i dette.
           no_values_present: Navn, telefonnummer eller epost er påkrevd.
