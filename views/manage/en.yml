@@ -804,10 +804,19 @@ en:
       recurring:
         enabled: Repeat multiple times with a pattern
         freq:
-          monthly: Monthly
-          weekly: Weekly
-          yearly: Yearly
+          monthly: Month
+          weekly: Week
+          yearly: Year
         freq_label: Period
+        interval:
+          1: Every
+          2: Every second
+          3: Every third
+          4: Every fourth
+          5: Every fifth
+          6: Every sixth
+          7: Every seventh
+          8: Every eight
         interval_label: Frequency
         length:
           count: Occurences

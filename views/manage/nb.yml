@@ -809,11 +809,20 @@ nb:
       recurring:
         enabled: Gjenta flere ganger med et mønster
         freq:
-          monthly: Månedlig
-          weekly: Ukentlig
-          yearly: Årlig
+          monthly: Måned
+          weekly: Uke
+          yearly: År
         freq_label: Periode
-        interval_label: Frekvens (hver)
+        interval:
+          1: Hver
+          2: Annenhver
+          3: Tredjehver
+          4: Fjerdehver
+          5: Femtehver
+          6: Sjettehver
+          7: Syvendhver
+          8: Åttendehver
+        interval_label: Frekvens
         length:
           count: Etter antall
           until: Før dato
