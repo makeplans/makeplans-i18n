@@ -27,6 +27,18 @@ en:
       link: To approve or reject this reservation please go to
       subject_resource: New request for %{resource}
   client_mailer:
+    activated:
+      body: |-
+        Hi,
+
+        Your subscription to MakePlans is successfully activated.
+        Please see our pricing at https://makeplans.com/en/pricing/
+        For our terms please see https://terms.makeplans.com
+
+        Thanks for using MakePlans :D
+
+        If you have any questions just reply to this email.
+      subject: Your account is activated
     charge_failed:
       body: |-
         Hi,
