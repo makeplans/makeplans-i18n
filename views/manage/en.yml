@@ -79,6 +79,7 @@ en:
         paid_until: Your account is paid for until %{paid_until}.
         pause: Pause the account when the current subscription ends.
         pause_confirm: Are you sure you want to put the account on hold? The account will automatically be deactivated on %{paid_until}.
+        reactivate_confirm: Are you sure you want to reactivate the account you put on hold? The account will be next charged %{paid_until}.
         reactivate: Your account is currently in trial mode. You must reactivate your account to continue to use MakePlans
         reactivate_link: Reactivate account
         sms_credits_available: You have a balance of %{credits} SMS.

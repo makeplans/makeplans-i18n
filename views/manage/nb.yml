@@ -79,6 +79,7 @@ nb:
         paid_until: Kontoen er betalt frem til %{paid_until}.
         pause: Sett kontoen på pause etter endt betalt periode.
         pause_confirm: Er du sikker på at du vil sette kontoen på pause? Kontoen vil bli automatisk deaktivert %{paid_until}.
+        reactivate_confirm: Er du sikker på at du vil reaktivert kontoen du har satt på pause? Kontoen vil bli automatisk fakturert %{paid_until}.
         reactivate: Din konto er en demo-konto, du må reaktivere kontoen for å ta i bruk MakePlans.
         reactivate_link: Reaktiver konto
         sms_credits_available: 'SMS balanse er: %{credits}.'
