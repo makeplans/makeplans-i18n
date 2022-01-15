@@ -73,7 +73,7 @@ nb:
         demo_ends_at: Kontoen vil automatisk bli deaktivert %{demo_ends_at}.
         edit_info_link: Ønsker du å endre noe av denne informasjonen?
         edit_link: Vil du endre registrert kredittkortinformasjon?
-        email_recipent: Faktura vil bli sendt på epost til %{email}.
+        email_recipent: Faktura vil bli sendt på epost til %{email} eller som EHF hvis dere kan motta det.
         header: Betalingsinformasjon
         info_header: 'Vi har registrert følgende fakturainformasjon:'
         paid_until: Kontoen er betalt frem til %{paid_until}.
