@@ -102,7 +102,7 @@ lv:
         completed: Izpildīts!
         hotstepper: Solis %{step} no %{steps}
         next_confirm: 'Nākamais: apstiprinājums'
-        next_payment: Maksā
+        next_payment: Maksāt
         next_time: 'Nākamais: laika izvēle'
         next_verify: Apstipriniet pierakstu
         previous: iepriekšējais solis

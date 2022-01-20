@@ -227,7 +227,7 @@ lv:
         reminder_at: Atgādinājums
         resource_id: Resurss
         service_id: Pakalpojums
-        terms_accepted: Apstiprinu, ka esmu iepazinies noteikumiem un pieņemu tos
+        terms_accepted: Apstiprinu, ka esmu iepazinies noteikumiem
         title: Nosaukums
         verification_code: Verifikācijas kods
       category:
