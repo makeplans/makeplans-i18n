@@ -239,6 +239,7 @@ en:
         notes: Notes
         paid_at: Paid
         person_id: Customer
+        reminded_at: Sent reminder
         reminder_at: Reminder
         resource_id: Resource
         service_id: Service

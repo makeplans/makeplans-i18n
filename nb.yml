@@ -252,6 +252,7 @@ nb:
         notes: Notat
         paid_at: Betalt
         person_id: Kunde
+        reminded_at: Sendt påminnelse
         reminder_at: Påminnelse
         resource_id: Ressurs
         service_id: Tjeneste
