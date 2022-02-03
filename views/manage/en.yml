@@ -358,6 +358,7 @@ en:
         info: Visual settings
         settings:
           calendar_hide_weekends: Hide weekends
+          calendar_prevent_slot_event_overlap: Prevent event overlap
           calendar_slot_duration: Slot duration
           calendar_slot_label_interval: Slot label interval
           esource_title: Custom resource title
