@@ -198,6 +198,7 @@ en:
         paid: Reservation already paid. Try to refresh the page.
       card:
         missing: Unable to get card info
+      payment_intent_unexpected_state: Unable to authenticate payment. Please try again.
       processor: 'Error from our payment processor: %{error}'
       unknown: Unable to process transaction. Unknown error.
   generic:
