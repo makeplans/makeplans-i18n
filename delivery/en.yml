@@ -8,6 +8,7 @@ en:
       info: Your reservation for %{title} at %{time_range} has been cancelled.
       subject: Reservation cancelled
     confirmation:
+      booking_count: Booked for %{count} people.
       header: Hi %{name}
       info: You have reserved %{title} %{time_range}.
       link: More info about your booking

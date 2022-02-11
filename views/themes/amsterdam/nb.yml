@@ -62,6 +62,7 @@ nb:
         add_card: Legg til kredittkort for å betale automatisk etter endt avtale.
         add_to_calendar: Legg til avtalen i din kalender.
         body: Du er nå ferdig. Reservasjonen er gjennomført.
+        booking_count: Reservert for %{count} personer.
         cancel: Kanseller avtale
         cancel_confirmation: Er du sikkert på at du vil kansellere denne reservasjonen?
         paid: Du har forhåndsbetalt %{paid_amount}.

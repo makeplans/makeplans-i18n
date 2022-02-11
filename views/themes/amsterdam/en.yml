@@ -63,6 +63,7 @@ en:
         add_card: Add your credit card to pay automatically after the reservation
         add_to_calendar: Add the reservation to your calendar
         body: You're done. The booking has been made.
+        booking_count: Booked for %{count} people.
         cancel: Cancel reservation
         cancel_confirmation: Are you sure you want to cancel this reservation?
         paid: You have prepaid %{paid_amount}.
