@@ -352,7 +352,7 @@ lv:
         created_at: Reģistrēts
         date_of_birth: Dzimšanas datums (dd.mm.gggg)
         email: E-pasts
-        name: Vārds
+        name: Vārds, uzvārds
         national_id_no: Nacionālais personīgais identifikācijas numurs
         notes: Piezīmes
         phonenumber: Mobilā tālruņa numurs
