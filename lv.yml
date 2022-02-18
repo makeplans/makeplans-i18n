@@ -10,8 +10,8 @@ lv:
         notes: piezīmes
         person: klients
         person_id: klients
-        resource: resurss
-        resource_id: resurss
+        resource: speciālists
+        resource_id: speciālists
         service: pakalpojums
         service_id: pakalpojums
         title: nosaukums
@@ -50,7 +50,7 @@ lv:
         ends_at: beidzas
         first_booking_at: nav pierakstu pirms
         last_booking_at: pēdējais pieraksts pirms
-        resource_id: resurss
+        resource_id: speciālists
         service_id: pakalpojums
         starts_at: sākas
         title: nosaukums
@@ -120,7 +120,7 @@ lv:
               no_availability: nav pieejams pieprasītajā laikā
             service_id:
               attendance_only: ir paredzēta tikai reģistrēšanās reizēm
-              not_offered: nepiedāvā izvēlētais resurss
+              not_offered: nepiedāvā izvēlētais speciālists
             state:
               invalid_transition: Nederīgas stāvokļa izmaiņas
           fully_booked: Nav pieejams izvēlētajā laikā.
@@ -156,7 +156,7 @@ lv:
       external_credential: integrācija
       message_template: ziņojuma šablons
       person: klients
-      resource: resurss
+      resource: speciālists
       service: pakalpojums
       service_appointment: pakalpojuma pieraksts
       service_attendance: pasākuma veids
@@ -225,7 +225,7 @@ lv:
         paid_at: Apmaksāts
         person_id: Klients
         reminder_at: Atgādinājums
-        resource_id: Resurss
+        resource_id: Speciālists
         service_id: Pakalpojums
         terms_accepted: Apstiprinu, ka esmu iepazinies noteikumiem
         title: Nosaukums
@@ -327,7 +327,7 @@ lv:
         payment_required: Nepieciešams maksājums
         price: Cena iekļaujot nodokļus
         published: Redzams pierakstīšanās vietnē
-        resource_id: Resurss
+        resource_id: Speciālists
         service_id: Pasākuma veids
         starts_at: Sākas
         title_html: Norādītais nosaukums <small>nav obligāts</small>
@@ -428,7 +428,7 @@ lv:
       person:
         new: Jauns klients
       resource:
-        new: Jauns resurss
+        new: Jauns speciālists
       service:
         new_appointment: Jauns pakalpojums
         new_attendance: Jauns pasākuma veids
@@ -492,7 +492,7 @@ lv:
     admin:
       invoice_client:
         errors:
-          nothing_to_invoice: Konts nav gatavs rēķinu sagatavošanai. Lūdzu, pārliecinieties, vai jums ir vismaz viens resurss.
+          nothing_to_invoice: Konts nav gatavs rēķinu sagatavošanai. Lūdzu, pārliecinieties, vai jums ir vismaz viens speciālists.
         invoice_text: MakePlans tiešsaistes pierakstīšanās izmantošana
   title:
     actions:
