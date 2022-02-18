@@ -162,18 +162,9 @@ lv:
       service_attendance: pasākuma veids
       user: lietotājs
       web_hook: webhook
-    date:
+  date:
     formats:
-      date_month_name: "%e. %B"
-      datepicker: "%d.%m.%Y"
-      day_name: "%A"
-      day_name_abbr: "%a"
-      full_date: "%A, %Y. gada %e. %B "
-      month_name: "%B"
-      short_with_name: "%a, %e. %b"
-      short_with_name_and_year: "%a, %Y. g. %e. %b "
-    moment_format: DD.MM.YYYY
-    moment_parse: D.M.YYYY
+      full_date: "%A, %Y. gada %e. %B"
   errors:
     messages:
       no_values_present: Nepieciešams vārds, tālruņa numurs vai e-pasts.
