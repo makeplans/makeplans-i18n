@@ -526,7 +526,7 @@ lv:
         merchant_id: Tirgotāja ID
         production: Ražošana
         test: Pārbaude
-      selected_option: Atlasīts
+      selected_option: Izvēlēts
       sendy:
         connect_info_html: Jaunie klienti tiks abonēti sarakstam ar ID <em>%{list_id}</em> instalācijā %{api_url}
       stripe:
@@ -718,7 +718,7 @@ lv:
         payment: Maksājums
         price_placeholder: Cena nav noteikta
         settings:
-          hide_all_available: Jāizvēlas konkrēts resurss (tiks paslēpts 'rādīt visus pieejamos')
+          hide_all_available: Jāizvēlas konkrēts resurss (tiks paslēpts 'Rādīt visus pieejamos laikus')
           hide_resources: Slēpt resursa izvēles pogu (tiks nejauši izvēlēta starp pieejamajiem resursiem)
           hide_slot_end: Slēpt beigu laiku
           select_resource: Papildu solis resursa atlasei
