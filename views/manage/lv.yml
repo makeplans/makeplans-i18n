@@ -23,7 +23,7 @@ lv:
           to: Uz
         resourceTimeGridDay: diena (dalīta)
         resourceTimelineDay: laika skala
-        resources: Resursi
+        resources: Speciālisti
         services: Pakalpojumi
       list:
         all_day: Visu dienu
@@ -37,14 +37,14 @@ lv:
         month: Rādīt mēnesi
         no_reservations: Nav atrunu
         reset_filter: Atiestatīt filtru
-        resources: Resursi
+        resources: Speciālisti
         services: Pakalpojumi
         this_and_next_month: No šodienas līdz nākamā mēneša beigām
         this_and_next_week: No šodienas līdz nākamās nedēļas beigām
     billing:
       charge:
         charge_details: Pamatojoties uz pašreizējo lietojumu, mēs katru mēnesi iekasēsim maksu no jūsu kredītkartes %{price}.
-        charge_details_default: Mēneša cena ir %{price} par resursu.
+        charge_details_default: Mēneša cena ir %{price} par speciālistu.
         charge_details_sms: 'No jums tiks iekasēta maksa arī par īsziņu lietošanu: %{price}.'
         process: Pabeigt maksājumu
         processing: Lūdzu uzgaidiet...
