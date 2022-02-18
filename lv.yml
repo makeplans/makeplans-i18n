@@ -325,7 +325,7 @@ lv:
         first_booking_at: Nav pierakstu pirms
         last_booking_at: Nav pierakstu pēc
         payment_required: Nepieciešams maksājums
-        price: Cena iekļaujot nodokļus
+        price: Maksa iekļaujot nodokļus
         published: Redzams pierakstīšanās vietnē
         resource_id: Speciālists
         service_id: Pasākuma veids
@@ -384,7 +384,7 @@ lv:
         max_slots: Maksimālais vietu skaits vienā pierakstā
         next_interval: Vieta pieejama ik
         payment_required: Pieprasīt samaksu
-        price: Cena iekļaujot nodokļus
+        price: Maksa iekļaujot nodokļus
         published: Rādīt pierakstīšanās vietnē
         same_day: Atļaut pierakstīšanos vairāku dienu laikā
         sms_cancellation: Teksts atcelšanas īsziņā
