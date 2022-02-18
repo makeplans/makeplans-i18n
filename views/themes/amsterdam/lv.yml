@@ -34,7 +34,7 @@ lv:
           logged_in_with_fb_html: Esat pieteikušies Facebook kā <span data-name="">nezināms</span> . Noklikšķiniet "Apstiprināt pierakstu", lai apstiprinātu savu pierakstu.
           login_with_facebook_html: Alternatīvi jūs varat %{fb_link}.
           login_with_facebook_link: pieteikties izmantojot Facebook
-          not_current_person_html: Neesat <span data-name="">%{person}?</span> ?
+          not_current_person_html: Neesat <span data-name="">%{person}</span>?
           remember_me: Vai vēlaties, lai mēs atcerētos šo ierīci kā jūs, izmantojot sīkfailu?
         date_format: 'Lūdzu, ievadiet derīgu datuma formātu: %{format}'
         enter_info: Ievadiet informāciju
