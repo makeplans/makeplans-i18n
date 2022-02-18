@@ -153,7 +153,7 @@ lv:
     providers:
       index:
         show_all_available: Rādīt visu pieejamo
-        show_only_selected: 'Vai arī rādīt tikai no izvēlētā resursa:'
+        show_only_selected: 'Vai arī rādīt tikai pie izvēlētā speciālista:'
     services:
       index:
         none_available: Nav pieejamu pakalpojumu.
@@ -182,6 +182,6 @@ lv:
         no_availability: Izvēlētajā datumā nav pieejamu laiku. Lūdzu, mēģiniet citu datumu.
         no_selection: Lūdzu, izvēlieties pieejamu laiku.
         prev_week: Iepriekšējā nedēļa
-        select_resource: Atlasīt resursu
+        select_resource: Atlasīt speciālistu
         select_time: "%{service} - izvēlieties pieejamu laiku"
         show_all: Rādīt visu pieejamo
