@@ -162,6 +162,9 @@ lv:
       service_attendance: pasākuma veids
       user: lietotājs
       web_hook: webhook
+  date:
+    formats:
+      full_date: "%A, %Y. gada %e. %B"
   errors:
     messages:
       no_values_present: Nepieciešams vārds, tālruņa numurs vai e-pasts.
@@ -225,7 +228,7 @@ lv:
         paid_at: Apmaksāts
         person_id: Klients
         reminder_at: Atgādinājums
-        resource_id: Resurss
+        resource_id: resurss
         service_id: Pakalpojums
         terms_accepted: Apstiprinu, ka esmu iepazinies noteikumiem
         title: Nosaukums
@@ -325,7 +328,7 @@ lv:
         first_booking_at: Nav pierakstu pirms
         last_booking_at: Nav pierakstu pēc
         payment_required: Nepieciešams maksājums
-        price: Cena iekļaujot nodokļus
+        price: Maksa iekļaujot nodokļus
         published: Redzams pierakstīšanās vietnē
         resource_id: Resurss
         service_id: Pasākuma veids
@@ -352,7 +355,7 @@ lv:
         created_at: Reģistrēts
         date_of_birth: Dzimšanas datums (dd.mm.gggg)
         email: E-pasts
-        name: Vārds
+        name: Vārds, uzvārds
         national_id_no: Nacionālais personīgais identifikācijas numurs
         notes: Piezīmes
         phonenumber: Mobilā tālruņa numurs
@@ -384,7 +387,7 @@ lv:
         max_slots: Maksimālais vietu skaits vienā pierakstā
         next_interval: Vieta pieejama ik
         payment_required: Pieprasīt samaksu
-        price: Cena iekļaujot nodokļus
+        price: Maksa iekļaujot nodokļus
         published: Rādīt pierakstīšanās vietnē
         same_day: Atļaut pierakstīšanos vairāku dienu laikā
         sms_cancellation: Teksts atcelšanas īsziņā

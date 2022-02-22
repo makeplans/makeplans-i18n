@@ -26,7 +26,7 @@ lv:
       header: Izveidot savienojumu ar kontu
   user:
     select_client:
-      header: Atlasīt kontu
+      header: Izvēlēties kontu
   user_password_resets:
     create:
       header: Atiestatīt paroli

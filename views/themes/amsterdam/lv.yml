@@ -34,13 +34,13 @@ lv:
           logged_in_with_fb_html: Esat pieteikušies Facebook kā <span data-name="">nezināms</span> . Noklikšķiniet "Apstiprināt pierakstu", lai apstiprinātu savu pierakstu.
           login_with_facebook_html: Alternatīvi jūs varat %{fb_link}.
           login_with_facebook_link: pieteikties izmantojot Facebook
-          not_current_person_html: Neesat <span data-name="">%{person}?</span> ?
+          not_current_person_html: Neesat <span data-name="">%{person}</span>?
           remember_me: Vai vēlaties, lai mēs atcerētos šo ierīci kā jūs, izmantojot sīkfailu?
         date_format: 'Lūdzu, ievadiet derīgu datuma formātu: %{format}'
         enter_info: Ievadiet informāciju
         errors_header: Lūdzu, aizpildiet obligātos laukus.
         form_info: Šī informācija tiks izmantota, lai pārbaudītu rezervāciju %{service}, %{booking}.
-        price_info: 'Cena: %{price}'
+        price_info: 'Maksa: %{price}'
         reserve_resource: Pieraksts pie "%{resource}"
       no_person:
         body: 'Lūdzu sazinieties ar mums, lai precizētu situāciju. Kļūda: klienta savienojums ticis atslēgts'
@@ -66,7 +66,7 @@ lv:
         cancel_confirmation: Vai tiešām vēlaties atcelt šo pierakstu?
         paid: Jums ir priekšapmaksa %{paid_amount}.
         remember_me: Vai vēlaties, lai mēs atcerētos šo ierīci kā jūs, izmantojot sīkfailu?
-        title: Jūsu pieraksts ir apstiprināts!
+        title: Jūsu maksājums ir veikts!
       sms_code:
         header: Apstipriniet pierakstu
         incorrect_code: Nepareizs kods
@@ -152,8 +152,8 @@ lv:
         payment_methods: Saglabātie maksājumu veidi
     providers:
       index:
-        show_all_available: Rādīt visu pieejamo
-        show_only_selected: 'Vai arī rādīt tikai no izvēlētā resursa:'
+        show_all_available: Rādīt visus pieejamos laikus
+        show_only_selected: 'Izvēlēties resursu'
     services:
       index:
         none_available: Nav pieejamu pakalpojumu.
@@ -182,6 +182,6 @@ lv:
         no_availability: Izvēlētajā datumā nav pieejamu laiku. Lūdzu, mēģiniet citu datumu.
         no_selection: Lūdzu, izvēlieties pieejamu laiku.
         prev_week: Iepriekšējā nedēļa
-        select_resource: Atlasīt resursu
+        select_resource: Izvēlēties resursu
         select_time: "%{service} - izvēlieties pieejamu laiku"
-        show_all: Rādīt visu pieejamo
+        show_all: Rādīt visus pieejamos laikus
