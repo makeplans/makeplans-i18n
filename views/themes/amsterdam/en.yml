@@ -21,6 +21,9 @@ en:
         verification_delivery_not_processed: We are currently experincing some delays in our systems. Please wait while we are deliving your email.
         verification_sent_body: We have sent an email to %{email}. Follow it to verify your booking. It helps us make sure you’re not a robot.
         verification_sent_title: Please confirm your email address
+      cancelled:
+        body: This reservation has been cancelled.
+        title: Your reservation was cancelled
       declined:
         body: Sorry we were unable to approve your reservation request. Please try another timeslot or contact us.
         title: Your reservation was not approved
