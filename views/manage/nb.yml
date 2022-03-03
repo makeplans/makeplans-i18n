@@ -622,6 +622,10 @@ nb:
         export_executed: Eksportfilen sendes nå til kunden.
         no_reservations: Fant ingen reservasjoner
         send_sms: Send SMS
+        filter_bookings:
+          active: Vis kun aktive reservasjoner
+          all: Vis alle reservasjoner inkludert slettede
+          visible: Vis kun synlige reservasjoner
       tfso_connect_company:
         create: Opprett ny bedrift i 24SevenOffice
         header: Koble mot kunde fra 24SevenOffice

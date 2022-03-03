@@ -618,6 +618,10 @@ en:
         export_executed: The export file has been sent to the customer.
         no_reservations: Found no reservations
         send_sms: Send SMS
+        filter_bookings:
+          active: Show only active bookings
+          all: Show all bookings including deleted
+          visible: Show all visible bookings
       tfso_connect_company:
         create: Create new customer in 24SevenOffice
         header: Connect to customer in 24SevenOffice
