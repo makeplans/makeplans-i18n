@@ -300,6 +300,7 @@ en:
         name: Company name (shown on the booking site)
         new_booking_text: Text displayed on confirmation page
         new_user_text: Text displayed before reservation form
+        no_availability_text: Text displayed when there is no availability
         payment_provider: Payment provider (For prepaid reservations)
         person_form: Custom customer fields
         phone_number: Phone number for notification

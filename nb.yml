@@ -316,6 +316,7 @@ nb:
         name: Firmanavn (vises på bookingsiden)
         new_booking_text: Tekst som vises på bekreftelsesiden
         new_user_text: Tekst som vises før reservasjonskjema
+        no_availability_text: Tekst som vises når det ikke er ledige tidspunkt
         payment_provider: Betalingsløsning (Ved forhåndsbetaling av reservasjoner)
         person_form: Egendefinerte kundefelter
         phone_number: Mobilnummer for varsling
