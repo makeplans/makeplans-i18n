@@ -178,6 +178,7 @@ en:
           braintree: Paid with Braintree
           stripe: Paid with Stripe
           vipps: Vipps
+        performed_by: by %{name}
         person:
           address: Address
           email: Email

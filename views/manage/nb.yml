@@ -178,6 +178,7 @@ nb:
           braintree: Betalt med Braintree
           stripe: Betalt med Stripe
           vipps: Vipps
+        performed_by: av %{name}
         person:
           address: Adresse
           email: Epost
