@@ -145,7 +145,7 @@ fr:
         card_info: "%{brand} avec un numéro se terminant par %{last_4} et expire %{expire_month}/%{expire_year}."
         remove_card: Supprimer cette carte
         title: Vos moyens de paiement enregistrés
-      show:
+      index:
         header: Vos réservations
         logout: Se déconnecter
         new_booking: Nouvelle réservation

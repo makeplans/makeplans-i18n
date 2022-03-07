@@ -145,7 +145,7 @@ ms:
         card_info: "%{brand} dengan nombor berakhir dengan %{last_4} dan tamat tempoh %{expire_month}/%{expire_year}."
         remove_card: Alih keluar kad ini
         title: Kaedah pembayaran anda yang disimpan
-      show:
+      index:
         header: Tempahan anda
         logout: Log keluar
         new_booking: Tempahan baru

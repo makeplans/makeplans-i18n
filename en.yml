@@ -5,6 +5,7 @@ en:
       booking:
         booked_from: from
         booked_to: to
+        booked_by_person_id: booked by
         count: count
         event_id: event
         notes: comments
@@ -232,6 +233,7 @@ en:
     label:
       booking:
         all_day: All day
+        booked_by_person_id: Booked by
         booked_from: Booked from
         booked_to: Booked to
         count: Number of people
@@ -445,6 +447,7 @@ en:
         new_attendant: Add attendant
       person:
         new: New customer
+        new_child: New child
       resource:
         new: New resource
       service:

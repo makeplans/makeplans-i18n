@@ -595,8 +595,12 @@ en:
       show:
         immediately: immediately
     people:
+      children:
+        index:
+          headline: '%{parent} can make bookings for:'
       form:
         block: Block customer for booking
+        managed_by: This customer will be managed by %{parent}.
         merge_action: Merge these two customers
         merge_action_email: This email address is already saved on another customer. Do you want to merge these two customers so %{email} will be used as the e-mail address?
         merge_action_info: All reservations will be kept but one of the customers will be deleted. You can choose which customer information that will be kept.
@@ -611,11 +615,13 @@ en:
         send_sms: Send SMS
       show:
         bookings_for: Reservations for %{name}
+        can_book_for: 'Can make bookings for others.'
         card_saved_with:
           stripe: Payment card saved with Stripe
         change_tfso_customer: Change 24SevenOffice customer ID.
         export: Email export of data to customer
         export_executed: The export file has been sent to the customer.
+        parent_info: Managed by
         no_reservations: Found no reservations
         send_sms: Send SMS
         filter_bookings:

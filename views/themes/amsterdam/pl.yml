@@ -136,7 +136,7 @@ pl:
         not_available_for_this_verification_method: Niedostępne.
         submit: Odbierz kod
     profile:
-      show:
+      index:
         header: Twoje rezerwacje
         logout: Wyloguj się
         new_booking: Nowa rezerwacja

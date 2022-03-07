@@ -37,15 +37,19 @@ en:
           logged_in_with_fb_html: Logged in on Facebook as <span data-name="">unknown</span>. Click "Confirm reservation" to verify your reservation.
           login_with_facebook_html: Alternatively you can %{fb_link}.
           login_with_facebook_link: verify automatically with Facebook
-          not_current_person_html: Are you not <span data-name="">%{person}?</span>?
+          not_current_person_html: Not you?
           remember_me: Do you want us to remember you on this machine using a cookie?
+        book_for_child: Make a booking for someone else?
+        book_for_me: Book for myself instead
         date_format: 'Please enter valid date format: %{format}'
         email_suggestion_html: '<p>Did you mean<span> %{suggestions}</span>?</p>'
         enter_info: Enter information
         errors_header: Please fill out the required fields.
         form_info: This will be used to verify your reservation of %{service}, %{booking}.
+        new_child: For someone else
         price_info: 'Price: %{price}'
         reserve_resource: Reservation for %{resource}
+        select_child: 'Make this booking for:'
       no_person:
         body: 'Contact us for more info. Error: Customer connection removed'
         title: Error
@@ -75,6 +79,7 @@ en:
         add_to_calendar: Add the reservation to your calendar
         body: You're done. The booking has been made.
         booking_count: Booked for %{count} people.
+        booked_for_child: This booking is for %{name}.
         cancel: Cancel reservation
         cancel_confirmation: Are you sure you want to cancel this reservation?
         paid: You have prepaid %{paid_amount}.
@@ -158,11 +163,15 @@ en:
         card_info: "%{brand} with number ending in %{last_4} and expires %{expire_month}/%{expire_year}."
         remove_card: Remove this card
         title: Your stored payment methods
-      show:
+      index:
+        children: 'Other people you can make book for.'
         header: Your reservations
         logout: Log out
+        my_details: My stored information
         new_booking: New reservation
         payment_methods: Stored payment methods
+      show:
+        header: Your stored information
     providers:
       index:
         show_all_available: Show all available

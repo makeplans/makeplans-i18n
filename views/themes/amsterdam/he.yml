@@ -145,7 +145,7 @@ he:
         card_info: "%{brand} עם מספר המסתיים ב-%{last_4} ופג תוקף %{expire_month}/%{expire_year}."
         remove_card: הסר את הכרטיס הזה
         title: אמצעי התשלום המאוחסנים שלך
-      show:
+      index:
         header: ההזמנות שלך
         logout: להתנתק
         new_booking: הזמנה חדשה

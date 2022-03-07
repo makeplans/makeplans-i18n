@@ -34,14 +34,18 @@ nb:
           logged_in_with_fb_html: Innlogget på Facebook som <span data-name="">ukjent</span>. Klikk "Bekreft reservasjon" for å verifisere.
           login_with_facebook_html: Alternativt kan du %{fb_link}.
           login_with_facebook_link: bekrefte automatisk med Facebook
-          not_current_person_html: Er du ikke <span data-name="">%{person}</span>?
+          not_current_person_html: Er det ikke deg?
           remember_me: Vil du at vi skal huske deg på denne maskinen til neste gang du skal reservere her?
+        book_for_child: Opprett reservasjon for noen andre?
+        book_for_me: Reserver for meg selv.
         date_format: 'Vennligst skriv inn dato på følgende format: %{format}'
         enter_info: Fyll inn personalia
         errors_header: Du må fylle ut alle påkrevde felter.
         form_info: Dette vil bli brukt for å verifisere reservasjonen din av %{service}, %{booking}.
+        new_child: For noen andre
         price_info: 'Pris: %{price}'
         reserve_resource: Reservasjon hos %{resource}.
+        select_child: 'Opprett reservasjon for'
       no_person:
         body: 'Kontakt oss for mer info. Feil: Kundekobling fjernet.'
         title: Feil
@@ -71,6 +75,7 @@ nb:
         add_to_calendar: Legg til avtalen i din kalender.
         body: Du er nå ferdig. Reservasjonen er gjennomført.
         booking_count: Reservert for %{count} personer.
+        booked_for_child: Denne reservasjonen er for %{name}.
         cancel: Kanseller avtale
         cancel_confirmation: Er du sikkert på at du vil kansellere denne reservasjonen?
         paid: Du har forhåndsbetalt %{paid_amount}.
@@ -152,17 +157,24 @@ nb:
         not_available_for_this_verification_method: Ikke tilgjengelig
         submit: Motta kode
     profile:
+      children:
+        index:
+          header: Andre du kan reservere for
       credit_card_list:
         add_card: Legg til nytt kort
         body: Dette er dine lagrede betalingsmuligheter. Du kan legge til eller fjerne kort som du ønsker.
         card_info: "%{brand} med kortnr som ender med %{last_4} og utløper %{expire_month}/%{expire_year}."
         remove_card: Fjern dette kortet
         title: Dine lagrede betalingskort
-      show:
+      index:
+        children: 'Andre du kan reservere for'
         header: Dine reservasjoner
         logout: Logg ut
+        my_details: Mine opplysninger
         new_booking: Ny reservasjon
         payment_methods: Lagrede betalingskort
+      show:
+        header: Din lagrede informasjon
     providers:
       index:
         show_all_available: Vis alle ledige

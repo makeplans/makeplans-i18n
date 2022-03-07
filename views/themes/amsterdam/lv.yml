@@ -145,7 +145,7 @@ lv:
         card_info: "%{brand} ar numuru, kas beidzas ar %{last_4} un beidzas %{expire_month}/%{expire_year}."
         remove_card: Noņemiet šo karti
         title: Jūsu saglabātie maksājumu veidi
-      show:
+      index:
         header: Jūsu pieraksti
         logout: Atslēgties no sistēmas
         new_booking: Jauns pieraksts

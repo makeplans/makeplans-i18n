@@ -149,7 +149,7 @@ da:
         card_info: "%{brand} med nummer ender på %{last_4} og udløber %{expire_month}/%{expire_year}."
         remove_card: Fjern dette kort
         title: Dine gemte betalingsmetoder
-      show:
+      index:
         header: Dine reservationer
         logout: Log ud
         new_booking: Ny reservation
