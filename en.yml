@@ -301,7 +301,7 @@ en:
         new_booking_text: Text displayed on confirmation page
         new_user_text: Text displayed before reservation form
         no_availability_text: Text displayed when there is no availability
-        payment_provider: Payment provider (For prepaid reservations)
+        payment_provider: Default payment provider
         person_form: Custom customer fields
         phone_number: Phone number for notification
         public_access: The booking site is available to the public

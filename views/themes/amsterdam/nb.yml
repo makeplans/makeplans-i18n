@@ -58,6 +58,14 @@ nb:
         form_header: Dette skjemaet sendes kryptert.
         header: Betaling
         info: For å fullføre reservasjon av %{service} så må du betalt med ditt kort.
+      pre_payment:
+        form_footer_html: 'Beløp å betale: <span class="payment-amount">%{amount}</span>.'
+        select_provider: Hvordan ønsker du å betale?
+        providers:
+          braintree: Kredittkort eller debetkort
+          quickpay: Kredittkort eller debetkort
+          stripe: Kredittkort, debetkort eller Apple Pay
+          vipps: Vipps
       show:
         add_card: Legg til kredittkort for å betale automatisk etter endt avtale.
         add_to_calendar: Legg til avtalen i din kalender.

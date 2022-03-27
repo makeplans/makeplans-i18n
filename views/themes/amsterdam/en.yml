@@ -62,6 +62,14 @@ en:
         form_header: This form is sent encrypted.
         header: Payment
         info: To complete the reservation of %{service} you must pay with your credit card.
+      pre_payment:
+        form_footer_html: 'Amount to pay: <span class="payment-amount">%{amount}</span>.'
+        select_provider: How would you like to pay?
+        providers:
+          braintree: Credit or debet card
+          quickpay: Credit or debet card
+          stripe: Credit/debit card or Apple Pay
+          vipps: Vipps
       show:
         add_card: Add your credit card to pay automatically after the reservation
         add_to_calendar: Add the reservation to your calendar
