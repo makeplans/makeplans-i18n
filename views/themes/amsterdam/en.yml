@@ -157,6 +157,9 @@ en:
         not_available_for_this_verification_method: Not available.
         submit: Receive code
     profile:
+      children:
+        index:
+          header: 'Other people you can make book for'
       credit_card_list:
         add_card: Add new card
         body: These are your stored payment cards. If you want you can add a new card or delete any of the existing ones.
