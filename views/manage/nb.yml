@@ -598,8 +598,12 @@ nb:
       show:
         immediately: øyeblikkelig
     people:
+      children:
+        index:
+          headline: '%{parent} kan booke for andre:'
       form:
         block: Blokker kunde for booking
+        managed_by: Denne kunden vil administreres av %{parent}.
         merge_action: Kombiner disse to kundeprofilene
         merge_action_email: Denne e-post adressen er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{email} blir den gjeldene e-post adressen?
         merge_action_info: Alle reservasjoner vil beholdes men den ene kundeprofilen vil bli fjernet. Du kan selve velge hvilke kundeopplysninger som skal bli gjeldene.
@@ -615,11 +619,13 @@ nb:
         send_sms: Send SMS
       show:
         bookings_for: Reservasjoner for %{name}
+        can_book_for: 'Kan booke for andre.'
         card_saved_with:
           stripe: Betalingskort lagret hos Stripe
         change_tfso_customer: Bytt 24SO kundenr.
         export: Send eksport av data til kunde
         export_executed: Eksportfilen sendes nå til kunden.
+        parent_info: Administeres av
         no_reservations: Fant ingen reservasjoner
         send_sms: Send SMS
         filter_bookings:

@@ -447,7 +447,7 @@ en:
         new_attendant: Add attendant
       person:
         new: New customer
-        new_child: New child
+        new_child: New customer
       resource:
         new: New resource
       service:

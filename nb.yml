@@ -465,6 +465,7 @@ nb:
         new: Ny meldingsmal
       person:
         new: Ny kunde
+        new_child: Ny kunde
       resource:
         new: Ny ressurs
       service:
