@@ -535,6 +535,7 @@ en:
       sendy:
         connect_info_html: New customers will be subscribed to list with id <em>%{list_id}</em> on installation %{api_url}
       stripe:
+        disable_customer_saving: Do not save customer to Stripe
         payment_info: For all transactions a platform fee of %{application_fee_percent}% is deducted by MakePlans.
         receipt_email: Send a receipt to the customer from Stripe
       tfso:
