@@ -107,6 +107,7 @@ en:
         add_card_header: Save card
         add_card_info: Add your payment card so you can easily and automatically pay after the booking.
         add_card_submit: Save card
+        deposit_details_html: Your card will be charged a deposit of %{deposit} but the total price of the booking is %{price}.
         form_footer_html: Your credit card will be charged with <span class="payment-amount">%{amount}</span>.
         form_header: This form is sent encrypted.
         header: Payment
