@@ -538,6 +538,7 @@ en:
         disable_customer_saving: Do not save customer to Stripe
         payment_info: For all transactions a platform fee of %{application_fee_percent}% is deducted by MakePlans.
         receipt_email: Send a receipt to the customer from Stripe
+        save_card_billing_details: Save billing details for transaction
       tfso:
         add_to_crm_manually: Add customer in CRM manually
         distribution_method: 'Distribution method:'
