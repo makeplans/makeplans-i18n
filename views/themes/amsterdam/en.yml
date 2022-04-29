@@ -188,6 +188,7 @@ en:
         any_resource: First available
         dateselector: Select date
         earlier: Earlier
+        free_capacity: '%{count} available'
         gap_warning: To select multiple slots these slots have to be without gaps.
         later: Later
         max_slots_warning: Cannot reserve more than %{max_slots} timeslots
@@ -199,6 +200,7 @@ en:
         select_time: "%{service} - select available time"
       weekday_available:
         dateselector: Select date
+        free_capacity: '%{count} available'
         gap_warning: To select multiple slots these slots have to be without gaps.
         max_slots_warning: Cannot reserve more than %{max_slots} timeslots
         multiple_slots_info: To select multiple slots first choose the start time then the ending slot.

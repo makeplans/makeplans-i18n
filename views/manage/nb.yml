@@ -744,6 +744,7 @@ nb:
           hide_resources: Skjul knappen for å velge ressurs (vilkårlig ledig ressurs blir automatisk valgt)
           hide_slot_end: Skjul slutt-tid
           select_resource: Ekstra steg for valg av ressurs
+          show_free_capacity: Vis ledig kapasitet
       form_attendance:
         booking_site_settings: Innstillinger for bookingsiden
         days: Dager

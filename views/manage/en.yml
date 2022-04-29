@@ -741,6 +741,7 @@ en:
           hide_resources: Hide button for selecting resource (will be randomly selected by among available resources)
           hide_slot_end: Hide end-time
           select_resource: Extra step for selecting resource
+          show_free_capacity: Show available capacity
       form_attendance:
         booking_site_settings: Settings for the booking site
         days: Days
