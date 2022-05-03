@@ -87,6 +87,9 @@ nb:
         verify_sms_code: Du vil nå motta en SMS på telefonnr %{phonenumber} med en kode. Skriv inn koden i skjemaet under for å bekrefte reservasjonen. Dette er nødvendig for å fullføre reservasjonen - uten å gjøre dette vil ikke reservasjonen bli gjennomført.
     events:
       index:
+        free_capacity:
+          one: '%{count} ledig'
+          other: '%{count} ledige'
         none_available: Ingen arrangementer tilgjengelig.
       show:
         before_first_booking: Det er ikke mulig å melde seg på dette arrangementet før %{first_booking_at}.

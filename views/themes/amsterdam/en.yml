@@ -91,6 +91,7 @@ en:
         verify_sms_code: We have sent a SMS to %{phonenumber} with a verification code. Please enter the code in the form to verify the reservation. This is required to complete the reservation.
     events:
       index:
+        free_capacity: '%{count} available'
         none_available: No events available.
       show:
         before_first_booking: It is not possible to sign up for this event before %{first_booking_at}.

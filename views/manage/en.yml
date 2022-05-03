@@ -749,6 +749,9 @@ en:
         minutes: Minutes
         offered_by: Can be offered by the following calenders
         payment: Payment
+        settings:
+          hide_slot_end: Hide end-time
+          show_free_capacity: Show available capacity
       index:
         appointment:
           header: Services
