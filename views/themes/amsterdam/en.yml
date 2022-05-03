@@ -93,6 +93,7 @@ en:
       index:
         free_capacity: '%{count} available'
         none_available: No events available.
+        title: Events
       show:
         before_first_booking: It is not possible to sign up for this event before %{first_booking_at}.
         book: Sign up for this event
