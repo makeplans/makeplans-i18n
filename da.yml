@@ -235,7 +235,7 @@ da:
         all_day: Hele dagen
         booked_from: Starter
         booked_to: Slutter
-        count: Antal mennesker
+        count: Antal personer
         external_id: Eksternt ID
         invoiced_at: Faktureret
         notes: Bemærkninger
@@ -504,7 +504,7 @@ da:
       cancel: Afbestille
       create: Opret %{model}
       submit: Gem %{model}
-      submit_default: Gemme
+      submit_default: Gem
       update: Skift %{model}
       update_password: Skift kodeord
   service:

@@ -21,6 +21,9 @@ da:
         verification_delivery_not_processed: I øjeblikket kø i vores systemer. Vent mens vi prøver at sende e-mail.
         verification_sent_body: Vi har nu sendt en e-mail til %{email} med et link, som du skal klikke på for at bekræfte din reservation.
         verification_sent_title: Bekræft din emailadresse
+      cancelled:
+        body: Denne reservation er aflyst.
+        title: Din reservation er aflyst
       declined:
         body: Beklager, din reservation blev ikke godkendt. Prøv en anden gang, eller kontakt.
         title: Reservationen blev ikke godkendt
@@ -62,6 +65,7 @@ da:
         add_card: Tilføj kreditkort for at betale automatisk efter opsigelsen.
         add_to_calendar: Føj denne aftale til din kalender.
         body: Du er færdig nu. Reservationen er gennemført.
+        booking_count: Reserveret til %{count} personer.
         cancel: Annuller aftalen
         cancel_confirmation: Er du sikker på, at du vil annullere denne reservation?
         paid: Du har forudbetalt %{paid_amount}.
