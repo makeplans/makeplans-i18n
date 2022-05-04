@@ -670,7 +670,7 @@ en:
         processing: Data will now be deleted. It could take a few minutes before it is processed.
       index:
         header: Delete old data
-        info: 'This functino will delete old personal data. You can specify the date for deletion. The following data will be deleted:'
+        info: 'This function will delete old personal data. You can specify the date for deletion. The following data will be deleted:'
         not_deleted: Data deletion will not trigger external integrations.
         processing: Processing
         purge: DELETE DATA
