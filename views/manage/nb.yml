@@ -664,6 +664,8 @@ nb:
           regenerate_warning: Hvis du regenerer 2-trinns bekreftelse vil den eksisterende nøkkelen slutte å fungere og du må sette opp dette på nytt på din mobil. Er du sikker på at du vil dette?
           submit_button: Logg inn
           verification_code_header: 2-trinns bekreftelse
+      update_password:
+        updated: 'Passord oppdatert. Login på nytt med ditt nye passord.'
     purge_data:
       destroy:
         header: Gamle data vil nå bli slettet

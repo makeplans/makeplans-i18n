@@ -662,6 +662,8 @@ en:
           regenerate_warning: If you regenerate the 2-step verification key the existing key will no longer work and you have to set up your app with the new code. Are you sure you want to continue?
           submit_button: Login
           verification_code_header: 2-step verification
+      update_password:
+        updated: 'Password updated. Please login with your new password.'
     purge_data:
       destroy:
         header: Old data is now being deleted.
