@@ -195,6 +195,7 @@ en:
           no_identifier: Missing email or phone number.
     stripe:
       booking:
+        already_refunded: Already refunded.
         invalid: Reservation has expired or is invalid. Transaction not processed.
         paid: Reservation already paid. Try to refresh the page.
       card:

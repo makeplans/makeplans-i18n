@@ -185,6 +185,8 @@ en:
           phone_number: Phone number
         recurring_member: This reservation is part of a recurruring pattern.
         refund: Refund paid amount
+        refunded_with:
+          stripe: Refunded with Stripe
         request_card:
           processing: Payment link is being sent to customer
           send: Send payment link to customer
