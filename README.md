@@ -30,7 +30,7 @@ Please be aware that date and time sections should not be updated as they are cu
 * Chezh (cz)
 * Dutch (nl)
 * Polish (pl)
-* Slovenian (sl
+* Slovenian (sl)
 
 # Missing translations
 
