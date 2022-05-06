@@ -1,6 +1,14 @@
 # Localisation files for MakePlans
 
-Here you will find the localisation files for [MakePlans](https://makeplans.com)
+Here you will find the localisation files for [MakePlans](https://makeplans.com).
+
+If you want to have the booking site in MakePlans you have three options:
+
+1) Contribute to our localisation files by reading the rest of this document.
+
+2) [Contact us](https://makeplans.com/en/contact/) for an automatic translation to your language (Using Google Translate so it will not be perfect).
+
+3) [Contact us](https://makeplans.com/en/contact/) for a paid professional translation to your language.
 
 ## Contribute
 
