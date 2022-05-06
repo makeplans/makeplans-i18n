@@ -145,7 +145,7 @@ es:
         card_info: "%{brand} con número que termina en %{last_4} y expira %{expire_month} / %{expire_year}."
         remove_card: Quitar esta tarjeta
         title: Tus métodos de pago almacenados
-      show:
+      index:
         header: Tus reservas
         logout: Cerrar sesión
         new_booking: Nueva reservación

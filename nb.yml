@@ -140,6 +140,9 @@ nb:
         client_user_link:
           admin_needed: Trenger minst én admin-bruker på kontoen.
         person:
+          attributes:
+            national_id_no:
+              invalid_syntax_no: Fyll inn gyldig fødselsnummer - 11 siffer.
           blocked: Ikke mulig å gjøre reservasjoner med denne kontoen.
           missing: er ikke lagret på din kundeprofil. Kontakt oss for å rette opp i dette.
           no_values_present: Navn, telefonnummer eller epost er påkrevd.
@@ -249,6 +252,7 @@ nb:
         notes: Notat
         paid_at: Betalt
         person_id: Kunde
+        reminded_at: Sendt påminnelse
         reminder_at: Påminnelse
         resource_id: Ressurs
         service_id: Tjeneste
@@ -312,7 +316,8 @@ nb:
         name: Firmanavn (vises på bookingsiden)
         new_booking_text: Tekst som vises på bekreftelsesiden
         new_user_text: Tekst som vises før reservasjonskjema
-        payment_provider: Betalingsløsning (Ved forhåndsbetaling av reservasjoner)
+        no_availability_text: Tekst som vises når det ikke er ledige tidspunkt
+        payment_provider: Standard betalingsløsning
         person_form: Egendefinerte kundefelter
         phone_number: Mobilnummer for varsling
         public_access: Bookingsiden er offentlig tilgjengelig
@@ -460,6 +465,7 @@ nb:
         new: Ny meldingsmal
       person:
         new: Ny kunde
+        new_child: Ny kunde
       resource:
         new: Ny ressurs
       service:

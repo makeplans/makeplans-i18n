@@ -145,7 +145,7 @@ ru:
         card_info: "%{brand} с номером, заканчивающимся на %{last_4}, срок действия которого истекает %{expire_month} / %{expire_year}."
         remove_card: Удалить эту карту
         title: Ваши сохраненные способы оплаты
-      show:
+      index:
         header: Ваши бронирования
         logout: Выйти
         new_booking: Новое бронирование

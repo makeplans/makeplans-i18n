@@ -1,0 +1,9 @@
+---
+en:
+  timisoara:
+    layouts:
+      application:
+        profile: Profil
+    services:
+      slots:
+        next_available_date_html: Next available date is %{next_available_date}

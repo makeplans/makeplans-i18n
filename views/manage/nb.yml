@@ -73,12 +73,13 @@ nb:
         demo_ends_at: Kontoen vil automatisk bli deaktivert %{demo_ends_at}.
         edit_info_link: Ønsker du å endre noe av denne informasjonen?
         edit_link: Vil du endre registrert kredittkortinformasjon?
-        email_recipent: Faktura vil bli sendt på epost til %{email}.
+        email_recipent: Faktura vil bli sendt på epost til %{email} eller som EHF hvis dere kan motta det.
         header: Betalingsinformasjon
         info_header: 'Vi har registrert følgende fakturainformasjon:'
         paid_until: Kontoen er betalt frem til %{paid_until}.
         pause: Sett kontoen på pause etter endt betalt periode.
         pause_confirm: Er du sikker på at du vil sette kontoen på pause? Kontoen vil bli automatisk deaktivert %{paid_until}.
+        reactivate_confirm: Er du sikker på at du vil reaktivert kontoen du har satt på pause? Kontoen vil bli automatisk fakturert %{paid_until}.
         reactivate: Din konto er en demo-konto, du må reaktivere kontoen for å ta i bruk MakePlans.
         reactivate_link: Reaktiver konto
         sms_credits_available: 'SMS balanse er: %{credits}.'
@@ -177,6 +178,7 @@ nb:
           braintree: Betalt med Braintree
           stripe: Betalt med Stripe
           vipps: Vipps
+        performed_by: av %{name}
         person:
           address: Adresse
           email: Epost
@@ -201,6 +203,8 @@ nb:
           create_invoice: Opprett tilbud i Visma eAccounting
           created: Tilbud er opprettet i Visma eAccounting
           processing: Tilbud opprettes i Visma eAccounting. Dette kan ta opptil 1-2 minutter.
+        whereby:
+          start_meeting: Start Whereby-møte
         zoom:
           start_meeting: Start Zoom-møte
       show_recurring:
@@ -355,6 +359,7 @@ nb:
         info: Dette er kun visuelle innstillinger.
         settings:
           calendar_hide_weekends: Skjul helgedager
+          calendar_prevent_slot_event_overlap: Unngå visuell overlapping av reservasjoner
           calendar_slot_duration: Varighet på slot (minutter)
           calendar_slot_label_interval: Tidsvisning for slot ved hvert X minutt
           esource_title: Egendefinert ressurstittel
@@ -569,6 +574,9 @@ nb:
         service_linked: Koblet mot produkt i Visma eAccounting
         service_links: 'Hver tjeneste må kobles mot et produkt i Visma eAccounting for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra Visma eAccounting - ikke fra MakePlans. Du må selv passe på at pris i begge systemer er identiske.'
         service_not_linked: IKKE koblet mot produkt i Visma eAccounting
+      whereby:
+        connect_info: Tilkoblet
+        setup_info: Et Whereby-møte vil bli automatisk opprettet for alle tjenester hvor Whereby er aktivert.
       zapier:
         info_html: For å koble MakePlans til Zapier så må du <a href="%{url}" target="_blank">opprette en ny Zap i Zapier</a>.
       zoom:
@@ -590,8 +598,12 @@ nb:
       show:
         immediately: øyeblikkelig
     people:
+      children:
+        index:
+          headline: '%{parent} kan booke for andre:'
       form:
         block: Blokker kunde for booking
+        managed_by: Denne kunden vil administreres av %{parent}.
         merge_action: Kombiner disse to kundeprofilene
         merge_action_email: Denne e-post adressen er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{email} blir den gjeldene e-post adressen?
         merge_action_info: Alle reservasjoner vil beholdes men den ene kundeprofilen vil bli fjernet. Du kan selve velge hvilke kundeopplysninger som skal bli gjeldene.
@@ -607,13 +619,19 @@ nb:
         send_sms: Send SMS
       show:
         bookings_for: Reservasjoner for %{name}
+        can_book_for: 'Kan booke for andre.'
         card_saved_with:
           stripe: Betalingskort lagret hos Stripe
         change_tfso_customer: Bytt 24SO kundenr.
         export: Send eksport av data til kunde
         export_executed: Eksportfilen sendes nå til kunden.
+        parent_info: Administeres av
         no_reservations: Fant ingen reservasjoner
         send_sms: Send SMS
+        filter_bookings:
+          active: Vis kun aktive reservasjoner
+          all: Vis alle reservasjoner inkludert slettede
+          visible: Vis kun synlige reservasjoner
       tfso_connect_company:
         create: Opprett ny bedrift i 24SevenOffice
         header: Koble mot kunde fra 24SevenOffice
@@ -646,6 +664,8 @@ nb:
           regenerate_warning: Hvis du regenerer 2-trinns bekreftelse vil den eksisterende nøkkelen slutte å fungere og du må sette opp dette på nytt på din mobil. Er du sikker på at du vil dette?
           submit_button: Logg inn
           verification_code_header: 2-trinns bekreftelse
+      update_password:
+        updated: 'Passord oppdatert. Login på nytt med ditt nye passord.'
     purge_data:
       destroy:
         header: Gamle data vil nå bli slettet
@@ -726,6 +746,7 @@ nb:
           hide_resources: Skjul knappen for å velge ressurs (vilkårlig ledig ressurs blir automatisk valgt)
           hide_slot_end: Skjul slutt-tid
           select_resource: Ekstra steg for valg av ressurs
+          show_free_capacity: Vis ledig kapasitet
       form_attendance:
         booking_site_settings: Innstillinger for bookingsiden
         days: Dager
@@ -746,6 +767,7 @@ nb:
           fiken_product_href: Koble til produkt i Fiken
           tfso_product_id: 24SevenOffice produkt id
           visma_eaccounting_article_id: Koble til produkt i Visma eAccounting
+          whereby_create_meeting: Opprett automatisk et Whereby-møte for denne tjenesten
           zoom_create_session: Opprett automatisk et Zoom-møte for denne tjenesten
       list_menu:
         list_appointment: Tjenester
@@ -803,11 +825,20 @@ nb:
       recurring:
         enabled: Gjenta flere ganger med et mønster
         freq:
-          monthly: Månedlig
-          weekly: Ukentlig
-          yearly: Årlig
+          monthly: Måned
+          weekly: Uke
+          yearly: År
         freq_label: Periode
-        interval_label: Frekvens (hver)
+        interval:
+          1: Hver
+          2: Annenhver
+          3: Tredjehver
+          4: Fjerdehver
+          5: Femtehver
+          6: Sjettehver
+          7: Syvendhver
+          8: Åttendehver
+        interval_label: Frekvens
         length:
           count: Etter antall
           until: Før dato

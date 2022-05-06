@@ -1,26 +1,6 @@
 ---
 cs:
   amsterdam:
-    generic:
-      dateselector: Vyberte datum
-      earlier: dříve
-      payment:
-        form_footer_html: Na vaši kreditní kartu bude účtováno <span class="payment-amount">%{amount}</span> .
-        form_header: Tento formulář je odeslán šifrovaný.
-        header: Způsob platby
-        info: Pro dokončení rezervace %{service} musíte zaplatit kreditní kartou.
-        payment_details_html: Zobrazená částka je v %{currency}. Údaje o vaší kreditní kartě neuchováváme, ale zašleme je zašifrovanou do %{provider} pro bezpečné zpracování a uložení.
-      step:
-        cancel: zrušení
-        completed: Dokončeno!
-        hotstepper: Krok %{step} %{steps}
-        next_confirm: 'Další: Potvrzení'
-        next_payment: Platit
-        next_time: 'Další: Vyberte čas'
-        next_verify: Potvrdit rezervaci
-        previous: předchozí krok
-        previous_date: Změnit čas
-        previous_service: Změnit službu
     bookings:
       awaiting_confirmation:
         body: Vaši rezervaci potvrdíme ručně. Jakmile zpracováme vaši žádost, obdržíte %{verification_method}.
@@ -94,6 +74,26 @@ cs:
         full: Tato událost je plná.
         past_last_booking: K této události již není možné se zaregistrovat.
         started: Tato událost je již dokončena.
+    generic:
+      dateselector: Vyberte datum
+      earlier: dříve
+      payment:
+        form_footer_html: Na vaši kreditní kartu bude účtováno <span class="payment-amount">%{amount}</span> .
+        form_header: Tento formulář je odeslán šifrovaný.
+        header: Způsob platby
+        info: Pro dokončení rezervace %{service} musíte zaplatit kreditní kartou.
+        payment_details_html: Zobrazená částka je v %{currency}. Údaje o vaší kreditní kartě neuchováváme, ale zašleme je zašifrovanou do %{provider} pro bezpečné zpracování a uložení.
+      step:
+        cancel: zrušení
+        completed: Dokončeno!
+        hotstepper: Krok %{step} %{steps}
+        next_confirm: 'Další: Potvrzení'
+        next_payment: Platit
+        next_time: 'Další: Vyberte čas'
+        next_verify: Potvrdit rezervaci
+        previous: předchozí krok
+        previous_date: Změnit čas
+        previous_service: Změnit službu
     layouts:
       application:
         authenticated: 'Přihlášen jako: %{name}'
@@ -124,7 +124,7 @@ cs:
       perishable_token_form:
         submit: Přijmout kód
     profile:
-      show:
+      index:
         header: Vaše rezervace
         logout: Odhlásit se
         new_booking: Nová rezervace

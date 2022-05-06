@@ -145,7 +145,7 @@ lt:
         card_info: "%{brand}, kurio skaičius baigiasi %{last_4} ir baigiasi %{expire_month}/%{expire_year}."
         remove_card: Pašalinkite šią kortelę
         title: Jūsų išsaugoti mokėjimo metodai
-      show:
+      index:
         header: Jūsų rezervacijos
         logout: Atsijungti
         new_booking: Nauja rezervacija

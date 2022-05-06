@@ -145,7 +145,7 @@ sv:
         card_info: "%{brand} med nummer som slutar på %{last_4} och löper ut %{expire_month}/%{expire_year}."
         remove_card: Ta bort det här kortet
         title: Dina lagrade betalningsmetoder
-      show:
+      index:
         header: Dina reservationer
         logout: logga ut
         new_booking: Ny reservation

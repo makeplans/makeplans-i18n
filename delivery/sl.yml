@@ -1,4 +1,5 @@
+---
 sl:
   booking_mailer:
     verification:
-      subject: "Prosimo potrdite vaš email naslov"
+      subject: Prosimo potrdite vaš email naslov

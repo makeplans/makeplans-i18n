@@ -814,7 +814,7 @@ da:
           weekly: Ugentlig
           yearly: Årligt
         freq_label: Periode
-        interval_label: Frekvens (hver)
+        interval_label: Frekvens
         length:
           count: Efter nummer
           until: Før dato

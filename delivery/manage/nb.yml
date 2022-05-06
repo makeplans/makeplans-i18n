@@ -27,6 +27,20 @@ nb:
       link: For å godkjenne eller avvise denne reservasjonen gå til
       subject_resource: Ny forespørsel for %{resource}
   client_mailer:
+    activated:
+      body: |-
+        Hei,
+
+        Du har nå aktivert din MakePlans-konto.
+        Våre priser finner du her: https://makeplans.com/no/priser/
+
+
+        For våre vilkår se https://terms.makeplans.com
+
+        Takk for at du bruker MakePlans :D
+
+        Hvis du har noen spørsmål så bare svar på denne eposten.
+      subject: Your account is activated
     charge_failed:
       body: |-
         Hei,
