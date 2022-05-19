@@ -139,7 +139,7 @@ en:
         meta:
           description: Online appointment booking for %{name}
           keywords: scheduling, appointment, booking, signups, makeplans
-        powered_by: Made by
+        powered_by: Scheduling by
         powered_by_title: Appointment booking, scheduling and event/class signups
         title: Online booking for %{name}
     people:
