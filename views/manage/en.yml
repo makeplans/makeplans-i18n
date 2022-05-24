@@ -767,6 +767,7 @@ en:
       integrations:
         external_info:
           fiken_product_href: Connect to a product in Fiken
+          tfso_create_order: Generate order in 24SevenOffice automatically
           tfso_product_id: 24SevenOffice product id
           visma_eaccounting_article_id: Connect to a product in Visma eAccounting
           whereby_create_meeting: Automatically create a Whereby meeting for this service
