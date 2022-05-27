@@ -291,6 +291,9 @@ en:
           add: Add your domain
         new:
           domain: Your domain
+        show:
+          header: You are using a custom domain
+          info: Your booking site is available at %{domain}
       edit:
         custom_messages_info_html: You can merge relevant data here. For more information please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>.
       edit_booking_site:
