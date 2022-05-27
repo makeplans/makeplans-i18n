@@ -471,6 +471,7 @@ en:
       reports: Reports
       setup: Setup
     menu_setup:
+      addons: Addons
       billing: Billing
       bookingsite: Booking site
       categories: Categories

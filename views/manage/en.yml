@@ -250,6 +250,13 @@ en:
         custom_data: 'Custom data:'
         has_services: 'Shows these services:'
     client:
+      addons:
+        header: Addons
+        info: We offer various paid addons that you can enable. Please contact us if you have any questions.
+        addons:
+          custom_domain: Custom domain
+          custom_email_sender: Custom email sender
+          custom_sms_sender: Custom SMS sender ID
       api:
         disable: Do you want to disable the API?
         disable_warning: Are you sure you want to disable the API? The API-key will become invalid and the API unavailable.
@@ -272,6 +279,18 @@ en:
         intro: This is where you can configure MakePlans and how it should work for you. You can add services and categories that you offer on the booking site, adjust availability, change the outgoing messages (SMS and email), add more users and adjust many other settings in MakePlans.
         menu_info: Select from the menu on the left side. If you have any questions about how to make adjustment please contact customer service.
         trial_info: This is a trial account - click here to activate
+      domains:
+        cname:
+          header: Add DNS record
+          info: Please add the following DNS record on your domain.
+          record: CNAME %{domain} with value %{cname}
+          verify: Verify DNS
+        info:
+          header: Use your own domain
+          info: You can use your own domain for the booking site. Monthly cost is %{price}
+          add: Add your domain
+        new:
+          domain: Your domain
       edit:
         custom_messages_info_html: You can merge relevant data here. For more information please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>.
       edit_booking_site:

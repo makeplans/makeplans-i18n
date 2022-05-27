@@ -488,6 +488,7 @@ nb:
       reports: Rapporter
       setup: Oppsett
     menu_setup:
+      addons: Tillegg
       billing: Betaling
       bookingsite: Bookingside
       categories: Kategorier
