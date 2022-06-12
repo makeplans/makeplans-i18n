@@ -125,6 +125,7 @@ en:
             state:
               invalid_transition: Invalid state change
           fully_booked: Not available at selected time.
+          prevent_new_signups: booking is only available for existing customers
           time_after_future_bookable_period: Too far ahead in the future
         client:
           attributes:

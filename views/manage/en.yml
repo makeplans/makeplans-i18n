@@ -319,6 +319,7 @@ en:
         settings:
           allow_person_cookie: Allow possiblity to remember verified customer until next visit with the use of cookies.
           google_tag_manager: Google Tag Manager container ID
+          prevent_new_signups: Only allow booking from existing customers
           select_resource: Extra step for selecting resource
         verification_methods:
           email: Email
