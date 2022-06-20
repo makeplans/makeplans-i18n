@@ -627,6 +627,7 @@ en:
           headline: '%{parent} can make bookings for:'
       form:
         block: Block customer for booking
+        booking_site_locale_default: Use default for the booking site
         managed_by: This customer will be managed by %{parent}.
         merge_action: Merge these two customers
         merge_action_email: This email address is already saved on another customer. Do you want to merge these two customers so %{email} will be used as the e-mail address?

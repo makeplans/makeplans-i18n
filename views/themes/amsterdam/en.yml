@@ -135,6 +135,7 @@ en:
         footer:
           privacy_policy: Privacy policy
           support: Support
+          change_language: 'Change language:'
         login: Your reservations
         meta:
           description: Online appointment booking for %{name}
