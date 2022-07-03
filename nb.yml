@@ -5,6 +5,7 @@ nb:
       booking:
         booked_from: starttidspunkt
         booked_to: avslutningtidspunkt
+        booked_by_person_id: reservert av
         count: antall
         event_id: arrangement
         notes: notat
@@ -245,6 +246,7 @@ nb:
     label:
       booking:
         all_day: Hele dagen
+        booked_by_person_id: Reservert av
         booked_from: Starter
         booked_to: Slutter
         count: Antall personer

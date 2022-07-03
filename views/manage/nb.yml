@@ -601,7 +601,7 @@ nb:
     people:
       children:
         index:
-          headline: '%{parent} kan booke for andre:'
+          headline: '%{parent} kan booke for disse personene:'
       form:
         block: Blokker kunde for booking
         managed_by: Denne kunden vil administreres av %{parent}.
@@ -620,7 +620,7 @@ nb:
         send_sms: Send SMS
       show:
         bookings_for: Reservasjoner for %{name}
-        can_book_for: 'Kan booke for andre.'
+        can_book_for: 'Kan booke for %{children} andre.'
         card_saved_with:
           stripe: Betalingskort lagret hos Stripe
         change_tfso_customer: Bytt 24SO kundenr.
