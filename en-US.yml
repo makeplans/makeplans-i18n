@@ -2,6 +2,7 @@
 en-US:
   date:
     formats:
+      csv: "%m/%d/%Y"
       date_month_name: "%-d %B"
       datepicker: "%m/%d/%Y"
       day_name: "%A"
@@ -19,6 +20,7 @@ en-US:
   time:
     24h: false
     formats:
+      csv: "%m/%d/%Y %-l:%M %p"
       long_dayname: "%A, %B %-d, %Y, %-l:%M %p"
       short_mailer: "%B %-d, %Y at %-l:%M %p"
       time: "%-l:%M %p"

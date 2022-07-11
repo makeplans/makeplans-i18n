@@ -180,6 +180,7 @@ nb:
     col_sep: ";"
   date:
     formats:
+      csv: "%d.%m.%Y"
       date_month_name: "%-d %B"
       datepicker: "%d.%m.%Y"
       day_name: "%A"
@@ -540,6 +541,7 @@ nb:
   time:
     24h: true
     formats:
+      csv: "%d.%m.%Y %H:%M"
       long_dayname: "%A, %-d. %B %Y, %H:%M"
       short_mailer: "%-d. %B kl. %H:%M"
       shorter: "%-d. %b %Y, %H:%M"

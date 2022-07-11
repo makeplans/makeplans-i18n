@@ -170,6 +170,7 @@ en:
       web_hook: webhook
   date:
     formats:
+      csv: "%d.%m.%Y"
       date_month_name: "%e %B"
       datepicker: "%d.%m.%Y"
       day_name: "%A"
@@ -522,6 +523,7 @@ en:
   time:
     24h: true
     formats:
+      csv: "%d.%m.%Y %H:%M"
       db: "%Y-%m-%d %H:%M"
       long_dayname: "%A, %e %B %Y, %H:%M"
       short_mailer: "%e. %B at %H:%M"
