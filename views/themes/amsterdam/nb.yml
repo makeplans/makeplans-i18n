@@ -82,10 +82,10 @@ nb:
         remember_me: Vil du at vi skal huske deg på denne maskinen til neste gang du skal reservere her?
         title: Reservasjonen din er bekreftet!
       sms_code:
-        header: Bekreft reservasjon
+        header: Verifiser reservasjon
         incorrect_code: Feil kode
-        verify_sms_code: Du vil nå motta en SMS på telefonnr %{phonenumber} med en kode. Skriv inn koden i skjemaet under for å bekrefte reservasjonen. Dette er nødvendig for å fullføre reservasjonen - uten å gjøre dette vil ikke reservasjonen bli gjennomført.
         remember_me: Husk meg på denne enheten
+        verify_sms_code: Du vil nå motta en SMS på telefonnr %{phonenumber} med en kode. Skriv inn koden i skjemaet under for å bekrefte reservasjonen. Dette er nødvendig for å fullføre reservasjonen - uten å gjøre dette vil ikke reservasjonen bli bekreftet.
     events:
       index:
         free_capacity:
