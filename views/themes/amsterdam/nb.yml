@@ -85,6 +85,7 @@ nb:
         header: Bekreft reservasjon
         incorrect_code: Feil kode
         verify_sms_code: Du vil nå motta en SMS på telefonnr %{phonenumber} med en kode. Skriv inn koden i skjemaet under for å bekrefte reservasjonen. Dette er nødvendig for å fullføre reservasjonen - uten å gjøre dette vil ikke reservasjonen bli gjennomført.
+        remember_me: Husk meg på denne enheten
     events:
       index:
         free_capacity:

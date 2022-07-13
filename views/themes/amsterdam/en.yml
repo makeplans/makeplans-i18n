@@ -89,6 +89,7 @@ en:
         header: Confirm reservation
         incorrect_code: Incorrect code
         verify_sms_code: We have sent a SMS to %{phonenumber} with a verification code. Please enter the code in the form to verify the reservation. This is required to complete the reservation.
+        remember_me: Remember me on this device
     events:
       index:
         free_capacity: '%{count} available'

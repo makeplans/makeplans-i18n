@@ -320,7 +320,7 @@ en:
         remove_logo: Remove logo
         settings:
           active_bookings_limit: Max nr of active bookings for customer
-          allow_person_cookie: Allow possiblity to remember verified customer until next visit with the use of cookies.
+          disable_person_cookie: Do not allow customer to stay logged in with cookie
           google_tag_manager: Google Tag Manager container ID
           prevent_new_signups: Only allow booking from existing customers
           select_resource: Extra step for selecting resource
