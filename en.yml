@@ -209,6 +209,7 @@ en:
   generic:
     all: all
     at: at
+    country_locale: en
     born_abbreviation: b. %{date_of_birth}
     default: System default
     optional: optional

@@ -218,6 +218,7 @@ nb:
   generic:
     all: alle
     at: hos
+    country_locale: nb
     born_abbreviation: f. %{date_of_birth}
     default: Systemstandard
     optional: valgfritt
