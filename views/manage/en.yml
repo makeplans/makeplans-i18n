@@ -319,6 +319,7 @@ en:
           twenty: Closest 20 minute mark
         remove_logo: Remove logo
         settings:
+          active_bookings_limit: Limit active bookings to
           allow_person_cookie: Allow possiblity to remember verified customer until next visit with the use of cookies.
           google_tag_manager: Google Tag Manager container ID
           prevent_new_signups: Only allow booking from existing customers

@@ -124,6 +124,7 @@ en:
               not_offered: not offered by chosen resource
             state:
               invalid_transition: Invalid state change
+          active_bookings_limit: Max number of active bookings is %{count}
           fully_booked: Not available at selected time.
           no_parent_takeover: Please contact support to make this booking.
           prevent_new_signups: booking is only available for existing customers
