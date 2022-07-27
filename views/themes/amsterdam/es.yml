@@ -39,7 +39,7 @@ es:
         date_format: 'Introduzca un formato de fecha válido: %{format}'
         enter_info: Ingrese información
         errors_header: Por favor complete los campos requeridos.
-        form_info: Esto se utilizará para verificar su reservación de %{service}, %{booking}.
+        form_info_html: Esto se utilizará para verificar su reservación de %{service}, %{booking}.
         price_info: 'Precio: %{price}'
         reserve_resource: Reserva para %{resource}
       no_person:

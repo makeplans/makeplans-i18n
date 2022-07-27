@@ -39,7 +39,7 @@ sv:
         date_format: 'Ange giltigt datumformat: %{format}'
         enter_info: Fyll i uppgifter
         errors_header: Vänligen fyll i de obligatoriska fälten.
-        form_info: Detta kommer att användas för att bekräfta din bokning av %{service}, %{booking}.
+        form_info_html: Detta kommer att användas för att bekräfta din bokning av %{service}, %{booking}.
         price_info: 'Pris: %{price}'
         reserve_resource: Bokning hos %{resource}.
       no_person:

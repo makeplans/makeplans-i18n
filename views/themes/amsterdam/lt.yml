@@ -39,7 +39,7 @@ lt:
         date_format: 'Įveskite tinkamą datos formatą: %{format}'
         enter_info: Įveskite informaciją
         errors_header: Užpildykite privalomus laukus.
-        form_info: Tai bus naudojama jūsų %{service}, %{booking} rezervacijai patvirtinti.
+        form_info_html: Tai bus naudojama jūsų %{service}, %{booking} rezervacijai patvirtinti.
         price_info: 'Kaina: %{price}'
         reserve_resource: Rezervacija %{resource}
       no_person:

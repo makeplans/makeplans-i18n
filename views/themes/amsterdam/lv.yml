@@ -39,7 +39,7 @@ lv:
         date_format: 'Lūdzu, ievadiet derīgu datuma formātu: %{format}'
         enter_info: Ievadiet informāciju
         errors_header: Lūdzu, aizpildiet obligātos laukus.
-        form_info: Šī informācija tiks izmantota, lai pārbaudītu rezervāciju %{service}, %{booking}.
+        form_info_html: Šī informācija tiks izmantota, lai pārbaudītu rezervāciju %{service}, %{booking}.
         price_info: 'Maksa: %{price}'
         reserve_resource: Pieraksts pie "%{resource}"
       no_person:

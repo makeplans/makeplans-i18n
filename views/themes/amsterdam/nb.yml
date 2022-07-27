@@ -41,7 +41,7 @@ nb:
         date_format: 'Vennligst skriv inn dato på følgende format: %{format}'
         enter_info: Fyll inn personalia
         errors_header: Du må fylle ut alle påkrevde felter.
-        form_info: Dette vil bli brukt for å verifisere reservasjonen din av %{service}, %{booking}.
+        form_info_html: Dette vil bli brukt for å verifisere reservasjonen din av <span data-attribute="title">%{service}</span>, %{booking}.
         new_child: For noen andre
         price_info: 'Pris: %{price}'
         reserve_resource: Reservasjon hos %{resource}.

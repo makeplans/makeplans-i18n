@@ -39,7 +39,7 @@ he:
         date_format: 'נא להזין פורמט תאריך חוקי: %{format}'
         enter_info: הזן מידע
         errors_header: אנא מלא את השדות הנדרשים.
-        form_info: זה ישמש לאימות ההזמנה שלך של %{service}, %{booking}.
+        form_info_html: זה ישמש לאימות ההזמנה שלך של %{service}, %{booking}.
         price_info: 'מחיר: %{price}'
         reserve_resource: הזמנה עבור %{resource}
       no_person:

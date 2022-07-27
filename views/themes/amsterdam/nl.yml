@@ -4,7 +4,7 @@ nl:
     bookings:
       new:
         enter_info: Informatie toevoegen
-        form_info: Dit zal gebruikt worden om uw verzoek te verifiëren %{service}, %{booking}.
+        form_info_html: Dit zal gebruikt worden om uw verzoek te verifiëren %{service}, %{booking}.
       show:
         add_to_calendar: Voeg deze reservering toe aan uw agenda
         body: U bent klaar. De boeking is gemaakt.

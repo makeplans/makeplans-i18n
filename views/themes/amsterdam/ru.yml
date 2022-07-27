@@ -39,7 +39,7 @@ ru:
         date_format: 'Введите допустимый формат даты: %{format}'
         enter_info: Введите информацию
         errors_header: Пожалуйста, заполните обязательные поля.
-        form_info: Это будет использоваться для подтверждения вашего резервирования %{service}, %{booking}.
+        form_info_html: Это будет использоваться для подтверждения вашего резервирования %{service}, %{booking}.
         price_info: 'Цена: %{price}'
         reserve_resource: Бронирование на %{resource}
       no_person:

@@ -42,7 +42,7 @@ da:
         date_format: 'Indtast venligst gyldigt datoformat: %{format}'
         enter_info: Udfyld personlige oplysninger
         errors_header: Du skal udfylde alle krævede felter.
-        form_info: Dette bruges til at bekræfte din reservation af %{service}, %{booking}.
+        form_info_html: Dette bruges til at bekræfte din reservation af %{service}, %{booking}.
         price_info: 'Pris: %{price}'
         reserve_resource: Reservation ved %{resource}.
       no_person:

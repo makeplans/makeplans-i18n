@@ -10,7 +10,7 @@ sl:
           logged_in_as: Prijavljeni ste pod imenom %{person}
           not_current_person_html: Ali niste <span data-name="">%{person}?</span>?
         enter_info: Moji kontaktni podatki
-        form_info: Podatke bomo uporabili za morebitno preverjanje vaše rezervacije termina za %{service}, %{booking}.
+        form_info_html: Podatke bomo uporabili za morebitno preverjanje vaše rezervacije termina za %{service}, %{booking}.
         reserve_resource: Rezervacija za %{resource}
       show:
         body: Hvala za potrditev, z veseljem vas pričakujemo.

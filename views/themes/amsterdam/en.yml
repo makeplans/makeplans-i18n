@@ -45,7 +45,7 @@ en:
         email_suggestion_html: '<p>Did you mean<span> %{suggestions}</span>?</p>'
         enter_info: Enter information
         errors_header: Please fill out the required fields.
-        form_info: This will be used to verify your reservation of %{service}, %{booking}.
+        form_info_html: This will be used to verify your reservation of <span data-attribute="title">%{service}</span>, %{booking}.
         new_child: For someone else
         price_info: 'Price: %{price}'
         reserve_resource: Reservation for %{resource}
