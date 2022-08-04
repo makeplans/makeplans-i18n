@@ -293,6 +293,7 @@ nb:
           twenty: Nærmeste tyvende minutt
         remove_logo: Fjern logo
         settings:
+          active_bookings_limit: Maks antall aktive bookinger for kunde
           allow_person_cookie: Tillatt mulighet for å huske verifisert kunde til neste besøk ved bruk av informasjonskapsler (cookie).
           google_tag_manager: Google Tag Manager Container ID
           prevent_new_signups: Tillatt kun booking for eksisterende kunder
