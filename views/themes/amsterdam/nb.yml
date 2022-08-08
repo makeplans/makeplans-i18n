@@ -142,7 +142,7 @@ nb:
           description: Nettbasert timebestilling for %{name}
           keywords: timebestilling, nettbasert, reservere, bestille, påmelding, online booking, online timebestilling, makeplans
         powered_by: Timebestilling fra
-        powered_by_title: Online timebestilling og påmelding
+        powered_by_title: Online timebestilling, bookingsystem og påmelding
         title: Online timebestilling for %{name}
     people:
       credit_card_added:
