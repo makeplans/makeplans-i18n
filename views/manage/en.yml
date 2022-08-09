@@ -390,7 +390,7 @@ en:
           calendar_prevent_slot_event_overlap: Prevent event overlap
           calendar_slot_duration: Slot duration
           calendar_slot_label_interval: Slot label interval
-          esource_title: Custom resource title
+          resource_title: Custom resource title
       export_info:
         data_types:
           bookings: Reservations

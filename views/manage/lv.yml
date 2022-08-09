@@ -357,7 +357,7 @@ lv:
           calendar_hide_weekends: Paslēpt nedēļas nogales
           calendar_slot_duration: Slota ilgums
           calendar_slot_label_interval: Slota etiķetes intervāls
-          esource_title: Pielāgota resursa nosaukums
+          resource_title: Pielāgota resursa nosaukums
       export_info:
         data_types:
           bookings: Atrunas

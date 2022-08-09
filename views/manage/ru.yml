@@ -357,7 +357,7 @@ ru:
           calendar_hide_weekends: Скрыть выходные
           calendar_slot_duration: Продолжительность слота
           calendar_slot_label_interval: Интервал метки слота
-          esource_title: Настраиваемый заголовок ресурса
+          resource_title: Настраиваемый заголовок ресурса
       export_info:
         data_types:
           bookings: Бронирование

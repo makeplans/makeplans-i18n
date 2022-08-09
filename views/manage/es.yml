@@ -365,7 +365,7 @@ es:
           calendar_hide_weekends: Ocultar fines de semana
           calendar_slot_duration: Duración de la ranura
           calendar_slot_label_interval: Intervalo de etiqueta de ranura
-          esource_title: Título de recurso personalizado
+          resource_title: Título de recurso personalizado
       export_info:
         data_types:
           bookings: Reservaciones

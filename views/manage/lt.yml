@@ -365,7 +365,7 @@ lt:
           calendar_hide_weekends: Slėpti savaitgalius
           calendar_slot_duration: Lizdo trukmė
           calendar_slot_label_interval: Vietų etikečių intervalas
-          esource_title: Tinkintas šaltinio pavadinimas
+          resource_title: Tinkintas šaltinio pavadinimas
       export_info:
         data_types:
           bookings: Rezervacijos

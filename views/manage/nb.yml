@@ -364,8 +364,7 @@ nb:
           calendar_prevent_slot_event_overlap: Unngå visuell overlapping av reservasjoner
           calendar_slot_duration: Varighet på slot (minutter)
           calendar_slot_label_interval: Tidsvisning for slot ved hvert X minutt
-          esource_title: Egendefinert ressurstittel
-          resource_title: Egen tittel for ressurs
+          resource_title: Egendefinert ressurstittel
       export_info:
         data_types:
           bookings: Reservasjoner (kun aktive)
