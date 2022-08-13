@@ -291,6 +291,7 @@ nb:
         billing_vat_no: Organisasjonsnummer
         booking_form: Egendefinert reservasjonskjema
         booking_site_locale: Språk (Styrer også tall- og dataformatering)
+        calendar_event_text: Kalender event tekst
         cancellation_period: Avbestillingsfrist
         category_form: Egendefinerte kategorifelter
         closed_for_holidays: Stengt på offentlige fridager
