@@ -139,8 +139,8 @@ en:
           change_language: 'Change language:'
         login: Your reservations
         meta:
-          description: Online appointment booking for %{name}
-          keywords: scheduling, appointment, booking, signups, makeplans
+          description: Online appointment booking and scheduling for %{name}
+          keywords: scheduling, appointment, booking, event signups, makeplans, online booking, scheduling api, appointment booking
         powered_by: Scheduling by
         powered_by_title: Appointment booking system, scheduling app and event/class signups with API
         title: Online booking for %{name}
