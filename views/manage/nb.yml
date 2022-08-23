@@ -524,7 +524,7 @@ nb:
       not_authenticated: Klarte ikke å koble til. Sjekk brukernavn og passord.
       notion:
         connected_to: Koblet til database med id %{database_id}
-        database_info: 'Databasen må settes opp med følgende egenskaper: Navn, E-post (type: e-post), Telefon (type: telefon).'
+        database_info: 'Databasen må settes opp med følgende egenskaper: Name, Email (type: e-post), Phone (type: telefon).'
         select_database: Velg database
         sharing_info: Vennligst del minst én database med MakePlans-integrasjonen
       oauth_connect: Koble til denne tjenesten
