@@ -327,7 +327,10 @@ nb:
         custom_form_info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>.
         header: Endre egendefinerte felter
       edit_person_notifications:
+        automatic_messages_booking_site: Automatiske utsendelser (På bookingsiden)
         automatic_messages: Automatiske utsendelser (Administrasjonsystem og API)
+        booking_site_outgoing_messages_info: Som standard vil MakePlans sende en melding ved viktige hendelser som bekreftelse via valgt verifiseringsmetode, for eksempel SMS for SMS-verifisering, or epost hvis man har annen eller ingen verifisering.
+        booking_site_message: Send melding på bookingsiden
         cancellation_email: Utsendelse av epost ved kansellering av reservasjon
         cancellation_sms: Utsendelse av SMS ved kansellering av reservasjon
         confirmation_email: Utsendelse av epost ved opprettelse av reservasjon

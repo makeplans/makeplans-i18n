@@ -353,7 +353,10 @@ en:
         custom_form_info_html: Contact customer service for help. Documentation is available at <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>.
         header: Modify custom fields
       edit_person_notifications:
+        automatic_messages_booking_site: Automatic messages (On the booking site)
         automatic_messages: Automatic messages (In the admin system and the API)
+        booking_site_outgoing_messages_info: MakePlans will by default send a message for important events such as a confirmation message using the verification method, for example SMS with SMS verification, or using email if using other/none verification.
+        booking_site_message: Send message on the booking site
         cancellation_email: Send email when cancelling reservation
         cancellation_sms: Send SMS when cancelling reservation
         confirmation_email: Send email when creating reservation
