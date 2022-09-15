@@ -565,6 +565,8 @@ en:
       selected_option: Selected
       sendy:
         connect_info_html: New customers will be subscribed to list with id <em>%{list_id}</em> on installation %{api_url}
+      slack:
+        connect_info: For every new booking in MakePlans it will be published as a message in the %{channel} Slack channel.
       stripe:
         disable_customer_saving: Do not save customer to Stripe
         payment_info: For all transactions a platform fee of %{application_fee_percent}% is deducted by MakePlans.
