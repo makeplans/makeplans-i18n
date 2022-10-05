@@ -242,6 +242,9 @@ nb:
         declined: Avvist
         deleted: Fjernet
         verification_expired: Verifisering utløpt
+    boolean:
+      'true': 'Ja'
+      'false': 'Nei'
     datepicker:
       next_month: Neste måned
       prev_month: Forrige måned

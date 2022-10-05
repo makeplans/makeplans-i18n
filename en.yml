@@ -233,6 +233,9 @@ en:
         confirmed: Confirmed
         declined: Declined
         deleted: Deleted
+    boolean:
+      'true': 'Yes'
+      'false': 'No'
     datepicker:
       next_month: Next month
       prev_month: Previous month
