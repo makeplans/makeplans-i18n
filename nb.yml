@@ -399,6 +399,7 @@ nb:
         name: Navn
         national_id_no: Fødselsnummer (11 siffer)
         notes: Notat
+        opt_in_marketing: Motta informasjon fra oss
         phonenumber: Mobilnummer
         postal_code: Postnummer
         provider: Tilknyttet ekstern konto

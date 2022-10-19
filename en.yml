@@ -80,6 +80,7 @@ en:
         name: name
         national_id_no: national identification number
         notes: notes
+        opt_in_marketing: opt in for marketing
         phonenumber: phone number
         postal_code: postal code
         state: state
@@ -385,6 +386,7 @@ en:
         name: Name
         national_id_no: National ID number
         notes: Notes
+        opt_in_marketing: Receive information from us
         phonenumber: Mobile phone number
         postal_code: Postal code
         provider: Connected to external account
