@@ -283,7 +283,7 @@ en:
         billing_street: Street
         billing_vat_no: VAT nr
         booking_form: Custom reservation form
-        calendar_event_text: Calendar event text
+        calendar_event_text: Display text for reservation in calendar
         cancellation_period: Cancellation period
         category_form: Custom category fields
         closed_for_holidays: Closed on public holidays
