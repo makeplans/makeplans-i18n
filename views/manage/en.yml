@@ -65,6 +65,7 @@ en:
         add_new_link: Do you want to update your credit card details?
         billing_info: You will receive an invoice from us that you need to pay manually
         billing_order_ref: 'The invoice will include your reference: %{billing_order_ref}'
+        billing_period_info: 'You will be charged for %{period} months.'
         change_from_invoice: Enter your credit card details so you do not have to pay manually every time we invoice your account
         charge_details: Based on current usage we will charge your credit card %{price} each month.
         charge_details_default: Monthly price is %{price} per resource.

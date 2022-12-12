@@ -65,6 +65,7 @@ nb:
         add_new_link: Ønsker du å registrere ny kredittkortinformasjon?
         billing_info: Du vil motta faktura på epost fra oss og foreta betaling manuelt.
         billing_order_ref: 'Fakturaen vil inkludere din referanse: %{billing_order_ref}'
+        billing_period_info: 'Du vil bli fakturert for %{period} måneder.'
         change_from_invoice: Legg inn kredittkortinformasjon så slipper du å betale manuelt hver gang vi sender deg ny faktura.
         charge_details: Basert på nåværende innstillinger så er månedlig pris %{price}.
         charge_details_default: Månedlig pris er %{price} per ressurs.
