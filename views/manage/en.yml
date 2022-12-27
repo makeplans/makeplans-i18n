@@ -419,6 +419,16 @@ en:
         booking_site_info_html: Your booking site is available at %{url}.
         generate_booking_button: Generate booking button for your website
         header: Promote your booking site
+      sms_sender:
+        show:
+          add_custom_sender: Do you want to use a custom SMS sender ID?
+          cost: Monthly cost is %{price}.
+          custom_info: All SMS will be sent using %{sms_sender}.
+          delete: Remove custom SMS sender ID.
+          header: SMS Sender ID
+          info: All SMS will be sent from MakePlans.
+        new:
+          sms_sender_name: SMS sender name
       tools:
         header: Tools for your account
         link:
