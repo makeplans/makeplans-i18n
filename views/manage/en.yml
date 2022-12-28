@@ -749,6 +749,10 @@ en:
         availability: 'Default availability:'
         capacity: 'Capacity:'
         closed: Not available for online booking.
+        copy:
+          header: Clone
+          info: Create a new resource based on this resource. Note that provided services are cloned.
+          link: Clone this resource
         custom_data: 'Custom fields:'
         ical:
           activated_html: Access to this resource with iCalendar is activated. The link to the iCalendar-feed is %{link}
