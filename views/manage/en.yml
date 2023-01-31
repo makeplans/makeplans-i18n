@@ -337,6 +337,7 @@ en:
           sms: SMS (Recommended)
       edit_communication:
         email: Email
+        ical: iCalendar
         header: Modify outgoing comminication
         settings:
           custom_email_sending: Completely override emails with content below (otherwise content is just inserted in standard email)

@@ -309,6 +309,8 @@ nb:
         footer: Bunntekst på hver side
         future_bookable_period: Begrensing for hvor langt frem i tid man kan reservere
         google_analytics: Google Analytics tracking ID
+        ical_description: Beskrivelse
+        ical_summary: Tittel
         interval_rounding: Standard avrunding til neste ledige tidspunkt
         locale: Språk (Styrer også tall- og dataformatering)
         logo: Logo

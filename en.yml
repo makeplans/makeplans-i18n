@@ -298,6 +298,8 @@ en:
         footer: Footer
         future_bookable_period: Do not allow reservations after
         google_analytics: Google Analytics tracking ID
+        ical_description: Description
+        ical_summary: Title
         interval_rounding: Default rounding to next available time for reservation
         locale: Language (Also defines number and date formatting)
         logo: Logo
