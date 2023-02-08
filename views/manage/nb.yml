@@ -376,7 +376,7 @@ nb:
           bookings_visible: Reservasjoner (inkludert kansellerte)
           events: Arrangementer
           people: Kunder
-        executed: Eksportfilen sendes nå til din epost-adresse.
+        executed: Eksportfilen sendes nå til din epost-adresse. Dette kan ta opp til 10 minutter hvis det eksporteres mye data.
         header: Eksporter data fra MakePlans
         info: Du vil motta en epost med CSV-fil som vedlegg.
       import:

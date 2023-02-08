@@ -417,7 +417,7 @@ en:
           bookings_visible: Reservations (including cancellations)
           events: Events
           people: Customers
-        executed: The export is now being sent to your email-address.
+        executed: The export is now being sent to your email address. This could take up to 10 minutes if you are exporting a lot of data.
         header: Export data from MakePlans
         info: You will receive an email with a CSV-file attachment.
       import:
