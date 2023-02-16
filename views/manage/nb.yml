@@ -350,6 +350,7 @@ nb:
         approvement_email: Utsendelse av epost ved ny reservasjonforespørsel
         approvement_sms: Utsendelse av SMS ved ny reservasjonforespørsel
         automatic_messages: Automatiske utsendelser
+        custom_content: Egendefinert innhold i varsel
         default: Aktivert (Standard)
         disable: Deaktiver
         email: E-post
@@ -358,6 +359,8 @@ nb:
         notification_email: Utsendelse av epost ved ny reservasjon
         notification_sms: Utsendelse av SMS ved ny reservasjon
         outgoing_messages_info: Hvis du har satt opp at nye reservasjoner skal godkjennes av administrator så vil MakePlans automatisk varsle deg på epost om nye reservasjonsforespørsler. Hvis du ikke ønsker et slikt varsel eller at godkjenning gjøres automatisk via et ekstern system (API) så kan du deaktivere dette nedenfor.
+        settings:
+          custom_email_user_sending: Overstyr hele eposter med innhold nedenfor (ellers så blir innhold kun lagt inn i standard epost-mal)
         sms: SMS
       edit_ux:
         calendar: Kalender

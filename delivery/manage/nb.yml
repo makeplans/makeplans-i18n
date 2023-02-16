@@ -22,6 +22,26 @@ nb:
       booking_type_attendance:
         subject_resource: Ny påmelding for %{title}
       link: For å vise denne reservasjonen gå til
+    notification_modification:
+      appointment:
+        body: "%{name} har endret %{title} %{time_range}."
+      attendance:
+        body: "%{name} har endret påmelding %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Endret reservasjon for %{resource}
+      booking_type_attendance:
+        subject_resource: Endret påmelding for %{title}
+      link: For å vise denne reservasjonen gå til
+    notification_resource_change:
+      appointment:
+        body: "%{name} har endret %{title} %{time_range}."
+      attendance:
+        body: "%{name} har endret påmelding %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Endret ressurs for %{resource}
+      booking_type_attendance:
+        subject_resource: Endret ressurs for %{title}
+      link: For å vise denne reservasjonen gå til
     request_approvement:
       body: "%{name} ønsker å reservere %{title} %{time_range}."
       link: For å godkjenne eller avvise denne reservasjonen gå til

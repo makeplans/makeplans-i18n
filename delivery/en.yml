@@ -83,7 +83,7 @@ en:
         MakePlans
     admin_notification_resource_change:
       booking_type_appointment: |-
-        Change of reservation for {{ booking.resource.title }} by {{ booking.person.name }}. {{ booking.title }} on {{ booking.time_range }}
+        Change of resource to {{ booking.resource.title }} for {{ booking.person.name }} {{ booking.title }} on {{ booking.time_range }}
         MakePlans
       booking_type_attendance: |-
         Signup changed for {{ booking.event.full_title }} {{ booking.time_range }} by {{ booking.person.name }}.

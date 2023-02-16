@@ -382,14 +382,18 @@ en:
         approvement_email: Email notification for new reservation requests
         approvement_sms: SMS notification for new reservation requests
         automatic_messages: Automatic messages
+        custom_content: Custom notification content
         default: Active (Default)
         disable: Disabled
         email: Email
         header: User notifications
+        mail_notification_confirmation: Notification confirmation email
         mail_notification_info: To notify more than one person please use semi-colon to separate email addresses.
         notification_email: Email notification for new reservation
         notification_sms: SMS notification for new reservation
         outgoing_messages_info: If you have set up to manually apporve new reservations from the booking site you will be notified via email for every new reservation request. If you do not want to receive these notifications or if approvement is done using an external application (API) it is possible to deactivate it below.
+        settings:
+          custom_email_user_sending: Completely override emails with content below (otherwise content is just inserted in standard email)
         sms: SMS
       edit_ux:
         calendar: Calendar
