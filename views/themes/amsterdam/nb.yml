@@ -21,6 +21,9 @@ nb:
         verification_delivery_not_processed: For tiden kø i våre systemer. Vennligst vent mens vi prøver å sende ut epost.
         verification_sent_body: Vi har nå sendt en epost til %{email} med en link som du må klikke på for å bekrefte din reservasjon.
         verification_sent_title: Bekreft din epost-adresse
+      cancelled:
+        body: Denne reservasjonen har blitt kansellert.
+        title: Din reservasjon er kansellert
       declined:
         body: Beklager men din reservasjon ble ikke godkjent. Prøv et annet tidspunkt eller ta kontakt.
         title: Reservasjonen ble ikke godkjent
@@ -72,11 +75,11 @@ nb:
           vipps: Vipps
       show:
         add_card: Legg til kredittkort for å betale automatisk etter endt avtale.
-        add_to_calendar: Legg til avtalen i din kalender.
-        body: Du er nå ferdig. Reservasjonen er gjennomført.
+        add_to_calendar: Legg til reservasjonen i din kalender.
+        body: Det var alt. Takk for at du har reservert hos oss.
         booking_count: Reservert for %{count} personer.
         booked_for_child: Denne reservasjonen er for %{name}.
-        cancel: Kanseller avtale
+        cancel: Kanseller reservasjon
         cancel_confirmation: Er du sikkert på at du vil kansellere denne reservasjonen?
         paid: Du har forhåndsbetalt %{paid_amount}.
         remember_me: Vil du at vi skal huske deg på denne maskinen til neste gang du skal reservere her?
@@ -123,10 +126,12 @@ nb:
         cancel: Avbryt
         completed: Ferdig!
         hotstepper: Steg %{step} av %{steps}
-        next_confirm: 'Neste: Bekreftelse'
+        next: Neste
+        next_confirm: 'Neste: Bekreft'
+        next_form: 'Neste: Fyll ut skjema'
         next_payment: Betal
         next_time: 'Neste: Velg tidspunkt'
-        next_verify: Bekreft reservasjon
+        next_verify: 'Neste: Verifiser'
         previous: forrige steg
         previous_date: Endre tidspunkt
         previous_service: Endre tjeneste
@@ -172,6 +177,7 @@ nb:
         title: Dine lagrede betalingskort
       index:
         children: 'Andre du kan reservere for'
+        feed: 'iCalendar-strøm'
         header: Dine reservasjoner
         logout: Logg ut
         my_details: Mine opplysninger

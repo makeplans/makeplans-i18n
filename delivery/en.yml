@@ -36,9 +36,9 @@ en:
       subject: Add your payment info
     verification:
       footer: 'Important: The reservation is not yet completed. If you do not verifiy the reservation by clicking the link above within %{expires_in} minutes your reservation might expire.'
-      header: To complete your booking of %{title} %{time_range} you must confirm your reservation by clicking the link below.
+      header: To complete your booking of %{title} %{time_range} you must verify your reservation by clicking the link below.
       link: Confirm reservation
-      subject: Please confirm your reservation
+      subject: Please verify your reservation
   booking_occurrence_mailer:
     cancel:
       body: 'Your bookings of %{title} for the following times has been cancelled:'

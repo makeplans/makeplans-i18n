@@ -77,7 +77,7 @@ en:
       show:
         add_card: Add your credit card to pay automatically after the reservation
         add_to_calendar: Add the reservation to your calendar
-        body: You're done. The booking has been made.
+        body: "That's it. Thanks for booking with us."
         booking_count: Booked for %{count} people.
         booked_for_child: This booking is for %{name}.
         cancel: Cancel reservation
@@ -122,10 +122,12 @@ en:
         cancel: Cancel
         completed: Completed!
         hotstepper: Step %{step} of %{steps}
-        next_confirm: 'Next: Confirmation'
+        next: Next
+        next_confirm: 'Next: Confirm'
+        next_form: 'Next: Add details'
         next_payment: Pay
         next_time: 'Next: Select a time'
-        next_verify: Confirm reservation
+        next_verify: 'Next: Verify'
         previous: previous step
         previous_date: Change time
         previous_service: Change service
@@ -172,6 +174,7 @@ en:
         title: Your stored payment methods
       index:
         children: 'Other people you can make book for.'
+        feed: 'iCalendar-feed'
         header: Your reservations
         logout: Log out
         my_details: My stored information
