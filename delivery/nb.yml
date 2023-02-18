@@ -74,6 +74,20 @@ nb:
       booking_type_attendance: |-
         Ny påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
         MakePlans
+    admin_notification_modification:
+      booking_type_appointment: |-
+        Endring av reservasjon for {{ booking.resource.title }} for {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        Påmelding endret for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
+        MakePlans
+    admin_notification_resource_change:
+      booking_type_appointment: |-
+        Endring av ressurs for {{ booking.resource.title }} med {{ booking.person.name }} {{ booking.title }} {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        Endring av påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
+        MakePlans
     cancellation: Din reservasjon hos oss {{ booking.booked_from }} har blitt kansellert.
     confirmation: Du har reservert {{ booking.title }} {{ booking.booked_from }}.
     declined: Din forespørsel for reservasjon av {{ booking.title }} {{ booking.booked_from }} ble dessverre ikke godkjent. Prøv et annet tidspunkt.
