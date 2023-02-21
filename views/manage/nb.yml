@@ -423,6 +423,7 @@ nb:
           one: én reservasjon
           other: 'reservasjoner: <strong>%{count}</strong>'
           zero: ingen reservasjoner
+        copy: Kopier til nytt arrangement
         download_attendance_csv: Eksporter deltagerliste som CSV
         email_confirm: Deltagerliste vil bli sendt på epost til deg. Vil du fortsette?
         fully_booked: Arrangementet er fullbooket

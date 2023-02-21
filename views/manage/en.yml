@@ -475,6 +475,7 @@ en:
           one: one reservation
           other: 'reservations: <strong>%{count}</strong>'
           zero: no reservations
+        copy: Clone this event
         download_attendance_csv: Export attendance list as CSV
         email_confirm: Attendance list will be emailed to you. Do you want to continue?
         fully_booked: The event is fully booked
