@@ -123,6 +123,18 @@ en:
 
         Regardless; have a good day and thanks for trying out MakePlans.
       subject: 'CRITICAL: MakePlans account deactivated'
+    inactive_warning:
+      body: |-
+        Hi there,
+
+        Since your trial has expired and there has been no activity on your account since %{latest_booking_change_at} we will deactivate your account in 30 days.
+
+        To keep your account please login to %{url}.
+
+        If you are not planning to keep your account then just ignore this email and we will automatically delete your account.
+
+        Thanks for trying out MakePlans :)
+      subject: 'CRITICAL: MakePlans account will be deactivated'
     no_bookings:
       body: |-
         Hi,
