@@ -97,13 +97,15 @@ nb:
       body: |-
         Hei,
 
-        Du må bekrefte betalingen for å bruke MakePlans. Din konto vil bli deaktivert snart hvis ikke betalingen bekreftes.
+        Vi klarte ikke å gjennomføre betaling av MakePlans. Du må bekrefte transaksjon med BankID. Dette skjer pga EU-regler som krever at bankene i blant må kreve godkjenning med BankID.
+
+        Din MakePlans-konto vil bli deaktivert snart hvis ikke betalingen bekreftes.
 
         %{url}
 
         Takk,
         MakePlans
-      subject: 'KRITISK: Godkjenn betaling'
+      subject: 'KRITISK: Godkjenn betaling med BankID'
     charge_succeded:
       body: |-
         Vi har nå belastet ditt kredittkort for bruk av MakePlans. Se vedlagt kvittering for faktura #%{invoice_nr}.

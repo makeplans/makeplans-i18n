@@ -93,7 +93,9 @@ en:
       body: |-
         Hi,
 
-        Please confirm the payment for using MakePlans. Your account will be disabled soon unless the payment is comfirmed.
+        We tried to process your credit card for using MakePlans but we need your authorization to complete the payment. This is due to requirements from your bank.
+
+        Your MakePlans account will be disabled soon unless the payment is confirmed.
 
         %{url}
 
