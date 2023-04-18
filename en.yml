@@ -234,6 +234,9 @@ en:
         confirmed: Confirmed
         declined: Declined
         deleted: Deleted
+    booking_state_transitions:
+      events:
+        modified: Modified
     boolean:
       'true': 'Yes'
       'false': 'No'

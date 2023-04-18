@@ -162,6 +162,12 @@ en:
         success: Payment registered.
       show:
         amount: Total price
+        audit:
+          changed_attributes: 'Changed attributes: %{attributes}'
+          execution_mode:
+            api: using API
+            customer: by customer
+            gui: in the GUI
         booked_from: From
         booked_to: To
         count: Number of people
