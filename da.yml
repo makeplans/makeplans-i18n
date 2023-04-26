@@ -373,6 +373,7 @@ da:
         name: Navn
         national_id_no: Fødselsnummer, 11 cifre)
         notes: Bemærkninger
+        opt_in_marketing: Tilmeld nyhedsbrev
         phonenumber: Telefonnummer
         postal_code: Postnummer
         provider: Tilknyttet en ekstern konto

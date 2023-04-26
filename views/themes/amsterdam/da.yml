@@ -110,6 +110,7 @@ da:
         completed: Færdig!
         hotstepper: Trin %{step} af %{steps}
         next_confirm: 'Næste: Bekræftelse'
+        next_form: 'Næste: Udfyld formular'
         next_payment: Betale
         next_time: 'Næste: Vælg tidspunkt'
         next_verify: Bekræft reservation
