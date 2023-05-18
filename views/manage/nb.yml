@@ -230,8 +230,8 @@ nb:
           phone_number: Telefon
       widget_list:
         busy: Opptatt
-        no_bookings: Ingen reservasjoner %{start}
-        no_bookings_range: Ingen reservasjoner fra %{start} til %{end}
+        no_bookings: 'Ingen reservasjoner %{start}.'
+        no_bookings_range: 'Ingen reservasjoner fra %{start} til %{end}.'
     categories:
       blank:
         get_started: Du har foreløpig ingen kategorier. Alle tjenester vil dermed vises i en liste på bookingsiden. Hvis du vil kategorisere dine tjenester kan du opprette en ny kategori.
@@ -793,6 +793,9 @@ nb:
         offered: 'Tilbys av følgende ressurser:'
         price: 'Pris:'
         show_on_booking_site: Åpne bookingsiden for denne tjenesten
+      slots:
+        available: 'Ledige tidspunkt:'
+        none_available: 'Ingen ledige tidspunkt.'
     setup:
       appointment_services:
         add: Legg til én til

@@ -853,6 +853,9 @@ en:
         offered: 'Offered by the following resources:'
         price: 'Price:'
         show_on_booking_site: Open service on booking site
+      slots:
+        available: 'Available slots:'
+        none_available: 'No available slots.'
     setup:
       appointment_services:
         add: Add another
