@@ -162,6 +162,12 @@ nb:
         success: Betaling registrert.
       show:
         amount: Total pris
+        audit:
+          changed_attributes: 'Endringer: %{attributes}'
+          execution_mode:
+            api: via API
+            customer: av kunden
+            gui: i GUI
         booked_from: Fra
         booked_to: Til
         count: Antall personer
