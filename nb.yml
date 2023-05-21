@@ -242,6 +242,9 @@ nb:
         declined: Avvist
         deleted: Fjernet
         verification_expired: Verifisering utløpt
+    booking_state_transitions:
+      events:
+        modified: Endret
     boolean:
       'true': 'Ja'
       'false': 'Nei'
