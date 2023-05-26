@@ -1,6 +1,11 @@
 ---
 en:
   timisoara:
+    bookings:
+      authenticate:
+        info: We need information to verify your reservation of
+        submit: Send code
+        title: Phone number authentication
     layouts:
       application:
         profile: Profil
@@ -12,6 +17,17 @@ en:
       index:
         all_services: All services
         select_category: Select category
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Code
+        info_html: "We’ve sent a <b>SMS to %{phone_number}</b>
+            with a verification code. Please enter the code to verify your
+            information. This step is mandatory to complete the reservation."
+        submit: Continue
+        title: Verify your reservation
+      perishable_token_form:
+        submit: Send code
+        title: Login
     services:
       index:
         continue: Make a booking
