@@ -166,6 +166,7 @@ nb:
           changed_attributes: 'Endringer: %{attributes}'
           execution_mode:
             api: via API
+            automated: automatisert
             customer: av kunden
             gui: i GUI
         booked_from: Fra

@@ -166,6 +166,7 @@ en:
           changed_attributes: 'Changed attributes: %{attributes}'
           execution_mode:
             api: using API
+            automated: automated
             customer: by customer
             gui: in the GUI
         booked_from: From
