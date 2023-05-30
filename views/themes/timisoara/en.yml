@@ -6,16 +6,25 @@ en:
         info: We need information to verify your reservation of
         submit: Send code
         title: Phone number authentication
+      show:
+        all: View my other reservations
+        add_to_calendar: Add this booking to my calendar
+        new_reservation: Make another reservation
+        info: 'The booking for %{title} %{time} is confirmed.'
+        title: Your Reservation is Confirmed!
     layouts:
       application:
-        profile: Profil
+        login: Login
+        profile: Profile
         booking_site_footer: Booking site for %{name}
         made_by_title: Appointment booking, scheduling and event/class signups
         made_by_tagline: User-friendly system for scheduling, appointment booking and event registration.
+        privacy: Privacy policy
+        support: Support
         title: Online booking for %{name}
     categories:
       index:
-        all_services: All services
+        all_categories: All categories
         select_category: Select category
     person_sessions:
       enter_perishable_token:
@@ -28,8 +37,17 @@ en:
       perishable_token_form:
         submit: Send code
         title: Login
+    profile:
+      index:
+        tabs:
+          all: All
+          upcoming: Upcoming
+          completed: Completed
+          cancelled: Cancelled
+        title: My reservations
     services:
       index:
+        all_services: All services
         continue: Make a booking
       slots:
         available_dates: Available dates
