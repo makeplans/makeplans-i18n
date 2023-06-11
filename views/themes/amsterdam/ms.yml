@@ -39,7 +39,7 @@ ms:
         date_format: 'Sila masukkan format tarikh yang sah: %{format}'
         enter_info: Masukkan maklumat
         errors_header: Sila isi medan yang diperlukan.
-        form_info: Ini akan digunakan untuk mengesahkan tempahan anda dari %{service}, %{booking}.
+        form_info_html: Ini akan digunakan untuk mengesahkan tempahan anda dari %{service}, %{booking}.
         price_info: 'Harga: %{price}'
         reserve_resource: Tempahan untuk %{resource}
       no_person:

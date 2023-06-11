@@ -38,7 +38,7 @@ nb:
       footer: 'OBS: Reservasjonen er ikke fullført. Hvis du ikke klikker på linken ovenfor i løpet av %{expires_in} minutter vil reservasjonen din kanselleres.'
       header: For å fullføre din reservering av %{title} %{time_range} må du bekrefte reservasjonen ved å klikke på linken under.
       link: Bekreft reservasjon
-      subject: Bekreft din reservasjon
+      subject: Verifiser din reservasjon
   booking_occurrence_mailer:
     cancel:
       body: 'Dine reservasjoner av %{title} har blitt kansellert:'
@@ -73,6 +73,20 @@ nb:
         MakePlans
       booking_type_attendance: |-
         Ny påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
+        MakePlans
+    admin_notification_modification:
+      booking_type_appointment: |-
+        Endring av reservasjon for {{ booking.resource.title }} for {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        Påmelding endret for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
+        MakePlans
+    admin_notification_resource_change:
+      booking_type_appointment: |-
+        Endring av ressurs for {{ booking.resource.title }} med {{ booking.person.name }} {{ booking.title }} {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        Endring av påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
         MakePlans
     cancellation: Din reservasjon hos oss {{ booking.booked_from }} har blitt kansellert.
     confirmation: Du har reservert {{ booking.title }} {{ booking.booked_from }}.

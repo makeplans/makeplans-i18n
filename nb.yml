@@ -5,6 +5,7 @@ nb:
       booking:
         booked_from: starttidspunkt
         booked_to: avslutningtidspunkt
+        booked_by_person_id: reservert av
         count: antall
         event_id: arrangement
         notes: notat
@@ -132,6 +133,7 @@ nb:
             state:
               invalid_transition: Ugyldig endring av status
           fully_booked: Ikke ledig på valgt tidspunkt
+          prevent_new_signups: Kun tilgjengelig for eksisterende kunder.
           time_after_future_bookable_period: Må være før tillatt dato
         client:
           attributes:
@@ -178,6 +180,7 @@ nb:
     col_sep: ";"
   date:
     formats:
+      csv: "%d.%m.%Y"
       date_month_name: "%-d %B"
       datepicker: "%d.%m.%Y"
       day_name: "%A"
@@ -215,6 +218,7 @@ nb:
   generic:
     all: alle
     at: hos
+    country_locale: nb
     born_abbreviation: f. %{date_of_birth}
     default: Systemstandard
     optional: valgfritt
@@ -238,12 +242,19 @@ nb:
         declined: Avvist
         deleted: Fjernet
         verification_expired: Verifisering utløpt
+    booking_state_transitions:
+      events:
+        modified: Endret
+    boolean:
+      'true': 'Ja'
+      'false': 'Nei'
     datepicker:
       next_month: Neste måned
       prev_month: Forrige måned
     label:
       booking:
         all_day: Hele dagen
+        booked_by_person_id: Reservert av
         booked_from: Starter
         booked_to: Slutter
         count: Antall personer
@@ -286,6 +297,7 @@ nb:
         billing_vat_no: Organisasjonsnummer
         booking_form: Egendefinert reservasjonskjema
         booking_site_locale: Språk (Styrer også tall- og dataformatering)
+        calendar_event_text: Visningstekst for reservasjon i kalender
         cancellation_period: Avbestillingsfrist
         category_form: Egendefinerte kategorifelter
         closed_for_holidays: Stengt på offentlige fridager
@@ -300,6 +312,8 @@ nb:
         footer: Bunntekst på hver side
         future_bookable_period: Begrensing for hvor langt frem i tid man kan reservere
         google_analytics: Google Analytics tracking ID
+        ical_description: Beskrivelse
+        ical_summary: Tittel
         interval_rounding: Standard avrunding til neste ledige tidspunkt
         locale: Språk (Styrer også tall- og dataformatering)
         logo: Logo
@@ -309,6 +323,7 @@ nb:
         mail_confirmation_subject: Tittel i epost som blir sendt ved bekreftelse
         mail_modification: Tekst i epost som blir sendt ved endring
         mail_modification_subject: Tittel i epost som blir sendt ved endring
+        mail_notification_confirmation: Tekst i epost som blir sendt som varsel
         mail_notification_recipient: Epost-adresser for varsling
         mail_verification: Tekst i epost som blir sendt ved verifisering
         mail_verification_subject: Tittel i epost som blir sendt ved verifisering
@@ -390,6 +405,7 @@ nb:
         name: Navn
         national_id_no: Fødselsnummer (11 siffer)
         notes: Notat
+        opt_in_marketing: Motta informasjon fra oss
         phonenumber: Mobilnummer
         postal_code: Postnummer
         provider: Tilknyttet ekstern konto
@@ -488,11 +504,13 @@ nb:
       reports: Rapporter
       setup: Oppsett
     menu_setup:
+      addons: Tillegg
       billing: Betaling
       bookingsite: Bookingside
       categories: Kategorier
       communication: Kommunikasjon
       company: Konto
+      developer: Utvikler
       export: Eksport
       fields: Egendefinerte felter
       import: Import
@@ -536,6 +554,7 @@ nb:
   time:
     24h: true
     formats:
+      csv: "%d.%m.%Y %H:%M"
       long_dayname: "%A, %-d. %B %Y, %H:%M"
       short_mailer: "%-d. %B kl. %H:%M"
       shorter: "%-d. %b %Y, %H:%M"

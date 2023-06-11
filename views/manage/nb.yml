@@ -65,6 +65,7 @@ nb:
         add_new_link: Ønsker du å registrere ny kredittkortinformasjon?
         billing_info: Du vil motta faktura på epost fra oss og foreta betaling manuelt.
         billing_order_ref: 'Fakturaen vil inkludere din referanse: %{billing_order_ref}'
+        billing_period_info: 'Du vil bli fakturert for %{period} måneder.'
         change_from_invoice: Legg inn kredittkortinformasjon så slipper du å betale manuelt hver gang vi sender deg ny faktura.
         charge_details: Basert på nåværende innstillinger så er månedlig pris %{price}.
         charge_details_default: Månedlig pris er %{price} per ressurs.
@@ -161,6 +162,13 @@ nb:
         success: Betaling registrert.
       show:
         amount: Total pris
+        audit:
+          changed_attributes: 'Endringer: %{attributes}'
+          execution_mode:
+            api: via API
+            automated: automatisert
+            customer: av kunden
+            gui: i GUI
         booked_from: Fra
         booked_to: Til
         count: Antall personer
@@ -229,8 +237,8 @@ nb:
           phone_number: Telefon
       widget_list:
         busy: Opptatt
-        no_bookings: Ingen reservasjoner %{start}
-        no_bookings_range: Ingen reservasjoner fra %{start} til %{end}
+        no_bookings: 'Ingen reservasjoner %{start}.'
+        no_bookings_range: 'Ingen reservasjoner fra %{start} til %{end}.'
     categories:
       blank:
         get_started: Du har foreløpig ingen kategorier. Alle tjenester vil dermed vises i en liste på bookingsiden. Hvis du vil kategorisere dine tjenester kan du opprette en ny kategori.
@@ -293,8 +301,10 @@ nb:
           twenty: Nærmeste tyvende minutt
         remove_logo: Fjern logo
         settings:
-          allow_person_cookie: Tillatt mulighet for å huske verifisert kunde til neste besøk ved bruk av informasjonskapsler (cookie).
+          active_bookings_limit: Maks antall aktive bookinger for kunde
+          disable_person_cookie: Ikke tillatt kunde å forbli innlogget med cookie
           google_tag_manager: Google Tag Manager Container ID
+          prevent_new_signups: Tillatt kun booking for eksisterende kunder
           select_resource: Ekstra steg for valg av ressurs
         verification_methods:
           email: Epost
@@ -325,7 +335,10 @@ nb:
         custom_form_info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>.
         header: Endre egendefinerte felter
       edit_person_notifications:
+        automatic_messages_booking_site: Automatiske utsendelser (På bookingsiden)
         automatic_messages: Automatiske utsendelser (Administrasjonsystem og API)
+        booking_site_outgoing_messages_info: Som standard vil MakePlans sende en melding ved viktige hendelser som bekreftelse via valgt verifiseringsmetode, for eksempel SMS for SMS-verifisering, or epost hvis man har annen eller ingen verifisering.
+        booking_site_message: Send melding på bookingsiden
         cancellation_email: Utsendelse av epost ved kansellering av reservasjon
         cancellation_sms: Utsendelse av SMS ved kansellering av reservasjon
         confirmation_email: Utsendelse av epost ved opprettelse av reservasjon
@@ -344,6 +357,7 @@ nb:
         approvement_email: Utsendelse av epost ved ny reservasjonforespørsel
         approvement_sms: Utsendelse av SMS ved ny reservasjonforespørsel
         automatic_messages: Automatiske utsendelser
+        custom_content: Egendefinert innhold i varsel
         default: Aktivert (Standard)
         disable: Deaktiver
         email: E-post
@@ -352,6 +366,8 @@ nb:
         notification_email: Utsendelse av epost ved ny reservasjon
         notification_sms: Utsendelse av SMS ved ny reservasjon
         outgoing_messages_info: Hvis du har satt opp at nye reservasjoner skal godkjennes av administrator så vil MakePlans automatisk varsle deg på epost om nye reservasjonsforespørsler. Hvis du ikke ønsker et slikt varsel eller at godkjenning gjøres automatisk via et ekstern system (API) så kan du deaktivere dette nedenfor.
+        settings:
+          custom_email_user_sending: Overstyr hele eposter med innhold nedenfor (ellers så blir innhold kun lagt inn i standard epost-mal)
         sms: SMS
       edit_ux:
         calendar: Kalender
@@ -362,8 +378,7 @@ nb:
           calendar_prevent_slot_event_overlap: Unngå visuell overlapping av reservasjoner
           calendar_slot_duration: Varighet på slot (minutter)
           calendar_slot_label_interval: Tidsvisning for slot ved hvert X minutt
-          esource_title: Egendefinert ressurstittel
-          resource_title: Egen tittel for ressurs
+          resource_title: Egendefinert ressurstittel
       export_info:
         data_types:
           bookings: Reservasjoner (kun aktive)
@@ -371,7 +386,7 @@ nb:
           bookings_visible: Reservasjoner (inkludert kansellerte)
           events: Arrangementer
           people: Kunder
-        executed: Eksportfilen sendes nå til din epost-adresse.
+        executed: Eksportfilen sendes nå til din epost-adresse. Dette kan ta opp til 10 minutter hvis det eksporteres mye data.
         header: Eksporter data fra MakePlans
         info: Du vil motta en epost med CSV-fil som vedlegg.
       import:
@@ -415,6 +430,7 @@ nb:
           one: én reservasjon
           other: 'reservasjoner: <strong>%{count}</strong>'
           zero: ingen reservasjoner
+        copy: Kopier til nytt arrangement
         download_attendance_csv: Eksporter deltagerliste som CSV
         email_confirm: Deltagerliste vil bli sendt på epost til deg. Vil du fortsette?
         fully_booked: Arrangementet er fullbooket
@@ -523,7 +539,7 @@ nb:
       not_authenticated: Klarte ikke å koble til. Sjekk brukernavn og passord.
       notion:
         connected_to: Koblet til database med id %{database_id}
-        database_info: 'Databasen må settes opp med følgende egenskaper: Navn, E-post (type: e-post), Telefon (type: telefon).'
+        database_info: 'Databasen må settes opp med følgende egenskaper: Name, Email (type: e-post), Phone (type: telefon).'
         select_database: Velg database
         sharing_info: Vennligst del minst én database med MakePlans-integrasjonen
       oauth_connect: Koble til denne tjenesten
@@ -600,7 +616,7 @@ nb:
     people:
       children:
         index:
-          headline: '%{parent} kan booke for andre:'
+          headline: '%{parent} kan booke for disse personene:'
       form:
         block: Blokker kunde for booking
         managed_by: Denne kunden vil administreres av %{parent}.
@@ -619,7 +635,7 @@ nb:
         send_sms: Send SMS
       show:
         bookings_for: Reservasjoner for %{name}
-        can_book_for: 'Kan booke for andre.'
+        can_book_for: 'Kan booke for %{children} andre.'
         card_saved_with:
           stripe: Betalingskort lagret hos Stripe
         change_tfso_customer: Bytt 24SO kundenr.
@@ -765,6 +781,7 @@ nb:
       integrations:
         external_info:
           fiken_product_href: Koble til produkt i Fiken
+          tfso_create_order: Opprett ordre i 24SevenOffice automatisk
           tfso_product_id: 24SevenOffice produkt id
           visma_eaccounting_article_id: Koble til produkt i Visma eAccounting
           whereby_create_meeting: Opprett automatisk et Whereby-møte for denne tjenesten
@@ -783,6 +800,9 @@ nb:
         offered: 'Tilbys av følgende ressurser:'
         price: 'Pris:'
         show_on_booking_site: Åpne bookingsiden for denne tjenesten
+      slots:
+        available: 'Ledige tidspunkt:'
+        none_available: 'Ingen ledige tidspunkt.'
     setup:
       appointment_services:
         add: Legg til én til

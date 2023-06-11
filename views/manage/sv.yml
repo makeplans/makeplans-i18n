@@ -359,7 +359,7 @@ sv:
           calendar_hide_weekends: Dölj helger
           calendar_slot_duration: Varaktighet för lediga tider
           calendar_slot_label_interval: Intervall för lediga tider
-          esource_title: Anpassad resurstitel
+          resource_title: Anpassad resurstitel
       export_info:
         data_types:
           bookings: Bokningar

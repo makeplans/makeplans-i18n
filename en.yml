@@ -80,6 +80,7 @@ en:
         name: name
         national_id_no: national identification number
         notes: notes
+        opt_in_marketing: opt in for marketing
         phonenumber: phone number
         postal_code: postal code
         state: state
@@ -124,7 +125,10 @@ en:
               not_offered: not offered by chosen resource
             state:
               invalid_transition: Invalid state change
+          active_bookings_limit: Max number of active bookings is %{count}
           fully_booked: Not available at selected time.
+          no_parent_takeover: Please contact support to make this booking.
+          prevent_new_signups: booking is only available for existing customers
           time_after_future_bookable_period: Too far ahead in the future
         client:
           attributes:
@@ -168,6 +172,7 @@ en:
       web_hook: webhook
   date:
     formats:
+      csv: "%d.%m.%Y"
       date_month_name: "%e %B"
       datepicker: "%d.%m.%Y"
       day_name: "%A"
@@ -206,6 +211,7 @@ en:
   generic:
     all: all
     at: at
+    country_locale: en
     born_abbreviation: b. %{date_of_birth}
     default: System default
     optional: optional
@@ -228,6 +234,12 @@ en:
         confirmed: Confirmed
         declined: Declined
         deleted: Deleted
+    booking_state_transitions:
+      events:
+        modified: Modified
+    boolean:
+      'true': 'Yes'
+      'false': 'No'
     datepicker:
       next_month: Next month
       prev_month: Previous month
@@ -274,6 +286,7 @@ en:
         billing_street: Street
         billing_vat_no: VAT nr
         booking_form: Custom reservation form
+        calendar_event_text: Display text for reservation in calendar
         cancellation_period: Cancellation period
         category_form: Custom category fields
         closed_for_holidays: Closed on public holidays
@@ -288,6 +301,8 @@ en:
         footer: Footer
         future_bookable_period: Do not allow reservations after
         google_analytics: Google Analytics tracking ID
+        ical_description: Description
+        ical_summary: Title
         interval_rounding: Default rounding to next available time for reservation
         locale: Language (Also defines number and date formatting)
         logo: Logo
@@ -297,6 +312,7 @@ en:
         mail_confirmation_subject: Subject in confirmation email
         mail_modification: Text in modification email
         mail_modification_subject: Subject in modification email
+        mail_notification_confirmation: Text in notification email
         mail_notification_recipient: Email address(es) for notification
         mail_verification: Text in verification email
         mail_verification_subject: Subject in verification email
@@ -376,6 +392,7 @@ en:
         name: Name
         national_id_no: National ID number
         notes: Notes
+        opt_in_marketing: Receive information from us
         phonenumber: Mobile phone number
         postal_code: Postal code
         provider: Connected to external account
@@ -471,11 +488,13 @@ en:
       reports: Reports
       setup: Setup
     menu_setup:
+      addons: Addons
       billing: Billing
       bookingsite: Booking site
       categories: Categories
       communication: Communication
       company: Account
+      developer: Developer
       export: Export
       fields: Custom fields
       import: Import
@@ -519,6 +538,7 @@ en:
   time:
     24h: true
     formats:
+      csv: "%d.%m.%Y %H:%M"
       db: "%Y-%m-%d %H:%M"
       long_dayname: "%A, %e %B %Y, %H:%M"
       short_mailer: "%e. %B at %H:%M"

@@ -38,7 +38,7 @@ pl:
           remember_me: Czy chcesz, abyśmy zapamiętali Cię na tym urządzeniu za pomocą pliku cookie?
         enter_info: Wprowadź informacje
         errors_header: Wypełnij wymagane pola.
-        form_info: Informacje zostaną wykorzystane do zweryfikowania Twojej rezerwacji %{service}, %{booking}.
+        form_info_html: Informacje zostaną wykorzystane do zweryfikowania Twojej rezerwacji %{service}, %{booking}.
         price_info: 'Cena: %{price}'
         reserve_resource: Rezerwacja %{resource}
       no_person:

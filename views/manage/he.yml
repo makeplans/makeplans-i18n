@@ -365,7 +365,7 @@ he:
           calendar_hide_weekends: הסתר סופי שבוע
           calendar_slot_duration: משך הזמן
           calendar_slot_label_interval: מרווח תווית חריץ
-          esource_title: כותרת משאב מותאמת אישית
+          resource_title: כותרת משאב מותאמת אישית
       export_info:
         data_types:
           bookings: הזמנות

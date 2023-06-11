@@ -65,6 +65,7 @@ en:
         add_new_link: Do you want to update your credit card details?
         billing_info: You will receive an invoice from us that you need to pay manually
         billing_order_ref: 'The invoice will include your reference: %{billing_order_ref}'
+        billing_period_info: 'You will be charged for %{period} months.'
         change_from_invoice: Enter your credit card details so you do not have to pay manually every time we invoice your account
         charge_details: Based on current usage we will charge your credit card %{price} each month.
         charge_details_default: Monthly price is %{price} per resource.
@@ -161,6 +162,13 @@ en:
         success: Payment registered.
       show:
         amount: Total price
+        audit:
+          changed_attributes: 'Changed attributes: %{attributes}'
+          execution_mode:
+            api: using API
+            automated: automated
+            customer: by customer
+            gui: in the GUI
         booked_from: From
         booked_to: To
         count: Number of people
@@ -250,6 +258,13 @@ en:
         custom_data: 'Custom data:'
         has_services: 'Shows these services:'
     client:
+      addons:
+        header: Addons
+        info: We offer various paid addons that you can enable. Please contact us if you have any questions.
+        addons:
+          custom_domain: Custom domain
+          custom_email_sender: Custom email sender
+          custom_sms_sender: Custom SMS sender ID
       api:
         disable: Do you want to disable the API?
         disable_warning: Are you sure you want to disable the API? The API-key will become invalid and the API unavailable.
@@ -272,6 +287,28 @@ en:
         intro: This is where you can configure MakePlans and how it should work for you. You can add services and categories that you offer on the booking site, adjust availability, change the outgoing messages (SMS and email), add more users and adjust many other settings in MakePlans.
         menu_info: Select from the menu on the left side. If you have any questions about how to make adjustment please contact customer service.
         trial_info: This is a trial account - click here to activate
+      developer:
+        show:
+          api: API
+          embed: Embed
+          web_hooks: Webhooks
+      domains:
+        cname:
+          cancel: Cancel this domain request
+          header: Add DNS record
+          info: Please add the following DNS record on your domain.
+          record: CNAME %{domain} with value %{cname}
+          verify: Verify DNS
+        info:
+          header: Use your own domain
+          info: You can use your own domain for the booking site. Monthly cost is %{price}
+          add: Add your domain
+        new:
+          domain: Your domain
+        show:
+          delete: Stop using this custom domain
+          header: You are using a custom domain
+          info: Your booking site is available at %{domain}
       edit:
         custom_messages_info_html: You can merge relevant data here. For more information please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>.
       edit_booking_site:
@@ -295,8 +332,10 @@ en:
           twenty: Closest 20 minute mark
         remove_logo: Remove logo
         settings:
-          allow_person_cookie: Allow possiblity to remember verified customer until next visit with the use of cookies.
+          active_bookings_limit: Max nr of active bookings for customer
+          disable_person_cookie: Do not allow customer to stay logged in with cookie
           google_tag_manager: Google Tag Manager container ID
+          prevent_new_signups: Only allow booking from existing customers
           select_resource: Extra step for selecting resource
         verification_methods:
           email: Email
@@ -305,6 +344,7 @@ en:
           sms: SMS (Recommended)
       edit_communication:
         email: Email
+        ical: iCalendar
         header: Modify outgoing comminication
         settings:
           custom_email_sending: Completely override emails with content below (otherwise content is just inserted in standard email)
@@ -327,7 +367,10 @@ en:
         custom_form_info_html: Contact customer service for help. Documentation is available at <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>.
         header: Modify custom fields
       edit_person_notifications:
+        automatic_messages_booking_site: Automatic messages (On the booking site)
         automatic_messages: Automatic messages (In the admin system and the API)
+        booking_site_outgoing_messages_info: MakePlans will by default send a message for important events such as a confirmation message using the verification method, for example SMS with SMS verification, or using email if using other/none verification.
+        booking_site_message: Send message on the booking site
         cancellation_email: Send email when cancelling reservation
         cancellation_sms: Send SMS when cancelling reservation
         confirmation_email: Send email when creating reservation
@@ -346,14 +389,18 @@ en:
         approvement_email: Email notification for new reservation requests
         approvement_sms: SMS notification for new reservation requests
         automatic_messages: Automatic messages
+        custom_content: Custom notification content
         default: Active (Default)
         disable: Disabled
         email: Email
         header: User notifications
+        mail_notification_confirmation: Notification confirmation email
         mail_notification_info: To notify more than one person please use semi-colon to separate email addresses.
         notification_email: Email notification for new reservation
         notification_sms: SMS notification for new reservation
         outgoing_messages_info: If you have set up to manually apporve new reservations from the booking site you will be notified via email for every new reservation request. If you do not want to receive these notifications or if approvement is done using an external application (API) it is possible to deactivate it below.
+        settings:
+          custom_email_user_sending: Completely override emails with content below (otherwise content is just inserted in standard email)
         sms: SMS
       edit_ux:
         calendar: Calendar
@@ -364,7 +411,16 @@ en:
           calendar_prevent_slot_event_overlap: Prevent event overlap
           calendar_slot_duration: Slot duration
           calendar_slot_label_interval: Slot label interval
-          esource_title: Custom resource title
+          resource_title: Custom resource title
+      embed:
+        new:
+          embed_url: 'Enter the URL to your website for embedding:'
+        show:
+          add_embed_url: Do you want to embed the booking site on an external website?
+          custom_info: You can embed the booking site using iframe or perform API request on %{url}.
+          info: To be able to add your booking site on your own website as an iframe or perform public API request from your website you must add your website URL due to security.
+          delete: Remove the embed URL.
+          header: Embed the booking site on a third party domain
       export_info:
         data_types:
           bookings: Reservations
@@ -372,7 +428,7 @@ en:
           bookings_visible: Reservations (including cancellations)
           events: Events
           people: Customers
-        executed: The export is now being sent to your email-address.
+        executed: The export is now being sent to your email address. This could take up to 10 minutes if you are exporting a lot of data.
         header: Export data from MakePlans
         info: You will receive an email with a CSV-file attachment.
       import:
@@ -389,6 +445,16 @@ en:
         booking_site_info_html: Your booking site is available at %{url}.
         generate_booking_button: Generate booking button for your website
         header: Promote your booking site
+      sms_sender:
+        show:
+          add_custom_sender: Do you want to use a custom SMS sender ID?
+          cost: Monthly cost is %{price}.
+          custom_info: All SMS will be sent using %{sms_sender}.
+          delete: Remove custom SMS sender ID.
+          header: SMS Sender ID
+          info: All SMS will be sent from MakePlans.
+        new:
+          sms_sender_name: SMS sender name
       tools:
         header: Tools for your account
         link:
@@ -416,6 +482,7 @@ en:
           one: one reservation
           other: 'reservations: <strong>%{count}</strong>'
           zero: no reservations
+        copy: Clone this event
         download_attendance_csv: Export attendance list as CSV
         email_confirm: Attendance list will be emailed to you. Do you want to continue?
         fully_booked: The event is fully booked
@@ -536,6 +603,8 @@ en:
       selected_option: Selected
       sendy:
         connect_info_html: New customers will be subscribed to list with id <em>%{list_id}</em> on installation %{api_url}
+      slack:
+        connect_info: For every new booking in MakePlans it will be published as a message in the %{channel} Slack channel.
       stripe:
         disable_customer_saving: Do not save customer to Stripe
         payment_info: For all transactions a platform fee of %{application_fee_percent}% is deducted by MakePlans.
@@ -604,6 +673,7 @@ en:
           headline: '%{parent} can make bookings for:'
       form:
         block: Block customer for booking
+        booking_site_locale_default: Use default for the booking site
         managed_by: This customer will be managed by %{parent}.
         merge_action: Merge these two customers
         merge_action_email: This email address is already saved on another customer. Do you want to merge these two customers so %{email} will be used as the e-mail address?
@@ -706,6 +776,10 @@ en:
         availability: 'Default availability:'
         capacity: 'Capacity:'
         closed: Not available for online booking.
+        copy:
+          header: Clone
+          info: Create a new resource based on this resource. Note that provided services are cloned.
+          link: Clone this resource
         custom_data: 'Custom fields:'
         ical:
           activated_html: Access to this resource with iCalendar is activated. The link to the iCalendar-feed is %{link}
@@ -767,6 +841,7 @@ en:
       integrations:
         external_info:
           fiken_product_href: Connect to a product in Fiken
+          tfso_create_order: Generate order in 24SevenOffice automatically
           tfso_product_id: 24SevenOffice product id
           visma_eaccounting_article_id: Connect to a product in Visma eAccounting
           whereby_create_meeting: Automatically create a Whereby meeting for this service
@@ -785,6 +860,9 @@ en:
         offered: 'Offered by the following resources:'
         price: 'Price:'
         show_on_booking_site: Open service on booking site
+      slots:
+        available: 'Available slots:'
+        none_available: 'No available slots.'
     setup:
       appointment_services:
         add: Add another

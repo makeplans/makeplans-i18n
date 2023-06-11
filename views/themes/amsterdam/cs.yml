@@ -37,7 +37,7 @@ cs:
           not_current_person_html: Nejste <span data-name="">%{person}?</span> ?
         enter_info: Zadejte informace
         errors_header: Vyplňte prosím povinná pole.
-        form_info: To bude použito k ověření vaší rezervace %{service}, %{booking}.
+        form_info_html: To bude použito k ověření vaší rezervace %{service}, %{booking}.
         price_info: 'Cena: %{price}'
         reserve_resource: Rezervace pro %{resource}
       payment:

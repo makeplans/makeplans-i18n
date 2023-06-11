@@ -365,7 +365,7 @@ da:
           calendar_hide_weekends: Skjul weekender
           calendar_slot_duration: Spillets varighed (minutter)
           calendar_slot_label_interval: Tidsvisning for slot hvert X minut
-          esource_title: Tilpasset ressourcetitel
+          resource_title: Tilpasset ressourcetitel
       export_info:
         data_types:
           bookings: Reservationer

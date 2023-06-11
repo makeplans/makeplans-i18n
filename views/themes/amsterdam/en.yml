@@ -45,7 +45,7 @@ en:
         email_suggestion_html: '<p>Did you mean<span> %{suggestions}</span>?</p>'
         enter_info: Enter information
         errors_header: Please fill out the required fields.
-        form_info: This will be used to verify your reservation of %{service}, %{booking}.
+        form_info_html: This will be used to verify your reservation of <span data-attribute="title">%{service}</span>, %{booking}.
         new_child: For someone else
         price_info: 'Price: %{price}'
         reserve_resource: Reservation for %{resource}
@@ -77,7 +77,7 @@ en:
       show:
         add_card: Add your credit card to pay automatically after the reservation
         add_to_calendar: Add the reservation to your calendar
-        body: You're done. The booking has been made.
+        body: "That's it. Thanks for booking with us."
         booking_count: Booked for %{count} people.
         booked_for_child: This booking is for %{name}.
         cancel: Cancel reservation
@@ -86,9 +86,10 @@ en:
         remember_me: Do you want us to remember you on this machine using a cookie?
         title: Your reservation is confirmed!
       sms_code:
-        header: Confirm reservation
+        header: Verify reservation
         incorrect_code: Incorrect code
-        verify_sms_code: We have sent a SMS to %{phonenumber} with a verification code. Please enter the code in the form to verify the reservation. This is required to complete the reservation.
+        remember_me: Remember me on this device
+        verify_sms_code: We have sent a SMS to %{phonenumber} with a verification code. Please enter the code in the form to verify the reservation. This is required to confirm the reservation.
     events:
       index:
         free_capacity: '%{count} available'
@@ -121,10 +122,12 @@ en:
         cancel: Cancel
         completed: Completed!
         hotstepper: Step %{step} of %{steps}
-        next_confirm: 'Next: Confirmation'
+        next: Next
+        next_confirm: 'Next: Confirm'
+        next_form: 'Next: Add details'
         next_payment: Pay
         next_time: 'Next: Select a time'
-        next_verify: Confirm reservation
+        next_verify: 'Next: Verify'
         previous: previous step
         previous_date: Change time
         previous_service: Change service
@@ -135,12 +138,13 @@ en:
         footer:
           privacy_policy: Privacy policy
           support: Support
+          change_language: 'Change language:'
         login: Your reservations
         meta:
-          description: Online appointment booking for %{name}
-          keywords: scheduling, appointment, booking, signups, makeplans
-        powered_by: Made by
-        powered_by_title: Appointment booking, scheduling and event/class signups
+          description: Online appointment booking and scheduling for %{name}
+          keywords: scheduling, appointment, booking, event signups, makeplans, online booking, scheduling api, appointment booking
+        powered_by: Scheduling by
+        powered_by_title: Appointment booking system, scheduling app and event/class signups with API
         title: Online booking for %{name}
     people:
       credit_card_added:
@@ -170,6 +174,7 @@ en:
         title: Your stored payment methods
       index:
         children: 'Other people you can make book for.'
+        feed: 'iCalendar-feed'
         header: Your reservations
         logout: Log out
         my_details: My stored information

@@ -365,7 +365,7 @@ ms:
           calendar_hide_weekends: Sembunyikan hujung minggu
           calendar_slot_duration: Tempoh slot
           calendar_slot_label_interval: Selang label slot
-          esource_title: Tajuk sumber tersuai
+          resource_title: Tajuk sumber tersuai
       export_info:
         data_types:
           bookings: Tempahan
