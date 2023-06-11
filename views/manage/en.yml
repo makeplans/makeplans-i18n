@@ -346,6 +346,7 @@ en:
         email: Email
         ical: iCalendar
         header: Modify outgoing comminication
+        mailer_sender_valid_domain: You have validated %{domain} and MakePlans will send emails on that domain on your behalf. Other email addresses will be specified as reply-to.
         settings:
           custom_email_sending: Completely override emails with content below (otherwise content is just inserted in standard email)
           custom_sms_sending: Completely override SMS with content below (otherwise content is just inserted in standard SMS)
@@ -412,6 +413,29 @@ en:
           calendar_slot_duration: Slot duration
           calendar_slot_label_interval: Slot label interval
           resource_title: Custom resource title
+      email_sender:
+        create:
+          header: We are processing your request
+          dns: See your DNS values.
+        dns:
+          header: Add DNS records
+          info: Please add the following DNS records to complete the email sender verification. It could take up to 24 hours before your changes are live.
+          dkim: To allow MakePlans to send with an email address on %{domain} add the following TXT record.
+          dkim_host: Host
+          dkim_value: Value
+        info:
+          add: Add your email sending domain
+          header: Send emails using your own email address
+          info: By default all emails are sent from %{default_email}. For %{price} per month you can use an email address on your own domain. To allow MakePlans to send on your behalf you need to add some DNS records. Please understand that this requires a technical change on your domain and that it allows MakePlans to send using any address on the chosen email. We recommend that you use a subdomain for security reasons, so booking.example.org instead of example.org.
+        new:
+          domain: Domain
+          header: Add your custom email sending domain
+        show:
+          header: You have verified your email sending domain
+          info: MakePlans will be able to send emails from any email address on your domain %{domain}
+        verify:
+          header: Not verified
+          info: If you have added the DNS records please wait until they have propagated. Please try again later.
       embed:
         new:
           embed_url: 'Enter the URL to your website for embedding:'
