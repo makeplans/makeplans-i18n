@@ -78,7 +78,9 @@ en:
         add_card: Add your credit card to pay automatically after the reservation
         add_to_calendar: Add the reservation to your calendar
         body: "That's it. Thanks for booking with us."
-        booking_count: Booked for %{count} people.
+        booking_count:
+          one: Booked for %{count} person.
+          other: Booked for %{count} people.
         booked_for_child: This booking is for %{name}.
         cancel: Cancel reservation
         cancel_confirmation: Are you sure you want to cancel this reservation?

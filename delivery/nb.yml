@@ -8,7 +8,9 @@ nb:
       info: Din reservasjon hos oss %{title} %{time_range} har blitt kansellert.
       subject: Reservasjon kansellert
     confirmation:
-      booking_count: Reservert for %{count} personer.
+      booking_count:
+        one: Reservert for %{count} person.
+        other: Reservert for %{count} personer.
       header: Hei %{name}
       info: Du har reservert %{title} %{time_range}.
       link: Mer informasjon om din booking

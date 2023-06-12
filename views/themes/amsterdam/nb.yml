@@ -77,7 +77,9 @@ nb:
         add_card: Legg til kredittkort for å betale automatisk etter endt avtale.
         add_to_calendar: Legg til reservasjonen i din kalender.
         body: Det var alt. Takk for at du har reservert hos oss.
-        booking_count: Reservert for %{count} personer.
+        booking_count:
+          one: Reservert for %{count} person.
+          other: Reservert for %{count} personer.
         booked_for_child: Denne reservasjonen er for %{name}.
         cancel: Kanseller reservasjon
         cancel_confirmation: Er du sikkert på at du vil kansellere denne reservasjonen?
