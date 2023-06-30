@@ -65,14 +65,23 @@ nb:
         form_header: Dette skjemaet sendes kryptert.
         header: Betaling
         info: For å fullføre reservasjon av %{service} så må du betalt med ditt kort.
+      payment_invoice:
+        form_footer_html: Faktura vil bli belastet med <span class="payment-amount">%{amount}</span>.
+        form_header: 'Vi vil sende faktura basert på følgende informasjon:'
+        header: Betaling med faktura
+        info: For å fullføre reservasjon av %{service} %{booking} må du godkjenne å bli fakturert.
+        payment_details_html: Fakturabeløpet er i %{currency}.
       pre_payment:
         form_footer_html: 'Beløp å betale: <span class="payment-amount">%{amount}</span>.'
         select_provider: Hvordan ønsker du å betale?
         providers:
           braintree: Kredittkort eller debetkort
+          fiken: Faktura
           quickpay: Kredittkort eller debetkort
-          stripe: Kredittkort, debetkort eller Apple Pay
+          stripe: Kredittkort, debetkort, Google Pay eller Apple Pay
+          tfso: Faktura
           vipps: Vipps
+          visma_eaccounting: Faktura
       show:
         add_card: Legg til kredittkort for å betale automatisk etter endt avtale.
         add_to_calendar: Legg til reservasjonen i din kalender.
@@ -83,6 +92,7 @@ nb:
         booked_for_child: Denne reservasjonen er for %{name}.
         cancel: Kanseller reservasjon
         cancel_confirmation: Er du sikkert på at du vil kansellere denne reservasjonen?
+        invoiced: Du har blitt fakturert.
         paid: Du har forhåndsbetalt %{paid_amount}.
         remember_me: Vil du at vi skal huske deg på denne maskinen til neste gang du skal reservere her?
         title: Reservasjonen din er bekreftet!

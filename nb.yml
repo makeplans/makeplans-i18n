@@ -95,7 +95,8 @@ nb:
         sms_notification_recipient: telefonnummer for varsling
         title: tittel
       service:
-        payment_required: krev forhåndsbetaling
+        allow_invoice: kan betales med faktura
+        payment_required: krev betaling
         price: pris
         title: tittel
       user:
@@ -367,13 +368,14 @@ nb:
         staff: Kun kalendar
       event:
         all_day: Hele dagen
+        allow_invoice: Kan betales med faktura
         booking_capacity: Maks antall deltagere per reservasjon
         capacity: Maks antall deltagere
         description: Beskrivelse
         ends_at: Slutter
         first_booking_at: Ingen påmelding før
         last_booking_at: Siste påmelding før
-        payment_required: Krev forhåndsbetaling
+        payment_required: Krev betaling
         price: Pris inkludert mva.
         published: Synlig på bookingsiden
         resource_id: Ressurs
@@ -418,6 +420,7 @@ nb:
         sms_notification_recipient: Telefonnummer for varsling
         title: Tittel
       service:
+        allow_invoice: Kan betales med faktura
         booking_capacity: Maks antall personer per reservasjon
         booking_form: Egendefinert reservasjonskjema
         capacity: Maks antall deltagere
@@ -434,7 +437,7 @@ nb:
         mail_verification: Tekst i epost som blir sendt ved verifisering
         max_slots: Maks antall slotter per reservasjon
         next_interval: Ledig tidspunkt hvert
-        payment_required: Krev forhåndsbetaling
+        payment_required: Krev betaling
         price: Pris inkludert mva.
         published: Synlig på bookingsiden
         same_day: Reservasjon kan ikke gå over flere dager

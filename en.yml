@@ -91,7 +91,8 @@ en:
         sms_notification_recipient: phone number for notification
         title: title
       service:
-        payment_required: require pre-payment
+        allow_invoice: allow invoice
+        payment_required: require payment
         price: price
         title: title
       user:
@@ -355,6 +356,7 @@ en:
         staff: Only calendar
       event:
         all_day: All day
+        allow_invoice: allow invoice
         booking_capacity: Max nr of attendants per booking
         capacity: Max nr of attendants
         description: Description
@@ -405,6 +407,7 @@ en:
         sms_notification_recipient: Phone number for notification
         title: Title
       service:
+        allow_invoice: Allow invoice
         booking_capacity: Max number of people per reservation
         booking_form: Custom reservation form
         capacity: Max number of attendants

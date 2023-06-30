@@ -66,13 +66,19 @@ en:
         form_header: This form is sent encrypted.
         header: Payment
         info: To complete the reservation of %{service} you must pay with your credit card.
+      payment_invoice:
+        form_footer_html: The invoice will be charged with <span class="payment-amount">%{amount}</span>.
+        form_header: We will invoice based on the following information
+        header: Payment with invoice
+        info: To complete the reservation of %{service} %{booking} you must agree to be invoiced.
+        payment_details_html: The displayed amount is in %{currency}.
       pre_payment:
         form_footer_html: 'Amount to pay: <span class="payment-amount">%{amount}</span>.'
         select_provider: How would you like to pay?
         providers:
-          braintree: Credit or debet card
-          quickpay: Credit or debet card
-          stripe: Credit/debit card or Apple Pay
+          braintree: Credit/debit card
+          quickpay: Credit/debit card
+          stripe: Credit/debit card, Google Pay or Apple Pay
           vipps: Vipps
       show:
         add_card: Add your credit card to pay automatically after the reservation
@@ -84,6 +90,7 @@ en:
         booked_for_child: This booking is for %{name}.
         cancel: Cancel reservation
         cancel_confirmation: Are you sure you want to cancel this reservation?
+        invoiced: You have been invoiced.
         paid: You have prepaid %{paid_amount}.
         remember_me: Do you want us to remember you on this machine using a cookie?
         title: Your reservation is confirmed!
