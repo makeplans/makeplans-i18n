@@ -780,10 +780,12 @@ nb:
         minutes: minutter
       integrations:
         external_info:
+          fiken_create_order: Opprett ordre i Fiken automatisk
           fiken_product_href: Koble til produkt i Fiken
           tfso_create_order: Opprett ordre i 24SevenOffice automatisk
           tfso_product_id: 24SevenOffice produkt id
           visma_eaccounting_article_id: Koble til produkt i Visma eAccounting
+          visma_eaccounting_create_order: Opprett ordre i Visma eAccounting automatisk
           whereby_create_meeting: Opprett automatisk et Whereby-møte for denne tjenesten
           zoom_create_session: Opprett automatisk et Zoom-møte for denne tjenesten
       list_menu:
