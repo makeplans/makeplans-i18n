@@ -103,6 +103,7 @@ en:
     errors:
       messages:
         chronic_syntax_error: syntax error please see https://github.com/mojombo/chronic#examples
+        denied: Your request was denied
         icalendar_invalid: No occurrences or invalid iCalendar pattern
         icalendar_over_limit: Too many occurences. Max is 731.
         illegal: illegal
