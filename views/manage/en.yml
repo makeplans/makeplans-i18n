@@ -77,6 +77,7 @@ en:
         email_recipent: We will email the invoice to %{email}.
         header: Payment details
         info_header: 'Your billing info:'
+        invoice_history: 'See past invoices'
         paid_until: Your account is paid for until %{paid_until}.
         pause: Pause the account when the current subscription ends.
         pause_confirm: Are you sure you want to put the account on hold? The account will automatically be deactivated on %{paid_until}.
@@ -459,6 +460,10 @@ en:
       import:
         header: Import data
         info: It is possible to import data such as customers into MakePlans. Contact support for more information.
+      invoices:
+        index:
+          header: Invoices from MakePlans
+          email: Send a copy to your email
       promote:
         booking_button_html_info: To insert the booking button on your website please copy the HTML-code below. If you need help please contact your web-designer.
         booking_button_html_preview: Booking button preview

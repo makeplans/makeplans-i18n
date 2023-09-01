@@ -77,6 +77,7 @@ nb:
         email_recipent: Faktura vil bli sendt på epost til %{email} eller som EHF hvis dere kan motta det.
         header: Betalingsinformasjon
         info_header: 'Vi har registrert følgende fakturainformasjon:'
+        invoice_history: 'Se tidligere fakturaer'
         paid_until: Kontoen er betalt frem til %{paid_until}.
         pause: Sett kontoen på pause etter endt betalt periode.
         pause_confirm: Er du sikker på at du vil sette kontoen på pause? Kontoen vil bli automatisk deaktivert %{paid_until}.
@@ -392,6 +393,10 @@ nb:
       import:
         header: Importer data
         info: Det er mulig å importere data, som for eksempel kunder, i MakePlans. Ta kontakt med kundeservice for mer informasjon.
+      invoices:
+        index:
+          header: Fakturaer fra MakePlans
+          email: Send en kopi på epost
       promote:
         booking_button_html_info: Kopier HTML-koden nedenfor til din nettside. Ta eventuelt kontakt med din web-designer for hjelp.
         booking_button_html_preview: Forhåndsvisning
