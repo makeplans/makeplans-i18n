@@ -425,6 +425,7 @@ en:
         mail_modification: Text in modification email
         mail_verification: Text in verification email
         max_slots: Max number of slots per reservation
+        new_booking_text: Text displayed on confirmation page
         next_interval: Available slot every
         payment_required: Require payment
         price: Price including taxes

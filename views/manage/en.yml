@@ -826,6 +826,9 @@ en:
       custom_form:
         custom_form_info_html: You can specify a custom reservation form for this service. This form will override the default form defined under "Booking site". Documentation can be found at <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>, alternatively contact customer service for assistance.
         custom_form_show: Show custom reservation form
+      custom_new_booking_text:
+        custom_new_booking_text_info_html: You can specify a custom text for new bookings for this service. This form will override the default custom new booking text defined under "Booking site". Documentation can be found at <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>, alternatively contact customer service for assistance.
+        custom_new_booking_text_show: Show custom new booking text
       form_appointment:
         booking_site_settings: Settings for the booking site
         days: days
