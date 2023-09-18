@@ -284,7 +284,7 @@ lt:
         mail_verification_subject: Tema patvirtinimo el. Laiške
         name: Įmonės pavadinimas (nurodytas rezervavimo svetainėje)
         new_booking_text: Tekstas rodomas patvirtinimo puslapyje
-        new_user_text: Tekstas rodomas prieš rezervavimo formą
+        reservation_form_text: Tekstas rodomas prieš rezervavimo formą
         payment_provider: Mokėjimo teikėjas (iš anksto apmokėtoms rezervacijoms)
         person_form: Individualūs klientų laukai
         phone_number: Telefono numeris pranešimui

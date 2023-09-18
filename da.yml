@@ -300,7 +300,7 @@ da:
         mailer_sender: E-mail-afsender
         name: Firmanavn (vises på reservationssiden)
         new_booking_text: Tekst vises på bekræftelsessiden
-        new_user_text: Tekst vises før reservationsformularen
+        reservation_form_text: Tekst vises før reservationsformularen
         payment_provider: Betalingsløsning (For forudbetaling af reservationer)
         person_form: Brugerdefinerede kundefelter
         phone_number: Mobilnummer til underretning

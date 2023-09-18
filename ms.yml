@@ -282,7 +282,7 @@ ms:
         mail_verification_subject: Subjek dalam e-mel pengesahan
         name: Nama syarikat (tertera di laman tempahan)
         new_booking_text: Teks dipaparkan di halaman pengesahan
-        new_user_text: Teks dipaparkan sebelum borang tempahan
+        reservation_form_text: Teks dipaparkan sebelum borang tempahan
         payment_provider: Pembekal pembayaran (Untuk tempahan prabayar)
         person_form: Medan pelanggan tersuai
         phone_number: Nombor telefon untuk pemberitahuan

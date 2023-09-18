@@ -285,7 +285,7 @@ lv:
         mail_verification_subject: Temats verifikācijas e-pastā
         name: Uzņēmuma nosaukums (redzams pierakstīšanās vietnē)
         new_booking_text: Apstiprinājuma lapā redzamais teksts
-        new_user_text: Teksts, kas tiek parādīts pirms pieraksta formas
+        reservation_form_text: Teksts, kas tiek parādīts pirms pieraksta formas
         payment_provider: Maksājumu nodrošinātājs (priekšapmaksas pierakstiem)
         person_form: Pielāgoti klienta lauki
         phone_number: Tālruņa numurs paziņojumiem

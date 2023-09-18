@@ -300,7 +300,7 @@ sv:
         mailer_sender: E-post avsändare
         name: Företagsnamn (visas på bokningssidan)
         new_booking_text: Text som visas på bekräftelsesidan
-        new_user_text: Text som visas före bokningsformulär
+        reservation_form_text: Text som visas före bokningsformulär
         payment_provider: Betalningsleverantör (För förskottsbetalning av bokningar)
         person_form: Anpassade kundfält
         phone_number: Telefonnummer för SMS-avisering

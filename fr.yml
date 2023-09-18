@@ -282,7 +282,7 @@ fr:
         mail_verification_subject: Objet dans l'e-mail de vérification
         name: Nom de l'entreprise (indiqué sur le site de réservation)
         new_booking_text: Texte affiché sur la page de confirmation
-        new_user_text: Texte affiché avant le formulaire de réservation
+        reservation_form_text: Texte affiché avant le formulaire de réservation
         payment_provider: Fournisseur de paiement (pour les réservations prépayées)
         person_form: Champs client personnalisés
         phone_number: Numéro de téléphone pour notification

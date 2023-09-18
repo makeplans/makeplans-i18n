@@ -321,7 +321,7 @@ en:
         mail_verification_subject: Subject in verification email
         name: Company name (shown on the booking site)
         new_booking_text: Text displayed on confirmation page
-        new_user_text: Text displayed before reservation form
+        reservation_form_text: Text displayed before reservation form
         no_availability_text: Text displayed when there is no availability
         payment_provider: Default payment provider
         person_form: Custom customer fields

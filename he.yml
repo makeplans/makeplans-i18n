@@ -283,7 +283,7 @@ he:
         mail_verification_subject: נושא בדוא"ל אימות
         name: שם החברה (מוצג באתר ההזמנה)
         new_booking_text: טקסט המוצג בדף האישור
-        new_user_text: טקסט המוצג לפני טופס ההזמנה
+        reservation_form_text: טקסט המוצג לפני טופס ההזמנה
         payment_provider: ספק תשלומים (להזמנות ששולמו מראש)
         person_form: שדות לקוחות בהתאמה אישית
         phone_number: מספר טלפון להודעה
