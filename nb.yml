@@ -436,10 +436,12 @@ nb:
         mail_modification: Tekst i epost som blir sendt ved endring
         mail_verification: Tekst i epost som blir sendt ved verifisering
         max_slots: Maks antall slotter per reservasjon
+        new_booking_text: Tekst som vises på bekreftelsesiden
         next_interval: Ledig tidspunkt hvert
         payment_required: Krev betaling
         price: Pris inkludert mva.
         published: Synlig på bookingsiden
+        reservation_form_text: Tekst som vises før reservasjonskjema
         same_day: Reservasjon kan ikke gå over flere dager
         sms_cancellation: Tekst i SMS som blir sendt ved kansellering
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
