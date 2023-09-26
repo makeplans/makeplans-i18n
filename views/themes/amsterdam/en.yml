@@ -155,6 +155,9 @@ en:
         powered_by: Scheduling by
         powered_by_title: Appointment booking system, scheduling app and event/class signups with API
         title: Online booking for %{name}
+    locations:
+      index:
+        none_available: None available
     people:
       credit_card_added:
         body: Your card will be processed when the booking is completed. The card details are stored safely with our payment partner Stripe.

@@ -504,6 +504,7 @@ en:
       developer: Developer
       export: Export
       fields: Custom fields
+      locations: Locations
       import: Import
       integrations: Integrations
       message_templates: Message templates
