@@ -718,6 +718,7 @@ en:
         headline: Customers
         send_sms: Send SMS
       show:
+        add_child: Add connected customer
         bookings_for: Reservations for %{name}
         can_book_for: 'Can make bookings for others.'
         card_saved_with:

@@ -82,6 +82,7 @@ nb:
         created_at: registrert
         date_of_birth: fødselsdato
         email: epost
+        locale: språk
         name: navn
         national_id_no: fødselsnummer
         notes: notat
@@ -404,6 +405,7 @@ nb:
         created_at: Registrert
         date_of_birth: Fødselsdato (dd.mm.åååå)
         email: Epost
+        locale: Språk
         name: Navn
         national_id_no: Fødselsnummer (11 siffer)
         notes: Notat

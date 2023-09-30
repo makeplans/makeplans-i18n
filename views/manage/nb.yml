@@ -624,6 +624,7 @@ nb:
           headline: '%{parent} kan booke for disse personene:'
       form:
         block: Blokker kunde for booking
+        booking_site_locale_default: Bruk standard språk på bookingsiden
         managed_by: Denne kunden vil administreres av %{parent}.
         merge_action: Kombiner disse to kundeprofilene
         merge_action_email: Denne e-post adressen er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{email} blir den gjeldene e-post adressen?
@@ -639,8 +640,9 @@ nb:
         headline: Kunder
         send_sms: Send SMS
       show:
+        add_child: Legg til tilknyttet kunde
         bookings_for: Reservasjoner for %{name}
-        can_book_for: 'Kan booke for %{children} andre.'
+        can_book_for: 'Kan booke for %{children} andre'
         card_saved_with:
           stripe: Betalingskort lagret hos Stripe
         change_tfso_customer: Bytt 24SO kundenr.
