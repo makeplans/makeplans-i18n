@@ -55,6 +55,8 @@ en:
         Please see our pricing at https://makeplans.com/en/pricing/
         For our terms please see https://terms.makeplans.com
 
+        Your account: %{subdomain}
+
         Thanks for using MakePlans :D
 
         If you have any questions just reply to this email.
@@ -123,6 +125,8 @@ en:
 
         Just reply to this email and I can follow up.
 
+        Your deactivated account: %{subdomain}.
+
         Regardless; have a good day and thanks for trying out MakePlans.
       subject: 'CRITICAL: MakePlans account deactivated'
     inactive_warning:
@@ -133,7 +137,7 @@ en:
 
         To keep your account please login to %{url}.
 
-        If you are not planning to keep your account then just ignore this email and we will automatically delete your account.
+        If no action is taken we will deactivate your account in one month. Then your account and all your data will be deleted in four months.
 
         Thanks for trying out MakePlans :)
       subject: 'CRITICAL: MakePlans account will be deactivated'
@@ -168,6 +172,8 @@ en:
         Be aware that you will be charged any transactional charges such as SMS as long as your account is active.
 
         When your subscription is paused you can easily reactivate your account in the future.
+
+        Your account: %{subdomain}
 
         If you have trouble getting MakePlans to work for your user case please reply to this email so we can help you configure your account and explain how you can best use MakePlans based on your requirements.
       subject: Your account will be paused

@@ -54,6 +54,7 @@ nb:
         Du har nå aktivert din MakePlans-konto.
         Våre priser finner du her: https://makeplans.com/no/priser/
 
+        Din konto: %{subdomain}
 
         For våre vilkår se https://terms.makeplans.com
 
@@ -129,6 +130,8 @@ nb:
 
         Bare svar på denne eposten så kan jeg følge opp videre.
 
+        Kontoen som ble deaktivert er: %{subdomain}.
+
         Uansett; ha en god dag videre og takk for at du testet ut MakePlans.
       subject: Deaktivert MakePlans-konto
     no_bookings:
@@ -167,6 +170,8 @@ nb:
         Vær oppmerksom på at du vil bli belastet alle transaksjonsgebyrer som SMS så lenge kontoen din er aktiv.
 
         Når abonnementet ditt er satt på pause, kan du enkelt aktivere kontoen din på nytt i fremtiden.
+
+        Din konto: %{subdomain}
 
         Hvis du har problemer med å få MakePlans til å fungere for ditt brukertilfelle, vennligst svar på denne e-posten slik at vi kan hjelpe deg med å konfigurere kontoen din og forklare hvordan du best kan bruke MakePlans basert på dine behov.
       subject: Kontoen din blir satt på pause
