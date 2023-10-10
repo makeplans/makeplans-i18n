@@ -834,6 +834,7 @@ en:
         custom_reservation_form_text_info_html: You can specify a custom text that is displayed before the reservation form for this service. This text will override the default custom reservation form text defined under "Booking site". Documentation can be found at <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>, alternatively contact customer service for assistance.
         custom_reservation_form_text_show: Show custom reservation form text
       form_appointment:
+        account_default: Default account setting
         booking_site_settings: Settings for the booking site
         days: days
         interval_rounding:
@@ -850,7 +851,7 @@ en:
         next_interval_default: According to duration
         offered_by: Offered by the following resources
         payment: Payment
-        price_placeholder: Price not set
+        price_placeholder: 'No price'
         settings:
           hide_all_available: Must select specific resource ('show all available' will be hidden)
           hide_resources: Hide button for selecting resource (will be randomly selected by among available resources)

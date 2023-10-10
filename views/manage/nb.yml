@@ -753,6 +753,7 @@ nb:
         custom_reservation_form_text_info_html: Du kan vise en egendefinert tekst som vises før reservasjonskjema for denne tjenesten. Denne teksten vil overstyre egendefinert tekst som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>, eventuelt kontakt kundeservice for hjelp.
         custom_reservation_form_text_show: Vis egendefinert tekst for reservasjonskjema
       form_appointment:
+        account_default: Standard kontoinnstilling
         booking_site_settings: Innstillinger for bookingsiden
         days: Dager
         interval_rounding:
@@ -769,7 +770,7 @@ nb:
         next_interval_default: Varighet på tjenesten
         offered_by: Tilbys av følgende ressurser
         payment: Betaling
-        price_placeholder: Pris ikke satt
+        price_placeholder: Ingen pris
         settings:
           hide_all_available: Må velge spesifikk ressurs ('vis all ledige' skjules)
           hide_resources: Skjul knappen for å velge ressurs (vilkårlig ledig ressurs blir automatisk valgt)
