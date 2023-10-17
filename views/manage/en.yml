@@ -428,7 +428,7 @@ en:
         info:
           add: Add your email sending domain
           header: Send emails using your own email address
-          info: By default all emails are sent from %{default_email}. For %{price} per month you can use an email address on your own domain. To allow MakePlans to send on your behalf you need to add some DNS records. Please understand that this requires a technical change on your domain and that it allows MakePlans to send using any address on the chosen email. We recommend that you use a subdomain for security reasons, so booking.example.org instead of example.org.
+          info: By default all emails are sent from %{default_email}. For %{price} per month you can use an email address on your own domain. To allow MakePlans to send on your behalf you need to add some DNS records. Please understand that this requires a technical change on your domain and that it allows MakePlans to send using any address on the chosen domain. We recommend that you use a subdomain for security reasons, so booking.example.org instead of example.org.
         new:
           domain: Domain
           header: Add your custom email sending domain
