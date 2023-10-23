@@ -9,6 +9,7 @@ nb:
       free_trial_info: 14-dagers gratis test av fullverdig versjon av MakePlans. Ingen forpliktelser.
       headline: Kom i gang med online timebestilling
       logged_in_as: Du er innlogget som %{name}.
+      newsletter: Jeg godtar å motta produktoppdateringer på epost.
       read_legal: Les vilkår for bruk av tjenesten
       recaptcha: Vi må verifisere din registrering med Google Recaptcha. Skriv inn passordet ditt en gang til og trykk på registrer-knappen igjen.
       subdomain_info: Din unike adresse (URL) hvor dine kunder kan reservere.

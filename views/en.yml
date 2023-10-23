@@ -9,6 +9,7 @@ en:
       free_trial_info: 14 day free trial. No obligations. No credit card required.
       headline: Get started with online booking
       logged_in_as: You are logged in as %{name}.
+      newsletter: I agree to receive product updates via email.
       read_legal: Terms and conditions for usage of this service
       recaptcha: Sorry to trouble you but we have to verify your registration with Google Recaptcha. Please fill in your password again and then submit the form.
       subdomain_info: Your unique address (URL) where your customers can book online.
