@@ -981,7 +981,8 @@ en:
           event: 'IMPORTANT: You will now send to all participants to this event.'
     sms_credits:
       charge:
-        process: Complete purchase.
+        info: Purchase of %{sms_credits} SMS credits.
+        process: Complete purchase
         processing: Please wait...
       index:
         buy: Buy more SMS credits

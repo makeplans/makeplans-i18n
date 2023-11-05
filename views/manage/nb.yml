@@ -899,7 +899,8 @@ nb:
           event: 'OBS: Du vil nå sende til alle påmeldte på dette arrangementet.'
     sms_credits:
       charge:
-        process: Gjennomfør kjøp.
+        info: Kjøp av %{sms_credits} SMS.
+        process: Gjennomfør kjøp
         processing: Vennligst vent...
       index:
         buy: Kjøp flere SMS
