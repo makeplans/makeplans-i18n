@@ -325,7 +325,9 @@ nb:
         mail_confirmation_subject: Tittel i epost som blir sendt ved bekreftelse
         mail_modification: Tekst i epost som blir sendt ved endring
         mail_modification_subject: Tittel i epost som blir sendt ved endring
-        mail_notification_confirmation: Tekst i epost som blir sendt som varsel
+        mail_notification_cancellation: Tekst i epost som blir sendt som varsel ved kansellering
+        mail_notification_confirmation: Tekst i epost som blir sendt som varsel ved bekreftelse
+        mail_notification_modification: Tekst i epost som blir sendt som varsel ved endring
         mail_notification_recipient: Epost-adresser for varsling
         mail_verification: Tekst i epost som blir sendt ved verifisering
         mail_verification_subject: Tittel i epost som blir sendt ved verifisering

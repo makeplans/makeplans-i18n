@@ -315,7 +315,9 @@ en:
         mail_confirmation_subject: Subject in confirmation email
         mail_modification: Text in modification email
         mail_modification_subject: Subject in modification email
-        mail_notification_confirmation: Text in notification email
+        mail_notification_cancellation: Text in cancellation notification email
+        mail_notification_confirmation: Text in confirmation notification email
+        mail_notification_modification: Text in modification notification email
         mail_notification_recipient: Email address(es) for notification
         mail_verification: Text in verification email
         mail_verification_subject: Subject in verification email
