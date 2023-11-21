@@ -49,6 +49,7 @@ nb:
         price_info: 'Pris: %{price}'
         reserve_resource: Reservasjon hos %{resource}.
         select_child: 'Opprett reservasjon for'
+        terms: Vilkår for reservasjon
       no_person:
         body: 'Kontakt oss for mer info. Feil: Kundekobling fjernet.'
         title: Feil
