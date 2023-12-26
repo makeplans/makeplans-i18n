@@ -394,6 +394,7 @@ en:
         country_code: Country
         created_at: Registered at
         date_of_birth: Date of birth (dd.mm.yyyy)
+        deactivated: Deactivated
         email: Email
         name: Name
         national_id_no: National ID number
@@ -483,6 +484,8 @@ en:
       setup:
         skip: Manual setup
         step_html: "<strong>Step %{step}</strong> of %{max_steps}"
+      undelete: Undelete
+      undelete_confirm: Are you sure you want to undelete?
       user:
         new: New user
       view: View

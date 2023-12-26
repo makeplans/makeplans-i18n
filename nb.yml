@@ -406,6 +406,7 @@ nb:
         country_code: Land
         created_at: Registrert
         date_of_birth: Fødselsdato (dd.mm.åååå)
+        deactivated: Deaktivert
         email: Epost
         locale: Språk
         name: Navn
@@ -499,6 +500,8 @@ nb:
       setup:
         skip: Manuelt oppsett
         step_html: "<strong>Steg %{step}</strong> av %{max_steps}"
+      undelete: Gjenopprette
+      undelete_confirm: Er du sikker på at du vil gjenopprette?
       user:
         new: Ny bruker
       view: Vis
