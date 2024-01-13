@@ -411,6 +411,7 @@ nb:
       tools:
         header: Diverse funksjoner for din konto
         link:
+          change_time_zone: Bytt tidssone
           purge_data: Slett gamle data
           sms_all: Send SMS til alle dine kunder
     events:

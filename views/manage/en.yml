@@ -283,6 +283,13 @@ en:
         info: All data in your account will be deleted. Are you sure you want to continue?
         pause: Would you rather set your account on pause? You will not pay a monthly fee and your account will be available when you are ready to use MakePlans again.
         pause_link: You can pause your account on the billing page.
+      change_time_zone:
+        edit:
+          header: Change time zone
+          info: 'NOTE: This function will update times for all bookings and messages based on the new time zone. Use at your own risk.'
+        in_process:
+          header: Time zone change in progress
+          info: All bookings and messages will be updated shortly. Do *not* run this function again.
       configuration:
         header: MakePlans setup
         intro: This is where you can configure MakePlans and how it should work for you. You can add services and categories that you offer on the booking site, adjust availability, change the outgoing messages (SMS and email), add more users and adjust many other settings in MakePlans.
@@ -488,6 +495,7 @@ en:
       tools:
         header: Tools for your account
         link:
+          change_time_zone: Change time zone
           purge_data: Delete old data
           sms_all: Send SMS to all customers
     events:
