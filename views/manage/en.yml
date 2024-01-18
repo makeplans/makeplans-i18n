@@ -498,6 +498,14 @@ en:
           change_time_zone: Change time zone
           purge_data: Delete old data
           sms_all: Send SMS to all customers
+    discount_codes:
+      form:
+        excluded_services: Excluded services
+        included_services: Included services
+        services_info: 'The discount code will be available for all services unless you restrict to specific services below:'
+      index:
+        header: Discount codes
+      show:
     events:
       create_recurring:
         headline: Generating %{count} events...
