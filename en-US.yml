@@ -12,7 +12,7 @@ en-US:
       short_with_name: "%a %-d %b"
       short_with_name_and_year: "%a %-d %b %Y"
     moment_format: MM/DD/YYYY
-    moment_parse: M/D/YYYY
+    moment_parse: MM/DD/YYYY
   helpers:
     label:
       person:

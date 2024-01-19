@@ -108,7 +108,7 @@ pl:
       short_with_name: "%a %e %b"
       short_with_name_and_year: "%a %e %b %Y"
     moment_format: DD.MM.YYYY
-    moment_parse: D.M.YYYY
+    moment_parse: DD.MM.YYYY
   errors:
     messages:
       no_values_present: Wymagane jest imię i nazwisko, numer telefonu lub adres e-mail.
