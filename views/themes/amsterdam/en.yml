@@ -93,6 +93,7 @@ en:
         cancel_confirmation: Are you sure you want to cancel this reservation?
         invoiced: You have been invoiced.
         paid: You have prepaid %{paid_amount}.
+        price: The price of the booking is %{amount}.
         remember_me: Do you want us to remember you on this machine using a cookie?
         title: Your reservation is confirmed!
       sms_code:
