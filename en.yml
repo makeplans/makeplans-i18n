@@ -8,7 +8,7 @@ en:
         booked_by_person_id: booked by
         count: count
         event_id: event
-        notes: comments
+        notes: notes
         person: customer
         person_id: customer
         resource: resource
