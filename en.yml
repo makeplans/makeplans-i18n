@@ -7,6 +7,7 @@ en:
         booked_to: to
         booked_by_person_id: booked by
         count: count
+        coupon_code: coupon code
         event_id: event
         notes: notes
         person: customer
@@ -253,6 +254,7 @@ en:
         booked_from: Booked from
         booked_to: Booked to
         count: Number of people
+        coupon_code: Coupon code
         external_id: External ID
         invoiced_at: Invoiced
         notes: Notes
@@ -507,7 +509,7 @@ en:
       communication: Communication
       company: Account
       developer: Developer
-      discount_codes: Discount codes
+      coupons: Coupons
       export: Export
       fields: Custom fields
       import: Import
