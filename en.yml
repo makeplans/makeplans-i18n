@@ -45,6 +45,9 @@ en:
         admin: full access
         manager: basic setup
         staff: only calendar
+      coupon/value_type:
+        amount: amount
+        percentage: percentage
       event:
         booking_capacity: maximum people allowed per booking
         capacity: maximum people allowed
@@ -164,6 +167,7 @@ en:
     models:
       booking: appointment
       category: category
+      coupon: coupon
       event: event
       external_credential: integration
       message_template: message template
@@ -360,6 +364,14 @@ en:
         admin: Full access
         manager: Basic setup
         staff: Only calendar
+      coupon:
+        code: Code
+        value_type: Discount type
+        value: Discount value
+        title: Title
+        active: Active
+        valid_from: Valid from
+        valid_until: Valid until
       event:
         all_day: All day
         allow_invoice: allow invoice
@@ -468,6 +480,8 @@ en:
       category:
         new: New category
       confirm: Are you sure?
+      coupon:
+        new: New coupon
       create: Create
       delete: Delete
       delete_confirm: Are you sure you want to delete?

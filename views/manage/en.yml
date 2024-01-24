@@ -505,7 +505,6 @@ en:
         services_info: 'The coupon code will be available for all services unless you restrict to specific services below:'
       index:
         header: Coupon codes
-      show:
     events:
       create_recurring:
         headline: Generating %{count} events...

@@ -414,6 +414,13 @@ nb:
           change_time_zone: Bytt tidssone
           purge_data: Slett gamle data
           sms_all: Send SMS til alle dine kunder
+    coupons:
+      form:
+        excluded_services: Eksluderte tjenester
+        included_services: Inkluderte tjenester
+        services_info: 'Rabbattkoden vil bli tilgjengelig for alle tjenester med mindre du begrenser bruk til tjenester nedenfor:'
+      index:
+        header: Rabattkoder
     events:
       create_recurring:
         headline: Genererer %{count} arrangementer...

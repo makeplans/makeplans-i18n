@@ -49,6 +49,9 @@ nb:
         admin: full tilgang
         manager: enkelt oppsett
         staff: kun kalender
+      coupon/value_type:
+        amount: beløp
+        percentage: prosent
       event:
         booking_capacity: maks antall deltagere per reservasjon
         capacity: maks antall deltagere
@@ -168,6 +171,7 @@ nb:
     models:
       booking: reservasjon
       category: kategori
+      coupon: rabattkode
       event: arrangement
       external_credential: integrasjon
       message_template: meldingsmal
@@ -369,6 +373,14 @@ nb:
         admin: Full tilgang
         manager: Enkelt oppsett
         staff: Kun kalendar
+      coupon:
+        code: Kode
+        value_type: Rabatttype
+        value: Rabattverdi
+        title: Tittel
+        active: Aktiv
+        valid_from: Gyldig fra
+        valid_until: Gyldig til
       event:
         all_day: Hele dagen
         allow_invoice: Kan betales med faktura
@@ -480,6 +492,8 @@ nb:
       category:
         new: Ny kategori
       confirm: Er du sikker?
+      coupon:
+        new: Ny rabattkode
       create: Opprett
       delete: Slett
       delete_confirm: Er du sikker på at du vil slette?
@@ -522,6 +536,7 @@ nb:
       categories: Kategorier
       communication: Kommunikasjon
       company: Konto
+      coupons: Rabattkoder
       developer: Utvikler
       export: Eksport
       fields: Egendefinerte felter
