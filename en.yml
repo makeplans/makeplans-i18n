@@ -39,6 +39,7 @@ en:
         mailer_sender: email sender address
         phone_number: phone number
         purge_data_period: automatic delete period
+        sms_notification_recipient: phone number(s) for notification
       client_user_link:
         role: access level
       client_user_link/role:
@@ -92,7 +93,7 @@ en:
       resource:
         capacity: capacity
         mail_notification_recipient: email address(es) for notification
-        sms_notification_recipient: phone number for notification
+        sms_notification_recipient: phone number(s) for notification
         title: title
       service:
         allow_invoice: allow invoice
@@ -349,7 +350,7 @@ en:
         sms_confirmation: Text in confirmation SMS
         sms_modification: Text in modification SMS
         sms_notification: Receive SMS for each new reservation
-        sms_notification_recipient: Phone number for notification
+        sms_notification_recipient: Phone number(s) for notification
         sms_reminder: Text in SMS reminder
         sms_reminder_time: Time for SMS reminder
         sms_verification: Text in verification SMS
@@ -423,7 +424,7 @@ en:
       resource:
         capacity: Max number of reservations at the same time
         mail_notification_recipient: Email address(es) for notification
-        sms_notification_recipient: Phone number for notification
+        sms_notification_recipient: Phone number(s) for notification
         title: Title
       service:
         allow_invoice: Allow invoice
