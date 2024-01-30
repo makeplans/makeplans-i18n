@@ -196,7 +196,7 @@ nb:
       short_with_name: "%a %-d. %b"
       short_with_name_and_year: "%a %-d. %b %Y"
     moment_format: DD.MM.YYYY
-    moment_parse: D.M.YYYY
+    moment_parse: DD.MM.YYYY
     moment_parse_visual: DD.MM.ÅÅÅÅ
   errors:
     messages:
