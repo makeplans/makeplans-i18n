@@ -333,7 +333,7 @@ en:
         no_availability_text: Text displayed when there is no availability
         payment_provider: Default payment provider
         person_form: Custom customer fields
-        phone_number: Phone number for notification
+        phone_number: Phone number
         public_access: The booking site is available to the public
         purge_data_period: Automatic deletion of personal identifiable information
         reminder_sms: Send SMS reminders

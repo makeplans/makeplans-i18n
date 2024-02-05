@@ -342,7 +342,7 @@ nb:
         no_availability_text: Tekst som vises når det ikke er ledige tidspunkt
         payment_provider: Standard betalingsløsning
         person_form: Egendefinerte kundefelter
-        phone_number: Mobilnummer for varsling
+        phone_number: Telefonnummer
         public_access: Bookingsiden er offentlig tilgjengelig
         purge_data_period: Automatisk sletting av personopplysninger
         reminder_sms: Send påminnelse på SMS
