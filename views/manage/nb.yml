@@ -183,6 +183,12 @@ nb:
           pay: Motta betaling med iZettle
           progress_link: Trykk her for å fortsette.
         log: Historikk
+        message:
+          enqueued: venter
+          failed: feilet
+          sent: sendt
+          state: status
+        messages: Meldinger
         paid_with:
           braintree: Betalt med Braintree
           stripe: Betalt med Stripe

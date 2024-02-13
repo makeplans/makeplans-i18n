@@ -183,6 +183,12 @@ en:
           pay: Receive payment with iZettle
           progress_link: Click here to continue.
         log: Log
+        message:
+          enqueued: enqueued
+          failed: failed
+          sent: sent
+          state: state
+        messages: Messages
         paid_with:
           braintree: Paid with Braintree
           stripe: Paid with Stripe
