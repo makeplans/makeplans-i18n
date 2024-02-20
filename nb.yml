@@ -438,6 +438,7 @@ nb:
         title: Tittel
       service:
         allow_invoice: Kan betales med faktura
+        block_resource: Reservasjon blokkerer ressursen
         booking_capacity: Maks antall personer per reservasjon
         booking_form: Egendefinert reservasjonskjema
         capacity: Maks antall deltagere

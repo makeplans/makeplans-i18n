@@ -428,6 +428,7 @@ en:
         title: Title
       service:
         allow_invoice: Allow invoice
+        block_resource: Reservation will block resource
         booking_capacity: Max number of people per reservation
         booking_form: Custom reservation form
         capacity: Max number of attendants
