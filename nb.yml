@@ -354,6 +354,7 @@ nb:
           time_day_available: Dag
           week_available: Hele uken
           weekday_available: Ukedager
+          list: List
         sms_cancellation: Tekst i SMS som blir sendt ved kansellering
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
         sms_modification: Tekst i SMS som blir sendt ved endring
@@ -472,6 +473,7 @@ nb:
           time_day_available: Dag
           week_available: Hele uken
           weekday_available: Ukedager
+          list: Liste
         title: Tittel
       user:
         current_password: Nåværende passord

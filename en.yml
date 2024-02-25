@@ -346,6 +346,7 @@ en:
           time_day_available: Day
           week_available: All week
           weekday_available: Weekdays
+          list: List
         sms_cancellation: Text in cancellation SMS
         sms_confirmation: Text in confirmation SMS
         sms_modification: Text in modification SMS
@@ -462,6 +463,7 @@ en:
           time_day_available: Day
           week_available: All week
           weekday_available: Weekdays
+          list: List
         title: Title
       user:
         current_password: Current password
