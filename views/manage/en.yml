@@ -264,6 +264,8 @@ en:
       show:
         custom_data: 'Custom data:'
         has_services: 'Shows these services:'
+        qr_code: QR code for customers
+        show_on_booking_site: Open service on booking site
     client:
       addons:
         header: Addons
@@ -488,6 +490,7 @@ en:
         booking_site_info_html: Your booking site is available at %{url}.
         generate_booking_button: Generate booking button for your website
         header: Promote your booking site
+        qr_code: QR code
       sms_sender:
         show:
           add_custom_sender: Do you want to use a custom SMS sender ID?
@@ -538,6 +541,7 @@ en:
         email_confirm: Attendance list will be emailed to you. Do you want to continue?
         fully_booked: The event is fully booked
         recurring_member: This event is part of a repeating pattern.
+        qr_code: QR code for customers
         send_email_to_all: Email all attendants
         send_sms: Send SMS
         show_in_calendar: Show in calendar
@@ -918,6 +922,7 @@ en:
         not_in_category: You are using categories on the booking site and this service is not linked to a category. As a result this service is at the moment not visible on the booking site. Click here to manage your categories.
         offered: 'Offered by the following resources:'
         price: 'Price:'
+        qr_code: QR code for customers
         show_on_booking_site: Open service on booking site
       slots:
         available: 'Available slots:'
