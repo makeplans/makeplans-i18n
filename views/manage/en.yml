@@ -515,6 +515,8 @@ en:
       index:
         header: Coupon codes
     events:
+      check_in:
+        check_in: Check in
       create_recurring:
         headline: Generating %{count} events...
         link: Show list

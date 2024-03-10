@@ -428,6 +428,8 @@ nb:
       index:
         header: Rabattkoder
     events:
+      check_in:
+        check_in: Sjekk inn
       create_recurring:
         headline: Genererer %{count} arrangementer...
         link: Vis liste
