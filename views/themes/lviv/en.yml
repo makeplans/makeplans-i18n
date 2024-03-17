@@ -1,0 +1,11 @@
+---
+en:
+  lviv:
+    layouts:
+      application:
+        booking_site_footer: Booking site for %{name}
+        title: Online booking for %{name}
+    services:
+      slots:
+        next_available_date_html: Next available date is %{next_available_date}
+        no_availability: No availability on selected date. Please try another date.
