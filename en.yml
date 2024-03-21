@@ -40,6 +40,9 @@ en:
         phone_number: phone number
         purge_data_period: automatic delete period
         sms_notification_recipient: phone number(s) for notification
+      client/slot_generation:
+        dynamic: dynamic (recommended)
+        fixed: fixed
       client_user_link:
         role: access level
       client_user_link/role:
@@ -347,6 +350,7 @@ en:
           week_available: All week
           weekday_available: Weekdays
           list: List
+        slot_generation: Generation of available slots
         sms_cancellation: Text in cancellation SMS
         sms_confirmation: Text in confirmation SMS
         sms_modification: Text in modification SMS

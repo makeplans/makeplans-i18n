@@ -43,6 +43,9 @@ nb:
         phone_number: telefonnummer
         purge_data_period: automatisk sletteperiode
         terms: vilkår
+      client/slot_generation:
+          dynamic: dynamisk (anbefales)
+          fixed: fastsatt
       client_user_link:
         role: tilgangsnivå
       client_user_link/role:
@@ -355,6 +358,7 @@ nb:
           week_available: Hele uken
           weekday_available: Ukedager
           list: List
+        slot_generation: Generering av tidspunkt
         sms_cancellation: Tekst i SMS som blir sendt ved kansellering
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
         sms_modification: Tekst i SMS som blir sendt ved endring
