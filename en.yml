@@ -41,8 +41,8 @@ en:
         purge_data_period: automatic delete period
         sms_notification_recipient: phone number(s) for notification
       client/slot_generation:
-        dynamic: dynamic (recommended)
-        fixed: fixed
+        dynamic: Dynamic (recommended)
+        fixed: Fixed
       client_user_link:
         role: access level
       client_user_link/role:
@@ -345,11 +345,6 @@ en:
         resource_form: Custom resource fields
         service_form: Custom service fields
         service_template: Calendar style
-        service_templates:
-          time_day_available: Day
-          week_available: All week
-          weekday_available: Weekdays
-          list: List
         slot_generation: Generation of available slots
         sms_cancellation: Text in cancellation SMS
         sms_confirmation: Text in confirmation SMS
@@ -361,6 +356,10 @@ en:
         sms_verification: Text in verification SMS
         subdomain: URL (subdomain)
         template: Design theme
+        templates:
+          amsterdam: Amsterdam
+          lviv: Lviv (beta)
+          timisoara: Timisoara (beta)
         terms: Terms and conditions
         time_zone: Timezone
         verification_method: Verification method for new reservations
