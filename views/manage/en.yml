@@ -364,6 +364,7 @@ en:
         ical: iCalendar
         header: Modify outgoing comminication
         mailer_sender_valid_domain: You have validated %{domain} and MakePlans will send emails on that domain on your behalf. Other email addresses will be specified as reply-to.
+        message_template_info: This is the built-in legacy messages. For multiple message support and more control please use the message tenplate feature.
         settings:
           custom_email_sending: Completely override emails with content below (otherwise content is just inserted in standard email)
           custom_sms_sending: Completely override SMS with content below (otherwise content is just inserted in standard SMS)
@@ -397,12 +398,13 @@ en:
         default_reminder_sms: Automatic based on setting for sending reminder
         disable: Deactivate
         header: Customer notifications
+        message_template_info: This is the built-in legacy reminder. For multiple reminders and more control please use the message tenplate feature.
         modification_email: Send email when modifying reservation
         modification_sms: Send SMS when modifying reservation
         outgoing_messages_info: 'MakePlans will suggest to send email/SMS (whatever you set up as verification method) when you create, modify or cancel a reservation. Some messages such as cancellation occurs automatically. You can deactivate automatic messages (for example when moving a reservation by dragging it in the calendar, cancellation or creating a new reservation using the API) or deactivate suggestion to send messages in the form by changing the settings below. Note: This does not apply to the booking site. The booking site will always automatically send messages based on your verificaiton method.'
         reminder_sms: Send reminder SMS
-        reminder_sms_info: The sender name is 'MakePlans'. Contact customer service to change the sender name.
-        sms_reminder_time_info: 'SMS is sent out at noon the day before the reservation. If you want to change this please modify the field below. Example: ''two hours before'' (SMS is sent out two hours before the reservation) or ''8am yesterday'' (the reminder SMS will be sent at 8am the day before the reservation)'
+        reminder_sms_info: The default sender name is 'MakePlans'. Go to 'Addons' to change the sender name.
+        sms_reminder_time_info: 'The reminder SMS is by default sent out at noon the day before the reservation. If you want to change this please modify the field below. Example: ''two hours before'' (SMS is sent out two hours before the reservation) or ''8am yesterday'' (the reminder SMS will be sent at 8am the day before the reservation)'
       edit_user_notifications:
         approvement_email: Email notification for new reservation requests
         approvement_sms: SMS notification for new reservation requests
