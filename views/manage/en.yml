@@ -432,6 +432,8 @@ en:
           calendar_slot_duration: Slot duration
           calendar_slot_label_interval: Slot label interval
           resource_title: Custom resource title
+          service_appointment_title: Custom service title
+          service_attendance_title: Custom event type title
       email_sender:
         create:
           header: We are processing your request
