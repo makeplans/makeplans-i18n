@@ -246,8 +246,8 @@ en:
           phone_number: Phone number
       widget_list:
         busy: Busy
-        no_bookings: No existing reservation on %{start}
-        no_bookings_range: No existing reservations from %{start} to %{end}
+        no_bookings: No existing reservation on %{start}.
+        no_bookings_range: No existing reservations from %{start} to %{end}.
     categories:
       blank:
         get_started: Currently you have not created any categories. All services are therefore in a list on the bookingsite. If you want to categorise your services start by creating a category.
