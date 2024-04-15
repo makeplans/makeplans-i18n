@@ -47,6 +47,7 @@ If you want to use English in the admin system but would like to use your local 
 
 * Chezh (cz)
 * Dutch (nl)
+* Italian (it)
 * Polish (pl)
 * Slovenian (sl)
 
