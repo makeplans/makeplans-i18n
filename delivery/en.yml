@@ -90,11 +90,11 @@ en:
       booking_type_attendance: |-
         Signup changed for {{ booking.event.full_title }} {{ booking.time_range }} by {{ booking.person.name }}.
         MakePlans
-    cancellation: Your reservation on {{ booking.time_range }} has been cancelled.
-    confirmation: You have made a reservation for {{ booking.title }} {{ booking.time_range }}.
-    declined: Your request for reservation of {{ booking.title }} {{ booking.time_range }} was not approved. Please try again.
-    modification: 'Your reservation has been modified: {{ booking.title }} {{ booking.time_range }}.'
-    reminder: 'Reminder: Reservation {% if booking.service != nil %}of {{ booking.title }} {% endif %}{{ booking.time_range }}.'
+    cancellation: Your reservation on {{ booking.booked_from }} has been cancelled.
+    confirmation: You have made a reservation for {{ booking.title }} {{ booking.booked_from }}.
+    declined: Your request for reservation of {{ booking.title }} {{ booking.booked_from }} was not approved. Please try again.
+    modification: 'Your reservation has been modified: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Reminder: Reservation {% if booking.service != nil %}of {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
     request_card: Please add your payment info at %{url}
     signature: |2-
 

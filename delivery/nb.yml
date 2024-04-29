@@ -90,11 +90,11 @@ nb:
       booking_type_attendance: |-
         Endring av påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
         MakePlans
-    cancellation: Din reservasjon hos oss {{ booking.time_range }} har blitt kansellert.
-    confirmation: Du har reservert {{ booking.title }} {{ booking.time_range }}.
-    declined: Din forespørsel for reservasjon av {{ booking.title }} {{ booking.time_range }} ble dessverre ikke godkjent. Prøv et annet tidspunkt.
-    modification: 'Din reservasjon hos oss har blitt endret: {{ booking.title }} {{ booking.time_range }}.'
-    reminder: 'Påminnelse: Reservasjon {% if booking.service != nil %}av {{ booking.title }} {% endif %}{{ booking.time_range }}.'
+    cancellation: Din reservasjon hos oss {{ booking.booked_from }} har blitt kansellert.
+    confirmation: Du har reservert {{ booking.title }} {{ booking.booked_from }}.
+    declined: Din forespørsel for reservasjon av {{ booking.title }} {{ booking.booked_from }} ble dessverre ikke godkjent. Prøv et annet tidspunkt.
+    modification: 'Din reservasjon hos oss har blitt endret: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Påminnelse: Reservasjon {% if booking.service != nil %}av {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
     request_card: 'Du kan registrere din betalingsinformasjon her: %{url}'
     signature: |2-
 
