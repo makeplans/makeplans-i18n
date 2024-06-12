@@ -57,6 +57,7 @@ nb:
         percentage: prosent
       event:
         booking_capacity: maks antall deltagere per reservasjon
+        booking_minimum: min antall deltagere per reservasjon
         capacity: maks antall deltagere
         description: beskrivelse
         ends_at: avslutningtidspunkt
@@ -128,6 +129,7 @@ nb:
           attributes:
             count:
               over_booking_capacity: Mer enn maks antall personer
+              below_minimum_count: Mindre enn påkrevd antall personer
             event_id:
               time_not_available: er fullt
             person_id:
@@ -390,6 +392,7 @@ nb:
         all_day: Hele dagen
         allow_invoice: Kan betales med faktura
         booking_capacity: Maks antall deltagere per reservasjon
+        booking_minimum: Min antall deltagere per reservasjon
         capacity: Maks antall deltagere
         description: Beskrivelse
         ends_at: Slutter
@@ -445,6 +448,7 @@ nb:
         allow_invoice: Kan betales med faktura
         block_resource: Reservasjon blokkerer ressursen
         booking_capacity: Maks antall personer per reservasjon
+        booking_minimum: Min antall personer per reservasjon
         booking_form: Egendefinert reservasjonskjema
         capacity: Maks antall deltagere
         description: Beskrivelse

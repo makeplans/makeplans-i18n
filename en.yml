@@ -54,6 +54,7 @@ en:
         percentage: percentage
       event:
         booking_capacity: maximum people allowed per booking
+        booking_minimum: minimum people required per booking
         capacity: maximum people allowed
         description: description
         ends_at: ends at
@@ -123,6 +124,7 @@ en:
           attributes:
             count:
               over_booking_capacity: More than maximum people allowed per booking
+              below_minimum_count: Less than minimum required people per booking
             event_id:
               time_not_available: is fully booked
             person_id:
@@ -381,6 +383,7 @@ en:
         all_day: All day
         allow_invoice: allow invoice
         booking_capacity: Max nr of attendants per booking
+        booking_minimum: Min nr of attendants required per booking
         capacity: Max nr of attendants
         description: Description
         ends_at: Ends at
@@ -435,6 +438,7 @@ en:
         block_resource: Reservation will block resource
         booking_capacity: Max number of people per reservation
         booking_form: Custom reservation form
+        booking_minimum: Min number of people required per booking
         capacity: Max number of attendants
         description: Description
         has_day_booking: Time type
