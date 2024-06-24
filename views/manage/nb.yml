@@ -782,7 +782,7 @@ nb:
           ten: Nærmeste tiende minutt
           twenty: Nærmeste tyvende minutt
         max_slots_default: Ubegrenset
-        minutes: Minutter
+        minutes: minutter
         next_interval_default: Varighet på tjenesten
         offered_by: Tilbys av følgende ressurser
         payment: Betaling
