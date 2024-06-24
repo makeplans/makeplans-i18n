@@ -1,10 +1,19 @@
 ---
 en:
   lviv:
+    categories:
+      index:
+        title: 'Select category'
     layouts:
       application:
         booking_site_footer: Booking site for %{name}
         title: Online booking for %{name}
+    person_sessions:
+      perishable_token_action_required:
+        delivery_error: We were unable to email you. Are you sure you entered the correct email address?
+        delivery_not_processed: We are currently experincing some delays in our systems. Please wait while we are deliving your email.
+        body: We have sent an email to %{recipient}. Follow it to verify your booking. It helps us make sure you’re not a robot.
+        title: Please confirm your email address
     services:
       slots:
         next_available_date_html: Next available date is %{next_available_date}
