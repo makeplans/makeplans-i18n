@@ -102,6 +102,7 @@ sv:
         completed: Klart!
         hotstepper: Steg %{step} av %{steps}
         next_confirm: 'Nästa: Bekräftelse'
+        next_form: 'Nästa: Fyll i formuläret'
         next_payment: Betala
         next_time: 'Nästa: Välj en tid'
         next_verify: Bekräfta bokning
