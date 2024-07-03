@@ -170,6 +170,7 @@ en:
         info_html: You are not registered as a customer. Complete <a href="/">a booking</a> first.
       perishable_token_action_required:
         info_html: We have sent you an email. Please click on the link to log in.
+        title: Verify your email address
       perishable_token_form:
         not_available_for_this_verification_method: Not available.
         submit: Receive code

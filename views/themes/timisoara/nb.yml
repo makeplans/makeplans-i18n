@@ -1,0 +1,75 @@
+---
+en:
+  timisoara:
+    bookings:
+      authenticate:
+        info: We need information to verify your reservation of
+        submit: Send code
+        title: Phone number authentication
+      new:
+        accept: Jeg godkjenner
+        submit: Bestill
+        terms: vilkår for reservasjonen
+        title: Booking av %{service}
+      payment_stripe:
+        title: Betaling
+      pre_payment:
+        info: For å gjennomføre reservasjon av %{service} %{booking} må du forhåndsbetale.
+        submit: Til betaling
+        title: Betaling
+      show:
+        all: See mine andre reservasjoner
+        add_to_calendar: Legg til i kalender
+        new_reservation: Opprett en ny reservasjon
+        info: 'Reservasjonen av %{title} %{time} er bekreftet.'
+        title: Din reservasjon er bekreftet.
+      verification_method_email:
+        info: Du må verifisere din epost-adresse for å gjennomføre reservasjonen.
+        submit: Fortsett
+        title: Verifiser din epost-adresse
+    layouts:
+      application:
+        login: Login
+        profile: Profil
+        booking_site_footer: Bookingside for %{name}
+        made_by_title: Timebestilling og påmeldinger
+        made_by_tagline: Brukervennlig system for Timebestilling og påmelding.
+        privacy: Personvernpolicy
+        support: Kundeservice
+        title: Timebestilling for %{name}
+    categories:
+      index:
+        all_categories: Alle kategorier
+        select_category: Velg kategori
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Code
+        info_html: "We’ve sent a <b>SMS to %{phone_number}</b>
+            with a verification code. Please enter the code to verify your
+            information. This step is mandatory to complete the reservation."
+        submit: Continue
+        title: Verify your reservation
+      perishable_token_form:
+        submit: Send code
+        title: Login
+    profile:
+      index:
+        tabs:
+          all: Alle
+          upcoming: Fremtidige
+          completed: Utførte
+          cancelled: Kansellerte
+        title: Mine reservasjoner
+    services:
+      index:
+        all_categories: Alle kategorier
+        all_services: Alle tjenester
+        continue: Book denne tjenesten
+      slots:
+        all_services: Alle tjenester
+        availability: Tilgjengelighet
+        available_dates: Ledige datoer
+        available_slots: Ledige tidspunkt
+        continue: Fortsett
+        next_available_date_html: Neste ledige dato er %{next_available_date}
+        no_availability: Ingen tilgjengelige tidspunkt

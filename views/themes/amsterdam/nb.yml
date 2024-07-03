@@ -176,6 +176,7 @@ nb:
         info_html: Du er ikke registrert som kunde. For å bli kunde må du <a href="/">gjennomføre en booking</a>.
       perishable_token_action_required:
         info_html: Vi har sendt deg en epost. Klikk på linken for å logge inn.
+        title: Verifiser din epost-adresse
       perishable_token_form:
         not_available_for_this_verification_method: Ikke tilgjengelig
         submit: Motta kode
