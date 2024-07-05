@@ -6,12 +6,27 @@ en:
         info: We need information to verify your reservation of
         submit: Send code
         title: Phone number authentication
+      new:
+        accept: I approve
+        submit: Complete booking
+        terms: terms for the reservation
+        title: Reservation of %{service}
+      payment_stripe:
+        title: Payment
+      pre_payment:
+        info: To complete the reservation of %{service} %{booking} you have to make a payment.
+        submit: To payment
+        title: Payment
       show:
         all: View my other reservations
         add_to_calendar: Add this booking to my calendar
         new_reservation: Make another reservation
         info: 'The booking for %{title} %{time} is confirmed.'
         title: Your Reservation is Confirmed!
+      verification_method_email:
+        info: You have to verify your email address to complete your reservation.
+        submit: Continue
+        title: Verify your email address
     layouts:
       application:
         login: Login
