@@ -6,6 +6,10 @@ en:
         info: We need information to verify your reservation of
         submit: Send code
         title: Phone number authentication
+      cancelled:
+        info: 'The booking for %{title} %{time} was cancelled.'
+        title: Your reservation was cancelled
+        update_calendar: 'Update my calendar'
       new:
         accept: I approve
         submit: Complete booking
@@ -62,9 +66,15 @@ en:
         title: My reservations
     services:
       index:
+        all_categories: All categories
+        all_services: All services
+        continue: Make a booking
+      show:
         all_services: All services
         continue: Make a booking
       slots:
+        all_services: All services
+        availability: Availability
         available_dates: Available dates
         available_slots: Available times
         continue: Continue
