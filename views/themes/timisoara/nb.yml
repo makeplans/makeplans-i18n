@@ -1,5 +1,5 @@
 ---
-en:
+nb:
   timisoara:
     bookings:
       authenticate:
@@ -10,7 +10,7 @@ en:
         accept: Jeg godkjenner
         submit: Bestill
         terms: vilkår for reservasjonen
-        title: Booking av %{service}
+        title: Reservasjon av %{service}
       payment_stripe:
         title: Betaling
       pre_payment:
