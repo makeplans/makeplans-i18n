@@ -31,6 +31,10 @@ en:
         info: You have to verify your email address to complete your reservation.
         submit: Continue
         title: Verify your email address
+      verification_method_sms:
+        info: You have to verify your phone number to complete your reservation.
+        submit: Continue
+        title: Verify your phone number
     layouts:
       application:
         login: Login

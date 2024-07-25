@@ -27,6 +27,10 @@ nb:
         info: Du må verifisere din epost-adresse for å gjennomføre reservasjonen.
         submit: Fortsett
         title: Verifiser din epost-adresse
+      verification_method_sms:
+        info: Du må verifisere ditt telefonnummer for å gjennomføre reservasjonen.
+        submit: Fortsett
+        title: Verifiser ditt telefonnummer
     layouts:
       application:
         login: Login
