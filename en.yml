@@ -382,7 +382,7 @@ en:
       event:
         all_day: All day
         allow_invoice: allow invoice
-        booking_capacity: Max nr of attendants per booking
+        booking_capacity: Max nr of attendants allowed per booking
         booking_minimum: Min nr of attendants required per booking
         capacity: Max nr of attendants
         description: Description
@@ -436,7 +436,7 @@ en:
       service:
         allow_invoice: Allow invoice
         block_resource: Reservation will block resource
-        booking_capacity: Max number of people per reservation
+        booking_capacity: Max number of people allowed per reservation
         booking_form: Custom reservation form
         booking_minimum: Min number of people required per booking
         capacity: Max number of attendants
