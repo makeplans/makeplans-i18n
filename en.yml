@@ -197,6 +197,11 @@ en:
       short_with_name_and_year: "%a %e %b %Y"
     moment_format: DD.MM.YYYY
     moment_parse: DD.MM.YYYY
+  datetime:
+    distance_in_words:
+      x_hours:
+        one: "1 hour"
+        other: "%{count} hours"
   errors:
     messages:
       no_values_present: Name, phone number or email is required.

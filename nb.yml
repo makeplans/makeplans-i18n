@@ -203,6 +203,11 @@ nb:
     moment_format: DD.MM.YYYY
     moment_parse: DD.MM.YYYY
     moment_parse_visual: DD.MM.ÅÅÅÅ
+  datetime:
+    distance_in_words:
+      x_hours:
+        one: "1 time"
+        other: "%{count} timer"
   errors:
     messages:
       no_values_present: Navn, telefonnummer eller epost er påkrevd.
