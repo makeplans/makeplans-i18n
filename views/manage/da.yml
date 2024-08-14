@@ -464,11 +464,6 @@ da:
         api_key: API-nøgle
         connect_info: 'Vælg e-mail-liste, hvor nye kunder tilføjes som abonnement:'
         list_id: Liste-ID
-      confrere:
-        client_id: Klient-id
-        client_secret: Klienthemmelighed
-        connect_info: Forbundet til Confrere
-        setup_info: En ressource i MakePlans skal være forbundet til en bruger i Confrere for at integrationen skal fungere.
       connect_error: Integrationen kunne ikke gennemføres. Prøv at slette, og prøv igen.
       connected: Denne tjeneste er forbundet.
       dokus:
@@ -680,7 +675,6 @@ da:
       form:
         availability: Standard tilgængelighed
         external_info:
-          confrere_user_id: Brug brugeren
           zoom_user_id: Zoom bruger
         from: fra
         mail_notification_info: For at sende alarmer til flere personer skal du bruge semikolon til at adskille e-mail-adresser.

@@ -456,11 +456,6 @@ ru:
         api_key: API-ключ
         connect_info: 'Выберите список рассылки, в который добавляются новые клиенты в качестве подписчиков:'
         list_id: ID списка
-      confrere:
-        client_id: ID клиента
-        client_secret: Секрет клиента
-        connect_info: Подключено к Confrere
-        setup_info: Для работы интеграции ресурс в MakePlans должен быть подключен к пользователю в Confrere.
       connect_error: Невозможно завершить интеграцию. Удалите интеграцию и попробуйте еще раз.
       connected: Эта услуга подключена.
       dokus:
@@ -669,7 +664,6 @@ ru:
       form:
         availability: Доступность по умолчанию
         external_info:
-          confrere_user_id: Пользователь Confrere
           zoom_user_id: Пользователь Zoom
         from: из
         mail_notification_info: Чтобы уведомить более одного человека, используйте точку с запятой для разделения адресов электронной почты.

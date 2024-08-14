@@ -456,11 +456,6 @@ lv:
         api_key: API atslēga
         connect_info: 'Atlasiet adresātu sarakstu, kur jauni klienti tiek pievienoti kā apakšsūķētāji:'
         list_id: Saraksta ID
-      confrere:
-        client_id: Klienta ID
-        client_secret: Klienta noslēpums
-        connect_info: Savienots ar Confrere
-        setup_info: Lai integrācija darbotos, MakePlans resursam jābūt savienotam ar Conferere lietotāju.
       connect_error: Nevar pabeigt integrāciju. Lūdzu, izdzēsiet integrāciju un mēģiniet vēlreiz.
       connected: Šis pakalpojums ir savienots.
       dokus:
@@ -669,7 +664,6 @@ lv:
       form:
         availability: Noklusējuma pieejamība
         external_info:
-          confrere_user_id: Piešķirt lietotāju
           zoom_user_id: Tālummaiņas lietotājs
         from: 'no'
         mail_notification_info: Lai paziņotu vairāk nekā vienai personai, lūdzu, izmantojiet semikolu, lai nošķirtu e-pasta adreses.

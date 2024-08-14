@@ -499,11 +499,6 @@ nb:
         api_key: API-key
         connect_info: 'Velg epost-liste hvor nye kunder blir lagt til som abbonnement:'
         list_id: List ID
-      confrere:
-        client_id: Client ID
-        client_secret: Client Secret
-        connect_info: Koblet til Confrere
-        setup_info: Ressurs i MakePlans må være koblet mot en bruker i Confrere for at integrasjonen skal fungere.
       connect_error: Fikk ikke fullført integrasjonen. Prøv å slette og prøv på nytt.
       connected: Denne tjenesten er tilkoblet.
       dokus:
@@ -732,7 +727,6 @@ nb:
       form:
         availability: Standard tilgjengelighet
         external_info:
-          confrere_user_id: Confrere bruker
           zoom_user_id: Zoom bruker
         from: fra
         mail_notification_info: For å sende varsel til flere personer så bruk semi-kolon for å skille epost-adresser.

@@ -464,11 +464,6 @@ lt:
         api_key: API raktas
         connect_info: Pasirinkite adresatų sąrašą, kuriame nauji klientai bus pridėti kaip antriniai.
         list_id: Sąrašo ID
-      confrere:
-        client_id: Kliento ID
-        client_secret: Kliento paslaptis
-        connect_info: Prisijungta prie Conferere
-        setup_info: Kad integracija veiktų, MakePlans šaltinis turi būti prijungtas prie Conferere vartotojo.
       connect_error: Nepavyko užbaigti integracijos. Ištrinkite integraciją ir bandykite dar kartą.
       connected: Ši paslauga prijungta.
       dokus:
@@ -677,7 +672,6 @@ lt:
       form:
         availability: Numatytasis pasiekiamumas
         external_info:
-          confrere_user_id: Įtraukti vartotoją
           zoom_user_id: Mastelio vartotojas
         from: nuo
         mail_notification_info: Norėdami pranešti daugiau nei vienam asmeniui, naudokite kabliataškį, kad atskirtumėte el. Pašto adresus.

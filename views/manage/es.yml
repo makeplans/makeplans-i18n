@@ -464,11 +464,6 @@ es:
         api_key: Clave API
         connect_info: 'Seleccione una lista de correo donde se agregan nuevos clientes como suscriptores:'
         list_id: ID de lista
-      confrere:
-        client_id: Identificación del cliente
-        client_secret: Secreto del cliente
-        connect_info: Conectado a Confrere
-        setup_info: Un recurso en MakePlans debe estar conectado a un usuario en Confrere para que la integración funcione.
       connect_error: No se pudo completar la integración. Elimina la integración y vuelve a intentarlo.
       connected: Este servicio está conectado.
       dokus:
@@ -677,7 +672,6 @@ es:
       form:
         availability: Disponibilidad predeterminada
         external_info:
-          confrere_user_id: Cohermano
           zoom_user_id: Usuario de zoom
         from: desde
         mail_notification_info: Para notificar a más de una persona, utilice punto y coma para separar las direcciones de correo electrónico.

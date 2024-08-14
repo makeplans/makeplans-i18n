@@ -591,11 +591,6 @@ en:
         api_key: API-key
         connect_info: 'Select a mailing list where new customers are added as subscibers:'
         list_id: List ID
-      confrere:
-        client_id: Client ID
-        client_secret: Client Secret
-        connect_info: Connected to Confrere
-        setup_info: A resource in MakePlans must be connected to a user in Confrere for the integration to function.
       connect_error: Unable to complete integration. Please delete the integration and try again.
       connected: This service is connected.
       dokus:
@@ -823,15 +818,16 @@ en:
     resources:
       form:
         availability: Default availability
-        external_info:
-          confrere_user_id: Confrere user
-          zoom_user_id: Zoom user
         from: from
         mail_notification_info: To notify more than one person please use semi-colon to separate email addresses.
         offers: Offers the following services on the booking site
         to: to
       index:
         header: Resources
+      integrations:
+        external_info:
+          microsoft_office365_user_id: Microsoft Office 365 user
+          zoom_user_id: Zoom user
       list_menu:
         list: Resources
       show:
@@ -910,6 +906,7 @@ en:
       integrations:
         external_info:
           fiken_product_href: Connect to a product in Fiken
+          microsoft_teams_create_meeting: Automatically create a Microsoft Teams meeting for this service
           tfso_create_order: Generate order in 24SevenOffice automatically
           tfso_product_id: 24SevenOffice product id
           visma_eaccounting_article_id: Connect to a product in Visma eAccounting

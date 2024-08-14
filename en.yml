@@ -312,6 +312,7 @@ en:
         closed_for_holidays: Closed on public holidays
         confirm_manually: Reservations has to be approved by an administrator
         country_code: Country
+        coupon_form: Custom coupon fields
         css_url: Custom CSS (URL must be HTTPS)
         currency: Currency
         email: Email address

@@ -464,11 +464,6 @@ he:
         api_key: מפתח API
         connect_info: 'בחר רשימת תפוצה שבה מתווספים לקוחות חדשים כמנויים:'
         list_id: מזהה רשימה
-      confrere:
-        client_id: זיהוי לקוח
-        client_secret: סוד הלקוח
-        connect_info: מחובר ל- Confrere
-        setup_info: משאב ב- MakePlans חייב להיות מחובר למשתמש ב- Confrere כדי שהאינטגרציה תפעל.
       connect_error: לא ניתן להשלים את האינטגרציה. מחק את השילוב ונסה שוב.
       connected: שירות זה מחובר.
       dokus:
@@ -677,7 +672,6 @@ he:
       form:
         availability: זמינות ברירת מחדל
         external_info:
-          confrere_user_id: משתמש כונן
           zoom_user_id: משתמש זום
         from: מ
         mail_notification_info: כדי להודיע על יותר מאדם אחד אנא השתמש בנקודתיים למחצה כדי להפריד בין כתובות דוא"ל.

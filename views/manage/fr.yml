@@ -456,11 +456,6 @@ fr:
         api_key: Clé API
         connect_info: 'Sélectionnez une liste de diffusion dans laquelle de nouveaux clients sont ajoutés en tant qu''abonnés:'
         list_id: ID de liste
-      confrere:
-        client_id: identité du client
-        client_secret: Secret du client
-        connect_info: Connecté à Confrere
-        setup_info: Une ressource dans MakePlans doit être connectée à un utilisateur dans Confrere pour que l'intégration fonctionne.
       connect_error: Impossible de terminer l'intégration. Veuillez supprimer l'intégration et réessayer.
       connected: Ce service est connecté.
       dokus:
@@ -669,7 +664,6 @@ fr:
       form:
         availability: Disponibilité par défaut
         external_info:
-          confrere_user_id: Confrère utilisateur
           zoom_user_id: Zoom utilisateur
         from: de
         mail_notification_info: Pour notifier plus d'une personne, veuillez utiliser un point-virgule pour séparer les adresses e-mail.

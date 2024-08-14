@@ -464,11 +464,6 @@ ms:
         api_key: Kekunci API
         connect_info: 'Pilih senarai mel di mana pelanggan baru ditambahkan sebagai pelanggan:'
         list_id: ID Senarai
-      confrere:
-        client_id: ID Pelanggan
-        client_secret: Rahsia Pelanggan
-        connect_info: Bersambung ke Confrere
-        setup_info: Sumber dalam MakePlans mesti dihubungkan dengan pengguna di Confrere agar integrasi berfungsi.
       connect_error: Tidak dapat menyelesaikan integrasi. Sila padamkan integrasi dan cuba lagi.
       connected: Perkhidmatan ini disambungkan.
       dokus:
@@ -677,7 +672,6 @@ ms:
       form:
         availability: Ketersediaan lalai
         external_info:
-          confrere_user_id: Pengguna konfrere
           zoom_user_id: Zum pengguna
         from: dari
         mail_notification_info: Untuk memberitahu lebih daripada satu orang, gunakan titik koma untuk memisahkan alamat e-mel.

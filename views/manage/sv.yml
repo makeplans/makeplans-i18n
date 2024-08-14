@@ -458,11 +458,6 @@ sv:
         api_key: API-nyckel
         connect_info: 'Välj e-postlista där nya kunder läggs till som prenumeration:'
         list_id: Lista över ID
-      confrere:
-        client_id: Klient ID
-        client_secret: Kundhemlighet
-        connect_info: Ansluten till Confrere
-        setup_info: En resurs i MakePlans måste vara ansluten till en användare i Confrere för att integrationen ska fungera.
       connect_error: Det går inte att slutföra integrationen. Var vänlig ta bort den och försök igen.
       connected: Den här tjänsten är ansluten.
       dokus:
@@ -674,7 +669,6 @@ sv:
       form:
         availability: Standardläge för tillgänglighet
         external_info:
-          confrere_user_id: Bekräfta användare
           zoom_user_id: Zooma användare
         from: från
         mail_notification_info: För att skicka varningar till flera personer, använd semikolon för att separera e-postadresser.
