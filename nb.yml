@@ -274,6 +274,7 @@ nb:
         booked_from: Starter
         booked_to: Slutter
         count: Antall personer
+        coupon_code: Rabattkode
         external_id: Ekstern ID
         invoiced_at: Fakturert
         notes: Notat
