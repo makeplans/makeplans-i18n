@@ -387,11 +387,16 @@ nb:
         manager: Enkelt oppsett
         staff: Kun kalendar
       coupon:
+        active: Aktiv
+        allowed_booking_start_at: Tidligste starttidspunkt for reservasjon
+        allowed_booking_end_at: Seneste starttidspunkt for reservasjon
+        availability: Tilgjengelige kuponger
         code: Kode
+        min_order_amount: Minimumsbeløp
+        max_order_amount: Maksimumsbeløp
+        title: Tittel
         value_type: Rabatttype
         value: Rabattverdi
-        title: Tittel
-        active: Aktiv
         valid_from: Gyldig fra
         valid_until: Gyldig til
       event:

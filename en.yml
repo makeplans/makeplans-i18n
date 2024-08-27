@@ -378,11 +378,16 @@ en:
         manager: Basic setup
         staff: Only calendar
       coupon:
+        active: Active
+        allowed_booking_start_at: Earliest start time for reservation
+        allowed_booking_end_at: Latest start time for reservation
+        availability: Available coupons
         code: Code
+        min_order_amount: Minimum order amount
+        max_order_amount: Maxiumum order amount
+        title: Title
         value_type: Discount type
         value: Discount value
-        title: Title
-        active: Active
         valid_from: Valid from
         valid_until: Valid until
       event:
