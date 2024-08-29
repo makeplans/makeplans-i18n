@@ -445,6 +445,7 @@ en:
         sms_notification_recipient: Phone number(s) for notification
         title: Title
       service:
+        active_bookings_limit: Max number of active bookings
         allow_invoice: Allow invoice
         block_resource: Reservation will block resource
         booking_capacity: Max number of people allowed per reservation

@@ -456,6 +456,7 @@ nb:
         sms_notification_recipient: Telefonnummer for varsling
         title: Tittel
       service:
+        active_bookings_limit: Maks antall aktive bookinger for kunde
         allow_invoice: Kan betales med faktura
         block_resource: Reservasjon blokkerer ressursen
         booking_capacity: Maks antall personer per reservasjon
