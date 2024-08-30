@@ -232,13 +232,16 @@ nb:
       processor: 'Feilmelding fra vår betalingspartner: %{error}'
       unknown: Klarte ikke å fullføre transaksjon. Ukjent feil.
   generic:
+    account_default: Standard kontoinnstilling
     all: alle
     at: hos
     country_locale: nb
     born_abbreviation: f. %{date_of_birth}
     default: Systemstandard
+    'false': Ikke aktivert
     optional: valgfritt
     search: Søk
+    'true': Aktivert
     to: til
     today: i dag
     tomorrow: i morgen
@@ -463,6 +466,7 @@ nb:
         booking_minimum: Min antall personer per reservasjon
         booking_form: Egendefinert reservasjonskjema
         capacity: Maks antall deltagere
+        confirm_manually: Reservasjon må godkjennes av administrator
         description: Beskrivelse
         has_day_booking: Tidstype
         has_day_booking_label:
