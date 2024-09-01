@@ -395,8 +395,10 @@ nb:
         allowed_booking_end_at: Seneste starttidspunkt for reservasjon
         availability: Tilgjengelige kuponger
         code: Kode
-        min_order_amount: Minimumsbeløp
+        max_count: Maksimum antall personer
+        min_count: Minimum antall personer
         max_order_amount: Maksimumsbeløp
+        min_order_amount: Minimumsbeløp
         title: Tittel
         value_type: Rabatttype
         value: Rabattverdi
