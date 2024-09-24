@@ -182,6 +182,7 @@ en:
       service: service
       service_appointment: service
       service_attendance: event type
+      tag: tag
       user: user
       web_hook: webhook
   date:
