@@ -387,8 +387,8 @@ en:
         allowed_booking_end_at: Latest start time for reservation
         availability: Available coupons
         code: Code
-        max_count: Minimum number of people
-        min_count: Maxium number of people
+        max_count: Maxium number of people
+        min_count: Minimum number of people
         max_order_amount: Maxiumum order amount
         min_order_amount: Minimum order amount
         title: Title
