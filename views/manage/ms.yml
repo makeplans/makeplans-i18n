@@ -523,12 +523,6 @@ ms:
         select_database: Pilih pangkalan data
         sharing_info: Sila kongsi sekurang-kurangnya satu pangkalan data dengan penyepaduan MakePlans
       oauth_connect: Sambung ke perkhidmatan
-      quickpay:
-        environment: Persekitaran
-        md5_secret: Rahsia MD5
-        merchant_id: ID Pedagang
-        production: Pengeluaran
-        test: Uji
       selected_option: Terpilih
       sendy:
         connect_info_html: Pelanggan baharu akan melanggan senarai dengan id <em>%{list_id}</em> pada pemasangan %{api_url}

@@ -523,12 +523,6 @@ lt:
         select_database: Pasirinkite duomenų bazę
         sharing_info: Bendrinkite bent vieną duomenų bazę su MakePlans integracija
       oauth_connect: Prisijunkite prie paslaugos
-      quickpay:
-        environment: Aplinka
-        md5_secret: MD5 paslaptis
-        merchant_id: Prekybininko ID
-        production: Gamyba
-        test: Testas
       selected_option: Pasirinkta
       sendy:
         connect_info_html: "<em>Diegiant %{api_url}</em> nauji klientai bus prenumeruojami sąraše su ID %{list_id}"

@@ -523,12 +523,6 @@ he:
         select_database: בחר מסד נתונים
         sharing_info: אנא שתף לפחות מסד נתונים אחד עם שילוב MakePlans
       oauth_connect: התחבר לשירות
-      quickpay:
-        environment: סביבה
-        md5_secret: MD5 סוד
-        merchant_id: זיהוי סוחר
-        production: הפקה
-        test: מִבְחָן
       selected_option: נבחר
       sendy:
         connect_info_html: "<em>לקוחות חדשים יירשמו</em> לרשימה עם מזהה %{list_id} בהתקנה %{api_url}"

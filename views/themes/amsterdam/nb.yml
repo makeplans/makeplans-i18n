@@ -78,7 +78,6 @@ nb:
         providers:
           braintree: Kredittkort eller debetkort
           fiken: Faktura
-          quickpay: Kredittkort eller debetkort
           stripe: Kredittkort, debetkort, Google Pay eller Apple Pay
           tfso: Faktura
           vipps: Vipps

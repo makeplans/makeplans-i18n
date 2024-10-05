@@ -518,12 +518,6 @@ sv:
         select_database: Välj databas
         sharing_info: Vänligen dela minst en databas med MakePlans-integrationen
       oauth_connect: Anslut till tjänst
-      quickpay:
-        environment: Miljö
-        md5_secret: MD5 Secret
-        merchant_id: Merchant ID
-        production: Produktion
-        test: Testa
       selected_option: Vald
       sendy:
         connect_info_html: Nya kunder kommer att prenumerera på listan med id <em>%{list_id}</em> på installation %{api_url}

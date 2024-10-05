@@ -78,7 +78,6 @@ en:
         select_provider: How would you like to pay?
         providers:
           braintree: Credit/debit card
-          quickpay: Credit/debit card
           stripe: Credit/debit card, Google Pay or Apple Pay
           vipps: Vipps
       show:

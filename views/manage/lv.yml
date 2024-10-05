@@ -515,12 +515,6 @@ lv:
         select_database: Izvēlieties datu bāzi
         sharing_info: Lūdzu, kopīgojiet vismaz vienu datu bāzi ar MakePlans integrāciju
       oauth_connect: Izveidojiet savienojumu ar pakalpojumu
-      quickpay:
-        environment: Vide
-        md5_secret: MD5 noslēpums
-        merchant_id: Tirgotāja ID
-        production: Ražošana
-        test: Pārbaude
       selected_option: Izvēlēts
       sendy:
         connect_info_html: Jaunie klienti tiks abonēti sarakstam ar ID <em>%{list_id}</em> instalācijā %{api_url}

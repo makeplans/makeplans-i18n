@@ -523,12 +523,6 @@ es:
         select_database: Seleccionar base de datos
         sharing_info: Comparta al menos una base de datos con la integración de MakePlans
       oauth_connect: Conectarse al servicio
-      quickpay:
-        environment: Medio ambiente
-        md5_secret: MD5 Secreto
-        merchant_id: Identificación del comerciante
-        production: Producción
-        test: Prueba
       selected_option: Seleccionado
       sendy:
         connect_info_html: Los nuevos clientes se suscribirán a la lista con id <em>%{list_id}</em> en la instalación %{api_url}

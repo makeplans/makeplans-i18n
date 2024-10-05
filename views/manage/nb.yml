@@ -559,12 +559,6 @@ nb:
         select_database: Velg database
         sharing_info: Vennligst del minst én database med MakePlans-integrasjonen
       oauth_connect: Koble til denne tjenesten
-      quickpay:
-        environment: Environment
-        md5_secret: MD5 Secret
-        merchant_id: Merchant ID
-        production: Production
-        test: Test
       selected_option: Valgt
       sendy:
         connect_info_html: Nye kunder vil abonnere på listen med id <em>%{list_id}</em> på installasjon %{api_url}

@@ -515,12 +515,6 @@ ru:
         select_database: Выбрать базу данных
         sharing_info: Поделитесь хотя бы одной базой данных с интеграцией MakePlans
       oauth_connect: Подключиться к сервису
-      quickpay:
-        environment: Среда
-        md5_secret: Секрет MD5
-        merchant_id: идентификатор продавца
-        production: Производство
-        test: Тестовое задание
       selected_option: Выбрано
       sendy:
         connect_info_html: Новые клиенты будут подписаны на список с идентификатором <em>%{list_id}</em> при установке %{api_url}

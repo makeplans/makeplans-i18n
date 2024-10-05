@@ -77,7 +77,6 @@ it:
         form_footer_html: 'Importo da pagare: <span class="payment-amount">%{amount}</span> .'
         providers:
           braintree: Carta di credito / debito
-          quickpay: Carta di credito / debito
           stripe: Carta di credito/debito, Google Pay o Apple Pay
           vipps: Vipps
         select_provider: Come volete pagare?
