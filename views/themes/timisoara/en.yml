@@ -2,6 +2,8 @@
 en:
   timisoara:
     bookings:
+      awaiting_confirmation:
+        body: You successfully booked the service. Please wait until the administrator will confirm your booking
       authenticate:
         info: We need information to verify your reservation of
         submit: Send code
@@ -68,6 +70,8 @@ en:
           completed: Completed
           cancelled: Cancelled
         title: My reservations
+      new:
+        header: Account information
     services:
       index:
         all_categories: All categories

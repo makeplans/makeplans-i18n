@@ -2,6 +2,8 @@
 nb:
   timisoara:
     bookings:
+      awaiting_confirmation:
+        body: Du har lagt inn reservasjon av tjenesten. Du må vente til en administrator godkjenner din reservasjon.
       authenticate:
         info: We need information to verify your reservation of
         submit: Send code
@@ -64,6 +66,8 @@ nb:
           completed: Utførte
           cancelled: Kansellerte
         title: Mine reservasjoner
+      new:
+        header: Dine kontaktopplysninger
     services:
       index:
         all_categories: Alle kategorier
