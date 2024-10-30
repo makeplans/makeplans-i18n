@@ -422,6 +422,7 @@ en:
         settings:
           custom_email_user_sending: Completely override emails with content below (otherwise content is just inserted in standard email)
         sms: SMS
+        sms_notification_info: To notify more than one person please use semi-colon to separate phone numbers.
       edit_ux:
         calendar: Calendar
         header: UX
@@ -815,6 +816,7 @@ en:
         from: from
         mail_notification_info: To notify more than one person please use semi-colon to separate email addresses.
         offers: Offers the following services on the booking site
+        sms_notification_info: To notify more than one person please use semi-colon to separate phone numbers.
         to: to
       index:
         header: Resources

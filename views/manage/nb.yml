@@ -376,6 +376,7 @@ nb:
         settings:
           custom_email_user_sending: Overstyr hele eposter med innhold nedenfor (ellers så blir innhold kun lagt inn i standard epost-mal)
         sms: SMS
+        sms_notification_info: For å sende varsel til flere personer så bruk semi-kolon for å skille telefonnummer.
       edit_ux:
         calendar: Kalender
         header: UX
@@ -725,6 +726,7 @@ nb:
         from: fra
         mail_notification_info: For å sende varsel til flere personer så bruk semi-kolon for å skille epost-adresser.
         offers: Tilbyr følgende tjenester på bookingsiden
+        sms_notification_info: For å sende varsel til flere personer så bruk semi-kolon for å skille telefonnummer.
         to: til
       index:
         header: Ressurser
