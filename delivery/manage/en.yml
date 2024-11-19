@@ -61,6 +61,23 @@ en:
 
         If you have any questions just reply to this email.
       subject: Your account is activated
+    api_enabled:
+      body: |-
+        Hi there,
+
+        Looks like you enabled the API on your MakePlans account %{subdomain}. How awesome!
+
+        If you know what you are doing then you can just ignore this email.
+
+        But if you are new to the MakePlans API please do check out the documentation at https://developer.makeplans.com.
+        You will find information about authentication, all endpoints, webhooks, as well as examples.
+        Any questions? Just contact us, happy to help you out.
+
+        If you are experimenting it could be a good idea to create an API development account in our test environment. There are some restrictions there but generally it is preferred to develop in a separate environment and account than your actual account.
+        You can find a link to the test environment in the API documentation.
+
+        Happy coding!
+      subject: 'API Enabled on your MakePlans account'
     charge_failed:
       body: |-
         Hi,
