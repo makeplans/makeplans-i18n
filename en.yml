@@ -565,6 +565,7 @@ en:
       service_appointments: Services
       service_attendances: Event types
       sms_credits: SMS credits
+      tags: Tags
       tools: Tools
       user_notifications: Notifications - user
       users: Users

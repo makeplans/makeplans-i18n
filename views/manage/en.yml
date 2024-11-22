@@ -1020,6 +1020,9 @@ en:
         offer: "%{discount}% discount."
         quantity: "%{quantity} SMS."
         total: 'Total: %{sum}'
+    tags:
+      index:
+        header: Tags
     users:
       index:
         header: Users
