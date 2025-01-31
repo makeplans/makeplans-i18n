@@ -39,7 +39,7 @@ nb:
         profile: Profil
         booking_site_footer: Bookingside for %{name}
         made_by_title: Timebestilling og påmeldinger
-        made_by_tagline: Brukervennlig system for Timebestilling og påmelding.
+        made_by_tagline: Brukervennlig system for timebestilling og påmelding.
         privacy: Personvernpolicy
         support: Kundeservice
         title: Timebestilling for %{name}
