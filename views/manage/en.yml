@@ -857,6 +857,9 @@ en:
       custom_reservation_form_text:
         custom_reservation_form_text_info_html: You can specify a custom text that is displayed before the reservation form for this service. This text will override the default custom reservation form text defined under "Booking site". Documentation can be found at <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>, alternatively contact customer service for assistance.
         custom_reservation_form_text_show: Show custom reservation form text
+      custom_terms:
+        custom_terms_info_html: You can specify custom terms for this service. This text will override the default terms defined under "Booking site". Documentation can be found at <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>, alternatively contact customer service for assistance.
+        custom_terms_show: Show custom terms
       form_appointment:
         account_default: Default account setting
         booking_site_settings: Settings for the booking site

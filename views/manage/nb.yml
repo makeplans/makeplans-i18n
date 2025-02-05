@@ -753,11 +753,14 @@ nb:
         custom_form_info_html: Her kan du spesifisere egendefinert skjema for reservasjon av denne tjenesten. Skjemaet vil da overstyre standard skjema som er definert under "Bookingside". Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>, eventuelt kontakt kundeservice for hjelp.
         custom_form_show: Vis egendefinert reservasjonskjema
       custom_new_booking_text:
-        custom_new_booking_text_info_html: Du kan vise en egendefinert tekst som vises på bekreftelsesiden for denne tjenesten. Denne teksten vil overstyre egendefinert som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>, eventuelt kontakt kundeservice for hjelp.
+        custom_new_booking_text_info_html: Du kan vise en egendefinert tekst som vises på bekreftelsesiden for denne tjenesten. Denne teksten vil overstyre standard tekst som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>, eventuelt kontakt kundeservice for hjelp.
         custom_new_booking_text_show: Vis egendefinert tekst på bekreftelsesiden
       custom_reservation_form_text:
-        custom_reservation_form_text_info_html: Du kan vise en egendefinert tekst som vises før reservasjonskjema for denne tjenesten. Denne teksten vil overstyre egendefinert tekst som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>, eventuelt kontakt kundeservice for hjelp.
+        custom_reservation_form_text_info_html: Du kan vise en egendefinert tekst som vises før reservasjonskjema for denne tjenesten. Denne teksten vil overstyre standard tekst som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>, eventuelt kontakt kundeservice for hjelp.
         custom_reservation_form_text_show: Vis egendefinert tekst for reservasjonskjema
+      custom_terms:
+        custom_terms_info_html: Du kan ha egendefinert vilkår denne tjenesten. Denne teksten vil overstyre vilkår som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>, eventuelt kontakt kundeservice for hjelp.
+        custom_terms_show: Vis egendefinert vilkår
       form_appointment:
         account_default: Standard kontoinnstilling
         booking_site_settings: Innstillinger for bookingsiden

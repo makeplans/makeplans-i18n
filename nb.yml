@@ -106,6 +106,7 @@ nb:
         allow_invoice: kan betales med faktura
         payment_required: krev betaling
         price: pris
+        terms: vilkår
         title: tittel
       user:
         current_password: nåværende passord
@@ -501,6 +502,7 @@ nb:
           week_available: Hele uken
           weekday_available: Ukedager
           list: Liste
+        terms: Vilkår
         title: Tittel
       user:
         current_password: Nåværende passord

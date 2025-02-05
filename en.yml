@@ -490,6 +490,7 @@ en:
           week_available: All week
           weekday_available: Weekdays
           list: List
+        terms: Terms and conditions
         title: Title
       user:
         current_password: Current password
