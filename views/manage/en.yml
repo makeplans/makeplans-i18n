@@ -103,6 +103,17 @@ en:
         link: Show list
       destroy_recurring:
         headline: All reservations within this repeating pattern was removed
+      feed:
+        info:
+          header: iCalendar-feeds
+          ical:
+            activated: 'Access to appointments in your account with iCalendar is activated. The links to the iCalendar-feeds are available. Do not share the links.'
+            future_html: 'Future bookings: %{link}'
+            past_html: 'Past bookings: %{link}'
+            disable: Deactivate account iCalendar-feeds
+            enable: Activate account iCalendar-feeds
+            info: An iCalendar-feed will show appointments from your account in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in MakePlans.
+            not_activated: Not activated
       fiken:
         delayed_info: It will take some time before the order is created in Fiken. Do not try to generate the order again if no information from Fiken is visible in MakePlans.
         header: Contating Fiken...
@@ -510,6 +521,7 @@ en:
       tools:
         header: Tools for your account
         link:
+          feed: iCalendar-feeds
           change_time_zone: Change time zone
           purge_data: Delete old data
           sms_all: Send SMS to all customers
@@ -837,7 +849,9 @@ en:
           link: Clone this resource
         custom_data: 'Custom fields:'
         ical:
-          activated_html: Access to this resource with iCalendar is activated. The link to the iCalendar-feed is %{link}
+          activated: 'Access to this resource with iCalendar is activated. The links to the iCalendar-feed are available. Do not share the link.'
+          future_html: 'Future bookings: %{link}'
+          past_html: 'Past bookings: %{link}'
           disable: Deactivate iCalendar-feed
           enable: Activate iCalendar-feed
           info: iCalendar-feed will show appointments from this resource in MakePlans in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in MakePlans.
