@@ -129,6 +129,7 @@ nb:
         person_none_selected: Ingen kunde valgt
         recurring_enabled: Gjenta med mønster
         recurring_member: Denne reservasjonen er del av et gjentagende mønster.
+        reservation_type_drop_in: Drop-in
         reservation_type_other: Opptatt
         reservation_type_person: Kundereservasjon
         send_confirmation: 'Bekreftelse:'

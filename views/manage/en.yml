@@ -133,7 +133,15 @@ en:
         ignore_capacity: Save even if occupied
         modification_send_email: Send email modification
         modification_send_sms: Send SMS modification
-        no_customer: No customer specified! You have set this reservation as a customer reservation but not specified a customer. Do you want to continue and set this reservation as busy without a customer? Or click cancel to specify a customer.
+        no_customer: 'No customer specified!
+
+
+        You have set this reservation as a customer reservation but not specified a customer.
+
+
+        OK: Continue and set this reservation as drop-in.
+
+        Cancel: Go back and specify customer.'
         no_service: No service selected
         notification_send_email: Send email notification
         notification_send_sms: Send SMS notification
@@ -141,6 +149,7 @@ en:
         person_none_selected: No customer selected
         recurring_enabled: Repeat with a pattern
         recurring_member: This reservation is part of a recurring pattern.
+        reservation_type_drop_in: Drop-in
         reservation_type_other: Busy
         reservation_type_person: Customer reservation
         send_confirmation: 'Confirmation:'
