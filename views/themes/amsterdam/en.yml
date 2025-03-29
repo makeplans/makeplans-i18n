@@ -42,6 +42,7 @@ en:
         book_for_child: Make a booking for someone else?
         book_for_me: Book for myself instead
         date_format: 'Please enter valid date format: %{format}'
+        date_of_birth: 'Birth year out of accepted range'
         email_suggestion_html: '<p>Did you mean<span> %{suggestions}</span>?</p>'
         enter_info: Enter information
         errors_header: Please fill out the required fields.
