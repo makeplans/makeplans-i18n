@@ -41,8 +41,6 @@ nb:
           remember_me: Vil du at vi skal huske deg på denne maskinen til neste gang du skal reservere her?
         book_for_child: Opprett reservasjon for noen andre?
         book_for_me: Reserver for meg selv.
-        date_format: 'Vennligst skriv inn dato på følgende format: %{format}'
-        date_of_birth: 'Fødselsdato ikke innenfor akseptert periode.'
         email_suggestion_html: '<p>Mente du<span> %{suggestions}</span>?</p>'
         enter_info: Fyll inn personalia
         errors_header: Du må fylle ut alle påkrevde felter.

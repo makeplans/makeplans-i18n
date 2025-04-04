@@ -215,6 +215,8 @@ nb:
         other: "%{count} timer"
   errors:
     messages:
+      date_format: 'Vennligst skriv inn dato på følgende format: %{format}'
+      date_of_birth: 'Fødselsdato ikke innenfor akseptert periode.'
       no_values_present: Navn, telefonnummer eller epost er påkrevd.
       not_authenticated: Du har blitt logget ut.
       not_found: Fant ikke data. Prøve å reloade siden. Kontakt kundeservice hvis problemet fortsetter.

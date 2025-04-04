@@ -209,6 +209,8 @@ en:
         other: "%{count} hours"
   errors:
     messages:
+      date_format: 'Please enter valid date format: %{format}'
+      date_of_birth: 'Birth year out of accepted range'
       no_values_present: Name, phone number or email is required.
       not_authenticated: You have been logged out.
       not_found: Unable to find data. Try to reload the page.
