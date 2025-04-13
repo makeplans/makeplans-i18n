@@ -155,6 +155,7 @@ en:
           blocked: Your account is not able to make any bookings.
           missing: is not saved on your customer profile. Please contact us to correct it.
           no_values_present: Name, phone number or email is required.
+          prevent_new_signups: booking is only available for existing customers
         resource:
           has_bookings: This resource has bookings. Cannot be deleted. Please contact support.
         service:

@@ -72,6 +72,7 @@ en:
         title: My reservations
       new:
         header: Account information
+        errors_header: 'Errors occured:'
     services:
       index:
         all_categories: All categories

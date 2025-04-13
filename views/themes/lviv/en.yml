@@ -16,6 +16,9 @@ en:
         title: Please confirm your email address
       perishable_token_form:
         title: Login
+    profile:
+      new:
+        errors_header: 'Errors occured:'
     services:
       slots:
         next_available_date_html: Next available date is %{next_available_date}
