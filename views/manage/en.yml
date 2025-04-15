@@ -223,6 +223,7 @@ en:
         refund: Refund paid amount
         refunded_with:
           stripe: Refunded with Stripe
+          vipps: Refunded with Vipps
         request_card:
           processing: Payment link is being sent to customer
           send: Send payment link to customer

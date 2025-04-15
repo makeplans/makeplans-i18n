@@ -201,6 +201,9 @@ nb:
           phone_number: Telefon
         recurring_member: Denne reservasjonen er del av et gjentagende mønster.
         refund: Refunder betalt beløp
+        refunded_with:
+          stripe: Refundert med Stripe
+          vipps: Refundert med Vipps
         request_card:
           processing: Betalingslink sendes til kunde
           send: Send betalingslink til kunde
