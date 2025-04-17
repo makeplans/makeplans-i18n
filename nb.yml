@@ -445,7 +445,7 @@ nb:
       person:
         address: Adresse
         blocked: Blokkert for reservasjoner
-        city: By
+        city: Poststed
         country_code: Land
         created_at: Registrert
         date_of_birth: Fødselsdato (dd.mm.åååå)
@@ -460,7 +460,7 @@ nb:
         postal_code: Postnummer
         provider: Tilknyttet ekstern konto
         state: Fylke/Stat
-        street: Gate
+        street: Gateadresse
         tfso_company_id: 24SO kundenr.
       resource:
         capacity: Maks antall reservasjoner på samme tidspunkt

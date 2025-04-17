@@ -312,9 +312,9 @@ en:
         billing_order_ref: Your invoice reference
         billing_payment_id: ID in payment system
         billing_period: Months to invoice
-        billing_postal_code: Zipcode
+        billing_postal_code: Postal code
         billing_state: State
-        billing_street: Street
+        billing_street: Street address
         billing_vat_no: VAT nr
         booking_form: Custom reservation form
         calendar_event_text: Display text for reservation in calendar
@@ -450,7 +450,7 @@ en:
         postal_code: Postal code
         provider: Connected to external account
         state: State
-        street: Street
+        street: Street address
         tfso_company_id: 24SO customer ID
       resource:
         capacity: Max number of reservations at the same time
