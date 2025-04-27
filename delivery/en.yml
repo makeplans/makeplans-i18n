@@ -37,8 +37,8 @@ en:
       link: Add payment card
       subject: Add your payment info
     verification:
-      footer: 'Important: The reservation is not yet completed. If you do not verifiy the reservation by clicking the link above within %{expires_in} minutes your reservation might expire.'
-      header: To complete your booking of %{title} %{time_range} you must verify your reservation by clicking the link below.
+      footer: 'Important: The reservation is not yet completed. If you do not verifiy within %{expires_in} minutes your reservation might expire.'
+      header: To complete your booking of %{title} %{time_range} you must verify your reservation by using the code below.
       link: Confirm reservation
       subject: Please verify your reservation
   booking_occurrence_mailer:
@@ -105,9 +105,9 @@ en:
       subject: Data export
     perishable_token:
       body: |-
-        To login click the link below:
+        Use the code below to complete your verification:
 
-        %{link}
+        %{perishable_token}
       subject: Login for MakePlans
   person_sms:
     perishable_token: "{{ perishable_token }} is your code for authentication."

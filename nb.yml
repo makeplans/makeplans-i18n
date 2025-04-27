@@ -227,7 +227,7 @@ nb:
     models:
       person:
         perishable_token:
-          expired: Koden har utløpt. Vær så snill, prøv på nytt.
+          expired: Koden har utløpt. Prøv på nytt.
           invalid: Feil kode
           no_identifier: Mangler e-post eller telefonnummer.
     stripe:

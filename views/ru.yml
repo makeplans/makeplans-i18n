@@ -1,7 +1,7 @@
 ---
 ru:
   bookings:
-    sms_code:
+    verification_code:
       incorrect_code: неверный код
   clients:
     new:

@@ -67,10 +67,10 @@ he:
         paid: יש לך %{paid_amount} ששולמו מראש.
         remember_me: האם אתה רוצה שנזכור אותך במכונה זו באמצעות עוגיה?
         title: הזמנתכם אושרה!
-      sms_code:
+      verification_code:
         header: אשר הזמנה
         incorrect_code: קוד שגוי
-        verify_sms_code: שלחנו SMS אל %{phonenumber} עם קוד אימות. אנא הכנס את הקוד בטופס לאימות ההזמנה. זה נדרש להשלמת ההזמנה.
+        verify_verification_code: שלחנו SMS אל %{recipient} עם קוד אימות. אנא הכנס את הקוד בטופס לאימות ההזמנה. זה נדרש להשלמת ההזמנה.
     events:
       index:
         none_available: אין אירועים זמינים.

@@ -54,9 +54,8 @@ en:
     person_sessions:
       enter_perishable_token:
         perishable_token: Code
-        info_html: "We’ve sent a <b>SMS to %{phone_number}</b>
-            with a verification code. Please enter the code to verify your
-            information. This step is mandatory to complete the reservation."
+        info_html: "We’ve sent a verification code to <b>%{recipient}</b>
+            Please enter the code to verify your information."
         submit: Continue
         title: Verify your reservation
       perishable_token_form:

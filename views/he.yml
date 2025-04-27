@@ -1,7 +1,7 @@
 ---
 he:
   bookings:
-    sms_code:
+    verification_code:
       incorrect_code: קוד שגוי
   clients:
     new:

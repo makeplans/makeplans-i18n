@@ -95,11 +95,11 @@ it:
         price: Il prezzo della prenotazione è %{amount}.
         remember_me: Vuoi che ti ricordiamo su questa macchina utilizzando un cookie?
         title: La tua prenotazione è confermata!
-      sms_code:
+      verification_code:
         header: Verifica la prenotazione
         incorrect_code: codice non corretto
         remember_me: Ricordami su questo dispositivo
-        verify_sms_code: Abbiamo inviato un SMS a %{phonenumber} con un codice di verifica. Inserisci il codice nel modulo per verificare la prenotazione. Ciò è necessario per confermare la prenotazione.
+        verify_verification_code: Abbiamo inviato un SMS a %{recipient} con un codice di verifica. Inserisci il codice nel modulo per verificare la prenotazione. Ciò è necessario per confermare la prenotazione.
     events:
       index:
         free_capacity: "%{count} disponibili"

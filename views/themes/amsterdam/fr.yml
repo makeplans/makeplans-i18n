@@ -67,10 +67,10 @@ fr:
         paid: Vous avez prépayé %{paid_amount}.
         remember_me: Voulez-vous que nous nous souvenions de vous sur cette machine à l'aide d'un cookie?
         title: Votre réservation est confirmée!
-      sms_code:
+      verification_code:
         header: Confirmer la réservation
         incorrect_code: code incorrect
-        verify_sms_code: Nous avons envoyé un SMS à %{phonenumber} avec un code de vérification. Veuillez saisir le code dans le formulaire pour vérifier la réservation. Ceci est nécessaire pour terminer la réservation.
+        verify_verification_code: Nous avons envoyé un SMS à %{recipient} avec un code de vérification. Veuillez saisir le code dans le formulaire pour vérifier la réservation. Ceci est nécessaire pour terminer la réservation.
     events:
       index:
         none_available: Aucun événement disponible.

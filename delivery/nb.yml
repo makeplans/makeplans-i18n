@@ -37,8 +37,8 @@ nb:
       link: Legg til betalingskort
       subject: Betal din reservasjon
     verification:
-      footer: 'OBS: Reservasjonen er ikke fullført. Hvis du ikke klikker på linken ovenfor i løpet av %{expires_in} minutter vil reservasjonen din kanselleres.'
-      header: For å fullføre din reservering av %{title} %{time_range} må du bekrefte reservasjonen ved å klikke på linken under.
+      footer: 'OBS: Reservasjonen er ikke fullført. Hvis du ikke verifiser i løpet av %{expires_in} minutter vil reservasjonen din kanselleres.'
+      header: For å fullføre din reservering av %{title} %{time_range} må du bekrefte reservasjonen ved å bruke koden nedenfor.
       link: Bekreft reservasjon
       subject: Verifiser din reservasjon
   booking_occurrence_mailer:
@@ -105,9 +105,9 @@ nb:
       subject: Eksport fra MakePlans
     perishable_token:
       body: |-
-        For å logge inn klikk på linken nedenfor:
+        Bruk koden nedenfor til å verifisere:
 
-        %{link}
+        %{perishable_token}
       subject: Login til MakePlans
   person_sms:
     perishable_token: "{{ perishable_token }} er din kode for innlogging."

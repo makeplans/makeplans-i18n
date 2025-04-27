@@ -67,10 +67,10 @@ lt:
         paid: Iš anksto sumokėjote %{paid_amount}.
         remember_me: Ar norite, kad prisimintume jus šiame kompiuteryje naudodami slapuką?
         title: Jūsų rezervacija patvirtinta!
-      sms_code:
+      verification_code:
         header: Patvirtinkite rezervaciją
         incorrect_code: Neteisingas kodas
-        verify_sms_code: Išsiuntėme SMS žinutę su patvirtinimo kodu %{phonenumber}. Prašome įvesti kodą formoje, kad patvirtintumėte užsakymą. Tai reikalinga norint užbaigti rezervaciją.
+        verify_verification_code: Išsiuntėme SMS žinutę su patvirtinimo kodu %{recipient}. Prašome įvesti kodą formoje, kad patvirtintumėte užsakymą. Tai reikalinga norint užbaigti rezervaciją.
     events:
       index:
         none_available: Nėra jokių renginių.

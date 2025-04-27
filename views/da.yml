@@ -1,7 +1,7 @@
 ---
 da:
   bookings:
-    sms_code:
+    verification_code:
       incorrect_code: Forkert kode
   clients:
     new:

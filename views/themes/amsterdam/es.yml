@@ -67,10 +67,10 @@ es:
         paid: Ha pagado por adelantado %{paid_amount}.
         remember_me: "¿Quiere que le recordemos en esta máquina usando una cookie?"
         title: "¡Su reservacion esta confirmada!"
-      sms_code:
+      verification_code:
         header: Confirmar reservación
         incorrect_code: código incorrecto
-        verify_sms_code: Hemos enviado un SMS a %{phonenumber} con un código de verificación. Por favor ingrese el código en el formulario para verificar la reservación. Esto es necesario para completar la reservación.
+        verify_verification_code: Hemos enviado un SMS a %{recipient} con un código de verificación. Por favor ingrese el código en el formulario para verificar la reservación. Esto es necesario para completar la reservación.
     events:
       index:
         none_available: No hay eventos disponibles.

@@ -71,10 +71,10 @@ da:
         paid: Du har forudbetalt %{paid_amount}.
         remember_me: Vil du have os til at huske dig på denne maskine indtil næste gang du bestiller her?
         title: Din reservation er bekræftet!
-      sms_code:
+      verification_code:
         header: Bekræft reservation
         incorrect_code: Forkert kode
-        verify_sms_code: Du modtager nu en SMS på telefonnummer %{phonenumber} med en kode. Indtast koden i nedenstående formular for at bekræfte reservationen. Dette er nødvendigt for at gennemføre reservationen - uden at gøre det, gennemføres reservationen ikke.
+        verify_verification_code: Du modtager nu en kode på %{recipient}. Indtast koden i nedenstående formular for at bekræfte reservationen. Dette er nødvendigt for at gennemføre reservationen - uden at gøre det, gennemføres reservationen ikke.
     events:
       index:
         none_available: Ingen begivenheder tilgængelige.

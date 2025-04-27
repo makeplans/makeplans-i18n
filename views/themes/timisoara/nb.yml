@@ -49,10 +49,9 @@ nb:
         select_category: Velg kategori
     person_sessions:
       enter_perishable_token:
-        perishable_token: Code
-        info_html: "We’ve sent a <b>SMS to %{phone_number}</b>
-            with a verification code. Please enter the code to verify your
-            information. This step is mandatory to complete the reservation."
+        perishable_token: Kode
+        info_html: "Vi har sendt en kode til <b>%{recipient}</b>.
+            Skriv inn koden for å fullføre verifiseringen."
         submit: Continue
         title: Verify your reservation
       perishable_token_form:

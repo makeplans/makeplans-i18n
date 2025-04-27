@@ -1,7 +1,7 @@
 ---
 lt:
   bookings:
-    sms_code:
+    verification_code:
       incorrect_code: Neteisingas kodas
   clients:
     new:

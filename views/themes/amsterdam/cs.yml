@@ -62,10 +62,10 @@ cs:
         paid: Máte předplacenou %{paid_amount}.
         remember_me: Chcete, abychom si vás na tomto stroji pamatovali pomocí cookie?
         title: Vaše rezervace je potvrzena!
-      sms_code:
+      verification_code:
         header: Potvrdit rezervaci
         incorrect_code: nesprávný kód
-        verify_sms_code: Poslali jsme SMS na %{phonenumber} s ověřovacím kódem. Pro ověření rezervace zadejte kód do formuláře. To je nutné pro dokončení rezervace.
+        verify_verification_code: Poslali jsme SMS na %{recipient} s ověřovacím kódem. Pro ověření rezervace zadejte kód do formuláře. To je nutné pro dokončení rezervace.
     events:
       index:
         none_available: Nejsou k dispozici žádné události.

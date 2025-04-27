@@ -67,10 +67,10 @@ lv:
         paid: Jums ir priekšapmaksa %{paid_amount}.
         remember_me: Vai vēlaties, lai mēs atcerētos šo ierīci kā jūs, izmantojot sīkfailu?
         title: Jūsu maksājums ir veikts!
-      sms_code:
+      verification_code:
         header: Apstipriniet pierakstu
         incorrect_code: Nepareizs kods
-        verify_sms_code: Esam nosūtījuši jums īsziņu uz %{phonenumber} ar verifikācijas kodu. Lūdzu, ievadiet kodu formā, lai pārbaudītu rezervāciju. Tas ir nepieciešams, lai pabeigtu rezervāciju.
+        verify_verification_code: Esam nosūtījuši jums īsziņu uz %{recipient} ar verifikācijas kodu. Lūdzu, ievadiet kodu formā, lai pārbaudītu rezervāciju. Tas ir nepieciešams, lai pabeigtu rezervāciju.
     events:
       index:
         none_available: Nav pieejamu notikumu.

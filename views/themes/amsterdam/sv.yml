@@ -67,10 +67,10 @@ sv:
         paid: Du har förbetalt %{paid_amount}.
         remember_me: Vill du bli ihågkommen på den här datorn med hjälp av cookies?
         title: Bokningen är slutförd och bekräftad!
-      sms_code:
+      verification_code:
         header: Bekräfta bokning
         incorrect_code: Felaktig kod
-        verify_sms_code: Vi har skickat ett SMS till %{phonenumber} med en kontrollkod. Vänligen ange koden i formuläret för att bekräfta bokningen, annars kommer bokningen inte att slutföras.
+        verify_verification_code: Vi har skickat ett kontrollkod til %{recipient}. Vänligen ange koden i formuläret för att bekräfta bokningen, annars kommer bokningen inte att slutföras.
     events:
       index:
         none_available: Inga evenemang tillgängliga.

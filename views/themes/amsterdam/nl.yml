@@ -11,8 +11,8 @@ nl:
         cancel: Annuleer Reservering
         remember_me: Wilt de gegevens bewaren door het plaatsen van een cookie?
         title: Uw reservering is bevestigd
-      sms_code:
-        verify_sms_code: We hebben een SMS gestuurd naar %{phonenumber} met een verificatiecode. Voer de code hier in om uw reservering te bevestigen. Dit is vereist om de reservering af te ronden.
+      verification_code:
+        verify_verification_code: We hebben een SMS gestuurd naar %{recipient} met een verificatiecode. Voer de code hier in om uw reservering te bevestigen. Dit is vereist om de reservering af te ronden.
     generic:
       dateselector: Selecteer datum
       demo_ended: De MarketPlans demo is verlopen.

@@ -67,10 +67,10 @@ ms:
         paid: Anda mempunyai prabayar %{paid_amount}.
         remember_me: Adakah anda mahu kami mengingati anda di mesin ini menggunakan kuki?
         title: Tempahan anda disahkan!
-      sms_code:
+      verification_code:
         header: Sahkan tempahan
         incorrect_code: kod salah
-        verify_sms_code: Kami telah menghantar SMS ke %{phonenumber} dengan kod pengesahan. Sila masukkan kod dalam borang untuk mengesahkan tempahan. Ini diperlukan untuk menyelesaikan tempahan.
+        verify_verification_code: Kami telah menghantar SMS ke %{recipient} dengan kod pengesahan. Sila masukkan kod dalam borang untuk mengesahkan tempahan. Ini diperlukan untuk menyelesaikan tempahan.
     events:
       index:
         none_available: Tiada acara yang tersedia.

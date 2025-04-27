@@ -1,7 +1,7 @@
 ---
 ms:
   bookings:
-    sms_code:
+    verification_code:
       incorrect_code: kod salah
   clients:
     new:

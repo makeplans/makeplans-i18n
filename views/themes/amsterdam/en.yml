@@ -94,11 +94,11 @@ en:
         price: The price of the booking is %{amount}.
         remember_me: Do you want us to remember you on this machine using a cookie?
         title: Your reservation is confirmed!
-      sms_code:
+      verification_code:
         header: Verify reservation
         incorrect_code: Incorrect code
         remember_me: Remember me on this device
-        verify_sms_code: We have sent a SMS to %{phonenumber} with a verification code. Please enter the code in the form to verify the reservation. This is required to confirm the reservation.
+        verify_verification_code: We have sent a verification code to %{recipient}. Please enter the code in the form to verify the reservation. This is required to confirm the reservation.
     events:
       index:
         free_capacity: '%{count} available'

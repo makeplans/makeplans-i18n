@@ -66,10 +66,10 @@ pl:
         paid: Zapłacono %{paid_amount}.
         remember_me: Czy chcesz, abyśmy zapamiętali Cię na tym urządzeniu za pomocą pliku cookie?
         title: Twoja rezerwacja została potwierdzona!
-      sms_code:
+      verification_code:
         header: Potwierdź rezerwację
         incorrect_code: Nieprawidłowy kod
-        verify_sms_code: Wysłaliśmy wiadomość SMS na %{phonenumber} z kodem weryfikacyjnym. Wpisz kod w formularzu w celu weryfikacji rezerwacji. Jest to wymagane do zakończenia rezerwacji.
+        verify_verification_code: Wysłaliśmy wiadomość SMS na %{recipient} z kodem weryfikacyjnym. Wpisz kod w formularzu w celu weryfikacji rezerwacji. Jest to wymagane do zakończenia rezerwacji.
     events:
       index:
         none_available: Brak dostępnych rezerwacji.
