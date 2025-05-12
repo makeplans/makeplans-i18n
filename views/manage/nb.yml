@@ -788,6 +788,8 @@ nb:
           hide_all_available: Må velge spesifikk ressurs ('vis all ledige' skjules)
           hide_resources: Skjul knappen for å velge ressurs (vilkårlig ledig ressurs blir automatisk valgt)
           hide_slot_end: Skjul slutt-tid
+          return_occupied: Vis slotter som er opptatt
+          return_past: Vis slotter i fortiden
           select_resource: Ekstra steg for valg av ressurs
           show_free_capacity: Vis ledig kapasitet
       form_attendance:
