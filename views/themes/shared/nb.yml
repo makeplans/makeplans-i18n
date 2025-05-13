@@ -1,0 +1,8 @@
+---
+nb:
+  shared:
+    services:
+      slots:
+        free_capacity:
+          one: '%{count} ledig'
+          other: '%{count} ledige'

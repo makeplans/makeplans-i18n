@@ -1,0 +1,6 @@
+---
+en:
+  shared:
+    services:
+      slots:
+        free_capacity: '%{count} available'
