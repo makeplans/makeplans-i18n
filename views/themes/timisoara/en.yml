@@ -69,9 +69,17 @@ en:
           completed: Completed
           cancelled: Cancelled
         title: My reservations
+        cancel: Cancel
       new:
         header: Account information
         errors_header: 'Errors occured:'
+    providers:
+      index:
+        all_services: All services
+        title: Select provider
+    events:
+      index:
+        all_events: All events
     services:
       index:
         all_categories: All categories

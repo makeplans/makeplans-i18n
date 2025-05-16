@@ -5,9 +5,9 @@ nb:
       awaiting_confirmation:
         body: Du har lagt inn reservasjon av tjenesten. Du må vente til en administrator godkjenner din reservasjon.
       authenticate:
-        info: We need information to verify your reservation of
-        submit: Send code
-        title: Phone number authentication
+        info: Vi trenger mer informasjon for å verifisere din reservasjon av
+        submit: Send kode
+        title: SMS-verifisering
       new:
         accept: Jeg godkjenner
         submit: Bestill
@@ -52,8 +52,8 @@ nb:
         perishable_token: Kode
         info_html: "Vi har sendt en kode til <b>%{recipient}</b>.
             Skriv inn koden for å fullføre verifiseringen."
-        submit: Continue
-        title: Verify your reservation
+        submit: Fortsett
+        title: Verifiser din reservasjon
       perishable_token_form:
         submit: Send code
         title: Login
@@ -65,11 +65,22 @@ nb:
           completed: Utførte
           cancelled: Kansellerte
         title: Mine reservasjoner
+        cancel: Kanseller
       new:
         header: Dine kontaktopplysninger
+    providers:
+      index:
+        all_services: Alle tjenester
+        title: Velg tilbyder
+    events:
+      index:
+        all_events: Alle arrangementer
     services:
       index:
         all_categories: Alle kategorier
+        all_services: Alle tjenester
+        continue: Book denne tjenesten
+      show:
         all_services: Alle tjenester
         continue: Book denne tjenesten
       slots:
