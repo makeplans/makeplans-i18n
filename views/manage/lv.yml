@@ -251,7 +251,7 @@ lv:
         enable_warning: Vai tiešām vēlaties aktivizēt API? API atslēga nodrošina pilnu programmatisku piekļuvi jūsu kontam.
         enabled: API ir iespējota.
         header: API
-        info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
         not_enabled: API nav iespējota.
       cancel:
         confirm_message: Pēdējā iespēja. Vai esat pilnīgi pārliecināts, ka vēlaties dzēst kontu ar visiem datiem?
@@ -267,9 +267,9 @@ lv:
         menu_info: Kreisajā pusē esošajā izvēlnē atlasiet. Ja jums ir kādi jautājumi par korekciju, lūdzu, sazinieties ar klientu apkalpošanas centru.
         trial_info: Šis ir izmēģinājuma konts - noklikšķiniet šeit, lai aktivizētu
       edit:
-        custom_messages_info_html: Attiecīgos datus varat sapludināt šeit. Lai iegūtu papildinformāciju, lūdzu, apmeklējiet vietni <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> .
+        custom_messages_info_html: Attiecīgos datus varat sapludināt šeit. Lai iegūtu papildinformāciju, lūdzu, apmeklējiet vietni <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> .
       edit_booking_site:
-        booking_form_info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_form_info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         booking_site_info_html: Jūsu rezervācijas vietne ir pieejama vietnē %{url}.
         booking_site_locale_default: Izmantojiet konta valodu
         cancellation: Anulēšana
@@ -311,14 +311,14 @@ lv:
         domain_info: Ir iespējams izmantot savu vietrādi URL, piemēram, booking.YOURDOMAIN.com, lai iegūtu papildinformāciju, lūdzu, sazinieties ar klientu servisu
         header: Mainīt konta informāciju
         payment_provider:
-          info_html: Pirms rezervēšanas pabeigšanas rezervācijas vietnē ir iespējams pieprasīt samaksu, izmantojot kādu no integrētajiem maksājumu pakalpojumu sniedzējiem. Mēs iesakām <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe,</a> kas ir labs pakalpojums, ar kuru jūs varat ātri sākt darbu bez fiksētām izmaksām. Sadaļā "Integrācijas" jums jānorāda arī nepieciešamā informācija par izvēlēto maksājumu nodrošinātāju.
+          info_html: Pirms rezervēšanas pabeigšanas rezervācijas vietnē ir iespējams pieprasīt samaksu, izmantojot kādu no integrētajiem maksājumu pakalpojumu sniedzējiem. Mēs iesakām <a href="https://stripe.com" target="_blank" class="link-external">Stripe,</a> kas ir labs pakalpojums, ar kuru jūs varat ātri sākt darbu bez fiksētām izmaksām. Sadaļā "Integrācijas" jums jānorāda arī nepieciešamā informācija par izvēlēto maksājumu nodrošinātāju.
           none: Nav
         purge_data_info: 'Šī funkcija automātiski izdzēsīs veco personu identificējošo informāciju (klienti un rezervācijas). Ievadiet dzēšanas datuma tekstu attiecībā pret pašreizējo datumu. Piemērs: “pirms 6 mēnešiem” vai “pirms 2 gadiem”.'
         subdomain_info: Jūsu unikālā adrese (URL), kur klienti var rezervēt
       edit_fields:
         appointment_form_info: Šī veidlapa paredzēta tikai rezervāciju manuālai ievadīšanai. Lai mainītu rezervācijas veidlapu rezervācijas vietnē, lūdzu, dariet to sadaļā “Rezervēšanas vietne”. Ja pielāgotās rezervācijas veidlapā tiek izmantoti pielāgoti lauki, tie arī jāiekļauj šeit.
         booking_form_info: Lūdzu, dodieties uz rezervācijas vietnes iestatījumiem, lai mainītu.
-        custom_form_info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        custom_form_info_html: Lai saņemtu palīdzību, sazinieties ar klientu apkalpošanas centru. Dokumentācija ir pieejama vietnē<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         header: Mainīt pielāgotos laukus
       edit_person_notifications:
         automatic_messages: Automātiski ziņojumi (administrēšanas sistēmā un API)
@@ -569,7 +569,7 @@ lv:
         immediately: nekavējoties
         services: Pakalpojumi
         services_info: 'Ziņojuma veidne tiks nosūtīta visiem pakalpojumiem, ja vien tālāk neaprobežosities ar konkrētiem pakalpojumiem:'
-        template_info_html: Varat apvienot viesu nama dinamiskās vērtības. Plašāku informāciju skatiet <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">vietnē https://github.com/makeplans/makeplans-custom-messages</a> .
+        template_info_html: Varat apvienot viesu nama dinamiskās vērtības. Plašāku informāciju skatiet <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">vietnē https://github.com/makeplans/makeplans-custom-messages</a> .
       index:
         header: Ziņojumu veidnes
         immediately: nekavējoties
@@ -685,7 +685,7 @@ lv:
         custom_communication_info: Šeit jūs varat norādīt pielāgotu saturu, kas tiek nosūtīts katrai jaunai šī notikuma veida rezervācijai. Ja saturs tiek ievadīts, tas pārspēj noklusējuma saturu sadaļā "Komunikācija". Tukšos laukos tiks izmantots noklusējuma saturs
         custom_communication_show: Rādīt izejošās saziņas saturu
       custom_form:
-        custom_form_info_html: Šim pakalpojumam varat norādīt pielāgotu rezervācijas veidlapu. Šī veidlapa ignorēs noklusējuma veidlapu, kas definēta sadaļā "Rezervēšanas vietne". Dokumentāciju var atrast vietnē<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> , vai arī sazinieties ar klientu servisu, lai saņemtu palīdzību.
+        custom_form_info_html: Šim pakalpojumam varat norādīt pielāgotu rezervācijas veidlapu. Šī veidlapa ignorēs noklusējuma veidlapu, kas definēta sadaļā "Rezervēšanas vietne". Dokumentāciju var atrast vietnē<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> , vai arī sazinieties ar klientu servisu, lai saņemtu palīdzību.
         custom_form_show: Rādīt pielāgotu rezervēšanas veidlapu
       form_appointment:
         booking_site_settings: Rezervācijas vietnes iestatījumi
@@ -838,5 +838,5 @@ lv:
         remove_access_confirm: Vai tiešām vēlaties noņemt šī lietotāja piekļuvi šim kontam?
     web_hooks:
       index:
-        app_secret_info_html: Lietotnes noslēpums, kas ļauj ļoti stiprināt tīmekļa āķus. Sīkāku informāciju <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">skatiet dokumentācijā.</a>
+        app_secret_info_html: Lietotnes noslēpums, kas ļauj ļoti stiprināt tīmekļa āķus. Sīkāku informāciju <a href="https://developer.makeplans.com" target="_blank" class="link-external">skatiet dokumentācijā.</a>
         header: Tīmekļa saites

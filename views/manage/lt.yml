@@ -253,7 +253,7 @@ lt:
         enable_warning: Ar tikrai norite suaktyvinti API? API raktas suteikia visišką programinę prieigą prie jūsų paskyros.
         enabled: API įjungta.
         header: API
-        info_html: Kreipkitės pagalbos į klientų aptarnavimo tarnybą. Dokumentaciją rasite adresu <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        info_html: Kreipkitės pagalbos į klientų aptarnavimo tarnybą. Dokumentaciją rasite adresu <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
         not_enabled: API neįjungta.
       cancel:
         confirm_message: Paskutinis šansas. Ar tikrai esate įsitikinę, kad norite ištrinti savo sąskaitą su visais savo duomenimis?
@@ -269,9 +269,9 @@ lt:
         menu_info: Pasirinkite iš meniu kairėje pusėje. Jei turite klausimų apie koregavimą, susisiekite su klientų aptarnavimo tarnyba.
         trial_info: Tai bandomoji sąskaita - spustelėkite čia, kad suaktyvintumėte
       edit:
-        custom_messages_info_html: Atitinkamus duomenis galite sujungti čia. Norėdami gauti daugiau informacijos, apsilankykite <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> .
+        custom_messages_info_html: Atitinkamus duomenis galite sujungti čia. Norėdami gauti daugiau informacijos, apsilankykite <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> .
       edit_booking_site:
-        booking_form_info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_form_info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         booking_site_info_html: Jūsų užsakymo svetainę rasite adresu %{url}.
         booking_site_locale_default: Naudokite paskyros kalbą
         cancellation: Atšaukimas
@@ -311,7 +311,7 @@ lt:
         api:
           enable: Suaktyvinti API
           enable_warning: Ar tikrai norite suaktyvinti API? API raktas suteikia visišką programinę prieigą prie jūsų paskyros.
-          info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+          info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
           not_enabled: Neaktyvuota
         app_secret_info: Programos paslaptis, skirta žiniatinklio kabliams
         delete_account_html: Ar tikrai norite ištrinti savo sąskaitą? <a href="%{link}">Taip, tęskite</a>
@@ -319,14 +319,14 @@ lt:
         domain_info: Galima naudoti savo URL, pvz., Booking.YOURDOMAIN.com. Norėdami gauti daugiau informacijos, susisiekite su klientų aptarnavimo tarnyba
         header: Keisti paskyros informaciją
         payment_provider:
-          info_html: Prieš užpildant rezervaciją rezervavimo svetainėje, galima reikalauti apmokėjimo pas vieną iš integruotų mokėjimo paslaugų teikėjų. Mes rekomenduojame <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe“</a> kuri yra gera paslauga, kurią galite greitai pradėti naudoti be jokių fiksuotų išlaidų. Jūs taip pat turite nurodyti reikiamą informaciją apie pasirinktą mokėjimo paslaugų teikėją skiltyje "Integracijos".
+          info_html: Prieš užpildant rezervaciją rezervavimo svetainėje, galima reikalauti apmokėjimo pas vieną iš integruotų mokėjimo paslaugų teikėjų. Mes rekomenduojame <a href="https://stripe.com" target="_blank" class="link-external">Stripe“</a> kuri yra gera paslauga, kurią galite greitai pradėti naudoti be jokių fiksuotų išlaidų. Jūs taip pat turite nurodyti reikiamą informaciją apie pasirinktą mokėjimo paslaugų teikėją skiltyje "Integracijos".
           none: Nė vienas
         purge_data_info: 'Ši funkcija automatiškai ištrins seną asmens identifikavimo informaciją (klientai ir rezervacijos). Įveskite ištrinimo datos tekstą, palyginti su dabartine data. Pavyzdys: ''prieš 6 mėnesius'' arba ''prieš 2 metus''.'
         subdomain_info: Jūsų unikalus adresas (URL), kur klientai gali rezervuoti
       edit_fields:
         appointment_form_info: Ši forma skirta tik rankiniam rezervacijų įvedimui. Norėdami pakeisti rezervacijos formą užsakymo svetainėje, atlikite tai 'rezervavimo svetainės' nustatymuose. Jei pasirinktoje rezervavimo formoje naudojami pasirinktiniai laukai, jie taip pat turėtų būti įtraukti čia.
         booking_form_info: Norėdami pakeisti, eikite į rezervavimo svetainės nustatymus.
-        custom_form_info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        custom_form_info_html: Kreipkitės pagalbos į klientų aptarnavimo skyrių. Dokumentaciją galima rasti adresu<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         header: Keisti pasirinktinius laukus
       edit_person_notifications:
         automatic_messages: Automatiniai pranešimai (administratoriaus sistemoje ir API)
@@ -577,7 +577,7 @@ lt:
         immediately: nedelsiant
         services: Paslaugos
         services_info: 'Pranešimo šablonas bus išsiųstas visoms paslaugoms, nebent toliau nurodysite tam tikras paslaugas:'
-        template_info_html: Galite sujungti užeigos dinamines vertes. Norėdami gauti daugiau informacijos, <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">žr. https://github.com/makeplans/makeplans-custom-messages.</a>
+        template_info_html: Galite sujungti užeigos dinamines vertes. Norėdami gauti daugiau informacijos, <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">žr. https://github.com/makeplans/makeplans-custom-messages.</a>
       index:
         header: Pranešimų šablonai
         immediately: nedelsiant
@@ -693,7 +693,7 @@ lt:
         custom_communication_info: Čia galite nurodyti pasirinktinį turinį, kuris siunčiamas už kiekvieną naują šio įvykio tipo rezervaciją. Jei įvedamas turinys, jis pakeis numatytąjį turinį skiltyje "Ryšys". Tuščiuose laukuose bus naudojamas numatytasis turinys
         custom_communication_show: Rodyti išeinančio ryšio turinį
       custom_form:
-        custom_form_info_html: Galite nurodyti pasirinktinę šios paslaugos rezervavimo formą. Ši forma pakeis numatytąją formą, apibrėžtą skiltyje "Rezervavimo svetainė". Dokumentaciją galite rasti adresu<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> . Arba susisiekite su klientų aptarnavimo tarnyba.
+        custom_form_info_html: Galite nurodyti pasirinktinę šios paslaugos rezervavimo formą. Ši forma pakeis numatytąją formą, apibrėžtą skiltyje "Rezervavimo svetainė". Dokumentaciją galite rasti adresu<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> . Arba susisiekite su klientų aptarnavimo tarnyba.
         custom_form_show: Rodyti pasirinktinę rezervacijos formą
       form_appointment:
         booking_site_settings: Užsakymo svetainės nustatymai
@@ -846,5 +846,5 @@ lt:
         remove_access_confirm: Ar tikrai norite pašalinti šio vartotojo prieigą prie šios paskyros?
     web_hooks:
       index:
-        app_secret_info_html: Programos paslaptis žiniatinklio kabliams tikrinti. Daugiau informacijos <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">rasite dokumentacijoje.</a>
+        app_secret_info_html: Programos paslaptis žiniatinklio kabliams tikrinti. Daugiau informacijos <a href="https://developer.makeplans.com" target="_blank" class="link-external">rasite dokumentacijoje.</a>
         header: Webhooks

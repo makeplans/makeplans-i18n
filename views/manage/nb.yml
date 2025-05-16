@@ -266,6 +266,8 @@ nb:
       show:
         custom_data: 'Egendefinerte felter:'
         has_services: 'Viser følgende tjenester:'
+        qr_code: QR-kode til kunder
+        show_on_booking_site: Åpne denne tjenesten på bookingsiden
     client:
       api:
         disable: Vil du deaktivere API?
@@ -274,7 +276,7 @@ nb:
         enable_warning: Er du sikker på at du vil aktivere API-tilgang? Med bruk av API-nøkkel har man full tilgang til å endre alt på kontoen.
         enabled: API-en er aktivert.
         header: API
-        info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a>.
+        info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a>.
         not_enabled: Ikke aktivert
       cancel:
         confirm_message: Siste sjanse. Er du helt sikker på at du vil slette kontoen med alle dine data?
@@ -290,9 +292,9 @@ nb:
         menu_info: Velg i menyen til venstre der du ønsker å gjøre endringer. Hvis du lurer på hvordan du skal gjøre endringer så ta kontakt med kundeservice.
         trial_info: Dette er en demokonto - klikk her for å aktivere
       edit:
-        custom_messages_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>.
+        custom_messages_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
       edit_booking_site:
-        booking_form_info_html: Det du fyller ut her vil i sin helhet erstatte standard skjema som benyttes på bookingsiden. For å endre skjemaet som vises ved manuell oppretting av reservasjoner så gjøres det under "Egendefinerte felter". Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>. Husk å legge til nødvendige felter til verifisering som navn og epost/telefonnummer.
+        booking_form_info_html: Det du fyller ut her vil i sin helhet erstatte standard skjema som benyttes på bookingsiden. For å endre skjemaet som vises ved manuell oppretting av reservasjoner så gjøres det under "Egendefinerte felter". Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>. Husk å legge til nødvendige felter til verifisering som navn og epost/telefonnummer.
         booking_site_info_html: Deres bookingside er tilgjengelig på %{url}.
         booking_site_locale_default: Bruk språk på konto
         cancellation: Avbestillling
@@ -336,14 +338,14 @@ nb:
         domain_info: Det er mulig å benytte egen URL, for eksempel booking.DITTDOMENE.no, ta kontakt med kundeservice for mer informasjon.
         header: Endre kontoinformasjon
         payment_provider:
-          info_html: Du kan ta forhåndsbetalt på bookingsiden via de betalingsløsninger som er integrert med MakePlans. Vi anbefaler <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe</a> som er en god tjeneste det er en enkelt å komme i gang med og som er uten faste kostnader. De andre aktørene kan være rimeligere per transaksjon men har høyere dokumentasjonskrav for å bli kunde. Du må også spesifisere informasjon for tilkobling mot valgt betalingsløsning under "Integrasjoner".
+          info_html: Du kan ta forhåndsbetalt på bookingsiden via de betalingsløsninger som er integrert med MakePlans. Vi anbefaler <a href="https://stripe.com" target="_blank" class="link-external">Stripe</a> som er en god tjeneste det er en enkelt å komme i gang med og som er uten faste kostnader. De andre aktørene kan være rimeligere per transaksjon men har høyere dokumentasjonskrav for å bli kunde. Du må også spesifisere informasjon for tilkobling mot valgt betalingsløsning under "Integrasjoner".
           none: Ingen
         purge_data_info: 'Denne funksjonen vil automatisk slette gamle personopplysninger (kunder og reservasjoner). Skriv inn på engelsk, slettedato vil da være relativt til dagens dato. Eks.: ''6 months ago'' eller ''2 years ago''.'
         subdomain_info: Din unike adresse (URL) hvor dine kunder kan reservere.
       edit_fields:
         appointment_form_info: Dette skjemaet gjelder kun ved manuell oppretting av reservasjon. For å endre reservasjonskjema på bookingsiden så må det endres under 'Bookingside'. Hvis egendefinert reservasjonskjema er fylt ut med egendefinerte felter må også de inkluderes her.
         booking_form_info: Gå til innstillinger for bookingsiden for å endre.
-        custom_form_info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>.
+        custom_form_info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>.
         header: Endre egendefinerte felter
       edit_person_notifications:
         automatic_messages_booking_site: Automatiske utsendelser (På bookingsiden)
@@ -621,7 +623,7 @@ nb:
         immediately: øyeblikkelig
         services: Tjenester
         services_info: 'Meldingsmalen vil gjelde for alle tjenester med mindre du begrenser utsending til enkelte tjenester:'
-        template_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>.
+        template_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
       index:
         header: Meldingsmaler
         immediately: øyeblikkelig
@@ -754,16 +756,16 @@ nb:
         custom_communication_info: Her kan du spesifisere egne tekster som sendes ut ved reservasjon av denne tjenesten. Disse tekstene vil da overstyre standard tekster som er definert under "Kommunikasjon". Felt som er tomme vil bruke standard tekster.
         custom_communication_show: Vis tekster for utgående kommunikasjon
       custom_form:
-        custom_form_info_html: Her kan du spesifisere egendefinert skjema for reservasjon av denne tjenesten. Skjemaet vil da overstyre standard skjema som er definert under "Bookingside". Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>, eventuelt kontakt kundeservice for hjelp.
+        custom_form_info_html: Her kan du spesifisere egendefinert skjema for reservasjon av denne tjenesten. Skjemaet vil da overstyre standard skjema som er definert under "Bookingside". Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>, eventuelt kontakt kundeservice for hjelp.
         custom_form_show: Vis egendefinert reservasjonskjema
       custom_new_booking_text:
-        custom_new_booking_text_info_html: Du kan vise en egendefinert tekst som vises på bekreftelsesiden for denne tjenesten. Denne teksten vil overstyre standard tekst som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>, eventuelt kontakt kundeservice for hjelp.
+        custom_new_booking_text_info_html: Du kan vise en egendefinert tekst som vises på bekreftelsesiden for denne tjenesten. Denne teksten vil overstyre standard tekst som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>, eventuelt kontakt kundeservice for hjelp.
         custom_new_booking_text_show: Vis egendefinert tekst på bekreftelsesiden
       custom_reservation_form_text:
-        custom_reservation_form_text_info_html: Du kan vise en egendefinert tekst som vises før reservasjonskjema for denne tjenesten. Denne teksten vil overstyre standard tekst som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a>, eventuelt kontakt kundeservice for hjelp.
+        custom_reservation_form_text_info_html: Du kan vise en egendefinert tekst som vises før reservasjonskjema for denne tjenesten. Denne teksten vil overstyre standard tekst som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>, eventuelt kontakt kundeservice for hjelp.
         custom_reservation_form_text_show: Vis egendefinert tekst for reservasjonskjema
       custom_terms:
-        custom_terms_info_html: Du kan ha egendefinert vilkår denne tjenesten. Denne teksten vil overstyre vilkår som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a>, eventuelt kontakt kundeservice for hjelp.
+        custom_terms_info_html: Du kan ha egendefinert vilkår denne tjenesten. Denne teksten vil overstyre vilkår som definert under innstillinger for bookingsiden. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>, eventuelt kontakt kundeservice for hjelp.
         custom_terms_show: Vis egendefinert vilkår
       form_appointment:
         account_default: Standard kontoinnstilling

@@ -253,7 +253,7 @@ he:
         enable_warning: האם אתה בטוח שברצונך להפעיל את ה-API? מפתח ה-API נותן גישה פרוגרמטית מלאה לחשבון שלך.
         enabled: ה-API מופעל.
         header: ממשק API
-        info_html: צור קשר עם שירות הלקוחות לקבלת עזרה. התיעוד זמין בכתובת <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        info_html: צור קשר עם שירות הלקוחות לקבלת עזרה. התיעוד זמין בכתובת <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
         not_enabled: ה-API אינו מופעל.
       cancel:
         confirm_message: ההזדמנות האחרונה. האם אתה בטוח לחלוטין שברצונך למחוק את חשבונך עם כל הנתונים שלך?
@@ -269,9 +269,9 @@ he:
         menu_info: בחר מהתפריט בצד שמאל. אם יש לך שאלות לגבי אופן ביצוע התאמות אנא פנה לשירות הלקוחות.
         trial_info: זהו חשבון ניסיון - לחץ כאן להפעלה
       edit:
-        custom_messages_info_html: תוכל למזג נתונים רלוונטיים כאן. למידע נוסף אנא עיין <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">בכתובת https://github.com/makeplans/makeplans-custom-messages</a> .
+        custom_messages_info_html: תוכל למזג נתונים רלוונטיים כאן. למידע נוסף אנא עיין <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">בכתובת https://github.com/makeplans/makeplans-custom-messages</a> .
       edit_booking_site:
-        booking_form_info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_form_info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         booking_site_info_html: אתר ההזמנות שלך זמין בכתובת %{url}.
         booking_site_locale_default: השתמש בשפת החשבון
         cancellation: ביטול
@@ -311,7 +311,7 @@ he:
         api:
           enable: הפעל את ה- API
           enable_warning: האם אתה בטוח שברצונך להפעיל את ה- API? מפתח ה- API נותן גישה פרוגרמטית מלאה לחשבונך.
-          info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+          info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
           not_enabled: לא הופעל
         app_secret_info: סוד אפליקציה למאפייני ווב-ווקים
         delete_account_html: האם אתה בטוח שברצונך למחוק את חשבונך? <a href="%{link}">כן, המשך</a>
@@ -319,14 +319,14 @@ he:
         domain_info: אפשר להשתמש בכתובת אתר משלך, כמו booking.YOURDOMAIN.com, אנא צרו קשר עם שירות הלקוחות לקבלת מידע נוסף
         header: שנה את פרטי החשבון
         payment_provider:
-          info_html: ניתן לדרוש תשלום לפני השלמת ההזמנה באתר ההזמנות באמצעות אחד מספקי התשלומים המשולבים. אנו ממליצים על <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe</a> שהוא שירות טוב שתוכל להתחיל איתו במהירות ללא עלויות קבועות. עליך לציין את המידע הנדרש עבור ספק התשלומים שנבחר ב"אינטגרציות ".
+          info_html: ניתן לדרוש תשלום לפני השלמת ההזמנה באתר ההזמנות באמצעות אחד מספקי התשלומים המשולבים. אנו ממליצים על <a href="https://stripe.com" target="_blank" class="link-external">Stripe</a> שהוא שירות טוב שתוכל להתחיל איתו במהירות ללא עלויות קבועות. עליך לציין את המידע הנדרש עבור ספק התשלומים שנבחר ב"אינטגרציות ".
           none: אף אחד
         purge_data_info: 'תכונה זו תמחק באופן אוטומטי מידע מזהה אישי ישן (לקוחות והזמנות). הזן טקסט לתאריך המחיקה ביחס לתאריך הנוכחי. דוגמה: ''לפני 6 חודשים'' או ''לפני שנתיים''.'
         subdomain_info: הכתובת (URL) הייחודית שלך בה הלקוחות שלך יכולים לבצע הזמנות
       edit_fields:
         appointment_form_info: טופס זה מיועד להזמנה ידנית בלבד. לשינוי טופס ההזמנה באתר ההזמנה אנא עשה זאת בהגדרות 'אתר הזמנות'. אם טופס ההזמנה המותאם אישית משתמש בשדות מותאמים אישית, יש לכלול אותם גם כאן.
         booking_form_info: אנא היכנס להגדרות של אתר ההזמנות לשינוי.
-        custom_form_info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        custom_form_info_html: צרו קשר עם שירות הלקוחות לקבלת עזרה. תיעוד זמין בכתובת<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         header: שנה שדות מותאמים אישית
       edit_person_notifications:
         automatic_messages: הודעות אוטומטיות (במערכת הניהול וב- API)
@@ -577,7 +577,7 @@ he:
         immediately: מיד
         services: שירותים
         services_info: 'תבנית ההודעה תישלח עבור כל השירותים, אלא אם תגביל לשירותים ספציפיים להלן:'
-        template_info_html: אתה יכול למזג ערכים דינמיים של אין. אנא ראה <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> לפרטים.
+        template_info_html: אתה יכול למזג ערכים דינמיים של אין. אנא ראה <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> לפרטים.
       index:
         header: תבניות הודעות
         immediately: מיד
@@ -693,7 +693,7 @@ he:
         custom_communication_info: כאן תוכלו לציין תוכן מותאם אישית אשר נשלח לכל הזמנה חדשה מסוג אירוע זה. אם תוכן מוזן הוא יעקוף את תוכן ברירת המחדל תחת "תקשורת". שדות ריקים ישתמשו בתוכן ברירת מחדל
         custom_communication_show: הראה תוכן לתקשורת יוצאת
       custom_form:
-        custom_form_info_html: אתה יכול לציין טופס הזמנה מותאם אישית עבור שירות זה. טופס זה יעקוף את טופס ברירת המחדל המוגדר תחת "אתר הזמנות". תיעוד ניתן למצוא בכתובת<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> , לחלופין פנה לשירות הלקוחות לקבלת סיוע.
+        custom_form_info_html: אתה יכול לציין טופס הזמנה מותאם אישית עבור שירות זה. טופס זה יעקוף את טופס ברירת המחדל המוגדר תחת "אתר הזמנות". תיעוד ניתן למצוא בכתובת<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> , לחלופין פנה לשירות הלקוחות לקבלת סיוע.
         custom_form_show: הצג טופס הזמנה מותאם אישית
       form_appointment:
         booking_site_settings: הגדרות לאתר ההזמנות
@@ -846,5 +846,5 @@ he:
         remove_access_confirm: האם אתה בטוח שברצונך להסיר גישה לחשבון זה עבור משתמש זה?
     web_hooks:
       index:
-        app_secret_info_html: סוד האפליקציה לאימות webhooks. ראה <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">תיעוד</a> לפרטים.
+        app_secret_info_html: סוד האפליקציה לאימות webhooks. ראה <a href="https://developer.makeplans.com" target="_blank" class="link-external">תיעוד</a> לפרטים.
         header: Webhooks

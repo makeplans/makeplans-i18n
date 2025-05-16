@@ -251,7 +251,7 @@ ru:
         enable_warning: Вы уверены, что хотите активировать API? API-ключ дает полный программный доступ к вашей учетной записи.
         enabled: API включен.
         header: API
-        info_html: Обратитесь в службу поддержки клиентов за помощью. Документация доступна на <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        info_html: Обратитесь в службу поддержки клиентов за помощью. Документация доступна на <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
         not_enabled: API не включен.
       cancel:
         confirm_message: Последний шанс. Вы абсолютно уверены, что хотите удалить свою учетную запись со всеми своими данными?
@@ -267,9 +267,9 @@ ru:
         menu_info: Выберите в меню слева. Если у вас есть какие-либо вопросы о том, как выполнить настройку, обратитесь в службу поддержки клиентов.
         trial_info: Это пробная учетная запись - нажмите здесь, чтобы активировать
       edit:
-        custom_messages_info_html: Здесь вы можете объединить соответствующие данные. Для получения дополнительной информации см. <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">Https://github.com/makeplans/makeplans-custom-messages</a> .
+        custom_messages_info_html: Здесь вы можете объединить соответствующие данные. Для получения дополнительной информации см. <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">Https://github.com/makeplans/makeplans-custom-messages</a> .
       edit_booking_site:
-        booking_form_info_html: Обратитесь в службу поддержки клиентов за помощью. Документация доступна по адресу<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_form_info_html: Обратитесь в службу поддержки клиентов за помощью. Документация доступна по адресу<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         booking_site_info_html: Ваш сайт бронирования доступен по адресу %{url}.
         booking_site_locale_default: Использовать язык аккаунта
         cancellation: Аннулирование
@@ -311,14 +311,14 @@ ru:
         domain_info: Можно использовать свой собственный URL-адрес, например booking.YOURDOMAIN.com. Для получения дополнительной информации обратитесь в службу поддержки клиентов.
         header: Изменить информацию об учетной записи
         payment_provider:
-          info_html: Можно потребовать оплату до завершения бронирования на сайте бронирования с помощью одного из интегрированных поставщиков платежных услуг. Мы рекомендуем <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe</a> - хороший сервис, с которым вы можете быстро начать работу без каких-либо фиксированных затрат. Вы также должны указать необходимую информацию для выбранного платежного провайдера в «Интеграциях».
+          info_html: Можно потребовать оплату до завершения бронирования на сайте бронирования с помощью одного из интегрированных поставщиков платежных услуг. Мы рекомендуем <a href="https://stripe.com" target="_blank" class="link-external">Stripe</a> - хороший сервис, с которым вы можете быстро начать работу без каких-либо фиксированных затрат. Вы также должны указать необходимую информацию для выбранного платежного провайдера в «Интеграциях».
           none: Никто
         purge_data_info: 'Эта функция автоматически удалит старую личную информацию, позволяющую установить личность (клиенты и бронирования). Введите текст для даты удаления относительно текущей даты. Пример: «6 месяцев назад» или «2 года назад».'
         subdomain_info: Ваш уникальный адрес (URL), по которому ваши клиенты могут делать заказы
       edit_fields:
         appointment_form_info: Эта форма предназначена только для ручного ввода бронирований. Чтобы изменить форму бронирования на сайте бронирования, сделайте это в настройках «Сайт бронирования». Если в настраиваемой форме бронирования используются настраиваемые поля, они также должны быть включены сюда.
         booking_form_info: Чтобы изменить настройки, перейдите в настройки сайта бронирования.
-        custom_form_info_html: Обратитесь в службу поддержки клиентов за помощью. Документация доступна по адресу<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        custom_form_info_html: Обратитесь в службу поддержки клиентов за помощью. Документация доступна по адресу<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         header: Изменить настраиваемые поля
       edit_person_notifications:
         automatic_messages: Автоматические сообщения (в админке и API)
@@ -569,7 +569,7 @@ ru:
         immediately: немедленно
         services: Услуги
         services_info: 'Шаблон сообщения будет отправлен для всех служб, если вы не ограничитесь определенными службами ниже:'
-        template_info_html: Вы можете объединить динамические значения inn. Подробнее см. <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">Https://github.com/makeplans/makeplans-custom-messages.</a>
+        template_info_html: Вы можете объединить динамические значения inn. Подробнее см. <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">Https://github.com/makeplans/makeplans-custom-messages.</a>
       index:
         header: Шаблоны сообщений
         immediately: немедленно
@@ -685,7 +685,7 @@ ru:
         custom_communication_info: Здесь вы можете указать настраиваемый контент, который будет отправляться при каждом новом резервировании этого типа события. Если содержимое введено, оно переопределит содержимое по умолчанию в разделе «Связь». Пустые поля будут использовать содержимое по умолчанию
         custom_communication_show: Показывать контент для исходящего общения
       custom_form:
-        custom_form_info_html: Вы можете указать индивидуальную форму бронирования для этой услуги. Эта форма переопределит форму по умолчанию, определенную в разделе «Сайт бронирования». Документацию можно найти по адресу<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> , или обратитесь в службу поддержки клиентов за помощью.
+        custom_form_info_html: Вы можете указать индивидуальную форму бронирования для этой услуги. Эта форма переопределит форму по умолчанию, определенную в разделе «Сайт бронирования». Документацию можно найти по адресу<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> , или обратитесь в службу поддержки клиентов за помощью.
         custom_form_show: Показать индивидуальную форму бронирования
       form_appointment:
         booking_site_settings: Настройки для сайта бронирования
@@ -838,5 +838,5 @@ ru:
         remove_access_confirm: Вы действительно хотите запретить этому пользователю доступ к этой учетной записи?
     web_hooks:
       index:
-        app_secret_info_html: Секрет приложения для улучшения веб-перехватчиков. Подробности см. В <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">документации</a> .
+        app_secret_info_html: Секрет приложения для улучшения веб-перехватчиков. Подробности см. В <a href="https://developer.makeplans.com" target="_blank" class="link-external">документации</a> .
         header: Вебхуки

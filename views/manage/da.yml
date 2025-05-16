@@ -253,7 +253,7 @@ da:
         enable_warning: Er du sikker på, at du vil aktivere API'en? API-nøglen giver fuld programmatisk adgang til din konto.
         enabled: API'en er aktiveret.
         header: API
-        info_html: Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        info_html: Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
         not_enabled: API'en er ikke aktiveret.
       cancel:
         confirm_message: Sidste chance. Er du sikker på, at du vil slette kontoen med alle dine data?
@@ -269,9 +269,9 @@ da:
         menu_info: Vælg i menuen til venstre, hvor du vil foretage ændringer. Hvis du undrer dig over, hvordan du foretager ændringer, skal du kontakte kundeservice.
         trial_info: Dette er en demo-konto - klik her for at aktivere
       edit:
-        custom_messages_info_html: Her kan du flette relevant information. For mere information se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> .
+        custom_messages_info_html: Her kan du flette relevant information. For mere information se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> .
       edit_booking_site:
-        booking_form_info_html: Det, du udfylder her, erstatter i sin helhed den standardformular, der bruges på reservationssiden. For at ændre den formular, der vises, når man opretter reservationer manuelt, gøres dette under "Brugerdefinerede felter". Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> . Husk at tilføje nødvendige felter til verifikation såsom navn og e-mail / telefonnummer.
+        booking_form_info_html: Det, du udfylder her, erstatter i sin helhed den standardformular, der bruges på reservationssiden. For at ændre den formular, der vises, når man opretter reservationer manuelt, gøres dette under "Brugerdefinerede felter". Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> . Husk at tilføje nødvendige felter til verifikation såsom navn og e-mail / telefonnummer.
         booking_site_info_html: Deres reservationsside er tilgængelig på %{url}.
         booking_site_locale_default: Brug kontosprog
         cancellation: Aflysning
@@ -311,7 +311,7 @@ da:
         api:
           enable: Aktivér API
           enable_warning: Er du sikker på, at du vil aktivere API-adgang? Ved brug af API-nøgle har du fuld adgang til at ændre alt på kontoen.
-          info_html: Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+          info_html: Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
           not_enabled: Ikke aktiveret
         app_secret_info: Hemmelig kode til bekræftelse af webhooks
         delete_account_html: Vil du slette din konto? <a href="%{link}">Blive ved</a>
@@ -319,14 +319,14 @@ da:
         domain_info: Det er muligt at bruge din egen URL, for eksempel booking.DITTDOMENE.no, kontakt kundeservice for mere information.
         header: Skift kontooplysninger
         payment_provider:
-          info_html: Du kan få forudbetalt på reservationssiden via de betalingsløsninger, der er integreret med MakePlans. Vi anbefaler <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe,</a> som er en god service, der er let at komme i gang med, og som er gratis. De andre spillere kan være billigere pr. Transaktion, men har højere dokumentationskrav for at blive kunde. Du skal også angive oplysninger til forbindelse til den valgte betalingsløsning under "Integrationer".
+          info_html: Du kan få forudbetalt på reservationssiden via de betalingsløsninger, der er integreret med MakePlans. Vi anbefaler <a href="https://stripe.com" target="_blank" class="link-external">Stripe,</a> som er en god service, der er let at komme i gang med, og som er gratis. De andre spillere kan være billigere pr. Transaktion, men har højere dokumentationskrav for at blive kunde. Du skal også angive oplysninger til forbindelse til den valgte betalingsløsning under "Integrationer".
           none: Ingen
         purge_data_info: 'Denne funktion sletter automatisk gamle personlige oplysninger (kunder og reservationer). Indtast på engelsk, så vil sletningsdatoen være i forhold til den aktuelle dato. Eksempel: ''6 måneder siden'' eller ''2 år siden''.'
         subdomain_info: Din unikke adresse (URL), hvor dine kunder kan booke.
       edit_fields:
         appointment_form_info: Denne formular gælder kun for manuel oprettelse af en reservation. For at ændre reservationsformularen på reservationssiden skal den ændres under 'Bookingside'. Hvis en tilpasset reservationsformular er udfyldt med brugerdefinerede felter, skal de også medtages her.
         booking_form_info: Gå til reservationssidens indstillinger for at ændre.
-        custom_form_info_html: Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        custom_form_info_html: Kontakt kundeservice for at få hjælp. Dokumentation er tilgængelig på<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         header: Skift brugerdefinerede felter
       edit_person_notifications:
         automatic_messages: Automatiske forsendelser (administrationssystem og API)
@@ -578,7 +578,7 @@ da:
         immediately: straks
         services: Tjenester
         services_info: 'Meddelelsesskabelonen sendes for alle tjenester, medmindre du begrænser dig til specifikke tjenester nedenfor:'
-        template_info_html: Du kan flette inn dynamiske værdier. Se venligst <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> for detaljer.
+        template_info_html: Du kan flette inn dynamiske værdier. Se venligst <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> for detaljer.
       index:
         header: Besked skabeloner
         immediately: straks
@@ -696,7 +696,7 @@ da:
         custom_communication_info: Her kan du specificere dine egne tekster, der sendes ud, når du booker denne service. Disse tekster tilsidesætter derefter standardtekster defineret under "Kommunikation". Felter, der er tomme, bruger standardtekster.
         custom_communication_show: Vis tekster til udgående kommunikation
       custom_form:
-        custom_form_info_html: Her kan du angive brugerdefineret formular til reservation af denne service. Formularen tilsidesætter derefter den standardformular, der er defineret under "Booking-side". Dokumentation er tilgængelig på<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> eller kontakt kundeservice for at få hjælp.
+        custom_form_info_html: Her kan du angive brugerdefineret formular til reservation af denne service. Formularen tilsidesætter derefter den standardformular, der er defineret under "Booking-side". Dokumentation er tilgængelig på<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> eller kontakt kundeservice for at få hjælp.
         custom_form_show: Se brugerdefineret formular
       form_appointment:
         booking_site_settings: Indstillinger for reservationssiden
@@ -849,5 +849,5 @@ da:
         remove_access_confirm: Er du sikker på, at du vil fjerne adgangen til denne bruger?
     web_hooks:
       index:
-        app_secret_info_html: Apphemmelighed til at bekræfte webhooks. Se <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">dokumentationen</a> for detaljer.
+        app_secret_info_html: Apphemmelighed til at bekræfte webhooks. Se <a href="https://developer.makeplans.com" target="_blank" class="link-external">dokumentationen</a> for detaljer.
         header: Webhooks

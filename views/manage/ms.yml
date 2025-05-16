@@ -253,7 +253,7 @@ ms:
         enable_warning: Adakah anda pasti mahu mengaktifkan API? Kunci API memberikan akses penuh program kepada akaun anda.
         enabled: API didayakan.
         header: API
-        info_html: Hubungi perkhidmatan pelanggan untuk mendapatkan bantuan. Dokumentasi tersedia di <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        info_html: Hubungi perkhidmatan pelanggan untuk mendapatkan bantuan. Dokumentasi tersedia di <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
         not_enabled: API tidak didayakan.
       cancel:
         confirm_message: Peluang terakhir. Adakah anda benar-benar yakin bahawa anda ingin memadamkan akaun anda dengan semua data anda?
@@ -269,9 +269,9 @@ ms:
         menu_info: Pilih dari menu di sebelah kiri. Sekiranya anda mempunyai pertanyaan mengenai cara membuat penyesuaian, sila hubungi khidmat pelanggan.
         trial_info: Ini adalah akaun percubaan - klik di sini untuk mengaktifkan
       edit:
-        custom_messages_info_html: Anda boleh menggabungkan data yang berkaitan di sini. Untuk maklumat lebih lanjut sila lihat <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> .
+        custom_messages_info_html: Anda boleh menggabungkan data yang berkaitan di sini. Untuk maklumat lebih lanjut sila lihat <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> .
       edit_booking_site:
-        booking_form_info_html: Hubungi khidmat pelanggan untuk mendapatkan bantuan. Dokumentasi boleh didapati di<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_form_info_html: Hubungi khidmat pelanggan untuk mendapatkan bantuan. Dokumentasi boleh didapati di<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         booking_site_info_html: Laman web tempahan anda boleh didapati di %{url}.
         booking_site_locale_default: Gunakan bahasa akaun
         cancellation: Pembatalan
@@ -311,7 +311,7 @@ ms:
         api:
           enable: Aktifkan API
           enable_warning: Adakah anda pasti mahu mengaktifkan API? Kekunci API memberikan akses penuh ke program anda ke akaun anda.
-          info_html: Hubungi khidmat pelanggan untuk mendapatkan bantuan. Dokumentasi boleh didapati di <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+          info_html: Hubungi khidmat pelanggan untuk mendapatkan bantuan. Dokumentasi boleh didapati di <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
           not_enabled: Tidak diaktifkan
         app_secret_info: Rahsia aplikasi untuk webhook yang sangat menarik
         delete_account_html: Adakah anda pasti mahu memadamkan akaun anda? <a href="%{link}">Ya, teruskan</a>
@@ -319,14 +319,14 @@ ms:
         domain_info: Anda boleh menggunakan URL anda sendiri, seperti membuat tempahan.YOURDOMAIN.com, sila hubungi khidmat pelanggan untuk maklumat lebih lanjut
         header: Ubah suai maklumat akaun
         payment_provider:
-          info_html: Anda mungkin memerlukan pembayaran sebelum menyelesaikan tempahan di laman tempahan dengan menggunakan salah satu penyedia pembayaran bersepadu. Kami mengesyorkan <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe</a> yang merupakan perkhidmatan baik yang anda boleh mulakan dengan cepat tanpa kos tetap. Anda juga mesti menentukan maklumat yang diperlukan untuk penyedia pembayaran yang dipilih dalam "Integrasi".
+          info_html: Anda mungkin memerlukan pembayaran sebelum menyelesaikan tempahan di laman tempahan dengan menggunakan salah satu penyedia pembayaran bersepadu. Kami mengesyorkan <a href="https://stripe.com" target="_blank" class="link-external">Stripe</a> yang merupakan perkhidmatan baik yang anda boleh mulakan dengan cepat tanpa kos tetap. Anda juga mesti menentukan maklumat yang diperlukan untuk penyedia pembayaran yang dipilih dalam "Integrasi".
           none: Tiada
         purge_data_info: 'Ciri ini secara automatik akan menghapus maklumat peribadi yang lama (pelanggan dan tempahan). Masukkan teks untuk tarikh penghapusan berbanding dengan tarikh semasa. Contoh: ''6 bulan yang lalu'' atau ''2 tahun yang lalu''.'
         subdomain_info: Alamat unik (URL) tempat pelanggan anda dapat membuat tempahan
       edit_fields:
         appointment_form_info: Borang ini hanya untuk kemasukan tempahan secara manual. Untuk mengubah borang tempahan di laman tempahan, sila lakukan tetapan untuk 'Laman tempahan'. Sekiranya borang tempahan khusus menggunakan medan khusus, mereka juga harus disertakan di sini.
         booking_form_info: Pergi ke tetapan untuk laman tempahan untuk mengubah suai.
-        custom_form_info_html: Hubungi khidmat pelanggan untuk mendapatkan bantuan. Dokumentasi boleh didapati di<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        custom_form_info_html: Hubungi khidmat pelanggan untuk mendapatkan bantuan. Dokumentasi boleh didapati di<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         header: Ubah suai bidang tersuai
       edit_person_notifications:
         automatic_messages: Mesej automatik (Dalam sistem pentadbir dan API)
@@ -577,7 +577,7 @@ ms:
         immediately: serta merta
         services: Perkhidmatan
         services_info: 'Templat mesej akan dihantar untuk semua perkhidmatan melainkan anda mengehadkan kepada perkhidmatan tertentu di bawah:'
-        template_info_html: Anda boleh menggabungkan nilai dinamik penginapan. Sila lihat <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> untuk butiran.
+        template_info_html: Anda boleh menggabungkan nilai dinamik penginapan. Sila lihat <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> untuk butiran.
       index:
         header: Templat mesej
         immediately: serta merta
@@ -693,7 +693,7 @@ ms:
         custom_communication_info: Di sini anda dapat menentukan kandungan khusus yang dihantar untuk setiap tempahan baru jenis acara ini. Sekiranya kandungan dimasukkan, kandungan tersebut akan menggantikan kandungan lalai di bawah "Komunikasi". Medan kosong akan menggunakan kandungan lalai
         custom_communication_show: Tunjukkan kandungan untuk komunikasi keluar
       custom_form:
-        custom_form_info_html: Anda boleh menentukan borang tempahan khusus untuk perkhidmatan ini. Borang ini akan menggantikan borang lalai yang ditentukan di bawah "Laman tempahan". Dokumentasi boleh didapati di<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> , atau hubungi khidmat pelanggan untuk mendapatkan bantuan.
+        custom_form_info_html: Anda boleh menentukan borang tempahan khusus untuk perkhidmatan ini. Borang ini akan menggantikan borang lalai yang ditentukan di bawah "Laman tempahan". Dokumentasi boleh didapati di<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> , atau hubungi khidmat pelanggan untuk mendapatkan bantuan.
         custom_form_show: Tunjukkan borang tempahan tersuai
       form_appointment:
         booking_site_settings: Tetapan untuk laman web tempahan
@@ -846,5 +846,5 @@ ms:
         remove_access_confirm: Adakah anda pasti mahu membuang akses ke akaun ini untuk pengguna ini?
     web_hooks:
       index:
-        app_secret_info_html: Rahsia apl untuk membetulkan webhooks. Lihat <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">dokumentasi</a> untuk butiran.
+        app_secret_info_html: Rahsia apl untuk membetulkan webhooks. Lihat <a href="https://developer.makeplans.com" target="_blank" class="link-external">dokumentasi</a> untuk butiran.
         header: Webhooks

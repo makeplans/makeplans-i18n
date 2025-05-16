@@ -572,7 +572,7 @@ sv:
         immediately: omedelbart
         services: Tjänster
         services_info: 'Meddelandemallen kommer att skickas för alla tjänster såvida du inte begränsar dig till specifika tjänster nedan:'
-        template_info_html: Du kan slå samman inn dynamiska värden. Se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> för detaljer.
+        template_info_html: Du kan slå samman inn dynamiska värden. Se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> för detaljer.
       index:
         header: Meddelandemallar
         immediately: omedelbart
@@ -690,7 +690,7 @@ sv:
         custom_communication_info: Här kan du ange eget innehåll som skickas ut med varje bokning av denna händelsetyp. Dessa texter kommer då att skriva över standardtexterna under "Kommunikation". Tomma fält kommer använda standardtexter.
         custom_communication_show: Visa innehåll för utgående kommunikation
       custom_form:
-        custom_form_info_html: Här kan du ange ett anpassat formulär för bokning av denna tjänst. Formuläret åsidosätter sedan standardformuläret som definierats under "Bokningssida". Dokumentation finns på<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> , eller kontakta kundtjänst för hjälp.
+        custom_form_info_html: Här kan du ange ett anpassat formulär för bokning av denna tjänst. Formuläret åsidosätter sedan standardformuläret som definierats under "Bokningssida". Dokumentation finns på<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> , eller kontakta kundtjänst för hjälp.
         custom_form_show: Visa anpassat formulär
       form_appointment:
         booking_site_settings: Inställningar för bokningssidan

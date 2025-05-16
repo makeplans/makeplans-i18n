@@ -253,7 +253,7 @@ es:
         enable_warning: "¿Estás seguro de que deseas activar la API? La clave API brinda acceso programático completo a su cuenta."
         enabled: La API está habilitada.
         header: API
-        info_html: Comuníquese con el servicio de atención al cliente para obtener ayuda. La documentación está disponible en <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+        info_html: Comuníquese con el servicio de atención al cliente para obtener ayuda. La documentación está disponible en <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
         not_enabled: La API no está habilitada.
       cancel:
         confirm_message: Última oportunidad. ¿Está absolutamente seguro de que desea eliminar su cuenta con todos sus datos?
@@ -269,9 +269,9 @@ es:
         menu_info: Seleccione en el menú del lado izquierdo. Si tiene alguna pregunta sobre cómo realizar un ajuste, comuníquese con el servicio al cliente.
         trial_info: Esta es una cuenta de prueba - haga clic aquí para activar
       edit:
-        custom_messages_info_html: Puede combinar datos relevantes aquí. Para obtener más información, consulte <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> .
+        custom_messages_info_html: Puede combinar datos relevantes aquí. Para obtener más información, consulte <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> .
       edit_booking_site:
-        booking_form_info_html: Comuníquese con el servicio al cliente para obtener ayuda. La documentación está disponible en<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_form_info_html: Comuníquese con el servicio al cliente para obtener ayuda. La documentación está disponible en<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         booking_site_info_html: Su sitio de reservación está disponible en %{url}.
         booking_site_locale_default: Usar el idioma de la cuenta
         cancellation: Cancelación
@@ -311,7 +311,7 @@ es:
         api:
           enable: Activar API
           enable_warning: "¿Seguro que quieres activar la API? La clave API brinda acceso programático completo a su cuenta."
-          info_html: Comuníquese con el servicio al cliente para obtener ayuda. La documentación está disponible en <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">https://developer.makeplans.com</a> .
+          info_html: Comuníquese con el servicio al cliente para obtener ayuda. La documentación está disponible en <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
           not_enabled: No esta activado
         app_secret_info: Secreto de la aplicación para descifrar webhooks
         delete_account_html: ¿Estás seguro de que deseas eliminar tu cuenta? <a href="%{link}">Si continuar</a>
@@ -319,14 +319,14 @@ es:
         domain_info: Es posible utilizar su propia URL, como booking.YOURDOMAIN.com, comuníquese con el servicio al cliente para obtener más información.
         header: Modificar la información de la cuenta
         payment_provider:
-          info_html: Es posible solicitar el pago antes de completar una reservación en el sitio de reservación utilizando uno de los proveedores de pago integrados. Recomendamos <a href="https://stripe.com" target="_blank" class="icon-link-ext">Stripe,</a> que es un buen servicio con el que puede comenzar rápidamente sin costos fijos. También debe especificar la información requerida para el proveedor de pago elegido en "Integraciones".
+          info_html: Es posible solicitar el pago antes de completar una reservación en el sitio de reservación utilizando uno de los proveedores de pago integrados. Recomendamos <a href="https://stripe.com" target="_blank" class="link-external">Stripe,</a> que es un buen servicio con el que puede comenzar rápidamente sin costos fijos. También debe especificar la información requerida para el proveedor de pago elegido en "Integraciones".
           none: Ninguna
         purge_data_info: 'Esta función eliminará automáticamente la información de identificación personal antigua (clientes y reservas). Introduzca texto para la fecha de eliminación relativa a la fecha actual. Ejemplo: ''hace 6 meses'' o ''hace 2 años''.'
         subdomain_info: Su dirección única (URL) donde sus clientes pueden hacer reservas
       edit_fields:
         appointment_form_info: Este formulario es solo para el ingreso manual de reservas. Para modificar el formulario de reservación en el sitio de reservación, hágalo en la configuración de 'Sitio de reservación'. Si el formulario de reservación personalizado utiliza campos personalizados, estos también deben incluirse aquí.
         booking_form_info: Vaya a la configuración del sitio de reservación para modificar.
-        custom_form_info_html: Comuníquese con el servicio al cliente para obtener ayuda. La documentación está disponible en<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> .
+        custom_form_info_html: Comuníquese con el servicio al cliente para obtener ayuda. La documentación está disponible en<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
         header: Modificar campos personalizados
       edit_person_notifications:
         automatic_messages: Mensajes automáticos (en el sistema de administración y la API)
@@ -577,7 +577,7 @@ es:
         immediately: inmediatamente
         services: Servicios
         services_info: 'La plantilla de mensaje se enviará para todos los servicios a menos que restrinja los servicios específicos a continuación:'
-        template_info_html: Puede fusionar valores dinámicos inn. Consulte <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-messages</a> para obtener más detalles.
+        template_info_html: Puede fusionar valores dinámicos inn. Consulte <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> para obtener más detalles.
       index:
         header: Plantillas de mensajes
         immediately: inmediatamente
@@ -693,7 +693,7 @@ es:
         custom_communication_info: Aquí puede especificar el contenido personalizado que se envía para cada nueva reservación de este tipo de evento. Si se ingresa contenido, este anulará el contenido predeterminado en "Comunicación". Los campos vacíos usarán contenido predeterminado
         custom_communication_show: Mostrar contenido para comunicación saliente
       custom_form:
-        custom_form_info_html: Puede especificar un formulario de reservación personalizado para este servicio. Este formulario anulará el formulario predeterminado definido en "Sitio de reservas". La documentación se puede encontrar en<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="icon-link-ext">https://github.com/makeplans/makeplans-custom-forms</a> ; alternativamente, comuníquese con el servicio de atención al cliente para obtener ayuda.
+        custom_form_info_html: Puede especificar un formulario de reservación personalizado para este servicio. Este formulario anulará el formulario predeterminado definido en "Sitio de reservas". La documentación se puede encontrar en<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> ; alternativamente, comuníquese con el servicio de atención al cliente para obtener ayuda.
         custom_form_show: Mostrar formulario de reservación personalizado
       form_appointment:
         booking_site_settings: Configuración del sitio de reservas
@@ -846,5 +846,5 @@ es:
         remove_access_confirm: "¿Está seguro de que desea eliminar el acceso a esta cuenta para este usuario?"
     web_hooks:
       index:
-        app_secret_info_html: Secreto de la aplicación para descifrar webhooks. Consulte la <a href="https://developer.makeplans.com" target="_blank" class="icon-link-ext">documentación</a> para obtener más detalles.
+        app_secret_info_html: Secreto de la aplicación para descifrar webhooks. Consulte la <a href="https://developer.makeplans.com" target="_blank" class="link-external">documentación</a> para obtener más detalles.
         header: Webhooks
