@@ -92,7 +92,7 @@ en:
       show:
         all_services: All services
         continue: Make a booking
-      slots:
+      time_day_available:
         all_services: All services
         availability: Availability
         available_dates: Available dates
