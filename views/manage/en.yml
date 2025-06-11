@@ -942,6 +942,7 @@ en:
         list_appointment: Services
         list_attendance: Event types
       show:
+        availability: Availability pr provider
         custom_data: 'Custom data:'
         days: days
         description: 'Description:'
