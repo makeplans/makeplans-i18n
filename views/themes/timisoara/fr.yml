@@ -1,0 +1,97 @@
+---
+fr:
+  timisoara:
+    bookings:
+      authenticate:
+        info: Nous avons besoin d'informations pour vérifier votre réservation de
+        submit: Envoyer le code
+        title: Authentification du numéro de téléphone
+      awaiting_confirmation:
+        body: Vous avez réservé le service avec succès. Veuillez patienter jusqu'à ce que l'administrateur confirme votre réservation.
+      cancelled:
+        info: La réservation pour %{title} %{time} a été annulée.
+        title: Votre réservation a été annulée
+        update_calendar: Mettre à jour mon calendrier
+      new:
+        accept: J'approuve
+        submit: Réservation complète
+        terms: conditions de réservation
+        title: Réservation de %{service}
+      payment_stripe:
+        title: Paiement
+      pre_payment:
+        info: Pour compléter la réservation de %{service} %{booking}, vous devez effectuer un paiement.
+        submit: Au paiement
+        title: Paiement
+      show:
+        add_to_calendar: Ajouter cette réservation à mon calendrier
+        all: Voir mes autres réservations
+        info: La réservation pour %{title} %{time} est confirmée.
+        new_reservation: Faire une autre réservation
+        title: Votre réservation est confirmée !
+      verification_method_email:
+        info: Vous devez vérifier votre adresse e-mail pour terminer votre réservation.
+        submit: Continuer
+        title: Vérifiez votre adresse e-mail
+      verification_method_sms:
+        info: Vous devez vérifier votre numéro de téléphone pour compléter votre réservation.
+        submit: Continuer
+        title: Vérifiez votre numéro de téléphone
+    categories:
+      index:
+        all_categories: Toutes les catégories
+        select_category: Sélectionnez une catégorie
+    events:
+      index:
+        all_events: Tous les événements
+    layouts:
+      application:
+        booking_site_footer: Site de réservation pour %{name}
+        login: Se connecter
+        made_by_tagline: Système convivial de planification, de prise de rendez-vous et d'inscription à des événements.
+        made_by_title: Prise de rendez-vous, planification et inscriptions aux événements/cours
+        privacy: Politique de confidentialité
+        profile: Profil
+        support: Soutien
+        title: Réservation en ligne pour %{name}
+    person_sessions:
+      enter_perishable_token:
+        info_html: Nous avons envoyé un code de vérification à <b>%{recipient}</b> Veuillez saisir le code pour vérifier vos informations.
+        perishable_token: Code
+        submit: Continuer
+        title: Vérifiez votre réservation
+      perishable_token_form:
+        submit: Envoyer le code
+        title: Se connecter
+    profile:
+      index:
+        cancel: Annuler
+        tabs:
+          all: Tous
+          cancelled: Annulé
+          completed: Complété
+          upcoming: Prochain
+        title: Mes réservations
+      new:
+        errors_header: 'Des erreurs se sont produites :'
+        header: Informations sur le compte
+    providers:
+      index:
+        all_services: Tous les services
+        title: Sélectionnez le fournisseur
+    services:
+      index:
+        all_categories: Toutes les catégories
+        all_services: Tous les services
+        continue: Faire une réservation
+      show:
+        all_services: Tous les services
+        continue: Faire une réservation
+      slots:
+        all_services: Tous les services
+        availability: Disponibilité
+        available_dates: Dates disponibles
+        available_slots: Horaires disponibles
+        continue: Continuer
+        next_available_date_html: La prochaine date disponible est %{next_available_date}
+        no_availability: Pas de disponibilité

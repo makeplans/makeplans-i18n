@@ -282,7 +282,6 @@ fr:
         mail_verification_subject: Objet dans l'e-mail de vérification
         name: Nom de l'entreprise (indiqué sur le site de réservation)
         new_booking_text: Texte affiché sur la page de confirmation
-        reservation_form_text: Texte affiché avant le formulaire de réservation
         payment_provider: Fournisseur de paiement (pour les réservations prépayées)
         person_form: Champs client personnalisés
         phone_number: Numéro de téléphone pour notification
@@ -290,6 +289,7 @@ fr:
         purge_data_period: Suppression automatique des informations personnelles identifiables
         reminder_sms: Envoyer des rappels par SMS
         require_terms_acceptance: Exiger que les conditions soient acceptées
+        reservation_form_text: Texte affiché avant le formulaire de réservation
         resource_form: Champs de ressources personnalisés
         service_form: Champs de service personnalisés
         service_template: Style de calendrier
