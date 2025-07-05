@@ -445,6 +445,7 @@ en:
           custom_email_user_sending: Completely override emails with content below (otherwise content is just inserted in standard email)
         sms: SMS
         sms_notification_info: To notify more than one person please use semi-colon to separate phone numbers.
+        unconfirmed_summary_email: Daily email reminder for unconfirmed bookings
       edit_ux:
         calendar: Calendar
         header: UX

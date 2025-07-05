@@ -281,10 +281,10 @@ nb:
       body: |-
         Hei,
 
-        Det er %{unconfirmed_booking_count} reservasjoner som er ubekreftet. Dine kunder venter på disse.
+        Det er %{unconfirmed_booking_count} reservasjoner som er ubekreftet. Dine kunder venter på din avgjørelse for å få fullført sine reservasjoner.
 
         Gå til %{unconfirmed_url} for å følge opp.
-      subject: 'Unconfirmed bookings awaiting'
+      subject: 'Ubekreftede reservasjoner krever oppfølgning'
   layouts:
     booking_user_mailer:
       footer: Automatisk generert av MakePlans.
