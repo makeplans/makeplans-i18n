@@ -907,7 +907,6 @@ en:
           hide_all_available: Must select specific resource ('show all available' will be hidden)
           hide_resources: Hide button for selecting resource (will be randomly selected by among available resources)
           hide_slot_end: Hide end-time
-          require_empty_resource: Ressurs må være helt ledig
           return_occupied: Display slots that are occupied
           return_past: Display slots in the past
           select_resource: Extra step for selecting resource
