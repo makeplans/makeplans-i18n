@@ -375,7 +375,6 @@ en:
           google_tag_manager: Google Tag Manager container ID
           plausible: Enable Plausible Analytics
           prevent_new_signups: Only allow booking from existing customers
-          select_resource: Extra step for selecting resource
         verification_methods:
           email: Email
           facebook: Also allow verification with Facebook Connect.
@@ -909,6 +908,7 @@ en:
           hide_slot_end: Hide end-time
           return_occupied: Display slots that are occupied
           return_past: Display slots in the past
+          select_count: Extra step for specifying count
           select_resource: Extra step for selecting resource
           show_free_capacity: Show available capacity
       form_attendance:

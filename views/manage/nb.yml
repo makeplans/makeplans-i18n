@@ -318,7 +318,6 @@ nb:
           disable_person_cookie: Ikke tillatt kunde å forbli innlogget med cookie
           google_tag_manager: Google Tag Manager Container ID
           prevent_new_signups: Tillatt kun booking for eksisterende kunder
-          select_resource: Ekstra steg for valg av ressurs
         verification_methods:
           email: Epost
           facebook: Tillatt også verifisering med Facebook Connect.
@@ -792,6 +791,7 @@ nb:
           hide_slot_end: Skjul slutt-tid
           return_occupied: Vis slotter som er opptatt
           return_past: Vis slotter i fortiden
+          select_count: Ekstra steg for å spesifisere antall
           select_resource: Ekstra steg for valg av ressurs
           show_free_capacity: Vis ledig kapasitet
       form_attendance:
