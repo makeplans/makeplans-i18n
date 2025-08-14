@@ -81,6 +81,10 @@ en:
       index:
         all_events: All events
     services:
+      available_dates:
+        select_date: Available dates
+      count:
+        select_count: How many people?
       index:
         all_categories: All categories
         all_services: All services

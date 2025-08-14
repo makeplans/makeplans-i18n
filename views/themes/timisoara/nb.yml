@@ -75,7 +75,12 @@ nb:
     events:
       index:
         all_events: Alle arrangementer
+        continue: Fortsett
     services:
+      available_dates:
+        select_date: Ledige datoer
+      count:
+        select_count: Velg antall
       index:
         all_categories: Alle kategorier
         all_services: Alle tjenester
