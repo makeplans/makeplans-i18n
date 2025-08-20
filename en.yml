@@ -41,8 +41,8 @@ en:
         purge_data_period: automatic delete period
         sms_notification_recipient: phone number(s) for notification
       client/slot_generation:
-        dynamic: Dynamic (recommended)
-        fixed: Fixed
+        dynamic: dynamic
+        fixed: fixed
       client_user_link:
         role: access level
       client_user_link/role:
@@ -104,6 +104,10 @@ en:
         payment_required: require payment
         price: price
         title: title
+      service/priority_strategy:
+        random: random
+        order: order
+        weight: weight
       user:
         rotp_verification_code: verification code
       web_hook:
@@ -382,6 +386,9 @@ en:
         terms: Terms and conditions
         time_zone: Timezone
         verification_method: Verification method for new reservations
+      client/slot_generation:
+        dynamic: Dynamic
+        fixed: Fixed
       client_user_link:
         role: Access level
       client_user_link/role:
@@ -482,6 +489,7 @@ en:
         next_interval: Available slot every
         payment_required: Require payment
         price: Price including taxes
+        priority_strategy: Priority strategy
         published: Show on the booking site
         reservation_form_text: Text displayed before reservation form
         same_day: Allow reservation over multiple days
@@ -497,8 +505,13 @@ en:
           week_available: All week
           weekday_available: Weekdays
           list: List
+          month: Month
         terms: Terms and conditions
         title: Title
+      service/priority_strategy:
+        random: Random
+        order: Order
+        weight: Weight
       user:
         current_password: Current password
         email: Email

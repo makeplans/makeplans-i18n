@@ -44,7 +44,7 @@ nb:
         purge_data_period: automatisk sletteperiode
         terms: vilkår
       client/slot_generation:
-          dynamic: dynamisk (anbefales)
+          dynamic: dynamisk
           fixed: fastsatt
       client_user_link:
         role: tilgangsnivå
@@ -108,6 +108,10 @@ nb:
         price: pris
         terms: vilkår
         title: tittel
+      service/priority_strategy:
+        random: tilfeldig
+        order: rekkefølge
+        weight: vekt
       user:
         current_password: nåværende passord
         password: passord
@@ -371,11 +375,6 @@ nb:
         resource_form: Egendefinerte ressursfelter
         service_form: Egendefinerte tjenestefelter
         service_template: Kalendermal
-        service_templates:
-          time_day_available: Dag
-          week_available: Hele uken
-          weekday_available: Ukedager
-          list: List
         slot_generation: Generering av tidspunkt
         sms_cancellation: Tekst i SMS som blir sendt ved kansellering
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
@@ -390,6 +389,9 @@ nb:
         terms: Vilkår
         time_zone: Tidssone
         verification_method: Verifiseringsmetode ved ny reservasjon
+      client/slot_generation:
+        dynamic: Dynamisk
+        fixed: Fast
       client_user_link:
         role: Tilgangsnivå
       client_user_link/role:
@@ -492,6 +494,7 @@ nb:
         next_interval: Ledig tidspunkt etter
         payment_required: Krev betaling
         price: Pris inkludert mva.
+        priority_strategy: Prioriteringstrategi
         published: Synlig på bookingsiden
         reservation_form_text: Tekst som vises før reservasjonskjema
         same_day: Reservasjon kan ikke gå over flere dager
@@ -508,8 +511,13 @@ nb:
           week_available: Hele uken
           weekday_available: Ukedager
           list: Liste
+          month: Måned
         terms: Vilkår
         title: Tittel
+      service/priority_strategies:
+        random: Tilfeldig
+        order: Rekkefølge
+        weight: Vekted
       user:
         current_password: Nåværende passord
         email: Epost
