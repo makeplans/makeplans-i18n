@@ -966,6 +966,9 @@ en:
         resource: Resource
         weight: Weight
         save: Save Priority Settings
+        validation:
+          weights_valid: ✓ Weights sum to 100
+          weights_invalid: ⚠ Weights sum to %{total}, should be 100
       update_priority:
         priority_updated: Priority settings have been updated successfully.
     setup:

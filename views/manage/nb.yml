@@ -845,6 +845,9 @@ nb:
         resource: Ressurs
         weight: Vekt
         save: Lagre prioritetsinnstillinger
+        validation:
+          weights_valid: ✓ Vektene summerer til 100
+          weights_invalid: ⚠ Vektene summerer til %{total}, skal være 100
       update_priority:
         priority_updated: Prioritetsinnstillinger har blitt oppdatert.
     setup:
