@@ -952,11 +952,22 @@ en:
         not_in_category: You are using categories on the booking site and this service is not linked to a category. As a result this service is at the moment not visible on the booking site. Click here to manage your categories.
         offered: 'Offered by the following resources:'
         price: 'Price:'
+        manage_priority: Manage priority
         qr_code: QR code for customers
         show_on_booking_site: Open service on booking site
       slots:
         available: 'Available slots:'
         none_available: 'No available slots.'
+      priority:
+        header: 'Manage Priority - %{title}'
+        description:
+          order: 'Use drag and drop or the arrow buttons to reorder providers. The first provider will have the highest priority.'
+          weight: 'Set weight values (0-100) for each provider. Higher values have higher priority. The sum of all weights must equal 100.'
+        resource: Resource
+        weight: Weight
+        save: Save Priority Settings
+      update_priority:
+        priority_updated: Priority settings have been updated successfully.
     setup:
       appointment_services:
         add: Add another

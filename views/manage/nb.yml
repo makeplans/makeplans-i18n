@@ -832,10 +832,21 @@ nb:
         not_in_category: 'OBS: Du benytter kategorier på bookingsiden og denne tjenesten er ikke lagt til i en kategori. Denne tjenesten er derfor ikke synlig på bookingsiden. Klikk her for å administrere kategorier.'
         offered: 'Tilbys av følgende ressurser:'
         price: 'Pris:'
+        manage_priority: Administrer prioritet
         show_on_booking_site: Åpne bookingsiden for denne tjenesten
       slots:
         available: 'Ledige tidspunkt:'
         none_available: 'Ingen ledige tidspunkt.'
+      priority:
+        header: 'Administrer prioritet - %{title}'
+        description:
+          order: 'Bruk dra og slipp eller piltastene for å endre rekkefølgen på tilbydere. Den første tilbyderen vil ha høyest prioritet.'
+          weight: 'Sett vekt-verdier (0-100) for hver tilbyder. Høyere verdier gir høyere prioritet. Summen av alle vektene må være 100.'
+        resource: Ressurs
+        weight: Vekt
+        save: Lagre prioritetsinnstillinger
+      update_priority:
+        priority_updated: Prioritetsinnstillinger har blitt oppdatert.
     setup:
       appointment_services:
         add: Legg til én til
