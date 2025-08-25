@@ -868,6 +868,8 @@ en:
         icalfeed: 'iCalendar-feed:'
         offers: 'Offers the following services on the booking site:'
     services:
+      availability:
+        header: Availability for %{title}
       custom_communication:
         custom_communication_info: Here you can specify custom content which is sent for each new reservation of this event type. If content is entered it will override the default content under "Communication". Empty fields will use default content
         custom_communication_show: Show content for outgoing communication

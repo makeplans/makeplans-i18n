@@ -751,6 +751,8 @@ nb:
         icalfeed: 'iCalendar-feed:'
         offers: 'Tilbyr følgende tjenester på bookingsiden:'
     services:
+      availability:
+        header: Tilgjengelighet for %{title}
       custom_communication:
         custom_communication_info: Her kan du spesifisere egne tekster som sendes ut ved reservasjon av denne tjenesten. Disse tekstene vil da overstyre standard tekster som er definert under "Kommunikasjon". Felt som er tomme vil bruke standard tekster.
         custom_communication_show: Vis tekster for utgående kommunikasjon
@@ -823,6 +825,7 @@ nb:
         list_appointment: Tjenester
         list_attendance: Arrangementstyper
       show:
+        availability: Tilgjengelighet pr tilbyder
         custom_data: 'Egendefinerte felter:'
         days: dager
         description: 'Beskrivelse:'
