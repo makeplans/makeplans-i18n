@@ -148,6 +148,7 @@ nb:
             state:
               invalid_transition: Ugyldig endring av status
           fully_booked: Ikke ledig på valgt tidspunkt
+          no_parent_takeover: Kontakt kundeservice for å gjennomføre denne reservasjonen.
           prevent_new_signups: Kun tilgjengelig for eksisterende kunder.
           time_after_future_bookable_period: Må være før tillatt dato
         client:
