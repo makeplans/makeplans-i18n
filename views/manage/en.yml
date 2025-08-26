@@ -810,6 +810,11 @@ en:
           verification_code_header: 2-step verification
       update_password:
         updated: 'Password updated. Please login with your new password.'
+    providers:
+      form:
+        availability: '%{resource} - availability for %{service}'
+        from: from
+        to: to
     purge_data:
       destroy:
         header: Old data is now being deleted.

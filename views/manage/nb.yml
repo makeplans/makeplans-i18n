@@ -700,6 +700,11 @@ nb:
           verification_code_header: 2-trinns bekreftelse
       update_password:
         updated: 'Passord oppdatert. Login på nytt med ditt nye passord.'
+    providers:
+      form:
+        availability: '%{resource} - tilgjengelighet for %{service}'
+        from: fra
+        to: til
     purge_data:
       destroy:
         header: Gamle data vil nå bli slettet

@@ -108,6 +108,9 @@ nb:
         price: pris
         terms: vilkår
         title: tittel
+      service/availability_type:
+        resource: ressurs
+        provider: tilbyder
       service/priority_strategy:
         random: tilfeldig
         order: rekkefølge
@@ -473,6 +476,7 @@ nb:
       service:
         active_bookings_limit: Maks antall aktive bookinger for kunde
         allow_invoice: Kan betales med faktura
+        availability_type: Tilgjengelighet er definert av
         block_resource: Reservasjon blokkerer ressursen
         booking_capacity: Maks antall personer per reservasjon
         booking_minimum: Min antall personer per reservasjon
@@ -515,7 +519,10 @@ nb:
           month: Måned
         terms: Vilkår
         title: Tittel
-      service/priority_strategies:
+      service/availability_type:
+        resource: Ressurs
+        provider: Tilbyder
+      service/priority_strategy:
         random: Tilfeldig
         order: Rekkefølge
         weight: Vekted

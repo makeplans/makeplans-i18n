@@ -104,6 +104,9 @@ en:
         payment_required: require payment
         price: price
         title: title
+      service/availability_type:
+        resource: resource
+        provider: provider
       service/priority_strategy:
         random: random
         order: order
@@ -467,6 +470,7 @@ en:
       service:
         active_bookings_limit: Max number of active bookings
         allow_invoice: Allow invoice
+        availability_type: Availability is defined by
         block_resource: Reservation will block resource
         booking_capacity: Max number of people allowed per reservation
         booking_form: Custom reservation form
