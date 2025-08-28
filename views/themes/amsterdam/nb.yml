@@ -96,6 +96,7 @@ nb:
         paid: Du har forhåndsbetalt %{paid_amount}.
         price: 'Pris: %{amount}.'
         remember_me: Vil du at vi skal huske deg på denne maskinen til neste gang du skal reservere her?
+        reschedule: Endre tidspunkt
         title: Reservasjonen din er bekreftet!
       verification_code:
         header: Verifiser reservasjon

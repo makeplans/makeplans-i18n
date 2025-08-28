@@ -6,4 +6,5 @@ nb:
         free_capacity:
           one: '%{count} ledig'
           other: '%{count} ledige'
+      time_day:
         time_zone_differ_info: 'Alle tidspunkt er i tidssone %{time_zone}.'

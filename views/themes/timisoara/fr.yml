@@ -87,7 +87,7 @@ fr:
       show:
         all_services: Tous les services
         continue: Faire une réservation
-      slots:
+      time_day:
         all_services: Tous les services
         availability: Disponibilité
         available_dates: Dates disponibles

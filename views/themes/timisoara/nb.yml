@@ -88,7 +88,7 @@ nb:
       show:
         all_services: Alle tjenester
         continue: Book denne tjenesten
-      time_day_available:
+      time_day:
         all_services: Alle tjenester
         availability: Tilgjengelighet
         available_dates: Ledige datoer

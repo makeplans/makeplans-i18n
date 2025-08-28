@@ -93,6 +93,7 @@ en:
         paid: You have prepaid %{paid_amount}.
         price: The price of the booking is %{amount}.
         remember_me: Do you want us to remember you on this machine using a cookie?
+        reschedule: Reschedule
         title: Your reservation is confirmed!
       verification_code:
         header: Verify reservation

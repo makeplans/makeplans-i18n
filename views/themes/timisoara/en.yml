@@ -92,7 +92,7 @@ en:
       show:
         all_services: All services
         continue: Make a booking
-      time_day_available:
+      time_day:
         all_services: All services
         availability: Availability
         available_dates: Available dates
