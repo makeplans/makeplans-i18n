@@ -50,6 +50,7 @@ en:
         reserve_resource: Reservation for %{resource}
         select_child: 'Make this booking for:'
         terms: Terms and conditions for booking
+        contact_support_message: Your customer profile is lacking information. Please contact support.
       no_person:
         body: 'Contact us for more info. Error: Customer connection removed'
         title: Error
@@ -202,6 +203,8 @@ en:
         none_available: No services available.
       show:
         book: Make a booking
+      slots:
+        try_another_template: Please try another template.
       time_day_available:
         any_resource: First available
         dateselector: Select date

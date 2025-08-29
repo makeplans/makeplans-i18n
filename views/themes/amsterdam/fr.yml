@@ -51,6 +51,7 @@ fr:
         reserve_resource: Réservation pour %{resource}
         select_child: 'Effectuez cette réservation pour :'
         terms: Conditions générales de réservation
+        contact_support_message: Votre profil client manque d'informations. Veuillez contacter le support.
       no_person:
         body: 'Contactez nous pour plus d''informations. Erreur: connexion client supprimée'
         title: Erreur
@@ -94,6 +95,7 @@ fr:
         paid: Vous avez prépayé %{paid_amount}.
         price: Le prix de la réservation est de %{amount}.
         remember_me: Voulez-vous que nous nous souvenions de vous sur cette machine à l'aide d'un cookie?
+        reschedule: Reprogrammer
         title: Votre réservation est confirmée!
       verification_code:
         header: Confirmer la réservation
@@ -202,6 +204,8 @@ fr:
         none_available: Aucun service disponible.
       show:
         book: Faire une réservation
+      slots:
+        try_another_template: Veuillez essayer un autre modèle.
       time_day_available:
         any_resource: Première disponible
         dateselector: Sélectionner une date

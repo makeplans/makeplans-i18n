@@ -50,6 +50,7 @@ nb:
         reserve_resource: Reservasjon hos %{resource}.
         select_child: 'Opprett reservasjon for'
         terms: Vilkår for reservasjon
+        contact_support_message: Din kundeprofil mangler informasjon. Ta kontakt med support.
       no_person:
         body: 'Kontakt oss for mer info. Feil: Kundekobling fjernet.'
         title: Feil
@@ -109,6 +110,7 @@ nb:
           one: '%{count} ledig'
           other: '%{count} ledige'
         none_available: Ingen arrangementer tilgjengelig.
+        title: Arrangementer
       show:
         before_first_booking: Det er ikke mulig å melde seg på dette arrangementet før %{first_booking_at}.
         book: Meld deg på dette arrangementet.
@@ -209,6 +211,8 @@ nb:
         none_available: Ingen tjenester tilgjengelig.
       show:
         book: Reserver
+      slots:
+        try_another_template: Vennligst prøv en annen mal.
       time_day_available:
         any_resource: Første ledige
         dateselector: Velg dato

@@ -8,11 +8,20 @@ nb:
         info: Vi trenger mer informasjon for å verifisere din reservasjon av
         submit: Send kode
         title: SMS-verifisering
+      cancelled:
+        info: 'Reservasjonen av %{title} %{time} ble kansellert.'
+        title: Din reservasjon er kansellert
+        update_calendar: 'Oppdater min kalender'
       new:
         accept: Jeg godkjenner
         submit: Bestill
         terms: vilkår for reservasjonen
         title: Reservasjon av %{service}
+      new_person:
+        title: Kontoinformasjon
+        email_address: E-postadresse
+        phone_number: Mobilnummer
+        submit: Bekreft reservasjon
       payment_stripe:
         title: Betaling
       pre_payment:
@@ -25,6 +34,9 @@ nb:
         new_reservation: Opprett en ny reservasjon
         info: 'Reservasjonen av %{title} %{time} er bekreftet.'
         title: Din reservasjon er bekreftet.
+        reschedule: Endre tidspunkt
+        cancel: Kanseller
+        cancel_confirmation: Er du sikker på at du vil kansellere denne reservasjonen?
       verification_method_email:
         info: Du må verifisere din epost-adresse for å gjennomføre reservasjonen.
         submit: Fortsett
@@ -57,6 +69,7 @@ nb:
       perishable_token_form:
         submit: Send code
         title: Login
+        terms_conditions: Vilkår og betingelser
     profile:
       index:
         tabs:
@@ -66,8 +79,10 @@ nb:
           cancelled: Kansellerte
         title: Mine reservasjoner
         cancel: Kanseller
+        awaiting_approval: Venter på godkjenning
       new:
         header: Dine kontaktopplysninger
+        errors_header: 'Det oppstod feil:'
     providers:
       index:
         all_services: Alle tjenester

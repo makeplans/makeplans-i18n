@@ -17,6 +17,11 @@ fr:
         submit: Réservation complète
         terms: conditions de réservation
         title: Réservation de %{service}
+      new_person:
+        title: Informations sur le compte
+        email_address: Adresse e-mail
+        phone_number: Numéro de téléphone mobile
+        submit: Confirmer la réservation
       payment_stripe:
         title: Paiement
       pre_payment:
@@ -29,6 +34,9 @@ fr:
         info: La réservation pour %{title} %{time} est confirmée.
         new_reservation: Faire une autre réservation
         title: Votre réservation est confirmée !
+        reschedule: Reprogrammer
+        cancel: Annuler
+        cancel_confirmation: Êtes-vous sûr de vouloir annuler cette réservation ?
       verification_method_email:
         info: Vous devez vérifier votre adresse e-mail pour terminer votre réservation.
         submit: Continuer
@@ -63,6 +71,7 @@ fr:
       perishable_token_form:
         submit: Envoyer le code
         title: Se connecter
+        terms_conditions: Conditions générales
     profile:
       index:
         cancel: Annuler
@@ -72,6 +81,7 @@ fr:
           completed: Complété
           upcoming: Prochain
         title: Mes réservations
+        awaiting_approval: En attente d'approbation
       new:
         errors_header: 'Des erreurs se sont produites :'
         header: Informations sur le compte
@@ -80,6 +90,10 @@ fr:
         all_services: Tous les services
         title: Sélectionnez le fournisseur
     services:
+      available_dates:
+        select_date: Dates disponibles
+      count:
+        select_count: Combien de personnes ?
       index:
         all_categories: Toutes les catégories
         all_services: Tous les services

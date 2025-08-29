@@ -17,6 +17,11 @@ en:
         submit: Complete booking
         terms: terms for the reservation
         title: Reservation of %{service}
+      new_person:
+        title: Account information
+        email_address: Email address
+        phone_number: Mobile phone number
+        submit: Confirm reservation
       payment_stripe:
         title: Payment
       pre_payment:
@@ -29,6 +34,9 @@ en:
         new_reservation: Make another reservation
         info: 'The booking for %{title} %{time} is confirmed.'
         title: Your Reservation is Confirmed!
+        reschedule: Reschedule
+        cancel: Cancel
+        cancel_confirmation: Are you sure you want to cancel this booking?
       verification_method_email:
         info: You have to verify your email address to complete your reservation.
         submit: Continue
@@ -61,6 +69,7 @@ en:
       perishable_token_form:
         submit: Send code
         title: Login
+        terms_conditions: Terms and conditions
     profile:
       index:
         tabs:
@@ -70,6 +79,7 @@ en:
           cancelled: Cancelled
         title: My reservations
         cancel: Cancel
+        awaiting_approval: Awaiting approval
       new:
         header: Account information
         errors_header: 'Errors occured:'

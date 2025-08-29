@@ -1,0 +1,106 @@
+---
+nb:
+  lviv:
+    bookings:
+      authenticate:
+        title: Bekreft reservasjon
+        email: E-post
+        phone_number: Telefonnummer
+      cancelled:
+        info: 'Reservasjonen av %{title} %{time} ble kansellert.'
+        title: Din reservasjon er kansellert
+      new:
+        title: Reservasjon for
+        subtitle: Vennligst fyll ut de nødvendige dataene for å reservere en tjeneste.
+        errors_header: Vennligst fyll ut alle påkrevde felter.
+        optional: Valgfritt
+        terms: Vilkår og betingelser
+        submit: Reserver tjeneste
+        agree_with: Jeg godtar
+      payment_stripe:
+        title: Oppgi betalingsdetaljer
+      pre_payment:
+        title: Velg betalingsmetode
+      review:
+        title: Se over reservasjonen din
+        directions: Veibeskrivelse
+        any_specialist: Hvilken som helst specialist
+        agree_with: Jeg godtar
+        terms: Vilkår og betingelser
+      show:
+        title: Reservasjonsdetaljer
+        add_to_calendar: Legg til i kalender
+        cancel_booking: Avbestill reservasjon
+    categories:
+      index:
+        title: Velg kategori
+    events:
+      index:
+        title: Velg dato og tid
+      show:
+        book_event: Reserver dette arrangementet
+    generic:
+      step: 'Steg %{step} / %{steps}'
+    layouts:
+      application:
+        booking_site_footer: Reservasjonssystem for %{name}
+        title: Online reservasjon for %{name}
+        close: Lukk
+        account: Konto
+        menu: Meny
+        get_support: Få støtte
+        terms_conditions: Vilkår og betingelser
+        privacy_policy: Personvernpolicy
+        about_makeplans: Om MakePlans
+    person_sessions:
+      enter_perishable_token:
+        confirm_booking: Bekreft reservasjon
+        verify_login: Verifiser innlogging
+        no_code: Får du ikke koden?
+        send_again: Send igjen
+      perishable_token_action_required:
+        delivery_error: Vi klarte ikke å sende ut epost. Er du sikker på at du har brukt riktig adresse?
+        delivery_not_processed: For tiden kø i våre systemer. Vennligst vent mens vi prøver å sende ut epost.
+        body: Vi har sendt en epost til %{recipient}. Følg den for å verifisere reservasjonen din. Det hjelper oss å forsikre oss om at du ikke er en robot.
+        title: Vennligst bekreft din epost-adresse
+      perishable_token_form:
+        title: Logg inn
+      verification_method_email:
+        submit: Send verifiseringsepost
+      verification_method_sms:
+        submit: Send verifiseringskode
+    profile:
+      index:
+        book_again: Reserver igjen
+        canceled: Kansellert
+      new:
+        title: Ny profil
+        subtitle: Vennligst fyll ut de nødvendige dataene for å registrere.
+        register: Registrer
+        errors_header: 'Det oppstod feil:'
+      show:
+        change_language: Endre språk
+        logout: Logg ut
+    services:
+      available_dates:
+        title: Velg dato og tid
+      count:
+        title: Velg antall personer
+      index:
+        title: Velg tjeneste
+      show:
+        book_service: Reserver denne tjenesten
+      location:
+        title: Velg lokasjon
+      slots:
+        title: Velg dato og tid
+        available_times: Ledige tider
+        next_available_date_html: Neste tilgjengelige dato er %{next_available_date}
+        no_availability: Ingen ledige tider på valgt dato. Vennligst prøv en annen dato.
+        estimated_time: Estimert behandlingstid - %{duration} min.
+        free_capacity: '%{count} ledige'
+        continue: Fortsett
+      success:
+        title: Du har reservert tjenesten
+        add_to_calendar: Legg til reservasjon i kalenderen
+        book_another: Reserver en ny tjeneste
