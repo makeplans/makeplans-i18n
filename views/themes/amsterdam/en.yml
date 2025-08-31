@@ -78,8 +78,11 @@ en:
         select_provider: How would you like to pay?
         providers:
           braintree: Credit/debit card
+          fiken: Invoice
           stripe: Credit/debit card, Google Pay or Apple Pay
+          tfso: Invoice
           vipps: Vipps
+          visma_eaccounting: Invoice
       show:
         add_card: Add your credit card to pay automatically after the reservation
         add_to_calendar: Add the reservation to your calendar
@@ -103,7 +106,9 @@ en:
         verify_verification_code: We have sent a verification code to %{recipient}. Please enter the code in the form to verify the reservation. This is required to confirm the reservation.
     events:
       index:
-        free_capacity: '%{count} available'
+        free_capacity:
+          one: '%{count} available'
+          other: '%{count} available'
         none_available: No events available.
         title: Events
       show:
@@ -209,7 +214,9 @@ en:
         any_resource: First available
         dateselector: Select date
         earlier: Earlier
-        free_capacity: '%{count} available'
+        free_capacity:
+          one: '%{count} available'
+          other: '%{count} available'
         gap_warning: To select multiple slots these slots have to be without gaps.
         later: Later
         max_slots_warning: Cannot reserve more than %{max_slots} timeslots
@@ -221,7 +228,9 @@ en:
         select_time: "%{service} - select available time"
       weekday_available:
         dateselector: Select date
-        free_capacity: '%{count} available'
+        free_capacity:
+          one: '%{count} available'
+          other: '%{count} available'
         gap_warning: To select multiple slots these slots have to be without gaps.
         max_slots_warning: Cannot reserve more than %{max_slots} timeslots
         multiple_slots_info: To select multiple slots first choose the start time then the ending slot.

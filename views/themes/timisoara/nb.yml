@@ -75,6 +75,8 @@ nb:
         submit: Send code
         title: Login
         terms_conditions: Vilkår og betingelser
+        alt:
+          checkbox: Avkryssingsboks
     profile:
       index:
         tabs:

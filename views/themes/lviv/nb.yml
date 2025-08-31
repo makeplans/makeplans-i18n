@@ -80,6 +80,11 @@ nb:
         submit: Send verifiseringskode
     profile:
       index:
+        tabs:
+          all: Alle
+          upcoming: Fremtidige
+          completed: Utførte
+          cancelled: Kansellerte
         book_again: Reserver igjen
         canceled: Kansellert
       new:

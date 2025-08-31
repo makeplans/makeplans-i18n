@@ -6,6 +6,9 @@ en:
         title: Confirm booking
         email: Email
         phone_number: Phone number
+      cancelled:
+        info: 'The booking for %{title} %{time} was cancelled.'
+        title: Your booking is cancelled
       new:
         title: Booking for
         subtitle: Please fill in the data required to book a service.
@@ -77,6 +80,11 @@ en:
         submit: Send verification code
     profile:
       index:
+        tabs:
+          all: All
+          upcoming: Upcoming
+          completed: Completed
+          cancelled: Cancelled
         book_again: Book again
         canceled: Canceled
       new:

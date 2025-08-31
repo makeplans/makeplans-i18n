@@ -55,6 +55,7 @@ fr:
     events:
       index:
         all_events: Tous les événements
+        continue: Continuer
     layouts:
       application:
         booking_site_footer: Site de réservation pour %{name}
@@ -77,6 +78,8 @@ fr:
         submit: Envoyer le code
         title: Se connecter
         terms_conditions: Conditions générales
+        alt:
+          checkbox: Case à cocher
     profile:
       index:
         cancel: Annuler

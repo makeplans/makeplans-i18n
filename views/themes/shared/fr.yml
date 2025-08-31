@@ -3,6 +3,8 @@ fr:
   shared:
     services:
       slots:
-        free_capacity: "%{count} disponible"
+        free_capacity:
+          one: "%{count} disponible"
+          other: "%{count} disponibles"
       time_day:
         time_zone_differ_info: 'Tous les horaires sont affichés dans le fuseau horaire %{time_zone}.'

@@ -6,6 +6,9 @@ fr:
         title: Confirmer la réservation
         email: Email
         phone_number: Numéro de téléphone
+      cancelled:
+        info: 'La réservation pour %{title} %{time} a été annulée.'
+        title: Votre réservation est annulée
       new:
         title: Réservation pour
         subtitle: Veuillez remplir les données requises pour réserver un service.
@@ -77,6 +80,11 @@ fr:
         submit: Envoyer le code de vérification
     profile:
       index:
+        tabs:
+          all: Tous
+          upcoming: À venir
+          completed: Terminées
+          cancelled: Annulées
         book_again: Réserver à nouveau
         canceled: Annulé
       new:

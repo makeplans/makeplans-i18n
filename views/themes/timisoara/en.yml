@@ -99,6 +99,7 @@ en:
     events:
       index:
         all_events: All events
+        continue: Continue
     services:
       available_dates:
         select_date: Available dates

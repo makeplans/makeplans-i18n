@@ -78,8 +78,11 @@ fr:
         form_footer_html: 'Montant à payer : <span class="payment-amount">%{amount}</span> .'
         providers:
           braintree: Carte de crédit/débit
+          fiken: Facture
           stripe: Carte de crédit/débit, Google Pay ou Apple Pay
+          tfso: Facture
           vipps: Vipps
+          visma_eaccounting: Facture
         select_provider: Comment souhaitez-vous payer ?
       show:
         add_card: Ajoutez votre carte de crédit pour payer automatiquement après la réservation
@@ -104,7 +107,9 @@ fr:
         verify_verification_code: Nous avons envoyé un SMS à %{recipient} avec un code de vérification. Veuillez saisir le code dans le formulaire pour vérifier la réservation. Ceci est nécessaire pour terminer la réservation.
     events:
       index:
-        free_capacity: "%{count} disponible"
+        free_capacity:
+          one: "%{count} disponible"
+          other: "%{count} disponibles"
         none_available: Aucun événement disponible.
         title: Événements
       show:
@@ -210,7 +215,9 @@ fr:
         any_resource: Première disponible
         dateselector: Sélectionner une date
         earlier: Plus tôt
-        free_capacity: "%{count} disponible"
+        free_capacity:
+          one: "%{count} disponible"
+          other: "%{count} disponibles"
         gap_warning: Pour sélectionner plusieurs emplacements, ces emplacements doivent être sans espaces.
         later: Plus tard
         max_slots_warning: Impossible de réserver plus de plages horaires %{max_slots}
@@ -222,7 +229,9 @@ fr:
         select_time: "%{service} - sélectionnez le temps disponible"
       weekday_available:
         dateselector: Sélectionner une date
-        free_capacity: "%{count} disponible"
+        free_capacity:
+          one: "%{count} disponible"
+          other: "%{count} disponibles"
         gap_warning: Pour sélectionner plusieurs emplacements, ces emplacements doivent être sans espaces.
         max_slots_warning: Impossible de réserver plus de plages horaires %{max_slots}
         multiple_slots_info: Pour sélectionner plusieurs créneaux, choisissez d'abord l'heure de début puis le créneau de fin.
