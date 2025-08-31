@@ -28,6 +28,9 @@ fr:
         title: Détails de la réservation
         add_to_calendar: Ajouter au calendrier
         cancel_booking: Annuler la réservation
+        alt:
+          profile: Profil
+          calendar: Ajouter au calendrier
     categories:
       index:
         title: Sélectionnez une catégorie
@@ -38,6 +41,8 @@ fr:
         book_event: Réserver cet événement
     generic:
       step: 'Étape %{step} / %{steps}'
+      alt:
+        go_back: Retour
     layouts:
       application:
         booking_site_footer: Site de réservation pour %{name}
@@ -49,6 +54,10 @@ fr:
         terms_conditions: Conditions générales
         privacy_policy: Politique de confidentialité
         about_makeplans: À propos de MakePlans
+        alt:
+          account: Compte
+          menu: Menu
+          cancel: Annuler
     person_sessions:
       enter_perishable_token:
         confirm_booking: Confirmer la réservation
@@ -78,6 +87,10 @@ fr:
       show:
         change_language: Changer de langue
         logout: Se déconnecter
+        alt:
+          right: Droite
+          language: Langue
+          logout: Se déconnecter
     services:
       available_dates:
         title: Sélectionner date et heure

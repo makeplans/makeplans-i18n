@@ -28,6 +28,9 @@ en:
         title: Booking details
         add_to_calendar: Add to calendar
         cancel_booking: Cancel booking
+        alt:
+          profile: Profile
+          calendar: Add to calendar
     categories:
       index:
         title: 'Select category'
@@ -38,6 +41,8 @@ en:
         book_event: Book this event
     generic:
       step: 'Step %{step} / %{steps}'
+      alt:
+        go_back: Go back
     layouts:
       application:
         booking_site_footer: Booking site for %{name}
@@ -49,6 +54,10 @@ en:
         terms_conditions: Terms & Conditions
         privacy_policy: Privacy policy
         about_makeplans: About MakePlans
+        alt:
+          account: Account
+          menu: Menu
+          cancel: Cancel
     person_sessions:
       enter_perishable_token:
         confirm_booking: Confirm booking
@@ -78,6 +87,10 @@ en:
       show:
         change_language: Change language
         logout: Logout
+        alt:
+          right: Right
+          language: Language
+          logout: Logout
     services:
       available_dates:
         title: Select date & time

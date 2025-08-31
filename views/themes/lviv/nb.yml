@@ -31,6 +31,9 @@ nb:
         title: Reservasjonsdetaljer
         add_to_calendar: Legg til i kalender
         cancel_booking: Avbestill reservasjon
+        alt:
+          profile: Profil
+          calendar: Legg til i kalender
     categories:
       index:
         title: Velg kategori
@@ -41,6 +44,8 @@ nb:
         book_event: Reserver dette arrangementet
     generic:
       step: 'Steg %{step} / %{steps}'
+      alt:
+        go_back: Gå tilbake
     layouts:
       application:
         booking_site_footer: Reservasjonssystem for %{name}
@@ -52,6 +57,10 @@ nb:
         terms_conditions: Vilkår og betingelser
         privacy_policy: Personvernpolicy
         about_makeplans: Om MakePlans
+        alt:
+          account: Konto
+          menu: Meny
+          cancel: Kanseller
     person_sessions:
       enter_perishable_token:
         confirm_booking: Bekreft reservasjon
@@ -81,6 +90,10 @@ nb:
       show:
         change_language: Endre språk
         logout: Logg ut
+        alt:
+          right: Høyre
+          language: Språk
+          logout: Logg ut
     services:
       available_dates:
         title: Velg dato og tid

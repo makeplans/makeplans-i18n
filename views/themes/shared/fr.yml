@@ -4,3 +4,5 @@ fr:
     services:
       slots:
         free_capacity: "%{count} disponible"
+      time_day:
+        time_zone_differ_info: 'Tous les horaires sont affichés dans le fuseau horaire %{time_zone}.'

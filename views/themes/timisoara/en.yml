@@ -45,6 +45,9 @@ en:
         info: You have to verify your phone number to complete your reservation.
         submit: Continue
         title: Verify your phone number
+    generic:
+      alt:
+        time: Time
     layouts:
       application:
         login: Login
@@ -55,6 +58,8 @@ en:
         privacy: Privacy policy
         support: Support
         title: Online booking for %{name}
+        alt:
+          footer_logo: Footer logo
     categories:
       index:
         all_categories: All categories
@@ -70,6 +75,8 @@ en:
         submit: Send code
         title: Login
         terms_conditions: Terms and conditions
+        alt:
+          checkbox: Checkbox
     profile:
       index:
         tabs:
@@ -80,6 +87,8 @@ en:
         title: My reservations
         cancel: Cancel
         awaiting_approval: Awaiting approval
+        alt:
+          calendar: Calendar
       new:
         header: Account information
         errors_header: 'Errors occured:'

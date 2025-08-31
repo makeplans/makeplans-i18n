@@ -45,6 +45,9 @@ nb:
         info: Du må verifisere ditt telefonnummer for å gjennomføre reservasjonen.
         submit: Fortsett
         title: Verifiser ditt telefonnummer
+    generic:
+      alt:
+        time: Tid
     layouts:
       application:
         login: Login
@@ -55,6 +58,8 @@ nb:
         privacy: Personvernpolicy
         support: Kundeservice
         title: Timebestilling for %{name}
+        alt:
+          footer_logo: Bunntekst logo
     categories:
       index:
         all_categories: Alle kategorier
@@ -80,6 +85,8 @@ nb:
         title: Mine reservasjoner
         cancel: Kanseller
         awaiting_approval: Venter på godkjenning
+        alt:
+          calendar: Kalender
       new:
         header: Dine kontaktopplysninger
         errors_header: 'Det oppstod feil:'

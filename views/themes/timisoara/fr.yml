@@ -45,6 +45,9 @@ fr:
         info: Vous devez vérifier votre numéro de téléphone pour compléter votre réservation.
         submit: Continuer
         title: Vérifiez votre numéro de téléphone
+    generic:
+      alt:
+        time: Temps
     categories:
       index:
         all_categories: Toutes les catégories
@@ -62,6 +65,8 @@ fr:
         profile: Profil
         support: Soutien
         title: Réservation en ligne pour %{name}
+        alt:
+          footer_logo: Logo de pied de page
     person_sessions:
       enter_perishable_token:
         info_html: Nous avons envoyé un code de vérification à <b>%{recipient}</b> Veuillez saisir le code pour vérifier vos informations.
@@ -82,6 +87,8 @@ fr:
           upcoming: Prochain
         title: Mes réservations
         awaiting_approval: En attente d'approbation
+        alt:
+          calendar: Calendrier
       new:
         errors_header: 'Des erreurs se sont produites :'
         header: Informations sur le compte
