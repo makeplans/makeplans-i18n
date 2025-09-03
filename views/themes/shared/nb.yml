@@ -1,6 +1,8 @@
 ---
 nb:
   shared:
+    generic:
+      close: lukk
     services:
       slots:
         free_capacity:

@@ -1,6 +1,8 @@
 ---
 en:
   shared:
+    generic:
+      close: close
     services:
       slots:
         free_capacity:
