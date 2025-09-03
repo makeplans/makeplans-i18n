@@ -29,7 +29,7 @@ nb:
         submit: Til betaling
         title: Betaling
       show:
-        all: See mine andre reservasjoner
+        all: Se mine andre reservasjoner
         add_to_calendar: Legg til i kalender
         new_reservation: Opprett en ny reservasjon
         info: 'Reservasjonen av %{title} %{time} er bekreftet.'
@@ -70,9 +70,9 @@ nb:
         info_html: "Vi har sendt en kode til <b>%{recipient}</b>.
             Skriv inn koden for å fullføre verifiseringen."
         submit: Fortsett
-        title: Verifiser din reservasjon
+        title: Verifisering
       perishable_token_form:
-        submit: Send code
+        submit: Send kode
         title: Login
         terms_conditions: Vilkår og betingelser
         alt:
