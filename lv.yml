@@ -285,7 +285,6 @@ lv:
         mail_verification_subject: Temats verifikācijas e-pastā
         name: Uzņēmuma nosaukums (redzams pierakstīšanās vietnē)
         new_booking_text: Apstiprinājuma lapā redzamais teksts
-        reservation_form_text: Teksts, kas tiek parādīts pirms pieraksta formas
         payment_provider: Maksājumu nodrošinātājs (priekšapmaksas pierakstiem)
         person_form: Pielāgoti klienta lauki
         phone_number: Tālruņa numurs paziņojumiem
@@ -293,6 +292,7 @@ lv:
         purge_data_period: Automātiska personu identificējošas informācijas dzēšana
         reminder_sms: Sūtīt SMS atgādinājumus
         require_terms_acceptance: Pieprasīt piekrišanu datu politikai, lai pieņemtu
+        reservation_form_text: Teksts, kas tiek parādīts pirms pieraksta formas
         resource_form: Pielāgotu resursu lauki
         service_form: Pielāgotu pakalpojumu lauki
         service_template: Kalendāra stils

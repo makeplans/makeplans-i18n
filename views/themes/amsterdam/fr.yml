@@ -41,6 +41,7 @@ fr:
           remember_me: Voulez-vous que nous nous souvenions de vous sur cette machine à l'aide d'un cookie?
         book_for_child: Faire une réservation pour quelqu'un d'autre ?
         book_for_me: Réserver pour moi à la place
+        contact_support_message: Votre profil client manque d'informations. Veuillez contacter le support.
         date_format: 'Veuillez saisir un format de date valide: %{format}'
         email_suggestion_html: "<p>Vouliez-vous dire <span>%{suggestions}</span> ?</p>"
         enter_info: Entrez les informations
@@ -51,7 +52,6 @@ fr:
         reserve_resource: Réservation pour %{resource}
         select_child: 'Effectuez cette réservation pour :'
         terms: Conditions générales de réservation
-        contact_support_message: Votre profil client manque d'informations. Veuillez contacter le support.
       no_person:
         body: 'Contactez nous pour plus d''informations. Erreur: connexion client supprimée'
         title: Erreur

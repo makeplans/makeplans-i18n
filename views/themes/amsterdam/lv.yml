@@ -153,7 +153,7 @@ lv:
     providers:
       index:
         show_all_available: Rādīt visus pieejamos laikus
-        show_only_selected: 'Izvēlēties resursu'
+        show_only_selected: Izvēlēties resursu
     services:
       index:
         none_available: Nav pieejamu pakalpojumu.

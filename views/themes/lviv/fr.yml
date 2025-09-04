@@ -3,37 +3,37 @@ fr:
   lviv:
     bookings:
       authenticate:
-        title: Confirmer la réservation
         email: Email
         phone_number: Numéro de téléphone
+        title: Confirmer la réservation
       cancelled:
-        info: 'La réservation pour %{title} %{time} a été annulée.'
+        info: La réservation pour %{title} %{time} a été annulée.
         title: Votre réservation est annulée
       new:
-        title: Réservation pour
-        subtitle: Veuillez remplir les données requises pour réserver un service.
+        agree_with: Je suis d'accord avec
         errors_header: Veuillez remplir tous les champs requis.
         optional: Optionnel
-        terms: Conditions générales
         submit: Réserver un service
-        agree_with: Je suis d'accord avec
+        subtitle: Veuillez remplir les données requises pour réserver un service.
+        terms: Conditions générales
+        title: Réservation pour
       payment_stripe:
         title: Saisir les détails de paiement
       pre_payment:
         title: Choisir la méthode de paiement
       review:
-        title: Vérifiez votre réservation
-        directions: Directions
-        any_specialist: N'importe quel spécialiste
         agree_with: Je suis d'accord avec
+        any_specialist: N'importe quel spécialiste
+        directions: Directions
         terms: Conditions générales
+        title: Vérifiez votre réservation
       show:
-        title: Détails de la réservation
         add_to_calendar: Ajouter au calendrier
-        cancel_booking: Annuler la réservation
         alt:
-          profile: Profil
           calendar: Ajouter au calendrier
+          profile: Profil
+        cancel_booking: Annuler la réservation
+        title: Détails de la réservation
     categories:
       index:
         title: Sélectionnez une catégorie
@@ -43,30 +43,30 @@ fr:
       show:
         book_event: Réserver cet événement
     generic:
-      step: 'Étape %{step} / %{steps}'
       alt:
         go_back: Retour
+      step: Étape %{step} / %{steps}
     layouts:
       application:
-        booking_site_footer: Site de réservation pour %{name}
-        title: Réservation en ligne pour %{name}
-        close: Fermer
-        account: Compte
-        menu: Menu
-        get_support: Obtenir de l'aide
-        terms_conditions: Conditions générales
-        privacy_policy: Politique de confidentialité
         about_makeplans: À propos de MakePlans
+        account: Compte
         alt:
           account: Compte
-          menu: Menu
           cancel: Annuler
+          menu: Menu
+        booking_site_footer: Site de réservation pour %{name}
+        close: Fermer
+        get_support: Obtenir de l'aide
+        menu: Menu
+        privacy_policy: Politique de confidentialité
+        terms_conditions: Conditions générales
+        title: Réservation en ligne pour %{name}
     person_sessions:
       enter_perishable_token:
         confirm_booking: Confirmer la réservation
-        verify_login: Vérifier la connexion
         no_code: Vous ne recevez pas le code ?
         send_again: Renvoyer
+        verify_login: Vérifier la connexion
       perishable_token_action_required:
         body: Nous avons envoyé un e-mail à %{recipient}. Veuillez le suivre pour vérifier votre réservation. Cela nous permet de vérifier que vous n'êtes pas un robot.
         delivery_error: Nous n'avons pas pu vous envoyer d'e-mail. Êtes-vous sûr d'avoir saisi la bonne adresse e-mail ?
@@ -80,25 +80,25 @@ fr:
         submit: Envoyer le code de vérification
     profile:
       index:
-        tabs:
-          all: Tous
-          upcoming: À venir
-          completed: Terminées
-          cancelled: Annulées
         book_again: Réserver à nouveau
         canceled: Annulé
+        tabs:
+          all: Tous
+          cancelled: Annulées
+          completed: Terminées
+          upcoming: À venir
       new:
-        title: Nouveau profil
-        subtitle: Veuillez remplir les données requises pour vous inscrire.
-        register: S'inscrire
         errors_header: 'Des erreurs se sont produites :'
+        register: S'inscrire
+        subtitle: Veuillez remplir les données requises pour vous inscrire.
+        title: Nouveau profil
       show:
-        change_language: Changer de langue
-        logout: Se déconnecter
         alt:
-          right: Droite
           language: Langue
           logout: Se déconnecter
+          right: Droite
+        change_language: Changer de langue
+        logout: Se déconnecter
     services:
       available_dates:
         title: Sélectionner date et heure
@@ -106,19 +106,19 @@ fr:
         title: Sélectionner le nombre de personnes
       index:
         title: Sélectionner un service
-      show:
-        book_service: Réserver ce service
       location:
         title: Sélectionner l'emplacement
+      show:
+        book_service: Réserver ce service
       slots:
-        title: Sélectionner date et heure
         available_times: Heures disponibles
+        continue: Continuer
+        estimated_time: Durée estimée du service - %{duration} min.
+        free_capacity: "%{count} disponibles"
         next_available_date_html: La prochaine date disponible est %{next_available_date}
         no_availability: Aucune disponibilité à la date sélectionnée. Veuillez essayer une autre date.
-        estimated_time: Durée estimée du service - %{duration} min.
-        free_capacity: '%{count} disponibles'
-        continue: Continuer
+        title: Sélectionner date et heure
       success:
-        title: Vous avez réservé le service avec succès
         add_to_calendar: Ajouter la réservation au calendrier
         book_another: Réserver un autre service
+        title: Vous avez réservé le service avec succès

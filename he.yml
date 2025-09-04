@@ -283,7 +283,6 @@ he:
         mail_verification_subject: נושא בדוא"ל אימות
         name: שם החברה (מוצג באתר ההזמנה)
         new_booking_text: טקסט המוצג בדף האישור
-        reservation_form_text: טקסט המוצג לפני טופס ההזמנה
         payment_provider: ספק תשלומים (להזמנות ששולמו מראש)
         person_form: שדות לקוחות בהתאמה אישית
         phone_number: מספר טלפון להודעה
@@ -291,6 +290,7 @@ he:
         purge_data_period: מחיקה אוטומטית של מידע המאפשר זיהוי אישי
         reminder_sms: שלח תזכורות SMS
         require_terms_acceptance: דרוש תנאים כדי להתקבל
+        reservation_form_text: טקסט המוצג לפני טופס ההזמנה
         resource_form: שדות משאבים מותאמים אישית
         service_form: שדות שירות בהתאמה אישית
         service_template: סגנון לוח שנה

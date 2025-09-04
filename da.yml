@@ -300,7 +300,6 @@ da:
         mailer_sender: E-mail-afsender
         name: Firmanavn (vises på reservationssiden)
         new_booking_text: Tekst vises på bekræftelsessiden
-        reservation_form_text: Tekst vises før reservationsformularen
         payment_provider: Betalingsløsning (For forudbetaling af reservationer)
         person_form: Brugerdefinerede kundefelter
         phone_number: Mobilnummer til underretning
@@ -308,6 +307,7 @@ da:
         purge_data_period: Automatisk sletning af personlige oplysninger
         reminder_sms: Send påmindelse via SMS
         require_terms_acceptance: Kræv vilkår for at blive accepteret
+        reservation_form_text: Tekst vises før reservationsformularen
         resource_form: Brugerdefinerede ressourcefelter
         service_form: Brugerdefinerede servicefelter
         service_template: Kalender skabelon

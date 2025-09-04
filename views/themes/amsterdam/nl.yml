@@ -31,7 +31,7 @@ nl:
         previous_service: Verander service
       title: Online boeken voor %{name}
     services:
-      slots: 
+      slots:
       time_day_available:
         dateselector: Selecteer een datum
         select_time: "%{service} - selecteer een beschikbare tijd"

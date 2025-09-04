@@ -18,10 +18,10 @@ fr:
         terms: conditions de réservation
         title: Réservation de %{service}
       new_person:
-        title: Informations sur le compte
         email_address: Adresse e-mail
         phone_number: Numéro de téléphone mobile
         submit: Confirmer la réservation
+        title: Informations sur le compte
       payment_stripe:
         title: Paiement
       pre_payment:
@@ -31,12 +31,12 @@ fr:
       show:
         add_to_calendar: Ajouter cette réservation à mon calendrier
         all: Voir mes autres réservations
-        info: La réservation pour %{title} %{time} est confirmée.
-        new_reservation: Faire une autre réservation
-        title: Votre réservation est confirmée !
-        reschedule: Reprogrammer
         cancel: Annuler
         cancel_confirmation: Êtes-vous sûr de vouloir annuler cette réservation ?
+        info: La réservation pour %{title} %{time} est confirmée.
+        new_reservation: Faire une autre réservation
+        reschedule: Reprogrammer
+        title: Votre réservation est confirmée !
       verification_method_email:
         info: Vous devez vérifier votre adresse e-mail pour terminer votre réservation.
         submit: Continuer
@@ -45,9 +45,6 @@ fr:
         info: Vous devez vérifier votre numéro de téléphone pour compléter votre réservation.
         submit: Continuer
         title: Vérifiez votre numéro de téléphone
-    generic:
-      alt:
-        time: Temps
     categories:
       index:
         all_categories: Toutes les catégories
@@ -56,8 +53,13 @@ fr:
       index:
         all_events: Tous les événements
         continue: Continuer
+    generic:
+      alt:
+        time: Temps
     layouts:
       application:
+        alt:
+          footer_logo: Logo de pied de page
         booking_site_footer: Site de réservation pour %{name}
         login: Se connecter
         made_by_tagline: Système convivial de planification, de prise de rendez-vous et d'inscription à des événements.
@@ -66,8 +68,6 @@ fr:
         profile: Profil
         support: Soutien
         title: Réservation en ligne pour %{name}
-        alt:
-          footer_logo: Logo de pied de page
     person_sessions:
       enter_perishable_token:
         info_html: Nous avons envoyé un code de vérification à <b>%{recipient}</b> Veuillez saisir le code pour vérifier vos informations.
@@ -75,13 +75,16 @@ fr:
         submit: Continuer
         title: Vérifiez votre réservation
       perishable_token_form:
-        submit: Envoyer le code
-        title: Se connecter
-        terms_conditions: Conditions générales
         alt:
           checkbox: Case à cocher
+        submit: Envoyer le code
+        terms_conditions: Conditions générales
+        title: Se connecter
     profile:
       index:
+        alt:
+          calendar: Calendrier
+        awaiting_approval: En attente d'approbation
         cancel: Annuler
         tabs:
           all: Tous
@@ -89,9 +92,6 @@ fr:
           completed: Complété
           upcoming: Prochain
         title: Mes réservations
-        awaiting_approval: En attente d'approbation
-        alt:
-          calendar: Calendrier
       new:
         errors_header: 'Des erreurs se sont produites :'
         header: Informations sur le compte

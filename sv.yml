@@ -300,7 +300,6 @@ sv:
         mailer_sender: E-post avsändare
         name: Företagsnamn (visas på bokningssidan)
         new_booking_text: Text som visas på bekräftelsesidan
-        reservation_form_text: Text som visas före bokningsformulär
         payment_provider: Betalningsleverantör (För förskottsbetalning av bokningar)
         person_form: Anpassade kundfält
         phone_number: Telefonnummer för SMS-avisering
@@ -308,6 +307,7 @@ sv:
         purge_data_period: Automatisk radering av personlig information
         reminder_sms: Skicka påminnelse på SMS
         require_terms_acceptance: Kräv villkor för att accepteras
+        reservation_form_text: Text som visas före bokningsformulär
         resource_form: Anpassade resursfält
         service_form: Anpassade tjänstefält
         service_template: Kalendermall
