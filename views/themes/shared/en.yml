@@ -4,6 +4,8 @@ en:
     generic:
       close: close
     services:
+      count:
+        title: How many people?
       slots:
         free_capacity:
           one: '%{count} available'

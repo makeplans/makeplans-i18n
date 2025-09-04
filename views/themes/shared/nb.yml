@@ -4,6 +4,8 @@ nb:
     generic:
       close: lukk
     services:
+      count:
+        title: Hvor mange personer?
       slots:
         free_capacity:
           one: '%{count} ledig'

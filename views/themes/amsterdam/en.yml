@@ -204,6 +204,8 @@ en:
         show_all_available: Show all available
         show_only_selected: 'Or only show from selected %{resource_title}:'
     services:
+      available_dates:
+        none_available: No dates available
       index:
         none_available: No services available.
       show:
