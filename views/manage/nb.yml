@@ -65,7 +65,7 @@ nb:
         add_new_link: Ønsker du å registrere ny kredittkortinformasjon?
         billing_info: Du vil motta faktura på epost fra oss og foreta betaling manuelt.
         billing_order_ref: 'Fakturaen vil inkludere din referanse: %{billing_order_ref}'
-        billing_period_info: 'Du vil bli fakturert for %{period} måneder.'
+        billing_period_info: Du vil bli fakturert for %{period} måneder.
         change_from_invoice: Legg inn kredittkortinformasjon så slipper du å betale manuelt hver gang vi sender deg ny faktura.
         charge_details: Basert på nåværende innstillinger så er månedlig pris %{price}.
         charge_details_default: Månedlig pris er %{price} per ressurs.
@@ -77,12 +77,12 @@ nb:
         email_recipent: Faktura vil bli sendt på epost til %{email} eller som EHF hvis dere kan motta det.
         header: Betalingsinformasjon
         info_header: 'Vi har registrert følgende fakturainformasjon:'
-        invoice_history: 'Se tidligere fakturaer'
+        invoice_history: Se tidligere fakturaer
         paid_until: Kontoen er betalt frem til %{paid_until}.
         pause: Sett kontoen på pause etter endt betalt periode.
         pause_confirm: Er du sikker på at du vil sette kontoen på pause? Kontoen vil bli automatisk deaktivert %{paid_until}.
-        reactivate_confirm: Er du sikker på at du vil reaktivert kontoen du har satt på pause? Kontoen vil bli automatisk fakturert %{paid_until}.
         reactivate: Din konto er en demo-konto, du må reaktivere kontoen for å ta i bruk MakePlans.
+        reactivate_confirm: Er du sikker på at du vil reaktivert kontoen du har satt på pause? Kontoen vil bli automatisk fakturert %{paid_until}.
         reactivate_link: Reaktiver konto
         sms_credits_available: 'SMS balanse er: %{credits}.'
         vat_no: Organisasjonsnummer som er registrert er %{vat_no}
@@ -95,17 +95,6 @@ nb:
         error: Vi klarte ikke å bekrefte at betaling ble gjennomført. Kontakt kundeservice.
         info: Vennligst vent mens vi belaster ditt kredittkort. Dette kan ta opp mot et minutt. Du vil motta en epost fra oss når prosessen er ferdig.
     bookings:
-      feed:
-        info:
-          header: iCalendar-feeder
-          ical:
-            activated: 'Tilgang til reservasjoner i din konto med iCalendar er aktivert. Lenkene til iCalendar-feedene er tilgjengelige. Ikke del lenkene.'
-            future_html: 'Fremtidige reservasjoner: %{link}'
-            past_html: 'Tidligere reservasjoner: %{link}'
-            disable: Deaktiver iCalendar-feeder for konto
-            enable: Aktiver iCalendar-feeder for konto
-            info: En iCalendar-feed vil vise reservasjoner fra din konto i andre kalenderapplikasjoner som Microsoft Outlook, Google Calendar, iPhone eller Android. Kun lesing, alle endringer må gjøres i MakePlans.
-            not_activated: Ikke aktivert
       cancel_recurring:
         headline: Alle fremtidige reservasjoner i dette mønsteret ble slettet
         list_recurring: Se liste over reservasjoner innenfor dette gjentatte mønsteret.
@@ -114,6 +103,17 @@ nb:
         link: Vis liste
       destroy_recurring:
         headline: Alle reservasjoner i dette mønsteret ble slettet
+      feed:
+        info:
+          header: iCalendar-feeder
+          ical:
+            activated: Tilgang til reservasjoner i din konto med iCalendar er aktivert. Lenkene til iCalendar-feedene er tilgjengelige. Ikke del lenkene.
+            disable: Deaktiver iCalendar-feeder for konto
+            enable: Aktiver iCalendar-feeder for konto
+            future_html: 'Fremtidige reservasjoner: %{link}'
+            info: En iCalendar-feed vil vise reservasjoner fra din konto i andre kalenderapplikasjoner som Microsoft Outlook, Google Calendar, iPhone eller Android. Kun lesing, alle endringer må gjøres i MakePlans.
+            not_activated: Ikke aktivert
+            past_html: 'Tidligere reservasjoner: %{link}'
       fiken:
         delayed_info: Det kan ta litt tid før fakturaen opprettes i Fiken. Ikke prøv å opprette faktura en gang til hvis informasjon fra Fiken ikke er synlig i MakePlans.
         header: Kontakter nå Fiken...
@@ -133,15 +133,13 @@ nb:
         ignore_capacity: Lagre selv om opptatt
         modification_send_email: Send endring på epost
         modification_send_sms: Send endring på SMS
-        no_customer: 'Ingen kunde spesifisert!
+        no_customer: |-
+          Ingen kunde spesifisert!
 
+          Du har satt denne reservasjonen som kundereservasjon men ikke spesifisert en kunde.
 
-        Du har satt denne reservasjonen som kundereservasjon men ikke spesifisert en kunde.
-
-
-        OK: Fortsett og sett denne reservasjonen som drop-in.
-
-        Avbryt: Gå tilbake og spesifiser kunde.'
+          OK: Fortsett og sett denne reservasjonen som drop-in.
+          Avbryt: Gå tilbake og spesifiser kunde.
         no_service: Ingen tjeneste valgt
         notification_send_email: Send varsel på epost
         notification_send_sms: Send varsel på SMS
@@ -268,8 +266,8 @@ nb:
           phone_number: Telefon
       widget_list:
         busy: Opptatt
-        no_bookings: 'Ingen reservasjoner %{start}.'
-        no_bookings_range: 'Ingen reservasjoner fra %{start} til %{end}.'
+        no_bookings: Ingen reservasjoner %{start}.
+        no_bookings_range: Ingen reservasjoner fra %{start} til %{end}.
     categories:
       blank:
         get_started: Du har foreløpig ingen kategorier. Alle tjenester vil dermed vises i en liste på bookingsiden. Hvis du vil kategorisere dine tjenester kan du opprette en ny kategori.
@@ -290,12 +288,12 @@ nb:
         show_on_booking_site: Åpne denne tjenesten på bookingsiden
     client:
       addons:
-        header: Tillegg
-        info: Vi tilbyr ulike betalte tillegg som du kan aktivere. Kontakt oss hvis du har spørsmål.
         addons:
           custom_domain: Egendefinert domene
           custom_email_sender: Egendefinert e-postavsender
           custom_sms_sender: Egendefinert SMS-avsender ID
+        header: Tillegg
+        info: Vi tilbyr ulike betalte tillegg som du kan aktivere. Kontakt oss hvis du har spørsmål.
       api:
         disable: Vil du deaktivere API?
         disable_warning: Er du sikker på at du vil deaktivere API? API-nøkkelen vil bli ugyldig og API-en utilgjengelig.
@@ -338,9 +336,9 @@ nb:
           record: CNAME %{domain} med verdi %{cname}
           verify: Verifiser DNS
         info:
+          add: Legg til ditt domene
           header: Bruk ditt eget domene
           info: Du kan bruke ditt eget domene for bookingsiden. Månedlig kostnad er %{price}
-          add: Legg til ditt domene
         new:
           domain: Ditt domene
         show:
@@ -382,8 +380,8 @@ nb:
           sms: SMS (anbefales)
       edit_communication:
         email: Epost
-        ical: iCalendar
         header: Endre utgående kommunikasjon
+        ical: iCalendar
         mailer_sender_valid_domain: Du har validert %{domain} og MakePlans vil sende e-post på det domenet på dine vegne. Andre e-postadresser vil bli spesifisert som svar-til.
         message_template_info: Dette er de innebygde eldre meldingene. For støtte for flere meldinger og mer kontroll, bruk meldingsmal-funksjonen.
         settings:
@@ -407,11 +405,10 @@ nb:
         custom_form_info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>.
         header: Endre egendefinerte felter
       edit_person_notifications:
-        automatic_messages_booking_site: Automatiske utsendelser (På bookingsiden)
         automatic_messages: Automatiske utsendelser (Administrasjonsystem og API)
-        message_template_info: Dette er den innebygde funksjon for utsending. For flere påminnelser og mer kontroll, bruk meldingsmal-funksjonen.
-        booking_site_outgoing_messages_info: Som standard vil MakePlans sende en melding ved viktige hendelser som bekreftelse via valgt verifiseringsmetode, for eksempel SMS for SMS-verifisering, or epost hvis man har annen eller ingen verifisering.
+        automatic_messages_booking_site: Automatiske utsendelser (På bookingsiden)
         booking_site_message: Send melding på bookingsiden
+        booking_site_outgoing_messages_info: Som standard vil MakePlans sende en melding ved viktige hendelser som bekreftelse via valgt verifiseringsmetode, for eksempel SMS for SMS-verifisering, or epost hvis man har annen eller ingen verifisering.
         cancellation_email: Utsendelse av epost ved kansellering av reservasjon
         cancellation_sms: Utsendelse av SMS ved kansellering av reservasjon
         confirmation_email: Utsendelse av epost ved opprettelse av reservasjon
@@ -420,6 +417,7 @@ nb:
         default_reminder_sms: Automatisk basert på innstilling om utsendelse av påminnelse
         disable: Deaktiver
         header: Send varslinger til kunde
+        message_template_info: Dette er den innebygde funksjon for utsending. For flere påminnelser og mer kontroll, bruk meldingsmal-funksjonen.
         modification_email: Utsendelse av epost ved endring av reservasjon
         modification_sms: Utsendelse av SMS ved endring av reservasjon
         outgoing_messages_info: 'MakePlans vil foreslå å sende epost/SMS (det du har satt som verifiseringsmetode) når du oppretter, endrer eller kansellerer en reservasjon. Noen utsendelser, som kansellering av reservasjon, skjer også automatisk. Du kan deaktivere automatiske utsendelser (feks ved flytting av reservasjon i kalender, kansellering, eller opprettelse av reservasjon med API) eller deaktivere forslag til utsending i skjema ved å endre innstillinger nedenfor. OBS: Dette gjelder ikke for bookingsiden. Bookingsiden sender alltid ut automatisk basert på verifikasjonsmetode.'
@@ -435,6 +433,7 @@ nb:
         disable: Deaktiver
         email: E-post
         header: Endre varslinger til bruker
+        mail_notification_confirmation: Bekreftelses-e-post for varsling
         mail_notification_info: For å sende varsel til flere personer så bruk semi-kolon for å skille epost-adresser.
         notification_email: Utsendelse av epost ved ny reservasjon
         notification_sms: Utsendelse av SMS ved ny reservasjon
@@ -457,14 +456,14 @@ nb:
           service_attendance_title: Egendefinert arrangementstype-tittel
       email_sender:
         create:
-          header: Vi behandler forespørselen din
           dns: Se dine DNS-verdier.
+          header: Vi behandler forespørselen din
         dns:
-          header: Legg til DNS-poster
-          info: Vennligst legg til følgende DNS-poster for å fullføre e-postavsender-verifiseringen. Det kan ta opptil 24 timer før endringene dine er aktive.
           dkim: For å la MakePlans sende med en e-postadresse på %{domain}, legg til følgende TXT-post.
           dkim_host: Vert
           dkim_value: Verdi
+          header: Legg til DNS-poster
+          info: Vennligst legg til følgende DNS-poster for å fullføre e-postavsender-verifiseringen. Det kan ta opptil 24 timer før endringene dine er aktive.
         info:
           add: Legg til ditt e-postdomene for sending
           header: Send e-post med din egen e-postadresse
@@ -478,6 +477,15 @@ nb:
         verify:
           header: Ikke verifisert
           info: Hvis du har lagt til DNS-postene, vennligst vent til de har blitt propagert. Prøv igjen senere.
+      embed:
+        new:
+          embed_url: 'Skriv inn URL-en til nettstedet ditt for innebygging:'
+        show:
+          add_embed_url: Vil du legge inn bookingsiden på et eksternt nettsted?
+          custom_info: Du kan legge inn bestillingssiden ved hjelp av iframe eller utføre API-forespørsler på %{url}.
+          delete: Fjern den innebygde URL-en.
+          header: Bygg inn bookingsiden på et tredjepartsdomene
+          info: For å kunne legge til bookingsiden din på ditt eget nettsted som en iframe eller utføre offentlige API-forespørsler fra nettstedet ditt, må du legge til nettadressen din av sikkerhetshensyn.
       export_info:
         data_types:
           bookings: Reservasjoner (kun aktive)
@@ -493,8 +501,8 @@ nb:
         info: Det er mulig å importere data, som for eksempel kunder, i MakePlans. Ta kontakt med kundeservice for mer informasjon.
       invoices:
         index:
-          header: Fakturaer fra MakePlans
           email: Send en kopi på epost
+          header: Fakturaer fra MakePlans
       promote:
         booking_button_html_info: Kopier HTML-koden nedenfor til din nettside. Ta eventuelt kontakt med din web-designer for hjelp.
         booking_button_html_preview: Forhåndsvisning
@@ -506,7 +514,10 @@ nb:
         booking_site_info_html: Deres bookingside er tilgjengelig på %{url}.
         generate_booking_button: Generer knapp til din nettside
         header: Promoter din bookingside
+        qr_code: QR-kode
       sms_sender:
+        new:
+          sms_sender_name: SMS-avsendernavn
         show:
           add_custom_sender: Ønsker du å bruke en egendefinert SMS-avsender ID?
           cost: Månedlig kostnad er %{price}.
@@ -514,13 +525,11 @@ nb:
           delete: Fjern egendefinert SMS-avsender ID.
           header: SMS-avsender ID
           info: Alle SMS vil bli sendt fra MakePlans.
-        new:
-          sms_sender_name: SMS-avsendernavn
       tools:
         header: Diverse funksjoner for din konto
         link:
-          feed: iCalendar-feeder
           change_time_zone: Bytt tidssone
+          feed: iCalendar-feeder
           purge_data: Slett gamle data
           sms_all: Send SMS til alle dine kunder
     coupons:
@@ -558,6 +567,7 @@ nb:
         download_attendance_csv: Eksporter deltagerliste som CSV
         email_confirm: Deltagerliste vil bli sendt på epost til deg. Vil du fortsette?
         fully_booked: Arrangementet er fullbooket
+        qr_code: QR-kode for kunder
         recurring_member: Dette arrangementet er del av et gjentagende mønster.
         send_email_to_all: Send epost til alle deltagere
         send_sms: Send SMS
@@ -665,6 +675,8 @@ nb:
       selected_option: Valgt
       sendy:
         connect_info_html: Nye kunder vil abonnere på listen med id <em>%{list_id}</em> på installasjon %{api_url}
+      slack:
+        connect_info: For hver ny bestilling i MakePlans vil den bli publisert som en melding i %{channel} Slack-kanalen.
       stripe:
         disable_customer_saving: Ikke lagre kunde til Stripe
         payment_info: For alle transaksjoner så trekker MakePlans et plattformgebyr på %{application_fee_percent}%.
@@ -731,7 +743,7 @@ nb:
     people:
       children:
         index:
-          headline: '%{parent} kan booke for disse personene:'
+          headline: "%{parent} kan booke for disse personene:"
       form:
         block: Blokker kunde for booking
         booking_site_locale_default: Bruk standard språk på bookingsiden
@@ -752,19 +764,19 @@ nb:
       show:
         add_child: Legg til tilknyttet kunde
         bookings_for: Reservasjoner for %{name}
-        can_book_for: 'Kan booke for %{children} andre'
+        can_book_for: Kan booke for %{children} andre
         card_saved_with:
           stripe: Betalingskort lagret hos Stripe
         change_tfso_customer: Bytt 24SO kundenr.
         export: Send eksport av data til kunde
         export_executed: Eksportfilen sendes nå til kunden.
-        parent_info: Administeres av
-        no_reservations: Fant ingen reservasjoner
-        send_sms: Send SMS
         filter_bookings:
           active: Vis kun aktive reservasjoner
           all: Vis alle reservasjoner inkludert slettede
           visible: Vis kun synlige reservasjoner
+        no_reservations: Fant ingen reservasjoner
+        parent_info: Administeres av
+        send_sms: Send SMS
       tfso_connect_company:
         create: Opprett ny bedrift i 24SevenOffice
         header: Koble mot kunde fra 24SevenOffice
@@ -798,10 +810,10 @@ nb:
           submit_button: Logg inn
           verification_code_header: 2-trinns bekreftelse
       update_password:
-        updated: 'Passord oppdatert. Login på nytt med ditt nye passord.'
+        updated: Passord oppdatert. Login på nytt med ditt nye passord.
     providers:
       form:
-        availability: '%{resource} - tilgjengelighet for %{service}'
+        availability: "%{resource} - tilgjengelighet for %{service}"
         from: fra
         to: til
     purge_data:
@@ -840,19 +852,30 @@ nb:
         to: til
       index:
         header: Ressurser
+      integrations:
+        external_info:
+          microsoft_office365_user_id: Microsoft Office 365-bruker
+          zoom_user_id: Zoom-bruker
       list_menu:
         list: Ressurser
       show:
         availability: 'Standard tilgjengelighet:'
         capacity: 'Kapasitet:'
         closed: Ikke tilgjengelig for online timebestilling.
+        copy:
+          header: Klon
+          info: Opprett en ny ressurs basert på denne ressursen. Merk at de angitte tjenestene er klonet.
+          link: Klon denne ressursen
         custom_data: 'Egendefinerte felter:'
         ical:
+          activated: Tilgang til denne ressursen med iCalendar er aktivert. Lenkene til iCalendar-feeden er tilgjengelige. Ikke del lenken.
           activated_html: Tilgang til denne ressursen via iCalendar er aktivert. Link til iCalendar-feed er %{link}
           disable: Deaktiver iCalendar-feed
           enable: Aktiver iCalendar-feed
+          future_html: 'Fremtidige bestillinger: %{link}'
           info: En iCalendar-feed gjør at du kan vise reservasjoner fra denne ressursen i MakePlans i andre kalenderprogrammer som for eksempel Microsoft Oulook, Google Calendar, iPhone eller Android. Kun lesetilgang - alle endringer må gjøres i MakePlans.
           not_activated: Ikke aktivert
+          past_html: 'Tidligere bestillinger: %{link}'
         icalfeed: 'iCalendar-feed:'
         offers: 'Tilbyr følgende tjenester på bookingsiden:'
     services:
@@ -908,6 +931,9 @@ nb:
         minutes: Minutter
         offered_by: Kan tilbys av følgende ressurser
         payment: Betaling
+        settings:
+          hide_slot_end: Skjul sluttid
+          show_free_capacity: Vis tilgjengelig kapasitet
       index:
         appointment:
           header: Tjenester
@@ -930,33 +956,34 @@ nb:
       list_menu:
         list_appointment: Tjenester
         list_attendance: Arrangementstyper
+      priority:
+        description:
+          order: Bruk dra og slipp eller piltastene for å endre rekkefølgen på tilbydere. Den første tilbyderen vil ha høyest prioritet.
+          weight: Sett vekt-verdier (0-100) for hver tilbyder. Høyere verdier gir høyere prioritet. Summen av alle vektene må være 100.
+        header: Administrer prioritet - %{title}
+        resource: Ressurs
+        save: Lagre prioritetsinnstillinger
+        validation:
+          weights_invalid: "⚠ Vektene summerer til %{total}, skal være 100"
+          weights_valid: "✓ Vektene summerer til 100"
+        weight: Vekt
       show:
         availability: Tilgjengelighet pr tilbyder
         custom_data: 'Egendefinerte felter:'
         days: dager
         description: 'Beskrivelse:'
         interval: Varighet
+        manage_priority: Administrer prioritet
         minutes: minutter
         no_providers: 'OBS: Denne tjenesten tilbys ikke av noen ressurser og vil derfor ikke vises på bookingsiden. Klikk her for å legge til tilbydere.'
         not_in_category: 'OBS: Du benytter kategorier på bookingsiden og denne tjenesten er ikke lagt til i en kategori. Denne tjenesten er derfor ikke synlig på bookingsiden. Klikk her for å administrere kategorier.'
         offered: 'Tilbys av følgende ressurser:'
         price: 'Pris:'
-        manage_priority: Administrer prioritet
+        qr_code: QR-kode for kunder
         show_on_booking_site: Åpne bookingsiden for denne tjenesten
       slots:
         available: 'Ledige tidspunkt:'
-        none_available: 'Ingen ledige tidspunkt.'
-      priority:
-        header: 'Administrer prioritet - %{title}'
-        description:
-          order: 'Bruk dra og slipp eller piltastene for å endre rekkefølgen på tilbydere. Den første tilbyderen vil ha høyest prioritet.'
-          weight: 'Sett vekt-verdier (0-100) for hver tilbyder. Høyere verdier gir høyere prioritet. Summen av alle vektene må være 100.'
-        resource: Ressurs
-        weight: Vekt
-        save: Lagre prioritetsinnstillinger
-        validation:
-          weights_valid: ✓ Vektene summerer til 100
-          weights_invalid: ⚠ Vektene summerer til %{total}, skal være 100
+        none_available: Ingen ledige tidspunkt.
       update_priority:
         priority_updated: Prioritetsinnstillinger har blitt oppdatert.
     setup:
@@ -1006,14 +1033,14 @@ nb:
           yearly: År
         freq_label: Periode
         interval:
-          1: Hver
-          2: Annenhver
-          3: Tredjehver
-          4: Fjerdehver
-          5: Femtehver
-          6: Sjettehver
-          7: Syvendhver
-          8: Åttendehver
+          '1': Hver
+          '2': Annenhver
+          '3': Tredjehver
+          '4': Fjerdehver
+          '5': Femtehver
+          '6': Sjettehver
+          '7': Syvendhver
+          '8': Åttendehver
         interval_label: Frekvens
         length:
           count: Etter antall

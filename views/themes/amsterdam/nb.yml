@@ -41,16 +41,16 @@ nb:
           remember_me: Vil du at vi skal huske deg på denne maskinen til neste gang du skal reservere her?
         book_for_child: Opprett reservasjon for noen andre?
         book_for_me: Reserver for meg selv.
-        email_suggestion_html: '<p>Mente du<span> %{suggestions}</span>?</p>'
+        contact_support_message: Din kundeprofil mangler informasjon. Ta kontakt med support.
+        email_suggestion_html: "<p>Mente du<span> %{suggestions}</span>?</p>"
         enter_info: Fyll inn personalia
         errors_header: Du må fylle ut alle påkrevde felter.
         form_info_html: Dette vil bli brukt for å verifisere reservasjonen din av <span data-attribute="title">%{service}</span>, %{booking}.
         new_child: For noen andre
         price_info: 'Pris: %{price}'
         reserve_resource: Reservasjon hos %{resource}.
-        select_child: 'Opprett reservasjon for'
+        select_child: Opprett reservasjon for
         terms: Vilkår for reservasjon
-        contact_support_message: Din kundeprofil mangler informasjon. Ta kontakt med support.
       no_person:
         body: 'Kontakt oss for mer info. Feil: Kundekobling fjernet.'
         title: Feil
@@ -75,7 +75,6 @@ nb:
         payment_details_html: Fakturabeløpet er i %{currency}.
       pre_payment:
         form_footer_html: 'Beløp å betale: <span class="payment-amount">%{amount}</span>.'
-        select_provider: Hvordan ønsker du å betale?
         providers:
           braintree: Kredittkort eller debetkort
           fiken: Faktura
@@ -83,14 +82,15 @@ nb:
           tfso: Faktura
           vipps: Vipps
           visma_eaccounting: Faktura
+        select_provider: Hvordan ønsker du å betale?
       show:
         add_card: Legg til kredittkort for å betale automatisk etter endt avtale.
         add_to_calendar: Legg til reservasjonen i din kalender.
         body: Det var alt. Takk for at du har reservert hos oss.
+        booked_for_child: Denne reservasjonen er for %{name}.
         booking_count:
           one: Reservert for %{count} person.
           other: Reservert for %{count} personer.
-        booked_for_child: Denne reservasjonen er for %{name}.
         cancel: Kanseller reservasjon
         cancel_confirmation: Er du sikkert på at du vil kansellere denne reservasjonen?
         invoiced: Du har blitt fakturert.
@@ -107,8 +107,8 @@ nb:
     events:
       index:
         free_capacity:
-          one: '%{count} ledig'
-          other: '%{count} ledige'
+          one: "%{count} ledig"
+          other: "%{count} ledige"
         none_available: Ingen arrangementer tilgjengelig.
         title: Arrangementer
       show:
@@ -156,6 +156,7 @@ nb:
         authenticated: 'Innlogget som: %{name}'
         demo_ended: Prøveperioden for MakePlans er over.
         footer:
+          change_language: 'Endre språk:'
           privacy_policy: Personvern
           support: Kundeservice
         login: Din side
@@ -193,8 +194,8 @@ nb:
         remove_card: Fjern dette kortet
         title: Dine lagrede betalingskort
       index:
-        children: 'Andre du kan reservere for'
-        feed: 'iCalendar-strøm'
+        children: Andre du kan reservere for
+        feed: iCalendar-strøm
         header: Dine reservasjoner
         logout: Logg ut
         my_details: Mine opplysninger
@@ -207,6 +208,8 @@ nb:
         show_all_available: Vis alle ledige
         show_only_selected: 'Eller vis kun fra ønsket %{resource_title}:'
     services:
+      available_dates:
+        none_available: Ingen datoer tilgjengelig
       index:
         none_available: Ingen tjenester tilgjengelig.
       show:
@@ -218,8 +221,8 @@ nb:
         dateselector: Velg dato
         earlier: Tidligere
         free_capacity:
-          one: '%{count} ledig'
-          other: '%{count} ledige'
+          one: "%{count} ledig"
+          other: "%{count} ledige"
         gap_warning: For å velge flere slotter så må disse være sammenhengende uten opphold.
         later: Senere
         max_slots_warning: Du kan ikke velge flere enn %{max_slots} blokker.
@@ -232,8 +235,8 @@ nb:
       weekday_available:
         dateselector: Velg dato
         free_capacity:
-          one: '%{count} ledig'
-          other: '%{count} ledige'
+          one: "%{count} ledig"
+          other: "%{count} ledige"
         gap_warning: For å velge flere slotter så må disse være sammenhengende uten opphold.
         max_slots_warning: Du kan ikke velge flere enn %{max_slots} blokker.
         multiple_slots_info: For å velge flere slotter så velg først start og så slutt tidspunkt.

@@ -3,9 +3,9 @@ nb:
   activerecord:
     attributes:
       booking:
+        booked_by_person_id: reservert av
         booked_from: starttidspunkt
         booked_to: avslutningtidspunkt
-        booked_by_person_id: reservert av
         count: antall
         coupon_code: rabattkode
         event_id: arrangement
@@ -43,10 +43,11 @@ nb:
         mailer_sender: epost-avsender
         phone_number: telefonnummer
         purge_data_period: automatisk sletteperiode
+        sms_notification_recipient: telefonnummer(er) for varsling
         terms: vilkår
       client/slot_generation:
-          dynamic: dynamisk
-          fixed: fastsatt
+        dynamic: dynamisk
+        fixed: fastsatt
       client_user_link:
         role: tilgangsnivå
       client_user_link/role:
@@ -111,11 +112,11 @@ nb:
         terms: vilkår
         title: tittel
       service/availability_type:
-        resource: ressurs
         provider: tilbyder
+        resource: ressurs
       service/priority_strategy:
-        random: tilfeldig
         order: rekkefølge
+        random: tilfeldig
         weight: vekt
       user:
         current_password: nåværende passord
@@ -128,6 +129,7 @@ nb:
     errors:
       messages:
         chronic_syntax_error: syntaksfeil se https://github.com/mojombo/chronic#examples
+        denied: Forespørselen din ble avvist
         icalendar_invalid: Ingen genererte avtaler eller feil i iCalendar-definisjon
         icalendar_over_limit: For mange genererte avtaler - maks er 731
         illegal: ulovlig
@@ -136,10 +138,11 @@ nb:
         time_not_available: ikke ledig på valgt tidspunkt
       models:
         booking:
+          active_bookings_limit: Maks antall aktive reservasjoner er %{count}
           attributes:
             count:
-              over_booking_capacity: Mer enn maks antall personer
               below_minimum_count: Mindre enn påkrevd antall personer
+              over_booking_capacity: Mer enn maks antall personer
             event_id:
               time_not_available: er fullt
             person_id:
@@ -152,7 +155,6 @@ nb:
               not_offered: tilbys ikke av valgt ressurs
             state:
               invalid_transition: Ugyldig endring av status
-          active_bookings_limit: Maks antall aktive reservasjoner er %{count}
           fully_booked: Ikke ledig på valgt tidspunkt
           no_parent_takeover: Kontakt kundeservice for å gjennomføre denne reservasjonen.
           prevent_new_signups: Kun tilgjengelig for eksisterende kunder.
@@ -170,6 +172,7 @@ nb:
           blocked: Ikke mulig å gjøre reservasjoner med denne kontoen.
           missing: er ikke lagret på din kundeprofil. Kontakt oss for å rette opp i dette.
           no_values_present: Navn, telefonnummer eller epost er påkrevd.
+          prevent_new_signups: booking er kun tilgjengelig for eksisterende kunder
         resource:
           has_bookings: Denne ressursen har aktive reservasjoner og kan dermed ikke slettes. Kontakt kundeservice.
         service:
@@ -215,20 +218,20 @@ nb:
       short_with_name_and_year: "%a %-d. %b %Y"
     moment_format: DD.MM.YYYY
     moment_parse:
-      - DD.MM.YYYY
-      - D.M.YYYY
-      - DD.MM.YY
-      - D.M.YY
+    - DD.MM.YYYY
+    - D.M.YYYY
+    - DD.MM.YY
+    - D.M.YY
     moment_parse_visual: DD.MM.ÅÅÅÅ
   datetime:
     distance_in_words:
       x_hours:
-        one: "1 time"
+        one: 1 time
         other: "%{count} timer"
   errors:
     messages:
       date_format: 'Vennligst skriv inn dato på følgende format: %{format}'
-      date_of_birth: 'Fødselsdato ikke innenfor akseptert periode.'
+      date_of_birth: Fødselsdato ikke innenfor akseptert periode.
       no_values_present: Navn, telefonnummer eller epost er påkrevd.
       not_authenticated: Du har blitt logget ut.
       not_found: Fant ikke data. Prøve å reloade siden. Kontakt kundeservice hvis problemet fortsetter.
@@ -256,16 +259,16 @@ nb:
     account_default: Standard kontoinnstilling
     all: alle
     at: hos
-    country_locale: nb
     born_abbreviation: f. %{date_of_birth}
+    country_locale: nb
     default: Systemstandard
     'false': Ikke aktivert
     optional: valgfritt
     search: Søk
-    'true': Aktivert
     to: til
     today: i dag
     tomorrow: i morgen
+    'true': Aktivert
   helpers:
     booking:
       action:
@@ -286,8 +289,8 @@ nb:
       events:
         modified: Endret
     boolean:
-      'true': 'Ja'
-      'false': 'Nei'
+      'false': Nei
+      'true': Ja
     datepicker:
       next_month: Neste måned
       prev_month: Forrige måned
@@ -344,6 +347,7 @@ nb:
         closed_for_holidays: Stengt på offentlige fridager
         confirm_manually: Reservasjon må godkjennes av administrator
         country_code: Land
+        coupon_form: Tilpassede kupongfelt
         css_url: Egen CSS (URL må være HTTPS)
         currency: Valuta
         email: Epost-adresse
@@ -373,7 +377,6 @@ nb:
         mailer_sender: Epost-avsender
         name: Firmanavn (vises på bookingsiden)
         new_booking_text: Tekst som vises på bekreftelsesiden
-        reservation_form_text: Tekst som vises før reservasjonskjema
         no_availability_text: Tekst som vises når det ikke er ledige tidspunkt
         payment_provider: Standard betalingsløsning
         person_form: Egendefinerte kundefelter
@@ -382,6 +385,7 @@ nb:
         purge_data_period: Automatisk sletting av personopplysninger
         reminder_sms: Send påminnelse på SMS
         require_terms_acceptance: Kunde må godkjenne vilkår før booking
+        reservation_form_text: Tekst som vises før reservasjonskjema
         resource_form: Egendefinerte ressursfelter
         service_form: Egendefinerte tjenestefelter
         service_template: Kalendermal
@@ -396,6 +400,10 @@ nb:
         sms_verification: Tekst i SMS som blir sendt ved verifisering
         subdomain: Kontoadresse (subdomain)
         template: Designmal
+        templates:
+          amsterdam: Amsterdam
+          lviv: Lviv (beta)
+          timisoara: Timişoara (beta)
         terms: Vilkår
         time_zone: Tidssone
         verification_method: Verifiseringsmetode ved ny reservasjon
@@ -410,19 +418,19 @@ nb:
         staff: Kun kalendar
       coupon:
         active: Aktiv
-        allowed_booking_start_at: Tidligste starttidspunkt for reservasjon
         allowed_booking_end_at: Seneste starttidspunkt for reservasjon
+        allowed_booking_start_at: Tidligste starttidspunkt for reservasjon
         availability: Tilgjengelige kuponger
         code: Kode
         max_count: Maksimum antall personer
-        min_count: Minimum antall personer
         max_order_amount: Maksimumsbeløp
+        min_count: Minimum antall personer
         min_order_amount: Minimumsbeløp
         title: Tittel
-        value_type: Rabatttype
-        value: Rabattverdi
         valid_from: Gyldig fra
         valid_until: Gyldig til
+        value: Rabattverdi
+        value_type: Rabatttype
       event:
         all_day: Hele dagen
         allow_invoice: Kan betales med faktura
@@ -485,8 +493,8 @@ nb:
         availability_type: Tilgjengelighet er definert av
         block_resource: Reservasjon blokkerer ressursen
         booking_capacity: Maks antall personer per reservasjon
-        booking_minimum: Min antall personer per reservasjon
         booking_form: Egendefinert reservasjonskjema
+        booking_minimum: Min antall personer per reservasjon
         capacity: Maks antall deltagere
         confirm_manually: Reservasjon må godkjennes av administrator
         description: Beskrivelse
@@ -518,19 +526,19 @@ nb:
         template: Kalendermal
         templates:
           default: Standard
+          list: Liste
+          month: Måned
           time_day_available: Dag
           week_available: Hele uken
           weekday_available: Ukedager
-          list: Liste
-          month: Måned
         terms: Vilkår
         title: Tittel
       service/availability_type:
-        resource: Ressurs
         provider: Tilbyder
+        resource: Ressurs
       service/priority_strategy:
-        random: Tilfeldig
         order: Rekkefølge
+        random: Tilfeldig
         weight: Vekted
       user:
         current_password: Nåværende passord

@@ -78,7 +78,7 @@ nb:
         Du kan finne en lenke til testmiljøet i API-dokumentasjonen.
 
         Lykke til med kodingen!
-      subject: 'API aktivert på din MakePlans-konto'
+      subject: API aktivert på din MakePlans-konto
     charge_failed:
       body: |-
         Hei,

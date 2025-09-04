@@ -51,6 +51,7 @@ nb:
       login: Login
       remember_me: Husk meg
       signup_html: Har du ikke konto? <a href="%{url}">Kom i gang nå.</a>
+      title: Logg inn
     rotp_verification_code:
       header: Logg inn med to-faktor autentisering
       info: Bruk koden som genereres av din 2FA-applikasjon.

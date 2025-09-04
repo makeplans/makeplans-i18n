@@ -2,26 +2,26 @@
 nb:
   timisoara:
     bookings:
-      awaiting_confirmation:
-        body: Du har lagt inn reservasjon av tjenesten. Du må vente til en administrator godkjenner din reservasjon.
       authenticate:
         info: Vi trenger mer informasjon for å verifisere din reservasjon av
         submit: Send kode
         title: SMS-verifisering
+      awaiting_confirmation:
+        body: Du har lagt inn reservasjon av tjenesten. Du må vente til en administrator godkjenner din reservasjon.
       cancelled:
-        info: 'Reservasjonen av %{title} %{time} ble kansellert.'
+        info: Reservasjonen av %{title} %{time} ble kansellert.
         title: Din reservasjon er kansellert
-        update_calendar: 'Oppdater min kalender'
+        update_calendar: Oppdater min kalender
       new:
         accept: Jeg godkjenner
         submit: Bestill
         terms: vilkår for reservasjonen
         title: Reservasjon av %{service}
       new_person:
-        title: Kontoinformasjon
         email_address: E-postadresse
         phone_number: Mobilnummer
         submit: Bekreft reservasjon
+        title: Kontoinformasjon
       payment_stripe:
         title: Betaling
       pre_payment:
@@ -29,14 +29,14 @@ nb:
         submit: Til betaling
         title: Betaling
       show:
-        all: Se mine andre reservasjoner
         add_to_calendar: Legg til i kalender
-        new_reservation: Opprett en ny reservasjon
-        info: 'Reservasjonen av %{title} %{time} er bekreftet.'
-        title: Din reservasjon er bekreftet.
-        reschedule: Endre tidspunkt
+        all: Se mine andre reservasjoner
         cancel: Kanseller
         cancel_confirmation: Er du sikker på at du vil kansellere denne reservasjonen?
+        info: Reservasjonen av %{title} %{time} er bekreftet.
+        new_reservation: Opprett en ny reservasjon
+        reschedule: Endre tidspunkt
+        title: Din reservasjon er bekreftet.
       verification_method_email:
         info: Du må verifisere din epost-adresse for å gjennomføre reservasjonen.
         submit: Fortsett
@@ -45,61 +45,60 @@ nb:
         info: Du må verifisere ditt telefonnummer for å gjennomføre reservasjonen.
         submit: Fortsett
         title: Verifiser ditt telefonnummer
+    categories:
+      index:
+        all_categories: Alle kategorier
+        select_category: Velg kategori
+    events:
+      index:
+        all_events: Alle arrangementer
+        continue: Fortsett
     generic:
       alt:
         time: Tid
     layouts:
       application:
-        login: Login
-        profile: Profil
-        booking_site_footer: Bookingside for %{name}
-        made_by_title: Timebestilling og påmeldinger
-        made_by_tagline: Brukervennlig system for timebestilling og påmelding.
-        privacy: Personvernpolicy
-        support: Kundeservice
-        title: Timebestilling for %{name}
         alt:
           footer_logo: Bunntekst logo
-    categories:
-      index:
-        all_categories: Alle kategorier
-        select_category: Velg kategori
+        booking_site_footer: Bookingside for %{name}
+        login: Login
+        made_by_tagline: Brukervennlig system for timebestilling og påmelding.
+        made_by_title: Timebestilling og påmeldinger
+        privacy: Personvernpolicy
+        profile: Profil
+        support: Kundeservice
+        title: Timebestilling for %{name}
     person_sessions:
       enter_perishable_token:
+        info_html: Vi har sendt en kode til <b>%{recipient}</b>. Skriv inn koden for å fullføre verifiseringen.
         perishable_token: Kode
-        info_html: "Vi har sendt en kode til <b>%{recipient}</b>.
-            Skriv inn koden for å fullføre verifiseringen."
         submit: Fortsett
         title: Verifisering
       perishable_token_form:
-        submit: Send kode
-        title: Login
-        terms_conditions: Vilkår og betingelser
         alt:
           checkbox: Avkryssingsboks
+        submit: Send kode
+        terms_conditions: Vilkår og betingelser
+        title: Login
     profile:
       index:
-        tabs:
-          all: Alle
-          upcoming: Fremtidige
-          completed: Utførte
-          cancelled: Kansellerte
-        title: Mine reservasjoner
-        cancel: Kanseller
-        awaiting_approval: Venter på godkjenning
         alt:
           calendar: Kalender
+        awaiting_approval: Venter på godkjenning
+        cancel: Kanseller
+        tabs:
+          all: Alle
+          cancelled: Kansellerte
+          completed: Utførte
+          upcoming: Fremtidige
+        title: Mine reservasjoner
       new:
-        header: Dine kontaktopplysninger
         errors_header: 'Det oppstod feil:'
+        header: Dine kontaktopplysninger
     providers:
       index:
         all_services: Alle tjenester
         title: Velg tilbyder
-    events:
-      index:
-        all_events: Alle arrangementer
-        continue: Fortsett
     services:
       available_dates:
         select_date: Ledige datoer
