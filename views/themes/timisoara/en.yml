@@ -2,26 +2,26 @@
 en:
   timisoara:
     bookings:
-      awaiting_confirmation:
-        body: You successfully booked the service. Please wait until the administrator will confirm your booking
       authenticate:
         info: We need information to verify your reservation of
         submit: Send code
         title: Phone number authentication
+      awaiting_confirmation:
+        body: You successfully booked the service. Please wait until the administrator will confirm your booking
       cancelled:
-        info: 'The booking for %{title} %{time} was cancelled.'
+        info: The booking for %{title} %{time} was cancelled.
         title: Your reservation was cancelled
-        update_calendar: 'Update my calendar'
+        update_calendar: Update my calendar
       new:
         accept: I approve
         submit: Complete booking
         terms: terms for the reservation
         title: Reservation of %{service}
       new_person:
-        title: Account information
         email_address: Email address
         phone_number: Mobile phone number
         submit: Confirm reservation
+        title: Account information
       payment_stripe:
         title: Payment
       pre_payment:
@@ -29,14 +29,14 @@ en:
         submit: To payment
         title: Payment
       show:
-        all: View my other reservations
         add_to_calendar: Add this booking to my calendar
-        new_reservation: Make another reservation
-        info: 'The booking for %{title} %{time} is confirmed.'
-        title: Your Reservation is Confirmed!
-        reschedule: Reschedule
+        all: View my other reservations
         cancel: Cancel
         cancel_confirmation: Are you sure you want to cancel this booking?
+        info: The booking for %{title} %{time} is confirmed.
+        new_reservation: Make another reservation
+        reschedule: Reschedule
+        title: Your Reservation is Confirmed!
       verification_method_email:
         info: You have to verify your email address to complete your reservation.
         submit: Continue
@@ -45,61 +45,60 @@ en:
         info: You have to verify your phone number to complete your reservation.
         submit: Continue
         title: Verify your phone number
+    categories:
+      index:
+        all_categories: All categories
+        select_category: Select category
+    events:
+      index:
+        all_events: All events
+        continue: Continue
     generic:
       alt:
         time: Time
     layouts:
       application:
-        login: Login
-        profile: Profile
-        booking_site_footer: Booking site for %{name}
-        made_by_title: Appointment booking, scheduling and event/class signups
-        made_by_tagline: User-friendly system for scheduling, appointment booking and event registration.
-        privacy: Privacy policy
-        support: Support
-        title: Online booking for %{name}
         alt:
           footer_logo: Footer logo
-    categories:
-      index:
-        all_categories: All categories
-        select_category: Select category
+        booking_site_footer: Booking site for %{name}
+        login: Login
+        made_by_tagline: User-friendly system for scheduling, appointment booking and event registration.
+        made_by_title: Appointment booking, scheduling and event/class signups
+        privacy: Privacy policy
+        profile: Profile
+        support: Support
+        title: Online booking for %{name}
     person_sessions:
       enter_perishable_token:
+        info_html: We’ve sent a verification code to <b>%{recipient}</b> Please enter the code to verify your information.
         perishable_token: Code
-        info_html: "We’ve sent a verification code to <b>%{recipient}</b>
-            Please enter the code to verify your information."
         submit: Continue
         title: Verify your reservation
       perishable_token_form:
-        submit: Send code
-        title: Login
-        terms_conditions: Terms and conditions
         alt:
           checkbox: Checkbox
+        submit: Send code
+        terms_conditions: Terms and conditions
+        title: Login
     profile:
       index:
-        tabs:
-          all: All
-          upcoming: Upcoming
-          completed: Completed
-          cancelled: Cancelled
-        title: My reservations
-        cancel: Cancel
-        awaiting_approval: Awaiting approval
         alt:
           calendar: Calendar
+        awaiting_approval: Awaiting approval
+        cancel: Cancel
+        tabs:
+          all: All
+          cancelled: Cancelled
+          completed: Completed
+          upcoming: Upcoming
+        title: My reservations
       new:
-        header: Account information
         errors_header: 'Errors occured:'
+        header: Account information
     providers:
       index:
         all_services: All services
         title: Select provider
-    events:
-      index:
-        all_events: All events
-        continue: Continue
     services:
       available_dates:
         select_date: Available dates

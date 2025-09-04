@@ -3,74 +3,74 @@ en:
   lviv:
     bookings:
       authenticate:
-        title: Confirm booking
         email: Email
         phone_number: Phone number
+        title: Confirm booking
       cancelled:
-        info: 'The booking for %{title} %{time} was cancelled.'
+        info: The booking for %{title} %{time} was cancelled.
         title: Your booking is cancelled
       new:
-        title: Booking for
-        subtitle: Please fill in the data required to book a service.
+        agree_with: I agree with
         errors_header: Please fill out the required fields.
         optional: Optional
-        terms: Terms & Conditions
         submit: Book a service
-        agree_with: I agree with
+        subtitle: Please fill in the data required to book a service.
+        terms: Terms & Conditions
+        title: Booking for
       payment_stripe:
         title: Enter payment details
       pre_payment:
         title: Choose payment method
       review:
-        title: Review your booking
-        directions: Directions
-        any_specialist: Any specialist
         agree_with: I agree with
+        any_specialist: Any specialist
+        directions: Directions
         terms: Terms & Conditions
+        title: Review your booking
       show:
-        title: Booking details
         add_to_calendar: Add to calendar
-        cancel_booking: Cancel booking
         alt:
-          profile: Profile
           calendar: Add to calendar
+          profile: Profile
+        cancel_booking: Cancel booking
+        title: Booking details
     categories:
       index:
-        title: 'Select category'
+        title: Select category
     events:
       index:
         title: Select date & time
       show:
         book_event: Book this event
     generic:
-      step: 'Step %{step} / %{steps}'
       alt:
         go_back: Go back
+      step: Step %{step} / %{steps}
     layouts:
       application:
-        booking_site_footer: Booking site for %{name}
-        title: Online booking for %{name}
-        close: Close
-        account: Account
-        menu: Menu
-        get_support: Get support
-        terms_conditions: Terms & Conditions
-        privacy_policy: Privacy policy
         about_makeplans: About MakePlans
+        account: Account
         alt:
           account: Account
-          menu: Menu
           cancel: Cancel
+          menu: Menu
+        booking_site_footer: Booking site for %{name}
+        close: Close
+        get_support: Get support
+        menu: Menu
+        privacy_policy: Privacy policy
+        terms_conditions: Terms & Conditions
+        title: Online booking for %{name}
     person_sessions:
       enter_perishable_token:
         confirm_booking: Confirm booking
-        verify_login: Verify login
         no_code: Don't get the code?
         send_again: Send again
+        verify_login: Verify login
       perishable_token_action_required:
+        body: We have sent an email to %{recipient}. Follow it to verify your booking. It helps us make sure you're not a robot.
         delivery_error: We were unable to email you. Are you sure you entered the correct email address?
         delivery_not_processed: We are currently experincing some delays in our systems. Please wait while we are deliving your email.
-        body: We have sent an email to %{recipient}. Follow it to verify your booking. It helps us make sure you're not a robot.
         title: Please confirm your email address
       perishable_token_form:
         title: Login
@@ -80,25 +80,25 @@ en:
         submit: Send verification code
     profile:
       index:
-        tabs:
-          all: All
-          upcoming: Upcoming
-          completed: Completed
-          cancelled: Cancelled
         book_again: Book again
         canceled: Canceled
+        tabs:
+          all: All
+          cancelled: Cancelled
+          completed: Completed
+          upcoming: Upcoming
       new:
-        title: New profile
-        subtitle: Please fill in the data required to register.
-        register: Register
         errors_header: 'Errors occured:'
+        register: Register
+        subtitle: Please fill in the data required to register.
+        title: New profile
       show:
-        change_language: Change language
-        logout: Logout
         alt:
-          right: Right
           language: Language
           logout: Logout
+          right: Right
+        change_language: Change language
+        logout: Logout
     services:
       available_dates:
         title: Select date & time
@@ -106,19 +106,19 @@ en:
         title: Select number of people
       index:
         title: Select service
-      show:
-        book_service: Book this service
       location:
         title: Select location
+      show:
+        book_service: Book this service
       slots:
-        title: Select date & time
         available_times: Available times
+        continue: Continue
+        estimated_time: Estimated service time - %{duration} min.
+        free_capacity: "%{count} available"
         next_available_date_html: Next available date is %{next_available_date}
         no_availability: No availability on selected date. Please try another date.
-        estimated_time: Estimated service time - %{duration} min.
-        free_capacity: '%{count} available'
-        continue: Continue
+        title: Select date & time
       success:
-        title: You successfully booked the service
         add_to_calendar: Add booking to the calendar
         book_another: Book another service
+        title: You successfully booked the service

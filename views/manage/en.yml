@@ -65,7 +65,7 @@ en:
         add_new_link: Do you want to update your credit card details?
         billing_info: You will receive an invoice from us that you need to pay manually
         billing_order_ref: 'The invoice will include your reference: %{billing_order_ref}'
-        billing_period_info: 'You will be charged for %{period} months.'
+        billing_period_info: You will be charged for %{period} months.
         change_from_invoice: Enter your credit card details so you do not have to pay manually every time we invoice your account
         charge_details: Based on current usage we will charge your credit card %{price} each month.
         charge_details_default: Monthly price is %{price} per resource.
@@ -77,12 +77,12 @@ en:
         email_recipent: We will email the invoice to %{email}.
         header: Payment details
         info_header: 'Your billing info:'
-        invoice_history: 'See past invoices'
+        invoice_history: See past invoices
         paid_until: Your account is paid for until %{paid_until}.
         pause: Pause the account when the current subscription ends.
         pause_confirm: Are you sure you want to put the account on hold? The account will automatically be deactivated on %{paid_until}.
-        reactivate_confirm: Are you sure you want to reactivate the account you put on hold? The account will be next charged %{paid_until}.
         reactivate: Your account is currently in trial mode. You must reactivate your account to continue to use MakePlans
+        reactivate_confirm: Are you sure you want to reactivate the account you put on hold? The account will be next charged %{paid_until}.
         reactivate_link: Reactivate account
         sms_credits_available: You have a balance of %{credits} SMS.
         vat_no: Registered VAT no is %{vat_no}
@@ -107,13 +107,13 @@ en:
         info:
           header: iCalendar-feeds
           ical:
-            activated: 'Access to appointments in your account with iCalendar is activated. The links to the iCalendar-feeds are available. Do not share the links.'
-            future_html: 'Future bookings: %{link}'
-            past_html: 'Past bookings: %{link}'
+            activated: Access to appointments in your account with iCalendar is activated. The links to the iCalendar-feeds are available. Do not share the links.
             disable: Deactivate account iCalendar-feeds
             enable: Activate account iCalendar-feeds
+            future_html: 'Future bookings: %{link}'
             info: An iCalendar-feed will show appointments from your account in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in MakePlans.
             not_activated: Not activated
+            past_html: 'Past bookings: %{link}'
       fiken:
         delayed_info: It will take some time before the order is created in Fiken. Do not try to generate the order again if no information from Fiken is visible in MakePlans.
         header: Contating Fiken...
@@ -133,15 +133,13 @@ en:
         ignore_capacity: Save even if occupied
         modification_send_email: Send email modification
         modification_send_sms: Send SMS modification
-        no_customer: 'No customer specified!
+        no_customer: |-
+          No customer specified!
 
+          You have set this reservation as a customer reservation but not specified a customer.
 
-        You have set this reservation as a customer reservation but not specified a customer.
-
-
-        OK: Continue and set this reservation as drop-in.
-
-        Cancel: Go back and specify customer.'
+          OK: Continue and set this reservation as drop-in.
+          Cancel: Go back and specify customer.
         no_service: No service selected
         notification_send_email: Send email notification
         notification_send_sms: Send SMS notification
@@ -290,12 +288,12 @@ en:
         show_on_booking_site: Open service on booking site
     client:
       addons:
-        header: Addons
-        info: We offer various paid addons that you can enable. Please contact us if you have any questions.
         addons:
           custom_domain: Custom domain
           custom_email_sender: Custom email sender
           custom_sms_sender: Custom SMS sender ID
+        header: Addons
+        info: We offer various paid addons that you can enable. Please contact us if you have any questions.
       api:
         disable: Do you want to disable the API?
         disable_warning: Are you sure you want to disable the API? The API-key will become invalid and the API unavailable.
@@ -338,9 +336,9 @@ en:
           record: CNAME %{domain} with value %{cname}
           verify: Verify DNS
         info:
+          add: Add your domain
           header: Use your own domain
           info: You can use your own domain for the booking site. Monthly cost is %{price}
-          add: Add your domain
         new:
           domain: Your domain
         show:
@@ -382,8 +380,8 @@ en:
           sms: SMS (Recommended)
       edit_communication:
         email: Email
-        ical: iCalendar
         header: Modify outgoing comminication
+        ical: iCalendar
         mailer_sender_valid_domain: You have validated %{domain} and MakePlans will send emails on that domain on your behalf. Other email addresses will be specified as reply-to.
         message_template_info: This is the built-in legacy messages. For multiple message support and more control please use the message tenplate feature.
         settings:
@@ -407,10 +405,10 @@ en:
         custom_form_info_html: Contact customer service for help. Documentation is available at <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>.
         header: Modify custom fields
       edit_person_notifications:
-        automatic_messages_booking_site: Automatic messages (On the booking site)
         automatic_messages: Automatic messages (In the admin system and the API)
-        booking_site_outgoing_messages_info: MakePlans will by default send a message for important events such as a confirmation message using the verification method, for example SMS with SMS verification, or using email if using other/none verification.
+        automatic_messages_booking_site: Automatic messages (On the booking site)
         booking_site_message: Send message on the booking site
+        booking_site_outgoing_messages_info: MakePlans will by default send a message for important events such as a confirmation message using the verification method, for example SMS with SMS verification, or using email if using other/none verification.
         cancellation_email: Send email when cancelling reservation
         cancellation_sms: Send SMS when cancelling reservation
         confirmation_email: Send email when creating reservation
@@ -458,14 +456,14 @@ en:
           service_attendance_title: Custom event type title
       email_sender:
         create:
-          header: We are processing your request
           dns: See your DNS values.
+          header: We are processing your request
         dns:
-          header: Add DNS records
-          info: Please add the following DNS records to complete the email sender verification. It could take up to 24 hours before your changes are live.
           dkim: To allow MakePlans to send with an email address on %{domain} add the following TXT record.
           dkim_host: Host
           dkim_value: Value
+          header: Add DNS records
+          info: Please add the following DNS records to complete the email sender verification. It could take up to 24 hours before your changes are live.
         info:
           add: Add your email sending domain
           header: Send emails using your own email address
@@ -485,9 +483,9 @@ en:
         show:
           add_embed_url: Do you want to embed the booking site on an external website?
           custom_info: You can embed the booking site using iframe or perform API request on %{url}.
-          info: To be able to add your booking site on your own website as an iframe or perform public API request from your website you must add your website URL due to security.
           delete: Remove the embed URL.
           header: Embed the booking site on a third party domain
+          info: To be able to add your booking site on your own website as an iframe or perform public API request from your website you must add your website URL due to security.
       export_info:
         data_types:
           bookings: Reservations
@@ -503,8 +501,8 @@ en:
         info: It is possible to import data such as customers into MakePlans. Contact support for more information.
       invoices:
         index:
-          header: Invoices from MakePlans
           email: Send a copy to your email
+          header: Invoices from MakePlans
       promote:
         booking_button_html_info: To insert the booking button on your website please copy the HTML-code below. If you need help please contact your web-designer.
         booking_button_html_preview: Booking button preview
@@ -518,6 +516,8 @@ en:
         header: Promote your booking site
         qr_code: QR code
       sms_sender:
+        new:
+          sms_sender_name: SMS sender name
         show:
           add_custom_sender: Do you want to use a custom SMS sender ID?
           cost: Monthly cost is %{price}.
@@ -525,13 +525,11 @@ en:
           delete: Remove custom SMS sender ID.
           header: SMS Sender ID
           info: All SMS will be sent from MakePlans.
-        new:
-          sms_sender_name: SMS sender name
       tools:
         header: Tools for your account
         link:
-          feed: iCalendar-feeds
           change_time_zone: Change time zone
+          feed: iCalendar-feeds
           purge_data: Delete old data
           sms_all: Send SMS to all customers
     coupons:
@@ -569,8 +567,8 @@ en:
         download_attendance_csv: Export attendance list as CSV
         email_confirm: Attendance list will be emailed to you. Do you want to continue?
         fully_booked: The event is fully booked
-        recurring_member: This event is part of a repeating pattern.
         qr_code: QR code for customers
+        recurring_member: This event is part of a repeating pattern.
         send_email_to_all: Email all attendants
         send_sms: Send SMS
         show_in_calendar: Show in calendar
@@ -624,6 +622,7 @@ en:
         activate: Start using the Extensor Online Booking integration
         activate_settings_2: Activate settings for Extensor Online Booking version 2
         activate_settings_3: Activate settings for Extensor Online Booking version 3
+        activate_settings_4: Enable settings for Extensor Online Booking version 4
         info: To activate syncronization with Extensor you must install Extensor Online Booking. Click the link below to start the process. You will be contacted by Extensor.
         reactive_settings: Reactivate settings fro Extensor Online Booking.
         version: MakePlans is configured to work with version %{version} of Extensor Online Booking.
@@ -724,6 +723,7 @@ en:
       zapier:
         info_html: To connect MakePlans to Zapier please make a <a href="%{url}" target="_blank">new Zap on Zapier</a>.
       zoom:
+        connect_info: Connected
         info: For this integration to work you must connect a resource to a user in Zoom and have at least one service with Zoom enabled.
         registration_type: Registration type
         session_type: Zoom session type for events
@@ -743,7 +743,7 @@ en:
     people:
       children:
         index:
-          headline: '%{parent} can make bookings for:'
+          headline: "%{parent} can make bookings for:"
       form:
         block: Block customer for booking
         booking_site_locale_default: Use default for the booking site
@@ -751,6 +751,7 @@ en:
         merge_action: Merge these two customers
         merge_action_email: This email address is already saved on another customer. Do you want to merge these two customers so %{email} will be used as the e-mail address?
         merge_action_info: All reservations will be kept but one of the customers will be deleted. You can choose which customer information that will be kept.
+        merge_action_national_id_no: This social security number is already stored on another customer. Do you want to combine these customers so that %{national_id_no} becomes the current social security number?
         merge_action_phone_number: This phone number is already stored on another customer. Do you want to merge these two customers to %{phone_number} will be used as the phone number?
         merge_button: Merge and save
         merge_info: 'Instead use: '
@@ -763,19 +764,19 @@ en:
       show:
         add_child: Add connected customer
         bookings_for: Reservations for %{name}
-        can_book_for: 'Can make bookings for others.'
+        can_book_for: Can make bookings for others.
         card_saved_with:
           stripe: Payment card saved with Stripe
         change_tfso_customer: Change 24SevenOffice customer ID.
         export: Email export of data to customer
         export_executed: The export file has been sent to the customer.
-        parent_info: Managed by
-        no_reservations: Found no reservations
-        send_sms: Send SMS
         filter_bookings:
           active: Show only active bookings
           all: Show all bookings including deleted
           visible: Show all visible bookings
+        no_reservations: Found no reservations
+        parent_info: Managed by
+        send_sms: Send SMS
       tfso_connect_company:
         create: Create new customer in 24SevenOffice
         header: Connect to customer in 24SevenOffice
@@ -809,10 +810,10 @@ en:
           submit_button: Login
           verification_code_header: 2-step verification
       update_password:
-        updated: 'Password updated. Please login with your new password.'
+        updated: Password updated. Please login with your new password.
     providers:
       form:
-        availability: '%{resource} - availability for %{service}'
+        availability: "%{resource} - availability for %{service}"
         from: from
         to: to
     purge_data:
@@ -829,6 +830,7 @@ en:
         purge_2: All customers that is not updated before the specified date and who do not have any reservations after the specified date.
         purge_3: All logs and metadata related to these data will also be deleted.
         purge_before: Delete data before date
+        warning: Are you sure you want to delete all data before the specified date? It is not possible to undo this operation.
     reports:
       stats:
         all: All resources
@@ -840,6 +842,9 @@ en:
     resources:
       form:
         availability: Default availability
+        external_info:
+          microsoft_office365_user_id: Microsoft Office 365 user
+          zoom_user_id: Zoom user
         from: from
         mail_notification_info: To notify more than one person please use semi-colon to separate email addresses.
         offers: Offers the following services on the booking site
@@ -863,13 +868,14 @@ en:
           link: Clone this resource
         custom_data: 'Custom fields:'
         ical:
-          activated: 'Access to this resource with iCalendar is activated. The links to the iCalendar-feed are available. Do not share the link.'
-          future_html: 'Future bookings: %{link}'
-          past_html: 'Past bookings: %{link}'
+          activated: Access to this resource with iCalendar is activated. The links to the iCalendar-feed are available. Do not share the link.
+          activated_html: Access to this resource via iCalendar is enabled. Link to iCalendar feed is %{link}
           disable: Deactivate iCalendar-feed
           enable: Activate iCalendar-feed
+          future_html: 'Future bookings: %{link}'
           info: iCalendar-feed will show appointments from this resource in MakePlans in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in MakePlans.
           not_activated: Not activated
+          past_html: 'Past bookings: %{link}'
         icalfeed: 'iCalendar-feed:'
         offers: 'Offers the following services on the booking site:'
     services:
@@ -908,7 +914,7 @@ en:
         next_interval_default: According to duration
         offered_by: Offered by the following resources
         payment: Payment
-        price_placeholder: 'No price'
+        price_placeholder: No price
         settings:
           hide_all_available: Must select specific resource ('show all available' will be hidden)
           hide_resources: Hide button for selecting resource (will be randomly selected by among available resources)
@@ -938,44 +944,46 @@ en:
         minutes: minutes
       integrations:
         external_info:
+          fiken_create_order: Create orders in Fiken automatically
           fiken_product_href: Connect to a product in Fiken
           microsoft_teams_create_meeting: Automatically create a Microsoft Teams meeting for this service
           tfso_create_order: Generate order in 24SevenOffice automatically
           tfso_product_id: 24SevenOffice product id
           visma_eaccounting_article_id: Connect to a product in Visma eAccounting
+          visma_eaccounting_create_order: Create orders in Visma eAccounting automatically
           whereby_create_meeting: Automatically create a Whereby meeting for this service
           zoom_create_session: Automatically create a Zoom meeting for this service
       list_menu:
         list_appointment: Services
         list_attendance: Event types
+      priority:
+        description:
+          order: Use drag and drop or the arrow buttons to reorder providers. The first provider will have the highest priority.
+          weight: Set weight values (0-100) for each provider. Higher values have higher priority. The sum of all weights must equal 100.
+        header: Manage Priority - %{title}
+        resource: Resource
+        save: Save Priority Settings
+        validation:
+          weights_invalid: "⚠ Weights sum to %{total}, should be 100"
+          weights_valid: "✓ Weights sum to 100"
+        weight: Weight
       show:
         availability: Availability pr provider
         custom_data: 'Custom data:'
         days: days
         description: 'Description:'
         interval: 'Duration:'
+        manage_priority: Manage priority
         minutes: minutes
         no_providers: 'Important: This service is not offered by any resources and will not be shown on the booking site. Click here to add providers.'
         not_in_category: You are using categories on the booking site and this service is not linked to a category. As a result this service is at the moment not visible on the booking site. Click here to manage your categories.
         offered: 'Offered by the following resources:'
         price: 'Price:'
-        manage_priority: Manage priority
         qr_code: QR code for customers
         show_on_booking_site: Open service on booking site
       slots:
         available: 'Available slots:'
-        none_available: 'No available slots.'
-      priority:
-        header: 'Manage Priority - %{title}'
-        description:
-          order: 'Use drag and drop or the arrow buttons to reorder providers. The first provider will have the highest priority.'
-          weight: 'Set weight values (0-100) for each provider. Higher values have higher priority. The sum of all weights must equal 100.'
-        resource: Resource
-        weight: Weight
-        save: Save Priority Settings
-        validation:
-          weights_valid: ✓ Weights sum to 100
-          weights_invalid: ⚠ Weights sum to %{total}, should be 100
+        none_available: No available slots.
       update_priority:
         priority_updated: Priority settings have been updated successfully.
     setup:
@@ -1025,14 +1033,14 @@ en:
           yearly: Year
         freq_label: Period
         interval:
-          1: Every
-          2: Every second
-          3: Every third
-          4: Every fourth
-          5: Every fifth
-          6: Every sixth
-          7: Every seventh
-          8: Every eight
+          '1': Every
+          '2': Every second
+          '3': Every third
+          '4': Every fourth
+          '5': Every fifth
+          '6': Every sixth
+          '7': Every seventh
+          '8': Every eight
         interval_label: Frequency
         length:
           count: Occurences

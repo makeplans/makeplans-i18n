@@ -3,9 +3,9 @@ en:
   activerecord:
     attributes:
       booking:
+        booked_by_person_id: booked by
         booked_from: from
         booked_to: to
-        booked_by_person_id: booked by
         count: count
         coupon_code: coupon code
         event_id: event
@@ -112,11 +112,11 @@ en:
         terms: terms
         title: title
       service/availability_type:
-        resource: resource
         provider: provider
+        resource: resource
       service/priority_strategy:
-        random: random
         order: order
+        random: random
         weight: weight
       user:
         current_password: current password
@@ -138,10 +138,11 @@ en:
         time_not_available: Not available for booking at this time
       models:
         booking:
+          active_bookings_limit: Max number of active bookings is %{count}
           attributes:
             count:
-              over_booking_capacity: More than maximum people allowed per booking
               below_minimum_count: Less than minimum required people per booking
+              over_booking_capacity: More than maximum people allowed per booking
             event_id:
               time_not_available: is fully booked
             person_id:
@@ -154,7 +155,6 @@ en:
               not_offered: not offered by chosen resource
             state:
               invalid_transition: Invalid state change
-          active_bookings_limit: Max number of active bookings is %{count}
           fully_booked: Not available at selected time.
           no_parent_takeover: Please contact support to make this booking.
           prevent_new_signups: booking is only available for existing customers
@@ -218,19 +218,19 @@ en:
       short_with_name_and_year: "%a %e %b %Y"
     moment_format: DD.MM.YYYY
     moment_parse:
-      - DD.MM.YYYY
-      - D.M.YYYY
-      - DD.MM.YY
-      - D.M.YY
+    - DD.MM.YYYY
+    - D.M.YYYY
+    - DD.MM.YY
+    - D.M.YY
   datetime:
     distance_in_words:
       x_hours:
-        one: "1 hour"
+        one: 1 hour
         other: "%{count} hours"
   errors:
     messages:
       date_format: 'Please enter valid date format: %{format}'
-      date_of_birth: 'Birth year out of accepted range'
+      date_of_birth: Birth year out of accepted range
       no_values_present: Name, phone number or email is required.
       not_authenticated: You have been logged out.
       not_found: Unable to find data. Try to reload the page.
@@ -258,16 +258,16 @@ en:
     account_default: Account default
     all: all
     at: at
-    country_locale: en
     born_abbreviation: b. %{date_of_birth}
+    country_locale: en
     default: System default
     'false': Disabled
     optional: optional
     search: Search
-    'true': Enabled
     to: to
     today: today
     tomorrow: tomorrow
+    'true': Enabled
   helpers:
     booking:
       action:
@@ -283,12 +283,13 @@ en:
         confirmed: Confirmed
         declined: Declined
         deleted: Deleted
+        verification_expired: Verification expired
     booking_state_transitions:
       events:
         modified: Modified
     boolean:
-      'true': 'Yes'
       'false': 'No'
+      'true': 'Yes'
     datepicker:
       next_month: Next month
       prev_month: Previous month
@@ -309,6 +310,8 @@ en:
         reminder_at: Reminder
         resource_id: Resource
         service_id: Service
+        state: Status
+        status: Status
         terms_accepted: I approve the terms
         title: Title
         verification_code: Verification code
@@ -336,6 +339,7 @@ en:
         billing_street: Street address
         billing_vat_no: VAT nr
         booking_form: Custom reservation form
+        booking_site_locale: Language (Also controls number and data formatting)
         calendar_event_text: Display text for reservation in calendar
         cancellation_period: Cancellation period
         category_form: Custom category fields
@@ -369,6 +373,7 @@ en:
         mail_notification_recipient: Email address(es) for notification
         mail_verification: Text in verification email
         mail_verification_subject: Subject in verification email
+        mailer_sender: Email sender
         name: Company name (shown on the booking site)
         new_booking_text: Text displayed on confirmation page
         no_availability_text: Text displayed when there is no availability
@@ -412,19 +417,19 @@ en:
         staff: Only calendar
       coupon:
         active: Active
-        allowed_booking_start_at: Earliest start time for reservation
         allowed_booking_end_at: Latest start time for reservation
+        allowed_booking_start_at: Earliest start time for reservation
         availability: Available coupons
         code: Code
         max_count: Maxium number of people
-        min_count: Minimum number of people
         max_order_amount: Maxiumum order amount
+        min_count: Minimum number of people
         min_order_amount: Minimum order amount
         title: Title
-        value_type: Discount type
-        value: Discount value
         valid_from: Valid from
         valid_until: Valid until
+        value: Discount value
+        value_type: Discount type
       event:
         all_day: All day
         allow_invoice: allow invoice
@@ -458,12 +463,14 @@ en:
         reminder: Reminder
       person:
         address: Address
+        blocked: Blocked for reservations
         city: City
         country_code: Country
         created_at: Registered at
         date_of_birth: Date of birth (dd.mm.yyyy)
         deactivated: Deactivated
         email: Email
+        locale: Language
         name: Name
         national_id_no: National ID number
         notes: Notes
@@ -509,6 +516,7 @@ en:
         published: Show on the booking site
         reservation_form_text: Text displayed before reservation form
         same_day: Allow reservation over multiple days
+        slot_generation: Time generation
         sms_cancellation: Text in cancellation SMS
         sms_confirmation: Text in confirmation SMS
         sms_modification: Text in modification SMS
@@ -517,20 +525,26 @@ en:
         template: Calendar template
         templates:
           default: Default
+          list: List
+          month: Month
           time_day_available: Day
           week_available: All week
           weekday_available: Weekdays
-          list: List
-          month: Month
         terms: Terms and conditions
         title: Title
+      service/availability_type:
+        provider: Offers
+        resource: Resource
       service/priority_strategy:
-        random: Random
         order: Order
+        random: Random
         weight: Weight
       user:
+        current_password: Current password
         email: Email
         name: Name
+        password: Password
+        password_confirmation: Password confirmation
         phonenumber: Phone number
         rotp_verification_code: Verification code
       web_hook:
@@ -554,6 +568,8 @@ en:
       event:
         new: New event
         new_attendant: Add attendant
+      message_template:
+        new: New message template
       person:
         new: New customer
         new_child: New customer
@@ -587,8 +603,8 @@ en:
       categories: Categories
       communication: Communication
       company: Account
-      developer: Developer
       coupons: Coupons
+      developer: Developer
       export: Export
       fields: Custom fields
       import: Import

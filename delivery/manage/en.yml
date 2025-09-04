@@ -77,7 +77,7 @@ en:
         You can find a link to the test environment in the API documentation.
 
         Happy coding!
-      subject: 'API Enabled on your MakePlans account'
+      subject: API Enabled on your MakePlans account
     charge_failed:
       body: |-
         Hi,

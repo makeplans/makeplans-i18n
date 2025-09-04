@@ -41,7 +41,8 @@ en:
           remember_me: Do you want us to remember you on this machine using a cookie?
         book_for_child: Make a booking for someone else?
         book_for_me: Book for myself instead
-        email_suggestion_html: '<p>Did you mean<span> %{suggestions}</span>?</p>'
+        contact_support_message: Your customer profile is lacking information. Please contact support.
+        email_suggestion_html: "<p>Did you mean<span> %{suggestions}</span>?</p>"
         enter_info: Enter information
         errors_header: Please fill out the required fields.
         form_info_html: This will be used to verify your reservation of <span data-attribute="title">%{service}</span>, %{booking}.
@@ -50,7 +51,6 @@ en:
         reserve_resource: Reservation for %{resource}
         select_child: 'Make this booking for:'
         terms: Terms and conditions for booking
-        contact_support_message: Your customer profile is lacking information. Please contact support.
       no_person:
         body: 'Contact us for more info. Error: Customer connection removed'
         title: Error
@@ -75,7 +75,6 @@ en:
         payment_details_html: The displayed amount is in %{currency}.
       pre_payment:
         form_footer_html: 'Amount to pay: <span class="payment-amount">%{amount}</span>.'
-        select_provider: How would you like to pay?
         providers:
           braintree: Credit/debit card
           fiken: Invoice
@@ -83,14 +82,15 @@ en:
           tfso: Invoice
           vipps: Vipps
           visma_eaccounting: Invoice
+        select_provider: How would you like to pay?
       show:
         add_card: Add your credit card to pay automatically after the reservation
         add_to_calendar: Add the reservation to your calendar
-        body: "That's it. Thanks for booking with us."
+        body: That's it. Thanks for booking with us.
+        booked_for_child: This booking is for %{name}.
         booking_count:
           one: Booked for %{count} person.
           other: Booked for %{count} people.
-        booked_for_child: This booking is for %{name}.
         cancel: Cancel reservation
         cancel_confirmation: Are you sure you want to cancel this reservation?
         invoiced: You have been invoiced.
@@ -107,8 +107,8 @@ en:
     events:
       index:
         free_capacity:
-          one: '%{count} available'
-          other: '%{count} available'
+          one: "%{count} available"
+          other: "%{count} available"
         none_available: No events available.
         title: Events
       show:
@@ -126,6 +126,10 @@ en:
         add_card_header: Save card
         add_card_info: Add your payment card so you can easily and automatically pay after the booking.
         add_card_submit: Save card
+        awaiting:
+          body: Please wait while the transaction is confirmed.
+          error: We were unable to confirm that the payment was completed. Please contact customer service via https://makeplans.no and provide reference number %{booking_id}.
+          title: Checking payment
         form_footer_html: Your credit card will be charged with <span class="payment-amount">%{amount}</span>.
         form_header: This form is sent encrypted.
         header: Payment
@@ -152,9 +156,9 @@ en:
         authenticated: 'Logged in as: %{name}'
         demo_ended: The MakePlans demo has expired.
         footer:
+          change_language: 'Change language:'
           privacy_policy: Privacy policy
           support: Support
-          change_language: 'Change language:'
         login: Your reservations
         meta:
           description: Online appointment booking and scheduling for %{name}
@@ -182,7 +186,7 @@ en:
     profile:
       children:
         index:
-          header: 'Other people you can make book for'
+          header: Other people you can make book for
       credit_card_list:
         add_card: Add new card
         body: These are your stored payment cards. If you want you can add a new card or delete any of the existing ones.
@@ -190,8 +194,8 @@ en:
         remove_card: Remove this card
         title: Your stored payment methods
       index:
-        children: 'Other people you can make book for.'
-        feed: 'iCalendar-feed'
+        children: Other people you can make book for.
+        feed: iCalendar-feed
         header: Your reservations
         logout: Log out
         my_details: My stored information
@@ -217,8 +221,8 @@ en:
         dateselector: Select date
         earlier: Earlier
         free_capacity:
-          one: '%{count} available'
-          other: '%{count} available'
+          one: "%{count} available"
+          other: "%{count} available"
         gap_warning: To select multiple slots these slots have to be without gaps.
         later: Later
         max_slots_warning: Cannot reserve more than %{max_slots} timeslots
@@ -231,8 +235,8 @@ en:
       weekday_available:
         dateselector: Select date
         free_capacity:
-          one: '%{count} available'
-          other: '%{count} available'
+          one: "%{count} available"
+          other: "%{count} available"
         gap_warning: To select multiple slots these slots have to be without gaps.
         max_slots_warning: Cannot reserve more than %{max_slots} timeslots
         multiple_slots_info: To select multiple slots first choose the start time then the ending slot.
