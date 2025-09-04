@@ -511,7 +511,6 @@ es:
   time:
     24h: true
     formats:
-      db: "%Y-%m-%d %H:%M"
       long_dayname: "%A, %e %B %Y, %H:%M"
       short_mailer: "%e. %B at %H:%M"
       shorter: "%-d. %b %Y, %H:%M"

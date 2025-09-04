@@ -623,7 +623,6 @@ en:
     24h: true
     formats:
       csv: "%d.%m.%Y %H:%M"
-      db: "%Y-%m-%d %H:%M"
       long_dayname: "%A, %e %B %Y, %H:%M"
       short_mailer: "%e. %B at %H:%M"
       shorter: "%-d. %b %Y, %H:%M"
