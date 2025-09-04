@@ -16,6 +16,9 @@ en:
         resource_id: resource
         service: service
         service_id: service
+        state: state
+        status: status
+        terms_accepted: terms accepted
         title: title
         verification_code: verification code
       booking/state:
@@ -26,6 +29,7 @@ en:
         confirmed: Confirmed
         declined: Declined
         deleted: Deleted
+        verification_expired: Verification expired
       booking/status:
         checked_in: Checked in
         completed: Completed
@@ -40,6 +44,7 @@ en:
         phone_number: phone number
         purge_data_period: automatic delete period
         sms_notification_recipient: phone number(s) for notification
+        terms: terms
       client/slot_generation:
         dynamic: dynamic
         fixed: fixed
@@ -86,6 +91,7 @@ en:
         created_at: registered
         date_of_birth: date of birth
         email: email
+        locale: locale
         name: name
         national_id_no: national identification number
         notes: notes
@@ -103,6 +109,7 @@ en:
         allow_invoice: allow invoice
         payment_required: require payment
         price: price
+        terms: terms
         title: title
       service/availability_type:
         resource: resource
@@ -112,6 +119,9 @@ en:
         order: order
         weight: weight
       user:
+        current_password: current password
+        password: password
+        password_confirmation: password confirmation
         rotp_verification_code: verification code
       web_hook:
         event: Event
@@ -193,6 +203,8 @@ en:
       tag: tag
       user: user
       web_hook: webhook
+  csv:
+    col_sep: ";"
   date:
     formats:
       csv: "%d.%m.%Y"
@@ -517,10 +529,8 @@ en:
         order: Order
         weight: Weight
       user:
-        current_password: Current password
         email: Email
         name: Name
-        password: Password
         phonenumber: Phone number
         rotp_verification_code: Verification code
       web_hook:
