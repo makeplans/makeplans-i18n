@@ -1,0 +1,124 @@
+---
+es:
+  lviv:
+    bookings:
+      authenticate:
+        email: Correo electrónico
+        phone_number: Número de teléfono
+        title: Confirmar reserva
+      cancelled:
+        info: La reserva para %{title} %{time} fue cancelada.
+        title: Su reserva ha sido cancelada
+      new:
+        agree_with: Estoy de acuerdo con
+        errors_header: Por favor, rellene los campos obligatorios.
+        optional: Opcional
+        submit: Reservar un servicio
+        subtitle: Por favor, rellene los datos requeridos para reservar un servicio.
+        terms: Términos y condiciones
+        title: Reserva para
+      payment_stripe:
+        title: Introduzca los detalles del pago
+      pre_payment:
+        title: Elija el método de pago
+      review:
+        agree_with: Estoy de acuerdo con
+        any_specialist: Cualquier especialista
+        directions: Instrucciones
+        terms: Términos y condiciones
+        title: Revisa tu reserva
+      show:
+        add_to_calendar: Añadir al calendario
+        alt:
+          calendar: Añadir al calendario
+          profile: Perfil
+        cancel_booking: Cancelar reserva
+        title: Detalles de la reserva
+    categories:
+      index:
+        title: Seleccionar categoría
+    events:
+      index:
+        title: Seleccione fecha y hora
+      show:
+        book_event: Reserva este evento
+    generic:
+      alt:
+        go_back: Volver
+      step: Paso %{step} / %{steps}
+    layouts:
+      application:
+        about_makeplans: Acerca de MakePlans
+        account: Cuenta
+        alt:
+          account: Cuenta
+          cancel: Cancelar
+          menu: Menú
+        booking_site_footer: Sitio de reservas para %{name}
+        close: Cerca
+        get_support: Obtenga ayuda
+        menu: Menú
+        privacy_policy: Política de privacidad
+        terms_conditions: Términos y condiciones
+        title: Reserva online para %{name}
+    person_sessions:
+      enter_perishable_token:
+        confirm_booking: Confirmar reserva
+        no_code: "¿No entiendes el código?"
+        send_again: Enviar de nuevo
+        verify_login: Verificar inicio de sesión
+      perishable_token_action_required:
+        body: Hemos enviado un correo electrónico a %{recipient}. Síguelo para verificar tu reserva. Esto nos ayuda a comprobar que no eres un robot.
+        delivery_error: No pudimos enviarte un correo electrónico. ¿Estás seguro de haber ingresado la dirección de correo electrónico correcta?
+        delivery_not_processed: Actualmente estamos experimentando retrasos en nuestros sistemas. Espere mientras enviamos su correo electrónico.
+        title: Por favor, confirme su dirección de correo electrónico
+      perishable_token_form:
+        title: Acceso
+      verification_method_email:
+        submit: Enviar correo electrónico de verificación
+      verification_method_sms:
+        submit: Enviar código de verificación
+    profile:
+      index:
+        book_again: Reservar de nuevo
+        canceled: Cancelado
+        tabs:
+          all: Todo
+          cancelled: Cancelado
+          completed: Terminado
+          upcoming: Próximamente
+      new:
+        errors_header: 'Se produjeron errores:'
+        register: Registro
+        subtitle: Por favor, rellene los datos requeridos para registrarse.
+        title: Nuevo perfil
+      show:
+        alt:
+          language: Idioma
+          logout: Cerrar sesión
+          right: Bien
+        change_language: Cambiar idioma
+        logout: Cerrar sesión
+    services:
+      available_dates:
+        title: Seleccione fecha y hora
+      count:
+        title: Seleccione el número de personas
+      index:
+        title: Seleccionar servicio
+      location:
+        title: Seleccionar ubicación
+      show:
+        book_service: Reserva este servicio
+      slots:
+        available_times: Horarios disponibles
+        continue: Continuar
+        estimated_time: Tiempo estimado de servicio - %{duration} min.
+        free_capacity: "%{count} disponibles"
+        next_available_date_html: La próxima fecha disponible es %{next_available_date}
+        no_availability: No hay disponibilidad en la fecha seleccionada. Inténtalo con otra fecha.
+        title: Seleccione fecha y hora
+      success:
+        add_to_calendar: Añadir reserva al calendario
+        book_another: Reservar otro servicio
+        title: Has reservado el servicio con éxito

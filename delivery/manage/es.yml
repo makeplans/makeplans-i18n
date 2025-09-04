@@ -22,11 +22,62 @@ es:
       booking_type_attendance:
         subject_resource: Nuevo registro para %{title}
       link: Para ver esta reservación, vaya a
+    notification_modification:
+      appointment:
+        body: "%{name} ha cambiado %{title} %{time_range}."
+      attendance:
+        body: "%{name} ha modificado el registro %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Reserva modificada para %{resource}
+      booking_type_attendance:
+        subject_resource: Registro modificado para %{title}
+      link: Para ver esta reserva por favor vaya a
+    notification_resource_change:
+      appointment:
+        body: "%{name} ha cambiado %{title} %{time_range}."
+      attendance:
+        body: "%{name} ha modificado el registro %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Recurso modificado para %{resource}
+      booking_type_attendance:
+        subject_resource: Recurso modificado para %{title}
+      link: Para ver esta reserva por favor vaya a
     request_approvement:
       body: "%{name} quiere reservar %{title} %{time_range}."
       link: Para aprobar o rechazar esta reservación, vaya a
       subject_resource: Nueva solicitud de %{resource}
   client_mailer:
+    activated:
+      body: |-
+        Hola,
+
+        Tu suscripción a MakePlans se ha activado correctamente.
+        Consulta nuestros precios en https://makeplans.com/en/pricing/
+        Para consultar nuestros términos y condiciones, visita https://terms.makeplans.com
+
+        Tu cuenta: %{subdomain}
+
+        Gracias por usar MakePlans :D
+
+        Si tienes alguna pregunta, responde a este correo electrónico.
+      subject: Su cuenta está activada
+    api_enabled:
+      body: |-
+        Hola,
+
+        Parece que has habilitado la API en tu cuenta de MakePlans, %{subdomain}. ¡Genial!
+
+        Si sabes lo que haces, puedes ignorar este correo electrónico.
+
+        Si eres nuevo en la API de MakePlans, consulta la documentación en https://developer.makeplans.com.
+        Encontrarás información sobre la autenticación, todos los endpoints, webhooks y ejemplos.
+        ¿Tienes alguna pregunta? Contáctanos; estaremos encantados de ayudarte.
+
+        Si estás experimentando, te recomendamos crear una cuenta de desarrollo de API en nuestro entorno de pruebas. Existen algunas restricciones, pero generalmente es preferible desarrollar en un entorno y una cuenta separados de tu cuenta real.
+        Puedes encontrar un enlace al entorno de pruebas en la documentación de la API.
+
+        ¡Que disfrutes programando!
+      subject: API habilitada en su cuenta MakePlans
     charge_failed:
       body: |-
         Hola,
@@ -91,6 +142,18 @@ es:
 
         Independientemente; Que tenga un buen día y gracias por probar MakePlans.
       subject: 'CRÍTICO: Cuenta MakePlans desactivada'
+    inactive_warning:
+      body: |-
+        Hola,
+
+        Dado que tu prueba ha expirado y no has tenido actividad en tu cuenta desde %{latest_booking_change_at}, la desactivaremos en 30 días.
+
+        Para conservar tu cuenta, inicia sesión en %{url}.
+
+        Si no tomamos ninguna medida, desactivaremos tu cuenta en un mes. Tu cuenta y todos tus datos se eliminarán en cuatro meses.
+
+        Gracias por probar MakePlans :)
+      subject: 'CRÍTICO: La cuenta de MakePlans será desactivada'
     no_bookings:
       body: |-
         Hola,

@@ -21,6 +21,9 @@ es:
         verification_delivery_not_processed: Actualmente estamos experimentando algunos retrasos en nuestros sistemas. Espere mientras entregamos su correo electrónico.
         verification_sent_body: Hemos enviado un correo electrónico a %{email}. Sígalo para verificar su reservación. Nos ayuda a asegurarnos de que no eres un robot.
         verification_sent_title: Por favor confirme su dirección de correo electrónico
+      cancelled:
+        body: Esta reserva ha sido cancelada.
+        title: Su reserva fue cancelada
       declined:
         body: Lo sentimos, no pudimos aprobar su solicitud de reservación. Intente con otro intervalo de tiempo o contáctenos.
         title: Tu reservación no fue aprobada
@@ -36,12 +39,19 @@ es:
           login_with_facebook_link: verificar automáticamente con Facebook
           not_current_person_html: ¿No eres <span data-name="">%{person}?</span> ?
           remember_me: "¿Quiere que le recordemos en esta máquina usando una cookie?"
+        book_for_child: "¿Hacer una reserva para otra persona?"
+        book_for_me: Reserva para mí en su lugar
+        contact_support_message: Falta información en su perfil de cliente. Contacte con el servicio de asistencia.
         date_format: 'Introduzca un formato de fecha válido: %{format}'
+        email_suggestion_html: "<p>¿Quisiste decir <span>%{suggestions}</span> ?</p>"
         enter_info: Ingrese información
         errors_header: Por favor complete los campos requeridos.
         form_info_html: Esto se utilizará para verificar su reservación de %{service}, %{booking}.
+        new_child: Para alguien más
         price_info: 'Precio: %{price}'
         reserve_resource: Reserva para %{resource}
+        select_child: 'Haga esta reserva para:'
+        terms: Términos y condiciones de reserva
       no_person:
         body: 'Contáctenos para mas información. Error: se eliminó la conexión del cliente'
         title: Error
@@ -58,22 +68,50 @@ es:
         form_header: Este formulario se envía encriptado.
         header: Pago
         info: Para completar la reservación de %{service} debes pagar con tu tarjeta de crédito.
+      payment_invoice:
+        form_footer_html: La factura se cargará con <span class="payment-amount">%{amount}</span> .
+        form_header: Facturaremos en base a la siguiente información
+        header: Pago con factura
+        info: Para completar la reserva de %{service} %{booking} debes aceptar recibir la factura.
+        payment_details_html: La cantidad mostrada está en %{currency}.
+      pre_payment:
+        form_footer_html: 'Cantidad a pagar: <span class="payment-amount">%{amount}</span> .'
+        providers:
+          braintree: Tarjeta de crédito/débito
+          fiken: Factura
+          stripe: Tarjeta de crédito/débito, Google Pay o Apple Pay
+          tfso: Factura
+          vipps: VIPPS
+          visma_eaccounting: Factura
+        select_provider: "¿Cómo desea pagar?"
       show:
         add_card: Agregue su tarjeta de crédito para pagar automáticamente después de la reservación
         add_to_calendar: Agrega la reservación a tu calendario
         body: Ya terminaste. Se ha realizado la reservación.
+        booked_for_child: Esta reserva es para %{name}.
+        booking_count:
+          one: Reservado para %{count} persona.
+          other: Reservado para %{count} personas.
         cancel: Cancelar la reservación
         cancel_confirmation: "¿Estás seguro de que deseas cancelar esta reservación?"
+        invoiced: Se le ha facturado.
         paid: Ha pagado por adelantado %{paid_amount}.
+        price: El precio de la reserva es %{amount}.
         remember_me: "¿Quiere que le recordemos en esta máquina usando una cookie?"
+        reschedule: Reprogramar
         title: "¡Su reservacion esta confirmada!"
       verification_code:
         header: Confirmar reservación
         incorrect_code: código incorrecto
+        remember_me: Recuérdame en este dispositivo
         verify_verification_code: Hemos enviado un SMS a %{recipient} con un código de verificación. Por favor ingrese el código en el formulario para verificar la reservación. Esto es necesario para completar la reservación.
     events:
       index:
+        free_capacity:
+          one: "%{count} disponibles"
+          other: "%{count} disponibles"
         none_available: No hay eventos disponibles.
+        title: Eventos
       show:
         before_first_booking: No es posible registrarse para este evento antes de %{first_booking_at}.
         book: Regístrate para este evento
@@ -89,6 +127,10 @@ es:
         add_card_header: Guardar tarjeta
         add_card_info: Agregue su tarjeta de pago para que pueda pagar fácil y automáticamente después de la reservación.
         add_card_submit: Guardar tarjeta
+        awaiting:
+          body: Por favor espere mientras se confirma la transacción.
+          error: No pudimos confirmar que el pago se haya completado. Por favor, contacte con atención al cliente a través de https://makeplans.no e indique el número de referencia %{booking_id}.
+          title: Comprobación de pago
         form_footer_html: Su tarjeta de crédito se cargará con <span class="payment-amount">%{amount}</span> .
         form_header: Este formulario se envía encriptado.
         header: Pago
@@ -101,7 +143,9 @@ es:
         cancel: Cancelar
         completed: "¡Terminado!"
         hotstepper: Paso %{step} de %{steps}
+        next: Próximo
         next_confirm: 'Siguiente: Confirmación'
+        next_form: 'Siguiente: Agregar detalles'
         next_payment: Pagar
         next_time: 'Siguiente: seleccione una hora'
         next_verify: Confirmar reservación
@@ -113,6 +157,7 @@ es:
         authenticated: 'Conectado como: %{name}'
         demo_ended: La demostración de MakePlans ha expirado.
         footer:
+          change_language: 'Cambiar idioma:'
           privacy_policy: Política de privacidad
           support: Apoyo
         login: Tus reservas
@@ -135,10 +180,14 @@ es:
         info_html: No estás registrado como cliente. Primero complete <a href="/">una reservación</a> .
       perishable_token_action_required:
         info_html: Le hemos enviado un correo electrónico. Haga clic en el enlace para iniciar sesión.
+        title: Verifique su dirección de correo electrónico
       perishable_token_form:
         not_available_for_this_verification_method: No disponible.
         submit: Recibir código
     profile:
+      children:
+        index:
+          header: Otras personas para las que puedes hacer un libro
       credit_card_list:
         add_card: Agregar nueva tarjeta
         body: Estas son sus tarjetas de pago almacenadas. Si lo desea, puede agregar una nueva tarjeta o eliminar cualquiera de las existentes.
@@ -146,23 +195,35 @@ es:
         remove_card: Quitar esta tarjeta
         title: Tus métodos de pago almacenados
       index:
+        children: Otras personas para las que puedes hacer un libro.
+        feed: Fuente de iCalendar
         header: Tus reservas
         logout: Cerrar sesión
+        my_details: Mi información almacenada
         new_booking: Nueva reservación
         payment_methods: Métodos de pago almacenados
+      show:
+        header: Su información almacenada
     providers:
       index:
         show_all_available: Mostrar todos los disponibles
         show_only_selected: 'O solo mostrar desde el calendario seleccionado:'
     services:
+      available_dates:
+        none_available: No hay fechas disponibles
       index:
         none_available: No hay servicios disponibles.
       show:
         book: Hacer una reservación
+      slots:
+        try_another_template: Pruebe con otra plantilla.
       time_day_available:
         any_resource: Primero disponible
         dateselector: Seleccione fecha
         earlier: Más temprano
+        free_capacity:
+          one: "%{count} disponibles"
+          other: "%{count} disponibles"
         gap_warning: Para seleccionar múltiples ranuras, estas ranuras deben estar sin espacios.
         later: Más tarde
         max_slots_warning: No se pueden reservar más de %{max_slots} intervalos de tiempo
@@ -174,6 +235,9 @@ es:
         select_time: "%{service} - seleccione el tiempo disponible"
       weekday_available:
         dateselector: Seleccione fecha
+        free_capacity:
+          one: "%{count} disponibles"
+          other: "%{count} disponibles"
         gap_warning: Para seleccionar múltiples ranuras, estas ranuras deben estar sin espacios.
         max_slots_warning: No se pueden reservar más de %{max_slots} intervalos de tiempo
         multiple_slots_info: Para seleccionar múltiples ranuras, primero elija la hora de inicio y luego la hora de finalización.

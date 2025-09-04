@@ -8,6 +8,9 @@ es:
       info: Su reservación para %{title} en %{time_range} ha sido cancelada.
       subject: Reserva cancelada
     confirmation:
+      booking_count:
+        one: Reservado para %{count} persona.
+        other: Reservado para %{count} personas.
       header: Hola %{name}
       info: Ha reservado %{title} %{time_range}.
       link: Más información sobre su reservación
@@ -72,6 +75,20 @@ es:
         MakePlans
       booking_type_attendance: |-
         Nuevo registro para {{booking.event.full_title}} {{booking.time_range}} por {{booking.person.name}}.
+        MakePlans
+    admin_notification_modification:
+      booking_type_appointment: |-
+        Cambio de reserva para {{ booking.resource.title }} por {{ booking.person.name }}. {{ booking.title }} en {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        El registro se modificó para {{ booking.event.full_title }} {{ booking.time_range }} por {{ booking.person.name }}.
+        MakePlans
+    admin_notification_resource_change:
+      booking_type_appointment: |-
+        Cambio de recurso a {{ booking.resource.title }} para {{ booking.person.name }} {{ booking.title }} en {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        El registro se modificó para {{ booking.event.full_title }} {{ booking.time_range }} por {{ booking.person.name }}.
         MakePlans
     cancellation: Su reservación en {{booking.booked_from}} ha sido cancelada.
     confirmation: Ha hecho una reservación para {{booking.title}} {{booking.booked_from}}.

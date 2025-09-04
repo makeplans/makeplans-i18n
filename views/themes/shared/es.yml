@@ -1,0 +1,14 @@
+---
+es:
+  shared:
+    generic:
+      close: cerca
+    services:
+      count:
+        title: "¿Cuántas personas?"
+      slots:
+        free_capacity:
+          one: "%{count} disponibles"
+          other: "%{count} disponibles"
+      time_day:
+        time_zone_differ_info: Todos los tiempos se muestran en %{time_zone}.

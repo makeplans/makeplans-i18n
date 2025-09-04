@@ -3,9 +3,11 @@ es:
   activerecord:
     attributes:
       booking:
+        booked_by_person_id: reservado por
         booked_from: desde
         booked_to: a
         count: contar
+        coupon_code: código de cupón
         event_id: evento
         notes: comentarios
         person: cliente
@@ -14,6 +16,9 @@ es:
         resource_id: recurso
         service: Servicio
         service_id: Servicio
+        state: estado
+        status: estado
+        terms_accepted: términos aceptados
         title: título
         verification_code: código de verificación
       booking/state:
@@ -24,6 +29,7 @@ es:
         confirmed: Confirmado
         declined: Rechazado
         deleted: Eliminado
+        verification_expired: Verificación expirada
       booking/status:
         checked_in: Registrado
         completed: Terminado
@@ -37,14 +43,23 @@ es:
         mailer_sender: Dirección de correo electrónico del remitente
         phone_number: Número de teléfono
         purge_data_period: Período de eliminación automática
+        sms_notification_recipient: número(s) de teléfono para notificación
+        terms: términos
+      client/slot_generation:
+        dynamic: dinámica
+        fixed: fijado
       client_user_link:
         role: Papel
       client_user_link/role:
         admin: Administrador
         manager: Gerente
         staff: Empleado
+      coupon/value_type:
+        amount: cantidad
+        percentage: porcentaje
       event:
         booking_capacity: máximo de personas permitidas por reservación
+        booking_minimum: Mínimo de personas requerido por reserva
         capacity: máximo de personas permitidas
         description: descripción
         ends_at: termina en
@@ -76,9 +91,11 @@ es:
         created_at: registrado
         date_of_birth: fecha de nacimiento
         email: correo electrónico
+        locale: lugar
         name: nombre
         national_id_no: Número de Identificación Nacional
         notes: notas
+        opt_in_marketing: optar por el marketing
         phonenumber: número de teléfono
         postal_code: código postal
         state: estado
@@ -89,10 +106,22 @@ es:
         sms_notification_recipient: número de teléfono para notificación
         title: título
       service:
+        allow_invoice: permitir factura
         payment_required: requerir prepago
         price: precio
+        terms: términos
         title: título
+      service/availability_type:
+        provider: proveedor
+        resource: recurso
+      service/priority_strategy:
+        order: orden
+        random: aleatorio
+        weight: peso
       user:
+        current_password: Contraseña actual
+        password: contraseña
+        password_confirmation: confirmación de contraseña
         rotp_verification_code: Código de verificación
       web_hook:
         event: Evento
@@ -100,6 +129,7 @@ es:
     errors:
       messages:
         chronic_syntax_error: error de sintaxis, consulte https://github.com/mojombo/chronic#examples
+        denied: Su solicitud fue denegada
         icalendar_invalid: Sin ocurrencias o patrón de iCalendar no válido
         icalendar_over_limit: Demasiadas ocurrencias. Max es 731.
         illegal: ilegal
@@ -108,8 +138,10 @@ es:
         time_not_available: No disponible para reservar en este momento
       models:
         booking:
+          active_bookings_limit: El número máximo de reservas activas es %{count}
           attributes:
             count:
+              below_minimum_count: Menos del mínimo requerido de personas por reserva
               over_booking_capacity: Más del máximo de personas permitidas por reservación
             event_id:
               time_not_available: está completamente reservado
@@ -124,6 +156,8 @@ es:
             state:
               invalid_transition: Cambio de estado no válido
           fully_booked: No disponible a la hora seleccionada.
+          no_parent_takeover: Por favor, póngase en contacto con el soporte para realizar esta reserva.
+          prevent_new_signups: La reserva solo está disponible para clientes existentes.
           time_after_future_bookable_period: Demasiado lejos en el futuro
         client:
           attributes:
@@ -132,15 +166,22 @@ es:
         client_user_link:
           admin_needed: Necesita al menos un usuario administrador en la cuenta.
         person:
+          attributes:
+            national_id_no:
+              invalid_syntax_no: 'Introduzca su fødselsnummer noruego: 11 dígitos.'
           blocked: Su cuenta no puede realizar reservas.
           missing: no se guarda en su perfil de cliente. Por favor contáctenos para corregirlo.
           no_values_present: Se requiere nombre, número de teléfono o correo electrónico.
+          prevent_new_signups: La reserva solo está disponible para clientes existentes.
         resource:
           has_bookings: Este recurso tiene reservas. No se puede eliminar. Póngase en contacto con el servicio de asistencia.
         service:
           attributes:
             below_minimum: debe ser más de 1 USD si desea solicitar el pago
             payment_price_required: debe configurarse si desea solicitar el pago
+            price:
+              below_minimum: Debe ser más de 1 USD si desea solicitar el pago
+              payment_price_required: Debe configurarse si desea solicitar el pago
         user:
           attributes:
             password:
@@ -152,6 +193,7 @@ es:
     models:
       booking: cita
       category: categoría
+      coupon: cupón
       event: evento
       external_credential: integración
       message_template: plantilla de mensaje
@@ -160,6 +202,7 @@ es:
       service: Servicio
       service_appointment: Servicio
       service_attendance: tipo de evento
+      tag: etiqueta
       user: usuario
       web_hook: webhook
   csv:
@@ -176,8 +219,15 @@ es:
       short_with_name_and_year: "%a %e %b %Y"
     moment_format: DD.MM.YYYY
     moment_parse: DD.MM.YYYY
+  datetime:
+    distance_in_words:
+      x_hours:
+        one: 1 hora
+        other: "%{count} horas"
   errors:
     messages:
+      date_format: 'Ingrese un formato de fecha válido: %{format}'
+      date_of_birth: Año de nacimiento fuera del rango aceptado
       no_values_present: Se requiere nombre, número de teléfono o correo electrónico.
       not_authenticated: Has sido desconectado.
       not_found: No se pueden encontrar los datos. Intente volver a cargar la página.
@@ -193,22 +243,28 @@ es:
           no_identifier: Falta el correo electrónico o el número de teléfono.
     stripe:
       booking:
+        already_refunded: Ya reembolsado.
         invalid: La reservación ha expirado o no es válida. Transacción no procesada.
         paid: Reserva ya pagada. Intente actualizar la página.
       card:
         missing: No se puede obtener la información de la tarjeta
+      payment_intent_unexpected_state: No se pudo autenticar el pago. Inténtalo de nuevo.
       processor: 'Error de nuestro procesador de pagos: %{error}'
       unknown: No se puede procesar la transacción. Error desconocido.
   generic:
+    account_default: Predeterminado de la cuenta
     all: todas
     at: a
     born_abbreviation: segundo. %{date_of_birth}
+    country_locale: en
     default: Sistema por defecto
+    'false': Desactivado
     optional: Opcional
     search: Buscar
     to: a
     today: hoy
     tomorrow: mañana
+    'true': Activado
   helpers:
     booking:
       action:
@@ -224,23 +280,35 @@ es:
         confirmed: Confirmado
         declined: Rechazado
         deleted: Eliminado
+        verification_expired: Verificación expirada
+    booking_state_transitions:
+      events:
+        modified: Modificado
+    boolean:
+      'false': 'No'
+      'true': Sí
     datepicker:
       next_month: Próximo mes
       prev_month: Mes anterior
     label:
       booking:
         all_day: Todo el dia
+        booked_by_person_id: Reservado por
         booked_from: Reservación desde
         booked_to: Reservación para
         count: Número de personas
+        coupon_code: Código de cupón
         external_id: ID externo
         invoiced_at: Facturado
         notes: Notas
         paid_at: Pagado
         person_id: Cliente
+        reminded_at: Envió recordatorio
         reminder_at: Recordatorio
         resource_id: Recurso
         service_id: Servicio
+        state: Estado
+        status: Estado
         terms_accepted: Apruebo los términos
         title: Título
         verification_code: Código de verificación
@@ -268,11 +336,14 @@ es:
         billing_street: Calle
         billing_vat_no: IVA no
         booking_form: Formulario de reservación personalizado
+        booking_site_locale: Idioma (También controla el formato de números y datos)
+        calendar_event_text: Mostrar texto para la reserva en el calendario
         cancellation_period: Periodo de cancelación
         category_form: Campos de categoría personalizados
         closed_for_holidays: Cerrado los días festivos
         confirm_manually: Las reservas deben ser aprobadas por un administrador
         country_code: País
+        coupon_form: Campos de cupón personalizados
         css_url: CSS personalizado (la URL debe ser HTTPS)
         currency: Moneda
         email: Dirección de correo electrónico
@@ -282,6 +353,8 @@ es:
         footer: Pie de página
         future_bookable_period: No permita reservas después
         google_analytics: ID de seguimiento de Google Analytics
+        ical_description: Descripción
+        ical_summary: Título
         interval_rounding: Redondeo predeterminado a la próxima hora disponible para la reservación
         locale: Idioma (también define el formato de fecha y número)
         logo: Logo
@@ -291,11 +364,16 @@ es:
         mail_confirmation_subject: Asunto en el correo electrónico de confirmación
         mail_modification: Texto en el correo electrónico de modificación
         mail_modification_subject: Asunto en el correo electrónico de modificación
+        mail_notification_cancellation: Texto en el correo electrónico de notificación de cancelación
+        mail_notification_confirmation: Texto en el correo electrónico de notificación de confirmación
+        mail_notification_modification: Texto en el correo electrónico de notificación de modificación
         mail_notification_recipient: Dirección (es) de correo electrónico para notificación
         mail_verification: Texto en correo electrónico de verificación
         mail_verification_subject: Asunto en el correo electrónico de verificación
+        mailer_sender: Remitente del correo electrónico
         name: Nombre de la empresa (el que se muestra en el sitio de reservación)
         new_booking_text: Texto mostrado en la página de confirmación
+        no_availability_text: Texto que se muestra cuando no hay disponibilidad
         payment_provider: Proveedor de pago (para reservas prepagas)
         person_form: Campos de cliente personalizados
         phone_number: Número de teléfono para notificación
@@ -311,6 +389,7 @@ es:
           time_day_available: Día
           week_available: Toda la semana
           weekday_available: Días laborables
+        slot_generation: Generación de slots disponibles
         sms_cancellation: Texto en SMS de cancelación
         sms_confirmation: Texto en SMS de confirmación
         sms_modification: Texto en SMS de modificación
@@ -321,18 +400,42 @@ es:
         sms_verification: Texto en SMS de verificación
         subdomain: URL (subdominio)
         template: Tema de diseño
+        templates:
+          amsterdam: Ámsterdam
+          lviv: Lviv (beta)
+          timisoara: Timişoara (beta)
         terms: Términos y condiciones
         time_zone: Zona horaria
         verification_method: Método de verificación para nuevas reservas
+      client/slot_generation:
+        dynamic: Dinámica
+        fixed: Fijado
       client_user_link:
         role: Nivel de acceso
       client_user_link/role:
         admin: Acceso completo
         manager: Configuración básica
         staff: Solo calendario
+      coupon:
+        active: Activo
+        allowed_booking_end_at: Última hora de inicio para la reserva
+        allowed_booking_start_at: Hora de inicio más temprana para realizar reservas
+        availability: Cupones disponibles
+        code: Código
+        max_count: Número máximo de personas
+        max_order_amount: Cantidad máxima del pedido
+        min_count: Número mínimo de personas
+        min_order_amount: Cantidad mínima del pedido
+        title: Título
+        valid_from: Válido desde
+        valid_until: Válido hasta
+        value: Valor de descuento
+        value_type: Tipo de descuento
       event:
         all_day: Todo el dia
+        allow_invoice: permitir factura
         booking_capacity: Max nr de asistentes por reservación
+        booking_minimum: Número mínimo de asistentes requeridos por reserva
         capacity: Max nr de asistentes
         description: Descripción
         ends_at: Termina en
@@ -361,14 +464,18 @@ es:
         reminder: Recordatorio
       person:
         address: Habla a
+        blocked: Bloqueado para reservas
         city: Ciudad
         country_code: País
         created_at: Registrado en
         date_of_birth: Fecha de nacimiento (dd / mm / aaaa)
+        deactivated: Desactivado
         email: Email
+        locale: Idioma
         name: Nombre
         national_id_no: Numero de identificacion nacional
         notes: Notas
+        opt_in_marketing: Reciba información de nosotros
         phonenumber: Número de teléfono
         postal_code: código postal
         provider: Conectado a una cuenta externa
@@ -381,9 +488,15 @@ es:
         sms_notification_recipient: Número de teléfono para notificación
         title: Título
       service:
+        active_bookings_limit: Número máximo de reservas activas
+        allow_invoice: Permitir factura
+        availability_type: La disponibilidad se define por
+        block_resource: La reserva bloqueará el recurso
         booking_capacity: Número máximo de personas por reservación
         booking_form: Formulario de reservación personalizado
+        booking_minimum: Número mínimo de personas requerido por reserva
         capacity: Número máximo de asistentes
+        confirm_manually: Las reservas deben ser aprobadas por un administrador.
         description: Descripción
         has_day_booking: Tipo de tiempo
         has_day_booking_label:
@@ -396,11 +509,15 @@ es:
         mail_modification: Texto en el correo electrónico de modificación
         mail_verification: Texto en correo electrónico de verificación
         max_slots: Número máximo de espacios por reservación
+        new_booking_text: Texto que se muestra en la página de confirmación
         next_interval: Ranura disponible cada
         payment_required: Requerir pago
         price: Precio con impuestos incluidos
+        priority_strategy: Estrategia de prioridad
         published: Mostrar en el sitio de reservas
+        reservation_form_text: Texto que se muestra antes del formulario de reserva
         same_day: Permitir reservas durante varios días
+        slot_generation: Generación de tiempo
         sms_cancellation: Texto en SMS de cancelación
         sms_confirmation: Texto en SMS de confirmación
         sms_modification: Texto en SMS de modificación
@@ -409,15 +526,26 @@ es:
         template: Plantilla de calendario
         templates:
           default: Defecto
+          list: Lista
+          month: Mes
           time_day_available: Día
           week_available: Toda la semana
           weekday_available: Días laborables
+        terms: Términos y condiciones
         title: Título
+      service/availability_type:
+        provider: Ofertas
+        resource: Recurso
+      service/priority_strategy:
+        order: Orden
+        random: Aleatorio
+        weight: Peso
       user:
         current_password: Contraseña actual
         email: Email
         name: Nombre
         password: Contraseña
+        password_confirmation: Confirmación de contraseña
         phonenumber: Número de teléfono
         rotp_verification_code: Código de verificación
       web_hook:
@@ -432,6 +560,8 @@ es:
       category:
         new: Nueva categoría
       confirm: "¿Está seguro?"
+      coupon:
+        new: Nuevo cupón
       create: Crear
       delete: Eliminar
       delete_confirm: "¿Estas seguro que quieres borrarlo?"
@@ -439,8 +569,11 @@ es:
       event:
         new: Nuevo evento
         new_attendant: Agregar asistente
+      message_template:
+        new: Nueva plantilla de mensaje
       person:
         new: Nuevo cliente
+        new_child: Nuevo cliente
       resource:
         new: Nuevo recurso
       service:
@@ -449,6 +582,8 @@ es:
       setup:
         skip: Configuración manual
         step_html: "<strong>Paso %{step}</strong> de %{max_steps}"
+      undelete: Recuperar
+      undelete_confirm: "¿Estás seguro que deseas recuperarlo?"
       user:
         new: Nuevo Usuario
       view: Ver
@@ -463,11 +598,14 @@ es:
       reports: Informes
       setup: Preparar
     menu_setup:
+      addons: Complementos
       billing: Facturación
       bookingsite: Sitio de reservación
       categories: Categorías
       communication: Comunicación
       company: Cuenta
+      coupons: Cupones
+      developer: Revelador
       export: Exportar
       fields: Campos Personalizados
       import: Importar
