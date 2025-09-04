@@ -7,6 +7,7 @@ nb:
         booked_to: avslutningtidspunkt
         booked_by_person_id: reservert av
         count: antall
+        coupon_code: rabattkode
         event_id: arrangement
         notes: notat
         person: kunde
@@ -93,6 +94,7 @@ nb:
         name: navn
         national_id_no: fødselsnummer
         notes: notat
+        opt_in_marketing: motta markedsføringsinformasjon
         phonenumber: telefonnummer
         postal_code: postnummer
         state: fylke/stat
@@ -150,6 +152,7 @@ nb:
               not_offered: tilbys ikke av valgt ressurs
             state:
               invalid_transition: Ugyldig endring av status
+          active_bookings_limit: Maks antall aktive reservasjoner er %{count}
           fully_booked: Ikke ledig på valgt tidspunkt
           no_parent_takeover: Kontakt kundeservice for å gjennomføre denne reservasjonen.
           prevent_new_signups: Kun tilgjengelig for eksisterende kunder.
@@ -194,6 +197,7 @@ nb:
       service: tjeneste
       service_appointment: tjeneste
       service_attendance: arrangementstype
+      tag: etikett
       user: bruker
       web_hook: webhook
   csv:
@@ -240,10 +244,12 @@ nb:
           no_identifier: Mangler e-post eller telefonnummer.
     stripe:
       booking:
+        already_refunded: Allerede refundert.
         invalid: Reservasjonen er utløpt eller ugyldig. Transaksjon ikke gjennomført.
         paid: Reservasjonen er allerede betalt. Prøv å refreshe siden.
       card:
         missing: Fant ikke kortinfo
+      payment_intent_unexpected_state: Ikke mulig å bekrefte betaling. Prøv igjen.
       processor: 'Feilmelding fra vår betalingspartner: %{error}'
       unknown: Klarte ikke å fullføre transaksjon. Ukjent feil.
   generic:

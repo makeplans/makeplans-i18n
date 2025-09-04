@@ -61,7 +61,24 @@ nb:
         Takk for at du bruker MakePlans :D
 
         Hvis du har noen spørsmål så bare svar på denne eposten.
-      subject: Your account is activated
+      subject: Kontoen din er aktivert
+    api_enabled:
+      body: |-
+        Hei der,
+
+        Ser at du aktiverte API-et på din MakePlans-konto %{subdomain}. Fantastisk!
+
+        Hvis du vet hva du gjør, kan du bare ignorere denne e-posten.
+
+        Men hvis du ikke kjenner til MakePlans sitt API så sjekk gjerne dokumentasjonen på https://developer.makeplans.com.
+        Du vil finne informasjon om autentisering, alle endepunkter, webhooks, samt eksempler.
+        Har du spørsmål? Bare kontakt oss, vi hjelper deg gjerne.
+
+        Hvis du eksperimenterer, kan det være en god idé å lage en API-utviklingskonto i vårt testmiljø. Det er noen begrensninger der, men generelt er det foretrukket å utvikle i et eget miljø og konto enn din faktiske konto.
+        Du kan finne en lenke til testmiljøet i API-dokumentasjonen.
+
+        Lykke til med kodingen!
+      subject: 'API aktivert på din MakePlans-konto'
     charge_failed:
       body: |-
         Hei,
@@ -134,6 +151,18 @@ nb:
 
         Uansett; ha en god dag videre og takk for at du testet ut MakePlans.
       subject: Deaktivert MakePlans-konto
+    inactive_warning:
+      body: |-
+        Hei der,
+
+        Siden prøveperioden din er utløpt og det ikke har vært aktivitet på kontoen din siden %{latest_booking_change_at}, vil vi deaktivere kontoen din om 30 dager.
+
+        For å beholde kontoen din, vennligst logg inn på %{url}.
+
+        Hvis ingen handling blir utført vil vi deaktivere kontoen din om en måned. Da vil kontoen din og alle dine data bli slettet om fire måneder.
+
+        Takk for at du prøvde MakePlans :)
+      subject: 'KRITISK: MakePlans-kontoen vil bli deaktivert'
     no_bookings:
       body: |-
         Hei,

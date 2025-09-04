@@ -95,6 +95,17 @@ nb:
         error: Vi klarte ikke å bekrefte at betaling ble gjennomført. Kontakt kundeservice.
         info: Vennligst vent mens vi belaster ditt kredittkort. Dette kan ta opp mot et minutt. Du vil motta en epost fra oss når prosessen er ferdig.
     bookings:
+      feed:
+        info:
+          header: iCalendar-feeder
+          ical:
+            activated: 'Tilgang til reservasjoner i din konto med iCalendar er aktivert. Lenkene til iCalendar-feedene er tilgjengelige. Ikke del lenkene.'
+            future_html: 'Fremtidige reservasjoner: %{link}'
+            past_html: 'Tidligere reservasjoner: %{link}'
+            disable: Deaktiver iCalendar-feeder for konto
+            enable: Aktiver iCalendar-feeder for konto
+            info: En iCalendar-feed vil vise reservasjoner fra din konto i andre kalenderapplikasjoner som Microsoft Outlook, Google Calendar, iPhone eller Android. Kun lesing, alle endringer må gjøres i MakePlans.
+            not_activated: Ikke aktivert
       cancel_recurring:
         headline: Alle fremtidige reservasjoner i dette mønsteret ble slettet
         list_recurring: Se liste over reservasjoner innenfor dette gjentatte mønsteret.
@@ -122,6 +133,15 @@ nb:
         ignore_capacity: Lagre selv om opptatt
         modification_send_email: Send endring på epost
         modification_send_sms: Send endring på SMS
+        no_customer: 'Ingen kunde spesifisert!
+
+
+        Du har satt denne reservasjonen som kundereservasjon men ikke spesifisert en kunde.
+
+
+        OK: Fortsett og sett denne reservasjonen som drop-in.
+
+        Avbryt: Gå tilbake og spesifiser kunde.'
         no_service: Ingen tjeneste valgt
         notification_send_email: Send varsel på epost
         notification_send_sms: Send varsel på SMS
@@ -269,6 +289,13 @@ nb:
         qr_code: QR-kode til kunder
         show_on_booking_site: Åpne denne tjenesten på bookingsiden
     client:
+      addons:
+        header: Tillegg
+        info: Vi tilbyr ulike betalte tillegg som du kan aktivere. Kontakt oss hvis du har spørsmål.
+        addons:
+          custom_domain: Egendefinert domene
+          custom_email_sender: Egendefinert e-postavsender
+          custom_sms_sender: Egendefinert SMS-avsender ID
       api:
         disable: Vil du deaktivere API?
         disable_warning: Er du sikker på at du vil deaktivere API? API-nøkkelen vil bli ugyldig og API-en utilgjengelig.
@@ -286,11 +313,40 @@ nb:
         info: Hvis du sletter kontoen din så vil alle dine data bli slettet. Er du helt sikker på at du vil gjøre dette?
         pause: Kanskje du heller vil sette kontoen din på pause? Du trenger da ikke betale hver måned men kontoen vil fortsatt være tilgjengelig når du har behov for å bruke MakePlans igjen på et senere tidspunkt.
         pause_link: Du kan gjøre det på betalingsiden.
+      change_time_zone:
+        edit:
+          header: Endre tidssone
+          info: 'MERK: Denne funksjonen vil oppdatere tidspunkter for alle reservasjoner og meldinger basert på ny tidssone. Bruk på egen risiko.'
+        in_process:
+          header: Tidssoneendring pågår
+          info: Alle reservasjoner og meldinger vil bli oppdatert snart. Kjør *ikke* denne funksjonen igjen.
       configuration:
         header: Oppsett av MakePlans
         intro: Her kan du endre oppsettet på kontoen din og hvordan MakePlans skal fungere for deg. Du kan legge til tjenester og kategorier som du tilbyr på bookingsiden, endre åpningstider, justere utgående meldinger (SMS og epost), legge til flere brukere og justere flere andre innstillinger i MakePlans.
         menu_info: Velg i menyen til venstre der du ønsker å gjøre endringer. Hvis du lurer på hvordan du skal gjøre endringer så ta kontakt med kundeservice.
         trial_info: Dette er en demokonto - klikk her for å aktivere
+      developer:
+        show:
+          api: API
+          embed: Embed
+          web_hooks: Webhooks
+      domains:
+        cname:
+          cancel: Avbryt denne domeneforespørselen
+          header: Legg til DNS-post
+          info: Vennligst legg til følgende DNS-post på ditt domene.
+          record: CNAME %{domain} med verdi %{cname}
+          verify: Verifiser DNS
+        info:
+          header: Bruk ditt eget domene
+          info: Du kan bruke ditt eget domene for bookingsiden. Månedlig kostnad er %{price}
+          add: Legg til ditt domene
+        new:
+          domain: Ditt domene
+        show:
+          delete: Slutt å bruke dette egendefinerte domenet
+          header: Du bruker et egendefinert domene
+          info: Bookingsiden din er tilgjengelig på %{domain}
       edit:
         custom_messages_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
       edit_booking_site:
@@ -317,6 +373,7 @@ nb:
           active_bookings_limit: Maks antall aktive bookinger for kunde
           disable_person_cookie: Ikke tillatt kunde å forbli innlogget med cookie
           google_tag_manager: Google Tag Manager Container ID
+          plausible: Aktiver Plausible Analytics
           prevent_new_signups: Tillatt kun booking for eksisterende kunder
         verification_methods:
           email: Epost
@@ -325,7 +382,10 @@ nb:
           sms: SMS (anbefales)
       edit_communication:
         email: Epost
+        ical: iCalendar
         header: Endre utgående kommunikasjon
+        mailer_sender_valid_domain: Du har validert %{domain} og MakePlans vil sende e-post på det domenet på dine vegne. Andre e-postadresser vil bli spesifisert som svar-til.
+        message_template_info: Dette er de innebygde eldre meldingene. For støtte for flere meldinger og mer kontroll, bruk meldingsmal-funksjonen.
         settings:
           custom_email_sending: Overstyr hele eposter med innhold nedenfor (ellers så blir innhold kun lagt inn i standard epost-mal)
           custom_sms_sending: Overstyr hele SMS med innhold nedenfor (ellers så blir innhold kun lagt inn i standard SMS-mal)
@@ -349,6 +409,7 @@ nb:
       edit_person_notifications:
         automatic_messages_booking_site: Automatiske utsendelser (På bookingsiden)
         automatic_messages: Automatiske utsendelser (Administrasjonsystem og API)
+        message_template_info: Dette er den innebygde funksjon for utsending. For flere påminnelser og mer kontroll, bruk meldingsmal-funksjonen.
         booking_site_outgoing_messages_info: Som standard vil MakePlans sende en melding ved viktige hendelser som bekreftelse via valgt verifiseringsmetode, for eksempel SMS for SMS-verifisering, or epost hvis man har annen eller ingen verifisering.
         booking_site_message: Send melding på bookingsiden
         cancellation_email: Utsendelse av epost ved kansellering av reservasjon
@@ -392,6 +453,31 @@ nb:
           calendar_slot_duration: Varighet på slot (minutter)
           calendar_slot_label_interval: Tidsvisning for slot ved hvert X minutt
           resource_title: Egendefinert ressurstittel
+          service_appointment_title: Egendefinert tjenesetittel
+          service_attendance_title: Egendefinert arrangementstype-tittel
+      email_sender:
+        create:
+          header: Vi behandler forespørselen din
+          dns: Se dine DNS-verdier.
+        dns:
+          header: Legg til DNS-poster
+          info: Vennligst legg til følgende DNS-poster for å fullføre e-postavsender-verifiseringen. Det kan ta opptil 24 timer før endringene dine er aktive.
+          dkim: For å la MakePlans sende med en e-postadresse på %{domain}, legg til følgende TXT-post.
+          dkim_host: Vert
+          dkim_value: Verdi
+        info:
+          add: Legg til ditt e-postdomene for sending
+          header: Send e-post med din egen e-postadresse
+          info: Som standard sendes alle e-poster fra %{default_email}. For %{price} per måned kan du bruke en e-postadresse på ditt eget domene. For å la MakePlans sende på dine vegne må du legge til noen DNS-poster. Vær klar over at dette krever en teknisk endring på ditt domene og at det lar MakePlans sende med hvilken som helst adresse på det valgte domenet. Vi anbefaler at du bruker et underdomene av sikkerhetsgrunner, så booking.eksempel.no i stedet for eksempel.no.
+        new:
+          domain: Domene
+          header: Legg til ditt egendefinerte e-postdomene for sending
+        show:
+          header: Du har verifisert ditt e-postdomene for sending
+          info: MakePlans vil kunne sende e-post fra hvilken som helst e-postadresse på ditt domene %{domain}
+        verify:
+          header: Ikke verifisert
+          info: Hvis du har lagt til DNS-postene, vennligst vent til de har blitt propagert. Prøv igjen senere.
       export_info:
         data_types:
           bookings: Reservasjoner (kun aktive)
@@ -420,9 +506,20 @@ nb:
         booking_site_info_html: Deres bookingside er tilgjengelig på %{url}.
         generate_booking_button: Generer knapp til din nettside
         header: Promoter din bookingside
+      sms_sender:
+        show:
+          add_custom_sender: Ønsker du å bruke en egendefinert SMS-avsender ID?
+          cost: Månedlig kostnad er %{price}.
+          custom_info: Alle SMS vil bli sendt med %{sms_sender}.
+          delete: Fjern egendefinert SMS-avsender ID.
+          header: SMS-avsender ID
+          info: Alle SMS vil bli sendt fra MakePlans.
+        new:
+          sms_sender_name: SMS-avsendernavn
       tools:
         header: Diverse funksjoner for din konto
         link:
+          feed: iCalendar-feeder
           change_time_zone: Bytt tidssone
           purge_data: Slett gamle data
           sms_all: Send SMS til alle dine kunder
@@ -569,8 +666,10 @@ nb:
       sendy:
         connect_info_html: Nye kunder vil abonnere på listen med id <em>%{list_id}</em> på installasjon %{api_url}
       stripe:
+        disable_customer_saving: Ikke lagre kunde til Stripe
         payment_info: For alle transaksjoner så trekker MakePlans et plattformgebyr på %{application_fee_percent}%.
         receipt_email: Send kvittering på epost fra Stripe
+        save_card_billing_details: Lagre regningsdetaljer for transaksjon
       tfso:
         add_to_crm_manually: Legg til ny kunde i CRM manuelt
         distribution_method: 'Distribusjonsmetode:'
@@ -640,7 +739,7 @@ nb:
         merge_action: Kombiner disse to kundeprofilene
         merge_action_email: Denne e-post adressen er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{email} blir den gjeldene e-post adressen?
         merge_action_info: Alle reservasjoner vil beholdes men den ene kundeprofilen vil bli fjernet. Du kan selve velge hvilke kundeopplysninger som skal bli gjeldene.
-        merge_action_national_id_no: Dette fødelsnummeret er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{national_id_no} blir det gjeldene fødelsnummeret?
+        merge_action_national_id_no: Dette fødselsnummeret er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{national_id_no} blir det gjeldende fødselsnummeret?
         merge_action_phone_number: Dette telefonnummeret er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{phone_number} blir det gjeldene telefonnummeret?
         merge_button: Kombiner og lagre
         merge_info: 'Bruk heller: '
@@ -732,6 +831,7 @@ nb:
       form:
         availability: Standard tilgjengelighet
         external_info:
+          microsoft_office365_user_id: Microsoft Office 365 bruker
           zoom_user_id: Zoom bruker
         from: fra
         mail_notification_info: For å sende varsel til flere personer så bruk semi-kolon for å skille epost-adresser.
@@ -820,6 +920,7 @@ nb:
         external_info:
           fiken_create_order: Opprett ordre i Fiken automatisk
           fiken_product_href: Koble til produkt i Fiken
+          microsoft_teams_create_meeting: Opprett automatisk et Microsoft Teams-møte for denne tjenesten
           tfso_create_order: Opprett ordre i 24SevenOffice automatisk
           tfso_product_id: 24SevenOffice produkt id
           visma_eaccounting_article_id: Koble til produkt i Visma eAccounting
