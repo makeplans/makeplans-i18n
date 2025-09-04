@@ -21,6 +21,9 @@ sv:
         verification_delivery_not_processed: Vi upplever just nu en del förseningar i våra system. Vänligen vänta medan vi skickar ditt e-postmeddelande.
         verification_sent_body: Vi har skickat ett e-postmeddelande till %{email}. Klicka på länken för att bekräfta din bokning. Det hjälper oss att kontrollera att du inte är en robot.
         verification_sent_title: Vänligen bekräfta din e-postadress
+      cancelled:
+        body: Denna reservation har avbokats.
+        title: Din bokning har avbokats.
       declined:
         body: Tyvärr, din bokning godkändes inte. Försök en annan gång eller ta kontakt.
         title: Reservationen godkändes inte
@@ -36,12 +39,19 @@ sv:
           login_with_facebook_link: bekräfta automatiskt med Facebook
           not_current_person_html: Är du inte <span data-name="">%{person}?</span>?
           remember_me: Vill du att vi ska komma ihåg dig på den här maskinen tills nästa gång du bokar här?
+        book_for_child: Skapa reservation för någon annan?
+        book_for_me: Reservera för mig själv.
+        contact_support_message: Din kundprofil saknar information. Kontakta supporten.
         date_format: 'Ange giltigt datumformat: %{format}'
+        email_suggestion_html: "<p>Menade du <span>%{suggestions}</span> ?</p>"
         enter_info: Fyll i uppgifter
         errors_header: Vänligen fyll i de obligatoriska fälten.
         form_info_html: Detta kommer att användas för att bekräfta din bokning av %{service}, %{booking}.
+        new_child: För någon annan
         price_info: 'Pris: %{price}'
         reserve_resource: Bokning hos %{resource}.
+        select_child: Skapa reservation för
+        terms: Bokningsvillkor
       no_person:
         body: 'Kontakta oss för mer info. Fel: Kundanslutning borttagen.'
         title: Fel
@@ -58,22 +68,50 @@ sv:
         form_header: Formuläret skickas krypterat.
         header: Betalning
         info: För att slutföra bokningen av %{service} måste du betala med ditt kreditkort.
+      payment_invoice:
+        form_footer_html: Fakturan kommer att debiteras med <span class="payment-amount">%{amount}</span> .
+        form_header: 'Vi skickar en faktura baserat på följande information:'
+        header: Betalning via faktura
+        info: För att slutföra reservationen av %{service} %{booking} måste du godkänna att du blir fakturerad.
+        payment_details_html: Fakturabeloppet är i %{currency}.
+      pre_payment:
+        form_footer_html: 'Belopp att betala: <span class="payment-amount">%{amount}</span> .'
+        providers:
+          braintree: Kreditkort eller betalkort
+          fiken: Faktura
+          stripe: Kreditkort, betalkort, Google Pay eller Apple Pay
+          tfso: Faktura
+          vipps: Vips
+          visma_eaccounting: Faktura
+        select_provider: Hur skulle du vilja betala?
       show:
         add_card: Lägg till kreditkort för att betala automatiskt efter uppsägning.
         add_to_calendar: Lägg till det här mötet i din kalender.
         body: Du är klar. Bokningen är genomförd.
+        booked_for_child: Denna reservation gäller för %{name}.
+        booking_count:
+          one: Reserverad för %{count} personer.
+          other: Reserverad för %{count} personer.
         cancel: Avbryt bokning
         cancel_confirmation: Är du säker på att du vill avbryta den här bokningen?
+        invoiced: Du har blivit fakturerad.
         paid: Du har förbetalt %{paid_amount}.
+        price: 'Pris: %{amount}.'
         remember_me: Vill du bli ihågkommen på den här datorn med hjälp av cookies?
+        reschedule: Ändra tid
         title: Bokningen är slutförd och bekräftad!
       verification_code:
         header: Bekräfta bokning
         incorrect_code: Felaktig kod
+        remember_me: Kom ihåg mig på den här enheten
         verify_verification_code: Vi har skickat ett kontrollkod til %{recipient}. Vänligen ange koden i formuläret för att bekräfta bokningen, annars kommer bokningen inte att slutföras.
     events:
       index:
+        free_capacity:
+          one: "%{count} tillgängliga"
+          other: "%{count} tillgängliga"
         none_available: Inga evenemang tillgängliga.
+        title: Händelser
       show:
         before_first_booking: Det är inte möjligt att registrera sig för detta evenemang före %{first_booking_at}.
         book: Registrera dig för detta evenemang.
@@ -89,6 +127,10 @@ sv:
         add_card_header: Spara kreditkort
         add_card_info: Lägg till ditt kreditkort så att du enkelt och automatiskt kan betala efter bokningen.
         add_card_submit: Spara kort
+        awaiting:
+          body: Vänta medan transaktionen bekräftas.
+          error: Vi kunde inte bekräfta att betalningen var slutförd. Vänligen kontakta kundtjänst via https://makeplans.no och ange referensnummer %{booking_id}.
+          title: Kontrollerar betalning
         form_footer_html: Ditt kreditkort kommer att debiteras med <span class="payment-amount">%{amount}</span>.
         form_header: Detta formulär skickas krypterat.
         header: Betalning
@@ -101,6 +143,7 @@ sv:
         cancel: Avbryt
         completed: Klart!
         hotstepper: Steg %{step} av %{steps}
+        next: Nästa
         next_confirm: 'Nästa: Bekräftelse'
         next_form: 'Nästa: Fyll i formuläret'
         next_payment: Betala
@@ -114,6 +157,7 @@ sv:
         authenticated: 'Inloggad som: %{name}'
         demo_ended: Provperioden hos MakePlans har upphört.
         footer:
+          change_language: 'Ändra språk:'
           privacy_policy: Personuppgiftsbehandling
           support: Kundservice
         login: Din sida
@@ -136,10 +180,14 @@ sv:
         info_html: Du är inte registrerad som kund. För att bli kund måste du <a href="/">slutföra en bokning</a> .
       perishable_token_action_required:
         info_html: Vi har skickat ett mejl till dig. Klicka på länken för att logga in.
+        title: Verifiera din e-postadress
       perishable_token_form:
         not_available_for_this_verification_method: Inte tillgänglig
         submit: Ta emot kod
     profile:
+      children:
+        index:
+          header: Andra du kan reservera för
       credit_card_list:
         add_card: Lägg till nytt kort
         body: Dessa är dina lagrade betalkort. Om du vill kan du lägga till ett nytt kort eller ta bort något av de befintliga.
@@ -147,23 +195,35 @@ sv:
         remove_card: Ta bort det här kortet
         title: Dina lagrade betalningsmetoder
       index:
+        children: Andra du kan reservera för
+        feed: iCalendar-ström
         header: Dina reservationer
         logout: logga ut
+        my_details: Min information
         new_booking: Ny reservation
         payment_methods: Lagrade betalningsmetoder
+      show:
+        header: Din lagrade information
     providers:
       index:
         show_all_available: Visa alla tillgängliga
         show_only_selected: 'Eller visa endast från önskad kalender:'
     services:
+      available_dates:
+        none_available: Inga datum tillgängliga
       index:
         none_available: Inga tjänster tillgängliga.
       show:
         book: Boka
+      slots:
+        try_another_template: Prova en annan mall.
       time_day_available:
         any_resource: Första lediga
         dateselector: Välj datum
         earlier: Tidigare
+        free_capacity:
+          one: "%{count} tillgängliga"
+          other: "%{count} tillgängliga"
         gap_warning: För att välja flera slott måste dessa vara kontinuerliga utan dröjsmål.
         later: Senare
         max_slots_warning: Du kan inte boka fler än %{max_slots} tider.
@@ -175,6 +235,9 @@ sv:
         select_time: "%{service} - välj ledig tid"
       weekday_available:
         dateselector: Välj datum
+        free_capacity:
+          one: "%{count} tillgängliga"
+          other: "%{count} tillgängliga"
         gap_warning: För att välja flera slott måste dessa vara kontinuerliga utan dröjsmål.
         max_slots_warning: Du kan inte boka fler än %{max_slots} tider.
         multiple_slots_info: För att välja fler slott, välj först start- och sluttid.

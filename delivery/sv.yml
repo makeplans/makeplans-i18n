@@ -8,6 +8,9 @@ sv:
       info: Din bokning %{title} %{time_range} har blitt annullerad.
       subject: Bokningen annullerad
     confirmation:
+      booking_count:
+        one: Reserverad för %{count} personer.
+        other: Reserverad för %{count} personer.
       header: Hej %{name}
       info: Du har bokat %{title} %{time_range}.
       link: Mer information om din bokning
@@ -73,6 +76,18 @@ sv:
       booking_type_attendance: |-
         Ny påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
         MakePlans
+    admin_notification_modification:
+      booking_type_appointment: |-
+        Ändring av reservation för {{ booking.resource.title }} för {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: |-
+        Registrering ändrad för {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
+        MakePlans
+    admin_notification_resource_change:
+      booking_type_appointment: |-
+        Resursändring för {{ booking.resource.title }} med {{ booking.person.name }} {{ booking.title }} {{ booking.time_range }}
+        MakePlans
+      booking_type_attendance: Ändring av registrering för {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}. MakePlans
     cancellation: Din bokning den {{ booking.booked_from }} har avbokats.
     confirmation: Du har bokat {{ booking.title }} {{ booking.booked_from }}.
     declined: Din bokningsförfrågan för {{ booking.title }} {{ booking.booked_from }} godkändes inte. Vänligen försök igen.

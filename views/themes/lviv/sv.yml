@@ -1,0 +1,124 @@
+---
+sv:
+  lviv:
+    bookings:
+      authenticate:
+        email: E-post
+        phone_number: Telefonnummer
+        title: Bekräfta bokningen
+      cancelled:
+        info: Reservationen för %{title} %{time} avbröts.
+        title: Din bokning har avbokats.
+      new:
+        agree_with: Jag accepterar
+        errors_header: Vänligen fyll i alla obligatoriska fält.
+        optional: Frivillig
+        submit: Reservtjänst
+        subtitle: Vänligen fyll i obligatoriska uppgifter för att reservera en tjänst.
+        terms: Villkor
+        title: Bokning för
+      payment_stripe:
+        title: Ange betalningsuppgifter
+      pre_payment:
+        title: Välj betalningsmetod
+      review:
+        agree_with: Jag accepterar
+        any_specialist: Vilken specialist som helst
+        directions: Vägbeskrivning
+        terms: Villkor
+        title: Granska din bokning
+      show:
+        add_to_calendar: Lägg till i kalendern
+        alt:
+          calendar: Lägg till i kalendern
+          profile: Profil
+        cancel_booking: Avboka
+        title: Bokningsuppgifter
+    categories:
+      index:
+        title: Välj kategori
+    events:
+      index:
+        title: Välj datum och tid
+      show:
+        book_event: Boka detta evenemang
+    generic:
+      alt:
+        go_back: Gå tillbaka
+      step: Steg %{step} / %{steps}
+    layouts:
+      application:
+        about_makeplans: Om MakePlans
+        account: Konto
+        alt:
+          account: Konto
+          cancel: Avboka
+          menu: Meny
+        booking_site_footer: Bokningssystem för %{name}
+        close: Nära
+        get_support: Få stöd
+        menu: Meny
+        privacy_policy: Integritetspolicy
+        terms_conditions: Villkor
+        title: Onlinebokning för %{name}
+    person_sessions:
+      enter_perishable_token:
+        confirm_booking: Bekräfta bokningen
+        no_code: Kan du inte hämta koden?
+        send_again: Skicka igen
+        verify_login: Verifiera inloggning
+      perishable_token_action_required:
+        body: Vi har skickat ett e-postmeddelande till %{recipient}. Följ det för att bekräfta din bokning. Detta hjälper oss att säkerställa att du inte är en robot.
+        delivery_error: Vi kunde inte skicka e-postmeddelandet. Är du säker på att du använde rätt adress?
+        delivery_not_processed: Det finns för närvarande en kö i våra system. Vänligen vänta medan vi försöker skicka ut e-postmeddelandet.
+        title: Vänligen bekräfta din e-postadress.
+      perishable_token_form:
+        title: Logga in
+      verification_method_email:
+        submit: Skicka verifieringsmejl
+      verification_method_sms:
+        submit: Skicka verifieringskod
+    profile:
+      index:
+        book_again: Reservera igen
+        canceled: Avbruten
+        tabs:
+          all: Alla
+          cancelled: Avbruten
+          completed: Utförde
+          upcoming: Framtida
+      new:
+        errors_header: 'Ett fel uppstod:'
+        register: Register
+        subtitle: Vänligen fyll i nödvändiga uppgifter för att registrera dig.
+        title: Ny profil
+      show:
+        alt:
+          language: Språk
+          logout: Logga ut
+          right: Rätt
+        change_language: Ändra språk
+        logout: Logga ut
+    services:
+      available_dates:
+        title: Välj datum och tid
+      count:
+        title: Välj antal personer
+      index:
+        title: Välj tjänst
+      location:
+        title: Välj plats
+      show:
+        book_service: Boka denna tjänst
+      slots:
+        available_times: Tillgängliga tider
+        continue: Fortsätta
+        estimated_time: Beräknad bearbetningstid - %{duration} min.
+        free_capacity: "%{count} tillgängliga"
+        next_available_date_html: Nästa tillgängliga datum är %{next_available_date}
+        no_availability: Inga tillgängliga tider på det valda datumet. Försök med ett annat datum.
+        title: Välj datum och tid
+      success:
+        add_to_calendar: Lägg till bokning i kalendern
+        book_another: Boka en ny tjänst
+        title: Du har reserverat tjänsten.

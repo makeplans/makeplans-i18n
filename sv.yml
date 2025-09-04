@@ -3,9 +3,11 @@ sv:
   activerecord:
     attributes:
       booking:
+        booked_by_person_id: reserverad av
         booked_from: från
         booked_to: till
         count: siffra
+        coupon_code: rabattkod
         event_id: arrangemang
         notes: Kommentarer
         person: kund
@@ -14,6 +16,8 @@ sv:
         resource_id: resurs
         service: service
         service_id: service
+        state: status
+        status: status
         terms_accepted: villkor
         title: titel
         verification_code: verifierings kod
@@ -25,6 +29,7 @@ sv:
         confirmed: Bekräftad
         declined: Tackat nej
         deleted: raderade
+        verification_expired: Utgången
       booking/status:
         checked_in: Incheckad
         completed: Avslutad
@@ -38,14 +43,23 @@ sv:
         mailer_sender: e-postavsändare
         phone_number: telefonnummer
         purge_data_period: Automatisk raderingsperiod
+        sms_notification_recipient: telefonnummer för avisering
+        terms: villkor
+      client/slot_generation:
+        dynamic: dynamisk
+        fixed: bestämd
       client_user_link:
         role: roll
       client_user_link/role:
         admin: Administratör
         manager: Chef
         staff: Anställd
+      coupon/value_type:
+        amount: belopp
+        percentage: procent
       event:
         booking_capacity: maximalt antal deltagare per bokning
+        booking_minimum: minsta antal deltagare per bokning
         capacity: maximalt antal deltagare
         description: beskrivning
         ends_at: sluttid
@@ -77,9 +91,11 @@ sv:
         created_at: registrerad
         date_of_birth: födelsedatum
         email: e-post
+        locale: språk
         name: namn
         national_id_no: Födelsedatum
         notes: anteckningar
+        opt_in_marketing: ta emot marknadsföringsinformation
         phonenumber: telefonnummer
         postal_code: postnummer
         state: län
@@ -90,9 +106,18 @@ sv:
         sms_notification_recipient: telefonnummer för avisering
         title: titel
       service:
+        allow_invoice: kan betalas via faktura
         payment_required: kräver förskottsbetalning
         price: pris
+        terms: villkor
         title: titel
+      service/availability_type:
+        provider: leverantör
+        resource: resurs
+      service/priority_strategy:
+        order: beställa
+        random: slumpmässig
+        weight: vikt
       user:
         current_password: Nuvarande lösenord
         password: Lösenord
@@ -104,6 +129,7 @@ sv:
     errors:
       messages:
         chronic_syntax_error: syntaxfel se https://github.com/mojombo/chronic#examples
+        denied: Din begäran avslogs.
         icalendar_invalid: Inga genererade möten eller fel i iCalendar-definitionen
         icalendar_over_limit: För många genererade avtal - max är 731
         illegal: olaglig
@@ -112,8 +138,10 @@ sv:
         time_not_available: Inte tillgänglig för bokning just nu
       models:
         booking:
+          active_bookings_limit: Det maximala antalet aktiva reservationer är %{count}
           attributes:
             count:
+              below_minimum_count: Färre än nödvändigt antal personer
               over_booking_capacity: Mer än högsta tillåtna antal per bokning
             event_id:
               time_not_available: är full
@@ -128,6 +156,8 @@ sv:
             state:
               invalid_transition: Ogiltig statusändring
           fully_booked: Ej tillgängligt vid vald tidpunkt
+          no_parent_takeover: Vänligen kontakta kundtjänst för att göra denna bokning.
+          prevent_new_signups: Endast tillgängligt för befintliga kunder.
           time_after_future_bookable_period: För långt fram i tiden
         client:
           attributes:
@@ -136,15 +166,22 @@ sv:
         client_user_link:
           admin_needed: Behöver minst en administratörsanvändare på kontot.
         person:
+          attributes:
+            national_id_no:
+              invalid_syntax_no: Fyll i ett giltigt nationellt identitetsnummer - 11 siffror.
           blocked: Ditt konto kan inte göra några bokningar.
           missing: lagras inte i din kundprofil. Kontakta oss för att åtgärda detta.
           no_values_present: Du måste ange namn, telefonnummer eller e-post.
+          prevent_new_signups: bokning är endast tillgänglig för befintliga kunder
         resource:
           has_bookings: Den här kalendern har aktiva bokningar och kan inte raderas. Vänligen kontakta kundtjänst.
         service:
           attributes:
             below_minimum: måste vara mer än 1 USD om du vill kräva betalning
             payment_price_required: måste ställas in om du vill kräva betalning
+            price:
+              below_minimum: måste vara högre än 3 NOK om du behöver förskottsbetalning.
+              payment_price_required: måste ställas in om du kommer att kräva förskottsbetalning
         user:
           attributes:
             password:
@@ -156,6 +193,7 @@ sv:
     models:
       booking: bokning
       category: kategori
+      coupon: rabattkod
       event: händelse
       external_credential: integration
       message_template: meddelande mall
@@ -164,6 +202,7 @@ sv:
       service: tjänst
       service_appointment: tjänst
       service_attendance: typ av händelse
+      tag: märka
       user: användare
       web_hook: webhook
   csv:
@@ -179,8 +218,15 @@ sv:
       short_with_name: "%a %-d. %b"
       short_with_name_and_year: "%a %-d. %b %Y"
     moment_format: DD.MM.YYYY
+  datetime:
+    distance_in_words:
+      x_hours:
+        one: 1 timme
+        other: "%{count} timmar"
   errors:
     messages:
+      date_format: 'Ange datumet i följande format: %{format}'
+      date_of_birth: Födelsedatum inte inom den godkända perioden.
       no_values_present: Namn, telefonnummer eller e-postadress krävs.
       not_authenticated: Du har loggats ut.
       not_found: Ingen information hittad. Försök ladda sidan igen. Kontakta kundtjänst om problemet kvarstår.
@@ -196,22 +242,28 @@ sv:
           no_identifier: E-post eller telefonnummer saknas.
     stripe:
       booking:
+        already_refunded: Redan återbetalt.
         invalid: Bokningen har upphört att gälla eller är ogiltig. Transaktionen slutfördes inte.
         paid: Bokningen har redan betalats. Försök att uppdatera sidan.
       card:
         missing: Det gick inte att hitta kortinformation
+      payment_intent_unexpected_state: Det gick inte att bekräfta betalningen. Försök igen.
       processor: 'Felmeddelande från vår betalningspartner: %{error}'
       unknown: Det gick inte att slutföra transaktionen. Okänt fel.
   generic:
+    account_default: Standardkontoinställning
     all: alla
     at: hos
     born_abbreviation: f. %{date_of_birth}
+    country_locale: oBS!
     default: Systemstandard
+    'false': Inte aktiverad
     optional: valfritt
     search: Sök
     to: till
     today: idag
     tomorrow: imorgon
+    'true': Aktiverad
   helpers:
     booking:
       action:
@@ -227,23 +279,35 @@ sv:
         confirmed: Bekräftad
         declined: avvisade
         deleted: Tog bort
+        verification_expired: Verifieringen har upphört att gälla
+    booking_state_transitions:
+      events:
+        modified: Ändrad
+    boolean:
+      'false': Inga
+      'true': Ja
     datepicker:
       next_month: Nästa månad
       prev_month: Förra månaden
     label:
       booking:
         all_day: Hela dagen
+        booked_by_person_id: Reserverad av
         booked_from: Startdatum
         booked_to: Slutdatum
         count: Antal
+        coupon_code: Rabattkod
         external_id: Externt ID
         invoiced_at: Faktureras
         notes: Anteckningar
         paid_at: Betalat
         person_id: Kund
+        reminded_at: Påminnelse skickad
         reminder_at: Påminnelse
         resource_id: Resurs
         service_id: Tjänst
+        state: Status
+        status: Status
         terms_accepted: Jag godkänner villkoren
         title: Titel
         verification_code: Verifikationskod
@@ -271,11 +335,14 @@ sv:
         billing_street: Gata
         billing_vat_no: Momsregistreringsnummer
         booking_form: Anpassat bokningsformulär
+        booking_site_locale: Språk (Styrer även formatering av siffror och data)
+        calendar_event_text: Visa text för bokning i kalendern
         cancellation_period: Avbokningsfrist
         category_form: Anpassade kategorifält
         closed_for_holidays: Stängt på helgdagar
         confirm_manually: Bokningar måste godkännas av en administratör
         country_code: Land
+        coupon_form: Anpassade kupongfält
         css_url: URL till CSS (måste vara HTTPS)
         currency: Valuta
         email: E-postadress
@@ -285,6 +352,8 @@ sv:
         footer: Sidfot
         future_bookable_period: Tillåt inga bokningar efter
         google_analytics: Google Analytics tracking ID
+        ical_description: Beskrivning
+        ical_summary: Titel
         interval_rounding: Standardavrundning till nästa lediga bokningstillfälle
         locale: Språk (Definierar även nummer och datumformat)
         logo: Logga
@@ -294,12 +363,16 @@ sv:
         mail_confirmation_subject: Ämne i bekräftelsemail
         mail_modification: Text i e-post som skickas vid ändring
         mail_modification_subject: Ämne i e-post som skickas vid ändring
+        mail_notification_cancellation: Text i e-postmeddelande som skickas som avisering vid avbokning
+        mail_notification_confirmation: Text i e-postmeddelande som skickas som ett meddelande vid bekräftelse
+        mail_notification_modification: Text i e-postmeddelande som skickas som ett meddelande när en ändring sker
         mail_notification_recipient: E-postadresser för aviseringar
         mail_verification: Text i verifikationsmail
         mail_verification_subject: Ämne i verifikationsmail
         mailer_sender: E-post avsändare
         name: Företagsnamn (visas på bokningssidan)
         new_booking_text: Text som visas på bekräftelsesidan
+        no_availability_text: Text som visas när det inte finns några tillgängliga tider
         payment_provider: Betalningsleverantör (För förskottsbetalning av bokningar)
         person_form: Anpassade kundfält
         phone_number: Telefonnummer för SMS-avisering
@@ -315,6 +388,7 @@ sv:
           time_day_available: Dag
           week_available: Hela veckan
           weekday_available: Veckodagar
+        slot_generation: Tidsgenerering
         sms_cancellation: Text i SMS som skickas vid avbokning
         sms_confirmation: Text i SMS som skickas vid bekräftelse
         sms_modification: Text i SMS som skickas vid ändring
@@ -325,18 +399,42 @@ sv:
         sms_verification: Text i SMS som skickas vid verifikation
         subdomain: URL-adress (subdomän)
         template: Designtema
+        templates:
+          amsterdam: amsterdam
+          lviv: Lviv (beta)
+          timisoara: Timişoara (beta)
         terms: Villkor
         time_zone: Tidszon
         verification_method: Bekräftelsemetod för nya bokningar
+      client/slot_generation:
+        dynamic: Dynamisk
+        fixed: Fast
       client_user_link:
         role: Åtkomstnivå
       client_user_link/role:
         admin: Full tillgång
         manager: Grundläggande inställning
         staff: Endast kalender
+      coupon:
+        active: Aktiv
+        allowed_booking_end_at: Senaste starttid för bokning
+        allowed_booking_start_at: Tidigast möjliga starttid för bokning
+        availability: Tillgängliga kuponger
+        code: Koda
+        max_count: Maximalt antal personer
+        max_order_amount: Maximalt belopp
+        min_count: Minsta antal personer
+        min_order_amount: Minimibelopp
+        title: Titel
+        valid_from: Giltig från
+        valid_until: Giltig till
+        value: Rabattvärde
+        value_type: Rabatttyp
       event:
         all_day: Hela dagen
+        allow_invoice: Kan betalas via faktura
         booking_capacity: Max antal deltagare per bokning
+        booking_minimum: Minsta antal deltagare per bokning
         capacity: Max antal deltagare
         description: Beskrivning
         ends_at: Slutar
@@ -365,14 +463,18 @@ sv:
         reminder: Påminnelse
       person:
         address: Adress
+        blocked: Blockerad för bokningar
         city: Stad
         country_code: Land
         created_at: Registrerad
         date_of_birth: Födelsedatum
+        deactivated: Funktionshindrad
         email: E-post
+        locale: Språk
         name: Namn
         national_id_no: Personnummer
         notes: Anteckningar
+        opt_in_marketing: Få information från oss
         phonenumber: Mobilnummer
         postal_code: Postnummer
         provider: Associerat med externt konto
@@ -385,9 +487,15 @@ sv:
         sms_notification_recipient: Telefonnummer för avisering
         title: Titel
       service:
+        active_bookings_limit: Maximalt antal aktiva bokningar för kunden
+        allow_invoice: Kan betalas via faktura
+        availability_type: Tillgänglighet definieras av
+        block_resource: Reservationen blockerar resursen
         booking_capacity: Max antal personer per bokning
         booking_form: Anpassat bokningsformulär
+        booking_minimum: Minsta antal personer per bokning
         capacity: Maximalt antal deltagare
+        confirm_manually: Bokningen måste godkännas av administratören.
         description: Beskrivning
         has_day_booking: Tidstyp
         has_day_booking_label:
@@ -400,11 +508,15 @@ sv:
         mail_modification: Text i e-post som skickas vid ändring
         mail_verification: Text i verifikationsmail
         max_slots: Max antal tidsluckor per bokning
+        new_booking_text: Text som visas på bekräftelsesidan
         next_interval: Fritid vardera
         payment_required: Kräv betalning (vänligen ställ in betalningsleverantör)
         price: Pris
+        priority_strategy: Prioriteringsstrategi
         published: Synlig på bokningssidan
+        reservation_form_text: Text som visas före bokningsformuläret
         same_day: Tillåt bokningar över flera dagar
+        slot_generation: Tidsgenerering
         sms_cancellation: Text i SMS som skickas vid avbokning
         sms_confirmation: Text i SMS som skickas vid bekräftelse
         sms_modification: Text i SMS som skickas vid ändring
@@ -413,10 +525,20 @@ sv:
         template: Kalendermall
         templates:
           default: Standard
+          list: Lista
+          month: Månad
           time_day_available: Dag
           week_available: Hela veckan
           weekday_available: Veckodagar
+        terms: Villkor
         title: Titel
+      service/availability_type:
+        provider: Erbjudanden
+        resource: Resurs
+      service/priority_strategy:
+        order: Beställa
+        random: Slumpmässig
+        weight: Viktad
       user:
         current_password: Nuvarande lösenord
         email: E-post
@@ -437,6 +559,8 @@ sv:
       category:
         new: Ny kategori
       confirm: Är du säker?
+      coupon:
+        new: Ny rabattkod
       create: Skapa
       delete: Radera
       delete_confirm: Är du säker på att du vill radera?
@@ -444,8 +568,11 @@ sv:
       event:
         new: Ny händelse
         new_attendant: Lägg till deltagare
+      message_template:
+        new: Ny meddelandemall
       person:
         new: Ny kund
+        new_child: Ny kund
       resource:
         new: Ny resurs
       service:
@@ -454,6 +581,8 @@ sv:
       setup:
         skip: Manuell inställning
         step_html: "<strong>Steg %{step}</strong> av %{max_steps}"
+      undelete: Återställa
+      undelete_confirm: Är du säker på att du vill återställa?
       user:
         new: Ny användare
       view: Vis
@@ -468,11 +597,14 @@ sv:
       reports: Rapporter
       setup: Inställning
     menu_setup:
+      addons: Tillägg
       billing: Betalning
       bookingsite: Bokningssida
       categories: Kategorier
       communication: Kommunikation
       company: Konto
+      coupons: Rabattkoder
+      developer: Framkallare
       export: Export
       fields: Anpassade fält
       import: Import

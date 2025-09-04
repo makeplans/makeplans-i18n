@@ -22,11 +22,63 @@ sv:
       booking_type_attendance:
         subject_resource: Ny bokning för %{title}
       link: För att visa bokningen, gå till
+    notification_modification:
+      appointment:
+        body: "%{name} har ändrat %{title} %{time_range}."
+      attendance:
+        body: "%{name} har ändrat registrering %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Ändrad reservation för %{resource}
+      booking_type_attendance:
+        subject_resource: Ändrad registrering för %{title}
+      link: För att se denna reservation, gå till
+    notification_resource_change:
+      appointment:
+        body: "%{name} har ändrat %{title} %{time_range}."
+      attendance:
+        body: "%{name} har ändrat registrering %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Ändrad resurs för %{resource}
+      booking_type_attendance:
+        subject_resource: Ändrad resurs för %{title}
+      link: För att se denna reservation, gå till
     request_approvement:
       body: "%{name} vill boka %{title} %{time_range}."
       link: För att godkänna eller avvisa den här bokningen, gå till
       subject_resource: Ny begäran om %{resource}
   client_mailer:
+    activated:
+      body: |-
+        Hej,
+
+        Du har nu aktiverat ditt MakePlans-konto.
+        Våra priser hittar du här: https://makeplans.com/no/priser/
+
+        Ditt konto: %{subdomain}
+
+        För våra villkor, se https://terms.makeplans.com
+
+        Tack för att du använder MakePlans :D
+
+        Om du har några frågor är det bara att svara på det här e-postmeddelandet.
+      subject: Ditt konto har aktiverats.
+    api_enabled:
+      body: |-
+        Hej,
+
+        Jag ser att du har aktiverat API:et på ditt MakePlans-konto %{subdomain}. Grymt!
+
+        Om du vet vad du gör kan du bara ignorera det här mejlet.
+
+        Men om du inte är bekant med MakePlans API kan du gärna kolla in dokumentationen på https://developer.makeplans.com.
+        Där hittar du information om autentisering, alla slutpunkter, webhooks och exempel.
+        Har du några frågor? Kontakta oss bara, vi hjälper dig gärna.
+
+        Om du experimenterar kan det vara en bra idé att skapa ett API-utvecklingskonto i vår testmiljö. Det finns vissa begränsningar där, men i allmänhet är det att föredra att utveckla i en separat miljö och ett separat konto än ditt faktiska konto.
+        Du hittar en länk till testmiljön i API-dokumentationen.
+
+        Lycka till med din kodning!
+      subject: API aktiverat på ditt MakePlans-konto
     charge_failed:
       body: |-
         Hej,
@@ -95,6 +147,18 @@ sv:
 
         Oavsett; ha en bra dag framåt och tack för att du testat MakePlans.
       subject: Inaktiverat MakePlans-konto
+    inactive_warning:
+      body: |-
+        Hej,
+
+        Eftersom din provperiod har löpt ut och det inte har förekommit någon aktivitet på ditt konto sedan %{latest_booking_change_at} kommer vi att inaktivera ditt konto om 30 dagar.
+
+        För att behålla ditt konto, vänligen logga in på %{url}.
+
+        Om inga åtgärder vidtas kommer vi att inaktivera ditt konto om en månad. Därefter kommer ditt konto och all din data att raderas om fyra månader.
+
+        Tack för att du provade MakePlans :)
+      subject: 'KRITISK: MakePlans-kontot kommer att inaktiveras'
     no_bookings:
       body: |-
         Hej,

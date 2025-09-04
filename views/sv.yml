@@ -9,6 +9,7 @@ sv:
       free_trial_info: 14 dagars gratis testperiod. Inga skyldigheter. Inget kreditkort behövs.
       headline: Kom igång med onlinebokning
       logged_in_as: Du är inloggad som %{name}.
+      newsletter: Jag godkänner att få produktuppdateringar via e-post.
       read_legal: Regler och villkor för användning av denna tjänst
       recaptcha: Vi måste verifiera din registrering hos Google Recaptcha. Ange ditt lösenord igen och tryck på registerknappen igen.
       subdomain_info: Din unika adress (URL) där dina kunder kan göra onlinebokningar.
@@ -50,6 +51,7 @@ sv:
       login: Logga in
       remember_me: Kom ihåg mig
       signup_html: Inget konto? <a href="%{url}">Kom igång nu.</a>
+      title: Logga in
     rotp_verification_code:
       header: Logga in med tvåfaktorsautentisering
       info: Använd koden som genereras av din 2FA-applikation.

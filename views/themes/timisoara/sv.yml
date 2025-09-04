@@ -1,0 +1,121 @@
+---
+sv:
+  timisoara:
+    bookings:
+      authenticate:
+        info: Vi behöver mer information för att verifiera din bokning.
+        submit: Skicka kod
+        title: SMS-verifiering
+      awaiting_confirmation:
+        body: Du har gjort en reservation för tjänsten. Du måste vänta tills en administratör godkänner din reservation.
+      cancelled:
+        info: Reservationen för %{title} %{time} avbröts.
+        title: Din bokning har avbokats.
+        update_calendar: Uppdatera min kalender
+      new:
+        accept: Jag godkänner
+        submit: Beställa
+        terms: villkoren för reservationen
+        title: Reservation av %{service}
+      new_person:
+        email_address: E-postadress
+        phone_number: Mobilnummer
+        submit: Bekräfta bokningen
+        title: Kontoinformation
+      payment_stripe:
+        title: Betalning
+      pre_payment:
+        info: För att boka %{service} %{booking} måste du betala i förskott.
+        submit: För betalning
+        title: Betalning
+      show:
+        add_to_calendar: Lägg till i kalendern
+        all: Se mina andra bokningar
+        cancel: Avboka
+        cancel_confirmation: Är du säker på att du vill avboka den här bokningen?
+        info: Reservationen av %{title} %{time} har bekräftats.
+        new_reservation: Skapa en ny reservation
+        reschedule: Ändra tid
+        title: Din bokning har bekräftats.
+      verification_method_email:
+        info: Du måste verifiera din e-postadress för att slutföra bokningen.
+        submit: Fortsätta
+        title: Verifiera din e-postadress.
+      verification_method_sms:
+        info: Du måste verifiera ditt telefonnummer för att slutföra bokningen.
+        submit: Fortsätta
+        title: Verifiera ditt telefonnummer
+    categories:
+      index:
+        all_categories: Alla kategorier
+        select_category: Välj kategori
+    events:
+      index:
+        all_events: Alla evenemang
+        continue: Fortsätta
+    generic:
+      alt:
+        time: Tid
+    layouts:
+      application:
+        alt:
+          footer_logo: Sidfotslogotyp
+        booking_site_footer: Bokningssida för %{name}
+        login: Inloggning
+        made_by_tagline: Användarvänligt system för bokning av tider och registrering.
+        made_by_title: Tidsbokning och registreringar
+        privacy: Integritetspolicy
+        profile: Profil
+        support: Kundservice
+        title: Tidsbokning för %{name}
+    person_sessions:
+      enter_perishable_token:
+        info_html: Vi har skickat en kod till <b>%{recipient}</b> . Ange koden för att slutföra verifieringen.
+        perishable_token: Koda
+        submit: Fortsätta
+        title: Kontroll
+      perishable_token_form:
+        alt:
+          checkbox: Kryssruta
+        submit: Skicka kod
+        terms_conditions: Villkor
+        title: Inloggning
+    profile:
+      index:
+        alt:
+          calendar: Kalender
+        awaiting_approval: Väntar på godkännande
+        cancel: Avboka
+        tabs:
+          all: Alla
+          cancelled: Avbruten
+          completed: Utförde
+          upcoming: Framtida
+        title: Mina reservationer
+      new:
+        errors_header: 'Ett fel uppstod:'
+        header: Dina kontaktuppgifter
+    providers:
+      index:
+        all_services: Alla tjänster
+        title: Välj leverantör
+    services:
+      available_dates:
+        select_date: Tillgängliga datum
+      count:
+        select_count: Välj antal
+      index:
+        all_categories: Alla kategorier
+        all_services: Alla tjänster
+        continue: Boka denna tjänst
+      show:
+        all_services: Alla tjänster
+        continue: Boka denna tjänst
+      time_day:
+        all_services: Alla tjänster
+        availability: Tillgänglighet
+        available_dates: Tillgängliga datum
+        available_slots: Tillgängliga tider
+        continue: Fortsätta
+        next_available_date_html: Nästa tillgängliga datum är %{next_available_date}
+        no_availability: Inga tillgängliga tider

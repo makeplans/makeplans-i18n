@@ -1,0 +1,14 @@
+---
+sv:
+  shared:
+    generic:
+      close: nära
+    services:
+      count:
+        title: Hur många personer?
+      slots:
+        free_capacity:
+          one: "%{count} tillgängliga"
+          other: "%{count} tillgängliga"
+      time_day:
+        time_zone_differ_info: Alla tider är i tidszon %{time_zone}.
