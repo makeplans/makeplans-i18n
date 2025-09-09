@@ -12,6 +12,7 @@ nb:
         notes: notat
         person: kunde
         person_id: kunde
+        reminder_at: påminnelse
         resource: ressurs
         resource_id: ressurs
         service: tjeneste

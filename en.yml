@@ -12,6 +12,7 @@ en:
         notes: notes
         person: customer
         person_id: customer
+        reminder_at: reminder at
         resource: resource
         resource_id: resource
         service: service
