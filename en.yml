@@ -9,6 +9,7 @@ en:
         count: count
         coupon_code: coupon code
         event_id: event
+        external_id: external ID
         notes: notes
         person: customer
         person_id: customer

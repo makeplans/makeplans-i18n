@@ -9,6 +9,7 @@ nb:
         count: antall
         coupon_code: rabattkode
         event_id: arrangement
+        external_id: ekstern ID
         notes: notat
         person: kunde
         person_id: kunde
