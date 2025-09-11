@@ -983,6 +983,7 @@ nb:
         show_on_booking_site: Åpne bookingsiden for denne tjenesten
       slots:
         available: 'Ledige tidspunkt:'
+        next_available: 'Neste ledige dato:'
         none_available: Ingen ledige tidspunkt.
       update_priority:
         priority_updated: Prioritetsinnstillinger har blitt oppdatert.

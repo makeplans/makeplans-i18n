@@ -983,6 +983,7 @@ en:
         show_on_booking_site: Open service on booking site
       slots:
         available: 'Available slots:'
+        next_available: 'Next available date:'
         none_available: No available slots.
       update_priority:
         priority_updated: Priority settings have been updated successfully.
