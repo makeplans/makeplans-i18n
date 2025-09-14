@@ -210,6 +210,7 @@ en:
         messages: Messages
         paid_with:
           braintree: Paid with Braintree
+          frontgo: Paid with FrontGO
           stripe: Paid with Stripe
           vipps: Vipps
         performed_by: by %{name}
@@ -220,6 +221,7 @@ en:
         recurring_member: This reservation is part of a recurruring pattern.
         refund: Refund paid amount
         refunded_with:
+          frontgo: Refunded with FrontGO
           stripe: Refunded with Stripe
           vipps: Refunded with Vipps
         request_card:

@@ -210,6 +210,7 @@ nb:
         messages: Meldinger
         paid_with:
           braintree: Betalt med Braintree
+          frontgo: Betalt med FrontGO
           stripe: Betalt med Stripe
           vipps: Vipps
         performed_by: av %{name}
@@ -220,6 +221,7 @@ nb:
         recurring_member: Denne reservasjonen er del av et gjentagende mønster.
         refund: Refunder betalt beløp
         refunded_with:
+          stripe: Refundert med FrontGO
           stripe: Refundert med Stripe
           vipps: Refundert med Vipps
         request_card:
