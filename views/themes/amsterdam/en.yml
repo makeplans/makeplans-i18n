@@ -78,6 +78,7 @@ en:
         providers:
           braintree: Credit/debit card
           fiken: Invoice
+          frontgo: Front Go
           stripe: Credit/debit card, Google Pay or Apple Pay
           tfso: Invoice
           vipps: Vipps
