@@ -218,7 +218,7 @@ en:
           address: Address
           email: Email
           phone_number: Phone number
-        recurring_member: This reservation is part of a recurruring pattern.
+        recurring_member: This reservation is part of a recurring pattern.
         refund: Refund paid amount
         refunded_with:
           frontgo: Refunded with FrontGO
@@ -626,7 +626,7 @@ en:
         activate_settings_3: Activate settings for Extensor Online Booking version 3
         activate_settings_4: Enable settings for Extensor Online Booking version 4
         info: To activate syncronization with Extensor you must install Extensor Online Booking. Click the link below to start the process. You will be contacted by Extensor.
-        reactive_settings: Reactivate settings fro Extensor Online Booking.
+        reactive_settings: Reactivate settings for Extensor Online Booking.
         version: MakePlans is configured to work with version %{version} of Extensor Online Booking.
       fakturo:
         password: Password
@@ -655,7 +655,7 @@ en:
         header: Integrations
         web_hooks: Webhooks
       izettle:
-        active: Aktice
+        active: Active
         info: To use iZettle please define a price on the service you provide. It will then be possible to click "make payment with iZettle" on a reservation.
       mailchimp:
         account: List ID
@@ -904,7 +904,7 @@ en:
         days: days
         interval_rounding:
           default: Default account setting
-          five: Closets five minutes
+          five: Closest five minutes
           halfhour: Closest half hour
           hour: Closest hour
           none: No rounding (not recommended)
@@ -998,7 +998,7 @@ en:
         submit: Continue
       attendance_services:
         add: Add another
-        footer_html: "<strong>Attandenace</strong> at events, coures and classes. Occurs at a specific time such as September 14 from 3PM to 7PM or evey Tuesday at 7.30PM. The date and time will be specified later."
+        footer_html: "<strong>Attendance</strong> at events, coures and classes. Occurs at a specific time such as September 14 from 3PM to 7PM or evey Tuesday at 7.30PM. The date and time will be specified later."
         header_html: Great, let's get started!<br>First lets add services for attendance.
         submit: Continue
       completed:
@@ -1092,5 +1092,5 @@ en:
         remove_access_confirm: Are you sure you want to remove access to this account for this user?
     web_hooks:
       index:
-        app_secret_info_html: App secret for veryifing webhooks. See <a href="https://developer.makeplans.com" target="_blank" class="link-external">documentation</a> for details.
+        app_secret_info_html: App secret for verifying webhooks. See <a href="https://developer.makeplans.com" target="_blank" class="link-external">documentation</a> for details.
         header: Webhooks

@@ -332,7 +332,7 @@ nb:
         billing_country_code: Land
         billing_email: Epost-adresse for faktura
         billing_id: ID i fakturasystem
-        billing_invoice: Send vanlig faktura istedenfor kredittkortbetalingt
+        billing_invoice: Send vanlig faktura istedenfor kredittkortbetaling
         billing_name: Firmanavn
         billing_order_ref: Din fakturareferanse
         billing_payment_id: ID hos betalingsaktør
@@ -417,7 +417,7 @@ nb:
       client_user_link/role:
         admin: Full tilgang
         manager: Enkelt oppsett
-        staff: Kun kalendar
+        staff: Kun kalender
       coupon:
         active: Aktiv
         allowed_booking_end_at: Seneste starttidspunkt for reservasjon

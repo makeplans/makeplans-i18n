@@ -133,7 +133,7 @@ en:
         chronic_syntax_error: syntax error please see https://github.com/mojombo/chronic#examples
         denied: Your request was denied
         icalendar_invalid: No occurrences or invalid iCalendar pattern
-        icalendar_over_limit: Too many occurences. Max is 731.
+        icalendar_over_limit: Too many occurrences. Max is 731.
         illegal: illegal
         invalid: is invalid
         phone_invalid: is not a valid phone number
@@ -151,7 +151,7 @@ en:
               blocked: blocked for booking
               taken: already signed up for this event
             resource_id:
-              no_availability: not avaiable at requested time
+              no_availability: not available at requested time
             service_id:
               attendance_only: is only for signups
               not_offered: not offered by chosen resource

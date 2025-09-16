@@ -221,7 +221,7 @@ nb:
         recurring_member: Denne reservasjonen er del av et gjentagende mønster.
         refund: Refunder betalt beløp
         refunded_with:
-          stripe: Refundert med FrontGO
+          frontgo: Refundert med FrontGO
           stripe: Refundert med Stripe
           vipps: Refundert med Vipps
         request_card:
