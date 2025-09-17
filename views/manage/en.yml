@@ -1046,7 +1046,7 @@ en:
           '8': Every eight
         interval_label: Frequency
         length:
-          count: Occurences
+          count: Occurrences
           until: Before date
         length_label: Until
     sms:
