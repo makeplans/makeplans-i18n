@@ -131,6 +131,7 @@ en:
         headline_new: Add new reservation
         headline_update: Modify reservation
         ignore_capacity: Save even if occupied
+        internal_notes_info: Only visible to staff
         modification_send_email: Send email modification
         modification_send_sms: Send SMS modification
         no_customer: |-
@@ -164,6 +165,7 @@ en:
         headline_edit: Modify reservation
         headline_new: Add attendant
         headline_update: Modify reservation
+        internal_notes_info: Only visible to staff
         modification_send_email: Send email modification
         modification_send_sms: Send SMS modification
         notification_send_email: Send email notification

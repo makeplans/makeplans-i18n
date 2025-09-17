@@ -131,6 +131,7 @@ nb:
         headline_new: Opprett ny reservasjon
         headline_update: Endre reservasjon
         ignore_capacity: Lagre selv om opptatt
+        internal_notes_info: Kun synlig for ansatte
         modification_send_email: Send endring på epost
         modification_send_sms: Send endring på SMS
         no_customer: |-
@@ -164,6 +165,7 @@ nb:
         headline_edit: Endre reservasjon
         headline_new: Legg til ny deltager
         headline_update: Endre reservasjon
+        internal_notes_info: Kun synlig for ansatte
         modification_send_email: Send endring på epost
         modification_send_sms: Send endring på SMS
         notification_send_email: Send varsel på epost

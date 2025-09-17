@@ -10,6 +10,7 @@ nb:
         coupon_code: rabattkode
         event_id: arrangement
         external_id: ekstern ID
+        internal_notes: internt notat
         notes: notat
         person: kunde
         person_id: kunde
@@ -305,6 +306,7 @@ nb:
         count: Antall personer
         coupon_code: Rabattkode
         external_id: Ekstern ID
+        internal_notes: Internt notat
         invoiced_at: Fakturert
         notes: Notat
         paid_at: Betalt

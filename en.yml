@@ -10,6 +10,7 @@ en:
         coupon_code: coupon code
         event_id: event
         external_id: external ID
+        internal_notes: Internal notes
         notes: notes
         person: customer
         person_id: customer
@@ -304,6 +305,7 @@ en:
         count: Number of people
         coupon_code: Coupon code
         external_id: External ID
+        internal_notes: Internal notes
         invoiced_at: Invoiced
         notes: Notes
         paid_at: Paid
