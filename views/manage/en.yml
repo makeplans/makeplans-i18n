@@ -572,6 +572,7 @@ en:
           one: one reservation
           other: 'reservations: <strong>%{count}</strong>'
           zero: no reservations
+        check_in: Check in
         copy: Clone this event
         download_attendance_csv: Export attendance list as CSV
         email_confirm: Attendance list will be emailed to you. Do you want to continue?
