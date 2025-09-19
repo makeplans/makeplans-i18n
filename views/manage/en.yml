@@ -113,14 +113,14 @@ en:
             activated: Access to appointments in your account with iCalendar is activated. The links to the iCalendar-feeds are available. Do not share the links.
             disable: Deactivate account iCalendar-feeds
             enable: Activate account iCalendar-feeds
-            future_html: 'Future bookings: %{link}'
+            future_html: 'Future reservations: %{link}'
             info: An iCalendar-feed will show appointments from your account in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in MakePlans.
             not_activated: Not activated
-            past_html: 'Past bookings: %{link}'
+            past_html: 'Past reservations: %{link}'
       fiken:
         delayed_info: It will take some time before the order is created in Fiken. Do not try to generate the order again if no information from Fiken is visible in MakePlans.
         header: Contating Fiken...
-        to_booking: Show booking
+        to_booking: Show reservation
       form_appointment:
         add_reminder_sms: Send SMS reminder
         confirmation_send_email: Send email confirmation
@@ -179,7 +179,7 @@ en:
         send_reminder: 'Reminder:'
         sms: SMS
       izettle:
-        close_info: Close this window to go back to the booking.
+        close_info: Close this window to go back to the reservation.
         error: 'Error from iZettle: %{error}'
         result_header: iZettle
         success: Payment registered.
@@ -274,13 +274,13 @@ en:
           phone_number: Phone number
       widget_list:
         busy: Busy
-        no_bookings: No existing reservation on %{start}.
+        no_bookings: No existing reservations on %{start}.
         no_bookings_range: No existing reservations from %{start} to %{end}.
     categories:
       blank:
-        get_started: Currently you have not created any categories. All services are therefore in a list on the bookingsite. If you want to categorise your services start by creating a category.
+        get_started: Currently you have not created any categories. All services are therefore in a list on the booking site. If you want to categorise your services start by creating a category.
         header: Categories
-        info: If you are offering many services it is possible to categorise them in multiple levels. Categories will be shown on the bookingsite so the customer must choose a category before the services within chosen category are shown. It is possible to show a service in multiple categories.
+        info: If you are offering many services it is possible to categorise them in multiple levels. Categories will be shown on the booking site so the customer must choose a category before the services within chosen category are shown. It is possible to show a service in multiple categories.
         no_categories: No categories added
       form:
         has_services: Shows these services
@@ -322,10 +322,10 @@ en:
       change_time_zone:
         edit:
           header: Change time zone
-          info: 'NOTE: This function will update times for all bookings and messages based on the new time zone. Use at your own risk.'
+          info: 'NOTE: This function will update times for all reservations and messages based on the new time zone. Use at your own risk.'
         in_process:
           header: Time zone change in progress
-          info: All bookings and messages will be updated shortly. Do *not* run this function again.
+          info: All reservations and messages will be updated shortly. Do *not* run this function again.
       configuration:
         header: MakePlans setup
         intro: This is where you can configure MakePlans and how it should work for you. You can add services and categories that you offer on the booking site, adjust availability, change the outgoing messages (SMS and email), add more users and adjust many other settings in MakePlans.
@@ -376,11 +376,11 @@ en:
           twenty: Closest 20 minute mark
         remove_logo: Remove logo
         settings:
-          active_bookings_limit: Max nr of active bookings for customer
+          active_bookings_limit: Max nr of active reservations for customer
           disable_person_cookie: Do not allow customer to stay logged in with cookie
           google_tag_manager: Google Tag Manager container ID
           plausible: Enable Plausible Analytics
-          prevent_new_signups: Only allow booking from existing customers
+          prevent_new_signups: Only allow reservations from existing customers
         verification_methods:
           email: Email
           facebook: Also allow verification with Facebook Connect.
@@ -685,7 +685,7 @@ en:
       sendy:
         connect_info_html: New customers will be subscribed to list with id <em>%{list_id}</em> on installation %{api_url}
       slack:
-        connect_info: For every new booking in MakePlans it will be published as a message in the %{channel} Slack channel.
+        connect_info: For every new reservation in MakePlans it will be published as a message in the %{channel} Slack channel.
       stripe:
         disable_customer_saving: Do not save customer to Stripe
         payment_info: For all transactions a platform fee of %{application_fee_percent}% is deducted by MakePlans.
@@ -721,7 +721,7 @@ en:
         active: Active
         connect_info: Connected to %{name}
         connected_payment_id: 'Payment terms: %{name}'
-        customer_attributes_info: 'Please note: Visma eAccounting requires postal code and city to register a new customer. If these values are not present it is not possible to generate a order from a booking.'
+        customer_attributes_info: 'Please note: Visma eAccounting requires postal code and city to register a new customer. If these values are not present it is not possible to generate a order from a reservation.'
         select_terms_of_payment: 'Please choose standard payment terms for new customers:'
         service_linked: Connected to a product in Visma eAccounting
         service_links: Every service in MakePlans must be connected to a product in Visma eAccount to enable invoicing. Please note that price is retrieved from Visma eAccounting - not MakePlans. You must ensure that price is identical in both systems.
@@ -738,7 +738,7 @@ en:
         session_type: Zoom session type for events
     message_templates:
       form:
-        delivery_timing_info: 'Write in plain English. Example.: ''two hours before'' (message is sent two hours before) or ''08:00 tomorrow'' (at 8AM the day after). Delivery timing is relative based on the the message type: confirmation - booking created_at, reminder - booking booked_from, follow_up - booking booked_to.'
+        delivery_timing_info: 'Write in plain English. Example.: ''two hours before'' (message is sent two hours before) or ''08:00 tomorrow'' (at 8AM the day after). Delivery timing is relative based on the the message type: confirmation - reservation created_at, reminder - reservation booked_from, follow_up - reservation booked_to.'
         immediately: immediately
         services: Services
         services_info: 'The message template will be sent for all services unless you restrict to specific services below:'
@@ -752,9 +752,9 @@ en:
     people:
       children:
         index:
-          headline: "%{parent} can make bookings for:"
+          headline: "%{parent} can make reservations for:"
       form:
-        block: Block customer for booking
+        block: Block customer on booking site
         booking_site_locale_default: Use default for the booking site
         managed_by: This customer will be managed by %{parent}.
         merge_action: Merge these two customers
@@ -764,7 +764,7 @@ en:
         merge_action_phone_number: This phone number is already stored on another customer. Do you want to merge these two customers to %{phone_number} will be used as the phone number?
         merge_button: Merge and save
         merge_info: 'Instead use: '
-        unblock: Remove booking block
+        unblock: Remove block on booking site
       index:
         delete_warning: Are you sure you want to delete %{person}?
         filter: Filtering
@@ -773,16 +773,16 @@ en:
       show:
         add_child: Add connected customer
         bookings_for: Reservations for %{name}
-        can_book_for: Can make bookings for others.
+        can_book_for: Can make reservations for others.
         card_saved_with:
           stripe: Payment card saved with Stripe
         change_tfso_customer: Change 24SevenOffice customer ID.
         export: Email export of data to customer
         export_executed: The export file has been sent to the customer.
         filter_bookings:
-          active: Show only active bookings
-          all: Show all bookings including deleted
-          visible: Show all visible bookings
+          active: Show only active reservations
+          all: Show all reservations including deleted
+          visible: Show all visible reservations
         no_reservations: Found no reservations
         parent_info: Managed by
         send_sms: Send SMS
@@ -881,10 +881,10 @@ en:
           activated_html: Access to this resource via iCalendar is enabled. Link to iCalendar feed is %{link}
           disable: Deactivate iCalendar-feed
           enable: Activate iCalendar-feed
-          future_html: 'Future bookings: %{link}'
+          future_html: 'Future reservations: %{link}'
           info: iCalendar-feed will show appointments from this resource in MakePlans in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in MakePlans.
           not_activated: Not activated
-          past_html: 'Past bookings: %{link}'
+          past_html: 'Past reservations: %{link}'
         icalfeed: 'iCalendar-feed:'
         offers: 'Offers the following services on the booking site:'
     services:
@@ -897,7 +897,7 @@ en:
         custom_form_info_html: You can specify a custom reservation form for this service. This form will override the default form defined under "Booking site". Documentation can be found at <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>, alternatively contact customer service for assistance.
         custom_form_show: Show custom reservation form
       custom_new_booking_text:
-        custom_new_booking_text_info_html: You can specify a custom text on the confirmation page for this service. This text will override the default custom new booking text defined under "Booking site". Documentation can be found at <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>, alternatively contact customer service for assistance.
+        custom_new_booking_text_info_html: You can specify a custom text on the confirmation page for this service. This text will override the default custom new reservation text defined under "Booking site". Documentation can be found at <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>, alternatively contact customer service for assistance.
         custom_new_booking_text_show: Show custom confirmation text
       custom_reservation_form_text:
         custom_reservation_form_text_info_html: You can specify a custom text that is displayed before the reservation form for this service. This text will override the default custom reservation form text defined under "Booking site". Documentation can be found at <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>, alternatively contact customer service for assistance.
@@ -1014,7 +1014,7 @@ en:
         info_html: Your booking site is now configured at %{href}. This is where your customers can book online. We have also sent you an email with this information. In addition to the booking site you can also manually enter appointments in your calendar.
         to_calendar: Take me to the calendar
       completed_attendance:
-        info_html: Your booking site will be available at %{href}. But first you need to add your first event that will be available for booking.
+        info_html: Your booking site will be available at %{href}. But first you need to add your first event that will be available for reservation.
         new_event: Ok, let's create my first event
       resources:
         add: Add another

@@ -179,7 +179,7 @@ nb:
         send_reminder: 'Påminnelse:'
         sms: SMS
       izettle:
-        close_info: Lukk dette vinduet for å tilbake til reserveringen.
+        close_info: Lukk dette vinduet for å tilbake til reservasjonen.
         error: 'Feil fra iZettle: %{error}'
         result_header: iZettle
         success: Betaling registrert.
@@ -721,7 +721,7 @@ nb:
         active: Aktiv
         connect_info: Koblet mot konto %{name}
         connected_payment_id: 'Betalingsbetingelse: %{name}'
-        customer_attributes_info: 'OBS: Visma eAccounting krever postnummer og poststed for at en kunde skal opprettes. Hvis ikke disse verdiene er fylt ut vil det ikke bli mulig å opprette faktura fra en booking.'
+        customer_attributes_info: 'OBS: Visma eAccounting krever postnummer og poststed for at en kunde skal opprettes. Hvis ikke disse verdiene er fylt ut vil det ikke bli mulig å opprette faktura fra en reservasjon.'
         select_terms_of_payment: 'Velg standard betalingsbetingelse for nye kunder:'
         service_linked: Koblet mot produkt i Visma eAccounting
         service_links: 'Hver tjeneste må kobles mot et produkt i Visma eAccounting for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra Visma eAccounting - ikke fra MakePlans. Du må selv passe på at pris i begge systemer er identiske.'
@@ -754,7 +754,7 @@ nb:
         index:
           headline: "%{parent} kan booke for disse personene:"
       form:
-        block: Blokker kunde for booking
+        block: Blokker kunde på bookingsiden
         booking_site_locale_default: Bruk standard språk på bookingsiden
         managed_by: Denne kunden vil administreres av %{parent}.
         merge_action: Kombiner disse to kundeprofilene
@@ -764,7 +764,7 @@ nb:
         merge_action_phone_number: Dette telefonnummeret er allerede lagret på en annen kunde. Vil du kombinere disse kundene slik at %{phone_number} blir det gjeldene telefonnummeret?
         merge_button: Kombiner og lagre
         merge_info: 'Bruk heller: '
-        unblock: Fjern blokkering av booking
+        unblock: Fjern blokkering på bookingsiden
       index:
         delete_warning: Er du sikker på at du vil slette %{person}?
         filter: Filtrering
