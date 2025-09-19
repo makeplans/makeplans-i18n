@@ -30,6 +30,9 @@ nb:
         awaiting_confirmation:
           one: "%{count} reservasjon venter på godkjenning."
           other: "%{count} reservasjoner venter på godkjenning."
+        awaiting_status:
+          one: "%{count} reservasjon mangler status."
+          other: "%{count} reservasjoner mangler status."
         busy: Opptatt
         do_filtering: Aktiver filtrering
         filter: Filtrering
@@ -258,6 +261,9 @@ nb:
       unconfirmed:
         headline: Liste over ubekreftede reservasjoner
         no_reservations: Fant ingen ubekreftede reservasjoner
+      no_status:
+        headline: Liste over reservasjoner uten status
+        no_reservations: Fant ingen reservasjoner uten status
       widget:
         booked_from: Fra
         booked_to: Til
@@ -449,6 +455,7 @@ nb:
         header: UX
         info: Dette er kun visuelle innstillinger.
         settings:
+          booking_requires_status: Vis link til reservasjoner uten status i agenda
           calendar_hide_weekends: Skjul helgedager
           calendar_prevent_slot_event_overlap: Unngå visuell overlapping av reservasjoner
           calendar_slot_duration: Varighet på slot (minutter)

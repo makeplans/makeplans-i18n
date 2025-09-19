@@ -30,6 +30,9 @@ en:
         awaiting_confirmation:
           one: "%{count} reservation for approval."
           other: "%{count} reservations for approval."
+        awaiting_status:
+          one: "%{count} reservation missing status."
+          other: "%{count} reservations missing status."
         busy: Busy
         do_filtering: Activate filter
         filter: Filtering
@@ -258,6 +261,9 @@ en:
       unconfirmed:
         headline: List of reservations for approval
         no_reservations: No reservations that requires approval
+      no_status:
+        headline: List of reservations without status
+        no_reservations: No reservations without status
       widget:
         booked_from: From
         booked_to: To
@@ -449,6 +455,7 @@ en:
         header: UX
         info: Visual settings
         settings:
+          booking_requires_status: Show link for reservations without status in agenda
           calendar_hide_weekends: Hide weekends
           calendar_prevent_slot_event_overlap: Prevent event overlap
           calendar_slot_duration: Slot duration
