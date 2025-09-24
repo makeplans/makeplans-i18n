@@ -952,6 +952,7 @@ en:
         days: days
         header: Services
         minutes: minutes
+        order_services: Order services
       integrations:
         external_info:
           fiken_create_order: Create orders in Fiken automatically
@@ -977,6 +978,9 @@ en:
           weights_invalid: "⚠ Weights sum to %{total}, should be 100"
           weights_valid: "✓ Weights sum to 100"
         weight: Weight
+      order:
+        description: Use drag and drop or the arrow buttons to reorder services. Services will appear in this order on your booking site.
+        header: Service Order
       show:
         availability: Availability pr provider
         custom_data: 'Custom data:'
