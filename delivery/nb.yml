@@ -108,7 +108,10 @@ nb:
         Bruk koden nedenfor til å verifisere:
 
         %{perishable_token}
-      subject: Login til MakePlans
+
+        Mvh %{client}
+        @%{domain} #%{perishable_token}
+      subject: Login til %{client}
   person_sms:
     perishable_token: "{{ perishable_token }} er din kode for innlogging."
     signature: |2-

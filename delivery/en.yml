@@ -108,7 +108,10 @@ en:
         Use the code below to complete your verification:
 
         %{perishable_token}
-      subject: Login for MakePlans
+
+        Sent by %{client}
+        @%{domain} #%{perishable_token}
+      subject: Login for %{client}
   person_sms:
     perishable_token: "{{ perishable_token }} is your code for authentication."
     signature: |2-
