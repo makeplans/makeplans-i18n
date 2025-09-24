@@ -95,8 +95,6 @@ pl:
       service_appointment: usługa
       service_attendance: rodzaj wydarzenia
       user: użytkownik
-  csv:
-    col_sep: ";"
   date:
     formats:
       date_month_name: "%e %B"

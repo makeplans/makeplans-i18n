@@ -205,8 +205,6 @@ es:
       tag: etiqueta
       user: usuario
       web_hook: webhook
-  csv:
-    col_sep: ";"
   date:
     formats:
       date_month_name: "%e %B"

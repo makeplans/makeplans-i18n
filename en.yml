@@ -206,7 +206,7 @@ en:
       user: user
       web_hook: webhook
   csv:
-    col_sep: ";"
+    col_sep: ","
   date:
     formats:
       csv: "%d.%m.%Y"

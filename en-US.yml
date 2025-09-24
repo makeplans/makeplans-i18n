@@ -1,5 +1,7 @@
 ---
 en-US:
+  csv:
+    col_sep: ";"
   date:
     formats:
       csv: "%m/%d/%Y"

@@ -162,8 +162,6 @@ lt:
       service_attendance: įvykio tipas
       user: Vartotojas
       web_hook: webhook
-  csv:
-    col_sep: ";"
   errors:
     messages:
       no_values_present: Būtinas vardas, telefono numeris arba el. Pašto adresas.

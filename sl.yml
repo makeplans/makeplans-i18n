@@ -1,7 +1,5 @@
 ---
 sl:
-  csv:
-    col_sep: ";"
   date:
     formats:
       date_month_name: "%e %B"

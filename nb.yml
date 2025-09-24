@@ -205,8 +205,6 @@ nb:
       tag: etikett
       user: bruker
       web_hook: webhook
-  csv:
-    col_sep: ";"
   date:
     formats:
       csv: "%d.%m.%Y"

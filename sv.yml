@@ -205,8 +205,6 @@ sv:
       tag: märka
       user: användare
       web_hook: webhook
-  csv:
-    col_sep: ";"
   date:
     formats:
       date_month_name: "%-d %B"
