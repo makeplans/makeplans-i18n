@@ -606,6 +606,11 @@ en:
         no_events_range: No existing events from %{start} to %{end}
     integrations:
       account_connected: Connect to this account.
+      always_opt_in: Always opt-in
+      bento:
+        site_uuid: Site UUID
+        publishable_key: Publishable Key
+        secret_key: Secret Key
       bestrx:
         api_key: The API-key is %{api_key}
         api_url: The URL to the API is %{api_url}
