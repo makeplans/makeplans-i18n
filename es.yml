@@ -400,8 +400,8 @@ es:
         template: Tema de diseño
         templates:
           amsterdam: Ámsterdam
-          lviv: Lviv (beta)
-          timisoara: Timişoara (beta)
+          lviv: Lviv
+          timisoara: Timişoara
         terms: Términos y condiciones
         time_zone: Zona horaria
         verification_method: Método de verificación para nuevas reservas

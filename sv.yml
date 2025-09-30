@@ -399,8 +399,8 @@ sv:
         template: Designtema
         templates:
           amsterdam: amsterdam
-          lviv: Lviv (beta)
-          timisoara: Timişoara (beta)
+          lviv: Lviv
+          timisoara: Timişoara
         terms: Villkor
         time_zone: Tidszon
         verification_method: Bekräftelsemetod för nya bokningar

@@ -402,8 +402,8 @@ nb:
         template: Designmal
         templates:
           amsterdam: Amsterdam
-          lviv: Lviv (beta)
-          timisoara: Timişoara (beta)
+          lviv: Lviv
+          timisoara: Timişoara
         terms: Vilkår
         time_zone: Tidssone
         verification_method: Verifiseringsmetode ved ny reservasjon

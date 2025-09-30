@@ -403,8 +403,8 @@ en:
         template: Design theme
         templates:
           amsterdam: Amsterdam
-          lviv: Lviv (beta)
-          timisoara: Timisoara (beta)
+          lviv: Lviv
+          timisoara: Timisoara
         terms: Terms and conditions
         time_zone: Timezone
         verification_method: Verification method for new reservations
