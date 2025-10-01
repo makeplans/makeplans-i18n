@@ -961,6 +961,7 @@ en:
         days: days
         header: Services
         minutes: minutes
+        priority_button: Order
       integrations:
         external_info:
           fiken_create_order: Create orders in Fiken automatically
@@ -986,6 +987,9 @@ en:
           weights_invalid: "⚠ Weights sum to %{total}, should be 100"
           weights_valid: "✓ Weights sum to 100"
         weight: Weight
+      service_priority:
+        description: Drag and drop services to set their display order on the booking site. Services without an order value will appear last, sorted alphabetically.
+        header: Service ordering
       show:
         availability: Availability pr provider
         custom_data: 'Custom data:'

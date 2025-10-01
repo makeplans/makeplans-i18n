@@ -952,6 +952,7 @@ nb:
         days: dager
         header: Tjenester
         minutes: minutter
+        priority_button: Rekkefølge
       integrations:
         external_info:
           fiken_create_order: Opprett ordre i Fiken automatisk
@@ -977,6 +978,9 @@ nb:
           weights_invalid: "⚠ Vektene summerer til %{total}, skal være 100"
           weights_valid: "✓ Vektene summerer til 100"
         weight: Vekt
+      service_priority:
+        description: Dra og slipp tjenester for å endre rekkefølgen de vises på bookingsiden. Tjenester uten rekkefølgeverdi vil vises sist, sortert alfabetisk.
+        header: Tjenesterekkefølge
       show:
         availability: Tilgjengelighet pr tilbyder
         custom_data: 'Egendefinerte felter:'
