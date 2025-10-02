@@ -296,12 +296,12 @@ en:
         header: Category ordering
         parent_category: Parent category
       priority:
-        description: Drag and drop services to set their display order on the booking site. Services without a priority value will appear last, sorted alphabetically.
-        header: 'Service priority for %{title}'
+        description: Drag and drop services to set their display order on the booking site. Services without an order value will appear last, sorted alphabetically.
+        header: 'Service ordering for %{title}'
       show:
         custom_data: 'Custom data:'
         has_services: 'Shows these services:'
-        priority_button: Priority
+        priority_button: Order
         qr_code: QR code for customers
         show_on_booking_site: Open service on booking site
     client:
