@@ -287,8 +287,14 @@ nb:
         no_parent_id: TOPPNIVÅ
       index:
         header: Kategorier
+        order_button: Rekkefølge
+        order_subcategories: Sorter underkategorier
       list_menu:
         list: Kategorier
+      category_order:
+        description: Dra og slipp kategorier for å endre rekkefølgen de vises på bookingsiden. Kategorier uten rekkefølgeverdi vil vises sist, sortert alfabetisk.
+        header: Kategorirekkefølge
+        parent_category: Overordnet kategori
       show:
         custom_data: 'Egendefinerte felter:'
         has_services: 'Viser følgende tjenester:'

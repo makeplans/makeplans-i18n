@@ -287,8 +287,14 @@ en:
         no_parent_id: TOP LEVEL
       index:
         header: Categories
+        order_button: Order
+        order_subcategories: Order subcategories
       list_menu:
         list: Categories
+      category_order:
+        description: Drag and drop categories to set their display order on the booking site. Categories without an order value will appear last, sorted alphabetically.
+        header: Category ordering
+        parent_category: Parent category
       priority:
         description: Drag and drop services to set their display order on the booking site. Services without a priority value will appear last, sorted alphabetically.
         header: 'Service priority for %{title}'
