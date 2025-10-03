@@ -774,7 +774,7 @@ es:
       show:
         add_child: Agregar cliente conectado
         bookings_for: Reservas para %{name}
-        can_book_for: Puede realizar reservas para otros.
+        can_book_for: Puede realizar reservas para %{children} otros.
         card_saved_with:
           stripe: Tarjeta de pago guardada con Stripe
         change_tfso_customer: Cambie el ID de cliente de 24SevenOffice.
