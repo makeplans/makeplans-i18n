@@ -183,6 +183,9 @@ en:
         error: 'Error from iZettle: %{error}'
         result_header: iZettle
         success: Payment registered.
+      no_status:
+        headline: List of reservations without status
+        no_reservations: No reservations without status
       show:
         amount: Total price
         audit:
@@ -261,9 +264,6 @@ en:
       unconfirmed:
         headline: List of reservations for approval
         no_reservations: No reservations that requires approval
-      no_status:
-        headline: List of reservations without status
-        no_reservations: No reservations without status
       widget:
         booked_from: From
         booked_to: To
@@ -282,6 +282,10 @@ en:
         header: Categories
         info: If you are offering many services it is possible to categorise them in multiple levels. Categories will be shown on the booking site so the customer must choose a category before the services within chosen category are shown. It is possible to show a service in multiple categories.
         no_categories: No categories added
+      category_order:
+        description: Drag and drop categories to set their display order on the booking site. Categories without an order value will appear last, sorted alphabetically.
+        header: Category ordering
+        parent_category: Parent category
       form:
         has_services: Shows these services
         no_parent_id: TOP LEVEL
@@ -291,13 +295,9 @@ en:
         order_subcategories: Order subcategories
       list_menu:
         list: Categories
-      category_order:
-        description: Drag and drop categories to set their display order on the booking site. Categories without an order value will appear last, sorted alphabetically.
-        header: Category ordering
-        parent_category: Parent category
       priority:
         description: Drag and drop services to set their display order on the booking site. Services without an order value will appear last, sorted alphabetically.
-        header: 'Service ordering for %{title}'
+        header: Service ordering for %{title}
       show:
         custom_data: 'Custom data:'
         has_services: 'Shows these services:'
@@ -618,9 +618,9 @@ en:
       account_connected: Connect to this account.
       always_opt_in: Always opt-in
       bento:
-        site_uuid: Site UUID
         publishable_key: Publishable Key
         secret_key: Secret Key
+        site_uuid: Site UUID
       bestrx:
         api_key: The API-key is %{api_key}
         api_url: The URL to the API is %{api_url}

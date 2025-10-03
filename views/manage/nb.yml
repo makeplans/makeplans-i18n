@@ -183,6 +183,9 @@ nb:
         error: 'Feil fra iZettle: %{error}'
         result_header: iZettle
         success: Betaling registrert.
+      no_status:
+        headline: Liste over reservasjoner uten status
+        no_reservations: Fant ingen reservasjoner uten status
       show:
         amount: Total pris
         audit:
@@ -261,9 +264,6 @@ nb:
       unconfirmed:
         headline: Liste over ubekreftede reservasjoner
         no_reservations: Fant ingen ubekreftede reservasjoner
-      no_status:
-        headline: Liste over reservasjoner uten status
-        no_reservations: Fant ingen reservasjoner uten status
       widget:
         booked_from: Fra
         booked_to: Til
@@ -282,6 +282,10 @@ nb:
         header: Kategorier
         info: Har du mange tjenester kan du kategorisere dem på flere nivåer. Kategorier vil vises på bookingsiden slik at kunden velger kategori før tjenesten innenfor valgt kategori vises. Det er mulig å vise en tjeneste i flere kategorier.
         no_categories: Ingen kategorier lagt til
+      category_order:
+        description: Dra og slipp kategorier for å endre rekkefølgen de vises på bookingsiden. Kategorier uten rekkefølgeverdi vil vises sist, sortert alfabetisk.
+        header: Kategorirekkefølge
+        parent_category: Overordnet kategori
       form:
         has_services: Viser følgende tjenester
         no_parent_id: TOPPNIVÅ
@@ -291,13 +295,9 @@ nb:
         order_subcategories: Sorter underkategorier
       list_menu:
         list: Kategorier
-      category_order:
-        description: Dra og slipp kategorier for å endre rekkefølgen de vises på bookingsiden. Kategorier uten rekkefølgeverdi vil vises sist, sortert alfabetisk.
-        header: Kategorirekkefølge
-        parent_category: Overordnet kategori
       priority:
         description: Dra og slipp tjenester for å endre rekkefølgen de vises på bookingsiden. Tjenester uten rekkefølgeverdi vil vises sist, sortert alfabetisk.
-        header: 'Tjenesterekkefølge for %{title}'
+        header: Tjenesterekkefølge for %{title}
       show:
         custom_data: 'Egendefinerte felter:'
         has_services: 'Viser følgende tjenester:'
