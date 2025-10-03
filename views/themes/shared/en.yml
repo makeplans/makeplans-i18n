@@ -3,10 +3,24 @@ en:
   shared:
     generic:
       close: close
+    bookings:
+      verification_method_email:
+        info: You have to verify your email address to complete your reservation.
+        submit: Continue
+        title: Verify your email address
+      verification_method_sms:
+        info: You have to verify your phone number to complete your reservation.
+        submit: Continue
+        title: Verify your phone number
+    providers:
+      index:
+        all_services: All services
+        title: Select provider
     services:
       count:
         title: How many people?
       slots:
+        no_selection: Please select an available time.
         free_capacity:
           one: "%{count} available"
           other: "%{count} available"

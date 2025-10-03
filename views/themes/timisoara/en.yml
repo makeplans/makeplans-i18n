@@ -37,14 +37,6 @@ en:
         new_reservation: Make another reservation
         reschedule: Reschedule
         title: Your Reservation is Confirmed!
-      verification_method_email:
-        info: You have to verify your email address to complete your reservation.
-        submit: Continue
-        title: Verify your email address
-      verification_method_sms:
-        info: You have to verify your phone number to complete your reservation.
-        submit: Continue
-        title: Verify your phone number
     categories:
       index:
         all_categories: All categories
@@ -95,10 +87,6 @@ en:
       new:
         errors_header: 'Errors occured:'
         header: Account information
-    providers:
-      index:
-        all_services: All services
-        title: Select provider
     services:
       available_dates:
         select_date: Available dates
