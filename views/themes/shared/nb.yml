@@ -3,6 +3,17 @@ nb:
   shared:
     generic:
       close: lukk
+    bookings:
+      verification_method_email:
+        email: E-post
+        info: Du må verifisere din e-post adresse for å fullføre reservasjonen.
+        submit: Fortsett
+        title: Verifiser din e-post adresse
+      verification_method_sms:
+        info: Du må verifisere ditt mobilnummer for å fullføre reservasjonen.
+        phone_number: Mobilnummber
+        submit: Fortsett
+        title: Verifiser ditt mobilnummer
     services:
       count:
         title: Hvor mange personer?

@@ -5,11 +5,13 @@ en:
       close: close
     bookings:
       verification_method_email:
+        email: Email
         info: You have to verify your email address to complete your reservation.
         submit: Continue
         title: Verify your email address
       verification_method_sms:
         info: You have to verify your phone number to complete your reservation.
+        phone_number: Mobile phone number
         submit: Continue
         title: Verify your phone number
     providers:
