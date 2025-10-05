@@ -490,8 +490,10 @@ en:
         title: Title
       service:
         active_bookings_limit: Max number of active bookings
+        allow_cancellation: Allow cancellations by customer
         allow_invoice: Allow invoice
         availability_type: Availability is defined by
+        cancellation_period: Cancellation period
         block_resource: Reservation will block resource
         booking_capacity: Max number of people allowed per reservation
         booking_form: Custom reservation form

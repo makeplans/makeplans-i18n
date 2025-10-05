@@ -489,8 +489,10 @@ nb:
         title: Tittel
       service:
         active_bookings_limit: Maks antall aktive bookinger for kunde
+        allow_cancellation: Tillatt avbestilling av kunden
         allow_invoice: Kan betales med faktura
         availability_type: Tilgjengelighet er definert av
+        cancellation_period: Avbestillingsfrist
         block_resource: Reservasjon blokkerer ressursen
         booking_capacity: Maks antall personer per reservasjon
         booking_form: Egendefinert reservasjonskjema
