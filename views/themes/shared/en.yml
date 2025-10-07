@@ -4,6 +4,10 @@ en:
     generic:
       close: close
     bookings:
+      new:
+        email_suggestion_html: "<p>Did you mean<span> %{suggestions}</span>?</p>"
+      show:
+        count: Booked for %{count} people.
       verification_method_email:
         email: Email
         info: You have to verify your email address to complete your reservation.

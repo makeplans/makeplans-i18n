@@ -7,7 +7,7 @@ en:
         submit: Send code
         title: Phone number authentication
       awaiting_confirmation:
-        body: You successfully booked the service. Please wait until the administrator will confirm your booking
+        body: You have made a request to book. Please wait until the administrator will confirm your booking
       cancelled:
         info: The booking for %{title} %{time} was cancelled.
         title: Your reservation was cancelled
