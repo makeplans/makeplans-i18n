@@ -347,7 +347,7 @@ nb:
         closed_for_holidays: Stengt på offentlige fridager
         confirm_manually: Reservasjon må godkjennes av administrator
         country_code: Land
-        coupon_form: Tilpassede kupongfelt
+        coupon_form: Egendefinerte rabattkodefelter
         css_url: Egen CSS (URL må være HTTPS)
         currency: Valuta
         email: Epost-adresse
