@@ -427,6 +427,8 @@ en:
         automatic_messages_booking_site: Automatic messages (On the booking site)
         booking_site_message: Send message on the booking site
         booking_site_outgoing_messages_info: MakePlans will by default send a message for important events such as a confirmation message using the verification method, for example SMS with SMS verification, or using email if using other/none verification.
+        awaiting_confirmation_email: Send email when reservation requires confirmation
+        awaiting_confirmation_sms: Send SMS when reservation requires confirmation
         cancellation_email: Send email when cancelling reservation
         cancellation_sms: Send SMS when cancelling reservation
         confirmation_email: Send email when creating reservation

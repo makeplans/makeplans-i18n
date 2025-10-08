@@ -3,6 +3,15 @@ en:
   booking_ical:
     summary: "%{service} at %{client}"
   booking_mailer:
+    awaiting_confirmation:
+      body: |-
+        Hi,
+
+        Your request for reservation of %{title} %{time_range} has been recorded.
+
+        The reservation is not confirmed until it has been approved.
+        You will receive an e-mail when the reservation is processed.
+      subject: New request for reservation
     cancellation:
       header: Hi %{name}
       info: Your reservation for %{title} at %{time_range} has been cancelled.
@@ -90,6 +99,7 @@ en:
       booking_type_attendance: |-
         Signup changed for {{ booking.event.full_title }} {{ booking.time_range }} by {{ booking.person.name }}.
         MakePlans
+    awaiting_confirmation: You have made a request for reservation of {{ booking.title }} {{ booking.booked_from }}. We will message you when we process your request.
     cancellation: Your reservation on {{ booking.booked_from }} has been cancelled.
     confirmation: You have made a reservation for {{ booking.title }} {{ booking.booked_from }}.
     declined: Your request for reservation of {{ booking.title }} {{ booking.booked_from }} was not approved. Please try again.

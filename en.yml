@@ -363,6 +363,8 @@ en:
         interval_rounding: Default rounding to next available time for reservation
         locale: Language (Also defines number and date formatting)
         logo: Logo
+        mail_awating_confirmation: Text in awaiting confirmation email
+        mail_awating_confirmation_subject: Subject in awaiting confirmation email
         mail_cancellation: Text in cancellation email
         mail_cancellation_subject: Subject in cancellation email
         mail_confirmation: Text in confirmation email
@@ -391,6 +393,7 @@ en:
         service_form: Custom service fields
         service_template: Calendar style
         slot_generation: Generation of available slots
+        sms_awaiting_confirmation: Text in awaiting confirmation SMS
         sms_cancellation: Text in cancellation SMS
         sms_confirmation: Text in confirmation SMS
         sms_modification: Text in modification SMS
@@ -507,6 +510,7 @@ en:
           'true': days
         interval: Duration
         interval_rounding: Rounding for next available time
+        mail_awaiting_confirmation: Text in awaiting confirmation email
         mail_cancellation: Text in cancellation email
         mail_confirmation: Text in confirmation email
         mail_modification: Text in modification email
@@ -521,6 +525,7 @@ en:
         reservation_form_text: Text displayed before reservation form
         same_day: Allow reservation over multiple days
         slot_generation: Time generation
+        sms_awaiting_confirmation: Text in awaiting confirmation SMS
         sms_cancellation: Text in cancellation SMS
         sms_confirmation: Text in confirmation SMS
         sms_modification: Text in modification SMS

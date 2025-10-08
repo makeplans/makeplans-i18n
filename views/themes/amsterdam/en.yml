@@ -5,7 +5,7 @@ en:
       awaiting_confirmation:
         body: We will manually confirm your reservation. You will receive %{verification_method} when we have processed your request.
         body_automatic_sync: We are now checking your reservation. You will receive %{verification_method} when we have processed your request.
-        title: Awaiting confirmation
+        title: Reservation requires confirmation
         title_automatic_sync: Checking reservation
         verification_method:
           authenticated: a notification

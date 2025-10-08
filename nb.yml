@@ -362,6 +362,8 @@ nb:
         interval_rounding: Standard avrunding til neste ledige tidspunkt
         locale: Språk (Styrer også tall- og dataformatering)
         logo: Logo
+        mail_awaiting_confirmation: Tekst i epost som blir sendt ved godkjenning
+        mail_awaiting_confirmation_subject: Tittel i epost som blir sendt ved godkjenning
         mail_cancellation: Tekst i epost som blir sendt ved kansellering
         mail_cancellation_subject: Tittel i epost som blir sendt ved kansellering
         mail_confirmation: Tekst i epost som blir sendt ved bekreftelse
@@ -390,6 +392,7 @@ nb:
         service_form: Egendefinerte tjenestefelter
         service_template: Kalendermal
         slot_generation: Generering av tidspunkt
+        sms_awaiting_confirmation: Tekst i SMS som blir sendt ved godkjenning kreves
         sms_cancellation: Tekst i SMS som blir sendt ved kansellering
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
         sms_modification: Tekst i SMS som blir sendt ved endring
@@ -506,6 +509,7 @@ nb:
           'true': dager
         interval: Varighet
         interval_rounding: Avrunding til neste ledige tidspunkt
+        mail_awaiting_confirmation: Tekst i epost som blir sendt ved godkjenning kreves
         mail_cancellation: Tekst i epost som blir sendt ved kansellering
         mail_confirmation: Tekst i epost som blir sendt ved bekreftelse
         mail_modification: Tekst i epost som blir sendt ved endring
@@ -520,6 +524,7 @@ nb:
         reservation_form_text: Tekst som vises før reservasjonskjema
         same_day: Reservasjon kan ikke gå over flere dager
         slot_generation: Generering av tidspunkt
+        sms_awaiting_confirmation: Tekst i SMS som blir sendt ved godkjenning kreves
         sms_cancellation: Tekst i SMS som blir sendt ved kansellering
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
         sms_modification: Tekst i SMS som blir sendt ved endring

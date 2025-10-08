@@ -427,6 +427,8 @@ nb:
         automatic_messages_booking_site: Automatiske utsendelser (På bookingsiden)
         booking_site_message: Send melding på bookingsiden
         booking_site_outgoing_messages_info: Som standard vil MakePlans sende en melding ved viktige hendelser som bekreftelse via valgt verifiseringsmetode, for eksempel SMS for SMS-verifisering, or epost hvis man har annen eller ingen verifisering.
+        awaiting_confirmation_email: Utsendelse av epost når reservasjon krever godkjenning
+        awaiting_confirmation_sms: Utsendelse av SMS når reservasjon krever godkjenning
         cancellation_email: Utsendelse av epost ved kansellering av reservasjon
         cancellation_sms: Utsendelse av SMS ved kansellering av reservasjon
         confirmation_email: Utsendelse av epost ved opprettelse av reservasjon

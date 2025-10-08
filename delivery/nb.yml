@@ -3,6 +3,15 @@ nb:
   booking_ical:
     summary: "%{service} hos %{client}"
   booking_mailer:
+    awaiting_confirmation:
+      body: |-
+        Hei %{name},
+
+        Din forespørsel for å reservere %{title} %{time_range} har blitt registert.
+
+        Din reservasjon er ikke bekrefted før den er godkjent.
+        Du vil motta e-post når din forespørsel er behandlet.
+      subject: Ny forespørsel for å reservere
     cancellation:
       header: Hei %{name}
       info: Din reservasjon hos oss %{title} %{time_range} har blitt kansellert.
@@ -90,6 +99,7 @@ nb:
       booking_type_attendance: |-
         Endring av påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
         MakePlans
+    awaiting_confirmation: Du har lagt inn forespørsel for reservasjon av {{ booking.title }} {{ booking.booked_from }}. Du vil motta SMS når den er ferdig behandlet.
     cancellation: Din reservasjon hos oss {{ booking.booked_from }} har blitt kansellert.
     confirmation: Du har reservert {{ booking.title }} {{ booking.booked_from }}.
     declined: Din forespørsel for reservasjon av {{ booking.title }} {{ booking.booked_from }} ble dessverre ikke godkjent. Prøv et annet tidspunkt.
