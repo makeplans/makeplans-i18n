@@ -5,7 +5,7 @@ nb:
   booking_mailer:
     awaiting_confirmation:
       body: |-
-        Hei %{name},
+        Hei,
 
         Din forespørsel for å reservere %{title} %{time_range} har blitt registert.
 
