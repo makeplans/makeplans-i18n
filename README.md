@@ -33,6 +33,7 @@ If you want to use English in the admin system but would like to use your local 
 * Danish (da)
 * English International (en)
 * English American (en-US)
+* English British (en-GB)
 * Spanish (es)
 * French (fr)
 * Hebrew (hr)
@@ -55,4 +56,4 @@ If you want to use English in the admin system but would like to use your local 
 
 If there are any missing translations the translation for English International will be used. Except for Danish and Swedish where Norwegian will be used.
 
-English American is the same as English International except for date/time formatting.
+English American and English British is the same as English International except for date/time formatting.
