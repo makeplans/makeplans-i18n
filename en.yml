@@ -539,6 +539,7 @@ en:
           default: Default
           list: List
           month: Month
+          resources: Resources
           time_day_available: Day
           week_available: All week
           weekday_available: Weekdays
