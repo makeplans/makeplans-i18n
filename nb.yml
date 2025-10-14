@@ -537,6 +537,7 @@ nb:
           default: Standard
           list: Liste
           month: Måned
+          resources: Ressurser
           time_day_available: Dag
           week_available: Hele uken
           weekday_available: Ukedager

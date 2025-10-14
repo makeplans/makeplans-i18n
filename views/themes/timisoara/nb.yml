@@ -111,7 +111,7 @@ nb:
       show:
         all_services: Alle tjenester
         continue: Book denne tjenesten
-      time_day:
+      slots:
         all_services: Alle tjenester
         availability: Tilgjengelighet
         available_dates: Ledige datoer
