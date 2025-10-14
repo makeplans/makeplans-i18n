@@ -62,6 +62,7 @@ nb:
       event:
         booking_capacity: maks antall deltagere per reservasjon
         booking_minimum: min antall deltagere per reservasjon
+        cancellation_period: Avbestillingsfrist
         capacity: maks antall deltagere
         description: beskrivelse
         ends_at: avslutningtidspunkt
@@ -362,8 +363,8 @@ nb:
         interval_rounding: Standard avrunding til neste ledige tidspunkt
         locale: Språk (Styrer også tall- og dataformatering)
         logo: Logo
-        mail_awaiting_confirmation: Tekst i epost som blir sendt ved godkjenning
-        mail_awaiting_confirmation_subject: Tittel i epost som blir sendt ved godkjenning
+        mail_awaiting_confirmation: Tekst i epost som blir sendt når reservasjon trenger godkjenning
+        mail_awaiting_confirmation_subject: Tittel i epost som blir sendt når reservasjon trenger godkjenning
         mail_cancellation: Tekst i epost som blir sendt ved kansellering
         mail_cancellation_subject: Tittel i epost som blir sendt ved kansellering
         mail_confirmation: Tekst i epost som blir sendt ved bekreftelse
@@ -392,7 +393,7 @@ nb:
         service_form: Egendefinerte tjenestefelter
         service_template: Kalendermal
         slot_generation: Generering av tidspunkt
-        sms_awaiting_confirmation: Tekst i SMS som blir sendt ved godkjenning kreves
+        sms_awaiting_confirmation: Tekst i SMS som blir sendt når reservasjon trenger godkjenning kreves
         sms_cancellation: Tekst i SMS som blir sendt ved kansellering
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
         sms_modification: Tekst i SMS som blir sendt ved endring
@@ -436,6 +437,7 @@ nb:
         value_type: Rabatttype
       event:
         all_day: Hele dagen
+        allow_cancellation: Tillatt avbestilling av kunden
         allow_invoice: Kan betales med faktura
         booking_capacity: Maks antall deltagere per reservasjon
         booking_minimum: Min antall deltagere per reservasjon
@@ -509,7 +511,7 @@ nb:
           'true': dager
         interval: Varighet
         interval_rounding: Avrunding til neste ledige tidspunkt
-        mail_awaiting_confirmation: Tekst i epost som blir sendt ved godkjenning kreves
+        mail_awaiting_confirmation: Tekst i epost som blir sendt når reservasjon trenger godkjenning kreves
         mail_cancellation: Tekst i epost som blir sendt ved kansellering
         mail_confirmation: Tekst i epost som blir sendt ved bekreftelse
         mail_modification: Tekst i epost som blir sendt ved endring
@@ -524,7 +526,7 @@ nb:
         reservation_form_text: Tekst som vises før reservasjonskjema
         same_day: Reservasjon kan ikke gå over flere dager
         slot_generation: Generering av tidspunkt
-        sms_awaiting_confirmation: Tekst i SMS som blir sendt ved godkjenning kreves
+        sms_awaiting_confirmation: Tekst i SMS som blir sendt når reservasjon trenger godkjenning kreves
         sms_cancellation: Tekst i SMS som blir sendt ved kansellering
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
         sms_modification: Tekst i SMS som blir sendt ved endring

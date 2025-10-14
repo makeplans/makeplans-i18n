@@ -573,6 +573,8 @@ en:
         headline: Email all participants
         open_email_client: Open email client
       form:
+        cancellation_info: Cancellation can only be performed before the cancellation period. Reservations that are prepaid cannot be cancelled.
+        cancellation_period_info: 'Example: ''24 hours before'' (only possible to cancel 24 hours before the reservation starts). When setting a date you must enter the full year.'
         headline_create: Add new event
         headline_create_recurring: Add new event
         headline_edit: Modify event

@@ -573,6 +573,8 @@ nb:
         headline: Send epost til alle deltagere
         open_email_client: Åpne epost-program
       form:
+        cancellation_info: Avbestilling kan kun utføres før avbestillingsfristen. Reservasjoner som er forhåndsbetalt kan ikke avbestilles.
+        cancellation_period_info: 'Skriv inn på engelsk. Tid er relatert til starttidspunkt for reservasjonen. Eks.: ''24 hours before'' (kun mulig å avbestille 24 timer før reservasjonen begynner). Hvis ingen avbestillingsfrist er spesifisert kan kunden avbestille helt frem til reservasjonen starter.'
         headline_create: Opprett nytt arrangement
         headline_create_recurring: Opprett nytt arrangement
         headline_edit: Endre arrangement
