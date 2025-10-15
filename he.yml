@@ -168,8 +168,8 @@ he:
       no_values_present: יש להזין שם, מספר טלפון או אימייל.
       not_authenticated: נותקת מהמערכת.
       not_found: לא ניתן למצוא נתונים. נסה לטעון מחדש את הדף.
-      offline: לא ניתן להתחבר ל- MakePlans. אנא בדוק שאתה מחובר.
-      server_error: שגיאה ב- MakePlans
+      offline: לא ניתן להתחבר ל- Makeplans. אנא בדוק שאתה מחובר.
+      server_error: שגיאה ב- Makeplans
       syntax_error: שגיאה בתחביר שסופק.
       unknown: שגיאה לא ידועה. נסה לטעון מחדש את הדף.
     models:
@@ -494,7 +494,7 @@ he:
       invoice_client:
         errors:
           nothing_to_invoice: החשבון לא מוכן לחשבונית. אנא ודא שיש לך לפחות משאב אחד.
-        invoice_text: שימוש בהזמנת פגישות מקוונת של MakePlans
+        invoice_text: שימוש בהזמנת פגישות מקוונת של Makeplans
   title:
     actions:
       edit: לַעֲרוֹך
@@ -509,10 +509,10 @@ he:
         invalid: לא תקף
   worker:
     integration_slack:
-      fallback: נקבע פגישה חדשה ב- MakePlans
-      footer: API של MakePlans
+      fallback: נקבע פגישה חדשה ב- Makeplans
+      footer: API של Makeplans
       pretext: "%{person} קבע תור ב- %{booked_from}"
-      title: צפו בפגישה ב- MakePlans
+      title: צפו בפגישה ב- Makeplans
     integration_tfso_list_companies:
       errors:
         no_results: לא נמצאו לקוחות קיימים.
@@ -520,5 +520,5 @@ he:
       errors:
         already_created: כבר נוצר.
         no_company: הלקוח נמחק ב- 24SevenOffice. עליך להפעיל מחדש את הלקוח ב- 24SevenOffice כדי להמשיך.
-        no_product: המוצר נמחק ב- 24SevenOffice. עליך להפעיל מחדש את המוצר ב- 24SevenOffice או לחבר את השירות למוצר חדש מ- MakePlans לפני שתוכל להמשיך.
+        no_product: המוצר נמחק ב- 24SevenOffice. עליך להפעיל מחדש את המוצר ב- 24SevenOffice או לחבר את השירות למוצר חדש מ- Makeplans לפני שתוכל להמשיך.
         product_not_defined_on_service: שירות זה אינו מחובר למוצר ב- 24SevenOffice.

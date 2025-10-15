@@ -155,7 +155,7 @@ es:
     layouts:
       application:
         authenticated: 'Conectado como: %{name}'
-        demo_ended: La demostración de MakePlans ha expirado.
+        demo_ended: La demostración de Makeplans ha expirado.
         footer:
           change_language: 'Cambiar idioma:'
           privacy_policy: Política de privacidad

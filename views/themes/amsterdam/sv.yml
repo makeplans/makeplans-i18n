@@ -155,7 +155,7 @@ sv:
     layouts:
       application:
         authenticated: 'Inloggad som: %{name}'
-        demo_ended: Provperioden hos MakePlans har upphört.
+        demo_ended: Provperioden hos Makeplans har upphört.
         footer:
           change_language: 'Ändra språk:'
           privacy_policy: Personuppgiftsbehandling

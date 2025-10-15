@@ -120,7 +120,7 @@ da:
     layouts:
       application:
         authenticated: 'Logget ind som: %{name}'
-        demo_ended: Prøveperioden for MakePlans er forbi.
+        demo_ended: Prøveperioden for Makeplans er forbi.
         footer:
           privacy_policy: Privatliv
           support: Kundeservice

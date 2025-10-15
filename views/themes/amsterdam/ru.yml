@@ -111,7 +111,7 @@ ru:
     layouts:
       application:
         authenticated: 'Вы вошли как: %{name}'
-        demo_ended: Срок действия демоверсии MakePlans истек.
+        demo_ended: Срок действия демоверсии Makeplans истек.
         footer:
           privacy_policy: Политика конфиденциальности
           support: Служба поддержки

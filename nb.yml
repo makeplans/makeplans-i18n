@@ -236,8 +236,8 @@ nb:
       no_values_present: Navn, telefonnummer eller epost er påkrevd.
       not_authenticated: Du har blitt logget ut.
       not_found: Fant ikke data. Prøve å reloade siden. Kontakt kundeservice hvis problemet fortsetter.
-      offline: Kunne ikke kontakte MakePlans. Sjekk at du er online.
-      server_error: Feil i MakePlans. Kontakt kundeservice hvis problemet fortsetter.
+      offline: Kunne ikke kontakte Makeplans. Sjekk at du er online.
+      server_error: Feil i Makeplans. Kontakt kundeservice hvis problemet fortsetter.
       syntax_error: Feil i syntaksen
       unknown: Ukjent feil. Prøv å reloade siden. Kontakt kundeservice hvis problemet fortsetter.
     models:
@@ -654,7 +654,7 @@ nb:
       invoice_client:
         errors:
           nothing_to_invoice: Konto ikke klar for fakturering. Kreves minst en ressurs.
-        invoice_text: Bruk av MakePlans online timebestilling
+        invoice_text: Bruk av Makeplans online timebestilling
   time:
     24h: true
     formats:
@@ -681,10 +681,10 @@ nb:
         invalid: er ugyldig
   worker:
     integration_slack:
-      fallback: En ny reservasjon er utført i MakePlans
-      footer: MakePlans API
+      fallback: En ny reservasjon er utført i Makeplans
+      footer: Makeplans API
       pretext: "%{person} har reservert %{booked_from}"
-      title: Vis reservasjon i MakePlans
+      title: Vis reservasjon i Makeplans
     integration_tfso_list_companies:
       errors:
         no_results: Fant ingen eksisterende bedrifter.
@@ -692,5 +692,5 @@ nb:
       errors:
         already_created: Allerede opprettet
         no_company: Kunde er slettet i 24SevenOffice. Du må reaktivere kunden i 24SevenOffice før du kan fortsette.
-        no_product: Produktet er slettet i 24SevenOffice. Du må reaktivere produktet i 24SevenOffice eller koble tjenesten mot et nytt produkt fra MakePlans før du kan fortsette.
-        product_not_defined_on_service: Tjenesten i MakePlans er ikke koblet mot et produkt i 24SevenOffice.
+        no_product: Produktet er slettet i 24SevenOffice. Du må reaktivere produktet i 24SevenOffice eller koble tjenesten mot et nytt produkt fra Makeplans før du kan fortsette.
+        product_not_defined_on_service: Tjenesten i Makeplans er ikke koblet mot et produkt i 24SevenOffice.

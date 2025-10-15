@@ -64,41 +64,41 @@ nb:
 
         {{ booking.client.manage_unconfirmed_bookings_link }}
 
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         TRENGER GODKJENNING: Forespørsel for påmelding av {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
 
         {{ booking.client.manage_unconfirmed_bookings_link }}
 
-        MakePlans
+        Makeplans
     admin_notification_cancellation:
       booking_type_appointment: |-
         KANSELLERING: {{ booking.person.name }} har kansellert sin booking av {{ booking.resource.title }} - {{ booking.title }} {{ booking.time_range }}.
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         KANSELLERING: {{ booking.person.name }} har kansellert sin påmelding av {{ booking.event.full_title }} {{ booking.time_range }}.
-        MakePlans
+        Makeplans
     admin_notification_confirmation:
       booking_type_appointment: |-
         Ny reservasjon hos {{ booking.resource.title }} av {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         Ny påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
-        MakePlans
+        Makeplans
     admin_notification_modification:
       booking_type_appointment: |-
         Endring av reservasjon for {{ booking.resource.title }} for {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         Påmelding endret for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
-        MakePlans
+        Makeplans
     admin_notification_resource_change:
       booking_type_appointment: |-
         Endring av ressurs for {{ booking.resource.title }} med {{ booking.person.name }} {{ booking.title }} {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         Endring av påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
-        MakePlans
+        Makeplans
     awaiting_confirmation: Du har lagt inn forespørsel for reservasjon av {{ booking.title }} {{ booking.booked_from }}. Du vil motta SMS når den er ferdig behandlet.
     cancellation: Din reservasjon hos oss {{ booking.booked_from }} har blitt kansellert.
     confirmation: Du har reservert {{ booking.title }} {{ booking.booked_from }}.
@@ -112,7 +112,7 @@ nb:
     verification: "{{ booking.verification_code }} er din kode for å verifisere reservasjon av {{ booking.title }}."
   person_mailer:
     export:
-      subject: Eksport fra MakePlans
+      subject: Eksport fra Makeplans
     perishable_token:
       body: |-
         Bruk koden nedenfor til å verifisere:

@@ -111,7 +111,7 @@ he:
     layouts:
       application:
         authenticated: 'מחובר כ: %{name}'
-        demo_ended: ההפגנה של MakePlans פג.
+        demo_ended: ההפגנה של Makeplans פג.
         footer:
           privacy_policy: מדיניות הפרטיות
           support: תמיכה

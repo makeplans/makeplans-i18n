@@ -167,8 +167,8 @@ ru:
       no_values_present: Необходимо указать имя, номер телефона или адрес электронной почты.
       not_authenticated: Вы вышли из системы.
       not_found: Не удалось найти данные. Попробуйте перезагрузить страницу.
-      offline: Невозможно подключиться к MakePlans. Пожалуйста, убедитесь, что вы в сети.
-      server_error: Ошибка в MakePlans
+      offline: Невозможно подключиться к Makeplans. Пожалуйста, убедитесь, что вы в сети.
+      server_error: Ошибка в Makeplans
       syntax_error: Ошибка в предоставленном синтаксисе.
       unknown: Неизвестная ошибка. Попробуйте перезагрузить страницу.
     models:
@@ -493,7 +493,7 @@ ru:
       invoice_client:
         errors:
           nothing_to_invoice: Аккаунт не готов к выставлению счетов. Убедитесь, что у вас есть хотя бы один ресурс.
-        invoice_text: Использование онлайн-записи MakePlans
+        invoice_text: Использование онлайн-записи Makeplans
   title:
     actions:
       edit: Редактировать
@@ -508,10 +508,10 @@ ru:
         invalid: является недействительным
   worker:
     integration_slack:
-      fallback: В MakePlans назначена новая встреча
-      footer: MakePlans API
+      fallback: В Makeplans назначена новая встреча
+      footer: Makeplans API
       pretext: "%{person} назначил встречу на %{booked_from}"
-      title: Просмотр встречи в MakePlans
+      title: Просмотр встречи в Makeplans
     integration_tfso_list_companies:
       errors:
         no_results: Существующих клиентов не найдено.
@@ -519,5 +519,5 @@ ru:
       errors:
         already_created: Уже создано.
         no_company: Клиент удален в 24SevenOffice. Чтобы продолжить, необходимо повторно активировать клиента в 24SevenOffice.
-        no_product: Продукт удален из 24SevenOffice. Вы должны повторно активировать продукт в 24SevenOffice или подключить услугу к новому продукту от MakePlans, прежде чем вы сможете продолжить.
+        no_product: Продукт удален из 24SevenOffice. Вы должны повторно активировать продукт в 24SevenOffice или подключить услугу к новому продукту от Makeplans, прежде чем вы сможете продолжить.
         product_not_defined_on_service: Эта услуга не связана с продуктом в 24SevenOffice.

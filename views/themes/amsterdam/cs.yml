@@ -97,7 +97,7 @@ cs:
     layouts:
       application:
         authenticated: 'Přihlášen jako: %{name}'
-        demo_ended: Ukázka MakePlans vypršela.
+        demo_ended: Ukázka Makeplans vypršela.
         footer:
           privacy_policy: Zásady ochrany osobních údajů
           support: Podpěra, podpora

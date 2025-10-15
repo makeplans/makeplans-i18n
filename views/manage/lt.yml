@@ -51,7 +51,7 @@ lt:
       credit_card_form:
         billing_info: Kai pridėsite savo kreditinės kortelės duomenis, mes kiekvieną mėnesį apmokestinsime jūsų kortelę pagal mūsų svetainėje nurodytas kainas. Pirmasis sandoris bus atliktas nedelsiant. Galite bet kada atšaukti prenumeratą.
         header: Mokėjimo informacija
-        trial_expired: Bandomasis laikotarpis baigėsi. Norėdami toliau naudoti MakePlans, suaktyvinkite savo paskyrą.
+        trial_expired: Bandomasis laikotarpis baigėsi. Norėdami toliau naudoti Makeplans, suaktyvinkite savo paskyrą.
       credit_card_info:
         header: Įveskite išsamią kredito kortelės informaciją
         submit: Išsaugokite kreditinę kortelę
@@ -79,7 +79,7 @@ lt:
         paid_until: Už jūsų sąskaitą mokama iki %{paid_until}.
         pause: Pristabdykite paskyrą, kai baigsis dabartinė prenumerata.
         pause_confirm: Ar tikrai norite sulaikyti paskyrą? Paskyra bus automatiškai išaktyvinta naudojant %{paid_until}.
-        reactivate: Šiuo metu jūsų paskyra veikia bandomuoju režimu. Norėdami toliau naudoti MakePlans, turite iš naujo suaktyvinti savo paskyrą
+        reactivate: Šiuo metu jūsų paskyra veikia bandomuoju režimu. Norėdami toliau naudoti Makeplans, turite iš naujo suaktyvinti savo paskyrą
         reactivate_link: Iš naujo suaktyvinkite paskyrą
         sms_credits_available: Turite %{credits} SMS balansą.
         vat_no: Registruotas PVM kodas yra %{vat_no}
@@ -88,7 +88,7 @@ lt:
         activate_account: Suaktyvinkite paskyrą dabar
         info: Norint naudoti šią funkciją reikia suaktyvinti jūsų paskyrą.
       processing:
-        activated: Jūsų paskyra dabar suaktyvinta :) Dėkojame, kad naudojatės MakePlans.
+        activated: Jūsų paskyra dabar suaktyvinta :) Dėkojame, kad naudojatės Makeplans.
         error: Nepavyko patvirtinti mokėjimo. Susisiekite su klientų aptarnavimo tarnyba.
         info: Palaukite, kol apmokestinsime jūsų mokėjimo kortelę. Tai gali užtrukti iki vienos minutės. Kai procesas bus baigtas, iš mūsų gausite el. Laišką.
     bookings:
@@ -101,7 +101,7 @@ lt:
       destroy_recurring:
         headline: Visos pasikartojančios rezervacijos pagal šį modelį buvo pašalintos
       fiken:
-        delayed_info: Kol užsakymas bus sukurtas Fiken, praeis šiek tiek laiko. Nebandykite sugeneruoti užsakymo dar kartą, jei MakePlans programoje nėra matoma Fiken informacija.
+        delayed_info: Kol užsakymas bus sukurtas Fiken, praeis šiek tiek laiko. Nebandykite sugeneruoti užsakymo dar kartą, jei Makeplans programoje nėra matoma Fiken informacija.
         header: Kontaktuojantis Fikenas ...
         to_booking: Rodyti užsakymą
       form_appointment:
@@ -259,13 +259,13 @@ lt:
         confirm_message: Paskutinis šansas. Ar tikrai esate įsitikinę, kad norite ištrinti savo sąskaitą su visais savo duomenimis?
         disable_link: Taip, ištrinkite visus mano duomenis.
         header: Ar tikrai norite ištrinti savo sąskaitą?
-        i_love_makeplans: Ne, noriu toliau naudoti MakePlans.
+        i_love_makeplans: Ne, noriu toliau naudoti Makeplans.
         info: Visi jūsų paskyros duomenys bus ištrinti. Ar tikrai norite tęsti?
-        pause: Ar verčiau nustatyti savo paskyros pristabdymą? Jūs nemokėsite mėnesio mokesčio, o paskyra bus prieinama, kai būsite pasirengę vėl naudoti MakePlans.
+        pause: Ar verčiau nustatyti savo paskyros pristabdymą? Jūs nemokėsite mėnesio mokesčio, o paskyra bus prieinama, kai būsite pasirengę vėl naudoti Makeplans.
         pause_link: Galite pristabdyti savo sąskaitą atsiskaitymo puslapyje.
       configuration:
-        header: MakePlans sąranka
-        intro: Čia galite sukonfigūruoti MakePlans ir kaip tai turėtų veikti jums. Galite pridėti paslaugų ir kategorijų, kurias siūlote užsakymo svetainėje, koreguoti prieinamumą, keisti siunčiamus pranešimus (SMS ir el. Paštą), pridėti daugiau vartotojų ir koreguoti daugelį kitų nustatymų MakePlans.
+        header: Makeplans sąranka
+        intro: Čia galite sukonfigūruoti Makeplans ir kaip tai turėtų veikti jums. Galite pridėti paslaugų ir kategorijų, kurias siūlote užsakymo svetainėje, koreguoti prieinamumą, keisti siunčiamus pranešimus (SMS ir el. Paštą), pridėti daugiau vartotojų ir koreguoti daugelį kitų nustatymų Makeplans.
         menu_info: Pasirinkite iš meniu kairėje pusėje. Jei turite klausimų apie koregavimą, susisiekite su klientų aptarnavimo tarnyba.
         trial_info: Tai bandomoji sąskaita - spustelėkite čia, kad suaktyvintumėte
       edit:
@@ -340,9 +340,9 @@ lt:
         header: Kliento pranešimai
         modification_email: Siųskite el. Laišką keisdami rezervaciją
         modification_sms: Keisdami rezervaciją, siųskite SMS
-        outgoing_messages_info: 'MakePlans siūlys išsiųsti el. Laišką / SMS (kad ir ką nustatytumėte kaip patvirtinimo metodą), kai kuriate, keičiate ar atšaukiate rezervaciją. Kai kurie pranešimai, pvz., Atšaukimas, įvyksta automatiškai. Galite išjungti automatinius pranešimus (pvz., Perkeldami rezervaciją vilkdami ją kalendoriuje, atšaukdami arba kurdami naują rezervaciją naudodami API) arba deaktyvuokite pasiūlymą siųsti pranešimus forma pakeisdami toliau pateiktus nustatymus. Pastaba: tai netaikoma rezervavimo svetainei. Užsakymo svetainė visada automatiškai išsiųs pranešimus pagal jūsų patikrinimo metodą.'
+        outgoing_messages_info: 'Makeplans siūlys išsiųsti el. Laišką / SMS (kad ir ką nustatytumėte kaip patvirtinimo metodą), kai kuriate, keičiate ar atšaukiate rezervaciją. Kai kurie pranešimai, pvz., Atšaukimas, įvyksta automatiškai. Galite išjungti automatinius pranešimus (pvz., Perkeldami rezervaciją vilkdami ją kalendoriuje, atšaukdami arba kurdami naują rezervaciją naudodami API) arba deaktyvuokite pasiūlymą siųsti pranešimus forma pakeisdami toliau pateiktus nustatymus. Pastaba: tai netaikoma rezervavimo svetainei. Užsakymo svetainė visada automatiškai išsiųs pranešimus pagal jūsų patikrinimo metodą.'
         reminder_sms: Siųsti priminimą SMS
-        reminder_sms_info: Siuntėjo vardas yra 'MakePlans'. Norėdami pakeisti siuntėjo vardą, susisiekite su klientų aptarnavimo tarnyba.
+        reminder_sms_info: Siuntėjo vardas yra 'Makeplans'. Norėdami pakeisti siuntėjo vardą, susisiekite su klientų aptarnavimo tarnyba.
         sms_reminder_time_info: 'SMS išsiunčiamos prieš dieną prieš užsakymą vidurdienį. Jei norite tai pakeisti, pakeiskite žemiau esantį lauką. Pavyzdys: ''dvi valandos prieš'' (SMS siunčiamos likus dviem valandoms iki rezervacijos) arba ''8 val. Vakar'' (priminimo SMS bus išsiųsta 8 val. Prieš dieną prieš užsakymą)'
       edit_user_notifications:
         approvement_email: Pranešimas el. Paštu apie naujas rezervavimo užklausas
@@ -374,11 +374,11 @@ lt:
           events: Įvykiai
           people: Klientai
         executed: Eksportas dabar siunčiamas jūsų el. Pašto adresu.
-        header: Eksportuoti duomenis iš MakePlans
+        header: Eksportuoti duomenis iš Makeplans
         info: Gausite el. Laišką su CSV failo priedu.
       import:
         header: Importuoti duomenis
-        info: Į MakePlans galima importuoti tokius duomenis kaip klientai. Norėdami gauti daugiau informacijos, susisiekite su palaikymo tarnyba.
+        info: Į Makeplans galima importuoti tokius duomenis kaip klientai. Norėdami gauti daugiau informacijos, susisiekite su palaikymo tarnyba.
       promote:
         booking_button_html_info: Norėdami įterpti rezervavimo mygtuką į savo svetainę, nukopijuokite žemiau esantį HTML kodą. Jei jums reikia pagalbos, susisiekite su savo interneto dizaineriu.
         booking_button_html_preview: Užsakymo mygtuko peržiūra
@@ -476,7 +476,7 @@ lt:
         activate_settings_3: Suaktyvinkite Extensor Online Booking 3 versijos nustatymus
         info: Norėdami suaktyvinti sinchronizavimą su Extensor, turite įdiegti Extensor Online Booking. Norėdami pradėti procesą, spustelėkite toliau pateiktą nuorodą. Su jumis susisieks Extensor.
         reactive_settings: Iš naujo suaktyvinkite nustatymus nuo Extensor internetinio rezervavimo.
-        version: MakePlans sukonfigūruota veikti su Extensor Online Booking versija %{version}.
+        version: Makeplans sukonfigūruota veikti su Extensor Online Booking versija %{version}.
       fakturo:
         password: Slaptažodis
         username: Vartotojo vardas
@@ -491,7 +491,7 @@ lt:
         select_bank_account: Pasirinkite banko sąskaitą, kuri bus rodoma sąskaitoje faktūroje
         select_company: Pasirinkite įmonę
         service_linked: Prisijunkite prie Fiken produkto
-        service_links: 'Kiekviena paslauga turi būti prijungta prie Fiken gaminio, kad būtų galima sukurti užsakymą Fiken. Atkreipkite dėmesį: kaina yra paimta iš Fiken, o ne iš MakePlans. Turite įsitikinti, kad kaina abiejose programose yra identiška.'
+        service_links: 'Kiekviena paslauga turi būti prijungta prie Fiken gaminio, kad būtų galima sukurti užsakymą Fiken. Atkreipkite dėmesį: kaina yra paimta iš Fiken, o ne iš Makeplans. Turite įsitikinti, kad kaina abiejose programose yra identiška.'
         service_not_linked: NE prijungtas prie Fiken produkto.
         vat_type: PVM tipo
       headline: Integracija su %{integration}
@@ -521,13 +521,13 @@ lt:
         connected_to: Prisijungta prie duomenų bazės, kurios ID %{database_id}
         database_info: 'Duomenų bazėje turi būti nustatytos šios savybės: Vardas, El. paštas (tipas: el. paštas), Telefonas (tipas: telefonas).'
         select_database: Pasirinkite duomenų bazę
-        sharing_info: Bendrinkite bent vieną duomenų bazę su MakePlans integracija
+        sharing_info: Bendrinkite bent vieną duomenų bazę su Makeplans integracija
       oauth_connect: Prisijunkite prie paslaugos
       selected_option: Pasirinkta
       sendy:
         connect_info_html: "<em>Diegiant %{api_url}</em> nauji klientai bus prenumeruojami sąraše su ID %{list_id}"
       stripe:
-        payment_info: Už visas operacijas MakePlans išskaičiuoja %{application_fee_percent}% sandorio mokestį.
+        payment_info: Už visas operacijas Makeplans išskaičiuoja %{application_fee_percent}% sandorio mokestį.
         receipt_email: Išsiųskite klientui kvitą iš Stripe
       tfso:
         add_to_crm_manually: Pridėkite klientą CRM rankiniu būdu
@@ -546,7 +546,7 @@ lt:
           Offer: Pasiūlymas
         password: API slaptažodis
         service_linked: Prisijunkite prie produkto 24SevenOffice
-        service_links: Kiekviena MakePlans paslauga turi būti prijungta prie 24SevenOffice produkto, kad būtų galima įsijungti. Atkreipkite dėmesį, kad kaina atsiimama iš 24SevenOffice produkto, o ne iš MakePlans. Turite įsitikinti, kad šios dvi kainos yra tapačios. Norėdami nustatyti produkto ID iš 24SevenOffice, eikite į paslaugą.
+        service_links: Kiekviena Makeplans paslauga turi būti prijungta prie 24SevenOffice produkto, kad būtų galima įsijungti. Atkreipkite dėmesį, kad kaina atsiimama iš 24SevenOffice produkto, o ne iš Makeplans. Turite įsitikinti, kad šios dvi kainos yra tapačios. Norėdami nustatyti produkto ID iš 24SevenOffice, eikite į paslaugą.
         service_not_linked: NĖRA prijungtas prie 24SevenOffice produkto
         type_groups: 'Pardavimo tipas užsakymui:'
         username: API vartotojo vardas
@@ -562,10 +562,10 @@ lt:
         customer_attributes_info: 'Atkreipkite dėmesį: norint Visma el. Apskaitos registruoti naują klientą reikia pašto kodo ir miesto. Jei šių verčių nėra, užsakymo iš užsakymo sugeneruoti neįmanoma.'
         select_terms_of_payment: 'Pasirinkite standartines mokėjimo sąlygas naujiems klientams:'
         service_linked: Prisijungta prie Visma el. Apskaitos produkto
-        service_links: Kiekviena MakePlans paslauga turi būti prijungta prie Visma eAccounting produkto, kad būtų įgalintas sąskaitų faktūrų išrašymas. Atkreipkite dėmesį, kad kainą gauta iš Visma eAccounting, o ne MakePlans. Turite įsitikinti, kad kaina yra vienoda abiejose sistemose.
+        service_links: Kiekviena Makeplans paslauga turi būti prijungta prie Visma eAccounting produkto, kad būtų įgalintas sąskaitų faktūrų išrašymas. Atkreipkite dėmesį, kad kainą gauta iš Visma eAccounting, o ne Makeplans. Turite įsitikinti, kad kaina yra vienoda abiejose sistemose.
         service_not_linked: NEJUNGTA prie Visma el. Apskaitos produkto
       zapier:
-        info_html: Norėdami prijungti MakePlans prie Zapier, Zapier sukurkite <a href="%{url}" target="_blank">naują Zap on Zapier</a> .
+        info_html: Norėdami prijungti Makeplans prie Zapier, Zapier sukurkite <a href="%{url}" target="_blank">naują Zap on Zapier</a> .
       zoom:
         connect_info: Prisijungta
         info: Kad ši integracija veiktų, turite prijungti išteklius prie mastelio keitimo naudotojo ir turėti bent vieną paslaugą su įjungtu mastelio keitimu.
@@ -612,7 +612,7 @@ lt:
         create: Sukurkite naują klientą 24SevenOffice
         header: Prisijunkite prie kliento 24SevenOffice
         search: Arba ieškokite tarp esamų klientų
-        search_matched_headline: Suradote esamus klientus 24SevenOffice CRM. Spustelėkite vardą, kad susietumėte šį MakePlans klientą su klientu 24SevenOffice CRM.
+        search_matched_headline: Suradote esamus klientus 24SevenOffice CRM. Spustelėkite vardą, kad susietumėte šį Makeplans klientą su klientu 24SevenOffice CRM.
         search_query: Vardo paieška
         stream_placeholder: Ieškoma 24SevenOffice CRM. Prašau palauk. Tai gali užtrukti iki 1-2 minučių.
     profile:
@@ -684,7 +684,7 @@ lt:
           activated_html: Suaktyvinta prieiga prie šio šaltinio naudojant iCalendar. Nuoroda į iCalendar kanalą yra %{link}
           disable: Išjunkite iCalendar sklaidos kanalą
           enable: Suaktyvinkite iCalendar kanalą
-          info: iCalendar sklaidos kanale bus rodomi susitikimai iš šio šaltinio MakePlans programose kitose kalendoriaus programose, tokiose kaip Microsoft Oulook, Google Calendar, iPhone arba Android. Tik skaityti, visi pakeitimai turi būti atlikti MakePlans.
+          info: iCalendar sklaidos kanale bus rodomi susitikimai iš šio šaltinio Makeplans programose kitose kalendoriaus programose, tokiose kaip Microsoft Oulook, Google Calendar, iPhone arba Android. Tik skaityti, visi pakeitimai turi būti atlikti Makeplans.
           not_activated: Neaktyvuota
         icalfeed: 'iCalendar sklaidos kanalas:'
         offers: 'Užsakymo svetainėje siūlo šias paslaugas:'
@@ -790,7 +790,7 @@ lt:
         attendances: Dalyvavimas
         attendances_info_html: Dalyvavimui renginiuose, kursuose, užsiėmimuose ar kituose lankymuose tam tikru laiku. Arba vieną kartą, arba kartojasi kaip kiekvieną antradienį.
         footer_html: Paslauga yra tai, ką siūlote savo klientams ir kuri bus rodoma užsakymo svetainėje. Apibrėžkite susitikimų, kurių darbo laikas yra fiksuotas, arba dalyvavimo tam tikru laiku paslaugas.
-        header_html: Sveiki atvykę į MakePlans.<br> Pradėkite pridėdami savo paslaugas
+        header_html: Sveiki atvykę į Makeplans.<br> Pradėkite pridėdami savo paslaugas
     shared:
       recurring:
         enabled: Pakartokite kelis kartus su šablonu

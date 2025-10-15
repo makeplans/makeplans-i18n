@@ -111,7 +111,7 @@ ms:
     layouts:
       application:
         authenticated: 'Log masuk sebagai: %{name}'
-        demo_ended: Demo MakePlans telah tamat.
+        demo_ended: Demo Makeplans telah tamat.
         footer:
           privacy_policy: Dasar privasi
           support: Sokongan

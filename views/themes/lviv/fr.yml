@@ -48,7 +48,7 @@ fr:
       step: Étape %{step} / %{steps}
     layouts:
       application:
-        about_makeplans: À propos de MakePlans
+        about_makeplans: À propos de Makeplans
         account: Compte
         alt:
           account: Compte

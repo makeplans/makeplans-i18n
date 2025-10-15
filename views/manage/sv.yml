@@ -51,7 +51,7 @@ sv:
       credit_card_form:
         billing_info: När du anger kortinformation debiterar vi kortet varje månad baserat på de aktuella priserna på vår webbplats. Den första transaktionen kommer att genomföras omedelbart. Du kan stänga ditt konto när som helst.
         header: Betalningsuppgifter
-        trial_expired: Din provperiod är över. Du måste aktivera ditt konto för att fortsätta använda MakePlans.
+        trial_expired: Din provperiod är över. Du måste aktivera ditt konto för att fortsätta använda Makeplans.
       credit_card_info:
         header: Ange kreditkortsuppgifter
         submit: Spara kreditkort
@@ -81,7 +81,7 @@ sv:
         paid_until: Kontot betalas fram till %{paid_until}.
         pause: Pausa kontot efter att den betalade perioden har avslutats.
         pause_confirm: Är du säker på att du vill pausa kontot? Kontot inaktiveras automatiskt %{paid_until}.
-        reactivate: Ditt konto är ett demo-konto, du måste återaktivera kontot för att använda MakePlans.
+        reactivate: Ditt konto är ett demo-konto, du måste återaktivera kontot för att använda Makeplans.
         reactivate_confirm: Är du säker på att du vill återaktivera kontot du har pausat? Kontot kommer automatiskt att debiteras med %{paid_until}.
         reactivate_link: Återaktivera konto
         sms_credits_available: 'SMS-saldot är: %{credits}.'
@@ -91,7 +91,7 @@ sv:
         activate_account: Aktivera ditt konto nu.
         info: Denna funktion kräver ett aktiverat konto.
       processing:
-        activated: Ditt konto är nu aktiverat :) Tack för att du använder MakePlans.
+        activated: Ditt konto är nu aktiverat :) Tack för att du använder Makeplans.
         error: Vi kunde inte bekräfta att betalningen gjordes. Kontakta Kundservice.
         info: Vänta medan vi debiterar ditt kreditkort. Det kan ta upp till en minut. Du kommer att få ett mejl från oss när processen är klar.
     bookings:
@@ -111,11 +111,11 @@ sv:
             disable: Inaktivera iCalendar-flöden för kontot
             enable: Aktivera iCalendar-flöden för kontot
             future_html: 'Framtida reservationer: %{link}'
-            info: Ett iCalendar-flöde visar bokningar från ditt konto i andra kalenderapplikationer som Microsoft Outlook, Google Kalender, iPhone eller Android. Skrivskyddat, alla ändringar måste göras i MakePlans.
+            info: Ett iCalendar-flöde visar bokningar från ditt konto i andra kalenderapplikationer som Microsoft Outlook, Google Kalender, iPhone eller Android. Skrivskyddat, alla ändringar måste göras i Makeplans.
             not_activated: Inte aktiverad
             past_html: 'Tidigare bokningar: %{link}'
       fiken:
-        delayed_info: Det kan ta en stund innan fakturan skapas i Fiken. Försök inte skapa en faktura igen om information från Fiken inte syns i MakePlans.
+        delayed_info: Det kan ta en stund innan fakturan skapas i Fiken. Försök inte skapa en faktura igen om information från Fiken inte syns i Makeplans.
         header: Kontakter nu Fiken ...
         to_booking: Visa reservation
       form_appointment:
@@ -310,9 +310,9 @@ sv:
         confirm_message: Sista chansen. Är du säker på att du vill ta bort kontot med all din data?
         disable_link: Ja, jag vill att alla mina data ska raderas.
         header: Är du säker på att du vill ta bort ditt konto?
-        i_love_makeplans: Nej, jag fortsätter att använda MakePlans.
+        i_love_makeplans: Nej, jag fortsätter att använda Makeplans.
         info: Om du tar bort ditt konto kommer all din information att raderas. Är du säker på att du vill göra det här?
-        pause: Kanske vill du lägga ditt konto i spärr? Du behöver inte betala varje månad, men kontot är fortfarande tillgängligt när du behöver använda MakePlans igen vid ett senare tillfälle.
+        pause: Kanske vill du lägga ditt konto i spärr? Du behöver inte betala varje månad, men kontot är fortfarande tillgängligt när du behöver använda Makeplans igen vid ett senare tillfälle.
         pause_link: Du kan göra det på betalningssidan.
       change_time_zone:
         edit:
@@ -322,8 +322,8 @@ sv:
           header: Tidszonsändring pågår
           info: Alla bokningar och meddelanden kommer att uppdateras snart. Vänligen *kör* inte den här funktionen igen.
       configuration:
-        header: Konfigurera MakePlans
-        intro: Här kan du konfigurera MakePlans och anpassa det för dig. Du kan lägga till tjänster och kategorier som du erbjuder på bokningssidan, anpassa öppettider, ändra utgående meddelanden (SMS och e-post), lägga till fler användare och anpassa många andra inställningar i MakePlans.
+        header: Konfigurera Makeplans
+        intro: Här kan du konfigurera Makeplans och anpassa det för dig. Du kan lägga till tjänster och kategorier som du erbjuder på bokningssidan, anpassa öppettider, ändra utgående meddelanden (SMS och e-post), lägga till fler användare och anpassa många andra inställningar i Makeplans.
         menu_info: Välj i menyn till vänster. Om du har några frågor angående hur man gör ändringar, vänligen kontakta kundtjänst.
         trial_info: Detta är ett demo-konto - klicka här för att aktivera
       developer:
@@ -387,7 +387,7 @@ sv:
         email: E-post
         header: Ändra utgående kommunikation
         ical: iCalendar
-        mailer_sender_valid_domain: Du har validerat %{domain} och MakePlans kommer att skicka e-postmeddelanden på den domänen åt dig. Andra e-postadresser kommer att anges som svarsadresser.
+        mailer_sender_valid_domain: Du har validerat %{domain} och Makeplans kommer att skicka e-postmeddelanden på den domänen åt dig. Andra e-postadresser kommer att anges som svarsadresser.
         message_template_info: Det här är de inbyggda äldre meddelandena. För stöd för fler meddelanden och mer kontroll, använd meddelandemallfunktionen.
         settings:
           custom_email_sending: Skriv över e-postmeddelanden med innehållet nedan (annars läggs innehållet till i standardmallen för e-post)
@@ -413,7 +413,7 @@ sv:
         automatic_messages: Automatiska utskick (administrationssystem och API)
         automatic_messages_booking_site: Automatiska utskick (på bokningssidan)
         booking_site_message: Skicka meddelande på bokningssidan
-        booking_site_outgoing_messages_info: Som standard skickar MakePlans en avisering vid viktiga händelser som bekräftelse via den valda verifieringsmetoden, till exempel SMS för SMS-verifiering, eller e-post om du har annan eller ingen verifiering alls.
+        booking_site_outgoing_messages_info: Som standard skickar Makeplans en avisering vid viktiga händelser som bekräftelse via den valda verifieringsmetoden, till exempel SMS för SMS-verifiering, eller e-post om du har annan eller ingen verifiering alls.
         cancellation_email: Skicka ett mejl när du avbryter en bokning
         cancellation_sms: Skicka SMS när du avbryter en bokning
         confirmation_email: Skicka ett e-postmeddelande när du skapar en bokning
@@ -425,9 +425,9 @@ sv:
         message_template_info: Detta är den inbyggda funktionen för att skicka meddelanden. För fler påminnelser och mer kontroll, använd meddelandemallsfunktionen.
         modification_email: Skicka ett e-postmeddelande när du ändrar en bokning
         modification_sms: Skicka ett SMS när du ändrar en bokning
-        outgoing_messages_info: 'MakePlans föreslår att du skickar e-post / SMS (vad du har ställt in som verifieringsmetod) när du skapar, ändrar eller avbryter en bokning. Vissa utskick, t.ex. avbokning av bokningar, sker också automatiskt. Du kan inaktivera automatiska utskick (t.ex. när du flyttar en bokning i en kalender, avbryter eller skapar en reservation med API: n) eller inaktiverar förslag för att skicka in formulär genom att ändra inställningarna nedan. OBS! Detta gäller inte bokningssidan. Bokningssidan skickas alltid ut automatiskt baserat på verifieringsmetod.'
+        outgoing_messages_info: 'Makeplans föreslår att du skickar e-post / SMS (vad du har ställt in som verifieringsmetod) när du skapar, ändrar eller avbryter en bokning. Vissa utskick, t.ex. avbokning av bokningar, sker också automatiskt. Du kan inaktivera automatiska utskick (t.ex. när du flyttar en bokning i en kalender, avbryter eller skapar en reservation med API: n) eller inaktiverar förslag för att skicka in formulär genom att ändra inställningarna nedan. OBS! Detta gäller inte bokningssidan. Bokningssidan skickas alltid ut automatiskt baserat på verifieringsmetod.'
         reminder_sms: Skickar påminnelse via SMS
-        reminder_sms_info: Avsändaren är "MakePlans". Kontakta kundtjänst för att byta till en annan avsändare.
+        reminder_sms_info: Avsändaren är "Makeplans". Kontakta kundtjänst för att byta till en annan avsändare.
         sms_reminder_time_info: 'SMS skickas ut kl 12:00 dagen före bokningstiden. Fyll i fältet nedan om du vill skicka ut vid en annan tidpunkt. Ange på engelska. Ex: "två timmar före" (SMS skickas ut två timmar före bokning) eller "08:00 igår" (8 på morgonen dagen före bokning).'
       edit_user_notifications:
         approvement_email: E-post av en ny bokningsförfrågan
@@ -442,7 +442,7 @@ sv:
         mail_notification_info: För att skicka varningar till flera personer, använd semikolon för att separera e-postadresser.
         notification_email: Skicka ett mejl när du gör en ny bokning
         notification_sms: Skicka SMS med ny bokning
-        outgoing_messages_info: Om du har ställt in nya bokningar som ska godkännas av administratören kommer MakePlans automatiskt att meddela dig via e-post om nya bokningsförfrågningar. Om du inte vill ha en sådan anmälan eller om godkännande sker automatiskt via ett externt system (API) kan du inaktivera detta nedan.
+        outgoing_messages_info: Om du har ställt in nya bokningar som ska godkännas av administratören kommer Makeplans automatiskt att meddela dig via e-post om nya bokningsförfrågningar. Om du inte vill ha en sådan anmälan eller om godkännande sker automatiskt via ett externt system (API) kan du inaktivera detta nedan.
         settings:
           custom_email_user_sending: Åsidosätt hela e-postmeddelanden med innehållet nedan (annars infogas innehållet endast i standardmallen för e-post)
         sms: SMS
@@ -464,7 +464,7 @@ sv:
           dns: Visa dina DNS-värden.
           header: Vi behandlar din begäran.
         dns:
-          dkim: För att tillåta att MakePlans skickar med e-postadressen %{domain}, lägg till följande TXT-post.
+          dkim: För att tillåta att Makeplans skickar med e-postadressen %{domain}, lägg till följande TXT-post.
           dkim_host: Värd
           dkim_value: Värde
           header: Lägg till DNS-poster
@@ -472,13 +472,13 @@ sv:
         info:
           add: Lägg till din e-postdomän för att skicka
           header: Skicka e-post med din egen e-postadress
-          info: Som standard skickas alla e-postmeddelanden från %{default_email}. För %{price} per månad kan du använda en e-postadress på din egen domän. För att tillåta att MakePlans skickar åt dig måste du lägga till några DNS-poster. Observera att detta kräver en teknisk ändring av din domän och tillåter MakePlans att skicka med vilken adress som helst på den valda domänen. Vi rekommenderar att du använder en underdomän av säkerhetsskäl, så booking.example.no istället för example.no.
+          info: Som standard skickas alla e-postmeddelanden från %{default_email}. För %{price} per månad kan du använda en e-postadress på din egen domän. För att tillåta att Makeplans skickar åt dig måste du lägga till några DNS-poster. Observera att detta kräver en teknisk ändring av din domän och tillåter Makeplans att skicka med vilken adress som helst på den valda domänen. Vi rekommenderar att du använder en underdomän av säkerhetsskäl, så booking.example.no istället för example.no.
         new:
           domain: Domän
           header: Lägg till din anpassade e-postdomän för utskick
         show:
           header: Du har verifierat din e-postdomän för att skicka.
-          info: MakePlans kommer att kunna skicka e-post från vilken e-postadress som helst på din domän %{domain}
+          info: Makeplans kommer att kunna skicka e-post från vilken e-postadress som helst på din domän %{domain}
         verify:
           header: Inte verifierad
           info: Om du har lagt till DNS-posterna, vänta tills de har spridits. Försök igen senare.
@@ -499,15 +499,15 @@ sv:
           events: Händelser
           people: Kunder
         executed: Exportfilen skickas nu till din e-postadress.
-        header: Exportera data från MakePlans
+        header: Exportera data från Makeplans
         info: Du kommer att få ett e-postmeddelande med en bifogad CSV-fil.
       import:
         header: Importera data
-        info: Det är möjligt att importera data, som exempelvis kunder, i MakePlans. Kontakta kundtjänst för mer information.
+        info: Det är möjligt att importera data, som exempelvis kunder, i Makeplans. Kontakta kundtjänst för mer information.
       invoices:
         index:
           email: Skicka en kopia via e-post
-          header: Fakturor från MakePlans
+          header: Fakturor från Makeplans
       promote:
         booking_button_html_info: För att infoga din bokningsknapp på din webbplats, vänligen kopiera HTML-koden nedan. Om du behöver hjälp, vänligen kontakta din webbdesigner.
         booking_button_html_preview: Förhandsvisning av bokningsknapp
@@ -529,7 +529,7 @@ sv:
           custom_info: Alla SMS skickas med %{sms_sender}.
           delete: Ta bort anpassat SMS-sändar-ID.
           header: SMS-avsändar-ID
-          info: Alla SMS skickas från MakePlans.
+          info: Alla SMS skickas från Makeplans.
       tools:
         header: Olika funktioner för ditt konto
         link:
@@ -630,7 +630,7 @@ sv:
         activate_settings_4: Aktivera Extensor Online-bokningsversion 4-inställningar
         info: För att möjliggöra synkronisering med Extensor krävs installation av Extensor Online-bokning. Klicka på länken nedan för att starta processen. Du kommer att kontaktas av Extensor.
         reactive_settings: Återaktivera inställningarna för onlinebokning för Extensor.
-        version: MakePlans är inställd på att fungera med version %{version} av Extensor Online Booking.
+        version: Makeplans är inställd på att fungera med version %{version} av Extensor Online Booking.
       fakturo:
         password: Lösenord
         username: Användarnamn
@@ -645,7 +645,7 @@ sv:
         select_bank_account: Välj det bankkonto som ska visas för betalning på fakturan
         select_company: Välj företag
         service_linked: Ansluten till produkten i Fiken
-        service_links: 'Varje tjänst måste vara länkad till en produkt i Fiken för att det ska vara möjligt att skapa en faktura. OBS: Priset erhålls från Fiken - inte från MakePlans. Du måste se till att priset i båda systemen är identiskt.'
+        service_links: 'Varje tjänst måste vara länkad till en produkt i Fiken för att det ska vara möjligt att skapa en faktura. OBS: Priset erhålls från Fiken - inte från Makeplans. Du måste se till att priset i båda systemen är identiskt.'
         service_not_linked: INTE ansluten till produkten i Fiken
         vat_type: Moms typ
       headline: Integration med %{integration}
@@ -675,16 +675,16 @@ sv:
         connected_to: Ansluten till databas med id %{database_id}
         database_info: 'Databasen måste ställas in med följande egenskaper: Namn, E-post (typ: e-post), Telefon (typ: telefon).'
         select_database: Välj databas
-        sharing_info: Vänligen dela minst en databas med MakePlans-integrationen
+        sharing_info: Vänligen dela minst en databas med Makeplans-integrationen
       oauth_connect: Anslut till tjänst
       selected_option: Vald
       sendy:
         connect_info_html: Nya kunder kommer att prenumerera på listan med id <em>%{list_id}</em> på installation %{api_url}
       slack:
-        connect_info: För varje ny beställning i MakePlans publiceras den som ett meddelande i %{channel} Slack-kanalen.
+        connect_info: För varje ny beställning i Makeplans publiceras den som ett meddelande i %{channel} Slack-kanalen.
       stripe:
         disable_customer_saving: Spara inte kunden till Stripe
-        payment_info: MakePlans drar av en transaktionsavgift på %{application_fee_percent}% för alla transaktioner.
+        payment_info: Makeplans drar av en transaktionsavgift på %{application_fee_percent}% för alla transaktioner.
         receipt_email: Skicka kvitto till kunden från Stripe
         save_card_billing_details: Spara transaktionsfakturauppgifter
       tfso:
@@ -704,7 +704,7 @@ sv:
           Offer: Erbjudande
         password: API-lösenord
         service_linked: Ansluten till produkten i 24SevenOffice
-        service_links: 'Varje tjänst måste vara länkad till en produkt i 24SevenOffice för att kunna skapa en faktura. OBS: Priset erhålls från 24SevenOffice - inte från MakePlans. Du måste se till att priset i båda systemen är identiskt. Gå till en tjänst och definiera produkt-ID från 24SevenOffice.'
+        service_links: 'Varje tjänst måste vara länkad till en produkt i 24SevenOffice för att kunna skapa en faktura. OBS: Priset erhålls från 24SevenOffice - inte från Makeplans. Du måste se till att priset i båda systemen är identiskt. Gå till en tjänst och definiera produkt-ID från 24SevenOffice.'
         service_not_linked: INTE ansluten till produkten i 24SevenOffice
         type_groups: 'Försäljningstyp för beställning:'
         username: API-användarnamn
@@ -720,13 +720,13 @@ sv:
         customer_attributes_info: 'OBS: Visma eAccounting kräver en postnummer och postadress för att en kund ska kunna skapas. Om dessa värden inte fylls i går det inte att skapa en faktura från en bokning.'
         select_terms_of_payment: 'Välj standardbetalningsvillkor för nya kunder:'
         service_linked: Ansluten till produkten i Visma eAccounting
-        service_links: 'Varje tjänst måste vara länkad till en produkt i Visma eAccounting för att kunna skapa en faktura. OBS: Priset erhålls från Visma eAccounting - inte från MakePlans. Du måste se till att priset i båda systemen är identiskt.'
+        service_links: 'Varje tjänst måste vara länkad till en produkt i Visma eAccounting för att kunna skapa en faktura. OBS: Priset erhålls från Visma eAccounting - inte från Makeplans. Du måste se till att priset i båda systemen är identiskt.'
         service_not_linked: INTE ansluten till produkten i Visma eAccounting
       whereby:
         connect_info: Ansluten
         setup_info: Ett Whereby-möte skapas automatiskt för alla tjänster där Whereby är aktiverat.
       zapier:
-        info_html: För att ansluta MakePlans till Zapier måste du <a href="%{url}" target="_blank">skapa en ny Zap i Zapier</a> .
+        info_html: För att ansluta Makeplans till Zapier måste du <a href="%{url}" target="_blank">skapa en ny Zap i Zapier</a> .
       zoom:
         connect_info: Ansluten
         info: För att denna integration ska fungera måste du ansluta en resurs till en användare i Zoom och ha minst en tjänst med Zoom aktiverat.
@@ -786,7 +786,7 @@ sv:
         create: Skapa ett nytt företag i 24SevenOffice
         header: Anslut till kund från 24SevenOffice
         search: Eller sök bland befintliga kunder
-        search_matched_headline: Hittade befintliga kunder i 24SevenOffice CRM. Tryck på namn för att ansluta denna kund i MakePlans till kund i 24SevenOffice CRM.
+        search_matched_headline: Hittade befintliga kunder i 24SevenOffice CRM. Tryck på namn för att ansluta denna kund i Makeplans till kund i 24SevenOffice CRM.
         search_query: Sök efter namn
         stream_placeholder: Söker i 24SevenOffice. Vänta. Det kan ta upp till 1-2 minuter.
     profile:
@@ -878,7 +878,7 @@ sv:
           disable: Inaktivera iCalendar-feed
           enable: Aktivera iCalendar-feed
           future_html: 'Framtida beställningar: %{link}'
-          info: Med iCalendar-feed kan du visa möten från resursen i MakePlans i andra kalenderprogram, som exempelvis Microsoft Oulook, Google Calendar, iPhone eller Android. Skrivskyddad, alla ändringar måste göras i MakePlans.
+          info: Med iCalendar-feed kan du visa möten från resursen i Makeplans i andra kalenderprogram, som exempelvis Microsoft Oulook, Google Calendar, iPhone eller Android. Skrivskyddad, alla ändringar måste göras i Makeplans.
           not_activated: Inte aktiverad
           past_html: 'Tidigare beställningar: %{link}'
         icalfeed: 'iCalendar-feed:'
@@ -1028,7 +1028,7 @@ sv:
         attendances: Deltagande
         attendances_info_html: För att delta i event, kurser, lektioner eller andra deltaganden vid bestämda tider. Antingen en gång eller till exempel återkommande varje tisdag.
         footer_html: En tjänst är något du erbjuder dina kunder och kommer att visas på bokningssidan. Ange tjänster för tidsbokning som har fasta öppettider eller för deltagande vid en viss tidpunkt.
-        header_html: Välkommen till MakePlans.<br>Börja med att lägga till dina tjänster
+        header_html: Välkommen till Makeplans.<br>Börja med att lägga till dina tjänster
     shared:
       recurring:
         enabled: Upprepa flera gånger med ett mönster

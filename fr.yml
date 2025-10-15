@@ -167,8 +167,8 @@ fr:
       no_values_present: Votre nom, numéro de téléphone ou e-mail est requis.
       not_authenticated: Vous avez été déconnecté.
       not_found: Impossible de trouver les données. Essayez de recharger la page.
-      offline: Impossible de se connecter à MakePlans. Veuillez vérifier que vous êtes en ligne.
-      server_error: Erreur dans MakePlans
+      offline: Impossible de se connecter à Makeplans. Veuillez vérifier que vous êtes en ligne.
+      server_error: Erreur dans Makeplans
       syntax_error: Erreur dans la syntaxe fournie.
       unknown: Erreur inconnue. Essayez de recharger la page.
     models:
@@ -493,7 +493,7 @@ fr:
       invoice_client:
         errors:
           nothing_to_invoice: Compte pas prêt pour la facturation. Veuillez vous assurer que vous disposez d'au moins une ressource.
-        invoice_text: Utilisation de la prise de rendez-vous en ligne MakePlans
+        invoice_text: Utilisation de la prise de rendez-vous en ligne Makeplans
   title:
     actions:
       edit: Éditer
@@ -508,10 +508,10 @@ fr:
         invalid: est invalide
   worker:
     integration_slack:
-      fallback: Un nouveau rendez-vous a été pris dans MakePlans
-      footer: API MakePlans
+      fallback: Un nouveau rendez-vous a été pris dans Makeplans
+      footer: API Makeplans
       pretext: "%{person} a pris rendez-vous sur %{booked_from}"
-      title: Afficher le rendez-vous dans MakePlans
+      title: Afficher le rendez-vous dans Makeplans
     integration_tfso_list_companies:
       errors:
         no_results: Aucun client existant trouvé.
@@ -519,5 +519,5 @@ fr:
       errors:
         already_created: Déjà créé.
         no_company: Le client a été supprimé dans 24SevenOffice. Vous devez réactiver le client dans 24SevenOffice pour continuer.
-        no_product: Le produit a été supprimé dans 24SevenOffice. Vous devez réactiver le produit dans 24SevenOffice ou connecter le service à un nouveau produit de MakePlans avant de pouvoir continuer.
+        no_product: Le produit a été supprimé dans 24SevenOffice. Vous devez réactiver le produit dans 24SevenOffice ou connecter le service à un nouveau produit de Makeplans avant de pouvoir continuer.
         product_not_defined_on_service: Ce service n'est pas connecté à un produit dans 24SevenOffice.

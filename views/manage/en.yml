@@ -54,7 +54,7 @@ en:
       credit_card_form:
         billing_info: When you add your credit card details we will charge your card every month based on the prices stated on our website. The first transaction will be performed immediately. You can cancel your subscription at any time.
         header: Payment information
-        trial_expired: Your trial has expired. Please active your account to continue using MakePlans.
+        trial_expired: Your trial has expired. Please active your account to continue using Makeplans.
       credit_card_info:
         header: Enter credit card details
         submit: Save credit card
@@ -84,7 +84,7 @@ en:
         paid_until: Your account is paid for until %{paid_until}.
         pause: Pause the account when the current subscription ends.
         pause_confirm: Are you sure you want to put the account on hold? The account will automatically be deactivated on %{paid_until}.
-        reactivate: Your account is currently in trial mode. You must reactivate your account to continue to use MakePlans
+        reactivate: Your account is currently in trial mode. You must reactivate your account to continue to use Makeplans
         reactivate_confirm: Are you sure you want to reactivate the account you put on hold? The account will be next charged %{paid_until}.
         reactivate_link: Reactivate account
         sms_credits_available: You have a balance of %{credits} SMS.
@@ -94,7 +94,7 @@ en:
         activate_account: Activate account now
         info: This feature requires your account to be activated.
       processing:
-        activated: Your account is now activated :) Thanks for using MakePlans.
+        activated: Your account is now activated :) Thanks for using Makeplans.
         error: Unable to verify payment. Please contact customer service.
         info: Please wait while we charge your payment card. This can take up to one minutes. You will receive an email from us when the process is completed.
     bookings:
@@ -114,11 +114,11 @@ en:
             disable: Deactivate account iCalendar-feeds
             enable: Activate account iCalendar-feeds
             future_html: 'Future reservations: %{link}'
-            info: An iCalendar-feed will show appointments from your account in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in MakePlans.
+            info: An iCalendar-feed will show appointments from your account in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in Makeplans.
             not_activated: Not activated
             past_html: 'Past reservations: %{link}'
       fiken:
-        delayed_info: It will take some time before the order is created in Fiken. Do not try to generate the order again if no information from Fiken is visible in MakePlans.
+        delayed_info: It will take some time before the order is created in Fiken. Do not try to generate the order again if no information from Fiken is visible in Makeplans.
         header: Contating Fiken...
         to_booking: Show reservation
       form_appointment:
@@ -325,9 +325,9 @@ en:
         confirm_message: Last chance. Are you absolutely sure that you want to delete your account with all your data?
         disable_link: Yes, please delete all my data.
         header: Are you sure you want to delete your account?
-        i_love_makeplans: No, I want to continue using MakePlans.
+        i_love_makeplans: No, I want to continue using Makeplans.
         info: All data in your account will be deleted. Are you sure you want to continue?
-        pause: Would you rather set your account on pause? You will not pay a monthly fee and your account will be available when you are ready to use MakePlans again.
+        pause: Would you rather set your account on pause? You will not pay a monthly fee and your account will be available when you are ready to use Makeplans again.
         pause_link: You can pause your account on the billing page.
       change_time_zone:
         edit:
@@ -337,8 +337,8 @@ en:
           header: Time zone change in progress
           info: All reservations and messages will be updated shortly. Do *not* run this function again.
       configuration:
-        header: MakePlans setup
-        intro: This is where you can configure MakePlans and how it should work for you. You can add services and categories that you offer on the booking site, adjust availability, change the outgoing messages (SMS and email), add more users and adjust many other settings in MakePlans.
+        header: Makeplans setup
+        intro: This is where you can configure Makeplans and how it should work for you. You can add services and categories that you offer on the booking site, adjust availability, change the outgoing messages (SMS and email), add more users and adjust many other settings in Makeplans.
         menu_info: Select from the menu on the left side. If you have any questions about how to make adjustment please contact customer service.
         trial_info: This is a trial account - click here to activate
       developer:
@@ -400,7 +400,7 @@ en:
         email: Email
         header: Modify outgoing comminication
         ical: iCalendar
-        mailer_sender_valid_domain: You have validated %{domain} and MakePlans will send emails on that domain on your behalf. Other email addresses will be specified as reply-to.
+        mailer_sender_valid_domain: You have validated %{domain} and Makeplans will send emails on that domain on your behalf. Other email addresses will be specified as reply-to.
         message_template_info: This is the built-in legacy messages. For multiple message support and more control please use the message tenplate feature.
         settings:
           custom_email_sending: Completely override emails with content below (otherwise content is just inserted in standard email)
@@ -426,7 +426,7 @@ en:
         automatic_messages: Automatic messages (In the admin system and the API)
         automatic_messages_booking_site: Automatic messages (On the booking site)
         booking_site_message: Send message on the booking site
-        booking_site_outgoing_messages_info: MakePlans will by default send a message for important events such as a confirmation message using the verification method, for example SMS with SMS verification, or using email if using other/none verification.
+        booking_site_outgoing_messages_info: Makeplans will by default send a message for important events such as a confirmation message using the verification method, for example SMS with SMS verification, or using email if using other/none verification.
         awaiting_confirmation_email: Send email when reservation requires confirmation
         awaiting_confirmation_sms: Send SMS when reservation requires confirmation
         cancellation_email: Send email when cancelling reservation
@@ -441,9 +441,9 @@ en:
         message_template_info: This is the built-in legacy reminder. For multiple reminders and more control please use the message tenplate feature.
         modification_email: Send email when modifying reservation
         modification_sms: Send SMS when modifying reservation
-        outgoing_messages_info: 'MakePlans will suggest to send email/SMS (whatever you set up as verification method) when you create, modify or cancel a reservation. Some messages such as cancellation occurs automatically. You can deactivate automatic messages (for example when moving a reservation by dragging it in the calendar, cancellation or creating a new reservation using the API) or deactivate suggestion to send messages in the form by changing the settings below. Note: This does not apply to the booking site. The booking site will always automatically send messages based on your verificaiton method.'
+        outgoing_messages_info: 'Makeplans will suggest to send email/SMS (whatever you set up as verification method) when you create, modify or cancel a reservation. Some messages such as cancellation occurs automatically. You can deactivate automatic messages (for example when moving a reservation by dragging it in the calendar, cancellation or creating a new reservation using the API) or deactivate suggestion to send messages in the form by changing the settings below. Note: This does not apply to the booking site. The booking site will always automatically send messages based on your verificaiton method.'
         reminder_sms: Send reminder SMS
-        reminder_sms_info: The default sender name is 'MakePlans'. Go to 'Addons' to change the sender name.
+        reminder_sms_info: The default sender name is 'Makeplans'. Go to 'Addons' to change the sender name.
         sms_reminder_time_info: 'The reminder SMS is by default sent out at noon the day before the reservation. If you want to change this please modify the field below. Example: ''two hours before'' (SMS is sent out two hours before the reservation) or ''8am yesterday'' (the reminder SMS will be sent at 8am the day before the reservation)'
       edit_user_notifications:
         approvement_email: Email notification for new reservation requests
@@ -481,7 +481,7 @@ en:
           dns: See your DNS values.
           header: We are processing your request
         dns:
-          dkim: To allow MakePlans to send with an email address on %{domain} add the following TXT record.
+          dkim: To allow Makeplans to send with an email address on %{domain} add the following TXT record.
           dkim_host: Host
           dkim_value: Value
           header: Add DNS records
@@ -489,13 +489,13 @@ en:
         info:
           add: Add your email sending domain
           header: Send emails using your own email address
-          info: By default all emails are sent from %{default_email}. For %{price} per month you can use an email address on your own domain. To allow MakePlans to send on your behalf you need to add some DNS records. Please understand that this requires a technical change on your domain and that it allows MakePlans to send using any address on the chosen domain. We recommend that you use a subdomain for security reasons, so booking.example.org instead of example.org.
+          info: By default all emails are sent from %{default_email}. For %{price} per month you can use an email address on your own domain. To allow Makeplans to send on your behalf you need to add some DNS records. Please understand that this requires a technical change on your domain and that it allows Makeplans to send using any address on the chosen domain. We recommend that you use a subdomain for security reasons, so booking.example.org instead of example.org.
         new:
           domain: Domain
           header: Add your custom email sending domain
         show:
           header: You have verified your email sending domain
-          info: MakePlans will be able to send emails from any email address on your domain %{domain}
+          info: Makeplans will be able to send emails from any email address on your domain %{domain}
         verify:
           header: Not verified
           info: If you have added the DNS records please wait until they have propagated. Please try again later.
@@ -516,15 +516,15 @@ en:
           events: Events
           people: Customers
         executed: The export is now being sent to your email address. This could take up to 10 minutes if you are exporting a lot of data.
-        header: Export data from MakePlans
+        header: Export data from Makeplans
         info: You will receive an email with a CSV-file attachment.
       import:
         header: Import data
-        info: It is possible to import data such as customers into MakePlans. Contact support for more information.
+        info: It is possible to import data such as customers into Makeplans. Contact support for more information.
       invoices:
         index:
           email: Send a copy to your email
-          header: Invoices from MakePlans
+          header: Invoices from Makeplans
       promote:
         booking_button_html_info: To insert the booking button on your website please copy the HTML-code below. If you need help please contact your web-designer.
         booking_button_html_preview: Booking button preview
@@ -546,7 +546,7 @@ en:
           custom_info: All SMS will be sent using %{sms_sender}.
           delete: Remove custom SMS sender ID.
           header: SMS Sender ID
-          info: All SMS will be sent from MakePlans.
+          info: All SMS will be sent from Makeplans.
       tools:
         header: Tools for your account
         link:
@@ -655,7 +655,7 @@ en:
         activate_settings_4: Enable settings for Extensor Online Booking version 4
         info: To activate syncronization with Extensor you must install Extensor Online Booking. Click the link below to start the process. You will be contacted by Extensor.
         reactive_settings: Reactivate settings for Extensor Online Booking.
-        version: MakePlans is configured to work with version %{version} of Extensor Online Booking.
+        version: Makeplans is configured to work with version %{version} of Extensor Online Booking.
       fakturo:
         password: Password
         username: Username
@@ -670,7 +670,7 @@ en:
         select_bank_account: Choose bank account to be displayed on the invoice
         select_company: Choose company
         service_linked: Connect to product in Fiken
-        service_links: 'Every service must be connected to a product in Fiken to make it possible to create an order in Fiken. Please note: Price is fetched from Fiken - not from MakePlans. You must ensure that price in both applications are identical.'
+        service_links: 'Every service must be connected to a product in Fiken to make it possible to create an order in Fiken. Please note: Price is fetched from Fiken - not from Makeplans. You must ensure that price in both applications are identical.'
         service_not_linked: NOT connected to a product in Fiken.
         vat_type: VAT-type
       headline: Integration with %{integration}
@@ -700,16 +700,16 @@ en:
         connected_to: Connected to database with id %{database_id}
         database_info: 'The database must be set up with the following properties: Name, Email (type: email), Phone (type: phone).'
         select_database: Select database
-        sharing_info: Please share at least one database with the MakePlans integration
+        sharing_info: Please share at least one database with the Makeplans integration
       oauth_connect: Connect to service
       selected_option: Selected
       sendy:
         connect_info_html: New customers will be subscribed to list with id <em>%{list_id}</em> on installation %{api_url}
       slack:
-        connect_info: For every new reservation in MakePlans it will be published as a message in the %{channel} Slack channel.
+        connect_info: For every new reservation in Makeplans it will be published as a message in the %{channel} Slack channel.
       stripe:
         disable_customer_saving: Do not save customer to Stripe
-        payment_info: For all transactions a platform fee of %{application_fee_percent}% is deducted by MakePlans.
+        payment_info: For all transactions a platform fee of %{application_fee_percent}% is deducted by Makeplans.
         receipt_email: Send a receipt to the customer from Stripe
         save_card_billing_details: Save billing details for transaction
       tfso:
@@ -729,7 +729,7 @@ en:
           Offer: Offer
         password: API-Password
         service_linked: Connect to product in 24SevenOffice
-        service_links: Each service in MakePlans must be connected to a product in 24SevenOffice to enable invocing. Please note that the price is retrived from the product in 24SevenOffice - not from MakePlans. You must ensure that these two prices are identical. Go to a service to define a product id from 24SevenOffice.
+        service_links: Each service in Makeplans must be connected to a product in 24SevenOffice to enable invocing. Please note that the price is retrived from the product in 24SevenOffice - not from Makeplans. You must ensure that these two prices are identical. Go to a service to define a product id from 24SevenOffice.
         service_not_linked: NOT connected to a product in 24SevenOffice
         type_groups: 'Sales type for order:'
         username: API-Username
@@ -745,13 +745,13 @@ en:
         customer_attributes_info: 'Please note: Visma eAccounting requires postal code and city to register a new customer. If these values are not present it is not possible to generate a order from a reservation.'
         select_terms_of_payment: 'Please choose standard payment terms for new customers:'
         service_linked: Connected to a product in Visma eAccounting
-        service_links: Every service in MakePlans must be connected to a product in Visma eAccount to enable invoicing. Please note that price is retrieved from Visma eAccounting - not MakePlans. You must ensure that price is identical in both systems.
+        service_links: Every service in Makeplans must be connected to a product in Visma eAccount to enable invoicing. Please note that price is retrieved from Visma eAccounting - not Makeplans. You must ensure that price is identical in both systems.
         service_not_linked: NOT connected to a product in Visma eAccounting
       whereby:
         connect_info: Connected
         setup_info: A Whereby meeting will be automatically created for each service that has Whereby activated.
       zapier:
-        info_html: To connect MakePlans to Zapier please make a <a href="%{url}" target="_blank">new Zap on Zapier</a>.
+        info_html: To connect Makeplans to Zapier please make a <a href="%{url}" target="_blank">new Zap on Zapier</a>.
       zoom:
         connect_info: Connected
         info: For this integration to work you must connect a resource to a user in Zoom and have at least one service with Zoom enabled.
@@ -811,7 +811,7 @@ en:
         create: Create new customer in 24SevenOffice
         header: Connect to customer in 24SevenOffice
         search: Or search among existing customers
-        search_matched_headline: Found existing customers in 24SevenOffice CRM. Click the name to connect this customer in MakePlans to the customer in 24SevenOffice CRM.
+        search_matched_headline: Found existing customers in 24SevenOffice CRM. Click the name to connect this customer in Makeplans to the customer in 24SevenOffice CRM.
         search_query: Name search
         stream_placeholder: Searching in 24SevenOffice CRM. Please wait. This could take up to 1-2 minutes.
     profile:
@@ -903,7 +903,7 @@ en:
           disable: Deactivate iCalendar-feed
           enable: Activate iCalendar-feed
           future_html: 'Future reservations: %{link}'
-          info: iCalendar-feed will show appointments from this resource in MakePlans in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in MakePlans.
+          info: iCalendar-feed will show appointments from this resource in Makeplans in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in Makeplans.
           not_activated: Not activated
           past_html: 'Past reservations: %{link}'
         icalfeed: 'iCalendar-feed:'
@@ -1058,7 +1058,7 @@ en:
         attendances: Attendance
         attendances_info_html: For attendance at events, courses, classes or other attendances at specific times. Either once or recurring like every Tuesday.
         footer_html: A service is something you offer to your customers and will be shown on the booking site. Define services for appointments which have fixed opening hours or for attendance which occurs at a specific time.
-        header_html: Welcome to MakePlans.<br>Start by adding your services
+        header_html: Welcome to Makeplans.<br>Start by adding your services
     shared:
       recurring:
         enabled: Repeat multiple times with a pattern

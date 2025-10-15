@@ -69,10 +69,10 @@ lt:
     admin_notification_confirmation:
       booking_type_appointment: |-
         Nauja {{booking.resource.title}} rezervacija, kurią pateikė {{booking.person.name}}. {{booking.title}} {{booking.time_range}}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         Naujas {{booking.event.full_title}} {{booking.time_range}} prisiregistravimas {{booking.person.name}}.
-        MakePlans
+        Makeplans
     cancellation: Jūsų užsakymas {{booking.booked_from}} buvo atšauktas.
     confirmation: Jūs rezervavote {{booking.title}} {{booking.booked_from}}.
     declined: Jūsų užklausa rezervuoti {{booking.title}} {{booking.booked_from}} nebuvo patvirtinta. Prašau, pabandykite dar kartą.
@@ -91,7 +91,7 @@ lt:
         Norėdami prisijungti, spustelėkite toliau pateiktą nuorodą:
 
         %{link}
-      subject: Prisijunkite prie MakePlans
+      subject: Prisijunkite prie Makeplans
   person_sms:
     perishable_token: "{{perishable_token}} yra jūsų autentifikavimo kodas."
     signature: |2-

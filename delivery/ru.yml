@@ -91,7 +91,7 @@ ru:
         Для входа нажмите ссылку ниже:
 
         %{link}
-      subject: Войти в MakePlans
+      subject: Войти в Makeplans
   person_sms:
     perishable_token: "{{ perishable_token }} - это ваш код для аутентификации."
     signature: |2-

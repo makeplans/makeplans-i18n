@@ -72,24 +72,24 @@ es:
     admin_notification_confirmation:
       booking_type_appointment: |-
         Nueva reservación de {{booking.resource.title}} por {{booking.person.name}}. {{booking.title}} el {{booking.time_range}}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         Nuevo registro para {{booking.event.full_title}} {{booking.time_range}} por {{booking.person.name}}.
-        MakePlans
+        Makeplans
     admin_notification_modification:
       booking_type_appointment: |-
         Cambio de reserva para {{ booking.resource.title }} por {{ booking.person.name }}. {{ booking.title }} en {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         El registro se modificó para {{ booking.event.full_title }} {{ booking.time_range }} por {{ booking.person.name }}.
-        MakePlans
+        Makeplans
     admin_notification_resource_change:
       booking_type_appointment: |-
         Cambio de recurso a {{ booking.resource.title }} para {{ booking.person.name }} {{ booking.title }} en {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         El registro se modificó para {{ booking.event.full_title }} {{ booking.time_range }} por {{ booking.person.name }}.
-        MakePlans
+        Makeplans
     cancellation: Su reservación en {{booking.booked_from}} ha sido cancelada.
     confirmation: Ha hecho una reservación para {{booking.title}} {{booking.booked_from}}.
     declined: Su solicitud de reservación de {{booking.title}} {{booking.booked_from}} no fue aprobada. Inténtalo de nuevo.
@@ -108,7 +108,7 @@ es:
         Para iniciar sesión, haga clic en el enlace siguiente:
 
         %{link}
-      subject: Iniciar sesión para MakePlans
+      subject: Iniciar sesión para Makeplans
   person_sms:
     perishable_token: "{{perishable_token}} es su código de autenticación."
     signature: |2-

@@ -51,7 +51,7 @@ ms:
       credit_card_form:
         billing_info: Apabila anda menambahkan maklumat kad kredit anda, kami akan mengenakan kad anda setiap bulan berdasarkan harga yang dinyatakan di laman web kami. Transaksi pertama akan dilakukan dengan segera. Anda boleh membatalkan langganan anda pada bila-bila masa.
         header: Maklumat Pembayaran
-        trial_expired: Percubaan anda telah tamat. Sila aktifkan akaun anda untuk terus menggunakan MakePlans.
+        trial_expired: Percubaan anda telah tamat. Sila aktifkan akaun anda untuk terus menggunakan Makeplans.
       credit_card_info:
         header: Masukkan butiran kad kredit
         submit: Simpan kad kredit
@@ -79,7 +79,7 @@ ms:
         paid_until: Akaun anda dibayar sehingga %{paid_until}.
         pause: Jeda akaun semasa langganan semasa berakhir.
         pause_confirm: Adakah anda pasti mahu menangguhkan akaun? Akaun akan dinyahaktifkan secara automatik pada %{paid_until}.
-        reactivate: Akaun anda kini dalam mod percubaan. Anda mesti mengaktifkan semula akaun anda untuk terus menggunakan MakePlans
+        reactivate: Akaun anda kini dalam mod percubaan. Anda mesti mengaktifkan semula akaun anda untuk terus menggunakan Makeplans
         reactivate_link: Aktifkan semula akaun
         sms_credits_available: Anda mempunyai baki SMS %{credits}.
         vat_no: No. PPN berdaftar ialah %{vat_no}
@@ -88,7 +88,7 @@ ms:
         activate_account: Aktifkan akaun sekarang
         info: Ciri ini memerlukan akaun anda diaktifkan.
       processing:
-        activated: Akaun anda kini diaktifkan :) Terima kasih kerana menggunakan MakePlans.
+        activated: Akaun anda kini diaktifkan :) Terima kasih kerana menggunakan Makeplans.
         error: Tidak dapat mengesahkan pembayaran. Sila hubungi perkhidmatan pelanggan.
         info: Tunggu sementara kami mengenakan kad pembayaran anda. Ini boleh memakan masa sehingga satu minit. Anda akan menerima e-mel dari kami apabila prosesnya selesai.
     bookings:
@@ -101,7 +101,7 @@ ms:
       destroy_recurring:
         headline: Semua tempahan berulang dalam corak ini telah dikeluarkan
       fiken:
-        delayed_info: Masa akan diambil sebelum pesanan dibuat di Fiken. Jangan cuba membuat pesanan lagi jika tiada maklumat dari Fiken yang kelihatan di MakePlans.
+        delayed_info: Masa akan diambil sebelum pesanan dibuat di Fiken. Jangan cuba membuat pesanan lagi jika tiada maklumat dari Fiken yang kelihatan di Makeplans.
         header: Melawan Fiken ...
         to_booking: Tunjukkan tempahan
       form_appointment:
@@ -259,13 +259,13 @@ ms:
         confirm_message: Peluang terakhir. Adakah anda benar-benar yakin bahawa anda ingin memadamkan akaun anda dengan semua data anda?
         disable_link: Ya, hapus semua data saya.
         header: Adakah anda pasti mahu memadamkan akaun anda?
-        i_love_makeplans: Tidak, saya mahu terus menggunakan MakePlans.
+        i_love_makeplans: Tidak, saya mahu terus menggunakan Makeplans.
         info: Semua data dalam akaun anda akan dihapus. Adakah anda pasti mahu meneruskan?
-        pause: Adakah anda lebih suka menetapkan akaun anda pada jeda? Anda tidak akan membayar yuran bulanan dan akaun anda akan tersedia apabila anda sudah bersedia untuk menggunakan MakePlans lagi.
+        pause: Adakah anda lebih suka menetapkan akaun anda pada jeda? Anda tidak akan membayar yuran bulanan dan akaun anda akan tersedia apabila anda sudah bersedia untuk menggunakan Makeplans lagi.
         pause_link: Anda boleh menjeda akaun anda di halaman pengebilan.
       configuration:
-        header: Persediaan MakePlans
-        intro: Di sinilah anda dapat mengkonfigurasi MakePlans dan bagaimana ia sesuai untuk anda. Anda boleh menambahkan perkhidmatan dan kategori yang anda tawarkan di laman tempahan, menyesuaikan ketersediaan, mengubah mesej keluar (SMS dan e-mel), menambah lebih banyak pengguna dan menyesuaikan banyak tetapan lain di MakePlans.
+        header: Persediaan Makeplans
+        intro: Di sinilah anda dapat mengkonfigurasi Makeplans dan bagaimana ia sesuai untuk anda. Anda boleh menambahkan perkhidmatan dan kategori yang anda tawarkan di laman tempahan, menyesuaikan ketersediaan, mengubah mesej keluar (SMS dan e-mel), menambah lebih banyak pengguna dan menyesuaikan banyak tetapan lain di Makeplans.
         menu_info: Pilih dari menu di sebelah kiri. Sekiranya anda mempunyai pertanyaan mengenai cara membuat penyesuaian, sila hubungi khidmat pelanggan.
         trial_info: Ini adalah akaun percubaan - klik di sini untuk mengaktifkan
       edit:
@@ -340,9 +340,9 @@ ms:
         header: Pemberitahuan pelanggan
         modification_email: Hantar e-mel semasa mengubah tempahan
         modification_sms: Hantar SMS semasa mengubah tempahan
-        outgoing_messages_info: 'MakePlans akan menyarankan untuk menghantar e-mel / SMS (apa sahaja yang anda tetapkan sebagai kaedah pengesahan) semasa anda membuat, mengubah atau membatalkan tempahan. Beberapa mesej seperti pembatalan berlaku secara automatik. Anda boleh menyahaktifkan pesanan automatik (misalnya ketika memindahkan tempahan dengan menyeretnya dalam kalendar, pembatalan atau membuat tempahan baru menggunakan API) atau menyahaktifkan cadangan untuk menghantar mesej dalam bentuk dengan mengubah tetapan di bawah. Catatan: Ini tidak berlaku untuk laman web tempahan. Laman web tempahan akan selalu menghantar mesej berdasarkan kaedah verifikasi anda secara automatik.'
+        outgoing_messages_info: 'Makeplans akan menyarankan untuk menghantar e-mel / SMS (apa sahaja yang anda tetapkan sebagai kaedah pengesahan) semasa anda membuat, mengubah atau membatalkan tempahan. Beberapa mesej seperti pembatalan berlaku secara automatik. Anda boleh menyahaktifkan pesanan automatik (misalnya ketika memindahkan tempahan dengan menyeretnya dalam kalendar, pembatalan atau membuat tempahan baru menggunakan API) atau menyahaktifkan cadangan untuk menghantar mesej dalam bentuk dengan mengubah tetapan di bawah. Catatan: Ini tidak berlaku untuk laman web tempahan. Laman web tempahan akan selalu menghantar mesej berdasarkan kaedah verifikasi anda secara automatik.'
         reminder_sms: Hantar SMS peringatan
-        reminder_sms_info: Nama pengirimnya adalah 'MakePlans'. Hubungi khidmat pelanggan untuk menukar nama pengirim.
+        reminder_sms_info: Nama pengirimnya adalah 'Makeplans'. Hubungi khidmat pelanggan untuk menukar nama pengirim.
         sms_reminder_time_info: 'SMS dihantar pada tengah hari sehari sebelum tempahan. Sekiranya anda ingin mengubahnya, ubah medan di bawah. Contoh: ''dua jam sebelum'' (SMS dihantar dua jam sebelum tempahan) atau ''8 pagi semalam'' (SMS peringatan akan dihantar pada pukul 8 pagi sehari sebelum tempahan)'
       edit_user_notifications:
         approvement_email: Pemberitahuan e-mel untuk permintaan tempahan baru
@@ -374,11 +374,11 @@ ms:
           events: Acara
           people: Pelanggan
         executed: Eksport kini dihantar ke alamat e-mel anda.
-        header: Eksport data dari MakePlans
+        header: Eksport data dari Makeplans
         info: Anda akan menerima e-mel dengan lampiran fail CSV.
       import:
         header: Import data
-        info: Adalah mungkin untuk mengimport data seperti pelanggan ke dalam MakePlans. Hubungi sokongan untuk maklumat lebih lanjut.
+        info: Adalah mungkin untuk mengimport data seperti pelanggan ke dalam Makeplans. Hubungi sokongan untuk maklumat lebih lanjut.
       promote:
         booking_button_html_info: Untuk memasukkan butang tempahan di laman web anda, salin kod HTML di bawah. Sekiranya anda memerlukan bantuan sila hubungi pereka web anda.
         booking_button_html_preview: Pratonton butang tempahan
@@ -476,7 +476,7 @@ ms:
         activate_settings_3: Aktifkan tetapan untuk Extensor Online Booking versi 3
         info: Untuk mengaktifkan penyegerakan dengan Extensor anda mesti memasang Extensor Online Booking. Klik pautan di bawah untuk memulakan proses. Anda akan dihubungi oleh Extensor.
         reactive_settings: Aktifkan semula tetapan untuk Pemesanan Dalam Talian Extensor.
-        version: MakePlans dikonfigurasi untuk berfungsi dengan versi %{version} dari Extensor Online Booking.
+        version: Makeplans dikonfigurasi untuk berfungsi dengan versi %{version} dari Extensor Online Booking.
       fakturo:
         password: Kata Laluan
         username: Nama pengguna
@@ -491,7 +491,7 @@ ms:
         select_bank_account: Pilih akaun bank untuk dipaparkan pada invois
         select_company: Pilih syarikat
         service_linked: Sambungkan ke produk di Fiken
-        service_links: 'Setiap perkhidmatan mesti dihubungkan dengan produk di Fiken untuk memungkinkan membuat pesanan di Fiken. Harap maklum: Harga diambil dari Fiken - bukan dari MakePlans. Anda mesti memastikan bahawa harga di kedua-dua aplikasi adalah sama.'
+        service_links: 'Setiap perkhidmatan mesti dihubungkan dengan produk di Fiken untuk memungkinkan membuat pesanan di Fiken. Harap maklum: Harga diambil dari Fiken - bukan dari Makeplans. Anda mesti memastikan bahawa harga di kedua-dua aplikasi adalah sama.'
         service_not_linked: TIDAK dihubungkan dengan produk di Fiken.
         vat_type: Jenis PPN
       headline: Integrasi dengan %{integration}
@@ -521,13 +521,13 @@ ms:
         connected_to: Disambungkan ke pangkalan data dengan id %{database_id}
         database_info: 'Pangkalan data mesti disediakan dengan sifat berikut: Nama, E-mel (jenis: e-mel), Telefon (jenis: telefon).'
         select_database: Pilih pangkalan data
-        sharing_info: Sila kongsi sekurang-kurangnya satu pangkalan data dengan penyepaduan MakePlans
+        sharing_info: Sila kongsi sekurang-kurangnya satu pangkalan data dengan penyepaduan Makeplans
       oauth_connect: Sambung ke perkhidmatan
       selected_option: Terpilih
       sendy:
         connect_info_html: Pelanggan baharu akan melanggan senarai dengan id <em>%{list_id}</em> pada pemasangan %{api_url}
       stripe:
-        payment_info: Untuk semua urus niaga, yuran transaksi sebanyak %{application_fee_percent}% ditolak oleh MakePlans.
+        payment_info: Untuk semua urus niaga, yuran transaksi sebanyak %{application_fee_percent}% ditolak oleh Makeplans.
         receipt_email: Hantarkan resit kepada pelanggan dari Stripe
       tfso:
         add_to_crm_manually: Tambahkan pelanggan dalam CRM secara manual
@@ -546,7 +546,7 @@ ms:
           Offer: Tawaran
         password: API-Kata Laluan
         service_linked: Sambungkan ke produk di 24SevenOffice
-        service_links: Setiap perkhidmatan di MakePlans mesti disambungkan ke produk di 24SevenOffice untuk membolehkan pemesejan. Harap maklum bahawa harganya diambil dari produk di 24SevenOffice - bukan dari MakePlans. Anda mesti memastikan bahawa kedua-dua harga ini sama. Pergi ke perkhidmatan untuk menentukan id produk dari 24SevenOffice.
+        service_links: Setiap perkhidmatan di Makeplans mesti disambungkan ke produk di 24SevenOffice untuk membolehkan pemesejan. Harap maklum bahawa harganya diambil dari produk di 24SevenOffice - bukan dari Makeplans. Anda mesti memastikan bahawa kedua-dua harga ini sama. Pergi ke perkhidmatan untuk menentukan id produk dari 24SevenOffice.
         service_not_linked: TIDAK disambungkan ke produk di 24SevenOffice
         type_groups: 'Jenis jualan untuk pesanan:'
         username: API-Nama Pengguna
@@ -562,10 +562,10 @@ ms:
         customer_attributes_info: 'Harap maklum: Visma eAccounting memerlukan poskod dan bandar untuk mendaftarkan pelanggan baru. Sekiranya nilai-nilai ini tidak ada, adalah mustahil untuk membuat pesanan dari tempahan.'
         select_terms_of_payment: 'Pilih syarat pembayaran standard untuk pelanggan baru:'
         service_linked: Terhubung dengan produk dalam Visma eAccounting
-        service_links: Setiap perkhidmatan di MakePlans mesti disambungkan ke produk dalam Visma eAccount untuk membolehkan penginvoisan. Harap maklum bahawa harga diambil dari Visma eAccounting - bukan MakePlans. Anda mesti memastikan bahawa harga sama di kedua-dua sistem.
+        service_links: Setiap perkhidmatan di Makeplans mesti disambungkan ke produk dalam Visma eAccount untuk membolehkan penginvoisan. Harap maklum bahawa harga diambil dari Visma eAccounting - bukan Makeplans. Anda mesti memastikan bahawa harga sama di kedua-dua sistem.
         service_not_linked: TIDAK dihubungkan dengan produk dalam Visma eAccounting
       zapier:
-        info_html: Untuk menghubungkan MakePlans ke Zapier sila buat <a href="%{url}" target="_blank">Zap baru di Zapier</a> .
+        info_html: Untuk menghubungkan Makeplans ke Zapier sila buat <a href="%{url}" target="_blank">Zap baru di Zapier</a> .
       zoom:
         connect_info: Bersambung
         info: Untuk penyepaduan ini berfungsi, anda mesti menyambungkan sumber kepada pengguna dalam Zum dan mempunyai sekurang-kurangnya satu perkhidmatan dengan Zum didayakan.
@@ -612,7 +612,7 @@ ms:
         create: Buat pelanggan baru di 24SevenOffice
         header: Sambung dengan pelanggan di 24SevenOffice
         search: Atau cari di kalangan pelanggan yang ada
-        search_matched_headline: Menjumpai pelanggan sedia ada di 24SevenOffice CRM. Klik nama untuk menghubungkan pelanggan ini di MakePlans dengan pelanggan di 24SevenOffice CRM.
+        search_matched_headline: Menjumpai pelanggan sedia ada di 24SevenOffice CRM. Klik nama untuk menghubungkan pelanggan ini di Makeplans dengan pelanggan di 24SevenOffice CRM.
         search_query: Pencarian nama
         stream_placeholder: Mencari di CRM 24SevenOffice. Sila tunggu. Proses ini boleh memakan masa sehingga 1-2 minit.
     profile:
@@ -684,7 +684,7 @@ ms:
           activated_html: Akses ke sumber ini dengan iCalendar diaktifkan. Pautan ke suapan iCalendar adalah %{link}
           disable: Nyahaktifkan iCalendar-feed
           enable: Aktifkan suapan iCalendar
-          info: iCalendar-feed akan menunjukkan janji dari sumber ini di MakePlans dalam aplikasi kalendar lain seperti Microsoft Oulook, Google Calendar, iPhone eller Android. Hanya baca, semua perubahan mesti dilakukan dalam MakePlans.
+          info: iCalendar-feed akan menunjukkan janji dari sumber ini di Makeplans dalam aplikasi kalendar lain seperti Microsoft Oulook, Google Calendar, iPhone eller Android. Hanya baca, semua perubahan mesti dilakukan dalam Makeplans.
           not_activated: Tidak diaktifkan
         icalfeed: 'suapan iCalendar:'
         offers: 'Menawarkan perkhidmatan berikut di laman tempahan:'
@@ -790,7 +790,7 @@ ms:
         attendances: Kehadiran
         attendances_info_html: Untuk menghadiri acara, kursus, kelas atau kehadiran lain pada waktu tertentu. Sama ada sekali atau berulang seperti setiap hari Selasa.
         footer_html: Perkhidmatan adalah sesuatu yang anda tawarkan kepada pelanggan anda dan akan ditunjukkan di laman tempahan. Tentukan perkhidmatan untuk janji temu yang mempunyai waktu buka tetap atau untuk kehadiran yang berlaku pada waktu tertentu.
-        header_html: Selamat datang ke MakePlans.<br> Mulakan dengan menambahkan perkhidmatan anda
+        header_html: Selamat datang ke Makeplans.<br> Mulakan dengan menambahkan perkhidmatan anda
     shared:
       recurring:
         enabled: Ulangi berkali-kali dengan corak

@@ -154,7 +154,7 @@ nb:
     layouts:
       application:
         authenticated: 'Innlogget som: %{name}'
-        demo_ended: Prøveperioden for MakePlans er over.
+        demo_ended: Prøveperioden for Makeplans er over.
         footer:
           change_language: 'Endre språk:'
           privacy_policy: Personvern

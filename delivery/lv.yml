@@ -53,27 +53,27 @@ lv:
 
         {{ booking.client.manage_unconfirmed_bookings_link }}
 
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         NEPIECIEŠAMA DARBĪBA: Pasākuma pieraksta formu aizpildījis(-usi) {{ booking.person.name }}, pasākumam {{ booking.event.full_title }} {{ booking.time_range }}.
 
         {{ booking.client.manage_unconfirmed_bookings_link }}
 
-        MakePlans
+        Makeplans
     admin_notification_cancellation:
       booking_type_appointment: |-
         ATCĒLUMS: {{ booking.person.name }} atcēlis(-usi) pierakstu pie {{ booking.resource.title }} - {{ booking.title }} {{ booking.time_range }}.
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         ATCĒLUMS: {{ booking.person.name }} atcēlis(-usi) pierakstu uz {{ booking.event.full_title }} {{ booking.time_range }}.
-        MakePlans
+        Makeplans
     admin_notification_confirmation:
       booking_type_appointment: |-
         Jauns {{ booking.resource.title }} pieraksts. Pierakstījies(-usies) {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         Jauna pieraksts uz {{ booking.event.full_title }} {{ booking.time_range }}. Pierakstījies(-usies) {{ booking.person.name }}.
-        MakePlans
+        Makeplans
     cancellation: Jūsu pieraksts vietnē {{ booking.booked_from }} ticis atcelts.
     confirmation: Jūs esat pierakstījušies {{ booking.title }} {{ booking.booked_from }}.
     declined: Jūsu pieprasījums rezervēt {{ booking.title }} {{ booking.booked_from }} netika apstiprināts. Lūdzu mēģiniet vēlreiz, vai sazinieties ar pakalpojuma sniedzēju.
@@ -92,7 +92,7 @@ lv:
         Lai pieteiktos, klikšķiniet sekojošo saiti:
 
         %{link}
-      subject: Piesakieties MakePlans
+      subject: Piesakieties Makeplans
   person_sms:
     perishable_token: "{{ perishable_token }} ir jūsu autentifikācijas kods."
     signature: |2-

@@ -48,7 +48,7 @@ sv:
       step: Steg %{step} / %{steps}
     layouts:
       application:
-        about_makeplans: Om MakePlans
+        about_makeplans: Om Makeplans
         account: Konto
         alt:
           account: Konto

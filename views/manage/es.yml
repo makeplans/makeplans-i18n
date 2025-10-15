@@ -51,7 +51,7 @@ es:
       credit_card_form:
         billing_info: Cuando agregue los datos de su tarjeta de crédito, cargaremos su tarjeta cada mes según los precios indicados en nuestro sitio web. La primera transacción se realizará de inmediato. Usted puede cancelar su suscripción en cualquier momento.
         header: Información del pago
-        trial_expired: Tu periodo de prueba ha caducado. Active su cuenta para seguir usando MakePlans.
+        trial_expired: Tu periodo de prueba ha caducado. Active su cuenta para seguir usando Makeplans.
       credit_card_info:
         header: Ingrese los detalles de la tarjeta de crédito
         submit: Guardar tarjeta de crédito
@@ -81,7 +81,7 @@ es:
         paid_until: Su cuenta se paga hasta %{paid_until}.
         pause: Pausa la cuenta cuando finaliza la suscripción actual.
         pause_confirm: "¿Está seguro de que desea poner la cuenta en espera? La cuenta se desactivará automáticamente en %{paid_until}."
-        reactivate: Su cuenta se encuentra actualmente en modo de prueba. Debes reactivar tu cuenta para seguir usando MakePlans
+        reactivate: Su cuenta se encuentra actualmente en modo de prueba. Debes reactivar tu cuenta para seguir usando Makeplans
         reactivate_confirm: "¿Seguro que desea reactivar la cuenta que suspendió? Se le cobrará un cargo de %{paid_until}."
         reactivate_link: Reactivar cuenta
         sms_credits_available: Tiene un saldo de %{credits} SMS.
@@ -91,7 +91,7 @@ es:
         activate_account: Activar cuenta ahora
         info: Esta función requiere que su cuenta esté activada.
       processing:
-        activated: Su cuenta ahora está activada :) Gracias por usar MakePlans.
+        activated: Su cuenta ahora está activada :) Gracias por usar Makeplans.
         error: No se pudo verificar el pago. Comuníquese con el servicio de atención al cliente.
         info: Espere mientras cargamos su tarjeta de pago. Esto puede tardar hasta un minuto. Recibirá un correo electrónico de nuestra parte cuando se complete el proceso.
     bookings:
@@ -111,11 +111,11 @@ es:
             disable: Desactivar la cuenta iCalendar-feeds
             enable: Activar cuenta iCalendar-feeds
             future_html: 'Reservas futuras: %{link}'
-            info: Un feed de iCalendar mostrará las citas de tu cuenta en otras aplicaciones de calendario como Microsoft Outlook, Google Calendar, iPhone o Android. Es de solo lectura; todos los cambios deben realizarse en MakePlans.
+            info: Un feed de iCalendar mostrará las citas de tu cuenta en otras aplicaciones de calendario como Microsoft Outlook, Google Calendar, iPhone o Android. Es de solo lectura; todos los cambios deben realizarse en Makeplans.
             not_activated: No activado
             past_html: 'Reservas pasadas: %{link}'
       fiken:
-        delayed_info: Pasará algún tiempo antes de que se cree la orden en Fiken. No intente generar el pedido nuevamente si no hay información de Fiken visible en MakePlans.
+        delayed_info: Pasará algún tiempo antes de que se cree la orden en Fiken. No intente generar el pedido nuevamente si no hay información de Fiken visible en Makeplans.
         header: Contando a Fiken ...
         to_booking: Mostrar reservación
       form_appointment:
@@ -309,9 +309,9 @@ es:
         confirm_message: Última oportunidad. ¿Está absolutamente seguro de que desea eliminar su cuenta con todos sus datos?
         disable_link: Sí, borre todos mis datos.
         header: "¿Estás seguro de que deseas eliminar tu cuenta?"
-        i_love_makeplans: No, quiero seguir usando MakePlans.
+        i_love_makeplans: No, quiero seguir usando Makeplans.
         info: Se eliminarán todos los datos de su cuenta. Estás seguro de que quieres continuar?
-        pause: "¿Prefieres poner tu cuenta en pausa? No pagará una tarifa mensual y su cuenta estará disponible cuando esté listo para usar MakePlans nuevamente."
+        pause: "¿Prefieres poner tu cuenta en pausa? No pagará una tarifa mensual y su cuenta estará disponible cuando esté listo para usar Makeplans nuevamente."
         pause_link: Puede pausar su cuenta en la página de facturación.
       change_time_zone:
         edit:
@@ -321,8 +321,8 @@ es:
           header: Cambio de zona horaria en curso
           info: Todas las reservas y mensajes se actualizarán en breve. No vuelva a ejecutar esta función.
       configuration:
-        header: Configuración de MakePlans
-        intro: Aquí es donde puede configurar MakePlans y cómo debería funcionar para usted. Puede agregar servicios y categorías que ofrece en el sitio de reservas, ajustar la disponibilidad, cambiar los mensajes salientes (SMS y correo electrónico), agregar más usuarios y ajustar muchas otras configuraciones en MakePlans.
+        header: Configuración de Makeplans
+        intro: Aquí es donde puede configurar Makeplans y cómo debería funcionar para usted. Puede agregar servicios y categorías que ofrece en el sitio de reservas, ajustar la disponibilidad, cambiar los mensajes salientes (SMS y correo electrónico), agregar más usuarios y ajustar muchas otras configuraciones en Makeplans.
         menu_info: Seleccione en el menú del lado izquierdo. Si tiene alguna pregunta sobre cómo realizar un ajuste, comuníquese con el servicio al cliente.
         trial_info: Esta es una cuenta de prueba - haga clic aquí para activar
       developer:
@@ -386,7 +386,7 @@ es:
         email: Email
         header: Modificar la comunicación saliente
         ical: iCalendar
-        mailer_sender_valid_domain: Ha validado %{domain} y MakePlans enviará correos electrónicos en ese dominio en su nombre. Las demás direcciones de correo electrónico se especificarán como direcciones de respuesta.
+        mailer_sender_valid_domain: Ha validado %{domain} y Makeplans enviará correos electrónicos en ese dominio en su nombre. Las demás direcciones de correo electrónico se especificarán como direcciones de respuesta.
         message_template_info: Estos son los mensajes heredados integrados. Para compatibilidad con varios mensajes y mayor control, utilice la función de mensajes de diez caracteres.
         settings:
           custom_email_sending: Anule completamente los correos electrónicos con el contenido a continuación (de lo contrario, el contenido solo se inserta en el correo electrónico estándar)
@@ -418,7 +418,7 @@ es:
         automatic_messages: Mensajes automáticos (en el sistema de administración y la API)
         automatic_messages_booking_site: Mensajes automáticos (En el sitio de reservas)
         booking_site_message: Enviar mensaje en el sitio de reservas
-        booking_site_outgoing_messages_info: MakePlans enviará de forma predeterminada un mensaje para eventos importantes, como un mensaje de confirmación utilizando el método de verificación, por ejemplo, SMS con verificación por SMS, o utilizando el correo electrónico si se utiliza otra verificación o ninguna.
+        booking_site_outgoing_messages_info: Makeplans enviará de forma predeterminada un mensaje para eventos importantes, como un mensaje de confirmación utilizando el método de verificación, por ejemplo, SMS con verificación por SMS, o utilizando el correo electrónico si se utiliza otra verificación o ninguna.
         cancellation_email: Enviar correo electrónico al cancelar la reservación
         cancellation_sms: Enviar SMS al cancelar la reservación
         confirmation_email: Enviar correo electrónico al crear la reservación
@@ -430,9 +430,9 @@ es:
         message_template_info: Este es el recordatorio heredado integrado. Para tener más recordatorios y mayor control, usa la función de mensajes de diez dígitos.
         modification_email: Enviar correo electrónico al modificar la reservación
         modification_sms: Enviar SMS al modificar reservación
-        outgoing_messages_info: 'MakePlans le sugerirá que envíe un correo electrónico / SMS (lo que sea que configure como método de verificación) cuando cree, modifique o cancele una reservación. Algunos mensajes, como la cancelación, se producen automáticamente. Puede desactivar los mensajes automáticos (por ejemplo, al mover una reservación arrastrándola en el calendario, cancelar o crear una nueva reservación usando la API) o desactivar la sugerencia para enviar mensajes en el formulario cambiando la configuración a continuación. Nota: Esto no se aplica al sitio de reservación. El sitio de reservas siempre enviará mensajes automáticamente según su método de verificación.'
+        outgoing_messages_info: 'Makeplans le sugerirá que envíe un correo electrónico / SMS (lo que sea que configure como método de verificación) cuando cree, modifique o cancele una reservación. Algunos mensajes, como la cancelación, se producen automáticamente. Puede desactivar los mensajes automáticos (por ejemplo, al mover una reservación arrastrándola en el calendario, cancelar o crear una nueva reservación usando la API) o desactivar la sugerencia para enviar mensajes en el formulario cambiando la configuración a continuación. Nota: Esto no se aplica al sitio de reservación. El sitio de reservas siempre enviará mensajes automáticamente según su método de verificación.'
         reminder_sms: Enviar SMS recordatorio
-        reminder_sms_info: El nombre del remitente es "MakePlans". Comuníquese con el servicio al cliente para cambiar el nombre del remitente.
+        reminder_sms_info: El nombre del remitente es "Makeplans". Comuníquese con el servicio al cliente para cambiar el nombre del remitente.
         sms_reminder_time_info: 'El SMS se envía al mediodía del día anterior a la reservación. Si desea cambiar esto, modifique el campo a continuación. Ejemplo: ''dos horas antes'' (el SMS se envía dos horas antes de la reservación) o ''8 am ayer'' (el SMS recordatorio se enviará a las 8 am el día antes de la reservación)'
       edit_user_notifications:
         approvement_email: Notificación por correo electrónico para nuevas solicitudes de reservación
@@ -469,7 +469,7 @@ es:
           dns: Vea sus valores DNS.
           header: Estamos procesando su solicitud
         dns:
-          dkim: Para permitir que MakePlans envíe con una dirección de correo electrónico en %{domain}, agregue el siguiente registro TXT.
+          dkim: Para permitir que Makeplans envíe con una dirección de correo electrónico en %{domain}, agregue el siguiente registro TXT.
           dkim_host: Anfitrión
           dkim_value: Valor
           header: Agregar registros DNS
@@ -477,13 +477,13 @@ es:
         info:
           add: Añade tu dominio de envío de correo electrónico
           header: Envíe correos electrónicos utilizando su propia dirección de correo electrónico
-          info: Por defecto, todos los correos electrónicos se envían desde %{default_email}. Por %{price} al mes, puede usar una dirección de correo electrónico de su propio dominio. Para que MakePlans pueda enviar correos en su nombre, debe agregar algunos registros DNS. Tenga en cuenta que esto requiere un cambio técnico en su dominio y que permite que MakePlans envíe correos desde cualquier dirección del dominio seleccionado. Le recomendamos usar un subdominio por seguridad, como booking.example.org en lugar de example.org.
+          info: Por defecto, todos los correos electrónicos se envían desde %{default_email}. Por %{price} al mes, puede usar una dirección de correo electrónico de su propio dominio. Para que Makeplans pueda enviar correos en su nombre, debe agregar algunos registros DNS. Tenga en cuenta que esto requiere un cambio técnico en su dominio y que permite que Makeplans envíe correos desde cualquier dirección del dominio seleccionado. Le recomendamos usar un subdominio por seguridad, como booking.example.org en lugar de example.org.
         new:
           domain: Dominio
           header: Agregue su dominio de envío de correo electrónico personalizado
         show:
           header: Has verificado tu dominio de envío de correo electrónico
-          info: MakePlans podrá enviar correos electrónicos desde cualquier dirección de correo electrónico de su dominio %{domain}
+          info: Makeplans podrá enviar correos electrónicos desde cualquier dirección de correo electrónico de su dominio %{domain}
         verify:
           header: No verificado
           info: Si ha añadido los registros DNS, espere a que se propaguen. Vuelva a intentarlo más tarde.
@@ -504,15 +504,15 @@ es:
           events: Eventos
           people: Clientes
         executed: La exportación ahora se envía a su dirección de correo electrónico.
-        header: Exportar datos de MakePlans
+        header: Exportar datos de Makeplans
         info: Recibirá un correo electrónico con un archivo CSV adjunto.
       import:
         header: Datos de importacion
-        info: Es posible importar datos como clientes a MakePlans. Comuníquese con el soporte para obtener más información.
+        info: Es posible importar datos como clientes a Makeplans. Comuníquese con el soporte para obtener más información.
       invoices:
         index:
           email: Envía una copia a tu correo electrónico
-          header: Facturas de MakePlans
+          header: Facturas de Makeplans
       promote:
         booking_button_html_info: Para insertar el botón de reservación en su sitio web, copie el código HTML a continuación. Si necesita ayuda, póngase en contacto con su diseñador web.
         booking_button_html_preview: Vista previa del botón de reservación
@@ -534,7 +534,7 @@ es:
           custom_info: Todos los SMS se enviarán utilizando %{sms_sender}.
           delete: Eliminar el ID del remitente de SMS personalizado.
           header: ID del remitente de SMS
-          info: Todos los SMS se enviarán desde MakePlans.
+          info: Todos los SMS se enviarán desde Makeplans.
       tools:
         header: Herramientas para tu cuenta
         link:
@@ -635,7 +635,7 @@ es:
         activate_settings_4: Habilitar la configuración para Extensor Online Booking versión 4
         info: Para activar la sincronización con Extensor debe instalar Extensor Online Booking. Haga clic en el enlace de abajo para iniciar el proceso. Extensor se comunicará con usted.
         reactive_settings: Reactivar la configuración para Extensor Online Booking.
-        version: MakePlans está configurado para funcionar con la versión %{version} de Extensor Online Booking.
+        version: Makeplans está configurado para funcionar con la versión %{version} de Extensor Online Booking.
       fakturo:
         password: Contraseña
         username: Nombre de usuario
@@ -650,7 +650,7 @@ es:
         select_bank_account: Elija la cuenta bancaria que se mostrará en la factura
         select_company: Elige empresa
         service_linked: Conectarse al producto en Fiken
-        service_links: 'Cada servicio debe estar conectado a un producto en Fiken para que sea posible crear un pedido en Fiken. Tenga en cuenta: el precio se obtiene de Fiken, no de MakePlans. Debe asegurarse de que el precio en ambas aplicaciones sea idéntico.'
+        service_links: 'Cada servicio debe estar conectado a un producto en Fiken para que sea posible crear un pedido en Fiken. Tenga en cuenta: el precio se obtiene de Fiken, no de Makeplans. Debe asegurarse de que el precio en ambas aplicaciones sea idéntico.'
         service_not_linked: NO conectado a un producto en Fiken.
         vat_type: Tipo de IVA
       headline: Integración con %{integration}
@@ -680,16 +680,16 @@ es:
         connected_to: Conectado a la base de datos con id %{database_id}
         database_info: 'La base de datos debe configurarse con las siguientes propiedades: Nombre, Correo electrónico (tipo: correo electrónico), Teléfono (tipo: teléfono).'
         select_database: Seleccionar base de datos
-        sharing_info: Comparta al menos una base de datos con la integración de MakePlans
+        sharing_info: Comparta al menos una base de datos con la integración de Makeplans
       oauth_connect: Conectarse al servicio
       selected_option: Seleccionado
       sendy:
         connect_info_html: Los nuevos clientes se suscribirán a la lista con id <em>%{list_id}</em> en la instalación %{api_url}
       slack:
-        connect_info: Por cada nueva reserva en MakePlans se publicará como un mensaje en el canal de Slack %{channel}.
+        connect_info: Por cada nueva reserva en Makeplans se publicará como un mensaje en el canal de Slack %{channel}.
       stripe:
         disable_customer_saving: No guardar el cliente en Stripe
-        payment_info: MakePlans deduce una tarifa de transacción de %{application_fee_percent}% para todas las transacciones.
+        payment_info: Makeplans deduce una tarifa de transacción de %{application_fee_percent}% para todas las transacciones.
         receipt_email: Envíe un recibo al cliente de Stripe
         save_card_billing_details: Guardar los detalles de facturación para la transacción
       tfso:
@@ -709,7 +709,7 @@ es:
           Offer: Oferta
         password: API-Contraseña
         service_linked: Conectarse al producto en 24SevenOffice
-        service_links: Cada servicio en MakePlans debe estar conectado a un producto en 24SevenOffice para permitir la facturación. Tenga en cuenta que el precio se obtiene del producto en 24SevenOffice, no de MakePlans. Debe asegurarse de que estos dos precios sean idénticos. Vaya a un servicio para definir una identificación de producto de 24SevenOffice.
+        service_links: Cada servicio en Makeplans debe estar conectado a un producto en 24SevenOffice para permitir la facturación. Tenga en cuenta que el precio se obtiene del producto en 24SevenOffice, no de Makeplans. Debe asegurarse de que estos dos precios sean idénticos. Vaya a un servicio para definir una identificación de producto de 24SevenOffice.
         service_not_linked: NO conectado a un producto en 24SevenOffice
         type_groups: 'Tipo de venta por pedido:'
         username: API-Nombre de usuario
@@ -725,13 +725,13 @@ es:
         customer_attributes_info: 'Tenga en cuenta: Visma eAccounting requiere código postal y ciudad para registrar un nuevo cliente. Si estos valores no están presentes, no es posible generar un pedido a partir de una reservación.'
         select_terms_of_payment: 'Elija condiciones de pago estándar para nuevos clientes:'
         service_linked: Conectado a un producto en Visma eAccounting
-        service_links: Cada servicio en MakePlans debe estar conectado a un producto en Visma eAccount para permitir la facturación. Tenga en cuenta que el precio se obtiene de Visma eAccounting, no de MakePlans. Debe asegurarse de que el precio sea idéntico en ambos sistemas.
+        service_links: Cada servicio en Makeplans debe estar conectado a un producto en Visma eAccount para permitir la facturación. Tenga en cuenta que el precio se obtiene de Visma eAccounting, no de Makeplans. Debe asegurarse de que el precio sea idéntico en ambos sistemas.
         service_not_linked: NO conectado a un producto en Visma eAccounting
       whereby:
         connect_info: Conectado
         setup_info: Se creará automáticamente una reunión Whereby para cada servicio que tenga Whereby activado.
       zapier:
-        info_html: Para conectar MakePlans a Zapier, haga un <a href="%{url}" target="_blank">nuevo Zap en Zapier</a> .
+        info_html: Para conectar Makeplans a Zapier, haga un <a href="%{url}" target="_blank">nuevo Zap en Zapier</a> .
       zoom:
         connect_info: Conectado
         info: Para que esta integración funcione, debe conectar un recurso a un usuario en Zoom y tener al menos un servicio con Zoom habilitado.
@@ -791,7 +791,7 @@ es:
         create: Crear nuevo cliente en 24SevenOffice
         header: Conéctese con el cliente en 24SevenOffice
         search: O busque entre clientes existentes
-        search_matched_headline: Se encontraron clientes existentes en 24SevenOffice CRM. Haga clic en el nombre para conectar este cliente en MakePlans con el cliente en 24SevenOffice CRM.
+        search_matched_headline: Se encontraron clientes existentes en 24SevenOffice CRM. Haga clic en el nombre para conectar este cliente en Makeplans con el cliente en 24SevenOffice CRM.
         search_query: Búsqueda de nombre
         stream_placeholder: Buscando en 24SevenOffice CRM. Por favor espera. Esto puede tardar entre 1 y 2 minutos.
     profile:
@@ -883,7 +883,7 @@ es:
           disable: Desactivar iCalendar-feed
           enable: Activar iCalendar-feed
           future_html: 'Reservas futuras: %{link}'
-          info: iCalendar-feed mostrará las citas de este recurso en MakePlans en otras aplicaciones de calendario como Microsoft Oulook, Google Calendar, iPhone eller Android. Solo lectura, todos los cambios deben realizarse en MakePlans.
+          info: iCalendar-feed mostrará las citas de este recurso en Makeplans en otras aplicaciones de calendario como Microsoft Oulook, Google Calendar, iPhone eller Android. Solo lectura, todos los cambios deben realizarse en Makeplans.
           not_activated: No esta activado
           past_html: 'Reservas pasadas: %{link}'
         icalfeed: 'iCalendar-feed:'
@@ -1033,7 +1033,7 @@ es:
         attendances: Asistencia
         attendances_info_html: Para asistencia a eventos, cursos, clases u otras asistencias en horarios específicos. Ya sea una vez o recurrente como todos los martes.
         footer_html: Un servicio es algo que ofrece a sus clientes y se mostrará en el sitio de reservas. Definir servicios para citas que tienen horarios de apertura fijos o para asistencia que ocurre en un horario específico.
-        header_html: Bienvenido a MakePlans.<br> Comience agregando sus servicios
+        header_html: Bienvenido a Makeplans.<br> Comience agregando sus servicios
     shared:
       recurring:
         enabled: Repite varias veces con un patrón

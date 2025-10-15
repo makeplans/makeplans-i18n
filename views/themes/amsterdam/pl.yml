@@ -108,7 +108,7 @@ pl:
     layouts:
       application:
         authenticated: 'Zalogowano jako: %{name}'
-        demo_ended: Wersja demo MakePlans wygasła.
+        demo_ended: Wersja demo Makeplans wygasła.
         footer:
           privacy_policy: Polityka prywatności
           support: Pomoc

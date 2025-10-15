@@ -229,8 +229,8 @@ es:
       no_values_present: Se requiere nombre, número de teléfono o correo electrónico.
       not_authenticated: Has sido desconectado.
       not_found: No se pueden encontrar los datos. Intente volver a cargar la página.
-      offline: No se puede conectar a MakePlans. Compruebe que está en línea.
-      server_error: Error en MakePlans
+      offline: No se puede conectar a Makeplans. Compruebe que está en línea.
+      server_error: Error en Makeplans
       syntax_error: Error en la sintaxis proporcionada.
       unknown: Error desconocido. Intente volver a cargar la página.
     models:
@@ -643,7 +643,7 @@ es:
       invoice_client:
         errors:
           nothing_to_invoice: Cuenta no lista para facturación. Asegúrese de tener al menos un recurso.
-        invoice_text: Uso de la reservación de citas online MakePlans
+        invoice_text: Uso de la reservación de citas online Makeplans
   time:
     24h: true
     formats:
@@ -669,10 +669,10 @@ es:
         invalid: es inválido
   worker:
     integration_slack:
-      fallback: Se hizo una nueva cita en MakePlans
-      footer: API MakePlans
+      fallback: Se hizo una nueva cita en Makeplans
+      footer: API Makeplans
       pretext: "%{person} concertó una cita en %{booked_from}"
-      title: Ver la cita en MakePlans
+      title: Ver la cita en Makeplans
     integration_tfso_list_companies:
       errors:
         no_results: No se encontraron clientes existentes.
@@ -680,5 +680,5 @@ es:
       errors:
         already_created: Ya creado.
         no_company: El cliente ha sido eliminado en 24SevenOffice. Debe reactivar el cliente en 24SevenOffice para continuar.
-        no_product: El producto ha sido eliminado en 24SevenOffice. Debe reactivar el producto en 24SevenOffice o conectar el servicio a un nuevo producto de MakePlans antes de poder continuar.
+        no_product: El producto ha sido eliminado en 24SevenOffice. Debe reactivar el producto en 24SevenOffice o conectar el servicio a un nuevo producto de Makeplans antes de poder continuar.
         product_not_defined_on_service: Este servicio no está conectado a un producto en 24SevenOffice.

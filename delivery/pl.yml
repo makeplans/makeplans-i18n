@@ -42,10 +42,10 @@ pl:
     admin_notification_confirmation:
       booking_type_appointment: |-
         Nowa rezerwacja na {{ booking.resource.title }} dokonana przez {{ booking.person.name }}. {{ booking.title }} na {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         Nowa rejestracja na {{ booking.event.full_title }} {{ booking.time_range }} dokonana przez {{ booking.person.name }}.
-        MakePlans
+        Makeplans
     cancellation: Twoja rezerwacja na {{ booking.booked_from }} została anulowana.
     confirmation: Dokonano rezerwacji na {{ booking.title }} {{ booking.booked_from }}.
     declined: Twoja rezerwacja {{ booking.title }} {{ booking.booked_from }} nie została zatwierdzona. Spróbuj ponownie.
@@ -64,7 +64,7 @@ pl:
         Aby się zalogować kliknij w poniższy link:
 
         %{link}
-      subject: Zaloguj się na MakePlans
+      subject: Zaloguj się na Makeplans
   person_sms:
     perishable_token: "{{ perishable_token }} to Twój kod do uwierzytelnienia."
     signature: |2-

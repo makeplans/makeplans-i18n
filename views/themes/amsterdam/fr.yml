@@ -151,7 +151,7 @@ fr:
     layouts:
       application:
         authenticated: 'Connecté en tant que: %{name}'
-        demo_ended: La démo MakePlans a expiré.
+        demo_ended: La démo Makeplans a expiré.
         footer:
           change_language: 'Changer de langue :'
           privacy_policy: Politique de confidentialité

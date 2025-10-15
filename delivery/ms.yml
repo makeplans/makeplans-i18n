@@ -91,7 +91,7 @@ ms:
         Untuk log masuk klik pautan di bawah:
 
         %{link}
-      subject: Log masuk untuk MakePlans
+      subject: Log masuk untuk Makeplans
   person_sms:
     perishable_token: "{{ perishable_token }} adalah kod anda untuk pengesahan."
     signature: |2-

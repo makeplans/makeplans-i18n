@@ -112,8 +112,8 @@ pl:
       no_values_present: Wymagane jest imię i nazwisko, numer telefonu lub adres e-mail.
       not_authenticated: Zostałeś wylogowany.
       not_found: Nie można znaleźć danych. Spróbuj ponownie załadować stronę.
-      offline: Nie można połączyć się z MakePlans. Sprawdź, czy jesteś online.
-      server_error: Błąd w MakePlans
+      offline: Nie można połączyć się z Makeplans. Sprawdź, czy jesteś online.
+      server_error: Błąd w Makeplans
       syntax_error: Błąd w podanej składni.
       unknown: Nieznany błąd. Spróbuj ponownie załadować stronę.
     models:

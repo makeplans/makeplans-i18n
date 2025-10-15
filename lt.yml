@@ -167,8 +167,8 @@ lt:
       no_values_present: Būtinas vardas, telefono numeris arba el. Pašto adresas.
       not_authenticated: Jūs buvote atjungtas.
       not_found: Nepavyko rasti duomenų. Pabandykite iš naujo įkelti puslapį.
-      offline: Nepavyko prisijungti prie MakePlans. Patikrinkite, ar esate prisijungę.
-      server_error: MakePlans klaida
+      offline: Nepavyko prisijungti prie Makeplans. Patikrinkite, ar esate prisijungę.
+      server_error: Makeplans klaida
       syntax_error: Pateikta sintaksės klaida.
       unknown: Nežinoma klaida. Pabandykite iš naujo įkelti puslapį.
     models:
@@ -493,7 +493,7 @@ lt:
       invoice_client:
         errors:
           nothing_to_invoice: Sąskaita neparengta sąskaitoms išrašyti. Įsitikinkite, kad turite bent vieną šaltinį.
-        invoice_text: MakePlans internetinių susitikimų rezervavimo naudojimas
+        invoice_text: Makeplans internetinių susitikimų rezervavimo naudojimas
   title:
     actions:
       edit: Redaguoti
@@ -508,10 +508,10 @@ lt:
         invalid: negalioja
   worker:
     integration_slack:
-      fallback: MakePlans paskyrė naują paskyrimą
-      footer: MakePlans API
+      fallback: Makeplans paskyrė naują paskyrimą
+      footer: Makeplans API
       pretext: "%{person} paskyrė paskyrą %{booked_from}"
-      title: Peržiūrėkite susitikimą MakePlans
+      title: Peržiūrėkite susitikimą Makeplans
     integration_tfso_list_companies:
       errors:
         no_results: Nerasta esamų klientų.
@@ -519,5 +519,5 @@ lt:
       errors:
         already_created: Jau sukurta.
         no_company: Klientas buvo ištrintas iš 24SevenOffice. Norėdami tęsti, turite iš naujo suaktyvinti klientą 24SevenOffice.
-        no_product: Produktas ištrintas iš 24SevenOffice. Prieš tęsdami, turite iš naujo suaktyvinti produktą sistemoje 24SevenOffice arba prijungti paslaugą prie naujo MakePlans produkto.
+        no_product: Produktas ištrintas iš 24SevenOffice. Prieš tęsdami, turite iš naujo suaktyvinti produktą sistemoje 24SevenOffice arba prijungti paslaugą prie naujo Makeplans produkto.
         product_not_defined_on_service: Ši paslauga nėra prijungta prie 24SevenOffice produkto.

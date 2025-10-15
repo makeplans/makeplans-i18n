@@ -64,41 +64,41 @@ en:
 
         {{ booking.client.manage_unconfirmed_bookings_link }}
 
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         ACTION NEEDED: Signup request by {{ booking.person.name }} for {{ booking.event.full_title }} {{ booking.time_range }}.
 
         {{ booking.client.manage_unconfirmed_bookings_link }}
 
-        MakePlans
+        Makeplans
     admin_notification_cancellation:
       booking_type_appointment: |-
         CANCELLATION: {{ booking.person.name }} has cancelled their booking of {{ booking.resource.title }} - {{ booking.title }} on {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         CANCELLATION: {{ booking.person.name }} has cancelled their Signup for {{ booking.event.full_title }} {{ booking.time_range }}.
-        MakePlans
+        Makeplans
     admin_notification_confirmation:
       booking_type_appointment: |-
         New reservation of {{ booking.resource.title }} by {{ booking.person.name }}. {{ booking.title }} on {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         New signup for {{ booking.event.full_title }} {{ booking.time_range }} by {{ booking.person.name }}.
-        MakePlans
+        Makeplans
     admin_notification_modification:
       booking_type_appointment: |-
         Change of reservation for {{ booking.resource.title }} by {{ booking.person.name }}. {{ booking.title }} on {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         Signup changed for {{ booking.event.full_title }} {{ booking.time_range }} by {{ booking.person.name }}.
-        MakePlans
+        Makeplans
     admin_notification_resource_change:
       booking_type_appointment: |-
         Change of resource to {{ booking.resource.title }} for {{ booking.person.name }} {{ booking.title }} on {{ booking.time_range }}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         Signup changed for {{ booking.event.full_title }} {{ booking.time_range }} by {{ booking.person.name }}.
-        MakePlans
+        Makeplans
     awaiting_confirmation: You have made a request for reservation of {{ booking.title }} {{ booking.booked_from }}. We will message you when we process your request.
     cancellation: Your reservation on {{ booking.booked_from }} has been cancelled.
     confirmation: You have made a reservation for {{ booking.title }} {{ booking.booked_from }}.

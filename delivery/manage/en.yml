@@ -51,13 +51,13 @@ en:
       body: |-
         Hi,
 
-        Your subscription to MakePlans is successfully activated.
+        Your subscription to Makeplans is successfully activated.
         Please see our pricing at https://makeplans.com/en/pricing/
         For our terms please see https://terms.makeplans.com
 
         Your account: %{subdomain}
 
-        Thanks for using MakePlans :D
+        Thanks for using Makeplans :D
 
         If you have any questions just reply to this email.
       subject: Your account is activated
@@ -65,11 +65,11 @@ en:
       body: |-
         Hi there,
 
-        Looks like you enabled the API on your MakePlans account %{subdomain}. How awesome!
+        Looks like you enabled the API on your Makeplans account %{subdomain}. How awesome!
 
         If you know what you are doing then you can just ignore this email.
 
-        But if you are new to the MakePlans API please do check out the documentation at https://developer.makeplans.com.
+        But if you are new to the Makeplans API please do check out the documentation at https://developer.makeplans.com.
         You will find information about authentication, all endpoints, webhooks, as well as examples.
         Any questions? Just contact us, happy to help you out.
 
@@ -77,21 +77,21 @@ en:
         You can find a link to the test environment in the API documentation.
 
         Happy coding!
-      subject: API Enabled on your MakePlans account
+      subject: API Enabled on your Makeplans account
     charge_failed:
       body: |-
         Hi,
 
-        We tried to process your payment for using MakePlans but received the following error: %{error}
+        We tried to process your payment for using Makeplans but received the following error: %{error}
 
-        Please log into your MakePlans to ensure your card is valid.
+        Please log into your Makeplans to ensure your card is valid.
 
         %{url}
 
         Your account will be deactivated soon if the payment is not successful.
 
         Thanks,
-        MakePlans
+        Makeplans
       subject: 'ACTION REQUIRED: Problem processing your payment'
     charge_give_up:
       body: |-
@@ -99,53 +99,53 @@ en:
 
         WARNING: Your account is now deactivated.
 
-        We tried to process your payment for using MakePlans but received the following error: %{error}
+        We tried to process your payment for using Makeplans but received the following error: %{error}
 
-        Please log into your MakePlans to ensure your card is valid to reactive your account:
+        Please log into your Makeplans to ensure your card is valid to reactive your account:
 
         %{url}
 
         Thanks,
-        MakePlans
+        Makeplans
       subject: 'ACTION REQUIRED: Account deactivated'
     charge_requires_action:
       body: |-
         Hi,
 
-        We tried to process your credit card for using MakePlans but we need your authorization to complete the payment. This is due to requirements from your bank.
+        We tried to process your credit card for using Makeplans but we need your authorization to complete the payment. This is due to requirements from your bank.
 
-        Your MakePlans account will be disabled soon unless the payment is confirmed.
+        Your Makeplans account will be disabled soon unless the payment is confirmed.
 
         %{url}
 
         Thanks,
-        MakePlans
+        Makeplans
       subject: 'ACTION REQUIRED: Please confirm payment'
     charge_succeded:
       body: |-
-        We have charged your credit card for using MakePlans. Please see attached receipt for the payment of invoice #%{invoice_nr}.
+        We have charged your credit card for using Makeplans. Please see attached receipt for the payment of invoice #%{invoice_nr}.
 
         Please note that this invoice is already paid. No further action is necessary.
 
         Your account: %{subdomain}
 
-        Thank you for using MakePlans.
-      filename: 'MakePlans AS %{invoice_date} receipt #%{invoice_nr}'
-      subject: Your receipt for using MakePlans
+        Thank you for using Makeplans.
+      filename: 'Makeplans AS %{invoice_date} receipt #%{invoice_nr}'
+      subject: Your receipt for using Makeplans
     deactivated:
       body: |-
         Hi there,
 
-        I'm Espen, the founder of MakePlans. Sorry to see that you deactivated your MakePlans account.
+        I'm Espen, the founder of Makeplans. Sorry to see that you deactivated your Makeplans account.
 
-        Were there any features missing or why did you choose to no longer use MakePlans? If you have any feedback for us I would glady listen so we can improve our product. Or did you find MakePlans a bit confusing to set up or use? I can help you configure your account. In addition I can give you two months free usage if you are willing to give MakePlans another go.
+        Were there any features missing or why did you choose to no longer use Makeplans? If you have any feedback for us I would glady listen so we can improve our product. Or did you find Makeplans a bit confusing to set up or use? I can help you configure your account. In addition I can give you two months free usage if you are willing to give Makeplans another go.
 
         Just reply to this email and I can follow up.
 
         Your deactivated account: %{subdomain}.
 
-        Regardless; have a good day and thanks for trying out MakePlans.
-      subject: 'CRITICAL: MakePlans account deactivated'
+        Regardless; have a good day and thanks for trying out Makeplans.
+      subject: 'CRITICAL: Makeplans account deactivated'
     inactive_warning:
       body: |-
         Hi there,
@@ -156,15 +156,15 @@ en:
 
         If no action is taken we will deactivate your account in one month. Then your account and all your data will be deleted in four months.
 
-        Thanks for trying out MakePlans :)
-      subject: 'CRITICAL: MakePlans account will be deactivated'
+        Thanks for trying out Makeplans :)
+      subject: 'CRITICAL: Makeplans account will be deactivated'
     no_bookings:
       body: |-
         Hi,
 
-        Last week you signed up for MakePlans. It's a service for online appointment booking.
+        Last week you signed up for Makeplans. It's a service for online appointment booking.
 
-        I noticed there are no bookings in your account yet. Why not make add a test booking in the administration system to see if MakePlans works for you?
+        I noticed there are no bookings in your account yet. Why not make add a test booking in the administration system to see if Makeplans works for you?
         To add a booking just go to %{url}.
 
 
@@ -174,54 +174,54 @@ en:
       body: |-
         Hi,
 
-        Yesterday you signed up for MakePlans. It's a service for online appointment booking.
+        Yesterday you signed up for Makeplans. It's a service for online appointment booking.
 
         I noticed you didn't complete the setup for your account. Perhaps you didn't have the time for it, if so why not complete it now?
         Just go to %{url} to complete the setup - it only takes 45 seconds.
 
-        Or do you have any questions about using MakePlans or how to best configure your account? Just reply to this email and we can help you out :)
-      subject: Complete your MakePlans setup
+        Or do you have any questions about using Makeplans or how to best configure your account? Just reply to this email and we can help you out :)
+      subject: Complete your Makeplans setup
     paused:
       body: |-
         Hi,
 
-        Your subscription to MakePlans will be paused at the end of this billing period (%{demo_ends_at}).
+        Your subscription to Makeplans will be paused at the end of this billing period (%{demo_ends_at}).
         Be aware that you will be charged any transactional charges such as SMS as long as your account is active.
 
         When your subscription is paused you can easily reactivate your account in the future.
 
         Your account: %{subdomain}
 
-        If you have trouble getting MakePlans to work for your user case please reply to this email so we can help you configure your account and explain how you can best use MakePlans based on your requirements.
+        If you have trouble getting Makeplans to work for your user case please reply to this email so we can help you configure your account and explain how you can best use Makeplans based on your requirements.
       subject: Your account will be paused
     setup_completed:
       contact_us_html: And if you have any questions just email us at %{mail}
-      footer: MakePlans
+      footer: Makeplans
       header: Your customers can now book online!
-      info: You have now configured your MakePlans account and is now ready to accept online bookings from your customers.
+      info: You have now configured your Makeplans account and is now ready to accept online bookings from your customers.
       next_steps: 'Next steps:'
       step_1: Complete a test-booking to verify that all texts and outgoing messages are correct.
       step_2: When you are ready put a link on your website to the booking site.
       step_3: Also let your other customers know that they can now book online.
-      subject: Your customers can now book online with MakePlans
+      subject: Your customers can now book online with Makeplans
     signup:
       contact_us_html: If you have any questions please contact us at %{mail} or just reply to this email.
-      extra: Extra functionality in MakePlans
-      extra_info: 'It''s great that you want to offer online booking for your clients. In addition MakePlans can offer you and your clients many types of extra functionality:'
+      extra: Extra functionality in Makeplans
+      extra_info: 'It''s great that you want to offer online booking for your clients. In addition Makeplans can offer you and your clients many types of extra functionality:'
       feature_1: Your clients can receive a reminder SMS before the appointment.
       feature_2: Require credit card payment when booking.
       feature_3: Store extra information on the reservation or customer with custom fields.
-      feature_4: MakePlans is integrated with many third party applications such as CRM and email newsletter applications.
-      footer: Hope you enjoy using MakePlans
-      header: Welcome to MakePlans!
+      feature_4: Makeplans is integrated with many third party applications such as CRM and email newsletter applications.
+      footer: Hope you enjoy using Makeplans
+      header: Welcome to Makeplans!
       link_info: This is where you will find your calendar with an overview of all reservations as well as being able to configure your account.
       registered: 'You have now registered for a free test account at:'
-      subject: Welcome to MakePlans
+      subject: Welcome to Makeplans
     sms_credits_balance_reached:
       body: |-
         Hi,
 
-        Your MakePlans account has a limit of sending %{sms_balance_limit} SMS. You have now passed that limit.
+        Your Makeplans account has a limit of sending %{sms_balance_limit} SMS. You have now passed that limit.
 
         SMS is no longer being sent from your account.
 
@@ -234,7 +234,7 @@ en:
       body: |-
         Hi,
 
-        Your MakePlans account has a limit of sending %{sms_balance_limit} SMS. You have currently sent %{sms_balance}.
+        Your Makeplans account has a limit of sending %{sms_balance_limit} SMS. You have currently sent %{sms_balance}.
 
         When you reach %{sms_balance_limit} messages your account will no longer send SMS unless you purchase more SMS credits.
 
@@ -247,7 +247,7 @@ en:
       body: |-
         Hi,
 
-        Just letting you know that your MakePlans trial will expire in 3 days.
+        Just letting you know that your Makeplans trial will expire in 3 days.
 
         To have your customers book online without interruptions please activate your account now.
 
@@ -260,7 +260,7 @@ en:
       body: |-
         Hi,
 
-        Your MakePlans trial has now ended.
+        Your Makeplans trial has now ended.
 
         It is now no longer possible for your customers to make a booking. You must activate your account to enable your booking site.
 
@@ -268,14 +268,14 @@ en:
         %{url}
 
         Haven't had a chance to properly test it out yet? Reply to this email and we can extend your trial.
-      subject: Your MakePlans trial account has ended
+      subject: Your Makeplans trial account has ended
     trial_sms_credits_balance_reached:
       body: |-
         Hi,
 
-        Your trial of MakePlans has a limit of sending %{sms_balance_limit} SMS. You have now passed that limit.
+        Your trial of Makeplans has a limit of sending %{sms_balance_limit} SMS. You have now passed that limit.
 
-        To continue using MakePlans please activate your account.
+        To continue using Makeplans please activate your account.
 
         Activate account:
         %{url}
@@ -286,7 +286,7 @@ en:
       body: |-
         Hi,
 
-        Your trial of MakePlans has a limit of sending %{sms_balance_limit} SMS. You have currently sent %{sms_balance}.
+        Your trial of Makeplans has a limit of sending %{sms_balance_limit} SMS. You have currently sent %{sms_balance}.
 
         If you want to ensure that SMS are sent please activate your account.
         When you reach %{sms_balance_limit} messages your account will no longer send SMS unless you activate your account.
@@ -298,38 +298,38 @@ en:
       subject: Your SMS credits are running out
   layouts:
     booking_user_mailer:
-      footer: Automatically generated by MakePlans.
+      footer: Automatically generated by Makeplans.
   user_mailer:
     add_user:
       body: |-
         Hi,
 
-        Welcome to MakePlans.
+        Welcome to Makeplans.
 
         Click the link below to define a password.
 
         %{link}
-      subject: Added as user in MakePlans
+      subject: Added as user in Makeplans
     export:
       body: |-
         Hi,
 
-        See attached file for exported data from MakePlans.
+        See attached file for exported data from Makeplans.
 
-        Thanks for using MakePlans
-      subject: Export from MakePlans
+        Thanks for using Makeplans
+      subject: Export from Makeplans
     link_user:
       body: |-
         Hi,
 
-        You now have access to the %{client} account in MakePlans.
+        You now have access to the %{client} account in Makeplans.
 
         Visit %{link} to log in.
 
-        MakePlans
-      subject: Access to account in MakePlans
+        Makeplans
+      subject: Access to account in Makeplans
     password_reset:
-      footer: MakePlans
-      info: You or someone else have requested your MakePlans password to be reset. To complete the password reset please click the link below.
-      link: Reset my MakePlans password.
+      footer: Makeplans
+      info: You or someone else have requested your Makeplans password to be reset. To complete the password reset please click the link below.
+      link: Reset my Makeplans password.
       subject: Reset password

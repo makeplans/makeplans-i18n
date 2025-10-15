@@ -228,8 +228,8 @@ sv:
       no_values_present: Namn, telefonnummer eller e-postadress krävs.
       not_authenticated: Du har loggats ut.
       not_found: Ingen information hittad. Försök ladda sidan igen. Kontakta kundtjänst om problemet kvarstår.
-      offline: Det gick inte att kontakta MakePlans. Kontrollera att du är online.
-      server_error: Error i MakePlans
+      offline: Det gick inte att kontakta Makeplans. Kontrollera att du är online.
+      server_error: Error i Makeplans
       syntax_error: Syntaxfel
       unknown: Okänt fel. Försök ladda sidan igen. Kontakta kundtjänst om problemet kvarstår.
     models:
@@ -642,7 +642,7 @@ sv:
       invoice_client:
         errors:
           nothing_to_invoice: Kontot är inte klart för fakturering. Minst en resurs krävs.
-        invoice_text: Användning av MakePlans onlinebokningsbokning
+        invoice_text: Användning av Makeplans onlinebokningsbokning
   time:
     24h: true
     formats:
@@ -667,10 +667,10 @@ sv:
         invalid: är ogiltig
   worker:
     integration_slack:
-      fallback: En ny bokning genomfördes i MakePlans
-      footer: MakePlans API
+      fallback: En ny bokning genomfördes i Makeplans
+      footer: Makeplans API
       pretext: "%{person} har bokat tid den %{booked_from}"
-      title: Visa bokningen i MakePlans
+      title: Visa bokningen i Makeplans
     integration_tfso_list_companies:
       errors:
         no_results: Hittade inga befintliga företag.
@@ -678,5 +678,5 @@ sv:
       errors:
         already_created: Redan skapad
         no_company: Kunden har raderats i 24SevenOffice. Du måste återaktivera kunden i 24SevenOffice innan du kan fortsätta.
-        no_product: Produkten har tagits bort i 24SevenOffice. Du måste återaktivera produkten i 24SevenOffice eller ansluta tjänsten till en ny produkt från MakePlans innan du kan fortsätta.
-        product_not_defined_on_service: Tjänsten i MakePlans är inte ansluten till en produkt i 24SevenOffice.
+        no_product: Produkten har tagits bort i 24SevenOffice. Du måste återaktivera produkten i 24SevenOffice eller ansluta tjänsten till en ny produkt från Makeplans innan du kan fortsätta.
+        product_not_defined_on_service: Tjänsten i Makeplans är inte ansluten till en produkt i 24SevenOffice.

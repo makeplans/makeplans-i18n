@@ -6,7 +6,7 @@ nb:
   clients:
     new:
       first_user: Dette er ditt personlige passord. Du kan legge til flere brukere senere.
-      free_trial_info: 14-dagers gratis test av fullverdig versjon av MakePlans. Ingen forpliktelser.
+      free_trial_info: 14-dagers gratis test av fullverdig versjon av Makeplans. Ingen forpliktelser.
       headline: Kom i gang med online timebestilling
       logged_in_as: Du er innlogget som %{name}.
       newsletter: Jeg godtar å motta produktoppdateringer på epost.

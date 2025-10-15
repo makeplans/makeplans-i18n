@@ -91,7 +91,7 @@ he:
         להתחברות לחץ על הקישור למטה:
 
         %{link}
-      subject: התחבר ל- MakePlans
+      subject: התחבר ל- Makeplans
   person_sms:
     perishable_token: "{{perishable_token}} הוא הקוד שלך לאימות."
     signature: |2-

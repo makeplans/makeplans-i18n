@@ -91,7 +91,7 @@ fr:
         Pour vous connecter, cliquez sur le lien ci-dessous:
 
         %{link}
-      subject: Connectez-vous pour MakePlans
+      subject: Connectez-vous pour Makeplans
   person_sms:
     perishable_token: "{{ perishable_token }} est votre code d'authentification."
     signature: |2-

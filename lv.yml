@@ -170,8 +170,8 @@ lv:
       no_values_present: Nepieciešams vārds, tālruņa numurs vai e-pasts.
       not_authenticated: Jūs esat atslēdzies no sistēmas.
       not_found: Nevar atrast datus. Mēģiniet atkārtoti ielādēt lapu.
-      offline: Nevar izveidot savienojumu ar MakePlans. Lūdzu, pārbaudiet, vai esat tiešsaistē.
-      server_error: Kļūda MakePlans
+      offline: Nevar izveidot savienojumu ar Makeplans. Lūdzu, pārbaudiet, vai esat tiešsaistē.
+      server_error: Kļūda Makeplans
       syntax_error: Kļūda sniegtajā sintaksē.
       unknown: Nezināma kļūda. Mēģiniet atkārtoti ielādēt lapu.
     models:
@@ -496,7 +496,7 @@ lv:
       invoice_client:
         errors:
           nothing_to_invoice: Konts nav gatavs rēķinu sagatavošanai. Lūdzu, pārliecinieties, vai jums ir vismaz viens resurss.
-        invoice_text: MakePlans tiešsaistes pierakstīšanās izmantošana
+        invoice_text: Makeplans tiešsaistes pierakstīšanās izmantošana
   title:
     actions:
       edit: Rediģēt
@@ -511,10 +511,10 @@ lv:
         invalid: nav derīgs
   worker:
     integration_slack:
-      fallback: Vietnē MakePlans tika izveidots jauns pieraksts
-      footer: MakePlans API
+      fallback: Vietnē Makeplans tika izveidots jauns pieraksts
+      footer: Makeplans API
       pretext: "%{person} izveidoja pierakstu %{booked_from}"
-      title: Skatiet pierakstīšanās vietnē MakePlans
+      title: Skatiet pierakstīšanās vietnē Makeplans
     integration_tfso_list_companies:
       errors:
         no_results: Nav atrasti esošie klienti.
@@ -522,5 +522,5 @@ lv:
       errors:
         already_created: Jau izveidots.
         no_company: Klients ir izdzēsts vietnē 24SevenOffice. Lai turpinātu, 24SevenOffice ir jāaktivizē klients.
-        no_product: Produkts ir izdzēsts vietnē 24SevenOffice. Lai turpinātu, jums ir atkārtoti jāaktivizē produkts 24SevenOffice vai jāsavieno pakalpojums ar jaunu produktu no MakePlans.
+        no_product: Produkts ir izdzēsts vietnē 24SevenOffice. Lai turpinātu, jums ir atkārtoti jāaktivizē produkts 24SevenOffice vai jāsavieno pakalpojums ar jaunu produktu no Makeplans.
         product_not_defined_on_service: Šis pakalpojums nav savienots ar produktu 24SevenOffice.

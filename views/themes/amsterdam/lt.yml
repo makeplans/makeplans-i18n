@@ -111,7 +111,7 @@ lt:
     layouts:
       application:
         authenticated: 'Prisijungėte kaip: %{name}'
-        demo_ended: MakePlans demonstracinės versijos galiojimas baigėsi.
+        demo_ended: Makeplans demonstracinės versijos galiojimas baigėsi.
         footer:
           privacy_policy: Privatumo politika
           support: Parama

@@ -111,7 +111,7 @@ lv:
     layouts:
       application:
         authenticated: 'Esat pieteikušies kā: %{name}'
-        demo_ended: MakePlans demonstrācijas termiņš ir beidzies.
+        demo_ended: Makeplans demonstrācijas termiņš ir beidzies.
         footer:
           privacy_policy: Privātuma politika
           support: Atbalsts

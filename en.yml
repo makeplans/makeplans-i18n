@@ -236,8 +236,8 @@ en:
       no_values_present: Name, phone number or email is required.
       not_authenticated: You have been logged out.
       not_found: Unable to find data. Try to reload the page.
-      offline: Unable to connect to MakePlans. Please check that you are online.
-      server_error: Error in MakePlans
+      offline: Unable to connect to Makeplans. Please check that you are online.
+      server_error: Error in Makeplans
       syntax_error: Error in the syntax provided.
       unknown: Unknown error. Try to reload the page.
     models:
@@ -653,7 +653,7 @@ en:
       invoice_client:
         errors:
           nothing_to_invoice: Account not ready for invoicing. Please make sure you have at least one resource.
-        invoice_text: Usage of MakePlans online appointment booking
+        invoice_text: Usage of Makeplans online appointment booking
   time:
     24h: true
     formats:
@@ -680,10 +680,10 @@ en:
         invalid: is invalid
   worker:
     integration_slack:
-      fallback: A new appointment was made in MakePlans
-      footer: MakePlans API
+      fallback: A new appointment was made in Makeplans
+      footer: Makeplans API
       pretext: "%{person} made an appointment on %{booked_from}"
-      title: View the appointment in MakePlans
+      title: View the appointment in Makeplans
     integration_tfso_list_companies:
       errors:
         no_results: No existing customers found.
@@ -691,5 +691,5 @@ en:
       errors:
         already_created: Already created.
         no_company: Customer has been deleted in 24SevenOffice. You must reactivate the customer in 24SevenOffice to continue.
-        no_product: Product has been deleted in 24SevenOffice. You must reactivate the product in 24SevenOffice or connect the service to a new product from MakePlans before you can continue.
+        no_product: Product has been deleted in 24SevenOffice. You must reactivate the product in 24SevenOffice or connect the service to a new product from Makeplans before you can continue.
         product_not_defined_on_service: This service is not connected to a product in 24SevenOffice.

@@ -51,7 +51,7 @@ he:
       credit_card_form:
         billing_info: בעת הוספת פרטי כרטיס האשראי שלך, אנו נחייב את כרטיסך מדי חודש בהתבסס על המחירים הנקובים באתרנו. העסקה הראשונה תבוצע באופן מיידי. אתה יכול לבטל את המנוי שלך בכל עת.
         header: פרטי תשלום
-        trial_expired: תקופת הניסיון שלך פג. אנא הפעל את חשבונך כדי להמשיך להשתמש ב- MakePlans.
+        trial_expired: תקופת הניסיון שלך פג. אנא הפעל את חשבונך כדי להמשיך להשתמש ב- Makeplans.
       credit_card_info:
         header: הזן פרטי כרטיס אשראי
         submit: שמור כרטיס אשראי
@@ -79,7 +79,7 @@ he:
         paid_until: החשבון שלך משולם עד %{paid_until}.
         pause: השהה את החשבון עם סיום המנוי הנוכחי.
         pause_confirm: האם אתה בטוח שברצונך להשהות את החשבון? החשבון יושבת אוטומטית ב- %{paid_until}.
-        reactivate: חשבונך נמצא כעת במצב ניסיון. עליך להפעיל מחדש את חשבונך כדי להמשיך להשתמש ב- MakePlans
+        reactivate: חשבונך נמצא כעת במצב ניסיון. עליך להפעיל מחדש את חשבונך כדי להמשיך להשתמש ב- Makeplans
         reactivate_link: הפעל מחדש את החשבון
         sms_credits_available: יש לך יתרה של %{credits} SMS.
         vat_no: מס מע"מ רשום הוא %{vat_no}
@@ -88,7 +88,7 @@ he:
         activate_account: הפעל חשבון כעת
         info: תכונה זו מחייבת הפעלת חשבונך.
       processing:
-        activated: חשבונך מופעל כעת :) תודה על השימוש ב- MakePlans.
+        activated: חשבונך מופעל כעת :) תודה על השימוש ב- Makeplans.
         error: לא ניתן לאמת את התשלום. אנא צרו קשר עם שירות הלקוחות.
         info: אנא המתן בזמן שאנו מחייבים את כרטיס התשלום שלך. זה יכול לקחת עד דקה. תקבל מאימייל מאיתנו עם סיום התהליך.
     bookings:
@@ -101,7 +101,7 @@ he:
       destroy_recurring:
         headline: כל ההזמנות החוזרות ונשנות בתבנית זו הוסרו
       fiken:
-        delayed_info: ייקח זמן מה עד ההזמנה תיווצר בפיקן. אל תנסה ליצור את ההזמנה שוב אם לא נראה מידע מ- Fiken ב- MakePlans.
+        delayed_info: ייקח זמן מה עד ההזמנה תיווצר בפיקן. אל תנסה ליצור את ההזמנה שוב אם לא נראה מידע מ- Fiken ב- Makeplans.
         header: מתמודד עם פיקן ...
         to_booking: הצג הזמנה
       form_appointment:
@@ -259,13 +259,13 @@ he:
         confirm_message: ההזדמנות האחרונה. האם אתה בטוח לחלוטין שברצונך למחוק את חשבונך עם כל הנתונים שלך?
         disable_link: כן, אנא מחק את כל הנתונים שלי.
         header: האם אתה בטוח שברצונך למחוק את חשבונך?
-        i_love_makeplans: לא, אני רוצה להמשיך להשתמש ב- MakePlans.
+        i_love_makeplans: לא, אני רוצה להמשיך להשתמש ב- Makeplans.
         info: כל הנתונים בחשבונך יימחקו. האם אתה בטוח שאתה רוצה להמשיך?
-        pause: האם אתה מעדיף להפסיק את חשבונך? לא תשלם תשלום חודשי וחשבונך יהיה זמין כאשר תהיה מוכן להשתמש ב- MakePlans שוב.
+        pause: האם אתה מעדיף להפסיק את חשבונך? לא תשלם תשלום חודשי וחשבונך יהיה זמין כאשר תהיה מוכן להשתמש ב- Makeplans שוב.
         pause_link: תוכל להשהות את חשבונך בדף החיוב.
       configuration:
-        header: הגדרת MakePlans
-        intro: זה המקום שבו אתה יכול להגדיר את MakePlans וכיצד זה אמור לעבוד עבורך. באפשרותך להוסיף שירותים וקטגוריות שאתה מציע באתר ההזמנות, לשנות את הזמינות, לשנות את ההודעות היוצאות (SMS ודואר אלקטרוני), להוסיף משתמשים נוספים ולהתאים הגדרות רבות אחרות ב- MakePlans.
+        header: הגדרת Makeplans
+        intro: זה המקום שבו אתה יכול להגדיר את Makeplans וכיצד זה אמור לעבוד עבורך. באפשרותך להוסיף שירותים וקטגוריות שאתה מציע באתר ההזמנות, לשנות את הזמינות, לשנות את ההודעות היוצאות (SMS ודואר אלקטרוני), להוסיף משתמשים נוספים ולהתאים הגדרות רבות אחרות ב- Makeplans.
         menu_info: בחר מהתפריט בצד שמאל. אם יש לך שאלות לגבי אופן ביצוע התאמות אנא פנה לשירות הלקוחות.
         trial_info: זהו חשבון ניסיון - לחץ כאן להפעלה
       edit:
@@ -340,9 +340,9 @@ he:
         header: התראות לקוח
         modification_email: שלח אימייל בעת שינוי ההזמנה
         modification_sms: שלח SMS בעת שינוי ההזמנה
-        outgoing_messages_info: 'MakePlans יציע לשלוח דוא"ל / SMS (כל מה שתגדיר כשיטת אימות) בעת יצירת, שינוי או ביטול הזמנה. הודעות מסוימות כגון ביטול מתרחשות באופן אוטומטי. באפשרותך לבטל הודעות אוטומטיות (למשל בעת העברת הזמנה על ידי גרירתו ליומן, ביטול או יצירת הזמנה חדשה באמצעות ה- API) או ביטול ההצעה למשלוח הודעות בטופס על ידי שינוי ההגדרות שלמטה. הערה: זה לא חל על אתר ההזמנות. אתר ההזמנות ישלח תמיד באופן אוטומטי הודעות על פי שיטת האימות שלך.'
+        outgoing_messages_info: 'Makeplans יציע לשלוח דוא"ל / SMS (כל מה שתגדיר כשיטת אימות) בעת יצירת, שינוי או ביטול הזמנה. הודעות מסוימות כגון ביטול מתרחשות באופן אוטומטי. באפשרותך לבטל הודעות אוטומטיות (למשל בעת העברת הזמנה על ידי גרירתו ליומן, ביטול או יצירת הזמנה חדשה באמצעות ה- API) או ביטול ההצעה למשלוח הודעות בטופס על ידי שינוי ההגדרות שלמטה. הערה: זה לא חל על אתר ההזמנות. אתר ההזמנות ישלח תמיד באופן אוטומטי הודעות על פי שיטת האימות שלך.'
         reminder_sms: שלח SMS לתזכורת
-        reminder_sms_info: שם השולח הוא 'MakePlans'. פנה לשירות הלקוחות כדי לשנות את שם השולח.
+        reminder_sms_info: שם השולח הוא 'Makeplans'. פנה לשירות הלקוחות כדי לשנות את שם השולח.
         sms_reminder_time_info: 'SMS נשלח בצהריים יום לפני ההזמנה. אם ברצונך לשנות זאת אנא שנה את השדה למטה. דוגמה: ''שעתיים לפני'' (SMS נשלח שעתיים לפני ההזמנה) או ''8:00 אתמול'' (SMS התזכורת יישלח בשמונה בבוקר יום לפני ההזמנה)'
       edit_user_notifications:
         approvement_email: הודעת דוא"ל לבקשות הזמנות חדשות
@@ -374,11 +374,11 @@ he:
           events: אירועים
           people: לקוחות
         executed: הייצוא נשלח כעת לכתובת הדוא"ל שלך.
-        header: ייצא נתונים מ- MakePlans
+        header: ייצא נתונים מ- Makeplans
         info: תקבל דוא"ל עם קובץ קובץ CSV.
       import:
         header: ייבא נתונים
-        info: ניתן לייבא נתונים כגון לקוחות ל- MakePlans. צור קשר עם התמיכה למידע נוסף.
+        info: ניתן לייבא נתונים כגון לקוחות ל- Makeplans. צור קשר עם התמיכה למידע נוסף.
       promote:
         booking_button_html_info: כדי להכניס את כפתור ההזמנה באתר האינטרנט שלך אנא העתק את קוד ה- HTML למטה. אם אתה זקוק לעזרה אנא פנה למעצב האינטרנט שלך.
         booking_button_html_preview: תצוגה מקדימה של כפתור ההזמנה
@@ -476,7 +476,7 @@ he:
         activate_settings_3: הפעל הגדרות עבור Extensor הזמנה מקוונת גרסה 3
         info: כדי להפעיל סינכרוניזציה עם Extensor עליך להתקין את ההזמנה Online Extensor. לחץ על הקישור למטה כדי להתחיל בתהליך. אליך יצור קשר באמצעות Extensor.
         reactive_settings: הפעל מחדש את ההגדרות לפני הזמנה מקוונת של Extensor.
-        version: MakePlans מוגדר לעבוד עם גרסת %{version} של Extensor Online Booking.
+        version: Makeplans מוגדר לעבוד עם גרסת %{version} של Extensor Online Booking.
       fakturo:
         password: סיסמה
         username: שם משתמש
@@ -491,7 +491,7 @@ he:
         select_bank_account: בחר חשבון בנק שיוצג בחשבונית
         select_company: בחר חברה
         service_linked: התחבר למוצר ב- Fiken
-        service_links: 'יש לחבר כל שירות למוצר ב- Fiken כדי לאפשר ליצור הזמנה ב- Fiken. שימו לב: המחיר נלקח מ- Fiken - לא מ- MakePlans. עליכם לוודא שהמחיר בשתי היישומים זהה.'
+        service_links: 'יש לחבר כל שירות למוצר ב- Fiken כדי לאפשר ליצור הזמנה ב- Fiken. שימו לב: המחיר נלקח מ- Fiken - לא מ- Makeplans. עליכם לוודא שהמחיר בשתי היישומים זהה.'
         service_not_linked: לא מחובר למוצר ב- Fiken.
         vat_type: סוג מע"מ
       headline: שילוב עם %{integration}
@@ -521,13 +521,13 @@ he:
         connected_to: מחובר למסד נתונים עם מזהה %{database_id}
         database_info: 'יש להגדיר את מסד הנתונים עם המאפיינים הבאים: שם, דואר אלקטרוני (סוג: מייל), טלפון (סוג: טלפון).'
         select_database: בחר מסד נתונים
-        sharing_info: אנא שתף לפחות מסד נתונים אחד עם שילוב MakePlans
+        sharing_info: אנא שתף לפחות מסד נתונים אחד עם שילוב Makeplans
       oauth_connect: התחבר לשירות
       selected_option: נבחר
       sendy:
         connect_info_html: "<em>לקוחות חדשים יירשמו</em> לרשימה עם מזהה %{list_id} בהתקנה %{api_url}"
       stripe:
-        payment_info: עבור כל העסקאות דמי עסקה בסך %{application_fee_percent} מנוכים על ידי MakePlans.
+        payment_info: עבור כל העסקאות דמי עסקה בסך %{application_fee_percent} מנוכים על ידי Makeplans.
         receipt_email: שלחו קבלה ללקוח מפס
       tfso:
         add_to_crm_manually: הוסף לקוח ב- CRM באופן ידני
@@ -546,7 +546,7 @@ he:
           Offer: הַצָעָה
         password: סיסמת API
         service_linked: התחבר למוצר ב- 24SevenOffice
-        service_links: כל שירות ב- MakePlans חייב להיות מחובר למוצר ב- 24SevenOffice כדי לאפשר הפעלה. שים לב שהמחיר מוחזר מהמוצר ב- 24SevenOffice - לא מ- MakePlans. עליכם לוודא ששני המחירים הללו זהים. עבור לשירות להגדרת מזהה מוצר מ- 24SevenOffice.
+        service_links: כל שירות ב- Makeplans חייב להיות מחובר למוצר ב- 24SevenOffice כדי לאפשר הפעלה. שים לב שהמחיר מוחזר מהמוצר ב- 24SevenOffice - לא מ- Makeplans. עליכם לוודא ששני המחירים הללו זהים. עבור לשירות להגדרת מזהה מוצר מ- 24SevenOffice.
         service_not_linked: לא מחובר למוצר ב- 24SevenOffice
         type_groups: 'סוג מכירה להזמנה:'
         username: שם משתמש API
@@ -562,10 +562,10 @@ he:
         customer_attributes_info: 'שימו לב: חשבונאות אלקטרונית של Visma דורשת מיקוד ועיר כדי לרשום לקוח חדש. אם ערכים אלה אינם קיימים לא ניתן ליצור הזמנה מהזמנה.'
         select_terms_of_payment: 'אנא בחר בתנאי תשלום רגילים ללקוחות חדשים:'
         service_linked: מחובר למוצר ב- Visma eAccounting
-        service_links: כל שירות ב- MakePlans חייב להיות מחובר למוצר ב- Visma eAccount כדי לאפשר חשבונית. שים לב שהמחיר נשלף מ- Visma eAccounting - לא MakePlans. עליכם לוודא שהמחיר זהה בשתי המערכות.
+        service_links: כל שירות ב- Makeplans חייב להיות מחובר למוצר ב- Visma eAccount כדי לאפשר חשבונית. שים לב שהמחיר נשלף מ- Visma eAccounting - לא Makeplans. עליכם לוודא שהמחיר זהה בשתי המערכות.
         service_not_linked: לא מחובר למוצר ב- Visma eAccounting
       zapier:
-        info_html: כדי לחבר את MakePlans ל- Zapier אנא הכינו <a href="%{url}" target="_blank">Zap חדש ב- Zapier</a> .
+        info_html: כדי לחבר את Makeplans ל- Zapier אנא הכינו <a href="%{url}" target="_blank">Zap חדש ב- Zapier</a> .
       zoom:
         connect_info: מְחוּבָּר
         info: כדי שהשילוב הזה יעבוד, עליך לחבר משאב למשתמש ב-Zoom ולהיות לפחות שירות אחד עם Zoom מופעל.
@@ -612,7 +612,7 @@ he:
         create: צור לקוח חדש ב- 24SevenOffice
         header: התחבר ללקוח ב- 24SevenOffice
         search: או חפש בקרב לקוחות קיימים
-        search_matched_headline: מצא לקוחות קיימים ב- 24SevenOffice CRM. לחץ על השם כדי לחבר לקוח זה ב- MakePlans ללקוח ב- 24SevenOffice CRM.
+        search_matched_headline: מצא לקוחות קיימים ב- 24SevenOffice CRM. לחץ על השם כדי לחבר לקוח זה ב- Makeplans ללקוח ב- 24SevenOffice CRM.
         search_query: חיפוש שם
         stream_placeholder: מחפש ב- 24SevenOffice CRM. המתן בבקשה. זה יכול לקחת עד 1-2 דקות.
     profile:
@@ -684,7 +684,7 @@ he:
           activated_html: הגישה למשאב זה באמצעות iCalendar מופעלת. הקישור לעדכון iCalendar הוא %{link}
           disable: השבת את העדכון של iCalendar
           enable: הפעל את העדכון של iCalendar
-          info: iCalendar-feed יציג פגישות ממשאב זה ב- MakePlans ביישומי לוח שנה אחרים כגון Microsoft Oulook, Google Calendar, iPhone או Android. לקריאה בלבד, כל השינויים חייבים להתבצע ב- MakePlans.
+          info: iCalendar-feed יציג פגישות ממשאב זה ב- Makeplans ביישומי לוח שנה אחרים כגון Microsoft Oulook, Google Calendar, iPhone או Android. לקריאה בלבד, כל השינויים חייבים להתבצע ב- Makeplans.
           not_activated: לא הופעל
         icalfeed: 'עדכון iCalendar:'
         offers: 'מציע את השירותים הבאים באתר ההזמנות:'
@@ -790,7 +790,7 @@ he:
         attendances: נוֹכְחוּת
         attendances_info_html: להשתתפות באירועים, קורסים, שיעורים או נוכחות אחרת בזמנים ספציפיים. או פעם אחת או חוזרת כמו בכל יום שלישי.
         footer_html: שירות הוא משהו שאתה מציע ללקוחות שלך ויוצג באתר ההזמנות. הגדר שירותים לפגישות בהן שעות פתיחה קבועות או להשתתפות המתרחשת בשעה מסוימת.
-        header_html: ברוך הבא ל- MakePlans.<br> התחל בהוספת השירותים שלך
+        header_html: ברוך הבא ל- Makeplans.<br> התחל בהוספת השירותים שלך
     shared:
       recurring:
         enabled: חזור על כך מספר פעמים עם תבנית

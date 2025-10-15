@@ -31,16 +31,16 @@ lt:
       body: |-
         Sveiki,
 
-        Bandėme apdoroti jūsų mokėjimą už MakePlans naudojimą, bet gavome šią klaidą: %{error}
+        Bandėme apdoroti jūsų mokėjimą už Makeplans naudojimą, bet gavome šią klaidą: %{error}
 
-        Prisijunkite prie MakePlans, kad įsitikintumėte, jog kortelė galioja.
+        Prisijunkite prie Makeplans, kad įsitikintumėte, jog kortelė galioja.
 
         %{url}
 
         Jūsų sąskaita netrukus bus išaktyvinta, jei mokėjimas nebus sėkmingas.
 
         Dėkoju,
-        MakePlans
+        Makeplans
       subject: 'KRITINĖ: apdorojant mokėjimą kilo problema'
     charge_give_up:
       body: |-
@@ -48,56 +48,56 @@ lt:
 
         ĮSPĖJIMAS: Dabar jūsų paskyra išaktyvinta.
 
-        Bandėme apdoroti jūsų mokėjimą už MakePlans naudojimą, bet gavome šią klaidą: %{error}
+        Bandėme apdoroti jūsų mokėjimą už Makeplans naudojimą, bet gavome šią klaidą: %{error}
 
-        Prisijunkite prie MakePlans, kad įsitikintumėte, jog kortelė galioja norint atkurti jūsų sąskaitą:
+        Prisijunkite prie Makeplans, kad įsitikintumėte, jog kortelė galioja norint atkurti jūsų sąskaitą:
 
         %{url}
 
         Dėkoju,
-        MakePlans
+        Makeplans
       subject: 'KRITINĖ: paskyra deaktyvinta'
     charge_requires_action:
       body: |-
         Sveiki,
 
-        Patvirtinkite mokėjimą už naudojimąsi MakePlans. Jūsų paskyra netrukus bus išjungta, nebent mokėjimas bus patvirtintas.
+        Patvirtinkite mokėjimą už naudojimąsi Makeplans. Jūsų paskyra netrukus bus išjungta, nebent mokėjimas bus patvirtintas.
 
         %{url}
 
         Dėkoju,
-        MakePlans
+        Makeplans
       subject: 'KRITINĖ: Patvirtinkite mokėjimą'
     charge_succeded:
       body: |-
-        Apmokestinome jūsų kredito kortelę už naudojimąsi MakePlans. Žr. Pridėtą sąskaitos faktūros apmokėjimo kvitą # %{invoice_nr}.
+        Apmokestinome jūsų kredito kortelę už naudojimąsi Makeplans. Žr. Pridėtą sąskaitos faktūros apmokėjimo kvitą # %{invoice_nr}.
 
         Atkreipkite dėmesį, kad ši sąskaita jau sumokėta. Jokių tolesnių veiksmų nereikia.
 
         Jūsų paskyra: %{subdomain}
 
-        Dėkojame, kad naudojatės MakePlans.
-      filename: 'MakePlans AS %{invoice_date} kvitas # %{invoice_nr}'
-      subject: Jūsų kvitas už MakePlans naudojimą
+        Dėkojame, kad naudojatės Makeplans.
+      filename: 'Makeplans AS %{invoice_date} kvitas # %{invoice_nr}'
+      subject: Jūsų kvitas už Makeplans naudojimą
     deactivated:
       body: |-
         Sveiki,
 
-        Aš Espenas, MakePlans įkūrėjas. Apgailestaujame, kad išaktyvinote MakePlans paskyrą.
+        Aš Espenas, Makeplans įkūrėjas. Apgailestaujame, kad išaktyvinote Makeplans paskyrą.
 
-        Trūko kokių nors funkcijų arba kodėl nusprendėte nebenaudoti MakePlans? Jei turite kokių nors atsiliepimų, mielai klausyčiau, kad galėtume patobulinti savo produktą. Ar jums pasirodė, kad MakePlans yra šiek tiek painu nustatyti ar naudoti? Aš galiu padėti jums sukonfigūruoti jūsų sąskaitą. Be to, aš galiu suteikti jums du mėnesius nemokamą naudojimą, jei esate pasirengęs dar kartą leisti MakePlans.
+        Trūko kokių nors funkcijų arba kodėl nusprendėte nebenaudoti Makeplans? Jei turite kokių nors atsiliepimų, mielai klausyčiau, kad galėtume patobulinti savo produktą. Ar jums pasirodė, kad Makeplans yra šiek tiek painu nustatyti ar naudoti? Aš galiu padėti jums sukonfigūruoti jūsų sąskaitą. Be to, aš galiu suteikti jums du mėnesius nemokamą naudojimą, jei esate pasirengęs dar kartą leisti Makeplans.
 
         Tiesiog atsakykite į šį el. Laišką ir aš galėsiu tęsti.
 
-        Nepaisant to; geros dienos ir ačiū, kad išbandėte MakePlans.
-      subject: 'KRITINĖ: MakePlans paskyra išaktyvinta'
+        Nepaisant to; geros dienos ir ačiū, kad išbandėte Makeplans.
+      subject: 'KRITINĖ: Makeplans paskyra išaktyvinta'
     no_bookings:
       body: |-
         Sveiki,
 
-        Praėjusią savaitę jūs užsiregistravote MakePlans. Tai internetinių susitikimų rezervavimo paslauga.
+        Praėjusią savaitę jūs užsiregistravote Makeplans. Tai internetinių susitikimų rezervavimo paslauga.
 
-        Pastebėjau, kad jūsų paskyroje dar nėra užsakymų. Kodėl nepadarius bandomojo rezervavimo administravimo sistemoje, kad sužinotumėte, ar MakePlans jums tinka?
+        Pastebėjau, kad jūsų paskyroje dar nėra užsakymų. Kodėl nepadarius bandomojo rezervavimo administravimo sistemoje, kad sužinotumėte, ar Makeplans jums tinka?
         Norėdami pridėti užsakymą, eikite į %{url}.
 
 
@@ -107,52 +107,52 @@ lt:
       body: |-
         Sveiki,
 
-        Vakar jūs užsiregistravote MakePlans. Tai internetinių susitikimų rezervavimo paslauga.
+        Vakar jūs užsiregistravote Makeplans. Tai internetinių susitikimų rezervavimo paslauga.
 
         Pastebėjau, kad nebaigėte savo paskyros sąrankos. Galbūt jūs neturėjote tam laiko, jei taip, kodėl gi neužbaigti jo dabar?
         Tiesiog eikite į %{url}, kad užbaigtumėte sąranką - tai užtruks tik 45 sekundes.
 
-        Arba turite klausimų apie MakePlans naudojimą ar kaip geriausiai sukonfigūruoti savo sąskaitą? Tiesiog atsakykite į šį el. Laišką ir mes galime jums padėti :)
-      subject: Užbaikite MakePlans sąranką
+        Arba turite klausimų apie Makeplans naudojimą ar kaip geriausiai sukonfigūruoti savo sąskaitą? Tiesiog atsakykite į šį el. Laišką ir mes galime jums padėti :)
+      subject: Užbaikite Makeplans sąranką
     paused:
       body: |-
         Sveiki,
 
-        Jūsų „MakePlans“ prenumerata bus pristabdyta šio atsiskaitymo laikotarpio pabaigoje (%{demo_ends_at}).
+        Jūsų „Makeplans“ prenumerata bus pristabdyta šio atsiskaitymo laikotarpio pabaigoje (%{demo_ends_at}).
         Atminkite, kad būsite apmokestinti bet kokiais operacijų mokesčiais, pvz., SMS žinutėmis, kol jūsų paskyra bus aktyvi.
 
         Kai prenumerata pristabdyta, ateityje galėsite lengvai iš naujo suaktyvinti paskyrą.
 
-        Jei kyla problemų priverčiant MakePlans veikti jūsų naudotojo atveju, atsakykite į šį el. laišką, kad galėtume padėti sukonfigūruoti paskyrą ir paaiškinti, kaip geriausiai naudoti MakePlans pagal savo poreikius.
+        Jei kyla problemų priverčiant Makeplans veikti jūsų naudotojo atveju, atsakykite į šį el. laišką, kad galėtume padėti sukonfigūruoti paskyrą ir paaiškinti, kaip geriausiai naudoti Makeplans pagal savo poreikius.
       subject: Jūsų paskyra bus pristabdyta
     setup_completed:
       contact_us_html: Ir jei turite klausimų, parašykite mums el. Laišką adresu %{mail}
-      footer: MakePlans
+      footer: Makeplans
       header: Dabar jūsų klientai gali užsisakyti internetu!
-      info: Dabar sukonfigūravote MakePlans paskyrą ir dabar esate pasirengęs priimti internetinius užsakymus iš savo klientų.
+      info: Dabar sukonfigūravote Makeplans paskyrą ir dabar esate pasirengęs priimti internetinius užsakymus iš savo klientų.
       next_steps: 'Tolesni žingsniai:'
       step_1: Atlikite bandomąją rezervaciją, kad patikrintumėte, ar visi tekstai ir siunčiami pranešimai yra teisingi.
       step_2: Kai būsite pasirengę, savo svetainėje įdėkite nuorodą į rezervavimo svetainę.
       step_3: Taip pat praneškite kitiems savo klientams, kad jie dabar gali užsisakyti internetu.
-      subject: Dabar jūsų klientai gali užsisakyti internetu naudodami MakePlans
+      subject: Dabar jūsų klientai gali užsisakyti internetu naudodami Makeplans
     signup:
       contact_us_html: 'Jei turite klausimų, susisiekite su mumis šiuo adresu: %{mail} arba tiesiog atsakykite į šį el. Laišką.'
-      extra: Papildoma MakePlans funkcija
-      extra_info: 'Puiku, kad norite pasiūlyti užsakymą internetu savo klientams. Be to, MakePlans gali pasiūlyti jums ir jūsų klientams daugybę papildomų funkcijų:'
+      extra: Papildoma Makeplans funkcija
+      extra_info: 'Puiku, kad norite pasiūlyti užsakymą internetu savo klientams. Be to, Makeplans gali pasiūlyti jums ir jūsų klientams daugybę papildomų funkcijų:'
       feature_1: Jūsų klientai gali gauti priminimo SMS prieš susitikimą.
       feature_2: Užsakymo metu reikia sumokėti kreditine kortele.
       feature_3: Saugokite papildomą informaciją rezervacijos vietoje arba kliente naudodami pasirinktinius laukus.
-      feature_4: MakePlans yra integruota su daugeliu trečiųjų šalių programų, tokių kaip CRM ir el. Pašto naujienlaiškių programos.
-      footer: Tikiuosi, kad jums patiks naudoti MakePlans
-      header: Sveiki atvykę į MakePlans!
+      feature_4: Makeplans yra integruota su daugeliu trečiųjų šalių programų, tokių kaip CRM ir el. Pašto naujienlaiškių programos.
+      footer: Tikiuosi, kad jums patiks naudoti Makeplans
+      header: Sveiki atvykę į Makeplans!
       link_info: Čia rasite savo kalendorių su visų rezervacijų apžvalga ir galimybę sukonfigūruoti savo sąskaitą.
       registered: 'Dabar jūs užsiregistravote į nemokamą bandomąją sąskaitą:'
-      subject: Sveiki atvykę į MakePlans
+      subject: Sveiki atvykę į Makeplans
     sms_credits_balance_reached:
       body: |-
         Sveiki,
 
-        Jūsų MakePlans paskyroje nustatytas %{sms_balance_limit} SMS siuntimo limitas. Dabar jūs peržengėte šią ribą.
+        Jūsų Makeplans paskyroje nustatytas %{sms_balance_limit} SMS siuntimo limitas. Dabar jūs peržengėte šią ribą.
 
         SMS iš jūsų paskyros nebesiunčiama.
 
@@ -165,7 +165,7 @@ lt:
       body: |-
         Sveiki,
 
-        Jūsų MakePlans paskyroje nustatytas %{sms_balance_limit} SMS siuntimo limitas. Šiuo metu išsiuntėte %{sms_balance}.
+        Jūsų Makeplans paskyroje nustatytas %{sms_balance_limit} SMS siuntimo limitas. Šiuo metu išsiuntėte %{sms_balance}.
 
         Kai gausite %{sms_balance_limit} pranešimus, jūsų paskyra nebesiųs SMS, nebent įsigysite daugiau SMS kreditų.
 
@@ -178,7 +178,7 @@ lt:
       body: |-
         Sveiki,
 
-        Tiesiog praneškime, kad MakePlans bandomoji versija baigsis po 3 dienų.
+        Tiesiog praneškime, kad Makeplans bandomoji versija baigsis po 3 dienų.
 
         Norėdami, kad jūsų klientai internetu rezervuotų be trukdžių, suaktyvinkite savo sąskaitą dabar.
 
@@ -191,7 +191,7 @@ lt:
       body: |-
         Sveiki,
 
-        Jūsų MakePlans bandymas baigėsi.
+        Jūsų Makeplans bandymas baigėsi.
 
         Dabar jūsų klientai nebeįmanoma užsisakyti. Norėdami įgalinti rezervavimo svetainę, turite suaktyvinti savo sąskaitą.
 
@@ -199,14 +199,14 @@ lt:
         %{url}
 
         Dar neturėjote galimybės tinkamai išbandyti? Atsakykite į šį el. Laišką ir mes galime pratęsti jūsų bandomąją versiją.
-      subject: Jūsų MakePlans bandomoji paskyra baigėsi
+      subject: Jūsų Makeplans bandomoji paskyra baigėsi
     trial_sms_credits_balance_reached:
       body: |-
         Sveiki,
 
-        Bandant MakePlans yra ribojamas SMS %{sms_balance_limit} siuntimas. Dabar jūs peržengėte šią ribą.
+        Bandant Makeplans yra ribojamas SMS %{sms_balance_limit} siuntimas. Dabar jūs peržengėte šią ribą.
 
-        Norėdami toliau naudoti MakePlans, suaktyvinkite savo sąskaitą.
+        Norėdami toliau naudoti Makeplans, suaktyvinkite savo sąskaitą.
 
         Suaktyvinti paskyrą:
         %{url}
@@ -217,7 +217,7 @@ lt:
       body: |-
         Sveiki,
 
-        Bandant MakePlans yra ribojamas SMS žinučių siuntimas %{sms_balance_limit}. Šiuo metu išsiuntėte %{sms_balance}.
+        Bandant Makeplans yra ribojamas SMS žinučių siuntimas %{sms_balance_limit}. Šiuo metu išsiuntėte %{sms_balance}.
 
         Jei norite įsitikinti, kad siunčiamos SMS žinutės, suaktyvinkite savo sąskaitą.
         Kai pasieksite %{sms_balance_limit} pranešimus, jūsų paskyra nebesiųs SMS, nebent suaktyvinsite savo sąskaitą.
@@ -229,38 +229,38 @@ lt:
       subject: Jūsų SMS kreditai baigiasi
   layouts:
     booking_user_mailer:
-      footer: Automatiškai sugeneruota MakePlans.
+      footer: Automatiškai sugeneruota Makeplans.
   user_mailer:
     add_user:
       body: |-
         Sveiki,
 
-        Sveiki atvykę į MakePlans.
+        Sveiki atvykę į Makeplans.
 
         Norėdami apibrėžti slaptažodį, spustelėkite toliau pateiktą nuorodą.
 
         %{link}
-      subject: Pridėta kaip MakePlans vartotoja
+      subject: Pridėta kaip Makeplans vartotoja
     export:
       body: |-
         Sveiki,
 
-        Žr. Pridėtą failą, kuriame rasite eksportuotų duomenų iš MakePlans.
+        Žr. Pridėtą failą, kuriame rasite eksportuotų duomenų iš Makeplans.
 
-        Dėkojame, kad naudojatės MakePlans
-      subject: Eksportuoti iš MakePlans
+        Dėkojame, kad naudojatės Makeplans
+      subject: Eksportuoti iš Makeplans
     link_user:
       body: |-
         Sveiki,
 
-        Dabar turite prieigą prie %{client} paskyros MakePlans.
+        Dabar turite prieigą prie %{client} paskyros Makeplans.
 
         Norėdami prisijungti, apsilankykite %{link}.
 
-        MakePlans
-      subject: Prieiga prie MakePlans paskyros
+        Makeplans
+      subject: Prieiga prie Makeplans paskyros
     password_reset:
-      footer: MakePlans
-      info: Jūs arba kas nors kitas paprašėte iš naujo nustatyti MakePlans slaptažodį. Norėdami užbaigti slaptažodžio nustatymą, spustelėkite toliau pateiktą nuorodą.
-      link: Iš naujo nustatykite MakePlans slaptažodį.
+      footer: Makeplans
+      info: Jūs arba kas nors kitas paprašėte iš naujo nustatyti Makeplans slaptažodį. Norėdami užbaigti slaptažodžio nustatymą, spustelėkite toliau pateiktą nuorodą.
+      link: Iš naujo nustatykite Makeplans slaptažodį.
       subject: Atstatyti slaptažodį

@@ -167,8 +167,8 @@ ms:
       no_values_present: Nama, nombor telefon atau e-mel diperlukan.
       not_authenticated: Anda telah log keluar.
       not_found: Tidak dapat mencari data. Cuba muatkan semula halaman.
-      offline: Tidak dapat menyambung ke MakePlans. Sila periksa bahawa anda berada dalam talian.
-      server_error: Ralat dalam MakePlans
+      offline: Tidak dapat menyambung ke Makeplans. Sila periksa bahawa anda berada dalam talian.
+      server_error: Ralat dalam Makeplans
       syntax_error: Ralat dalam sintaks yang disediakan.
       unknown: Ralat tidak diketahui. Cuba muatkan semula halaman.
     models:
@@ -493,7 +493,7 @@ ms:
       invoice_client:
         errors:
           nothing_to_invoice: Akaun belum siap untuk penginvoisan. Pastikan anda mempunyai sekurang-kurangnya satu sumber.
-        invoice_text: Penggunaan tempahan janji temu dalam talian MakePlans
+        invoice_text: Penggunaan tempahan janji temu dalam talian Makeplans
   title:
     actions:
       edit: Edit
@@ -508,10 +508,10 @@ ms:
         invalid: tidak sah
   worker:
     integration_slack:
-      fallback: Temujanji baru dibuat dalam MakePlans
-      footer: API MakePlans
+      fallback: Temujanji baru dibuat dalam Makeplans
+      footer: API Makeplans
       pretext: "%{person} membuat janji temu pada %{booked_from}"
-      title: Lihat janji temu di MakePlans
+      title: Lihat janji temu di Makeplans
     integration_tfso_list_companies:
       errors:
         no_results: Tidak ada pelanggan yang ada.
@@ -519,5 +519,5 @@ ms:
       errors:
         already_created: Sudah dibuat.
         no_company: Pelanggan telah dihapuskan di 24SevenOffice. Anda mesti mengaktifkan semula pelanggan di 24SevenOffice untuk meneruskan.
-        no_product: Produk telah dipadamkan di 24SevenOffice. Anda mesti mengaktifkan semula produk di 24SevenOffice atau menyambungkan perkhidmatan ke produk baru dari MakePlans sebelum anda dapat meneruskannya.
+        no_product: Produk telah dipadamkan di 24SevenOffice. Anda mesti mengaktifkan semula produk di 24SevenOffice atau menyambungkan perkhidmatan ke produk baru dari Makeplans sebelum anda dapat meneruskannya.
         product_not_defined_on_service: Perkhidmatan ini tidak disambungkan ke produk di 24SevenOffice.

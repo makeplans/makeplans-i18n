@@ -154,7 +154,7 @@ en:
     layouts:
       application:
         authenticated: 'Logged in as: %{name}'
-        demo_ended: The MakePlans demo has expired.
+        demo_ended: The Makeplans demo has expired.
         footer:
           change_language: 'Change language:'
           privacy_policy: Privacy policy

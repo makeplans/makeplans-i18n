@@ -144,7 +144,7 @@ it:
     layouts:
       application:
         authenticated: 'Accesso effettuato come: %{name}'
-        demo_ended: La demo di MakePlans è scaduta.
+        demo_ended: La demo di Makeplans è scaduta.
         footer:
           change_language: 'Cambia lingua:'
           privacy_policy: Politica sulla riservatezza

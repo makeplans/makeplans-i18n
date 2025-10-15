@@ -6,7 +6,7 @@ da:
   clients:
     new:
       first_user: Dette er din personlige adgangskode. Du kan tilføje flere brugere senere.
-      free_trial_info: 14-dages gratis prøveversion af den fulde version af MakePlans. Ingen forpligtelser.
+      free_trial_info: 14-dages gratis prøveversion af den fulde version af Makeplans. Ingen forpligtelser.
       headline: Kom godt i gang med online aftale booking
       logged_in_as: Du er logget ind som %{name}.
       read_legal: Læs servicevilkårene

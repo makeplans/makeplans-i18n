@@ -51,7 +51,7 @@ da:
       credit_card_form:
         billing_info: Når du indtaster kortinfo, opkræver vi kortet hver måned baseret på de aktuelle priser på vores hjemmeside. Den første transaktion udføres med det samme. Du kan til enhver tid lukke din konto.
         header: Betalingsinformation
-        trial_expired: Din prøveperiode er forbi. Du skal aktivere din konto for at fortsætte med at bruge MakePlans.
+        trial_expired: Din prøveperiode er forbi. Du skal aktivere din konto for at fortsætte med at bruge Makeplans.
       credit_card_info:
         header: Indtast kortoplysninger
         submit: Gem kortoplysninger
@@ -79,7 +79,7 @@ da:
         paid_until: Kontoen betales indtil %{paid_until}.
         pause: Sæt kontoen på pause, når den betalte periode er afsluttet.
         pause_confirm: Er du sikker på, at du vil sætte kontoen på pause? Kontoen deaktiveres automatisk %{paid_until}.
-        reactivate: Din konto er en demo-konto, du skal genaktivere kontoen for at bruge MakePlans.
+        reactivate: Din konto er en demo-konto, du skal genaktivere kontoen for at bruge Makeplans.
         reactivate_link: Genaktiver konto
         sms_credits_available: 'SMS-balance er: %{credits}.'
         vat_no: Det registrerede organisationsnummer er %{vat_no}
@@ -88,7 +88,7 @@ da:
         activate_account: Aktivér din konto nu.
         info: Denne funktion kræver en aktiveret konto.
       processing:
-        activated: Din konto er nu aktiveret :) Tak, fordi du bruger MakePlans.
+        activated: Din konto er nu aktiveret :) Tak, fordi du bruger Makeplans.
         error: Vi kunne ikke bekræfte, at betalingen blev foretaget. Kontakt kundeservice.
         info: Vent, mens vi debiterer dit kreditkort. Dette kan tage op til et minut. Du modtager en e-mail fra os, når processen er afsluttet.
     bookings:
@@ -101,7 +101,7 @@ da:
       destroy_recurring:
         headline: Alle aftaler i dette mønster blev slettet
       fiken:
-        delayed_info: Det kan tage et stykke tid, før fakturaen oprettes i Fiken. Forsøg ikke at oprette en faktura igen, hvis oplysninger fra Fiken ikke er synlige i MakePlans.
+        delayed_info: Det kan tage et stykke tid, før fakturaen oprettes i Fiken. Forsøg ikke at oprette en faktura igen, hvis oplysninger fra Fiken ikke er synlige i Makeplans.
         header: Kontakt nu Fiken ...
         to_booking: Vis reservation
       form_appointment:
@@ -259,13 +259,13 @@ da:
         confirm_message: Sidste chance. Er du sikker på, at du vil slette kontoen med alle dine data?
         disable_link: Ja, jeg vil have alle mine data slettet.
         header: Er du sikker på, at du vil slette din konto?
-        i_love_makeplans: Nej, jeg vil fortsætte med at bruge MakePlans.
+        i_love_makeplans: Nej, jeg vil fortsætte med at bruge Makeplans.
         info: Hvis du sletter din konto, slettes alle dine data. Er du sikker på, at du vil gøre dette?
-        pause: Måske vil du hellere sætte din konto på hold? Du behøver ikke betale hver måned, men kontoen vil stadig være tilgængelig, når du skal bruge MakePlans igen på et senere tidspunkt.
+        pause: Måske vil du hellere sætte din konto på hold? Du behøver ikke betale hver måned, men kontoen vil stadig være tilgængelig, når du skal bruge Makeplans igen på et senere tidspunkt.
         pause_link: Du kan gøre det på betalingssiden.
       configuration:
-        header: Opsætning af MakePlans
-        intro: Her kan du ændre layoutet på din konto, og hvordan MakePlans fungerer for dig. Du kan tilføje tjenester og kategorier, som du tilbyder på reservationssiden, ændre åbningstider, justere udgående beskeder (SMS og e-mail), tilføje flere brugere og justere flere andre indstillinger i MakePlans.
+        header: Opsætning af Makeplans
+        intro: Her kan du ændre layoutet på din konto, og hvordan Makeplans fungerer for dig. Du kan tilføje tjenester og kategorier, som du tilbyder på reservationssiden, ændre åbningstider, justere udgående beskeder (SMS og e-mail), tilføje flere brugere og justere flere andre indstillinger i Makeplans.
         menu_info: Vælg i menuen til venstre, hvor du vil foretage ændringer. Hvis du undrer dig over, hvordan du foretager ændringer, skal du kontakte kundeservice.
         trial_info: Dette er en demo-konto - klik her for at aktivere
       edit:
@@ -319,7 +319,7 @@ da:
         domain_info: Det er muligt at bruge din egen URL, for eksempel booking.DITTDOMENE.no, kontakt kundeservice for mere information.
         header: Skift kontooplysninger
         payment_provider:
-          info_html: Du kan få forudbetalt på reservationssiden via de betalingsløsninger, der er integreret med MakePlans. Vi anbefaler <a href="https://stripe.com" target="_blank" class="link-external">Stripe,</a> som er en god service, der er let at komme i gang med, og som er gratis. De andre spillere kan være billigere pr. Transaktion, men har højere dokumentationskrav for at blive kunde. Du skal også angive oplysninger til forbindelse til den valgte betalingsløsning under "Integrationer".
+          info_html: Du kan få forudbetalt på reservationssiden via de betalingsløsninger, der er integreret med Makeplans. Vi anbefaler <a href="https://stripe.com" target="_blank" class="link-external">Stripe,</a> som er en god service, der er let at komme i gang med, og som er gratis. De andre spillere kan være billigere pr. Transaktion, men har højere dokumentationskrav for at blive kunde. Du skal også angive oplysninger til forbindelse til den valgte betalingsløsning under "Integrationer".
           none: Ingen
         purge_data_info: 'Denne funktion sletter automatisk gamle personlige oplysninger (kunder og reservationer). Indtast på engelsk, så vil sletningsdatoen være i forhold til den aktuelle dato. Eksempel: ''6 måneder siden'' eller ''2 år siden''.'
         subdomain_info: Din unikke adresse (URL), hvor dine kunder kan booke.
@@ -340,9 +340,9 @@ da:
         header: Send advarsler til kunden
         modification_email: Afsendelse af en e-mail, når du ændrer en reservation
         modification_sms: Afsendelse af en SMS, når du ændrer en reservation
-        outgoing_messages_info: 'MakePlans vil foreslå at sende e-mail / sms (hvad du har angivet som bekræftelsesmetode), når du opretter, ændrer eller annullerer en reservation. Nogle udsendelser, som f.eks. Annullering af reservationer, sker også automatisk. Du kan deaktivere automatiske forsendelser (f.eks. Når du flytter en reservation i en kalender, annullerer eller opretter en reservation med API''en) eller deaktiverer forslag til afsendelse af formularer ved at ændre nedenstående indstillinger. BEMÆRK: Dette gælder ikke for reservationssiden. Reservationssiden sender altid automatisk ud fra bekræftelsesmetoden.'
+        outgoing_messages_info: 'Makeplans vil foreslå at sende e-mail / sms (hvad du har angivet som bekræftelsesmetode), når du opretter, ændrer eller annullerer en reservation. Nogle udsendelser, som f.eks. Annullering af reservationer, sker også automatisk. Du kan deaktivere automatiske forsendelser (f.eks. Når du flytter en reservation i en kalender, annullerer eller opretter en reservation med API''en) eller deaktiverer forslag til afsendelse af formularer ved at ændre nedenstående indstillinger. BEMÆRK: Dette gælder ikke for reservationssiden. Reservationssiden sender altid automatisk ud fra bekræftelsesmetoden.'
         reminder_sms: Afsender påmindelse via SMS
-        reminder_sms_info: Afsender er 'MakePlans'. Kontakt kundeservice for at skifte til en anden afsender.
+        reminder_sms_info: Afsender er 'Makeplans'. Kontakt kundeservice for at skifte til en anden afsender.
         sms_reminder_time_info: 'SMS sendes kl 12:00 dagen før reservationstidspunktet. Hvis du vil sende ud på et andet tidspunkt, skal du udfylde nedenstående felt. Indtast på engelsk. Eks: ''to timer før'' (SMS sendes to timer før reservation) eller ''08: 00 i går ''(8 om dagen dagen før reservationen).'
       edit_user_notifications:
         approvement_email: E-mail af en ny reservationsanmodning
@@ -355,7 +355,7 @@ da:
         mail_notification_info: For at sende alarmer til flere personer skal du bruge semikolon til at adskille e-mail-adresser.
         notification_email: Afsendelse af en e-mail, når du foretager en ny reservation
         notification_sms: Afsendelse af SMS med ny reservation
-        outgoing_messages_info: Hvis du har oprettet nye reservationer, der skal godkendes af administratoren, underretter MakePlans dig automatisk via e-mail om nye reservationsanmodninger. Hvis du ikke ønsker en sådan underretning, eller hvis godkendelsen sker automatisk via et eksternt system (API), kan du deaktivere dette nedenfor.
+        outgoing_messages_info: Hvis du har oprettet nye reservationer, der skal godkendes af administratoren, underretter Makeplans dig automatisk via e-mail om nye reservationsanmodninger. Hvis du ikke ønsker en sådan underretning, eller hvis godkendelsen sker automatisk via et eksternt system (API), kan du deaktivere dette nedenfor.
         sms: SMS
       edit_ux:
         calendar: Kalender
@@ -374,11 +374,11 @@ da:
           events: Begivenheder
           people: Kunder
         executed: Eksportfilen sendes nu til din e-mail-adresse.
-        header: Eksportér data fra MakePlans
+        header: Eksportér data fra Makeplans
         info: Du modtager en e-mail med en vedhæftet CSV-fil.
       import:
         header: Importer data
-        info: Det er muligt at importere data, f.eks. Kunder, til MakePlans. Kontakt kundeservice for at få flere oplysninger.
+        info: Det er muligt at importere data, f.eks. Kunder, til Makeplans. Kontakt kundeservice for at få flere oplysninger.
       promote:
         booking_button_html_info: Kopier HTML-koden nedenfor til din webside. Kontakt om nødvendigt din webdesigner for at få hjælp.
         booking_button_html_preview: Eksempel
@@ -477,7 +477,7 @@ da:
         activate_settings_4: Aktivér indstillinger for Extensor Online Booking version 4
         info: For at aktivere synkronisering med Extensor er installation af Extensor Online Booking påkrævet. Klik på nedenstående link for at starte processen. Du vil blive kontaktet af Extensor.
         reactive_settings: Genaktiver indstillingerne for Online Booking af Extensor.
-        version: MakePlans er indstillet til at arbejde med version %{version} af Extensor Online Booking.
+        version: Makeplans er indstillet til at arbejde med version %{version} af Extensor Online Booking.
       fakturo:
         password: Adgangskode
         username: Brugernavn
@@ -492,7 +492,7 @@ da:
         select_bank_account: Vælg den bankkonto, der skal vises til betaling på fakturaen
         select_company: Vælg firma
         service_linked: Forbundet til produkt i Fiken
-        service_links: 'Hver tjeneste skal være knyttet til et produkt i Fiken for at det er muligt at oprette en faktura. BEMÆRK: Prisen fås fra Fiken - ikke fra MakePlans. Du skal sikre dig, at prisen i begge systemer er identisk.'
+        service_links: 'Hver tjeneste skal være knyttet til et produkt i Fiken for at det er muligt at oprette en faktura. BEMÆRK: Prisen fås fra Fiken - ikke fra Makeplans. Du skal sikre dig, at prisen i begge systemer er identisk.'
         service_not_linked: IKKE tilsluttet produkt i Fiken
         vat_type: Moms-type
       headline: Integration med %{integration}
@@ -522,13 +522,13 @@ da:
         connected_to: Forbundet til database med id %{database_id}
         database_info: 'Databasen skal opsættes med følgende egenskaber: Navn, Email (type: email), Telefon (type: telefon).'
         select_database: Vælg database
-        sharing_info: Del venligst mindst én database med MakePlans-integrationen
+        sharing_info: Del venligst mindst én database med Makeplans-integrationen
       oauth_connect: Opret forbindelse til denne tjeneste
       selected_option: Valgte
       sendy:
         connect_info_html: Nye kunder vil blive abonneret på listen med id <em>%{list_id}</em> på installation %{api_url}
       stripe:
-        payment_info: For alle transaktioner opkræver MakePlans et gebyr på %{application_fee_percent}%.
+        payment_info: For alle transaktioner opkræver Makeplans et gebyr på %{application_fee_percent}%.
         receipt_email: Send kvittering via e-mail fra Stripe
       tfso:
         add_to_crm_manually: Føj ny kunde til CRM manuelt
@@ -547,7 +547,7 @@ da:
           Offer: Tilbud
         password: API-adgangskode
         service_linked: Forbundet til produkt i 24SevenOffice
-        service_links: 'Hver tjeneste skal være knyttet til et produkt i 24SevenOffice for at kunne oprette en faktura. BEMÆRK: Prisen opnås fra 24SevenOffice - ikke fra MakePlans. Du skal sikre dig, at prisen i begge systemer er identisk. Gå til en tjeneste, og definer produkt-id fra 24SevenOffice.'
+        service_links: 'Hver tjeneste skal være knyttet til et produkt i 24SevenOffice for at kunne oprette en faktura. BEMÆRK: Prisen opnås fra 24SevenOffice - ikke fra Makeplans. Du skal sikre dig, at prisen i begge systemer er identisk. Gå til en tjeneste, og definer produkt-id fra 24SevenOffice.'
         service_not_linked: IKKE tilsluttet produktet i 24SevenOffice
         type_groups: 'Salgstype for ordre:'
         username: API-brugernavn
@@ -563,10 +563,10 @@ da:
         customer_attributes_info: 'BEMÆRK: Visma eAccounting kræver, at en kunde oprettes et postnummer og en postadresse. Hvis disse værdier ikke udfyldes, er det ikke muligt at oprette en faktura fra en reservation.'
         select_terms_of_payment: 'Vælg standardbetalingsbetingelser for nye kunder:'
         service_linked: Forbundet til produkt i Visma eAccounting
-        service_links: 'Hver tjeneste skal være knyttet til et produkt i Visma eAccounting for at kunne oprette en faktura. BEMÆRK: Prisen opnås fra Visma eAccounting - ikke fra MakePlans. Du skal sikre dig, at prisen i begge systemer er identisk.'
+        service_links: 'Hver tjeneste skal være knyttet til et produkt i Visma eAccounting for at kunne oprette en faktura. BEMÆRK: Prisen opnås fra Visma eAccounting - ikke fra Makeplans. Du skal sikre dig, at prisen i begge systemer er identisk.'
         service_not_linked: IKKE tilsluttet produktet i Visma eAccounting
       zapier:
-        info_html: For at forbinde MakePlans til Zapier skal du <a href="%{url}" target="_blank">oprette en ny Zap i Zapier</a> .
+        info_html: For at forbinde Makeplans til Zapier skal du <a href="%{url}" target="_blank">oprette en ny Zap i Zapier</a> .
       zoom:
         connect_info: Forbundet
         info: For at denne integration skal fungere, skal du forbinde en ressource til en bruger i Zoom og have mindst én tjeneste med Zoom aktiveret.
@@ -614,7 +614,7 @@ da:
         create: Opret en ny virksomhed i 24SevenOffice
         header: Opret forbindelse med kunden fra 24SevenOffice
         search: Eller søg blandt eksisterende kunder
-        search_matched_headline: Fandt eksisterende kunder i 24SevenOffice CRM. Tryk på navn for at forbinde denne kunde i MakePlans til kunde i 24SevenOffice CRM.
+        search_matched_headline: Fandt eksisterende kunder i 24SevenOffice CRM. Tryk på navn for at forbinde denne kunde i Makeplans til kunde i 24SevenOffice CRM.
         search_query: Søg efter navn
         stream_placeholder: Søger i 24SevenOffice. Vent venligst. Dette kan tage op til 1-2 minutter.
     profile:
@@ -687,7 +687,7 @@ da:
           activated_html: Adgang til denne ressource via iCalendar er aktiveret. Link til iCalendar-feed er %{link}
           disable: Deaktiver iCalendar-feed
           enable: Aktivér iCalendar-feed
-          info: Et iCalendar-feed giver dig mulighed for at se reservationer fra denne ressource i MakePlans i andre kalenderapplikationer såsom Microsoft Oulook, Google Calendar, iPhone eller Android. Skrivebeskyttet adgang - alle ændringer skal foretages i MakePlans.
+          info: Et iCalendar-feed giver dig mulighed for at se reservationer fra denne ressource i Makeplans i andre kalenderapplikationer såsom Microsoft Oulook, Google Calendar, iPhone eller Android. Skrivebeskyttet adgang - alle ændringer skal foretages i Makeplans.
           not_activated: Ikke aktiveret
         icalfeed: 'iCalendar-feed:'
         offers: 'Tilbyder følgende tjenester på reservationssiden:'
@@ -793,7 +793,7 @@ da:
         attendances: Registrering
         attendances_info_html: Til registrering til begivenheder, kurser, klasser eller andre tilmeldinger, der finder sted på bestemte tidspunkter. Enten eller for eksempel hver tirsdag.
         footer_html: En service er noget, du tilbyder dine kunder, og som vises på din reservationsside. Du kan oprette aftalebestillingstjenester, der har faste åbningstider og begivenheder, der kun er tilgængelige på bestemte tidspunkter.
-        header_html: 'Velkommen til MakePlans.<br> Start med at tilføje tjenester:'
+        header_html: 'Velkommen til Makeplans.<br> Start med at tilføje tjenester:'
     shared:
       recurring:
         enabled: Gentag flere gange med et mønster

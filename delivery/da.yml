@@ -69,10 +69,10 @@ da:
     admin_notification_confirmation:
       booking_type_appointment: |-
         Ny reservation på {{booking.resource.title}} af {{booking.person.name}}. {{booking.title}} {{booking.time_range}}
-        MakePlans
+        Makeplans
       booking_type_attendance: |-
         Ny registrering til {{booking.event.full_title}} {{booking.time_range}} af {{booking.person.name}}.
-        MakePlans
+        Makeplans
     cancellation: Din reservation hos os {{booking.booked_from}} er blevet annulleret.
     confirmation: Du har reserveret {{booking.title}} {{booking.booked_from}}.
     declined: Din anmodning om reservation {{booking.title}} {{booking.booked_from}} blev desværre ikke godkendt. Prøv en anden gang.
@@ -85,13 +85,13 @@ da:
     verification: "{{booking.verification_code}} er din kode til bekræftelse af reservationen af {{booking.title}}."
   person_mailer:
     export:
-      subject: Eksport fra MakePlans
+      subject: Eksport fra Makeplans
     perishable_token:
       body: |-
         For at logge ind skal du klikke på nedenstående link:
 
         %{link}
-      subject: Log ind på MakePlans
+      subject: Log ind på Makeplans
   person_sms:
     perishable_token: "{{perishable_token}} er din login-kode."
     signature: |2-
