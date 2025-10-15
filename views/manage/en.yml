@@ -436,6 +436,7 @@ en:
         default: Automatic based on verification method
         default_reminder_sms: Automatic based on setting for sending reminder
         disable: Deactivate
+        enable: Activate
         header: Customer notifications
         message_template_info: This is the built-in legacy reminder. For multiple reminders and more control please use the message tenplate feature.
         modification_email: Send email when modifying reservation

@@ -436,6 +436,7 @@ nb:
         default: Automatisk basert på verifiseringsmetode
         default_reminder_sms: Automatisk basert på innstilling om utsendelse av påminnelse
         disable: Deaktiver
+        enable: Aktiver
         header: Send varslinger til kunde
         message_template_info: Dette er den innebygde funksjon for utsending. For flere påminnelser og mer kontroll, bruk meldingsmal-funksjonen.
         modification_email: Utsendelse av epost ved endring av reservasjon
