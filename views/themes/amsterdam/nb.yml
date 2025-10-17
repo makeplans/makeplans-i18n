@@ -46,6 +46,9 @@ nb:
         enter_info: Fyll inn personalia
         errors_header: Du må fylle ut alle påkrevde felter.
         form_info_html: Dette vil bli brukt for å verifisere reservasjonen din av <span data-attribute="title">%{service}</span>, %{booking}.
+        mismatch_info_html: 'Følgende verdier er annerledes enn det som er lagret på din kundeprofil: %{attributes}. Skal du booke for noen andre? <a href="%{login_path}">Da må du først logge inn.</a> Hvis du vil endre opplysninger på din kundeprofil så må du kontakte kundeservice.'
+        mismatch_ignore: 'Alternativt klikk her for å ignorere denne advarselen'
+        mismatch_ignore_confirm: 'Din kundeprofil vil ikke bli oppdatert med de nye opplysningene som er lagt inn her. For å endre din kundeprofil så ta kontakt med kundeservice. Vil du fortsette med booking uten å oppdatere din kundeprofil?'
         new_child: For noen andre
         price_info: 'Pris: %{price}'
         reserve_resource: Reservasjon hos %{resource}.

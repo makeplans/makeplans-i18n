@@ -45,6 +45,9 @@ en:
         enter_info: Enter information
         errors_header: Please fill out the required fields.
         form_info_html: This will be used to verify your reservation of <span data-attribute="title">%{service}</span>, %{booking}.
+        mismatch_info_html: 'The following values does not match your customer profile: %{attributes}. Are you booking for someone else? If so please <a href="%{login_path}">login</a> first. If you want to modify your customer profile please contact support.'
+        mismatch_ignore: 'Alternatively click here to ignore this warning'
+        mismatch_ignore_confirm: 'Your customer profile will not be updated with these new values. To change your customer profile please contact support. Do you want to continue booking without updating your profile?'
         new_child: For someone else
         price_info: 'Price: %{price}'
         reserve_resource: Reservation for %{resource}
