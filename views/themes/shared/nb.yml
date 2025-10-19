@@ -6,6 +6,8 @@ nb:
     bookings:
       new:
         email_suggestion_html: "<p>Mente du <span> %{suggestions}</span>?</p>"
+      payment_stripe:
+        submit: Betal
       show:
         count: Reservert for %{count} personer.
       verification_method_email:

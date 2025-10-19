@@ -6,6 +6,8 @@ en:
     bookings:
       new:
         email_suggestion_html: "<p>Did you mean<span> %{suggestions}</span>?</p>"
+      payment_stripe:
+        submit: Pay
       show:
         count: Booked for %{count} people.
       verification_method_email:
