@@ -219,12 +219,14 @@ en:
       month_name: "%B"
       short_with_name: "%a %e %b"
       short_with_name_and_year: "%a %e %b %Y"
+    jquery_format: 'dd.mm.yy'
     moment_format: DD.MM.YYYY
     moment_parse:
     - DD.MM.YYYY
     - D.M.YYYY
     - DD.MM.YY
     - D.M.YY
+    first_day_non_standard: 1
   datetime:
     distance_in_words:
       x_hours:
