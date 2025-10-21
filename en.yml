@@ -415,7 +415,7 @@ en:
         time_zone: Timezone
         verification_method: Verification method for new reservations
       client/slot_generation:
-        dynamic: Dynamic
+        dynamic: Dynamic (default)
         fixed: Fixed
       client_user_link:
         role: Access level
@@ -448,7 +448,7 @@ en:
         ends_at: Ends at
         first_booking_at: No signups before
         last_booking_at: No signups after
-        payment_required: Payment required
+        payment_required: Pre-payment required
         price: Price including all taxes
         published: Visible on the booking site
         resource_id: Resource
@@ -521,7 +521,7 @@ en:
         max_slots: Max number of slots per reservation
         new_booking_text: Text displayed on confirmation page
         next_interval: Available slot every
-        payment_required: Require payment
+        payment_required: Pre-payment required
         price: Price including taxes
         priority_strategy: Priority strategy
         published: Show on the booking site
@@ -545,11 +545,11 @@ en:
         terms: Terms and conditions
         title: Title
       service/availability_type:
-        provider: Offers
-        resource: Resource
+        provider: Provider
+        resource: Resource (default)
       service/priority_strategy:
         order: Order
-        random: Random
+        random: Random (default)
         weight: Weight
       user:
         current_password: Current password

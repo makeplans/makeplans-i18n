@@ -283,7 +283,7 @@ da:
         interval_rounding:
           default: Systemstandard (Nærmeste halv time)
           five: Nærmeste femte minut
-          halfhour: Næsten en halv time
+          halfhour: Nærmeste en halv time
           hour: Nærmeste hel time
           none: Ingen afrunding (anbefales ikke)
           quarter: Nærmeste kvartal

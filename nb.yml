@@ -413,7 +413,7 @@ nb:
         time_zone: Tidssone
         verification_method: Verifiseringsmetode ved ny reservasjon
       client/slot_generation:
-        dynamic: Dynamisk
+        dynamic: Dynamisk (standard)
         fixed: Fast
       client_user_link:
         role: Tilgangsnivå
@@ -447,7 +447,7 @@ nb:
         ends_at: Slutter
         first_booking_at: Ingen påmelding før
         last_booking_at: Siste påmelding før
-        payment_required: Krev betaling
+        payment_required: Krev forhåndsbetaling
         price: Pris inkludert mva.
         published: Synlig på bookingsiden
         resource_id: Ressurs
@@ -520,7 +520,7 @@ nb:
         max_slots: Maks antall slotter per reservasjon
         new_booking_text: Tekst som vises på bekreftelsesiden
         next_interval: Ledig tidspunkt etter
-        payment_required: Krev betaling
+        payment_required: Krev forhåndsbetaling
         price: Pris inkludert mva.
         priority_strategy: Prioriteringstrategi
         published: Synlig på bookingsiden
@@ -545,10 +545,10 @@ nb:
         title: Tittel
       service/availability_type:
         provider: Tilbyder
-        resource: Ressurs
+        resource: Ressurs (standard)
       service/priority_strategy:
         order: Rekkefølge
-        random: Tilfeldig
+        random: Tilfeldig (standard)
         weight: Vekted
       user:
         current_password: Nåværende passord
