@@ -281,7 +281,7 @@ lt:
         future_bookable_period_info: 'Pavyzdys: ''po dviejų mėnesių'' (galima užsisakyti tik kitus du mėnesius) arba ''Penktadienis vidurnaktį'' (galima rezervuoti tik iki penktadienio penktadienio).'
         header: Atnaujinkite rezervavimo svetainę
         interval_rounding:
-          default: Numatyta sistema (artimiausia 5 minučių žymė)
+          default: Numatyta sistema (Artimiausias pusvalandis)
           five: Arčiausiai 5 minučių
           halfhour: Artimiausias pusvalandis
           hour: Artimiausia valanda

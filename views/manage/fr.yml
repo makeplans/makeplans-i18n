@@ -279,7 +279,7 @@ fr:
         future_bookable_period_info: 'Exemple: «dans deux mois» (uniquement possible de réserver les deux prochains mois) ou «vendredi à minuit» (uniquement possible de réserver avant minuit le vendredi).'
         header: Mettre à jour le site de réservation
         interval_rounding:
-          default: Valeur par défaut du système (marque de 5 minutes la plus proche)
+          default: Valeur par défaut du système (Demi-heure la plus proche)
           five: Marque de 5 minutes la plus proche
           halfhour: Demi-heure la plus proche
           hour: Heure la plus proche

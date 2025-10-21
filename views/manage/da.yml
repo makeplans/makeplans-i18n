@@ -281,7 +281,7 @@ da:
         future_bookable_period_info: 'Indtast på engelsk. Eks: ''in two months'' (kun muligt at bestille de næste to måneder) eller ''friday at midnight'' (kun muligt at bestille inden midnat på fredag).'
         header: Skift booking side
         interval_rounding:
-          default: Systemstandard (Nærmeste femte minut)
+          default: Systemstandard (Nærmeste halv time)
           five: Nærmeste femte minut
           halfhour: Næsten en halv time
           hour: Nærmeste hel time

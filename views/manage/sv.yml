@@ -361,7 +361,7 @@ sv:
         future_bookable_period_info: 'Skriv på engelska. Exempel: ''in two months'' (endast möjligt att boka de kommande två månaderna) eller ''Friday at midnight'' (endast möjligt att boka före midnatt på fredag).'
         header: Ändra bokningssidan
         interval_rounding:
-          default: Systemstandard (Närmaste femte minuten)
+          default: Systemstandard (Närmaste halvtimmen)
           five: Närmaste femte minuten
           halfhour: Närmaste halvtimmen
           hour: Närmaste heltimmen

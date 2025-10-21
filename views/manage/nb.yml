@@ -376,7 +376,7 @@ nb:
         future_bookable_period_info: 'Skriv inn på engelsk. Eks.: ''in two months'' (kun mulig å bestille de to neste månedene) eller ''Friday at midnight'' (kun mulig å bestille før midnatt på fredag).'
         header: Endre bookingside
         interval_rounding:
-          default: Systemstandard (Nærmeste femte minutt)
+          default: Systemstandard (Nærmeste halve time)
           five: Nærmeste femte minutt
           halfhour: Nærmeste halve time
           hour: Nærmeste hele time

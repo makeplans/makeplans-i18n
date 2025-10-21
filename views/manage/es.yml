@@ -360,7 +360,7 @@ es:
         future_bookable_period_info: 'Ejemplo: ''en dos meses'' (solo es posible reservar los próximos dos meses) o ''viernes a medianoche'' (solo es posible reservar antes de la medianoche del viernes).'
         header: Actualizar sitio de reservas
         interval_rounding:
-          default: Predeterminado del sistema (marca de 5 minutos más cercana)
+          default: Predeterminado del sistema (Media hora más cercana)
           five: Marca de 5 minutos más cercana
           halfhour: Media hora más cercana
           hour: Hora más cercana

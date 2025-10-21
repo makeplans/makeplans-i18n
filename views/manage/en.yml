@@ -376,7 +376,7 @@ en:
         future_bookable_period_info: 'Example: ''in two months'' (only possible to book the next two months) or ''Friday at midnight'' (only possible to reserve before midnight on Friday). When setting a date you must enter the full year.'
         header: Update booking site
         interval_rounding:
-          default: System default (Closest 5 minute mark)
+          default: System default (Closest half hour)
           five: Closest 5 minute mark
           halfhour: Closest half hour
           hour: Closest hour

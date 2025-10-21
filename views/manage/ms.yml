@@ -281,7 +281,7 @@ ms:
         future_bookable_period_info: 'Contoh: ''dalam dua bulan'' (hanya mungkin untuk menempah dua bulan berikutnya) atau ''Jumaat pada tengah malam'' (hanya mungkin untuk membuat tempahan sebelum tengah malam pada hari Jumaat).'
         header: Kemas kini laman tempahan
         interval_rounding:
-          default: Lalai sistem (Tanda terdekat 5 minit)
+          default: Lalai sistem (Setengah jam terdekat)
           five: Tanda 5 minit terdekat
           halfhour: Setengah jam terdekat
           hour: Jam terdekat

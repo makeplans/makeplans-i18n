@@ -279,7 +279,7 @@ lv:
         future_bookable_period_info: 'Piemērs: “pēc diviem mēnešiem” (iespējams rezervēt tikai nākamos divus mēnešus) vai “Piektdiena pusnaktī” (iespējams rezervēt tikai līdz piektdienas pusnaktij).'
         header: Atjaunināt rezervēšanas vietni
         interval_rounding:
-          default: Sistēmas noklusējums (tuvākā 5 minūšu atzīme)
+          default: Sistēmas noklusējums (Tuvākā pusstunda)
           five: Tuvākā 5 minūšu atzīme
           halfhour: Tuvākā pusstunda
           hour: Tuvākā stunda
