@@ -374,7 +374,6 @@ lv:
         booking_form: Pielāgota pierakstīšanās forma
         capacity: Maksimālais dalībnieku skaits
         description: Apraksts
-        has_day_booking: Laika tips
         has_day_booking_label:
           'false': min
           'true': dienas

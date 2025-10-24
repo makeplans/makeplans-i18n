@@ -788,6 +788,7 @@ nb:
         send_sms: Send SMS
       show:
         add_child: Legg til tilknyttet kunde
+        all_day: Hele dagen
         bookings_for: Reservasjoner for %{name}
         can_book_for: Kan booke for %{children} andre
         card_saved_with:

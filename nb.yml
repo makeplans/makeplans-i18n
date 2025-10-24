@@ -506,7 +506,7 @@ nb:
         capacity: Maks antall deltagere
         confirm_manually: Reservasjon må godkjennes av administrator
         description: Beskrivelse
-        has_day_booking: Tidstype
+        has_day_booking: Dagbooking
         has_day_booking_label:
           'false': min
           'true': dager

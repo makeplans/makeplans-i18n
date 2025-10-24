@@ -793,6 +793,7 @@ en:
         send_sms: Send SMS
       show:
         add_child: Add connected customer
+        all_day: All day
         bookings_for: Reservations for %{name}
         can_book_for: Can make reservations for %{children} others.
         card_saved_with:
