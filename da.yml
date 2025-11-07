@@ -388,7 +388,6 @@ da:
         booking_form: Brugerdefineret reservationsformular
         capacity: Maksimalt antal deltagere
         description: Beskrivelse
-        has_day_booking: Tidstype
         has_day_booking_label:
           'false': min
           'true': dage

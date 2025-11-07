@@ -372,7 +372,6 @@ he:
         booking_form: טופס הזמנה מותאם אישית
         capacity: מספר מלווים מקסימלי
         description: תיאור
-        has_day_booking: סוג זמן
         has_day_booking_label:
           'false': דקה
           'true': ימים

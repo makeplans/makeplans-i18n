@@ -495,7 +495,6 @@ sv:
         capacity: Maximalt antal deltagare
         confirm_manually: Bokningen måste godkännas av administratören.
         description: Beskrivning
-        has_day_booking: Tidstyp
         has_day_booking_label:
           'false': min
           'true': dagar

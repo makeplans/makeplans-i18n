@@ -496,7 +496,6 @@ es:
         capacity: Número máximo de asistentes
         confirm_manually: Las reservas deben ser aprobadas por un administrador.
         description: Descripción
-        has_day_booking: Tipo de tiempo
         has_day_booking_label:
           'false': min
           'true': dias

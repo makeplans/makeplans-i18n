@@ -793,6 +793,7 @@ en:
         send_sms: Send SMS
       show:
         add_child: Add connected customer
+        all_day: All day
         bookings_for: Reservations for %{name}
         can_book_for: Can make reservations for %{children} others.
         card_saved_with:
@@ -946,6 +947,7 @@ en:
         payment: Payment
         price_placeholder: No price
         settings:
+          standalone: Standalone service
           hide_all_available: Must select specific resource ('show all available' will be hidden)
           hide_resources: Hide button for selecting resource (will be randomly selected by among available resources)
           hide_slot_end: Hide end-time

@@ -371,7 +371,6 @@ ms:
         booking_form: Borang tempahan tersuai
         capacity: Jumlah kehadiran maksimum
         description: Penerangan
-        has_day_booking: Jenis masa
         has_day_booking_label:
           'false': min
           'true': hari-hari

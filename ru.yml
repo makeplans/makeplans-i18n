@@ -371,7 +371,6 @@ ru:
         booking_form: Индивидуальная форма бронирования
         capacity: Максимальное количество обслуживающего персонала
         description: Описание
-        has_day_booking: Тип времени
         has_day_booking_label:
           'false': мин
           'true': дней

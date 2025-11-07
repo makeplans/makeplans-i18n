@@ -371,7 +371,6 @@ lt:
         booking_form: Individuali rezervavimo forma
         capacity: Maksimalus palydovų skaičius
         description: apibūdinimas
-        has_day_booking: Laiko tipas
         has_day_booking_label:
           'false': min
           'true': dienų

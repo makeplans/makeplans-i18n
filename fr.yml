@@ -371,7 +371,6 @@ fr:
         booking_form: Formulaire de réservation personnalisé
         capacity: Nombre maximum de préposés
         description: Description
-        has_day_booking: Type d'heure
         has_day_booking_label:
           'false': min
           'true': jours
