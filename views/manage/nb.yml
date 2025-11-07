@@ -942,6 +942,7 @@ nb:
         payment: Betaling
         price_placeholder: Ingen pris
         settings:
+          standalone: Frittstående tjeneste
           hide_all_available: Må velge spesifikk ressurs ('vis all ledige' skjules)
           hide_resources: Skjul knappen for å velge ressurs (vilkårlig ledig ressurs blir automatisk valgt)
           hide_slot_end: Skjul slutt-tid
