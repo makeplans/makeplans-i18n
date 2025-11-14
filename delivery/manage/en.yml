@@ -328,6 +328,10 @@ en:
 
         Makeplans
       subject: Access to account in Makeplans
+    password_modified:
+      footer: Makeplans
+      info: Your password has been modified. Contact us immediately if you did not perform this action.
+      subject: Password modified
     password_reset:
       footer: Makeplans
       info: You or someone else have requested your Makeplans password to be reset. To complete the password reset please click the link below.
