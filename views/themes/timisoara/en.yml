@@ -96,3 +96,6 @@ en:
         all_categories: All categories
         all_services: All services
         continue: Make a booking
+      show:
+        all_services: All services
+        continue: Make a booking
