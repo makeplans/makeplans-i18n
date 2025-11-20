@@ -2,6 +2,8 @@
 en:
   shared:
     generic:
+      alt:
+        go_back: Go back
       close: close
       payment:
         add_card_details_html: Your card details will not be stored with us but is sent encrypted to %{provider} for secure transaction and storage.
@@ -45,6 +47,8 @@ en:
         card_info: "%{brand} with number ending in %{last_4} and expires %{expire_month}/%{expire_year}."
         remove_card: Remove this card
         title: Your stored payment methods
+      show:
+        header: Your stored information
     providers:
       index:
         all_services: All services
