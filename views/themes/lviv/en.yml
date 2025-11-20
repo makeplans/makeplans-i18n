@@ -19,6 +19,12 @@ en:
         title: Booking for
       payment_stripe:
         title: Enter payment details
+      payment_invoice:
+        header: Payment by invoice
+        info: Your booking for %{service} %{booking} will be paid for by invoice.
+        form_header: Invoice information
+        form_footer_html: Your invoice will be for <span class="payment-amount">%{amount}</span>.
+        payment_details_html: You will receive an invoice for the displayed amount in %{currency} from us at the time of your booking.
       pre_payment:
         title: Choose payment method
       review:
