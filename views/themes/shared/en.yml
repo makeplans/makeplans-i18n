@@ -3,6 +3,24 @@ en:
   shared:
     generic:
       close: close
+      payment:
+        add_card_details_html: Your card details will not be stored with us but is sent encrypted to %{provider} for secure transaction and storage.
+        add_card_footer_html: Your card will not be charged now
+        add_card_header: Save card
+        add_card_info: Add your payment card so you can easily and automatically pay after the booking.
+        add_card_submit: Save card
+        awaiting:
+          body: Please wait while the transaction is confirmed.
+          error: We were unable to confirm that the payment was completed. Please contact customer service via https://makeplans.no and provide reference number %{booking_id}.
+          title: Checking payment
+        form_footer_html: Your credit card will be charged with <span class="payment-amount">%{amount}</span>.
+        form_header: This form is sent encrypted.
+        header: Payment
+        info: To complete the reservation of %{service} %{booking} you must pay with your credit card.
+        new_card: Enter new card
+        payment_details_html: The displayed amount is in %{currency}. We do not store your credit card details but send it encrypted over to %{provider} for secure processing and storage.
+        payment_received: "%{paid_amount} was paid on %{paid_at}."
+        save_card: Save card
     bookings:
       new:
         email_suggestion_html: "<p>Did you mean<span> %{suggestions}</span>?</p>"
@@ -20,6 +38,13 @@ en:
         phone_number: Mobile phone number
         submit: Continue
         title: Verify your phone number
+    profile:
+      credit_card_list:
+        add_card: Add new card
+        body: These are your stored payment cards. If you want you can add a new card or delete any of the existing ones.
+        card_info: "%{brand} with number ending in %{last_4} and expires %{expire_month}/%{expire_year}."
+        remove_card: Remove this card
+        title: Your stored payment methods
     providers:
       index:
         all_services: All services
