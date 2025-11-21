@@ -99,6 +99,10 @@ en:
           right: Right
         change_language: Change language
         logout: Logout
+      children:
+        index:
+          alt:
+            right: Right
     services:
       available_dates:
         title: Select date & time

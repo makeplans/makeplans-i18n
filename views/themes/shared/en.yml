@@ -36,6 +36,7 @@ en:
         submit: Pay
       show:
         count: Booked for %{count} people.
+        booked_for_child: Booked for %{name}
       verification_method_email:
         email: Email
         info: You have to verify your email address to complete your reservation.
@@ -55,6 +56,9 @@ en:
         title: Your stored payment methods
       show:
         header: Your stored information
+      children:
+        index:
+          header: Other people you can make book for
     providers:
       index:
         all_services: All services
