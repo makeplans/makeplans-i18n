@@ -911,18 +911,14 @@ en:
         offers: 'Offers the following services on the booking site:'
         room_display:
           activated: Room display is enabled.
+          code: Code
           disable: Disable room display
           enable: Enable room display
+          generate_code: Generate Setup Code
           header: Room display
           info: A public display for this room that shows current status and upcoming reservations. Suitable for a tablet mounted outside the room.
           not_activated: Not activated
-        room_display:
-          activated: Room display is enabled.
-          disable: Disable room display
-          enable: Enable room display
-          header: Room display
-          info: A public display for this room that shows current status and upcoming reservations. Suitable for a tablet mounted outside the room.
-          not_activated: Not activated
+          show_link: Show Room Display Link
     services:
       availability:
         header: Availability for %{title}

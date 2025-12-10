@@ -29,6 +29,13 @@ nb:
       free_for: "Ledig i %{duration}"
       find_room: "Finn et rom"
       occupied: "Opptatt"
+    setup:
+      header: Oppsett av møteromsvisning
+      instruction: Vennligst skriv inn oppsettskoden generert i administrasjonspanelet.
+      invalid_code: Ugyldig kode
+      placeholder: Skriv inn kode
+      submit: Aktiver
+      title: Oppsett av møteromsvisning
   oauth:
     callback:
       header: Knytt til konto

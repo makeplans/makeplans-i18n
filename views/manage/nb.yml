@@ -906,11 +906,14 @@ nb:
         offers: 'Tilbyr følgende tjenester på bookingsiden:'
         room_display:
           activated: Møteromsvisning er aktivert.
+          code: Kode
           disable: Deaktiver møteromsvisning
           enable: Aktiver møteromsvisning
+          generate_code: Generer oppsettskode
           header: Møteromsvisning
           info: En offentlig visning for dette rommet som viser status og kommende reservasjoner. Passer for en skjerm montert utenfor rommet.
           not_activated: Ikke aktivert
+          show_link: Vis møteromsvisning lenke
     services:
       availability:
         header: Tilgjengelighet for %{title}

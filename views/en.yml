@@ -29,6 +29,13 @@ en:
       free_for: "Free for %{duration}"
       find_room: "Find a room"
       occupied: "Occupied"
+    setup:
+      header: Setup Room Display
+      instruction: Please enter the setup code generated in the admin panel.
+      invalid_code: Invalid code
+      placeholder: Enter Code
+      submit: Activate
+      title: Setup Room Display
   oauth:
     callback:
       header: Connect to account
