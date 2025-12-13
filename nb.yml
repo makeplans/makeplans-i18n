@@ -198,6 +198,7 @@ nb:
       coupon: rabattkode
       event: arrangement
       external_credential: integrasjon
+      gift_card: gavekort
       message_template: meldingsmal
       person: kunde
       resource: ressurs
@@ -350,6 +351,7 @@ nb:
         confirm_manually: Reservasjon må godkjennes av administrator
         country_code: Land
         coupon_form: Egendefinerte rabattkodefelter
+        gift_card_form: Egendefinerte gavekortfelter
         css_url: Egen CSS (URL må være HTTPS)
         currency: Valuta
         email: Epost-adresse
@@ -436,6 +438,13 @@ nb:
         valid_until: Gyldig til
         value: Rabattverdi
         value_type: Rabatttype
+      gift_card:
+        active: Aktiv
+        code: Kode
+        initial_value: Opprinnelig verdi
+        person_id: Kunde-ID
+        valid_until: Gyldig til
+        value: Nåværende verdi
       event:
         all_day: Hele dagen
         allow_cancellation: Tillatt avbestilling av kunden
@@ -573,6 +582,8 @@ nb:
       confirm: Er du sikker?
       coupon:
         new: Ny rabattkode
+      gift_card:
+        new: Nytt gavekort
       create: Opprett
       delete: Slett
       delete_confirm: Er du sikker på at du vil slette?
@@ -616,6 +627,7 @@ nb:
       communication: Kommunikasjon
       company: Konto
       coupons: Rabattkoder
+      gift_cards: Gavekort
       developer: Utvikler
       export: Eksport
       fields: Egendefinerte felter

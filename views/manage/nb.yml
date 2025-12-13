@@ -561,6 +561,9 @@ nb:
         services_info: 'Rabbattkoden vil bli tilgjengelig for alle tjenester med mindre du begrenser bruk til tjenester nedenfor:'
       index:
         header: Rabattkoder
+    gift_cards:
+      index:
+        header: Gavekort
     events:
       check_in:
         check_in: Sjekk inn

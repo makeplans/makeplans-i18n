@@ -561,6 +561,9 @@ en:
         services_info: 'The coupon code will be available for all services unless you restrict to specific services below:'
       index:
         header: Coupon codes
+    gift_cards:
+      index:
+        header: Gift cards
     events:
       check_in:
         check_in: Check in

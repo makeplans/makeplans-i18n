@@ -197,6 +197,7 @@ en:
       coupon: coupon
       event: event
       external_credential: integration
+      gift_card: gift card
       message_template: message template
       person: customer
       resource: resource
@@ -352,6 +353,7 @@ en:
         confirm_manually: Reservations has to be approved by an administrator
         country_code: Country
         coupon_form: Custom coupon code fields
+        gift_card_form: Custom gift card fields
         css_url: Custom CSS (URL must be HTTPS)
         currency: Currency
         email: Email address
@@ -438,6 +440,13 @@ en:
         valid_until: Valid until
         value: Discount value
         value_type: Discount type
+      gift_card:
+        active: Active
+        code: Code
+        initial_value: Initial value
+        person_id: Customer ID
+        valid_until: Valid until
+        value: Current value
       event:
         all_day: All day
         allow_invoice: allow invoice
@@ -574,6 +583,8 @@ en:
       confirm: Are you sure?
       coupon:
         new: New coupon
+      gift_card:
+        new: New gift card
       create: Create
       delete: Delete
       delete_confirm: Are you sure you want to delete?
@@ -617,6 +628,7 @@ en:
       communication: Communication
       company: Account
       coupons: Coupons
+      gift_cards: Gift cards
       developer: Developer
       export: Export
       fields: Custom fields
