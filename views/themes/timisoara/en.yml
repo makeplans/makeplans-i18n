@@ -47,6 +47,7 @@ en:
         continue: Continue
     generic:
       alt:
+        go_back: Go back
         time: Time
     layouts:
       application:
@@ -78,6 +79,8 @@ en:
           calendar: Calendar
         awaiting_approval: Awaiting approval
         cancel: Cancel
+        my_details: My details
+        my_orders: My orders
         tabs:
           all: All
           cancelled: Cancelled
@@ -87,6 +90,40 @@ en:
       new:
         errors_header: 'Errors occured:'
         header: Account information
+    gift_cards:
+      new:
+        add_to_cart: Add to cart
+        description: Purchase a gift card for someone special. Choose the amount below.
+        header: Buy Gift Card
+        value_label: Value
+        value_placeholder: Enter amount
+    order_cart:
+      show:
+        amount: Amount
+        confirm_order: Confirm order
+        continue_shopping: Add more gift cards
+        empty_cart: Your cart is empty.
+        header: Shopping Cart
+        item: Item
+        remove: Remove
+        total: Total
+    orders:
+      index:
+        header: My Orders
+        no_orders: You have no orders yet.
+        order_number: "Order #%{number}"
+      show:
+        amount: Amount
+        back_to_home: Back to home
+        confirmation_message: Thank you for your order!
+        gift_card_code: Gift Card Code
+        gift_card_value: Value
+        gift_cards: Gift Cards
+        header: Order Confirmation
+        item: Item
+        my_reservations: My reservations
+        order_details: Order Details
+        total: Total
     services:
       available_dates:
         select_date: Available dates

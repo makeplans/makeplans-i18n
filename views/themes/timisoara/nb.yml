@@ -55,6 +55,7 @@ nb:
         continue: Fortsett
     generic:
       alt:
+        go_back: Gå tilbake
         time: Tid
     layouts:
       application:
@@ -86,6 +87,8 @@ nb:
           calendar: Kalender
         awaiting_approval: Venter på godkjenning
         cancel: Kanseller
+        my_details: Mine opplysninger
+        my_orders: Mine bestillinger
         tabs:
           all: Alle
           cancelled: Kansellerte
@@ -95,6 +98,40 @@ nb:
       new:
         errors_header: 'Det oppstod feil:'
         header: Dine kontaktopplysninger
+    gift_cards:
+      new:
+        add_to_cart: Legg i handlekurv
+        description: Kjøp et gavekort til noen du bryr deg om. Velg beløp nedenfor.
+        header: Kjøp gavekort
+        value_label: Verdi
+        value_placeholder: Angi beløp
+    order_cart:
+      show:
+        amount: Beløp
+        confirm_order: Bekreft bestilling
+        continue_shopping: Legg til flere gavekort
+        empty_cart: Handlekurven din er tom.
+        header: Handlekurv
+        item: Vare
+        remove: Fjern
+        total: Totalt
+    orders:
+      index:
+        header: Mine bestillinger
+        no_orders: Du har ingen bestillinger ennå.
+        order_number: "Bestilling #%{number}"
+      show:
+        amount: Beløp
+        back_to_home: Tilbake til forsiden
+        confirmation_message: Takk for din bestilling!
+        gift_card_code: Gavekortkode
+        gift_card_value: Verdi
+        gift_cards: Gavekort
+        header: Ordrebekreftelse
+        item: Vare
+        my_reservations: Mine reservasjoner
+        order_details: Ordredetaljer
+        total: Totalt
     providers:
       index:
         all_services: Alle tjenester
