@@ -98,6 +98,14 @@ en:
         value_label: Value
         value_placeholder: Enter amount
     order_cart:
+      checkout:
+        credit_card: Credit Card
+        gift_card: Gift Card
+        header: Checkout
+        invoice: Invoice
+        pay_now: Pay Now
+        payment_method: Payment Method
+        total: Total
       show:
         amount: Amount
         confirm_order: Confirm order

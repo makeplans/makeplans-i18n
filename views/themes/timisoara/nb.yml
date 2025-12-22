@@ -106,6 +106,14 @@ nb:
         value_label: Verdi
         value_placeholder: Angi beløp
     order_cart:
+      checkout:
+        credit_card: Kredittkort
+        gift_card: Gavekort
+        header: Betaling
+        invoice: Faktura
+        pay_now: Betal nå
+        payment_method: Betalingsmetode
+        total: Totalt
       show:
         amount: Beløp
         confirm_order: Bekreft bestilling

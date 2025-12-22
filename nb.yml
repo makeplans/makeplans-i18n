@@ -177,6 +177,10 @@ nb:
           missing: er ikke lagret på din kundeprofil. Kontakt oss for å rette opp i dette.
           no_values_present: Navn, telefonnummer eller epost er påkrevd.
           prevent_new_signups: booking er kun tilgjengelig for eksisterende kunder
+        order:
+          attributes:
+            base:
+              must_have_line_items: Bestillingen må ha minst én vare
         resource:
           has_bookings: Denne ressursen har aktive reservasjoner og kan dermed ikke slettes. Kontakt kundeservice.
         service:
