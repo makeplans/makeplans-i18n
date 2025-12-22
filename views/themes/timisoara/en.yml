@@ -99,13 +99,22 @@ en:
         value_placeholder: Enter amount
     order_cart:
       checkout:
+        applied_gift_cards: Applied Gift Cards
+        apply: Apply
+        complete_order: Complete Order
         credit_card: Credit Card
-        gift_card: Gift Card
+        gift_card_code: Gift Card Code
+        gift_card_code_placeholder: "XXXX-0000-XXXX"
         header: Checkout
+        invalid_gift_card: Invalid or already used gift card
         invoice: Invoice
+        order_total: Order Total
         pay_now: Pay Now
         payment_method: Payment Method
-        total: Total
+        remaining_total: Remaining Total
+        remove: Remove
+        use_gift_card: Use Gift Card
+        your_gift_cards: Your Gift Cards
       show:
         amount: Amount
         confirm_order: Confirm order
