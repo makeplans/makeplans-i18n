@@ -139,7 +139,7 @@ nb:
         order_number: "Bestilling #%{number}"
       show:
         amount: Beløp
-        back_to_home: Tilbake til forsiden
+        back_to_orders: Tilbake til bestillinger
         confirmation_message: Takk for din bestilling!
         gift_card_code: Gavekortkode
         gift_card_value: Verdi
@@ -148,7 +148,11 @@ nb:
         item: Vare
         my_reservations: Mine reservasjoner
         order_details: Ordredetaljer
+        payment_details: Betaling
         total: Totalt
+        transaction_gift_card: "Gavekort (%{code})"
+        transaction_payment: Betaling
+        transaction_refund: Refusjon
     providers:
       index:
         all_services: Alle tjenester

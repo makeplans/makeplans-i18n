@@ -131,7 +131,7 @@ en:
         order_number: "Order #%{number}"
       show:
         amount: Amount
-        back_to_home: Back to home
+        back_to_orders: Back to orders
         confirmation_message: Thank you for your order!
         gift_card_code: Gift Card Code
         gift_card_value: Value
@@ -140,7 +140,11 @@ en:
         item: Item
         my_reservations: My reservations
         order_details: Order Details
+        payment_details: Payment
         total: Total
+        transaction_gift_card: "Gift Card (%{code})"
+        transaction_payment: Payment
+        transaction_refund: Refund
     services:
       available_dates:
         select_date: Available dates
