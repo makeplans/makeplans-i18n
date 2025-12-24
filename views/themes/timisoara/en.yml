@@ -74,6 +74,21 @@ en:
         terms_conditions: Terms and conditions
         title: Login
     profile:
+      children:
+        index:
+          header: People you can book for
+      credit_card_list:
+        add_card: Add card
+        body: Your stored payment methods
+        card_info: "%{brand} ending in %{last_4} (expires %{expire_month}/%{expire_year})"
+        remove_card: Remove
+        title: Payment Methods
+      gift_card_list:
+        balance: Balance
+        body: Your gift cards
+        code: Code
+        no_gift_cards: You have no gift cards.
+        title: My Gift Cards
       index:
         alt:
           calendar: Calendar

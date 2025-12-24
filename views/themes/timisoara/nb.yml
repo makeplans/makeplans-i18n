@@ -82,13 +82,28 @@ nb:
         terms_conditions: Vilkår og betingelser
         title: Login
     profile:
+      children:
+        index:
+          header: Personer du kan bestille for
+      credit_card_list:
+        add_card: Legg til kort
+        body: Dine lagrede betalingsmetoder
+        card_info: "%{brand} som slutter på %{last_4} (utløper %{expire_month}/%{expire_year})"
+        remove_card: Fjern
+        title: Lagrede betalingsmetoder
+      gift_card_list:
+        balance: Saldo
+        body: Dine gavekort
+        code: Kode
+        no_gift_cards: Du har ingen gavekort.
+        title: Mine gavekort
       index:
         alt:
           calendar: Kalender
         awaiting_approval: Venter på godkjenning
         cancel: Kanseller
         my_details: Mine opplysninger
-        my_orders: Mine bestillinger
+        my_orders: Mine kjøp
         tabs:
           all: Alle
           cancelled: Kansellerte
@@ -134,12 +149,12 @@ nb:
         total: Totalt
     orders:
       index:
-        header: Mine bestillinger
-        no_orders: Du har ingen bestillinger ennå.
+        header: Mine kjøp
+        no_orders: Du har ingen kjøp ennå.
         order_number: "Bestilling #%{number}"
       show:
         amount: Beløp
-        back_to_orders: Tilbake til bestillinger
+        back_to_orders: Tilbake til mine kjøp
         confirmation_message: Takk for din bestilling!
         gift_card_code: Gavekortkode
         gift_card_value: Verdi
