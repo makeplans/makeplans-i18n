@@ -94,6 +94,7 @@ en:
           calendar: Calendar
         awaiting_approval: Awaiting approval
         cancel: Cancel
+        logout: Log out
         my_details: My details
         my_orders: My orders
         tabs:
@@ -105,6 +106,8 @@ en:
       new:
         errors_header: 'Errors occured:'
         header: Account information
+      show:
+        header: Your stored information
     gift_cards:
       new:
         add_to_cart: Add to cart

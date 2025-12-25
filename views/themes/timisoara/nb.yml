@@ -102,6 +102,7 @@ nb:
           calendar: Kalender
         awaiting_approval: Venter på godkjenning
         cancel: Kanseller
+        logout: Logg ut
         my_details: Mine opplysninger
         my_orders: Mine kjøp
         tabs:
@@ -113,6 +114,8 @@ nb:
       new:
         errors_header: 'Det oppstod feil:'
         header: Dine kontaktopplysninger
+      show:
+        header: Din lagrede informasjon
     gift_cards:
       new:
         add_to_cart: Legg i handlekurv
