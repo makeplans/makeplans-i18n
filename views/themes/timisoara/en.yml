@@ -88,6 +88,8 @@ en:
         body: Your gift cards
         code: Code
         no_gift_cards: You have no gift cards.
+        purchased_body: Gift cards you have purchased that have not been redeemed yet.
+        purchased_title: Purchased Gift Cards
         title: My Gift Cards
       index:
         alt:

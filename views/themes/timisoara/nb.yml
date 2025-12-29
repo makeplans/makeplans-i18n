@@ -96,6 +96,8 @@ nb:
         body: Dine gavekort
         code: Kode
         no_gift_cards: Du har ingen gavekort.
+        purchased_body: Gavekort du har kjøpt som ikke er innløst ennå.
+        purchased_title: Kjøpte gavekort
         title: Mine gavekort
       index:
         alt:
