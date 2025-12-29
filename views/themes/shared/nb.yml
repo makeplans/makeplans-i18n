@@ -1,6 +1,9 @@
 ---
 nb:
   shared:
+    order_cart:
+      checkout:
+        invalid_gift_card: Ugyldig eller allerede brukt gavekort
     generic:
       close: lukk
     bookings:

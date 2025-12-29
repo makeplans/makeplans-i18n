@@ -120,11 +120,11 @@ en:
         applied_gift_cards: Applied Gift Cards
         apply: Apply
         complete_order: Complete Order
+        continue_to_payment: Continue to Payment
         credit_card: Credit Card
         gift_card_code: Gift Card Code
         gift_card_code_placeholder: "XXXX-0000-XXXX"
         header: Checkout
-        invalid_gift_card: Invalid or already used gift card
         invoice: Invoice
         order_total: Order Total
         pay_now: Pay Now
@@ -142,11 +142,49 @@ en:
         item: Item
         remove: Remove
         total: Total
+    order_payments:
+      failure:
+        header: Payment Failed
+        message: Unfortunately, your payment could not be processed.
+        try_again: Try Again
+      fiken:
+        payment:
+          back: Back
+          create_invoice: Create Invoice
+          header: Invoice Payment
+      front_go:
+        payment:
+          back: Back
+          header: FrontGo Payment
+          pay_now: Pay Now
+      stripe:
+        payment:
+          back: Back
+          header: Card Payment
+          new_card: Use a new card
+          pay_now: Pay Now
+          payment_details_html: "Payment is processed securely using %{provider}. All amounts are in %{currency}."
+          save_card: Save this card for future payments
+          select_card: Select a saved card
+      vipps:
+        payment:
+          back: Back
+          header: Vipps Payment
+          pay_now: Pay with Vipps
     orders:
       index:
         header: My Orders
         no_orders: You have no orders yet.
         order_number: "Order #%{number}"
+      payment:
+        amount_to_pay: Amount to Pay
+        fiken: Invoice (Fiken)
+        front_go: FrontGo
+        header: Select Payment Method
+        no_payment_methods: No payment methods available.
+        select_payment_method: How would you like to pay?
+        stripe: Credit Card
+        vipps: Vipps
       show:
         amount: Amount
         back_to_orders: Back to orders

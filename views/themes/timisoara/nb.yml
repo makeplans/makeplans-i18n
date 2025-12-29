@@ -128,11 +128,11 @@ nb:
         applied_gift_cards: Brukte gavekort
         apply: Bruk
         complete_order: Fullfør bestilling
+        continue_to_payment: Fortsett til betaling
         credit_card: Kredittkort
         gift_card_code: Gavekortkode
         gift_card_code_placeholder: "XXXX-0000-XXXX"
         header: Betaling
-        invalid_gift_card: Ugyldig eller allerede brukt gavekort
         invoice: Faktura
         order_total: Ordretotal
         pay_now: Betal nå
@@ -150,11 +150,49 @@ nb:
         item: Vare
         remove: Fjern
         total: Totalt
+    order_payments:
+      failure:
+        header: Betaling mislyktes
+        message: Dessverre kunne ikke betalingen din gjennomføres.
+        try_again: Prøv igjen
+      fiken:
+        payment:
+          back: Tilbake
+          create_invoice: Opprett faktura
+          header: Fakturabetaling
+      front_go:
+        payment:
+          back: Tilbake
+          header: FrontGo-betaling
+          pay_now: Betal nå
+      stripe:
+        payment:
+          back: Tilbake
+          header: Kortbetaling
+          new_card: Bruk et nytt kort
+          pay_now: Betal nå
+          payment_details_html: "Betaling håndteres sikkert via %{provider}. Alle beløp er i %{currency}."
+          save_card: Lagre dette kortet for fremtidige betalinger
+          select_card: Velg et lagret kort
+      vipps:
+        payment:
+          back: Tilbake
+          header: Vipps-betaling
+          pay_now: Betal med Vipps
     orders:
       index:
         header: Mine kjøp
         no_orders: Du har ingen kjøp ennå.
         order_number: "Bestilling #%{number}"
+      payment:
+        amount_to_pay: Beløp å betale
+        fiken: Faktura (Fiken)
+        front_go: FrontGo
+        header: Velg betalingsmetode
+        no_payment_methods: Ingen tilgjengelige betalingsmetoder.
+        select_payment_method: Hvordan vil du betale?
+        stripe: Kredittkort
+        vipps: Vipps
       show:
         amount: Beløp
         back_to_orders: Tilbake til mine kjøp

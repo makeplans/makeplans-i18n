@@ -1,6 +1,9 @@
 ---
 en:
   shared:
+    order_cart:
+      checkout:
+        invalid_gift_card: Invalid or already used gift card
     generic:
       alt:
         go_back: Go back
