@@ -4,6 +4,7 @@ nb:
     order_cart:
       checkout:
         cannot_use_gift_card_for_gift_card: Gavekort kan ikke brukes til å kjøpe gavekort
+        invalid_cart_item: Ugyldig verdi
         invalid_gift_card: Ugyldig eller allerede brukt gavekort
     generic:
       close: lukk
