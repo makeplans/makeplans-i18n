@@ -125,12 +125,19 @@ nb:
         header: Kjøp gavekort
         value_label: Verdi
         value_placeholder: Angi beløp
+    products:
+      index:
+        buy: Kjøp
+        header: Produkter
+      show:
+        add_to_cart: Legg i handlekurv
     order_cart:
       checkout:
         applied_gift_cards: Brukte gavekort
         apply: Bruk
         complete_order: Fullfør bestilling
         continue_to_payment: Fortsett til betaling
+        empty_cart: Tøm handlekurv
         credit_card: Kredittkort
         gift_card_code: Gavekortkode
         gift_card_code_placeholder: "XXXX-0000-XXXX"
@@ -145,6 +152,7 @@ nb:
         your_gift_cards: Dine gavekort
       show:
         amount: Beløp
+        clear_cart: Tøm handlekurv
         confirm_order: Bekreft bestilling
         continue_shopping: Legg til flere gavekort
         empty_cart: Handlekurven din er tom.
@@ -199,6 +207,7 @@ nb:
         amount: Beløp
         back_to_orders: Tilbake til mine kjøp
         confirmation_message: Takk for din bestilling!
+        each: per stk
         gift_card_code: Gavekortkode
         gift_card_value: Verdi
         gift_cards: Gavekort

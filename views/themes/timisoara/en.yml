@@ -117,12 +117,19 @@ en:
         header: Buy Gift Card
         value_label: Value
         value_placeholder: Enter amount
+    products:
+      index:
+        buy: Buy
+        header: Products
+      show:
+        add_to_cart: Add to cart
     order_cart:
       checkout:
         applied_gift_cards: Applied Gift Cards
         apply: Apply
         complete_order: Complete Order
         continue_to_payment: Continue to Payment
+        empty_cart: Empty cart
         credit_card: Credit Card
         gift_card_code: Gift Card Code
         gift_card_code_placeholder: "XXXX-0000-XXXX"
@@ -137,6 +144,7 @@ en:
         your_gift_cards: Your Gift Cards
       show:
         amount: Amount
+        clear_cart: Empty cart
         confirm_order: Confirm order
         continue_shopping: Add more gift cards
         empty_cart: Your cart is empty.
@@ -191,6 +199,7 @@ en:
         amount: Amount
         back_to_orders: Back to orders
         confirmation_message: Thank you for your order!
+        each: each
         gift_card_code: Gift Card Code
         gift_card_value: Value
         gift_cards: Gift Cards
