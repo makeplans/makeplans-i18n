@@ -974,11 +974,17 @@ nb:
         settings:
           hide_slot_end: Skjul sluttid
           show_free_capacity: Vis tilgjengelig kapasitet
+      form_product:
+        booking_site_settings: Innstillinger for bookingsiden
+      form_gift_card:
+        booking_site_settings: Innstillinger for bookingsiden
       index:
         appointment:
           header: Tjenester
         attendance:
           header: Arrangementstyper
+        product:
+          header: Produkter
         days: dager
         header: Tjenester
         minutes: minutter

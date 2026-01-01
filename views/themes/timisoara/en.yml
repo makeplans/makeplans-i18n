@@ -111,6 +111,9 @@ en:
       show:
         header: Your stored information
     gift_cards:
+      index:
+        buy: Buy
+        header: Gift Cards
       new:
         add_to_cart: Add to cart
         description: Purchase a gift card for someone special. Choose the amount below.

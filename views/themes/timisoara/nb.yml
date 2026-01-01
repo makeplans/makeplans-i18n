@@ -119,6 +119,9 @@ nb:
       show:
         header: Din lagrede informasjon
     gift_cards:
+      index:
+        buy: Kjøp
+        header: Gavekort
       new:
         add_to_cart: Legg i handlekurv
         description: Kjøp et gavekort til noen du bryr deg om. Velg beløp nedenfor.

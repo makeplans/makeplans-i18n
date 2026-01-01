@@ -207,8 +207,11 @@ nb:
       person: kunde
       resource: ressurs
       service: tjeneste
+      service_addon: tillegg
       service_appointment: tjeneste
       service_attendance: arrangementstype
+      service_gift_card: gavekort
+      service_product: produkt
       tag: etikett
       user: bruker
       web_hook: webhook
@@ -605,6 +608,8 @@ nb:
       service:
         new_appointment: Ny tjeneste
         new_attendance: Ny arrangementstype
+        new_gift_card: Nytt gavekort
+        new_product: Nytt produkt
       setup:
         skip: Manuelt oppsett
         step_html: "<strong>Steg %{step}</strong> av %{max_steps}"
@@ -639,6 +644,7 @@ nb:
       integrations: Integrasjoner
       message_templates: Meldingsmaler
       person_notifications: Kundevarslinger
+      products: Produkter
       promote: Promoter
       resources: Ressurser
       service_appointments: Tjenester

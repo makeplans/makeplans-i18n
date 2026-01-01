@@ -206,8 +206,11 @@ en:
       person: customer
       resource: resource
       service: service
+      service_addon: addon
       service_appointment: service
       service_attendance: event type
+      service_gift_card: gift card
+      service_product: product
       tag: tag
       user: user
       web_hook: webhook
@@ -606,6 +609,8 @@ en:
       service:
         new_appointment: New service
         new_attendance: New event type
+        new_gift_card: New gift card
+        new_product: New product
       setup:
         skip: Manual setup
         step_html: "<strong>Step %{step}</strong> of %{max_steps}"
@@ -640,6 +645,7 @@ en:
       integrations: Integrations
       message_templates: Message templates
       person_notifications: Notifications - customer
+      products: Products
       promote: Promote
       resources: Resources
       service_appointments: Services

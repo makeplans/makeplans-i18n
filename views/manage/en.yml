@@ -979,11 +979,17 @@ en:
         settings:
           hide_slot_end: Hide end-time
           show_free_capacity: Show available capacity
+      form_product:
+        booking_site_settings: Settings for the booking site
+      form_gift_card:
+        booking_site_settings: Settings for the booking site
       index:
         appointment:
           header: Services
         attendance:
           header: Event types
+        product:
+          header: Products
         days: days
         header: Services
         minutes: minutes
