@@ -287,6 +287,10 @@ nb:
         header: Kategorirekkefølge
         parent_category: Overordnet kategori
       form:
+        booking_type_appointment: Timebestilling
+        booking_type_attendance: Påmelding
+        booking_type_gift_card: Gavekort
+        booking_type_product: Produkter
         has_services: Viser følgende tjenester
         no_parent_id: TOPPNIVÅ
       index:

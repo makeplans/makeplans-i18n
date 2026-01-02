@@ -287,6 +287,10 @@ en:
         header: Category ordering
         parent_category: Parent category
       form:
+        booking_type_appointment: Appointments
+        booking_type_attendance: Attendance
+        booking_type_gift_card: Gift cards
+        booking_type_product: Products
         has_services: Shows these services
         no_parent_id: TOP LEVEL
       index:
