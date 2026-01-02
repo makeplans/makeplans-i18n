@@ -62,6 +62,7 @@ nb:
         alt:
           footer_logo: Bunntekst logo
         booking_site_footer: Bookingside for %{name}
+        cart: Handlekurv (%{count})
         login: Login
         made_by_tagline: Brukervennlig system for timebestilling og påmelding.
         made_by_title: Timebestilling og påmeldinger
@@ -235,6 +236,7 @@ nb:
       index:
         all_categories: Alle kategorier
         all_services: Alle tjenester
+        buy: Kjøp
         continue: Book denne tjenesten
       show:
         all_services: Alle tjenester

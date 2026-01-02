@@ -54,6 +54,7 @@ en:
         alt:
           footer_logo: Footer logo
         booking_site_footer: Booking site for %{name}
+        cart: Cart (%{count})
         login: Login
         made_by_tagline: User-friendly system for scheduling, appointment booking and event registration.
         made_by_title: Appointment booking, scheduling and event/class signups
@@ -223,6 +224,7 @@ en:
       index:
         all_categories: All categories
         all_services: All services
+        buy: Buy
         continue: Make a booking
       show:
         all_services: All services
