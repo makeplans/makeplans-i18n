@@ -624,6 +624,7 @@ nb:
       agenda: Agenda
       calendar: Kalender
       logout: Logg ut
+      orders: Bestillinger
       people: Kunder
       profile: Profil
       reports: Rapporter

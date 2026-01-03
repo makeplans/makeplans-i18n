@@ -568,6 +568,55 @@ nb:
     gift_cards:
       index:
         header: Gavekort
+      show:
+        active: Aktivt
+        current_balance: Gjenstående verdi
+        details: Detaljer
+        inactive: Brukt
+        initial_value: Opprinnelig verdi
+        purchase_order: Kjøpsordre
+        purchased_by: Kjøpt av
+        redeemed_by: Innløst av
+        transactions: Innløsninger
+        valid_until: Gyldig til
+    orders:
+      index:
+        all_states: Alle statuser
+        created_at: Opprettet
+        customer: Kunde
+        do_filtering: Filtrer
+        filter: Filter
+        headline: Bestillinger
+        order_id: Bestilling
+        status: Status
+        total: Totalt
+      show:
+        amount: Beløp
+        balance: Utestående
+        created_at: Opprettet
+        customer: Kunde
+        date: Dato
+        details: Detaljer
+        generated_gift_card: "Generert gavekort: %{code}"
+        gift_card_used: "Gavekort %{code}"
+        gift_cards: Gavekort
+        item: Vare
+        line_items: Ordrelinjer
+        order_number: "Bestilling #%{id}"
+        quantity: Antall
+        subtotal: Delsum
+        total: Totalt
+        transaction_type: Type
+        transactions: Betalinger
+      states:
+        cancelled: Kansellert
+        confirmed: Bekreftet
+        pending: Venter
+      transaction_types:
+        gift_card: Gavekort
+        payment: Betaling
+        refund: Refusjon
+        subscription: Abonnement
     events:
       check_in:
         check_in: Sjekk inn

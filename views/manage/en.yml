@@ -568,6 +568,55 @@ en:
     gift_cards:
       index:
         header: Gift cards
+      show:
+        active: Active
+        current_balance: Current balance
+        details: Details
+        inactive: Used
+        initial_value: Initial value
+        purchase_order: Purchase order
+        purchased_by: Purchased by
+        redeemed_by: Redeemed by
+        transactions: Redemptions
+        valid_until: Valid until
+    orders:
+      index:
+        all_states: All statuses
+        created_at: Created
+        customer: Customer
+        do_filtering: Filter
+        filter: Filter
+        headline: Orders
+        order_id: Order
+        status: Status
+        total: Total
+      show:
+        amount: Amount
+        balance: Balance due
+        created_at: Created
+        customer: Customer
+        date: Date
+        details: Details
+        generated_gift_card: "Generated gift card: %{code}"
+        gift_card_used: "Gift card %{code}"
+        gift_cards: Gift Cards
+        item: Item
+        line_items: Order Items
+        order_number: "Order #%{id}"
+        quantity: Qty
+        subtotal: Subtotal
+        total: Total
+        transaction_type: Type
+        transactions: Payments
+      states:
+        cancelled: Cancelled
+        confirmed: Confirmed
+        pending: Pending
+      transaction_types:
+        gift_card: Gift Card
+        payment: Payment
+        refund: Refund
+        subscription: Subscription
     events:
       check_in:
         check_in: Check in
