@@ -189,6 +189,10 @@ nb:
           save_card: Lagre dette kortet for fremtidige betalinger
           select_card: Velg et lagret kort
       vipps:
+        awaiting_payment:
+          body: Vennligst vent mens transaksjonen bekreftes.
+          error: Vi klarte ikke å bekrefte at betaling ble gjennomført. Kontakt kundeservice og oppgi referansenummer %{order_id}.
+          title: Kontrollerer betaling
         payment:
           back: Tilbake
           header: Vipps-betaling

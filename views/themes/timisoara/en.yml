@@ -181,6 +181,10 @@ en:
           save_card: Save this card for future payments
           select_card: Select a saved card
       vipps:
+        awaiting_payment:
+          body: Please wait while we verify the transaction.
+          error: We are unable to verify your payment. Please contact customer service with the reference number %{order_id}.
+          title: Verifying your payment
         payment:
           back: Back
           header: Vipps Payment
