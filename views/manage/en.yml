@@ -473,13 +473,17 @@ en:
         info: Visual settings
         settings:
           booking_requires_status: Show link for reservations without status in agenda
+          booking_site_order_flow: Use new order flow on booking site
           calendar_hide_weekends: Hide weekends
           calendar_prevent_slot_event_overlap: Prevent event overlap
           calendar_slot_duration: Slot duration
           calendar_slot_label_interval: Slot label interval
           resource_title: Custom resource title
+          service_addon_title: Custom add-on title
           service_appointment_title: Custom service title
           service_attendance_title: Custom event type title
+          service_gift_card_title: Custom gift card title
+          service_product_title: Custom product title
       email_sender:
         create:
           dns: See your DNS values.

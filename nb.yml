@@ -609,7 +609,9 @@ nb:
         new_appointment: Ny tjeneste
         new_attendance: Ny arrangementstype
         new_gift_card: Nytt gavekort
+        new_gift_card_title: Nytt %{title}
         new_product: Nytt produkt
+        new_product_title: Nytt %{title}
       setup:
         skip: Manuelt oppsett
         step_html: "<strong>Steg %{step}</strong> av %{max_steps}"

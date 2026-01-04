@@ -610,7 +610,9 @@ en:
         new_appointment: New service
         new_attendance: New event type
         new_gift_card: New gift card
+        new_gift_card_title: New %{title}
         new_product: New product
+        new_product_title: New %{title}
       setup:
         skip: Manual setup
         step_html: "<strong>Step %{step}</strong> of %{max_steps}"

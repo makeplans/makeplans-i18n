@@ -473,13 +473,17 @@ nb:
         info: Dette er kun visuelle innstillinger.
         settings:
           booking_requires_status: Vis link til reservasjoner uten status i agenda
+          booking_site_order_flow: Bruk ny ordreflyt på bookingsiden
           calendar_hide_weekends: Skjul helgedager
           calendar_prevent_slot_event_overlap: Unngå visuell overlapping av reservasjoner
           calendar_slot_duration: Varighet på slot (minutter)
           calendar_slot_label_interval: Tidsvisning for slot ved hvert X minutt
           resource_title: Egendefinert ressurstittel
+          service_addon_title: Egendefinert tilleggstittel
           service_appointment_title: Egendefinert tjenesetittel
           service_attendance_title: Egendefinert arrangementstype-tittel
+          service_gift_card_title: Egendefinert gavekorttittel
+          service_product_title: Egendefinert produkttittel
       email_sender:
         create:
           dns: Se dine DNS-verdier.
