@@ -181,6 +181,10 @@ nb:
           attributes:
             base:
               must_have_line_items: Bestillingen må ha minst én vare
+        order_line_item:
+          attributes:
+            booking:
+              invalid: er ikke lenger tilgjengelig for betaling
         resource:
           has_bookings: Denne ressursen har aktive reservasjoner og kan dermed ikke slettes. Kontakt kundeservice.
         service:

@@ -180,6 +180,10 @@ en:
           attributes:
             base:
               must_have_line_items: Order must have at least one item
+        order_line_item:
+          attributes:
+            booking:
+              invalid: is no longer available for payment
         resource:
           has_bookings: This resource has bookings. Cannot be deleted. Please contact support.
         service:
