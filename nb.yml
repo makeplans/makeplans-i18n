@@ -393,6 +393,7 @@ nb:
         mail_verification_subject: Tittel i epost som blir sendt ved verifisering
         mailer_sender: Epost-avsender
         name: Firmanavn (vises på bookingsiden)
+        next_invoice_nr: Neste fakturanummer
         new_booking_text: Tekst som vises på bekreftelsesiden
         no_availability_text: Tekst som vises når det ikke er ledige tidspunkt
         payment_provider: Standard betalingsløsning

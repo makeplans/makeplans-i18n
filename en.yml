@@ -395,6 +395,7 @@ en:
         mail_verification_subject: Subject in verification email
         mailer_sender: Email sender
         name: Company name (shown on the booking site)
+        next_invoice_nr: Next invoice number
         new_booking_text: Text displayed on confirmation page
         no_availability_text: Text displayed when there is no availability
         payment_provider: Default payment provider
