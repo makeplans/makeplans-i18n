@@ -214,6 +214,7 @@ nb:
           sent: sendt
           state: status
         messages: Meldinger
+        order: Bestilling
         paid_with:
           braintree: Betalt med Braintree
           frontgo: Betalt med FrontGO

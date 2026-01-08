@@ -214,6 +214,7 @@ en:
           sent: sent
           state: state
         messages: Messages
+        order: Order
         paid_with:
           braintree: Paid with Braintree
           frontgo: Paid with FrontGO
