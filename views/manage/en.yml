@@ -573,6 +573,7 @@ en:
     gift_cards:
       index:
         header: Gift cards
+        header_for_person: Gift cards for %{name}
       show:
         active: Active
         current_balance: Current balance
@@ -866,6 +867,9 @@ en:
           active: Show only active reservations
           all: Show all reservations including deleted
           visible: Show all visible reservations
+        gift_cards:
+          one: "%{count} gift card"
+          other: "%{count} gift cards"
         no_reservations: Found no reservations
         parent_info: Managed by
         send_sms: Send SMS

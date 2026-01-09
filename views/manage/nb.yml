@@ -573,6 +573,7 @@ nb:
     gift_cards:
       index:
         header: Gavekort
+        header_for_person: Gavekort for %{name}
       show:
         active: Aktivt
         current_balance: Gjenstående verdi
@@ -861,6 +862,9 @@ nb:
           active: Vis kun aktive reservasjoner
           all: Vis alle reservasjoner inkludert slettede
           visible: Vis kun synlige reservasjoner
+        gift_cards:
+          one: "%{count} gavekort"
+          other: "%{count} gavekort"
         no_reservations: Fant ingen reservasjoner
         parent_info: Administeres av
         send_sms: Send SMS
