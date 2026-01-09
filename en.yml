@@ -180,6 +180,7 @@ en:
           attributes:
             base:
               must_have_line_items: Order must have at least one item
+              payment_incomplete: Payment must be completed before confirming order
         order_line_item:
           attributes:
             booking:

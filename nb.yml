@@ -181,6 +181,7 @@ nb:
           attributes:
             base:
               must_have_line_items: Bestillingen må ha minst én vare
+              payment_incomplete: Betaling må fullføres før bestillingen kan bekreftes
         order_line_item:
           attributes:
             booking:
