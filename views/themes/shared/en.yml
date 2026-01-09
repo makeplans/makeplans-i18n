@@ -29,6 +29,9 @@ en:
         payment_received: "%{paid_amount} was paid on %{paid_at}."
         save_card: Save card
     bookings:
+      expired:
+        info: Bookings must be verified within %{expires_in} minutes. Please try again.
+        title: Booking expired
       new:
         email_suggestion_html: "<p>Did you mean<span> %{suggestions}</span>?</p>"
       payment_invoice:

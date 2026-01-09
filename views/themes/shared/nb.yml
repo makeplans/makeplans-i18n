@@ -9,6 +9,9 @@ nb:
     generic:
       close: lukk
     bookings:
+      expired:
+        info: Reservasjoner må bekreftes innen %{expires_in} minutter. Vennligst prøv igjen.
+        title: Reservasjon utløpt
       new:
         email_suggestion_html: "<p>Mente du <span> %{suggestions}</span>?</p>"
       payment_stripe:
