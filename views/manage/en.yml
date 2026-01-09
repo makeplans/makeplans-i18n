@@ -606,6 +606,8 @@ en:
         generated_gift_card: "Generated gift card: %{code}"
         gift_card_used: "Gift card %{code}"
         gift_cards: Gift Cards
+        invoice: Invoice
+        invoice_number: "Invoice #%{nr}"
         item: Item
         line_items: Order Items
         order_number: "Order #%{id}"

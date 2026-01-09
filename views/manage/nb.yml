@@ -606,6 +606,8 @@ nb:
         generated_gift_card: "Generert gavekort: %{code}"
         gift_card_used: "Gavekort %{code}"
         gift_cards: Gavekort
+        invoice: Faktura
+        invoice_number: "Faktura #%{nr}"
         item: Vare
         line_items: Ordrelinjer
         order_number: "Bestilling #%{id}"
