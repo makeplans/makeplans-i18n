@@ -6,6 +6,9 @@ nb:
         cannot_use_gift_card_for_gift_card: Gavekort kan ikke brukes til å kjøpe gavekort
         invalid_cart_item: Ugyldig verdi
         invalid_gift_card: Ugyldig eller allerede brukt gavekort
+    order_payments:
+      invoice_later:
+        gift_cards_not_allowed: Gavekort kan ikke brukes med faktura senere
     generic:
       close: lukk
     bookings:
