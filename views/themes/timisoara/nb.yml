@@ -197,12 +197,12 @@ nb:
           back: Tilbake
           header: Vipps-betaling
           pay_now: Betal med Vipps
-      invoice_later:
+      pay_later:
         payment:
           back: Tilbake
           complete_order: Fullfør bestilling
-          description: Din bestilling blir bekreftet og du vil motta en faktura senere.
-          header: Faktura senere
+          description: Din bestilling blir bekreftet. Betaling kan gjøres senere.
+          header: Betal senere
     orders:
       index:
         header: Mine kjøp
@@ -213,7 +213,7 @@ nb:
         fiken: Faktura (Fiken)
         front_go: FrontGo
         header: Velg betalingsmetode
-        invoice_later: Faktura senere
+        pay_later: Betal senere
         no_payment_methods: Ingen tilgjengelige betalingsmetoder.
         select_payment_method: Hvordan vil du betale?
         stripe: Kredittkort

@@ -189,12 +189,12 @@ en:
           back: Back
           header: Vipps Payment
           pay_now: Pay with Vipps
-      invoice_later:
+      pay_later:
         payment:
           back: Back
           complete_order: Complete Order
-          description: Your order will be confirmed and you will receive an invoice later.
-          header: Invoice Later
+          description: Your order will be confirmed. Payment can be made later.
+          header: Pay Later
     orders:
       index:
         header: My Orders
@@ -205,7 +205,7 @@ en:
         fiken: Invoice (Fiken)
         front_go: FrontGo
         header: Select Payment Method
-        invoice_later: Invoice Later
+        pay_later: Pay Later
         no_payment_methods: No payment methods available.
         select_payment_method: How would you like to pay?
         stripe: Credit Card

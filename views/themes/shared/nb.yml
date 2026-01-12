@@ -7,8 +7,8 @@ nb:
         invalid_cart_item: Ugyldig verdi
         invalid_gift_card: Ugyldig eller allerede brukt gavekort
     order_payments:
-      invoice_later:
-        gift_cards_not_allowed: Gavekort kan ikke brukes med faktura senere
+      pay_later:
+        gift_cards_not_allowed: Gavekort kan ikke brukes med betal senere
     generic:
       close: lukk
     bookings:

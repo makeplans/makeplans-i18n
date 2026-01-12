@@ -7,8 +7,8 @@ en:
         invalid_cart_item: Invalid item value
         invalid_gift_card: Invalid or already used gift card
     order_payments:
-      invoice_later:
-        gift_cards_not_allowed: Gift cards cannot be used with invoice later payment
+      pay_later:
+        gift_cards_not_allowed: Gift cards cannot be used with pay later
     generic:
       alt:
         go_back: Go back
