@@ -180,6 +180,9 @@ nb:
           header: FrontGo-betaling
           pay_now: Betal nå
       stripe:
+        awaiting_payment:
+          header: Behandler betaling
+          message: Vennligst vent mens vi behandler betalingen din...
         payment:
           back: Tilbake
           header: Kortbetaling

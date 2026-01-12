@@ -9,6 +9,9 @@ nb:
     order_payments:
       pay_later:
         gift_cards_not_allowed: Gavekort kan ikke brukes med betal senere
+      processing:
+        title: Behandler betaling
+        message: Vennligst vent mens vi behandler betalingen din...
     generic:
       close: lukk
     bookings:

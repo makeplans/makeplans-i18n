@@ -9,6 +9,9 @@ en:
     order_payments:
       pay_later:
         gift_cards_not_allowed: Gift cards cannot be used with pay later
+      processing:
+        title: Processing Payment
+        message: Please wait while we process your payment...
     generic:
       alt:
         go_back: Go back

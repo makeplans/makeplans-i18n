@@ -172,6 +172,9 @@ en:
           header: FrontGo Payment
           pay_now: Pay Now
       stripe:
+        awaiting_payment:
+          header: Processing Payment
+          message: Please wait while we process your payment...
         payment:
           back: Back
           header: Card Payment
