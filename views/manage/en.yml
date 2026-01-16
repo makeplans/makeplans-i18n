@@ -294,6 +294,8 @@ en:
         booking_type_product: Products
         has_services: Shows these services
         no_parent_id: TOP LEVEL
+        settings:
+          standalone: Standalone category
       index:
         header: Categories
         order_button: Order

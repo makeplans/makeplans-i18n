@@ -294,6 +294,8 @@ nb:
         booking_type_product: Produkter
         has_services: Viser følgende tjenester
         no_parent_id: TOPPNIVÅ
+        settings:
+          standalone: Frittstående kategori
       index:
         header: Kategorier
         order_button: Rekkefølge
