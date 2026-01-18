@@ -1,5 +1,15 @@
 ---
 nb:
+  admin:
+    clients:
+      assign_reseller:
+        current_reseller: Nåværende forhandler
+        header: Tildel forhandler
+        no_reseller: Ingen forhandler
+        none: Ingen
+        reseller: Forhandler
+        save: Lagre
+        send_email: Send registreringsvarsel til forhandler
   bookings:
     verification_code:
       incorrect_code: Feil kode

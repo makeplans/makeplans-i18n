@@ -1,5 +1,15 @@
 ---
 en:
+  admin:
+    clients:
+      assign_reseller:
+        current_reseller: Current reseller
+        header: Assign Reseller
+        no_reseller: No reseller
+        none: None
+        reseller: Reseller
+        save: Save
+        send_email: Send signup notification email to reseller
   bookings:
     verification_code:
       incorrect_code: Incorrect code
