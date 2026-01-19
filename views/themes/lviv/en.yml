@@ -11,8 +11,12 @@ en:
         title: Your booking is cancelled
       new:
         agree_with: I agree with
+        booking_for: "This booking is for:"
         errors_header: Please fill out the required fields.
+        logged_in_as: "Booking as %{person}"
+        myself: Myself
         optional: Optional
+        someone_else: Someone else (add new)
         submit: Complete booking
         subtitle: Please fill in the data required to book a service.
         terms: Terms & Conditions
@@ -103,6 +107,11 @@ en:
         index:
           alt:
             right: Right
+        new:
+          errors_header: 'Errors occurred:'
+          submit: Save and continue
+          subtitle: Please fill in the data for the person you want to book for.
+          title: Add person
     services:
       available_dates:
         title: Select date & time

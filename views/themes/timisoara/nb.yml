@@ -14,6 +14,10 @@ nb:
         update_calendar: Oppdater min kalender
       new:
         accept: Jeg godkjenner
+        booking_for: "Denne reservasjonen er for:"
+        logged_in_as: "Bestiller som %{person}"
+        myself: Meg selv
+        someone_else: Noen andre (legg til ny)
         submit: Bestill
         terms: vilkår for reservasjonen
         title: Reservasjon av %{service}
@@ -86,6 +90,11 @@ nb:
       children:
         index:
           header: Personer du kan bestille for
+        new:
+          cancel: Avbryt
+          errors_header: 'Det oppstod feil:'
+          submit: Lagre og fortsett
+          title: Legg til person
       credit_card_list:
         add_card: Legg til kort
         body: Dine lagrede betalingsmetoder

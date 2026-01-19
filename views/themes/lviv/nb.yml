@@ -11,8 +11,12 @@ nb:
         title: Din reservasjon er kansellert
       new:
         agree_with: Jeg godtar
+        booking_for: "Denne reservasjonen er for:"
         errors_header: Vennligst fyll ut alle påkrevde felter.
+        logged_in_as: "Bestiller som %{person}"
+        myself: Meg selv
         optional: Valgfritt
+        someone_else: Noen andre (legg til ny)
         submit: Reserver tjeneste
         subtitle: Vennligst fyll ut de nødvendige dataene for å reservere en tjeneste.
         terms: Vilkår og betingelser
@@ -99,6 +103,12 @@ nb:
           right: Høyre
         change_language: Endre språk
         logout: Logg ut
+      children:
+        new:
+          errors_header: 'Det oppstod feil:'
+          submit: Lagre og fortsett
+          subtitle: Vennligst fyll ut informasjonen for personen du vil bestille for.
+          title: Legg til person
     services:
       available_dates:
         title: Velg dato og tid

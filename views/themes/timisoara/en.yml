@@ -14,6 +14,10 @@ en:
         update_calendar: Update my calendar
       new:
         accept: I approve
+        booking_for: "This booking is for:"
+        logged_in_as: "Booking as %{person}"
+        myself: Myself
+        someone_else: Someone else (add new)
         submit: Complete booking
         terms: terms for the reservation
         title: Reservation of %{service}
@@ -78,6 +82,11 @@ en:
       children:
         index:
           header: People you can book for
+        new:
+          cancel: Cancel
+          errors_header: 'Errors occurred:'
+          submit: Save and continue
+          title: Add person
       credit_card_list:
         add_card: Add card
         body: Your stored payment methods
