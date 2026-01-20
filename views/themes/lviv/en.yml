@@ -10,17 +10,27 @@ en:
         info: The booking for %{title} %{time} was cancelled.
         title: Your booking is cancelled
       new:
+        add_another_person: Add another person
         agree_with: I agree with
+        book_for_someone_else: Book for someone else
         booking_for: "This booking is for:"
+        booking_for_label: Booking for
+        cancel: Cancel
+        change: Change
         errors_header: Please fill out the required fields.
         logged_in_as: "Booking as %{person}"
+        logged_in_as_short: Logged in as
+        logout: Log out
         myself: Myself
+        not_you_logout: Not you? Log out
         optional: Optional
         someone_else: Someone else (add new)
         submit: Complete booking
         subtitle: Please fill in the data required to book a service.
         terms: Terms & Conditions
         title: Booking for
+        who_is_booking_for: Who is this booking for?
+        yourself: Yourself
       payment_stripe:
         title: Enter payment details
       pre_payment:

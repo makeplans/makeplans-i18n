@@ -14,13 +14,25 @@ en:
         update_calendar: Update my calendar
       new:
         accept: I approve
+        add_another_person: Add another person
+        book_for_someone_else: Book for someone else
         booking_for: "This booking is for:"
+        booking_for_label: Booking for
+        cancel: Cancel
+        change: Change
+        edit: Edit
+        edit_profile: Edit
         logged_in_as: "Booking as %{person}"
+        logged_in_as_short: Logged in as
+        logout: Log out
         myself: Myself
+        not_you_logout: Not you? Log out
         someone_else: Someone else (add new)
         submit: Complete booking
         terms: terms for the reservation
         title: Reservation of %{service}
+        who_is_booking_for: Who is this booking for?
+        yourself: Yourself
       new_person:
         email_address: Email address
         phone_number: Mobile phone number

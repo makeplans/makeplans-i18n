@@ -14,13 +14,25 @@ nb:
         update_calendar: Oppdater min kalender
       new:
         accept: Jeg godkjenner
+        add_another_person: Legg til en annen person
+        book_for_someone_else: Bestill for noen andre
         booking_for: "Denne reservasjonen er for:"
+        booking_for_label: Bestiller for
+        cancel: Avbryt
+        change: Endre
+        edit: Rediger
+        edit_profile: Rediger
         logged_in_as: "Bestiller som %{person}"
+        logged_in_as_short: Logget inn som
+        logout: Logg ut
         myself: Meg selv
+        not_you_logout: Ikke deg? Logg ut
         someone_else: Noen andre (legg til ny)
         submit: Bestill
         terms: vilkår for reservasjonen
         title: Reservasjon av %{service}
+        who_is_booking_for: Hvem er denne bestillingen for?
+        yourself: Deg selv
       new_person:
         email_address: E-postadresse
         phone_number: Mobilnummer
