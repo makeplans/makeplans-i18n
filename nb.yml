@@ -356,6 +356,7 @@ nb:
         billing_vat_no: Organisasjonsnummer
         booking_form: Egendefinert reservasjonskjema
         booking_site_locale: Språk (Styrer også tall- og dataformatering)
+        booking_site_person_form: Egendefinert registreringsskjema for kunde
         calendar_event_text: Visningstekst for reservasjon i kalender
         cancellation_period: Avbestillingsfrist
         category_form: Egendefinerte kategorifelter

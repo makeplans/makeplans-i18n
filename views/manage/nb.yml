@@ -374,6 +374,7 @@ nb:
         custom_messages_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
       edit_booking_site:
         booking_form_info_html: Det du fyller ut her vil i sin helhet erstatte standard skjema som benyttes på bookingsiden. For å endre skjemaet som vises ved manuell oppretting av reservasjoner så gjøres det under "Egendefinerte felter". Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>. Husk å legge til nødvendige felter til verifisering som navn og epost/telefonnummer.
+        booking_site_person_form_info_html: Tilpass registreringsskjema for kunde for Timisoara og Lviv tema. Bruker samme syntaks som reservasjonsskjema.
         booking_site_info_html: Deres bookingside er tilgjengelig på %{url}.
         booking_site_locale_default: Bruk språk på konto
         cancellation: Avbestillling

@@ -374,6 +374,7 @@ en:
         custom_messages_info_html: You can merge relevant data here. For more information please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
       edit_booking_site:
         booking_form_info_html: Contact customer service for help. Documentation is available at <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>.
+        booking_site_person_form_info_html: Customize person registration form for Timisoara and Lviv themes. Uses same syntax as reservation form.
         booking_site_info_html: Your booking site is available at %{url}.
         booking_site_locale_default: Use account language
         cancellation: Cancellation

@@ -358,6 +358,7 @@ en:
         billing_vat_no: VAT nr
         booking_form: Custom reservation form
         booking_site_locale: Language (Also controls number and data formatting)
+        booking_site_person_form: Custom person registration form
         calendar_event_text: Display text for reservation in calendar
         cancellation_period: Cancellation period
         category_form: Custom category fields
