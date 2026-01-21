@@ -61,6 +61,16 @@ nb:
       alt:
         go_back: Gå tilbake
       step: Steg %{step} / %{steps}
+    gift_cards:
+      index:
+        buy: Kjøp
+        header: Gavekort
+      new:
+        add_to_cart: Legg i handlekurv
+        description: Kjøp et gavekort til noen du er glad i. Velg beløp nedenfor.
+        header: Kjøp gavekort
+        value_label: Beløp
+        value_placeholder: Skriv inn beløp
     layouts:
       application:
         about_makeplans: Om Makeplans
@@ -68,14 +78,98 @@ nb:
         alt:
           account: Konto
           cancel: Kanseller
+          cart: Handlekurv
           menu: Meny
         booking_site_footer: Reservasjonssystem for %{name}
+        cart: Handlekurv (%{count})
         close: Lukk
         get_support: Få støtte
         menu: Meny
         privacy_policy: Personvernpolicy
         terms_conditions: Vilkår og betingelser
         title: Online reservasjon for %{name}
+    order_cart:
+      checkout:
+        applied_gift_cards: Brukte gavekort
+        apply: Bruk
+        complete_order: Fullfør bestilling
+        continue_to_payment: Fortsett til betaling
+        empty_cart: Tøm handlekurv
+        gift_card_code: Gavekortkode
+        gift_card_code_placeholder: "XXXX-0000-XXXX"
+        header: Kasse
+        order_total: Totalsum
+        payment_method: Betalingsmetode
+        remaining_total: Gjenstående beløp
+        remove: Fjern
+        use_gift_card: Bruk gavekort
+        your_gift_cards: Dine gavekort
+      show:
+        clear_cart: Tøm handlekurv
+        confirm_order: Bekreft bestilling
+        empty_cart: Handlekurven din er tom.
+        header: Handlekurv
+        remove: Fjern
+        total: Totalt
+    order_payments:
+      failure:
+        header: Betaling mislyktes
+        message: Dessverre kunne ikke betalingen din behandles.
+        try_again: Prøv igjen
+      pay_later:
+        payment:
+          back: Tilbake
+          complete_order: Fullfør bestilling
+          description: Bestillingen din blir bekreftet. Betaling kan gjøres senere.
+          header: Betal senere
+      stripe:
+        awaiting_payment:
+          header: Behandler betaling
+          message: Vennligst vent mens vi behandler betalingen din...
+        payment:
+          back: Tilbake
+          header: Kortbetaling
+          new_card: Bruk et nytt kort
+          pay_now: Betal nå
+          payment_details_html: "Betalingen behandles sikkert via %{provider}. Alle beløp er i %{currency}."
+          save_card: Lagre dette kortet for fremtidige betalinger
+          select_card: Velg et lagret kort
+      vipps:
+        awaiting_payment:
+          body: Vennligst vent mens vi verifiserer transaksjonen.
+          error: Vi kan ikke verifisere betalingen din. Vennligst kontakt kundeservice med referansenummer %{order_id}.
+          title: Verifiserer betalingen din
+        payment:
+          back: Tilbake
+          header: Vipps-betaling
+          pay_now: Betal med Vipps
+    orders:
+      index:
+        header: Mine bestillinger
+        no_orders: Du har ingen bestillinger ennå.
+        order_number: "Bestilling #%{number}"
+      payment:
+        amount_to_pay: Beløp å betale
+        fiken: Faktura (Fiken)
+        front_go: FrontGo
+        no_payment_methods: Ingen betalingsmetoder tilgjengelig.
+        pay_later: Betal senere
+        stripe: Bankkort
+        vipps: Vipps
+      show:
+        back_to_orders: Tilbake til bestillinger
+        confirmation_message: Takk for din bestilling!
+        each: stk
+        gift_card_code: Gavekortkode
+        gift_card_value: Verdi
+        gift_cards: Gavekort
+        header: Ordrebekreftelse
+        order_details: Ordredetaljer
+        payment_details: Betaling
+        total: Totalt
+        transaction_gift_card: "Gavekort (%{code})"
+        transaction_payment: Betaling
+        transaction_refund: Refusjon
     person_sessions:
       enter_perishable_token:
         confirm_booking: Bekreft reservasjon
@@ -93,10 +187,38 @@ nb:
         submit: Send verifiseringsepost
       verification_method_sms:
         submit: Send verifiseringskode
+    products:
+      index:
+        header: Produkter
+      show:
+        add_to_cart: Legg i handlekurv
+        price: Pris
     profile:
+      children:
+        index:
+          add_person: Legg til person
+          alt:
+            right: Høyre
+          header: Personer du kan bestille for
+          no_children: Du har ikke lagt til noen å bestille for ennå.
+        new:
+          errors_header: 'Det oppstod feil:'
+          submit: Lagre og fortsett
+          subtitle: Vennligst fyll ut informasjonen for personen du vil bestille for.
+          title: Legg til person
+      credit_card_list:
+        title: Betalingsmetoder
+      gift_card_list:
+        balance: Saldo
+        code: Kode
+        no_gift_cards: Du har ingen gavekort.
+        purchased_body: Gavekort du har kjøpt som ikke er innløst ennå.
+        purchased_title: Kjøpte gavekort
+        title: Mine gavekort
       index:
         book_again: Reserver igjen
         canceled: Kansellert
+        waiting: Venter
         tabs:
           all: Alle
           cancelled: Kansellerte
@@ -114,12 +236,7 @@ nb:
           right: Høyre
         change_language: Endre språk
         logout: Logg ut
-      children:
-        new:
-          errors_header: 'Det oppstod feil:'
-          submit: Lagre og fortsett
-          subtitle: Vennligst fyll ut informasjonen for personen du vil bestille for.
-          title: Legg til person
+        my_bookings: Mine reservasjoner
     services:
       available_dates:
         title: Velg dato og tid

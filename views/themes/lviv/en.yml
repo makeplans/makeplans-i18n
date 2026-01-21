@@ -61,6 +61,16 @@ en:
       alt:
         go_back: Go back
       step: Step %{step} / %{steps}
+    gift_cards:
+      index:
+        buy: Buy
+        header: Gift Cards
+      new:
+        add_to_cart: Add to cart
+        description: Purchase a gift card for someone special. Choose the amount below.
+        header: Buy Gift Card
+        value_label: Value
+        value_placeholder: Enter amount
     layouts:
       application:
         about_makeplans: About Makeplans
@@ -68,14 +78,98 @@ en:
         alt:
           account: Account
           cancel: Cancel
+          cart: Cart
           menu: Menu
         booking_site_footer: Booking site for %{name}
+        cart: Cart (%{count})
         close: Close
         get_support: Get support
         menu: Menu
         privacy_policy: Privacy policy
         terms_conditions: Terms & Conditions
         title: Online booking for %{name}
+    order_cart:
+      checkout:
+        applied_gift_cards: Applied Gift Cards
+        apply: Apply
+        complete_order: Complete Order
+        continue_to_payment: Continue to Payment
+        empty_cart: Empty cart
+        gift_card_code: Gift Card Code
+        gift_card_code_placeholder: "XXXX-0000-XXXX"
+        header: Checkout
+        order_total: Order Total
+        payment_method: Payment Method
+        remaining_total: Remaining Total
+        remove: Remove
+        use_gift_card: Use Gift Card
+        your_gift_cards: Your Gift Cards
+      show:
+        clear_cart: Empty cart
+        confirm_order: Confirm order
+        empty_cart: Your cart is empty.
+        header: Shopping Cart
+        remove: Remove
+        total: Total
+    order_payments:
+      failure:
+        header: Payment Failed
+        message: Unfortunately, your payment could not be processed.
+        try_again: Try Again
+      pay_later:
+        payment:
+          back: Back
+          complete_order: Complete Order
+          description: Your order will be confirmed. Payment can be made later.
+          header: Pay Later
+      stripe:
+        awaiting_payment:
+          header: Processing Payment
+          message: Please wait while we process your payment...
+        payment:
+          back: Back
+          header: Card Payment
+          new_card: Use a new card
+          pay_now: Pay Now
+          payment_details_html: "Payment is processed securely using %{provider}. All amounts are in %{currency}."
+          save_card: Save this card for future payments
+          select_card: Select a saved card
+      vipps:
+        awaiting_payment:
+          body: Please wait while we verify the transaction.
+          error: We are unable to verify your payment. Please contact customer service with the reference number %{order_id}.
+          title: Verifying your payment
+        payment:
+          back: Back
+          header: Vipps Payment
+          pay_now: Pay with Vipps
+    orders:
+      index:
+        header: My Orders
+        no_orders: You have no orders yet.
+        order_number: "Order #%{number}"
+      payment:
+        amount_to_pay: Amount to Pay
+        fiken: Invoice (Fiken)
+        front_go: FrontGo
+        no_payment_methods: No payment methods available.
+        pay_later: Pay Later
+        stripe: Credit Card
+        vipps: Vipps
+      show:
+        back_to_orders: Back to orders
+        confirmation_message: Thank you for your order!
+        each: each
+        gift_card_code: Gift Card Code
+        gift_card_value: Value
+        gift_cards: Gift Cards
+        header: Order Confirmation
+        order_details: Order Details
+        payment_details: Payment
+        total: Total
+        transaction_gift_card: "Gift Card (%{code})"
+        transaction_payment: Payment
+        transaction_refund: Refund
     person_sessions:
       enter_perishable_token:
         confirm_booking: Confirm booking
@@ -93,10 +187,38 @@ en:
         submit: Send verification email
       verification_method_sms:
         submit: Send verification code
+    products:
+      index:
+        header: Products
+      show:
+        add_to_cart: Add to cart
+        price: Price
     profile:
+      children:
+        index:
+          add_person: Add person
+          alt:
+            right: Right
+          header: People you can book for
+          no_children: You have not added anyone to book for yet.
+        new:
+          errors_header: 'Errors occurred:'
+          submit: Save and continue
+          subtitle: Please fill in the data for the person you want to book for.
+          title: Add person
+      credit_card_list:
+        title: Payment Methods
+      gift_card_list:
+        balance: Balance
+        code: Code
+        no_gift_cards: You have no gift cards.
+        purchased_body: Gift cards you have purchased that have not been redeemed yet.
+        purchased_title: Purchased Gift Cards
+        title: My Gift Cards
       index:
         book_again: Book again
         canceled: Canceled
+        waiting: Waiting
         tabs:
           all: All
           cancelled: Cancelled
@@ -114,15 +236,7 @@ en:
           right: Right
         change_language: Change language
         logout: Logout
-      children:
-        index:
-          alt:
-            right: Right
-        new:
-          errors_header: 'Errors occurred:'
-          submit: Save and continue
-          subtitle: Please fill in the data for the person you want to book for.
-          title: Add person
+        my_bookings: My Bookings
     services:
       available_dates:
         title: Select date & time
