@@ -47,6 +47,7 @@ nb:
           calendar: Legg til i kalender
           profile: Profil
         cancel_booking: Avbestill reservasjon
+        reschedule: Endre tidspunkt
         title: Reservasjonsdetaljer
     categories:
       index:
