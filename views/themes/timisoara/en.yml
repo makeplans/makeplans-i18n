@@ -34,11 +34,6 @@ en:
         title: Reservation of %{service}
         who_is_booking_for: Who is this booking for?
         yourself: Yourself
-      new_person:
-        email_address: Email address
-        phone_number: Mobile phone number
-        submit: Confirm reservation
-        title: Account information
       payment_stripe:
         title: Payment
       pre_payment:

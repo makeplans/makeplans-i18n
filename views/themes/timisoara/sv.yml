@@ -17,11 +17,6 @@ sv:
         submit: Beställa
         terms: villkoren för reservationen
         title: Reservation av %{service}
-      new_person:
-        email_address: E-postadress
-        phone_number: Mobilnummer
-        submit: Bekräfta bokningen
-        title: Kontoinformation
       payment_stripe:
         title: Betalning
       pre_payment:

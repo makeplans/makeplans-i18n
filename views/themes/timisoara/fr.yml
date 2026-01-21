@@ -17,11 +17,6 @@ fr:
         submit: Réservation complète
         terms: conditions de réservation
         title: Réservation de %{service}
-      new_person:
-        email_address: Adresse e-mail
-        phone_number: Numéro de téléphone mobile
-        submit: Confirmer la réservation
-        title: Informations sur le compte
       payment_stripe:
         title: Paiement
       pre_payment:

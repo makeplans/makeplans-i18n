@@ -34,11 +34,6 @@ nb:
         title: Reservasjon av %{service}
         who_is_booking_for: Hvem er denne bestillingen for?
         yourself: Deg selv
-      new_person:
-        email_address: E-postadresse
-        phone_number: Mobilnummer
-        submit: Bekreft reservasjon
-        title: Kontoinformasjon
       payment_stripe:
         title: Betaling
       pre_payment:
