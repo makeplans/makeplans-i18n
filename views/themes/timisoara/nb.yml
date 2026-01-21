@@ -15,6 +15,7 @@ nb:
       new:
         accept: Jeg godkjenner
         add_another_person: Legg til en annen person
+        page_title: Fullfør bestillingen
         book_for_someone_else: Bestill for noen andre
         booking_for: "Denne reservasjonen er for:"
         booking_for_label: Bestiller for

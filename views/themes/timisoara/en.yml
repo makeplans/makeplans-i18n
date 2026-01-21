@@ -15,6 +15,7 @@ en:
       new:
         accept: I approve
         add_another_person: Add another person
+        page_title: Complete your booking
         book_for_someone_else: Book for someone else
         booking_for: "This booking is for:"
         booking_for_label: Booking for
