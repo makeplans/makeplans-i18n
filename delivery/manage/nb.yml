@@ -342,6 +342,14 @@ nb:
         Mvh
         Makeplans
       subject: Tilgang til ny konto i Makeplans
+    password_modified:
+      footer: Makeplans
+      info: Passordet ditt er endret. Kontakt oss umiddelbart hvis det ikke var deg som utførte denne handlingen.
+      subject: Passord endret
+    email_modified:
+      footer: Makeplans
+      info: E-postadressen din er endret til %{new_email}. Kontakt oss umiddelbart hvis det ikke var deg som utførte denne handlingen.
+      subject: E-postadresse endret
     password_reset:
       footer: Makeplans
       info: Du eller noen andre har lagt inn forespørsel om å nullstille ditt Makeplans-passord. For å fullføre denne prosessen klikk på linken nedenfor.

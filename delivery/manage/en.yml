@@ -332,6 +332,10 @@ en:
       footer: Makeplans
       info: Your password has been modified. Contact us immediately if you did not perform this action.
       subject: Password modified
+    email_modified:
+      footer: Makeplans
+      info: Your email address has been changed to %{new_email}. Contact us immediately if you did not perform this action.
+      subject: Email address modified
     password_reset:
       footer: Makeplans
       info: You or someone else have requested your Makeplans password to be reset. To complete the password reset please click the link below.
