@@ -218,6 +218,7 @@ nb:
       index:
         book_again: Reserver igjen
         canceled: Kansellert
+        my_profile: Min profil
         waiting: Venter
         tabs:
           all: Alle

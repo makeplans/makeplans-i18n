@@ -218,6 +218,7 @@ en:
       index:
         book_again: Book again
         canceled: Canceled
+        my_profile: My profile
         waiting: Waiting
         tabs:
           all: All
