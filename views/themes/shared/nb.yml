@@ -14,6 +14,8 @@ nb:
         message: Vennligst vent mens vi behandler betalingen din...
     generic:
       close: lukk
+      payment:
+        card: Kort
     bookings:
       expired:
         info: Reservasjoner må bekreftes innen %{expires_in} minutter. Vennligst prøv igjen.

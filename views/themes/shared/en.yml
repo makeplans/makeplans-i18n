@@ -22,6 +22,7 @@ en:
         add_card_header: Save card
         add_card_info: Add your payment card so you can easily and automatically pay after the booking.
         add_card_submit: Save card
+        card: Card
         awaiting:
           body: Please wait while the transaction is confirmed.
           error: We were unable to confirm that the payment was completed. Please contact customer service via https://makeplans.no and provide reference number %{booking_id}.
