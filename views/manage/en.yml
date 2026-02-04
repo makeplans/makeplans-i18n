@@ -475,6 +475,8 @@ en:
         calendar: Calendar
         header: UX
         info: Visual settings
+        misc: Miscellaneous
+        naming: Custom titles
         settings:
           booking_requires_status: Show link for reservations without status in agenda
           booking_site_order_flow: Use new order flow on booking site

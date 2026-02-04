@@ -475,6 +475,8 @@ nb:
         calendar: Kalender
         header: UX
         info: Dette er kun visuelle innstillinger.
+        misc: Diverse
+        naming: Egendefinerte titler
         settings:
           booking_requires_status: Vis link til reservasjoner uten status i agenda
           booking_site_order_flow: Bruk ny ordreflyt på bookingsiden
