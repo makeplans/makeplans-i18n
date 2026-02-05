@@ -219,7 +219,7 @@ nb:
           braintree: Betalt med Braintree
           frontgo: Betalt med FrontGO
           stripe: Betalt med Stripe
-          vipps: Vipps
+          vipps: Betalt med Vipps
         performed_by: av %{name}
         person:
           address: Adresse
@@ -244,7 +244,9 @@ nb:
           open_invoice: Åpne ordre i 24SevenOffice
           processing: Ordre opprettes i 24SevenOffice. Dette kan ta opptil 1-2 minutter.
         vipps:
+          awaiting: Vipps betalingsforespørsel sendt. Venter på svar.
           processing: Behandler
+          send_request: Send Vipps betalingsforespørsel
         visma_eaccounting:
           create_invoice: Opprett tilbud i Visma eAccounting
           created: Tilbud er opprettet i Visma eAccounting

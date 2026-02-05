@@ -219,7 +219,7 @@ en:
           braintree: Paid with Braintree
           frontgo: Paid with FrontGO
           stripe: Paid with Stripe
-          vipps: Vipps
+          vipps: Paid with Vipps
         performed_by: by %{name}
         person:
           address: Address
@@ -244,7 +244,9 @@ en:
           open_invoice: Open order in 24SevenOffice
           processing: Order is being created in 24SevenOffice. This can take a few minutes.
         vipps:
+          awaiting: Vipps payment request sent. Awaiting response.
           processing: Processing
+          send_request: Send Vipps payment request
         visma_eaccounting:
           create_invoice: Create order in Visma eAccounting
           created: Invoice is created in Visma eAccounting
