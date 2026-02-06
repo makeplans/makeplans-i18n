@@ -717,6 +717,7 @@ nb:
         activate_settings_2: Aktiver innstillinger for Extensor Online Booking versjon 2
         activate_settings_3: Aktiver innstillinger for Extensor Online Booking versjon 3
         activate_settings_4: Aktiver innstillinger for Extensor Online Booking versjon 4
+        activate_settings_5: Aktiver innstillinger for Extensor Online Booking versjon 5
         info: For å aktivere synkronisering med Extensor kreves det installasjon av Extensor Online Booking. Klikk på linken nedenfor for å starte prosessen. Du vil bli kontaktet av Extensor.
         reactive_settings: Reaktiver innstillinger for Extensor Online Booking.
         version: Makeplans er satt opp til å fungere med versjon %{version} av Extensor Online Booking.
