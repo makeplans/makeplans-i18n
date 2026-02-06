@@ -330,7 +330,10 @@ en:
         service_id: Service
         state: Status
         status: Status
+        terms_accept: I approve
         terms_accepted: I approve the terms
+        terms_close: Close
+        terms_link: terms for the reservation
         title: Title
         verification_code: Verification code
       category:

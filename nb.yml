@@ -328,7 +328,10 @@ nb:
         service_id: Tjeneste
         state: Status
         status: Status
+        terms_accept: Jeg godkjenner
         terms_accepted: Jeg godkjenner vilkårene
+        terms_close: Lukk
+        terms_link: vilkår for reservasjonen
         title: Tittel
         verification_code: Verifikasjonskode
       category:
