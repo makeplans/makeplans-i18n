@@ -13,7 +13,7 @@ nb:
         title: Din reservasjon er kansellert
         update_calendar: Oppdater min kalender
       new:
-        accept: Jeg godkjenner
+        accept: Jeg aksepterer vilkårene og betingelsene
         add_another_person: Legg til en annen person
         page_title: Fullfør bestillingen
         book_for_someone_else: Bestill for noen andre
@@ -30,7 +30,7 @@ nb:
         not_you_logout: Ikke deg? Logg ut
         someone_else: Noen andre (legg til ny)
         submit: Bestill
-        terms: vilkår for reservasjonen
+        terms: Les vilkår for reservasjonen
         title: Reservasjon av %{service}
         who_is_booking_for: Hvem er denne bestillingen for?
         yourself: Deg selv

@@ -40,7 +40,9 @@ en:
         info: Bookings must be verified within %{expires_in} minutes. Please try again.
         title: Booking expired
       new:
+        accept: I accept the terms and conditions
         email_suggestion_html: "<p>Did you mean<span> %{suggestions}</span>?</p>"
+        terms: Read terms for reservation
       payment_invoice:
         header: Payment by invoice
         info: Your booking for %{service} %{booking} will be paid for by invoice.

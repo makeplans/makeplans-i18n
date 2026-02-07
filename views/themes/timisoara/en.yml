@@ -13,7 +13,7 @@ en:
         title: Your reservation was cancelled
         update_calendar: Update my calendar
       new:
-        accept: I approve
+        accept: I accept the terms and conditions
         add_another_person: Add another person
         page_title: Complete your booking
         book_for_someone_else: Book for someone else
@@ -30,7 +30,7 @@ en:
         not_you_logout: Not you? Log out
         someone_else: Someone else (add new)
         submit: Complete booking
-        terms: terms for the reservation
+        terms: Read terms for reservation
         title: Reservation of %{service}
         who_is_booking_for: Who is this booking for?
         yourself: Yourself

@@ -21,7 +21,9 @@ nb:
         info: Reservasjoner må bekreftes innen %{expires_in} minutter. Vennligst prøv igjen.
         title: Reservasjon utløpt
       new:
+        accept: Jeg aksepterer vilkårene og betingelsene
         email_suggestion_html: "<p>Mente du <span> %{suggestions}</span>?</p>"
+        terms: Les vilkår for reservasjonen
       payment_stripe:
         submit: Betal
       show:
