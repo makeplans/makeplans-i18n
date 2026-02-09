@@ -469,9 +469,6 @@ lv:
         info: Lai aktivizētu sinhronizāciju ar Extensor, jāinstalē Extensor Online Booking. Noklikšķiniet uz saites zemāk, lai sāktu procesu. Ar jums sazināsies Extensor.
         reactive_settings: Atkārtoti aktivizējiet iestatījumus no ekstensora tiešsaistes rezervēšanas.
         version: Makeplans ir konfigurēts darbam ar Extensor Online Booking versiju %{version}.
-      fakturo:
-        password: Parole
-        username: Lietotājvārds
       fiken:
         active: Aktīvs
         api_not_activated: Jums ir jāaktivizē API Fiken.

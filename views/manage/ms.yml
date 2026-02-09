@@ -477,9 +477,6 @@ ms:
         info: Untuk mengaktifkan penyegerakan dengan Extensor anda mesti memasang Extensor Online Booking. Klik pautan di bawah untuk memulakan proses. Anda akan dihubungi oleh Extensor.
         reactive_settings: Aktifkan semula tetapan untuk Pemesanan Dalam Talian Extensor.
         version: Makeplans dikonfigurasi untuk berfungsi dengan versi %{version} dari Extensor Online Booking.
-      fakturo:
-        password: Kata Laluan
-        username: Nama pengguna
       fiken:
         active: Aktif
         api_not_activated: Anda mesti mengaktifkan API di Fiken.

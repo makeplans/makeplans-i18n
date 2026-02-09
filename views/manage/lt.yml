@@ -477,9 +477,6 @@ lt:
         info: Norėdami suaktyvinti sinchronizavimą su Extensor, turite įdiegti Extensor Online Booking. Norėdami pradėti procesą, spustelėkite toliau pateiktą nuorodą. Su jumis susisieks Extensor.
         reactive_settings: Iš naujo suaktyvinkite nustatymus nuo Extensor internetinio rezervavimo.
         version: Makeplans sukonfigūruota veikti su Extensor Online Booking versija %{version}.
-      fakturo:
-        password: Slaptažodis
-        username: Vartotojo vardas
       fiken:
         active: Aktyvus
         api_not_activated: Fiken turite suaktyvinti API.

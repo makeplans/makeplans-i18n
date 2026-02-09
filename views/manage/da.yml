@@ -478,9 +478,6 @@ da:
         info: For at aktivere synkronisering med Extensor er installation af Extensor Online Booking påkrævet. Klik på nedenstående link for at starte processen. Du vil blive kontaktet af Extensor.
         reactive_settings: Genaktiver indstillingerne for Online Booking af Extensor.
         version: Makeplans er indstillet til at arbejde med version %{version} af Extensor Online Booking.
-      fakturo:
-        password: Adgangskode
-        username: Brugernavn
       fiken:
         active: Aktiv
         api_not_activated: Du skal aktivere API-modulet i Fiken.

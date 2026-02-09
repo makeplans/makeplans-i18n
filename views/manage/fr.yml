@@ -469,9 +469,6 @@ fr:
         info: Pour activer la synchronisation avec Extensor, vous devez installer Extensor Online Booking. Cliquez sur le lien ci-dessous pour démarrer le processus. Vous serez contacté par Extensor.
         reactive_settings: Réactivez les paramètres de la réservation en ligne Extensor.
         version: Makeplans est configuré pour fonctionner avec la version %{version} d'Extensor Online Booking.
-      fakturo:
-        password: Mot de passe
-        username: Nom d'utilisateur
       fiken:
         active: actif
         api_not_activated: Vous devez activer l'API dans Fiken.

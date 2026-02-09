@@ -477,9 +477,6 @@ he:
         info: כדי להפעיל סינכרוניזציה עם Extensor עליך להתקין את ההזמנה Online Extensor. לחץ על הקישור למטה כדי להתחיל בתהליך. אליך יצור קשר באמצעות Extensor.
         reactive_settings: הפעל מחדש את ההגדרות לפני הזמנה מקוונת של Extensor.
         version: Makeplans מוגדר לעבוד עם גרסת %{version} של Extensor Online Booking.
-      fakturo:
-        password: סיסמה
-        username: שם משתמש
       fiken:
         active: פָּעִיל
         api_not_activated: עליך להפעיל את ה- API ב- Fiken.
