@@ -178,11 +178,6 @@ en:
         send_notification: 'Notification:'
         send_reminder: 'Reminder:'
         sms: SMS
-      izettle:
-        close_info: Close this window to go back to the reservation.
-        error: 'Error from iZettle: %{error}'
-        result_header: iZettle
-        success: Payment registered.
       no_status:
         headline: List of reservations without status
         no_reservations: No reservations without status
@@ -204,9 +199,6 @@ en:
           created: Invoice is created in Fiken
           open_invoice: Open invoice in Fiken
           processing: Invoice is being created in Fiken. This can take a few minutes.
-        izettle:
-          pay: Receive payment with iZettle
-          progress_link: Click here to continue.
         log: Log
         message:
           enqueued: enqueued
@@ -751,9 +743,6 @@ en:
         api: API
         header: Integrations
         web_hooks: Webhooks
-      izettle:
-        active: Active
-        info: To use iZettle please define a price on the service you provide. It will then be possible to click "make payment with iZettle" on a reservation.
       mailchimp:
         account: List ID
         connect_info: 'Select a mailing list where new customers are added as subscibers:'

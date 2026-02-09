@@ -178,11 +178,6 @@ nb:
         send_notification: 'Varsel:'
         send_reminder: 'Påminnelse:'
         sms: SMS
-      izettle:
-        close_info: Lukk dette vinduet for å tilbake til reservasjonen.
-        error: 'Feil fra iZettle: %{error}'
-        result_header: iZettle
-        success: Betaling registrert.
       no_status:
         headline: Liste over reservasjoner uten status
         no_reservations: Fant ingen reservasjoner uten status
@@ -204,9 +199,6 @@ nb:
           created: Faktura er opprettet i Fiken
           open_invoice: Åpne faktura i Fiken
           processing: Faktura opprettes i Fiken. Dette kan ta opptil 1-2 minutter.
-        izettle:
-          pay: Motta betaling med iZettle
-          progress_link: Trykk her for å fortsette.
         log: Historikk
         message:
           enqueued: venter
@@ -746,9 +738,6 @@ nb:
         api: API
         header: Integrasjoner
         web_hooks: Webhooks
-      izettle:
-        active: Aktiv
-        info: For å markere en reservasjon som betalt med iZettle må du definere pris på tjenesten du tilbyr. Du kan så klikke på linken "betal med iZettle" på en reservasjon for å gjennomføre betaling med iZettle.
       mailchimp:
         account: List ID
         connect_info: 'Velg epost-liste hvor nye kunder blir lagt til som abbonnement:'

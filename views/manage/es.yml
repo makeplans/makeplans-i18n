@@ -175,11 +175,6 @@ es:
         send_notification: 'Notificación:'
         send_reminder: 'Recordatorio:'
         sms: SMS
-      izettle:
-        close_info: Cierre esta ventana para volver a la reservación.
-        error: 'Error de iZettle: %{error}'
-        result_header: iZettle
-        success: Pago registrado.
       show:
         amount: Precio total
         audit:
@@ -198,9 +193,6 @@ es:
           created: La factura se crea en Fiken
           open_invoice: Factura abierta en Fiken
           processing: La factura se está creando en Fiken. Esto puede tardar unos minutos.
-        izettle:
-          pay: Reciba el pago con iZettle
-          progress_link: Clic aquí para continuar.
         log: Iniciar sesión
         message:
           enqueued: en cola
@@ -659,9 +651,6 @@ es:
         api: API
         header: Integraciones
         web_hooks: Webhooks
-      izettle:
-        active: Aktice
-        info: Para utilizar iZettle, defina un precio para el servicio que proporciona. Entonces será posible hacer clic en "realizar el pago con iZettle" en una reservación.
       mailchimp:
         account: ID de lista
         connect_info: 'Seleccione una lista de correo donde se agregan nuevos clientes como suscriptores:'

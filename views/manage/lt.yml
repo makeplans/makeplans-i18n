@@ -153,11 +153,6 @@ lt:
         send_notification: 'Pranešimas:'
         send_reminder: 'Priminimas:'
         sms: trumpoji žinutė
-      izettle:
-        close_info: Uždarykite šį langą, kad grįžtumėte į užsakymą.
-        error: 'IZettle klaida: %{error}'
-        result_header: iZettle
-        success: Mokėjimas užregistruotas.
       show:
         amount: Visa kaina
         booked_from: Nuo
@@ -169,9 +164,6 @@ lt:
           created: Sąskaita yra sukurta Fiken
           open_invoice: Atidaryti sąskaitą faktūrą Fiken
           processing: Fiken kuriama sąskaita faktūra. Tai gali užtrukti kelias minutes.
-        izettle:
-          pay: Gaukite mokėjimą naudodami iZettle
-          progress_link: Jei norite tęsti, spustelėkite čia.
         log: Žurnalas
         paid_with:
           braintree: Mokama su Braintree
@@ -500,9 +492,6 @@ lt:
         api: API
         header: Integracijos
         web_hooks: Webhooks
-      izettle:
-        active: Aktice
-        info: Norėdami naudoti iZettle, prašome apibrėžti jūsų teikiamos paslaugos kainą. Tada rezervacijoje bus galima spustelėti "atlikti mokėjimą naudojant iZettle".
       mailchimp:
         account: Sąrašo ID
         connect_info: Pasirinkite adresatų sąrašą, kuriame nauji klientai bus pridėti kaip antriniai.

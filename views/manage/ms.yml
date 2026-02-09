@@ -153,11 +153,6 @@ ms:
         send_notification: 'Pemberitahuan:'
         send_reminder: 'Peringatan:'
         sms: SMS
-      izettle:
-        close_info: Tutup tetingkap ini untuk kembali ke tempahan.
-        error: 'Ralat dari iZettle: %{error}'
-        result_header: iZettle
-        success: Pembayaran didaftarkan.
       show:
         amount: Harga keseluruhan
         booked_from: Dari
@@ -169,9 +164,6 @@ ms:
           created: Invois dibuat di Fiken
           open_invoice: Buka invois di Fiken
           processing: Invois sedang dibuat di Fiken. Ini boleh mengambil masa beberapa minit.
-        izettle:
-          pay: Terima pembayaran dengan iZettle
-          progress_link: Klik di sini untuk meneruskan.
         log: Log
         paid_with:
           braintree: Dibayar dengan Braintree
@@ -500,9 +492,6 @@ ms:
         api: API
         header: Integrasi
         web_hooks: Webhooks
-      izettle:
-        active: Aktice
-        info: Untuk menggunakan iZettle sila tentukan harga pada perkhidmatan yang anda berikan. Kemudian, klik "buat pembayaran dengan iZettle" untuk membuat tempahan.
       mailchimp:
         account: ID Senarai
         connect_info: 'Pilih senarai mel di mana pelanggan baru ditambahkan sebagai pelanggan:'

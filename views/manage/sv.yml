@@ -176,11 +176,6 @@ sv:
         send_notification: 'Lägga märke till:'
         send_reminder: 'Påminnelse:'
         sms: SMS
-      izettle:
-        close_info: Stäng det här fönstret för att återgå till bokningen.
-        error: 'Fel från iZettle: %{error}'
-        result_header: iZettle
-        success: Betalning registrerad.
       show:
         amount: Totalbelopp
         audit:
@@ -199,9 +194,6 @@ sv:
           created: En faktura har skapats i Fiken
           open_invoice: Öppna faktura i Fiken
           processing: En faktura skapas i Fiken. Det kan ta upp till 1-2 minuter.
-        izettle:
-          pay: Ta emot betalning med iZettle
-          progress_link: Klicka här för att fortsätta.
         log: Historik
         message:
           enqueued: väntan
@@ -654,9 +646,6 @@ sv:
         api: API
         header: Integrationer
         web_hooks: Webhooks
-      izettle:
-        active: Aktiva
-        info: För att använda iZettle vänligen ange ett pris för den tjänst du erbjuder. Det blir då möjligt att klicka på "betala med iZettle" på en bokning.
       mailchimp:
         account: Lista över ID
         connect_info: 'Välj e-postlista där nya kunder läggs till som prenumeration:'

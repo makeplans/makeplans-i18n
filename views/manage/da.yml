@@ -153,11 +153,6 @@ da:
         send_notification: 'Varsel:'
         send_reminder: 'Påmindelse:'
         sms: SMS
-      izettle:
-        close_info: Luk dette vindue for at vende tilbage til reservationen.
-        error: 'Fejl fra iZettle: %{error}'
-        result_header: iZettle
-        success: Betaling registreret.
       show:
         amount: Total pris
         booked_from: Fra
@@ -169,9 +164,6 @@ da:
           created: Der er oprettet en faktura i Fiken
           open_invoice: Åben faktura i Fiken
           processing: En faktura oprettes i Fiken. Dette kan tage op til 1-2 minutter.
-        izettle:
-          pay: Modtag betaling med iZettle
-          progress_link: Klik her for at fortsætte.
         log: Historie
         paid_with:
           braintree: Betalt med Braintree
@@ -501,9 +493,6 @@ da:
         api: API
         header: Integrationer
         web_hooks: Webhooks
-      izettle:
-        active: Aktiv
-        info: For at markere en reservation som betalt med iZettle skal du definere prisen på den service, du tilbyder. Du kan derefter klikke på linket "betal med iZettle" på en reservation for at gennemføre betalingen med iZettle.
       mailchimp:
         account: Liste-ID
         connect_info: 'Vælg e-mail-liste, hvor nye kunder tilføjes som abonnement:'
