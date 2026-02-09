@@ -458,10 +458,6 @@ da:
         list_id: Liste-ID
       connect_error: Integrationen kunne ikke gennemføres. Prøv at slette, og prøv igen.
       connected: Denne tjeneste er forbundet.
-      dokus:
-        account: Konto
-        password: Adgangskode
-        username: Brugernavn
       extensor:
         activate: Begynd at bruge Extensor-integration
         activate_settings_2: Aktiver indstillinger for Extensor Online Booking version 2

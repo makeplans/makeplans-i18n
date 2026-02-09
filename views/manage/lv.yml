@@ -450,10 +450,6 @@ lv:
         list_id: Saraksta ID
       connect_error: Nevar pabeigt integrāciju. Lūdzu, izdzēsiet integrāciju un mēģiniet vēlreiz.
       connected: Šis pakalpojums ir savienots.
-      dokus:
-        account: Konts
-        password: Parole
-        username: Lietotājvārds
       extensor:
         activate: Sāciet izmantot Extensor Online Booking integrāciju
         activate_settings_2: Aktivizējiet Extensor Online Booking 2. versijas iestatījumus

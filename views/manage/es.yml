@@ -616,10 +616,6 @@ es:
         list_id: ID de lista
       connect_error: No se pudo completar la integración. Elimina la integración y vuelve a intentarlo.
       connected: Este servicio está conectado.
-      dokus:
-        account: Cuenta
-        password: Contraseña
-        username: Nombre de usuario
       extensor:
         activate: Comience a usar la integración de Extensor Online Booking
         activate_settings_2: Activar la configuración para Extensor Online Booking versión 2

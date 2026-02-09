@@ -458,10 +458,6 @@ lt:
         list_id: Sąrašo ID
       connect_error: Nepavyko užbaigti integracijos. Ištrinkite integraciją ir bandykite dar kartą.
       connected: Ši paslauga prijungta.
-      dokus:
-        account: Sąskaita
-        password: Slaptažodis
-        username: Vartotojo vardas
       extensor:
         activate: Pradėkite naudotis Extensor Online Booking integracija
         activate_settings_2: Suaktyvinkite Extensor Online Booking 2 versijos nustatymus

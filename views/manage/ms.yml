@@ -458,10 +458,6 @@ ms:
         list_id: ID Senarai
       connect_error: Tidak dapat menyelesaikan integrasi. Sila padamkan integrasi dan cuba lagi.
       connected: Perkhidmatan ini disambungkan.
-      dokus:
-        account: Akaun
-        password: Kata Laluan
-        username: Nama pengguna
       extensor:
         activate: Mula menggunakan integrasi Pemesanan Dalam Talian Extensor
         activate_settings_2: Aktifkan tetapan untuk Extensor Online Booking versi 2

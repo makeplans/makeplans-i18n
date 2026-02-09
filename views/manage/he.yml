@@ -458,10 +458,6 @@ he:
         list_id: מזהה רשימה
       connect_error: לא ניתן להשלים את האינטגרציה. מחק את השילוב ונסה שוב.
       connected: שירות זה מחובר.
-      dokus:
-        account: חֶשְׁבּוֹן
-        password: סיסמה
-        username: שם משתמש
       extensor:
         activate: התחל להשתמש בשילוב הזמנות מקוונות של Extensor
         activate_settings_2: הפעל את ההגדרות עבור הזמנה מקוונת של Extensor בגרסה 2

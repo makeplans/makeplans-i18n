@@ -611,10 +611,6 @@ sv:
         list_id: Lista över ID
       connect_error: Det går inte att slutföra integrationen. Var vänlig ta bort den och försök igen.
       connected: Den här tjänsten är ansluten.
-      dokus:
-        account: konto
-        password: Lösenord
-        username: Användarnamn
       extensor:
         activate: Börja använda Extensor-integration
         activate_settings_2: Aktivera inställningar för Extensor Online-bokning version 2

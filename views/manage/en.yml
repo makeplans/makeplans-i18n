@@ -707,10 +707,6 @@ en:
         list_id: List ID
       connect_error: Unable to complete integration. Please delete the integration and try again.
       connected: This service is connected.
-      dokus:
-        account: Account
-        password: Password
-        username: Username
       extensor:
         activate: Start using the Extensor Online Booking integration
         activate_settings_2: Activate settings for Extensor Online Booking version 2

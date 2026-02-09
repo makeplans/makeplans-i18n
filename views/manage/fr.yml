@@ -450,10 +450,6 @@ fr:
         list_id: ID de liste
       connect_error: Impossible de terminer l'intégration. Veuillez supprimer l'intégration et réessayer.
       connected: Ce service est connecté.
-      dokus:
-        account: Compte
-        password: Mot de passe
-        username: Nom d'utilisateur
       extensor:
         activate: Commencez à utiliser l'intégration de réservation en ligne Extensor
         activate_settings_2: Activer les paramètres de la réservation en ligne Extensor version 2

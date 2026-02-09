@@ -702,10 +702,6 @@ nb:
         list_id: List ID
       connect_error: Fikk ikke fullført integrasjonen. Prøv å slette og prøv på nytt.
       connected: Denne tjenesten er tilkoblet.
-      dokus:
-        account: Konto
-        password: Passord
-        username: Brukernavn
       extensor:
         activate: Start å bruke Extensor-integrasjon
         activate_settings_2: Aktiver innstillinger for Extensor Online Booking versjon 2

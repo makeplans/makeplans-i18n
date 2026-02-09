@@ -450,10 +450,6 @@ ru:
         list_id: ID списка
       connect_error: Невозможно завершить интеграцию. Удалите интеграцию и попробуйте еще раз.
       connected: Эта услуга подключена.
-      dokus:
-        account: Счет
-        password: Пароль
-        username: Имя пользователя
       extensor:
         activate: Начните использовать интеграцию Extensor Online Booking
         activate_settings_2: Активируйте настройки для Extensor Online Booking версии 2
