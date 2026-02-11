@@ -399,10 +399,12 @@ en:
         mail_verification: Text in verification email
         mail_verification_subject: Subject in verification email
         mailer_sender: Email sender
+        message_template_form: Message template form
         name: Company name (shown on the booking site)
         next_invoice_nr: Next invoice number
         new_booking_text: Text displayed on confirmation page
         no_availability_text: Text displayed when there is no availability
+        order_form: Custom order fields
         payment_provider: Default payment provider
         person_form: Custom customer fields
         phone_number: Phone number

@@ -521,8 +521,15 @@ en:
           bookings: Reservations
           bookings_all: Reservations (all)
           bookings_visible: Reservations (including cancellations)
+          categories: Categories
+          coupons: Coupons
           events: Events
+          gift_cards: Gift cards
+          message_templates: Message templates
           people: Customers
+          orders: Orders
+          services: Services
+          resources: Resources
         executed: The export is now being sent to your email address. This could take up to 10 minutes if you are exporting a lot of data.
         header: Export data from Makeplans
         info: You will receive an email with a CSV-file attachment.
