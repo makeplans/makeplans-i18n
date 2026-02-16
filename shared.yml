@@ -3,3 +3,6 @@ en:
   time:
     formats:
       db: "%Y-%m-%d %H:%M"
+  date:
+    formats:
+      db: "%Y-%m-%d"
