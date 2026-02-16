@@ -937,6 +937,9 @@ en:
     resources:
       form:
         availability: Default availability
+        delete_warning:
+          one: "This resource has 1 future booking. Deleting will remove the resource and all its bookings. Click delete again to confirm."
+          other: "This resource has %{count} future bookings. Deleting will remove the resource and all its bookings. Click delete again to confirm."
         external_info:
           microsoft_office365_user_id: Microsoft Office 365 user
           zoom_user_id: Zoom user

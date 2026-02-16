@@ -925,6 +925,9 @@ nb:
     resources:
       form:
         availability: Standard tilgjengelighet
+        delete_warning:
+          one: "Denne ressursen har 1 fremtidig bestilling. Sletting vil fjerne ressursen og alle bestillingene. Klikk slett igjen for å bekrefte."
+          other: "Denne ressursen har %{count} fremtidige bestillinger. Sletting vil fjerne ressursen og alle bestillingene. Klikk slett igjen for å bekrefte."
         external_info:
           microsoft_office365_user_id: Microsoft Office 365 bruker
           zoom_user_id: Zoom bruker
