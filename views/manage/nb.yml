@@ -337,6 +337,21 @@ nb:
         in_process:
           header: Tidssoneendring pågår
           info: Alle reservasjoner og meldinger vil bli oppdatert snart. Kjør *ikke* denne funksjonen igjen.
+      migrate_bookings:
+        edit:
+          deactivated: deaktivert
+          error_not_found: En eller begge ressursene ble ikke funnet.
+          error_same_resource: Kilde- og målressurs kan ikke være den samme.
+          from_resource: Fra ressurs
+          header: Flytt reservasjoner
+          info: Flytt alle reservasjoner og arrangementer fra en ressurs til en annen. Dette inkluderer alle tidligere og fremtidige reservasjoner. Det vil ikke bli sendt noen varsler til kundene.
+          migrate: Flytt
+          processing: Behandler
+          to_resource: Til ressurs
+          warning: Er du sikker på at du vil flytte alle reservasjoner og arrangementer? Denne operasjonen kan ikke enkelt angres.
+        update:
+          header: Reservasjoner er flyttet
+          result: "%{bookings_count} reservasjoner og %{events_count} arrangementer ble flyttet fra %{from_resource} til %{to_resource}."
       configuration:
         header: Oppsett av Makeplans
         intro: Her kan du endre oppsettet på kontoen din og hvordan Makeplans skal fungere for deg. Du kan legge til tjenester og kategorier som du tilbyr på bookingsiden, endre åpningstider, justere utgående meldinger (SMS og epost), legge til flere brukere og justere flere andre innstillinger i Makeplans.
@@ -560,6 +575,7 @@ nb:
         link:
           change_time_zone: Bytt tidssone
           feed: iCalendar-feeder
+          migrate_bookings: Flytt reservasjoner mellom ressurser
           purge_data: Slett gamle data
           sms_all: Send SMS til alle dine kunder
     coupons:

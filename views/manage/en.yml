@@ -337,6 +337,21 @@ en:
         in_process:
           header: Time zone change in progress
           info: All reservations and messages will be updated shortly. Do *not* run this function again.
+      migrate_bookings:
+        edit:
+          deactivated: deactivated
+          error_not_found: One or both resources could not be found.
+          error_same_resource: Source and target resource cannot be the same.
+          from_resource: From resource
+          header: Migrate bookings
+          info: Move all reservations and events from one resource to another. This includes all past and future reservations. No notifications will be sent to customers.
+          migrate: Migrate
+          processing: Processing
+          to_resource: To resource
+          warning: Are you sure you want to migrate all reservations and events? This operation cannot be easily undone.
+        update:
+          header: Bookings migrated
+          result: "%{bookings_count} reservations and %{events_count} events were migrated from %{from_resource} to %{to_resource}."
       configuration:
         header: Makeplans setup
         intro: This is where you can configure Makeplans and how it should work for you. You can add services and categories that you offer on the booking site, adjust availability, change the outgoing messages (SMS and email), add more users and adjust many other settings in Makeplans.
@@ -567,6 +582,7 @@ en:
         link:
           change_time_zone: Change time zone
           feed: iCalendar-feeds
+          migrate_bookings: Migrate bookings between resources
           purge_data: Delete old data
           sms_all: Send SMS to all customers
     coupons:
