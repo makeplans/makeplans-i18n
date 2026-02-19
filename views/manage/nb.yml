@@ -406,11 +406,13 @@ nb:
           active_bookings_limit: Maks antall aktive bookinger for kunde
           disable_person_cookie: Ikke tillatt kunde å forbli innlogget med cookie
           google_tag_manager: Google Tag Manager Container ID
+          person_oauth_auto_create: Opprett kundeprofil automatisk fra ID-porten innlogging (hopp over registreringsskjema)
           plausible: Aktiver Plausible Analytics
           prevent_new_signups: Tillatt kun booking for eksisterende kunder
         verification_methods:
           email: Epost
           facebook: Tillatt også verifisering med Facebook Connect.
+          id_porten: Tillatt også innlogging med ID-porten (BankID).
           none: Ingen verifisering (anbefales ikke)
           sms: SMS (anbefales)
       edit_communication:

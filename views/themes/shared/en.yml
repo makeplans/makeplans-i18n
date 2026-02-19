@@ -64,6 +64,9 @@ en:
         phone_number: Mobile phone number
         submit: Continue
         title: Verify your phone number
+    person_sessions:
+      perishable_token_form:
+        login_with_idporten: Log in with BankID
     profile:
       credit_card_list:
         add_card: Add new card

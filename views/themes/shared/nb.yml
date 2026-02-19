@@ -38,6 +38,9 @@ nb:
         phone_number: Mobilnummber
         submit: Fortsett
         title: Verifiser ditt mobilnummer
+    person_sessions:
+      perishable_token_form:
+        login_with_idporten: Logg inn med BankID
     services:
       count:
         title: Hvor mange personer?
