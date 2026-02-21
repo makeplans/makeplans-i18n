@@ -41,6 +41,7 @@ nb:
     person_sessions:
       perishable_token_form:
         login_with_idporten: Logg inn med BankID
+        login_with_vipps: Logg inn med Vipps
     services:
       count:
         title: Hvor mange personer?

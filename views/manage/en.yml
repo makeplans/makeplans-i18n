@@ -415,6 +415,7 @@ en:
           id_porten: Also allow login with ID-porten (BankID).
           none: No verification (not recommended)
           sms: SMS (Recommended)
+          vipps: Also allow login with Vipps.
       edit_communication:
         email: Email
         header: Modify outgoing comminication

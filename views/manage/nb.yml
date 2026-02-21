@@ -415,6 +415,7 @@ nb:
           id_porten: Tillatt også innlogging med ID-porten (BankID).
           none: Ingen verifisering (anbefales ikke)
           sms: SMS (anbefales)
+          vipps: Tillatt også innlogging med Vipps.
       edit_communication:
         email: Epost
         header: Endre utgående kommunikasjon

@@ -67,6 +67,7 @@ en:
     person_sessions:
       perishable_token_form:
         login_with_idporten: Log in with BankID
+        login_with_vipps: Log in with Vipps
     profile:
       credit_card_list:
         add_card: Add new card
