@@ -406,7 +406,7 @@ en:
           active_bookings_limit: Max nr of active reservations for customer
           disable_person_cookie: Do not allow customer to stay logged in with cookie
           google_tag_manager: Google Tag Manager container ID
-          person_oauth_auto_create: Automatically create customer profile from ID-porten login (skip registration form)
+          person_oauth_auto_create: Automatically create customer profile from third party provider login (skip registration form)
           plausible: Enable Plausible Analytics
           prevent_new_signups: Only allow reservations from existing customers
         verification_methods:
