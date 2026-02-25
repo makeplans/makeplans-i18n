@@ -52,8 +52,11 @@ en:
       payment_stripe:
         submit: Pay
       show:
+        booked_for_child: This booking is for %{name}.
         count: Booked for %{count} people.
-        booked_for_child: Booked for %{name}
+        invoiced: You have been invoiced.
+        paid: You have prepaid %{paid_amount}.
+        price: The price of the booking is %{amount}.
       verification_method_email:
         email: Email
         info: You have to verify your email address to complete your reservation.
