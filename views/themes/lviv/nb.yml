@@ -11,7 +11,7 @@ nb:
         title: Din reservasjon er kansellert
       new:
         add_another_person: Legg til en annen person
-        agree_with: Jeg godtar
+        agree_with: Jeg aksepterer vilkårene og betingelsene
         book_for_someone_else: Bestill for noen andre
         booking_for: "Denne reservasjonen er for:"
         booking_for_label: Bestiller for
@@ -27,7 +27,7 @@ nb:
         someone_else: Noen andre (legg til ny)
         submit: Reserver tjeneste
         subtitle: Reservasjonen er ikke bekreftet ennå. Se over detaljene og trykk på knappen nedenfor.
-        terms: Vilkår og betingelser
+        terms: Les vilkår for reservasjonen
         title: Bekreft bestillingen
         who_is_booking_for: Hvem er denne bestillingen for?
         yourself: Deg selv
