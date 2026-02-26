@@ -26,9 +26,9 @@ en:
         optional: Optional
         someone_else: Someone else (add new)
         submit: Complete booking
-        subtitle: Please fill in the data required to book a service.
+        subtitle: Your booking is not confirmed yet. Please review the details and press the button below.
         terms: Terms & Conditions
-        title: Booking for
+        title: Confirm your booking
         who_is_booking_for: Who is this booking for?
         yourself: Yourself
       payment_stripe:

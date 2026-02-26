@@ -15,7 +15,6 @@ nb:
       new:
         accept: Jeg aksepterer vilkårene og betingelsene
         add_another_person: Legg til en annen person
-        page_title: Fullfør bestillingen
         book_for_someone_else: Bestill for noen andre
         booking_for: "Denne reservasjonen er for:"
         booking_for_label: Bestiller for
@@ -28,7 +27,10 @@ nb:
         logout: Logg ut
         myself: Meg selv
         not_you_logout: Ikke deg? Logg ut
+        notice: Reservasjonen er ikke bekreftet ennå. Se over detaljene og trykk på knappen nedenfor.
+        page_title: Bekreft bestillingen
         someone_else: Noen andre (legg til ny)
+        step_label: Siste steg
         submit: Bestill
         terms: Les vilkår for reservasjonen
         title: Reservasjon av %{service}

@@ -15,7 +15,6 @@ en:
       new:
         accept: I accept the terms and conditions
         add_another_person: Add another person
-        page_title: Complete your booking
         book_for_someone_else: Book for someone else
         booking_for: "This booking is for:"
         booking_for_label: Booking for
@@ -28,7 +27,10 @@ en:
         logout: Log out
         myself: Myself
         not_you_logout: Not you? Log out
+        notice: Your booking is not confirmed yet. Please review the details and press the button below.
+        page_title: Confirm your booking
         someone_else: Someone else (add new)
+        step_label: Final step
         submit: Complete booking
         terms: Read terms for reservation
         title: Reservation of %{service}

@@ -26,9 +26,9 @@ nb:
         optional: Valgfritt
         someone_else: Noen andre (legg til ny)
         submit: Reserver tjeneste
-        subtitle: Vennligst fyll ut de nødvendige dataene for å reservere en tjeneste.
+        subtitle: Reservasjonen er ikke bekreftet ennå. Se over detaljene og trykk på knappen nedenfor.
         terms: Vilkår og betingelser
-        title: Reservasjon for
+        title: Bekreft bestillingen
         who_is_booking_for: Hvem er denne bestillingen for?
         yourself: Deg selv
       payment_stripe:
