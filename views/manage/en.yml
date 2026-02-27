@@ -87,6 +87,7 @@ en:
         reactivate: Your account is currently in trial mode. You must reactivate your account to continue to use Makeplans
         reactivate_confirm: Are you sure you want to reactivate the account you put on hold? The account will be next charged %{paid_until}.
         reactivate_link: Reactivate account
+        reseller_billing_info: Billing for your account is managed by your reseller.
         sms_credits_available: You have a balance of %{credits} SMS.
         vat_no: Registered VAT no is %{vat_no}
         vat_no_missing: No VAT no entered.
