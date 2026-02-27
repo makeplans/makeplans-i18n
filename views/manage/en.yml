@@ -804,10 +804,13 @@ en:
         invoice_payment_time: 'Payment time:'
         invoice_state: 'Order state:'
         invoice_states:
+          Confirmed: Confirmed
           Draft: Draft
           ForInvoicing: For invoicing
           Invoice: Invoiced
+          Invoiced: Invoiced
           Offer: Offer
+          Web: Web
         password: API-Password
         service_linked: Connect to product in 24SevenOffice
         service_links: Each service in Makeplans must be connected to a product in 24SevenOffice to enable invocing. Please note that the price is retrived from the product in 24SevenOffice - not from Makeplans. You must ensure that these two prices are identical. Go to a service to define a product id from 24SevenOffice.

@@ -792,10 +792,13 @@ nb:
         invoice_payment_time: 'Betalingstid:'
         invoice_state: 'Ordrestatus:'
         invoice_states:
+          Confirmed: Bekreftet
           Draft: Kladd
           ForInvoicing: Til fakturering
           Invoice: Fakturert
+          Invoiced: Fakturert
           Offer: Tilbud
+          Web: Web
         password: API-passord
         service_linked: Koblet mot produkt i 24SevenOffice
         service_links: 'Hver tjeneste må kobles mot et produkt i 24SevenOffice for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra 24SevenOffice - ikke fra Makeplans. Du må selv passe på at pris i begge systemer er identiske. Gå til en tjeneste og definer produkt id fra 24SevenOffice.'
