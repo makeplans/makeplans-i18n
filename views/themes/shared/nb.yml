@@ -55,6 +55,6 @@ nb:
           other: "%{count} ledige"
         gap_warning: For å velge flere slotter så må disse være sammenhengende uten opphold.
         max_slots_warning: Du kan ikke velge flere enn %{max_slots} blokker.
-        multiple_slots_info: For å velge flere slotter så velg først start og så slutt tidspunkt.
+        multiple_slots_info: For å velge flere slotter velg først start og så slutt tidspunkt.
       time_day:
         time_zone_differ_info: Alle tidspunkt er i tidssone %{time_zone}.
