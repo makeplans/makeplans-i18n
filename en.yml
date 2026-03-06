@@ -157,6 +157,7 @@ en:
               not_offered: not offered by chosen resource
             state:
               invalid_transition: Invalid state change
+          exceeds_max_slots: Booking duration exceeds maximum allowed timeslots.
           fully_booked: Not available at selected time.
           mismatch: Values do not match with existing profile.
           no_parent_takeover: Please contact support to make this booking.

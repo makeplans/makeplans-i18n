@@ -158,6 +158,7 @@ nb:
               not_offered: tilbys ikke av valgt ressurs
             state:
               invalid_transition: Ugyldig endring av status
+          exceeds_max_slots: Reservasjonen overskrider maks antall tillatte tidsblokker.
           fully_booked: Ikke ledig på valgt tidspunkt
           mismatch: Opplysninger stemmer ikke overens med din kundeprofil.
           no_parent_takeover: Kontakt kundeservice for å gjennomføre denne reservasjonen.
