@@ -13,6 +13,8 @@ en:
   bookings:
     awaiting_payment:
       vipps_payment_failed: The payment was cancelled. Please try again.
+    process_promote_waitlist:
+      slot_no_longer_available: Sorry, the spot is no longer available. You are still on the waitlist.
     verification_code:
       incorrect_code: Incorrect code
   clients:

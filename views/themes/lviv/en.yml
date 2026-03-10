@@ -61,6 +61,7 @@ en:
     generic:
       alt:
         go_back: Go back
+      fully_booked: Fully booked
       step: Step %{step} / %{steps}
     gift_cards:
       index:

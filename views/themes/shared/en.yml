@@ -26,6 +26,9 @@ en:
       alt:
         go_back: Go back
       close: close
+      join_waitlist: Join Waitlist
+      waitlist: Waitlist
+      waitlist_notice: This time slot is fully booked. You will be added to the waitlist and notified when a spot becomes available.
       payment:
         add_card_details_html: Your card details will not be stored with us but is sent encrypted to %{provider} for secure transaction and storage.
         add_card_footer_html: Your card will not be charged now
@@ -53,6 +56,15 @@ en:
       expired:
         info: Bookings must be verified within %{expires_in} minutes. Please try again.
         title: Booking expired
+      promote_waitlist:
+        confirm: Confirm Booking
+        info: A spot has become available for your waitlisted booking. Confirm now to secure your spot.
+        title: A Spot is Available!
+      waitlisted:
+        info: You have been added to the waitlist. We will notify you when a spot becomes available.
+        leave_confirmation: Are you sure you want to leave the waitlist?
+        leave_waitlist: Leave Waitlist
+        title: You're on the Waitlist
       new:
         accept: I accept the terms and conditions
         email_suggestion_html: "<p>Did you mean<span> %{suggestions}</span>?</p>"

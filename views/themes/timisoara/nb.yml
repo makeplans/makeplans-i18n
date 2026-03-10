@@ -68,10 +68,14 @@ nb:
       index:
         all_events: Alle arrangementer
         continue: Fortsett
+      show:
+        all_services: Alle tjenester
+        continue: Fortsett
     generic:
       alt:
         go_back: Gå tilbake
         time: Tid
+      fully_booked: Fullbooket
     layouts:
       application:
         alt:

@@ -255,6 +255,8 @@ nb:
         cancel_all_future: Kansellerer alle fremtidige reservasjoner
         delete_all: Slett alle
         headline: Alle gjentagende reservasjoner innenfor dette mønsteret
+      promote:
+        promote_failed: Kunne ikke forfremme booking fra venteliste
       state_changer:
         state: Status
       status_changer:
@@ -415,6 +417,11 @@ nb:
           person_oauth_auto_create: Opprett kundeprofil automatisk fra tredjeparts innlogging (hopp over registreringsskjema)
           plausible: Aktiver Plausible Analytics
           prevent_new_signups: Tillatt kun booking for eksisterende kunder
+          waitlist_enabled: Aktiver venteliste for fullbookede slotter og arrangementer
+          waitlist_promotion_mode: Venteliste-forfremmelse
+          waitlist_promotion_modes:
+            auto: Forfrem første på venteliste automatisk
+            notify_all: Varsle alle på ventelisten
         verification_methods_alt: 'Alternative metoder:'
         verification_methods:
           email: Epost
@@ -1131,6 +1138,7 @@ nb:
           select_resource: Ekstra steg for valg av ressurs
           show_free_capacity: Vis ledig kapasitet
           overnight: Til neste dag (Kun dagbooking)
+          waitlist_enabled: Aktiver venteliste (overstyrer kontoinnstilling)
       form_attendance:
         booking_site_settings: Innstillinger for bookingsiden
         days: Dager
@@ -1141,6 +1149,7 @@ nb:
         settings:
           hide_slot_end: Skjul sluttid
           show_free_capacity: Vis tilgjengelig kapasitet
+          waitlist_enabled: Aktiver venteliste (overstyrer kontoinnstilling)
       form_product:
         booking_site_settings: Innstillinger for bookingsiden
       form_gift_card:

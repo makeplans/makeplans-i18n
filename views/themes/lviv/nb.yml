@@ -61,6 +61,7 @@ nb:
     generic:
       alt:
         go_back: Gå tilbake
+      fully_booked: Fullbooket
       step: Steg %{step} / %{steps}
     gift_cards:
       index:

@@ -32,6 +32,7 @@ en:
         declined: Declined
         deleted: Deleted
         verification_expired: Verification expired
+        waitlisted: Waitlisted
       booking/status:
         checked_in: Checked in
         completed: Completed
@@ -147,6 +148,7 @@ en:
               below_minimum_count: Less than minimum required people per booking
               over_booking_capacity: More than maximum people allowed per booking
             event_id:
+              already_booked: already has an active booking for this event
               time_not_available: is fully booked
             person_id:
               blocked: blocked for booking
@@ -316,6 +318,7 @@ en:
         cancel: Cancel
         confirm: Confirm
         decline: Decline
+        promote: Promote
         verify: Verify
       state:
         awaiting_confirmation: Awaiting confirmation
@@ -326,6 +329,7 @@ en:
         declined: Declined
         deleted: Deleted
         verification_expired: Verification expired
+        waitlisted: Waitlisted
     booking_state_transitions:
       events:
         modified: Modified

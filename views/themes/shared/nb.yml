@@ -24,6 +24,9 @@ nb:
         message: Vennligst vent mens vi behandler betalingen din...
     generic:
       close: lukk
+      join_waitlist: Sett meg på venteliste
+      waitlist: Venteliste
+      waitlist_notice: Dette tidspunktet er fullt booket. Du vil bli satt på venteliste og bli varslet når en plass blir ledig.
       payment:
         card: Kort
     bookings:
@@ -34,6 +37,15 @@ nb:
       expired:
         info: Reservasjoner må bekreftes innen %{expires_in} minutter. Vennligst prøv igjen.
         title: Reservasjon utløpt
+      promote_waitlist:
+        confirm: Bekreft reservasjon
+        info: En plass har blitt ledig for din ventlisteregistrering. Bekreft nå for å sikre plassen din.
+        title: En plass er ledig!
+      waitlisted:
+        info: Du er satt på venteliste. Vi vil varsle deg når en plass blir ledig.
+        leave_confirmation: Er du sikker på at du vil fjerne deg fra ventelisten?
+        leave_waitlist: Fjern meg fra ventelisten
+        title: Du er på ventelisten
       new:
         accept: Jeg aksepterer vilkårene og betingelsene
         email_suggestion_html: "<p>Mente du <span> %{suggestions}</span>?</p>"

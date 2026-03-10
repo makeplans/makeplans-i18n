@@ -55,6 +55,21 @@ en:
       header: To complete your booking of %{title} %{time_range} you must verify your reservation by using the code below.
       link: Confirm reservation
       subject: Please verify your reservation
+    waitlist_available:
+      body: A spot has become available for your waitlisted booking of %{title} %{time_range}. Click the link below to confirm your booking.
+      confirm_button: Confirm Booking
+      confirm_link: Confirm your booking
+      header: Hi %{name}
+      info: "Good news! A spot has become available for %{title} %{time_range}."
+      resource_info: 'Reservation with: %{resource}.'
+      subject: A spot is available for your waitlisted booking
+    waitlist_joined:
+      body: You have been added to the waitlist for %{title} %{time_range}. We will notify you when a spot becomes available.
+      header: Hi %{name}
+      info: You have been added to the waitlist for %{title} %{time_range}. We will notify you when a spot becomes available.
+      link: View your waitlist booking
+      resource_info: 'Reservation with: %{resource}.'
+      subject: You're on the waitlist
   booking_occurrence_mailer:
     cancel:
       body: 'Your bookings of %{title} for the following times has been cancelled:'
@@ -116,6 +131,8 @@ en:
 
       {{ booking.client.name }}
     verification: "{{ booking.verification_code }} is your verification code for the reservation of {{ booking.title }}."
+    waitlist_available: "A spot is now available for {{ booking.title }} {{ booking.booked_from }}. Visit the link to confirm your booking."
+    waitlist_joined: "You are on the waitlist for {{ booking.title }} {{ booking.booked_from }}. We will notify you when a spot becomes available."
   person_mailer:
     export:
       subject: Data export

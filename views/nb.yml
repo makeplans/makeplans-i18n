@@ -13,6 +13,8 @@ nb:
   bookings:
     awaiting_payment:
       vipps_payment_failed: Betalingen ble avbrutt. Vennligst prøv igjen.
+    process_promote_waitlist:
+      slot_no_longer_available: Beklager, plassen er ikke lenger tilgjengelig. Du er fortsatt på ventelisten.
     verification_code:
       incorrect_code: Feil kode
   clients:

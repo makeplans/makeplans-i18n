@@ -60,10 +60,14 @@ en:
       index:
         all_events: All events
         continue: Continue
+      show:
+        all_services: All services
+        continue: Continue
     generic:
       alt:
         go_back: Go back
         time: Time
+      fully_booked: Fully booked
     layouts:
       application:
         alt:

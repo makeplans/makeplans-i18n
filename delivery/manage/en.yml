@@ -32,6 +32,16 @@ en:
       booking_type_attendance:
         subject_resource: Modified signup for %{title}
       link: To view this reservation please go to
+    notification_waitlist_joined:
+      appointment:
+        body: "%{name} has joined the waitlist for %{title} %{time_range}."
+      attendance:
+        body: "%{name} has joined the waitlist for %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Waitlist signup for %{resource}
+      booking_type_attendance:
+        subject_resource: Waitlist signup for %{title}
+      link: To view this reservation please go to
     notification_resource_change:
       appointment:
         body: "%{name} has changed %{title} %{time_range}."

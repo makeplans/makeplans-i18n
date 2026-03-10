@@ -32,6 +32,7 @@ nb:
         declined: Avvist
         deleted: Fjernet
         verification_expired: Utløpt
+        waitlisted: Venteliste
       booking/status:
         checked_in: Ankommet
         completed: Ferdig
@@ -148,6 +149,7 @@ nb:
               below_minimum_count: Mindre enn påkrevd antall personer
               over_booking_capacity: Mer enn maks antall personer
             event_id:
+              already_booked: har allerede en aktiv reservasjon for dette arrangementet
               time_not_available: er fullt
             person_id:
               blocked: blokkert for reservasjoner.
@@ -313,6 +315,7 @@ nb:
         cancel: Kanseller
         confirm: Godkjenn
         decline: Avvis
+        promote: Forfrem
         verify: Verifiser
       state:
         awaiting_confirmation: Venter på godkjenning
@@ -323,6 +326,7 @@ nb:
         declined: Avvist
         deleted: Fjernet
         verification_expired: Verifisering utløpt
+        waitlisted: Venteliste
     booking_state_transitions:
       events:
         modified: Endret
