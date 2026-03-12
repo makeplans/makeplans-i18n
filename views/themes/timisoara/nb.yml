@@ -194,6 +194,10 @@ nb:
           create_invoice: Opprett faktura
           header: Fakturabetaling
       front_go:
+        awaiting_payment:
+          body: Vennligst vent mens transaksjonen bekreftes.
+          error: "Vi klarte ikke å bekrefte at betaling ble gjennomført. Kontakt kundeservice og oppgi referansenummer %{order_id}."
+          title: Kontrollerer betaling
         payment:
           back: Tilbake
           header: FrontGo-betaling

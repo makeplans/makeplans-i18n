@@ -186,6 +186,10 @@ en:
           create_invoice: Create Invoice
           header: Invoice Payment
       front_go:
+        awaiting_payment:
+          body: Please wait while we verify the transaction.
+          error: "We are unable to verify your payment. Please contact customer service with the reference number %{order_id}."
+          title: Verifying your payment
         payment:
           back: Back
           header: FrontGo Payment
