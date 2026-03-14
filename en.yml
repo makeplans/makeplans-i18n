@@ -262,6 +262,7 @@ en:
         perishable_token:
           expired: Code expired. Please try again.
           invalid: Incorrect code
+          invalid_value: Invalid format
           no_identifier: Missing email or phone number.
     stripe:
       booking:
@@ -287,6 +288,10 @@ en:
     today: today
     tomorrow: tomorrow
     'true': Enabled
+  profile:
+    update:
+      success: Profile updated
+      locked_field_changed: Verified fields cannot be changed
   helpers:
     booking:
       action:

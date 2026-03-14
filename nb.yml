@@ -285,6 +285,10 @@ nb:
     today: i dag
     tomorrow: i morgen
     'true': Aktivert
+  profile:
+    update:
+      success: Profilen er oppdatert
+      locked_field_changed: Verifiserte felt kan ikke endres
   helpers:
     booking:
       action:

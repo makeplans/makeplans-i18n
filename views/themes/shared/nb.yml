@@ -46,6 +46,13 @@ nb:
       perishable_token_form:
         login_with_idporten: Logg inn med BankID
         login_with_vipps: Logg inn med Vipps
+    profile:
+      edit:
+        cancel: Avbryt
+        errors_header: 'Det oppstod feil:'
+        header: Rediger profil
+        save: Lagre
+        verified: Verifisert
     services:
       count:
         title: Hvor mange personer?
