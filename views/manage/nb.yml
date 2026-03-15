@@ -589,6 +589,12 @@ nb:
         services_info: 'Rabbattkoden vil bli tilgjengelig for alle tjenester med mindre du begrenser bruk til tjenester nedenfor:'
       index:
         header: Rabattkoder
+        not_redeemable: Ikke innløsbar
+        redeemable: Innløsbar
+      show:
+        details: Detaljer
+        not_redeemable: Ikke innløsbar
+        redeemable: Innløsbar
     gift_cards:
       index:
         header: Gavekort
