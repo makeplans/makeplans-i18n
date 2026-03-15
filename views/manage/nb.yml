@@ -584,6 +584,7 @@ nb:
           sms_all: Send SMS til alle dine kunder
     coupons:
       form:
+        availability_placeholder: Ubegrenset
         excluded_services: Eksluderte tjenester
         included_services: Inkluderte tjenester
         services_info: 'Rabbattkoden vil bli tilgjengelig for alle tjenester med mindre du begrenser bruk til tjenester nedenfor:'

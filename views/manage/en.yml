@@ -591,6 +591,7 @@ en:
           sms_all: Send SMS to all customers
     coupons:
       form:
+        availability_placeholder: Unlimited
         excluded_services: Excluded services
         included_services: Included services
         services_info: 'The coupon code will be available for all services unless you restrict to specific services below:'
