@@ -771,6 +771,8 @@ en:
         account: Subdomain (YOURACCOUNT.highrisehq.com - please only enter YOURACCOUNT)
         connect_info: 'Choose account where new customers are added:'
         password: API-key
+      klaviyo:
+        select_list: 'Select a list where new customers are added as subscribers:'
       index:
         api: API
         header: Integrations

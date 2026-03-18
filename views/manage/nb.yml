@@ -759,6 +759,8 @@ nb:
         account: Subdomain (DINKONTO.highrisehq.com - fyll inn kun DINKONTO)
         connect_info: 'Velg konto hvor nye kunder blir lagt til:'
         password: API-key
+      klaviyo:
+        select_list: 'Velg liste som nye kunder blir lagt til som abonnenter:'
       index:
         api: API
         header: Integrasjoner
