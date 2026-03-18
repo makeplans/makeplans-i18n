@@ -595,6 +595,7 @@ nb:
       show:
         details: Detaljer
         not_redeemable: Ikke innløsbar
+        orders: Ordrer
         redeemable: Innløsbar
     gift_cards:
       index:
@@ -606,10 +607,10 @@ nb:
         details: Detaljer
         inactive: Brukt
         initial_value: Opprinnelig verdi
+        orders: Ordrer
         purchase_order: Kjøpsordre
         purchased_by: Kjøpt av
         redeemed_by: Innløst av
-        transactions: Innløsninger
         valid_until: Gyldig til
     orders:
       index:

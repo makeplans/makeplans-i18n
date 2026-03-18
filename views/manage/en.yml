@@ -602,6 +602,7 @@ en:
       show:
         details: Details
         not_redeemable: Not redeemable
+        orders: Orders
         redeemable: Redeemable
     gift_cards:
       index:
@@ -613,10 +614,10 @@ en:
         details: Details
         inactive: Used
         initial_value: Initial value
+        orders: Orders
         purchase_order: Purchase order
         purchased_by: Purchased by
         redeemed_by: Redeemed by
-        transactions: Redemptions
         valid_until: Valid until
     orders:
       index:
