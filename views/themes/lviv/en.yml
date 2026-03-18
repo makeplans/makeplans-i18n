@@ -90,10 +90,14 @@ en:
         title: Online booking for %{name}
     order_cart:
       checkout:
+        applied_coupon: Applied Discount
         applied_gift_cards: Applied Gift Cards
         apply: Apply
         complete_order: Complete Order
         continue_to_payment: Continue to Payment
+        coupon_code: Discount Code
+        coupon_code_placeholder: Enter code
+        discount: Discount
         empty_cart: Empty cart
         gift_card_code: Gift Card Code
         gift_card_code_placeholder: "XXXX-0000-XXXX"
@@ -102,6 +106,7 @@ en:
         payment_method: Payment Method
         remaining_total: Remaining Total
         remove: Remove
+        use_coupon: Discount Code
         use_gift_card: Use Gift Card
         your_gift_cards: Your Gift Cards
       show:
@@ -168,6 +173,7 @@ en:
       show:
         back_to_orders: Back to orders
         confirmation_message: Thank you for your order!
+        discount_code: "Discount (%{code})"
         each: each
         gift_card_code: Gift Card Code
         gift_card_value: Value

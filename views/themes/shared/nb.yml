@@ -3,8 +3,14 @@ nb:
   shared:
     order_cart:
       checkout:
+        cannot_use_coupon_for_gift_card: Rabattkoder kan ikke brukes ved kjøp av gavekort
         cannot_use_gift_card_for_gift_card: Gavekort kan ikke brukes til å kjøpe gavekort
+        coupon_above_maximum: Ordretotalen overstiger maksimum for denne rabattkoden
+        coupon_below_minimum: Ordretotalen er under minimumskravet for denne rabattkoden
+        coupon_no_eligible_items: Denne rabattkoden gjelder ikke for varene i handlekurven
+        coupon_not_redeemable: Denne rabattkoden er ikke gyldig
         invalid_cart_item: Ugyldig verdi
+        invalid_coupon: Ugyldig rabattkode
         invalid_gift_card: Ugyldig eller allerede brukt gavekort
     order_payments:
       pay_later:

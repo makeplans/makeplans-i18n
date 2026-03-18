@@ -90,10 +90,14 @@ nb:
         title: Online reservasjon for %{name}
     order_cart:
       checkout:
+        applied_coupon: Brukt rabattkode
         applied_gift_cards: Brukte gavekort
         apply: Bruk
         complete_order: Fullfør bestilling
         continue_to_payment: Fortsett til betaling
+        coupon_code: Rabattkode
+        coupon_code_placeholder: Skriv inn kode
+        discount: Rabatt
         empty_cart: Tøm handlekurv
         gift_card_code: Gavekortkode
         gift_card_code_placeholder: "XXXX-0000-XXXX"
@@ -102,6 +106,7 @@ nb:
         payment_method: Betalingsmetode
         remaining_total: Gjenstående beløp
         remove: Fjern
+        use_coupon: Rabattkode
         use_gift_card: Bruk gavekort
         your_gift_cards: Dine gavekort
       show:
@@ -168,6 +173,7 @@ nb:
       show:
         back_to_orders: Tilbake til bestillinger
         confirmation_message: Takk for din bestilling!
+        discount_code: "Rabatt (%{code})"
         each: stk
         gift_card_code: Gavekortkode
         gift_card_value: Verdi

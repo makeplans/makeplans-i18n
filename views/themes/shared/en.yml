@@ -3,8 +3,14 @@ en:
   shared:
     order_cart:
       checkout:
+        cannot_use_coupon_for_gift_card: Discount codes cannot be used for gift card purchases
         cannot_use_gift_card_for_gift_card: Gift cards cannot be used to purchase gift cards
+        coupon_above_maximum: Order total exceeds the maximum for this discount code
+        coupon_below_minimum: Order total does not meet the minimum for this discount code
+        coupon_no_eligible_items: This discount code does not apply to items in your cart
+        coupon_not_redeemable: This discount code is not valid
         invalid_cart_item: Invalid item value
+        invalid_coupon: Invalid discount code
         invalid_gift_card: Invalid or already used gift card
     order_payments:
       pay_later:

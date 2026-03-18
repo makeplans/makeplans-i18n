@@ -156,10 +156,13 @@ nb:
         add_to_cart: Legg i handlekurv
     order_cart:
       checkout:
+        applied_coupon: Brukt rabattkode
         applied_gift_cards: Brukte gavekort
         apply: Bruk
         complete_order: Fullfør bestilling
         continue_to_payment: Fortsett til betaling
+        coupon_code: Rabattkode
+        discount: Rabatt
         empty_cart: Tøm handlekurv
         credit_card: Kredittkort
         gift_card_code: Gavekortkode
@@ -171,6 +174,7 @@ nb:
         payment_method: Betalingsmetode
         remaining_total: Gjenstående beløp
         remove: Fjern
+        use_coupon: Rabattkode
         use_gift_card: Bruk gavekort
         your_gift_cards: Dine gavekort
       show:
@@ -248,6 +252,7 @@ nb:
         amount: Beløp
         back_to_orders: Tilbake til mine kjøp
         confirmation_message: Takk for din bestilling!
+        discount_code: "Rabatt (%{code})"
         each: per stk
         gift_card_code: Gavekortkode
         gift_card_value: Verdi

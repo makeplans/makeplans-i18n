@@ -632,6 +632,7 @@ en:
       show:
         amount: Amount
         balance: Balance due
+        coupon: Discount code
         created_at: Created
         customer: Customer
         date: Date

@@ -625,6 +625,7 @@ nb:
       show:
         amount: Beløp
         balance: Utestående
+        coupon: Rabattkode
         created_at: Opprettet
         customer: Kunde
         date: Dato
