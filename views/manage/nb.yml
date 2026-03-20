@@ -507,12 +507,21 @@ nb:
         create:
           dns: Se dine DNS-verdier.
           header: Vi behandler forespørselen din
+          invalid_domain: Vennligst skriv inn et gyldig domenenavn.
         dns:
           dkim: For å la Makeplans sende med en e-postadresse på %{domain}, legg til følgende TXT-post.
+          dkim_cname: For å la Makeplans sende med en e-postadresse på %{domain}, legg til følgende CNAME-poster.
           dkim_host: Vert
           dkim_value: Verdi
           header: Legg til DNS-poster
           info: Vennligst legg til følgende DNS-poster for å fullføre e-postavsender-verifiseringen. Det kan ta opptil 24 timer før endringene dine er aktive.
+          return_path: Legg til følgende post for retursti-domenet %{domain} for å forbedre leveringsevnen.
+          type: Type
+          verify: Verifiser DNS-poster
+          cancel: Fjern e-postdomene
+          copy: Kopier
+          priority: Prioritet
+          copied: Kopiert!
         info:
           add: Legg til ditt e-postdomene for sending
           header: Send e-post med din egen e-postadresse
@@ -520,12 +529,17 @@ nb:
         new:
           domain: Domene
           header: Legg til ditt egendefinerte e-postdomene for sending
+          return_path_domain: Retursti-domene
+          return_path_domain_hint: Valgfritt. Et underdomene for håndtering av returmeldinger, f.eks. bounces.eksempel.no. Forbedrer leveringsevnen.
         show:
+          delete: Fjern e-postdomene
           header: Du har verifisert ditt e-postdomene for sending
           info: Makeplans vil kunne sende e-post fra hvilken som helst e-postadresse på ditt domene %{domain}
         verify:
+          cancel: Fjern e-postdomene
           header: Ikke verifisert
           info: Hvis du har lagt til DNS-postene, vennligst vent til de har blitt propagert. Prøv igjen senere.
+          not_verified: DNS-postene er ikke verifisert ennå. Vennligst vent og prøv igjen.
       embed:
         new:
           embed_url: 'Skriv inn URL-en til nettstedet ditt for innebygging:'

@@ -507,12 +507,21 @@ en:
         create:
           dns: See your DNS values.
           header: We are processing your request
+          invalid_domain: Please enter a valid domain name.
         dns:
           dkim: To allow Makeplans to send with an email address on %{domain} add the following TXT record.
+          dkim_cname: To allow Makeplans to send with an email address on %{domain} add the following CNAME records.
           dkim_host: Host
           dkim_value: Value
           header: Add DNS records
           info: Please add the following DNS records to complete the email sender verification. It could take up to 24 hours before your changes are live.
+          return_path: Add the following record for the return path domain %{domain} to improve deliverability.
+          type: Type
+          verify: Verify DNS records
+          cancel: Remove email domain
+          copy: Copy
+          priority: Priority
+          copied: Copied!
         info:
           add: Add your email sending domain
           header: Send emails using your own email address
@@ -520,12 +529,17 @@ en:
         new:
           domain: Domain
           header: Add your custom email sending domain
+          return_path_domain: Return path domain
+          return_path_domain_hint: Optional. A subdomain for bounce handling, e.g. bounces.example.com. Improves deliverability.
         show:
+          delete: Remove email domain
           header: You have verified your email sending domain
           info: Makeplans will be able to send emails from any email address on your domain %{domain}
         verify:
+          cancel: Remove email domain
           header: Not verified
           info: If you have added the DNS records please wait until they have propagated. Please try again later.
+          not_verified: DNS records are not verified yet. Please wait and try again.
       embed:
         new:
           embed_url: 'Enter the URL to your website for embedding:'
