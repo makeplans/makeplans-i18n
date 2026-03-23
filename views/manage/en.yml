@@ -413,10 +413,10 @@ en:
         verification_methods:
           email: Email
           facebook: Also allow verification with Facebook Connect.
-          id_porten: Also allow login with ID-porten (BankID).
+          id_porten: ID-porten (BankID)
           none: No verification (not recommended)
           sms: SMS (Recommended)
-          vipps: Also allow login with Vipps.
+          vipps: Vipps
       edit_communication:
         email: Email
         header: Modify outgoing comminication

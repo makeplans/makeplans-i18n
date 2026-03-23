@@ -43,6 +43,9 @@ nb:
         info: Du må verifisere din e-post adresse for å fullføre reservasjonen.
         submit: Fortsett
         title: Verifiser din e-post adresse
+      verification_method_oauth:
+        info: Du må verifisere din identitet for å fullføre reservasjonen.
+        title: Verifiser din identitet
       verification_method_sms:
         info: Du må verifisere ditt mobilnummer for å fullføre reservasjonen.
         phone_number: Mobilnummber
@@ -50,7 +53,9 @@ nb:
         title: Verifiser ditt mobilnummer
     person_sessions:
       perishable_token_form:
-        login_with_idporten: Logg inn med BankID
+        login_with_email: Logg inn med epost
+        login_with_id_porten: Logg inn med BankID
+        login_with_sms: Logg inn med SMS
         login_with_vipps: Logg inn med Vipps
     profile:
       edit:

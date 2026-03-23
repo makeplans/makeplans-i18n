@@ -413,10 +413,10 @@ nb:
         verification_methods:
           email: Epost
           facebook: Tillatt også verifisering med Facebook Connect.
-          id_porten: Tillatt også innlogging med ID-porten (BankID).
+          id_porten: ID-porten (BankID)
           none: Ingen verifisering (anbefales ikke)
           sms: SMS (anbefales)
-          vipps: Tillatt også innlogging med Vipps.
+          vipps: Vipps
       edit_communication:
         email: Epost
         header: Endre utgående kommunikasjon

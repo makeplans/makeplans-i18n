@@ -68,6 +68,9 @@ en:
         info: You have to verify your email address to complete your reservation.
         submit: Continue
         title: Verify your email address
+      verification_method_oauth:
+        info: You have to verify your identity to complete your reservation.
+        title: Verify your identity
       verification_method_sms:
         info: You have to verify your phone number to complete your reservation.
         phone_number: Mobile phone number
@@ -75,7 +78,9 @@ en:
         title: Verify your phone number
     person_sessions:
       perishable_token_form:
-        login_with_idporten: Log in with BankID
+        login_with_email: Log in with email
+        login_with_id_porten: Log in with BankID
+        login_with_sms: Log in with SMS
         login_with_vipps: Log in with Vipps
     profile:
       edit:
