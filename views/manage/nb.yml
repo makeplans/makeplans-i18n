@@ -387,6 +387,8 @@ nb:
         booking_site_person_form_info_html: Tilpass registreringsskjema for kunde for Timisoara og Lviv tema. Bruker samme syntaks som reservasjonsskjema.
         booking_site_info_html: Deres bookingside er tilgjengelig på %{url}.
         booking_site_locale_default: Bruk språk på konto
+        booking_site_locale_mode_multiple: Aktiver flere språk (besøkende kan bytte)
+        booking_site_locales_info: Velg hvilke språk besøkende kan bytte mellom på bookingsiden
         cancellation: Avbestillling
         cancellation_info: Avbestilling kan kun utføres før avbestillingsfristen. Reservasjoner som er forhåndsbetalt kan ikke avbestilles.
         cancellation_period_info: 'Skriv inn på engelsk. Tid er relatert til starttidspunkt for reservasjonen. Eks.: ''24 hours before'' (kun mulig å avbestille 24 timer før reservasjonen begynner). Hvis ingen avbestillingsfrist er spesifisert kan kunden avbestille helt frem til reservasjonen starter.'

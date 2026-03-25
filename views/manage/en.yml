@@ -387,6 +387,8 @@ en:
         booking_site_person_form_info_html: Customize person registration form for Timisoara and Lviv themes. Uses same syntax as reservation form.
         booking_site_info_html: Your booking site is available at %{url}.
         booking_site_locale_default: Use account language
+        booking_site_locale_mode_multiple: Enable multiple languages (visitors can switch)
+        booking_site_locales_info: Select which languages visitors can switch between on the booking site
         cancellation: Cancellation
         cancellation_info: Cancellation can only be performed before the cancellation period. Reservations that are prepaid cannot be cancelled.
         cancellation_period_info: 'Example: ''24 hours before'' (only possible to cancel 24 hours before the reservation starts). When setting a date you must enter the full year.'
