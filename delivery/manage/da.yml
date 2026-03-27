@@ -22,11 +22,53 @@ da:
       booking_type_attendance:
         subject_resource: Ny registrering til %{title}
       link: For at se denne reservation skal du gå til
+    notification_modification:
+      appointment:
+        body: "%{name} har ændret %{title} %{time_range}."
+      attendance:
+        body: "%{name} har ændret registrering %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Ændret reservation for %{resource}
+      booking_type_attendance:
+        subject_resource: Ændret registrering for %{title}
+      link: For at se denne reservation, gå til
+    notification_resource_change:
+      appointment:
+        body: "%{name} har ændret %{title} %{time_range}."
+      attendance:
+        body: "%{name} har ændret registrering %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Ændret ressource for %{resource}
+      booking_type_attendance:
+        subject_resource: Ændret ressource for %{title}
+      link: For at se denne reservation, gå til
     request_approvement:
       body: "%{name} ønsker at reservere %{title} %{time_range}."
       link: For at acceptere eller afvise denne reservation, gå til
       subject_resource: Ny anmodning om %{resource}
   client_mailer:
+    activated:
+      body: |-
+        Hej,
+         Du har nu aktiveret din Makeplans-konto.
+        Vores priser kan findes her: https://makeplans.com/no/priser/
+         Din konto: %{subdomain}
+         For vores vilkår, se https://terms.makeplans.com
+         Tak fordi du bruger Makeplans :D
+         Hvis du har spørgsmål, kan du blot svare på denne e-mail.
+      subject: Din konto er blevet aktiveret.
+    api_enabled:
+      body: |-
+        Hej,
+         Jeg kan se, at du har aktiveret API'en på din Makeplans-konto %{subdomain}. Fantastisk!
+         Hvis du ved, hvad du laver, kan du bare ignorere denne e-mail.
+         Men hvis du ikke er bekendt med Makeplans' API, er du velkommen til at tjekke dokumentationen på https://developer.makeplans.com.
+        Du finder oplysninger om godkendelse, alle endpoints, webhooks samt eksempler.
+        Har du spørgsmål? Kontakt os bare, vi hjælper dig gerne.
+         Hvis du eksperimenterer, kan det være en god idé at oprette en API-udviklingskonto i vores testmiljø. Der er nogle begrænsninger, men generelt er det at foretrække at udvikle i et separat miljø og en separat konto end din faktiske konto.
+        Du kan finde et link til testmiljøet i API-dokumentationen.
+         Held og lykke med din kodning!
+      subject: API aktiveret på din Makeplans-konto
     charge_failed:
       body: |-
         Hej,
@@ -95,6 +137,14 @@ da:
 
         Uanset; har en god dag fremad og tak fordi du testede Makeplans.
       subject: Deaktiveret Makeplans-konto
+    inactive_warning:
+      body: |-
+        Hej,
+         Da din prøveperiode er udløbet, og der ikke har været nogen aktivitet på din konto siden %{latest_booking_change_at}, deaktiverer vi din konto om 30 dage.
+         For at beholde din konto skal du logge ind på %{url}.
+         Hvis der ikke foretages nogen handling, deaktiverer vi din konto om en måned. Derefter slettes din konto og alle dine data om fire måneder.
+         Tak fordi du prøvede Makeplans :)
+      subject: 'KRITISK: Makeplans-kontoen vil blive deaktiveret'
     no_bookings:
       body: |-
         Hej,
@@ -253,6 +303,10 @@ da:
         Hilsen
         Makeplans
       subject: Tilføjet som bruger i Makeplans
+    email_modified:
+      footer: Lav planer
+      info: Din e-mailadresse er blevet ændret til %{new_email}. Kontakt os venligst med det samme, hvis det ikke var dig, der udførte denne handling.
+      subject: E-mailadresse ændret
     export:
       body: |-
         Hej
@@ -272,6 +326,10 @@ da:
         Hilsen
         Makeplans
       subject: Adgang til ny konto i Makeplans
+    password_modified:
+      footer: Lav planer
+      info: Din adgangskode er blevet ændret. Kontakt os venligst med det samme, hvis det ikke var dig, der udførte denne handling.
+      subject: Adgangskode ændret
     password_reset:
       footer: Makeplans
       info: Du eller en anden har bedt om at nulstille din Makeplans-adgangskode. For at fuldføre denne proces skal du klikke på nedenstående link.

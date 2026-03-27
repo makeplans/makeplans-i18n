@@ -1,0 +1,278 @@
+---
+da:
+  lviv:
+    bookings:
+      authenticate:
+        email: E-mail
+        phone_number: Telefonnummer
+        title: Bekræft reservation
+      cancelled:
+        info: Reservationen af %{title} %{time} blev annulleret.
+        title: Din reservation er blevet annulleret.
+      new:
+        add_another_person: Tilføj en anden person
+        agree_with: Jeg accepterer vilkårene og betingelserne
+        book_for_someone_else: Bestil til en anden
+        booking_for: 'Denne reservation er for:'
+        booking_for_label: Bestilling til
+        cancel: Ophæve
+        change: Forandring
+        errors_header: Udfyld venligst alle obligatoriske felter.
+        logged_in_as: Bestiller som %{person}
+        logged_in_as_short: Logget ind som
+        logout: Log ud
+        myself: Mig selv
+        not_you_logout: Ikke dig? Log ud
+        optional: Valgfri
+        someone_else: En anden (tilføj ny)
+        submit: Reservetjeneste
+        subtitle: Reservationen er endnu ikke bekræftet. Gennemgå venligst oplysningerne, og tryk på knappen nedenfor.
+        terms: Læs vilkårene og betingelserne for reservationen
+        title: Bekræft din ordre
+        who_is_booking_for: Hvem er denne ordre til?
+        yourself: Dig selv
+      payment_stripe:
+        title: Indtast betalingsoplysninger
+      pre_payment:
+        title: Vælg betalingsmetode
+      review:
+        agree_with: Jeg accepterer
+        any_specialist: Enhver specialist
+        directions: Vejvisning
+        terms: Vilkår og betingelser
+        title: Gennemgå din reservation
+      show:
+        add_to_calendar: Tilføj til kalender
+        alt:
+          calendar: Tilføj til kalender
+          profile: Profil
+        cancel_booking: Annuller reservation
+        reschedule: Skift tid
+        title: Reservationsoplysninger
+    categories:
+      index:
+        title: Vælg kategori
+    events:
+      index:
+        title: Vælg dato og klokkeslæt
+      show:
+        book_event: Reserver denne begivenhed
+    generic:
+      alt:
+        go_back: Gå tilbage
+      step: Trin %{step} / %{steps}
+    gift_cards:
+      index:
+        buy: Købe
+        header: Gavekort
+      new:
+        add_to_cart: Læg i kurv
+        description: Køb et gavekort til en du holder af. Vælg beløbet nedenfor.
+        header: Køb gavekort
+        value_label: Beløb
+        value_placeholder: Indtast beløb
+    layouts:
+      application:
+        about_makeplans: Om Makeplans
+        account: Konto
+        alt:
+          account: Konto
+          cancel: Ophæve
+          cart: Indkøbskurv
+          menu: Menu
+        booking_site_footer: Reservationssystem for %{name}
+        cart: Indkøbskurv (%{count})
+        close: Tæt
+        get_support: Få støtte
+        menu: Menu
+        privacy_policy: Privatlivspolitik
+        terms_conditions: Vilkår og betingelser
+        title: Online reservation for %{name}
+    order_cart:
+      checkout:
+        applied_coupon: Brugt rabatkode
+        applied_gift_cards: Brugte gavekort
+        apply: Bruge
+        complete_order: Færdiggør ordren
+        continue_to_payment: Gå videre til betaling
+        coupon_code: Rabatkode
+        coupon_code_placeholder: Indtast kode
+        discount: Rabat
+        empty_cart: Tom kurv
+        gift_card_code: Gavekortkode
+        gift_card_code_placeholder: XXXX-0000-XXXX
+        header: Betaling
+        order_total: Samlet beløb
+        payment_method: Betalingsmetode
+        remaining_total: Resterende beløb
+        remove: Fjern
+        use_coupon: Rabatkode
+        use_gift_card: Brug gavekort
+        your_gift_cards: Dine gavekort
+      show:
+        clear_cart: Tom kurv
+        confirm_order: Bekræft ordre
+        empty_cart: Din indkøbskurv er tom.
+        header: Indkøbskurv
+        remove: Fjern
+        total: Total
+    order_payments:
+      failure:
+        header: Betalingen mislykkedes
+        message: Desværre kunne din betaling ikke behandles.
+        try_again: Prøv igen
+      front_go:
+        awaiting_payment:
+          body: Vent venligst, mens transaktionen bekræftes.
+          error: Vi kunne ikke bekræfte, at betalingen var gennemført. Kontakt venligst kundeservice og angiv referencenummer %{order_id}.
+          title: Kontrol af betaling
+        payment:
+          back: Tilbage
+          header: FrontGo-betaling
+          pay_now: Betal nu
+      pay_later:
+        payment:
+          back: Tilbage
+          complete_order: Færdiggør ordren
+          description: Din ordre vil blive bekræftet. Betaling kan ske senere.
+          header: Betal senere
+      stripe:
+        awaiting_payment:
+          header: Behandling af betaling
+          message: Vent venligst, mens vi behandler din betaling...
+        payment:
+          back: Tilbage
+          header: Kortbetaling
+          new_card: Brug et nyt kort
+          pay_now: Betal nu
+          payment_details_html: Betalingen behandles sikkert via %{provider}. Alle beløb er i %{currency}.
+          save_card: Gem dette kort til fremtidige betalinger
+          select_card: Vælg et gemt kort
+      vipps:
+        awaiting_payment:
+          body: Vent venligst, mens vi bekræfter transaktionen.
+          error: Vi kan ikke bekræfte din betaling. Kontakt venligst kundeservice med referencenummer %{order_id}.
+          title: Bekræfter din betaling
+        payment:
+          back: Tilbage
+          header: Vipps-betaling
+          pay_now: Betal med Vipps
+    orders:
+      index:
+        header: Mine ordrer
+        no_orders: Du har ingen ordrer endnu.
+        order_number: 'Ordre #%{number}'
+      payment:
+        amount_to_pay: Beløb at betale
+        fiken: Faktura (fig.)
+        front_go: FrontGo
+        no_payment_methods: Ingen betalingsmetoder tilgængelige.
+        pay_later: Betal senere
+        stripe: Bankkort
+        vipps: Vips
+      show:
+        back_to_orders: Tilbage til ordrer
+        confirmation_message: Tak for din bestilling!
+        discount_code: Rabat (%{code})
+        each: stk.
+        gift_card_code: Gavekortkode
+        gift_card_value: Værdi
+        gift_cards: Gavekort
+        header: Ordrebekræftelse
+        order_details: Ordreoplysninger
+        payment_details: Betaling
+        total: Total
+        transaction_gift_card: Gavekort (%{code})
+        transaction_payment: Betaling
+        transaction_refund: Tilbagebetale
+    person_sessions:
+      enter_perishable_token:
+        confirm_booking: Bekræft reservation
+        no_code: Kan du ikke få koden?
+        send_again: Send igen
+        verify_login: Bekræft login
+      perishable_token_action_required:
+        body: Vi har sendt en e-mail til %{recipient}. Følg den for at bekræfte din reservation. Dette hjælper os med at sikre os, at du ikke er en robot.
+        delivery_error: Vi kunne ikke sende e-mailen. Er du sikker på, at du brugte den korrekte adresse?
+        delivery_not_processed: Der er i øjeblikket en kø i vores systemer. Vent venligst, mens vi forsøger at sende e-mailen.
+        title: Bekræft venligst din e-mailadresse.
+      perishable_token_form:
+        title: Log ind
+      verification_method_email:
+        submit: Send bekræftelsesmail
+      verification_method_sms:
+        submit: Send bekræftelseskode
+    products:
+      index:
+        header: Produkter
+      show:
+        add_to_cart: Læg i kurv
+        price: Pris
+    profile:
+      children:
+        index:
+          add_person: Tilføj person
+          alt:
+            right: Højre
+          header: Personer du kan booke for
+          no_children: Du har ikke tilføjet nogen at bestille for endnu.
+        new:
+          errors_header: 'Der opstod en fejl:'
+          submit: Gem og fortsæt
+          subtitle: Udfyld venligst oplysningerne for den person, du ønsker at booke for.
+          title: Tilføj person
+      credit_card_list:
+        title: Betalingsmetoder
+      gift_card_list:
+        balance: Balance
+        code: Kode
+        no_gift_cards: Du har ingen gavekort.
+        purchased_body: Gavekort, du har købt, som endnu ikke er blevet indløst.
+        purchased_title: Købte gavekort
+        title: Mine gavekort
+      index:
+        book_again: Reserver igen
+        canceled: Annulleret
+        my_profile: Min profil
+        tabs:
+          all: Alle
+          cancelled: Annulleret
+          completed: Udført
+          upcoming: Fremtid
+        waiting: Venter
+      new:
+        errors_header: 'Der opstod en fejl:'
+        register: Register
+        subtitle: Udfyld venligst de nødvendige data for at registrere dig.
+        title: Ny profil
+      show:
+        alt:
+          language: Sprog
+          logout: Log ud
+          right: Højre
+        change_language: Skift sprog
+        logout: Log ud
+        my_bookings: Mine reservationer
+    services:
+      available_dates:
+        title: Vælg dato og klokkeslæt
+      count:
+        title: Vælg antal personer
+      index:
+        title: Vælg tjeneste
+      location:
+        title: Vælg placering
+      show:
+        book_service: Reserver denne service
+      slots:
+        available_times: Tilgængelige tider
+        continue: Fortsætte
+        estimated_time: Estimeret behandlingstid - %{duration} min.
+        free_capacity: "%{count} tilgængelige"
+        next_available_date_html: Næste ledige dato er %{next_available_date}
+        no_availability: Ingen ledige tidspunkter på den valgte dato. Prøv venligst en anden dato.
+        title: Vælg dato og klokkeslæt
+      success:
+        add_to_calendar: Tilføj reservation til kalender
+        book_another: Reserver en ny service
+        title: Du har reserveret tjenesten.

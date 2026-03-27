@@ -3,11 +3,21 @@ da:
   booking_ical:
     summary: "%{service} hos %{client}"
   booking_mailer:
+    awaiting_confirmation:
+      body: |-
+        Hej,
+         Din anmodning om at reservere %{title} %{time_range} er blevet registreret.
+         Din reservation er ikke bekræftet, før den er godkendt.
+        Du modtager en e-mail, når din anmodning er blevet behandlet.
+      subject: Ny anmodning om reservation
     cancellation:
       header: Hej %{name}
       info: Din reservation hos os %{title} %{time_range} er blevet annulleret.
       subject: Reservation annulleret
     confirmation:
+      booking_count:
+        one: Reserveret til %{count} personer.
+        other: Reserveret til %{count} personer.
       header: Hej %{name}
       info: Du har reserveret %{title} %{time_range}.
       link: Flere oplysninger om din reservation
@@ -73,6 +83,21 @@ da:
       booking_type_attendance: |-
         Ny registrering til {{booking.event.full_title}} {{booking.time_range}} af {{booking.person.name}}.
         Makeplans
+    admin_notification_modification:
+      booking_type_appointment: |-
+        Ændring af reservation for {{ booking.resource.title }} for {{ booking.person.name }}. {{ booking.title }} {{ booking.time_range }}
+        Lavplaner
+      booking_type_attendance: |-
+        Tilmelding ændret for {{ booking.event.full_title }} {{ booking.time_range }} af {{ booking.person.name }}.
+        Lavplaner
+    admin_notification_resource_change:
+      booking_type_appointment: |-
+        Ændring af ressource for {{ booking.resource.title }} med {{ booking.person.name }} {{ booking.title }} {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        Ændring af registrering for {{ booking.event.full_title }} {{ booking.time_range }} af {{ booking.person.name }}.
+        Lav planer
+    awaiting_confirmation: Du har indsendt en reservationsanmodning for {{ booking.title }} {{ booking.booked_from }}. Du vil modtage en sms, når den er blevet behandlet.
     cancellation: Din reservation hos os {{booking.booked_from}} er blevet annulleret.
     confirmation: Du har reserveret {{booking.title}} {{booking.booked_from}}.
     declined: Din anmodning om reservation {{booking.title}} {{booking.booked_from}} blev desværre ikke godkendt. Prøv en anden gang.

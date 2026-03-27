@@ -1,0 +1,78 @@
+---
+da:
+  shared:
+    bookings:
+      expired:
+        info: Reservationer skal bekræftes inden for %{expires_in} minutter. Prøv igen.
+        title: Reservationen er udløbet
+      new:
+        accept: Jeg accepterer vilkårene og betingelserne
+        email_suggestion_html: "<p>Mente du <span>%{suggestions}</span> ?</p>"
+        terms: Læs vilkårene og betingelserne for reservationen
+      payment_stripe:
+        submit: Betale
+      show:
+        booked_for_child: Denne reservation er for %{name}.
+        count: Reserveret til %{count} personer.
+        invoiced: Du er blevet faktureret.
+        paid: Du har forudbetalt %{paid_amount}.
+        price: 'Pris: %{amount}.'
+      verification_method_email:
+        email: E-mail
+        info: Du skal bekræfte din e-mailadresse for at gennemføre din reservation.
+        submit: Fortsætte
+        title: Bekræft din e-mailadresse
+      verification_method_oauth:
+        info: Du skal bekræfte din identitet for at gennemføre din reservation.
+        title: Bekræft din identitet
+      verification_method_sms:
+        info: Du skal bekræfte dit mobilnummer for at gennemføre din reservation.
+        phone_number: Mobilnummer
+        submit: Fortsætte
+        title: Bekræft dit mobilnummer
+    generic:
+      close: tæt
+      payment:
+        card: Kort
+    order_cart:
+      checkout:
+        cannot_use_coupon_for_gift_card: Rabatkoder kan ikke bruges ved køb af gavekort.
+        cannot_use_gift_card_for_gift_card: Gavekort kan ikke bruges til at købe gavekort.
+        coupon_above_maximum: Det samlede ordrebeløb overstiger det maksimale beløb for denne rabatkode.
+        coupon_below_minimum: Det samlede ordrebeløb er under minimumskravet for denne rabatkode.
+        coupon_no_eligible_items: Denne rabatkode gælder ikke for varer i indkøbskurven.
+        coupon_not_redeemable: Denne rabatkode er ikke gyldig.
+        invalid_cart_item: Ugyldig værdi
+        invalid_coupon: Ugyldig rabatkode
+        invalid_gift_card: Ugyldigt eller allerede brugt gavekort
+    order_payments:
+      pay_later:
+        gift_cards_not_allowed: Gavekort kan ikke bruges med betaling senere.
+      processing:
+        message: Vent venligst, mens vi behandler din betaling...
+        title: Behandling af betaling
+    person_sessions:
+      perishable_token_form:
+        login_with_email: Log ind med e-mail
+        login_with_id_porten: Log ind med BankID
+        login_with_sms: Log ind med SMS
+        login_with_vipps: Log ind med Vipps
+    profile:
+      edit:
+        cancel: Ophæve
+        errors_header: 'Der opstod en fejl:'
+        header: Rediger profil
+        save: Spare
+        verified: Bekræftet
+    services:
+      count:
+        title: Hvor mange mennesker?
+      slots:
+        free_capacity:
+          one: "%{count} tilgængelige"
+          other: "%{count} tilgængelige"
+        gap_warning: For at vælge flere pladser skal de være fortløbende uden pause.
+        max_slots_warning: Du kan ikke vælge mere end %{max_slots} blokke.
+        multiple_slots_info: For at vælge flere tidsrum skal du først vælge start- og derefter sluttidspunktet.
+      time_day:
+        time_zone_differ_info: Alle tider er i tidszone %{time_zone}.

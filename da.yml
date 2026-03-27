@@ -3,17 +3,24 @@ da:
   activerecord:
     attributes:
       booking:
+        booked_by_person_id: reserveret af
         booked_from: starttidspunkt
         booked_to: sluttid
         count: Nummer
+        coupon_code: rabatkode
         event_id: arrangement
+        external_id: eksternt ID
         notes: Bemærkninger
         person: kunde
         person_id: kunde
+        reminder_at: påmindelse
         resource: ressource
         resource_id: ressource
         service: service
         service_id: service
+        state: status
+        status: status
+        terms_accepted: betingelser
         title: titel
         verification_code: verifikationskode
       booking/state:
@@ -24,6 +31,7 @@ da:
         confirmed: Bekræftet
         declined: Afvist
         deleted: Slettet
+        verification_expired: Udløbet
       booking/status:
         checked_in: Tjekket ind
         completed: Færdiggjort
@@ -37,14 +45,24 @@ da:
         mailer_sender: e-mail-afsender
         phone_number: telefonnummer
         purge_data_period: Automatisk sletningsperiode
+        sms_notification_recipient: telefonnummer(e) til underretning
+        terms: betingelser
+      client/slot_generation:
+        dynamic: dynamisk
+        fixed: bestemt
       client_user_link:
         role: rolle
       client_user_link/role:
         admin: Administrator
         manager: Manager
         staff: Medarbejder
+      coupon/value_type:
+        amount: beløb
+        percentage: procent
       event:
         booking_capacity: maksimalt antal deltagere pr. reservation
+        booking_minimum: Minimum antal deltagere pr. reservation
+        cancellation_period: Annulleringsfrist
         capacity: maksimalt antal deltagere
         description: beskrivelse
         ends_at: sluttid
@@ -76,9 +94,11 @@ da:
         created_at: registreret
         date_of_birth: fødselsdato
         email: e-mail
+        locale: sprog
         name: navn
         national_id_no: Fødselsdag
         notes: Bemærkninger
+        opt_in_marketing: modtage markedsføringsoplysninger
         phonenumber: telefonnummer
         postal_code: postnummer
         state: amt / stat
@@ -89,9 +109,18 @@ da:
         sms_notification_recipient: telefonnummer til underretning
         title: titel
       service:
+        allow_invoice: kan betales via faktura
         payment_required: kræver forudbetaling
         price: pris
+        terms: betingelser
         title: titel
+      service/availability_type:
+        provider: udbyder
+        resource: ressource
+      service/priority_strategy:
+        order: bestille
+        random: tilfældig
+        weight: vægt
       user:
         current_password: Nuværende kodeord
         password: adgangskode
@@ -103,6 +132,7 @@ da:
     errors:
       messages:
         chronic_syntax_error: syntaksfejl se https://github.com/mojombo/chronic#examples
+        denied: Din anmodning blev afvist.
         icalendar_invalid: Ingen genererede aftaler eller fejl i iCalendar-definitionen
         icalendar_over_limit: For mange genererede aftaler - max er 731
         illegal: ulovlig
@@ -111,8 +141,10 @@ da:
         time_not_available: ikke tilgængelig på det valgte tidspunkt
       models:
         booking:
+          active_bookings_limit: Det maksimale antal aktive reservationer er %{count}
           attributes:
             count:
+              below_minimum_count: Mindre end nødvendigt antal personer
               over_booking_capacity: Mere end det maksimale antal personer
             event_id:
               time_not_available: er fuld
@@ -126,7 +158,11 @@ da:
               not_offered: tilbydes ikke af den valgte ressource
             state:
               invalid_transition: Ugyldig statusændring
+          exceeds_max_slots: Reservationen overskrider det maksimale antal tilladte tidsblokke.
           fully_booked: Ikke tilgængelig på det valgte tidspunkt
+          mismatch: Oplysningerne stemmer ikke overens med din kundeprofil.
+          no_parent_takeover: Kontakt venligst kundeservice for at foretage denne reservation.
+          prevent_new_signups: Kun tilgængelig for eksisterende kunder.
           time_after_future_bookable_period: Skal være inden den tilladte dato
         client:
           attributes:
@@ -134,16 +170,32 @@ da:
               denied: Afvist
         client_user_link:
           admin_needed: Brug for mindst én administratorbruger på kontoen.
+        order:
+          attributes:
+            base:
+              must_have_line_items: Ordren skal indeholde mindst én vare.
+              payment_incomplete: Betalingen skal være gennemført, før ordren kan bekræftes.
+        order_line_item:
+          attributes:
+            booking:
+              invalid: er ikke længere tilgængelig for betaling
         person:
+          attributes:
+            national_id_no:
+              invalid_syntax_no: Udfyld et gyldigt nationalt identifikationsnummer - 11 cifre.
           blocked: Din konto er ikke i stand til at foretage reservationer.
           missing: er ikke gemt på din kundeprofil. Kontakt os for at rette op på dette.
           no_values_present: Navn, telefonnummer eller e-mail er påkrævet.
+          prevent_new_signups: booking er kun tilgængelig for eksisterende kunder
         resource:
           has_bookings: Denne ressource har aktive forbehold og kan derfor ikke slettes. Kontakt kundeservice.
         service:
           attributes:
             below_minimum: skal være mere end 1 USD, hvis du vil kræve betaling
             payment_price_required: skal indstilles, hvis du vil kræve betaling
+            price:
+              below_minimum: skal være højere end 3 NOK, hvis du ønsker forudbetaling.
+              payment_price_required: skal indstilles, hvis du vil kræve forudbetaling
         user:
           attributes:
             password:
@@ -155,14 +207,20 @@ da:
     models:
       booking: reservation
       category: kategori
+      coupon: rabatkode
       event: arrangement
       external_credential: integration
+      gift_card: gavekort
       message_template: besked skabelon
       person: kunde
       resource: ressource
       service: service
+      service_addon: tilføjelse
       service_appointment: service
       service_attendance: arrangementstype
+      service_gift_card: gavekort
+      service_product: produkt
+      tag: mærke
       user: Bruger
       web_hook: webhook
   date:
@@ -177,8 +235,15 @@ da:
       short_with_name_and_year: "%a %-d. %b %Y"
     moment_format: DD.MM.YYYY
     moment_parse: DD.MM.YYYY
+  datetime:
+    distance_in_words:
+      x_hours:
+        one: 1 time
+        other: "%{count} timer"
   errors:
     messages:
+      date_format: 'Indtast datoen i følgende format: %{format}'
+      date_of_birth: Fødselsdatoen er ikke inden for den accepterede periode.
       no_values_present: Navn, telefonnummer eller e-mail er påkrævet.
       not_authenticated: Du er logget ud.
       not_found: Ingen data fundet. Prøv at genindlæse siden. Kontakt kundeservice, hvis problemet fortsætter.
@@ -194,22 +259,28 @@ da:
           no_identifier: Mangler email eller telefonnummer.
     stripe:
       booking:
+        already_refunded: Allerede refunderet.
         invalid: Reservationen er udløbet eller er ugyldig. Transaktionen er ikke gennemført.
         paid: Reservationen er allerede betalt. Prøv at opdatere siden.
       card:
         missing: Kunne ikke finde kortoplysninger
+      payment_intent_unexpected_state: Betalingen kunne ikke bekræftes. Prøv igen.
       processor: 'Fejlmeddelelse fra vores betalingspartner: %{error}'
       unknown: Transaktionen kunne ikke gennemføres. Ukendt fejl.
   generic:
+    account_default: Standardkontoindstilling
     all: alle sammen
     at: på
     born_abbreviation: f. %{date_of_birth}
+    country_locale: nb
     default: Systemstandard
+    'false': Ikke aktiveret
     optional: valgfri
     search: Søg
     to: til
     today: I dag
     tomorrow: i morgen
+    'true': Aktiveret
   helpers:
     booking:
       action:
@@ -225,24 +296,39 @@ da:
         confirmed: Bekræftet
         declined: Afvist
         deleted: Fjernet
+        verification_expired: Bekræftelsen er udløbet
+    booking_state_transitions:
+      events:
+        modified: Ændret
+    boolean:
+      'false': Ingen
+      'true': Ja
     datepicker:
       next_month: Næste måned
       prev_month: Sidste måned
     label:
       booking:
         all_day: Hele dagen
+        booked_by_person_id: Reserveret af
         booked_from: Starter
         booked_to: Slutter
         count: Antal personer
+        coupon_code: Rabatkode
         external_id: Eksternt ID
         invoiced_at: Faktureret
         notes: Bemærkninger
         paid_at: Betalt
         person_id: Kunde
+        reminded_at: Påmindelse sendt
         reminder_at: Påmindelse
         resource_id: Ressource
         service_id: Service
+        state: Status
+        status: Status
+        terms_accept: Jeg godkender
         terms_accepted: Jeg godkender vilkårene
+        terms_close: Tæt
+        terms_link: betingelserne for reservationen
         title: Titel
         verification_code: Verifikationskode
       category:
@@ -269,11 +355,15 @@ da:
         billing_street: Vejnavn
         billing_vat_no: Organisationsnummer
         booking_form: Brugerdefineret reservationsformular
+        booking_site_locale: Sprog (Styrer også tal- og dataformatering)
+        booking_site_person_form: Brugerdefineret kunderegistreringsformular
+        calendar_event_text: Vis tekst til reservation i kalenderen
         cancellation_period: Afbestillingsfrist
         category_form: Brugerdefinerede kategorifelter
         closed_for_holidays: Lukket på helligdage
         confirm_manually: Reservationer skal godkendes af administratoren
         country_code: Land
+        coupon_form: Brugerdefinerede rabatkodefelter
         css_url: Tilpasset CSS (URL skal være HTTPS)
         currency: Betalingsmiddel
         email: Email adresse
@@ -282,22 +372,32 @@ da:
         first_bookable_period: Begrænsning for første tilgængelige tid
         footer: Sidefod på hver side
         future_bookable_period: Begrænsning på hvor langt i forvejen du kan reservere
+        gift_card_form: Brugerdefinerede gavekortfelter
         google_analytics: Google Analytics-sporings-id
+        ical_description: Beskrivelse
+        ical_summary: Titel
         interval_rounding: Standard afrunding til næste ledige tid
         locale: Sprog (styrer også antal og dataformatering)
         logo: Logo
+        mail_awaiting_confirmation: Tekst i e-mail, der sendes, når reservationen skal godkendes
+        mail_awaiting_confirmation_subject: Titel på e-mail sendt, når reservationen skal godkendes
         mail_cancellation: Tekst i e-mail, der sendes ved annullering
         mail_cancellation_subject: Titel på e-mail sendt ved annullering
         mail_confirmation: Tekst i e-mail, der sendes ved bekræftelse
         mail_confirmation_subject: Titel på e-mail sendt ved bekræftelse
         mail_modification: Tekst i e-mail, der sendes, når den ændres
         mail_modification_subject: Titel på e-mail sendt ved ændring
+        mail_notification_cancellation: Tekst i e-mail, der sendes som en besked ved afbestilling
+        mail_notification_confirmation: Tekst i e-mail, der sendes som en besked ved bekræftelse
+        mail_notification_modification: Tekst i e-mail, der sendes som en besked, når der sker en ændring
         mail_notification_recipient: E-mail-adresser til underretning
         mail_verification: Tekst i e-mail sendt under bekræftelse
         mail_verification_subject: Titel på e-mail sendt ved bekræftelse
         mailer_sender: E-mail-afsender
         name: Firmanavn (vises på reservationssiden)
         new_booking_text: Tekst vises på bekræftelsessiden
+        next_invoice_nr: Næste fakturanummer
+        no_availability_text: Tekst der vises, når der ikke er ledige tider
         payment_provider: Betalingsløsning (For forudbetaling af reservationer)
         person_form: Brugerdefinerede kundefelter
         phone_number: Mobilnummer til underretning
@@ -313,6 +413,8 @@ da:
           time_day_available: Dag
           week_available: Hele ugen
           weekday_available: Hverdage
+        slot_generation: Tidsgenerering
+        sms_awaiting_confirmation: Tekst i SMS, der sendes, når reservationen skal godkendes
         sms_cancellation: Tekst i SMS, der sendes ved annullering
         sms_confirmation: Tekst i SMS, der sendes ved bekræftelse
         sms_modification: Tekst i SMS, der sendes ved ændring
@@ -323,18 +425,43 @@ da:
         sms_verification: Tekst i SMS, der sendes under verifikation
         subdomain: Konto-adresse (underdomæne)
         template: Design skabelon
+        templates:
+          amsterdam: Amsterdam
+          lviv: Lviv
+          timisoara: Timişoara
         terms: Vilkår og betingelser
         time_zone: Tidszone
         verification_method: Verifikationsmetode til ny reservation
+      client/slot_generation:
+        dynamic: Dynamisk (standard)
+        fixed: Solid
       client_user_link:
         role: Adgangsniveau
       client_user_link/role:
         admin: Fuld adgang
         manager: Grundlæggende opsætning
         staff: Kun kalender
+      coupon:
+        active: Aktiv
+        allowed_booking_end_at: Seneste starttidspunkt for reservation
+        allowed_booking_start_at: Tidligste starttidspunkt for reservation
+        availability: Tilgængelige kuponer
+        code: Kode
+        max_count: Maksimalt antal personer
+        max_order_amount: Maksimalt beløb
+        min_count: Minimum antal personer
+        min_order_amount: Minimumsbeløb
+        title: Titel
+        valid_from: Gyldig fra
+        valid_until: Gyldig indtil
+        value: Rabatværdi
+        value_type: Rabattype
       event:
         all_day: Hele dagen
+        allow_cancellation: Kundens annullering er tilladt
+        allow_invoice: Kan betales med faktura
         booking_capacity: Maksimalt antal deltagere pr. reservation
+        booking_minimum: Minimum antal deltagere pr. reservation
         capacity: Maksimalt antal deltagere
         description: Beskrivelse
         ends_at: Slutter
@@ -347,6 +474,13 @@ da:
         service_id: Begivenhedstype
         starts_at: Starter
         title_html: Angivet titel <small>valgfri</small>
+      gift_card:
+        active: Aktiv
+        code: Kode
+        initial_value: Oprindelig værdi
+        person_id: Kunde-ID
+        valid_until: Gyldig indtil
+        value: Aktuel værdi
       message_template:
         active: Aktiv
         delivery_timing: Afleveres kl
@@ -363,11 +497,14 @@ da:
         reminder: Påmindelse
       person:
         address: Adresse
+        blocked: Blokeret for reservationer
         city: By
         country_code: Land
         created_at: Registreret
         date_of_birth: Fødselsdato (dd.mm.åååå)
+        deactivated: Handicappet
         email: E-mail
+        locale: Sprog
         name: Navn
         national_id_no: Fødselsnummer, 11 cifre)
         notes: Bemærkninger
@@ -384,25 +521,40 @@ da:
         sms_notification_recipient: Telefonnummer for underretning
         title: Titel
       service:
+        active_bookings_limit: Maksimalt antal aktive bookinger for kunden
+        allow_cancellation: Kundens annullering er tilladt
+        allow_invoice: Kan betales med faktura
+        availability_type: Tilgængelighed er defineret af
+        block_resource: Reservationen blokerer ressourcen
         booking_capacity: Maksimalt antal personer pr. reservation
         booking_form: Brugerdefineret reservationsformular
+        booking_minimum: Minimum antal personer pr. reservation
+        cancellation_period: Annulleringsfrist
         capacity: Maksimalt antal deltagere
+        confirm_manually: Reservationen skal godkendes af administratoren.
         description: Beskrivelse
+        has_day_booking: Dagsbooking
         has_day_booking_label:
           'false': min
           'true': dage
         interval: Varighed
         interval_rounding: Afrunding til næste tilgængelige tidspunkt
+        mail_awaiting_confirmation: Tekst i e-mail sendt, når reservationen skal godkendes
         mail_cancellation: Tekst i e-mail, der sendes ved annullering
         mail_confirmation: Tekst i e-mail, der sendes ved bekræftelse
         mail_modification: Tekst i e-mail, der sendes, når den ændres
         mail_verification: Tekst i e-mail sendt under bekræftelse
         max_slots: Maksimalt antal slotte pr. reservation
+        new_booking_text: Tekst vist på bekræftelsessiden
         next_interval: Vis ledig tid for hver
         payment_required: Anmod om forudbetaling
         price: Pris inklusive moms.
+        priority_strategy: Prioriteringsstrategi
         published: Kan ses på reservationssiden
+        reservation_form_text: Tekst, der vises før reservationsformularen
         same_day: Reservation kan ikke gå over flere dage
+        slot_generation: Tidsgenerering
+        sms_awaiting_confirmation: Tekst i SMS, der sendes, når reservationen skal godkendes
         sms_cancellation: Tekst i SMS, der sendes ved annullering
         sms_confirmation: Tekst i SMS, der sendes ved bekræftelse
         sms_modification: Tekst i SMS, der sendes ved ændring
@@ -411,10 +563,21 @@ da:
         template: Kalender skabelon
         templates:
           default: Standard
+          list: Liste
+          month: Måned
+          resources: Ressourcer
           time_day_available: Dag
           week_available: Hele ugen
           weekday_available: Hverdage
+        terms: Vilkår
         title: Titel
+      service/availability_type:
+        provider: Tilbud
+        resource: Ressource (standard)
+      service/priority_strategy:
+        order: Bestille
+        random: Tilfældig (standard)
+        weight: Vægtet
       user:
         current_password: Nuværende kodeord
         email: E-mail
@@ -435,6 +598,8 @@ da:
       category:
         new: Ny kategori
       confirm: Er du sikker?
+      coupon:
+        new: Ny rabatkode
       create: skab
       delete: Slet
       delete_confirm: Er du sikker på, at du vil slette?
@@ -442,16 +607,27 @@ da:
       event:
         new: Ny begivenhed
         new_attendant: Tilføj reservation
+      gift_card:
+        new: Nyt gavekort
+      message_template:
+        new: Ny beskedskabelon
       person:
         new: Ny kunde
+        new_child: Ny kunde
       resource:
         new: Ny ressource
       service:
         new_appointment: Ny service
         new_attendance: Ny begivenhedstype
+        new_gift_card: Nyt gavekort
+        new_gift_card_title: Ny %{title}
+        new_product: Nyt produkt
+        new_product_title: Ny %{title}
       setup:
         skip: Manuel opsætning
         step_html: "<strong>Trin %{step}</strong> af %{max_steps}"
+      undelete: Gendan
+      undelete_confirm: Er du sikker på, at du vil gendanne?
       user:
         new: Ny bruger
       view: Vis
@@ -461,22 +637,28 @@ da:
       agenda: Agenda
       calendar: Kalender
       logout: Log ud
+      orders: Bestille
       people: Kunder
       profile: Profil
       reports: Rapporter
       setup: Opsætning
     menu_setup:
+      addons: Supplement
       billing: Betaling
       bookingsite: Reservationsside
       categories: Kategorier
       communication: Kommunikation
       company: Konto
+      coupons: Rabatkoder
+      developer: Udvikler
       export: Eksport
       fields: Brugerdefinerede felter
+      gift_cards: Gavekort
       import: Importere
       integrations: Integrationer
       message_templates: Besked skabeloner
       person_notifications: Notifikation - kunder
+      products: Produkter
       promote: Promover
       resources: Ressourcer
       service_appointments: Tjenester
@@ -505,6 +687,10 @@ da:
       submit_default: Gem
       update: Skift %{model}
       update_password: Skift kodeord
+  profile:
+    update:
+      locked_field_changed: Bekræftede felter kan ikke ændres
+      success: Profil opdateret
   service:
     admin:
       invoice_client:

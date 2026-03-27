@@ -9,6 +9,7 @@ da:
       free_trial_info: 14-dages gratis prøveversion af den fulde version af Makeplans. Ingen forpligtelser.
       headline: Kom godt i gang med online aftale booking
       logged_in_as: Du er logget ind som %{name}.
+      newsletter: Jeg accepterer at modtage produktopdateringer via e-mail.
       read_legal: Læs servicevilkårene
       recaptcha: Vi er nødt til at bekræfte din registrering hos Google Recaptcha. Indtast din adgangskode igen, og tryk på knappen Registrer igen.
       subdomain_info: Din unikke adresse (URL), hvor dine kunder kan booke.
@@ -24,6 +25,20 @@ da:
   oauth:
     callback:
       header: Link til konto
+  room_display:
+    setup:
+      header: Opsætning af visning af mødelokale
+      instruction: Indtast venligst den opsætningskode, der er genereret i administrationspanelet.
+      invalid_code: Ugyldig kode
+      placeholder: Indtast kode
+      submit: Aktivér
+      title: Opsætning af visning af mødelokale
+    show:
+      book: Bestille
+      find_room: Find et værelse
+      free_all_day: Tilgængelig hele dagen
+      free_for: Fås i %{duration}
+      occupied: Optaget
   user:
     select_client:
       header: vælg Konto
@@ -50,6 +65,7 @@ da:
       login: Log på
       remember_me: Husk mig
       signup_html: Har du ikke en konto? <a href="%{url}">Gå i gang nu.</a>
+      title: Log ind
     rotp_verification_code:
       header: Log ind med tofaktorautentificering
       info: Brug koden genereret af din 2FA-applikation.
