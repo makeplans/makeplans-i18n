@@ -448,6 +448,7 @@ en:
       edit_person_notifications:
         automatic_messages: Automatic messages (In the admin system and the API)
         automatic_messages_booking_site: Automatic messages (On the booking site)
+        booking_site_manual_confirmation_message: Send message regarding manual confirmation
         booking_site_message: Send message on the booking site
         booking_site_outgoing_messages_info: Makeplans will by default send a message for important events such as a confirmation message using the verification method, for example SMS with SMS verification, or using email if using other/none verification.
         awaiting_confirmation_email: Send email when reservation requires confirmation
@@ -461,6 +462,7 @@ en:
         disable: Deactivate
         enable: Activate
         header: Customer notifications
+        manual_confirmation_message: Send message regarding manual confirmation
         message_template_info: This is the built-in legacy reminder. For multiple reminders and more control please use the message tenplate feature.
         modification_email: Send email when modifying reservation
         modification_sms: Send SMS when modifying reservation
