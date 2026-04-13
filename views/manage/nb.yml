@@ -568,6 +568,7 @@ nb:
         index:
           email: Send en kopi på epost
           header: Fakturaer fra Makeplans
+          paid: Betalt
       promote:
         booking_button_html_info: Kopier HTML-koden nedenfor til din nettside. Ta eventuelt kontakt med din web-designer for hjelp.
         booking_button_html_preview: Forhåndsvisning

@@ -577,6 +577,7 @@ en:
         index:
           email: Send a copy to your email
           header: Invoices from Makeplans
+          paid: Paid
       promote:
         booking_button_html_info: To insert the booking button on your website please copy the HTML-code below. If you need help please contact your web-designer.
         booking_button_html_preview: Booking button preview
