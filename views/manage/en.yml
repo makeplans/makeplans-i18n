@@ -90,7 +90,7 @@ en:
         reseller_billing_info: Billing for your account is managed by your reseller.
         sms_credits_available: You have a balance of %{credits} SMS.
         vat_no: Registered VAT no is %{vat_no}
-        vat_no_missing: No VAT no entered.
+        vat_no_missing: VAT no entered.
       paying_account_required:
         activate_account: Activate account now
         info: This feature requires your account to be activated.
