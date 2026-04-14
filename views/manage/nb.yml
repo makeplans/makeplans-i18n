@@ -412,6 +412,7 @@ nb:
           person_oauth_auto_create: Opprett kundeprofil automatisk fra tredjeparts innlogging (hopp over registreringsskjema)
           plausible: Aktiver Plausible Analytics
           prevent_new_signups: Tillatt kun booking for eksisterende kunder
+        verification_methods_alt: 'Alternative metoder:'
         verification_methods:
           email: Epost
           facebook: Tillatt også verifisering med Facebook Connect.
