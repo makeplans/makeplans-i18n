@@ -449,6 +449,7 @@ nb:
       edit_person_notifications:
         automatic_messages: Automatiske utsendelser (Administrasjonsystem og API)
         automatic_messages_booking_site: Automatiske utsendelser (På bookingsiden)
+        booking_site_manual_confirmation_message: Send melding om at reservasjon må behandles manuelt
         booking_site_message: Send melding på bookingsiden
         booking_site_outgoing_messages_info: Som standard vil Makeplans sende en melding ved viktige hendelser som bekreftelse via valgt verifiseringsmetode, for eksempel SMS for SMS-verifisering, or epost hvis man har annen eller ingen verifisering.
         awaiting_confirmation_email: Utsendelse av epost når reservasjon krever godkjenning
@@ -462,6 +463,8 @@ nb:
         disable: Deaktiver
         enable: Aktiver
         header: Send varslinger til kunde
+        manual_confirmation: Send melding når reservasjon er behandlet manuelt
+        manual_confirmation_message: Send melding om at reservasjon må behandles manuelt
         message_template_info: Dette er den innebygde funksjon for utsending. For flere påminnelser og mer kontroll, bruk meldingsmal-funksjonen.
         modification_email: Utsendelse av epost ved endring av reservasjon
         modification_sms: Utsendelse av SMS ved endring av reservasjon

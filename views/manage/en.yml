@@ -463,6 +463,7 @@ en:
         disable: Deactivate
         enable: Activate
         header: Customer notifications
+        manual_confirmation: Send message when booking is vetted
         manual_confirmation_message: Send message regarding manual confirmation
         message_template_info: This is the built-in legacy reminder. For multiple reminders and more control please use the message tenplate feature.
         modification_email: Send email when modifying reservation
