@@ -128,6 +128,7 @@ en:
       new:
         errors_header: 'Errors occured:'
         header: Account information
+        register: Register
       show:
         header: Your stored information
     gift_cards:

@@ -136,6 +136,7 @@ nb:
       new:
         errors_header: 'Det oppstod feil:'
         header: Dine kontaktopplysninger
+        register: Registrer
       show:
         header: Din lagrede informasjon
     gift_cards:
