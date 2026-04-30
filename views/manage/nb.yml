@@ -877,7 +877,15 @@ nb:
     people:
       children:
         index:
+          add_existing: Legg til eksisterende kunde
           headline: "%{parent} kan booke for disse personene:"
+        new:
+          add_selected: Legg til valgte
+          headline: "Legg til tilknyttede kunder for %{parent}"
+          no_results: Ingen matchende kunder funnet
+          no_results_hint: Kun kunder uten eksisterende tilknytning vises
+          search: Søk
+          search_placeholder: Søk på navn, epost eller telefon
       form:
         block: Blokker kunde på bookingsiden
         booking_site_locale_default: Bruk standard språk på bookingsiden

@@ -889,7 +889,15 @@ en:
     people:
       children:
         index:
+          add_existing: Add existing customer
           headline: "%{parent} can make reservations for:"
+        new:
+          add_selected: Add selected
+          headline: "Add connected customers for %{parent}"
+          no_results: No matching customers found
+          no_results_hint: Only customers without an existing connection are shown
+          search: Search
+          search_placeholder: Search by name, email, or phone
       form:
         block: Block customer on booking site
         booking_site_locale_default: Use default for the booking site
