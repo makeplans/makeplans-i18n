@@ -879,6 +879,8 @@ en:
         immediately: immediately
         services: Services
         services_info: 'The message template will be sent for all services unless you restrict to specific services below:'
+        settings:
+          skip_if_in_past: Don't send if delivery time is in the past
         template_info_html: You can merge inn dynamic values. Please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> for details.
       index:
         header: Message templates

@@ -867,6 +867,8 @@ nb:
         immediately: øyeblikkelig
         services: Tjenester
         services_info: 'Meldingsmalen vil gjelde for alle tjenester med mindre du begrenser utsending til enkelte tjenester:'
+        settings:
+          skip_if_in_past: Ikke send hvis leveringstidspunkt er passert
         template_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
       index:
         header: Meldingsmaler
