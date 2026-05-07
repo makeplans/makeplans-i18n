@@ -382,6 +382,45 @@ en:
           info: Your booking site is available at %{domain}
       edit:
         custom_messages_info_html: You can merge relevant data here. For more information please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
+      booking_site:
+        header: Booking site
+        status:
+          public_title: Your booking site is live
+          private_title: Your booking site is not public yet
+          private_hint: Open General to make it visible to customers.
+        "yes": "yes"
+        "no": "no"
+        set: set
+        not_set: not set
+        uploaded: uploaded
+        not_uploaded: not uploaded
+        subsections:
+          general:
+            title: General
+            summary: 'Language: %{language} · Verification: %{verification}'
+          rules:
+            title: Booking rules
+            summary: 'Cancellation allowed: %{cancellation} · Terms: %{terms}'
+          branding:
+            title: Branding
+            summary: 'Theme: %{theme} · Logo: %{logo}'
+          messages:
+            title: Customer-facing messages
+            summary: Custom text shown on the booking site (no availability, confirmation, etc.).
+          analytics:
+            title: Analytics
+            summary_active: 'Active: %{list}'
+            summary_none: No tracking configured.
+      booking_site_general:
+        header: Booking site - General
+      booking_site_rules:
+        header: Booking site - Booking rules
+      booking_site_branding:
+        header: Booking site - Branding
+      booking_site_messages:
+        header: Booking site - Customer-facing messages
+      booking_site_analytics:
+        header: Booking site - Analytics
       edit_booking_site:
         booking_form_info_html: Contact customer service for help. Documentation is available at <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>.
         booking_site_person_form_info_html: Customize person registration form for Timisoara and Lviv themes. Uses same syntax as reservation form.
@@ -1184,7 +1223,7 @@ en:
         header_html: Great, let's get started!<br>First lets add services for attendance.
         submit: Continue
       completed:
-        header_html: Congratulations - you booking site is now live!
+        header_html: Congratulations - your booking site is now live!
       completed_appointment:
         info_html: Your booking site is now configured at %{href}. This is where your customers can book online. We have also sent you an email with this information. In addition to the booking site you can also manually enter appointments in your calendar.
         to_calendar: Take me to the calendar

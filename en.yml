@@ -654,6 +654,12 @@ en:
       addons: Addons
       billing: Billing
       bookingsite: Booking site
+      bookingsite_children:
+        general: General
+        rules: Booking rules
+        branding: Branding
+        messages: Messages
+        analytics: Analytics
       categories: Categories
       communication: Communication
       company: Account

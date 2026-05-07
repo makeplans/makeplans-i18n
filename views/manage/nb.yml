@@ -382,6 +382,45 @@ nb:
           info: Bookingsiden din er tilgjengelig på %{domain}
       edit:
         custom_messages_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
+      booking_site:
+        header: Bookingside
+        status:
+          public_title: Bookingsiden er aktiv
+          private_title: Bookingsiden er ikke offentlig ennå
+          private_hint: Åpne Generelt for å gjøre den synlig for kundene.
+        "yes": ja
+        "no": nei
+        set: satt
+        not_set: ikke satt
+        uploaded: lastet opp
+        not_uploaded: ikke lastet opp
+        subsections:
+          general:
+            title: Generelt
+            summary: 'Språk: %{language} · Verifisering: %{verification}'
+          rules:
+            title: Bookingregler
+            summary: 'Tillater avbestilling: %{cancellation} · Vilkår: %{terms}'
+          branding:
+            title: Profil
+            summary: 'Tema: %{theme} · Logo: %{logo}'
+          messages:
+            title: Kundetekster
+            summary: Egendefinerte tekster vist på bookingsiden (ingen tilgjengelighet, bekreftelse osv.).
+          analytics:
+            title: Analyse
+            summary_active: 'Aktiv: %{list}'
+            summary_none: Ingen sporing konfigurert.
+      booking_site_general:
+        header: Bookingside - Generelt
+      booking_site_rules:
+        header: Bookingside - Bookingregler
+      booking_site_branding:
+        header: Bookingside - Profil
+      booking_site_messages:
+        header: Bookingside - Kundetekster
+      booking_site_analytics:
+        header: Bookingside - Analyse
       edit_booking_site:
         booking_form_info_html: Det du fyller ut her vil i sin helhet erstatte standard skjema som benyttes på bookingsiden. For å endre skjemaet som vises ved manuell oppretting av reservasjoner så gjøres det under "Egendefinerte felter". Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>. Husk å legge til nødvendige felter til verifisering som navn og epost/telefonnummer.
         booking_site_person_form_info_html: Tilpass registreringsskjema for kunde for Timisoara og Lviv tema. Bruker samme syntaks som reservasjonsskjema.

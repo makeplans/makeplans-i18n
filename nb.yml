@@ -652,6 +652,12 @@ nb:
       addons: Tillegg
       billing: Betaling
       bookingsite: Bookingside
+      bookingsite_children:
+        general: Generelt
+        rules: Bookingregler
+        branding: Profil
+        messages: Kundetekster
+        analytics: Analyse
       categories: Kategorier
       communication: Kommunikasjon
       company: Konto
