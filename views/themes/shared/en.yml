@@ -13,6 +13,10 @@ en:
         invalid_coupon: Invalid discount code
         invalid_gift_card: Invalid or already used gift card
     order_payments:
+      edit_profile:
+        intro: Please provide a few more details to continue with your payment.
+        submit: Continue
+        title: Complete your profile to continue
       pay_later:
         gift_cards_not_allowed: Gift cards cannot be used with pay later
       processing:

@@ -775,6 +775,8 @@ nb:
         service_links: 'Hver tjeneste må kobles mot et produkt i Fiken for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra Fiken - ikke fra Makeplans. Du må selv passe på at pris i begge systemer er identiske.'
         service_not_linked: IKKE koblet mot produkt i Fiken
         vat_type: MVA-type
+      frontgo:
+        api_key: API-nøkkel
       headline: Integrasjon med %{integration}
       highrise:
         account: Subdomain (DINKONTO.highrisehq.com - fyll inn kun DINKONTO)

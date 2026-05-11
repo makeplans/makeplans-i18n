@@ -13,6 +13,10 @@ nb:
         invalid_coupon: Ugyldig rabattkode
         invalid_gift_card: Ugyldig eller allerede brukt gavekort
     order_payments:
+      edit_profile:
+        intro: Vennligst oppgi noen flere detaljer for å fortsette med betalingen.
+        submit: Fortsett
+        title: Fullfør profilen din for å fortsette
       pay_later:
         gift_cards_not_allowed: Gavekort kan ikke brukes med betal senere
       processing:

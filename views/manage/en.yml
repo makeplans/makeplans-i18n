@@ -787,6 +787,8 @@ en:
         service_links: 'Every service must be connected to a product in Fiken to make it possible to create an order in Fiken. Please note: Price is fetched from Fiken - not from Makeplans. You must ensure that price in both applications are identical.'
         service_not_linked: NOT connected to a product in Fiken.
         vat_type: VAT-type
+      frontgo:
+        api_key: API key
       headline: Integration with %{integration}
       highrise:
         account: Subdomain (YOURACCOUNT.highrisehq.com - please only enter YOURACCOUNT)
