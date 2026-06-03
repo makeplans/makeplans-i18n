@@ -278,6 +278,10 @@ nb:
     born_abbreviation: f. %{date_of_birth}
     country_locale: nb
     default: Systemstandard
+    dictate:
+      start: Diktér
+      stop: Stopp diktering
+      unsupported: Diktering er ikke tilgjengelig
     'false': Ikke aktivert
     optional: valgfritt
     search: Søk

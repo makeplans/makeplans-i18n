@@ -281,6 +281,10 @@ en:
     born_abbreviation: b. %{date_of_birth}
     country_locale: en
     default: System default
+    dictate:
+      start: Dictate
+      stop: Stop dictation
+      unsupported: Dictation not available
     'false': Disabled
     optional: optional
     search: Search
