@@ -279,11 +279,11 @@ nb:
       index:
         all_categories: Alle kategorier
         all_services: Alle tjenester
-        buy: Kjøp
-        continue: Book denne tjenesten
+        buy: Fortsett
+        continue: Fortsett
       show:
         all_services: Alle tjenester
-        continue: Book denne tjenesten
+        continue: Fortsett
       slots:
         all_services: Alle tjenester
         availability: Tilgjengelighet
