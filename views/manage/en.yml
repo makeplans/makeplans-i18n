@@ -610,6 +610,7 @@ en:
           migrate_bookings: Migrate bookings between resources
           purge_data: Delete old data
           sms_all: Send SMS to all customers
+          sms_filter: Send SMS to filtered customers
     coupons:
       form:
         availability_placeholder: Unlimited
@@ -1244,9 +1245,22 @@ en:
       new:
         header: 'Send SMS to %{recipents_count} recipients:'
         message: Message
+        message_error: The message could not be processed. Please check the personalization tags and try again.
+        liquid_hint: 'Personalize the message with tags such as {{ person.name }}, {{ person.first_name }} or {{ person.email }}.'
         processing: Sending...
         send: Send
         sms_info: For messages longer than 160 characters the cost is calculated pr 160 character. Cost for a 200 character message is 2 SMS per message. The customer will receive as 1 SMS.
+        filter:
+          header: Send SMS to filtered customers
+          instructions: 'Select a date range, service and/or resource to find customers with matching bookings. At least one filter is required.'
+          from: Bookings on or after
+          to: Bookings on or before
+          services: Services
+          resources: Resources
+          calculate: Find recipients
+          none: 'Please select at least one filter (date range, service or resource) before sending.'
+          no_recipients: No customers match the selected filter. Adjust the filter and try again.
+          change: Change filter
         warning:
           all: 'IMPORTANT: You will now send to ALL of your customers.'
           confirm: Are you sure you want to send this message?
