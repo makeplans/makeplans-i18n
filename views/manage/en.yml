@@ -856,6 +856,7 @@ en:
         client_id: Client ID
         client_secret: Client secret
         merchant_serial_nr: Merchant serial nr
+        partner_keys_info: If your Vipps sales unit was set up through MakePlans you only need to enter your merchant serial number. Client ID, client secret and subscription key are only required if you have your own Vipps agreement.
         vipps_subscription_key: Vipps Subscription Key
       visma_eaccounting:
         active: Active

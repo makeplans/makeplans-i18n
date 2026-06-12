@@ -843,6 +843,7 @@ nb:
         client_id: Client ID
         client_secret: Client secret
         merchant_serial_nr: Merchant serial nr
+        partner_keys_info: Hvis Vipps-salgsstedet ditt ble opprettet gjennom MakePlans trenger du bare å fylle inn merchant serial number. Client ID, client secret og subscription key er kun nødvendig hvis du har din egen Vipps-avtale.
         vipps_subscription_key: Vipps Subscription Key
       visma_eaccounting:
         active: Aktiv
