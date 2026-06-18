@@ -1089,6 +1089,7 @@ nb:
           select_count: Ekstra steg for å spesifisere antall
           select_resource: Ekstra steg for valg av ressurs
           show_free_capacity: Vis ledig kapasitet
+          overnight: Til neste dag (Kun dagbooking)
       form_attendance:
         booking_site_settings: Innstillinger for bookingsiden
         days: Dager

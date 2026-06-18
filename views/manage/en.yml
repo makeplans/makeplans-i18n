@@ -1102,6 +1102,7 @@ en:
           select_count: Extra step for specifying count
           select_resource: Extra step for selecting resource
           show_free_capacity: Show available capacity
+          overnight: Overnight (Only for day booking)
       form_attendance:
         booking_site_settings: Settings for the booking site
         days: Days
