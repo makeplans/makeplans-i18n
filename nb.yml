@@ -546,7 +546,9 @@ nb:
         has_day_booking: Dagbooking
         has_day_booking_label:
           'false': min
-          'true': dager
+          'true':
+            one: dag
+            many: dager
         interval: Varighet
         interval_rounding: Avrunding til neste ledige tidspunkt
         mail_awaiting_confirmation: Tekst i epost som blir sendt når reservasjon trenger godkjenning kreves

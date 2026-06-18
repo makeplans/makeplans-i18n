@@ -548,7 +548,9 @@ en:
         has_day_booking: Day booking
         has_day_booking_label:
           'false': min
-          'true': days
+          'true':
+            one: day
+            many: days
         interval: Duration
         interval_rounding: Rounding for next available time
         mail_awaiting_confirmation: Text in awaiting confirmation email
