@@ -286,6 +286,7 @@ en:
       stop: Stop dictation
       unsupported: Dictation not available
     'false': Disabled
+    from: from
     optional: optional
     search: Search
     to: to

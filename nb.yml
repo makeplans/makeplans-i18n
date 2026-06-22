@@ -283,6 +283,7 @@ nb:
       stop: Stopp diktering
       unsupported: Diktering er ikke tilgjengelig
     'false': Ikke aktivert
+    from: fra
     optional: valgfritt
     search: Søk
     to: til
