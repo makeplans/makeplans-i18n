@@ -271,6 +271,18 @@ nb:
       payment_intent_unexpected_state: Ikke mulig å bekrefte betaling. Prøv igjen.
       processor: 'Feilmelding fra vår betalingspartner: %{error}'
       unknown: Klarte ikke å fullføre transaksjon. Ukjent feil.
+    vipps:
+      booking:
+        already_requested: Betalingsforespørsel er allerede sendt.
+        inactive: Reservasjonen er ikke lenger aktiv.
+        invalid: Reservasjonen er utløpt eller ugyldig. Transaksjon ikke gjennomført.
+        no_person: Reservasjonen har ingen kunde.
+        no_phone_number: Kunden mangler telefonnummer.
+        paid: Reservasjonen er allerede betalt. Prøv å refreshe siden.
+      no_reference: Fant ingen betalingstransaksjon for denne reservasjonen.
+      processor: 'Feilmelding fra vår betalingspartner: %{error}'
+      refund_failed: Klarte ikke å refundere transaksjon.
+      unknown: Klarte ikke å fullføre transaksjon. Ukjent feil.
   generic:
     account_default: Standard kontoinnstilling
     all: alle

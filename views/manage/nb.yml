@@ -644,6 +644,11 @@ nb:
         order_id: Bestilling
         status: Status
         total: Totalt
+      refund:
+        already_refunded: Denne bestillingen er allerede refundert.
+        failed: 'Refusjon feilet: %{message}'
+        nothing_to_refund: Det er ingenting å refundere på denne bestillingen.
+        success: Bestilling refundert.
       show:
         amount: Beløp
         balance: Utestående
@@ -661,6 +666,8 @@ nb:
         line_items: Ordrelinjer
         order_number: "Bestilling #%{id}"
         quantity: Antall
+        refund: Refunder betaling
+        refund_confirm: Refundere hele denne bestillingen? Dette reverserer alle betalinger og kan ikke angres.
         subtotal: Delsum
         total: Totalt
         transaction_type: Type
@@ -843,6 +850,7 @@ nb:
         client_id: Client ID
         client_secret: Client secret
         merchant_serial_nr: Merchant serial nr
+        non_partner_mode: Bruk mine egne Vipps-avtalenøkler i stedet for MakePlans partnernøkler
         partner_keys_info: Hvis Vipps-salgsstedet ditt ble opprettet gjennom MakePlans trenger du bare å fylle inn merchant serial number. Client ID, client secret og subscription key er kun nødvendig hvis du har din egen Vipps-avtale.
         vipps_subscription_key: Vipps Subscription Key
       visma_eaccounting:

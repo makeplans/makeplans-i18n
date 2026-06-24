@@ -274,6 +274,18 @@ en:
       payment_intent_unexpected_state: Unable to authenticate payment. Please try again.
       processor: 'Error from our payment processor: %{error}'
       unknown: Unable to process transaction. Unknown error.
+    vipps:
+      booking:
+        already_requested: Payment request already sent.
+        inactive: Reservation is no longer active.
+        invalid: Reservation has expired or is invalid. Transaction not processed.
+        no_person: Reservation has no customer.
+        no_phone_number: Customer has no phone number.
+        paid: Reservation already paid. Try to refresh the page.
+      no_reference: No payment transaction found for this reservation.
+      processor: 'Error from our payment processor: %{error}'
+      refund_failed: Unable to refund transaction.
+      unknown: Unable to process transaction. Unknown error.
   generic:
     account_default: Account default
     all: all

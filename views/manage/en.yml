@@ -652,6 +652,11 @@ en:
         order_id: Order
         status: Status
         total: Total
+      refund:
+        already_refunded: This order has already been refunded.
+        failed: 'Refund failed: %{message}'
+        nothing_to_refund: There is nothing to refund on this order.
+        success: Order refunded.
       show:
         amount: Amount
         balance: Balance due
@@ -669,6 +674,8 @@ en:
         line_items: Order Items
         order_number: "Order #%{id}"
         quantity: Qty
+        refund: Refund payment
+        refund_confirm: Refund this entire order? This reverses every payment and cannot be undone.
         subtotal: Subtotal
         total: Total
         transaction_type: Type
@@ -856,6 +863,7 @@ en:
         client_id: Client ID
         client_secret: Client secret
         merchant_serial_nr: Merchant serial nr
+        non_partner_mode: Use my own Vipps agreement keys instead of MakePlans partner keys
         partner_keys_info: If your Vipps sales unit was set up through MakePlans you only need to enter your merchant serial number. Client ID, client secret and subscription key are only required if you have your own Vipps agreement.
         vipps_subscription_key: Vipps Subscription Key
       visma_eaccounting:
