@@ -493,7 +493,6 @@ he:
       invoice_client:
         errors:
           nothing_to_invoice: החשבון לא מוכן לחשבונית. אנא ודא שיש לך לפחות משאב אחד.
-        invoice_text: שימוש בהזמנת פגישות מקוונת של Makeplans
   title:
     actions:
       edit: לַעֲרוֹך

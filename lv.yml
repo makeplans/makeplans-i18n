@@ -495,7 +495,6 @@ lv:
       invoice_client:
         errors:
           nothing_to_invoice: Konts nav gatavs rēķinu sagatavošanai. Lūdzu, pārliecinieties, vai jums ir vismaz viens resurss.
-        invoice_text: Makeplans tiešsaistes pierakstīšanās izmantošana
   title:
     actions:
       edit: Rediģēt

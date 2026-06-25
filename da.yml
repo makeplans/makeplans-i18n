@@ -696,7 +696,6 @@ da:
       invoice_client:
         errors:
           nothing_to_invoice: Kontoen er ikke klar til fakturering. Mindst en ressource er påkrævet.
-        invoice_text: Brug af Makeplans online aftale booking
   time:
     24h: true
     formats:

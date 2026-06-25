@@ -719,7 +719,6 @@ en:
       invoice_client:
         errors:
           nothing_to_invoice: Account not ready for invoicing. Please make sure you have at least one resource.
-        invoice_text: Usage of Makeplans online appointment booking
   time:
     24h: true
     formats:

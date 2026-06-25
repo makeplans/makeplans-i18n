@@ -492,7 +492,6 @@ lt:
       invoice_client:
         errors:
           nothing_to_invoice: Sąskaita neparengta sąskaitoms išrašyti. Įsitikinkite, kad turite bent vieną šaltinį.
-        invoice_text: Makeplans internetinių susitikimų rezervavimo naudojimas
   title:
     actions:
       edit: Redaguoti

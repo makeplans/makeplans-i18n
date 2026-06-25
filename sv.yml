@@ -641,7 +641,6 @@ sv:
       invoice_client:
         errors:
           nothing_to_invoice: Kontot är inte klart för fakturering. Minst en resurs krävs.
-        invoice_text: Användning av Makeplans onlinebokningsbokning
   time:
     24h: true
     formats:

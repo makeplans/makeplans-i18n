@@ -492,7 +492,6 @@ ms:
       invoice_client:
         errors:
           nothing_to_invoice: Akaun belum siap untuk penginvoisan. Pastikan anda mempunyai sekurang-kurangnya satu sumber.
-        invoice_text: Penggunaan tempahan janji temu dalam talian Makeplans
   title:
     actions:
       edit: Edit
