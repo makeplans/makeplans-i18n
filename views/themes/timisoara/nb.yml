@@ -49,6 +49,7 @@ nb:
         cancel_confirmation: Er du sikker på at du vil kansellere denne reservasjonen?
         info: Reservasjonen av %{title} %{time} er bekreftet.
         new_reservation: Opprett en ny reservasjon
+        pay: Betal
         reschedule: Endre tidspunkt
         title: Din reservasjon er bekreftet.
       verification_method_email:

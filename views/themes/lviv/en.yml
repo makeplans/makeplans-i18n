@@ -47,6 +47,7 @@ en:
           calendar: Add to calendar
           profile: Profile
         cancel_booking: Cancel booking
+        pay: Pay
         reschedule: Reschedule
         title: Booking details
     categories:

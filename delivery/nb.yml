@@ -45,6 +45,11 @@ nb:
       info: For enkelt å kunne betale for din reservasjon så kan du legge til dine kortdetaljer.
       link: Legg til betalingskort
       subject: Betal din reservasjon
+    request_payment:
+      header: Hei %{name}
+      info: Du kan betale for din reservasjon ved å bruke lenken under.
+      link: Betal reservasjon
+      subject: Betaling for din reservasjon
     verification:
       footer: 'OBS: Reservasjonen er ikke fullført. Hvis du ikke verifiser i løpet av %{expires_in} minutter vil reservasjonen din kanselleres.'
       header: For å fullføre din reservering av %{title} %{time_range} må du bekrefte reservasjonen ved å bruke koden nedenfor.
@@ -106,6 +111,7 @@ nb:
     modification: 'Din reservasjon hos oss har blitt endret: {{ booking.title }} {{ booking.booked_from }}.'
     reminder: 'Påminnelse: Reservasjon {% if booking.service != nil %}av {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
     request_card: 'Du kan registrere din betalingsinformasjon her: %{url}'
+    request_payment: 'Du kan betale for din reservasjon her: %{url}'
     signature: |2-
 
       Mvh {{ booking.client.name }}

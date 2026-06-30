@@ -49,6 +49,7 @@ en:
         cancel_confirmation: Are you sure you want to cancel this booking?
         info: The booking for %{title} %{time} is confirmed.
         new_reservation: Make another reservation
+        pay: Pay
         reschedule: Reschedule
         title: Your Reservation is Confirmed!
     categories:

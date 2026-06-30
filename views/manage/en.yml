@@ -227,6 +227,9 @@ en:
         request_card:
           processing: Payment link is being sent to customer
           send: Send payment link to customer
+        request_payment:
+          processing: Payment link is being sent to customer
+          send: Send payment link to customer
         send_sms: Send SMS
         show_in_calendar: Show in calendar
         stripe:

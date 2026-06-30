@@ -98,6 +98,7 @@ nb:
         cancel_confirmation: Er du sikkert på at du vil kansellere denne reservasjonen?
         invoiced: Du har blitt fakturert.
         paid: Du har forhåndsbetalt %{paid_amount}.
+        pay: Betal
         price: 'Pris: %{amount}.'
         remember_me: Vil du at vi skal huske deg på denne maskinen til neste gang du skal reservere her?
         reschedule: Endre tidspunkt

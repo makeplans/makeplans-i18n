@@ -45,6 +45,11 @@ en:
       info: To easily pay your reservation please add your credit card details.
       link: Add payment card
       subject: Add your payment info
+    request_payment:
+      header: Hi %{name}
+      info: You can pay for your reservation using the link below.
+      link: Pay reservation
+      subject: Payment for your reservation
     verification:
       footer: 'Important: The reservation is not yet completed. If you do not verifiy within %{expires_in} minutes your reservation might expire.'
       header: To complete your booking of %{title} %{time_range} you must verify your reservation by using the code below.
@@ -106,6 +111,7 @@ en:
     modification: 'Your reservation has been modified: {{ booking.title }} {{ booking.booked_from }}.'
     reminder: 'Reminder: Reservation {% if booking.service != nil %}of {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
     request_card: Please add your payment info at %{url}
+    request_payment: 'You can pay for your reservation here: %{url}'
     signature: |2-
 
       {{ booking.client.name }}

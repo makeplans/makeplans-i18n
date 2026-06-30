@@ -227,6 +227,9 @@ nb:
         request_card:
           processing: Betalingslink sendes til kunde
           send: Send betalingslink til kunde
+        request_payment:
+          processing: Betalingslink sendes til kunde
+          send: Send betalingslink til kunde
         send_sms: Send SMS
         show_in_calendar: Vis i kalenderen
         stripe:
