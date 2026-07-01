@@ -868,7 +868,14 @@ en:
         merchant_serial_nr: Merchant serial nr
         non_partner_mode: Use my own Vipps agreement keys instead of MakePlans partner keys
         partner_keys_info: If your Vipps sales unit was set up through MakePlans you only need to enter your merchant serial number. Client ID, client secret and subscription key are only required if you have your own Vipps agreement.
+        setup_webhooks: Check & set up webhooks
+        verify: Verify connection
+        verify_error: 'Vipps rejected the credentials: %{message}'
+        verify_success: Vipps is correctly configured and authenticated.
         vipps_subscription_key: Vipps Subscription Key
+        webhook_active: Payment webhook is registered.
+        webhook_setup_failed: 'Webhook setup failed: %{error}'
+        webhook_setup_missing_fields: Enter client ID, client secret, subscription key and merchant serial number before setting up webhooks.
       visma_eaccounting:
         active: Active
         connect_info: Connected to %{name}
