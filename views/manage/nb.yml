@@ -855,6 +855,7 @@ nb:
         merchant_serial_nr: Merchant serial nr
         non_partner_mode: Bruk mine egne Vipps-avtalenøkler i stedet for MakePlans partnernøkler
         partner_keys_info: Hvis Vipps-salgsstedet ditt ble opprettet gjennom MakePlans trenger du bare å fylle inn merchant serial number. Client ID, client secret og subscription key er kun nødvendig hvis du har din egen Vipps-avtale.
+        push_message: Send betalingsforespørsler til kundens Vipps-app (krever at push-meldinger er aktivert for Vipps-salgsstedet)
         setup_webhooks: Sjekk og sett opp webhooks
         verify: Verifiser tilkobling
         verify_error: 'Vipps avviste nøklene: %{message}'
