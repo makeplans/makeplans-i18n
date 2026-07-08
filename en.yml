@@ -448,6 +448,7 @@ en:
         sms_notification_recipient: Phone number(s) for notification
         sms_reminder: Text in SMS reminder
         sms_reminder_time: Time for SMS reminder
+        sms_request_payment: Text in payment request SMS
         sms_verification: Text in verification SMS
         subdomain: URL (subdomain)
         template: Design theme
@@ -586,6 +587,7 @@ en:
         sms_confirmation: Text in confirmation SMS
         sms_modification: Text in modification SMS
         sms_reminder: Text in reminder SMS
+        sms_request_payment: Text in payment request SMS
         sms_verification: Text in verification SMS
         template: Calendar template
         templates:

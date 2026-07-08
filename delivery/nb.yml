@@ -111,7 +111,7 @@ nb:
     modification: 'Din reservasjon hos oss har blitt endret: {{ booking.title }} {{ booking.booked_from }}.'
     reminder: 'Påminnelse: Reservasjon {% if booking.service != nil %}av {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
     request_card: 'Du kan registrere din betalingsinformasjon her: %{url}'
-    request_payment: 'Du kan betale for din reservasjon {% if booking.service != nil %}av {{ booking.title }} {% endif %}{{ booking.booked_from }} her: %{url}'
+    request_payment: 'Du kan betale for din reservasjon {% if booking.service != nil %}av {{ booking.title }} {% endif %}{{ booking.booked_from }} her: {{ booking.payment_link }}'
     signature: |2-
 
       Mvh {{ booking.client.name }}
