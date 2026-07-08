@@ -111,7 +111,7 @@ en:
     modification: 'Your reservation has been modified: {{ booking.title }} {{ booking.booked_from }}.'
     reminder: 'Reminder: Reservation {% if booking.service != nil %}of {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
     request_card: Please add your payment info at %{url}
-    request_payment: 'You can pay for your reservation here: %{url}'
+    request_payment: 'You can pay for your reservation {% if booking.service != nil %}of {{ booking.title }} {% endif %}{{ booking.booked_from }} here: %{url}'
     signature: |2-
 
       {{ booking.client.name }}
