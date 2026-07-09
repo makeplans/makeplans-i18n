@@ -785,6 +785,14 @@ nb:
         service_links: 'Hver tjeneste må kobles mot et produkt i Fiken for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra Fiken - ikke fra Makeplans. Du må selv passe på at pris i begge systemer er identiske.'
         service_not_linked: IKKE koblet mot produkt i Fiken
         vat_type: MVA-type
+      fiken_v2:
+        active: Aktiv
+        connected_bank_account: Bankkonto
+        connected_company: Firma
+        select_bank_account: Velg bankkonto som skal vises for innbetaling på faktura
+        select_company: Velg foretak
+        service_linked: Koblet mot produkt i Fiken
+        service_links: 'Hver tjeneste må kobles mot et produkt i Fiken for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra Fiken - ikke fra Makeplans. Du må selv passe på at pris i begge systemer er identiske.'
       frontgo:
         api_key: API-nøkkel
       headline: Integrasjon med %{integration}
@@ -937,6 +945,10 @@ nb:
         change_tfso_customer: Bytt 24SO kundenr.
         export: Send eksport av data til kunde
         export_executed: Eksportfilen sendes nå til kunden.
+        fiken:
+          create_customer: Opprett kunde i Fiken
+          processing: Oppretter kunde i Fiken...
+          show_customer: Vis kunde i Fiken
         filter_bookings:
           active: Vis kun aktive reservasjoner
           all: Vis alle reservasjoner inkludert slettede

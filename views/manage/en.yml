@@ -798,6 +798,14 @@ en:
         service_links: 'Every service must be connected to a product in Fiken to make it possible to create an order in Fiken. Please note: Price is fetched from Fiken - not from Makeplans. You must ensure that price in both applications are identical.'
         service_not_linked: NOT connected to a product in Fiken.
         vat_type: VAT-type
+      fiken_v2:
+        active: Active
+        connected_bank_account: Bank account
+        connected_company: Company
+        select_bank_account: Choose bank account to be displayed on the invoice
+        select_company: Choose company
+        service_linked: Connect to product in Fiken
+        service_links: 'Every service must be connected to a product in Fiken to make it possible to create an order in Fiken. Please note: Price is fetched from Fiken - not from Makeplans. You must ensure that price in both applications are identical.'
       frontgo:
         api_key: API key
       headline: Integration with %{integration}
@@ -950,6 +958,10 @@ en:
         change_tfso_customer: Change 24SevenOffice customer ID.
         export: Email export of data to customer
         export_executed: The export file has been sent to the customer.
+        fiken:
+          create_customer: Create customer in Fiken
+          processing: Creating customer in Fiken...
+          show_customer: Show customer in Fiken
         filter_bookings:
           active: Show only active reservations
           all: Show all reservations including deleted
