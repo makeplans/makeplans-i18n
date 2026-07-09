@@ -137,6 +137,7 @@ en:
         illegal: illegal
         invalid: is invalid
         phone_invalid: is not a valid phone number
+        phone_not_norwegian: must be a Norwegian phone number
         time_not_available: Not available for booking at this time
       models:
         booking:

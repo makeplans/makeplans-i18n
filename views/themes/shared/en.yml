@@ -46,6 +46,10 @@ en:
         payment_received: "%{paid_amount} was paid on %{paid_at}."
         save_card: Save card
     bookings:
+      edit_profile:
+        intro: Please provide a few more details to continue with your payment.
+        submit: Continue
+        title: Complete your profile to continue
       expired:
         info: Bookings must be verified within %{expires_in} minutes. Please try again.
         title: Booking expired

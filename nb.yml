@@ -138,6 +138,7 @@ nb:
         illegal: ulovlig
         invalid: er ugyldig
         phone_invalid: er ikke et gyldig telefonnummer
+        phone_not_norwegian: må være et norsk telefonnummer
         time_not_available: ikke ledig på valgt tidspunkt
       models:
         booking:

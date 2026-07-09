@@ -27,6 +27,10 @@ nb:
       payment:
         card: Kort
     bookings:
+      edit_profile:
+        intro: Vennligst oppgi noen flere detaljer for å fortsette med betalingen.
+        submit: Fortsett
+        title: Fullfør profilen din for å fortsette
       expired:
         info: Reservasjoner må bekreftes innen %{expires_in} minutter. Vennligst prøv igjen.
         title: Reservasjon utløpt
