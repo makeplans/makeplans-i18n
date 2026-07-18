@@ -1274,9 +1274,15 @@ nb:
           instructions: 'Velg en datoperiode, tjeneste og/eller ressurs for å finne kunder med reservasjoner som matcher. Minst ett filter er påkrevd.'
           from: Reservasjoner fra og med
           to: Reservasjoner til og med
+          date_hint: Valgfritt. La stå tomt for ingen datobegrensning.
           services: Tjenester
+          services_hint: La stå tomt for å inkludere kunder med reservasjoner for alle tjenester.
           resources: Ressurser
+          resources_hint: La stå tomt for å inkludere kunder med reservasjoner for alle ressurser.
           calculate: Finn mottagere
+          all: Alle
+          no_limit: Ingen begrensning
+          one_sms_per_person: Hver kunde mottar én SMS, selv om de har flere reservasjoner som matcher filteret.
           none: 'Velg minst ett filter (datoperiode, tjeneste eller ressurs) før du sender.'
           no_recipients: Ingen kunder matcher det valgte filteret. Juster filteret og prøv igjen.
           change: Endre filter

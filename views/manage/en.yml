@@ -1286,9 +1286,15 @@ en:
           instructions: 'Select a date range, service and/or resource to find customers with matching bookings. At least one filter is required.'
           from: Bookings on or after
           to: Bookings on or before
+          date_hint: Optional. Leave blank for no date limit.
           services: Services
+          services_hint: Leave empty to include customers with bookings for any service.
           resources: Resources
+          resources_hint: Leave empty to include customers with bookings for any resource.
           calculate: Find recipients
+          all: All
+          no_limit: No limit
+          one_sms_per_person: Each customer receives one SMS, even if they have several bookings matching the filter.
           none: 'Please select at least one filter (date range, service or resource) before sending.'
           no_recipients: No customers match the selected filter. Adjust the filter and try again.
           change: Change filter
