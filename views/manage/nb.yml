@@ -606,6 +606,7 @@ nb:
           migrate_bookings: Flytt reservasjoner mellom ressurser
           purge_data: Slett gamle data
           sms_all: Send SMS til alle dine kunder
+          sms_filter: Send SMS til filtrerte kunder
     coupons:
       form:
         availability_placeholder: Ubegrenset
@@ -1256,18 +1257,29 @@ nb:
         length_label: Avsluttes
     sms:
       create:
-        header: SMS sendt
-        sms_sent: 'Følgende melding ble sendt til %{recipents_count} mottagere:'
-        to_booking: Tilbake til reservasjon
+        queued: Sender SMS til %{recipents_count} mottagere...
       insufficient_credits:
         buy: Kjøp flere SMS
         info: Du må forhåndskjøpe %{needed} SMS for å sende. Du har %{credits}.
       new:
         header: Send SMS til %{recipents_count} mottagere
         message: Melding
+        message_error: Meldingen kunne ikke behandles. Sjekk personaliseringstaggene og prøv igjen.
+        liquid_hint: 'Personaliser meldingen med tagger som {{ person.name }}, {{ person.first_name }} eller {{ person.email }}.'
         processing: Sender...
         send: Send
         sms_info: For meldinger på mer enn 160 tegn så blir det kalkulert kostnad pr 160 tegn. Kostnad for tekst på 200 tegn blir da 2 SMS pr melding. Mottageren vil motta dette som 1 SMS.
+        filter:
+          header: Send SMS til filtrerte kunder
+          instructions: 'Velg en datoperiode, tjeneste og/eller ressurs for å finne kunder med reservasjoner som matcher. Minst ett filter er påkrevd.'
+          from: Reservasjoner fra og med
+          to: Reservasjoner til og med
+          services: Tjenester
+          resources: Ressurser
+          calculate: Finn mottagere
+          none: 'Velg minst ett filter (datoperiode, tjeneste eller ressurs) før du sender.'
+          no_recipients: Ingen kunder matcher det valgte filteret. Juster filteret og prøv igjen.
+          change: Endre filter
         warning:
           all: 'OBS: Du vil nå sende til ALLE kunder.'
           confirm: Er du helt sikker på at du vil sende?

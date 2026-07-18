@@ -1269,9 +1269,7 @@ en:
         length_label: Until
     sms:
       create:
-        header: SMS sent
-        sms_sent: 'The message below was sent to %{recipents_count} receipients:'
-        to_booking: Back to reservation
+        queued: Sending SMS to %{recipents_count} recipients...
       insufficient_credits:
         buy: Purchase SMS
         info: You must pre pay %{needed} SMS-credits to be able to send. You have %{credits} credits.
