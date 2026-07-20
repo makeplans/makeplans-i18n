@@ -304,6 +304,10 @@ es:
 
         %{link}
       subject: Agregado como usuario en Makeplans
+    email_modified:
+      footer: Hacer planes
+      info: Tu dirección de correo electrónico ha sido cambiada a %{new_email}. Ponte en contacto con nosotros inmediatamente si no realizaste esta acción.
+      subject: Dirección de correo electrónico modificada
     export:
       body: |-
         Hola,
@@ -322,6 +326,10 @@ es:
 
         Makeplans
       subject: Acceso a la cuenta en Makeplans
+    password_modified:
+      footer: Hacer planes
+      info: Tu contraseña ha sido modificada. Ponte en contacto con nosotros inmediatamente si no has realizado esta acción.
+      subject: Contraseña modificada
     password_reset:
       footer: Makeplans
       info: Usted u otra persona ha solicitado que se restablezca su contraseña de Makeplans. Para completar el restablecimiento de la contraseña, haga clic en el enlace a continuación.

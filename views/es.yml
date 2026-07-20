@@ -1,6 +1,8 @@
 ---
 es:
   bookings:
+    awaiting_payment:
+      vipps_payment_failed: El pago fue cancelado. Inténtalo de nuevo.
     verification_code:
       incorrect_code: código incorrecto
   clients:
@@ -25,6 +27,20 @@ es:
   oauth:
     callback:
       header: Conectarse a la cuenta
+  room_display:
+    setup:
+      header: Configurar la exhibición de la sala
+      instruction: Introduzca el código de configuración generado en el panel de administración.
+      invalid_code: Código no válido
+      placeholder: Introduzca el código
+      submit: Activar
+      title: Configurar la exhibición de la sala
+    show:
+      book: Libro
+      find_room: Encuentra una habitación
+      free_all_day: Gratis todo el día
+      free_for: Gratis para %{duration}
+      occupied: Ocupado
   user:
     select_client:
       header: Seleccionar cuenta

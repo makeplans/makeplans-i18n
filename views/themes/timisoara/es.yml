@@ -14,9 +14,28 @@ es:
         update_calendar: Actualizar mi calendario
       new:
         accept: Yo lo apruebo
+        add_another_person: Añade otra persona
+        book_for_someone_else: Reserva para otra persona
+        booking_for: 'Esta reserva es para:'
+        booking_for_label: Reserva para
+        cancel: Cancelar
+        change: Cambiar
+        edit: Editar
+        edit_profile: Editar
+        logged_in_as: Reservando como %{person}
+        logged_in_as_short: Sesión iniciada como
+        logout: Finalizar la sesión
+        myself: Mí mismo
+        not_you_logout: "¿No eres tú? Cierra sesión."
+        notice: Tu reserva aún no está confirmada. Por favor, revisa los detalles y pulsa el botón de abajo.
+        page_title: Confirma tu reserva
+        someone_else: Otra persona (añadir nuevo)
+        step_label: Paso final
         submit: Reserva completa
         terms: condiciones de la reserva
         title: Reserva de %{service}
+        who_is_booking_for: "¿Para quién es esta reserva?"
+        yourself: Tú mismo
       payment_stripe:
         title: Pago
       pre_payment:
@@ -30,6 +49,7 @@ es:
         cancel_confirmation: "¿Está seguro de que desea cancelar esta reserva?"
         info: La reserva para %{title} %{time} está confirmada.
         new_reservation: Hacer otra reserva
+        pay: Pagar
         reschedule: Reprogramar
         title: "¡Su reserva está confirmada!"
       verification_method_email:
@@ -50,12 +70,24 @@ es:
         continue: Continuar
     generic:
       alt:
+        go_back: Volver
         time: Tiempo
+    gift_cards:
+      index:
+        buy: Comprar
+        header: Tarjetas de regalo
+      new:
+        add_to_cart: Añadir a la cesta
+        description: Compra una tarjeta de regalo para alguien especial. Elige el importe a continuación.
+        header: Comprar tarjeta de regalo
+        value_label: Valor
+        value_placeholder: Introduzca la cantidad
     layouts:
       application:
         alt:
           footer_logo: Logotipo de pie de página
         booking_site_footer: Sitio de reservas para %{name}
+        cart: Carrito (%{count})
         login: Acceso
         made_by_tagline: Sistema fácil de usar para programación, reserva de citas y registro de eventos.
         made_by_title: Reserva de citas, programación e inscripciones a eventos/clases
@@ -63,6 +95,118 @@ es:
         profile: Perfil
         support: Apoyo
         title: Reserva online para %{name}
+    order_cart:
+      checkout:
+        applied_coupon: Descuento aplicado
+        applied_gift_cards: Tarjetas de regalo aplicadas
+        apply: Aplicar
+        complete_order: Completar pedido
+        continue_to_payment: Continuar con el pago
+        coupon_code: Código de descuento
+        credit_card: Tarjeta de crédito
+        discount: Descuento
+        empty_cart: Carro vacío
+        gift_card_code: Código de tarjeta de regalo
+        gift_card_code_placeholder: XXXX-0000-XXXX
+        header: Verificar
+        invoice: Factura
+        order_total: Total del pedido
+        pay_now: Paga ahora
+        payment_method: Método de pago
+        remaining_total: Total restante
+        remove: Eliminar
+        use_coupon: Código de descuento
+        use_gift_card: Utilizar tarjeta de regalo
+        your_gift_cards: Tus tarjetas de regalo
+      show:
+        amount: Cantidad
+        clear_cart: Carro vacío
+        confirm_order: Confirmar pedido
+        continue_shopping: Añade más tarjetas de regalo
+        empty_cart: Tu carrito está vacío.
+        header: Carro de la compra
+        item: Artículo
+        remove: Eliminar
+        total: Total
+    order_payments:
+      failure:
+        header: Pago fallido
+        message: Lamentablemente, no se pudo procesar su pago.
+        try_again: Intentar otra vez
+      fiken:
+        payment:
+          back: Atrás
+          create_invoice: Crear factura
+          header: Pago de facturas
+      front_go:
+        awaiting_payment:
+          body: Por favor, espere mientras verificamos la transacción.
+          error: No podemos verificar su pago. Por favor, póngase en contacto con el servicio de atención al cliente e indique el número de referencia %{order_id}.
+          title: Verificando su pago
+        payment:
+          back: Atrás
+          header: Pago FrontGo
+          pay_now: Paga ahora
+      pay_later:
+        payment:
+          back: Atrás
+          complete_order: Completar pedido
+          description: Su pedido será confirmado. El pago podrá realizarse posteriormente.
+          header: Pagar después
+      stripe:
+        awaiting_payment:
+          header: Procesamiento de pagos
+          message: Por favor, espere mientras procesamos su pago...
+        payment:
+          back: Atrás
+          header: Pago con tarjeta
+          new_card: Utiliza una tarjeta nueva
+          pay_now: Paga ahora
+          payment_details_html: El pago se procesa de forma segura mediante %{provider}. Todos los importes están en %{currency}.
+          save_card: Guarda esta tarjeta para futuros pagos.
+          select_card: Seleccione una tarjeta guardada
+      vipps:
+        awaiting_payment:
+          body: Por favor, espere mientras verificamos la transacción.
+          error: No podemos verificar su pago. Por favor, póngase en contacto con el servicio de atención al cliente e indique el número de referencia %{order_id}.
+          title: Verificando su pago
+        payment:
+          back: Atrás
+          header: Pago Vipps
+          pay_now: Paga con Vipps
+    orders:
+      index:
+        header: Mis pedidos
+        no_orders: Aún no tienes pedidos.
+        order_number: Pedido n.º %{number}
+      payment:
+        amount_to_pay: Cantidad a pagar
+        fiken: Factura (Fiken)
+        front_go: FrontGo
+        header: Seleccione el método de pago
+        no_payment_methods: No hay métodos de pago disponibles.
+        pay_later: Pagar después
+        select_payment_method: "¿Cómo le gustaría pagar?"
+        stripe: Tarjeta de crédito
+        vipps: Vipps
+      show:
+        amount: Cantidad
+        back_to_orders: Volver a los pedidos
+        confirmation_message: "¡Gracias por su pedido!"
+        discount_code: Descuento (%{code})
+        each: cada
+        gift_card_code: Código de tarjeta de regalo
+        gift_card_value: Valor
+        gift_cards: Tarjetas de regalo
+        header: Confirmación del pedido
+        item: Artículo
+        my_reservations: Mis reservas
+        order_details: Detalles del pedido
+        payment_details: Pago
+        total: Total
+        transaction_gift_card: Tarjeta de regalo (%{code})
+        transaction_payment: Pago
+        transaction_refund: Reembolso
     person_sessions:
       enter_perishable_token:
         info_html: Hemos enviado un código de verificación a <b>%{recipient}</b> Ingrese el código para verificar su información.
@@ -75,12 +219,43 @@ es:
         submit: Enviar código
         terms_conditions: Términos y condiciones
         title: Acceso
+    products:
+      index:
+        buy: Comprar
+        header: Productos
+      show:
+        add_to_cart: Añadir a la cesta
     profile:
+      children:
+        index:
+          header: Personas que puedes reservar para
+        new:
+          cancel: Cancelar
+          errors_header: 'Se produjeron errores:'
+          submit: Guardar y continuar
+          title: Agregar persona
+      credit_card_list:
+        add_card: Agregar tarjeta
+        body: Sus métodos de pago guardados
+        card_info: "%{brand} que termina en %{last_4} (expira %{expire_month}/%{expire_year})"
+        remove_card: Eliminar
+        title: Métodos de pago
+      gift_card_list:
+        balance: Balance
+        body: Tus tarjetas de regalo
+        code: Código
+        no_gift_cards: No tienes tarjetas de regalo.
+        purchased_body: Tarjetas de regalo que hayas comprado y que aún no hayas canjeado.
+        purchased_title: Tarjetas de regalo compradas
+        title: Mis tarjetas de regalo
       index:
         alt:
           calendar: Calendario
         awaiting_approval: En espera de aprobación
         cancel: Cancelar
+        logout: Finalizar la sesión
+        my_details: Mis datos
+        my_orders: Mis pedidos
         tabs:
           all: Todo
           cancelled: Cancelado
@@ -90,6 +265,9 @@ es:
       new:
         errors_header: 'Se produjeron errores:'
         header: Información de la cuenta
+        register: Registro
+      show:
+        header: Su información almacenada
     providers:
       index:
         all_services: Todos los servicios
@@ -102,6 +280,7 @@ es:
       index:
         all_categories: Todas las categorías
         all_services: Todos los servicios
+        buy: Comprar
         continue: Hacer una reserva
       show:
         all_services: Todos los servicios

@@ -3,6 +3,13 @@ es:
   booking_ical:
     summary: "%{service} y %{client}"
   booking_mailer:
+    awaiting_confirmation:
+      body: |-
+        Hola,
+         Su solicitud de reserva de %{title} %{time_range} ha sido registrada.
+         La reserva no está confirmada hasta que haya sido aprobada.
+        Recibirá un correo electrónico cuando se procese la reserva.
+      subject: Nueva solicitud de reserva
     cancellation:
       header: Hola %{name}
       info: Su reservación para %{title} en %{time_range} ha sido cancelada.
@@ -36,6 +43,11 @@ es:
       info: Para pagar fácilmente su reservación, agregue los datos de su tarjeta de crédito.
       link: Agregar tarjeta de pago
       subject: Agrega tu información de pago
+    request_payment:
+      header: Hola %{name}
+      info: Puedes pagar tu reserva a través del siguiente enlace.
+      link: Pagar reserva
+      subject: Pago de su reserva
     verification:
       footer: 'Importante: la reservación aún no está completa. Si no verifica la reservación haciendo clic en el enlace de arriba dentro de %{expires_in} minutos, su reservación podría vencer.'
       header: Para completar su reservación de %{title} %{time_range} debe confirmar su reservación haciendo clic en el enlace de abajo.
@@ -90,12 +102,14 @@ es:
       booking_type_attendance: |-
         El registro se modificó para {{ booking.event.full_title }} {{ booking.time_range }} por {{ booking.person.name }}.
         Makeplans
+    awaiting_confirmation: Has solicitado la reserva de {{ booking.title }} {{ booking.booked_from }}. Te enviaremos un mensaje cuando procesemos tu solicitud.
     cancellation: Su reservación en {{booking.booked_from}} ha sido cancelada.
     confirmation: Ha hecho una reservación para {{booking.title}} {{booking.booked_from}}.
     declined: Su solicitud de reservación de {{booking.title}} {{booking.booked_from}} no fue aprobada. Inténtalo de nuevo.
     modification: 'Su reservación ha sido modificada: {{booking.title}} {{booking.booked_from}}.'
     reminder: 'Recordatorio: Reserva {% if booking.service != nil %}de {{ booking.title }}{% endif %} {{ booking.booked_from }}.'
     request_card: Agregue su información de pago en %{url}
+    request_payment: 'Puedes pagar tu reserva {% if booking.service != nil %} de {{ booking.title }} {% endif %}{{ booking.booked_from }} aquí: {{ booking.payment_link }}'
     signature: |2-
 
       {{booking.client.name}}

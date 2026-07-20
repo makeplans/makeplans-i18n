@@ -47,6 +47,9 @@ es:
         enter_info: Ingrese información
         errors_header: Por favor complete los campos requeridos.
         form_info_html: Esto se utilizará para verificar su reservación de %{service}, %{booking}.
+        mismatch_ignore: Alternativamente, haga clic aquí para ignorar esta advertencia.
+        mismatch_ignore_confirm: Tu perfil de cliente no se actualizará con estos nuevos valores. Para modificar tu perfil, ponte en contacto con soporte. ¿Quieres seguir reservando sin actualizar tu perfil?
+        mismatch_info_html: 'Los siguientes valores no coinciden con su perfil de cliente: %{attributes}. ¿Está reservando para otra persona? Si es así, <a href="%{login_path}">inicie sesión</a> primero. Si desea modificar su perfil de cliente, póngase en contacto con el servicio de asistencia.'
         new_child: Para alguien más
         price_info: 'Precio: %{price}'
         reserve_resource: Reserva para %{resource}
@@ -79,6 +82,7 @@ es:
         providers:
           braintree: Tarjeta de crédito/débito
           fiken: Factura
+          frontgo: Adelante
           stripe: Tarjeta de crédito/débito, Google Pay o Apple Pay
           tfso: Factura
           vipps: VIPPS
@@ -96,6 +100,7 @@ es:
         cancel_confirmation: "¿Estás seguro de que deseas cancelar esta reservación?"
         invoiced: Se le ha facturado.
         paid: Ha pagado por adelantado %{paid_amount}.
+        pay: Pagar
         price: El precio de la reserva es %{amount}.
         remember_me: "¿Quiere que le recordemos en esta máquina usando una cookie?"
         reschedule: Reprogramar

@@ -9,9 +9,11 @@ es:
         count: contar
         coupon_code: código de cupón
         event_id: evento
+        external_id: ID externo
         notes: comentarios
         person: cliente
         person_id: cliente
+        reminder_at: recordatorio en
         resource: recurso
         resource_id: recurso
         service: Servicio
@@ -135,6 +137,7 @@ es:
         illegal: ilegal
         invalid: es inválido
         phone_invalid: no es un número de teléfono válido
+        phone_not_norwegian: Debe ser un número de teléfono noruego.
         time_not_available: No disponible para reservar en este momento
       models:
         booking:
@@ -155,7 +158,9 @@ es:
               not_offered: no ofrecido por el recurso elegido
             state:
               invalid_transition: Cambio de estado no válido
+          exceeds_max_slots: La duración de la reserva excede el máximo de franjas horarias permitidas.
           fully_booked: No disponible a la hora seleccionada.
+          mismatch: Los valores no coinciden con el perfil existente.
           no_parent_takeover: Por favor, póngase en contacto con el soporte para realizar esta reserva.
           prevent_new_signups: La reserva solo está disponible para clientes existentes.
           time_after_future_bookable_period: Demasiado lejos en el futuro
@@ -165,6 +170,15 @@ es:
               denied: Negado
         client_user_link:
           admin_needed: Necesita al menos un usuario administrador en la cuenta.
+        order:
+          attributes:
+            base:
+              must_have_line_items: El pedido debe tener al menos un artículo.
+              payment_incomplete: El pago debe completarse antes de confirmar el pedido.
+        order_line_item:
+          attributes:
+            booking:
+              invalid: Ya no está disponible para pago.
         person:
           attributes:
             national_id_no:
@@ -196,12 +210,16 @@ es:
       coupon: cupón
       event: evento
       external_credential: integración
+      gift_card: tarjeta de regalo
       message_template: plantilla de mensaje
       person: cliente
       resource: recurso
       service: Servicio
+      service_addon: Añadir
       service_appointment: Servicio
       service_attendance: tipo de evento
+      service_gift_card: tarjeta de regalo
+      service_product: producto
       tag: etiqueta
       user: usuario
       web_hook: webhook
@@ -238,6 +256,7 @@ es:
         perishable_token:
           expired: Código caducado. Inténtalo de nuevo.
           invalid: código incorrecto
+          invalid_value: Formato no válido
           no_identifier: Falta el correo electrónico o el número de teléfono.
     stripe:
       booking:
@@ -249,6 +268,18 @@ es:
       payment_intent_unexpected_state: No se pudo autenticar el pago. Inténtalo de nuevo.
       processor: 'Error de nuestro procesador de pagos: %{error}'
       unknown: No se puede procesar la transacción. Error desconocido.
+    vipps:
+      booking:
+        already_requested: Solicitud de pago enviada.
+        inactive: La reserva ya no está activa.
+        invalid: La reserva ha caducado o no es válida. La transacción no se ha procesado.
+        no_person: La reserva no tiene cliente.
+        no_phone_number: El cliente no tiene número de teléfono.
+        paid: La reserva ya está pagada. Intente actualizar la página.
+      no_reference: No se encontró ninguna transacción de pago para esta reserva.
+      processor: 'Error de nuestro procesador de pagos: %{error}'
+      refund_failed: No se puede reembolsar la transacción.
+      unknown: No se pudo procesar la transacción. Error desconocido.
   generic:
     account_default: Predeterminado de la cuenta
     all: todas
@@ -256,7 +287,12 @@ es:
     born_abbreviation: segundo. %{date_of_birth}
     country_locale: en
     default: Sistema por defecto
+    dictate:
+      start: Dictar
+      stop: Detener el dictado
+      unsupported: Dictado no disponible
     'false': Desactivado
+    from: de
     optional: Opcional
     search: Buscar
     to: a
@@ -307,7 +343,10 @@ es:
         service_id: Servicio
         state: Estado
         status: Estado
+        terms_accept: Lo apruebo
         terms_accepted: Apruebo los términos
+        terms_close: Cerca
+        terms_link: condiciones de la reserva
         title: Título
         verification_code: Código de verificación
       category:
@@ -335,6 +374,7 @@ es:
         billing_vat_no: IVA no
         booking_form: Formulario de reservación personalizado
         booking_site_locale: Idioma (También controla el formato de números y datos)
+        booking_site_person_form: Formulario de registro de personas aduaneras
         calendar_event_text: Mostrar texto para la reserva en el calendario
         cancellation_period: Periodo de cancelación
         category_form: Campos de categoría personalizados
@@ -350,12 +390,15 @@ es:
         first_bookable_period: No permita reservas hasta
         footer: Pie de página
         future_bookable_period: No permita reservas después
+        gift_card_form: Campos de tarjetas de regalo personalizadas
         google_analytics: ID de seguimiento de Google Analytics
         ical_description: Descripción
         ical_summary: Título
         interval_rounding: Redondeo predeterminado a la próxima hora disponible para la reservación
         locale: Idioma (también define el formato de fecha y número)
         logo: Logo
+        mail_awating_confirmation: Texto en espera de correo electrónico de confirmación
+        mail_awating_confirmation_subject: 'Asunto: correo electrónico pendiente de confirmación'
         mail_cancellation: Texto en correo electrónico de cancelación
         mail_cancellation_subject: Asunto en el correo electrónico de cancelación
         mail_confirmation: Texto en correo electrónico de confirmación
@@ -366,12 +409,17 @@ es:
         mail_notification_confirmation: Texto en el correo electrónico de notificación de confirmación
         mail_notification_modification: Texto en el correo electrónico de notificación de modificación
         mail_notification_recipient: Dirección (es) de correo electrónico para notificación
+        mail_request_payment: Texto en el correo electrónico de solicitud de pago
+        mail_request_payment_subject: Asunto en el correo electrónico de solicitud de pago
         mail_verification: Texto en correo electrónico de verificación
         mail_verification_subject: Asunto en el correo electrónico de verificación
         mailer_sender: Remitente del correo electrónico
+        message_template_form: Formulario de plantilla de mensaje
         name: Nombre de la empresa (el que se muestra en el sitio de reservación)
         new_booking_text: Texto mostrado en la página de confirmación
+        next_invoice_nr: Número de factura siguiente
         no_availability_text: Texto que se muestra cuando no hay disponibilidad
+        order_form: Campos de pedido personalizados
         payment_provider: Proveedor de pago (para reservas prepagas)
         person_form: Campos de cliente personalizados
         phone_number: Número de teléfono para notificación
@@ -388,6 +436,7 @@ es:
           week_available: Toda la semana
           weekday_available: Días laborables
         slot_generation: Generación de slots disponibles
+        sms_awaiting_confirmation: Texto en espera de confirmación SMS
         sms_cancellation: Texto en SMS de cancelación
         sms_confirmation: Texto en SMS de confirmación
         sms_modification: Texto en SMS de modificación
@@ -395,6 +444,7 @@ es:
         sms_notification_recipient: Número de teléfono para notificación
         sms_reminder: Mensaje de texto en recordatorio de SMS
         sms_reminder_time: Hora del recordatorio por SMS
+        sms_request_payment: Texto en la solicitud de pago por SMS
         sms_verification: Texto en SMS de verificación
         subdomain: URL (subdominio)
         template: Tema de diseño
@@ -446,6 +496,13 @@ es:
         service_id: Tipo de evento
         starts_at: Empieza a
         title_html: Título especificado <small>opcional</small>
+      gift_card:
+        active: Activo
+        code: Código
+        initial_value: Valor inicial
+        person_id: ID de cliente
+        valid_until: Válido hasta
+        value: Valor actual
       message_template:
         active: Activo
         delivery_timing: Entregar en
@@ -487,23 +544,28 @@ es:
         title: Título
       service:
         active_bookings_limit: Número máximo de reservas activas
+        allow_cancellation: Permitir cancelaciones por parte del cliente
         allow_invoice: Permitir factura
         availability_type: La disponibilidad se define por
         block_resource: La reserva bloqueará el recurso
         booking_capacity: Número máximo de personas por reservación
         booking_form: Formulario de reservación personalizado
         booking_minimum: Número mínimo de personas requerido por reserva
+        cancellation_period: Período de cancelación
         capacity: Número máximo de asistentes
         confirm_manually: Las reservas deben ser aprobadas por un administrador.
         description: Descripción
+        has_day_booking: Reserva de día
         has_day_booking_label:
           'false': min
           'true': dias
         interval: Duración de la reservación
         interval_rounding: Redondeo para la próxima hora disponible
+        mail_awaiting_confirmation: Texto en espera de correo electrónico de confirmación
         mail_cancellation: Texto en correo electrónico de cancelación
         mail_confirmation: Texto en correo electrónico de confirmación
         mail_modification: Texto en el correo electrónico de modificación
+        mail_request_payment: Texto en el correo electrónico de solicitud de pago
         mail_verification: Texto en correo electrónico de verificación
         max_slots: Número máximo de espacios por reservación
         new_booking_text: Texto que se muestra en la página de confirmación
@@ -515,16 +577,19 @@ es:
         reservation_form_text: Texto que se muestra antes del formulario de reserva
         same_day: Permitir reservas durante varios días
         slot_generation: Generación de tiempo
+        sms_awaiting_confirmation: Texto en espera de confirmación SMS
         sms_cancellation: Texto en SMS de cancelación
         sms_confirmation: Texto en SMS de confirmación
         sms_modification: Texto en SMS de modificación
         sms_reminder: Texto en SMS recordatorio
+        sms_request_payment: Texto en la solicitud de pago por SMS
         sms_verification: Texto en SMS de verificación
         template: Plantilla de calendario
         templates:
           default: Defecto
           list: Lista
           month: Mes
+          resources: Recursos
           time_day_available: Día
           week_available: Toda la semana
           weekday_available: Días laborables
@@ -566,6 +631,8 @@ es:
       event:
         new: Nuevo evento
         new_attendant: Agregar asistente
+      gift_card:
+        new: Nueva tarjeta de regalo
       message_template:
         new: Nueva plantilla de mensaje
       person:
@@ -576,6 +643,10 @@ es:
       service:
         new_appointment: Nuevo servicio
         new_attendance: Nuevo tipo de evento
+        new_gift_card: Nueva tarjeta de regalo
+        new_gift_card_title: Nuevo %{title}
+        new_product: Nuevo producto
+        new_product_title: Nuevo %{title}
       setup:
         skip: Configuración manual
         step_html: "<strong>Paso %{step}</strong> de %{max_steps}"
@@ -590,6 +661,7 @@ es:
       agenda: Agenda
       calendar: Calendario
       logout: Cerrar sesión
+      orders: Órdenes
       people: Clientes
       profile: Perfil
       reports: Informes
@@ -605,10 +677,12 @@ es:
       developer: Revelador
       export: Exportar
       fields: Campos Personalizados
+      gift_cards: Tarjetas de regalo
       import: Importar
       integrations: Integraciones
       message_templates: Plantillas de mensajes
       person_notifications: Notificaciones - cliente
+      products: Productos
       promote: Promover
       resources: Recursos
       service_appointments: Servicios
@@ -637,6 +711,10 @@ es:
       submit_default: Salvar
       update: Actualizar %{model}
       update_password: Cambia la contraseña
+  profile:
+    update:
+      locked_field_changed: Los campos verificados no se pueden modificar.
+      success: Perfil actualizado
   service:
     admin:
       invoice_client:
