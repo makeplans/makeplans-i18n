@@ -1,0 +1,1331 @@
+---
+it:
+  layouts:
+    design:
+      activate_account_footer: "%{days_left} giorni rimanenti alla fine del periodo di prova. Clicca per attivare."
+      trial_expired: Il tuo periodo di prova è terminato.
+  manage:
+    agenda:
+      calendar:
+        availability: Modifica la disponibilità per questo periodo
+        ignore_capacity_confirm: Esiste già un'altra prenotazione in questo lasso di tempo. Sei sicuro di voler salvare?
+        listWeek: lista
+        opening_hours:
+          add: "+ aggiungi"
+          add_to_existing: "+ aggiungi"
+          closed_all_week: Chiuso per tutto il periodo
+          dates: Date
+          from: Da
+          open: Aprire
+          remove_existing: rimuovere
+          reset: Reset
+          title: Regola la disponibilità
+          to: A
+        resourceTimeGridDay: giorno (diviso)
+        resourceTimelineDay: cronologia
+        resources: Risorse
+        services: Servizi
+      list:
+        all_day: Tutto il giorno
+        awaiting_confirmation:
+          one: "%{count} prenotazione in attesa di approvazione."
+          other: "%{count} prenotazioni in attesa di approvazione."
+        awaiting_status:
+          one: "%{count} prenotazione con stato mancante."
+          other: "%{count} prenotazioni senza stato."
+        busy: Occupato
+        do_filtering: Attiva filtro
+        filter: Filtraggio
+        headline: Visualizzazione degli appuntamenti
+        month: Mostra il mese
+        no_reservations: Nessuna prenotazione
+        reset_filter: Filtro di ripristino
+        resources: Risorse
+        services: Servizi
+        this_and_next_month: Da oggi fino alla fine del mese prossimo
+        this_and_next_week: Da oggi fino alla fine della prossima settimana
+    billing:
+      charge:
+        charge_details: In base all'utilizzo attuale, addebiteremo sulla tua carta di credito %{price} ogni mese.
+        charge_details_default: Il prezzo mensile è %{price} per risorsa.
+        charge_details_sms: 'Ti verrà inoltre addebitato il costo per l''utilizzo degli SMS: %{price}.'
+        process: Pagamento completo
+        processing: Attendere prego...
+      credit_card_form:
+        billing_info: Una volta inseriti i dati della tua carta di credito, addebiteremo mensilmente l'importo corrispondente ai prezzi indicati sul nostro sito web. Il primo addebito verrà effettuato immediatamente. Puoi disdire l'abbonamento in qualsiasi momento.
+        header: Informazioni di pagamento
+        trial_expired: Il tuo periodo di prova è scaduto. Attiva il tuo account per continuare a utilizzare Makeplans.
+      credit_card_info:
+        header: Inserisci i dati della carta di credito
+        submit: Salva la carta di credito
+      edit_invoice_info:
+        activate_info: Per completare l'attivazione del tuo account, compila questo modulo.
+        billing_email_info: Se desideri che la fattura venga inviata a un indirizzo email diverso da %{email}, inseriscilo qui.
+        billing_name_info: Se desideri che la fattura venga emessa a un'azienda diversa da %{name}, inserisci il nome qui.
+        header: Le tue informazioni di fatturazione
+      info:
+        add_link: Attiva l'account - Inserisci i dati della carta di credito
+        add_new_link: Desideri aggiornare i dati della tua carta di credito?
+        billing_info: Riceverai una fattura da parte nostra che dovrai pagare manualmente.
+        billing_order_ref: 'La fattura includerà il tuo riferimento: %{billing_order_ref}'
+        billing_period_info: Ti verrà addebitato un importo pari a %{period} mesi.
+        change_from_invoice: Inserisci i dati della tua carta di credito per non dover pagare manualmente ogni volta che emettiamo una fattura.
+        charge_details: In base all'utilizzo attuale, addebiteremo sulla tua carta di credito %{price} ogni mese.
+        charge_details_default: Il prezzo mensile è %{price} per risorsa.
+        charge_details_sms: 'Ti verrà inoltre addebitato il costo per l''utilizzo degli SMS: %{price}.'
+        current_info: I dati della tua carta di credito sono archiviati in modo sicuro presso il nostro partner di fatturazione Stripe. La carta memorizzata è %{brand}, il numero termina con %{last_4} e scade il %{expire_month}/%{expire_year}.
+        demo_ends_at: Il tuo account verrà disattivato automaticamente su %{demo_ends_at}.
+        edit_info_link: Desideri modificare i tuoi dati di fatturazione?
+        edit_link: Desideri aggiornare i dati della tua carta di credito?
+        email_recipent: Invieremo la fattura via email a %{email}.
+        header: Dettagli di pagamento
+        info_header: 'I tuoi dati di fatturazione:'
+        invoice_history: Visualizza le fatture precedenti
+        paid_until: Il tuo account è pagato fino a %{paid_until}.
+        pause: Metti in pausa l'account al termine dell'abbonamento in corso.
+        pause_confirm: Sei sicuro di voler sospendere l'account? L'account verrà disattivato automaticamente il giorno %{paid_until}.
+        reactivate: Il tuo account è attualmente in modalità di prova. Devi riattivarlo per continuare a utilizzare Makeplans.
+        reactivate_confirm: Sei sicuro di voler riattivare l'account che hai sospeso? Il prossimo addebito sull'account sarà di %{paid_until}.
+        reactivate_link: Riattiva l'account
+        reseller_billing_info: La fatturazione del tuo account è gestita dal tuo rivenditore.
+        sms_credits_available: Hai un saldo di %{credits} SMS.
+        vat_no: Il numero di partita IVA registrato è %{vat_no}
+        vat_no_missing: Partita IVA non inserita.
+      paying_account_required:
+        activate_account: Attiva l'account ora
+        info: Questa funzionalità richiede che il tuo account sia attivato.
+      processing:
+        activated: Il tuo account è ora attivo :) Grazie per aver utilizzato Makeplans.
+        error: Impossibile verificare il pagamento. Si prega di contattare il servizio clienti.
+        info: Attendi mentre addebitiamo l'importo sulla tua carta di pagamento. L'operazione potrebbe richiedere fino a un minuto. Riceverai un'email di conferma al termine della transazione.
+    bookings:
+      cancel_recurring:
+        headline: Tutte le prenotazioni future all'interno di questo schema ripetitivo sono state rimosse
+        list_recurring: Vedi l'elenco delle prenotazioni che rientrano in questo schema ripetitivo.
+      create_recurring:
+        headline: Generazione di %{count} prenotazioni in corso...
+        link: Mostra elenco
+      destroy_recurring:
+        headline: Tutte le prenotazioni all'interno di questo schema ripetuto sono state rimosse
+      feed:
+        info:
+          header: iCalendar-feeds
+          ical:
+            activated: L'accesso agli appuntamenti nel tuo account iCalendar è stato attivato. I link ai feed di iCalendar sono disponibili. Non condividere i link.
+            disable: Disattiva l'account iCalendar-feeds
+            enable: Attiva l'account iCalendar-feeds
+            future_html: 'Prenotazioni future: %{link}'
+            info: Un feed iCalendar mostrerà gli appuntamenti del tuo account in altre applicazioni di calendario come Microsoft Outlook, Google Calendar, iPhone o Android. È di sola lettura, tutte le modifiche devono essere apportate in Makeplans.
+            not_activated: Non attivato
+            past_html: 'Prenotazioni precedenti: %{link}'
+      fiken:
+        delayed_info: L'ordine verrà creato in Fiken solo dopo un po' di tempo. Non tentare di generare nuovamente l'ordine se in Makeplans non sono visibili informazioni provenienti da Fiken.
+        header: Contattando Fiken...
+        to_booking: Mostra la prenotazione
+      form_appointment:
+        add_reminder_sms: Invia promemoria via SMS
+        confirmation_send_email: Invia conferma via email
+        confirmation_send_sms: Invia conferma tramite SMS
+        customer_info: Dettagli del cliente
+        email: Email
+        first_available: Prima disponibilità
+        headline_create: Aggiungi una nuova prenotazione
+        headline_create_recurring: Aggiungi una nuova prenotazione
+        headline_edit: Modifica prenotazione
+        headline_new: Aggiungi una nuova prenotazione
+        headline_update: Modifica prenotazione
+        ignore_capacity: Salva anche se occupato
+        modification_send_email: Invia modifica email
+        modification_send_sms: Invia modifica SMS
+        no_customer: |-
+          Nessun cliente specificato!
+
+          Hai impostato questa prenotazione come prenotazione cliente ma non hai specificato un cliente.
+
+          OK: Continua e imposta questa prenotazione come accesso libero.
+          Annulla: Torna indietro e specifica il cliente.
+        no_service: Nessun servizio selezionato
+        notification_send_email: Invia notifica via email
+        notification_send_sms: Invia notifica SMS
+        person_create_info: Cerca un cliente esistente o creane uno nuovo inserendo il nome.
+        person_none_selected: Nessun cliente selezionato
+        recurring_enabled: Ripeti con uno schema
+        recurring_member: Questa prenotazione fa parte di uno schema ricorrente.
+        reservation_type_drop_in: Accesso libero
+        reservation_type_other: Occupato
+        reservation_type_person: Prenotazione cliente
+        send_confirmation: 'Conferma:'
+        send_modification: 'Modifica:'
+        send_notification: 'Notifica:'
+        send_reminder: 'Promemoria:'
+        sms: SMS
+      form_attendance:
+        add_reminder_sms: Invia promemoria via SMS
+        confirmation_send_email: Invia conferma via email
+        confirmation_send_sms: Invia conferma tramite SMS
+        email: Email
+        headline_create: Aggiungi assistente
+        headline_edit: Modifica prenotazione
+        headline_new: Aggiungi assistente
+        headline_update: Modifica prenotazione
+        modification_send_email: Invia modifica email
+        modification_send_sms: Invia modifica SMS
+        notification_send_email: Invia notifica via email
+        notification_send_sms: Invia notifica SMS
+        person_create_info: Cerca un cliente esistente o creane uno nuovo inserendo il nome.
+        person_none_selected: Nessun cliente selezionato
+        send_confirmation: 'Conferma:'
+        send_modification: 'Modifica:'
+        send_notification: 'Notifica:'
+        send_reminder: 'Promemoria:'
+        sms: SMS
+      no_status:
+        headline: Elenco delle prenotazioni senza stato
+        no_reservations: Nessuna prenotazione senza status
+      show:
+        amount: Prezzo totale
+        audit:
+          changed_attributes: 'Attributi modificati: %{attributes}'
+          execution_mode:
+            api: utilizzando l'API
+            automated: automatizzato
+            customer: da cliente
+            gui: nell'interfaccia grafica
+        booked_from: Da
+        booked_to: A
+        count: Numero di persone
+        created_by: Creato da %{user}
+        fiken:
+          create_invoice: Crea fattura in Fiken
+          created: La fattura viene creata in Fiken
+          open_invoice: Apri la fattura in Fiken
+          processing: La fattura è in fase di creazione in Fiken. L'operazione potrebbe richiedere alcuni minuti.
+        log: Registro
+        message:
+          enqueued: messo in coda
+          failed: fallito
+          sent: inviato
+          state: stato
+        messages: Messaggi
+        order: Ordine
+        paid_with:
+          braintree: Pagato con Braintree
+          frontgo: Pagato con FrontGO
+          stripe: Pagato con Stripe
+          vipps: Pagato con Vipps
+        performed_by: di %{name}
+        person:
+          address: Indirizzo
+          email: Email
+          phone_number: Numero di telefono
+        recurring_member: Questa prenotazione fa parte di uno schema ricorrente.
+        refund: Importo del rimborso pagato
+        refunded_with:
+          frontgo: Rimborso effettuato con FrontGO
+          stripe: Rimborso effettuato tramite Stripe
+          vipps: Rimborso effettuato con Vipps
+        request_card:
+          processing: Il link per il pagamento verrà inviato al cliente
+          send: Invia il link di pagamento al cliente
+        request_payment:
+          processing: Il link per il pagamento verrà inviato al cliente
+          send: Invia il link di pagamento al cliente
+        send_sms: Invia SMS
+        show_in_calendar: Mostra nel calendario
+        stripe:
+          pay: Paga con Stripe
+          processing: La transazione è in fase di elaborazione. L'operazione potrebbe richiedere da 1 a 2 minuti.
+        tfso:
+          create_invoice: Crea un ordine in 24SevenOffice
+          open_invoice: Apri un ordine in 24SevenOffice
+          processing: L'ordine è in fase di creazione in 24SevenOffice. L'operazione potrebbe richiedere alcuni minuti.
+        vipps:
+          awaiting: Richiesta di pagamento Vipps inviata. In attesa di risposta.
+          processing: Elaborazione
+          send_request: Invia la richiesta di pagamento Vipps
+        visma_eaccounting:
+          create_invoice: Crea ordine in Visma eAccounting
+          created: La fattura viene creata in Visma eAccounting
+          processing: L'ordine è in fase di creazione in Visma eAccounting. Questa operazione potrebbe richiedere alcuni minuti.
+        whereby:
+          start_meeting: Avvia la riunione Whereby
+        zoom:
+          start_meeting: Avvia la riunione Zoom
+      show_recurring:
+        cancel_all_future: Annulla tutti gli appuntamenti futuri.
+        delete_all: Elimina tutto
+        headline: Tutte le prenotazioni ripetute all'interno di questo schema
+      state_changer:
+        state: Stato
+      status_changer:
+        cancel: Annulla la prenotazione
+        status: Imposta lo stato
+      unconfirmed:
+        headline: Elenco delle prenotazioni da approvare
+        no_reservations: Nessuna prenotazione che richieda approvazione
+      widget:
+        booked_from: Da
+        booked_to: A
+        description: Descrizione
+        person:
+          address: Indirizzo
+          email: Email
+          phone_number: Numero di telefono
+      widget_list:
+        busy: Occupato
+        no_bookings: Non ci sono prenotazioni esistenti su %{start}.
+        no_bookings_range: Non ci sono prenotazioni esistenti da %{start} a %{end}.
+    categories:
+      blank:
+        get_started: Al momento non hai creato alcuna categoria. Tutti i servizi sono quindi visualizzati in un elenco sul sito di prenotazione. Se desideri categorizzare i tuoi servizi, inizia creando una categoria.
+        header: Categorie
+        info: Se offri numerosi servizi, è possibile categorizzarli in più livelli. Le categorie saranno visualizzate sul sito di prenotazione, quindi il cliente dovrà selezionarne una prima che vengano mostrati i servizi appartenenti a tale categoria. È possibile che un servizio sia presente in più categorie.
+        no_categories: Nessuna categoria aggiunta
+      category_order:
+        description: Trascina e rilascia le categorie per impostarne l'ordine di visualizzazione sul sito di prenotazione. Le categorie senza un valore di ordinamento appariranno per ultime, ordinate alfabeticamente.
+        header: Ordinamento per categoria
+        parent_category: Categoria principale
+      form:
+        booking_type_appointment: Appuntamenti
+        booking_type_attendance: Presenze
+        booking_type_gift_card: Carte regalo
+        booking_type_product: Prodotti
+        has_services: Mostra questi servizi
+        no_parent_id: LIVELLO SUPERIORE
+        settings:
+          standalone: Categoria autonoma
+      index:
+        header: Categorie
+        order_button: Ordine
+        order_subcategories: Ordina le sottocategorie
+      list_menu:
+        list: Categorie
+      priority:
+        description: Trascina e rilascia i servizi per impostarne l'ordine di visualizzazione sul sito di prenotazione. I servizi senza un valore di ordine verranno visualizzati per ultimi, in ordine alfabetico.
+        header: Ordinamento dei servizi per %{title}
+      show:
+        custom_data: 'Dati personalizzati:'
+        has_services: 'Mostra questi servizi:'
+        priority_button: Ordine
+        qr_code: Codice QR per i clienti
+        show_on_booking_site: Servizio disponibile sul sito di prenotazione
+    client:
+      addons:
+        addons:
+          custom_domain: Dominio personalizzato
+          custom_email_sender: Mittente email personalizzato
+          custom_sms_sender: ID mittente SMS personalizzato
+        header: Componenti aggiuntivi
+        info: Offriamo diversi componenti aggiuntivi a pagamento che è possibile attivare. Per qualsiasi domanda, non esitate a contattarci.
+      api:
+        disable: Desideri disabilitare l'API?
+        disable_warning: Sei sicuro di voler disabilitare l'API? La chiave API diventerà non valida e l'API non sarà più disponibile.
+        enable: Desideri abilitare l'API?
+        enable_warning: Sei sicuro di voler attivare l'API? La chiave API ti dà pieno accesso programmatico al tuo account.
+        enabled: L'API è abilitata.
+        header: API
+        info_html: Contatta il servizio clienti per ricevere assistenza. La documentazione è disponibile all'indirizzo <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
+        not_enabled: L'API non è abilitata.
+      cancel:
+        confirm_message: Ultima possibilità. Sei assolutamente sicuro di voler eliminare il tuo account con tutti i tuoi dati?
+        disable_link: Sì, per favore cancellate tutti i miei dati.
+        header: Sei sicuro di voler eliminare il tuo account?
+        i_love_makeplans: No, voglio continuare a usare Makeplans.
+        info: Tutti i dati del tuo account verranno eliminati. Sei sicuro di voler continuare?
+        pause: Preferisci mettere in pausa il tuo account? Non pagherai alcuna quota mensile e il tuo account sarà nuovamente disponibile quando sarai pronto a utilizzare Makeplans.
+        pause_link: È possibile sospendere l'account dalla pagina di fatturazione.
+      change_time_zone:
+        edit:
+          header: Cambia fuso orario
+          info: 'NOTA: Questa funzione aggiornerà gli orari di tutte le prenotazioni e i messaggi in base al nuovo fuso orario. Utilizzare a proprio rischio.'
+        in_process:
+          header: Cambio di fuso orario in corso
+          info: Tutte le prenotazioni e i messaggi verranno aggiornati a breve. *Non* eseguire nuovamente questa funzione.
+      configuration:
+        header: Configurazione di Makeplans
+        intro: Qui puoi configurare Makeplans e impostare il suo funzionamento in base alle tue esigenze. Puoi aggiungere servizi e categorie da offrire sul sito di prenotazione, regolare la disponibilità, modificare i messaggi in uscita (SMS ed email), aggiungere altri utenti e personalizzare molte altre impostazioni di Makeplans.
+        menu_info: Seleziona l'opzione desiderata dal menu a sinistra. Per qualsiasi domanda su come effettuare le regolazioni, contatta il servizio clienti.
+        trial_info: 'Questo è un account di prova: clicca qui per attivarlo.'
+      developer:
+        show:
+          api: API
+          embed: Incorpora
+          web_hooks: webhook
+      domains:
+        cname:
+          cancel: Annulla questa richiesta di dominio
+          header: Aggiungi record DNS
+          info: Si prega di aggiungere il seguente record DNS al proprio dominio.
+          record: CNAME %{domain} con valore %{cname}
+          verify: Verifica DNS
+        info:
+          add: Aggiungi il tuo dominio
+          header: Utilizza il tuo dominio
+          info: Puoi utilizzare il tuo dominio per il sito di prenotazione. Il costo mensile è %{price}
+        new:
+          domain: Il tuo dominio
+        show:
+          delete: Smetti di usare questo dominio personalizzato
+          header: Stai utilizzando un dominio personalizzato
+          info: Il tuo sito di prenotazione è disponibile all'indirizzo %{domain}
+      edit:
+        custom_messages_info_html: Qui puoi unire i dati pertinenti. Per maggiori informazioni, consulta <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> .
+      edit_booking_site:
+        booking_form_info_html: Contatta il servizio clienti per ricevere assistenza. La documentazione è disponibile all'indirizzo<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_site_info_html: Il tuo sito di prenotazione è disponibile all'indirizzo %{url}.
+        booking_site_locale_default: Lingua dell'account di utilizzo
+        booking_site_locale_mode_multiple: Abilita più lingue (i visitatori possono passare da una lingua all'altra)
+        booking_site_locales_info: Seleziona le lingue tra cui i visitatori possono scegliere sul sito di prenotazione.
+        booking_site_person_form_info_html: Personalizza il modulo di registrazione per i temi Timisoara e Lviv. Utilizza la stessa sintassi del modulo di prenotazione.
+        cancellation: Cancellazione
+        cancellation_info: La cancellazione può essere effettuata solo prima della scadenza del periodo di cancellazione. Le prenotazioni prepagate non possono essere cancellate.
+        cancellation_period_info: 'Esempio: ''24 ore prima'' (è possibile cancellare solo 24 ore prima dell''inizio della prenotazione). Quando si imposta una data, è necessario inserire l''anno completo.'
+        first_bookable_period_info: 'Esempio: ''tra due ore'' (il primo orario disponibile è tra due ore) oppure ''08:00 domani'' (il primo orario disponibile è alle 8:00 di domani mattina). Quando si imposta una data, è necessario inserire l''anno completo.'
+        future_bookable_period_info: 'Esempio: "tra due mesi" (è possibile prenotare solo per i prossimi due mesi) oppure "venerdì a mezzanotte" (è possibile prenotare solo entro la mezzanotte di venerdì). Quando si imposta una data, è necessario inserire l''anno completo.'
+        header: Aggiorna il sito di prenotazione
+        interval_rounding:
+          default: Impostazione predefinita del sistema (mezz'ora più vicina)
+          five: Il più vicino traguardo dei 5 minuti
+          halfhour: Mezz'ora più vicina
+          hour: Ora più vicina
+          none: Nessun arrotondamento (sconsigliato)
+          quarter: Quarto più vicino
+          ten: Il tempo più vicino di 10 minuti
+          twenty: Il tempo più vicino di 20 minuti
+        remove_logo: Rimuovi il logo
+        settings:
+          active_bookings_limit: Numero massimo di prenotazioni attive per cliente
+          disable_person_cookie: Non consentire al cliente di rimanere connesso tramite cookie
+          google_tag_manager: ID contenitore di Google Tag Manager
+          person_oauth_auto_create: Creazione automatica del profilo cliente tramite l'accesso del fornitore di terze parti (salta il modulo di registrazione)
+          plausible: Abilitare analisi plausibili
+          prevent_new_signups: Consenti prenotazioni solo ai clienti già registrati.
+        verification_methods:
+          email: Email
+          facebook: Consenti anche la verifica tramite Facebook Connect.
+          id_porten: ID-porten (BankID)
+          none: Nessuna verifica (sconsigliato)
+          sms: SMS (consigliato)
+          vipps: Vipps
+        verification_methods_alt: 'Metodi aggiuntivi:'
+      edit_communication:
+        email: Email
+        header: Modificare le comunicazioni in uscita
+        ical: iCalendar
+        mailer_sender_valid_domain: Hai convalidato %{domain} e Makeplans invierà email per tuo conto utilizzando tale dominio. Gli altri indirizzi email verranno specificati come indirizzi di risposta.
+        message_template_info: Questi sono i messaggi legacy integrati. Per il supporto di più messaggi e un maggiore controllo, si prega di utilizzare la funzione di composizione dei messaggi.
+        settings:
+          custom_email_sending: Sovrascrivi completamente le email con il contenuto seguente (altrimenti il contenuto verrà inserito nell'email standard).
+          custom_sms_sending: Sovrascrivi completamente l'SMS con il contenuto seguente (altrimenti il contenuto verrà inserito come un normale SMS).
+          dont_include_icalendar_attachment: Non includere l'allegato iCalendar
+        sms: SMS
+      edit_company:
+        delete_account_html: Sei sicuro di voler eliminare il tuo account? <a href="%{link}">Sì, continua</a>
+        delete_label: Elimina l'account
+        domain_info: È possibile utilizzare un URL personalizzato, ad esempio booking.YOURDOMAIN.com; per maggiori informazioni, si prega di contattare il servizio clienti.
+        header: Modifica le informazioni dell'account
+        payment_provider:
+          info_html: È possibile richiedere il pagamento anticipato prima di completare una prenotazione sul sito di prenotazione utilizzando uno dei fornitori di servizi di pagamento integrati. Consigliamo <a href="https://stripe.com" target="_blank" class="link-external">Stripe</a> , un servizio valido che permette di iniziare a utilizzarlo rapidamente senza costi fissi. È inoltre necessario specificare le informazioni richieste per il fornitore di servizi di pagamento scelto nella sezione "Integrazioni".
+          none: Nessuno
+        purge_data_info: 'Questa funzione eliminerà automaticamente le informazioni personali più vecchie (clienti e prenotazioni). Inserisci un testo per la data di eliminazione rispetto alla data corrente. Esempio: ''6 mesi fa'' o ''2 anni fa''.'
+        subdomain_info: Il tuo indirizzo univoco (URL) dove i tuoi clienti possono effettuare prenotazioni
+      edit_fields:
+        appointment_form_info: Questo modulo è destinato esclusivamente all'inserimento manuale delle prenotazioni. Per modificare il modulo di prenotazione sul sito di prenotazione, si prega di accedere alle impostazioni del "Sito di prenotazione". Se il modulo di prenotazione personalizzato utilizza campi personalizzati, anche questi devono essere inclusi qui.
+        booking_form_info: Per modificare le impostazioni, accedi al sito di prenotazione.
+        custom_form_info_html: Contatta il servizio clienti per ricevere assistenza. La documentazione è disponibile all'indirizzo<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> .
+        header: Modifica campi personalizzati
+      edit_person_notifications:
+        automatic_messages: Messaggi automatici (nel sistema di amministrazione e nell'API)
+        automatic_messages_booking_site: Messaggi automatici (sul sito di prenotazione)
+        awaiting_confirmation_email: Invia un'email quando la prenotazione richiede conferma
+        awaiting_confirmation_sms: Invia un SMS quando la prenotazione richiede conferma
+        booking_site_manual_confirmation_message: Invia messaggio relativo alla conferma manuale
+        booking_site_message: Invia un messaggio sul sito di prenotazione
+        booking_site_outgoing_messages_info: Makeplans invierà di default un messaggio per eventi importanti, come un messaggio di conferma, utilizzando il metodo di verifica, ad esempio un SMS con la verifica tramite SMS, oppure tramite email se si utilizza un metodo di verifica diverso o nullo.
+        cancellation_email: Invia un'email quando annulli la prenotazione
+        cancellation_sms: Invio di un SMS in caso di cancellazione della prenotazione
+        confirmation_email: Invia un'email al momento della creazione della prenotazione
+        confirmation_sms: Invia un SMS al momento della prenotazione
+        default: Automatico in base al metodo di verifica
+        default_reminder_sms: Automatico in base alle impostazioni per l'invio del promemoria
+        disable: Disattiva
+        enable: Attiva
+        header: Notifiche ai clienti
+        manual_confirmation: Invia un messaggio quando la prenotazione sarà confermata
+        manual_confirmation_message: Invia messaggio relativo alla conferma manuale
+        message_template_info: Questo è il promemoria legacy integrato. Per più promemoria e un maggiore controllo, utilizzare la funzione di composizione del messaggio.
+        modification_email: Invia un'email quando modifichi la prenotazione
+        modification_sms: Invio SMS in caso di modifica della prenotazione
+        outgoing_messages_info: 'Makeplans ti suggerirà di inviare un''email/SMS (a seconda del metodo di verifica impostato) quando crei, modifichi o annulli una prenotazione. Alcuni messaggi, come quelli di annullamento, vengono inviati automaticamente. Puoi disattivare i messaggi automatici (ad esempio, quando sposti una prenotazione trascinandola nel calendario, quando la annulli o crei una nuova prenotazione tramite API) o disattivare il suggerimento di inviare messaggi nel modulo modificando le impostazioni qui sotto. Nota: questo non si applica al sito di prenotazione. Il sito di prenotazione invierà sempre automaticamente i messaggi in base al metodo di verifica impostato.'
+        reminder_sms: Invia un SMS di promemoria
+        reminder_sms_info: Il nome del mittente predefinito è 'Makeplans'. Vai su 'Componenti aggiuntivi' per modificare il nome del mittente.
+        sms_reminder_time_info: 'L''SMS di promemoria viene inviato di default a mezzogiorno del giorno precedente la prenotazione. Se desideri modificare questo orario, modifica il campo sottostante. Esempio: "due ore prima" (l''SMS viene inviato due ore prima della prenotazione) oppure "8:00 di ieri" (l''SMS di promemoria verrà inviato alle 8:00 del giorno precedente la prenotazione).'
+      edit_user_notifications:
+        approvement_email: Notifica via email per le nuove richieste di prenotazione
+        approvement_sms: Notifica tramite SMS per nuove richieste di prenotazione
+        automatic_messages: Messaggi automatici
+        custom_content: Contenuto di notifica personalizzato
+        default: Attivo (predefinito)
+        disable: Disattivato
+        email: Email
+        header: Notifiche agli utenti
+        mail_notification_confirmation: email di conferma della notifica
+        mail_notification_info: Per inviare la notifica a più di una persona, utilizzare il punto e virgola per separare gli indirizzi email.
+        notification_email: Notifica via email per le nuove prenotazioni
+        notification_sms: Notifica via SMS per nuove prenotazioni
+        outgoing_messages_info: Se hai impostato l'approvazione manuale delle nuove prenotazioni provenienti dal sito di prenotazione, riceverai una notifica via email per ogni nuova richiesta di prenotazione. Se non desideri ricevere queste notifiche o se l'approvazione viene effettuata tramite un'applicazione esterna (API), puoi disattivare questa opzione qui sotto.
+        settings:
+          custom_email_user_sending: Sovrascrivi completamente le email con il contenuto seguente (altrimenti il contenuto verrà inserito nell'email standard).
+        sms: SMS
+        sms_notification_info: Per inviare una notifica a più di una persona, utilizzare il punto e virgola per separare i numeri di telefono.
+      edit_ux:
+        calendar: Calendario
+        header: UX
+        info: Impostazioni visive
+        misc: Varie
+        naming: Titoli personalizzati
+        settings:
+          booking_requires_status: Mostra il link per le prenotazioni senza stato nell'agenda
+          booking_site_order_flow: Utilizza il nuovo flusso di ordini sul sito di prenotazione
+          calendar_hide_weekends: Nascondi i fine settimana
+          calendar_prevent_slot_event_overlap: Prevenire la sovrapposizione degli eventi
+          calendar_slot_duration: Durata dello slot
+          calendar_slot_label_interval: Intervallo dell'etichetta dello slot
+          resource_title: Titolo della risorsa personalizzata
+          service_addon_title: Titolo aggiuntivo personalizzato
+          service_appointment_title: Titolo del servizio personalizzato
+          service_attendance_title: Titolo del tipo di evento personalizzato
+          service_gift_card_title: Titolo personalizzato della carta regalo
+          service_product_title: Titolo del prodotto personalizzato
+      email_sender:
+        create:
+          dns: Visualizza i tuoi valori DNS.
+          header: Stiamo elaborando la tua richiesta
+          invalid_domain: Inserisci un nome di dominio valido.
+        dns:
+          cancel: Rimuovi il dominio email
+          copied: Copiato!
+          copy: Copia
+          dkim: Per consentire a Makeplans di inviare messaggi con un indirizzo email su %{domain}, aggiungere il seguente record TXT.
+          dkim_cname: Per consentire a Makeplans di inviare email con un indirizzo email su %{domain}, aggiungere i seguenti record CNAME.
+          dkim_host: Host
+          dkim_value: Valore
+          header: Aggiungi record DNS
+          info: Aggiungi i seguenti record DNS per completare la verifica del mittente dell'email. Potrebbero essere necessarie fino a 24 ore prima che le modifiche siano effettive.
+          priority: Priorità
+          return_path: Aggiungi il seguente record per il dominio del percorso di ritorno %{domain} per migliorare la recapitabilità.
+          type: Tipo
+          verify: Verifica i record DNS
+        info:
+          add: Aggiungi il tuo dominio di invio email
+          header: Invia email utilizzando il tuo indirizzo email
+          info: Di default, tutte le email vengono inviate da %{default_email}. Per %{price} al mese, puoi utilizzare un indirizzo email del tuo dominio. Per consentire a Makeplans di inviare email per tuo conto, è necessario aggiungere alcuni record DNS. Tieni presente che ciò richiede una modifica tecnica al tuo dominio e che permette a Makeplans di inviare email utilizzando qualsiasi indirizzo del dominio scelto. Per motivi di sicurezza, ti consigliamo di utilizzare un sottodominio, ad esempio booking.example.org anziché example.org.
+        new:
+          domain: Dominio
+          header: Aggiungi il tuo dominio di invio email personalizzato
+          return_path_domain: dominio del percorso di ritorno
+          return_path_domain_hint: Opzionale. Un sottodominio per la gestione dei messaggi non recapitabili, ad esempio bounces.example.com. Migliora la deliverability.
+        show:
+          delete: Rimuovi il dominio email
+          header: Hai verificato il tuo dominio di invio email.
+          info: Makeplans sarà in grado di inviare email da qualsiasi indirizzo email del tuo dominio %{domain}
+        verify:
+          cancel: Rimuovi il dominio email
+          header: Non verificato
+          info: Se hai aggiunto i record DNS, attendi che vengano propagati. Riprova più tardi.
+          not_verified: I record DNS non sono ancora stati verificati. Attendi e riprova.
+      embed:
+        new:
+          embed_url: 'Inserisci l''URL del tuo sito web per l''incorporamento:'
+        show:
+          add_embed_url: Desideri integrare il sito di prenotazione in un sito web esterno?
+          custom_info: È possibile incorporare il sito di prenotazione tramite iframe o effettuare una richiesta API su %{url}.
+          delete: Rimuovi l'URL di incorporamento.
+          header: Incorpora il sito di prenotazione su un dominio di terze parti
+          info: Per poter aggiungere il tuo sito di prenotazione al tuo sito web come iframe o effettuare richieste API pubbliche dal tuo sito web, devi specificare l'URL del tuo sito web per motivi di sicurezza.
+      export_info:
+        data_types:
+          bookings: Prenotazioni
+          bookings_all: Prenotazioni (tutte)
+          bookings_visible: Prenotazioni (incluse le cancellazioni)
+          categories: Categorie
+          coupons: Buoni sconto
+          events: Eventi
+          gift_cards: Carte regalo
+          message_templates: Modelli di messaggio
+          orders: Ordini
+          people: Clienti
+          resources: Risorse
+          services: Servizi
+        executed: L'esportazione è in corso di invio al tuo indirizzo email. L'operazione potrebbe richiedere fino a 10 minuti se stai esportando una grande quantità di dati.
+        header: Esporta i dati da Makeplans
+        info: Riceverai un'email con un allegato in formato CSV.
+      import:
+        header: Importa dati
+        info: È possibile importare dati come quelli dei clienti in Makeplans. Contatta l'assistenza per ulteriori informazioni.
+      invoices:
+        index:
+          email: Invia una copia alla tua email
+          header: Fatture da Makeplans
+          paid: Pagato
+      migrate_bookings:
+        edit:
+          deactivated: disattivato
+          error_not_found: Una o entrambe le risorse non sono state trovate.
+          error_same_resource: La risorsa di origine e quella di destinazione non possono coincidere.
+          from_resource: Da risorsa
+          header: Migra prenotazioni
+          info: Trasferisci tutte le prenotazioni e gli eventi da una piattaforma all'altra. Questo include tutte le prenotazioni passate e future. Non verrà inviata alcuna notifica ai clienti.
+          migrate: Migrare
+          processing: Elaborazione
+          to_resource: A risorsa
+          warning: Sei sicuro di voler migrare tutte le prenotazioni e gli eventi? Questa operazione non può essere annullata facilmente.
+        update:
+          header: Prenotazioni migrate
+          result: Le prenotazioni %{bookings_count} e gli eventi %{events_count} sono stati migrati da %{from_resource} a %{to_resource}.
+      promote:
+        booking_button_html_info: Per inserire il pulsante di prenotazione sul tuo sito web, copia il codice HTML riportato di seguito. Se hai bisogno di aiuto, contatta il tuo web designer.
+        booking_button_html_preview: Anteprima del pulsante di prenotazione
+        booking_button_text: Testo del pulsante
+        booking_button_text_default_value: Prenotazione online
+        booking_iframe: Iframe per il sito di prenotazione
+        booking_link: Link al sito di prenotazione
+        booking_link_title: Prenotazione e programmazione di appuntamenti online
+        booking_site_info_html: Il tuo sito di prenotazione è disponibile all'indirizzo %{url}.
+        generate_booking_button: Genera un pulsante di prenotazione per il tuo sito web
+        header: Promuovi il tuo sito di prenotazione
+        qr_code: Codice QR
+      sms_sender:
+        new:
+          sms_sender_name: Nome del mittente SMS
+        show:
+          add_custom_sender: Desideri utilizzare un ID mittente SMS personalizzato?
+          cost: Il costo mensile è %{price}.
+          custom_info: Tutti gli SMS verranno inviati utilizzando %{sms_sender}.
+          delete: Rimuovi l'ID mittente SMS personalizzato.
+          header: ID mittente SMS
+          info: Tutti gli SMS verranno inviati da Makeplans.
+      tools:
+        header: Strumenti per il tuo account
+        link:
+          change_time_zone: Cambia fuso orario
+          feed: iCalendar-feeds
+          migrate_bookings: Migrare le prenotazioni tra le risorse
+          purge_data: Elimina i dati obsoleti
+          sms_all: Inviare SMS a tutti i clienti
+          sms_filter: Invio di SMS ai clienti filtrati
+    coupons:
+      form:
+        availability_placeholder: Illimitato
+        excluded_services: Servizi esclusi
+        included_services: Servizi inclusi
+        services_info: 'Il codice coupon sarà valido per tutti i servizi, a meno che non si specifichi di limitarne l''utilizzo a determinati servizi tra quelli elencati di seguito:'
+      index:
+        header: codici sconto
+        not_redeemable: Non riscattabile
+        redeemable: Riscattabile
+      show:
+        details: Dettagli
+        not_redeemable: Non riscattabile
+        orders: Ordini
+        redeemable: Riscattabile
+    events:
+      check_in:
+        check_in: Effettua il check-in
+      create_recurring:
+        headline: Generazione di %{count} eventi in corso...
+        link: Mostra elenco
+      destroy_recurring:
+        headline: Tutti gli eventi ripetitivi all'interno di questo schema sono stati rimossi
+      email_participants:
+        copy_info: 'In alternativa, puoi copiare gli indirizzi qui sotto e incollarli nel campo Ccn (Copia conoscenza nascosta) di un nuovo messaggio di posta elettronica:'
+        headline: Invia un'email a tutti i partecipanti
+        open_email_client: Apri il client di posta elettronica
+      form:
+        cancellation_info: La cancellazione può essere effettuata solo prima della scadenza del periodo di cancellazione. Le prenotazioni prepagate non possono essere cancellate.
+        cancellation_period_info: 'Esempio: ''24 ore prima'' (è possibile cancellare solo 24 ore prima dell''inizio della prenotazione). Quando si imposta una data, è necessario inserire l''anno completo.'
+        headline_create: Aggiungi nuovo evento
+        headline_create_recurring: Aggiungi nuovo evento
+        headline_edit: Modifica evento
+        headline_new: Aggiungi nuovo evento
+        recurring_enabled: Ripeti con uno schema
+        recurring_member: Questo evento fa parte di uno schema ricorrente.
+      show:
+        attendants_html:
+          one: una prenotazione
+          other: 'prenotazioni: <strong>%{count}</strong>'
+          zero: nessuna prenotazione
+        check_in: Effettua il check-in
+        copy: Clona questo evento
+        download_attendance_csv: Esporta l'elenco delle presenze in formato CSV
+        email_confirm: L'elenco delle presenze ti verrà inviato via email. Desideri continuare?
+        fully_booked: L'evento è al completo.
+        qr_code: Codice QR per i clienti
+        recurring_member: Questo evento fa parte di uno schema ricorrente.
+        send_email_to_all: Invia un'email a tutti i partecipanti
+        send_sms: Invia SMS
+        show_in_calendar: Mostra nel calendario
+        show_inactive_html: Non vengono visualizzate le prenotazioni inattive %{count}. <a href="%{href}">Si desidera visualizzarle?</a>
+        show_only_active_html: L'elenco include %{count} prenotazioni inattive. <a href="%{href}">Desideri visualizzare solo le prenotazioni attive?</a>
+        signup_link: Link per la registrazione
+        sms_all_participants: Inviare SMS a tutti i partecipanti
+        zoom:
+          join_meeting: Link per partecipare alla riunione
+          join_webinar: Link per partecipare al webinar
+          start_meeting: Avviare la riunione Zoom come host
+          start_webinar: Avvia il webinar Zoom come host
+      show_recurring:
+        delete_all: Elimina tutto
+        headline: Tutti gli eventi che si ripetono all'interno di questo schema
+      widget:
+        capacity_details:
+          one: Un solo partecipante su un totale di %{capacity} possibili.
+          other: "%{count} partecipanti su un totale di %{capacity} possibili."
+          zero: Nessun partecipante. %{capacity} possibile.
+        end: Fine
+        start: Inizio
+      widget_list:
+        no_events: Nessun evento esistente su %{start}
+        no_events_range: Non esistono eventi da %{start} a %{end}
+    gift_cards:
+      index:
+        header: Carte regalo
+        header_for_person: Carte regalo per %{name}
+      show:
+        active: Attivo
+        current_balance: Saldo attuale
+        details: Dettagli
+        inactive: Usato
+        initial_value: Valore iniziale
+        orders: Ordini
+        purchase_order: Ordinazione d'acquisto
+        purchased_by: Acquistato da
+        redeemed_by: Riscattato da
+        valid_until: Valido fino a
+    integrations:
+      account_connected: Collegati a questo account.
+      always_opt_in: Aderisci sempre
+      bento:
+        publishable_key: Chiave di pubblicazione
+        secret_key: Chiave segreta
+        site_uuid: UUID del sito
+      bestrx:
+        api_key: La chiave API è %{api_key}
+        api_url: L'URL dell'API è %{api_url}
+        enable: Abilita
+      braintree:
+        cse_key: Chiave CSE
+        environment: Ambiente
+        merchant_id: Mercante
+        private_key: Chiave privata
+        production: Produzione
+        public_key: Chiave pubblica
+        sandbox: Sandbox
+      campaign_monitor:
+        api_key: Chiave API
+        connect_info: 'Seleziona una mailing list a cui aggiungere i nuovi clienti come iscritti:'
+        list_id: ID elenco
+      connect_error: Impossibile completare l'integrazione. Elimina l'integrazione e riprova.
+      connected: Questo servizio è connesso.
+      extensor:
+        activate: Inizia a utilizzare l'integrazione di Extensor Online Booking.
+        activate_settings_2: Attiva le impostazioni per Extensor Online Booking versione 2
+        activate_settings_3: Attiva le impostazioni per Extensor Online Booking versione 3
+        activate_settings_4: Attiva le impostazioni per Extensor Online Booking versione 4
+        activate_settings_5: Attiva le impostazioni per Extensor Online Booking versione 5
+        info: Per attivare la sincronizzazione con Extensor è necessario installare Extensor Online Booking. Clicca sul link qui sotto per avviare la procedura. Verrai contattato da Extensor.
+        reactive_settings: Riattiva le impostazioni per Extensor Online Booking.
+        version: Makeplans è configurato per funzionare con la versione %{version} di Extensor Online Booking.
+      fiken:
+        active: Attivo
+        api_not_activated: È necessario attivare l'API in Fiken.
+        connected_bank_account: Conto bancario
+        connected_company: Azienda
+        email: Nome utente (epost)
+        income_account: Conto di reddito
+        password: Password
+        select_bank_account: Seleziona il conto bancario da visualizzare in fattura.
+        select_company: Scegli l'azienda
+        service_linked: Collega il prodotto in Fiken
+        service_links: 'Ogni servizio deve essere collegato a un prodotto in Fiken per poter creare un ordine in Fiken. Nota bene: il prezzo viene recuperato da Fiken, non da Makeplans. È necessario assicurarsi che il prezzo in entrambe le applicazioni sia identico.'
+        service_not_linked: NON collegato ad alcun prodotto Fiken.
+        vat_type: Tipo IVA
+      fiken_v2:
+        active: Attivo
+        connected_bank_account: Conto bancario
+        connected_company: Azienda
+        select_bank_account: Seleziona il conto bancario da visualizzare in fattura.
+        select_company: Scegli l'azienda
+        service_linked: Collega il prodotto in Fiken
+        service_links: 'Ogni servizio deve essere collegato a un prodotto in Fiken per poter creare un ordine in Fiken. Nota bene: il prezzo viene recuperato da Fiken, non da Makeplans. È necessario assicurarsi che il prezzo in entrambe le applicazioni sia identico.'
+      frontgo:
+        api_key: Chiave API
+      headline: Integrazione con %{integration}
+      highrise:
+        account: Sottodominio (ILTUOCITO.highrisehq.com - inserisci solo ILTUOCITO)
+        connect_info: 'Seleziona l''account in cui vengono aggiunti i nuovi clienti:'
+        password: Chiave API
+      index:
+        api: API
+        header: Integrazioni
+        web_hooks: webhook
+      klaviyo:
+        select_list: 'Seleziona un elenco in cui i nuovi clienti vengono aggiunti come abbonati:'
+      mailchimp:
+        account: ID elenco
+        connect_info: 'Seleziona una mailing list a cui aggiungere i nuovi clienti come iscritti:'
+        password: Chiave API
+      mailerlite:
+        api_key: Chiave API
+        select_group: Seleziona il gruppo a cui verranno aggiunti i nuovi clienti.
+      mailmojo:
+        account: ID elenco
+        username: Nome utente dell'account
+      not_authenticated: Impossibile connettersi. Verifica le tue credenziali.
+      notion:
+        connected_to: Connesso al database con ID %{database_id}
+        database_info: 'Il database deve essere configurato con le seguenti proprietà: Nome, Email (tipo: email), Telefono (tipo: telefono).'
+        select_database: Seleziona il database
+        sharing_info: Si prega di condividere almeno un database con l'integrazione Makeplans
+      oauth_connect: Connettiti al servizio
+      selected_option: Selezionato
+      sendy:
+        connect_info_html: I nuovi clienti verranno iscritti alla lista con ID <em>%{list_id}</em> sull'installazione %{api_url}
+      slack:
+        connect_info: Per ogni nuova prenotazione in Makeplans, verrà pubblicato un messaggio nel canale Slack %{channel}.
+      stripe:
+        disable_customer_saving: Non salvare il cliente su Stripe
+        payment_info: Per tutte le transazioni, Makeplans detrae una commissione di piattaforma pari a %{application_fee_percent}%.
+        receipt_email: Invia una ricevuta al cliente da Stripe
+        save_card_billing_details: Salva i dati di fatturazione per la transazione
+      tfso:
+        add_to_crm_manually: Aggiungere manualmente il cliente nel CRM
+        distribution_method: 'Metodo di distribuzione:'
+        distribution_methods:
+          EMail: Email
+          ElectronicInvoice: EHF
+          Print: Stampa
+          Unchanged: Invariato
+        invoice_payment_time: 'Tempi di pagamento:'
+        invoice_state: 'Stato dell''ordine:'
+        invoice_states:
+          Confirmed: Confermato
+          Draft: Bozza
+          ForInvoicing: Per la fatturazione
+          Invoice: Fatturato
+          Invoiced: Fatturato
+          Offer: Offerta
+          Web: Web
+        password: Password API
+        service_linked: Collegati al prodotto in 24SevenOffice
+        service_links: Ogni servizio in Makeplans deve essere collegato a un prodotto in 24SevenOffice per abilitare la fatturazione. Si prega di notare che il prezzo viene recuperato dal prodotto in 24SevenOffice, non da Makeplans. È necessario assicurarsi che i due prezzi siano identici. Accedere a un servizio per definire un ID prodotto da 24SevenOffice.
+        service_not_linked: NON collegato a un prodotto in 24SevenOffice
+        type_groups: 'Tipo di vendita per l''ordine:'
+        username: Nome utente API
+      vipps:
+        client_id: ID cliente
+        client_secret: segreto del cliente
+        merchant_serial_nr: Numero di serie del commerciante
+        non_partner_mode: Utilizza le mie chiavi di accordo Vipps anziché le chiavi partner di MakePlans.
+        partner_keys_info: Se la tua unità di vendita Vipps è stata configurata tramite MakePlans, devi solo inserire il tuo numero di serie commerciante. L'ID cliente, il segreto cliente e la chiave di abbonamento sono richiesti solo se disponi di un tuo contratto Vipps.
+        push_message: Invia le richieste di pagamento all'app Vipps del cliente (richiede l'attivazione delle notifiche push per la tua unità di vendita Vipps).
+        setup_webhooks: Verifica e configura i webhook
+        verify: Verifica la connessione
+        verify_error: 'Vipps ha rifiutato le credenziali: %{message}'
+        verify_success: Vipps è configurato e autenticato correttamente.
+        vipps_subscription_key: Chiave di abbonamento Vipps
+        webhook_active: Il webhook di pagamento è registrato.
+        webhook_setup_failed: 'Configurazione del webhook non riuscita: %{error}'
+        webhook_setup_missing_fields: Inserisci l'ID client, il segreto client, la chiave di sottoscrizione e il numero di serie del commerciante prima di configurare i webhook.
+      visma_eaccounting:
+        active: Attivo
+        connect_info: Connesso a %{name}
+        connected_payment_id: 'Termini di pagamento: %{name}'
+        customer_attributes_info: 'Nota bene: Visma eAccounting richiede codice postale e città per registrare un nuovo cliente. In assenza di questi dati, non sarà possibile generare un ordine a partire da una prenotazione.'
+        select_terms_of_payment: 'Si prega di selezionare le modalità di pagamento standard per i nuovi clienti:'
+        service_linked: Connesso a un prodotto in Visma eAccounting
+        service_links: Ogni servizio in Makeplans deve essere collegato a un prodotto in Visma eAccount per poter emettere fatture. Si prega di notare che il prezzo viene recuperato da Visma eAccounting, non da Makeplans. È necessario assicurarsi che il prezzo sia identico in entrambi i sistemi.
+        service_not_linked: NON collegato ad alcun prodotto in Visma eAccounting
+      whereby:
+        connect_info: Collegato
+        setup_info: Per ogni servizio per cui Whereby è attivo, verrà creata automaticamente una riunione.
+      zapier:
+        info_html: Per collegare Makeplans a Zapier, crea un <a href="%{url}" target="_blank">nuovo Zap su Zapier</a> .
+      zoom:
+        connect_info: Collegato
+        info: Affinché questa integrazione funzioni, è necessario collegare una risorsa a un utente in Zoom e disporre di almeno un servizio con Zoom abilitato.
+        registration_type: Tipo di registrazione
+        session_type: Tipo di sessione Zoom per eventi
+    message_templates:
+      form:
+        delivery_timing_info: 'Scrivi in un linguaggio semplice e chiaro. Esempio: ''due ore prima'' (il messaggio viene inviato due ore prima) o ''08:00 domani'' (alle 8:00 del giorno successivo). I tempi di consegna sono relativi e dipendono dal tipo di messaggio: conferma - prenotazione creata_il_giorno, promemoria - prenotazione_prenotata_dal_giorno, follow_up - prenotazione_prenotata_al_giorno.'
+        immediately: immediatamente
+        services: Servizi
+        services_info: 'Il messaggio predefinito verrà inviato per tutti i servizi, a meno che non si specifichi di limitarne l''invio a servizi specifici tra quelli elencati di seguito:'
+        settings:
+          skip_if_in_past: Non spedire se il termine di consegna è scaduto.
+        template_info_html: È possibile unire valori dinamici. Per maggiori dettagli, consultare <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> .
+      index:
+        header: Modelli di messaggio
+        immediately: immediatamente
+        intro: Qui troverai modelli di messaggio più complessi che possono essere inviati dopo la conferma di una prenotazione, prima del suo inizio o al termine della stessa. Tieni presente che questi messaggi vengono inviati in aggiunta ai messaggi standard come la conferma e il promemoria. Utilizza questa funzione solo se desideri, ad esempio, inviare un promemoria aggiuntivo, più messaggi di conferma (come un'email oltre all'SMS) o un messaggio di follow-up.
+      show:
+        immediately: immediatamente
+    orders:
+      index:
+        all_states: Tutti gli stati
+        created_at: Creato
+        customer: Cliente
+        do_filtering: Filtro
+        filter: Filtro
+        headline: Ordini
+        order_id: Ordine
+        status: Stato
+        total: Totale
+      refund:
+        already_refunded: Questo ordine è già stato rimborsato.
+        failed: 'Rimborso non riuscito: %{message}'
+        nothing_to_refund: Non è previsto alcun rimborso per questo ordine.
+        success: Ordine rimborsato.
+      show:
+        amount: Quantità
+        balance: Saldo dovuto
+        coupon: Codice sconto
+        created_at: Creato
+        customer: Cliente
+        date: Data
+        details: Dettagli
+        generated_gift_card: 'Carta regalo generata: %{code}'
+        gift_card_used: Carta regalo %{code}
+        gift_cards: Carte regalo
+        invoice: Fattura
+        invoice_number: Fattura n. %{nr}
+        item: Articolo
+        line_items: Articoli da ordinare
+        order_number: Ordine n. %{id}
+        quantity: Quantità
+        refund: Pagamento di rimborso
+        refund_confirm: Richiedere il rimborso dell'intero ordine? Questa operazione annulla tutti i pagamenti e non può essere annullata.
+        subtotal: Subtotale
+        total: Totale
+        transaction_type: Tipo
+        transactions: Pagamenti
+      states:
+        cancelled: Annullato
+        confirmed: Confermato
+        pending: In attesa
+      transaction_types:
+        gift_card: Carta regalo
+        payment: Pagamento
+        refund: Rimborso
+        subscription: Sottoscrizione
+    people:
+      children:
+        index:
+          add_existing: Aggiungi cliente esistente
+          headline: "%{parent} può effettuare prenotazioni per:"
+        new:
+          add_selected: Aggiungi selezionato
+          headline: Aggiungi clienti connessi per %{parent}
+          no_results: Nessun cliente corrispondente trovato
+          no_results_hint: Vengono mostrati solo i clienti senza una connessione esistente.
+          search: Ricerca
+          search_placeholder: Cerca per nome, email o numero di telefono
+      form:
+        block: Bloccare il cliente sul sito di prenotazione
+        booking_site_locale_default: Utilizza le impostazioni predefinite per il sito di prenotazione
+        managed_by: Questo cliente sarà gestito da %{parent}.
+        merge_action: Unisci questi due clienti
+        merge_action_email: Questo indirizzo email è già salvato per un altro cliente. Vuoi unire questi due clienti in modo che %{email} venga utilizzato come indirizzo email?
+        merge_action_info: Tutte le prenotazioni verranno mantenute, ma i dati di uno dei clienti verranno eliminati. È possibile scegliere quali informazioni del cliente conservare.
+        merge_action_national_id_no: Questo numero di previdenza sociale è già registrato per un altro cliente. Desideri unire questi clienti in modo che %{national_id_no} diventi il numero di previdenza sociale corrente?
+        merge_action_phone_number: Questo numero di telefono è già memorizzato per un altro cliente. Vuoi unire questi due clienti? %{phone_number} verrà utilizzato come numero di telefono.
+        merge_button: Unisci e salva
+        merge_info: 'Utilizzare invece:'
+        unblock: Rimuovere il blocco sul sito di prenotazione
+      index:
+        delete_warning: Sei sicuro di voler eliminare %{person}?
+        filter: Filtraggio
+        headline: Clienti
+        send_sms: Invia SMS
+      show:
+        add_child: Aggiungi cliente connesso
+        all_day: Tutto il giorno
+        bookings_for: Prenotazioni per %{name}
+        can_book_for: È possibile effettuare prenotazioni per %{children} altre persone.
+        card_saved_with:
+          stripe: Carta di pagamento salvata con Stripe
+        change_tfso_customer: Modifica l'ID cliente di 24SevenOffice.
+        export: Invio dei dati via email al cliente
+        export_executed: Il file di esportazione è stato inviato al cliente.
+        fiken:
+          create_customer: Crea cliente in Fiken
+          processing: Creazione di clienti in Fiken...
+          show_customer: Mostra il cliente in Fiken
+        filter_bookings:
+          active: Mostra solo le prenotazioni attive
+          all: Mostra tutte le prenotazioni, comprese quelle eliminate
+          visible: Mostra tutte le prenotazioni visibili
+        gift_cards:
+          one: "%{count} carta regalo"
+          other: "%{count} carte regalo"
+        no_reservations: Nessuna prenotazione trovata
+        parent_info: Gestito da
+        send_sms: Invia SMS
+      tfso_connect_company:
+        create: Crea un nuovo cliente in 24SevenOffice
+        header: Connettiti con il cliente in 24SevenOffice
+        search: Oppure cerca tra i clienti esistenti
+        search_matched_headline: Sono stati trovati clienti esistenti nel CRM di 24SevenOffice. Fai clic sul nome per collegare questo cliente di Makeplans al cliente nel CRM di 24SevenOffice.
+        search_query: Ricerca nome
+        stream_placeholder: Ricerca in corso nel CRM di 24SevenOffice. Attendere prego. L'operazione potrebbe richiedere da 1 a 2 minuti.
+    profile:
+      activate_rotp:
+        enable_rotp: Attiva l'autenticazione a due fattori
+        generate_header: Attiva la verifica in due passaggi (2FA)
+        generate_info: Scansiona il codice QR qui sotto con il tuo cellulare utilizzando Google Authenticator o un'altra app di autenticazione a due fattori.
+        verify_code: 'Inserisci il codice di verifica:'
+      deactivate_rotp:
+        deactivate_rotp: Rimuovere l'autenticazione a due fattori
+        verify_code: 'Inserisci il codice di verifica:'
+      edit_password:
+        verify_code: 'Inserisci il codice di verifica:'
+      no_access:
+        header: Accesso negato
+        info: Per accedere a questa funzionalità, contatta l'amministratore del tuo account.
+      show:
+        change_password: Modifica password
+        rotp:
+          disable_link: Disattiva la verifica in due passaggi
+          disable_warning: Sei sicuro di voler disattivare la verifica in due passaggi?
+          enable_link: Attiva la verifica in due passaggi
+          enable_warning: Se attivi la verifica in due passaggi, dovrai sempre verificare ogni accesso con un codice generato dall'app sul tuo telefono. Sei sicuro di voler attivare questa funzione?
+          regenerate_link: Rigenera la chiave di verifica in due passaggi
+          regenerate_warning: Se rigeneri la chiave di verifica in due passaggi, la chiave esistente non funzionerà più e dovrai configurare l'app con il nuovo codice. Sei sicuro di voler continuare?
+          submit_button: Login
+          verification_code_header: Verifica in due passaggi
+      update_password:
+        updated: Password aggiornata. Effettua il login con la nuova password.
+    providers:
+      form:
+        availability: "%{resource} - disponibilità per %{service}"
+        from: da
+        to: a
+    purge_data:
+      destroy:
+        header: I dati obsoleti sono in fase di eliminazione.
+        processing: I dati verranno ora eliminati. L'elaborazione potrebbe richiedere alcuni minuti.
+      index:
+        header: Elimina i dati obsoleti
+        info: 'Questa funzione eliminerà i dati personali meno recenti. È possibile specificare la data di eliminazione. Verranno eliminati i seguenti dati:'
+        not_deleted: L'eliminazione dei dati non attiverà le integrazioni esterne.
+        processing: Elaborazione
+        purge: ELIMINA DATI
+        purge_1: Tutte le prenotazioni che terminano prima della data specificata.
+        purge_2: Tutti i clienti che non hanno aggiornato i propri dati entro la data specificata e che non hanno effettuato prenotazioni dopo tale data.
+        purge_3: Tutti i registri e i metadati relativi a questi dati verranno anch'essi eliminati.
+        purge_before: Eliminare i dati prima della data
+        warning: Sei sicuro di voler eliminare tutti i dati precedenti alla data specificata? Non è possibile annullare questa operazione.
+    reports:
+      stats:
+        all: Tutte le risorse
+        booking_word: prenotazione
+        bookings: prenotazioni
+        bookings_per_day: Prenotazioni al giorno
+        day: Giorno
+        no_reservations: Nessuna prenotazione
+    resources:
+      form:
+        availability: Disponibilità predefinita
+        delete_warning:
+          one: Questa risorsa ha 1 prenotazione futura. Eliminandola, la risorsa e tutte le relative prenotazioni verranno rimosse. Fai clic nuovamente su Elimina per confermare.
+          other: Questa risorsa ha %{count} prenotazioni future. L'eliminazione rimuoverà la risorsa e tutte le relative prenotazioni. Fai clic di nuovo su Elimina per confermare.
+        external_info:
+          microsoft_office365_user_id: utente di Microsoft Office 365
+          zoom_user_id: Utente Zoom
+        from: da
+        mail_notification_info: Per inviare la notifica a più di una persona, utilizzare il punto e virgola per separare gli indirizzi email.
+        offers: Offre i seguenti servizi sul sito di prenotazione
+        sms_notification_info: Per inviare una notifica a più di una persona, utilizzare il punto e virgola per separare i numeri di telefono.
+        to: a
+      index:
+        header: Risorse
+      integrations:
+        external_info:
+          microsoft_office365_user_id: utente di Microsoft Office 365
+          zoom_user_id: Utente Zoom
+      list_menu:
+        list: Risorse
+      show:
+        availability: 'Disponibilità predefinita:'
+        capacity: 'Capacità:'
+        closed: Non disponibile per la prenotazione online.
+        copy:
+          header: Clone
+          info: Crea una nuova risorsa basata su questa risorsa. Tieni presente che i servizi forniti vengono clonati.
+          link: Clona questa risorsa
+        custom_data: 'Campi personalizzati:'
+        ical:
+          activated: L'accesso a questa risorsa tramite iCalendar è attivo. I link al feed iCalendar sono disponibili. Non condividere il link.
+          activated_html: L'accesso a questa risorsa tramite iCalendar è abilitato. Il link al feed iCalendar è %{link}
+          disable: Disattiva il feed di iCalendar
+          enable: Attiva il feed di iCalendar
+          future_html: 'Prenotazioni future: %{link}'
+          info: iCalendar-feed mostrerà gli appuntamenti di questa risorsa in Makeplans anche in altre applicazioni di calendario come Microsoft Outlook, Google Calendar, iPhone o Android. È in sola lettura, tutte le modifiche devono essere apportate in Makeplans.
+          not_activated: Non attivato
+          past_html: 'Prenotazioni precedenti: %{link}'
+        icalfeed: 'iCalendar-feed:'
+        offers: 'Sul sito di prenotazione offre i seguenti servizi:'
+        room_display:
+          activated: La visualizzazione della stanza è abilitata.
+          code: Codice
+          disable: Disattiva il display della sala
+          enable: Attiva il display della sala
+          generate_code: Genera il codice di configurazione
+          header: Display della sala
+          info: Un display pubblico per questa sala che mostra lo stato attuale e le prenotazioni future. Adatto per un tablet montato all'esterno della sala.
+          not_activated: Non attivato
+          show_link: Link al display della sala
+    services:
+      availability:
+        header: Disponibilità per %{title}
+      custom_communication:
+        custom_communication_info: Qui puoi specificare contenuti personalizzati che verranno inviati per ogni nuova prenotazione di questo tipo di evento. Se inserisci del contenuto, questo sovrascriverà il contenuto predefinito nella sezione "Comunicazione". I campi vuoti utilizzeranno il contenuto predefinito.
+        custom_communication_show: Mostra il contenuto delle comunicazioni in uscita
+      custom_form:
+        custom_form_info_html: È possibile specificare un modulo di prenotazione personalizzato per questo servizio. Questo modulo sovrascriverà il modulo predefinito definito in "Sito di prenotazione". La documentazione è disponibile all'indirizzo<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a> , oppure è possibile contattare il servizio clienti per assistenza.
+        custom_form_show: Mostra il modulo di prenotazione personalizzato
+      custom_new_booking_text:
+        custom_new_booking_text_info_html: È possibile specificare un testo personalizzato nella pagina di conferma per questo servizio. Questo testo sovrascriverà il testo predefinito per le nuove prenotazioni personalizzate definito in "Sito di prenotazione". La documentazione è disponibile all'indirizzo <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> , oppure è possibile contattare il servizio clienti per assistenza.
+        custom_new_booking_text_show: Mostra il testo di conferma personalizzato
+      custom_reservation_form_text:
+        custom_reservation_form_text_info_html: È possibile specificare un testo personalizzato che verrà visualizzato prima del modulo di prenotazione per questo servizio. Questo testo sovrascriverà il testo predefinito del modulo di prenotazione personalizzato definito in "Sito di prenotazione". La documentazione è disponibile all'indirizzo <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> , oppure è possibile contattare l'assistenza clienti per ricevere supporto.
+        custom_reservation_form_text_show: Mostra il testo del modulo di prenotazione personalizzato
+      custom_terms:
+        custom_terms_info_html: È possibile specificare termini personalizzati per questo servizio. Questo testo sovrascriverà i termini predefiniti definiti nella sezione "Sito di prenotazione". La documentazione è disponibile all'indirizzo <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> , oppure è possibile contattare il servizio clienti per assistenza.
+        custom_terms_show: Mostra le condizioni personalizzate
+      form_appointment:
+        account_default: Impostazione predefinita dell'account
+        booking_site_settings: Impostazioni per il sito di prenotazione
+        days: giorni
+        interval_rounding:
+          default: Impostazione predefinita dell'account
+          five: Cinque minuti più vicini
+          halfhour: Mezz'ora più vicina
+          hour: Ora più vicina
+          none: Nessun arrotondamento (sconsigliato)
+          quarter: Quarto più vicino
+          ten: I dieci minuti più vicini
+          twenty: Il tempo più vicino di 20 minuti
+        max_slots_default: Illimitato
+        minutes: minuti
+        next_interval_default: In base alla durata
+        offered_by: Offerto dalle seguenti risorse
+        payment: Pagamento
+        price_placeholder: Nessun prezzo
+        settings:
+          hide_all_available: È necessario selezionare una risorsa specifica (l'opzione "Mostra tutte le risorse disponibili" sarà nascosta).
+          hide_resources: Nascondi il pulsante per la selezione della risorsa (verrà selezionata casualmente tra le risorse disponibili)
+          hide_slot_end: Nascondi l'ora di fine
+          overnight: Pernottamento (solo per prenotazioni giornaliere)
+          return_occupied: Slot di visualizzazione occupati
+          return_past: Slot di visualizzazione in passato
+          select_count: Passaggio aggiuntivo per specificare il conteggio
+          select_resource: Passaggio aggiuntivo per la selezione della risorsa
+          show_free_capacity: Mostra la capacità disponibile
+          standalone: Servizio autonomo
+      form_attendance:
+        booking_site_settings: Impostazioni per il sito di prenotazione
+        days: Giorni
+        default_values: Qui di seguito troverai le impostazioni predefinite che possono essere modificate per ogni evento che crei.
+        minutes: Minuti
+        offered_by: Può essere offerto dai seguenti calendari
+        payment: Pagamento
+        settings:
+          hide_slot_end: Nascondi l'ora di fine
+          show_free_capacity: Mostra la capacità disponibile
+      form_gift_card:
+        booking_site_settings: Impostazioni per il sito di prenotazione
+      form_product:
+        booking_site_settings: Impostazioni per il sito di prenotazione
+      index:
+        appointment:
+          header: Servizi
+        attendance:
+          header: Tipi di eventi
+        days: giorni
+        header: Servizi
+        minutes: minuti
+        priority_button: Ordine
+        product:
+          header: Prodotti
+      integrations:
+        external_info:
+          fiken_create_order: Crea ordini in Fiken automaticamente
+          fiken_product_href: Collegati a un prodotto in Fiken
+          microsoft_teams_create_meeting: Crea automaticamente una riunione di Microsoft Teams per questo servizio
+          tfso_create_order: Genera automaticamente l'ordine in 24SevenOffice
+          tfso_product_id: ID prodotto 24SevenOffice
+          visma_eaccounting_article_id: Collegati a un prodotto in Visma eAccounting
+          visma_eaccounting_create_order: Creazione automatica degli ordini in Visma eAccounting
+          whereby_create_meeting: Crea automaticamente una riunione Whereby per questo servizio
+          zoom_create_session: Crea automaticamente una riunione Zoom per questo servizio
+      list_menu:
+        list_appointment: Servizi
+        list_attendance: Tipi di eventi
+      priority:
+        description:
+          order: Utilizza la funzione trascina e rilascia o i pulsanti freccia per riordinare i fornitori. Il primo fornitore avrà la priorità più alta.
+          weight: Assegna un valore di peso (0-100) a ciascun fornitore. I valori più alti corrispondono a una priorità maggiore. La somma di tutti i pesi deve essere pari a 100.
+        header: Gestisci priorità - %{title}
+        resource: Risorsa
+        save: Salva le impostazioni di priorità
+        validation:
+          weights_invalid: "⚠ La somma dei pesi è %{total}, dovrebbe essere 100"
+          weights_valid: "✓ La somma dei pesi è 100"
+        weight: Peso
+      service_priority:
+        description: Trascina e rilascia i servizi per impostarne l'ordine di visualizzazione sul sito di prenotazione. I servizi senza un valore di ordine verranno visualizzati per ultimi, in ordine alfabetico.
+        header: Ordinazione del servizio
+      show:
+        availability: Disponibilità del fornitore
+        custom_data: 'Dati personalizzati:'
+        days: giorni
+        description: 'Descrizione:'
+        interval: 'Durata:'
+        manage_priority: Gestisci la priorità
+        minutes: minuti
+        no_providers: 'Importante: questo servizio non è offerto da nessuna risorsa e non verrà visualizzato sul sito di prenotazione. Clicca qui per aggiungere i fornitori.'
+        not_in_category: Stai utilizzando le categorie sul sito di prenotazione e questo servizio non è associato ad alcuna categoria. Di conseguenza, al momento questo servizio non è visibile sul sito di prenotazione. Clicca qui per gestire le tue categorie.
+        offered: 'Offerto dalle seguenti risorse:'
+        price: 'Prezzo:'
+        qr_code: Codice QR per i clienti
+        show_on_booking_site: Servizio disponibile sul sito di prenotazione
+      slots:
+        available: 'Posti disponibili:'
+        next_available: 'Prossima data disponibile:'
+        none_available: Nessun posto disponibile.
+      update_priority:
+        priority_updated: Le impostazioni di priorità sono state aggiornate correttamente.
+    setup:
+      appointment_services:
+        add: Aggiungi un altro
+        footer_html: Un servizio su <strong>appuntamento</strong> ha una durata fissa, ad esempio 30 minuti, e può essere prenotato durante orari di apertura prestabiliti, come dalle 9:00 alle 15:00 dal lunedì al venerdì. Esempi tipici sono la consulenza e il noleggio.
+        header_html: Ottimo, cominciamo!<br> Innanzitutto, aggiungi i tuoi servizi per gli appuntamenti.
+        minutes: minuti
+        submit: Continua
+      attendance_services:
+        add: Aggiungi un altro
+        footer_html: "<strong>La presenza</strong> a eventi, corsi e lezioni si verifica in un orario specifico, ad esempio il 14 settembre dalle 15:00 alle 19:00 o ogni martedì alle 19:30. La data e l'ora precise verranno comunicate in seguito."
+        header_html: Ottimo, cominciamo!<br> Innanzitutto aggiungiamo i servizi per la gestione delle presenze.
+        submit: Continua
+      completed:
+        header_html: Congratulazioni, il tuo sito di prenotazione è ora online!
+      completed_appointment:
+        info_html: Il tuo sito di prenotazione è ora configurato su %{href}. Qui i tuoi clienti possono prenotare online. Ti abbiamo anche inviato un'email con queste informazioni. Oltre al sito di prenotazione, puoi anche inserire manualmente gli appuntamenti nel tuo calendario.
+        to_calendar: Portami al calendario
+      completed_attendance:
+        info_html: Il tuo sito di prenotazione sarà disponibile all'indirizzo %{href}. Ma prima devi aggiungere il tuo primo evento che sarà disponibile per la prenotazione.
+        new_event: Ok, creiamo il mio primo evento
+      resources:
+        add: Aggiungi un altro
+        footer_html: Una risorsa può essere un dipendente, una stanza o un oggetto. Il titolo della risorsa è il nome del dipendente o un nome proprio come "Sala riunioni piccola" o "Proiettore n. 4". Ogni prenotazione appartiene a una risorsa.
+        from: da
+        header_html: Quasi finito!</br> Basta aggiungere alcune risorse e il gioco è fatto.
+        save: Salva
+        submit: Fatto!
+        to: a
+        working_hours: Disponibilità
+        working_hours_header: ''
+      start:
+        add_services_for: Definire i servizi per
+        appointments: Appuntamenti
+        appointments_info_html: Ad esempio, una visita dal chiropratico, un taglio di capelli, un massaggio, un noleggio o altri servizi con orari di apertura fissi.
+        attendances: Presenze
+        attendances_info_html: Per la partecipazione a eventi, corsi, lezioni o altre presenze in orari specifici. Sia una tantum che ricorrente, ad esempio ogni martedì.
+        footer_html: Un servizio è qualcosa che offri ai tuoi clienti e che verrà visualizzato sul sito di prenotazione. Definisci i servizi per gli appuntamenti che hanno orari di apertura fissi o per le presenze che si verificano in un momento specifico.
+        header_html: Benvenuti in Makeplans.<br> Inizia aggiungendo i tuoi servizi
+    shared:
+      recurring:
+        enabled: Ripeti più volte con uno schema
+        freq:
+          monthly: Mese
+          weekly: Settimana
+          yearly: Anno
+        freq_label: Periodo
+        interval:
+          '1': Ogni
+          '2': Ogni secondo
+          '3': Ogni terzo
+          '4': Ogni quarto
+          '5': Ogni quinto
+          '6': Ogni sesto
+          '7': Ogni settimo
+          '8': Ogni otto
+        interval_label: Frequenza
+        length:
+          count: Occorrenze
+          until: Prima della data
+        length_label: Fino a
+    sms:
+      create:
+        queued: Invio di SMS a %{recipents_count} destinatari...
+      insufficient_credits:
+        buy: Acquista SMS
+        info: Devi prepagare %{needed} crediti SMS per poter inviare. Hai %{credits} crediti.
+      new:
+        filter:
+          all: Tutto
+          calculate: Trova i destinatari
+          change: Cambia filtro
+          date_hint: Facoltativo. Lasciare vuoto per non inserire alcun limite di data.
+          from: Prenotazioni a partire dal
+          header: Invio di SMS ai clienti filtrati
+          instructions: Seleziona un intervallo di date, un servizio e/o una risorsa per trovare i clienti con prenotazioni corrispondenti. È necessario almeno un filtro.
+          no_limit: Nessun limite
+          no_recipients: Nessun cliente corrisponde al filtro selezionato. Modifica il filtro e riprova.
+          none: Seleziona almeno un filtro (intervallo di date, servizio o risorsa) prima di inviare.
+          one_sms_per_person: Ogni cliente riceve un solo SMS, anche se ha più prenotazioni che corrispondono al filtro.
+          resources: Risorse
+          resources_hint: Lascia vuoto per includere i clienti con prenotazioni per qualsiasi risorsa.
+          services: Servizi
+          services_hint: Lasciare vuoto per includere i clienti con prenotazioni per qualsiasi servizio.
+          to: Prenotazioni entro o prima
+        header: 'Invia SMS ai destinatari %{recipents_count}:'
+        liquid_hint: Personalizza il messaggio con tag come {{ person.name }}, {{ person.first_name }} o {{ person.email }}.
+        message: Messaggio
+        message_error: Impossibile elaborare il messaggio. Si prega di verificare i tag di personalizzazione e riprovare.
+        processing: Invio in corso...
+        send: Invia
+        sms_info: Per i messaggi più lunghi di 160 caratteri, il costo viene calcolato ogni 160 caratteri. Il costo per un messaggio di 200 caratteri è di 2 SMS per messaggio. Il cliente riceverà un unico SMS.
+        warning:
+          all: 'IMPORTANTE: Ora invierai a TUTTI i tuoi clienti.'
+          confirm: Sei sicuro di voler inviare questo messaggio?
+          event: 'IMPORTANTE: Ora invierai la notifica a tutti i partecipanti a questo evento.'
+    sms_credits:
+      charge:
+        info: Acquisto di crediti SMS %{sms_credits}.
+        process: Acquisto completo
+        processing: Attendere prego...
+      index:
+        buy: Acquista ulteriori crediti SMS
+        header: Saldo SMS
+        sms_credits_available: Hai a disposizione %{credits} crediti SMS.
+      purchase_form:
+        buy: Acquista
+        header: Acquista crediti SMS
+        offer: Sconto %{discount}%.
+        quantity: "%{quantity} SMS."
+        total: 'Totale: %{sum}'
+    users:
+      index:
+        header: Utenti
+      list_menu:
+        list: Utenti
+      show:
+        remove_access: Rimuovere l'accesso
+        remove_access_confirm: Sei sicuro di voler revocare l'accesso a questo account per questo utente?
+    web_hooks:
+      index:
+        app_secret_info_html: Segreto dell'app per la verifica dei webhook. Consultare <a href="https://developer.makeplans.com" target="_blank" class="link-external">la documentazione</a> per maggiori dettagli.
+        header: webhook

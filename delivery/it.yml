@@ -1,0 +1,132 @@
+---
+it:
+  booking_ical:
+    summary: "%{service} presso %{client}"
+  booking_mailer:
+    awaiting_confirmation:
+      body: |-
+        Ciao,
+
+        La tua richiesta di prenotazione di %{title} %{time_range} è stata registrata.
+
+        La prenotazione non è confermata finché non viene approvata.
+        Riceverai un'email quando la prenotazione sarà elaborata.
+      subject: Nuova richiesta di prenotazione
+    cancellation:
+      header: Ciao %{name}
+      info: La tua prenotazione per %{title} al %{time_range} è stata annullata.
+      subject: Prenotazione annullata
+    confirmation:
+      booking_count:
+        one: Prenotazione per %{count} persona.
+        other: Prenotazione per %{count} persone.
+      header: Ciao %{name}
+      info: Hai prenotato %{title} %{time_range}.
+      link: Maggiori informazioni sulla tua prenotazione
+      link_cancellation_info: e opzioni di cancellazione
+      resource_info: 'Prenotazione con: %{resource}.'
+      subject: Nuova prenotazione
+      subject_service: Prenotazione per %{service}
+    declined:
+      body: |-
+        Ciao,
+
+        La tua prenotazione non è stata confermata.
+      subject: Prenotazione rifiutata
+    modification:
+      header: Ciao %{name}
+      info: 'La tua prenotazione è stata modificata in: %{title} %{time_range}.'
+      link: Maggiori informazioni sulla tua prenotazione
+      link_cancellation_info: e opzioni di cancellazione
+      resource_info: 'Prenotazione con: %{resource}.'
+      subject: Prenotazione modificata
+    request_card:
+      header: Ciao %{name}
+      info: Per pagare facilmente la prenotazione, inserisci i dati della tua carta di credito.
+      link: Aggiungi carta di pagamento
+      subject: Aggiungi i tuoi dati di pagamento
+    request_payment:
+      header: Ciao %{name}
+      info: È possibile pagare la prenotazione tramite il link sottostante.
+      link: Paga la prenotazione
+      subject: Pagamento della prenotazione
+    verification:
+      footer: 'Importante: la prenotazione non è ancora completata. Se non la confermi entro %{expires_in} minuti, potrebbe scadere.'
+      header: Per completare la prenotazione di %{title} %{time_range} è necessario verificare la prenotazione utilizzando il codice seguente.
+      link: Conferma la prenotazione
+      subject: Verifica la tua prenotazione
+  booking_occurrence_mailer:
+    cancel:
+      body: 'La tua prenotazione per %{title} per i seguenti orari è stata annullata:'
+      subject: Prenotazioni annullate
+    create:
+      body: 'Hai prenotato %{title} per i seguenti orari:'
+      subject: Nuove prenotazioni
+  booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        AZIONE RICHIESTA: Richiesta di prenotazione da parte di {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} il {{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Makeplans
+      booking_type_attendance: |-
+        AZIONE RICHIESTA: Richiesta di iscrizione da parte di {{ booking.person.name }} per {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Makeplans
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        ANNULLAMENTO: {{ booking.person.name }} ha annullato la sua prenotazione di {{ booking.resource.title }} - {{ booking.title }} il {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        ANNULLAMENTO: {{ booking.person.name }} ha annullato la sua iscrizione a {{ booking.event.full_title }} {{ booking.time_range }}.
+        Makeplans
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Nuova prenotazione di {{ booking.resource.title }} da parte di {{ booking.person.name }}. {{ booking.title }} il {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        Nuova iscrizione per {{ booking.event.full_title }} {{ booking.time_range }} da {{ booking.person.name }}.
+        Makeplans
+    admin_notification_modification:
+      booking_type_appointment: |-
+        Modifica della prenotazione per {{ booking.resource.title }} da parte di {{ booking.person.name }}. {{ booking.title }} il {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        Iscrizione modificata per {{ booking.event.full_title }} {{ booking.time_range }} da {{ booking.person.name }}.
+        Makeplans
+    admin_notification_resource_change:
+      booking_type_appointment: |-
+        Cambio di risorsa in {{ booking.resource.title }} per {{ booking.person.name }} {{ booking.title }} il {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        Iscrizione modificata per {{ booking.event.full_title }} {{ booking.time_range }} da {{ booking.person.name }}.
+        Makeplans
+    awaiting_confirmation: Hai effettuato una richiesta di prenotazione per {{ booking.title }} {{ booking.booked_from }}. Ti invieremo un messaggio non appena la tua richiesta sarà elaborata.
+    cancellation: La tua prenotazione del {{ booking.booked_from }} è stata annullata.
+    confirmation: Hai effettuato una prenotazione per {{ booking.title }} {{ booking.booked_from }}.
+    declined: La tua richiesta di prenotazione di {{ booking.title }} {{ booking.booked_from }} non è stata approvata. Riprova.
+    modification: 'La tua prenotazione è stata modificata: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Promemoria: Prenotazione {% if booking.service != nil %} di {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: Inserisci i tuoi dati di pagamento in %{url}
+    request_payment: 'Puoi pagare la tua prenotazione {% if booking.service != nil %} di {{ booking.title }} {% endif %}{{ booking.booked_from }} qui: {{ booking.payment_link }}'
+    signature: |2-
+
+      {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} è il tuo codice di verifica per la prenotazione di {{ booking.title }}."
+  person_mailer:
+    export:
+      subject: Esportazione dei dati
+    perishable_token:
+      body: |-
+        Utilizza il codice seguente per completare la verifica:
+
+        %{perishable_token}
+      subject: Accesso a %{client}
+  person_sms:
+    perishable_token: "{{ perishable_token }} è il tuo codice di autenticazione."
+    signature: |2-
+
+      {{ client.name }}

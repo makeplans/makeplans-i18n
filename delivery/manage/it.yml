@@ -1,0 +1,342 @@
+---
+it:
+  booking_ical:
+    summary_admin: "%{person} - %{service}"
+  booking_user_mailer:
+    booking_info:
+      customer_info: Informazioni sul cliente
+    notification_cancellation:
+      body: "%{name} ha annullato la prenotazione di %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Annullamento per %{resource}
+      booking_type_attendance:
+        subject_resource: Annullamento per %{title}
+      link: Per visualizzare questa prenotazione, si prega di andare a
+    notification_confirmation:
+      appointment:
+        body: "%{name} ha riservato %{title} %{time_range}."
+      attendance:
+        body: "%{name} si è iscritto a %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Nuova prenotazione per %{resource}
+      booking_type_attendance:
+        subject_resource: Nuova iscrizione per %{title}
+      link: Per visualizzare questa prenotazione, si prega di andare a
+    notification_modification:
+      appointment:
+        body: "%{name} ha modificato %{title} %{time_range}."
+      attendance:
+        body: "%{name} ha modificato la registrazione %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Prenotazione modificata per %{resource}
+      booking_type_attendance:
+        subject_resource: Registrazione modificata per %{title}
+      link: Per visualizzare questa prenotazione, si prega di andare a
+    notification_resource_change:
+      appointment:
+        body: "%{name} ha modificato %{title} %{time_range}."
+      attendance:
+        body: "%{name} ha modificato la registrazione %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Risorsa modificata per %{resource}
+      booking_type_attendance:
+        subject_resource: Risorsa modificata per %{title}
+      link: Per visualizzare questa prenotazione, si prega di andare a
+    request_approvement:
+      body: "%{name} vuole riservare %{title} %{time_range}."
+      link: Per approvare o rifiutare questa prenotazione, si prega di andare a
+      subject_resource: Nuova richiesta per %{resource}
+  client_mailer:
+    activated:
+      body: |-
+        Ciao,
+
+        Il tuo abbonamento a Makeplans è stato attivato con successo.
+        Consulta i nostri prezzi su https://makeplans.com/en/pricing/
+        Per i nostri termini e condizioni, visita https://terms.makeplans.com
+
+        Il tuo account: %{subdomain}
+
+        Grazie per aver utilizzato Makeplans :D
+
+        Per qualsiasi domanda, rispondi a questa email.
+      subject: Il tuo account è attivo
+    api_enabled:
+      body: |-
+        Ciao,
+
+        Sembra che tu abbia abilitato l'API sul tuo account Makeplans %{subdomain}. Fantastico!
+
+        Se sai cosa stai facendo, puoi semplicemente ignorare questa email.
+
+        Ma se non hai familiarità con l'API di Makeplans, ti consigliamo di consultare la documentazione all'indirizzo https://developer.makeplans.com.
+        Troverai informazioni sull'autenticazione, tutti gli endpoint, i webhook e anche degli esempi.
+        Hai domande? Contattaci, saremo lieti di aiutarti.
+
+        Se stai sperimentando, potrebbe essere una buona idea creare un account di sviluppo API nel nostro ambiente di test. Ci sono alcune restrizioni, ma in genere è preferibile sviluppare in un ambiente e un account separati rispetto al tuo account principale.
+        Puoi trovare un link all'ambiente di test nella documentazione dell'API.
+
+        Buon lavoro!
+      subject: API abilitata sul tuo account Makeplans
+    charge_failed:
+      body: |-
+        Ciao,
+
+        Abbiamo provato a elaborare il tuo pagamento per l'utilizzo di Makeplans ma abbiamo ricevuto il seguente errore: %{error}
+
+        Accedi al tuo account Makeplans per verificare la validità della tua carta.
+
+        %{url}
+
+        Il tuo account verrà disattivato a breve se il pagamento non andrà a buon fine.
+
+        Grazie,
+        Makeplans
+      subject: 'AZIONE RICHIESTA: Problema nell''elaborazione del pagamento'
+    charge_give_up:
+      body: |-
+        Ciao,
+
+        ATTENZIONE: Il tuo account è ora disattivato.
+
+        Abbiamo provato a elaborare il tuo pagamento per l'utilizzo di Makeplans ma abbiamo ricevuto il seguente errore: %{error}
+
+        Accedi al tuo account Makeplans per assicurarti che la tua carta sia valida per riattivare il tuo account:
+
+        %{url}
+
+        Grazie,
+        Makeplans
+      subject: 'AZIONE RICHIESTA: Account disattivato'
+    charge_requires_action:
+      body: |-
+        Ciao,
+
+        Abbiamo provato a elaborare il pagamento con la tua carta di credito per utilizzare Makeplans, ma abbiamo bisogno della tua autorizzazione per completare la transazione. Ciò è dovuto ai requisiti della tua banca.
+
+        Il tuo account Makeplans verrà disabilitato a breve se il pagamento non viene confermato.
+
+        %{url}
+
+        Grazie,
+        Makeplans
+      subject: 'AZIONE RICHIESTA: Si prega di confermare il pagamento'
+    charge_succeded:
+      body: |-
+        Abbiamo addebitato l'importo sulla tua carta di credito per l'utilizzo di Makeplans. Trovi la ricevuta allegata relativa al pagamento della fattura n. %{invoice_nr}.
+
+        Ti informiamo che la fattura è già stata pagata. Non è necessaria alcuna ulteriore azione.
+
+        Il tuo account: %{subdomain}
+
+        Grazie per aver utilizzato Makeplans.
+      filename: 'Makeplans AS %{invoice_date} ricevuta #%{invoice_nr}'
+      subject: La ricevuta per l'utilizzo di Makeplans
+    deactivated:
+      body: |-
+        Ciao,
+
+        Sono Espen, il fondatore di Makeplans. Mi dispiace vedere che hai disattivato il tuo account Makeplans.
+
+        Mancavano delle funzionalità, o perché hai scelto di non usare più Makeplans? Se hai qualche feedback per noi lo ascolterò volentieri, così potremo migliorare il nostro prodotto. Oppure hai trovato Makeplans un po' complicato da configurare o utilizzare? Posso aiutarti a configurare il tuo account. Inoltre posso offrirti due mesi di utilizzo gratuito se vuoi dare a Makeplans un'altra possibilità.
+
+        Rispondi semplicemente a questa email e ti ricontatterò.
+
+        Il tuo account disattivato: %{subdomain}.
+
+        In ogni caso, buona giornata e grazie per aver provato Makeplans.
+      subject: 'CRITICO: Account Makeplans disattivato'
+    inactive_warning:
+      body: |-
+        Ciao,
+
+        Dato che il tuo periodo di prova è scaduto e non c'è stata alcuna attività sul tuo account da %{latest_booking_change_at}, disattiveremo il tuo account tra 30 giorni.
+
+        Per mantenere attivo il tuo account, accedi a %{url}.
+
+        Se non intraprendi alcuna azione, disattiveremo il tuo account tra un mese. Successivamente, il tuo account e tutti i tuoi dati verranno eliminati tra quattro mesi.
+
+        Grazie per aver provato Makeplans :)
+      subject: 'CRITICO: L''account Makeplans verrà disattivato'
+    no_bookings:
+      body: |-
+        Ciao,
+
+        La settimana scorsa ti sei iscritto a Makeplans. Si tratta di un servizio per la prenotazione di appuntamenti online.
+
+        Ho notato che non ci sono ancora prenotazioni nel tuo account. Perché non aggiungi una prenotazione di prova nel sistema di amministrazione per vedere se Makeplans fa al caso tuo?
+        Per aggiungere una prenotazione, vai semplicemente a %{url}.
+
+        Se non sei sicuro di come configurare il tuo account o hai domande sul funzionamento del processo di prenotazione, rispondi a questa email e ti aiuteremo :)
+      subject: Nessuna prenotazione ancora
+    not_setup:
+      body: |-
+        Ciao,
+
+        Ieri ti sei registrato a Makeplans. Si tratta di un servizio per la prenotazione di appuntamenti online.
+
+        Ho notato che non hai completato la configurazione del tuo account. Forse non hai avuto tempo, in tal caso perché non la completi ora?
+        Vai semplicemente a %{url} per completare la configurazione: ci vogliono solo 45 secondi.
+
+        Oppure hai domande sull'utilizzo di Makeplans o su come configurare al meglio il tuo account? Rispondi a questa email e ti aiuteremo :)
+      subject: Completa la configurazione di Makeplans
+    paused:
+      body: |-
+        Ciao,
+
+        Il tuo abbonamento a Makeplans verrà sospeso al termine di questo periodo di fatturazione (%{demo_ends_at}).
+        Tieni presente che ti verranno addebitati i costi di transazione, come ad esempio gli SMS, finché il tuo account rimarrà attivo.
+
+        Quando il tuo abbonamento verrà sospeso, potrai riattivare facilmente il tuo account in futuro.
+
+        Il tuo account: %{subdomain}
+
+        Se riscontri difficoltà nell'utilizzo di Makeplans per le tue esigenze, rispondi a questa email in modo che possiamo aiutarti a configurare il tuo account e spiegarti come utilizzare al meglio Makeplans in base alle tue necessità.
+      subject: Il tuo account verrà sospeso
+    setup_completed:
+      contact_us_html: E se avete domande, inviateci un'email all'indirizzo %{mail}
+      footer: Makeplans
+      header: Ora i tuoi clienti possono prenotare online!
+      info: Hai configurato correttamente il tuo account Makeplans e ora sei pronto ad accettare prenotazioni online dai tuoi clienti.
+      next_steps: 'Prossimi passi:'
+      step_1: Effettua una prenotazione di prova per verificare che tutti i messaggi di testo e in uscita siano corretti.
+      step_2: Quando sei pronto, inserisci un link al sito di prenotazione sul tuo sito web.
+      step_3: Informa anche gli altri tuoi clienti che ora possono prenotare online.
+      subject: Ora i tuoi clienti possono prenotare online con Makeplans
+    signup:
+      contact_us_html: Se avete domande, contattateci all'indirizzo %{mail} oppure rispondete a questa email.
+      extra: Funzionalità aggiuntive in Makeplans
+      extra_info: 'È fantastico che tu voglia offrire ai tuoi clienti la possibilità di prenotare online. Inoltre, Makeplans può offrire a te e ai tuoi clienti numerose funzionalità aggiuntive:'
+      feature_1: I tuoi clienti possono ricevere un SMS di promemoria prima dell'appuntamento.
+      feature_2: È richiesto il pagamento con carta di credito al momento della prenotazione.
+      feature_3: Archivia informazioni aggiuntive sulla prenotazione o sul cliente tramite campi personalizzati.
+      feature_4: Makeplans è integrato con numerose applicazioni di terze parti, come CRM e applicazioni per newsletter via email.
+      footer: Spero che ti piaccia usare Makeplans
+      header: Benvenuti su Makeplans!
+      link_info: Qui troverai il tuo calendario con una panoramica di tutte le prenotazioni e potrai configurare il tuo account.
+      registered: 'Hai appena registrato un account di prova gratuito su:'
+      subject: Benvenuti in Makeplans
+    sms_credits_balance_reached:
+      body: |-
+        Ciao,
+
+        Il tuo account Makeplans ha un limite di invio di %{sms_balance_limit} SMS. Hai superato tale limite.
+
+        Non vengono più inviati SMS dal tuo account.
+
+        Acquista crediti SMS:
+        %{url}
+
+        In alternativa, puoi accedere al tuo account e modificare il metodo di verifica da SMS a email e disabilitare i promemoria SMS.
+      subject: 'AZIONE RICHIESTA: Hai utilizzato tutto il credito SMS disponibile'
+    sms_credits_balance_warning:
+      body: |-
+        Ciao,
+
+        Il tuo account Makeplans ha un limite di invio di %{sms_balance_limit} SMS. Al momento hai inviato %{sms_balance}.
+
+        Quando raggiungerai %{sms_balance_limit} messaggi, il tuo account non invierà più SMS a meno che tu non acquisti altri crediti SMS.
+
+        Acquista crediti SMS:
+        %{url}
+
+        In alternativa, puoi accedere al tuo account e cambiare il metodo di verifica da SMS a email e disattivare i promemoria SMS.
+      subject: Il tuo credito SMS sta per esaurirsi
+    trial_expire_warning:
+      body: |-
+        Ciao,
+
+        Volevo solo informarti che la tua prova gratuita di Makeplans scadrà tra 3 giorni.
+
+        Per consentire ai tuoi clienti di prenotare online senza interruzioni, attiva subito il tuo account.
+
+        Attiva l'account:
+        %{url}
+
+        Non hai ancora avuto modo di provarlo a fondo? Rispondi a questa email e potremo estendere la tua prova.
+      subject: 'Il periodo di prova sta per terminare: attiva l''account.'
+    trial_expired:
+      body: |-
+        Ciao,
+
+        La tua prova gratuita di Makeplans è terminata.
+
+        I tuoi clienti non possono più effettuare prenotazioni. Devi attivare il tuo account per abilitare il tuo sito di prenotazione.
+
+        Attiva l'account:
+        %{url}
+
+        Non hai ancora avuto modo di testarlo a fondo? Rispondi a questa email e possiamo estendere la tua prova.
+      subject: Il tuo account di prova di Makeplans è terminato.
+    trial_sms_credits_balance_reached:
+      body: |-
+        Ciao,
+
+        La tua versione di prova di Makeplans ha un limite di invio di %{sms_balance_limit} SMS. Hai superato tale limite.
+
+        Per continuare a utilizzare Makeplans, attiva il tuo account.
+
+        Attiva l'account:
+        %{url}
+
+        In alternativa, puoi accedere al tuo account e modificare il metodo di verifica da SMS a email e disabilitare i promemoria via SMS.
+      subject: 'AZIONE RICHIESTA: Hai utilizzato tutto il credito SMS disponibile'
+    trial_sms_credits_balance_warning:
+      body: |-
+        Ciao,
+
+        La tua versione di prova di Makeplans ha un limite di %{sms_balance_limit} SMS. Al momento ne hai inviati %{sms_balance}.
+
+        Se vuoi assicurarti che gli SMS vengano inviati, attiva il tuo account.
+        Quando raggiungi %{sms_balance_limit} messaggi, il tuo account smetterà di inviare SMS a meno che tu non lo attivi.
+
+        Attiva l'account:
+        %{url}
+
+        In alternativa, puoi accedere al tuo account e cambiare il metodo di verifica da SMS a email e disabilitare i promemoria SMS.
+      subject: Il tuo credito SMS sta per esaurirsi
+  layouts:
+    booking_user_mailer:
+      footer: Generato automaticamente da Makeplans.
+  user_mailer:
+    add_user:
+      body: |-
+        Ciao,
+
+        Benvenuto in Makeplans.
+
+        Clicca sul link qui sotto per definire una password.
+
+        %{link}
+      subject: Aggiunto come utente in Makeplans
+    email_modified:
+      footer: Makeplans
+      info: Il tuo indirizzo email è stato modificato in %{new_email}. Contattaci immediatamente se non hai effettuato tu questa operazione.
+      subject: Indirizzo email modificato
+    export:
+      body: |-
+        Ciao,
+
+        Vedi il file allegato per i dati esportati da Makeplans.
+
+        Grazie per aver utilizzato Makeplans
+      subject: Esporta da Makeplans
+    link_user:
+      body: |-
+        Ciao,
+
+        Ora hai accesso all'account %{client} in Makeplans.
+
+        Visita %{link} per accedere.
+
+        Makeplans
+      subject: Accesso all'account in Makeplans
+    password_modified:
+      footer: Makeplans
+      info: La tua password è stata modificata. Contattaci immediatamente se non hai effettuato tu questa operazione.
+      subject: Password modificata
+    password_reset:
+      footer: Makeplans
+      info: Tu o qualcun altro avete richiesto il ripristino della password di Makeplans. Per completare il ripristino della password, clicca sul link qui sotto.
+      link: Reimposta la mia password di Makeplans.
+      subject: Reimposta la password

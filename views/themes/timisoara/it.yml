@@ -1,0 +1,275 @@
+---
+it:
+  timisoara:
+    bookings:
+      authenticate:
+        info: Abbiamo bisogno di informazioni per verificare la tua prenotazione di
+        submit: Invia il codice
+        title: Autenticazione tramite numero di telefono
+      awaiting_confirmation:
+        body: Hai inviato una richiesta di prenotazione. Attendi che l'amministratore confermi la prenotazione.
+      cancelled:
+        info: La prenotazione per %{title} %{time} è stata annullata.
+        title: La tua prenotazione è stata annullata
+        update_calendar: Aggiorna il mio calendario
+      new:
+        accept: Accetto i termini e le condizioni
+        add_another_person: Aggiungi un'altra persona
+        book_for_someone_else: Prenota per qualcun altro
+        booking_for: 'Questa prenotazione è per:'
+        booking_for_label: Prenotazione per
+        cancel: Annulla
+        change: Modifica
+        edit: Modifica
+        edit_profile: Modifica
+        logged_in_as: Prenotazione come %{person}
+        logged_in_as_short: Accesso effettuato come
+        logout: Disconnettiti
+        myself: Per me
+        not_you_logout: Non sei tu? Esci
+        notice: La tua prenotazione non è ancora confermata. Ti preghiamo di verificare i dettagli e di premere il pulsante qui sotto.
+        page_title: Conferma la tua prenotazione
+        someone_else: Qualcun altro (aggiungi nuovo)
+        step_label: Passo finale
+        submit: Completa la prenotazione
+        terms: Leggi i termini e le condizioni di prenotazione
+        title: Prenotazione di %{service}
+        who_is_booking_for: Per chi è questa prenotazione?
+        yourself: Per te
+      payment_stripe:
+        title: Pagamento
+      pre_payment:
+        info: Per completare la prenotazione di %{service} %{booking} è necessario effettuare un pagamento.
+        submit: Procedi al pagamento
+        title: Pagamento
+      show:
+        add_to_calendar: Aggiungi questa prenotazione al mio calendario
+        all: Visualizza le mie altre prenotazioni
+        cancel: Annulla
+        cancel_confirmation: Sei sicuro di voler annullare questa prenotazione?
+        info: La prenotazione per %{title} %{time} è confermata.
+        new_reservation: Effettua un'altra prenotazione
+        pay: Paga
+        reschedule: Riprogramma
+        title: La tua prenotazione è confermata!
+    categories:
+      index:
+        all_categories: Tutte le categorie
+        select_category: Seleziona la categoria
+    events:
+      index:
+        all_events: Tutti gli eventi
+        continue: Continua
+    generic:
+      alt:
+        go_back: Torna indietro
+        time: Orario
+    gift_cards:
+      index:
+        buy: Acquista
+        header: Carte regalo
+      new:
+        add_to_cart: Aggiungi al carrello
+        description: Acquista una carta regalo per una persona speciale. Scegli l'importo qui sotto.
+        header: Acquista una carta regalo
+        value_label: Valore
+        value_placeholder: Inserisci l'importo
+    layouts:
+      application:
+        alt:
+          footer_logo: Logo a piè di pagina
+        booking_site_footer: Sito di prenotazione per %{name}
+        cart: Carrello (%{count})
+        login: Login
+        made_by_tagline: Sistema intuitivo per la pianificazione, la prenotazione di appuntamenti e la registrazione agli eventi.
+        made_by_title: Prenotazione appuntamenti, programmazione e iscrizioni a eventi/corsi
+        privacy: Informativa sulla privacy
+        profile: Profilo
+        support: Supporto
+        title: Prenotazione online per %{name}
+    order_cart:
+      checkout:
+        applied_coupon: Sconto applicato
+        applied_gift_cards: Carte regalo applicate
+        apply: Applica
+        complete_order: Completa l'ordine
+        continue_to_payment: Procedi al pagamento
+        coupon_code: Codice sconto
+        credit_card: Carta di credito
+        discount: Sconto
+        empty_cart: Carrello vuoto
+        gift_card_code: Codice della carta regalo
+        gift_card_code_placeholder: XXXX-0000-XXXX
+        header: Cassa
+        invoice: Fattura
+        order_total: Totale dell'ordine
+        pay_now: Paga ora
+        payment_method: Metodo di pagamento
+        remaining_total: Totale rimanente
+        remove: Rimuovi
+        use_coupon: Codice sconto
+        use_gift_card: Utilizza la carta regalo
+        your_gift_cards: Le tue carte regalo
+      show:
+        amount: Importo
+        clear_cart: Svuota carrello
+        confirm_order: Conferma l'ordine
+        continue_shopping: Aggiungi altre carte regalo
+        empty_cart: Il tuo carrello è vuoto.
+        header: Carrello della spesa
+        item: Articolo
+        remove: Rimuovi
+        total: Totale
+    order_payments:
+      failure:
+        header: Pagamento non riuscito
+        message: Purtroppo, il pagamento non è andato a buon fine.
+        try_again: Riprova
+      fiken:
+        payment:
+          back: Indietro
+          create_invoice: Crea fattura
+          header: Pagamento della fattura
+      front_go:
+        awaiting_payment:
+          body: Attendi mentre verifichiamo la transazione.
+          error: Non siamo in grado di verificare il pagamento. Si prega di contattare il servizio clienti fornendo il numero di riferimento %{order_id}.
+          title: Verifica del pagamento
+        payment:
+          back: Indietro
+          header: Pagamento FrontGo
+          pay_now: Paga ora
+      pay_later:
+        payment:
+          back: Indietro
+          complete_order: Completa l'ordine
+          description: Il tuo ordine verrà confermato. Il pagamento potrà essere effettuato in seguito.
+          header: Paga in seguito
+      stripe:
+        awaiting_payment:
+          header: Elaborazione dei pagamenti
+          message: Attendi mentre elaboriamo il pagamento...
+        payment:
+          back: Indietro
+          header: Pagamento con carta
+          new_card: Utilizza una nuova carta
+          pay_now: Paga ora
+          payment_details_html: Il pagamento viene elaborato in modo sicuro tramite %{provider}. Tutti gli importi sono in %{currency}.
+          save_card: Salva questa carta per i pagamenti futuri
+          select_card: Seleziona una carta salvata
+      vipps:
+        awaiting_payment:
+          body: Attendi mentre verifichiamo la transazione.
+          error: Non siamo in grado di verificare il pagamento. Si prega di contattare il servizio clienti fornendo il numero di riferimento %{order_id}.
+          title: Verifica del pagamento
+        payment:
+          back: Indietro
+          header: Pagamento Vipps
+          pay_now: Paga con Vipps
+    orders:
+      index:
+        header: I miei ordini
+        no_orders: Non hai ancora ordini.
+        order_number: Ordine n. %{number}
+      payment:
+        amount_to_pay: Importo da pagare
+        fiken: Fattura (Fiken)
+        front_go: FrontGo
+        header: Seleziona il metodo di pagamento
+        no_payment_methods: Nessun metodo di pagamento disponibile.
+        pay_later: Paga in seguito
+        select_payment_method: Come vuoi pagare?
+        stripe: Carta di credito
+        vipps: Vipps
+      show:
+        amount: Importo
+        back_to_orders: Torna agli ordini
+        confirmation_message: Grazie per il tuo ordine!
+        discount_code: Sconto (%{code})
+        each: cad.
+        gift_card_code: Codice della carta regalo
+        gift_card_value: Valore
+        gift_cards: Carte regalo
+        header: Conferma d'ordine
+        item: Articolo
+        my_reservations: Le mie prenotazioni
+        order_details: Dettagli dell'ordine
+        payment_details: Pagamento
+        total: Totale
+        transaction_gift_card: Carta regalo (%{code})
+        transaction_payment: Pagamento
+        transaction_refund: Rimborso
+    person_sessions:
+      enter_perishable_token:
+        info_html: Abbiamo inviato un codice di verifica a <b>%{recipient}</b>. Inserisci il codice per verificare le tue informazioni.
+        perishable_token: Codice
+        submit: Continua
+        title: Verifica la tua prenotazione
+      perishable_token_form:
+        alt:
+          checkbox: Casella di controllo
+        submit: Invia il codice
+        terms_conditions: Termini e Condizioni
+        title: Login
+    products:
+      index:
+        buy: Acquista
+        header: Prodotti
+      show:
+        add_to_cart: Aggiungi al carrello
+    profile:
+      children:
+        index:
+          header: Persone per cui puoi prenotare
+        new:
+          cancel: Annulla
+          errors_header: 'Si sono verificati degli errori:'
+          submit: Salva e continua
+          title: Aggiungi persona
+      credit_card_list:
+        add_card: Aggiungi la carta
+        body: I tuoi metodi di pagamento memorizzati
+        card_info: "%{brand} che termina con %{last_4} (scadenza %{expire_month}/%{expire_year})"
+        remove_card: Rimuovi
+        title: Metodi di pagamento
+      gift_card_list:
+        balance: Saldo
+        body: Le tue carte regalo
+        code: Codice
+        no_gift_cards: Non possiedi carte regalo.
+        purchased_body: Carte regalo che hai acquistato e che non hai ancora utilizzato.
+        purchased_title: Carte regalo acquistate
+        title: Le mie carte regalo
+      index:
+        alt:
+          calendar: Calendario
+        awaiting_approval: In attesa di approvazione
+        cancel: Annulla
+        logout: Disconnettiti
+        my_details: I miei dati
+        my_orders: I miei ordini
+        tabs:
+          all: Tutto
+          cancelled: Annullato
+          completed: Completato
+          upcoming: In programma
+        title: Le mie prenotazioni
+      new:
+        errors_header: 'Si sono verificati degli errori:'
+        header: Informazioni sull'account
+        register: Registrati
+      show:
+        header: Le tue informazioni memorizzate
+    services:
+      available_dates:
+        select_date: Date disponibili
+      count:
+        select_count: Quante persone?
+      index:
+        all_categories: Tutte le categorie
+        all_services: Tutti i servizi
+        buy: Acquista
+        continue: Effettua una prenotazione
+      show:
+        all_services: Tutti i servizi
+        continue: Effettua una prenotazione

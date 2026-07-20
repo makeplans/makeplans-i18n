@@ -1,0 +1,74 @@
+---
+it:
+  bookings:
+    awaiting_payment:
+      vipps_payment_failed: Il pagamento è stato annullato. Riprova.
+    verification_code:
+      incorrect_code: Codice errato
+  clients:
+    new:
+      first_user: Questa è la tua password personale. Potrai aggiungere altri utenti in seguito.
+      free_trial_info: Prova gratuita di 14 giorni. Nessun obbligo. Non è richiesta la carta di credito.
+      headline: Inizia subito a prenotare online
+      logged_in_as: Hai effettuato l'accesso come %{name}.
+      newsletter: Acconsento a ricevere aggiornamenti sui prodotti via email.
+      read_legal: Termini e condizioni per l'utilizzo di questo servizio
+      recaptcha: Ci scusiamo per il disturbo, ma dobbiamo verificare la tua registrazione tramite Google reCAPTCHA. Inserisci di nuovo la password e invia il modulo.
+      subdomain_info: Il tuo indirizzo univoco (URL) tramite il quale i tuoi clienti possono prenotare online.
+      subdomain_not_website_warning: 'OPS: Questo è l''indirizzo del tuo nuovo sito di prenotazione. NON inserire l''URL del tuo sito web attuale. In caso di dubbio, inserisci qui il nome della tua azienda.'
+      submit: Registra il mio account
+      title: Registrati per creare il tuo account di prenotazione online.
+      user_email: Email di lavoro
+      user_info: Le tue credenziali di accesso
+    rejected:
+      headline: Registrazione rifiutata
+      info: Siamo spiacenti, ma il nostro sistema ha contrassegnato la tua registrazione come spam. Ti preghiamo di contattarci per registrare un account.
+      title: Registrazione rifiutata
+  oauth:
+    callback:
+      header: Collega l'account
+  room_display:
+    setup:
+      header: Configurazione del display della sala
+      instruction: Inserisci il codice di configurazione generato nel pannello di amministrazione.
+      invalid_code: Codice non valido
+      placeholder: Inserisci il codice
+      submit: Attiva
+      title: Configurazione del display della sala
+    show:
+      book: Prenota
+      find_room: Trova una sala
+      free_all_day: Libera tutto il giorno
+      free_for: Libera per %{duration}
+      occupied: Occupata
+  user:
+    select_client:
+      header: Seleziona l'account
+  user_password_resets:
+    create:
+      header: Reimposta la tua password
+      info: Ti abbiamo appena inviato un'email. Per confermare il ripristino della password, devi cliccare sul link presente nell'email.
+      signup_html: Non hai un account? <a href="%{url}">Creane uno ora.</a>
+    edit:
+      header: Inserisci la tua nuova password
+      signup_html: Non hai un account? <a href="%{url}">Creane uno ora.</a>
+      submit: Salva password
+    new:
+      header: Hai dimenticato la password?
+      signup_html: Non hai un account? <a href="%{url}">Creane uno ora.</a>
+      submit: Invia email
+  user_sessions:
+    handle_authenticated_user:
+      success: Accesso effettuato con successo
+    new:
+      forgot_link: Hai dimenticato la password?
+      header: Login
+      incorrect: Credenziali errate
+      login: Login
+      remember_me: Ricordami
+      signup_html: Non hai un account? <a href="%{url}">Creane uno ora.</a>
+      title: Login
+    rotp_verification_code:
+      header: Accedi con autenticazione a due fattori
+      info: Utilizza il codice generato dalla tua applicazione di autenticazione a due fattori (2FA).
+      submit: Login
