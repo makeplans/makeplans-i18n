@@ -1,0 +1,279 @@
+---
+de:
+  lviv:
+    bookings:
+      authenticate:
+        email: E-Mail
+        phone_number: Telefonnummer
+        title: Buchung bestätigen
+      cancelled:
+        info: Die Buchung für %{title} %{time} wurde storniert.
+        title: Ihre Buchung wurde storniert.
+      new:
+        add_another_person: Weitere Person hinzufügen
+        agree_with: Ich akzeptiere die Allgemeinen Geschäftsbedingungen.
+        book_for_someone_else: Für jemand anderen buchen
+        booking_for: 'Diese Buchung ist für:'
+        booking_for_label: Buchung für
+        cancel: Abbrechen
+        change: Ändern
+        errors_header: Bitte füllen Sie die Pflichtfelder aus.
+        logged_in_as: Buchung als %{person}
+        logged_in_as_short: Angemeldet als
+        logout: Abmelden
+        myself: Ich selbst
+        not_you_logout: Nicht Sie? Hier abmelden.
+        optional: Optional
+        someone_else: Jemand anderes (neu hinzufügen)
+        submit: Buchung abschließen
+        subtitle: Ihre Buchung ist noch nicht bestätigt. Bitte überprüfen Sie die Details und klicken Sie auf die Schaltfläche unten.
+        terms: Bitte lesen Sie die Reservierungsbedingungen.
+        title: Bestätigen Sie Ihre Buchung
+        who_is_booking_for: Für wen ist diese Buchung?
+        yourself: Selbst
+      payment_stripe:
+        title: Zahlungsdetails eingeben
+      pre_payment:
+        title: Zahlungsmethode auswählen
+      review:
+        agree_with: Ich stimme zu
+        any_specialist: Jeder Spezialist
+        directions: Wegbeschreibung
+        terms: Allgemeine Geschäftsbedingungen
+        title: Überprüfen Sie Ihre Buchung
+      show:
+        add_to_calendar: Zum Kalender hinzufügen
+        alt:
+          calendar: Zum Kalender hinzufügen
+          profile: Profil
+        cancel_booking: Buchung stornieren
+        pay: Zahlen
+        reschedule: Neu terminieren
+        title: Buchungsdetails
+    categories:
+      index:
+        title: Kategorie auswählen
+    events:
+      index:
+        title: Datum und Uhrzeit auswählen
+      show:
+        book_event: Diese Veranstaltung buchen
+    generic:
+      alt:
+        go_back: Zurück
+      step: Schritt %{step} / %{steps}
+    gift_cards:
+      index:
+        buy: Kaufen
+        header: Geschenkgutscheine
+      new:
+        add_to_cart: In den Warenkorb legen
+        description: Verschenken Sie einen Geschenkgutschein an einen besonderen Menschen. Wählen Sie unten den gewünschten Betrag aus.
+        header: Geschenkkarte kaufen
+        value_label: Wert
+        value_placeholder: Betrag eingeben
+    layouts:
+      application:
+        about_makeplans: Über Makeplans
+        account: Konto
+        alt:
+          account: Konto
+          cancel: Abbrechen
+          cart: Warenkorb
+          menu: Menü
+        booking_site_footer: Buchungsseite für %{name}
+        cart: Warenkorb (%{count})
+        close: Schließen
+        get_support: Hilfe erhalten
+        menu: Menü
+        privacy_policy: Datenschutzerklärung
+        terms_conditions: Allgemeine Geschäftsbedingungen
+        title: Online-Buchung für %{name}
+    order_cart:
+      checkout:
+        applied_coupon: Angewendeter Rabatt
+        applied_gift_cards: Angewandte Geschenkkarten
+        apply: Anwenden
+        complete_order: Bestellung abschließen
+        continue_to_payment: Weiter zur Zahlung
+        coupon_code: Rabattcode
+        coupon_code_placeholder: Geben Sie den Code ein
+        discount: Rabatt
+        empty_cart: Leerer Warenkorb
+        gift_card_code: Geschenkkartencode
+        gift_card_code_placeholder: XXXX-0000-XXXX
+        header: Kasse
+        order_total: Bestellsumme
+        payment_method: Zahlungsmethode
+        remaining_total: Restbetrag
+        remove: Entfernen
+        use_coupon: Rabattcode
+        use_gift_card: Geschenkkarte verwenden
+        your_gift_cards: Ihre Geschenkkarten
+      show:
+        clear_cart: Warenkorb leeren
+        confirm_order: Bestellung bestätigen
+        empty_cart: Ihr Warenkorb ist leer.
+        header: Warenkorb
+        remove: Entfernen
+        total: Gesamt
+    order_payments:
+      failure:
+        header: Zahlung fehlgeschlagen
+        message: Ihre Zahlung konnte leider nicht verarbeitet werden.
+        try_again: Versuchen Sie es erneut
+      front_go:
+        awaiting_payment:
+          body: Bitte warten Sie, während wir die Transaktion überprüfen.
+          error: Wir können Ihre Zahlung nicht verifizieren. Bitte kontaktieren Sie unseren Kundenservice unter Angabe der Referenznummer %{order_id}.
+          title: Wir überprüfen Ihre Zahlung.
+        payment:
+          back: Zurück
+          header: FrontGo-Zahlung
+          pay_now: Jetzt bezahlen
+      pay_later:
+        payment:
+          back: Zurück
+          complete_order: Bestellung abschließen
+          description: Ihre Bestellung wird bestätigt. Die Zahlung kann später erfolgen.
+          header: Später bezahlen
+      stripe:
+        awaiting_payment:
+          header: Zahlungsabwicklung
+          message: Bitte warten Sie, während wir Ihre Zahlung bearbeiten...
+        payment:
+          back: Zurück
+          header: Kartenzahlung
+          new_card: Verwenden Sie eine neue Karte
+          pay_now: Jetzt bezahlen
+          payment_details_html: Die Zahlung wird sicher über %{provider} abgewickelt. Alle Beträge werden in %{currency} angegeben.
+          save_card: Diese Karte für zukünftige Zahlungen speichern
+          select_card: Wählen Sie eine gespeicherte Karte aus
+      vipps:
+        awaiting_payment:
+          body: Bitte warten Sie, während wir die Transaktion überprüfen.
+          error: Wir können Ihre Zahlung nicht verifizieren. Bitte kontaktieren Sie unseren Kundenservice unter Angabe der Referenznummer %{order_id}.
+          title: Wir überprüfen Ihre Zahlung.
+        payment:
+          back: Zurück
+          header: Vipps-Zahlung
+          pay_now: Mit Vipps bezahlen
+    orders:
+      index:
+        header: Meine Bestellungen
+        no_orders: Sie haben noch keine Bestellungen.
+        order_number: Bestellung Nr. %{number}
+      payment:
+        amount_to_pay: Zu zahlender Betrag
+        fiken: Rechnung (Fiken)
+        front_go: FrontGo
+        no_payment_methods: Es stehen keine Zahlungsmethoden zur Verfügung.
+        pay_later: Später bezahlen
+        stripe: Kreditkarte
+        vipps: Vipps
+      show:
+        back_to_orders: Zurück zu den Bestellungen
+        confirmation_message: Vielen Dank für Ihre Bestellung!
+        discount_code: Rabatt (%{code})
+        each: je
+        gift_card_code: Geschenkkartencode
+        gift_card_value: Wert
+        gift_cards: Geschenkgutscheine
+        header: Auftragsbestätigung
+        order_details: Bestelldetails
+        payment_details: Zahlung
+        total: Gesamt
+        transaction_gift_card: Geschenkkarte (%{code})
+        transaction_payment: Zahlung
+        transaction_refund: Erstattung
+    person_sessions:
+      enter_perishable_token:
+        confirm_booking: Buchung bestätigen
+        no_code: Code nicht erhalten?
+        send_again: Erneut senden
+        verify_login: Anmeldung bestätigen
+      perishable_token_action_required:
+        body: Wir haben eine E-Mail an %{recipient} gesendet. Folgen Sie dem Link, um Ihre Buchung zu bestätigen. Das hilft uns sicherzustellen, dass Sie kein Roboter sind.
+        delivery_error: Wir konnten Ihnen keine E-Mail senden. Haben Sie die richtige E-Mail-Adresse eingegeben?
+        delivery_not_processed: Aktuell kommt es in unseren Systemen zu Verzögerungen. Bitte haben Sie etwas Geduld, während wir Ihre E-Mail zustellen.
+        title: Bitte bestätigen Sie Ihre E-Mail-Adresse.
+      perishable_token_form:
+        title: Login
+      verification_method_email:
+        submit: Bestätigungs-E-Mail senden
+      verification_method_sms:
+        submit: Bestätigungscode senden
+    products:
+      index:
+        header: Produkte
+      show:
+        add_to_cart: In den Warenkorb legen
+        price: Preis
+    profile:
+      children:
+        index:
+          add_person: Person hinzufügen
+          alt:
+            right: Rechts
+          header: Personen, für die Sie buchen können
+          no_children: Sie haben noch niemanden zum Buchen hinzugefügt.
+        new:
+          errors_header: 'Es sind Fehler aufgetreten:'
+          submit: Speichern und fortfahren
+          subtitle: Bitte geben Sie die Daten der Person ein, für die Sie buchen möchten.
+          title: Person hinzufügen
+      credit_card_list:
+        title: Zahlungsmethoden
+      gift_card_list:
+        balance: Guthaben
+        code: Code
+        no_gift_cards: Sie besitzen keine Geschenkgutscheine.
+        purchased_body: Sie haben Geschenkgutscheine gekauft, die noch nicht eingelöst wurden.
+        purchased_title: Gekaufte Geschenkkarten
+        title: Meine Geschenkkarten
+      index:
+        book_again: Erneut buchen
+        canceled: Storniert
+        my_profile: Mein Profil
+        tabs:
+          all: Alle
+          cancelled: Storniert
+          completed: Abgeschlossen
+          upcoming: Anstehend
+        waiting: Ausstehend
+      new:
+        errors_header: 'Es sind Fehler aufgetreten:'
+        register: Registrieren
+        subtitle: Bitte füllen Sie die für die Registrierung erforderlichen Daten aus.
+        title: Neues Profil
+      show:
+        alt:
+          language: Sprache
+          logout: Abmelden
+          right: Rechts
+        change_language: Sprache ändern
+        logout: Abmelden
+        my_bookings: Meine Buchungen
+    services:
+      available_dates:
+        title: Datum und Uhrzeit auswählen
+      count:
+        title: Anzahl der Personen auswählen
+      index:
+        title: Wählen Sie den Service aus
+      location:
+        title: Standort auswählen
+      show:
+        book_service: Diesen Service buchen
+      slots:
+        available_times: Verfügbare Zeiten
+        continue: Weiter
+        estimated_time: Geschätzte Dauer - %{duration} Min.
+        free_capacity: "%{count} verfügbar"
+        next_available_date_html: Der nächste verfügbare Termin ist %{next_available_date}
+        no_availability: Am gewählten Datum ist keine Verfügbarkeit gegeben. Bitte versuchen Sie es mit einem anderen Datum.
+        title: Datum und Uhrzeit auswählen
+      success:
+        add_to_calendar: Buchung zum Kalender hinzufügen
+        book_another: Buchen Sie einen weiteren Service
+        title: Sie haben den Service erfolgreich gebucht.

@@ -1,0 +1,74 @@
+---
+de:
+  bookings:
+    awaiting_payment:
+      vipps_payment_failed: Die Zahlung wurde storniert. Bitte versuchen Sie es erneut.
+    verification_code:
+      incorrect_code: Falscher Code
+  clients:
+    new:
+      first_user: Dies ist Ihr persönliches Passwort. Sie können später weitere Benutzer hinzufügen.
+      free_trial_info: 14 Tage kostenlos testen. Keine Verpflichtungen. Keine Kreditkarte erforderlich.
+      headline: Jetzt online buchen
+      logged_in_as: Sie sind als %{name} angemeldet.
+      newsletter: Ich bin damit einverstanden, Produktaktualisierungen per E-Mail zu erhalten.
+      read_legal: Nutzungsbedingungen für diesen Dienst
+      recaptcha: Es tut uns leid für die Störung, aber wir müssen Ihre Registrierung mit Google reCAPTCHA verifizieren. Bitte geben Sie Ihr Passwort erneut ein und senden Sie das Formular anschließend ab.
+      subdomain_info: Ihre individuelle Adresse (URL), unter der Ihre Kunden online buchen können.
+      subdomain_not_website_warning: 'Ups: Dies ist die Adresse für Ihre neue Buchungsseite. Geben Sie NICHT die URL Ihrer bestehenden Website ein. Im Zweifelsfall tragen Sie hier einfach Ihren Firmennamen ein.'
+      submit: Mein Konto registrieren
+      title: Registrieren Sie sich für Ihr Online-Buchungskonto.
+      user_email: Geschäftliche E-Mail-Adresse
+      user_info: Ihr Benutzer-Login
+    rejected:
+      headline: Registrierung abgelehnt
+      info: Entschuldigung, aber unser System hat Ihre Registrierung als Spam markiert. Bitte kontaktieren Sie uns, um ein Konto zu registrieren.
+      title: Registrierung abgelehnt
+  oauth:
+    callback:
+      header: Mit dem Konto verbinden
+  room_display:
+    setup:
+      header: Raumdisplay einrichten
+      instruction: Bitte geben Sie den im Admin-Panel generierten Setup-Code ein.
+      invalid_code: Ungültiger Code
+      placeholder: Code eingeben
+      submit: Aktivieren
+      title: Raumdisplay einrichten
+    show:
+      book: Buchen
+      find_room: Raum finden
+      free_all_day: Den ganzen Tag frei
+      free_for: Frei für %{duration}
+      occupied: Besetzt
+  user:
+    select_client:
+      header: Konto auswählen
+  user_password_resets:
+    create:
+      header: Setzen Sie Ihr Passwort zurück
+      info: Wir haben Ihnen soeben eine E-Mail gesendet. Um die Zurücksetzung Ihres Passworts zu bestätigen, müssen Sie auf den Link in der E-Mail klicken.
+      signup_html: Noch kein Konto? <a href="%{url}">Jetzt loslegen.</a>
+    edit:
+      header: Bitte geben Sie Ihr neues Passwort ein.
+      signup_html: Noch kein Konto? <a href="%{url}">Jetzt loslegen.</a>
+      submit: Passwort speichern
+    new:
+      header: Passwort vergessen?
+      signup_html: Noch kein Konto? <a href="%{url}">Jetzt loslegen.</a>
+      submit: E-Mail senden
+  user_sessions:
+    handle_authenticated_user:
+      success: Erfolgreich angemeldet.
+    new:
+      forgot_link: Passwort vergessen?
+      header: Login
+      incorrect: Falsche Anmeldeinformationen
+      login: Login
+      remember_me: Angemeldet bleiben
+      signup_html: Noch kein Konto? <a href="%{url}">Jetzt loslegen.</a>
+      title: Login
+    rotp_verification_code:
+      header: Anmeldung mit Zwei-Faktor-Authentifizierung
+      info: Verwenden Sie den von Ihrer 2FA-Anwendung generierten Code.
+      submit: Login

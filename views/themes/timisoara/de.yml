@@ -1,0 +1,275 @@
+---
+de:
+  timisoara:
+    bookings:
+      authenticate:
+        info: Wir benötigen Informationen zur Verifizierung Ihrer Reservierung von
+        submit: Code senden
+        title: Authentifizierung der Telefonnummer
+      awaiting_confirmation:
+        body: Sie haben eine Buchungsanfrage gestellt. Bitte warten Sie, bis der Administrator Ihre Buchung bestätigt hat.
+      cancelled:
+        info: Die Buchung für %{title} %{time} wurde storniert.
+        title: Ihre Reservierung wurde storniert.
+        update_calendar: Meinen Kalender aktualisieren
+      new:
+        accept: Ich akzeptiere die Allgemeinen Geschäftsbedingungen.
+        add_another_person: Weitere Person hinzufügen
+        book_for_someone_else: Für jemand anderen buchen
+        booking_for: 'Diese Buchung ist für:'
+        booking_for_label: Buchung für
+        cancel: Abbrechen
+        change: Ändern
+        edit: Bearbeiten
+        edit_profile: Bearbeiten
+        logged_in_as: Buchung als %{person}
+        logged_in_as_short: Angemeldet als
+        logout: Abmelden
+        myself: Ich selbst
+        not_you_logout: Nicht Sie? Hier abmelden.
+        notice: Ihre Buchung ist noch nicht bestätigt. Bitte überprüfen Sie die Details und klicken Sie auf die Schaltfläche unten.
+        page_title: Bestätigen Sie Ihre Buchung
+        someone_else: Jemand anderes (neu hinzufügen)
+        step_label: Letzter Schritt
+        submit: Buchung abschließen
+        terms: Bitte lesen Sie die Reservierungsbedingungen.
+        title: Reservierung von %{service}
+        who_is_booking_for: Für wen ist diese Buchung?
+        yourself: Selbst
+      payment_stripe:
+        title: Zahlung
+      pre_payment:
+        info: Um die Reservierung von %{service} %{booking} abzuschließen, müssen Sie eine Zahlung leisten.
+        submit: Zur Zahlung
+        title: Zahlung
+      show:
+        add_to_calendar: Diese Buchung zu meinem Kalender hinzufügen
+        all: Meine anderen Reservierungen ansehen
+        cancel: Stornieren
+        cancel_confirmation: Sind Sie sicher, dass Sie diese Buchung stornieren möchten?
+        info: Die Buchung für %{title} %{time} ist bestätigt.
+        new_reservation: Nehmen Sie eine weitere Reservierung vor
+        pay: Zahlen
+        reschedule: Neu terminieren
+        title: Ihre Reservierung wurde bestätigt!
+    categories:
+      index:
+        all_categories: Alle Kategorien
+        select_category: Kategorie auswählen
+    events:
+      index:
+        all_events: Alle Veranstaltungen
+        continue: Weiter
+    generic:
+      alt:
+        go_back: Zurück
+        time: Uhrzeit
+    gift_cards:
+      index:
+        buy: Kaufen
+        header: Geschenkgutscheine
+      new:
+        add_to_cart: In den Warenkorb legen
+        description: Verschenken Sie einen Geschenkgutschein an einen besonderen Menschen. Wählen Sie unten den gewünschten Betrag aus.
+        header: Geschenkkarte kaufen
+        value_label: Wert
+        value_placeholder: Betrag eingeben
+    layouts:
+      application:
+        alt:
+          footer_logo: Footer-Logo
+        booking_site_footer: Buchungsseite für %{name}
+        cart: Warenkorb (%{count})
+        login: Login
+        made_by_tagline: Benutzerfreundliches System für Terminplanung, Terminbuchung und Veranstaltungsregistrierung.
+        made_by_title: Terminbuchung, Terminplanung und Anmeldung zu Veranstaltungen/Kursen
+        privacy: Datenschutzerklärung
+        profile: Profil
+        support: Support
+        title: Online-Buchung für %{name}
+    order_cart:
+      checkout:
+        applied_coupon: Angewendeter Rabatt
+        applied_gift_cards: Angewandte Geschenkkarten
+        apply: Anwenden
+        complete_order: Bestellung abschließen
+        continue_to_payment: Weiter zur Zahlung
+        coupon_code: Rabattcode
+        credit_card: Kreditkarte
+        discount: Rabatt
+        empty_cart: Leerer Warenkorb
+        gift_card_code: Geschenkkartencode
+        gift_card_code_placeholder: XXXX-0000-XXXX
+        header: Kasse
+        invoice: Rechnung
+        order_total: Bestellsumme
+        pay_now: Jetzt bezahlen
+        payment_method: Zahlungsmethode
+        remaining_total: Restbetrag
+        remove: Entfernen
+        use_coupon: Rabattcode
+        use_gift_card: Geschenkkarte verwenden
+        your_gift_cards: Ihre Geschenkkarten
+      show:
+        amount: Betrag
+        clear_cart: Warenkorb leeren
+        confirm_order: Bestellung bestätigen
+        continue_shopping: Weitere Geschenkkarten hinzufügen
+        empty_cart: Ihr Warenkorb ist leer.
+        header: Warenkorb
+        item: Artikel
+        remove: Entfernen
+        total: Gesamt
+    order_payments:
+      failure:
+        header: Zahlung fehlgeschlagen
+        message: Ihre Zahlung konnte leider nicht verarbeitet werden.
+        try_again: Versuchen Sie es erneut
+      fiken:
+        payment:
+          back: Zurück
+          create_invoice: Rechnung erstellen
+          header: Rechnungszahlung
+      front_go:
+        awaiting_payment:
+          body: Bitte warten Sie, während wir die Transaktion überprüfen.
+          error: Wir können Ihre Zahlung nicht verifizieren. Bitte kontaktieren Sie unseren Kundenservice unter Angabe der Referenznummer %{order_id}.
+          title: Wir überprüfen Ihre Zahlung.
+        payment:
+          back: Zurück
+          header: FrontGo-Zahlung
+          pay_now: Jetzt bezahlen
+      pay_later:
+        payment:
+          back: Zurück
+          complete_order: Bestellung abschließen
+          description: Ihre Bestellung wird bestätigt. Die Zahlung kann später erfolgen.
+          header: Später bezahlen
+      stripe:
+        awaiting_payment:
+          header: Zahlungsabwicklung
+          message: Bitte warten Sie, während wir Ihre Zahlung bearbeiten...
+        payment:
+          back: Zurück
+          header: Kartenzahlung
+          new_card: Verwenden Sie eine neue Karte
+          pay_now: Jetzt bezahlen
+          payment_details_html: Die Zahlung wird sicher über %{provider} abgewickelt. Alle Beträge werden in %{currency} angegeben.
+          save_card: Diese Karte für zukünftige Zahlungen speichern
+          select_card: Wählen Sie eine gespeicherte Karte aus
+      vipps:
+        awaiting_payment:
+          body: Bitte warten Sie, während wir die Transaktion überprüfen.
+          error: Wir können Ihre Zahlung nicht verifizieren. Bitte kontaktieren Sie unseren Kundenservice unter Angabe der Referenznummer %{order_id}.
+          title: Wir überprüfen Ihre Zahlung.
+        payment:
+          back: Zurück
+          header: Vipps-Zahlung
+          pay_now: Mit Vipps bezahlen
+    orders:
+      index:
+        header: Meine Bestellungen
+        no_orders: Sie haben noch keine Bestellungen.
+        order_number: Bestellung Nr. %{number}
+      payment:
+        amount_to_pay: Zu zahlender Betrag
+        fiken: Rechnung (Fiken)
+        front_go: FrontGo
+        header: Zahlungsmethode auswählen
+        no_payment_methods: Es stehen keine Zahlungsmethoden zur Verfügung.
+        pay_later: Später bezahlen
+        select_payment_method: Wie möchten Sie bezahlen?
+        stripe: Kreditkarte
+        vipps: Vipps
+      show:
+        amount: Betrag
+        back_to_orders: Zurück zu den Bestellungen
+        confirmation_message: Vielen Dank für Ihre Bestellung!
+        discount_code: Rabatt (%{code})
+        each: je
+        gift_card_code: Geschenkkartencode
+        gift_card_value: Wert
+        gift_cards: Geschenkgutscheine
+        header: Auftragsbestätigung
+        item: Artikel
+        my_reservations: Meine Reservierungen
+        order_details: Bestelldetails
+        payment_details: Zahlung
+        total: Gesamt
+        transaction_gift_card: Geschenkkarte (%{code})
+        transaction_payment: Zahlung
+        transaction_refund: Erstattung
+    person_sessions:
+      enter_perishable_token:
+        info_html: Wir haben einen Bestätigungscode an <b>%{recipient}</b> gesendet. Bitte geben Sie den Code ein, um Ihre Angaben zu bestätigen.
+        perishable_token: Code
+        submit: Weiter
+        title: Verifizieren Sie Ihre Reservierung
+      perishable_token_form:
+        alt:
+          checkbox: Kontrollkästchen
+        submit: Code senden
+        terms_conditions: Geschäftsbedingungen
+        title: Login
+    products:
+      index:
+        buy: Kaufen
+        header: Produkte
+      show:
+        add_to_cart: In den Warenkorb legen
+    profile:
+      children:
+        index:
+          header: Personen, für die Sie buchen können
+        new:
+          cancel: Abbrechen
+          errors_header: 'Es sind Fehler aufgetreten:'
+          submit: Speichern und fortfahren
+          title: Person hinzufügen
+      credit_card_list:
+        add_card: Karte hinzufügen
+        body: Ihre gespeicherten Zahlungsmethoden
+        card_info: "%{brand} endet auf %{last_4} (gültig bis %{expire_month}/%{expire_year})"
+        remove_card: Entfernen
+        title: Zahlungsmethoden
+      gift_card_list:
+        balance: Guthaben
+        body: Ihre Geschenkkarten
+        code: Code
+        no_gift_cards: Sie besitzen keine Geschenkgutscheine.
+        purchased_body: Sie haben Geschenkgutscheine gekauft, die noch nicht eingelöst wurden.
+        purchased_title: Gekaufte Geschenkkarten
+        title: Meine Geschenkkarten
+      index:
+        alt:
+          calendar: Kalender
+        awaiting_approval: Genehmigung ausstehend
+        cancel: Stornieren
+        logout: Abmelden
+        my_details: Meine Angaben
+        my_orders: Meine Bestellungen
+        tabs:
+          all: Alle
+          cancelled: Storniert
+          completed: Abgeschlossen
+          upcoming: Anstehend
+        title: Meine Reservierungen
+      new:
+        errors_header: 'Es sind Fehler aufgetreten:'
+        header: Kontoinformationen
+        register: Registrieren
+      show:
+        header: Ihre gespeicherten Informationen
+    services:
+      available_dates:
+        select_date: Verfügbare Termine
+      count:
+        select_count: Wie viele Personen?
+      index:
+        all_categories: Alle Kategorien
+        all_services: Alle Dienstleistungen
+        buy: Kaufen
+        continue: Jetzt buchen
+      show:
+        all_services: Alle Dienstleistungen
+        continue: Jetzt buchen

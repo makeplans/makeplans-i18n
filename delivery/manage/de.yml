@@ -1,0 +1,342 @@
+---
+de:
+  booking_ical:
+    summary_admin: "%{person} - %{service}"
+  booking_user_mailer:
+    booking_info:
+      customer_info: Kundeninformationen
+    notification_cancellation:
+      body: "%{name} hat die Reservierung von %{title} %{time_range} storniert."
+      booking_type_appointment:
+        subject_resource: Stornierung für %{resource}
+      booking_type_attendance:
+        subject_resource: Stornierung für %{title}
+      link: Um diese Reservierung einzusehen, gehen Sie bitte zu
+    notification_confirmation:
+      appointment:
+        body: "%{name} hat %{title} %{time_range} reserviert."
+      attendance:
+        body: "%{name} hat sich für %{title} %{time_range} angemeldet."
+      booking_type_appointment:
+        subject_resource: Neue Reservierung für %{resource}
+      booking_type_attendance:
+        subject_resource: Neuanmeldung für %{title}
+      link: Um diese Reservierung einzusehen, gehen Sie bitte zu
+    notification_modification:
+      appointment:
+        body: "%{name} hat %{title} %{time_range} geändert."
+      attendance:
+        body: "%{name} hat die Anmeldung %{title} %{time_range} geändert."
+      booking_type_appointment:
+        subject_resource: Geänderte Reservierung für %{resource}
+      booking_type_attendance:
+        subject_resource: Geänderte Anmeldung für %{title}
+      link: Um diese Reservierung einzusehen, gehen Sie bitte zu
+    notification_resource_change:
+      appointment:
+        body: "%{name} hat %{title} %{time_range} geändert."
+      attendance:
+        body: "%{name} hat die Anmeldung %{title} %{time_range} geändert."
+      booking_type_appointment:
+        subject_resource: Geänderte Ressource für %{resource}
+      booking_type_attendance:
+        subject_resource: Geänderte Ressource für %{title}
+      link: Um diese Reservierung einzusehen, gehen Sie bitte zu
+    request_approvement:
+      body: "%{name} möchte %{title} %{time_range} reservieren."
+      link: Um diese Reservierung zu bestätigen oder abzulehnen, gehen Sie bitte zu
+      subject_resource: Neue Anfrage für %{resource}
+  client_mailer:
+    activated:
+      body: |-
+        Hallo,
+
+        Ihr Makeplans-Abonnement wurde erfolgreich aktiviert.
+        Unsere Preise finden Sie unter https://makeplans.com/en/pricing/
+        Unsere Nutzungsbedingungen finden Sie unter https://terms.makeplans.com
+
+        Ihr Konto: %{subdomain}
+
+        Vielen Dank, dass Sie Makeplans nutzen!
+
+        Bei Fragen antworten Sie einfach auf diese E-Mail.
+      subject: Ihr Konto wurde aktiviert
+    api_enabled:
+      body: |-
+        Hallo,
+
+        es sieht so aus, als hätten Sie die API in Ihrem Makeplans-Konto %{subdomain} aktiviert. Super!
+
+        Wenn Sie wissen, was Sie tun, können Sie diese E-Mail einfach ignorieren.
+
+        Falls Sie die Makeplans-API noch nicht kennen, schauen Sie sich bitte die Dokumentation unter https://developer.makeplans.com an.
+        Dort finden Sie Informationen zur Authentifizierung, allen Endpunkten, Webhooks sowie Beispiele.
+        Haben Sie Fragen? Kontaktieren Sie uns einfach, wir helfen Ihnen gerne weiter.
+
+        Wenn Sie experimentieren, empfiehlt es sich, ein API-Entwicklungskonto in unserer Testumgebung anzulegen. Dort gibt es zwar einige Einschränkungen, aber generell ist es ratsam, in einer separaten Umgebung und mit einem separaten Konto zu entwickeln.
+        Den Link zur Testumgebung finden Sie in der API-Dokumentation.
+
+        Viel Spaß beim Programmieren!
+      subject: API für Ihr Makeplans-Konto aktiviert
+    charge_failed:
+      body: |-
+        Hallo,
+
+        wir haben versucht, Ihre Zahlung für Makeplans zu verarbeiten, erhielten aber folgende Fehlermeldung: %{error}
+
+        Bitte loggen Sie sich in Ihr Makeplans-Konto ein, um sicherzustellen, dass Ihre Karte gültig ist.
+
+        %{url}
+
+        Ihr Konto wird in Kürze deaktiviert, falls die Zahlung nicht erfolgreich ist.
+
+        Vielen Dank,
+        Makeplans
+      subject: 'Handlungsbedarf: Problem bei der Zahlungsabwicklung'
+    charge_give_up:
+      body: |-
+        Hallo,
+
+        WARNUNG: Ihr Konto ist deaktiviert.
+
+        Wir haben versucht, Ihre Zahlung für Makeplans zu verarbeiten, erhielten aber die folgende Fehlermeldung: %{error}
+
+        Bitte loggen Sie sich in Ihr Makeplans-Konto ein, um sicherzustellen, dass Ihre Karte gültig ist und Ihr Konto reaktiviert werden kann:
+
+        %{url}
+
+        Vielen Dank,
+        Makeplans
+      subject: 'Erforderliche Maßnahme: Konto deaktiviert'
+    charge_requires_action:
+      body: |-
+        Hallo,
+
+        wir haben versucht, Ihre Kreditkarte für die Nutzung von Makeplans zu belasten, benötigen aber Ihre Autorisierung, um die Zahlung abzuschließen. Dies ist auf Anforderungen Ihrer Bank zurückzuführen.
+
+        Ihr Makeplans-Konto wird in Kürze deaktiviert, falls die Zahlung nicht bestätigt wird.
+
+        %{url}
+
+        Vielen Dank,
+        Makeplans
+      subject: 'Handlungsbedarf: Bitte bestätigen Sie die Zahlung.'
+    charge_succeded:
+      body: |-
+        Wir haben Ihre Kreditkarte für die Nutzung von Makeplans belastet. Die Zahlungsbestätigung für Rechnung Nr. %{invoice_nr} finden Sie im Anhang.
+
+        Bitte beachten Sie, dass diese Rechnung bereits bezahlt ist. Es sind keine weiteren Schritte erforderlich.
+
+        Ihr Konto: %{subdomain}
+
+        Vielen Dank, dass Sie Makeplans nutzen.
+      filename: Makeplans AS %{invoice_date} Beleg Nr. %{invoice_nr}
+      subject: Ihre Quittung für die Nutzung von Makeplans
+    deactivated:
+      body: |-
+        Hallo,
+
+        ich bin Espen, der Gründer von Makeplans. Es tut mir leid zu sehen, dass Sie Ihr Makeplans-Konto deaktiviert haben.
+
+        Haben Sie Funktionen vermisst, oder warum haben Sie sich entschieden, Makeplans nicht mehr zu nutzen? Wir freuen uns über Ihr Feedback, damit wir unser Produkt verbessern können. Oder fanden Sie die Einrichtung oder Nutzung von Makeplans etwas kompliziert? Ich helfe Ihnen gerne bei der Konfiguration Ihres Kontos. Außerdem biete ich Ihnen zwei Monate kostenlose Nutzung an, falls Sie Makeplans noch einmal ausprobieren möchten.
+
+        Antworten Sie einfach auf diese E-Mail, dann melde ich mich bei Ihnen.
+
+        Ihr deaktiviertes Konto: %{subdomain}.
+
+        Ich wünsche Ihnen trotzdem einen schönen Tag und danke Ihnen, dass Sie Makeplans getestet haben.
+      subject: 'KRITISCH: Makeplans-Konto deaktiviert'
+    inactive_warning:
+      body: |-
+        Hallo,
+
+        da Ihre Testphase abgelaufen ist und seit %{latest_booking_change_at} keine Aktivität mehr auf Ihrem Konto stattgefunden hat, deaktivieren wir es in 30 Tagen.
+
+        Um Ihr Konto zu behalten, melden Sie sich bitte unter %{url} an.
+
+        Sollten Sie keine Maßnahmen ergreifen, deaktivieren wir Ihr Konto in einem Monat. Anschließend werden Ihr Konto und alle Ihre Daten nach vier Monaten gelöscht.
+
+        Vielen Dank, dass Sie Makeplans ausprobiert haben!
+      subject: 'WICHTIG: Das Makeplans-Konto wird deaktiviert.'
+    no_bookings:
+      body: |-
+        Hallo,
+
+        letzte Woche haben Sie sich bei Makeplans angemeldet. Das ist ein Service zur Online-Terminbuchung.
+
+        Mir ist aufgefallen, dass in Ihrem Konto noch keine Buchungen vorhanden sind. Erstellen Sie doch einfach eine Testbuchung im Verwaltungssystem, um zu sehen, ob Makeplans für Sie funktioniert.
+        Um eine Buchung hinzuzufügen, gehen Sie einfach zu %{url}.
+
+        Wenn Sie sich bei der Konfiguration Ihres Kontos unsicher sind oder Fragen zum Buchungsprozess haben, antworten Sie einfach auf diese E-Mail. Wir helfen Ihnen gerne weiter.
+      subject: Noch keine Buchungen
+    not_setup:
+      body: |-
+        Hallo,
+
+        gestern haben Sie sich bei Makeplans angemeldet. Das ist ein Service zur Online-Terminbuchung.
+
+        Mir ist aufgefallen, dass Sie Ihr Konto noch nicht eingerichtet haben. Vielleicht hatten Sie keine Zeit dafür – warum erledigen Sie es nicht jetzt?
+        Gehen Sie einfach zu %{url}, um die Einrichtung abzuschließen – es dauert nur 45 Sekunden.
+
+        Oder haben Sie Fragen zur Nutzung von Makeplans oder zur optimalen Konfiguration Ihres Kontos? Antworten Sie einfach auf diese E-Mail, wir helfen Ihnen gerne weiter.
+      subject: Schließen Sie Ihre Makeplans-Einrichtung ab.
+    paused:
+      body: |-
+        Hallo,
+
+        Ihr Makeplans-Abonnement wird zum Ende dieses Abrechnungszeitraums (%{demo_ends_at}) pausiert.
+        Bitte beachten Sie, dass Ihnen Transaktionsgebühren, z. B. für SMS, weiterhin berechnet werden, solange Ihr Konto aktiv ist.
+
+        Nach der Pausierung Ihres Abonnements können Sie Ihr Konto jederzeit problemlos reaktivieren.
+
+        Ihr Konto: %{subdomain}
+
+        Sollten Sie Probleme bei der Nutzung von Makeplans haben, antworten Sie bitte auf diese E-Mail. Wir helfen Ihnen gerne bei der Konfiguration Ihres Kontos und erklären Ihnen, wie Sie Makeplans optimal an Ihre Bedürfnisse anpassen können.
+      subject: Ihr Abonnement wird pausiert
+    setup_completed:
+      contact_us_html: Und falls Sie Fragen haben, senden Sie uns einfach eine E-Mail an %{mail}.
+      footer: Makeplans
+      header: Ihre Kunden können jetzt online buchen!
+      info: Sie haben Ihr Makeplans-Konto nun konfiguriert und können ab sofort Online-Buchungen von Ihren Kunden entgegennehmen.
+      next_steps: 'Nächste Schritte:'
+      step_1: Führen Sie eine Testbuchung durch, um zu überprüfen, ob alle Texte und ausgehenden Nachrichten korrekt sind.
+      step_2: Wenn Sie bereit sind, fügen Sie einen Link zur Buchungsseite auf Ihrer Website ein.
+      step_3: Informieren Sie auch Ihre anderen Kunden darüber, dass sie jetzt online buchen können.
+      subject: Ihre Kunden können jetzt online über Makeplans buchen.
+    signup:
+      contact_us_html: Bei Fragen kontaktieren Sie uns bitte unter %{mail} oder antworten Sie einfach auf diese E-Mail.
+      extra: Zusätzliche Funktionen in Makeplans
+      extra_info: 'Es ist toll, dass Sie Ihren Kunden Online-Buchungen anbieten möchten. Darüber hinaus kann Makeplans Ihnen und Ihren Kunden viele zusätzliche Funktionen bieten:'
+      feature_1: Ihre Kunden können vor dem Termin eine Erinnerungs-SMS erhalten.
+      feature_2: Bei der Buchung ist eine Kreditkartenzahlung erforderlich.
+      feature_3: Speichern Sie zusätzliche Informationen zur Reservierung oder zum Kunden in benutzerdefinierten Feldern.
+      feature_4: Makeplans ist mit vielen Drittanbieteranwendungen wie CRM- und E-Mail-Newsletter-Anwendungen integriert.
+      footer: Ich hoffe, Ihnen gefällt Makeplans.
+      header: Willkommen bei Makeplans!
+      link_info: Hier finden Sie Ihren Kalender mit einer Übersicht aller Reservierungen sowie die Möglichkeit, Ihr Konto zu konfigurieren.
+      registered: 'Sie haben sich nun für ein kostenloses Testkonto registriert unter:'
+      subject: Willkommen bei Makeplans
+    sms_credits_balance_reached:
+      body: |-
+        Hallo,
+
+        Ihr Makeplans-Konto hat ein Limit für den Versand von %{sms_balance_limit} SMS. Dieses Limit haben Sie nun überschritten.
+
+        Von Ihrem Konto werden keine SMS mehr versendet.
+
+        SMS-Guthaben kaufen:
+        %{url}
+
+        Alternativ können Sie sich in Ihr Konto einloggen, die Verifizierungsmethode von SMS auf E-Mail ändern und SMS-Erinnerungen deaktivieren.
+      subject: 'Handlungsbedarf: Sie haben Ihr gesamtes SMS-Guthaben aufgebraucht.'
+    sms_credits_balance_warning:
+      body: |-
+        Hallo,
+
+        Ihr Makeplans-Konto hat ein Limit von %{sms_balance_limit} SMS. Sie haben bereits %{sms_balance} SMS versendet.
+
+        Sobald Sie %{sms_balance_limit} Nachrichten versendet haben, werden keine weiteren SMS mehr versendet, es sei denn, Sie erwerben zusätzliches SMS-Guthaben.
+
+        SMS-Guthaben kaufen:
+        %{url}
+
+        Alternativ können Sie sich in Ihr Konto einloggen, die Verifizierungsmethode von SMS auf E-Mail ändern und SMS-Erinnerungen deaktivieren.
+      subject: Ihr SMS-Guthaben geht zur Neige
+    trial_expire_warning:
+      body: |-
+        Hallo,
+
+        nur zur Info: Ihre Makeplans-Testphase läuft in 3 Tagen ab.
+
+        Damit Ihre Kunden ohne Unterbrechungen online buchen können, aktivieren Sie bitte jetzt Ihr Konto.
+
+        Konto aktivieren:
+        %{url}
+
+        Sie hatten noch keine Gelegenheit, Makeplans ausgiebig zu testen? Antworten Sie einfach auf diese E-Mail, und wir verlängern Ihre Testphase.
+      subject: Die Testphase endet in Kürze – bitte aktivieren Sie Ihr Konto.
+    trial_expired:
+      body: |-
+        Hallo,
+
+        Ihre Makeplans-Testphase ist nun beendet.
+
+        Ihre Kunden können jetzt keine Buchungen mehr vornehmen. Sie müssen Ihr Konto aktivieren, um Ihre Buchungsseite freizuschalten.
+
+        Konto aktivieren:
+        %{url}
+
+        Sie hatten noch keine Gelegenheit, Makeplans ausgiebig zu testen? Antworten Sie einfach auf diese E-Mail, und wir verlängern Ihre Testphase.
+      subject: Ihr Makeplans-Testkonto ist abgelaufen.
+    trial_sms_credits_balance_reached:
+      body: |-
+        Hallo,
+
+        Ihre Testversion von Makeplans ist auf %{sms_balance_limit} SMS begrenzt. Dieses Limit haben Sie nun erreicht.
+
+        Um Makeplans weiterhin nutzen zu können, aktivieren Sie bitte Ihr Konto.
+
+        Konto aktivieren:
+        %{url}
+
+        Alternativ können Sie sich in Ihr Konto einloggen, die Verifizierungsmethode von SMS auf E-Mail ändern und SMS-Erinnerungen deaktivieren.
+      subject: 'Handlungsbedarf: Sie haben Ihr gesamtes SMS-Guthaben aufgebraucht.'
+    trial_sms_credits_balance_warning:
+      body: |-
+        Hallo,
+
+        Ihre Testversion von Makeplans ist auf %{sms_balance_limit} SMS begrenzt. Sie haben bereits %{sms_balance} SMS versendet.
+
+        Um sicherzustellen, dass weiterhin SMS versendet werden, aktivieren Sie bitte Ihr Konto.
+        Sobald Sie %{sms_balance_limit} Nachrichten versendet haben, werden keine weiteren SMS mehr versendet, es sei denn, Sie aktivieren Ihr Konto.
+
+        Konto aktivieren:
+        %{url}
+
+        Alternativ können Sie sich in Ihr Konto einloggen, die Verifizierungsmethode von SMS auf E-Mail ändern und SMS-Erinnerungen deaktivieren.
+      subject: Ihr SMS-Guthaben geht zur Neige
+  layouts:
+    booking_user_mailer:
+      footer: Automatisch generiert von Makeplans.
+  user_mailer:
+    add_user:
+      body: |-
+        Hallo,
+
+        willkommen bei Makeplans.
+
+        Klicken Sie auf den unten stehenden Link, um ein Passwort festzulegen.
+
+        %{link}
+      subject: Als Benutzer in Makeplans hinzugefügt
+    email_modified:
+      footer: Makeplans
+      info: Ihre E-Mail-Adresse wurde in %{new_email} geändert. Bitte kontaktieren Sie uns umgehend, falls Sie diese Änderung nicht selbst vorgenommen haben.
+      subject: E-Mail-Adresse geändert
+    export:
+      body: |-
+        Hallo,
+
+        die exportierten Daten aus Makeplans finden Sie in der beigefügten Datei.
+
+        Vielen Dank, dass Sie Makeplans nutzen.
+      subject: Export aus Makeplans
+    link_user:
+      body: |-
+        Hallo,
+
+        Sie haben jetzt Zugriff auf das Konto %{client} in Makeplans.
+
+        Besuchen Sie %{link}, um sich anzumelden.
+
+        Makeplans
+      subject: Zugriff auf das Konto in Makeplans
+    password_modified:
+      footer: Makeplans
+      info: Ihr Passwort wurde geändert. Kontaktieren Sie uns umgehend, falls Sie diese Änderung nicht selbst vorgenommen haben.
+      subject: Passwort geändert
+    password_reset:
+      footer: Makeplans
+      info: Sie oder eine andere Person haben die Zurücksetzung Ihres Makeplans-Passworts beantragt. Um die Zurücksetzung abzuschließen, klicken Sie bitte auf den unten stehenden Link.
+      link: Mein Makeplans-Passwort zurücksetzen.
+      subject: Passwort zurücksetzen

@@ -1,0 +1,254 @@
+---
+de:
+  amsterdam:
+    bookings:
+      awaiting_confirmation:
+        body: Wir werden Ihre Reservierung manuell bestätigen. Sie erhalten %{verification_method}, sobald Ihre Anfrage bearbeitet wurde.
+        body_automatic_sync: Wir prüfen derzeit Ihre Reservierung. Sie erhalten %{verification_method}, sobald Ihre Anfrage bearbeitet wurde.
+        title: Für die Reservierung ist eine Bestätigung erforderlich.
+        title_automatic_sync: Reservierung prüfen
+        verification_method:
+          authenticated: eine Benachrichtigung
+          email: eine E-Mail
+          none: eine Benachrichtigung
+          sms: eine SMS
+      awaiting_payment:
+        body: Bitte warten Sie, während wir die Transaktion überprüfen.
+        error: Wir können Ihre Zahlung nicht verifizieren. Bitte kontaktieren Sie unseren Kundenservice unter Angabe der Referenznummer %{booking_id}.
+        title: Wir überprüfen Ihre Zahlung.
+      awaiting_verification:
+        verification_delivery_error: Wir konnten Ihnen keine E-Mail senden. Haben Sie die richtige E-Mail-Adresse eingegeben?
+        verification_delivery_not_processed: Aktuell kommt es in unseren Systemen zu Verzögerungen. Bitte haben Sie etwas Geduld, während wir Ihre E-Mail zustellen.
+        verification_sent_body: Wir haben eine E-Mail an %{email} gesendet. Folgen Sie dem Link, um Ihre Buchung zu bestätigen. Das hilft uns sicherzustellen, dass Sie kein Roboter sind.
+        verification_sent_title: Bitte bestätigen Sie Ihre E-Mail-Adresse.
+      cancelled:
+        body: Diese Reservierung wurde storniert.
+        title: Ihre Reservierung wurde storniert.
+      declined:
+        body: Es tut uns leid, dass wir Ihre Reservierungsanfrage nicht annehmen konnten. Bitte versuchen Sie es mit einem anderen Termin oder kontaktieren Sie uns.
+        title: Ihre Reservierung wurde nicht genehmigt
+      expired:
+        header: Buchung abgelaufen
+        info: Buchungen müssen innerhalb von %{expires_in} Minuten verifiziert werden. Bitte versuchen Sie es erneut.
+      new:
+        authentication:
+          authenticating: Authentifizierung läuft...
+          logged_in_as: Sie sind als %{person} angemeldet.
+          logged_in_with_fb_html: Sie sind bei Facebook als <span data-name="">unbekannter Nutzer</span> angemeldet. Klicken Sie auf „Reservierung bestätigen“, um Ihre Reservierung zu verifizieren.
+          login_with_facebook_html: Alternativ können Sie %{fb_link} verwenden.
+          login_with_facebook_link: Automatische Verifizierung mit Facebook
+          not_current_person_html: Nicht Sie?
+          remember_me: Möchten Sie, dass wir Sie auf diesem Gerät mithilfe eines Cookies wiedererkennen?
+        book_for_child: Eine Buchung für jemand anderen vornehmen?
+        book_for_me: Stattdessen für mich selbst buchen
+        contact_support_message: Ihr Kundenprofil ist unvollständig. Bitte kontaktieren Sie den Support.
+        enter_info: Informationen eingeben
+        errors_header: Bitte füllen Sie die Pflichtfelder aus.
+        form_info_html: Dies dient der Überprüfung Ihrer Reservierung von <span data-attribute="title">%{service}</span>, %{booking}.
+        mismatch_ignore: Alternativ können Sie hier klicken, um diese Warnung zu ignorieren.
+        mismatch_ignore_confirm: Ihr Kundenprofil wird mit diesen neuen Werten nicht aktualisiert. Um Ihr Kundenprofil zu ändern, kontaktieren Sie bitte den Support. Möchten Sie weiterhin Buchungen vornehmen, ohne Ihr Profil zu aktualisieren?
+        mismatch_info_html: 'Die folgenden Werte stimmen nicht mit Ihrem Kundenprofil überein: %{attributes}. Buchen Sie für eine andere Person? Falls ja, <a href="%{login_path}">melden Sie sich</a> bitte zuerst an. Wenn Sie Ihr Kundenprofil ändern möchten, wenden Sie sich bitte an den Support.'
+        new_child: Für jemand anderen
+        price_info: 'Preis: %{price}'
+        reserve_resource: Reservierung für %{resource}
+        select_child: 'Diese Buchung vornehmen für:'
+        terms: Buchungsbedingungen
+      no_person:
+        body: 'Kontaktieren Sie uns für weitere Informationen. Fehler: Kundenverbindung entfernt'
+        title: Fehler
+      payment:
+        fields:
+          cvc: CVC
+          errors:
+            cvc: CVC ist ungültig.
+            expiration: Das Ablaufdatum ist ungültig.
+            number: Die Kartennummer ist ungültig.
+          expiration_html: Ablaufdatum <small>(MM/JJ)</small>
+          number: Kartennummer
+        form_footer_html: Ihre Kreditkarte wird mit <span class="payment-amount">%{amount}</span> belastet.
+        form_header: Dieses Formular wird verschlüsselt übermittelt.
+        header: Zahlung
+        info: Um die Reservierung von %{service} abzuschließen, müssen Sie mit Ihrer Kreditkarte bezahlen.
+      payment_invoice:
+        form_footer_html: Die Rechnung beläuft sich auf <span class="payment-amount">%{amount}</span>.
+        form_header: Wir werden die Rechnung auf Grundlage der folgenden Informationen erstellen.
+        header: Zahlung mit Rechnung
+        info: Um die Reservierung von %{service} %{booking} abzuschließen, müssen Sie der Rechnungsstellung zustimmen.
+        payment_details_html: Der angezeigte Betrag ist in %{currency}.
+      pre_payment:
+        form_footer_html: 'Zu zahlender Betrag: <span class="payment-amount">%{amount}</span>.'
+        providers:
+          braintree: Kredit-/Debitkarte
+          fiken: Rechnung
+          frontgo: Front Go
+          stripe: Kredit-/Debitkarte, Google Pay oder Apple Pay
+          tfso: Rechnung
+          vipps: Vipps
+          visma_eaccounting: Rechnung
+        select_provider: Wie möchten Sie bezahlen?
+      show:
+        add_card: Fügen Sie Ihre Kreditkarte hinzu, um nach der Reservierung automatisch zu bezahlen.
+        add_to_calendar: Fügen Sie die Reservierung Ihrem Kalender hinzu.
+        body: Das war's. Vielen Dank für Ihre Buchung bei uns.
+        booked_for_child: Diese Buchung ist für %{name}.
+        booking_count:
+          one: Gebucht für %{count} Person.
+          other: Gebucht für %{count} Personen.
+        cancel: Reservierung stornieren
+        cancel_confirmation: Sind Sie sicher, dass Sie diese Reservierung stornieren möchten?
+        invoiced: Sie haben eine Rechnung erhalten.
+        paid: Sie haben %{paid_amount} im Voraus bezahlt.
+        pay: Zahlen
+        price: Der Buchungspreis beträgt %{amount}.
+        remember_me: Möchten Sie, dass wir Sie auf diesem Gerät mithilfe eines Cookies wiedererkennen?
+        reschedule: Neu terminieren
+        title: Ihre Reservierung wurde bestätigt!
+      verification_code:
+        header: Reservierung verifizieren
+        incorrect_code: Falscher Code
+        remember_me: Auf diesem Gerät merken
+        verify_verification_code: Wir haben einen Bestätigungscode an %{recipient} gesendet. Bitte geben Sie den Code im Formular ein, um die Reservierung zu verifizieren. Dies ist zur Bestätigung der Reservierung erforderlich.
+    events:
+      index:
+        free_capacity:
+          one: "%{count} verfügbar"
+          other: "%{count} verfügbar"
+        none_available: Es sind keine Veranstaltungen verfügbar.
+        title: Veranstaltungen
+      show:
+        before_first_booking: Eine Anmeldung zu dieser Veranstaltung ist vor dem %{first_booking_at} nicht möglich.
+        book: Melden Sie sich für diese Veranstaltung an
+        full: Diese Veranstaltung ist ausgebucht.
+        past_last_booking: Eine Anmeldung zu dieser Veranstaltung ist nicht mehr möglich.
+        started: Diese Veranstaltung ist bereits abgeschlossen.
+    generic:
+      dateselector: Datum auswählen
+      earlier: früher
+      payment:
+        add_card_details_html: Ihre Kartendaten werden nicht bei uns gespeichert, sondern verschlüsselt an %{provider} gesendet, um eine sichere Transaktion und Speicherung zu gewährleisten.
+        add_card_footer_html: Ihre Karte wird jetzt nicht belastet.
+        add_card_header: Karte speichern
+        add_card_info: Fügen Sie Ihre Zahlungskarte hinzu, um nach der Buchung einfach und automatisch bezahlen zu können.
+        add_card_submit: Karte speichern
+        awaiting:
+          body: Bitte warten Sie, bis die Transaktion bestätigt ist.
+          error: Wir konnten den Zahlungseingang nicht bestätigen. Bitte kontaktieren Sie unseren Kundenservice unter https://makeplans.no und geben Sie die Referenznummer %{booking_id} an.
+          title: Zahlung wird überprüft
+        form_footer_html: Ihre Kreditkarte wird mit <span class="payment-amount">%{amount}</span> belastet.
+        form_header: Dieses Formular wird verschlüsselt übermittelt.
+        header: Zahlung
+        info: Um die Reservierung von %{service} %{booking} abzuschließen, müssen Sie mit Ihrer Kreditkarte bezahlen.
+        new_card: Neue Karte eingeben
+        payment_details_html: Der angezeigte Betrag ist in %{currency}. Wir speichern Ihre Kreditkartendaten nicht, sondern senden sie verschlüsselt an %{provider} zur sicheren Verarbeitung und Speicherung.
+        payment_received: "%{paid_amount} wurde am %{paid_at} bezahlt."
+        save_card: Karte speichern
+      step:
+        cancel: Abbrechen
+        completed: Abgeschlossen!
+        hotstepper: Schritt %{step} von %{steps}
+        next: Weiter
+        next_confirm: 'Weiter: Bestätigen'
+        next_form: 'Weiter: Details hinzufügen'
+        next_payment: Zahlen
+        next_time: 'Weiter: Uhrzeit auswählen'
+        next_verify: 'Weiter: Verifizieren'
+        previous: vorheriger Schritt
+        previous_date: Uhrzeit ändern
+        previous_service: Service ändern
+    layouts:
+      application:
+        authenticated: 'Angemeldet als: %{name}'
+        demo_ended: Die Makeplans-Demoversion ist abgelaufen.
+        footer:
+          change_language: 'Sprache ändern:'
+          privacy_policy: Datenschutzerklärung
+          support: Support
+        login: Ihre Reservierungen
+        meta:
+          description: Online-Terminbuchung und -planung für %{name}
+          keywords: Terminplanung, Terminvereinbarung, Buchung, Veranstaltungsanmeldungen, Planen, Online-Buchung, Terminplanungs-API, Terminbuchung
+        powered_by: Terminplanung durch
+        powered_by_title: Terminbuchungssystem, Planungs-App und Anmeldungen für Veranstaltungen/Kurse mit API
+        title: Online-Buchung für %{name}
+    people:
+      credit_card_added:
+        body: Ihre Karte wird nach Abschluss der Buchung belastet. Die Kartendaten werden sicher bei unserem Zahlungspartner Stripe gespeichert.
+        title: Ihre Karte wurde gespeichert
+    person_sessions:
+      enter_perishable_token:
+        perishable_token: Bestätigungscode
+        remember_me: Auf diesem Gerät merken.
+        submit: Einloggen
+      not_found:
+        info_html: Sie sind nicht als Kunde registriert. Bitte führen Sie zuerst <a href="/">eine Buchung</a> durch.
+      perishable_token_action_required:
+        info_html: Wir haben Ihnen eine E-Mail gesendet. Bitte klicken Sie auf den Link, um sich anzumelden.
+        title: Bestätigen Sie Ihre E-Mail-Adresse
+      perishable_token_form:
+        not_available_for_this_verification_method: Nicht verfügbar.
+        submit: Code erhalten
+    profile:
+      children:
+        index:
+          header: Andere Personen, für die Sie buchen können
+      credit_card_list:
+        add_card: Neue Karte hinzufügen
+        body: Dies sind Ihre gespeicherten Zahlungskarten. Sie können bei Bedarf eine neue Karte hinzufügen oder eine der vorhandenen löschen.
+        card_info: "%{brand} mit den Endziffern %{last_4}, gültig bis %{expire_month}/%{expire_year}."
+        remove_card: Diese Karte entfernen
+        title: Ihre gespeicherten Zahlungsmethoden
+      index:
+        children: Andere Personen, für die Sie buchen können.
+        feed: iCalendar-Feed
+        header: Ihre Reservierungen
+        logout: Abmelden
+        my_details: Meine gespeicherten Informationen
+        new_booking: Neue Reservierung
+        payment_methods: Gespeicherte Zahlungsmethoden
+      show:
+        header: Ihre gespeicherten Informationen
+    providers:
+      index:
+        show_all_available: Alle Verfügbarkeiten anzeigen
+        show_only_selected: 'Oder nur ausgewählte %{resource_title} anzeigen:'
+    services:
+      available_dates:
+        none_available: Keine Termine verfügbar
+      index:
+        none_available: Keine Dienstleistungen verfügbar.
+      show:
+        book: Jetzt buchen
+      slots:
+        try_another_template: Bitte versuchen Sie es mit einer anderen Vorlage.
+      time_day_available:
+        any_resource: Erste verfügbare
+        dateselector: Datum auswählen
+        earlier: Früher
+        free_capacity:
+          one: "%{count} verfügbar"
+          other: "%{count} verfügbar"
+        gap_warning: Um mehrere Zeitfenster auszuwählen, dürfen diese keine Lücken aufweisen.
+        later: Später
+        max_slots_warning: Es können maximal %{max_slots} Zeitfenster reserviert werden.
+        multiple_slots_info: Um mehrere Zeitfenster auszuwählen, wählen Sie zuerst die Startzeit und dann das Endzeitfenster.
+        next_available_date_html: Der nächste verfügbare Termin ist %{next_available_date}
+        next_date: Nächster Tag
+        no_availability: Am gewählten Datum ist keine Verfügbarkeit gegeben. Bitte versuchen Sie es mit einem anderen Datum.
+        no_selection: Bitte wählen Sie einen verfügbaren Zeitpunkt.
+        select_time: "%{service} - Verfügbare Zeit auswählen"
+      weekday_available:
+        dateselector: Datum auswählen
+        free_capacity:
+          one: "%{count} verfügbar"
+          other: "%{count} verfügbar"
+        gap_warning: Um mehrere Zeitfenster auszuwählen, dürfen diese keine Lücken aufweisen.
+        max_slots_warning: Es können maximal %{max_slots} Zeitfenster reserviert werden.
+        multiple_slots_info: Um mehrere Zeitfenster auszuwählen, wählen Sie zuerst die Startzeit und dann das Endzeitfenster.
+        next_available_date_html: Der nächste verfügbare Termin ist %{next_available_date}
+        next_week: Nächste Woche
+        no_availability: Am gewählten Datum ist keine Verfügbarkeit gegeben. Bitte versuchen Sie es mit einem anderen Datum.
+        no_selection: Bitte wählen Sie einen verfügbaren Zeitpunkt.
+        prev_week: Vorherige Woche
+        select_resource: Zeige %{resource_title}
+        select_time: "%{service} - Verfügbare Zeit auswählen"
+        show_all: Alle Verfügbarkeiten anzeigen
