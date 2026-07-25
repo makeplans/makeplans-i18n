@@ -490,7 +490,7 @@ en:
         active: Active
         code: Code
         initial_value: Initial value
-        person_id: Customer ID
+        person_id: Customer
         valid_until: Valid until
         value: Current value
       event:

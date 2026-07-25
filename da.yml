@@ -478,7 +478,7 @@ da:
         active: Aktiv
         code: Kode
         initial_value: Oprindelig værdi
-        person_id: Kunde-ID
+        person_id: Kunde
         valid_until: Gyldig indtil
         value: Aktuel værdi
       message_template:
