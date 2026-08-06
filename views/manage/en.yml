@@ -870,6 +870,13 @@ en:
         service_not_linked: NOT connected to a product in 24SevenOffice
         type_groups: 'Sales type for order:'
         username: API-Username
+      unloc:
+        client_id: Client ID
+        client_secret: Client secret
+        info: Enter your API credentials from Unloc Control Center to connect your digital door locks.
+        locks: Available locks
+        locks_info: Assign locks to a resource on the resource settings page. When a booking is confirmed the customer automatically receives a mobile key valid for the booked time.
+        project_id: Project
       vipps:
         client_id: Client ID
         client_secret: Client secret
@@ -1042,6 +1049,8 @@ en:
           other: "This resource has %{count} future bookings. Deleting will remove the resource and all its bookings. Click delete again to confirm."
         external_info:
           microsoft_office365_user_id: Microsoft Office 365 user
+          unloc_lock_ids: Unloc locks
+          unloc_lock_ids_info: Customers with a confirmed booking automatically receive a mobile key to the selected locks, valid for the booked time.
           zoom_user_id: Zoom user
         from: from
         mail_notification_info: To notify more than one person please use semi-colon to separate email addresses.

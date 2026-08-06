@@ -858,6 +858,13 @@ nb:
         service_not_linked: IKKE koblet mot produkt i 24SevenOffice
         type_groups: 'Salgstype for ordre:'
         username: API-brukernavn
+      unloc:
+        client_id: Client ID
+        client_secret: Client secret
+        info: Legg inn API-nøklene fra Unloc Control Center for å koble til dine digitale dørlåser.
+        locks: Tilgjengelige låser
+        locks_info: Velg låser for en ressurs på innstillingssiden for ressursen. Når en bestilling er bekreftet får kunden automatisk en mobilnøkkel som er gyldig i det bestilte tidsrommet.
+        project_id: Prosjekt
       vipps:
         client_id: Client ID
         client_secret: Client secret
@@ -1030,6 +1037,8 @@ nb:
           other: "Denne ressursen har %{count} fremtidige bestillinger. Sletting vil fjerne ressursen og alle bestillingene. Klikk slett igjen for å bekrefte."
         external_info:
           microsoft_office365_user_id: Microsoft Office 365 bruker
+          unloc_lock_ids: Unloc-låser
+          unloc_lock_ids_info: Kunder med bekreftet bestilling får automatisk en mobilnøkkel til valgte låser, gyldig i det bestilte tidsrommet.
           zoom_user_id: Zoom bruker
         from: fra
         mail_notification_info: For å sende varsel til flere personer så bruk semi-kolon for å skille epost-adresser.
