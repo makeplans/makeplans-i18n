@@ -1,0 +1,733 @@
+---
+sq:
+  activerecord:
+    attributes:
+      booking:
+        booked_by_person_id: rezervuar nga
+        booked_from: nga
+        booked_to: për
+        count: numëroj
+        coupon_code: kod kuponi
+        event_id: ngjarje
+        external_id: ID e jashtme
+        notes: shënime
+        person: klient
+        person_id: klient
+        reminder_at: kujtesë në
+        resource: burim
+        resource_id: burim
+        service: shërbim
+        service_id: shërbim
+        state: shtet
+        status: status
+        terms_accepted: kushtet e pranuara
+        title: titull
+        verification_code: kod verifikimi
+      booking/state:
+        awaiting_confirmation: Në pritje të konfirmimit
+        awaiting_payment: Në pritje të pagesës
+        awaiting_verification: Në pritje të verifikimit
+        cancelled: Anuluar
+        confirmed: Konfirmuar
+        declined: Refuzuar
+        deleted: Fshirë
+        verification_expired: Verifikimi skadoi
+      booking/status:
+        checked_in: U regjistrua
+        completed: Përfunduar
+        in_progress: Filloi
+        no_show: Asnjë shfaqje
+      category:
+        title: titull
+      client:
+        future_bookable_period: periudha e ardhshme e rezervueshme
+        mail_notification_recipient: adresa(at) e-mail për njoftim
+        mailer_sender: adresa e dërguesit të email-it
+        phone_number: numri i telefonit
+        purge_data_period: periudha e fshirjes automatike
+        sms_notification_recipient: numri(at) e telefonit për njoftim
+        terms: terma
+      client/slot_generation:
+        dynamic: dinamik
+        fixed: i fiksuar
+      client_user_link:
+        role: niveli i aksesit
+      client_user_link/role:
+        admin: qasje e plotë
+        manager: konfigurimi bazë
+        staff: vetëm kalendar
+      coupon/value_type:
+        amount: sasi
+        percentage: përqindje
+      event:
+        booking_capacity: Numri maksimal i personave të lejuar për rezervim
+        booking_minimum: minimale personash të kërkuar për rezervim
+        capacity: numri maksimal i personave të lejuar
+        description: përshkrim
+        ends_at: mbaron në
+        first_booking_at: pa rezervim paraprak
+        last_booking_at: rezervimi i fundit më parë
+        resource_id: burim
+        service_id: shërbim
+        starts_at: fillon në
+        title: titull
+      message_template:
+        active: aktiv
+        delivery_timing: dorëzoj në
+        delivery_type: lloji i dorëzimit
+        message_type: lloji i mesazhit
+        subject: subjekt
+        template: shabllon
+      message_template/delivery_type:
+        email: email
+        sms: SMS
+      message_template/message_type:
+        confirmation: konfirmim
+        follow_up: ndjekje
+        reminder: përkujtues
+      person:
+        address: adresë
+        blocked: I bllokuar për rezervime
+        city: qytet
+        country_code: vend
+        created_at: i regjistruar
+        date_of_birth: data e lindjes
+        email: email
+        locale: vendndodhje
+        name: emër
+        national_id_no: numri i identifikimit kombëtar
+        notes: shënime
+        opt_in_marketing: regjistrohu për marketing
+        phonenumber: numri i telefonit
+        postal_code: kod postar
+        state: shtet
+        street: rrugë
+      resource:
+        capacity: kapacitet
+        mail_notification_recipient: adresa(at) e-mail për njoftim
+        sms_notification_recipient: numri(at) e telefonit për njoftim
+        title: titull
+      service:
+        allow_invoice: lejo faturën
+        payment_required: kërkoj pagesë
+        price: çmim
+        terms: terma
+        title: titull
+      service/availability_type:
+        provider: ofrues
+        resource: burim
+      service/priority_strategy:
+        order: urdhër
+        random: i rastësishëm
+        weight: peshë
+      user:
+        current_password: fjalëkalimi aktual
+        password: fjalëkalim
+        password_confirmation: konfirmimi i fjalëkalimit
+        rotp_verification_code: kod verifikimi
+      web_hook:
+        event: Ngjarje
+        target_url: URL-ja e synuar
+    errors:
+      messages:
+        chronic_syntax_error: gabim sintaksor ju lutem shihni https://github.com/mojombo/chronic#examples
+        denied: Kërkesa juaj u refuzua
+        icalendar_invalid: Nuk ka përsëritje ose model iCalendar i pavlefshëm
+        icalendar_over_limit: Shumë përsëritje. Maksimumi është 731.
+        illegal: i paligjshëm
+        invalid: është i pavlefshëm
+        phone_invalid: nuk është një numër telefoni i vlefshëm
+        phone_not_norwegian: duhet të jetë një numër telefoni norvegjez
+        time_not_available: Nuk është i disponueshëm për rezervim në këtë kohë
+      models:
+        booking:
+          active_bookings_limit: Numri maksimal i rezervimeve aktive është %{count}
+          attributes:
+            count:
+              below_minimum_count: Më pak se minimumi i kërkuar i personave për rezervim
+              over_booking_capacity: Më shumë se maksimumi i lejuar i personave për rezervim
+            event_id:
+              time_not_available: është i rezervuar plotësisht
+            person_id:
+              blocked: bllokuar për rezervim
+              taken: tashmë i regjistruar për këtë ngjarje
+            resource_id:
+              no_availability: nuk është i disponueshëm në kohën e kërkuar
+            service_id:
+              attendance_only: është vetëm për regjistrime
+              not_offered: nuk ofrohet nga burimi i zgjedhur
+            state:
+              invalid_transition: Ndryshim i gjendjes së pavlefshme
+          exceeds_max_slots: Kohëzgjatja e rezervimit tejkalon intervalet maksimale të lejuara.
+          fully_booked: Nuk është i disponueshëm në kohën e zgjedhur.
+          mismatch: Vlerat nuk përputhen me profilin ekzistues.
+          no_parent_takeover: Ju lutemi të kontaktoni mbështetjen për të bërë këtë rezervim.
+          prevent_new_signups: Rezervimi është i disponueshëm vetëm për klientët ekzistues
+          time_after_future_bookable_period: Shumë larg në të ardhmen
+        client:
+          attributes:
+            base:
+              denied: Refuzuar
+        client_user_link:
+          admin_needed: Nevojitet të paktën një përdorues administrator në llogari.
+        order:
+          attributes:
+            base:
+              must_have_line_items: Porosia duhet të ketë të paktën një artikull
+              payment_incomplete: Pagesa duhet të kryhet përpara se të konfirmohet porosia
+        order_line_item:
+          attributes:
+            booking:
+              invalid: nuk është më i disponueshëm për pagesë
+        person:
+          attributes:
+            national_id_no:
+              invalid_syntax_no: Futni fødselsnummer tuaj norvegjez - 11 shifra.
+          blocked: Llogaria juaj nuk është në gjendje të bëjë asnjë rezervim.
+          missing: nuk është ruajtur në profilin tuaj të klientit. Ju lutemi të na kontaktoni për ta korrigjuar.
+          no_values_present: Emri, numri i telefonit ose emaili janë të nevojshëm.
+          prevent_new_signups: Rezervimi është i disponueshëm vetëm për klientët ekzistues
+        resource:
+          has_bookings: Ky burim ka rezervime. Nuk mund të fshihet. Ju lutemi kontaktoni mbështetjen.
+        service:
+          attributes:
+            price:
+              below_minimum: duhet të jetë më shumë se 1 USD nëse doni të kërkoni pagesë
+              payment_price_required: duhet të caktohet nëse doni të kërkoni pagesë
+        user:
+          attributes:
+            password:
+              incorrect: Fjalëkalim i pasaktë
+          current_password_incorrect: Fjalëkalimi aktual nuk përputhet
+      template:
+        body: 'Operacioni nuk u përfundua për shkak të gabimeve të mëposhtme:'
+        header: Gabime ndodhën
+    models:
+      booking: takim
+      category: kategori
+      coupon: kupon
+      event: ngjarje
+      external_credential: integrim
+      gift_card: kartë dhurate
+      message_template: shabllon mesazhi
+      person: klient
+      resource: burim
+      service: shërbim
+      service_addon: shtesë
+      service_appointment: shërbim
+      service_attendance: lloji i ngjarjes
+      service_gift_card: kartë dhurate
+      service_product: produkt
+      tag: etiketë
+      user: përdorues
+      web_hook: webhook
+  datetime:
+    distance_in_words:
+      x_hours:
+        one: 1 orë
+        other: "%{count} orë"
+  errors:
+    messages:
+      date_format: 'Ju lutemi futni formatin e vlefshëm të datës: %{format}'
+      date_of_birth: Viti i lindjes është jashtë diapazonit të pranuar
+      no_values_present: Emri, numri i telefonit ose emaili janë të nevojshëm.
+      not_authenticated: Je çregjistruar.
+      not_found: Nuk mund të gjenden të dhëna. Provo ta ringarkosh faqen.
+      offline: Nuk mund të lidhet me Makeplans. Ju lutemi kontrolloni që jeni në internet.
+      server_error: Gabim në Planifikimet e Makeplan-it
+      syntax_error: Gabim në sintaksën e dhënë.
+      unknown: Gabim i panjohur. Provo ta ringarkosh faqen.
+    models:
+      person:
+        perishable_token:
+          expired: Kodi skadoi. Ju lutemi provoni përsëri.
+          invalid: Kod i pasaktë
+          invalid_value: Format i pavlefshëm
+          no_identifier: Mungon emaili ose numri i telefonit.
+    stripe:
+      booking:
+        already_refunded: Tashmë është rimbursuar.
+        invalid: Rezervimi ka skaduar ose është i pavlefshëm. Transaksioni nuk është përpunuar.
+        paid: Rezervimi është paguar tashmë. Provo ta rifreskosh faqen.
+      card:
+        missing: Nuk mund të marrë informacionin e kartës
+      payment_intent_unexpected_state: Pagesa nuk mund të vërtetohet. Ju lutemi provoni përsëri.
+      processor: 'Gabim nga përpunuesi ynë i pagesave: %{error}'
+      unknown: Transaksioni nuk mund të përpunohet. Gabim i panjohur.
+    vipps:
+      booking:
+        already_requested: Kërkesa për pagesë është dërguar tashmë.
+        inactive: Rezervimi nuk është më aktiv.
+        invalid: Rezervimi ka skaduar ose është i pavlefshëm. Transaksioni nuk është përpunuar.
+        no_person: Rezervimi nuk ka klient.
+        no_phone_number: Klienti nuk ka numër telefoni.
+        paid: Rezervimi është paguar tashmë. Provo ta rifreskosh faqen.
+      no_reference: Nuk u gjet asnjë transaksion pagese për këtë rezervim.
+      processor: 'Gabim nga përpunuesi ynë i pagesave: %{error}'
+      refund_failed: Transaksioni nuk mund të rimbursohet.
+      unknown: Transaksioni nuk mund të përpunohet. Gabim i panjohur.
+  generic:
+    account_default: Parazgjedhja e llogarisë
+    all: të gjithë
+    at: në
+    born_abbreviation: b. %{date_of_birth}
+    country_locale: en
+    default: Parazgjedhja e sistemit
+    dictate:
+      start: Diktoj
+      stop: Ndalo diktimin
+      unsupported: Diktimi nuk është i disponueshëm
+    'false': I paaftë
+    from: nga
+    optional: opsionale
+    search: Kërko
+    to: për
+    today: sot
+    tomorrow: nesër
+    'true': Aktivizuar
+  helpers:
+    booking:
+      action:
+        cancel: Anulo
+        confirm: Konfirmo
+        decline: Refuzim
+        verify: Verifiko
+      state:
+        awaiting_confirmation: Në pritje të konfirmimit
+        awaiting_payment: Në pritje të pagesës
+        awaiting_verification: Në pritje të verifikimit
+        cancelled: Anuluar
+        confirmed: Konfirmuar
+        declined: Refuzuar
+        deleted: Fshirë
+        verification_expired: Verifikimi skadoi
+    booking_state_transitions:
+      events:
+        modified: Modifikuar
+    boolean:
+      'false': Jo
+      'true': Po
+    datepicker:
+      next_month: Muajin tjetër
+      prev_month: Muaji i kaluar
+    label:
+      booking:
+        all_day: Gjithë ditën
+        booked_by_person_id: Rezervuar nga
+        booked_from: Rezervuar nga
+        booked_to: Rezervuar për
+        count: Numri i njerëzve
+        coupon_code: Kodi i kuponit
+        external_id: ID e jashtme
+        invoiced_at: Faturuar
+        notes: Shënime
+        paid_at: Paguar
+        person_id: Klient
+        reminded_at: Kujtesë e dërguar
+        reminder_at: Kujtesë
+        resource_id: Burim
+        service_id: Shërbim
+        state: Statusi
+        status: Statusi
+        terms_accept: Unë miratoj
+        terms_accepted: Unë i miratoj kushtet
+        terms_close: Mbyll
+        terms_link: kushtet për rezervimin
+        title: Titulli
+        verification_code: Kodi i verifikimit
+      category:
+        parent_id: Kategoria mëmë
+        title: Titulli
+      client:
+        address: Adresa e vizitës
+        allow_cancellation: Lejo anulimet nga klienti
+        api_key: Çelësi API (për integrime të jashtme)
+        app_secret: Sekreti i llogarisë
+        appointment_form: Fushat e rezervimit të personalizuara
+        awaiting_confirmation_text: Teksti që shfaqet kur rezervimi është në pritje të konfirmimit
+        billing_city: Qyteti
+        billing_country_code: Vendi
+        billing_email: Adresa e email-it për faturën
+        billing_id: ID në sistemin e faturave
+        billing_invoice: Dërgoni faturë në vend të kartës së kreditit
+        billing_name: Emri i kompanisë
+        billing_order_ref: Referenca juaj e faturës
+        billing_payment_id: ID në sistemin e pagesave
+        billing_period: Muaj për të faturuar
+        billing_postal_code: Kodi postar
+        billing_state: Shteti
+        billing_street: Adresa e rrugës
+        billing_vat_no: Nr. i TVSH-së
+        booking_form: Formular rezervimi i personalizuar
+        booking_site_locale: Gjuha (Gjithashtu kontrollon formatimin e numrave dhe të të dhënave)
+        booking_site_person_form: Formular i personalizuar i regjistrimit të personit
+        calendar_event_text: Shfaq tekstin për rezervimin në kalendar
+        cancellation_period: Periudha e anulimit
+        category_form: Fushat e kategorisë së personalizuar
+        closed_for_holidays: Mbyllur gjatë festave zyrtare
+        confirm_manually: Rezervimet duhet të miratohen nga një administrator
+        country_code: Vendi
+        coupon_form: Fushat e kodit të kuponit të personalizuar
+        css_url: CSS i personalizuar (URL duhet të jetë HTTPS)
+        currency: Valuta
+        email: Adresa e email-it
+        email_notification: Merrni njoftime me email për çdo rezervim të ri
+        event_form: Fushat e ngjarjeve të personalizuara
+        first_bookable_period: Mos lejoni rezervime deri në
+        footer: Fundi i faqes
+        future_bookable_period: Mos lejoni rezervime pas
+        gift_card_form: Fushat e personalizuara të kartave të dhuratave
+        google_analytics: ID-ja e gjurmimit të Google Analytics
+        ical_description: Përshkrimi
+        ical_summary: Titulli
+        interval_rounding: Rrumbullakosja e parazgjedhur në kohën tjetër të disponueshme për rezervim
+        locale: Gjuha (Gjithashtu përcakton formatimin e numrave dhe datës)
+        logo: Logo
+        mail_awating_confirmation: Mesazh në pritje të emailit të konfirmimit, në pritje të dërgimit të mesazhit me tekst.
+        mail_awating_confirmation_subject: Subjekti në pritje të email-it të konfirmimit
+        mail_cancellation: Mesazh në emailin e anulimit
+        mail_cancellation_subject: Subjekti në emailin e anulimit
+        mail_confirmation: Mesazh në emailin e konfirmimit
+        mail_confirmation_subject: Subjekti në emailin e konfirmimit
+        mail_modification: Tekst në emailin e modifikimit
+        mail_modification_subject: Subjekti në emailin e modifikimit
+        mail_notification_cancellation: Mesazh në emailin e njoftimit për anulim
+        mail_notification_confirmation: Tekst në emailin e njoftimit të konfirmimit
+        mail_notification_modification: Tekst në emailin e njoftimit të modifikimit
+        mail_notification_recipient: Adresa(at) e-mail për njoftim
+        mail_request_payment: Mesazh në emailin e kërkesës për pagesë
+        mail_request_payment_subject: Subjekti në emailin e kërkesës për pagesë
+        mail_verification: Mesazh në emailin e verifikimit
+        mail_verification_subject: Subjekti në emailin e verifikimit
+        mailer_sender: Dërguesi i email-it
+        message_template_form: Formulari i shabllonit të mesazhit
+        name: Emri i kompanisë (i shfaqur në faqen e rezervimit)
+        new_booking_text: Teksti i shfaqur në faqen e konfirmimit
+        next_invoice_nr: Numri i faturës tjetër
+        no_availability_text: Teksti shfaqet kur nuk ka disponueshmëri
+        order_form: Fushat e porosisë së personalizuar
+        payment_provider: Ofruesi i parazgjedhur i pagesës
+        person_form: Fushat e personalizuara të klientit
+        phone_number: Numri i telefonit
+        public_access: Faqja e rezervimit është në dispozicion të publikut
+        purge_data_period: Fshirja automatike e informacionit personal të identifikueshëm
+        reminder_sms: Dërgo mesazhe përkujtuese me SMS
+        require_terms_acceptance: Kërko që kushtet të pranohen
+        reservation_form_text: Teksti i shfaqur para formularit të rezervimit
+        resource_form: Fushat e burimeve të personalizuara
+        service_form: Fushat e shërbimit të personalizuara
+        service_template: Stili i kalendarit
+        slot_generation: Gjenerimi i sloteve të disponueshme
+        sms_awaiting_confirmation: Mesazh në pritje të SMS konfirmimi
+        sms_cancellation: Mesazh në SMS-në e anulimit
+        sms_confirmation: Mesazh në SMS konfirmimi
+        sms_modification: Tekst në SMS modifikimi
+        sms_notification: Merrni SMS për çdo rezervim të ri
+        sms_notification_recipient: Numri(at) i telefonit për njoftim
+        sms_reminder: Kujtesë me tekst në SMS
+        sms_reminder_time: Koha për një përkujtesë me SMS
+        sms_request_payment: Tekst në SMS me kërkesë për pagesë
+        sms_verification: Tekst në SMS verifikimi
+        subdomain: URL (nëndomen)
+        template: Tema e dizajnit
+        templates:
+          amsterdam: Amsterdam
+          lviv: Lviv
+          timisoara: Timishoara
+        terms: Kushtet dhe afatet
+        time_zone: Zona kohore
+        verification_method: Metoda e verifikimit për rezervimet e reja
+      client/slot_generation:
+        dynamic: Dinamik (parazgjedhur)
+        fixed: I rregulluar
+      client_user_link:
+        role: Niveli i aksesit
+      client_user_link/role:
+        admin: Qasje e plotë
+        manager: Konfigurimi bazë
+        staff: Vetëm kalendari
+      coupon:
+        active: Aktiv
+        allowed_booking_end_at: Ora e fundit e fillimit të rezervimit
+        allowed_booking_start_at: Koha më e hershme e fillimit për rezervim
+        availability: Kupona të disponueshëm
+        code: Kodi
+        max_count: Numri maksimal i njerëzve
+        max_order_amount: Shuma maksimale e porosisë
+        min_count: Numri minimal i njerëzve
+        min_order_amount: Shuma minimale e porosisë
+        title: Titulli
+        valid_from: Vlefshme nga
+        valid_until: E vlefshme deri më
+        value: Vlera e zbritjes
+        value_type: Lloji i zbritjes
+      event:
+        all_day: Gjithë ditën
+        allow_invoice: lejo faturën
+        booking_capacity: Numri maksimal i shoqëruesve të lejuar për rezervim
+        booking_minimum: Numri minimal i shoqëruesve të kërkuar për rezervim
+        capacity: Numri maksimal i shoqëruesve
+        description: Përshkrimi
+        ends_at: Mbaron në
+        first_booking_at: Nuk ka regjistrime më parë
+        last_booking_at: Nuk ka regjistrime pas
+        payment_required: Kërkohet parapagesë
+        price: Çmimi duke përfshirë të gjitha taksat
+        published: I dukshëm në faqen e rezervimit
+        resource_id: Burim
+        service_id: Lloji i ngjarjes
+        starts_at: Fillon në
+        title_html: Titulli i specifikuar <small>është opsional</small>
+      gift_card:
+        active: Aktiv
+        code: Kodi
+        initial_value: Vlera fillestare
+        person_id: Klient
+        valid_until: E vlefshme deri më
+        value: Vlera aktuale
+      message_template:
+        active: Aktiv
+        delivery_timing: Dorëzo në
+        delivery_type: Lloji i dorëzimit
+        message_type: Lloji i mesazhit
+        subject: Subjekti
+        template: Shabllon
+      message_template/delivery_type:
+        email: Email
+        sms: SMS
+      message_template/message_type:
+        confirmation: Konfirmim
+        follow_up: Ndiq
+        reminder: Kujtesë
+      person:
+        address: Adresa
+        blocked: I bllokuar për rezervime
+        city: Qyteti
+        country_code: Vendi
+        created_at: I regjistruar në
+        date_of_birth: Data e lindjes (dd.mm.vvvv)
+        deactivated: Çaktivizuar
+        email: Email
+        locale: Gjuha
+        name: Emri
+        national_id_no: Numri i identifikimit kombëtar
+        notes: Shënime
+        opt_in_marketing: Merrni informacion nga ne
+        phonenumber: Numri i telefonit celular
+        postal_code: Kodi postar
+        provider: Lidhur me një llogari të jashtme
+        state: Shteti
+        street: Adresa e rrugës
+        tfso_company_id: ID e klientit 24SO
+      resource:
+        capacity: Numri maksimal i rezervimeve në të njëjtën kohë
+        mail_notification_recipient: Adresa(at) e-mail për njoftim
+        sms_notification_recipient: Numri(at) i telefonit për njoftim
+        title: Titulli
+      service:
+        active_bookings_limit: Numri maksimal i rezervimeve aktive
+        allow_cancellation: Lejo anulimet nga klienti
+        allow_invoice: Lejo faturën
+        availability_type: Disponueshmëria përcaktohet nga
+        block_resource: Rezervimi do të bllokojë burimin
+        booking_capacity: Numri maksimal i personave të lejuar për rezervim
+        booking_form: Formular rezervimi i personalizuar
+        booking_minimum: Numri minimal i personave të kërkuar për rezervim
+        cancellation_period: Periudha e anulimit
+        capacity: Numri maksimal i shoqëruesve
+        confirm_manually: Rezervimet duhet të miratohen nga një administrator
+        description: Përshkrimi
+        has_day_booking: Rezervim ditor
+        has_day_booking_label:
+          'false': min
+          'true':
+            many: ditë
+            one: ditë
+        interval: Kohëzgjatja
+        interval_rounding: Rrumbullakosje për kohën tjetër të disponueshme
+        mail_awaiting_confirmation: Mesazh në pritje të emailit të konfirmimit, në pritje të dërgimit të mesazhit me tekst.
+        mail_cancellation: Mesazh në emailin e anulimit
+        mail_confirmation: Mesazh në emailin e konfirmimit
+        mail_modification: Tekst në emailin e modifikimit
+        mail_request_payment: Mesazh në emailin e kërkesës për pagesë
+        mail_verification: Mesazh në emailin e verifikimit
+        max_slots: Numri maksimal i vendeve për rezervim
+        new_booking_text: Teksti i shfaqur në faqen e konfirmimit
+        next_interval: Vend i disponueshëm çdo
+        payment_required: Kërkohet parapagesë
+        price: Çmimi duke përfshirë taksat
+        priority_strategy: Strategjia prioritare
+        published: Shfaq në faqen e rezervimit
+        reservation_form_text: Teksti i shfaqur para formularit të rezervimit
+        same_day: Lejo rezervimin gjatë disa ditëve
+        slot_generation: Gjenerimi i kohës
+        sms_awaiting_confirmation: Mesazh në pritje të SMS konfirmimi
+        sms_cancellation: Mesazh në SMS-në e anulimit
+        sms_confirmation: Mesazh në SMS konfirmimi
+        sms_modification: Tekst në SMS modifikimi
+        sms_reminder: Tekst në SMS përkujtues
+        sms_request_payment: Tekst në SMS me kërkesë për pagesë
+        sms_verification: Tekst në SMS verifikimi
+        template: Shablloni i kalendarit
+        templates:
+          default: Parazgjedhur
+          list: Listë
+          month: Muaji
+          resources: Burimet
+          time_day_available: Dita
+          week_available: Gjithë javën
+          weekday_available: Ditët e javës
+        terms: Kushtet dhe afatet
+        title: Titulli
+      service/availability_type:
+        provider: Ofruesi
+        resource: Burimi (parazgjedhur)
+      service/priority_strategy:
+        order: Porosit
+        random: Rastësor (parazgjedhur)
+        weight: Pesha
+      user:
+        current_password: Fjalëkalimi aktual
+        email: Email
+        name: Emri
+        password: Fjalëkalimi
+        password_confirmation: Konfirmimi i fjalëkalimit
+        phonenumber: Numri i telefonit
+        rotp_verification_code: Kodi i verifikimit
+      web_hook:
+        event: Ngjarje
+        target_url: URL-ja e synuar
+    link:
+      add: Shto
+      back: Mbrapa
+      booking:
+        new: Rezervim i ri
+      cancel_confirm: Je i sigurt që dëshiron ta anulosh?
+      category:
+        new: Kategori e re
+      confirm: Je i sigurt?
+      coupon:
+        new: Kupon i ri
+      create: Krijo
+      delete: Fshij
+      delete_confirm: Je i sigurt që dëshiron ta fshish?
+      edit: Modifiko
+      event:
+        new: Ngjarje e re
+        new_attendant: Shto ndihmës
+      gift_card:
+        new: Kartë dhurate e re
+      message_template:
+        new: Shabllon i ri mesazhi
+      person:
+        new: Klient i ri
+        new_child: Klient i ri
+      resource:
+        new: Burim i ri
+      service:
+        new_appointment: Shërbim i ri
+        new_attendance: Lloji i ri i ngjarjes
+        new_gift_card: Kartë dhurate e re
+        new_gift_card_title: "%{title} i ri"
+        new_product: Produkt i ri
+        new_product_title: "%{title} i ri"
+      setup:
+        skip: Konfigurimi manual
+        step_html: "<strong>Hapi %{step}</strong> i %{max_steps}"
+      undelete: Rikthe fshirjen
+      undelete_confirm: Je i sigurt që dëshiron ta rikthesh fshirjen?
+      user:
+        new: Përdorues i ri
+      view: Pamje
+      web_hook:
+        new: Webhook i ri
+    menu:
+      agenda: Axhendë
+      calendar: Kalendari
+      logout: Dilni
+      orders: Porosi
+      people: Klientët
+      profile: Profili
+      reports: Raportet
+      setup: Konfigurimi
+    menu_setup:
+      addons: Shtesa
+      billing: Faturimi
+      bookingsite: Faqe rezervimesh
+      categories: Kategoritë
+      communication: Komunikimi
+      company: Llogari
+      coupons: Kupona
+      developer: Zhvilluesi
+      export: Eksporto
+      fields: Fushat e personalizuara
+      gift_cards: Kartat dhuratë
+      import: Importo
+      integrations: Integrimet
+      message_templates: Shabllone mesazhesh
+      person_notifications: Njoftime - klient
+      products: Produkte
+      promote: Promovoni
+      resources: Burimet
+      service_appointments: Shërbimet
+      service_attendances: Llojet e ngjarjeve
+      sms_credits: Kredite SMS-sh
+      tools: Mjete
+      user_notifications: Njoftime - përdorues
+      users: Përdoruesit
+      ux: UX
+    payment:
+      fields:
+        cvc: CVC
+        errors:
+          cvc: CVC-ja nuk është e vlefshme.
+          expiration: Data e skadimit nuk është e vlefshme.
+          number: Numri i kartës nuk është i vlefshëm.
+        expiration_html: Skadon <small>(MM/VV)</small>
+        number: Numri i kartës
+      header: Ky formular do të enkriptohet dhe do të dërgohet në mënyrë të sigurt
+    select:
+      prompt: Ju lutem zgjidhni
+    submit:
+      cancel: Anulo
+      create: Krijo %{model}
+      submit: Ruaj %{model}
+      submit_default: Ruaj
+      update: Përditëso %{model}
+      update_password: Ndrysho fjalëkalimin
+  profile:
+    update:
+      locked_field_changed: Fushat e verifikuara nuk mund të ndryshohen
+      success: Profili u përditësua
+  service:
+    admin:
+      invoice_client:
+        errors:
+          nothing_to_invoice: Llogaria nuk është gati për faturim. Ju lutemi sigurohuni që të keni të paktën një burim.
+  title:
+    actions:
+      edit: Modifiko
+      update: Përditëso
+  user:
+    password_reset:
+      expired: Skaduar
+      no_email_found: Nuk u gjet email
+  valid_email:
+    validations:
+      email:
+        invalid: është i pavlefshëm
+  worker:
+    integration_slack:
+      fallback: Një takim i ri u caktua në Makeplans
+      footer: API-ja e Makeplans
+      pretext: "%{person} caktoi një takim në %{booked_from}"
+      title: Shikoni takimin në Makeplans
+    integration_tfso_list_companies:
+      errors:
+        no_results: Nuk u gjetën klientë ekzistues.
+    integration_tfso_order:
+      errors:
+        already_created: Tashmë e krijuar.
+        no_company: Klienti është fshirë në 24SevenOffice. Duhet ta riaktivizoni klientin në 24SevenOffice për të vazhduar.
+        no_product: Produkti është fshirë në 24SevenOffice. Duhet ta riaktivizoni produktin në 24SevenOffice ose ta lidhni shërbimin me një produkt të ri nga Makeplans përpara se të mund të vazhdoni.
+        product_not_defined_on_service: Ky shërbim nuk është i lidhur me një produkt në 24SevenOffice.

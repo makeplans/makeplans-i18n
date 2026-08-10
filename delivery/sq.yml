@@ -1,0 +1,124 @@
+---
+sq:
+  booking_ical:
+    summary: "%{service} në %{client}"
+  booking_mailer:
+    awaiting_confirmation:
+      body: |-
+        Përshëndetje,
+         Kërkesa juaj për rezervimin e %{title} %{time_range} është regjistruar.
+         Rezervimi nuk konfirmohet derisa të miratohet.
+        Do të merrni një email kur rezervimi të përpunohet.
+      subject: Kërkesë e re për rezervim
+    cancellation:
+      header: Përshëndetje %{name}
+      info: Rezervimi juaj për %{title} në %{time_range} është anuluar.
+      subject: Rezervimi u anulua
+    confirmation:
+      booking_count:
+        one: Rezervuar për %{count} person.
+        other: Rezervuar për %{count} persona.
+      header: Përshëndetje %{name}
+      info: Ju keni rezervuar %{title} %{time_range}.
+      link: Më shumë informacion rreth rezervimit tuaj
+      link_cancellation_info: dhe opsionet e anulimit
+      resource_info: 'Rezervim me: %{resource}.'
+      subject: Rezervim i ri
+      subject_service: Rezervim për %{service}
+    declined:
+      body: |-
+        Përshëndetje,
+         Rezervimi juaj nuk u konfirmua.
+      subject: Rezervimi u refuzua
+    modification:
+      header: Përshëndetje %{name}
+      info: 'Rezervimi juaj është ndryshuar në: %{title} %{time_range}.'
+      link: Më shumë informacion rreth rezervimit tuaj
+      link_cancellation_info: dhe opsionet e anulimit
+      resource_info: 'Rezervim me: %{resource}.'
+      subject: Rezervimi u modifikua
+    request_card:
+      header: Përshëndetje %{name}
+      info: Për të paguar lehtësisht rezervimin tuaj, ju lutemi shtoni të dhënat e kartës suaj të kreditit.
+      link: Shto kartë pagese
+      subject: Shtoni informacionin tuaj të pagesës
+    request_payment:
+      header: Përshëndetje %{name}
+      info: Ju mund të paguani për rezervimin tuaj duke përdorur lidhjen më poshtë.
+      link: Pagesë rezervimi
+      subject: Pagesa për rezervimin tuaj
+    verification:
+      footer: 'E rëndësishme: Rezervimi nuk është përfunduar ende. Nëse nuk verifikoheni brenda %{expires_in} minutash, rezervimi juaj mund të skadojë.'
+      header: Për të përfunduar rezervimin tuaj të %{title} %{time_range}, duhet të verifikoni rezervimin tuaj duke përdorur kodin më poshtë.
+      link: Konfirmo rezervimin
+      subject: Ju lutemi verifikoni rezervimin tuaj
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Rezervimet tuaja të %{title} për oraret e mëposhtme janë anuluar:'
+      subject: Rezervime të anuluara
+    create:
+      body: 'Ju keni rezervuar %{title} për oraret e mëposhtme:'
+      subject: Rezervime të reja
+  booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        VEPRIMI I NEVOJSHËM: Kërkesë për rezervim nga {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} në {{ booking.time_range }}
+         {{ booking.client.manage_unconfirmed_bookings_link }}
+         Bëni plane
+      booking_type_attendance: |-
+        VEPRIMI I NEVOJSHËM: Kërkesë për regjistrim nga {{ booking.person.name }} për {{ booking.event.full_title }} {{ booking.time_range }}.
+         {{ booking.client.manage_unconfirmed_bookings_link }}
+         Bëni plane
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        ANULOJMË: {{ booking.person.name }} ka anuluar rezervimin e {{ booking.resource.title }} - {{ booking.title }} në {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        ANULOJMË: {{ booking.person.name }} ka anuluar regjistrimin e tyre për {{ booking.event.full_title }} {{ booking.time_range }}.
+        Bëj plane
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Rezervim i ri i {{ booking.resource.title }} nga {{ booking.person.name }}. {{ booking.title }} në {{ booking.time_range }}
+        Bëni plane
+      booking_type_attendance: |-
+        Regjistrim i ri për {{ booking.event.full_title }} {{ booking.time_range }} nga {{ booking.person.name }}.
+        Bëni plane
+    admin_notification_modification:
+      booking_type_appointment: |-
+        Ndryshimi i rezervimit për {{ booking.resource.title }} nga {{ booking.person.name }}. {{ booking.title }} në {{ booking.time_range }}
+        Bëni plane
+      booking_type_attendance: |-
+        Regjistrimi u ndryshua për {{ booking.event.full_title }} {{ booking.time_range }} nga {{ booking.person.name }}.
+        Bëni plane
+    admin_notification_resource_change:
+      booking_type_appointment: |-
+        Ndryshimi i burimit në {{ booking.resource.title }} për {{ booking.person.name }} {{ booking.title }} në {{ booking.time_range }}
+        Bëni plane
+      booking_type_attendance: |-
+        Regjistrimi u ndryshua për {{ booking.event.full_title }} {{ booking.time_range }} nga {{ booking.person.name }}.
+        Bëni plane
+    awaiting_confirmation: Ju keni bërë një kërkesë për rezervim të {{ booking.title }} {{ booking.booked_from }}. Do t'ju dërgojmë një mesazh kur ta përpunojmë kërkesën tuaj.
+    cancellation: Rezervimi juaj në {{ booking.booked_from }} është anuluar.
+    confirmation: Ju keni bërë një rezervim për {{ booking.title }} {{ booking.booked_from }}.
+    declined: Kërkesa juaj për rezervimin e {{ booking.title }} {{ booking.booked_from }} nuk u miratua. Ju lutemi provoni përsëri.
+    modification: 'Rezervimi juaj është modifikuar: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Kujtesë: Rezervimi {% if booking.service != nil %} nga {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: Ju lutemi shtoni informacionin tuaj të pagesës në %{url}
+    request_payment: 'Mund të paguani për rezervimin tuaj {% if booking.service != nil %} nga {{ booking.title }} {% endif %}{{ booking.booked_from }} këtu: {{ booking.payment_link }}'
+    signature: |2-
+
+      {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} është kodi juaj i verifikimit për rezervimin e {{ booking.title }}."
+  person_mailer:
+    export:
+      subject: Eksporti i të dhënave
+    perishable_token:
+      body: |-
+        Përdorni kodin më poshtë për të përfunduar verifikimin tuaj:
+         %{perishable_token}
+      subject: Kyçu për %{client}
+  person_sms:
+    perishable_token: "{{ perishable_token }} është kodi juaj për autentifikim."
+    signature: |2-
+
+      {{ client.name }}

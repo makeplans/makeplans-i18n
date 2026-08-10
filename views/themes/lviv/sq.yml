@@ -1,0 +1,279 @@
+---
+sq:
+  lviv:
+    bookings:
+      authenticate:
+        email: Email
+        phone_number: Numri i telefonit
+        title: Konfirmo rezervimin
+      cancelled:
+        info: Rezervimi për %{title} %{time} u anulua.
+        title: Rezervimi juaj është anuluar
+      new:
+        add_another_person: Shto një person tjetër
+        agree_with: Unë pranoj termat dhe kushtet
+        book_for_someone_else: Rezervo për dikë tjetër
+        booking_for: 'Ky rezervim është për:'
+        booking_for_label: Rezervim për
+        cancel: Anulo
+        change: Ndrysho
+        errors_header: Ju lutemi plotësoni fushat e kërkuara.
+        logged_in_as: Rezervim si %{person}
+        logged_in_as_short: I kyçur si
+        logout: Dil nga llogaria
+        myself: Unë vetë
+        not_you_logout: Jo ti? Dil nga llogaria jote?
+        optional: Opsionale
+        someone_else: Dikush tjetër (shto të ri)
+        submit: Përfundo rezervimin
+        subtitle: Rezervimi juaj nuk është konfirmuar ende. Ju lutemi rishikoni detajet dhe shtypni butonin më poshtë.
+        terms: Lexoni kushtet për rezervim
+        title: Konfirmo rezervimin tënd
+        who_is_booking_for: Për kë është ky rezervim?
+        yourself: Vetja
+      payment_stripe:
+        title: Fut detajet e pagesës
+      pre_payment:
+        title: Zgjidhni metodën e pagesës
+      review:
+        agree_with: Unë pajtohem me
+        any_specialist: Çdo specialist
+        directions: Udhëzime
+        terms: Kushtet dhe Rregullat
+        title: Rishikoni rezervimin tuaj
+      show:
+        add_to_calendar: Shto në kalendar
+        alt:
+          calendar: Shto në kalendar
+          profile: Profili
+        cancel_booking: Anulo rezervimin
+        pay: Paguaj
+        reschedule: Ricaktoni një orar
+        title: Detajet e rezervimit
+    categories:
+      index:
+        title: Zgjidh kategorinë
+    events:
+      index:
+        title: Zgjidh datën dhe orën
+      show:
+        book_event: Rezervoni këtë ngjarje
+    generic:
+      alt:
+        go_back: Kthehu prapa
+      step: Hapi %{step} / %{steps}
+    gift_cards:
+      index:
+        buy: Bli
+        header: Kartat e Dhuratave
+      new:
+        add_to_cart: Shto në shportë
+        description: Blini një kartë dhurate për dikë të veçantë. Zgjidhni shumën më poshtë.
+        header: Blej Kartë Dhurate
+        value_label: Vlerë
+        value_placeholder: Jep shumën
+    layouts:
+      application:
+        about_makeplans: Rreth Makeplans
+        account: Llogari
+        alt:
+          account: Llogari
+          cancel: Anulo
+          cart: Shportë
+          menu: Menu
+        booking_site_footer: Faqe rezervimesh për %{name}
+        cart: Shportë (%{count})
+        close: Mbyll
+        get_support: Merrni mbështetje
+        menu: Menu
+        privacy_policy: Politika e privatësisë
+        terms_conditions: Kushtet dhe Rregullat
+        title: Rezervim online për %{name}
+    order_cart:
+      checkout:
+        applied_coupon: Zbritje e aplikuar
+        applied_gift_cards: Kartat e Dhuratave të Aplikuara
+        apply: Zbato
+        complete_order: Përfundo porosinë
+        continue_to_payment: Vazhdo te Pagesa
+        coupon_code: Kodi i Zbritjes
+        coupon_code_placeholder: Fut kodin
+        discount: Zbritje
+        empty_cart: Shportë bosh
+        gift_card_code: Kodi i Kartës së Dhuratës
+        gift_card_code_placeholder: XXXX-0000-XXXX
+        header: Arka
+        order_total: Totali i Porosisë
+        payment_method: Metoda e pagesës
+        remaining_total: Totali i mbetur
+        remove: Hiq
+        use_coupon: Kodi i Zbritjes
+        use_gift_card: Përdorni Kartën e Dhuratës
+        your_gift_cards: Kartat tuaja të dhuratave
+      show:
+        clear_cart: Shportë bosh
+        confirm_order: Konfirmo porosinë
+        empty_cart: Shporta juaj është bosh.
+        header: Shporta e Blerjeve
+        remove: Hiq
+        total: Totali
+    order_payments:
+      failure:
+        header: Pagesa dështoi
+        message: Fatkeqësisht, pagesa juaj nuk mund të përpunohej.
+        try_again: Provo përsëri
+      front_go:
+        awaiting_payment:
+          body: Ju lutemi prisni ndërsa verifikojmë transaksionin.
+          error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin ndaj klientit me numrin e referencës %{order_id}.
+          title: Duke verifikuar pagesën tuaj
+        payment:
+          back: Mbrapa
+          header: Pagesa FrontGo
+          pay_now: Paguaj Tani
+      pay_later:
+        payment:
+          back: Mbrapa
+          complete_order: Përfundo porosinë
+          description: Porosia juaj do të konfirmohet. Pagesa mund të bëhet më vonë.
+          header: Paguaj më vonë
+      stripe:
+        awaiting_payment:
+          header: Përpunimi i pagesës
+          message: Ju lutemi prisni ndërsa përpunojmë pagesën tuaj...
+        payment:
+          back: Mbrapa
+          header: Pagesë me kartë
+          new_card: Përdorni një kartë të re
+          pay_now: Paguaj Tani
+          payment_details_html: Pagesa përpunohet në mënyrë të sigurt duke përdorur %{provider}. Të gjitha shumat janë në %{currency}.
+          save_card: Ruaje këtë kartë për pagesat e ardhshme
+          select_card: Zgjidh një kartë të ruajtur
+      vipps:
+        awaiting_payment:
+          body: Ju lutemi prisni ndërsa verifikojmë transaksionin.
+          error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin ndaj klientit me numrin e referencës %{order_id}.
+          title: Duke verifikuar pagesën tuaj
+        payment:
+          back: Mbrapa
+          header: Pagesa Vipps
+          pay_now: Paguaj me Vipps
+    orders:
+      index:
+        header: Porositë e mia
+        no_orders: Nuk ke ende asnjë porosi.
+        order_number: 'Porosia #%{number}'
+      payment:
+        amount_to_pay: Shuma për t'u paguar
+        fiken: Faturë (Fiken)
+        front_go: FrontGo
+        no_payment_methods: Nuk ka metoda pagese të disponueshme.
+        pay_later: Paguaj më vonë
+        stripe: Kartë Krediti
+        vipps: Vipps
+      show:
+        back_to_orders: Kthehu te porositë
+        confirmation_message: Faleminderit për porosinë tuaj!
+        discount_code: Zbritje (%{code})
+        each: secili
+        gift_card_code: Kodi i Kartës së Dhuratës
+        gift_card_value: Vlerë
+        gift_cards: Kartat e Dhuratave
+        header: Konfirmimi i porosisë
+        order_details: Detajet e porosisë
+        payment_details: Pagesa
+        total: Totali
+        transaction_gift_card: Kartë Dhurate (%{code})
+        transaction_payment: Pagesa
+        transaction_refund: Rimbursimi
+    person_sessions:
+      enter_perishable_token:
+        confirm_booking: Konfirmo rezervimin
+        no_code: Nuk e merrni kodin?
+        send_again: Dërgo përsëri
+        verify_login: Verifiko hyrjen
+      perishable_token_action_required:
+        body: Ne i kemi dërguar një email %{recipient}. Ndiqeni atë për të verifikuar rezervimin tuaj. Na ndihmon të sigurohemi që nuk jeni robot.
+        delivery_error: Nuk mundëm t'ju dërgojmë email. A jeni i sigurt që keni futur adresën e saktë të email-it?
+        delivery_not_processed: Aktualisht po përjetojmë disa vonesa në sistemet tona. Ju lutemi prisni ndërsa po dërgojmë email-in tuaj.
+        title: Ju lutem konfirmoni adresën tuaj të email-it
+      perishable_token_form:
+        title: Hyrje
+      verification_method_email:
+        submit: Dërgo email verifikimi
+      verification_method_sms:
+        submit: Dërgo kodin e verifikimit
+    products:
+      index:
+        header: Produkte
+      show:
+        add_to_cart: Shto në shportë
+        price: Çmimi
+    profile:
+      children:
+        index:
+          add_person: Shto person
+          alt:
+            right: Djathtas
+          header: Personat për të cilët mund të rezervoni
+          no_children: Nuk ke shtuar ende askënd për të rezervuar.
+        new:
+          errors_header: 'Gabime të ndodhura:'
+          submit: Ruaj dhe vazhdo
+          subtitle: Ju lutemi plotësoni të dhënat e personit për të cilin dëshironi të rezervoni.
+          title: Shto person
+      credit_card_list:
+        title: Metodat e Pagesës
+      gift_card_list:
+        balance: Bilanci
+        code: Kodi
+        no_gift_cards: Nuk ke karta dhuratash.
+        purchased_body: Kartat dhuratë që keni blerë dhe që nuk janë shfrytëzuar ende.
+        purchased_title: Kartat e Dhuratave të Blera
+        title: Kartat e mia të dhuratave
+      index:
+        book_again: Rezervo përsëri
+        canceled: Anuluar
+        my_profile: Profili im
+        tabs:
+          all: Të gjitha
+          cancelled: Anuluar
+          completed: Përfunduar
+          upcoming: Së shpejti
+        waiting: Duke pritur
+      new:
+        errors_header: 'Gabime të ndodhura:'
+        register: Regjistrohu
+        subtitle: Ju lutemi plotësoni të dhënat e kërkuara për t'u regjistruar.
+        title: Profil i ri
+      show:
+        alt:
+          language: Gjuha
+          logout: Dilni
+          right: Djathtas
+        change_language: Ndrysho gjuhën
+        logout: Dilni
+        my_bookings: Rezervimet e mia
+    services:
+      available_dates:
+        title: Zgjidh datën dhe orën
+      count:
+        title: Zgjidhni numrin e njerëzve
+      index:
+        title: Zgjidh shërbimin
+      location:
+        title: Zgjidh vendndodhjen
+      show:
+        book_service: Rezervoni këtë shërbim
+      slots:
+        available_times: Oraret e disponueshme
+        continue: Vazhdo
+        estimated_time: Koha e parashikuar e shërbimit - %{duration} min.
+        free_capacity: "%{count} në dispozicion"
+        next_available_date_html: Data tjetër e disponueshme është %{next_available_date}
+        no_availability: Nuk ka vende të disponueshme në datën e zgjedhur. Ju lutemi provoni një datë tjetër.
+        title: Zgjidh datën dhe orën
+      success:
+        add_to_calendar: Shto rezervimin në kalendar
+        book_another: Rezervoni një shërbim tjetër
+        title: Ju e rezervuat me sukses shërbimin

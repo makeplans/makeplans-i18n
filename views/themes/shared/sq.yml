@@ -1,0 +1,133 @@
+---
+sq:
+  shared:
+    bookings:
+      edit_profile:
+        intro: Ju lutemi jepni disa detaje të tjera për të vazhduar me pagesën tuaj.
+        submit: Vazhdo
+        title: Plotësoni profilin tuaj për të vazhduar
+      expired:
+        info: Rezervimet duhet të verifikohen brenda %{expires_in} minutash. Ju lutemi provoni përsëri.
+        title: Rezervimi skadoi
+      new:
+        accept: Unë pranoj termat dhe kushtet
+        email_suggestion_html: "<p>A doje të thoshe <span>%{suggestions}</span> ?</p>"
+        terms: Lexoni kushtet për rezervim
+      payment_invoice:
+        form_footer_html: Fatura juaj do të jetë për <span class="payment-amount">%{amount}</span> .
+        form_header: Informacion mbi faturën
+        header: Pagesa me faturë
+        info: Rezervimi juaj për %{service} %{booking} do të paguhet me faturë.
+        payment_details_html: Do të merrni një faturë për shumën e shfaqur në %{currency} nga ne në momentin e rezervimit tuaj.
+      payment_stripe:
+        submit: Paguaj
+      show:
+        booked_for_child: Ky rezervim është për %{name}.
+        count: Rezervuar për %{count} persona.
+        invoiced: Ju është faturuar.
+        paid: Ju keni parapaguar %{paid_amount}.
+        price: Çmimi i rezervimit është %{amount}.
+      verification_method_email:
+        email: Email
+        info: Duhet të verifikoni adresën tuaj të email-it për të përfunduar rezervimin.
+        submit: Vazhdo
+        title: Verifikoni adresën tuaj të email-it
+      verification_method_oauth:
+        info: Duhet të verifikoni identitetin tuaj për të përfunduar rezervimin.
+        title: Verifikoni identitetin tuaj
+      verification_method_sms:
+        info: Duhet të verifikoni numrin tuaj të telefonit për të përfunduar rezervimin.
+        phone_number: Numri i telefonit celular
+        submit: Vazhdo
+        title: Verifikoni numrin tuaj të telefonit
+    generic:
+      alt:
+        go_back: Kthehu prapa
+      close: mbyll
+      payment:
+        add_card_details_html: Të dhënat e kartës suaj nuk do të ruhen tek ne, por do të dërgohen të koduara në %{provider} për transaksione dhe ruajtje të sigurt.
+        add_card_footer_html: Karta juaj nuk do të ngarkohet tani
+        add_card_header: Ruaj kartën
+        add_card_info: Shtoni kartën tuaj të pagesës në mënyrë që të mund të paguani lehtësisht dhe automatikisht pas rezervimit.
+        add_card_submit: Ruaj kartën
+        awaiting:
+          body: Ju lutemi prisni ndërsa transaksioni konfirmohet.
+          error: Nuk mundëm të konfirmonim që pagesa ishte kryer. Ju lutemi të kontaktoni shërbimin ndaj klientit nëpërmjet https://makeplans.no dhe të na jepni numrin e referencës %{booking_id}.
+          title: Pagesë kontrolluese
+        card: Kartë
+        form_footer_html: Karta juaj e kreditit do të ngarkohet me <span class="payment-amount">%{amount}</span> .
+        form_header: Ky formular dërgohet i koduar.
+        header: Pagesa
+        info: Për të përfunduar rezervimin e %{service} %{booking} duhet të paguani me kartën tuaj të kreditit.
+        new_card: Fut kartën e re
+        payment_details_html: Shuma e shfaqur është në %{currency}. Ne nuk i ruajmë të dhënat e kartës suaj të kreditit, por i dërgojmë të koduara te %{provider} për përpunim dhe ruajtje të sigurt.
+        payment_received: "%{paid_amount} u pagua më %{paid_at}."
+        save_card: Ruaj kartën
+    order_cart:
+      checkout:
+        cannot_use_coupon_for_gift_card: Kodet e zbritjes nuk mund të përdoren për blerjet me kartë dhurate
+        cannot_use_gift_card_for_gift_card: Kartat dhuratë nuk mund të përdoren për të blerë karta dhuratë
+        coupon_above_maximum: Totali i porosisë tejkalon maksimumin për këtë kod zbritjeje
+        coupon_below_minimum: Totali i porosisë nuk plotëson minimumin për këtë kod zbritjeje
+        coupon_no_eligible_items: Ky kod zbritjeje nuk vlen për artikujt në shportën tuaj
+        coupon_not_redeemable: Ky kod zbritjeje nuk është i vlefshëm
+        invalid_cart_item: Vlerë e pavlefshme e artikullit
+        invalid_coupon: Kod zbritjeje i pavlefshëm
+        invalid_gift_card: Kartë dhurate e pavlefshme ose e përdorur tashmë
+    order_payments:
+      edit_profile:
+        intro: Ju lutemi jepni disa detaje të tjera për të vazhduar me pagesën tuaj.
+        submit: Vazhdo
+        title: Plotësoni profilin tuaj për të vazhduar
+      pay_later:
+        gift_cards_not_allowed: Kartat dhuratë nuk mund të përdoren me pagesë më vonë
+      processing:
+        message: Ju lutemi prisni ndërsa përpunojmë pagesën tuaj...
+        title: Përpunimi i pagesës
+    person_sessions:
+      perishable_token_form:
+        login_with_email: Kyçu me email
+        login_with_id_porten: Kyçu me BankID
+        login_with_sms: Kyçu me SMS
+        login_with_vipps: Kyçu me Vipps
+    profile:
+      children:
+        index:
+          header: Njerëz të tjerë për të cilët mund të krijoni një libër
+      credit_card_list:
+        add_card: Shto kartë të re
+        body: Këto janë kartat e pagesës që keni ruajtur. Nëse dëshironi, mund të shtoni një kartë të re ose të fshini cilëndo nga ato ekzistuese.
+        card_info: "%{brand} me numër që mbaron me %{last_4} dhe skadon me %{expire_month}/%{expire_year}."
+        remove_card: Hiqe këtë kartë
+        title: Metodat tuaja të ruajtura të pagesës
+      edit:
+        cancel: Anulo
+        errors_header: 'Gabime të ndodhura:'
+        header: Modifiko profilin
+        save: Ruaj
+        verified: Verifikuar
+      show:
+        header: Informacioni juaj i ruajtur
+    providers:
+      index:
+        all_services: Të gjitha shërbimet
+        title: Zgjidh ofruesin
+    services:
+      count:
+        title: Sa njerëz?
+      slots:
+        all_services: Të gjitha shërbimet
+        availability: Disponueshmëria
+        available_dates: Datat e disponueshme
+        available_slots: Oraret e disponueshme
+        continue: Vazhdo
+        free_capacity:
+          one: "%{count} në dispozicion"
+          other: "%{count} në dispozicion"
+        gap_warning: Për të zgjedhur disa vende, këto vende duhet të jenë pa boshllëqe.
+        max_slots_warning: Nuk mund të rezervohen më shumë se %{max_slots} intervale kohore
+        multiple_slots_info: Për të zgjedhur disa slote, së pari zgjidhni kohën e fillimit dhe më pas kohën e mbarimit.
+        next_available_date_html: Data tjetër e disponueshme është %{next_available_date}
+        no_availability: Nuk ka disponueshmëri
+        no_selection: Ju lutem zgjidhni një orar të disponueshëm.
+        time_zone_differ_info: Të gjitha kohët tregohen në %{time_zone}.

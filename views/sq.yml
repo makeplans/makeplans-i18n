@@ -1,0 +1,74 @@
+---
+sq:
+  bookings:
+    awaiting_payment:
+      vipps_payment_failed: Pagesa u anulua. Ju lutemi provoni përsëri.
+    verification_code:
+      incorrect_code: Kod i pasaktë
+  clients:
+    new:
+      first_user: Ky është fjalëkalimi juaj personal. Mund të shtoni më shumë përdorues më vonë.
+      free_trial_info: Periudhë prove falas 14-ditore. Pa detyrime. Nuk kërkohet kartë krediti.
+      headline: Filloni me rezervimin online
+      logged_in_as: Je i kyçur si %{name}.
+      newsletter: Pajtohem të marr përditësime të produkteve me anë të email-it.
+      read_legal: Kushtet dhe afatet për përdorimin e këtij shërbimi
+      recaptcha: Na vjen keq që po ju shqetësojmë, por duhet të verifikojmë regjistrimin tuaj me Google Recaptcha. Ju lutemi plotësoni përsëri fjalëkalimin tuaj dhe më pas dorëzoni formularin.
+      subdomain_info: Adresa juaj unike (URL) ku klientët tuaj mund të rezervojnë në internet.
+      subdomain_not_website_warning: 'OOPS: Kjo është adresa për faqen tuaj të re të rezervimeve. MOS e futni URL-në e faqes suaj ekzistuese të internetit. Nëse keni dyshime, thjesht futni emrin e kompanisë suaj këtu.'
+      submit: Regjistro llogarinë time
+      title: Regjistrohuni për llogarinë tuaj të rezervimit online
+      user_email: Email-i i punës
+      user_info: Hyrja juaj e përdoruesit
+    rejected:
+      headline: Regjistrimi u refuzua
+      info: Na vjen keq, por sistemi ynë e ka shënuar regjistrimin tuaj si spam. Ju lutemi të na kontaktoni për të regjistruar një llogari.
+      title: Regjistrimi u refuzua
+  oauth:
+    callback:
+      header: Lidhu me llogarinë
+  room_display:
+    setup:
+      header: Konfigurimi i Ekranit të Dhomës
+      instruction: Ju lutemi futni kodin e konfigurimit të gjeneruar në panelin e administratorit.
+      invalid_code: Kod i pavlefshëm
+      placeholder: Fut Kodin
+      submit: Aktivizo
+      title: Konfigurimi i Ekranit të Dhomës
+    show:
+      book: Libër
+      find_room: Gjej një dhomë
+      free_all_day: Falas gjithë ditën
+      free_for: Falas për %{duration}
+      occupied: I zënë
+  user:
+    select_client:
+      header: Zgjidh llogarinë
+  user_password_resets:
+    create:
+      header: Rivendos fjalëkalimin tënd
+      info: Tani ju kemi dërguar një email. Për të konfirmuar rivendosjen e fjalëkalimit tuaj, duhet të klikoni në lidhjen në email.
+      signup_html: Nuk keni llogari? <a href="%{url}">Filloni tani.</a>
+    edit:
+      header: Ju lutemi futni fjalëkalimin tuaj të ri
+      signup_html: Nuk keni llogari? <a href="%{url}">Filloni tani.</a>
+      submit: Ruaj fjalëkalimin
+    new:
+      header: Harruat fjalëkalimin?
+      signup_html: Nuk keni llogari? <a href="%{url}">Filloni tani.</a>
+      submit: Dërgo email
+  user_sessions:
+    handle_authenticated_user:
+      success: Identifikuar me sukses
+    new:
+      forgot_link: Harruat fjalëkalimin?
+      header: Hyrje
+      incorrect: Kredencialet e pasakta
+      login: Hyrje
+      remember_me: Më mbaj mend
+      signup_html: Nuk keni llogari? <a href="%{url}">Filloni tani.</a>
+      title: Hyrje
+    rotp_verification_code:
+      header: Hyni me autentifikim me dy faktorë
+      info: Përdorni kodin e gjeneruar nga aplikacioni juaj 2FA.
+      submit: Hyrje
