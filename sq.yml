@@ -5,8 +5,8 @@ sq:
       booking:
         booked_by_person_id: rezervuar nga
         booked_from: nga
-        booked_to: për
-        count: numëroj
+        booked_to: deri
+        count: numër
         coupon_code: kod kuponi
         event_id: ngjarje
         external_id: ID e jashtme
@@ -18,7 +18,7 @@ sq:
         resource_id: burim
         service: shërbim
         service_id: shërbim
-        state: shtet
+        state: gjendje
         status: status
         terms_accepted: kushtet e pranuara
         title: titull
@@ -36,7 +36,7 @@ sq:
         checked_in: U regjistrua
         completed: Përfunduar
         in_progress: Filloi
-        no_show: Asnjë shfaqje
+        no_show: Nuk u paraqit
       category:
         title: titull
       client:
@@ -61,12 +61,12 @@ sq:
         percentage: përqindje
       event:
         booking_capacity: Numri maksimal i personave të lejuar për rezervim
-        booking_minimum: minimale personash të kërkuar për rezervim
+        booking_minimum: numri minimal i personave të kërkuar për rezervim
         capacity: numri maksimal i personave të lejuar
         description: përshkrim
         ends_at: mbaron në
-        first_booking_at: pa rezervim paraprak
-        last_booking_at: rezervimi i fundit më parë
+        first_booking_at: asnjë rezervim para
+        last_booking_at: rezervimi i fundit para
         resource_id: burim
         service_id: shërbim
         starts_at: fillon në
@@ -93,11 +93,11 @@ sq:
         created_at: i regjistruar
         date_of_birth: data e lindjes
         email: email
-        locale: vendndodhje
+        locale: gjuha
         name: emër
         national_id_no: numri i identifikimit kombëtar
         notes: shënime
-        opt_in_marketing: regjistrohu për marketing
+        opt_in_marketing: regjistrohuni për marketing
         phonenumber: numri i telefonit
         postal_code: kod postar
         state: shtet
@@ -117,7 +117,7 @@ sq:
         provider: ofrues
         resource: burim
       service/priority_strategy:
-        order: urdhër
+        order: renditje
         random: i rastësishëm
         weight: peshë
       user:
@@ -182,7 +182,7 @@ sq:
         person:
           attributes:
             national_id_no:
-              invalid_syntax_no: Futni fødselsnummer tuaj norvegjez - 11 shifra.
+              invalid_syntax_no: Futni fødselsnummerin tuaj norvegjez - 11 shifra.
           blocked: Llogaria juaj nuk është në gjendje të bëjë asnjë rezervim.
           missing: nuk është ruajtur në profilin tuaj të klientit. Ju lutemi të na kontaktoni për ta korrigjuar.
           no_values_present: Emri, numri i telefonit ose emaili janë të nevojshëm.
@@ -231,12 +231,12 @@ sq:
       date_format: 'Ju lutemi futni formatin e vlefshëm të datës: %{format}'
       date_of_birth: Viti i lindjes është jashtë diapazonit të pranuar
       no_values_present: Emri, numri i telefonit ose emaili janë të nevojshëm.
-      not_authenticated: Je çregjistruar.
-      not_found: Nuk mund të gjenden të dhëna. Provo ta ringarkosh faqen.
+      not_authenticated: Jeni shkëputur nga sistemi.
+      not_found: Nuk mund të gjenden të dhëna. Provoni ta ringarkoni faqen.
       offline: Nuk mund të lidhet me Makeplans. Ju lutemi kontrolloni që jeni në internet.
-      server_error: Gabim në Planifikimet e Makeplan-it
+      server_error: Gabim në Makeplans
       syntax_error: Gabim në sintaksën e dhënë.
-      unknown: Gabim i panjohur. Provo ta ringarkosh faqen.
+      unknown: Gabim i panjohur. Provoni ta ringarkoni faqen.
     models:
       person:
         perishable_token:
@@ -248,7 +248,7 @@ sq:
       booking:
         already_refunded: Tashmë është rimbursuar.
         invalid: Rezervimi ka skaduar ose është i pavlefshëm. Transaksioni nuk është përpunuar.
-        paid: Rezervimi është paguar tashmë. Provo ta rifreskosh faqen.
+        paid: Rezervimi është paguar tashmë. Provoni ta rifreskoni faqen.
       card:
         missing: Nuk mund të marrë informacionin e kartës
       payment_intent_unexpected_state: Pagesa nuk mund të vërtetohet. Ju lutemi provoni përsëri.
@@ -261,7 +261,7 @@ sq:
         invalid: Rezervimi ka skaduar ose është i pavlefshëm. Transaksioni nuk është përpunuar.
         no_person: Rezervimi nuk ka klient.
         no_phone_number: Klienti nuk ka numër telefoni.
-        paid: Rezervimi është paguar tashmë. Provo ta rifreskosh faqen.
+        paid: Rezervimi është paguar tashmë. Provoni ta rifreskoni faqen.
       no_reference: Nuk u gjet asnjë transaksion pagese për këtë rezervim.
       processor: 'Gabim nga përpunuesi ynë i pagesave: %{error}'
       refund_failed: Transaksioni nuk mund të rimbursohet.
@@ -274,14 +274,14 @@ sq:
     country_locale: en
     default: Parazgjedhja e sistemit
     dictate:
-      start: Diktoj
+      start: Dikto
       stop: Ndalo diktimin
       unsupported: Diktimi nuk është i disponueshëm
-    'false': I paaftë
+    'false': Çaktivizuar
     from: nga
     optional: opsionale
     search: Kërko
-    to: për
+    to: deri
     today: sot
     tomorrow: nesër
     'true': Aktivizuar
@@ -290,7 +290,7 @@ sq:
       action:
         cancel: Anulo
         confirm: Konfirmo
-        decline: Refuzim
+        decline: Refuzo
         verify: Verifiko
       state:
         awaiting_confirmation: Në pritje të konfirmimit
@@ -315,7 +315,7 @@ sq:
         all_day: Gjithë ditën
         booked_by_person_id: Rezervuar nga
         booked_from: Rezervuar nga
-        booked_to: Rezervuar për
+        booked_to: Rezervuar deri
         count: Numri i njerëzve
         coupon_code: Kodi i kuponit
         external_id: ID e jashtme
@@ -383,8 +383,8 @@ sq:
         interval_rounding: Rrumbullakosja e parazgjedhur në kohën tjetër të disponueshme për rezervim
         locale: Gjuha (Gjithashtu përcakton formatimin e numrave dhe datës)
         logo: Logo
-        mail_awating_confirmation: Mesazh në pritje të emailit të konfirmimit, në pritje të dërgimit të mesazhit me tekst.
-        mail_awating_confirmation_subject: Subjekti në pritje të email-it të konfirmimit
+        mail_awating_confirmation: Teksti në emailin e pritjes për konfirmim
+        mail_awating_confirmation_subject: Subjekti në emailin e pritjes për konfirmim
         mail_cancellation: Mesazh në emailin e anulimit
         mail_cancellation_subject: Subjekti në emailin e anulimit
         mail_confirmation: Mesazh në emailin e konfirmimit
@@ -404,7 +404,7 @@ sq:
         name: Emri i kompanisë (i shfaqur në faqen e rezervimit)
         new_booking_text: Teksti i shfaqur në faqen e konfirmimit
         next_invoice_nr: Numri i faturës tjetër
-        no_availability_text: Teksti shfaqet kur nuk ka disponueshmëri
+        no_availability_text: Teksti që shfaqet kur nuk ka disponueshmëri
         order_form: Fushat e porosisë së personalizuar
         payment_provider: Ofruesi i parazgjedhur i pagesës
         person_form: Fushat e personalizuara të klientit
@@ -418,7 +418,7 @@ sq:
         service_form: Fushat e shërbimit të personalizuara
         service_template: Stili i kalendarit
         slot_generation: Gjenerimi i sloteve të disponueshme
-        sms_awaiting_confirmation: Mesazh në pritje të SMS konfirmimi
+        sms_awaiting_confirmation: Teksti në SMS-në e pritjes për konfirmim
         sms_cancellation: Mesazh në SMS-në e anulimit
         sms_confirmation: Mesazh në SMS konfirmimi
         sms_modification: Tekst në SMS modifikimi
@@ -433,13 +433,13 @@ sq:
         templates:
           amsterdam: Amsterdam
           lviv: Lviv
-          timisoara: Timishoara
+          timisoara: Timisoara
         terms: Kushtet dhe afatet
         time_zone: Zona kohore
         verification_method: Metoda e verifikimit për rezervimet e reja
       client/slot_generation:
         dynamic: Dinamik (parazgjedhur)
-        fixed: I rregulluar
+        fixed: I fiksuar
       client_user_link:
         role: Niveli i aksesit
       client_user_link/role:
@@ -497,7 +497,7 @@ sq:
         sms: SMS
       message_template/message_type:
         confirmation: Konfirmim
-        follow_up: Ndiq
+        follow_up: Ndjekje
         reminder: Kujtesë
       person:
         address: Adresa
@@ -545,7 +545,7 @@ sq:
             one: ditë
         interval: Kohëzgjatja
         interval_rounding: Rrumbullakosje për kohën tjetër të disponueshme
-        mail_awaiting_confirmation: Mesazh në pritje të emailit të konfirmimit, në pritje të dërgimit të mesazhit me tekst.
+        mail_awaiting_confirmation: Teksti në emailin e pritjes për konfirmim
         mail_cancellation: Mesazh në emailin e anulimit
         mail_confirmation: Mesazh në emailin e konfirmimit
         mail_modification: Tekst në emailin e modifikimit
@@ -561,7 +561,7 @@ sq:
         reservation_form_text: Teksti i shfaqur para formularit të rezervimit
         same_day: Lejo rezervimin gjatë disa ditëve
         slot_generation: Gjenerimi i kohës
-        sms_awaiting_confirmation: Mesazh në pritje të SMS konfirmimi
+        sms_awaiting_confirmation: Teksti në SMS-në e pritjes për konfirmim
         sms_cancellation: Mesazh në SMS-në e anulimit
         sms_confirmation: Mesazh në SMS konfirmimi
         sms_modification: Tekst në SMS modifikimi
@@ -583,7 +583,7 @@ sq:
         provider: Ofruesi
         resource: Burimi (parazgjedhur)
       service/priority_strategy:
-        order: Porosit
+        order: Renditje
         random: Rastësor (parazgjedhur)
         weight: Pesha
       user:
@@ -602,15 +602,15 @@ sq:
       back: Mbrapa
       booking:
         new: Rezervim i ri
-      cancel_confirm: Je i sigurt që dëshiron ta anulosh?
+      cancel_confirm: Jeni i sigurt që dëshironi ta anuloni?
       category:
         new: Kategori e re
-      confirm: Je i sigurt?
+      confirm: Jeni i sigurt?
       coupon:
         new: Kupon i ri
       create: Krijo
       delete: Fshij
-      delete_confirm: Je i sigurt që dëshiron ta fshish?
+      delete_confirm: Jeni i sigurt që dëshironi ta fshini?
       edit: Modifiko
       event:
         new: Ngjarje e re
@@ -635,10 +635,10 @@ sq:
         skip: Konfigurimi manual
         step_html: "<strong>Hapi %{step}</strong> i %{max_steps}"
       undelete: Rikthe fshirjen
-      undelete_confirm: Je i sigurt që dëshiron ta rikthesh fshirjen?
+      undelete_confirm: Jeni i sigurt që dëshironi ta riktheni fshirjen?
       user:
         new: Përdorues i ri
-      view: Pamje
+      view: Shiko
       web_hook:
         new: Webhook i ri
     menu:
@@ -687,7 +687,7 @@ sq:
         number: Numri i kartës
       header: Ky formular do të enkriptohet dhe do të dërgohet në mënyrë të sigurt
     select:
-      prompt: Ju lutem zgjidhni
+      prompt: Ju lutemi zgjidhni
     submit:
       cancel: Anulo
       create: Krijo %{model}
@@ -720,7 +720,7 @@ sq:
     integration_slack:
       fallback: Një takim i ri u caktua në Makeplans
       footer: API-ja e Makeplans
-      pretext: "%{person} caktoi një takim në %{booked_from}"
+      pretext: "%{person} caktoi një takim më %{booked_from}"
       title: Shikoni takimin në Makeplans
     integration_tfso_list_companies:
       errors:

@@ -20,19 +20,19 @@ sq:
         errors_header: Ju lutemi plotësoni fushat e kërkuara.
         logged_in_as: Rezervim si %{person}
         logged_in_as_short: I kyçur si
-        logout: Dil nga llogaria
+        logout: Dilni nga llogaria
         myself: Unë vetë
-        not_you_logout: Jo ti? Dil nga llogaria jote?
+        not_you_logout: Jo ju? Dilni nga llogaria
         optional: Opsionale
         someone_else: Dikush tjetër (shto të ri)
         submit: Përfundo rezervimin
         subtitle: Rezervimi juaj nuk është konfirmuar ende. Ju lutemi rishikoni detajet dhe shtypni butonin më poshtë.
         terms: Lexoni kushtet për rezervim
-        title: Konfirmo rezervimin tënd
+        title: Konfirmoni rezervimin tuaj
         who_is_booking_for: Për kë është ky rezervim?
         yourself: Vetja
       payment_stripe:
-        title: Fut detajet e pagesës
+        title: Futni detajet e pagesës
       pre_payment:
         title: Zgjidhni metodën e pagesës
       review:
@@ -52,10 +52,10 @@ sq:
         title: Detajet e rezervimit
     categories:
       index:
-        title: Zgjidh kategorinë
+        title: Zgjidhni kategorinë
     events:
       index:
-        title: Zgjidh datën dhe orën
+        title: Zgjidhni datën dhe orën
       show:
         book_event: Rezervoni këtë ngjarje
     generic:
@@ -64,14 +64,14 @@ sq:
       step: Hapi %{step} / %{steps}
     gift_cards:
       index:
-        buy: Bli
+        buy: Blini
         header: Kartat e Dhuratave
       new:
         add_to_cart: Shto në shportë
         description: Blini një kartë dhurate për dikë të veçantë. Zgjidhni shumën më poshtë.
         header: Blej Kartë Dhurate
         value_label: Vlerë
-        value_placeholder: Jep shumën
+        value_placeholder: Jepni shumën
     layouts:
       application:
         about_makeplans: Rreth Makeplans
@@ -97,9 +97,9 @@ sq:
         complete_order: Përfundo porosinë
         continue_to_payment: Vazhdo te Pagesa
         coupon_code: Kodi i Zbritjes
-        coupon_code_placeholder: Fut kodin
+        coupon_code_placeholder: Futni kodin
         discount: Zbritje
-        empty_cart: Shportë bosh
+        empty_cart: Zbraz shportën
         gift_card_code: Kodi i Kartës së Dhuratës
         gift_card_code_placeholder: XXXX-0000-XXXX
         header: Arka
@@ -111,7 +111,7 @@ sq:
         use_gift_card: Përdorni Kartën e Dhuratës
         your_gift_cards: Kartat tuaja të dhuratave
       show:
-        clear_cart: Shportë bosh
+        clear_cart: Zbraz shportën
         confirm_order: Konfirmo porosinë
         empty_cart: Shporta juaj është bosh.
         header: Shporta e Blerjeve
@@ -125,7 +125,7 @@ sq:
       front_go:
         awaiting_payment:
           body: Ju lutemi prisni ndërsa verifikojmë transaksionin.
-          error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin ndaj klientit me numrin e referencës %{order_id}.
+          error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin e klientit me numrin e referencës %{order_id}.
           title: Duke verifikuar pagesën tuaj
         payment:
           back: Mbrapa
@@ -148,11 +148,11 @@ sq:
           pay_now: Paguaj Tani
           payment_details_html: Pagesa përpunohet në mënyrë të sigurt duke përdorur %{provider}. Të gjitha shumat janë në %{currency}.
           save_card: Ruaje këtë kartë për pagesat e ardhshme
-          select_card: Zgjidh një kartë të ruajtur
+          select_card: Zgjidhni një kartë të ruajtur
       vipps:
         awaiting_payment:
           body: Ju lutemi prisni ndërsa verifikojmë transaksionin.
-          error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin ndaj klientit me numrin e referencës %{order_id}.
+          error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin e klientit me numrin e referencës %{order_id}.
           title: Duke verifikuar pagesën tuaj
         payment:
           back: Mbrapa
@@ -161,7 +161,7 @@ sq:
     orders:
       index:
         header: Porositë e mia
-        no_orders: Nuk ke ende asnjë porosi.
+        no_orders: Nuk keni ende asnjë porosi.
         order_number: 'Porosia #%{number}'
       payment:
         amount_to_pay: Shuma për t'u paguar
@@ -216,7 +216,7 @@ sq:
           alt:
             right: Djathtas
           header: Personat për të cilët mund të rezervoni
-          no_children: Nuk ke shtuar ende askënd për të rezervuar.
+          no_children: Nuk keni shtuar ende askënd për të rezervuar.
         new:
           errors_header: 'Gabime të ndodhura:'
           submit: Ruaj dhe vazhdo
@@ -227,7 +227,7 @@ sq:
       gift_card_list:
         balance: Bilanci
         code: Kodi
-        no_gift_cards: Nuk ke karta dhuratash.
+        no_gift_cards: Nuk keni karta dhuratë.
         purchased_body: Kartat dhuratë që keni blerë dhe që nuk janë shfrytëzuar ende.
         purchased_title: Kartat e Dhuratave të Blera
         title: Kartat e mia të dhuratave
@@ -239,7 +239,7 @@ sq:
           all: Të gjitha
           cancelled: Anuluar
           completed: Përfunduar
-          upcoming: Së shpejti
+          upcoming: Të ardhshme
         waiting: Duke pritur
       new:
         errors_header: 'Gabime të ndodhura:'
@@ -256,13 +256,13 @@ sq:
         my_bookings: Rezervimet e mia
     services:
       available_dates:
-        title: Zgjidh datën dhe orën
+        title: Zgjidhni datën dhe orën
       count:
         title: Zgjidhni numrin e njerëzve
       index:
-        title: Zgjidh shërbimin
+        title: Zgjidhni shërbimin
       location:
-        title: Zgjidh vendndodhjen
+        title: Zgjidhni vendndodhjen
       show:
         book_service: Rezervoni këtë shërbim
       slots:
@@ -272,7 +272,7 @@ sq:
         free_capacity: "%{count} në dispozicion"
         next_available_date_html: Data tjetër e disponueshme është %{next_available_date}
         no_availability: Nuk ka vende të disponueshme në datën e zgjedhur. Ju lutemi provoni një datë tjetër.
-        title: Zgjidh datën dhe orën
+        title: Zgjidhni datën dhe orën
       success:
         add_to_calendar: Shto rezervimin në kalendar
         book_another: Rezervoni një shërbim tjetër

@@ -24,11 +24,11 @@ sq:
         edit_profile: Modifiko
         logged_in_as: Rezervim si %{person}
         logged_in_as_short: I kyçur si
-        logout: Dil nga llogaria
+        logout: Dilni nga llogaria
         myself: Unë vetë
-        not_you_logout: Jo ti? Dil nga llogaria jote?
+        not_you_logout: Jo ju? Dilni nga llogaria
         notice: Rezervimi juaj nuk është konfirmuar ende. Ju lutemi rishikoni detajet dhe shtypni butonin më poshtë.
-        page_title: Konfirmo rezervimin tënd
+        page_title: Konfirmoni rezervimin tuaj
         someone_else: Dikush tjetër (shto të ri)
         step_label: Hapi i fundit
         submit: Përfundo rezervimin
@@ -40,13 +40,13 @@ sq:
         title: Pagesa
       pre_payment:
         info: Për të përfunduar rezervimin e %{service} %{booking} duhet të kryeni një pagesë.
-        submit: Për pagesën
+        submit: Vazhdoni te pagesa
         title: Pagesa
       show:
         add_to_calendar: Shto këtë rezervim në kalendarin tim
         all: Shikoni rezervimet e mia të tjera
         cancel: Anulo
-        cancel_confirmation: Je i sigurt që dëshiron ta anulosh këtë rezervim?
+        cancel_confirmation: Jeni i sigurt që dëshironi ta anuloni këtë rezervim?
         info: Rezervimi për %{title} %{time} është konfirmuar.
         new_reservation: Bëni një rezervim tjetër
         pay: Paguaj
@@ -55,7 +55,7 @@ sq:
     categories:
       index:
         all_categories: Të gjitha kategoritë
-        select_category: Zgjidh kategorinë
+        select_category: Zgjidhni kategorinë
     events:
       index:
         all_events: Të gjitha ngjarjet
@@ -66,18 +66,18 @@ sq:
         time: Koha
     gift_cards:
       index:
-        buy: Bli
+        buy: Blini
         header: Kartat e Dhuratave
       new:
         add_to_cart: Shto në shportë
         description: Blini një kartë dhurate për dikë të veçantë. Zgjidhni shumën më poshtë.
         header: Blej Kartë Dhurate
         value_label: Vlerë
-        value_placeholder: Jep shumën
+        value_placeholder: Jepni shumën
     layouts:
       application:
         alt:
-          footer_logo: Logoja e fundit të faqes
+          footer_logo: Logoja në fund të faqes
         booking_site_footer: Faqe rezervimesh për %{name}
         cart: Shportë (%{count})
         login: Hyrje
@@ -97,7 +97,7 @@ sq:
         coupon_code: Kodi i Zbritjes
         credit_card: Kartë Krediti
         discount: Zbritje
-        empty_cart: Shportë bosh
+        empty_cart: Zbraz shportën
         gift_card_code: Kodi i Kartës së Dhuratës
         gift_card_code_placeholder: XXXX-0000-XXXX
         header: Arka
@@ -112,7 +112,7 @@ sq:
         your_gift_cards: Kartat tuaja të dhuratave
       show:
         amount: Shuma
-        clear_cart: Shportë bosh
+        clear_cart: Zbraz shportën
         confirm_order: Konfirmo porosinë
         continue_shopping: Shtoni më shumë karta dhuratash
         empty_cart: Shporta juaj është bosh.
@@ -133,7 +133,7 @@ sq:
       front_go:
         awaiting_payment:
           body: Ju lutemi prisni ndërsa verifikojmë transaksionin.
-          error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin ndaj klientit me numrin e referencës %{order_id}.
+          error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin e klientit me numrin e referencës %{order_id}.
           title: Duke verifikuar pagesën tuaj
         payment:
           back: Mbrapa
@@ -156,11 +156,11 @@ sq:
           pay_now: Paguaj Tani
           payment_details_html: Pagesa përpunohet në mënyrë të sigurt duke përdorur %{provider}. Të gjitha shumat janë në %{currency}.
           save_card: Ruaje këtë kartë për pagesat e ardhshme
-          select_card: Zgjidh një kartë të ruajtur
+          select_card: Zgjidhni një kartë të ruajtur
       vipps:
         awaiting_payment:
           body: Ju lutemi prisni ndërsa verifikojmë transaksionin.
-          error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin ndaj klientit me numrin e referencës %{order_id}.
+          error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin e klientit me numrin e referencës %{order_id}.
           title: Duke verifikuar pagesën tuaj
         payment:
           back: Mbrapa
@@ -169,7 +169,7 @@ sq:
     orders:
       index:
         header: Porositë e mia
-        no_orders: Nuk ke ende asnjë porosi.
+        no_orders: Nuk keni ende asnjë porosi.
         order_number: 'Porosia #%{number}'
       payment:
         amount_to_pay: Shuma për t'u paguar
@@ -213,7 +213,7 @@ sq:
         title: Hyrje
     products:
       index:
-        buy: Bli
+        buy: Blini
         header: Produkte
       show:
         add_to_cart: Shto në shportë
@@ -236,7 +236,7 @@ sq:
         balance: Bilanci
         body: Kartat tuaja dhuratë
         code: Kodi
-        no_gift_cards: Nuk ke karta dhuratash.
+        no_gift_cards: Nuk keni karta dhuratë.
         purchased_body: Kartat dhuratë që keni blerë dhe që nuk janë shfrytëzuar ende.
         purchased_title: Kartat e Dhuratave të Blera
         title: Kartat e mia të dhuratave
@@ -245,14 +245,14 @@ sq:
           calendar: Kalendari
         awaiting_approval: Në pritje të miratimit
         cancel: Anulo
-        logout: Dil nga llogaria
+        logout: Dilni nga llogaria
         my_details: Detajet e mia
         my_orders: Porositë e mia
         tabs:
           all: Të gjitha
           cancelled: Anuluar
           completed: Përfunduar
-          upcoming: Së shpejti
+          upcoming: Të ardhshme
         title: Rezervimet e mia
       new:
         errors_header: 'Gabime të ndodhura:'
@@ -268,7 +268,7 @@ sq:
       index:
         all_categories: Të gjitha kategoritë
         all_services: Të gjitha shërbimet
-        buy: Bli
+        buy: Blini
         continue: Bëni një rezervim
       show:
         all_services: Të gjitha shërbimet

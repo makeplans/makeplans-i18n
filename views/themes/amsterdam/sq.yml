@@ -14,7 +14,7 @@ sq:
           sms: një SMS
       awaiting_payment:
         body: Ju lutemi prisni ndërsa verifikojmë transaksionin.
-        error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin ndaj klientit me numrin e referencës %{booking_id}.
+        error: Nuk mund ta verifikojmë pagesën tuaj. Ju lutemi të kontaktoni shërbimin e klientit me numrin e referencës %{booking_id}.
         title: Duke verifikuar pagesën tuaj
       awaiting_verification:
         verification_delivery_error: Nuk mundëm t'ju dërgojmë email. A jeni i sigurt që keni futur adresën e saktë të email-it?
@@ -33,18 +33,18 @@ sq:
       new:
         authentication:
           authenticating: Duke u vërtetuar...
-          logged_in_as: Je i kyçur si %{person}
-          logged_in_with_fb_html: I identifikuar në Facebook si <span data-name="">i panjohur</span> . Klikoni "Konfirmo rezervimin" për të verifikuar rezervimin tuaj.
+          logged_in_as: Jeni i kyçur si %{person}
+          logged_in_with_fb_html: I identifikuar në Facebook si <span data-name="">i panjohur</span>. Klikoni "Konfirmo rezervimin" për të verifikuar rezervimin tuaj.
           login_with_facebook_html: Si alternativë, mund të vendosni %{fb_link}.
           login_with_facebook_link: verifiko automatikisht me Facebook
-          not_current_person_html: Jo ti?
-          remember_me: A dëshironi që ne t'ju mbajmë mend në këtë makinë duke përdorur një cookie?
-        book_for_child: Të bëj një rezervim për dikë tjetër?
+          not_current_person_html: Jo ju?
+          remember_me: A dëshironi që ne t'ju mbajmë mend në këtë pajisje duke përdorur një cookie?
+        book_for_child: Dëshironi të bëni një rezervim për dikë tjetër?
         book_for_me: Rezervo për veten time në vend të kësaj
         contact_support_message: Profili juaj i klientit nuk ka informacion. Ju lutemi të kontaktoni mbështetjen.
-        enter_info: Fut informacionin
+        enter_info: Futni informacionin
         errors_header: Ju lutemi plotësoni fushat e kërkuara.
-        form_info_html: Kjo do të përdoret për të verifikuar rezervimin tuaj të <span data-attribute="title">%{service}</span> , %{booking}.
+        form_info_html: Kjo do të përdoret për të verifikuar rezervimin tuaj të <span data-attribute="title">%{service}</span>, %{booking}.
         mismatch_ignore: Si alternativë, klikoni këtu për të injoruar këtë paralajmërim
         mismatch_ignore_confirm: Profili juaj i klientit nuk do të përditësohet me këto vlera të reja. Për të ndryshuar profilin tuaj të klientit, ju lutemi kontaktoni mbështetjen. Dëshironi të vazhdoni rezervimin pa përditësuar profilin tuaj?
         mismatch_info_html: 'Vlerat e mëposhtme nuk përputhen me profilin e klientit tuaj: %{attributes}. A po rezervoni për dikë tjetër? Nëse po, ju lutemi <a href="%{login_path}">identifikohuni</a> më parë. Nëse dëshironi të modifikoni profilin tuaj të klientit, ju lutemi kontaktoni mbështetjen.'
@@ -65,22 +65,22 @@ sq:
             number: Numri i kartës nuk është i vlefshëm.
           expiration_html: Skadon <small>(MM/VV)</small>
           number: Numri i kartës
-        form_footer_html: Karta juaj e kreditit do të ngarkohet me <span class="payment-amount">%{amount}</span> .
+        form_footer_html: Karta juaj e kreditit do të ngarkohet me <span class="payment-amount">%{amount}</span>.
         form_header: Ky formular dërgohet i koduar.
         header: Pagesa
         info: Për të përfunduar rezervimin e %{service} duhet të paguani me kartën tuaj të kreditit.
       payment_invoice:
-        form_footer_html: Fatura do të ngarkohet me <span class="payment-amount">%{amount}</span> .
+        form_footer_html: Fatura do të ngarkohet me <span class="payment-amount">%{amount}</span>.
         form_header: Ne do të faturojmë bazuar në informacionin e mëposhtëm
         header: Pagesa me faturë
-        info: Për të përfunduar rezervimin e %{service} %{booking}, duhet të pranoni që të ju faturohet.
+        info: Për të përfunduar rezervimin e %{service} %{booking}, duhet të pranoni që t'ju faturohet.
         payment_details_html: Shuma e shfaqur është në %{currency}.
       pre_payment:
-        form_footer_html: 'Shuma për t''u paguar: <span class="payment-amount">%{amount}</span> .'
+        form_footer_html: 'Shuma për t''u paguar: <span class="payment-amount">%{amount}</span>.'
         providers:
           braintree: Kartë krediti/debiti
           fiken: Faturë
-          frontgo: Përpara Go
+          frontgo: Front Go
           stripe: Kartë krediti/debiti, Google Pay ose Apple Pay
           tfso: Faturë
           vipps: Vipps
@@ -95,12 +95,12 @@ sq:
           one: Rezervuar për %{count} person.
           other: Rezervuar për %{count} persona.
         cancel: Anulo rezervimin
-        cancel_confirmation: Je i sigurt që dëshiron ta anulosh këtë rezervim?
+        cancel_confirmation: Jeni i sigurt që dëshironi ta anuloni këtë rezervim?
         invoiced: Ju është faturuar.
         paid: Ju keni parapaguar %{paid_amount}.
         pay: Paguaj
         price: Çmimi i rezervimit është %{amount}.
-        remember_me: A dëshironi që ne t'ju mbajmë mend në këtë makinë duke përdorur një cookie?
+        remember_me: A dëshironi që ne t'ju mbajmë mend në këtë pajisje duke përdorur një cookie?
         reschedule: Ricaktoni një orar
         title: Rezervimi juaj është konfirmuar!
       verification_code:
@@ -118,11 +118,11 @@ sq:
       show:
         before_first_booking: Nuk është e mundur të regjistroheni për këtë ngjarje para %{first_booking_at}.
         book: Regjistrohuni për këtë ngjarje
-        full: Ky aktivitet është i plotë.
+        full: Kjo ngjarje është plot.
         past_last_booking: Nuk është më e mundur të regjistroheni për këtë ngjarje.
-        started: Ky aktivitet është përfunduar tashmë.
+        started: Kjo ngjarje ka përfunduar tashmë.
     generic:
-      dateselector: Zgjidh datën
+      dateselector: Zgjidhni datën
       earlier: më herët
       payment:
         add_card_details_html: Të dhënat e kartës suaj nuk do të ruhen tek ne, por do të dërgohen të koduara në %{provider} për transaksione dhe ruajtje të sigurt.
@@ -132,13 +132,13 @@ sq:
         add_card_submit: Ruaj kartën
         awaiting:
           body: Ju lutemi prisni ndërsa transaksioni konfirmohet.
-          error: Nuk mundëm të konfirmonim që pagesa ishte kryer. Ju lutemi të kontaktoni shërbimin ndaj klientit nëpërmjet https://makeplans.no dhe të na jepni numrin e referencës %{booking_id}.
-          title: Pagesë kontrolluese
-        form_footer_html: Karta juaj e kreditit do të ngarkohet me <span class="payment-amount">%{amount}</span> .
+          error: Nuk mundëm të konfirmonim që pagesa ishte kryer. Ju lutemi të kontaktoni shërbimin e klientit nëpërmjet https://makeplans.no dhe të na jepni numrin e referencës %{booking_id}.
+          title: Duke kontrolluar pagesën
+        form_footer_html: Karta juaj e kreditit do të ngarkohet me <span class="payment-amount">%{amount}</span>.
         form_header: Ky formular dërgohet i koduar.
         header: Pagesa
         info: Për të përfunduar rezervimin e %{service} %{booking} duhet të paguani me kartën tuaj të kreditit.
-        new_card: Fut kartën e re
+        new_card: Futni kartën e re
         payment_details_html: Shuma e shfaqur është në %{currency}. Ne nuk i ruajmë të dhënat e kartës suaj të kreditit, por i dërgojmë të koduara te %{provider} për përpunim dhe ruajtje të sigurt.
         payment_received: "%{paid_amount} u pagua më %{paid_at}."
         save_card: Ruaj kartën
@@ -166,8 +166,8 @@ sq:
         login: Rezervimet tuaja
         meta:
           description: Rezervimi dhe caktimi i takimeve online për %{name}
-          keywords: caktim takimi, rezervim, regjistrime në evente, planifikues, rezervim online, caktimi i takimeve në API, rezervim takimi
-        powered_by: Planifikimi deri më
+          keywords: caktim takimi, rezervim, regjistrime në evente, planifikues, makeplans, rezervim online, API për rezervime, rezervim takimi
+        powered_by: Planifikim nga
         powered_by_title: Sistemi i rezervimit të takimeve, aplikacioni i planifikimit dhe regjistrimet për ngjarje/klasa me API
         title: Rezervim online për %{name}
     people:
@@ -177,10 +177,10 @@ sq:
     person_sessions:
       enter_perishable_token:
         perishable_token: Kodi i verifikimit
-        remember_me: Më mbaj mend në këtë makinë.
+        remember_me: Më mbaj mend në këtë pajisje.
         submit: Kyçu
       not_found:
-        info_html: Nuk jeni regjistruar si klient. Përfundoni së pari <a href="/">një rezervim</a> .
+        info_html: Nuk jeni regjistruar si klient. Përfundoni së pari <a href="/">një rezervim</a>.
       perishable_token_action_required:
         info_html: Ju kemi dërguar një email. Ju lutemi klikoni në lidhje për t'u identifikuar.
         title: Verifikoni adresën tuaj të email-it
@@ -190,7 +190,7 @@ sq:
     profile:
       children:
         index:
-          header: Njerëz të tjerë për të cilët mund të krijoni një libër
+          header: Persona të tjerë për të cilët mund të rezervoni
       credit_card_list:
         add_card: Shto kartë të re
         body: Këto janë kartat e pagesës që keni ruajtur. Nëse dëshironi, mund të shtoni një kartë të re ose të fshini cilëndo nga ato ekzistuese.
@@ -198,10 +198,10 @@ sq:
         remove_card: Hiqe këtë kartë
         title: Metodat tuaja të ruajtura të pagesës
       index:
-        children: Njerëz të tjerë për të cilët mund të krijoni një libër.
+        children: Persona të tjerë për të cilët mund të rezervoni.
         feed: iCalendar-feed
         header: Rezervimet tuaja
-        logout: Dil nga llogaria
+        logout: Dilni nga llogaria
         my_details: Informacioni im i ruajtur
         new_booking: Rezervim i ri
         payment_methods: Metodat e ruajtura të pagesës
@@ -222,7 +222,7 @@ sq:
         try_another_template: Ju lutem provoni një shabllon tjetër.
       time_day_available:
         any_resource: I pari në dispozicion
-        dateselector: Zgjidh datën
+        dateselector: Zgjidhni datën
         earlier: Më herët
         free_capacity:
           one: "%{count} në dispozicion"
@@ -237,7 +237,7 @@ sq:
         no_selection: Ju lutem zgjidhni një orar të disponueshëm.
         select_time: "%{service} - zgjidhni kohën e disponueshme"
       weekday_available:
-        dateselector: Zgjidh datën
+        dateselector: Zgjidhni datën
         free_capacity:
           one: "%{count} në dispozicion"
           other: "%{count} në dispozicion"

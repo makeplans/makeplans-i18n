@@ -11,10 +11,10 @@ sq:
         title: Rezervimi skadoi
       new:
         accept: Unë pranoj termat dhe kushtet
-        email_suggestion_html: "<p>A doje të thoshe <span>%{suggestions}</span> ?</p>"
+        email_suggestion_html: "<p>A donit të thoni <span>%{suggestions}</span>?</p>"
         terms: Lexoni kushtet për rezervim
       payment_invoice:
-        form_footer_html: Fatura juaj do të jetë për <span class="payment-amount">%{amount}</span> .
+        form_footer_html: Fatura juaj do të jetë për <span class="payment-amount">%{amount}</span>.
         form_header: Informacion mbi faturën
         header: Pagesa me faturë
         info: Rezervimi juaj për %{service} %{booking} do të paguhet me faturë.
@@ -52,14 +52,14 @@ sq:
         add_card_submit: Ruaj kartën
         awaiting:
           body: Ju lutemi prisni ndërsa transaksioni konfirmohet.
-          error: Nuk mundëm të konfirmonim që pagesa ishte kryer. Ju lutemi të kontaktoni shërbimin ndaj klientit nëpërmjet https://makeplans.no dhe të na jepni numrin e referencës %{booking_id}.
-          title: Pagesë kontrolluese
+          error: Nuk mundëm të konfirmonim që pagesa ishte kryer. Ju lutemi të kontaktoni shërbimin e klientit nëpërmjet https://makeplans.no dhe të na jepni numrin e referencës %{booking_id}.
+          title: Duke kontrolluar pagesën
         card: Kartë
-        form_footer_html: Karta juaj e kreditit do të ngarkohet me <span class="payment-amount">%{amount}</span> .
+        form_footer_html: Karta juaj e kreditit do të ngarkohet me <span class="payment-amount">%{amount}</span>.
         form_header: Ky formular dërgohet i koduar.
         header: Pagesa
         info: Për të përfunduar rezervimin e %{service} %{booking} duhet të paguani me kartën tuaj të kreditit.
-        new_card: Fut kartën e re
+        new_card: Futni kartën e re
         payment_details_html: Shuma e shfaqur është në %{currency}. Ne nuk i ruajmë të dhënat e kartës suaj të kreditit, por i dërgojmë të koduara te %{provider} për përpunim dhe ruajtje të sigurt.
         payment_received: "%{paid_amount} u pagua më %{paid_at}."
         save_card: Ruaj kartën
@@ -93,7 +93,7 @@ sq:
     profile:
       children:
         index:
-          header: Njerëz të tjerë për të cilët mund të krijoni një libër
+          header: Persona të tjerë për të cilët mund të rezervoni
       credit_card_list:
         add_card: Shto kartë të re
         body: Këto janë kartat e pagesës që keni ruajtur. Nëse dëshironi, mund të shtoni një kartë të re ose të fshini cilëndo nga ato ekzistuese.
@@ -111,7 +111,7 @@ sq:
     providers:
       index:
         all_services: Të gjitha shërbimet
-        title: Zgjidh ofruesin
+        title: Zgjidhni ofruesin
     services:
       count:
         title: Sa njerëz?

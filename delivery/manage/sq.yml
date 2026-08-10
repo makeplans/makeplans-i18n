@@ -50,111 +50,157 @@ sq:
     activated:
       body: |-
         Përshëndetje,
-         Abonimi juaj në Makeplans është aktivizuar me sukses.
+
+        Abonimi juaj në Makeplans është aktivizuar me sukses.
         Ju lutemi shihni çmimet tona në https://makeplans.com/en/pricing/
         Për kushtet tona, ju lutemi shihni https://terms.makeplans.com
-         Llogaria juaj: %{subdomain}
-         Faleminderit që përdorni Makeplans :D
-         Nëse keni ndonjë pyetje, thjesht përgjigjuni këtij emaili.
+
+        Llogaria juaj: %{subdomain}
+
+        Faleminderit që përdorni Makeplans :D
+
+        Nëse keni ndonjë pyetje, thjesht përgjigjuni këtij emaili.
       subject: Llogaria juaj është aktivizuar
     api_enabled:
       body: |-
         Përshëndetje,
-         Duket sikur e keni aktivizuar API-në në llogarinë tuaj Makeplans %{subdomain}. Sa fantastike!
-         Nëse e dini çfarë po bëni, atëherë mund ta injoroni këtë email.
-         Por nëse jeni të ri në Makeplans API, ju lutemi shikoni dokumentacionin në https://developer.makeplans.com.
+
+        Duket sikur e keni aktivizuar API-në në llogarinë tuaj Makeplans %{subdomain}. Sa fantastike!
+
+        Nëse e dini çfarë po bëni, atëherë mund ta injoroni këtë email.
+
+        Por nëse jeni të ri në Makeplans API, ju lutemi shikoni dokumentacionin në https://developer.makeplans.com.
         Do të gjeni informacion në lidhje me autentifikimin, të gjitha pikat fundore, webhook-et, si dhe shembuj.
         Ndonjë pyetje? Thjesht na kontaktoni, me kënaqësi do t'ju ndihmojmë.
-         Nëse po eksperimentoni, mund të jetë një ide e mirë të krijoni një llogari zhvillimi API në mjedisin tonë të testimit. Ka disa kufizime atje, por në përgjithësi preferohet të zhvillohet në një mjedis dhe llogari të veçantë nga llogaria juaj aktuale.
+
+        Nëse po eksperimentoni, mund të jetë një ide e mirë të krijoni një llogari zhvillimi API në mjedisin tonë të testimit. Ka disa kufizime atje, por në përgjithësi preferohet të zhvillohet në një mjedis dhe llogari të veçantë nga llogaria juaj aktuale.
         Mund të gjeni një lidhje për mjedisin e testimit në dokumentacionin e API-t.
-         Kodim të këndshëm!
+
+        Kodim të këndshëm!
       subject: API i aktivizuar në llogarinë tuaj Makeplans
     charge_failed:
       body: |-
         Përshëndetje,
-         U përpoqëm të përpunonim pagesën tuaj duke përdorur Makeplans, por morëm gabimin e mëposhtëm: %{error}
-         Ju lutemi hyni në Makeplans për t'u siguruar që karta juaj është e vlefshme.
-         %{url}
-         Llogaria juaj do të çaktivizohet së shpejti nëse pagesa nuk është e suksesshme.
-         Faleminderit,
+
+        U përpoqëm të përpunonim pagesën tuaj duke përdorur Makeplans, por morëm gabimin e mëposhtëm: %{error}
+
+        Ju lutemi hyni në Makeplans për t'u siguruar që karta juaj është e vlefshme.
+
+        %{url}
+
+        Llogaria juaj do të çaktivizohet së shpejti nëse pagesa nuk është e suksesshme.
+
+        Faleminderit,
         Makeplans
       subject: 'VEPRIM I KËRKUAR: Problem me përpunimin e pagesës suaj'
     charge_give_up:
       body: |-
         Përshëndetje,
-         KUJDES: Llogaria juaj tani është çaktivizuar.
-         Ne u përpoqëm të përpunonim pagesën tuaj për përdorimin e Makeplans, por morëm gabimin e mëposhtëm: %{error}
-         Ju lutemi hyni në Makeplans tuaj për t'u siguruar që karta juaj është e vlefshme për të riaktivizuar llogarinë tuaj:
-         %{url}
-         Faleminderit,
+
+        KUJDES: Llogaria juaj tani është çaktivizuar.
+
+        Ne u përpoqëm të përpunonim pagesën tuaj për përdorimin e Makeplans, por morëm gabimin e mëposhtëm: %{error}
+
+        Ju lutemi hyni në llogarinë tuaj të Makeplans për t'u siguruar që karta juaj është e vlefshme për të riaktivizuar llogarinë tuaj:
+
+        %{url}
+
+        Faleminderit,
         Makeplans
       subject: 'VEPRIM I KËRKUAR: Llogaria u çaktivizua'
     charge_requires_action:
       body: |-
         Përshëndetje,
-         U përpoqëm të përpunonim kartën tuaj të kreditit për përdorimin e Makeplans, por na duhet autorizimi juaj për të përfunduar pagesën. Kjo për shkak të kërkesave nga banka juaj.
-         Llogaria juaj e Makeplans do të çaktivizohet së shpejti nëse pagesa nuk konfirmohet.
-         %{url}
-         Faleminderit,
+
+        U përpoqëm të përpunonim kartën tuaj të kreditit për përdorimin e Makeplans, por na duhet autorizimi juaj për të përfunduar pagesën. Kjo për shkak të kërkesave nga banka juaj.
+
+        Llogaria juaj e Makeplans do të çaktivizohet së shpejti nëse pagesa nuk konfirmohet.
+
+        %{url}
+
+        Faleminderit,
         Makeplans
-      subject: 'VEPRIMI I KËRKUAR: Ju lutemi konfirmoni pagesën'
+      subject: 'VEPRIM I KËRKUAR: Ju lutemi konfirmoni pagesën'
     charge_succeded:
       body: |-
         Ne kemi ngarkuar kartën tuaj të kreditit për përdorimin e Makeplans. Ju lutemi shihni faturën e bashkangjitur për pagesën e faturës #%{invoice_nr}.
-         Ju lutemi vini re se kjo faturë është paguar tashmë. Nuk nevojiten veprime të mëtejshme.
-         Llogaria juaj: %{subdomain}
-         Faleminderit që përdorët Makeplans.
+
+        Ju lutemi vini re se kjo faturë është paguar tashmë. Nuk nevojiten veprime të mëtejshme.
+
+        Llogaria juaj: %{subdomain}
+
+        Faleminderit që përdorët Makeplans.
       filename: 'Fatura #%{invoice_nr} e Makeplans AS %{invoice_date}'
       subject: Fatura juaj për përdorimin e Makeplans
     deactivated:
       body: |-
         Përshëndetje,
-         Unë jam Espen, themeluesi i Makeplans. Më vjen keq që e keni çaktivizuar llogarinë tuaj në Makeplans.
-         A mungonin ndonjë veçori ose pse zgjodhët të mos përdorni më Makeplans? Nëse keni ndonjë reagim për ne, do t'ju dëgjoja me kënaqësi në mënyrë që të përmirësojmë produktin tonë. Apo e gjetët Makeplans paksa konfuz për t'u konfiguruar ose përdorur? Mund t'ju ndihmoj të konfiguroni llogarinë tuaj. Përveç kësaj, mund t'ju jap dy muaj përdorim falas nëse jeni të gatshëm ta provoni përsëri Makeplans.
-         Thjesht përgjigjuni këtij emaili dhe unë mund t'ju kontaktoj.
-         Llogaria juaj e çaktivizuar: %{subdomain}.
-         Sidoqoftë; kalofshi një ditë të mbarë dhe faleminderit që provuat Makeplans.
+
+        Unë jam Espen, themeluesi i Makeplans. Më vjen keq që e keni çaktivizuar llogarinë tuaj në Makeplans.
+
+        A mungonte ndonjë veçori ose pse zgjodhët të mos përdorni më Makeplans? Nëse keni ndonjë reagim për ne, do t'ju dëgjoja me kënaqësi në mënyrë që të përmirësojmë produktin tonë. Apo e gjetët Makeplans paksa konfuz për t'u konfiguruar ose përdorur? Mund t'ju ndihmoj të konfiguroni llogarinë tuaj. Përveç kësaj, mund t'ju jap dy muaj përdorim falas nëse jeni të gatshëm ta provoni përsëri Makeplans.
+
+        Thjesht përgjigjuni këtij emaili dhe unë mund t'ju kontaktoj.
+
+        Llogaria juaj e çaktivizuar: %{subdomain}.
+
+        Sidoqoftë; kalofshi një ditë të mbarë dhe faleminderit që provuat Makeplans.
       subject: 'KRITIK: Llogaria Makeplans u çaktivizua'
     inactive_warning:
       body: |-
         Përshëndetje,
-         Meqenëse periudha juaj e provës ka skaduar dhe nuk ka pasur aktivitet në llogarinë tuaj që nga %{latest_booking_change_at}, ne do ta çaktivizojmë llogarinë tuaj brenda 30 ditësh.
-         Për ta mbajtur llogarinë tuaj, ju lutemi hyni në %{url}.
-         Nëse nuk ndërmerret asnjë veprim, ne do ta çaktivizojmë llogarinë tuaj brenda një muaji. Pastaj llogaria juaj dhe të gjitha të dhënat tuaja do të fshihen brenda katër muajsh.
-         Faleminderit që provuat Makeplans :)
+
+        Meqenëse periudha juaj e provës ka skaduar dhe nuk ka pasur aktivitet në llogarinë tuaj që nga %{latest_booking_change_at}, ne do ta çaktivizojmë llogarinë tuaj brenda 30 ditësh.
+
+        Për ta mbajtur llogarinë tuaj, ju lutemi hyni në %{url}.
+
+        Nëse nuk ndërmerret asnjë veprim, ne do ta çaktivizojmë llogarinë tuaj brenda një muaji. Pastaj llogaria juaj dhe të gjitha të dhënat tuaja do të fshihen brenda katër muajsh.
+
+        Faleminderit që provuat Makeplans :)
       subject: 'KRITIK: Llogaria e Makeplans do të çaktivizohet'
     no_bookings:
       body: |-
         Përshëndetje,
-         Javën e kaluar u regjistrove në Makeplans. Është një shërbim për rezervimin e takimeve online.
-         Vura re se nuk ka ende rezervime në llogarinë tënde. Pse të mos shtosh një rezervim provë në sistemin e administrimit për të parë nëse Makeplans funksionon për ty?
-        Për të shtuar një rezervim, thjesht shko te %{url}.
-          Nëse nuk je i sigurt se si ta konfigurosh llogarinë tënde ose ke ndonjë pyetje se si funksionon procesi i rezervimit, thjesht përgjigju këtij emaili dhe ne mund të të ndihmojmë :)
+
+        Javën e kaluar u regjistruat në Makeplans. Është një shërbim për rezervimin e takimeve online.
+
+        Vura re se nuk ka ende rezervime në llogarinë tuaj. Pse të mos shtoni një rezervim provë në sistemin e administrimit për të parë nëse Makeplans funksionon për ju?
+        Për të shtuar një rezervim, thjesht shkoni te %{url}.
+
+
+        Nëse nuk jeni i sigurt se si ta konfiguroni llogarinë tuaj ose keni ndonjë pyetje se si funksionon procesi i rezervimit, thjesht përgjigjuni këtij emaili dhe ne mund t'ju ndihmojmë :)
       subject: Nuk ka ende rezervime
     not_setup:
       body: |-
         Përshëndetje,
-         Dje u regjistrove në Makeplans. Është një shërbim për rezervimin e takimeve online.
-         Vura re se nuk e përfundove konfigurimin e llogarisë tënde. Ndoshta nuk kishe kohë për këtë, nëse po, pse të mos e përfundosh tani?
-        Thjesht shko te %{url} për të përfunduar konfigurimin - duhen vetëm 45 sekonda.
-         Apo ke ndonjë pyetje në lidhje me përdorimin e Makeplans ose si ta konfigurosh më mirë llogarinë tënde? Thjesht përgjigju këtij emaili dhe ne mund të të ndihmojmë :)
+
+        Dje u regjistruat në Makeplans. Është një shërbim për rezervimin e takimeve online.
+
+        Vura re se nuk e përfunduat konfigurimin e llogarisë suaj. Ndoshta nuk kishit kohë për këtë, nëse po, pse të mos e përfundoni tani?
+        Thjesht shkoni te %{url} për të përfunduar konfigurimin - duhen vetëm 45 sekonda.
+
+        Apo keni ndonjë pyetje në lidhje me përdorimin e Makeplans ose si ta konfiguroni më mirë llogarinë tuaj? Thjesht përgjigjuni këtij emaili dhe ne mund t'ju ndihmojmë :)
       subject: Përfundoni konfigurimin tuaj të Makeplans
     paused:
       body: |-
         Përshëndetje,
-         Abonimi juaj në Makeplans do të ndërpritet në fund të kësaj periudhe faturimi (%{demo_ends_at}).
-        Kini parasysh se do t'ju ngarkohen çdo tarifë transaksionale, siç është SMS, për sa kohë që llogaria juaj është aktive.
-         Kur abonimi juaj ndërpritet, mund ta riaktivizoni lehtësisht llogarinë tuaj në të ardhmen.
-         Llogaria juaj: %{subdomain}
-         Nëse keni probleme me funksionimin e Makeplans për rastin tuaj të përdoruesit, ju lutemi përgjigjuni këtij emaili në mënyrë që t'ju ndihmojmë të konfiguroni llogarinë tuaj dhe t'ju shpjegojmë se si mund ta përdorni më së miri Makeplans bazuar në kërkesat tuaja.
+
+        Abonimi juaj në Makeplans do të ndërpritet në fund të kësaj periudhe faturimi (%{demo_ends_at}).
+        Kini parasysh se do t'ju ngarkohet çdo tarifë transaksionale, siç është SMS, për sa kohë që llogaria juaj është aktive.
+
+        Kur abonimi juaj ndërpritet, mund ta riaktivizoni lehtësisht llogarinë tuaj në të ardhmen.
+
+        Llogaria juaj: %{subdomain}
+
+        Nëse keni probleme me funksionimin e Makeplans për rastin tuaj të përdoruesit, ju lutemi përgjigjuni këtij emaili në mënyrë që t'ju ndihmojmë të konfiguroni llogarinë tuaj dhe t'ju shpjegojmë se si mund ta përdorni më së miri Makeplans bazuar në kërkesat tuaja.
       subject: Llogaria juaj do të ndalet
     setup_completed:
       contact_us_html: Dhe nëse keni ndonjë pyetje, thjesht na dërgoni një email në %{mail}.
-      footer: Bëni plane
+      footer: Makeplans
       header: Klientët tuaj tani mund të rezervojnë online!
       info: Tani e keni konfiguruar llogarinë tuaj Makeplans dhe jeni gati të pranoni rezervime online nga klientët tuaj.
       next_steps: 'Hapat e mëtejshëm:'
-      step_1: Përfundoni një rezervim prove për të verifikuar që të gjitha mesazhet me tekst dhe ato dalëse janë të sakta.
+      step_1: Përfundoni një rezervim prove për të verifikuar që të gjitha tekstet dhe mesazhet dalëse janë të sakta.
       step_2: Kur të jeni gati, vendosni një lidhje në faqen tuaj të internetit për në faqen e rezervimit.
       step_3: Gjithashtu, njoftoni klientët e tjerë se tani mund të rezervojnë online.
       subject: Klientët tuaj tani mund të rezervojnë online me Makeplans
@@ -174,57 +220,81 @@ sq:
     sms_credits_balance_reached:
       body: |-
         Përshëndetje,
-         Llogaria juaj Makeplans ka një limit për dërgimin e %{sms_balance_limit} SMS. Tani e keni kaluar atë limit.
-         SMS nuk dërgohen më nga llogaria juaj.
-         Bleni kredite SMS:
+
+        Llogaria juaj Makeplans ka një limit për dërgimin e %{sms_balance_limit} SMS. Tani e keni kaluar atë limit.
+
+        SMS nuk dërgohen më nga llogaria juaj.
+
+        Bleni kredite SMS:
         %{url}
-         Si alternativë, mund të hyni në llogarinë tuaj dhe të ndryshoni metodën e verifikimit nga SMS në email dhe të çaktivizoni përkujtuesit me SMS.
+
+        Si alternativë, mund të hyni në llogarinë tuaj dhe të ndryshoni metodën e verifikimit nga SMS në email dhe të çaktivizoni përkujtuesit me SMS.
       subject: 'VEPRIM I KËRKUAR: I keni përdorur të gjitha kreditë tuaja të SMS-ve'
     sms_credits_balance_warning:
       body: |-
         Përshëndetje,
-         Llogaria juaj e Makeplans ka një limit për dërgimin e %{sms_balance_limit} SMS. Aktualisht keni dërguar %{sms_balance}.
-         Kur të arrini %{sms_balance_limit} mesazhe, llogaria juaj nuk do të dërgojë më SMS nëse nuk blini më shumë kredite SMS.
-         Blini kredite SMS:
+
+        Llogaria juaj e Makeplans ka një limit për dërgimin e %{sms_balance_limit} SMS. Aktualisht keni dërguar %{sms_balance}.
+
+        Kur të arrini %{sms_balance_limit} mesazhe, llogaria juaj nuk do të dërgojë më SMS nëse nuk blini më shumë kredite SMS.
+
+        Blini kredite SMS:
         %{url}
-         Si alternativë, mund të hyni në llogarinë tuaj dhe të ndryshoni metodën e verifikimit nga SMS në email dhe të çaktivizoni përkujtuesit me SMS.
+
+        Si alternativë, mund të hyni në llogarinë tuaj dhe të ndryshoni metodën e verifikimit nga SMS në email dhe të çaktivizoni përkujtuesit me SMS.
       subject: Kreditet e SMS-ve po mbarojnë
     trial_expire_warning:
       body: |-
         Përshëndetje,
-         Vetëm po ju njoftojmë se periudha juaj e provës së Makeplans do të skadojë pas 3 ditësh.
-         Që klientët tuaj të mund të rezervojnë online pa ndërprerje, ju lutemi aktivizoni llogarinë tuaj tani.
-         Aktivizoni llogarinë:
+
+        Vetëm po ju njoftojmë se periudha juaj e provës së Makeplans do të skadojë pas 3 ditësh.
+
+        Që klientët tuaj të mund të rezervojnë online pa ndërprerje, ju lutemi aktivizoni llogarinë tuaj tani.
+
+        Aktivizoni llogarinë:
         %{url}
-         Nuk keni pasur ende mundësinë ta testoni siç duhet? Përgjigjuni këtij emaili dhe ne mund ta zgjasim periudhën tuaj të provës.
+
+        Nuk keni pasur ende mundësinë ta testoni siç duhet? Përgjigjuni këtij emaili dhe ne mund ta zgjasim periudhën tuaj të provës.
       subject: Prova është gati të përfundojë - ju lutemi aktivizoni llogarinë
     trial_expired:
       body: |-
         Përshëndetje,
-         Periudha juaj e provës së Makeplans ka mbaruar.
-         Tani nuk është më e mundur që klientët tuaj të bëjnë një rezervim. Duhet të aktivizoni llogarinë tuaj për të aktivizuar faqen tuaj të rezervimeve.
-         Aktivizoni llogarinë:
+
+        Periudha juaj e provës së Makeplans ka mbaruar.
+
+        Tani nuk është më e mundur që klientët tuaj të bëjnë një rezervim. Duhet të aktivizoni llogarinë tuaj për të aktivizuar faqen tuaj të rezervimeve.
+
+        Aktivizoni llogarinë:
         %{url}
-         Nuk keni pasur ende mundësinë ta testoni siç duhet? Përgjigjuni këtij emaili dhe ne mund ta zgjasim provën tuaj.
+
+        Nuk keni pasur ende mundësinë ta testoni siç duhet? Përgjigjuni këtij emaili dhe ne mund ta zgjasim provën tuaj.
       subject: Llogaria juaj provë e Makeplans ka mbaruar
     trial_sms_credits_balance_reached:
       body: |-
         Përshëndetje,
-         Periudha juaj provuese e Makeplans ka një limit për dërgimin e %{sms_balance_limit} SMS. Tani e keni kaluar atë limit.
-         Për të vazhduar përdorimin e Makeplans, ju lutemi aktivizoni llogarinë tuaj.
-         Aktivizoni llogarinë:
+
+        Periudha juaj provuese e Makeplans ka një limit për dërgimin e %{sms_balance_limit} SMS. Tani e keni kaluar atë limit.
+
+        Për të vazhduar përdorimin e Makeplans, ju lutemi aktivizoni llogarinë tuaj.
+
+        Aktivizoni llogarinë:
         %{url}
-         Si alternativë, mund të hyni në llogarinë tuaj dhe të ndryshoni metodën e verifikimit nga SMS në email dhe të çaktivizoni përkujtuesit me SMS.
+
+        Si alternativë, mund të hyni në llogarinë tuaj dhe të ndryshoni metodën e verifikimit nga SMS në email dhe të çaktivizoni përkujtuesit me SMS.
       subject: 'VEPRIM I KËRKUAR: I keni përdorur të gjitha kreditë tuaja të SMS-ve'
     trial_sms_credits_balance_warning:
       body: |-
         Përshëndetje,
-         Periudha juaj provuese e Makeplans ka një limit për dërgimin e %{sms_balance_limit} SMS. Aktualisht keni dërguar %{sms_balance}.
-         Nëse doni të siguroheni që SMS-të dërgohen, ju lutemi aktivizoni llogarinë tuaj.
-        Kur të arrini mesazhe %{sms_balance_limit}, llogaria juaj nuk do të dërgojë më SMS nëse nuk e aktivizoni llogarinë tuaj.
-         Aktivizoni llogarinë:
+
+        Periudha juaj provuese e Makeplans ka një limit për dërgimin e %{sms_balance_limit} SMS. Aktualisht keni dërguar %{sms_balance}.
+
+        Nëse doni të siguroheni që SMS-të dërgohen, ju lutemi aktivizoni llogarinë tuaj.
+        Kur të arrini %{sms_balance_limit} mesazhe, llogaria juaj nuk do të dërgojë më SMS nëse nuk e aktivizoni llogarinë tuaj.
+
+        Aktivizoni llogarinë:
         %{url}
-         Si alternativë, mund të hyni në llogarinë tuaj dhe të ndryshoni metodën e verifikimit nga SMS në email dhe të çaktivizoni përkujtuesit me SMS.
+
+        Si alternativë, mund të hyni në llogarinë tuaj dhe të ndryshoni metodën e verifikimit nga SMS në email dhe të çaktivizoni përkujtuesit me SMS.
       subject: Kreditet e SMS-ve po mbarojnë
   layouts:
     booking_user_mailer:
@@ -233,33 +303,41 @@ sq:
     add_user:
       body: |-
         Përshëndetje,
-         Mirë se vini në Makeplans.
-         Klikoni lidhjen më poshtë për të përcaktuar një fjalëkalim.
-         %{link}
+
+        Mirë se vini në Makeplans.
+
+        Klikoni lidhjen më poshtë për të përcaktuar një fjalëkalim.
+
+        %{link}
       subject: Shtuar si përdorues në Makeplans
     email_modified:
-      footer: Bëni plane
+      footer: Makeplans
       info: Adresa juaj e email-it është ndryshuar në %{new_email}. Na kontaktoni menjëherë nëse nuk e keni kryer ju këtë veprim.
       subject: Adresa e email-it u modifikua
     export:
       body: |-
         Përshëndetje,
-         Shih skedarin e bashkangjitur për të dhënat e eksportuara nga Makeplans.
-         Faleminderit që përdorni Makeplans
-      subject: Eksporto nga Makeplans
+
+        Shihni skedarin e bashkangjitur për të dhënat e eksportuara nga Makeplans.
+
+        Faleminderit që përdorni Makeplans
+      subject: Eksport nga Makeplans
     link_user:
       body: |-
         Përshëndetje,
-         Tani keni qasje në llogarinë %{client} në Makeplans.
-         Vizitoni %{link} për t'u identifikuar.
-         Makeplans
+
+        Tani keni qasje në llogarinë %{client} në Makeplans.
+
+        Vizitoni %{link} për t'u identifikuar.
+
+        Makeplans
       subject: Qasja në llogari në Makeplans
     password_modified:
-      footer: Bëni plane
+      footer: Makeplans
       info: Fjalëkalimi juaj është modifikuar. Na kontaktoni menjëherë nëse nuk e keni kryer ju këtë veprim.
       subject: Fjalëkalimi u modifikua
     password_reset:
-      footer: Bëni plane
+      footer: Makeplans
       info: Ju ose dikush tjetër keni kërkuar që fjalëkalimi juaj i Makeplans të rivendoset. Për të përfunduar rivendosjen e fjalëkalimit, ju lutemi klikoni lidhjen më poshtë.
-      link: Rivendos fjalëkalimin tim të Makeplans.
-      subject: Rivendos fjalëkalimin
+      link: Rivendosni fjalëkalimin tim të Makeplans.
+      subject: Rivendosni fjalëkalimin

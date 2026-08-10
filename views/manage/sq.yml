@@ -3,12 +3,12 @@ sq:
   layouts:
     design:
       activate_account_footer: "%{days_left} ditë të mbetura nga periudha e provës. Klikoni për ta aktivizuar."
-      trial_expired: Gjyqi juaj ka mbaruar.
+      trial_expired: Periudha juaj e provës ka mbaruar.
   manage:
     agenda:
       calendar:
         availability: Rregullo disponueshmërinë për këtë periudhë
-        ignore_capacity_confirm: Brenda këtij afati kohor ka tashmë një rezervim tjetër. Je i sigurt që dëshiron ta ruash?
+        ignore_capacity_confirm: Brenda këtij afati kohor ka tashmë një rezervim tjetër. Jeni i sigurt që dëshironi ta ruani?
         listWeek: listë
         opening_hours:
           add: "+ shto"
@@ -16,22 +16,22 @@ sq:
           closed_all_week: Mbyllur gjatë gjithë periudhës
           dates: Datat
           from: Nga
-          open: Hap
+          open: Hapur
           remove_existing: heq
           reset: Rivendos
           title: Rregullo disponueshmërinë
-          to: Për
+          to: Deri
         resourceTimeGridDay: ditë (e ndarë)
-        resourceTimelineDay: afati kohor
+        resourceTimelineDay: vija kohore
         resources: Burimet
         services: Shërbimet
       list:
         all_day: Gjithë ditën
         awaiting_confirmation:
-          one: Rezervim %{count} për miratim.
+          one: "%{count} rezervim për miratim."
           other: "%{count} rezervime për miratim."
         awaiting_status:
-          one: Statusi i mungesës së rezervimit %{count}.
+          one: "%{count} rezervim pa status."
           other: "%{count} rezervime nuk kanë status."
         busy: I zënë
         do_filtering: Aktivizo filtrin
@@ -83,14 +83,14 @@ sq:
         invoice_history: Shih faturat e kaluara
         paid_until: Llogaria juaj është paguar deri më %{paid_until}.
         pause: Ndërprit llogarinë kur të mbarojë abonimi aktual.
-        pause_confirm: Je i sigurt që dëshiron ta vësh llogarinë në pritje? Llogaria do të çaktivizohet automatikisht më %{paid_until}.
+        pause_confirm: Jeni i sigurt që dëshironi ta vini llogarinë në pritje? Llogaria do të çaktivizohet automatikisht më %{paid_until}.
         reactivate: Llogaria juaj është aktualisht në modalitetin e provës. Duhet ta riaktivizoni llogarinë tuaj për të vazhduar të përdorni Makeplans.
-        reactivate_confirm: Je i sigurt që dëshiron ta riaktivizosh llogarinë që e ke lënë në pritje? Llogaria do të ngarkohet më pas me %{paid_until}.
+        reactivate_confirm: Jeni i sigurt që dëshironi ta riaktivizoni llogarinë që e keni lënë në pritje? Llogaria do të tarifohet herën tjetër më %{paid_until}.
         reactivate_link: Riaktivizo llogarinë
         reseller_billing_info: Faturimi për llogarinë tuaj menaxhohet nga rishitësi juaj.
-        sms_credits_available: Ke një bilanc prej %{credits} SMS.
+        sms_credits_available: Keni një bilanc prej %{credits} SMS.
         vat_no: Numri i regjistruar i TVSH-së është %{vat_no}
-        vat_no_missing: Numri i TVSH-së i futur.
+        vat_no_missing: Nuk është futur numri i TVSH-së.
       paying_account_required:
         activate_account: Aktivizo llogarinë tani
         info: Kjo veçori kërkon që llogaria juaj të jetë e aktivizuar.
@@ -103,7 +103,7 @@ sq:
         headline: Të gjitha rezervimet e ardhshme brenda këtij modeli përsëritës u hoqën
         list_recurring: Shihni listën e rezervimeve brenda këtij modeli përsëritës.
       create_recurring:
-        headline: Duke gjeneruar rezervime %{count}...
+        headline: Duke gjeneruar %{count} rezervime...
         link: Shfaq listën
       destroy_recurring:
         headline: Të gjitha rezervimet brenda këtij modeli përsëritës u hoqën.
@@ -134,18 +134,18 @@ sq:
         headline_edit: Modifiko rezervimin
         headline_new: Shto rezervim të ri
         headline_update: Modifiko rezervimin
-        ignore_capacity: Kurseni edhe nëse është i zënë
-        modification_send_email: Dërgo modifikimin e email-it
-        modification_send_sms: Dërgimi i modifikimit të SMS-së
+        ignore_capacity: Ruaje edhe nëse është i zënë
+        modification_send_email: Dërgo modifikim me email
+        modification_send_sms: Dërgo modifikim me SMS
         no_customer: |-
           Nuk është specifikuar klient!
-           E keni vendosur këtë rezervim si rezervim klienti, por nuk keni specifikuar një klient.
-           Në rregull: Vazhdo dhe caktoje këtë rezervim si rezervim të menjëhershëm.
+          E keni vendosur këtë rezervim si rezervim klienti, por nuk keni specifikuar një klient.
+          Në rregull: Vazhdo dhe caktoje këtë rezervim si rezervim pa takim paraprak (drop-in).
           Anulo: Kthehu prapa dhe specifiko klientin.
         no_service: Nuk është zgjedhur asnjë shërbim
         notification_send_email: Dërgo njoftim me email
         notification_send_sms: Dërgo njoftim me SMS
-        person_create_info: Kërko për klient ekzistues ose krijo një të ri duke futur emrin.
+        person_create_info: Kërkoni për klient ekzistues ose krijoni një të ri duke futur emrin.
         person_none_selected: Nuk është zgjedhur asnjë klient
         recurring_enabled: Përsëriteni me një model
         recurring_member: Ky rezervim është pjesë e një modeli të përsëritur.
@@ -162,15 +162,15 @@ sq:
         confirmation_send_email: Dërgo konfirmim me email
         confirmation_send_sms: Dërgo konfirmim me SMS
         email: Email
-        headline_create: Shto ndihmës
+        headline_create: Shto pjesëmarrës
         headline_edit: Modifiko rezervimin
-        headline_new: Shto ndihmës
+        headline_new: Shto pjesëmarrës
         headline_update: Modifiko rezervimin
-        modification_send_email: Dërgo modifikimin e email-it
-        modification_send_sms: Dërgimi i modifikimit të SMS-së
+        modification_send_email: Dërgo modifikim me email
+        modification_send_sms: Dërgo modifikim me SMS
         notification_send_email: Dërgo njoftim me email
         notification_send_sms: Dërgo njoftim me SMS
-        person_create_info: Kërko për klient ekzistues ose krijo një të ri duke futur emrin.
+        person_create_info: Kërkoni për klient ekzistues ose krijoni një të ri duke futur emrin.
         person_none_selected: Nuk është zgjedhur asnjë klient
         send_confirmation: 'Konfirmim:'
         send_modification: 'Modifikim:'
@@ -190,12 +190,12 @@ sq:
             customer: nga klienti
             gui: në GUI
         booked_from: Nga
-        booked_to: Për
+        booked_to: Deri
         count: Numri i njerëzve
         created_by: Krijuar nga %{user}
         fiken:
           create_invoice: Krijo faturë në Fiken
-          created: Fatura krijohet në Fiken
+          created: Fatura u krijua në Fiken
           open_invoice: Hap faturën në Fiken
           processing: Fatura po krijohet në Fiken. Kjo mund të zgjasë disa minuta.
         log: Regjistri
@@ -203,9 +203,9 @@ sq:
           enqueued: në radhë
           failed: dështoi
           sent: dërguar
-          state: shtet
+          state: gjendja
         messages: Mesazhe
-        order: Porosit
+        order: Porosia
         paid_with:
           braintree: Paguar me Braintree
           frontgo: Paguar me FrontGO
@@ -219,8 +219,8 @@ sq:
         recurring_member: Ky rezervim është pjesë e një modeli të përsëritur.
         refund: Rimbursoni shumën e paguar
         refunded_with:
-          frontgo: Rimbursimi me FrontGO
-          stripe: Rimbursohet me Stripe
+          frontgo: Rimbursuar me FrontGO
+          stripe: Rimbursuar me Stripe
           vipps: Rimbursuar me Vipps
         request_card:
           processing: Lidhja e pagesës po i dërgohet klientit
@@ -243,7 +243,7 @@ sq:
           send_request: Dërgo kërkesë për pagesë Vipps
         visma_eaccounting:
           create_invoice: Krijo porosi në Visma eAccounting
-          created: Fatura krijohet në Visma eAccounting
+          created: Fatura u krijua në Visma eAccounting
           processing: Porosia po krijohet në Visma eAccounting. Kjo mund të zgjasë disa minuta.
         whereby:
           start_meeting: Filloni takimin Whereby
@@ -254,7 +254,7 @@ sq:
         delete_all: Fshi të gjitha
         headline: Të gjitha rezervimet përsëritëse brenda këtij modeli
       state_changer:
-        state: Shteti
+        state: Gjendja
       status_changer:
         cancel: Anulo rezervimin
         status: Cakto statusin
@@ -263,7 +263,7 @@ sq:
         no_reservations: Nuk ka rezervime që kërkojnë miratim
       widget:
         booked_from: Nga
-        booked_to: Për
+        booked_to: Deri
         description: Përshkrimi
         person:
           address: Adresa
@@ -272,7 +272,7 @@ sq:
       widget_list:
         busy: I zënë
         no_bookings: Nuk ka rezervime ekzistuese në %{start}.
-        no_bookings_range: Nuk ka rezervime ekzistuese nga %{start} në %{end}.
+        no_bookings_range: Nuk ka rezervime ekzistuese nga %{start} deri në %{end}.
     categories:
       blank:
         get_started: Aktualisht nuk keni krijuar asnjë kategori. Prandaj, të gjitha shërbimet janë në një listë në faqen e rezervimeve. Nëse doni të kategorizoni shërbimet tuaja, filloni duke krijuar një kategori.
@@ -294,17 +294,17 @@ sq:
           standalone: Kategori e pavarur
       index:
         header: Kategoritë
-        order_button: Porosit
-        order_subcategories: Nënkategoritë e porosisë
+        order_button: Rendit
+        order_subcategories: Rendit nënkategoritë
       list_menu:
         list: Kategoritë
       priority:
         description: Zvarrit dhe lësho shërbimet për të vendosur rendin e shfaqjes së tyre në faqen e rezervimit. Shërbimet pa një vlerë renditjeje do të shfaqen të fundit, të renditura sipas alfabetit.
-        header: Porositja e shërbimit për %{title}
+        header: Renditja e shërbimeve për %{title}
       show:
         custom_data: 'Të dhëna të personalizuara:'
         has_services: 'Tregon këto shërbime:'
-        priority_button: Porosit
+        priority_button: Rendit
         qr_code: Kodi QR për klientët
         show_on_booking_site: Shërbim i hapur në faqen e rezervimit
     client:
@@ -316,8 +316,8 @@ sq:
         header: Shtesa
         info: Ne ofrojmë shtesa të ndryshme me pagesë që mund t'i aktivizoni. Ju lutemi na kontaktoni nëse keni ndonjë pyetje.
       api:
-        disable: Dëshiron ta çaktivizosh API-n?
-        disable_warning: Je i sigurt që dëshiron ta çaktivizosh API-n? Çelësi i API-t do të bëhet i pavlefshëm dhe API-ja do të jetë e padisponueshme.
+        disable: Dëshironi ta çaktivizoni API-n?
+        disable_warning: Jeni i sigurt që dëshironi ta çaktivizoni API-n? Çelësi i API-t do të bëhet i pavlefshëm dhe API-ja do të jetë e padisponueshme.
         enable: Dëshironi ta aktivizoni API-n?
         enable_warning: A jeni i sigurt që doni të aktivizoni API-në? Çelësi API jep akses të plotë programatik në llogarinë tuaj.
         enabled: API-ja është aktivizuar.
@@ -327,9 +327,9 @@ sq:
       cancel:
         confirm_message: Mundësia e fundit. A jeni plotësisht i sigurt se doni të fshini llogarinë tuaj me të gjitha të dhënat tuaja?
         disable_link: Po, ju lutem fshini të gjitha të dhënat e mia.
-        header: Je i sigurt që dëshiron ta fshish llogarinë tënde?
+        header: Jeni i sigurt që dëshironi ta fshini llogarinë tuaj?
         i_love_makeplans: Jo, dua të vazhdoj të përdor Makeplans.
-        info: Të gjitha të dhënat në llogarinë tënde do të fshihen. Je i sigurt që dëshiron të vazhdosh?
+        info: Të gjitha të dhënat në llogarinë tuaj do të fshihen. Jeni i sigurt që dëshironi të vazhdoni?
         pause: A do të preferonit ta pezullonit llogarinë tuaj? Nuk do të paguani një tarifë mujore dhe llogaria juaj do të jetë e disponueshme kur të jeni gati të përdorni përsëri Makeplans.
         pause_link: Mund ta pezulloni llogarinë tuaj në faqen e faturimit.
       change_time_zone:
@@ -340,9 +340,9 @@ sq:
           header: Ndryshimi i zonës kohore është në proces
           info: Të gjitha rezervimet dhe mesazhet do të përditësohen së shpejti. *Mos* e ekzekutoni përsëri këtë funksion.
       configuration:
-        header: Vendosja e planeve
+        header: Konfigurimi i Makeplans
         intro: Këtu mund të konfiguroni Makeplans dhe mënyrën se si duhet të funksionojë për ju. Mund të shtoni shërbime dhe kategori që ofroni në faqen e rezervimeve, të rregulloni disponueshmërinë, të ndryshoni mesazhet dalëse (SMS dhe email), të shtoni më shumë përdorues dhe të rregulloni shumë cilësime të tjera në Makeplans.
-        menu_info: Zgjidh nga menyja në anën e majtë. Nëse keni ndonjë pyetje se si të bëni rregullimin, ju lutemi kontaktoni shërbimin ndaj klientit.
+        menu_info: Zgjidhni nga menyja në anën e majtë. Nëse keni ndonjë pyetje se si të bëni rregullimin, ju lutemi kontaktoni shërbimin ndaj klientit.
         trial_info: Kjo është një llogari prove - klikoni këtu për ta aktivizuar
       developer:
         show:
@@ -387,7 +387,7 @@ sq:
           halfhour: Gjysmë ore më e afërt
           hour: Ora më e afërt
           none: Pa rrumbullakosje (Nuk rekomandohet)
-          quarter: Lagjja më e afërt
+          quarter: Çereku i orës më i afërt
           ten: Shenja më e afërt e 10 minutave
           twenty: Shenja më e afërt e 20 minutave
         remove_logo: Hiq logon
@@ -396,12 +396,12 @@ sq:
           disable_person_cookie: Mos lejoni që klienti të qëndrojë i kyçur me cookie
           google_tag_manager: ID-ja e kontejnerit të Google Tag Manager
           person_oauth_auto_create: Krijo automatikisht profilin e klientit nga hyrja e ofruesit të palës së tretë (anashkaloni formularin e regjistrimit)
-          plausible: Aktivizo Analitikën e Pajtueshme
+          plausible: Aktivizo Plausible Analytics
           prevent_new_signups: Lejo vetëm rezervime nga klientët ekzistues
         verification_methods:
           email: Email
           facebook: Lejo gjithashtu verifikimin me Facebook Connect.
-          id_porten: Porta e ID-së (BankID)
+          id_porten: ID-porten (BankID)
           none: Pa verifikim (nuk rekomandohet)
           sms: SMS (I rekomanduar)
           vipps: Vipps
@@ -410,15 +410,15 @@ sq:
         email: Email
         header: Modifikoni komunikimin dalës
         ical: iCalendar
-        mailer_sender_valid_domain: Ju keni validuar %{domain} dhe Makeplans do të dërgojë email-e në atë domen në emrin tuaj. Adresat e tjera të email-it do të specifikohen si përgjigje.
-        message_template_info: Këto janë mesazhet e trashëguara të integruara. Për mbështetje për mesazhe të shumëfishta dhe më shumë kontroll, ju lutemi përdorni veçorinë e dhjetëshes së mesazheve.
+        mailer_sender_valid_domain: Ju keni validuar %{domain} dhe Makeplans do të dërgojë email-e në atë domen në emrin tuaj. Adresat e tjera të email-it do të specifikohen si reply-to.
+        message_template_info: Këto janë mesazhet e trashëguara të integruara. Për mbështetje për mesazhe të shumëfishta dhe më shumë kontroll, ju lutemi përdorni veçorinë e shablloneve të mesazheve.
         settings:
-          custom_email_sending: Anuloni plotësisht emailet me përmbajtjen më poshtë (përndryshe përmbajtja thjesht futet në emailin standard)
-          custom_sms_sending: Anuloje plotësisht SMS-në me përmbajtjen më poshtë (përndryshe përmbajtja thjesht futet në SMS-në standarde)
+          custom_email_sending: Zëvendësoni plotësisht emailet me përmbajtjen më poshtë (përndryshe përmbajtja thjesht futet në emailin standard)
+          custom_sms_sending: Zëvendësoni plotësisht SMS-në me përmbajtjen më poshtë (përndryshe përmbajtja thjesht futet në SMS-në standarde)
           dont_include_icalendar_attachment: Mos përfshi bashkëngjitjen e iCalendar
         sms: SMS
       edit_company:
-        delete_account_html: Je i sigurt që dëshiron ta fshish llogarinë tënde? <a href="%{link}">Po, vazhdo</a>
+        delete_account_html: Jeni i sigurt që dëshironi ta fshini llogarinë tuaj? <a href="%{link}">Po, vazhdo</a>
         delete_label: Fshi llogarinë
         domain_info: Është e mundur të përdorni URL-në tuaj, si p.sh. booking.YOURDOMAIN.com, ju lutemi kontaktoni shërbimin ndaj klientit për më shumë informacion.
         header: Modifiko informacionin e llogarisë
@@ -451,12 +451,12 @@ sq:
         header: Njoftimet e klientëve
         manual_confirmation: Dërgo mesazh kur rezervimi të verifikohet
         manual_confirmation_message: Dërgo mesazh në lidhje me konfirmimin manual
-        message_template_info: Ky është përkujtuesi i trashëguar i integruar. Për përkujtues të shumtë dhe më shumë kontroll, ju lutemi përdorni veçorinë e dhjetëshes së mesazheve.
+        message_template_info: Ky është përkujtuesi i trashëguar i integruar. Për përkujtues të shumtë dhe më shumë kontroll, ju lutemi përdorni veçorinë e shablloneve të mesazheve.
         modification_email: Dërgo email kur modifikon rezervimin
         modification_sms: Dërgo SMS kur modifikon rezervimin
         outgoing_messages_info: 'Makeplans do t''ju sugjerojë të dërgoni email/SMS (çfarëdo që të konfiguroni si metodë verifikimi) kur krijoni, modifikoni ose anuloni një rezervim. Disa mesazhe, si p.sh. anulimi, ndodhin automatikisht. Mund të çaktivizoni mesazhet automatike (për shembull, kur zhvendosni një rezervim duke e zvarritur atë në kalendar, anuloni ose krijoni një rezervim të ri duke përdorur API-n) ose të çaktivizoni sugjerimin për të dërguar mesazhe në formular duke ndryshuar cilësimet më poshtë. Shënim: Kjo nuk vlen për faqen e rezervimeve. Faqja e rezervimeve do të dërgojë gjithmonë automatikisht mesazhe bazuar në metodën tuaj të verifikimit.'
         reminder_sms: Dërgo SMS përkujtues
-        reminder_sms_info: Emri i parazgjedhur i dërguesit është 'Makeplans'. Shko te 'Shtesa' për të ndryshuar emrin e dërguesit.
+        reminder_sms_info: Emri i parazgjedhur i dërguesit është 'Makeplans'. Shkoni te 'Shtesa' për të ndryshuar emrin e dërguesit.
         sms_reminder_time_info: 'SMS-ja përkujtuese dërgohet si parazgjedhje në mesditë një ditë para rezervimit. Nëse doni ta ndryshoni këtë, ju lutemi modifikoni fushën më poshtë. Shembull: ''dy orë më parë'' (SMS dërgohet dy orë para rezervimit) ose ''8:00 dje'' (SMS-ja përkujtuese do të dërgohet në orën 8:00 një ditë para rezervimit)'
       edit_user_notifications:
         approvement_email: Njoftim me email për kërkesa të reja rezervimi
@@ -464,7 +464,7 @@ sq:
         automatic_messages: Mesazhe automatike
         custom_content: Përmbajtje njoftimi e personalizuar
         default: Aktiv (Parazgjedhur)
-        disable: I paaftë
+        disable: Çaktivizuar
         email: Email
         header: Njoftimet e përdoruesit
         mail_notification_confirmation: Email konfirmimi i njoftimit
@@ -473,7 +473,7 @@ sq:
         notification_sms: Njoftim me SMS për rezervim të ri
         outgoing_messages_info: Nëse keni konfiguruar miratimin manual të rezervimeve të reja nga faqja e rezervimeve, do të njoftoheni me email për çdo kërkesë të re rezervimi. Nëse nuk dëshironi të merrni këto njoftime ose nëse miratimi bëhet duke përdorur një aplikacion të jashtëm (API), është e mundur ta çaktivizoni atë më poshtë.
         settings:
-          custom_email_user_sending: Anuloni plotësisht emailet me përmbajtjen më poshtë (përndryshe përmbajtja thjesht futet në emailin standard)
+          custom_email_user_sending: Zëvendësoni plotësisht emailet me përmbajtjen më poshtë (përndryshe përmbajtja thjesht futet në emailin standard)
         sms: SMS
         sms_notification_info: Për të njoftuar më shumë se një person, ju lutemi përdorni pikëpresje për të ndarë numrat e telefonit.
       edit_ux:
@@ -534,10 +534,10 @@ sq:
           not_verified: Regjistrimet DNS nuk janë verifikuar ende. Ju lutemi prisni dhe provoni përsëri.
       embed:
         new:
-          embed_url: 'Fut URL-në e faqes tënde të internetit për integrimin:'
+          embed_url: 'Futni URL-në e faqes suaj të internetit për integrimin:'
         show:
           add_embed_url: Dëshironi ta integroni faqen e rezervimeve në një faqe interneti të jashtme?
-          custom_info: Mund ta integrosh faqen e rezervimeve duke përdorur iframe ose të kryesh kërkesë API në %{url}.
+          custom_info: Mund ta integroni faqen e rezervimeve duke përdorur iframe ose të kryeni kërkesë API në %{url}.
           delete: Hiq URL-në e ngulitur.
           header: Vendosni faqen e rezervimeve në një domen të palës së tretë
           info: Për të qenë në gjendje të shtoni faqen tuaj të rezervimeve në faqen tuaj të internetit si një iframe ose të kryeni kërkesë publike API nga faqja juaj e internetit, duhet të shtoni URL-në e faqes suaj të internetit për arsye sigurie.
@@ -576,11 +576,11 @@ sq:
           info: Zhvendosni të gjitha rezervimet dhe ngjarjet nga një burim në tjetrin. Kjo përfshin të gjitha rezervimet e kaluara dhe të ardhshme. Nuk do t'u dërgohen njoftime klientëve.
           migrate: Migro
           processing: Përpunimi
-          to_resource: Për të marrë burime
+          to_resource: Te burimi
           warning: A jeni i sigurt që doni të migroni të gjitha rezervimet dhe ngjarjet? Ky veprim nuk mund të anulohet lehtë.
         update:
           header: Rezervimet u migruan
-          result: Rezervimet %{bookings_count} dhe ngjarjet %{events_count} u migruan nga %{from_resource} në %{to_resource}.
+          result: "%{bookings_count} rezervime dhe %{events_count} ngjarje u migruan nga %{from_resource} në %{to_resource}."
       promote:
         booking_button_html_info: Për të futur butonin e rezervimit në faqen tuaj të internetit, ju lutemi kopjoni kodin HTML më poshtë. Nëse keni nevojë për ndihmë, ju lutemi kontaktoni dizajnerin e faqes suaj të internetit.
         booking_button_html_preview: Pamje paraprake e butonit të rezervimit
@@ -597,7 +597,7 @@ sq:
         new:
           sms_sender_name: Emri i dërguesit të SMS-së
         show:
-          add_custom_sender: Dëshiron të përdorësh një ID dërguesi SMS të personalizuar?
+          add_custom_sender: Dëshironi të përdorni një ID dërguesi SMS të personalizuar?
           cost: Kostoja mujore është %{price}.
           custom_info: Të gjitha SMS-të do të dërgohen duke përdorur %{sms_sender}.
           delete: Hiq ID-në e dërguesit të SMS-ve të personalizuara.
@@ -621,23 +621,23 @@ sq:
       index:
         header: Kodet e kuponave
         not_redeemable: Nuk mund të përdoret
-        redeemable: I shpengueshëm
+        redeemable: I përdorshëm
       show:
         details: Detajet
         not_redeemable: Nuk mund të përdoret
         orders: Porosi
-        redeemable: I shpengueshëm
+        redeemable: I përdorshëm
     events:
       check_in:
-        check_in: Regjistrohu
+        check_in: Regjistro mbërritjen
       create_recurring:
-        headline: Duke gjeneruar ngjarje %{count}...
+        headline: Duke gjeneruar %{count} ngjarje...
         link: Shfaq listën
       destroy_recurring:
         headline: Të gjitha ngjarjet përsëritëse brenda këtij modeli u hoqën
       email_participants:
         copy_info: 'Si alternativë, mund të kopjoni adresat më poshtë dhe t''i ngjisni në fushën bcc në një mesazh të ri email-i:'
-        headline: Dërgojini email të gjithë pjesëmarrësve për email.
+        headline: Dërgo email të gjithë pjesëmarrësve
         open_email_client: Hap klientin e email-it
       form:
         cancellation_info: Anulimi mund të kryhet vetëm para periudhës së anulimit. Rezervimet që janë të parapaguara nuk mund të anulohen.
@@ -653,14 +653,14 @@ sq:
           one: një rezervim
           other: 'rezervime: <strong>%{count}</strong>'
           zero: pa rezervime
-        check_in: Regjistrohu
+        check_in: Regjistro mbërritjen
         copy: Klononi këtë ngjarje
         download_attendance_csv: Eksporto listën e pjesëmarrjes si CSV
         email_confirm: Lista e pjesëmarrësve do t'ju dërgohet me email. Dëshironi të vazhdoni?
         fully_booked: Eventi është i rezervuar plotësisht
         qr_code: Kodi QR për klientët
         recurring_member: Kjo ngjarje është pjesë e një modeli përsëritës.
-        send_email_to_all: Dërgo email të gjithë shoqëruesve
+        send_email_to_all: Dërgo email të gjithë pjesëmarrësve
         send_sms: Dërgo SMS
         show_in_calendar: Shfaq në kalendar
         show_inactive_html: Nuk shfaqen %{count} rezervime joaktive. <a href="%{href}">Dëshironi t'i shfaqni këto?</a>
@@ -671,7 +671,7 @@ sq:
           join_meeting: Lidhja për t'u bashkuar me takimin
           join_webinar: Lidhja për t'u bashkuar me webinarin
           start_meeting: Filloni takimin në Zoom si organizator
-          start_webinar: Filloni webinarin në Zoom si organizator në pozicionin e organizatorit
+          start_webinar: Filloni webinarin në Zoom si organizator
       show_recurring:
         delete_all: Fshi të gjitha
         headline: Të gjitha ngjarjet përsëritëse brenda këtij modeli
@@ -696,13 +696,13 @@ sq:
         inactive: Përdorur
         initial_value: Vlera fillestare
         orders: Porosi
-        purchase_order: Urdhër blerjeje
+        purchase_order: Porosia e blerjes
         purchased_by: Blerë nga
         redeemed_by: Shpenguar nga
         valid_until: E vlefshme deri më
     integrations:
       account_connected: Lidhu me këtë llogari.
-      always_opt_in: Zgjidh gjithmonë
+      always_opt_in: Regjistro gjithmonë (opt-in)
       bento:
         publishable_key: Çelësi i Publikueshëm
         secret_key: Çelësi Sekret
@@ -721,7 +721,7 @@ sq:
         sandbox: Sandbox
       campaign_monitor:
         api_key: Çelësi API
-        connect_info: 'Zgjidh një listë postare ku shtohen klientë të rinj si abonentë:'
+        connect_info: 'Zgjidhni një listë postare ku shtohen klientë të rinj si abonentë:'
         list_id: ID-ja e listës
       connect_error: Integrimi nuk mund të përfundojë. Ju lutemi fshini integrimin dhe provoni përsëri.
       connected: Ky shërbim është i lidhur.
@@ -736,7 +736,7 @@ sq:
         version: Makeplans është konfiguruar të funksionojë me versionin %{version} të Extensor Online Booking.
       fiken:
         active: Aktiv
-        api_not_activated: Duhet ta aktivizosh API-n në Fiken.
+        api_not_activated: Duhet ta aktivizoni API-n në Fiken.
         connected_bank_account: Llogari bankare
         connected_company: Kompania
         email: Emri i përdoruesit (epost)
@@ -768,10 +768,10 @@ sq:
         header: Integrimet
         web_hooks: Webhook-e
       klaviyo:
-        select_list: 'Zgjidh një listë ku shtohen klientë të rinj si abonentë:'
+        select_list: 'Zgjidhni një listë ku shtohen klientë të rinj si abonentë:'
       mailchimp:
         account: ID-ja e listës
-        connect_info: 'Zgjidh një listë postare ku shtohen klientë të rinj si abonentë:'
+        connect_info: 'Zgjidhni një listë postare ku shtohen klientë të rinj si abonentë:'
         password: Çelësi API
       mailerlite:
         api_key: Çelësi API
@@ -783,7 +783,7 @@ sq:
       notion:
         connected_to: Lidhur me bazën e të dhënave me id %{database_id}
         database_info: 'Baza e të dhënave duhet të konfigurohet me vetitë e mëposhtme: Emri, Email (lloji: email), Telefoni (lloji: telefoni).'
-        select_database: Zgjidh bazën e të dhënave
+        select_database: Zgjidhni bazën e të dhënave
         sharing_info: Ju lutemi ndani të paktën një bazë të dhënash me integrimin e Makeplans
       oauth_connect: Lidhu me shërbimin
       selected_option: Zgjedhur
@@ -793,7 +793,7 @@ sq:
         connect_info: Për çdo rezervim të ri në Makeplans, ai do të publikohet si mesazh në kanalin %{channel} Slack.
       stripe:
         disable_customer_saving: Mos e ruani klientin në Stripe
-        payment_info: Për të gjitha transaksionet, Makeplans zbritet një tarifë platforme prej %{application_fee_percent}%.
+        payment_info: Për të gjitha transaksionet zbritet një tarifë platforme prej %{application_fee_percent}% nga Makeplans.
         receipt_email: Dërgoni një faturë te klienti nga Stripe
         save_card_billing_details: Ruaj detajet e faturimit për transaksionin
       tfso:
@@ -823,7 +823,7 @@ sq:
       unloc:
         client_id: ID-ja e klientit
         client_secret: Sekreti i klientit
-        info: Futni kredencialet tuaja të API-t nga Qendra e Kontrollit Unloc për të lidhur bravat dixhitale të derës.
+        info: Futni kredencialet tuaja të API-t nga Unloc Control Center për të lidhur bravat dixhitale të derës.
         locks: Brava të disponueshme
         locks_info: Caktoni brava për një burim në faqen e cilësimeve të burimit. Kur konfirmohet një rezervim, klienti merr automatikisht një çelës celulari të vlefshëm për kohën e rezervuar.
         project_id: Projekti
@@ -841,7 +841,7 @@ sq:
         vipps_subscription_key: Çelësi i Abonimit Vipps
         webhook_active: Webhook-u i pagesave është i regjistruar.
         webhook_setup_failed: 'Konfigurimi i Webhook dështoi: %{error}'
-        webhook_setup_missing_fields: Fut ID-në e klientit, sekretin e klientit, çelësin e abonimit dhe numrin serial të tregtarit përpara se të konfigurosh webhook-et.
+        webhook_setup_missing_fields: Futni ID-në e klientit, sekretin e klientit, çelësin e abonimit dhe numrin serial të tregtarit përpara se të konfiguroni webhook-et.
       visma_eaccounting:
         active: Aktiv
         connect_info: Lidhur me %{name}
@@ -863,13 +863,13 @@ sq:
         session_type: Lloji i sesionit në Zoom për ngjarjet
     message_templates:
       form:
-        delivery_timing_info: 'Shkruani në anglisht të thjeshtë. Shembull: ''dy orë më parë'' (mesazhi dërgohet dy orë më parë) ose ''08:00 nesër'' (në orën 8 të mëngjesit të ditës tjetër). Koha e dorëzimit është relative në varësi të llojit të mesazhit: konfirmim - rezervimi u krijua_në, kujtesë - rezervimi_i_rezervuar, ndjekje - rezervimi_i_rezervuar.'
+        delivery_timing_info: 'Shkruani në anglisht të thjeshtë. Shembull: ''dy orë më parë'' (mesazhi dërgohet dy orë më parë) ose ''08:00 nesër'' (në orën 8 të mëngjesit të ditës tjetër). Koha e dorëzimit është relative në varësi të llojit të mesazhit: konfirmim - created_at i rezervimit, kujtesë - booked_from, ndjekje - booked_to.'
         immediately: menjëherë
         services: Shërbimet
         services_info: 'Modeli i mesazhit do të dërgohet për të gjitha shërbimet, përveç nëse kufizoheni në shërbime specifike më poshtë:'
         settings:
           skip_if_in_past: Mos dërgo nëse koha e dorëzimit ka kaluar
-        template_info_html: Mund të bashkoni vlerat dinamike të inn. Ju lutemi shihni <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> për detaje.
+        template_info_html: Mund të bashkoni vlera dinamike. Ju lutemi shihni <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> për detaje.
       index:
         header: Shabllone mesazhesh
         immediately: menjëherë
@@ -884,7 +884,7 @@ sq:
         do_filtering: Filtër
         filter: Filtër
         headline: Porosi
-        order_id: Porosit
+        order_id: Porosia
         status: Statusi
         total: Totali
       refund:
@@ -909,7 +909,7 @@ sq:
         line_items: Artikuj të porositur
         order_number: 'Porosia #%{id}'
         quantity: Sasia
-        refund: Pagesa e rimbursimit
+        refund: Rimburso pagesën
         refund_confirm: Të rimbursohet e gjithë porosia? Kjo anulon çdo pagesë dhe nuk mund të zhbëhet.
         subtotal: Nëntotali
         total: Totali
@@ -949,7 +949,7 @@ sq:
         merge_info: 'Në vend të kësaj përdorni:'
         unblock: Hiq bllokimin në faqen e rezervimit
       index:
-        delete_warning: Je i sigurt që dëshiron të fshish %{person}?
+        delete_warning: Jeni i sigurt që dëshironi të fshini %{person}?
         filter: Filtrim
         headline: Klientët
         send_sms: Dërgo SMS
@@ -957,7 +957,7 @@ sq:
         add_child: Shto klient të lidhur
         all_day: Gjithë ditën
         bookings_for: Rezervime për %{name}
-        can_book_for: Mund të bëni rezervime për %{children} të tjerë.
+        can_book_for: Mund të bëjë rezervime për %{children} të tjerë.
         card_saved_with:
           stripe: Kartë pagese e ruajtur me Stripe
         change_tfso_customer: Ndryshoni ID-në e klientit të 24SevenOffice.
@@ -972,7 +972,7 @@ sq:
           all: Shfaq të gjitha rezervimet, përfshirë ato të fshira.
           visible: Shfaq të gjitha rezervimet e dukshme
         gift_cards:
-          one: Kartë dhurate %{count}
+          one: "%{count} kartë dhurate"
           other: "%{count} karta dhuratash"
         no_reservations: Nuk u gjetën rezervime
         parent_info: Menaxhuar nga
@@ -989,12 +989,12 @@ sq:
         enable_rotp: Aktivizo 2FA
         generate_header: Aktivizo verifikimin me 2 hapa (2FA)
         generate_info: Skanoni kodin QR më poshtë me telefonin tuaj celular me Google Authenticator ose një aplikacion tjetër 2FA.
-        verify_code: 'Fut kodin për të verifikuar:'
+        verify_code: 'Futni kodin për të verifikuar:'
       deactivate_rotp:
         deactivate_rotp: Hiq 2FA-në
-        verify_code: 'Fut kodin për të verifikuar:'
+        verify_code: 'Futni kodin për të verifikuar:'
       edit_password:
-        verify_code: 'Fut kodin për të verifikuar:'
+        verify_code: 'Futni kodin për të verifikuar:'
       no_access:
         header: Pa qasje
         info: Ju lutemi të kontaktoni administratorin e llogarisë suaj për të aksesuar këtë funksion.
@@ -1002,11 +1002,11 @@ sq:
         change_password: Modifiko fjalëkalimin
         rotp:
           disable_link: Çaktivizo verifikimin me 2 hapa
-          disable_warning: Je i sigurt që dëshiron ta çaktivizosh verifikimin me 2 hapa?
+          disable_warning: Jeni i sigurt që dëshironi ta çaktivizoni verifikimin me 2 hapa?
           enable_link: Aktivizo verifikimin me 2 hapa
           enable_warning: Nëse aktivizoni verifikimin me 2 hapa, duhet të verifikoni gjithmonë çdo hyrje me një kod nga aplikacioni i telefonit tuaj celular. A jeni i sigurt që doni ta aktivizoni këtë funksion?
           regenerate_link: Rigjenero çelësin e verifikimit me 2 hapa
-          regenerate_warning: Nëse e rigjeneroni çelësin e verifikimit me 2 hapa, çelësi ekzistues nuk do të funksionojë më dhe duhet ta konfiguroni aplikacionin tuaj me kodin e ri. Je i sigurt që dëshiron të vazhdosh?
+          regenerate_warning: Nëse e rigjeneroni çelësin e verifikimit me 2 hapa, çelësi ekzistues nuk do të funksionojë më dhe duhet ta konfiguroni aplikacionin tuaj me kodin e ri. Jeni i sigurt që dëshironi të vazhdoni?
           submit_button: Hyrje
           verification_code_header: Verifikimi me 2 hapa
       update_password:
@@ -1015,7 +1015,7 @@ sq:
       form:
         availability: "%{resource} - disponueshmëria për %{service}"
         from: nga
-        to: për
+        to: deri
     purge_data:
       destroy:
         header: Të dhënat e vjetra tani po fshihen.
@@ -1025,10 +1025,10 @@ sq:
         info: 'Ky funksion do të fshijë të dhënat e vjetra personale. Mund të specifikoni datën e fshirjes. Të dhënat e mëposhtme do të fshihen:'
         not_deleted: Fshirja e të dhënave nuk do të shkaktojë integrime të jashtme.
         processing: Përpunimi
-        purge: FSHIR TË DHËNAT
+        purge: FSHI TË DHËNAT
         purge_1: Të gjitha rezervimet që përfundojnë para datës së caktuar.
         purge_2: Të gjithë klientët që nuk janë përditësuar para datës së caktuar dhe që nuk kanë rezervime pas datës së caktuar.
-        purge_3: Të gjitha regjistrat dhe meta të dhënat që lidhen me këto të dhëna do të fshihen gjithashtu.
+        purge_3: Të gjithë regjistrat dhe meta të dhënat që lidhen me këto të dhëna do të fshihen gjithashtu.
         purge_before: Fshi të dhënat para datës
         warning: A jeni i sigurt që doni të fshini të gjitha të dhënat para datës së specifikuar? Nuk është e mundur të anulohet ky veprim.
     reports:
@@ -1043,18 +1043,18 @@ sq:
       form:
         availability: Disponueshmëria e parazgjedhur
         delete_warning:
-          one: Ky burim ka 1 rezervim të ardhshëm. Fshirja do të heqë burimin dhe të gjitha rezervimet e tij. Klikoni përsëri te fshij për të konfirmuar.
-          other: Ky burim ka %{count} rezervime të ardhshme. Fshirja do të heqë burimin dhe të gjitha rezervimet e tij. Klikoni përsëri te fshij për të konfirmuar.
+          one: Ky burim ka 1 rezervim të ardhshëm. Fshirja do të heqë burimin dhe të gjitha rezervimet e tij. Klikoni përsëri "Fshi" për të konfirmuar.
+          other: Ky burim ka %{count} rezervime të ardhshme. Fshirja do të heqë burimin dhe të gjitha rezervimet e tij. Klikoni përsëri "Fshi" për të konfirmuar.
         external_info:
           microsoft_office365_user_id: Përdorues i Microsoft Office 365
-          unloc_lock_ids: Zhbllokimi i bravave
+          unloc_lock_ids: Bravat Unloc
           unloc_lock_ids_info: Klientët me një rezervim të konfirmuar marrin automatikisht një çelës celular për bravat e zgjedhura, i vlefshëm për kohën e rezervuar.
           zoom_user_id: Përdoruesi i Zoom
         from: nga
         mail_notification_info: Për të njoftuar më shumë se një person, ju lutemi përdorni pikëpresje për të ndarë adresat e email-it.
         offers: Ofron shërbimet e mëposhtme në faqen e rezervimeve
         sms_notification_info: Për të njoftuar më shumë se një person, ju lutemi përdorni pikëpresje për të ndarë numrat e telefonit.
-        to: për
+        to: deri
       index:
         header: Burimet
       integrations:
@@ -1092,7 +1092,7 @@ sq:
           header: Ekrani i dhomës
           info: Një ekran publik për këtë dhomë që tregon statusin aktual dhe rezervimet e ardhshme. I përshtatshëm për një tablet të montuar jashtë dhomës.
           not_activated: Nuk është aktivizuar
-          show_link: Lidhja e Shfaqjes së Sallës së Shfaqjes
+          show_link: Shfaq lidhjen e ekranit të dhomës
     services:
       availability:
         header: Disponueshmëria për %{title}
@@ -1121,7 +1121,7 @@ sq:
           halfhour: Gjysmë ore më e afërt
           hour: Ora më e afërt
           none: Pa rrumbullakosje (nuk rekomandohet)
-          quarter: Lagjja më e afërt
+          quarter: Çereku i orës më i afërt
           ten: Dhjetë minutat më të afërta
           twenty: Shenja më e afërt e 20 minutave
         max_slots_default: Pa limit
@@ -1163,7 +1163,7 @@ sq:
         days: ditë
         header: Shërbimet
         minutes: minuta
-        priority_button: Porosit
+        priority_button: Rendit
         product:
           header: Produkte
       integrations:
@@ -1184,7 +1184,7 @@ sq:
         description:
           order: Përdorni zvarritjen dhe lëshimin ose butonat me shigjeta për të rirenditur ofruesit. Ofruesi i parë do të ketë përparësinë më të lartë.
           weight: Cakto vlerat e peshave (0-100) për secilin ofrues. Vlerat më të larta kanë përparësi më të lartë. Shuma e të gjitha peshave duhet të jetë e barabartë me 100.
-        header: Menaxho Prioritet - %{title}
+        header: Menaxho prioritetin - %{title}
         resource: Burim
         save: Ruaj Cilësimet e Prioritetit
         validation:
@@ -1193,7 +1193,7 @@ sq:
         weight: Pesha
       service_priority:
         description: Zvarrit dhe lësho shërbimet për të vendosur rendin e shfaqjes së tyre në faqen e rezervimit. Shërbimet pa një vlerë renditjeje do të shfaqen të fundit, të renditura sipas alfabetit.
-        header: Porositje shërbimi
+        header: Renditja e shërbimeve
       show:
         availability: Disponueshmëria për ofruesin
         custom_data: 'Të dhëna të personalizuara:'
@@ -1209,7 +1209,7 @@ sq:
         qr_code: Kodi QR për klientët
         show_on_booking_site: Shërbim i hapur në faqen e rezervimit
       slots:
-        available: 'Vendet e lira të lira:'
+        available: 'Vendet e lira:'
         next_available: 'Data tjetër e disponueshme:'
         none_available: Nuk ka vende të lira.
       update_priority:
@@ -1241,7 +1241,7 @@ sq:
         header_html: Pothuajse mbaroi!</br> Thjesht shtoni disa burime dhe jeni gati.
         save: Ruaj
         submit: U krye!
-        to: për
+        to: deri
         working_hours: Disponueshmëria
         working_hours_header: ''
       start:
@@ -1256,22 +1256,22 @@ sq:
       recurring:
         enabled: Përsëriteni disa herë me një model
         freq:
-          monthly: Muaji
+          monthly: Muaj
           weekly: Javë
-          yearly: Viti
+          yearly: Vit
         freq_label: Periudhë
         interval:
           '1': Çdo
-          '2': Çdo sekondë
-          '3': Çdo e treta
-          '4': Çdo i katërti
-          '5': Çdo i pesti
-          '6': Çdo i gjashti
-          '7': Çdo i shtati
-          '8': Çdo tetë
+          '2': Çdo të dytën
+          '3': Çdo të tretën
+          '4': Çdo të katërtën
+          '5': Çdo të pestën
+          '6': Çdo të gjashtën
+          '7': Çdo të shtatën
+          '8': Çdo të tetën
         interval_label: Frekuenca
         length:
-          count: Ngjarjet
+          count: Përsëritjet
           until: Para datës
         length_label: Derisa
     sms:
@@ -1286,7 +1286,7 @@ sq:
           calculate: Gjej marrësit
           change: Ndrysho filtrin
           date_hint: Opsionale. Lëreni bosh nëse nuk ka kufizim datash.
-          from: Rezervimet më ose më pas
+          from: Rezervime më ose pas datës
           header: Dërgoni SMS te klientët e filtruar
           instructions: Zgjidhni një diapazon datash, shërbim dhe/ose burim për të gjetur klientë me rezervime që përputhen. Kërkohet të paktën një filtër.
           no_limit: Pa limit
@@ -1297,8 +1297,8 @@ sq:
           resources_hint: Lëreni bosh për të përfshirë klientët me rezervime për çdo burim.
           services: Shërbimet
           services_hint: Lëreni bosh për të përfshirë klientët me rezervime për çdo shërbim.
-          to: Rezervimet më ose më parë
-        header: 'Dërgo SMS te marrës të %{recipents_count}:'
+          to: Rezervime më ose para datës
+        header: 'Dërgo SMS te %{recipents_count} marrës:'
         liquid_hint: Personalizoni mesazhin me etiketa të tilla si {{ person.name }}, {{ person.first_name }} ose {{ person.email }}.
         message: Mesazh
         message_error: Mesazhi nuk mund të përpunohej. Ju lutemi kontrolloni etiketat e personalizimit dhe provoni përsëri.
@@ -1307,7 +1307,7 @@ sq:
         sms_info: Për mesazhet më të gjata se 160 karaktere, kostoja llogaritet për 160 karaktere. Kostoja për një mesazh me 200 karaktere është 2 SMS për mesazh. Klienti do të marrë 1 SMS.
         warning:
           all: 'E RËNDËSISHME: Tani do t''u dërgoni TË GJITHË klientëve tuaj.'
-          confirm: Je i sigurt që dëshiron ta dërgosh këtë mesazh?
+          confirm: Jeni i sigurt që dëshironi ta dërgoni këtë mesazh?
           event: 'E RËNDËSISHME: Tani do t''ua dërgoni të gjithë pjesëmarrësve në këtë ngjarje.'
     sms_credits:
       charge:
@@ -1317,7 +1317,7 @@ sq:
       index:
         buy: Bleni më shumë kredite SMS
         header: Bilanci i SMS-ve
-        sms_credits_available: Ke %{credits} kredite SMS të disponueshme.
+        sms_credits_available: Keni %{credits} kredite SMS të disponueshme.
       purchase_form:
         buy: Blerje
         header: Bleni kredite SMS
@@ -1331,7 +1331,7 @@ sq:
         list: Përdoruesit
       show:
         remove_access: Hiq qasjen
-        remove_access_confirm: Je i sigurt që dëshiron t'i heqësh qasjen këtij përdoruesi në këtë llogari?
+        remove_access_confirm: Jeni i sigurt që dëshironi t'i hiqni qasjen këtij përdoruesi në këtë llogari?
     web_hooks:
       index:
         app_secret_info_html: Sekreti i aplikacionit për verifikimin e webhook-eve. Shih <a href="https://developer.makeplans.com" target="_blank" class="link-external">dokumentacionin</a> për detaje.
