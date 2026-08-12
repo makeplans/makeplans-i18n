@@ -730,6 +730,9 @@ en:
         download_attendance_csv: Export attendance list as CSV
         email_confirm: Attendance list will be emailed to you. Do you want to continue?
         fully_booked: The event is fully booked
+        fully_booked_with_waitlist: 'The event is fully booked · %{count} on the waitlist'
+        promote: Promote from waitlist
+        promote_confirm: Promote %{name} from the waitlist?
         qr_code: QR code for customers
         recurring_member: This event is part of a repeating pattern.
         send_email_to_all: Email all attendants
@@ -739,6 +742,10 @@ en:
         show_only_active_html: List includes %{count} inactive reservations. <a href="%{href}">Do you only want to show active reservations?</a>
         signup_link: Signup link
         sms_all_participants: Send SMS to all participants
+        waitlist_html:
+          one: 'waitlist: <strong>one</strong>'
+          other: 'waitlist: <strong>%{count}</strong>'
+        waitlist_position: 'Waitlist position %{position}'
         zoom:
           join_meeting: Join meeting link
           join_webinar: Join webinar link

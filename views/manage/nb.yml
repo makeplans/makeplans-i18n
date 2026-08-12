@@ -723,6 +723,9 @@ nb:
         download_attendance_csv: Eksporter deltagerliste som CSV
         email_confirm: Deltagerliste vil bli sendt på epost til deg. Vil du fortsette?
         fully_booked: Arrangementet er fullbooket
+        fully_booked_with_waitlist: 'Arrangementet er fullbooket · %{count} på venteliste'
+        promote: Flytt opp fra ventelisten
+        promote_confirm: Flytte %{name} opp fra ventelisten?
         qr_code: QR-kode for kunder
         recurring_member: Dette arrangementet er del av et gjentagende mønster.
         send_email_to_all: Send epost til alle deltagere
@@ -732,6 +735,10 @@ nb:
         show_only_active_html: Listen inkluderer %{count} inaktive reservasjoner. <a href="%{href}">Vil du kun vise de som er aktive?</a>
         signup_link: Link til påmelding for kunder
         sms_all_participants: Send SMS til alle deltagere
+        waitlist_html:
+          one: 'venteliste: <strong>én</strong>'
+          other: 'venteliste: <strong>%{count}</strong>'
+        waitlist_position: 'Ventelisteposisjon %{position}'
         zoom:
           join_meeting: Bli med på møtelenke
           join_webinar: Bli med på webinar-lenken
