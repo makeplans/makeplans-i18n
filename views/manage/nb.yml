@@ -724,7 +724,7 @@ nb:
         email_confirm: Deltagerliste vil bli sendt på epost til deg. Vil du fortsette?
         fully_booked: Arrangementet er fullbooket
         fully_booked_with_waitlist: 'Arrangementet er fullbooket · %{count} på venteliste'
-        promote: Flytt opp fra ventelisten
+        promote: Flytt opp
         promote_confirm: Flytte %{name} opp fra ventelisten?
         qr_code: QR-kode for kunder
         recurring_member: Dette arrangementet er del av et gjentagende mønster.
@@ -736,7 +736,7 @@ nb:
         signup_link: Link til påmelding for kunder
         sms_all_participants: Send SMS til alle deltagere
         waitlist_html:
-          one: 'venteliste: <strong>én</strong>'
+          one: 'venteliste: <strong>%{count}</strong>'
           other: 'venteliste: <strong>%{count}</strong>'
         waitlist_position: 'Ventelisteposisjon %{position}'
         zoom:
