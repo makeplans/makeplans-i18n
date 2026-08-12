@@ -61,9 +61,11 @@ en:
         info: A spot has become available for your waitlisted booking. Confirm now to secure your spot.
         title: A Spot is Available!
       waitlisted:
+        confirm: Confirm Booking
         info: You have been added to the waitlist. We will notify you when a spot becomes available.
         leave_confirmation: Are you sure you want to leave the waitlist?
         leave_waitlist: Leave Waitlist
+        spot_available: A spot is now available! Confirm now to secure your booking.
         title: You're on the Waitlist
       new:
         accept: I accept the terms and conditions

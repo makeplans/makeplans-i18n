@@ -42,9 +42,11 @@ nb:
         info: En plass har blitt ledig for din ventlisteregistrering. Bekreft nå for å sikre plassen din.
         title: En plass er ledig!
       waitlisted:
+        confirm: Bekreft reservasjon
         info: Du er satt på venteliste. Vi vil varsle deg når en plass blir ledig.
         leave_confirmation: Er du sikker på at du vil fjerne deg fra ventelisten?
         leave_waitlist: Fjern meg fra ventelisten
+        spot_available: En plass er nå ledig! Bekreft nå for å sikre deg plassen.
         title: Du er på ventelisten
       new:
         accept: Jeg aksepterer vilkårene og betingelsene
