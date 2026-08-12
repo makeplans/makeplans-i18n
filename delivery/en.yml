@@ -70,6 +70,15 @@ en:
       link: View your waitlist booking
       resource_info: 'Reservation with: %{resource}.'
       subject: You're on the waitlist
+    waitlist_payment:
+      body: A spot has become available for your waitlisted booking of %{title} %{time_range}. Complete your payment at the link below to confirm your booking.
+      footer: 'Important: If you do not complete payment within %{expires_in} minutes your reservation might expire.'
+      header: Hi %{name}
+      info: "Good news! A spot has become available for %{title} %{time_range}. Complete your payment to confirm your booking."
+      pay_button: Pay and Confirm Booking
+      pay_link: Pay and confirm your booking
+      resource_info: 'Reservation with: %{resource}.'
+      subject: A spot is available - complete payment to confirm your booking
   booking_occurrence_mailer:
     cancel:
       body: 'Your bookings of %{title} for the following times has been cancelled:'
@@ -133,6 +142,7 @@ en:
     verification: "{{ booking.verification_code }} is your verification code for the reservation of {{ booking.title }}."
     waitlist_available: "A spot is now available for {{ booking.title }} {{ booking.booked_from }}. Visit the link to confirm your booking."
     waitlist_joined: "You are on the waitlist for {{ booking.title }} {{ booking.booked_from }}. We will notify you when a spot becomes available."
+    waitlist_payment: 'A spot is now available for {{ booking.title }} {{ booking.booked_from }}. Pay here to confirm your booking: {{ booking.payment_link }}'
   person_mailer:
     export:
       subject: Data export

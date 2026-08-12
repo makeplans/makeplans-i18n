@@ -70,6 +70,15 @@ nb:
       link: Se din ventelisteregistrering
       resource_info: 'Reservasjon hos: %{resource}.'
       subject: Du er på ventelisten
+    waitlist_payment:
+      body: En plass har blitt ledig for din ventelisteregistrering av %{title} %{time_range}. Fullfør betalingen via lenken under for å bekrefte din reservasjon.
+      footer: 'OBS: Hvis du ikke fullfører betalingen i løpet av %{expires_in} minutter kan reservasjonen din kanselleres.'
+      header: Hei %{name}
+      info: "Gode nyheter! En plass har blitt ledig for %{title} %{time_range}. Fullfør betalingen for å bekrefte din reservasjon."
+      pay_button: Betal og bekreft reservasjon
+      pay_link: Betal og bekreft din reservasjon
+      resource_info: 'Reservasjon hos: %{resource}.'
+      subject: En plass er ledig - fullfør betaling for å bekrefte din reservasjon
   booking_occurrence_mailer:
     cancel:
       body: 'Dine reservasjoner av %{title} har blitt kansellert:'
@@ -133,6 +142,7 @@ nb:
     verification: "{{ booking.verification_code }} er din kode for å verifisere reservasjon av {{ booking.title }}."
     waitlist_available: "En plass er nå ledig for {{ booking.title }} {{ booking.booked_from }}. Gå til lenken for å bekrefte din reservasjon."
     waitlist_joined: "Du er på ventelisten for {{ booking.title }} {{ booking.booked_from }}. Vi vil varsle deg når en plass blir ledig."
+    waitlist_payment: 'En plass er nå ledig for {{ booking.title }} {{ booking.booked_from }}. Betal her for å bekrefte din reservasjon: {{ booking.payment_link }}'
   person_mailer:
     export:
       subject: Eksport fra Makeplans
