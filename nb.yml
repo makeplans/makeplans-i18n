@@ -399,7 +399,9 @@ nb:
         currency: Valuta
         email: Epost-adresse
         email_notification: Motta varsling på epost for hver nye reservasjon
+        event_first_booking_period: Ikke tillat påmelding til arrangement før
         event_form: Egendefinerte arrangementfelter
+        event_last_booking_period: Ikke tillat påmelding til arrangement etter
         first_bookable_period: Begrensing for første ledige tidspunkt
         footer: Bunntekst på hver side
         future_bookable_period: Begrensing for hvor langt frem i tid man kan reservere

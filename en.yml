@@ -402,7 +402,9 @@ en:
         currency: Currency
         email: Email address
         email_notification: Receive email notification for each new reservation
+        event_first_booking_period: Do not allow event signups until
         event_form: Custom event fields
+        event_last_booking_period: Do not allow event signups after
         first_bookable_period: Do not allow reservations until
         footer: Footer
         future_bookable_period: Do not allow reservations after

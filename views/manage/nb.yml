@@ -397,6 +397,8 @@ nb:
         cancellation: Avbestillling
         cancellation_info: Avbestilling kan kun utføres før avbestillingsfristen. Reservasjoner som er forhåndsbetalt kan ikke avbestilles.
         cancellation_period_info: 'Skriv inn på engelsk. Tid er relatert til starttidspunkt for reservasjonen. Eks.: ''24 hours before'' (kun mulig å avbestille 24 timer før reservasjonen begynner). Hvis ingen avbestillingsfrist er spesifisert kan kunden avbestille helt frem til reservasjonen starter.'
+        event_first_booking_period_info: 'Gjelder kun arrangementer. Skriv inn på engelsk. Tid er relatert til starttidspunkt for arrangementet. Eks.: ''2 weeks before'' (påmelding åpner to uker før arrangementet starter). Brukes som standard når nye arrangementer opprettes. Kan overstyres eller fjernes på hvert arrangement.'
+        event_last_booking_period_info: 'Gjelder kun arrangementer. Skriv inn på engelsk. Tid er relatert til starttidspunkt for arrangementet. Eks.: ''2 hours before'' (påmelding stenger to timer før arrangementet starter). Brukes som standard når nye arrangementer opprettes. Kan overstyres eller fjernes på hvert arrangement.'
         first_bookable_period_info: 'Skriv inn på engelsk. Eks.: ''in two hours'' (første ledige tidspunkt er om to timer) eller ''08:00 tomorrow'' (første ledige tidspunkt er kl. 8 i morgen tidlig).'
         future_bookable_period_info: 'Skriv inn på engelsk. Eks.: ''in two months'' (kun mulig å bestille de to neste månedene) eller ''Friday at midnight'' (kun mulig å bestille før midnatt på fredag).'
         header: Endre bookingside
