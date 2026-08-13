@@ -1260,6 +1260,7 @@ nb:
         header_html: 'Velkommen til Makeplans.<br>Begynn med å legge til tjenester:'
     shared:
       recurring:
+        booking_window_fixed: Bruk samme påmeldingsdatoer for alle gjentagelser
         enabled: Gjenta flere ganger med et mønster
         freq:
           monthly: Måned

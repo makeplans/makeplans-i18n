@@ -1272,6 +1272,7 @@ en:
         header_html: Welcome to Makeplans.<br>Start by adding your services
     shared:
       recurring:
+        booking_window_fixed: Use the same signup dates for all occurrences
         enabled: Repeat multiple times with a pattern
         freq:
           monthly: Month
