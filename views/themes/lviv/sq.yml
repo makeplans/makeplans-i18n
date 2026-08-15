@@ -35,12 +35,6 @@ sq:
         title: Futni detajet e pagesës
       pre_payment:
         title: Zgjidhni metodën e pagesës
-      review:
-        agree_with: Unë pajtohem me
-        any_specialist: Çdo specialist
-        directions: Udhëzime
-        terms: Kushtet dhe Rregullat
-        title: Rishikoni rezervimin tuaj
       show:
         add_to_calendar: Shto në kalendar
         alt:

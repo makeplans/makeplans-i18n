@@ -35,12 +35,6 @@ it:
         title: Inserisci i dettagli di pagamento
       pre_payment:
         title: Scegli il metodo di pagamento
-      review:
-        agree_with: Sono d'accordo con
-        any_specialist: Qualsiasi specialista
-        directions: Indicazioni stradali
-        terms: Termini e condizioni
-        title: Rivedi la tua prenotazione
       show:
         add_to_calendar: Aggiungi al calendario
         alt:

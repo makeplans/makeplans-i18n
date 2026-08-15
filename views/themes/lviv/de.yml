@@ -35,12 +35,6 @@ de:
         title: Zahlungsdetails eingeben
       pre_payment:
         title: Zahlungsmethode auswählen
-      review:
-        agree_with: Ich stimme zu
-        any_specialist: Jeder Spezialist
-        directions: Wegbeschreibung
-        terms: Allgemeine Geschäftsbedingungen
-        title: Überprüfen Sie Ihre Buchung
       show:
         add_to_calendar: Zum Kalender hinzufügen
         alt:

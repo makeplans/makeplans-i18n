@@ -35,12 +35,6 @@ es:
         title: Introduzca los detalles del pago
       pre_payment:
         title: Elija el método de pago
-      review:
-        agree_with: Estoy de acuerdo con
-        any_specialist: Cualquier especialista
-        directions: Instrucciones
-        terms: Términos y condiciones
-        title: Revisa tu reserva
       show:
         add_to_calendar: Añadir al calendario
         alt:

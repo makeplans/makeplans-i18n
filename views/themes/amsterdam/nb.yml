@@ -81,6 +81,7 @@ nb:
         providers:
           braintree: Kredittkort eller debetkort
           fiken: Faktura
+          frontgo: Front Go
           stripe: Kredittkort, debetkort, Google Pay eller Apple Pay
           tfso: Faktura
           vipps: Vipps
@@ -209,6 +210,7 @@ nb:
         header: Din lagrede informasjon
     providers:
       index:
+        none_available: Ingen tilbydere tilgjengelig.
         show_all_available: Vis alle ledige
         show_only_selected: 'Eller vis kun fra ønsket %{resource_title}:'
     services:

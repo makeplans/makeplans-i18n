@@ -1,54 +1,9 @@
 ---
 en:
   shared:
-    order_cart:
-      checkout:
-        cannot_use_coupon_for_gift_card: Discount codes cannot be used for gift card purchases
-        cannot_use_gift_card_for_gift_card: Gift cards cannot be used to purchase gift cards
-        coupon_above_maximum: Order total exceeds the maximum for this discount code
-        coupon_below_minimum: Order total does not meet the minimum for this discount code
-        coupon_no_eligible_items: This discount code does not apply to items in your cart
-        coupon_not_redeemable: This discount code is not valid
-        invalid_cart_item: Invalid item value
-        invalid_coupon: Invalid discount code
-        invalid_gift_card: Invalid or already used gift card
-    order_payments:
-      edit_profile:
-        intro: Please provide a few more details to continue with your payment.
-        submit: Continue
-        title: Complete your profile to continue
-      pay_later:
-        gift_cards_not_allowed: Gift cards cannot be used with pay later
-      processing:
-        title: Processing Payment
-        message: Please wait while we process your payment...
-    generic:
-      alt:
-        go_back: Go back
-      close: close
-      join_waitlist: Join Waitlist
-      waitlist: Waitlist
-      waitlist_notice: This time slot is fully booked. You will be added to the waitlist and notified when a spot becomes available.
-      payment:
-        add_card_details_html: Your card details will not be stored with us but is sent encrypted to %{provider} for secure transaction and storage.
-        add_card_footer_html: Your card will not be charged now
-        add_card_header: Save card
-        add_card_info: Add your payment card so you can easily and automatically pay after the booking.
-        add_card_submit: Save card
-        card: Card
-        awaiting:
-          body: Please wait while the transaction is confirmed.
-          error: We were unable to confirm that the payment was completed. Please contact customer service via https://makeplans.no and provide reference number %{booking_id}.
-          title: Checking payment
-        form_footer_html: Your credit card will be charged with <span class="payment-amount">%{amount}</span>.
-        form_header: This form is sent encrypted.
-        header: Payment
-        info: To complete the reservation of %{service} %{booking} you must pay with your credit card.
-        new_card: Enter new card
-        payment_details_html: The displayed amount is in %{currency}. We do not store your credit card details but send it encrypted over to %{provider} for secure processing and storage.
-        payment_received: "%{paid_amount} was paid on %{paid_at}."
-        save_card: Save card
     bookings:
+      cancelled:
+        info: The booking for %{title} %{time} was cancelled.
       edit_profile:
         intro: Please provide a few more details to continue with your payment.
         submit: Continue
@@ -56,35 +11,44 @@ en:
       expired:
         info: Bookings must be verified within %{expires_in} minutes. Please try again.
         title: Booking expired
+      new:
+        accept: I accept the terms and conditions
+        add_another_person: Add another person
+        book_for_someone_else: Book for someone else
+        booking_for: 'This booking is for:'
+        booking_for_label: Booking for
+        cancel: Cancel
+        change: Change
+        email_suggestion_html: "<p>Did you mean<span> %{suggestions}</span>?</p>"
+        logged_in_as: Booking as %{person}
+        logged_in_as_short: Logged in as
+        logout: Log out
+        myself: Myself
+        not_you_logout: Not you? Log out
+        someone_else: Someone else (add new)
+        terms: Read terms for reservation
+        who_is_booking_for: Who is this booking for?
+        yourself: Yourself
+      payment_invoice:
+        form_footer_html: Your invoice will be for <span class="payment-amount">%{amount}</span>.
+        form_header: Invoice information
+        header: Payment by invoice
+        info: Your booking for %{service} %{booking} will be paid for by invoice.
+        payment_details_html: You will receive an invoice for the displayed amount in %{currency} from us at the time of your booking.
+      payment_stripe:
+        submit: Pay
       promote_waitlist:
         confirm: Confirm Booking
         info: A spot has become available for your waitlisted booking. Confirm now to secure your spot.
         title: A Spot is Available!
-      waitlisted:
-        confirm: Confirm Booking
-        info: You have been added to the waitlist. We will notify you when a spot becomes available.
-        leave_confirmation: Are you sure you want to leave the waitlist?
-        leave_waitlist: Leave Waitlist
-        spot_available: A spot is now available! Confirm now to secure your booking.
-        title: You're on the Waitlist
-      new:
-        accept: I accept the terms and conditions
-        email_suggestion_html: "<p>Did you mean<span> %{suggestions}</span>?</p>"
-        terms: Read terms for reservation
-      payment_invoice:
-        header: Payment by invoice
-        info: Your booking for %{service} %{booking} will be paid for by invoice.
-        form_header: Invoice information
-        form_footer_html: Your invoice will be for <span class="payment-amount">%{amount}</span>.
-        payment_details_html: You will receive an invoice for the displayed amount in %{currency} from us at the time of your booking.
-      payment_stripe:
-        submit: Pay
       show:
         booked_for_child: This booking is for %{name}.
         count: Booked for %{count} people.
         invoiced: You have been invoiced.
         paid: You have prepaid %{paid_amount}.
+        pay: Pay
         price: The price of the booking is %{amount}.
+        reschedule: Reschedule
       verification_method_email:
         email: Email
         info: You have to verify your email address to complete your reservation.
@@ -98,30 +62,204 @@ en:
         phone_number: Mobile phone number
         submit: Continue
         title: Verify your phone number
+      waitlisted:
+        confirm: Confirm Booking
+        info: You have been added to the waitlist. We will notify you when a spot becomes available.
+        leave_confirmation: Are you sure you want to leave the waitlist?
+        leave_waitlist: Leave Waitlist
+        spot_available: A spot is now available! Confirm now to secure your booking.
+        title: You're on the Waitlist
+    generic:
+      alt:
+        go_back: Go back
+      before_first_booking: It is not possible to sign up for this event before %{first_booking_at}.
+      close: close
+      free_capacity:
+        one: "%{count} available"
+        other: "%{count} available"
+      fully_booked: This event is fully booked. No spots are available.
+      join_waitlist: Join Waitlist
+      past_last_booking: It is no longer possible to sign up for this event.
+      payment:
+        add_card_details_html: Your card details will not be stored with us but is sent encrypted to %{provider} for secure transaction and storage.
+        add_card_footer_html: Your card will not be charged now
+        add_card_header: Save card
+        add_card_info: Add your payment card so you can easily and automatically pay after the booking.
+        add_card_submit: Save card
+        awaiting:
+          body: Please wait while the transaction is confirmed.
+          error: We were unable to confirm that the payment was completed. Please contact customer service via https://makeplans.no and provide reference number %{booking_id}.
+          title: Checking payment
+        card: Card
+        form_footer_html: Your credit card will be charged with <span class="payment-amount">%{amount}</span>.
+        form_header: This form is sent encrypted.
+        header: Payment
+        info: To complete the reservation of %{service} %{booking} you must pay with your credit card.
+        new_card: Enter new card
+        payment_details_html: The displayed amount is in %{currency}. We do not store your credit card details but send it encrypted over to %{provider} for secure processing and storage.
+        payment_received: "%{paid_amount} was paid on %{paid_at}."
+        save_card: Save card
+      registration_closed: Registration for this event has closed.
+      waitlist: Waitlist
+      waitlist_notice: This time slot is fully booked. You will be added to the waitlist and notified when a spot becomes available.
+    gift_cards:
+      index:
+        buy: Buy
+        header: Gift Cards
+      new:
+        add_to_cart: Add to cart
+        header: Buy Gift Card
+    layouts:
+      application:
+        cart: Cart (%{count})
+    order_cart:
+      checkout:
+        applied_coupon: Applied Discount
+        applied_gift_cards: Applied Gift Cards
+        apply: Apply
+        cannot_use_coupon_for_gift_card: Discount codes cannot be used for gift card purchases
+        cannot_use_gift_card_for_gift_card: Gift cards cannot be used to purchase gift cards
+        complete_order: Complete Order
+        continue_to_payment: Continue to Payment
+        coupon_above_maximum: Order total exceeds the maximum for this discount code
+        coupon_below_minimum: Order total does not meet the minimum for this discount code
+        coupon_code: Discount Code
+        coupon_no_eligible_items: This discount code does not apply to items in your cart
+        coupon_not_redeemable: This discount code is not valid
+        discount: Discount
+        empty_cart: Empty cart
+        gift_card_code: Gift Card Code
+        gift_card_code_placeholder: XXXX-0000-XXXX
+        invalid_cart_item: Invalid item value
+        invalid_coupon: Invalid discount code
+        invalid_gift_card: Invalid or already used gift card
+        payment_method: Payment Method
+        remaining_total: Remaining Total
+        remove: Remove
+        use_coupon: Discount Code
+        use_gift_card: Use Gift Card
+        your_gift_cards: Your Gift Cards
+      show:
+        clear_cart: Empty cart
+        confirm_order: Confirm order
+        empty_cart: Your cart is empty.
+        header: Shopping Cart
+        remove: Remove
+        total: Total
+    order_payments:
+      edit_profile:
+        intro: Please provide a few more details to continue with your payment.
+        submit: Continue
+        title: Complete your profile to continue
+      failure:
+        header: Payment Failed
+        message: Unfortunately, your payment could not be processed.
+        try_again: Try Again
+      front_go:
+        awaiting_payment:
+          body: Please wait while we verify the transaction.
+          error: We are unable to verify your payment. Please contact customer service with the reference number %{order_id}.
+          title: Verifying your payment
+        payment:
+          back: Back
+          header: FrontGo Payment
+          pay_now: Pay Now
+      pay_later:
+        gift_cards_not_allowed: Gift cards cannot be used with pay later
+        payment:
+          back: Back
+          complete_order: Complete Order
+          header: Pay Later
+      processing:
+        message: Please wait while we process your payment...
+        title: Processing Payment
+      stripe:
+        awaiting_payment:
+          header: Processing Payment
+          message: Please wait while we process your payment...
+        payment:
+          back: Back
+          header: Card Payment
+          new_card: Use a new card
+          pay_now: Pay Now
+          save_card: Save this card for future payments
+          select_card: Select a saved card
+      vipps:
+        payment:
+          back: Back
+          header: Vipps Payment
+          pay_now: Pay with Vipps
+    orders:
+      index:
+        order_number: 'Order #%{number}'
+      payment:
+        amount_to_pay: Amount to Pay
+        fiken: Invoice (Fiken)
+        front_go: FrontGo
+        pay_later: Pay Later
+        vipps: Vipps
+      show:
+        confirmation_message: Thank you for your order!
+        discount_code: Discount (%{code})
+        gift_card_code: Gift Card Code
+        gift_card_value: Value
+        gift_cards: Gift Cards
+        header: Order Confirmation
+        order_details: Order Details
+        payment_details: Payment
+        total: Total
+        transaction_gift_card: Gift Card (%{code})
+        transaction_payment: Payment
+        transaction_refund: Refund
     person_sessions:
       perishable_token_form:
         login_with_email: Log in with email
         login_with_id_porten: Log in with BankID
         login_with_sms: Log in with SMS
         login_with_vipps: Log in with Vipps
+    products:
+      index:
+        header: Products
+      show:
+        add_to_cart: Add to cart
     profile:
-      edit:
-        cancel: Cancel
-        errors_header: 'Errors occurred:'
-        header: Edit profile
-        save: Save
-        verified: Verified
+      children:
+        index:
+          header: People you can book for
+        new:
+          errors_header: 'Errors occurred:'
+          submit: Save and continue
+          title: Add person
       credit_card_list:
         add_card: Add new card
         body: These are your stored payment cards. If you want you can add a new card or delete any of the existing ones.
         card_info: "%{brand} with number ending in %{last_4} and expires %{expire_month}/%{expire_year}."
         remove_card: Remove this card
         title: Your stored payment methods
+      edit:
+        cancel: Cancel
+        errors_header: 'Errors occurred:'
+        header: Edit profile
+        save: Save
+        verified: Verified
+      gift_card_list:
+        balance: Balance
+        code: Code
+        no_gift_cards: You have no gift cards.
+        purchased_body: Gift cards you have purchased that have not been redeemed yet.
+        purchased_title: Purchased Gift Cards
+        title: My Gift Cards
+      index:
+        tabs:
+          all: All
+          cancelled: Cancelled
+          completed: Completed
+          upcoming: Upcoming
+      new:
+        errors_header: 'Errors occured:'
+        register: Register
       show:
         header: Your stored information
-      children:
-        index:
-          header: Other people you can make book for
     providers:
       index:
         all_services: All services
@@ -135,13 +273,13 @@ en:
         available_dates: Available dates
         available_slots: Available times
         continue: Continue
+        free_capacity:
+          one: "%{count} available"
+          other: "%{count} available"
         gap_warning: To select multiple slots these slots have to be without gaps.
         max_slots_warning: Cannot reserve more than %{max_slots} timeslots
         multiple_slots_info: To select multiple slots first choose the start time then the ending slot.
         next_available_date_html: Next available date is %{next_available_date}
         no_availability: No availability
         no_selection: Please select an available time.
-        free_capacity:
-          one: "%{count} available"
-          other: "%{count} available"
         time_zone_differ_info: All times are shown in %{time_zone}.

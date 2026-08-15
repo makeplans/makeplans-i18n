@@ -7,48 +7,26 @@ nb:
         phone_number: Telefonnummer
         title: Bekreft reservasjon
       cancelled:
-        info: Reservasjonen av %{title} %{time} ble kansellert.
         title: Din reservasjon er kansellert
       new:
-        add_another_person: Legg til en annen person
         agree_with: Jeg aksepterer vilkårene og betingelsene
-        book_for_someone_else: Bestill for noen andre
-        booking_for: "Denne reservasjonen er for:"
-        booking_for_label: Bestiller for
-        cancel: Avbryt
-        change: Endre
         errors_header: Vennligst fyll ut alle påkrevde felter.
-        logged_in_as: "Bestiller som %{person}"
-        logged_in_as_short: Logget inn som
-        logout: Logg ut
-        myself: Meg selv
-        not_you_logout: Ikke deg? Logg ut
         optional: Valgfritt
-        someone_else: Noen andre (legg til ny)
         submit: Reserver tjeneste
         subtitle: Reservasjonen er ikke bekreftet ennå. Se over detaljene og trykk på knappen nedenfor.
-        terms: Les vilkår for reservasjonen
         title: Bekreft bestillingen
-        who_is_booking_for: Hvem er denne bestillingen for?
-        yourself: Deg selv
       payment_stripe:
+        make_payment: Utfør betaling
         title: Oppgi betalingsdetaljer
       pre_payment:
+        make_payment: Utfør betaling
         title: Velg betalingsmetode
-      review:
-        agree_with: Jeg godtar
-        any_specialist: Hvilken som helst specialist
-        directions: Veibeskrivelse
-        terms: Vilkår og betingelser
-        title: Se over reservasjonen din
       show:
         add_to_calendar: Legg til i kalender
         alt:
           calendar: Legg til i kalender
           profile: Profil
         cancel_booking: Avbestill reservasjon
-        pay: Betal
-        reschedule: Endre tidspunkt
         title: Reservasjonsdetaljer
     categories:
       index:
@@ -59,18 +37,10 @@ nb:
       show:
         book_event: Reserver dette arrangementet
     generic:
-      alt:
-        go_back: Gå tilbake
-      fully_booked: Fullbooket
       step: Steg %{step} / %{steps}
     gift_cards:
-      index:
-        buy: Kjøp
-        header: Gavekort
       new:
-        add_to_cart: Legg i handlekurv
         description: Kjøp et gavekort til noen du er glad i. Velg beløp nedenfor.
-        header: Kjøp gavekort
         value_label: Beløp
         value_placeholder: Skriv inn beløp
     layouts:
@@ -83,7 +53,6 @@ nb:
           cart: Handlekurv
           menu: Meny
         booking_site_footer: Reservasjonssystem for %{name}
-        cart: Handlekurv (%{count})
         close: Lukk
         get_support: Få støtte
         menu: Meny
@@ -92,101 +61,33 @@ nb:
         title: Online reservasjon for %{name}
     order_cart:
       checkout:
-        applied_coupon: Brukt rabattkode
-        applied_gift_cards: Brukte gavekort
-        apply: Bruk
-        complete_order: Fullfør bestilling
-        continue_to_payment: Fortsett til betaling
-        coupon_code: Rabattkode
         coupon_code_placeholder: Skriv inn kode
-        discount: Rabatt
-        empty_cart: Tøm handlekurv
-        gift_card_code: Gavekortkode
-        gift_card_code_placeholder: "XXXX-0000-XXXX"
         header: Kasse
         order_total: Totalsum
-        payment_method: Betalingsmetode
-        remaining_total: Gjenstående beløp
-        remove: Fjern
-        use_coupon: Rabattkode
-        use_gift_card: Bruk gavekort
-        your_gift_cards: Dine gavekort
-      show:
-        clear_cart: Tøm handlekurv
-        confirm_order: Bekreft bestilling
-        empty_cart: Handlekurven din er tom.
-        header: Handlekurv
-        remove: Fjern
-        total: Totalt
     order_payments:
       failure:
-        header: Betaling mislyktes
         message: Dessverre kunne ikke betalingen din behandles.
-        try_again: Prøv igjen
-      front_go:
-        awaiting_payment:
-          body: Vennligst vent mens transaksjonen bekreftes.
-          error: "Vi klarte ikke å bekrefte at betaling ble gjennomført. Kontakt kundeservice og oppgi referansenummer %{order_id}."
-          title: Kontrollerer betaling
-        payment:
-          back: Tilbake
-          header: FrontGo-betaling
-          pay_now: Betal nå
       pay_later:
         payment:
-          back: Tilbake
-          complete_order: Fullfør bestilling
           description: Bestillingen din blir bekreftet. Betaling kan gjøres senere.
-          header: Betal senere
       stripe:
-        awaiting_payment:
-          header: Behandler betaling
-          message: Vennligst vent mens vi behandler betalingen din...
         payment:
-          back: Tilbake
-          header: Kortbetaling
-          new_card: Bruk et nytt kort
-          pay_now: Betal nå
-          payment_details_html: "Betalingen behandles sikkert via %{provider}. Alle beløp er i %{currency}."
-          save_card: Lagre dette kortet for fremtidige betalinger
-          select_card: Velg et lagret kort
+          payment_details_html: Betalingen behandles sikkert via %{provider}. Alle beløp er i %{currency}.
       vipps:
         awaiting_payment:
           body: Vennligst vent mens vi verifiserer transaksjonen.
           error: Vi kan ikke verifisere betalingen din. Vennligst kontakt kundeservice med referansenummer %{order_id}.
           title: Verifiserer betalingen din
-        payment:
-          back: Tilbake
-          header: Vipps-betaling
-          pay_now: Betal med Vipps
     orders:
       index:
         header: Mine bestillinger
         no_orders: Du har ingen bestillinger ennå.
-        order_number: "Bestilling #%{number}"
       payment:
-        amount_to_pay: Beløp å betale
-        fiken: Faktura (Fiken)
-        front_go: FrontGo
         no_payment_methods: Ingen betalingsmetoder tilgjengelig.
-        pay_later: Betal senere
         stripe: Bankkort
-        vipps: Vipps
       show:
         back_to_orders: Tilbake til bestillinger
-        confirmation_message: Takk for din bestilling!
-        discount_code: "Rabatt (%{code})"
         each: stk
-        gift_card_code: Gavekortkode
-        gift_card_value: Verdi
-        gift_cards: Gavekort
-        header: Ordrebekreftelse
-        order_details: Ordredetaljer
-        payment_details: Betaling
-        total: Totalt
-        transaction_gift_card: "Gavekort (%{code})"
-        transaction_payment: Betaling
-        transaction_refund: Refusjon
     person_sessions:
       enter_perishable_token:
         confirm_booking: Bekreft reservasjon
@@ -205,10 +106,7 @@ nb:
       verification_method_sms:
         submit: Send verifiseringskode
     products:
-      index:
-        header: Produkter
       show:
-        add_to_cart: Legg i handlekurv
         price: Pris
     profile:
       children:
@@ -216,35 +114,17 @@ nb:
           add_person: Legg til person
           alt:
             right: Høyre
-          header: Personer du kan bestille for
           no_children: Du har ikke lagt til noen å bestille for ennå.
         new:
-          errors_header: 'Det oppstod feil:'
-          submit: Lagre og fortsett
           subtitle: Vennligst fyll ut informasjonen for personen du vil bestille for.
-          title: Legg til person
       credit_card_list:
         title: Betalingsmetoder
-      gift_card_list:
-        balance: Saldo
-        code: Kode
-        no_gift_cards: Du har ingen gavekort.
-        purchased_body: Gavekort du har kjøpt som ikke er innløst ennå.
-        purchased_title: Kjøpte gavekort
-        title: Mine gavekort
       index:
         book_again: Reserver igjen
         canceled: Kansellert
         my_profile: Min profil
         waiting: Venter
-        tabs:
-          all: Alle
-          cancelled: Kansellerte
-          completed: Utførte
-          upcoming: Fremtidige
       new:
-        errors_header: 'Det oppstod feil:'
-        register: Registrer
         subtitle: Vennligst fyll ut de nødvendige dataene for å registrere.
         title: Ny profil
       show:

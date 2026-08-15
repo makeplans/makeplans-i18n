@@ -21,12 +21,6 @@ sv:
         title: Ange betalningsuppgifter
       pre_payment:
         title: Välj betalningsmetod
-      review:
-        agree_with: Jag accepterar
-        any_specialist: Vilken specialist som helst
-        directions: Vägbeskrivning
-        terms: Villkor
-        title: Granska din bokning
       show:
         add_to_calendar: Lägg till i kalendern
         alt:

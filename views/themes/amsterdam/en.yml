@@ -209,6 +209,7 @@ en:
         header: Your stored information
     providers:
       index:
+        none_available: No providers available.
         show_all_available: Show all available
         show_only_selected: 'Or only show from selected %{resource_title}:'
     services:

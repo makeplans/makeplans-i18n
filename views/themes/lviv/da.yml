@@ -35,12 +35,6 @@ da:
         title: Indtast betalingsoplysninger
       pre_payment:
         title: Vælg betalingsmetode
-      review:
-        agree_with: Jeg accepterer
-        any_specialist: Enhver specialist
-        directions: Vejvisning
-        terms: Vilkår og betingelser
-        title: Gennemgå din reservation
       show:
         add_to_calendar: Tilføj til kalender
         alt:

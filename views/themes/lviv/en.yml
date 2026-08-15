@@ -7,48 +7,26 @@ en:
         phone_number: Phone number
         title: Confirm booking
       cancelled:
-        info: The booking for %{title} %{time} was cancelled.
         title: Your booking is cancelled
       new:
-        add_another_person: Add another person
         agree_with: I accept the terms and conditions
-        book_for_someone_else: Book for someone else
-        booking_for: "This booking is for:"
-        booking_for_label: Booking for
-        cancel: Cancel
-        change: Change
         errors_header: Please fill out the required fields.
-        logged_in_as: "Booking as %{person}"
-        logged_in_as_short: Logged in as
-        logout: Log out
-        myself: Myself
-        not_you_logout: Not you? Log out
         optional: Optional
-        someone_else: Someone else (add new)
         submit: Complete booking
         subtitle: Your booking is not confirmed yet. Please review the details and press the button below.
-        terms: Read terms for reservation
         title: Confirm your booking
-        who_is_booking_for: Who is this booking for?
-        yourself: Yourself
       payment_stripe:
+        make_payment: Make payment
         title: Enter payment details
       pre_payment:
+        make_payment: Make payment
         title: Choose payment method
-      review:
-        agree_with: I agree with
-        any_specialist: Any specialist
-        directions: Directions
-        terms: Terms & Conditions
-        title: Review your booking
       show:
         add_to_calendar: Add to calendar
         alt:
           calendar: Add to calendar
           profile: Profile
         cancel_booking: Cancel booking
-        pay: Pay
-        reschedule: Reschedule
         title: Booking details
     categories:
       index:
@@ -59,18 +37,10 @@ en:
       show:
         book_event: Book this event
     generic:
-      alt:
-        go_back: Go back
-      fully_booked: Fully booked
       step: Step %{step} / %{steps}
     gift_cards:
-      index:
-        buy: Buy
-        header: Gift Cards
       new:
-        add_to_cart: Add to cart
         description: Purchase a gift card for someone special. Choose the amount below.
-        header: Buy Gift Card
         value_label: Value
         value_placeholder: Enter amount
     layouts:
@@ -83,7 +53,6 @@ en:
           cart: Cart
           menu: Menu
         booking_site_footer: Booking site for %{name}
-        cart: Cart (%{count})
         close: Close
         get_support: Get support
         menu: Menu
@@ -92,101 +61,33 @@ en:
         title: Online booking for %{name}
     order_cart:
       checkout:
-        applied_coupon: Applied Discount
-        applied_gift_cards: Applied Gift Cards
-        apply: Apply
-        complete_order: Complete Order
-        continue_to_payment: Continue to Payment
-        coupon_code: Discount Code
         coupon_code_placeholder: Enter code
-        discount: Discount
-        empty_cart: Empty cart
-        gift_card_code: Gift Card Code
-        gift_card_code_placeholder: "XXXX-0000-XXXX"
         header: Checkout
         order_total: Order Total
-        payment_method: Payment Method
-        remaining_total: Remaining Total
-        remove: Remove
-        use_coupon: Discount Code
-        use_gift_card: Use Gift Card
-        your_gift_cards: Your Gift Cards
-      show:
-        clear_cart: Empty cart
-        confirm_order: Confirm order
-        empty_cart: Your cart is empty.
-        header: Shopping Cart
-        remove: Remove
-        total: Total
     order_payments:
       failure:
-        header: Payment Failed
         message: Unfortunately, your payment could not be processed.
-        try_again: Try Again
-      front_go:
-        awaiting_payment:
-          body: Please wait while we verify the transaction.
-          error: "We are unable to verify your payment. Please contact customer service with the reference number %{order_id}."
-          title: Verifying your payment
-        payment:
-          back: Back
-          header: FrontGo Payment
-          pay_now: Pay Now
       pay_later:
         payment:
-          back: Back
-          complete_order: Complete Order
           description: Your order will be confirmed. Payment can be made later.
-          header: Pay Later
       stripe:
-        awaiting_payment:
-          header: Processing Payment
-          message: Please wait while we process your payment...
         payment:
-          back: Back
-          header: Card Payment
-          new_card: Use a new card
-          pay_now: Pay Now
-          payment_details_html: "Payment is processed securely using %{provider}. All amounts are in %{currency}."
-          save_card: Save this card for future payments
-          select_card: Select a saved card
+          payment_details_html: Payment is processed securely using %{provider}. All amounts are in %{currency}.
       vipps:
         awaiting_payment:
           body: Please wait while we verify the transaction.
           error: We are unable to verify your payment. Please contact customer service with the reference number %{order_id}.
           title: Verifying your payment
-        payment:
-          back: Back
-          header: Vipps Payment
-          pay_now: Pay with Vipps
     orders:
       index:
         header: My Orders
         no_orders: You have no orders yet.
-        order_number: "Order #%{number}"
       payment:
-        amount_to_pay: Amount to Pay
-        fiken: Invoice (Fiken)
-        front_go: FrontGo
         no_payment_methods: No payment methods available.
-        pay_later: Pay Later
         stripe: Credit Card
-        vipps: Vipps
       show:
         back_to_orders: Back to orders
-        confirmation_message: Thank you for your order!
-        discount_code: "Discount (%{code})"
         each: each
-        gift_card_code: Gift Card Code
-        gift_card_value: Value
-        gift_cards: Gift Cards
-        header: Order Confirmation
-        order_details: Order Details
-        payment_details: Payment
-        total: Total
-        transaction_gift_card: "Gift Card (%{code})"
-        transaction_payment: Payment
-        transaction_refund: Refund
     person_sessions:
       enter_perishable_token:
         confirm_booking: Confirm booking
@@ -205,10 +106,7 @@ en:
       verification_method_sms:
         submit: Send verification code
     products:
-      index:
-        header: Products
       show:
-        add_to_cart: Add to cart
         price: Price
     profile:
       children:
@@ -216,35 +114,17 @@ en:
           add_person: Add person
           alt:
             right: Right
-          header: People you can book for
           no_children: You have not added anyone to book for yet.
         new:
-          errors_header: 'Errors occurred:'
-          submit: Save and continue
           subtitle: Please fill in the data for the person you want to book for.
-          title: Add person
       credit_card_list:
         title: Payment Methods
-      gift_card_list:
-        balance: Balance
-        code: Code
-        no_gift_cards: You have no gift cards.
-        purchased_body: Gift cards you have purchased that have not been redeemed yet.
-        purchased_title: Purchased Gift Cards
-        title: My Gift Cards
       index:
         book_again: Book again
         canceled: Canceled
         my_profile: My profile
         waiting: Waiting
-        tabs:
-          all: All
-          cancelled: Cancelled
-          completed: Completed
-          upcoming: Upcoming
       new:
-        errors_header: 'Errors occured:'
-        register: Register
         subtitle: Please fill in the data required to register.
         title: New profile
       show:

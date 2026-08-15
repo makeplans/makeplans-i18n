@@ -21,12 +21,6 @@ fr:
         title: Saisir les détails de paiement
       pre_payment:
         title: Choisir la méthode de paiement
-      review:
-        agree_with: Je suis d'accord avec
-        any_specialist: N'importe quel spécialiste
-        directions: Directions
-        terms: Conditions générales
-        title: Vérifiez votre réservation
       show:
         add_to_calendar: Ajouter au calendrier
         alt:
