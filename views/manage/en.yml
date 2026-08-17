@@ -425,6 +425,7 @@ en:
           waitlist_promotion_mode: Waitlist promotion mode
           waitlist_promotion_modes:
             auto: Auto-promote first in line
+            default: System default (Auto-promote first in line)
             notify_all: Notify all on waitlist
         verification_methods_alt: 'Additional methods:'
         verification_methods:

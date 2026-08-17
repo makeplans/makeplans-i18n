@@ -425,6 +425,7 @@ nb:
           waitlist_promotion_mode: Venteliste-forfremmelse
           waitlist_promotion_modes:
             auto: Forfrem første på venteliste automatisk
+            default: Systemstandard (Forfrem første på venteliste automatisk)
             notify_all: Varsle alle på ventelisten
         verification_methods_alt: 'Alternative metoder:'
         verification_methods:
