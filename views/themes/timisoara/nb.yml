@@ -41,13 +41,20 @@ nb:
     events:
       index:
         all_events: Alle arrangementer
-        continue: Fortsett
       show:
         all_services: Alle tjenester
         continue: Fortsett
+      week_calendar:
+        all_events: Alle arrangementer
+        next_week: Neste uke
+        none_this_week: Ingen arrangementer denne uken
+        prev_week: Forrige uke
+        this_week: Denne uken
     generic:
+      all_day: Hele dagen
       alt:
         time: Tid
+      continue: Fortsett
     gift_cards:
       new:
         description: Kjøp et gavekort til noen du bryr deg om. Velg beløp nedenfor.

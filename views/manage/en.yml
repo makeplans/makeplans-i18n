@@ -415,10 +415,12 @@ en:
         settings:
           active_bookings_limit: Max nr of active reservations for customer
           disable_person_cookie: Do not allow customer to stay logged in with cookie
+          event_template: Calendar template for events
           google_tag_manager: Google Tag Manager container ID
           person_oauth_auto_create: Automatically create customer profile from third party provider login (skip registration form)
           plausible: Enable Plausible Analytics
           prevent_new_signups: Only allow reservations from existing customers
+          show_all_events_calendar: Show all events in one calendar
           waitlist_enabled: Enable waitlist for fully booked slots and events
           waitlist_promotion_mode: Waitlist promotion mode
           waitlist_promotion_modes:

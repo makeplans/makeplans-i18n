@@ -41,13 +41,20 @@ en:
     events:
       index:
         all_events: All events
-        continue: Continue
       show:
         all_services: All services
         continue: Continue
+      week_calendar:
+        all_events: All events
+        next_week: Next week
+        none_this_week: No events this week
+        prev_week: Previous week
+        this_week: This week
     generic:
+      all_day: All day
       alt:
         time: Time
+      continue: Continue
     gift_cards:
       new:
         description: Purchase a gift card for someone special. Choose the amount below.

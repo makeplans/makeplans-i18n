@@ -415,10 +415,12 @@ nb:
         settings:
           active_bookings_limit: Maks antall aktive bookinger for kunde
           disable_person_cookie: Ikke tillatt kunde å forbli innlogget med cookie
+          event_template: Kalendermal for arrangementer
           google_tag_manager: Google Tag Manager Container ID
           person_oauth_auto_create: Opprett kundeprofil automatisk fra tredjeparts innlogging (hopp over registreringsskjema)
           plausible: Aktiver Plausible Analytics
           prevent_new_signups: Tillatt kun booking for eksisterende kunder
+          show_all_events_calendar: Vis alle arrangementer i én kalender
           waitlist_enabled: Aktiver venteliste for fullbookede slotter og arrangementer
           waitlist_promotion_mode: Venteliste-forfremmelse
           waitlist_promotion_modes:

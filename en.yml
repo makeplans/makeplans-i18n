@@ -608,6 +608,7 @@ en:
           resources: Resources
           time_day_available: Day
           week_available: All week
+          week_calendar: Week calendar
           weekday_available: Weekdays
         terms: Terms and conditions
         title: Title

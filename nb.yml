@@ -606,6 +606,7 @@ nb:
           resources: Ressurser
           time_day_available: Dag
           week_available: Hele uken
+          week_calendar: Ukekalender
           weekday_available: Ukedager
         terms: Vilkår
         title: Tittel
