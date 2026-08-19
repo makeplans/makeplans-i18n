@@ -16,6 +16,7 @@ en:
           closed_all_week: Closed all period
           dates: Dates
           from: From
+          no_items: No resources match the current filter.
           open: Open
           remove_existing: remove
           reset: Reset

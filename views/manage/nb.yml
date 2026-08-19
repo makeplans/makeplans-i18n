@@ -16,6 +16,7 @@ nb:
           closed_all_week: Stengt hele perioden
           dates: Datoer
           from: Fra
+          no_items: Ingen ressurser samsvarer med valgt filter.
           open: Åpent
           remove_existing: fjern
           reset: Tilbakestill
