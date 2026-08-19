@@ -29,6 +29,7 @@ nb:
       subdomain_info: Din unike adresse (URL) hvor dine kunder kan reservere.
       subdomain_not_website_warning: 'OBS: Her kan du skrive inn adressen til din nye bookingside. Du skal IKKE skrive inn din eksisterende nettside. Hvis du er i tvil så skriv inn ditt firmanavn.'
       submit: Register min konto
+      test_env_info_html: Skal du opprette en testkonto? Se %{link} for informasjon om vårt testmiljø.
       title: Registrer din egen online bookingside
       user_email: Jobb-epost
       user_info: Din bruker for å logge inn

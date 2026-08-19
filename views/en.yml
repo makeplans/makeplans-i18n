@@ -29,6 +29,7 @@ en:
       subdomain_info: Your unique address (URL) where your customers can book online.
       subdomain_not_website_warning: 'OOPS: This is the address for your new booking site. Do NOT enter the URL to your existing website. If you are in doubt just enter your company name here.'
       submit: Register my account
+      test_env_info_html: Making a test account? See %{link} for information about our test environment.
       title: Register for your online booking account
       user_email: Work email
       user_info: Your user login
