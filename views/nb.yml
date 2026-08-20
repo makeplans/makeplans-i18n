@@ -19,20 +19,29 @@ nb:
       incorrect_code: Feil kode
   clients:
     new:
+      accept_terms_html: Ved å registrere godtar du %{link}.
+      benefit_booking_site: Din egen bookingside på nett, åpen hele døgnet.
+      benefit_calendar: Alle tjenester, ansatte og avtaler i én kalender.
+      benefit_notifications: Automatiske bekreftelser og påminnelser på epost og SMS.
+      change: Endre
       first_user: Dette er ditt personlige passord. Du kan legge til flere brukere senere.
       free_trial_info: 14-dagers gratis test av fullverdig versjon av Makeplans. Ingen forpliktelser.
       headline: Kom i gang med online timebestilling
       logged_in_as: Du er innlogget som %{name}.
       newsletter: Jeg godtar å motta produktoppdateringer på epost.
-      read_legal: Les vilkår for bruk av tjenesten
       recaptcha: Vi må verifisere din registrering med Google Recaptcha. Skriv inn passordet ditt en gang til og trykk på registrer-knappen igjen.
+      social_proof_caption: bookinger siden 2010
+      social_proof_figure: Over 7 millioner
       subdomain_info: Din unike adresse (URL) hvor dine kunder kan reservere.
+      subdomain_label: Adressen til din bookingside
       subdomain_not_website_warning: 'OBS: Her kan du skrive inn adressen til din nye bookingside. Du skal IKKE skrive inn din eksisterende nettside. Hvis du er i tvil så skriv inn ditt firmanavn.'
-      submit: Register min konto
+      submit: Opprett min bookingside
+      terms_link: vilkårene for bruk av tjenesten
       test_env_info_html: Skal du opprette en testkonto? Se %{link} for informasjon om vårt testmiljø.
       title: Registrer din egen online bookingside
       user_email: Jobb-epost
       user_info: Din bruker for å logge inn
+      your_booking_site: 'Din bookingside:'
     rejected:
       headline: Registrering blokkert
       info: Beklager men vårt system har blokkert din registrering som spam. Kontakt oss for å registrere en konto.
