@@ -220,6 +220,17 @@ en:
     products:
       index:
         header: Products
+        per_billing_period:
+          month: per month
+          week: per week
+          year: per year
+        quota:
+          one: "%{count} reservation"
+          other: "%{count} reservations"
+        quota_unlimited: Unlimited reservations
+        validity_days:
+          one: Valid for %{count} day
+          other: Valid for %{count} days
       show:
         add_to_cart: Add to cart
     profile:

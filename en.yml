@@ -110,10 +110,14 @@ en:
         title: title
       service:
         allow_invoice: allow invoice
+        billing_period: renewal period
         payment_required: require payment
         price: price
+        quota: number of reservations included
         terms: terms
         title: title
+        unlimited: unlimited
+        validity_days: number of days valid after purchase
       service/availability_type:
         provider: provider
         resource: resource
@@ -219,7 +223,9 @@ en:
       service_appointment: service
       service_attendance: event type
       service_gift_card: gift card
+      service_pass: pass
       service_product: product
+      service_subscription: subscription
       tag: tag
       user: user
       web_hook: webhook
@@ -561,6 +567,7 @@ en:
         allow_cancellation: Allow cancellations by customer
         allow_invoice: Allow invoice
         availability_type: Availability is defined by
+        billing_period: Renewed every
         cancellation_period: Cancellation period
         block_resource: Reservation will block resource
         booking_capacity: Max number of people allowed per reservation
@@ -590,6 +597,7 @@ en:
         price: Price including taxes
         priority_strategy: Priority strategy
         published: Show on the booking site
+        quota: Number of reservations included
         reservation_form_text: Text displayed before reservation form
         same_day: Allow reservation over multiple days
         slot_generation: Time generation
@@ -612,6 +620,8 @@ en:
           weekday_available: Weekdays
         terms: Terms and conditions
         title: Title
+        unlimited: Unlimited
+        validity_days: Number of days valid after purchase
       service/availability_type:
         provider: Provider
         resource: Resource (default)
@@ -658,12 +668,18 @@ en:
       resource:
         new: New resource
       service:
+        new_addon: New addon
+        new_addon_title: New %{title}
         new_appointment: New service
         new_attendance: New event type
         new_gift_card: New gift card
         new_gift_card_title: New %{title}
+        new_pass: New pass
+        new_pass_title: New %{title}
         new_product: New product
         new_product_title: New %{title}
+        new_subscription: New subscription
+        new_subscription_title: New %{title}
       setup:
         skip: Manual setup
         step_html: "<strong>Step %{step}</strong> of %{max_steps}"

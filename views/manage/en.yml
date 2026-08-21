@@ -526,7 +526,9 @@ en:
           service_appointment_title: Custom service title
           service_attendance_title: Custom event type title
           service_gift_card_title: Custom gift card title
+          service_pass_title: Custom pass title
           service_product_title: Custom product title
+          service_subscription_title: Custom subscription title
       email_sender:
         create:
           dns: See your DNS values.
@@ -1177,10 +1179,18 @@ en:
           hide_slot_end: Hide end-time
           show_free_capacity: Show available capacity
           waitlist_enabled: Enable waitlist (overrides account setting)
-      form_product:
+      form_sellable:
+        billing_periods:
+          month: Month
+          week: Week
+          year: Year
         booking_site_settings: Settings for the booking site
-      form_gift_card:
-        booking_site_settings: Settings for the booking site
+        linked_services:
+          addon: Available when reserving the following services
+          pass: Valid for the following services
+          subscription: Valid for the following services
+        linked_services_info: If none are selected it is available for all services.
+        validity_days_unlimited: Never expires
       index:
         appointment:
           header: Services
@@ -1222,18 +1232,24 @@ en:
         header: Service ordering
       show:
         availability: Availability pr provider
+        billing_period: 'Renewal period:'
         custom_data: 'Custom data:'
         days: days
         description: 'Description:'
         interval: 'Duration:'
+        linked_services_all: All services
         manage_priority: Manage priority
         minutes: minutes
+        never_expires: Never expires
         no_providers: 'Important: This service is not offered by any resources and will not be shown on the booking site. Click here to add providers.'
         not_in_category: You are using categories on the booking site and this service is not linked to a category. As a result this service is at the moment not visible on the booking site. Click here to manage your categories.
         offered: 'Offered by the following resources:'
         price: 'Price:'
         qr_code: QR code for customers
+        quota: 'Number of reservations included:'
         show_on_booking_site: Open service on booking site
+        unlimited: Unlimited
+        validity: 'Validity:'
       slots:
         available: 'Available slots:'
         next_available: 'Next available date:'

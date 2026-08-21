@@ -526,7 +526,9 @@ nb:
           service_appointment_title: Egendefinert tjenesetittel
           service_attendance_title: Egendefinert arrangementstype-tittel
           service_gift_card_title: Egendefinert gavekorttittel
+          service_pass_title: Egendefinert klippekorttittel
           service_product_title: Egendefinert produkttittel
+          service_subscription_title: Egendefinert abonnementtittel
       email_sender:
         create:
           dns: Se dine DNS-verdier.
@@ -1165,10 +1167,18 @@ nb:
           hide_slot_end: Skjul sluttid
           show_free_capacity: Vis tilgjengelig kapasitet
           waitlist_enabled: Aktiver venteliste (overstyrer kontoinnstilling)
-      form_product:
+      form_sellable:
+        billing_periods:
+          month: Måned
+          week: Uke
+          year: År
         booking_site_settings: Innstillinger for bookingsiden
-      form_gift_card:
-        booking_site_settings: Innstillinger for bookingsiden
+        linked_services:
+          addon: Tilgjengelig ved reservasjon av følgende tjenester
+          pass: Gjelder for følgende tjenester
+          subscription: Gjelder for følgende tjenester
+        linked_services_info: Hvis ingen er valgt er den tilgjengelig for alle tjenester.
+        validity_days_unlimited: Utløper aldri
       index:
         appointment:
           header: Tjenester
@@ -1210,18 +1220,24 @@ nb:
         header: Tjenesterekkefølge
       show:
         availability: Tilgjengelighet pr tilbyder
+        billing_period: 'Fornyelsesperiode:'
         custom_data: 'Egendefinerte felter:'
         days: dager
         description: 'Beskrivelse:'
         interval: Varighet
+        linked_services_all: Alle tjenester
         manage_priority: Administrer prioritet
         minutes: minutter
+        never_expires: Utløper aldri
         no_providers: 'OBS: Denne tjenesten tilbys ikke av noen ressurser og vil derfor ikke vises på bookingsiden. Klikk her for å legge til tilbydere.'
         not_in_category: 'OBS: Du benytter kategorier på bookingsiden og denne tjenesten er ikke lagt til i en kategori. Denne tjenesten er derfor ikke synlig på bookingsiden. Klikk her for å administrere kategorier.'
         offered: 'Tilbys av følgende ressurser:'
         price: 'Pris:'
         qr_code: QR-kode for kunder
+        quota: 'Antall reservasjoner inkludert:'
         show_on_booking_site: Åpne bookingsiden for denne tjenesten
+        unlimited: Ubegrenset
+        validity: 'Gyldighet:'
       slots:
         available: 'Ledige tidspunkt:'
         next_available: 'Neste ledige dato:'

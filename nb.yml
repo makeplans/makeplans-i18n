@@ -111,10 +111,14 @@ nb:
         title: tittel
       service:
         allow_invoice: kan betales med faktura
+        billing_period: fornyelsesperiode
         payment_required: krev betaling
         price: pris
+        quota: antall reservasjoner inkludert
         terms: vilkår
         title: tittel
+        unlimited: ubegrenset
+        validity_days: antall dager gyldig etter kjøp
       service/availability_type:
         provider: tilbyder
         resource: ressurs
@@ -220,7 +224,9 @@ nb:
       service_appointment: tjeneste
       service_attendance: arrangementstype
       service_gift_card: gavekort
+      service_pass: klippekort
       service_product: produkt
+      service_subscription: abonnement
       tag: etikett
       user: bruker
       web_hook: webhook
@@ -559,6 +565,7 @@ nb:
         allow_cancellation: Tillatt avbestilling av kunden
         allow_invoice: Kan betales med faktura
         availability_type: Tilgjengelighet er definert av
+        billing_period: Fornyes hver
         cancellation_period: Avbestillingsfrist
         block_resource: Reservasjon blokkerer ressursen
         booking_capacity: Maks antall personer per reservasjon
@@ -588,6 +595,7 @@ nb:
         price: Pris inkludert mva.
         priority_strategy: Prioriteringstrategi
         published: Synlig på bookingsiden
+        quota: Antall reservasjoner inkludert
         reservation_form_text: Tekst som vises før reservasjonskjema
         same_day: Reservasjon kan ikke gå over flere dager
         slot_generation: Generering av tidspunkt
@@ -610,6 +618,8 @@ nb:
           weekday_available: Ukedager
         terms: Vilkår
         title: Tittel
+        unlimited: Ubegrenset
+        validity_days: Antall dager gyldig etter kjøp
       service/availability_type:
         provider: Tilbyder
         resource: Ressurs (standard)
@@ -656,12 +666,18 @@ nb:
       resource:
         new: Ny ressurs
       service:
+        new_addon: Nytt tillegg
+        new_addon_title: Nytt %{title}
         new_appointment: Ny tjeneste
         new_attendance: Ny arrangementstype
         new_gift_card: Nytt gavekort
         new_gift_card_title: Nytt %{title}
+        new_pass: Nytt klippekort
+        new_pass_title: Nytt %{title}
         new_product: Nytt produkt
         new_product_title: Nytt %{title}
+        new_subscription: Nytt abonnement
+        new_subscription_title: Nytt %{title}
       setup:
         skip: Manuelt oppsett
         step_html: "<strong>Steg %{step}</strong> av %{max_steps}"

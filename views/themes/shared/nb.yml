@@ -197,6 +197,17 @@ nb:
     products:
       index:
         header: Produkter
+        per_billing_period:
+          month: per måned
+          week: per uke
+          year: per år
+        quota:
+          one: "%{count} reservasjon"
+          other: "%{count} reservasjoner"
+        quota_unlimited: Ubegrenset antall reservasjoner
+        validity_days:
+          one: Gyldig i %{count} dag
+          other: Gyldig i %{count} dager
       show:
         add_to_cart: Legg i handlekurv
     profile:
