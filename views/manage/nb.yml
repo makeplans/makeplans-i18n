@@ -13,6 +13,7 @@ nb:
         opening_hours:
           add: "+ legg til"
           add_to_existing: "+ legg til"
+          all_resources: Alle %{resources}
           closed_all_week: Stengt hele perioden
           dates: Datoer
           from: Fra
@@ -20,6 +21,7 @@ nb:
           open: Åpent
           remove_existing: fjern
           reset: Tilbakestill
+          resource_default: "%{resource} (standard)"
           title: Juster tilgjengelighet
           to: Til
         resourceTimeGridDay: Dag (oppdelt)

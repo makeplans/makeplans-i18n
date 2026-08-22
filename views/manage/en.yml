@@ -13,6 +13,7 @@ en:
         opening_hours:
           add: "+ add"
           add_to_existing: "+ add"
+          all_resources: All %{resources}
           closed_all_week: Closed all period
           dates: Dates
           from: From
@@ -20,6 +21,7 @@ en:
           open: Open
           remove_existing: remove
           reset: Reset
+          resource_default: "%{resource} (default)"
           title: Adjust availability
           to: To
         resourceTimeGridDay: day (divided)
