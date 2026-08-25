@@ -267,6 +267,7 @@ nb:
     models:
       person:
         perishable_token:
+          captcha: Spamkontrollen ble ikke fullført. Prøv på nytt.
           expired: Koden har utløpt. Prøv på nytt.
           invalid: Feil kode
           no_identifier: Mangler e-post eller telefonnummer.

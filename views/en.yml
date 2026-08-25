@@ -23,6 +23,7 @@ en:
       benefit_booking_site: Your own online booking site, open around the clock.
       benefit_calendar: All your services, staff and appointments in one calendar.
       benefit_notifications: Automatic confirmations and reminders by email and SMS.
+      captcha_missing: Spam check did not complete. Please submit the form again.
       change: Change
       first_user: This is your personal password. You can add more users later.
       free_trial_info: 14 day free trial. No obligations. No credit card required.

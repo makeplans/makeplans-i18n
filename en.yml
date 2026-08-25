@@ -269,6 +269,7 @@ en:
     models:
       person:
         perishable_token:
+          captcha: Spam check did not complete. Please try again.
           expired: Code expired. Please try again.
           invalid: Incorrect code
           invalid_value: Invalid format

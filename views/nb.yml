@@ -23,6 +23,7 @@ nb:
       benefit_booking_site: Din egen bookingside på nett, åpen hele døgnet.
       benefit_calendar: Alle tjenester, ansatte og avtaler i én kalender.
       benefit_notifications: Automatiske bekreftelser og påminnelser på epost og SMS.
+      captcha_missing: Spamkontrollen ble ikke fullført. Send inn skjemaet på nytt.
       change: Endre
       first_user: Dette er ditt personlige passord. Du kan legge til flere brukere senere.
       free_trial_info: 14-dagers gratis test av fullverdig versjon av Makeplans. Ingen forpliktelser.
