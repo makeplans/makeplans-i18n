@@ -1269,7 +1269,7 @@ en:
         header_html: Great, let's get started!<br>First lets add services for attendance.
         submit: Continue
       completed:
-        header_html: Congratulations - you booking site is now live!
+        header_html: Congratulations - your booking site is now live!
       completed_appointment:
         info_html: Your booking site is now configured at %{href}. This is where your customers can book online. We have also sent you an email with this information. In addition to the booking site you can also manually enter appointments in your calendar.
         to_calendar: Take me to the calendar
