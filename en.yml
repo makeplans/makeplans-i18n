@@ -375,6 +375,7 @@ en:
         parent_id: Parent category
         title: Title
       client:
+        account_form: Custom account fields
         address: Visiting address
         allow_cancellation: Allow cancellations by customer
         api_key: API-key (for external integrations)

@@ -372,6 +372,7 @@ nb:
         parent_id: Underkategori til
         title: Tittel
       client:
+        account_form: Egendefinerte kontofelter
         address: Besøksadresse
         allow_cancellation: Tillatt avbestilling av kunden
         api_key: API-nøkkel (til eksterne integrasjoner)
