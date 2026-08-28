@@ -108,6 +108,12 @@ nb:
       create_recurring:
         headline: Genererer %{count} reservasjoner...
         link: Vis liste
+      delivery_status:
+        channel:
+          email: e-post
+          sms: SMS
+        failed: 'Sending via %{channel} feilet %{time}: %{error}'
+        sent: Sendt via %{channel} %{time}
       destroy_recurring:
         headline: Alle reservasjoner i dette mønsteret ble slettet
       feed:
@@ -228,16 +234,11 @@ nb:
           stripe: Refundert med Stripe
           vipps: Refundert med Vipps
         request_card:
-          processing: Betalingslink sendes til kunde
-          send: Send betalingslink til kunde
+          processing: Kortforespørsel sendes til kunde
+          send: Send kortforespørsel til kunde
         request_payment:
-          channel:
-            email: e-post
-            sms: SMS
-          failed: 'Sending via %{channel} feilet %{time}: %{error}'
           processing: Betalingslink sendes til kunde
           send: Send betalingslink til kunde
-          sent: Sendt via %{channel} %{time}
         send_sms: Send SMS
         show_in_calendar: Vis i kalenderen
         stripe:

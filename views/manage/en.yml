@@ -108,6 +108,12 @@ en:
       create_recurring:
         headline: Generating %{count} reservations...
         link: Show list
+      delivery_status:
+        channel:
+          email: email
+          sms: SMS
+        failed: 'Sending by %{channel} failed %{time}: %{error}'
+        sent: Sent by %{channel} %{time}
       destroy_recurring:
         headline: All reservations within this repeating pattern was removed
       feed:
@@ -228,16 +234,11 @@ en:
           stripe: Refunded with Stripe
           vipps: Refunded with Vipps
         request_card:
-          processing: Payment link is being sent to customer
-          send: Send payment link to customer
+          processing: Card request is being sent to customer
+          send: Send card request to customer
         request_payment:
-          channel:
-            email: email
-            sms: SMS
-          failed: 'Sending by %{channel} failed %{time}: %{error}'
           processing: Payment link is being sent to customer
           send: Send payment link to customer
-          sent: Sent by %{channel} %{time}
         send_sms: Send SMS
         show_in_calendar: Show in calendar
         stripe:
