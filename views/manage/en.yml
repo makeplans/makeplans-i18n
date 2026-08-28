@@ -231,8 +231,13 @@ en:
           processing: Payment link is being sent to customer
           send: Send payment link to customer
         request_payment:
+          channel:
+            email: email
+            sms: SMS
+          failed: 'Sending by %{channel} failed %{time}: %{error}'
           processing: Payment link is being sent to customer
           send: Send payment link to customer
+          sent: Sent by %{channel} %{time}
         send_sms: Send SMS
         show_in_calendar: Show in calendar
         stripe:

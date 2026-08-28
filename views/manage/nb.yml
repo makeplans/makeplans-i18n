@@ -231,8 +231,13 @@ nb:
           processing: Betalingslink sendes til kunde
           send: Send betalingslink til kunde
         request_payment:
+          channel:
+            email: e-post
+            sms: SMS
+          failed: 'Sending via %{channel} feilet %{time}: %{error}'
           processing: Betalingslink sendes til kunde
           send: Send betalingslink til kunde
+          sent: Sendt via %{channel} %{time}
         send_sms: Send SMS
         show_in_calendar: Vis i kalenderen
         stripe:
