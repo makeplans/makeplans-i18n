@@ -239,6 +239,7 @@ nb:
       day_name_abbr: "%a"
       full_date: "%A %-d. %B %Y"
       month_name: "%B"
+      month_year: "%B %Y"
       short_with_name: "%a %-d. %b"
       short_with_name_and_year: "%a %-d. %b %Y"
     moment_format: DD.MM.YYYY
@@ -735,6 +736,21 @@ nb:
         expiration_html: Utløper <small>(MM/YY)</small>
         number: Kortnummer
       header: Dette skjemaet sendes kryptert
+    person:
+      history:
+        last_visit: Siste besøk
+        new_customer: Ny kunde
+        no_shows: Ikke møtt
+        since: siden %{date}
+        summary:
+          last_visit: "Siste besøk: %{date}"
+          no_shows:
+            one: "%{count} gang ikke møtt"
+            other: "%{count} ganger ikke møtt"
+          total_paid: "Totalt betalt: %{amount}"
+          visits_since: "Besøk siden %{date}: %{count}"
+        total_paid: Totalt betalt
+        visits: Besøk
     select:
       prompt: Vennligst velg
     submit:

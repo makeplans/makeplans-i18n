@@ -226,6 +226,7 @@ en:
         person:
           address: Address
           email: Email
+          history: History
           phone_number: Phone number
         recurring_member: This reservation is part of a recurring pattern.
         refund: Refund paid amount
@@ -527,6 +528,7 @@ en:
           calendar_prevent_slot_event_overlap: Prevent event overlap
           calendar_slot_duration: Slot duration
           calendar_slot_label_interval: Slot label interval
+          no_show_warning_threshold: Warn when a customer has this many no-shows
           resource_title: Custom resource title
           service_addon_title: Custom add-on title
           service_appointment_title: Custom service title
