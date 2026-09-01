@@ -1070,6 +1070,20 @@ nb:
         revenue: Bestilt verdi
         without_resource: Uten ressurs
         without_service: Uten tjeneste
+      customers:
+        booked_value: Bestilt verdi
+        bookings: Reservasjoner
+        created_before_period: Eksisterte før perioden
+        created_in_period: Opprettet i perioden
+        date: Dato
+        name: Navn
+        new_customers: Nye kunder
+        new_vs_returning: Nye og tilbakevendende kunder
+        per_day: Nye kunder per dag
+        returning_customers: Tilbakevendende kunder
+        title: Kunder
+        top_customers: Toppkunder
+        total: Nye kunder
       filters:
         all_resources: Alle ressurser
         all_services: Alle tjenester
@@ -1103,6 +1117,7 @@ nb:
         latest_activity: Siste reservasjoner
         lower: Lavere
         needs_attention: Krever oppfølging
+        new_customers: Nye kunder
         new_period: Ny aktivitet
         no_attention: Ingen avvik registrert
         no_previous_period: Ingen forrige periode å sammenligne med
@@ -1136,6 +1151,7 @@ nb:
         title: Tjenester
       subnav:
         bookings: Reservasjoner
+        customers: Kunder
         overview: Oversikt
         resources: Ressurser
         revenue: Omsetning

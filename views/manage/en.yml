@@ -1082,6 +1082,20 @@ en:
         revenue: Booked value
         without_resource: Without resource
         without_service: Without service
+      customers:
+        booked_value: Booked value
+        bookings: Reservations
+        created_before_period: Existed before the period
+        created_in_period: Created in the period
+        date: Date
+        name: Name
+        new_customers: New customers
+        new_vs_returning: New and returning customers
+        per_day: New customers per day
+        returning_customers: Returning customers
+        title: Customers
+        top_customers: Top customers
+        total: New customers
       filters:
         all_resources: All resources
         all_services: All services
@@ -1115,6 +1129,7 @@ en:
         latest_activity: Latest reservations
         lower: Lower
         needs_attention: Needs attention
+        new_customers: New customers
         new_period: New activity
         no_attention: No operational issues detected
         no_previous_period: No previous period to compare
@@ -1148,6 +1163,7 @@ en:
         title: Services
       subnav:
         bookings: Reservations
+        customers: Customers
         overview: Overview
         resources: Resources
         revenue: Revenue
