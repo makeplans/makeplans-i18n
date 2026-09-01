@@ -628,14 +628,6 @@ fr:
         purge_2: Tous les clients qui ne sont pas mis à jour avant la date spécifiée et qui n'ont pas de réservation après la date spécifiée.
         purge_3: Tous les journaux et métadonnées liés à ces données seront également supprimés.
         purge_before: Supprimer les données avant la date
-    reports:
-      stats:
-        all: Toutes les ressources
-        booking_word: réservation
-        bookings: Réservations
-        bookings_per_day: Réservations par jour
-        day: Jour
-        no_reservations: Pas de réservations
     resources:
       form:
         availability: Disponibilité par défaut

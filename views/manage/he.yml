@@ -636,14 +636,6 @@ he:
         purge_2: כל הלקוחות שלא עודכנו לפני התאריך שצוין ואין להם שום הזמנות לאחר התאריך שצוין.
         purge_3: כל היומנים והמטא-נתונים הקשורים לנתונים אלה יימחקו.
         purge_before: מחק נתונים לפני התאריך
-    reports:
-      stats:
-        all: כל המשאבים
-        booking_word: הזמנה
-        bookings: הסתייגויות
-        bookings_per_day: הזמנות ליום
-        day: יְוֹם
-        no_reservations: אין הזמנות
     resources:
       form:
         availability: זמינות ברירת מחדל

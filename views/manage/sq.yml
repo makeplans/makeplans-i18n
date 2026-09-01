@@ -1031,14 +1031,6 @@ sq:
         purge_3: Të gjithë regjistrat dhe meta të dhënat që lidhen me këto të dhëna do të fshihen gjithashtu.
         purge_before: Fshi të dhënat para datës
         warning: A jeni i sigurt që doni të fshini të gjitha të dhënat para datës së specifikuar? Nuk është e mundur të anulohet ky veprim.
-    reports:
-      stats:
-        all: Të gjitha burimet
-        booking_word: rezervim
-        bookings: rezervime
-        bookings_per_day: Rezervime në ditë
-        day: Dita
-        no_reservations: Pa rezervime
     resources:
       form:
         availability: Disponueshmëria e parazgjedhur

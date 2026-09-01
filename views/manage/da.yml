@@ -972,14 +972,6 @@ da:
         purge_3: Al historik relateret til disse data slettes også.
         purge_before: Slet data inden datoen
         warning: Er du sikker på, at du vil slette alle data inden den angivne dato? Det er ikke muligt at fortryde denne handling.
-    reports:
-      stats:
-        all: Alle ressourcer
-        booking_word: reservation
-        bookings: forbehold
-        bookings_per_day: Reservationer pr. Dag
-        day: Dag
-        no_reservations: Ingen forbehold
     resources:
       form:
         availability: Standard tilgængelighed

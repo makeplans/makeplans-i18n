@@ -636,14 +636,6 @@ ms:
         purge_2: Semua pelanggan yang tidak dikemas kini sebelum tarikh yang ditentukan dan yang tidak mempunyai tempahan selepas tarikh yang ditentukan.
         purge_3: Semua log dan metadata yang berkaitan dengan data ini juga akan dihapuskan.
         purge_before: Padamkan data sebelum tarikh
-    reports:
-      stats:
-        all: Semua sumber
-        booking_word: tempahan
-        bookings: tempahan
-        bookings_per_day: Tempahan setiap hari
-        day: Hari
-        no_reservations: Tiada tempahan
     resources:
       form:
         availability: Ketersediaan lalai

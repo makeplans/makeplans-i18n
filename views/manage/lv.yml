@@ -628,14 +628,6 @@ lv:
         purge_2: Visi klienti, kuri nav atjaunināti pirms norādītā datuma un kuriem pēc norādītā datuma nav rezervāciju.
         purge_3: Tiks dzēsti arī visi žurnāli un metadati, kas saistīti ar šiem datiem.
         purge_before: Dzēst datus pirms datuma
-    reports:
-      stats:
-        all: Visi resursi
-        booking_word: rezervācija
-        bookings: atrunas
-        bookings_per_day: Rezervācijas dienā
-        day: Diena
-        no_reservations: Nav atrunu
     resources:
       form:
         availability: Noklusējuma pieejamība

@@ -1054,13 +1054,92 @@ nb:
         purge_before: Slett data før dato
         warning: Er du helt sikkert på at du vil slette alle data før spesifisert dato? Det er ikke mulig å angre på denne operasjonen.
     reports:
-      stats:
-        all: Alle ressurser
-        booking_word: reservasjon
-        bookings: reservasjoner
+      bookings:
+        attendees: Deltakere
+        bookings: Reservasjoner
+        by_hour: Reservasjoner per time
+        by_weekday: Reservasjoner per ukedag
+        date: Dato
+        per_day: Reservasjoner per dag
+        title: Reservasjoner
+      breakdown:
+        attendees: Deltakere
+        bookings: Reservasjoner
+        inactive: inaktiv
+        name: Navn
+        revenue: Bestilt verdi
+        without_resource: Uten ressurs
+        without_service: Uten tjeneste
+      filters:
+        all_resources: Alle ressurser
+        all_services: Alle tjenester
+        apply: Vis
+        download_csv: Last ned CSV
+        from: Fra dato
+        to: Til dato
+      index:
+        ahead_of_previous_period: "%{change}% foran forrige periode"
+        all_clear: Alt ser bra ut
+        behind_pace: Etter skjema
+        below_previous_period: "%{change}% under forrige periode"
+        booking_activity: Reservasjonsaktivitet
+        bookings: Reservasjoner
+        bookings_count:
+          one: 1 reservasjon
+          other: "%{count} reservasjoner"
         bookings_per_day: Reservasjoner per dag
-        day: Dag
-        no_reservations: Ingen reservasjoner
+        cancellation_rate: Kanselleringsrate
+        cancellations: Kanselleringer
+        compared_with_previous: sammenlignet med forrige periode
+        confirmed_bookings: bekreftede reservasjoner
+        custom: Egendefinert
+        days:
+          one: 1 dag
+          other: "%{count} dager"
+        demand_by_time: Pågang per dag og tid
+        from_previous_period: fra forrige periode
+        higher: Høyere
+        last_month: Forrige måned
+        latest_activity: Siste reservasjoner
+        lower: Lavere
+        needs_attention: Krever oppfølging
+        new_period: Ny aktivitet
+        no_attention: Ingen avvik registrert
+        no_previous_period: Ingen forrige periode å sammenligne med
+        no_shows: Ikke møtt
+        on_track: I rute
+        open_report: Se rapport
+        overall_pace: Fremdrift
+        previous_value: "%{value} i forrige periode"
+        resource_pace: Ressurser
+        revenue: Omsetning
+        revenue_all_scope: alle ressurser og tjenester
+        revenue_by_service: Bestilt verdi per tjeneste
+        scope_note: Alle tall er bekreftede reservasjoner og innbetalte beløp for valgt periode.
+        scope_note_title: Rapportomfang
+        service: Tjeneste
+        this_month: Denne måneden
+        this_year: I år
+        title: Rapporter
+        today: I dag
+        total_count: "%{count} totalt"
+        when: Når
+      resources:
+        title: Ressurser
+      revenue:
+        amount: Beløp
+        date: Dato
+        per_day: Omsetning per dag
+        title: Omsetning
+        total: Totalt
+      services:
+        title: Tjenester
+      subnav:
+        bookings: Reservasjoner
+        overview: Oversikt
+        resources: Ressurser
+        revenue: Omsetning
+        services: Tjenester
     resources:
       form:
         availability: Standard tilgjengelighet

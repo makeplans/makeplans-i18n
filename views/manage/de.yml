@@ -1026,14 +1026,6 @@ de:
         purge_3: Sämtliche Protokolle und Metadaten, die mit diesen Daten in Zusammenhang stehen, werden ebenfalls gelöscht.
         purge_before: Daten vor dem Datum löschen
         warning: Sind Sie sicher, dass Sie alle Daten vor dem angegebenen Datum löschen möchten? Dieser Vorgang kann nicht rückgängig gemacht werden.
-    reports:
-      stats:
-        all: Alle Ressourcen
-        booking_word: Reservierung
-        bookings: Reservierungen
-        bookings_per_day: Reservierungen pro Tag
-        day: Tag
-        no_reservations: Keine Reservierungen
     resources:
       form:
         availability: Standardverfügbarkeit

@@ -1066,13 +1066,92 @@ en:
         purge_before: Delete data before date
         warning: Are you sure you want to delete all data before the specified date? It is not possible to undo this operation.
     reports:
-      stats:
-        all: All resources
-        booking_word: reservation
-        bookings: reservations
+      bookings:
+        attendees: Attendees
+        bookings: Reservations
+        by_hour: Reservations per hour
+        by_weekday: Reservations per weekday
+        date: Date
+        per_day: Reservations per day
+        title: Reservations
+      breakdown:
+        attendees: Attendees
+        bookings: Reservations
+        inactive: inactive
+        name: Name
+        revenue: Booked value
+        without_resource: Without resource
+        without_service: Without service
+      filters:
+        all_resources: All resources
+        all_services: All services
+        apply: Show
+        download_csv: Download CSV
+        from: From date
+        to: To date
+      index:
+        ahead_of_previous_period: "%{change}% ahead of the previous period"
+        all_clear: All clear
+        behind_pace: Behind pace
+        below_previous_period: "%{change}% below the previous period"
+        booking_activity: Booking activity
+        bookings: Reservations
+        bookings_count:
+          one: 1 reservation
+          other: "%{count} reservations"
         bookings_per_day: Reservations per day
-        day: Day
-        no_reservations: No reservations
+        cancellation_rate: Cancellation rate
+        cancellations: Cancellations
+        compared_with_previous: compared with the previous period
+        confirmed_bookings: confirmed reservations
+        custom: Custom
+        days:
+          one: 1 day
+          other: "%{count} days"
+        demand_by_time: Demand by day and time
+        from_previous_period: from previous period
+        higher: Higher
+        last_month: Last month
+        latest_activity: Latest reservations
+        lower: Lower
+        needs_attention: Needs attention
+        new_period: New activity
+        no_attention: No operational issues detected
+        no_previous_period: No previous period to compare
+        no_shows: No-shows
+        on_track: On track
+        open_report: View report
+        overall_pace: Overall pace
+        previous_value: "%{value} in previous period"
+        resource_pace: Resource pace
+        revenue: Revenue
+        revenue_all_scope: all resources and services
+        revenue_by_service: Booked value by service
+        scope_note: All figures are confirmed reservations and collected payments for the selected period.
+        scope_note_title: Report scope
+        service: Service
+        this_month: This month
+        this_year: This year
+        title: Reports
+        today: Today
+        total_count: "%{count} total"
+        when: When
+      resources:
+        title: Resources
+      revenue:
+        amount: Amount
+        date: Date
+        per_day: Revenue per day
+        title: Revenue
+        total: Total
+      services:
+        title: Services
+      subnav:
+        bookings: Reservations
+        overview: Overview
+        resources: Resources
+        revenue: Revenue
+        services: Services
     resources:
       form:
         availability: Default availability

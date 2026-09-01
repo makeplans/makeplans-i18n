@@ -1026,14 +1026,6 @@ it:
         purge_3: Tutti i registri e i metadati relativi a questi dati verranno anch'essi eliminati.
         purge_before: Eliminare i dati prima della data
         warning: Sei sicuro di voler eliminare tutti i dati precedenti alla data specificata? Non è possibile annullare questa operazione.
-    reports:
-      stats:
-        all: Tutte le risorse
-        booking_word: prenotazione
-        bookings: prenotazioni
-        bookings_per_day: Prenotazioni al giorno
-        day: Giorno
-        no_reservations: Nessuna prenotazione
     resources:
       form:
         availability: Disponibilità predefinita

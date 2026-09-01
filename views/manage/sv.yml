@@ -818,14 +818,6 @@ sv:
         purge_3: All historik relaterad till denna information kommer också att raderas.
         purge_before: Radera data före datum
         warning: Är du säker på att du vill ta bort all data före det angivna datumet? Det är inte möjligt att ångra denna åtgärd.
-    reports:
-      stats:
-        all: Alla resurser
-        booking_word: bokning
-        bookings: bokningar
-        bookings_per_day: Bokningar per dag
-        day: Dag
-        no_reservations: Inga bokningar
     resources:
       form:
         availability: Standardläge för tillgänglighet

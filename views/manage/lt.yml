@@ -636,14 +636,6 @@ lt:
         purge_2: Visi klientai, kurie nėra atnaujinti iki nurodytos datos ir kurie neturi rezervacijų po nurodytos datos.
         purge_3: Taip pat bus ištrinti visi žurnalai ir metaduomenys, susiję su šiais duomenimis.
         purge_before: Ištrinti duomenis prieš datą
-    reports:
-      stats:
-        all: Visi ištekliai
-        booking_word: rezervacija
-        bookings: išlygos
-        bookings_per_day: Rezervacijos per dieną
-        day: Diena
-        no_reservations: Jokių išlygų
     resources:
       form:
         availability: Numatytasis pasiekiamumas
