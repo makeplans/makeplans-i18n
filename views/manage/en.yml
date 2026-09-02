@@ -45,6 +45,8 @@ en:
         reset_filter: Reset filter
         resources: Resources
         services: Services
+        state: State
+        status: Attendance status
         this_and_next_month: From today until end of next month
         this_and_next_week: From today until end of next week
     billing:

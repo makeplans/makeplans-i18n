@@ -45,6 +45,8 @@ nb:
         reset_filter: Nullstill filtrering
         resources: Ressurser
         services: Tjenester
+        state: Status
+        status: Oppmøtestatus
         this_and_next_month: Fra i dag og ut neste måned
         this_and_next_week: Fra i dag og ut neste uke
     billing:
