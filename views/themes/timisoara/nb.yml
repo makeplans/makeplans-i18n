@@ -170,3 +170,7 @@ nb:
       show:
         all_services: Alle tjenester
         continue: Fortsett
+      week_available:
+        next_week: Neste uke
+        prev_week: Forrige uke
+        select_date: Velg dato

@@ -170,3 +170,7 @@ en:
       show:
         all_services: All services
         continue: Make a booking
+      week_available:
+        next_week: Next week
+        prev_week: Previous week
+        select_date: Select date
