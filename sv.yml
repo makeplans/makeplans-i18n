@@ -253,7 +253,7 @@ sv:
     all: alla
     at: hos
     born_abbreviation: f. %{date_of_birth}
-    country_locale: oBS!
+    country_locale: sv
     default: Systemstandard
     'false': Inte aktiverad
     optional: valfritt
