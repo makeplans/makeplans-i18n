@@ -54,27 +54,22 @@ en:
       link: Confirm reservation
       subject: Please verify your reservation
     waitlist_available:
-      body: A spot has become available for your waitlisted booking of %{title} %{time_range}. Click the link below to confirm your booking.
       confirm_button: Confirm Booking
-      confirm_link: Confirm your booking
       header: Hi %{name}
       info: "Good news! A spot has become available for %{title} %{time_range}."
       resource_info: 'Reservation with: %{resource}.'
       subject: A spot is available for your waitlisted booking
     waitlist_joined:
-      body: You have been added to the waitlist for %{title} %{time_range}. We will notify you when a spot becomes available.
       header: Hi %{name}
       info: You have been added to the waitlist for %{title} %{time_range}. We will notify you when a spot becomes available.
       link: View your waitlist booking
       resource_info: 'Reservation with: %{resource}.'
       subject: You're on the waitlist
     waitlist_payment:
-      body: A spot has become available for your waitlisted booking of %{title} %{time_range}. Complete your payment at the link below to confirm your booking.
       footer: 'Important: If you do not complete payment within %{expires_in} minutes your reservation might expire.'
       header: Hi %{name}
       info: "Good news! A spot has become available for %{title} %{time_range}. Complete your payment to confirm your booking."
       pay_button: Pay and Confirm Booking
-      pay_link: Pay and confirm your booking
       resource_info: 'Reservation with: %{resource}.'
       subject: A spot is available - complete payment to confirm your booking
   booking_occurrence_mailer:

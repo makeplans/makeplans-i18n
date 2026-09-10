@@ -54,27 +54,22 @@ nb:
       link: Bekreft reservasjon
       subject: Verifiser din reservasjon
     waitlist_available:
-      body: En plass har blitt ledig for din ventelisteregistrering av %{title} %{time_range}. Klikk på lenken under for å bekrefte din reservasjon.
       confirm_button: Bekreft reservasjon
-      confirm_link: Bekreft din reservasjon
       header: Hei %{name}
       info: "Gode nyheter! En plass har blitt ledig for %{title} %{time_range}."
       resource_info: 'Reservasjon hos: %{resource}.'
       subject: En plass er ledig for din ventelisteregistrering
     waitlist_joined:
-      body: Du er satt på venteliste for %{title} %{time_range}. Vi vil varsle deg når en plass blir ledig.
       header: Hei %{name}
       info: Du er satt på venteliste for %{title} %{time_range}. Vi vil varsle deg når en plass blir ledig.
       link: Se din ventelisteregistrering
       resource_info: 'Reservasjon hos: %{resource}.'
       subject: Du er på ventelisten
     waitlist_payment:
-      body: En plass har blitt ledig for din ventelisteregistrering av %{title} %{time_range}. Fullfør betalingen via lenken under for å bekrefte din reservasjon.
       footer: 'OBS: Hvis du ikke fullfører betalingen i løpet av %{expires_in} minutter kan reservasjonen din kanselleres.'
       header: Hei %{name}
       info: "Gode nyheter! En plass har blitt ledig for %{title} %{time_range}. Fullfør betalingen for å bekrefte din reservasjon."
       pay_button: Betal og bekreft reservasjon
-      pay_link: Betal og bekreft din reservasjon
       resource_info: 'Reservasjon hos: %{resource}.'
       subject: En plass er ledig - fullfør betaling for å bekrefte din reservasjon
   booking_occurrence_mailer:
