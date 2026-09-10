@@ -26,10 +26,6 @@ es:
       subject: Nueva reservación
       subject_service: Reserva para %{service}
     declined:
-      body: |-
-        Hola,
-
-        Tu reservación no fue confirmada.
       subject: Reserva rechazada
     modification:
       header: Hola %{name}

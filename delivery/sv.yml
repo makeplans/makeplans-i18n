@@ -19,10 +19,6 @@ sv:
       subject: Ny bokning
       subject_service: Bokning av %{service}
     declined:
-      body: |-
-        Hej,
-
-        Din bokning kunde inte bekräftas.
       subject: Bokning ej godkänd
     modification:
       header: Hej %{name}

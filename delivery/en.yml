@@ -28,11 +28,9 @@ en:
       subject: New reservation
       subject_service: Reservation for %{service}
     declined:
-      body: |-
-        Hi,
-
-        Your reservation was not confirmed.
-      subject: Reservation declined
+      header: Hi %{name}
+      info: Your request for reservation of %{title} %{time_range} was not approved. The reservation is not confirmed. Please try another time.
+      subject: Reservation not confirmed
     modification:
       header: Hi %{name}
       info: 'Your reservation has been changed to: %{title} %{time_range}.'

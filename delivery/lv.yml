@@ -17,10 +17,6 @@ lv:
       subject: Jauns pieraksts
       subject_service: Pieraksts "%{service}"
     declined:
-      body: |-
-        Sveiki,
-
-        Jūsu pieraksts diemžēl nav ticis apstiprināts.
       subject: Pieraksts noraidīts
     modification:
       header: Sveiki, %{name}

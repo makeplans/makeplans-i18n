@@ -26,10 +26,6 @@ da:
       subject: Ny reservation
       subject_service: Reservation af %{service}
     declined:
-      body: |-
-        Hej,
-
-        Din reservation blev ikke godkendt.
       subject: Reservation er ikke godkendt
     modification:
       header: Hej %{name}

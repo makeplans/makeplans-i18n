@@ -16,10 +16,6 @@ lt:
       subject: Nauja rezervacija
       subject_service: Rezervacija %{service}
     declined:
-      body: |-
-        Sveiki,
-
-        Jūsų rezervacija nebuvo patvirtinta.
       subject: Rezervacija atmesta
     modification:
       header: Sveiki, %{name}

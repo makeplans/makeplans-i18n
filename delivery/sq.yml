@@ -28,10 +28,6 @@ sq:
       subject: Rezervim i ri
       subject_service: Rezervim për %{service}
     declined:
-      body: |-
-        Përshëndetje,
-
-        Rezervimi juaj nuk u konfirmua.
       subject: Rezervimi u refuzua
     modification:
       header: Përshëndetje %{name}

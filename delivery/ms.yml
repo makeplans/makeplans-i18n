@@ -16,10 +16,6 @@ ms:
       subject: Tempahan baru
       subject_service: Tempahan untuk %{service}
     declined:
-      body: |-
-        Hai,
-
-        Tempahan anda tidak disahkan.
       subject: Tempahan ditolak
     modification:
       header: Hai %{name}

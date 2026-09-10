@@ -16,10 +16,6 @@ pl:
       subject: Nowa rezerwacja
       subject_service: Rezerwacja na %{service}
     declined:
-      body: |-
-        Cześć,
-
-        Twoja rezerwacja nie została potwierdzona.
       subject: Rezerwacja została odrzucona
     modification:
       header: Cześć %{name}

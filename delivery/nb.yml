@@ -28,11 +28,9 @@ nb:
       subject: Ny reservasjon
       subject_service: Reservasjon av %{service}
     declined:
-      body: |-
-        Hei,
-
-        Din reservasjon ble ikke godkjent.
-      subject: Reservasjon ikke godkjent
+      header: Hei %{name}
+      info: Din forespørsel om reservasjon av %{title} %{time_range} ble dessverre ikke godkjent. Reservasjonen er ikke bekreftet. Prøv gjerne et annet tidspunkt.
+      subject: Reservasjonen er ikke bekreftet
     modification:
       header: Hei %{name}
       info: 'Din reservasjon hos oss har blitt endret til: %{title} %{time_range}.'

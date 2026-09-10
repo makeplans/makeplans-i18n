@@ -426,6 +426,8 @@ nb:
         mail_cancellation_subject: Tittel i epost som blir sendt ved kansellering
         mail_confirmation: Tekst i epost som blir sendt ved bekreftelse
         mail_confirmation_subject: Tittel i epost som blir sendt ved bekreftelse
+        mail_declined: Tekst i epost som blir sendt når reservasjon ikke blir godkjent
+        mail_declined_subject: Tittel i epost som blir sendt når reservasjon ikke blir godkjent
         mail_modification: Tekst i epost som blir sendt ved endring
         mail_modification_subject: Tittel i epost som blir sendt ved endring
         mail_notification_cancellation: Tekst i epost som blir sendt som varsel ved kansellering
@@ -588,6 +590,7 @@ nb:
         mail_awaiting_confirmation: Tekst i epost som blir sendt når reservasjon trenger godkjenning kreves
         mail_cancellation: Tekst i epost som blir sendt ved kansellering
         mail_confirmation: Tekst i epost som blir sendt ved bekreftelse
+        mail_declined: Tekst i epost som blir sendt når reservasjon ikke blir godkjent
         mail_modification: Tekst i epost som blir sendt ved endring
         mail_request_payment: Tekst i epost som blir sendt ved betalingsforespørsel
         mail_verification: Tekst i epost som blir sendt ved verifisering

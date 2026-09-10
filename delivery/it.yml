@@ -28,10 +28,6 @@ it:
       subject: Nuova prenotazione
       subject_service: Prenotazione per %{service}
     declined:
-      body: |-
-        Ciao,
-
-        La tua prenotazione non è stata confermata.
       subject: Prenotazione rifiutata
     modification:
       header: Ciao %{name}

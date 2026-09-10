@@ -429,6 +429,8 @@ en:
         mail_cancellation_subject: Subject in cancellation email
         mail_confirmation: Text in confirmation email
         mail_confirmation_subject: Subject in confirmation email
+        mail_declined: Text in declined email
+        mail_declined_subject: Subject in declined email
         mail_modification: Text in modification email
         mail_modification_subject: Subject in modification email
         mail_notification_cancellation: Text in cancellation notification email
@@ -590,6 +592,7 @@ en:
         mail_awaiting_confirmation: Text in awaiting confirmation email
         mail_cancellation: Text in cancellation email
         mail_confirmation: Text in confirmation email
+        mail_declined: Text in declined email
         mail_modification: Text in modification email
         mail_request_payment: Text in payment request email
         mail_verification: Text in verification email

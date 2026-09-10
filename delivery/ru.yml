@@ -16,10 +16,6 @@ ru:
       subject: Новое бронирование
       subject_service: Бронирование на %{service}
     declined:
-      body: |-
-        Привет,
-
-        Ваше бронирование не было подтверждено.
       subject: Бронирование отклонено
     modification:
       header: Привет %{name}

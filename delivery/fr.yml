@@ -16,10 +16,6 @@ fr:
       subject: Nouvelle réservation
       subject_service: Réservation pour %{service}
     declined:
-      body: |-
-        Salut,
-
-        Votre réservation n'a pas été confirmée.
       subject: Réservation refusée
     modification:
       header: Salut %{name}

@@ -28,10 +28,6 @@ de:
       subject: Neue Reservierung
       subject_service: Reservierung für %{service}
     declined:
-      body: |-
-        Hallo,
-
-        Ihre Reservierung wurde nicht bestätigt.
       subject: Reservierung abgelehnt
     modification:
       header: Hallo %{name}

@@ -16,10 +16,6 @@ he:
       subject: הזמנה חדשה
       subject_service: הזמנה עבור %{service}
     declined:
-      body: |-
-        היי,
-
-        הזמנתך לא אושרה.
       subject: ההזמנה נדחתה
     modification:
       header: היי %{name}
