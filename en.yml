@@ -463,6 +463,7 @@ en:
         sms_awaiting_confirmation: Text in awaiting confirmation SMS
         sms_cancellation: Text in cancellation SMS
         sms_confirmation: Text in confirmation SMS
+        sms_declined: Text in declined SMS
         sms_modification: Text in modification SMS
         sms_notification: Receive SMS for each new reservation
         sms_notification_recipient: Phone number(s) for notification
@@ -610,6 +611,7 @@ en:
         sms_awaiting_confirmation: Text in awaiting confirmation SMS
         sms_cancellation: Text in cancellation SMS
         sms_confirmation: Text in confirmation SMS
+        sms_declined: Text in declined SMS
         sms_modification: Text in modification SMS
         sms_reminder: Text in reminder SMS
         sms_request_payment: Text in payment request SMS

@@ -460,6 +460,7 @@ nb:
         sms_awaiting_confirmation: Tekst i SMS som blir sendt når reservasjon trenger godkjenning kreves
         sms_cancellation: Tekst i SMS som blir sendt ved kansellering
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
+        sms_declined: Tekst i SMS som blir sendt når reservasjon ikke blir godkjent
         sms_modification: Tekst i SMS som blir sendt ved endring
         sms_notification: Motta varsling på SMS for hver nye reservasjon
         sms_notification_recipient: Telefonnummer for varsling
@@ -608,6 +609,7 @@ nb:
         sms_awaiting_confirmation: Tekst i SMS som blir sendt når reservasjon trenger godkjenning kreves
         sms_cancellation: Tekst i SMS som blir sendt ved kansellering
         sms_confirmation: Tekst i SMS som blir sendt ved bekreftelse
+        sms_declined: Tekst i SMS som blir sendt når reservasjon ikke blir godkjent
         sms_modification: Tekst i SMS som blir sendt ved endring
         sms_reminder: Tekst i SMS som blir sendt ved påminnelse
         sms_request_payment: Tekst i SMS som blir sendt ved betalingsforespørsel
