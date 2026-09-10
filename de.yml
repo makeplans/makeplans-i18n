@@ -389,6 +389,8 @@ de:
         mail_cancellation_subject: Betreff der Stornierungs-E-Mail
         mail_confirmation: Text in der Bestätigungs-E-Mail
         mail_confirmation_subject: Betreff der Bestätigungs-E-Mail
+        mail_declined: Text in abgelehnter E-Mail
+        mail_declined_subject: Betreff der abgelehnten E-Mail
         mail_modification: Text in der Änderungs-E-Mail
         mail_modification_subject: Betreff der Änderungs-E-Mail
         mail_notification_cancellation: Text in der Stornierungsbenachrichtigungs-E-Mail
@@ -421,6 +423,7 @@ de:
         sms_awaiting_confirmation: Text in der SMS bei ausstehender Bestätigung
         sms_cancellation: Text in der Stornierungs-SMS
         sms_confirmation: Text in der Bestätigungs-SMS
+        sms_declined: Text in abgelehnten SMS
         sms_modification: Text in der Änderungs-SMS
         sms_notification: Sie erhalten eine SMS für jede neue Reservierung
         sms_notification_recipient: Telefonnummer(n) für Benachrichtigungen
@@ -549,6 +552,7 @@ de:
         mail_awaiting_confirmation: Text in der E-Mail bei ausstehender Bestätigung
         mail_cancellation: Text in der Stornierungs-E-Mail
         mail_confirmation: Text in der Bestätigungs-E-Mail
+        mail_declined: Text in abgelehnter E-Mail
         mail_modification: Text in der Änderungs-E-Mail
         mail_request_payment: Text in der Zahlungsanforderungs-E-Mail
         mail_verification: Text in der Verifizierungs-E-Mail
@@ -565,6 +569,7 @@ de:
         sms_awaiting_confirmation: Text in der SMS bei ausstehender Bestätigung
         sms_cancellation: Text in der Stornierungs-SMS
         sms_confirmation: Text in der Bestätigungs-SMS
+        sms_declined: Text in abgelehnten SMS
         sms_modification: Text in der Änderungs-SMS
         sms_reminder: Text in der Erinnerungs-SMS
         sms_request_payment: Text in der Zahlungsanforderungs-SMS

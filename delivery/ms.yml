@@ -16,6 +16,8 @@ ms:
       subject: Tempahan baru
       subject_service: Tempahan untuk %{service}
     declined:
+      header: Hai %{name}
+      info: Permintaan anda untuk tempahan %{title} %{time_range} tidak diluluskan. Tempahan ini tidak disahkan. Sila cuba lain kali.
       subject: Tempahan ditolak
     modification:
       header: Hai %{name}

@@ -1,5 +1,9 @@
 ---
 sl:
   booking_mailer:
+    declined:
+      header: Živjo %{name}
+      info: Vaša zahteva za rezervacijo %{title} %{time_range} ni bila odobrena. Rezervacija ni potrjena. Poskusite drugič.
+      subject: Rezervacija ni potrjena
     verification:
       subject: Prosimo potrdite vaš email naslov

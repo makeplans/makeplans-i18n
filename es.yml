@@ -403,6 +403,8 @@ es:
         mail_cancellation_subject: Asunto en el correo electrónico de cancelación
         mail_confirmation: Texto en correo electrónico de confirmación
         mail_confirmation_subject: Asunto en el correo electrónico de confirmación
+        mail_declined: Texto en correo electrónico rechazado
+        mail_declined_subject: Asunto en correo electrónico rechazado
         mail_modification: Texto en el correo electrónico de modificación
         mail_modification_subject: Asunto en el correo electrónico de modificación
         mail_notification_cancellation: Texto en el correo electrónico de notificación de cancelación
@@ -439,6 +441,7 @@ es:
         sms_awaiting_confirmation: Texto en espera de confirmación SMS
         sms_cancellation: Texto en SMS de cancelación
         sms_confirmation: Texto en SMS de confirmación
+        sms_declined: Texto en SMS rechazado
         sms_modification: Texto en SMS de modificación
         sms_notification: Reciba SMS por cada nueva reservación
         sms_notification_recipient: Número de teléfono para notificación
@@ -564,6 +567,7 @@ es:
         mail_awaiting_confirmation: Texto en espera de correo electrónico de confirmación
         mail_cancellation: Texto en correo electrónico de cancelación
         mail_confirmation: Texto en correo electrónico de confirmación
+        mail_declined: Texto en correo electrónico rechazado
         mail_modification: Texto en el correo electrónico de modificación
         mail_request_payment: Texto en el correo electrónico de solicitud de pago
         mail_verification: Texto en correo electrónico de verificación
@@ -580,6 +584,7 @@ es:
         sms_awaiting_confirmation: Texto en espera de confirmación SMS
         sms_cancellation: Texto en SMS de cancelación
         sms_confirmation: Texto en SMS de confirmación
+        sms_declined: Texto en SMS rechazado
         sms_modification: Texto en SMS de modificación
         sms_reminder: Texto en SMS recordatorio
         sms_request_payment: Texto en la solicitud de pago por SMS

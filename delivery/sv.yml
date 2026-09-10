@@ -19,6 +19,8 @@ sv:
       subject: Ny bokning
       subject_service: Bokning av %{service}
     declined:
+      header: Hej %{name}
+      info: Din bokningsförfrågan för %{title} %{time_range} godkändes inte. Bokningen är inte bekräftad. Försök igen.
       subject: Bokning ej godkänd
     modification:
       header: Hej %{name}

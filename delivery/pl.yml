@@ -16,6 +16,8 @@ pl:
       subject: Nowa rezerwacja
       subject_service: Rezerwacja na %{service}
     declined:
+      header: Cześć %{name}
+      info: Twoja prośba o rezerwację %{title} %{time_range} nie została zatwierdzona. Rezerwacja nie została potwierdzona. Spróbuj ponownie.
       subject: Rezerwacja została odrzucona
     modification:
       header: Cześć %{name}

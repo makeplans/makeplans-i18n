@@ -28,6 +28,8 @@ sq:
       subject: Rezervim i ri
       subject_service: Rezervim për %{service}
     declined:
+      header: Përshëndetje %{name}
+      info: Kërkesa juaj për rezervimin e %{title} %{time_range} nuk u miratua. Rezervimi nuk është konfirmuar. Ju lutemi provoni një herë tjetër.
       subject: Rezervimi u refuzua
     modification:
       header: Përshëndetje %{name}

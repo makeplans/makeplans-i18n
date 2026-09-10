@@ -17,6 +17,8 @@ lv:
       subject: Jauns pieraksts
       subject_service: Pieraksts "%{service}"
     declined:
+      header: Sveiki, %{name}
+      info: Jūsu rezervācijas pieprasījums %{title} %{time_range} netika apstiprināts. Rezervācija nav apstiprināta. Lūdzu, mēģiniet citā laikā.
       subject: Pieraksts noraidīts
     modification:
       header: Sveiki, %{name}

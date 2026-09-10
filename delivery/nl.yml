@@ -6,3 +6,7 @@ nl:
       info: Hierbij bevestigen wij de reservering voor %{title} %{time_range}.
       subject: Nieuwe reservering
       subject_service: Reservering voor %{service}
+    declined:
+      header: Hallo %{name}
+      info: Uw reserveringsaanvraag voor %{title} %{time_range} is niet goedgekeurd. De reservering is niet bevestigd. Probeer het later nog eens.
+      subject: Reservering niet bevestigd

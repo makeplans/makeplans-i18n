@@ -26,6 +26,8 @@ da:
       subject: Ny reservation
       subject_service: Reservation af %{service}
     declined:
+      header: Hej %{name}
+      info: Din anmodning om reservation af %{title} %{time_range} blev ikke godkendt. Reservationen er ikke bekræftet. Prøv venligst et andet tidspunkt.
       subject: Reservation er ikke godkendt
     modification:
       header: Hej %{name}

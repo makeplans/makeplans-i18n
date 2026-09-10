@@ -278,6 +278,8 @@ lv:
         mail_cancellation_subject: Temats atcelšanas e-pastā
         mail_confirmation: Īsziņa apstiprinājuma e-pastā
         mail_confirmation_subject: Temats apstiprinājuma e-pastā
+        mail_declined: Teksts noraidītā e-pastā
+        mail_declined_subject: Tēma noraidītā e-pasta ziņojumā
         mail_modification: Teksts labojuma e-pastā
         mail_modification_subject: Temats labojuma e-pastā
         mail_notification_recipient: E-pasta adrese(s) paziņošanai
@@ -302,6 +304,7 @@ lv:
           weekday_available: Darba dienas
         sms_cancellation: Teksts atcelšanas īsziņā
         sms_confirmation: Teksts apstiprinājuma īsziņā
+        sms_declined: Teksts noraidītā īsziņā
         sms_modification: Teksts labojuma īsziņā
         sms_notification: Saņemiet īsziņu par katru jauno pierakstu
         sms_notification_recipient: Tel. SMS paziņojumiem
@@ -381,6 +384,7 @@ lv:
         interval_rounding: Noapaļošana uz nākamo pieejamo laiku
         mail_cancellation: Teksts atcelšanas e-pastā
         mail_confirmation: Īsziņa apstiprinājuma e-pastā
+        mail_declined: Teksts noraidītā e-pastā
         mail_modification: Teksts labojuma e-pastā
         mail_verification: Teksts verifikācijas e-pastā
         max_slots: Maksimālais vietu skaits vienā pierakstā
@@ -391,6 +395,7 @@ lv:
         same_day: Atļaut pierakstīšanos vairāku dienu laikā
         sms_cancellation: Teksts atcelšanas īsziņā
         sms_confirmation: Teksts apstiprinājuma īsziņā
+        sms_declined: Teksts noraidītā īsziņā
         sms_modification: Teksts labojuma īsziņā
         sms_reminder: Teksts atgādinājuma īsziņā
         sms_verification: Teksts verifikācijas īsziņā

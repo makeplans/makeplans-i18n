@@ -275,6 +275,8 @@ ms:
         mail_cancellation_subject: Subjek dalam e-mel pembatalan
         mail_confirmation: Teks dalam e-mel pengesahan
         mail_confirmation_subject: Subjek dalam e-mel pengesahan
+        mail_declined: Teks dalam e-mel yang ditolak
+        mail_declined_subject: Subjek dalam e-mel yang ditolak
         mail_modification: Teks dalam e-mel pengubahsuaian
         mail_modification_subject: Subjek dalam e-mel pengubahsuaian
         mail_notification_recipient: Alamat e-mel untuk pemberitahuan
@@ -299,6 +301,7 @@ ms:
           weekday_available: Hari kerja
         sms_cancellation: Teks dalam SMS pembatalan
         sms_confirmation: Teks dalam SMS pengesahan
+        sms_declined: Teks dalam SMS yang ditolak
         sms_modification: Teks dalam SMS pengubahsuaian
         sms_notification: Terima SMS untuk setiap tempahan baru
         sms_notification_recipient: Nombor telefon untuk pemberitahuan
@@ -378,6 +381,7 @@ ms:
         interval_rounding: Pembundaran untuk masa yang tersedia seterusnya
         mail_cancellation: Teks dalam e-mel pembatalan
         mail_confirmation: Teks dalam e-mel pengesahan
+        mail_declined: Teks dalam e-mel yang ditolak
         mail_modification: Teks dalam e-mel pengubahsuaian
         mail_verification: Teks dalam e-mel pengesahan
         max_slots: Jumlah slot maksimum untuk setiap tempahan
@@ -388,6 +392,7 @@ ms:
         same_day: Benarkan tempahan selama beberapa hari
         sms_cancellation: Teks dalam SMS pembatalan
         sms_confirmation: Teks dalam SMS pengesahan
+        sms_declined: Teks dalam SMS yang ditolak
         sms_modification: Teks dalam SMS pengubahsuaian
         sms_reminder: Teks dalam SMS peringatan
         sms_verification: Teks dalam SMS pengesahan

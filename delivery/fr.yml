@@ -16,6 +16,8 @@ fr:
       subject: Nouvelle réservation
       subject_service: Réservation pour %{service}
     declined:
+      header: Salut %{name}
+      info: Votre demande de réservation pour %{title} %{time_range} n'a pas été approuvée. La réservation n'est pas confirmée. Veuillez réessayer ultérieurement.
       subject: Réservation refusée
     modification:
       header: Salut %{name}

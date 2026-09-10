@@ -16,6 +16,8 @@ lt:
       subject: Nauja rezervacija
       subject_service: Rezervacija %{service}
     declined:
+      header: Sveiki, %{name}
+      info: Jūsų užklausa dėl %{title} %{time_range} rezervacijos nebuvo patvirtinta. Rezervacija nepatvirtinta. Bandykite kitą kartą.
       subject: Rezervacija atmesta
     modification:
       header: Sveiki, %{name}

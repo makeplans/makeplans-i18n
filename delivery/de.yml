@@ -28,6 +28,8 @@ de:
       subject: Neue Reservierung
       subject_service: Reservierung für %{service}
     declined:
+      header: Hallo %{name}
+      info: Ihre Reservierungsanfrage für %{title} %{time_range} wurde nicht genehmigt. Die Reservierung ist nicht bestätigt. Bitte versuchen Sie es später erneut.
       subject: Reservierung abgelehnt
     modification:
       header: Hallo %{name}

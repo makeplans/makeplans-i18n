@@ -275,6 +275,8 @@ lt:
         mail_cancellation_subject: Tema atšaukimo el. Laiške
         mail_confirmation: Tekstas patvirtinimo el. Laiške
         mail_confirmation_subject: Tema patvirtinimo el. Laiške
+        mail_declined: Tekstas atmestame el. laiške
+        mail_declined_subject: Atmesto el. laiško tema
         mail_modification: Tekstas modifikavimo el. Laiške
         mail_modification_subject: Tema modifikavimo el. Laiške
         mail_notification_recipient: El. Pašto adresas (-ai) pranešimui
@@ -299,6 +301,7 @@ lt:
           weekday_available: Darbo dienomis
         sms_cancellation: Tekstas atšaukimo SMS žinute
         sms_confirmation: Tekstas patvirtinančioje SMS žinutėje
+        sms_declined: Tekstas atmestame SMS pranešime
         sms_modification: Tekstas modifikuotame SMS
         sms_notification: Gaukite SMS už kiekvieną naują rezervaciją
         sms_notification_recipient: Telefono numeris pranešimui
@@ -378,6 +381,7 @@ lt:
         interval_rounding: Apvalinimas kitam galimam laikui
         mail_cancellation: Tekstas atšaukimo el. Laiške
         mail_confirmation: Tekstas patvirtinimo el. Laiške
+        mail_declined: Tekstas atmestame el. laiške
         mail_modification: Tekstas modifikavimo el. Laiške
         mail_verification: Tekstas patvirtinimo el. Laiške
         max_slots: Didžiausias laiko tarpsnių skaičius vienoje rezervacijoje
@@ -388,6 +392,7 @@ lt:
         same_day: Leisti rezervuoti kelias dienas
         sms_cancellation: Tekstas atšaukimo SMS žinute
         sms_confirmation: Tekstas patvirtinimo SMS žinute
+        sms_declined: Tekstas atmestame SMS pranešime
         sms_modification: Tekstas modifikuotame SMS
         sms_reminder: Tekstas primenančiame SMS
         sms_verification: Tekstas patvirtinimo SMS žinute

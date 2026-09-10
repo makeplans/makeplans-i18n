@@ -276,6 +276,8 @@ he:
         mail_cancellation_subject: נושא בדוא"ל ביטול
         mail_confirmation: טקסט בהודעת אישור
         mail_confirmation_subject: הנושא בדוא"ל האישור
+        mail_declined: טקסט באימייל שנדחה
+        mail_declined_subject: נושא בדוא"ל שנדחה
         mail_modification: טקסט בדוא"ל שינוי
         mail_modification_subject: נושא בדוא"ל שינוי
         mail_notification_recipient: כתובות דוא"ל להודעה
@@ -300,6 +302,7 @@ he:
           weekday_available: ימי חול
         sms_cancellation: טקסט ב- SMS לביטול
         sms_confirmation: טקסט ב- SMS אישור
+        sms_declined: הודעת SMS שנדחתה
         sms_modification: טקסט ב- SMS לשינוי
         sms_notification: קבל SMS לכל הזמנה חדשה
         sms_notification_recipient: מספר טלפון להתראה
@@ -379,6 +382,7 @@ he:
         interval_rounding: עיגול למועד הפנוי הבא
         mail_cancellation: שלח הודעת דוא"ל לביטול
         mail_confirmation: טקסט בהודעת אישור
+        mail_declined: טקסט באימייל שנדחה
         mail_modification: טקסט בדוא"ל שינוי
         mail_verification: טקסט בדוא"ל אימות
         max_slots: מספר חריצים מקסימלי להזמנה
@@ -389,6 +393,7 @@ he:
         same_day: אפשר הזמנה על פני מספר ימים
         sms_cancellation: טקסט ב- SMS לביטול
         sms_confirmation: טקסט ב- SMS אישור
+        sms_declined: הודעת SMS שנדחתה
         sms_modification: טקסט ב- SMS לשינוי
         sms_reminder: טקסט בתזכורת SMS
         sms_verification: טקסט ב- SMS לאימות

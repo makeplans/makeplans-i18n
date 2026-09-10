@@ -16,6 +16,8 @@ ru:
       subject: Новое бронирование
       subject_service: Бронирование на %{service}
     declined:
+      header: Привет %{name}
+      info: Ваш запрос на бронирование %{title} %{time_range} не был одобрен. Бронирование не подтверждено. Пожалуйста, попробуйте в другое время.
       subject: Бронирование отклонено
     modification:
       header: Привет %{name}

@@ -275,6 +275,8 @@ fr:
         mail_cancellation_subject: Objet dans l'e-mail d'annulation
         mail_confirmation: Texte dans l'e-mail de confirmation
         mail_confirmation_subject: Objet dans l'e-mail de confirmation
+        mail_declined: Texte dans l'e-mail refusé
+        mail_declined_subject: Objet du courriel refusé
         mail_modification: Texte dans l'e-mail de modification
         mail_modification_subject: Objet dans l'e-mail de modification
         mail_notification_recipient: Adresse (s) e-mail pour la notification
@@ -299,6 +301,7 @@ fr:
           weekday_available: Jours de la semaine
         sms_cancellation: Texte dans le SMS d'annulation
         sms_confirmation: Texte dans le SMS de confirmation
+        sms_declined: Texte dans SMS refusé
         sms_modification: Texte dans le SMS de modification
         sms_notification: Recevez des SMS à chaque nouvelle réservation
         sms_notification_recipient: Numéro de téléphone pour notification
@@ -378,6 +381,7 @@ fr:
         interval_rounding: Arrondi pour la prochaine heure disponible
         mail_cancellation: Texte dans l'e-mail d'annulation
         mail_confirmation: Texte dans l'e-mail de confirmation
+        mail_declined: Texte dans l'e-mail refusé
         mail_modification: Texte dans l'e-mail de modification
         mail_verification: Texte dans l'e-mail de vérification
         max_slots: Nombre maximum d'emplacements par réservation
@@ -388,6 +392,7 @@ fr:
         same_day: Autoriser la réservation sur plusieurs jours
         sms_cancellation: Texte dans le SMS d'annulation
         sms_confirmation: Texte dans le SMS de confirmation
+        sms_declined: Texte dans SMS refusé
         sms_modification: Texte dans le SMS de modification
         sms_reminder: Texte dans le SMS de rappel
         sms_verification: Texte dans le SMS de vérification

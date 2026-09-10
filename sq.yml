@@ -389,6 +389,8 @@ sq:
         mail_cancellation_subject: Subjekti në emailin e anulimit
         mail_confirmation: Mesazh në emailin e konfirmimit
         mail_confirmation_subject: Subjekti në emailin e konfirmimit
+        mail_declined: Mesazh në emailin e refuzuar
+        mail_declined_subject: Subjekti në emailin e refuzuar
         mail_modification: Tekst në emailin e modifikimit
         mail_modification_subject: Subjekti në emailin e modifikimit
         mail_notification_cancellation: Mesazh në emailin e njoftimit për anulim
@@ -421,6 +423,7 @@ sq:
         sms_awaiting_confirmation: Teksti në SMS-në e pritjes për konfirmim
         sms_cancellation: Mesazh në SMS-në e anulimit
         sms_confirmation: Mesazh në SMS konfirmimi
+        sms_declined: Mesazh në SMS-në e refuzuar
         sms_modification: Tekst në SMS modifikimi
         sms_notification: Merrni SMS për çdo rezervim të ri
         sms_notification_recipient: Numri(at) i telefonit për njoftim
@@ -548,6 +551,7 @@ sq:
         mail_awaiting_confirmation: Teksti në emailin e pritjes për konfirmim
         mail_cancellation: Mesazh në emailin e anulimit
         mail_confirmation: Mesazh në emailin e konfirmimit
+        mail_declined: Mesazh në emailin e refuzuar
         mail_modification: Tekst në emailin e modifikimit
         mail_request_payment: Mesazh në emailin e kërkesës për pagesë
         mail_verification: Mesazh në emailin e verifikimit
@@ -564,6 +568,7 @@ sq:
         sms_awaiting_confirmation: Teksti në SMS-në e pritjes për konfirmim
         sms_cancellation: Mesazh në SMS-në e anulimit
         sms_confirmation: Mesazh në SMS konfirmimi
+        sms_declined: Mesazh në SMS-në e refuzuar
         sms_modification: Tekst në SMS modifikimi
         sms_reminder: Tekst në SMS përkujtues
         sms_request_payment: Tekst në SMS me kërkesë për pagesë

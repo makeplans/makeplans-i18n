@@ -385,6 +385,8 @@ da:
         mail_cancellation_subject: Titel på e-mail sendt ved annullering
         mail_confirmation: Tekst i e-mail, der sendes ved bekræftelse
         mail_confirmation_subject: Titel på e-mail sendt ved bekræftelse
+        mail_declined: Tekst i afvist e-mail
+        mail_declined_subject: Emne i afvist e-mail
         mail_modification: Tekst i e-mail, der sendes, når den ændres
         mail_modification_subject: Titel på e-mail sendt ved ændring
         mail_notification_cancellation: Tekst i e-mail, der sendes som en besked ved afbestilling
@@ -417,6 +419,7 @@ da:
         sms_awaiting_confirmation: Tekst i SMS, der sendes, når reservationen skal godkendes
         sms_cancellation: Tekst i SMS, der sendes ved annullering
         sms_confirmation: Tekst i SMS, der sendes ved bekræftelse
+        sms_declined: Tekst i afvist SMS
         sms_modification: Tekst i SMS, der sendes ved ændring
         sms_notification: Modtag besked via SMS for hver nye reservation
         sms_notification_recipient: Telefonnummer for underretning
@@ -542,6 +545,7 @@ da:
         mail_awaiting_confirmation: Tekst i e-mail sendt, når reservationen skal godkendes
         mail_cancellation: Tekst i e-mail, der sendes ved annullering
         mail_confirmation: Tekst i e-mail, der sendes ved bekræftelse
+        mail_declined: Tekst i afvist e-mail
         mail_modification: Tekst i e-mail, der sendes, når den ændres
         mail_verification: Tekst i e-mail sendt under bekræftelse
         max_slots: Maksimalt antal slotte pr. reservation
@@ -557,6 +561,7 @@ da:
         sms_awaiting_confirmation: Tekst i SMS, der sendes, når reservationen skal godkendes
         sms_cancellation: Tekst i SMS, der sendes ved annullering
         sms_confirmation: Tekst i SMS, der sendes ved bekræftelse
+        sms_declined: Tekst i afvist SMS
         sms_modification: Tekst i SMS, der sendes ved ændring
         sms_reminder: Tekst i SMS sendt med påmindelse
         sms_verification: Tekst i SMS, der sendes under verifikation

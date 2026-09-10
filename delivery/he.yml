@@ -16,6 +16,8 @@ he:
       subject: הזמנה חדשה
       subject_service: הזמנה עבור %{service}
     declined:
+      header: היי %{name}
+      info: בקשתך להזמנה עבור %{title} %{time_range} לא אושרה. ההזמנה לא אושרה. אנא נסה בפעם אחרת.
       subject: ההזמנה נדחתה
     modification:
       header: היי %{name}

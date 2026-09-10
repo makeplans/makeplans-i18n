@@ -359,6 +359,8 @@ sv:
         mail_cancellation_subject: Ämne i avbokningsmail
         mail_confirmation: Text i bekräftelsemail
         mail_confirmation_subject: Ämne i bekräftelsemail
+        mail_declined: Text i avvisat e-postmeddelande
+        mail_declined_subject: Ämne i avvisat e-postmeddelande
         mail_modification: Text i e-post som skickas vid ändring
         mail_modification_subject: Ämne i e-post som skickas vid ändring
         mail_notification_cancellation: Text i e-postmeddelande som skickas som avisering vid avbokning
@@ -389,6 +391,7 @@ sv:
         slot_generation: Tidsgenerering
         sms_cancellation: Text i SMS som skickas vid avbokning
         sms_confirmation: Text i SMS som skickas vid bekräftelse
+        sms_declined: Text i avvisad SMS
         sms_modification: Text i SMS som skickas vid ändring
         sms_notification: Ta emot SMS för varje ny bokning
         sms_notification_recipient: Telefonnummer för avisering
@@ -502,6 +505,7 @@ sv:
         interval_rounding: Avrundning till nästa lediga bokningstillfälle
         mail_cancellation: Text i avbokningsmail
         mail_confirmation: Text i bekräftelsemail
+        mail_declined: Text i avvisat e-postmeddelande
         mail_modification: Text i e-post som skickas vid ändring
         mail_verification: Text i verifikationsmail
         max_slots: Max antal tidsluckor per bokning
@@ -516,6 +520,7 @@ sv:
         slot_generation: Tidsgenerering
         sms_cancellation: Text i SMS som skickas vid avbokning
         sms_confirmation: Text i SMS som skickas vid bekräftelse
+        sms_declined: Text i avvisad SMS
         sms_modification: Text i SMS som skickas vid ändring
         sms_reminder: Text i SMS skickas med påminnelse
         sms_verification: Text i SMS som skickas vid verifikation

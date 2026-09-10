@@ -275,6 +275,8 @@ ru:
         mail_cancellation_subject: Тема в электронном письме об отмене
         mail_confirmation: Текст в электронном письме с подтверждением
         mail_confirmation_subject: Тема письма с подтверждением
+        mail_declined: Текст в отклоненном электронном письме
+        mail_declined_subject: Тема письма, в котором было отказано
         mail_modification: Текст в электронном письме с изменениями
         mail_modification_subject: Тема в электронном письме с изменениями
         mail_notification_recipient: Электронный адрес (а) для уведомления
@@ -299,6 +301,7 @@ ru:
           weekday_available: Будни
         sms_cancellation: Текст в SMS об отмене
         sms_confirmation: Текст в подтверждающем SMS
+        sms_declined: Текст в отклоненном SMS
         sms_modification: Текст в модификационном SMS
         sms_notification: Получать SMS для каждого нового бронирования
         sms_notification_recipient: Телефон для уведомления
@@ -378,6 +381,7 @@ ru:
         interval_rounding: Округление до следующего доступного времени
         mail_cancellation: Текст в электронном письме об отмене
         mail_confirmation: Текст в электронном письме с подтверждением
+        mail_declined: Текст в отклоненном электронном письме
         mail_modification: Текст в электронном письме с изменениями
         mail_verification: Текст в электронном письме с подтверждением
         max_slots: Максимальное количество слотов на бронирование
@@ -388,6 +392,7 @@ ru:
         same_day: Разрешить бронирование на несколько дней
         sms_cancellation: Текст в SMS об отмене
         sms_confirmation: Текст в подтверждающем SMS
+        sms_declined: Текст в отклоненном SMS
         sms_modification: Текст в модификационном SMS
         sms_reminder: Текст в напоминании SMS
         sms_verification: Текст в проверочном SMS

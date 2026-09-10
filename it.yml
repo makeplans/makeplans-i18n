@@ -389,6 +389,8 @@ it:
         mail_cancellation_subject: Oggetto nell'email di cancellazione
         mail_confirmation: Testo nell'email di conferma
         mail_confirmation_subject: Oggetto nell'email di conferma
+        mail_declined: Testo nell'email rifiutata
+        mail_declined_subject: Oggetto dell'email rifiutata
         mail_modification: Testo nell'email di modifica
         mail_modification_subject: Oggetto nell'email di modifica
         mail_notification_cancellation: Testo nell'email di notifica di cancellazione
@@ -421,6 +423,7 @@ it:
         sms_awaiting_confirmation: Testo nell'SMS di attesa di conferma
         sms_cancellation: Testo nell'SMS di annullamento
         sms_confirmation: Testo nell'SMS di conferma
+        sms_declined: Testo in SMS rifiutato
         sms_modification: Testo nell'SMS di modifica
         sms_notification: Ricevi un SMS per ogni nuova prenotazione
         sms_notification_recipient: Numero/i di telefono per le notifiche
@@ -549,6 +552,7 @@ it:
         mail_awaiting_confirmation: Testo nell'email di attesa di conferma
         mail_cancellation: Testo nell'email di annullamento
         mail_confirmation: Testo nell'email di conferma
+        mail_declined: Testo nell'email rifiutata
         mail_modification: Testo nell'email di modifica
         mail_request_payment: Testo nell'email di richiesta di pagamento
         mail_verification: Testo nell'email di verifica
@@ -565,6 +569,7 @@ it:
         sms_awaiting_confirmation: Testo nell'SMS di attesa di conferma
         sms_cancellation: Testo nell'SMS di annullamento
         sms_confirmation: Testo nell'SMS di conferma
+        sms_declined: Testo in SMS rifiutato
         sms_modification: Testo nell'SMS di modifica
         sms_reminder: Messaggio di promemoria SMS
         sms_request_payment: Testo nella richiesta di pagamento SMS

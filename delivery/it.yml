@@ -28,6 +28,8 @@ it:
       subject: Nuova prenotazione
       subject_service: Prenotazione per %{service}
     declined:
+      header: Ciao %{name}
+      info: La tua richiesta di prenotazione di %{title} %{time_range} non è stata approvata. La prenotazione non è confermata. Riprova più tardi.
       subject: Prenotazione rifiutata
     modification:
       header: Ciao %{name}
