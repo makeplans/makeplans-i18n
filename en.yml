@@ -130,6 +130,7 @@ en:
         password: password
         password_confirmation: password confirmation
         rotp_verification_code: verification code
+        theme: Theme
       web_hook:
         event: Event
         target_url: Target URL

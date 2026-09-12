@@ -1029,6 +1029,10 @@ en:
       deactivate_rotp:
         deactivate_rotp: Remove 2FA
         verify_code: 'Enter code to verify:'
+      edit:
+        theme_auto: Auto (follow system)
+        theme_dark: Dark
+        theme_light: Light
       edit_password:
         verify_code: 'Enter code to verify:'
       no_access:

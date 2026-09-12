@@ -1017,6 +1017,10 @@ nb:
       deactivate_rotp:
         deactivate_rotp: Deaktiver 2FA
         verify_code: 'Tast inn kode for verifisering:'
+      edit:
+        theme_auto: Auto (følg systemet)
+        theme_dark: Mørk
+        theme_light: Lys
       edit_password:
         verify_code: 'Tast inn kode for verifisering:'
       no_access:

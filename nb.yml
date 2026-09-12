@@ -131,6 +131,7 @@ nb:
         password: passord
         password_confirmation: passord-bekreftelse
         rotp_verification_code: verifiseringskode
+        theme: Tema
       web_hook:
         event: Begivenhet
         target_url: Mål-URL
