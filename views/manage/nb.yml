@@ -1123,6 +1123,10 @@ nb:
         apply: Vis
         download_csv: Last ned CSV
         from: Fra dato
+        granularity_day: Dag
+        granularity_label: Vis per
+        granularity_month: Måned
+        granularity_week: Uke
         to: Til dato
       granularity:
         day: Dato

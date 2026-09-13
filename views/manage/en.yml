@@ -1135,6 +1135,10 @@ en:
         apply: Show
         download_csv: Download CSV
         from: From date
+        granularity_day: Day
+        granularity_label: Show per
+        granularity_month: Month
+        granularity_week: Week
         to: To date
       granularity:
         day: Date
