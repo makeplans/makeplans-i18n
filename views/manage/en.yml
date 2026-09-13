@@ -1079,6 +1079,8 @@ en:
         by_weekday: Reservations per weekday
         date: Date
         per_day: Reservations per day
+        per_month: Reservations per month
+        per_week: Reservations per week
         title: Reservations
       breakdown:
         attendees: Attendees
@@ -1101,6 +1103,8 @@ en:
         not_rebooked: Not rebooked
         of_customers: of %{count} customers
         per_day: New customers per day
+        per_month: New customers per month
+        per_week: New customers per week
         rebooked: Rebooked
         rebooking: Rebooking rate
         rebooking_hint: New reservation within %{weeks} weeks of the first visit in the period
@@ -1132,6 +1136,10 @@ en:
         download_csv: Download CSV
         from: From date
         to: To date
+      granularity:
+        day: Date
+        month: Month
+        week: Week
       index:
         ahead_of_previous_period: "%{change}% ahead of the previous period"
         all_clear: All clear
@@ -1190,6 +1198,8 @@ en:
         no_shows: No-shows
         offenders: Customers with most no-shows
         per_day: No-shows per day
+        per_month: No-shows per month
+        per_week: No-shows per week
         rate: Rate
         title: No-shows
         total: No-shows
@@ -1199,6 +1209,8 @@ en:
         amount: Amount
         date: Date
         per_day: Revenue per day
+        per_month: Revenue per month
+        per_week: Revenue per week
         title: Revenue
         total: Total
       services:

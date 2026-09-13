@@ -1067,6 +1067,8 @@ nb:
         by_weekday: Reservasjoner per ukedag
         date: Dato
         per_day: Reservasjoner per dag
+        per_month: Reservasjoner per måned
+        per_week: Reservasjoner per uke
         title: Reservasjoner
       breakdown:
         attendees: Deltakere
@@ -1089,6 +1091,8 @@ nb:
         not_rebooked: Ikke bestilt på nytt
         of_customers: av %{count} kunder
         per_day: Nye kunder per dag
+        per_month: Nye kunder per måned
+        per_week: Nye kunder per uke
         rebooked: Bestilt på nytt
         rebooking: Gjenbestillingsrate
         rebooking_hint: Ny reservasjon innen %{weeks} uker etter første besøk i perioden
@@ -1120,6 +1124,10 @@ nb:
         download_csv: Last ned CSV
         from: Fra dato
         to: Til dato
+      granularity:
+        day: Dato
+        month: Måned
+        week: Uke
       index:
         ahead_of_previous_period: "%{change}% foran forrige periode"
         all_clear: Alt ser bra ut
@@ -1178,6 +1186,8 @@ nb:
         no_shows: Ikke møtt
         offenders: Kunder med flest ikke møtt
         per_day: Ikke møtt per dag
+        per_month: Ikke møtt per måned
+        per_week: Ikke møtt per uke
         rate: Andel
         title: Ikke møtt
         total: Ikke møtt
@@ -1187,6 +1197,8 @@ nb:
         amount: Beløp
         date: Dato
         per_day: Omsetning per dag
+        per_month: Omsetning per måned
+        per_week: Omsetning per uke
         title: Omsetning
         total: Totalt
       services:
