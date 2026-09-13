@@ -1094,14 +1094,37 @@ en:
         created_before_period: Existed before the period
         created_in_period: Created in the period
         date: Date
+        last_visit: Last visit
         name: Name
         new_customers: New customers
         new_vs_returning: New and returning customers
+        not_rebooked: Not rebooked
+        of_customers: of %{count} customers
         per_day: New customers per day
+        rebooked: Rebooked
+        rebooking: Rebooking rate
+        rebooking_hint: New reservation within %{weeks} weeks of the first visit in the period
         returning_customers: Returning customers
+        send_sms: Send SMS
         title: Customers
         top_customers: Top customers
         total: New customers
+      events:
+        attendees: Attendees
+        bookings: Reservations
+        capacity: Capacity
+        event: Event
+        events_count:
+          one: 1 event
+          other: "%{count} events"
+        fill: Fill rate
+        fill_curve: When events fill up
+        fill_curve_hint: Reservations by days before the event starts
+        minimum_not_reached: minimum not reached
+        starts_at: Starts
+        title: Events
+        waitlist_summary: "%{waitlisted} on waitlist · %{conversions} promoted from waitlist in the period"
+        waitlisted: Waitlisted
       filters:
         all_resources: All resources
         all_services: All services
@@ -1157,6 +1180,19 @@ en:
         today: Today
         total_count: "%{count} total"
         when: When
+      no_shows:
+        bookings: Reservations
+        by_hour: No-shows per hour
+        by_resource: No-shows per resource
+        by_service: No-shows per service
+        by_weekday: No-shows per weekday
+        name: Name
+        no_shows: No-shows
+        offenders: Customers with most no-shows
+        per_day: No-shows per day
+        rate: Rate
+        title: No-shows
+        total: No-shows
       resources:
         title: Resources
       revenue:
@@ -1170,10 +1206,44 @@ en:
       subnav:
         bookings: Reservations
         customers: Customers
+        events: Events
+        no_shows: No-shows
         overview: Overview
         resources: Resources
         revenue: Revenue
         services: Services
+        timing: Timing
+        utilization: Utilization
+      timing:
+        bookings: Reservations
+        buckets:
+          after_start: After start
+          four_seven_days: 4–7 days
+          four_weeks: 2–4 weeks
+          longer: Over 2 months
+          next_day: Next day
+          same_day: Same day
+          two_months: 1–2 months
+          two_three_days: 2–3 days
+          two_weeks: 1–2 weeks
+        by_created_hour: Reservations made per hour
+        by_created_weekday: Reservations made per weekday
+        cancellation_lead_time: Cancellation lead time
+        cancellation_lead_time_hint: Time between the cancellation and the reserved time
+        cancellations: Cancellations
+        lead_time: Lead time
+        lead_time_hint: Time between when the reservation was made and the reserved time
+        median_lead: median lead time %{days} days
+        title: Timing
+      utilization:
+        booked_hours: Booked hours
+        hours: "%{booked} of %{open} hours"
+        open_hours: Open hours
+        per_resource: Utilization per resource
+        resource: Resource
+        title: Utilization
+        total: Total
+        utilization: Utilization
     resources:
       form:
         availability: Default availability

@@ -1082,14 +1082,37 @@ nb:
         created_before_period: Eksisterte før perioden
         created_in_period: Opprettet i perioden
         date: Dato
+        last_visit: Siste besøk
         name: Navn
         new_customers: Nye kunder
         new_vs_returning: Nye og tilbakevendende kunder
+        not_rebooked: Ikke bestilt på nytt
+        of_customers: av %{count} kunder
         per_day: Nye kunder per dag
+        rebooked: Bestilt på nytt
+        rebooking: Gjenbestillingsrate
+        rebooking_hint: Ny reservasjon innen %{weeks} uker etter første besøk i perioden
         returning_customers: Tilbakevendende kunder
+        send_sms: Send SMS
         title: Kunder
         top_customers: Toppkunder
         total: Nye kunder
+      events:
+        attendees: Deltakere
+        bookings: Reservasjoner
+        capacity: Kapasitet
+        event: Arrangement
+        events_count:
+          one: 1 arrangement
+          other: "%{count} arrangementer"
+        fill: Fyllingsgrad
+        fill_curve: Når arrangementer fylles opp
+        fill_curve_hint: Reservasjoner etter antall dager før arrangementet starter
+        minimum_not_reached: minimum ikke nådd
+        starts_at: Starter
+        title: Arrangementer
+        waitlist_summary: "%{waitlisted} på venteliste · %{conversions} flyttet fra venteliste i perioden"
+        waitlisted: På venteliste
       filters:
         all_resources: Alle ressurser
         all_services: Alle tjenester
@@ -1145,6 +1168,19 @@ nb:
         today: I dag
         total_count: "%{count} totalt"
         when: Når
+      no_shows:
+        bookings: Reservasjoner
+        by_hour: Ikke møtt per time
+        by_resource: Ikke møtt per ressurs
+        by_service: Ikke møtt per tjeneste
+        by_weekday: Ikke møtt per ukedag
+        name: Navn
+        no_shows: Ikke møtt
+        offenders: Kunder med flest ikke møtt
+        per_day: Ikke møtt per dag
+        rate: Andel
+        title: Ikke møtt
+        total: Ikke møtt
       resources:
         title: Ressurser
       revenue:
@@ -1158,10 +1194,44 @@ nb:
       subnav:
         bookings: Reservasjoner
         customers: Kunder
+        events: Arrangementer
+        no_shows: Ikke møtt
         overview: Oversikt
         resources: Ressurser
         revenue: Omsetning
         services: Tjenester
+        timing: Tidsbruk
+        utilization: Utnyttelse
+      timing:
+        bookings: Reservasjoner
+        buckets:
+          after_start: Etter start
+          four_seven_days: 4–7 dager
+          four_weeks: 2–4 uker
+          longer: Over 2 måneder
+          next_day: Dagen etter
+          same_day: Samme dag
+          two_months: 1–2 måneder
+          two_three_days: 2–3 dager
+          two_weeks: 1–2 uker
+        by_created_hour: Reservasjoner opprettet per time
+        by_created_weekday: Reservasjoner opprettet per ukedag
+        cancellation_lead_time: Tid før kansellering
+        cancellation_lead_time_hint: Tid mellom kanselleringen og det reserverte tidspunktet
+        cancellations: Kanselleringer
+        lead_time: Bestillingshorisont
+        lead_time_hint: Tid mellom når reservasjonen ble opprettet og det reserverte tidspunktet
+        median_lead: median bestillingshorisont %{days} dager
+        title: Tidsbruk
+      utilization:
+        booked_hours: Bestilte timer
+        hours: "%{booked} av %{open} timer"
+        open_hours: Åpne timer
+        per_resource: Utnyttelse per ressurs
+        resource: Ressurs
+        title: Utnyttelse
+        total: Totalt
+        utilization: Utnyttelse
     resources:
       form:
         availability: Standard tilgjengelighet
