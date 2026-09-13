@@ -1109,7 +1109,6 @@ en:
         rebooking: Rebooking rate
         rebooking_hint: New reservation within %{weeks} weeks of the first visit in the period
         returning_customers: Returning customers
-        send_sms: Send SMS
         title: Customers
         top_customers: Top customers
         total: New customers

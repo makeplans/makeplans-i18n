@@ -1097,7 +1097,6 @@ nb:
         rebooking: Gjenbestillingsrate
         rebooking_hint: Ny reservasjon innen %{weeks} uker etter første besøk i perioden
         returning_customers: Tilbakevendende kunder
-        send_sms: Send SMS
         title: Kunder
         top_customers: Toppkunder
         total: Nye kunder
