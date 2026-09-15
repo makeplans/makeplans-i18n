@@ -379,6 +379,7 @@ en:
         show:
           api: API
           embed: Embed
+          mcp: MCP - AI assistants
           web_hooks: Webhooks
       domains:
         cname:
@@ -610,6 +611,17 @@ en:
           email: Send a copy to your email
           header: Invoices from Makeplans
           paid: Paid
+      mcp:
+        show:
+          claude_code: Claude Code
+          enable: Enable the API
+          endpoint: MCP endpoint
+          header: MCP - AI assistants
+          info: Connect AI assistants such as Claude to your Makeplans account with MCP (Model Context Protocol). The assistant authenticates with your API-key and can check availability, list bookings and events, look up customers, and create or cancel bookings.
+          info_html: Documentation is available at <a href="https://developer.makeplans.com/guide/mcp/" target="_blank" class="link-external">https://developer.makeplans.com/guide/mcp/</a>.
+          not_enabled: The API must be enabled before AI assistants can connect.
+          other_clients: Other MCP clients
+          other_clients_info: Add a remote MCP server with the endpoint above and the HTTP header "Authorization" with value "Bearer %{api_key}".
       promote:
         booking_button_html_info: To insert the booking button on your website please copy the HTML-code below. If you need help please contact your web-designer.
         booking_button_html_preview: Booking button preview
