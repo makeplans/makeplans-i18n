@@ -433,6 +433,10 @@ en:
           person_oauth_auto_create: Automatically create customer profile from third party provider login (skip registration form)
           plausible: Enable Plausible Analytics
           prevent_new_signups: Only allow reservations from existing customers
+          rating_scale: Rating scale
+          rating_scale_default: Default (1-%{scale})
+          rating_scale_info: 'How many steps the customer can choose from when rating a reservation. Ratings already given are stored as the number chosen, so changing the scale changes what older ratings mean.'
+          rating_scale_option: 1-%{scale}
           show_all_events_calendar: Show all events in one calendar
           waitlist_enabled: Enable waitlist for fully booked slots and events
           waitlist_promotion_mode: Waitlist promotion mode
@@ -1218,6 +1222,28 @@ en:
         rate: Rate
         title: No-shows
         total: No-shows
+      ratings:
+        average: Average rating
+        booked: Reservation
+        bookings: Reservations
+        by_resource: Average by resource
+        by_service: Average by service
+        distribution: How the scores are spread
+        lowest: Lowest rated reservations
+        name: Name
+        no_ratings: No ratings yet for this period
+        per_day: Average per day
+        per_month: Average per month
+        per_week: Average per week
+        rating: Rating
+        ratings: Ratings
+        resource: Resource
+        response_rate: Response rate
+        responses:
+          one: "%{count} response"
+          other: "%{count} responses"
+        service: Service
+        title: Ratings
       resources:
         title: Resources
       revenue:
@@ -1236,6 +1262,7 @@ en:
         events: Events
         no_shows: No-shows
         overview: Overview
+        ratings: Ratings
         resources: Resources
         revenue: Revenue
         services: Services

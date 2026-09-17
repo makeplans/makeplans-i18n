@@ -433,6 +433,10 @@ nb:
           person_oauth_auto_create: Opprett kundeprofil automatisk fra tredjeparts innlogging (hopp over registreringsskjema)
           plausible: Aktiver Plausible Analytics
           prevent_new_signups: Tillatt kun booking for eksisterende kunder
+          rating_scale: Vurderingsskala
+          rating_scale_default: Standard (1-%{scale})
+          rating_scale_info: 'Hvor mange trinn kunden kan velge mellom når en reservasjon vurderes. Vurderinger som allerede er gitt lagres som tallet kunden valgte, så endrer du skalaen endrer du også hva eldre vurderinger betyr.'
+          rating_scale_option: 1-%{scale}
           show_all_events_calendar: Vis alle arrangementer i én kalender
           waitlist_enabled: Aktiver venteliste for fullbookede slotter og arrangementer
           waitlist_promotion_mode: Venteliste-forfremmelse
@@ -1206,6 +1210,28 @@ nb:
         rate: Andel
         title: Ikke møtt
         total: Ikke møtt
+      ratings:
+        average: Gjennomsnittlig vurdering
+        booked: Reservasjon
+        bookings: Reservasjoner
+        by_resource: Gjennomsnitt per ressurs
+        by_service: Gjennomsnitt per tjeneste
+        distribution: Fordeling av vurderingene
+        lowest: Lavest vurderte reservasjoner
+        name: Navn
+        no_ratings: Ingen vurderinger for denne perioden
+        per_day: Gjennomsnitt per dag
+        per_month: Gjennomsnitt per måned
+        per_week: Gjennomsnitt per uke
+        rating: Vurdering
+        ratings: Vurderinger
+        resource: Ressurs
+        response_rate: Svarandel
+        responses:
+          one: "%{count} svar"
+          other: "%{count} svar"
+        service: Tjeneste
+        title: Vurderinger
       resources:
         title: Ressurser
       revenue:
@@ -1224,6 +1250,7 @@ nb:
         events: Arrangementer
         no_shows: Ikke møtt
         overview: Oversikt
+        ratings: Vurderinger
         resources: Ressurser
         revenue: Omsetning
         services: Tjenester
