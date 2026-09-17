@@ -323,6 +323,17 @@ nb:
         priority_button: Rekkefølge
         qr_code: QR-kode til kunder
         show_on_booking_site: Åpne denne tjenesten på bookingsiden
+    chats:
+      index:
+        empty: Ingen WhatsApp-svar mottatt ennå.
+        headline: WhatsApp-svar
+      show:
+        booking: Reservasjon
+        credit_info: Hver melding koster 1 SMS-kreditt.
+        empty: Ingen meldinger med denne kunden ennå.
+        headline: WhatsApp-chat med %{name}
+        send: Send
+        window_closed: WhatsApp tillater kun svar innen 24 timer etter kundens siste melding. Be kunden skrive til deg igjen på WhatsApp, eller kontakt kunden på SMS, epost eller telefon.
     client:
       addons:
         addons:
@@ -939,6 +950,9 @@ nb:
         service_linked: Koblet mot produkt i Visma eAccounting
         service_links: 'Hver tjeneste må kobles mot et produkt i Visma eAccounting for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra Visma eAccounting - ikke fra Makeplans. Du må selv passe på at pris i begge systemer er identiske.'
         service_not_linked: IKKE koblet mot produkt i Visma eAccounting
+      whatsapp:
+        info: Send bekreftelser og påminnelser på WhatsApp, og motta svar fra kundene dine. WhatsApp settes opp sammen med MakePlans support - kontakt oss for å komme i gang. Meldingsmaler må godkjennes av Meta og registreres på hver enkelt meldingsmal.
+        phone_number: WhatsApp-avsendernummer
       whereby:
         connect_info: Tilkoblet
         setup_info: Et Whereby-møte vil bli automatisk opprettet for alle tjenester hvor Whereby er aktivert.
@@ -957,7 +971,12 @@ nb:
         services_info: 'Meldingsmalen vil gjelde for alle tjenester med mindre du begrenser utsending til enkelte tjenester:'
         settings:
           skip_if_in_past: Ikke send hvis leveringstidspunkt er passert
+          twilio_content_sid: WhatsApp-mal-SID
+          twilio_content_sid_info: ID-en (HX...) for denne malen slik den er godkjent av Meta. Registreres sammen med MakePlans support - meldingen kan ikke sendes før malen er godkjent.
         template_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
+        whatsapp_info: WhatsApp-meldinger må godkjennes av Meta før de kan sendes. Skriv meldingen som vanlig - teksten som skal godkjennes vises under etter lagring. Flettekoder er tillatt, men ikke logikk-koder.
+        whatsapp_meta_template: Maltekst for Meta-godkjenning
+        whatsapp_meta_template_info: Send inn nøyaktig denne teksten for godkjenning (flettekoder konverteres automatisk). Hvis du endrer meldingsteksten må malen godkjennes på nytt og SID-en oppdateres.
       index:
         header: Meldingsmaler
         immediately: øyeblikkelig
@@ -993,6 +1012,7 @@ nb:
         filter: Filtrering
         headline: Kunder
         send_sms: Send SMS
+        whatsapp_replies: WhatsApp-svar
       show:
         add_child: Legg til tilknyttet kunde
         all_day: Hele dagen
@@ -1017,6 +1037,7 @@ nb:
         no_reservations: Fant ingen reservasjoner
         parent_info: Administeres av
         send_sms: Send SMS
+        whatsapp_chat: WhatsApp-chat
       tfso_connect_company:
         create: Opprett ny bedrift i 24SevenOffice
         header: Koble mot kunde fra 24SevenOffice

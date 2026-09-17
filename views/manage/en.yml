@@ -323,6 +323,17 @@ en:
         priority_button: Order
         qr_code: QR code for customers
         show_on_booking_site: Open service on booking site
+    chats:
+      index:
+        empty: No WhatsApp replies received yet.
+        headline: WhatsApp replies
+      show:
+        booking: Booking
+        credit_info: Each message costs 1 SMS credit.
+        empty: No messages with this customer yet.
+        headline: WhatsApp chat with %{name}
+        send: Send
+        window_closed: WhatsApp only allows replies within 24 hours of the customer's last message. Ask the customer to write to you again on WhatsApp, or contact them by SMS, email or phone.
     client:
       addons:
         addons:
@@ -951,6 +962,9 @@ en:
         service_linked: Connected to a product in Visma eAccounting
         service_links: Every service in Makeplans must be connected to a product in Visma eAccount to enable invoicing. Please note that price is retrieved from Visma eAccounting - not Makeplans. You must ensure that price is identical in both systems.
         service_not_linked: NOT connected to a product in Visma eAccounting
+      whatsapp:
+        info: Send booking confirmations and reminders on WhatsApp, and receive replies from your customers. WhatsApp is set up together with MakePlans support - contact us to get started. Message templates must be approved by Meta and are registered on each message template.
+        phone_number: WhatsApp sender number
       whereby:
         connect_info: Connected
         setup_info: A Whereby meeting will be automatically created for each service that has Whereby activated.
@@ -969,7 +983,12 @@ en:
         services_info: 'The message template will be sent for all services unless you restrict to specific services below:'
         settings:
           skip_if_in_past: Don't send if delivery time is in the past
+          twilio_content_sid: WhatsApp template SID
+          twilio_content_sid_info: The ID (HX...) of this template as approved by Meta. Registered together with MakePlans support - the message can not be sent before the template is approved.
         template_info_html: You can merge inn dynamic values. Please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> for details.
+        whatsapp_info: WhatsApp messages must be approved by Meta before they can be sent. Write your message as usual - the text for approval is shown below after saving. Personalization tags are allowed, but not logic tags.
+        whatsapp_meta_template: Template text for Meta approval
+        whatsapp_meta_template_info: Submit exactly this text for approval (personalization tags are converted automatically). If you change the message text the template must be approved again and the SID updated.
       index:
         header: Message templates
         immediately: immediately
@@ -1005,6 +1024,7 @@ en:
         filter: Filtering
         headline: Customers
         send_sms: Send SMS
+        whatsapp_replies: WhatsApp replies
       show:
         add_child: Add connected customer
         all_day: All day
@@ -1029,6 +1049,7 @@ en:
         no_reservations: Found no reservations
         parent_info: Managed by
         send_sms: Send SMS
+        whatsapp_chat: WhatsApp chat
       tfso_connect_company:
         create: Create new customer in 24SevenOffice
         header: Connect to customer in 24SevenOffice

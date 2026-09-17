@@ -83,6 +83,7 @@ nb:
       message_template/delivery_type:
         email: epost
         sms: SMS
+        whatsapp: WhatsApp
       message_template/message_type:
         confirmation: bekreftelse
         follow_up: oppfølgning
@@ -178,6 +179,10 @@ nb:
               denied: Avvist
         client_user_link:
           admin_needed: Trenger minst én admin-bruker på kontoen.
+        message_template:
+          attributes:
+            template:
+              whatsapp_liquid_logic: kan ikke inneholde logikk-koder ({% %}) når leveringstype er WhatsApp - kun flettekoder er tillatt
         person:
           attributes:
             national_id_no:
@@ -539,6 +544,7 @@ nb:
       message_template/delivery_type:
         email: Epost
         sms: SMS
+        whatsapp: WhatsApp
       message_template/message_type:
         confirmation: Bekreftelse
         follow_up: Oppfølgning
