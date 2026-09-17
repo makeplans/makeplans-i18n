@@ -35,6 +35,16 @@ nb:
         confirm: Bekreft reservasjon
         info: En plass har blitt ledig for din ventlisteregistrering. Bekreft nå for å sikre plassen din.
         title: En plass er ledig!
+      rate:
+        error: Vennligst velg en vurdering.
+        info: Hvordan var opplevelsen din?
+        rating_1: Dårlig
+        rating_2: Greit
+        rating_3: Veldig bra
+        title: Vurder reservasjonen din
+      rated:
+        info: Takk for at du vurderte opplevelsen din.
+        title: Takk for tilbakemeldingen!
       show:
         booked_for_child: Denne reservasjonen er for %{name}.
         count: Reservert for %{count} personer.

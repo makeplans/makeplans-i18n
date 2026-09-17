@@ -41,6 +41,16 @@ en:
         confirm: Confirm Booking
         info: A spot has become available for your waitlisted booking. Confirm now to secure your spot.
         title: A Spot is Available!
+      rate:
+        error: Please choose a rating.
+        info: How was your experience?
+        rating_1: Poor
+        rating_2: OK
+        rating_3: Great
+        title: Rate your booking
+      rated:
+        info: Thank you for rating your experience.
+        title: Thanks for your feedback!
       show:
         booked_for_child: This booking is for %{name}.
         count: Booked for %{count} people.

@@ -358,6 +358,7 @@ nb:
         notes: Notat
         paid_at: Betalt
         person_id: Kunde
+        rating: Vurdering
         reminded_at: Sendt påminnelse
         reminder_at: Påminnelse
         resource_id: Ressurs
