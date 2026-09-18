@@ -324,16 +324,19 @@ nb:
         qr_code: QR-kode til kunder
         show_on_booking_site: Åpne denne tjenesten på bookingsiden
     chats:
-      index:
-        empty: Ingen WhatsApp-svar mottatt ennå.
-        headline: WhatsApp-svar
-      show:
-        booking: Reservasjon
+      form:
         credit_info: Hver melding koster 1 SMS-kreditt.
-        empty: Ingen meldinger med denne kunden ennå.
-        headline: WhatsApp-chat med %{name}
         send: Send
         window_closed: WhatsApp tillater kun svar innen 24 timer etter kundens siste melding. Be kunden skrive til deg igjen på WhatsApp, eller kontakt kunden på SMS, epost eller telefon.
+      index:
+        headline: WhatsApp-svar
+      replies:
+        empty: Ingen WhatsApp-svar mottatt ennå.
+      show:
+        headline: WhatsApp-chat med %{name}
+      thread:
+        booking: Reservasjon
+        empty: Ingen meldinger med denne kunden ennå.
     client:
       addons:
         addons:

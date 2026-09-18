@@ -324,16 +324,19 @@ en:
         qr_code: QR code for customers
         show_on_booking_site: Open service on booking site
     chats:
-      index:
-        empty: No WhatsApp replies received yet.
-        headline: WhatsApp replies
-      show:
-        booking: Booking
+      form:
         credit_info: Each message costs 1 SMS credit.
-        empty: No messages with this customer yet.
-        headline: WhatsApp chat with %{name}
         send: Send
         window_closed: WhatsApp only allows replies within 24 hours of the customer's last message. Ask the customer to write to you again on WhatsApp, or contact them by SMS, email or phone.
+      index:
+        headline: WhatsApp replies
+      replies:
+        empty: No WhatsApp replies received yet.
+      show:
+        headline: WhatsApp chat with %{name}
+      thread:
+        booking: Booking
+        empty: No messages with this customer yet.
     client:
       addons:
         addons:
