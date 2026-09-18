@@ -1120,6 +1120,7 @@ en:
         of_customers: of %{count} customers
         per_day: New customers per day
         per_month: New customers per month
+        per_period_hint: By signup date
         per_week: New customers per week
         rebooked: Rebooked
         rebooking: Rebooking rate
@@ -1149,17 +1150,20 @@ en:
         all_services: All services
         apply: Show
         download_csv: Download CSV
+        filter: Filter
         from: From date
         granularity_day: Day
         granularity_label: Show per
         granularity_month: Month
         granularity_week: Week
+        period: Period
         to: To date
       granularity:
         day: Date
         month: Month
         week: Week
       index:
+        ahead: Ahead
         ahead_of_previous_period: "%{change}% ahead of the previous period"
         all_clear: All clear
         behind_pace: Behind pace
@@ -1172,6 +1176,7 @@ en:
         bookings_per_day: Reservations per day
         cancellation_rate: Cancellation rate
         cancellations: Cancellations
+        compared_with_last_year: compared with the same period last year
         compared_with_previous: compared with the previous period
         confirmed_bookings: confirmed reservations
         custom: Custom
@@ -1179,6 +1184,8 @@ en:
           one: 1 day
           other: "%{count} days"
         demand_by_time: Demand by day and time
+        forward_note: Revenue, new customers, no-shows and ratings only exist for periods that have already happened, so those panels stay empty on a future period.
+        forward_note_title: Looking ahead
         from_previous_period: from previous period
         higher: Higher
         last_month: Last month
@@ -1187,6 +1194,10 @@ en:
         needs_attention: Needs attention
         new_customers: New customers
         new_period: New activity
+        next_days:
+          one: Next day
+          other: "Next %{count} days"
+        next_month: Next month
         no_attention: No operational issues detected
         no_previous_period: No previous period to compare
         no_shows: No-shows
@@ -1198,7 +1209,7 @@ en:
         revenue: Revenue
         revenue_all_scope: all resources and services
         revenue_by_service: Booked value by service
-        scope_note: All figures are confirmed reservations and collected payments for the selected period.
+        scope_note: Reservation figures count confirmed reservations by their reserved date. Revenue counts payments by the date they were processed.
         scope_note_title: Report scope
         service: Service
         this_month: This month
@@ -1249,9 +1260,10 @@ en:
       revenue:
         amount: Amount
         date: Date
-        per_day: Revenue per day
-        per_month: Revenue per month
-        per_week: Revenue per week
+        per_day: Revenue collected per day
+        per_month: Revenue collected per month
+        per_period_hint: By the date the payment was processed, not the reserved date
+        per_week: Revenue collected per week
         title: Revenue
         total: Total
       services:
@@ -1262,6 +1274,7 @@ en:
         events: Events
         no_shows: No-shows
         overview: Overview
+        past_only: This report only covers periods that have already happened
         ratings: Ratings
         resources: Resources
         revenue: Revenue
@@ -1291,12 +1304,15 @@ en:
         title: Timing
       utilization:
         booked_hours: Booked hours
+        coverage_ahead: Coverage ahead per resource
+        coverage_hint: Booked against open hours for a period that has not happened yet
         hours: "%{booked} of %{open} hours"
         open_hours: Open hours
         per_resource: Utilization per resource
         resource: Resource
         title: Utilization
         total: Total
+        unbooked_hours: Unbooked hours
         utilization: Utilization
     resources:
       form:

@@ -1108,6 +1108,7 @@ nb:
         of_customers: av %{count} kunder
         per_day: Nye kunder per dag
         per_month: Nye kunder per måned
+        per_period_hint: Etter registreringsdato
         per_week: Nye kunder per uke
         rebooked: Bestilt på nytt
         rebooking: Gjenbestillingsrate
@@ -1137,17 +1138,20 @@ nb:
         all_services: Alle tjenester
         apply: Vis
         download_csv: Last ned CSV
+        filter: Filter
         from: Fra dato
         granularity_day: Dag
         granularity_label: Vis per
         granularity_month: Måned
         granularity_week: Uke
+        period: Periode
         to: Til dato
       granularity:
         day: Dato
         month: Måned
         week: Uke
       index:
+        ahead: Fremover
         ahead_of_previous_period: "%{change}% foran forrige periode"
         all_clear: Alt ser bra ut
         behind_pace: Etter skjema
@@ -1160,6 +1164,7 @@ nb:
         bookings_per_day: Reservasjoner per dag
         cancellation_rate: Kanselleringsrate
         cancellations: Kanselleringer
+        compared_with_last_year: sammenlignet med samme periode i fjor
         compared_with_previous: sammenlignet med forrige periode
         confirmed_bookings: bekreftede reservasjoner
         custom: Egendefinert
@@ -1167,6 +1172,8 @@ nb:
           one: 1 dag
           other: "%{count} dager"
         demand_by_time: Pågang per dag og tid
+        forward_note: Omsetning, nye kunder, ikke møtt og vurderinger finnes bare for perioder som allerede har vært, så disse feltene står tomme for en fremtidig periode.
+        forward_note_title: Fremover
         from_previous_period: fra forrige periode
         higher: Høyere
         last_month: Forrige måned
@@ -1175,6 +1182,10 @@ nb:
         needs_attention: Krever oppfølging
         new_customers: Nye kunder
         new_period: Ny aktivitet
+        next_days:
+          one: Neste dag
+          other: "Neste %{count} dager"
+        next_month: Neste måned
         no_attention: Ingen avvik registrert
         no_previous_period: Ingen forrige periode å sammenligne med
         no_shows: Ikke møtt
@@ -1186,7 +1197,7 @@ nb:
         revenue: Omsetning
         revenue_all_scope: alle ressurser og tjenester
         revenue_by_service: Bestilt verdi per tjeneste
-        scope_note: Alle tall er bekreftede reservasjoner og innbetalte beløp for valgt periode.
+        scope_note: Reservasjonstall teller bekreftede reservasjoner etter reservert dato. Omsetning teller betalinger etter datoen de ble gjennomført.
         scope_note_title: Rapportomfang
         service: Tjeneste
         this_month: Denne måneden
@@ -1237,9 +1248,10 @@ nb:
       revenue:
         amount: Beløp
         date: Dato
-        per_day: Omsetning per dag
-        per_month: Omsetning per måned
-        per_week: Omsetning per uke
+        per_day: Innbetalt omsetning per dag
+        per_month: Innbetalt omsetning per måned
+        per_period_hint: Etter datoen betalingen ble gjennomført, ikke reservasjonsdatoen
+        per_week: Innbetalt omsetning per uke
         title: Omsetning
         total: Totalt
       services:
@@ -1250,6 +1262,7 @@ nb:
         events: Arrangementer
         no_shows: Ikke møtt
         overview: Oversikt
+        past_only: Denne rapporten dekker bare perioder som allerede har vært
         ratings: Vurderinger
         resources: Ressurser
         revenue: Omsetning
@@ -1279,12 +1292,15 @@ nb:
         title: Tidsbruk
       utilization:
         booked_hours: Bestilte timer
+        coverage_ahead: Dekning fremover per ressurs
+        coverage_hint: Bestilte mot åpne timer for en periode som ikke har vært ennå
         hours: "%{booked} av %{open} timer"
         open_hours: Åpne timer
         per_resource: Utnyttelse per ressurs
         resource: Ressurs
         title: Utnyttelse
         total: Totalt
+        unbooked_hours: Ledige timer
         utilization: Utnyttelse
     resources:
       form:
