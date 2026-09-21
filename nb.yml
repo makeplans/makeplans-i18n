@@ -485,6 +485,7 @@ nb:
         time_zone: Tidssone
         verification_method: Verifiseringsmetode ved ny reservasjon
         website: Nettside
+        whatsapp_nr: WhatsApp-avsendernummer
       client/slot_generation:
         dynamic: Dynamisk (standard)
         fixed: Fast

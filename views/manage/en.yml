@@ -477,6 +477,8 @@ en:
           custom_sms_sending: Completely override SMS with content below (otherwise content is just inserted in standard SMS)
           dont_include_icalendar_attachment: Do not include iCalendar attachment
         sms: SMS
+        whatsapp: WhatsApp
+        whatsapp_info: Send booking confirmations and reminders on WhatsApp, and receive replies from your customers. WhatsApp is set up together with MakePlans support - contact us to get started. Message templates must be approved by Meta and are registered on each message template.
       edit_company:
         delete_account_html: Are you sure you want to delete your account? <a href="%{link}">Yes, continue</a>
         delete_label: Delete account
@@ -965,9 +967,6 @@ en:
         service_linked: Connected to a product in Visma eAccounting
         service_links: Every service in Makeplans must be connected to a product in Visma eAccount to enable invoicing. Please note that price is retrieved from Visma eAccounting - not Makeplans. You must ensure that price is identical in both systems.
         service_not_linked: NOT connected to a product in Visma eAccounting
-      whatsapp:
-        info: Send booking confirmations and reminders on WhatsApp, and receive replies from your customers. WhatsApp is set up together with MakePlans support - contact us to get started. Message templates must be approved by Meta and are registered on each message template.
-        phone_number: WhatsApp sender number
       whereby:
         connect_info: Connected
         setup_info: A Whereby meeting will be automatically created for each service that has Whereby activated.

@@ -477,6 +477,8 @@ nb:
           custom_sms_sending: Overstyr hele SMS med innhold nedenfor (ellers så blir innhold kun lagt inn i standard SMS-mal)
           dont_include_icalendar_attachment: Ikke inkluder iCalendar-vedlegg
         sms: SMS
+        whatsapp: WhatsApp
+        whatsapp_info: Send bekreftelser og påminnelser på WhatsApp, og motta svar fra kundene dine. WhatsApp settes opp sammen med MakePlans support - kontakt oss for å komme i gang. Meldingsmaler må godkjennes av Meta og registreres på hver enkelt meldingsmal.
       edit_company:
         delete_account_html: Ønsker du å slette din konto? <a href="%{link}">Fortsett</a>
         delete_label: Slett konto
@@ -953,9 +955,6 @@ nb:
         service_linked: Koblet mot produkt i Visma eAccounting
         service_links: 'Hver tjeneste må kobles mot et produkt i Visma eAccounting for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra Visma eAccounting - ikke fra Makeplans. Du må selv passe på at pris i begge systemer er identiske.'
         service_not_linked: IKKE koblet mot produkt i Visma eAccounting
-      whatsapp:
-        info: Send bekreftelser og påminnelser på WhatsApp, og motta svar fra kundene dine. WhatsApp settes opp sammen med MakePlans support - kontakt oss for å komme i gang. Meldingsmaler må godkjennes av Meta og registreres på hver enkelt meldingsmal.
-        phone_number: WhatsApp-avsendernummer
       whereby:
         connect_info: Tilkoblet
         setup_info: Et Whereby-møte vil bli automatisk opprettet for alle tjenester hvor Whereby er aktivert.

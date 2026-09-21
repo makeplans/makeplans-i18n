@@ -488,6 +488,7 @@ en:
         time_zone: Timezone
         verification_method: Verification method for new reservations
         website: Website
+        whatsapp_nr: WhatsApp sender number
       client/slot_generation:
         dynamic: Dynamic (default)
         fixed: Fixed
