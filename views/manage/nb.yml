@@ -955,6 +955,10 @@ nb:
         service_linked: Koblet mot produkt i Visma eAccounting
         service_links: 'Hver tjeneste må kobles mot et produkt i Visma eAccounting for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra Visma eAccounting - ikke fra Makeplans. Du må selv passe på at pris i begge systemer er identiske.'
         service_not_linked: IKKE koblet mot produkt i Visma eAccounting
+      whatsapp:
+        connect: Koble til WhatsApp
+        connected: WhatsApp er tilkoblet med nummer %{number}.
+        info: Koble til WhatsApp for å sende bekreftelser og påminnelser og chatte med kundene dine. Du trenger en Meta-bedriftskonto og et telefonnummer som ikke allerede brukes med WhatsApp. Klikk på knappen under for å logge inn med Meta og fullføre oppsettet.
       whereby:
         connect_info: Tilkoblet
         setup_info: Et Whereby-møte vil bli automatisk opprettet for alle tjenester hvor Whereby er aktivert.
@@ -976,6 +980,12 @@ nb:
           twilio_content_sid: WhatsApp-mal-SID
           twilio_content_sid_info: ID-en (HX...) for denne malen slik den er godkjent av Meta. Registreres sammen med MakePlans support - meldingen kan ikke sendes før malen er godkjent.
         template_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
+        whatsapp_approval_status: Meta-godkjenning
+        whatsapp_approval_statuses:
+          approved: Godkjent - denne malen kan sendes
+          error: Innsending feilet
+          pending: Venter på godkjenning fra Meta
+          rejected: Avvist av Meta
         whatsapp_info: WhatsApp-meldinger må godkjennes av Meta før de kan sendes. Skriv meldingen som vanlig - teksten som skal godkjennes vises under etter lagring. Flettekoder er tillatt, men ikke logikk-koder.
         whatsapp_meta_template: Maltekst for Meta-godkjenning
         whatsapp_meta_template_info: Send inn nøyaktig denne teksten for godkjenning (flettekoder konverteres automatisk). Hvis du endrer meldingsteksten må malen godkjennes på nytt og SID-en oppdateres.

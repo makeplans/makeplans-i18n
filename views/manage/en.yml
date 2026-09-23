@@ -967,6 +967,10 @@ en:
         service_linked: Connected to a product in Visma eAccounting
         service_links: Every service in Makeplans must be connected to a product in Visma eAccount to enable invoicing. Please note that price is retrieved from Visma eAccounting - not Makeplans. You must ensure that price is identical in both systems.
         service_not_linked: NOT connected to a product in Visma eAccounting
+      whatsapp:
+        connect: Connect WhatsApp
+        connected: WhatsApp is connected with number %{number}.
+        info: Connect WhatsApp to send booking confirmations and reminders and chat with your customers. You need a Meta business account and a phone number that is not already used with WhatsApp. Click the button below to sign in with Meta and complete the setup.
       whereby:
         connect_info: Connected
         setup_info: A Whereby meeting will be automatically created for each service that has Whereby activated.
@@ -988,6 +992,12 @@ en:
           twilio_content_sid: WhatsApp template SID
           twilio_content_sid_info: The ID (HX...) of this template as approved by Meta. Registered together with MakePlans support - the message can not be sent before the template is approved.
         template_info_html: You can merge inn dynamic values. Please see <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> for details.
+        whatsapp_approval_status: Meta approval
+        whatsapp_approval_statuses:
+          approved: Approved - this template can be sent
+          error: Submission failed
+          pending: Awaiting approval from Meta
+          rejected: Rejected by Meta
         whatsapp_info: WhatsApp messages must be approved by Meta before they can be sent. Write your message as usual - the text for approval is shown below after saving. Personalization tags are allowed, but not logic tags.
         whatsapp_meta_template: Template text for Meta approval
         whatsapp_meta_template_info: Submit exactly this text for approval (personalization tags are converted automatically). If you change the message text the template must be approved again and the SID updated.
