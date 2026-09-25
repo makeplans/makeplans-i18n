@@ -330,6 +330,8 @@ nb:
         confirm: Godkjenn
         decline: Avvis
         promote: Forfrem
+        remove_from_waitlist: Fjern fra venteliste
+        remove_from_waitlist_confirm: Er du sikker på at du vil fjerne reservasjonen fra ventelisten?
         verify: Verifiser
       state:
         awaiting_confirmation: Venter på godkjenning

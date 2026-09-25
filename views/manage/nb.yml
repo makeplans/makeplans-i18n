@@ -30,25 +30,32 @@ nb:
         services: Tjenester
       list:
         all_day: Hele dagen
-        awaiting_confirmation:
-          one: "%{count} reservasjon venter på godkjenning."
-          other: "%{count} reservasjoner venter på godkjenning."
         awaiting_status:
           one: "%{count} reservasjon mangler status."
           other: "%{count} reservasjoner mangler status."
         busy: Opptatt
-        do_filtering: Aktiver filtrering
         filter: Filtrering
-        headline: Viser kalenderoppføringer
-        month: Vis valgt måned
+        nav:
+          day: Dag
+          list: Liste
+          month: Måned
+          next: Neste
+          previous: Forrige
+          today: I dag
+          week: Uke
         no_reservations: Fant ingen reservasjoner
+        overview: Oversikt
+        period: Periode
         reset_filter: Nullstill filtrering
         resources: Ressurser
         services: Tjenester
+        sort_latest: Siste endringer
+        sort_newest: Nye reservasjoner
         state: Status
         status: Oppmøtestatus
-        this_and_next_month: Fra i dag og ut neste måned
-        this_and_next_week: Fra i dag og ut neste uke
+        tab_awaiting_confirmation: Venter på bekreftelse
+        tab_waitlist: Venteliste
+        waitlist_note: "+%{count} på venteliste"
     billing:
       charge:
         charge_details: Basert på nåværende innstillinger så er månedlig pris %{price}.

@@ -333,6 +333,8 @@ en:
         confirm: Confirm
         decline: Decline
         promote: Promote
+        remove_from_waitlist: Remove from waitlist
+        remove_from_waitlist_confirm: Are you sure you want to remove this reservation from the waitlist?
         verify: Verify
       state:
         awaiting_confirmation: Awaiting confirmation

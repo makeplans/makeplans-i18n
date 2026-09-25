@@ -30,25 +30,32 @@ en:
         services: Services
       list:
         all_day: All day
-        awaiting_confirmation:
-          one: "%{count} reservation for approval."
-          other: "%{count} reservations for approval."
         awaiting_status:
           one: "%{count} reservation missing status."
           other: "%{count} reservations missing status."
         busy: Busy
-        do_filtering: Activate filter
         filter: Filtering
-        headline: Displaying appointments
-        month: Show month
+        nav:
+          day: Day
+          list: List
+          month: Month
+          next: Next
+          previous: Previous
+          today: Today
+          week: Week
         no_reservations: No reservations
+        overview: Overview
+        period: Period
         reset_filter: Reset filter
         resources: Resources
         services: Services
+        sort_latest: Latest changes
+        sort_newest: New reservations
         state: State
         status: Attendance status
-        this_and_next_month: From today until end of next month
-        this_and_next_week: From today until end of next week
+        tab_awaiting_confirmation: Awaiting confirmation
+        tab_waitlist: Waiting list
+        waitlist_note: "+%{count} on waiting list"
     billing:
       charge:
         charge_details: Based on current usage we will charge your credit card %{price} each month.
