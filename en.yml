@@ -718,6 +718,7 @@ en:
       profile: Profile
       reports: Reports
       setup: Setup
+      user_menu: User menu
     menu_setup:
       addons: Addons
       billing: Billing

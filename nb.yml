@@ -716,6 +716,7 @@ nb:
       profile: Profil
       reports: Rapporter
       setup: Oppsett
+      user_menu: Brukermeny
     menu_setup:
       addons: Tillegg
       billing: Betaling
