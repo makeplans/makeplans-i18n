@@ -199,6 +199,8 @@ nb:
         transaction_payment: Betaling
         transaction_refund: Refusjon
     person_sessions:
+      oauth_callback:
+        profile_exists: Det finnes allerede en profil med dine opplysninger. Logg inn med epost for å fortsette.
       perishable_token_form:
         login_with_email: Logg inn med epost
         login_with_id_porten: Logg inn med BankID

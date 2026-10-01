@@ -222,6 +222,8 @@ en:
         transaction_payment: Payment
         transaction_refund: Refund
     person_sessions:
+      oauth_callback:
+        profile_exists: A profile with your details already exists. Please log in with email to continue.
       perishable_token_form:
         login_with_email: Log in with email
         login_with_id_porten: Log in with BankID
