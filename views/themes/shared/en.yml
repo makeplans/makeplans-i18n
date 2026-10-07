@@ -233,6 +233,7 @@ en:
         login_with_vipps: Log in with Vipps
     products:
       index:
+        add_to_cart: Add to cart
         header: Products
         per_billing_period:
           month: per month
