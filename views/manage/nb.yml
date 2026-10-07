@@ -310,7 +310,9 @@ nb:
         booking_type_appointment: Timebestilling
         booking_type_attendance: Påmelding
         booking_type_gift_card: Gavekort
+        booking_type_pass: Klippekort
         booking_type_product: Produkter
+        booking_type_subscription: Abonnement
         has_services: Viser følgende tjenester
         no_parent_id: TOPPNIVÅ
         settings:

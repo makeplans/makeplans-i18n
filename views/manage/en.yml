@@ -310,7 +310,9 @@ en:
         booking_type_appointment: Appointments
         booking_type_attendance: Attendance
         booking_type_gift_card: Gift cards
+        booking_type_pass: Passes
         booking_type_product: Products
+        booking_type_subscription: Subscriptions
         has_services: Shows these services
         no_parent_id: TOP LEVEL
         settings:
