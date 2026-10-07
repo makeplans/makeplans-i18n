@@ -450,7 +450,9 @@ nb:
           active_bookings_limit: Maks antall aktive bookinger for kunde
           disable_person_cookie: Ikke tillatt kunde å forbli innlogget med cookie
           event_template: Kalendermal for arrangementer
+          fully_booked_text: Tekst for fullbookede tidspunkt
           google_tag_manager: Google Tag Manager Container ID
+          past_text: Tekst for passerte tidspunkt
           person_oauth_auto_create: Opprett kundeprofil automatisk fra tredjeparts innlogging (hopp over registreringsskjema)
           plausible: Aktiver Plausible Analytics
           prevent_new_signups: Tillatt kun booking for eksisterende kunder
@@ -465,6 +467,7 @@ nb:
             auto: Forfrem første på venteliste automatisk
             default: Systemstandard (Forfrem første på venteliste automatisk)
             notify_all: Varsle alle på ventelisten
+          waitlist_text: Tekst for tidspunkt med venteliste
         verification_methods_alt: 'Alternative metoder:'
         verification_methods:
           email: Epost

@@ -87,8 +87,10 @@ en:
       free_capacity:
         one: "%{count} available"
         other: "%{count} available"
+        zero: Fully booked
       fully_booked: This event is fully booked. No spots are available.
       join_waitlist: Join Waitlist
+      past: Past
       past_last_booking: It is no longer possible to sign up for this event.
       payment:
         add_card_details_html: Your card details will not be stored with us but is sent encrypted to %{provider} for secure transaction and storage.

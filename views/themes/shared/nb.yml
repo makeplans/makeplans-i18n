@@ -81,8 +81,10 @@ nb:
       free_capacity:
         one: "%{count} ledig"
         other: "%{count} ledige"
+        zero: Fullbooket
       fully_booked: Dette arrangementet er fullbooket. Det er ingen ledige plasser.
       join_waitlist: Sett meg på venteliste
+      past: Passert
       past_last_booking: Det er ikke lenger mulig å melde seg på dette arrangementet.
       payment:
         card: Kort
