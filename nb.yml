@@ -116,6 +116,7 @@ nb:
         payment_required: krev betaling
         price: pris
         quota: antall reservasjoner inkludert
+        renewal_price: fornyelsespris
         terms: vilkår
         title: tittel
         unlimited: ubegrenset
@@ -186,6 +187,7 @@ nb:
         order:
           attributes:
             base:
+              already_subscribed: Du har allerede et aktivt abonnement på denne tjenesten
               must_have_line_items: Bestillingen må ha minst én vare
               payment_incomplete: Betaling må fullføres før bestillingen kan bekreftes
         order_line_item:
@@ -203,10 +205,15 @@ nb:
         resource:
           has_bookings: Denne ressursen har aktive reservasjoner og kan dermed ikke slettes. Kontakt kundeservice.
         service:
+          has_redeemable_passes: Denne tjenesten har gyldige klippekort hos kunder og kan derfor ikke slettes.
+          has_redeemable_subscriptions: Denne tjenesten har aktive abonnementer hos kunder og kan derfor ikke slettes.
           attributes:
             price:
               below_minimum: må være høyere enn 3 NOK hvis du skal kreve forhåndsbetaling.
+              below_minimum_charge: må være høyere enn minstebeløpet for betaling
               payment_price_required: må være satt hvis du skal kreve forhåndsbetaling
+            renewal_price:
+              below_minimum: må være høyere enn minstebeløpet for betaling
         user:
           attributes:
             password:
@@ -581,7 +588,8 @@ nb:
         allow_cancellation: Tillatt avbestilling av kunden
         allow_invoice: Kan betales med faktura
         availability_type: Tilgjengelighet er definert av
-        billing_period: Fornyes hver
+        billing_period: Fornyelsesperiode (dager)
+        cancellation_period: Avbestillingsfrist
         block_resource: Reservasjon blokkerer ressursen
         booking_capacity: Maks antall personer per reservasjon
         booking_form: Egendefinert reservasjonskjema
@@ -613,6 +621,7 @@ nb:
         priority_strategy: Prioriteringstrategi
         published: Synlig på bookingsiden
         quota: Antall reservasjoner inkludert
+        renewal_price: Fornyelsespris (tom betyr samme som pris)
         reservation_form_text: Tekst som vises før reservasjonskjema
         same_day: Reservasjon kan ikke gå over flere dager
         slot_generation: Generering av tidspunkt

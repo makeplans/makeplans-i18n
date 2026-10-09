@@ -130,7 +130,9 @@ nb:
         applied_gift_cards: Brukte gavekort
         apply: Bruk
         cannot_use_coupon_for_gift_card: Rabattkoder kan ikke brukes ved kjøp av gavekort
+        cannot_use_coupon_for_pass: Rabattkoder kan ikke brukes ved kjøp av klippekort eller abonnement
         cannot_use_gift_card_for_gift_card: Gavekort kan ikke brukes til å kjøpe gavekort
+        cannot_use_gift_card_for_pass: Gavekort kan ikke brukes til å kjøpe klippekort eller abonnement
         complete_order: Fullfør bestilling
         continue_to_payment: Fortsett til betaling
         coupon_above_maximum: Ordretotalen overstiger maksimum for denne rabattkoden
@@ -148,6 +150,7 @@ nb:
         payment_method: Betalingsmetode
         remaining_total: Gjenstående beløp
         remove: Fjern
+        subscription_already_active: Du kan bare ha ett aktivt abonnement av denne typen
         use_coupon: Rabattkode
         use_gift_card: Bruk gavekort
         your_gift_cards: Dine gavekort
@@ -178,6 +181,7 @@ nb:
           pay_now: Betal nå
       pay_later:
         gift_cards_not_allowed: Gavekort kan ikke brukes med betal senere
+        passes_not_allowed: Klippekort og abonnementer kan ikke brukes med betal senere
         payment:
           back: Tilbake
           complete_order: Fullfør bestilling
@@ -223,6 +227,10 @@ nb:
         transaction_gift_card: Gavekort (%{code})
         transaction_payment: Betaling
         transaction_refund: Refusjon
+    passes:
+      balance: "%{remaining} av %{quota} igjen"
+      valid_for: "Kan brukes til: %{services}"
+      valid_for_all: Kan brukes til alle tjenester
     person_sessions:
       oauth_callback:
         profile_exists: Det finnes allerede en profil med dine opplysninger. Logg inn med epost for å fortsette.
@@ -234,15 +242,15 @@ nb:
     products:
       index:
         add_to_cart: Legg i handlekurv
+        every_days:
+          one: hver dag
+          other: hver %{count}. dag
         header: Produkter
-        per_billing_period:
-          month: per måned
-          week: per uke
-          year: per år
         quota:
           one: "%{count} reservasjon"
           other: "%{count} reservasjoner"
         quota_unlimited: Ubegrenset antall reservasjoner
+        then_renewal: ", deretter %{price}"
         validity_days:
           one: Gyldig i %{count} dag
           other: Gyldig i %{count} dager
@@ -286,6 +294,18 @@ nb:
         register: Registrer
       show:
         header: Din lagrede informasjon
+      pass_list:
+        expired: Utløpt
+        no_passes: Du har ingen klippekort.
+        title: Mine klippekort
+        used_up: Oppbrukt
+        valid_until: Gyldig til %{date}
+      subscription_list:
+        expired: Utløpt
+        no_subscriptions: Du har ingen abonnementer.
+        title: Mine abonnementer
+        used_up: Oppbrukt denne perioden
+        valid_until: Gyldig til %{date}
     providers:
       index:
         all_services: Alle tjenester

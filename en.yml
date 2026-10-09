@@ -115,6 +115,7 @@ en:
         payment_required: require payment
         price: price
         quota: number of reservations included
+        renewal_price: renewal price
         terms: terms
         title: title
         unlimited: unlimited
@@ -193,6 +194,7 @@ en:
         order:
           attributes:
             base:
+              already_subscribed: You already have an active subscription for this service
               must_have_line_items: Order must have at least one item
               payment_incomplete: Payment must be completed before confirming order
         order_line_item:
@@ -202,10 +204,15 @@ en:
         resource:
           has_bookings: This resource has bookings. Cannot be deleted. Please contact support.
         service:
+          has_redeemable_passes: This service has valid passes held by customers. It cannot be deleted.
+          has_redeemable_subscriptions: This service has active subscriptions held by customers. It cannot be deleted.
           attributes:
             price:
               below_minimum: must be more than 1 USD if you want to require payment
+              below_minimum_charge: must be more than the minimum charge amount
               payment_price_required: must be set if you want to require payment
+            renewal_price:
+              below_minimum: must be more than the minimum charge amount
         user:
           attributes:
             password:
@@ -584,7 +591,7 @@ en:
         allow_cancellation: Allow cancellations by customer
         allow_invoice: Allow invoice
         availability_type: Availability is defined by
-        billing_period: Renewed every
+        billing_period: Renewal period (days)
         cancellation_period: Cancellation period
         block_resource: Reservation will block resource
         booking_capacity: Max number of people allowed per reservation
@@ -616,6 +623,7 @@ en:
         priority_strategy: Priority strategy
         published: Show on the booking site
         quota: Number of reservations included
+        renewal_price: Renewal price (empty means same as price)
         reservation_form_text: Text displayed before reservation form
         same_day: Allow reservation over multiple days
         slot_generation: Time generation

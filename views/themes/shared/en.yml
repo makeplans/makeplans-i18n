@@ -130,7 +130,9 @@ en:
         applied_gift_cards: Applied Gift Cards
         apply: Apply
         cannot_use_coupon_for_gift_card: Discount codes cannot be used for gift card purchases
+        cannot_use_coupon_for_pass: Discount codes cannot be used for pass or subscription purchases
         cannot_use_gift_card_for_gift_card: Gift cards cannot be used to purchase gift cards
+        cannot_use_gift_card_for_pass: Gift cards cannot be used to purchase passes or subscriptions
         complete_order: Complete Order
         continue_to_payment: Continue to Payment
         coupon_above_maximum: Order total exceeds the maximum for this discount code
@@ -148,6 +150,7 @@ en:
         payment_method: Payment Method
         remaining_total: Remaining Total
         remove: Remove
+        subscription_already_active: You can only have one active subscription of this type
         use_coupon: Discount Code
         use_gift_card: Use Gift Card
         your_gift_cards: Your Gift Cards
@@ -178,6 +181,7 @@ en:
           pay_now: Pay Now
       pay_later:
         gift_cards_not_allowed: Gift cards cannot be used with pay later
+        passes_not_allowed: Passes and subscriptions cannot be used with pay later
         payment:
           back: Back
           complete_order: Complete Order
@@ -223,6 +227,10 @@ en:
         transaction_gift_card: Gift Card (%{code})
         transaction_payment: Payment
         transaction_refund: Refund
+    passes:
+      balance: "%{remaining} of %{quota} left"
+      valid_for: "Can be used for: %{services}"
+      valid_for_all: Can be used for all services
     person_sessions:
       oauth_callback:
         profile_exists: A profile with your details already exists. Please log in with email to continue.
@@ -234,15 +242,15 @@ en:
     products:
       index:
         add_to_cart: Add to cart
+        every_days:
+          one: every day
+          other: every %{count} days
         header: Products
-        per_billing_period:
-          month: per month
-          week: per week
-          year: per year
         quota:
           one: "%{count} reservation"
           other: "%{count} reservations"
         quota_unlimited: Unlimited reservations
+        then_renewal: ", then %{price}"
         validity_days:
           one: Valid for %{count} day
           other: Valid for %{count} days
@@ -284,8 +292,20 @@ en:
       new:
         errors_header: 'Errors occured:'
         register: Register
+      pass_list:
+        expired: Expired
+        no_passes: You have no passes.
+        title: My Passes
+        used_up: Used up
+        valid_until: Valid until %{date}
       show:
         header: Your stored information
+      subscription_list:
+        expired: Expired
+        no_subscriptions: You have no subscriptions.
+        title: My Subscriptions
+        used_up: Used up this period
+        valid_until: Valid until %{date}
     providers:
       index:
         all_services: All services

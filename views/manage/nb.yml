@@ -700,6 +700,99 @@ nb:
         not_redeemable: Ikke innløsbar
         orders: Ordrer
         redeemable: Innløsbar
+    gift_cards:
+      index:
+        header: Gavekort
+        header_for_person: Gavekort for %{name}
+      show:
+        active: Aktivt
+        current_balance: Gjenstående verdi
+        details: Detaljer
+        inactive: Brukt
+        initial_value: Opprinnelig verdi
+        orders: Ordrer
+        purchase_order: Kjøpsordre
+        purchased_by: Kjøpt av
+        redeemed_by: Innløst av
+        valid_until: Gyldig til
+    orders:
+      index:
+        all_states: Alle statuser
+        created_at: Opprettet
+        customer: Kunde
+        do_filtering: Filtrer
+        filter: Filter
+        headline: Bestillinger
+        order_id: Bestilling
+        status: Status
+        total: Totalt
+      refund:
+        already_refunded: Denne bestillingen er allerede refundert.
+        failed: 'Refusjon feilet: %{message}'
+        nothing_to_refund: Det er ingenting å refundere på denne bestillingen.
+        success: Bestilling refundert.
+      show:
+        amount: Beløp
+        balance: Utestående
+        coupon: Rabattkode
+        created_at: Opprettet
+        customer: Kunde
+        date: Dato
+        details: Detaljer
+        generated_gift_card: "Generert gavekort: %{code}"
+        gift_card_used: "Gavekort %{code}"
+        gift_cards: Gavekort
+        invoice: Faktura
+        invoice_number: "Faktura #%{nr}"
+        item: Vare
+        line_items: Ordrelinjer
+        order_number: "Bestilling #%{id}"
+        quantity: Antall
+        refund: Refunder betaling
+        refund_confirm: Refundere hele denne bestillingen? Dette reverserer alle betalinger og kan ikke angres.
+        subtotal: Delsum
+        total: Totalt
+        transaction_type: Type
+        transactions: Betalinger
+      states:
+        cancelled: Kansellert
+        confirmed: Bekreftet
+        pending: Venter
+      transaction_types:
+        gift_card: Gavekort
+        payment: Betaling
+        refund: Refusjon
+        subscription: Abonnement
+    passes:
+      index:
+        balance_of_quota: "%{remaining} av %{quota} igjen"
+        header: Klippekort
+        header_for_person: Klippekort for %{name}
+        unlimited: Ubegrenset
+      show:
+        active: Aktivt
+        balance: Saldo
+        expired: Utløpt
+        owner: Eier
+        purchase_order: Kjøpsordre
+        services: Kan brukes til
+        valid_until: Gyldig til
+    subscriptions:
+      index:
+        balance_of_quota: "%{remaining} av %{quota} igjen"
+        header: Abonnementer
+        header_for_person: Abonnementer for %{name}
+        status:
+          active: Aktivt
+          cancelled: Kansellert
+          expired: Utløpt
+        unlimited: Ubegrenset
+      show:
+        balance: Saldo denne perioden
+        current_period: Nåværende periode
+        owner: Eier
+        purchase_order: Kjøpsordre
+        services: Kan brukes til
     events:
       check_in:
         check_in: Sjekk inn
@@ -1072,7 +1165,13 @@ nb:
           other: "%{count} gavekort"
         no_reservations: Fant ingen reservasjoner
         parent_info: Administeres av
+        passes:
+          one: "%{count} klippekort"
+          other: "%{count} klippekort"
         send_sms: Send SMS
+        subscriptions:
+          one: "%{count} abonnement"
+          other: "%{count} abonnementer"
         whatsapp_chat: WhatsApp-chat
       tfso_connect_company:
         create: Opprett ny bedrift i 24SevenOffice
@@ -1473,11 +1572,7 @@ nb:
           hide_slot_end: Skjul sluttid
           show_free_capacity: Vis tilgjengelig kapasitet
           waitlist_enabled: Aktiver venteliste (overstyrer kontoinnstilling)
-      form_sellable:
-        billing_periods:
-          month: Måned
-          week: Uke
-          year: År
+      form_catalog:
         booking_site_settings: Innstillinger for bookingsiden
         linked_services:
           addon: Tilgjengelig ved reservasjon av følgende tjenester
@@ -1528,7 +1623,9 @@ nb:
         availability: Tilgjengelighet pr tilbyder
         billing_period: 'Fornyelsesperiode:'
         custom_data: 'Egendefinerte felter:'
-        days: dager
+        days:
+          one: dag
+          other: dager
         description: 'Beskrivelse:'
         interval: Varighet
         linked_services_all: Alle tjenester
@@ -1541,6 +1638,7 @@ nb:
         price: 'Pris:'
         qr_code: QR-kode for kunder
         quota: 'Antall reservasjoner inkludert:'
+        renewal_price: 'Fornyelsespris:'
         show_on_booking_site: Åpne bookingsiden for denne tjenesten
         unlimited: Ubegrenset
         validity: 'Gyldighet:'

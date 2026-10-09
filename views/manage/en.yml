@@ -763,6 +763,36 @@ en:
         payment: Payment
         refund: Refund
         subscription: Subscription
+    passes:
+      index:
+        balance_of_quota: "%{remaining} of %{quota} left"
+        header: Passes
+        header_for_person: Passes for %{name}
+        unlimited: Unlimited
+      show:
+        active: Active
+        balance: Balance
+        expired: Expired
+        owner: Owner
+        purchase_order: Purchase order
+        services: Can be used for
+        valid_until: Valid until
+    subscriptions:
+      index:
+        balance_of_quota: "%{remaining} of %{quota} left"
+        header: Subscriptions
+        header_for_person: Subscriptions for %{name}
+        status:
+          active: Active
+          cancelled: Cancelled
+          expired: Expired
+        unlimited: Unlimited
+      show:
+        balance: Balance this period
+        current_period: Current period
+        owner: Owner
+        purchase_order: Purchase order
+        services: Can be used for
     events:
       check_in:
         check_in: Check in
@@ -1072,7 +1102,13 @@ en:
           other: "%{count} gift cards"
         no_reservations: Found no reservations
         parent_info: Managed by
+        passes:
+          one: "%{count} pass"
+          other: "%{count} passes"
         send_sms: Send SMS
+        subscriptions:
+          one: "%{count} subscription"
+          other: "%{count} subscriptions"
         whatsapp_chat: WhatsApp chat
       tfso_connect_company:
         create: Create new customer in 24SevenOffice
@@ -1473,11 +1509,7 @@ en:
           hide_slot_end: Hide end-time
           show_free_capacity: Show available capacity
           waitlist_enabled: Enable waitlist (overrides account setting)
-      form_sellable:
-        billing_periods:
-          month: Month
-          week: Week
-          year: Year
+      form_catalog:
         booking_site_settings: Settings for the booking site
         linked_services:
           addon: Available when reserving the following services
@@ -1528,7 +1560,9 @@ en:
         availability: Availability pr provider
         billing_period: 'Renewal period:'
         custom_data: 'Custom data:'
-        days: days
+        days:
+          one: day
+          other: days
         description: 'Description:'
         interval: 'Duration:'
         linked_services_all: All services
@@ -1541,6 +1575,7 @@ en:
         price: 'Price:'
         qr_code: QR code for customers
         quota: 'Number of reservations included:'
+        renewal_price: 'Renewal price:'
         show_on_booking_site: Open service on booking site
         unlimited: Unlimited
         validity: 'Validity:'
