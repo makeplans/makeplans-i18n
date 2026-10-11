@@ -760,6 +760,7 @@ en:
         pending: Pending
       transaction_types:
         gift_card: Gift Card
+        pass: Pass
         payment: Payment
         refund: Refund
         subscription: Subscription
@@ -788,8 +789,10 @@ en:
           expired: Expired
         unlimited: Unlimited
       show:
+        all_periods: Show all periods
         balance: Balance this period
         current_period: Current period
+        current_period_only: Show current period
         owner: Owner
         purchase_order: Purchase order
         services: Can be used for
@@ -1646,6 +1649,13 @@ en:
           count: Occurrences
           until: Before date
         length_label: Until
+      redemptions:
+        booking_removed: Booking removed
+        empty: Not used yet
+        header: Usage
+        units:
+          one: "%{count} reservation"
+          other: "%{count} reservations"
     sms:
       create:
         queued: Sending SMS to %{recipents_count} recipients...

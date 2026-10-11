@@ -128,7 +128,9 @@ nb:
       checkout:
         applied_coupon: Brukt rabattkode
         applied_gift_cards: Brukte gavekort
+        applied_redeemables: Brukte klippekort og abonnementer
         apply: Bruk
+        cannot_combine_coupon_and_redemption: Rabattkoder kan ikke kombineres med klippekort eller abonnement
         cannot_use_coupon_for_gift_card: Rabattkoder kan ikke brukes ved kjøp av gavekort
         cannot_use_coupon_for_pass: Rabattkoder kan ikke brukes ved kjøp av klippekort eller abonnement
         cannot_use_gift_card_for_gift_card: Gavekort kan ikke brukes til å kjøpe gavekort
@@ -147,12 +149,21 @@ nb:
         invalid_cart_item: Ugyldig verdi
         invalid_coupon: Ugyldig rabattkode
         invalid_gift_card: Ugyldig eller allerede brukt gavekort
+        invalid_redemption: Dette klippekortet eller abonnementet kan ikke brukes
         payment_method: Betalingsmetode
+        redeemable_not_applicable: Dekker ingenting i denne bestillingen
+        redeemable_remaining:
+          one: "%{count} reservasjon igjen"
+          other: "%{count} reservasjoner igjen"
+        redeemable_remaining_after:
+          one: "%{count} reservasjon igjen etter denne bestillingen"
+          other: "%{count} reservasjoner igjen etter denne bestillingen"
         remaining_total: Gjenstående beløp
         remove: Fjern
         subscription_already_active: Du kan bare ha ett aktivt abonnement av denne typen
         use_coupon: Rabattkode
         use_gift_card: Bruk gavekort
+        use_redeemables: Bruk klippekort eller abonnement
         your_gift_cards: Dine gavekort
       show:
         clear_cart: Tøm handlekurv
@@ -225,8 +236,10 @@ nb:
         payment_details: Betaling
         total: Totalt
         transaction_gift_card: Gavekort (%{code})
+        transaction_pass: Klippekort (%{title})
         transaction_payment: Betaling
         transaction_refund: Refusjon
+        transaction_subscription: Abonnement (%{title})
     passes:
       balance: "%{remaining} av %{quota} igjen"
       valid_for: "Kan brukes til: %{services}"

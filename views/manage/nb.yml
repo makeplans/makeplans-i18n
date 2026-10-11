@@ -760,6 +760,7 @@ nb:
         pending: Venter
       transaction_types:
         gift_card: Gavekort
+        pass: Klippekort
         payment: Betaling
         refund: Refusjon
         subscription: Abonnement
@@ -788,8 +789,10 @@ nb:
           expired: Utløpt
         unlimited: Ubegrenset
       show:
+        all_periods: Vis alle perioder
         balance: Saldo denne perioden
         current_period: Nåværende periode
+        current_period_only: Vis nåværende periode
         owner: Eier
         purchase_order: Kjøpsordre
         services: Kan brukes til
@@ -1709,6 +1712,13 @@ nb:
           count: Etter antall
           until: Før dato
         length_label: Avsluttes
+      redemptions:
+        booking_removed: Reservasjonen er slettet
+        empty: Ikke brukt ennå
+        header: Bruk
+        units:
+          one: "%{count} reservasjon"
+          other: "%{count} reservasjoner"
     sms:
       create:
         queued: Sender SMS til %{recipents_count} mottagere...
