@@ -14,6 +14,11 @@ sv:
         update_calendar: Uppdatera min kalender
       new:
         accept: Jag godkänner
+        edit: Redigera
+        edit_profile: Redigera
+        notice: Bokningen har ännu inte bekräftats. Vänligen granska informationen och tryck på knappen nedan.
+        page_title: Bekräfta din beställning
+        step_label: Sista steget
         submit: Beställa
         terms: villkoren för reservationen
         title: Reservation av %{service}
@@ -48,9 +53,25 @@ sv:
       index:
         all_events: Alla evenemang
         continue: Fortsätta
+      show:
+        all_services: Alla tjänster
+        continue: Fortsätta
+      week_calendar:
+        all_events: Alla evenemang
+        next_week: Nästa vecka
+        none_this_week: Inga evenemang denna vecka
+        prev_week: Förra veckan
+        this_week: Denna vecka
     generic:
+      all_day: Hela dagen
       alt:
         time: Tid
+      continue: Fortsätta
+    gift_cards:
+      new:
+        description: Köp ett presentkort till någon du bryr dig om. Välj belopp nedan.
+        value_label: Värde
+        value_placeholder: Ange belopp
     layouts:
       application:
         alt:
@@ -63,6 +84,51 @@ sv:
         profile: Profil
         support: Kundservice
         title: Tidsbokning för %{name}
+    order_cart:
+      checkout:
+        credit_card: Kreditkort
+        header: Betalning
+        invoice: Faktura
+        order_total: Ordersumma
+        pay_now: Betala nu
+      show:
+        amount: Belopp
+        continue_shopping: Lägg till fler presentkort
+        item: Punkt
+    order_payments:
+      failure:
+        message: Tyvärr kunde din betalning inte slutföras.
+      fiken:
+        payment:
+          back: Tillbaka
+          create_invoice: Skapa faktura
+          header: Fakturabetalning
+      pay_later:
+        payment:
+          description: Din beställning kommer att bekräftas. Betalning kan göras senare.
+      stripe:
+        payment:
+          payment_details_html: Betalning hanteras säkert via %{provider}. Alla belopp finns i %{currency}.
+      vipps:
+        awaiting_payment:
+          body: Vänta medan transaktionen bekräftas.
+          error: Vi kunde inte bekräfta att betalningen lyckades. Vänligen kontakta kundtjänst och ange referensnummer %{order_id}.
+          title: Kontrollerar betalning
+    orders:
+      index:
+        header: Mina inköp
+        no_orders: Du har inga köp ännu.
+      payment:
+        header: Välj betalningsmetod
+        no_payment_methods: Inga betalningsmetoder tillgängliga.
+        select_payment_method: Hur kommer du att betala?
+        stripe: Kreditkort
+      show:
+        amount: Belopp
+        back_to_orders: Tillbaka till mina inköp
+        each: per styck
+        item: Punkt
+        my_reservations: Mina reservationer
     person_sessions:
       enter_perishable_token:
         info_html: Vi har skickat en kod till <b>%{recipient}</b> . Ange koden för att slutföra verifieringen.
@@ -75,12 +141,29 @@ sv:
         submit: Skicka kod
         terms_conditions: Villkor
         title: Inloggning
+    products:
+      index:
+        buy: Köpa
     profile:
+      children:
+        new:
+          cancel: Avboka
+      credit_card_list:
+        add_card: Lägg till kort
+        body: Dina sparade betalningsmetoder
+        card_info: "%{brand} som slutar på %{last_4} (löper ut %{expire_month}/%{expire_year})"
+        remove_card: Avlägsen
+        title: Sparade betalningsmetoder
+      gift_card_list:
+        body: Dina presentkort
       index:
         alt:
           calendar: Kalender
         awaiting_approval: Väntar på godkännande
         cancel: Avboka
+        logout: Logga ut
+        my_details: Min information
+        my_orders: Mina inköp
         tabs:
           all: Alla
           cancelled: Avbruten
@@ -90,6 +173,8 @@ sv:
       new:
         errors_header: 'Ett fel uppstod:'
         header: Dina kontaktuppgifter
+      show:
+        header: Din lagrade information
     providers:
       index:
         all_services: Alla tjänster
@@ -102,6 +187,7 @@ sv:
       index:
         all_categories: Alla kategorier
         all_services: Alla tjänster
+        buy: Fortsätta
         continue: Boka denna tjänst
       show:
         all_services: Alla tjänster
@@ -114,3 +200,7 @@ sv:
         continue: Fortsätta
         next_available_date_html: Nästa tillgängliga datum är %{next_available_date}
         no_availability: Inga tillgängliga tider
+      week_available:
+        next_week: Nästa vecka
+        prev_week: Förra veckan
+        select_date: Välj datum

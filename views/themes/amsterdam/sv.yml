@@ -47,6 +47,9 @@ sv:
         enter_info: Fyll i uppgifter
         errors_header: Vänligen fyll i de obligatoriska fälten.
         form_info_html: Detta kommer att användas för att bekräfta din bokning av %{service}, %{booking}.
+        mismatch_ignore: Alternativt kan du klicka här för att ignorera varningen.
+        mismatch_ignore_confirm: Din kundprofil kommer inte att uppdateras med den nya informationen som anges här. För att ändra din kundprofil, vänligen kontakta kundtjänst. Vill du fortsätta boka utan att uppdatera din kundprofil?
+        mismatch_info_html: 'Följande värden skiljer sig från de som är lagrade i din kundprofil: %{attributes}. Bokar du åt någon annan? <a href="%{login_path}">Du måste först logga in.</a> Om du vill ändra information i din kundprofil måste du kontakta kundtjänst.'
         new_child: För någon annan
         price_info: 'Pris: %{price}'
         reserve_resource: Bokning hos %{resource}.
@@ -79,6 +82,7 @@ sv:
         providers:
           braintree: Kreditkort eller betalkort
           fiken: Faktura
+          frontgo: Framåtgående
           stripe: Kreditkort, betalkort, Google Pay eller Apple Pay
           tfso: Faktura
           vipps: Vips
@@ -96,6 +100,7 @@ sv:
         cancel_confirmation: Är du säker på att du vill avbryta den här bokningen?
         invoiced: Du har blivit fakturerad.
         paid: Du har förbetalt %{paid_amount}.
+        pay: Betala
         price: 'Pris: %{amount}.'
         remember_me: Vill du bli ihågkommen på den här datorn med hjälp av cookies?
         reschedule: Ändra tid
@@ -206,6 +211,7 @@ sv:
         header: Din lagrade information
     providers:
       index:
+        none_available: Inga leverantörer tillgängliga.
         show_all_available: Visa alla tillgängliga
         show_only_selected: 'Eller visa endast från önskad kalender:'
     services:

@@ -42,6 +42,16 @@ sv:
       booking_type_attendance:
         subject_resource: Ändrad resurs för %{title}
       link: För att se denna reservation, gå till
+    notification_waitlist_joined:
+      appointment:
+        body: "%{name} har anmält sig till väntelistan för %{title} %{time_range}."
+      attendance:
+        body: "%{name} har anmält sig till väntelistan för %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Väntelista för %{resource}
+      booking_type_attendance:
+        subject_resource: Väntelista för %{title}
+      link: För att se denna reservation, gå till
     request_approvement:
       body: "%{name} vill boka %{title} %{time_range}."
       link: För att godkänna eller avvisa den här bokningen, gå till
@@ -314,6 +324,10 @@ sv:
 
         %{link}
       subject: Tillagd som användare i Makeplans
+    email_modified:
+      footer: Gör planer
+      info: Din e-postadress har ändrats till %{new_email}. Kontakta oss omedelbart om det inte var du som utförde denna åtgärd.
+      subject: E-postadressen har ändrats
     export:
       body: |-
         Hej,
@@ -332,6 +346,10 @@ sv:
 
         Makeplans
       subject: Tillgång till konto i Makeplans
+    password_modified:
+      footer: Gör planer
+      info: Ditt lösenord har ändrats. Kontakta oss omedelbart om det inte var du som utförde denna åtgärd.
+      subject: Lösenordet har ändrats
     password_reset:
       footer: Makeplans
       info: Du eller någon annan har valt att återställa ditt lösenord hos Makeplans. För att slutföra återställningen, klicka på länken nedan.

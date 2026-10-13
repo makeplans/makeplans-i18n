@@ -1,10 +1,20 @@
 ---
 sv:
   bookings:
+    awaiting_payment:
+      vipps_payment_failed: Betalningen avbröts. Försök igen.
+    process_promote_waitlist:
+      slot_no_longer_available: Tyvärr är platsen inte längre tillgänglig. Du står fortfarande på väntelistan.
     verification_code:
       incorrect_code: Felaktig kod
   clients:
     new:
+      accept_terms_html: Genom att registrera dig godkänner du %{link}.
+      benefit_booking_site: Din egen bokningssida online, öppen dygnet runt.
+      benefit_calendar: Alla tjänster, anställda och möten i en kalender.
+      benefit_notifications: Automatiska bekräftelser och påminnelser via e-post och SMS.
+      captcha_missing: Skräppostkontrollen misslyckades. Vänligen skicka in formuläret igen.
+      change: Ändra
       first_user: Det här är ditt personliga lösenord. Du kan lägga till fler användare senare.
       free_trial_info: 14 dagars gratis testperiod. Inga skyldigheter. Inget kreditkort behövs.
       headline: Kom igång med onlinebokning
@@ -12,12 +22,18 @@ sv:
       newsletter: Jag godkänner att få produktuppdateringar via e-post.
       read_legal: Regler och villkor för användning av denna tjänst
       recaptcha: Vi måste verifiera din registrering hos Google Recaptcha. Ange ditt lösenord igen och tryck på registerknappen igen.
+      social_proof_caption: bokningar sedan 2010
+      social_proof_figure: Över 7 miljoner
       subdomain_info: Din unika adress (URL) där dina kunder kan göra onlinebokningar.
+      subdomain_label: Adressen till din bokningssajt
       subdomain_not_website_warning: 'OOPS: Det här är adressen till din nya bokningssida. Ange INTE URL:en till din befintliga webbplats. Om du är tveksam, skriv bara ditt företagsnamn här.'
       submit: Registrera mitt konto
+      terms_link: användarvillkoren för tjänsten
+      test_env_info_html: Bör du skapa ett testkonto? Se %{link} för information om vår testmiljö.
       title: Registrera ditt eget bokningskonto online
       user_email: Jobb-e-post
       user_info: Ditt personliga användarkonto
+      your_booking_site: 'Din bokningssida:'
     rejected:
       headline: Registrering blockerad
       info: Tyvärr, men vårt system har blockerat din registrering som skräppost. Kontakta oss för att registrera ett konto.
@@ -25,6 +41,20 @@ sv:
   oauth:
     callback:
       header: Anslut till konto
+  room_display:
+    setup:
+      header: Konfiguration av vy över mötesrummet
+      instruction: Ange installationskoden som genererats i administratörspanelen.
+      invalid_code: Ogiltig kod
+      placeholder: Ange kod
+      submit: Aktivera
+      title: Konfiguration av vy över mötesrummet
+    show:
+      book: Beställa
+      find_room: Hitta ett rum
+      free_all_day: Tillgänglig hela dagen
+      free_for: Tillgänglig i %{duration}
+      occupied: Upptagen
   user:
     select_client:
       header: välj konto

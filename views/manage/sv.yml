@@ -13,12 +13,15 @@ sv:
         opening_hours:
           add: "+ lägg till"
           add_to_existing: "+ lägg till"
+          all_resources: Alla %{resources}
           closed_all_week: Stängt hela perioden
           dates: Datum
           from: Från
+          no_items: Inga resurser matchar det valda filtret.
           open: Öppna
           remove_existing: ta bort
           reset: Återställ
+          resource_default: "%{resource} (standard)"
           title: Justera tillgänglighet
           to: Till
         resourceTimeGridDay: Dag (delad)
@@ -30,17 +33,37 @@ sv:
         awaiting_confirmation:
           one: "%{count}-reservation väntar på godkännande."
           other: "%{count}-reservationer väntar på godkännande."
+        awaiting_status:
+          one: Status för %{count}-reservationen saknas.
+          other: "%{count} reservationer saknar status."
         busy: Upptagen
         do_filtering: Aktivera filter
         filter: Filtrering
         headline: Visar kalenderhändelser
         month: Visa månad
+        nav:
+          day: Dag
+          list: Lista
+          month: Månad
+          next: Nästa
+          previous: Tidigare
+          today: I dag
+          week: Vecka
         no_reservations: Inga bokningar
+        overview: Översikt
+        period: Period
         reset_filter: Nollställ filter
         resources: Resurser
         services: Tjänster
+        sort_latest: Senaste ändringarna
+        sort_newest: Nya bokningar
+        state: Status
+        status: Närvarostatus
+        tab_awaiting_confirmation: Väntar på bekräftelse
+        tab_waitlist: Väntelista
         this_and_next_month: Från idag till slutet av nästa månad
         this_and_next_week: Från idag till slutat av nästa vecka
+        waitlist_note: "+%{count} på väntelistan"
     billing:
       charge:
         charge_details: Baserat på aktuella inställningar är månadspriset %{price}.
@@ -84,6 +107,7 @@ sv:
         reactivate: Ditt konto är ett demo-konto, du måste återaktivera kontot för att använda Makeplans.
         reactivate_confirm: Är du säker på att du vill återaktivera kontot du har pausat? Kontot kommer automatiskt att debiteras med %{paid_until}.
         reactivate_link: Återaktivera konto
+        reseller_billing_info: Fakturering för ditt konto hanteras av din återförsäljare.
         sms_credits_available: 'SMS-saldot är: %{credits}.'
         vat_no: Registrerat momsnummer är %{vat_no}
         vat_no_missing: Inget momsregistreringsnummer inlagt.
@@ -101,6 +125,12 @@ sv:
       create_recurring:
         headline: Genererar %{count} bokningar...
         link: Visa lista
+      delivery_status:
+        channel:
+          email: e-post
+          sms: SMS
+        failed: 'Skickning via %{channel} misslyckades %{time}: %{error}'
+        sent: Skickat via %{channel} %{time}
       destroy_recurring:
         headline: Alla upprepade bokningar inom detta mönster har tagits bort
       feed:
@@ -176,6 +206,11 @@ sv:
         send_notification: 'Lägga märke till:'
         send_reminder: 'Påminnelse:'
         sms: SMS
+      no_status:
+        headline: Lista över reservationer utan status
+        no_reservations: Inga reservationer hittades utan status
+      promote:
+        promote_failed: Kunde inte uppgradera bokningen från väntelistan
       show:
         amount: Totalbelopp
         audit:
@@ -201,24 +236,31 @@ sv:
           sent: skickat
           state: status
         messages: Meddelanden
+        order: Beställning
         paid_with:
           braintree: Betalas med Braintree
+          frontgo: Betalat med FrontGO
           stripe: Betalas med Stripe
           vipps: Vipps
         performed_by: av %{name}
         person:
           address: Adress
           email: E-post
+          history: Historia
           phone_number: Telefonnummer
         recurring_member: Denna reservation är en del av ett återkommande mönster.
         refund:
           stripe: Rand
         refunded_with:
+          frontgo: Återbetalad med FrontGO
           stripe: Återbetalad med Stripe
           vipps: Återbetalas med Vipps
         request_card:
           processing: Betalningslänken skickas till kunden
           send: Skicka betalningslänk till kund
+        request_payment:
+          processing: Betalningslänk skickas till kunden
+          send: Skicka betalningslänk till kunden
         send_sms: Skicka sms
         show_in_calendar: Visa i kalendern
         stripe:
@@ -229,8 +271,10 @@ sv:
           open_invoice: Öppna order i 24SevenOffice
           processing: Beställningar skapas i 24SevenOffice. Det kan ta upp till 1-2 minuter.
         vipps:
+          awaiting: Vipps-betalningsbegäran skickad. Väntar på svar.
           processing: Behandlar
           refund: Återbetalat belopp
+          send_request: Skicka Vipps-betalningsförfrågan
         visma_eaccounting:
           create_invoice: Skapa erbjudanden i Visma eAccounting
           created: Erbjudanden har skapats i Visma eAccounting
@@ -269,18 +313,50 @@ sv:
         header: Inga kategorier har lagts till
         info: Om du har många tjänster kan du kategorisera dem på flera nivåer. Kategorier visas på bokningssidan så att kunden väljer kategorin innan tjänsten inom den valda kategorin visas. Det är möjligt att visa en tjänst i flera kategorier.
         no_categories: Inga kategorier har lagts till
+      category_order:
+        description: Dra och släpp kategorier för att ändra ordningen de visas på bokningssidan. Kategorier utan sorteringsvärde visas sist, sorterade alfabetiskt.
+        header: Kategoriordning
+        parent_category: Förälderkategori
       form:
+        booking_type_appointment: Tidsbokning
+        booking_type_attendance: Registrering
+        booking_type_gift_card: Presentkort
+        booking_type_pass: Urklipp
+        booking_type_product: Produkter
+        booking_type_subscription: Prenumeration
         has_services: Visar följande tjänster
         no_parent_id: HÖGSTA NIVÅN
+        settings:
+          standalone: Fristående kategori
       index:
         header: Kategorier
+        order_button: Beställa
+        order_subcategories: Sortera underkategorier
       list_menu:
         list: Kategorier
+      priority:
+        description: Dra och släpp tjänster för att ändra ordningen de visas på bokningssidan. Tjänster utan ett sekvensvärde visas sist, sorterade alfabetiskt.
+        header: Serviceorder för %{title}
       show:
         custom_data: 'Anpassade fält:'
         has_services: 'Visar följande tjänster:'
+        priority_button: Beställa
         qr_code: QR-kod för kunder
         show_on_booking_site: Öppna den här tjänsten på bokningssidan
+    chats:
+      form:
+        credit_info: Varje meddelande kostar 1 SMS-kredit.
+        send: Skicka
+        window_closed: WhatsApp tillåter endast svar inom 24 timmar efter kundens senaste meddelande. Be kunden att skriva till dig igen på WhatsApp, eller kontakta kunden via SMS, e-post eller telefon.
+      index:
+        headline: WhatsApp-svar
+      replies:
+        empty: Inget svar från WhatsApp ännu.
+      show:
+        headline: WhatsApp-chatt med %{name}
+      thread:
+        booking: Bokning
+        empty: Inga meddelanden med den här kunden ännu.
     client:
       addons:
         addons:
@@ -322,6 +398,7 @@ sv:
         show:
           api: API
           embed: Bädda in
+          mcp: MCP - AI-assistenter
           web_hooks: Webhooks
       domains:
         cname:
@@ -346,9 +423,14 @@ sv:
         booking_form_info_html: Kontakta kundtjänst om du behöver hjälp. Dokumentation finns på <a href="https://github.com/makeplans/makeplans-custom-forms">https://github.com/makeplans/makeplans-custom-forms</a>.
         booking_site_info_html: Din bokningssida finns tillgänglig på %{url}.
         booking_site_locale_default: Använd kontospråk
+        booking_site_locale_mode_multiple: Aktivera flera språk (besökare kan växla)
+        booking_site_locales_info: Välj vilka språk besökare kan växla mellan på bokningssidan
+        booking_site_person_form_info_html: Anpassa kundregistreringsformuläret för temat Timisoara och Lviv. Använder samma syntax som bokningsformuläret.
         cancellation: Annullering
         cancellation_info: Avbokning kan endast göras före avbokningsfristen. Förbetalda bokningar kan inte annulleras.
         cancellation_period_info: 'Ange på engelska. Tiden är relaterad till bokningens starttid. Exempel: ''24 timmar före ''(endast möjligt att avboka 24 timmar innan bokningen börjar). Om ingen avbokningsfrist anges kan kunden avbryta tills bokningen börjar.'
+        event_first_booking_period_info: 'Gäller endast evenemang. Ange på engelska. Tiden är relaterad till evenemangets starttid. Exempel: ''2 veckor före'' (registreringen öppnar två veckor innan evenemanget börjar). Används som standard när nya evenemang skapas. Kan åsidosättas eller tas bort för varje evenemang.'
+        event_last_booking_period_info: 'Gäller endast evenemang. Ange på engelska. Tiden är relaterad till evenemangets starttid. Exempel: ''2 timmar före'' (registreringen stänger två timmar innan evenemanget börjar). Används som standard när nya evenemang skapas. Kan åsidosättas eller tas bort för varje evenemang.'
         first_bookable_period_info: 'Skriv på engelska. Exempel: ''in two hours'' (första lediga tid är om två timmar) eller ''08:00 tomorrow'' (första lediga tiden är kl. 8:00 imorgon bitti).'
         future_bookable_period_info: 'Skriv på engelska. Exempel: ''in two months'' (endast möjligt att boka de kommande två månaderna) eller ''Friday at midnight'' (endast möjligt att boka före midnatt på fredag).'
         header: Ändra bokningssidan
@@ -366,15 +448,34 @@ sv:
           active_bookings_limit: Maximalt antal aktiva bokningar för kunden
           allow_person_cookie: Tillåt möjligheten att komma ihåg verifierade kunder till nästa besök med hjälp av cookies.
           disable_person_cookie: Kunden får inte förbli inloggad med cookie
+          event_template: Kalendermall för evenemang
+          fully_booked_text: Sms:a för fullbokade tider
           google_tag_manager: Google Tag Manager-behållar-ID
+          past_text: Text för förfluten tid
+          person_oauth_auto_create: Skapa kundprofil automatiskt från tredjepartsinloggning (hoppa över registreringsformuläret)
           plausible: Aktivera trovärdig analys
           prevent_new_signups: Endast bokningar tillåtna för befintliga kunder
+          rating_scale: Betygsskala
+          rating_scale_default: Standard (1-%{scale})
+          rating_scale_info: Hur många steg kunden kan välja mellan när de betygsätter en reservation. Betyg som redan har givits lagras som det nummer kunden valde, så att ändra skalan ändrar även vad äldre betyg betyder.
+          rating_scale_option: 1-%{scale}
           select_resource: Extra steg för val av resurser
+          show_all_events_calendar: Visa alla händelser i en kalender
+          waitlist_enabled: Aktivera väntelista för fullbokade slott och evenemang
+          waitlist_promotion_mode: Väntelistekampanj
+          waitlist_promotion_modes:
+            auto: Flytta upp den första på väntelistan automatiskt
+            default: Systemstandard (Befår plats på väntelistan automatiskt)
+            notify_all: Meddela alla på väntelistan
+          waitlist_text: Sms:a för tid med väntelista
         verification_methods:
           email: E-post
           facebook: Tillåt även verifikation med Facebook Connect.
+          id_porten: ID-porten (BankID)
           none: Ingen verifikation (rekommenderas inte)
           sms: SMS (rekommenderas)
+          vipps: Vips
+        verification_methods_alt: 'Alternativa metoder:'
       edit_communication:
         email: E-post
         header: Ändra utgående kommunikation
@@ -386,6 +487,8 @@ sv:
           custom_sms_sending: Åsidosätt hela SMS med innehållet nedan (annars kommer innehållet bara att anges i den vanliga SMS-mallen)
           dont_include_icalendar_attachment: Ta inte med iCalendar-bilagor
         sms: SMS
+        whatsapp: WhatsApp
+        whatsapp_info: Skicka bekräftelser och påminnelser på WhatsApp och få svar från dina kunder. WhatsApp konfigureras tillsammans med MakePlans support – kontakta oss för att komma igång. Meddelandemallar måste godkännas av Meta och registreras på varje enskild meddelandemall.
       edit_company:
         delete_account_html: Vill du ta bort ditt konto? <a href="%{link}">Fortsätta</a>
         delete_label: Radera konto
@@ -404,6 +507,9 @@ sv:
       edit_person_notifications:
         automatic_messages: Automatiska utskick (administrationssystem och API)
         automatic_messages_booking_site: Automatiska utskick (på bokningssidan)
+        awaiting_confirmation_email: Skicka ett e-postmeddelande när en bokning kräver godkännande
+        awaiting_confirmation_sms: Skickar SMS när bokningen kräver godkännande
+        booking_site_manual_confirmation_message: Skicka meddelande om att bokningen måste behandlas manuellt
         booking_site_message: Skicka meddelande på bokningssidan
         booking_site_outgoing_messages_info: Som standard skickar Makeplans en avisering vid viktiga händelser som bekräftelse via den valda verifieringsmetoden, till exempel SMS för SMS-verifiering, eller e-post om du har annan eller ingen verifiering alls.
         cancellation_email: Skicka ett mejl när du avbryter en bokning
@@ -413,7 +519,10 @@ sv:
         default: Baseras automatiskt på verifieringsmetod
         default_reminder_sms: Baseras automatiskt på inställningen för påminnelser
         disable: Inaktivera
+        enable: Aktivera
         header: Redigera aviseringar
+        manual_confirmation: Skicka meddelande när bokningen behandlas manuellt
+        manual_confirmation_message: Skicka meddelande om att bokningen måste behandlas manuellt
         message_template_info: Detta är den inbyggda funktionen för att skicka meddelanden. För fler påminnelser och mer kontroll, använd meddelandemallsfunktionen.
         modification_email: Skicka ett e-postmeddelande när du ändrar en bokning
         modification_sms: Skicka ett SMS när du ändrar en bokning
@@ -443,24 +552,43 @@ sv:
         calendar: Kalender
         header: UX
         info: Dessa är endast visuella inställningar.
+        misc: Olika
+        naming: Anpassade titlar
         settings:
+          booking_requires_status: Visa länk till bokningar utan status i agendan
+          booking_site_order_flow: Använd nytt orderflöde på bokningssidan
           calendar_hide_weekends: Dölj helger
           calendar_prevent_slot_event_overlap: Undvik visuell överlappning av reservationer
           calendar_slot_duration: Varaktighet för lediga tider
           calendar_slot_label_interval: Intervall för lediga tider
+          no_show_warning_threshold: Meddela när en kund har missat en tid ett visst antal gånger
           resource_title: Anpassad resurstitel
+          service_addon_title: Anpassad ytterligare titel
           service_appointment_title: Anpassad jobbtitel
           service_attendance_title: Anpassad titel för händelsetyp
+          service_gift_card_title: Anpassad presentkortstitel
+          service_pass_title: Anpassad urklippstitel
+          service_product_title: Anpassad produkttitel
+          service_subscription_title: Anpassad prenumerationstitel
       email_sender:
         create:
           dns: Visa dina DNS-värden.
           header: Vi behandlar din begäran.
+          invalid_domain: Ange ett giltigt domännamn.
         dns:
+          cancel: Ta bort e-postdomän
+          copied: Kopierad!
+          copy: Kopiera
           dkim: För att tillåta att Makeplans skickar med e-postadressen %{domain}, lägg till följande TXT-post.
+          dkim_cname: För att tillåta att Makeplans skickar med e-postadressen %{domain}, lägg till följande CNAME-poster.
           dkim_host: Värd
           dkim_value: Värde
           header: Lägg till DNS-poster
           info: Lägg till följande DNS-poster för att slutföra verifieringen av e-postavsändaren. Det kan ta upp till 24 timmar innan dina ändringar träder i kraft.
+          priority: Prioritet
+          return_path: Lägg till följande post för returvägsdomänen %{domain} för att förbättra leveransbarheten.
+          type: Typ
+          verify: Verifiera DNS-poster
         info:
           add: Lägg till din e-postdomän för att skicka
           header: Skicka e-post med din egen e-postadress
@@ -468,12 +596,17 @@ sv:
         new:
           domain: Domän
           header: Lägg till din anpassade e-postdomän för utskick
+          return_path_domain: Returvägsdomän
+          return_path_domain_hint: Valfritt. En underdomän för hantering av avvisningar, t.ex. bounces.example.com. Förbättrar leveransbarheten.
         show:
+          delete: Ta bort e-postdomän
           header: Du har verifierat din e-postdomän för att skicka.
           info: Makeplans kommer att kunna skicka e-post från vilken e-postadress som helst på din domän %{domain}
         verify:
+          cancel: Ta bort e-postdomän
           header: Inte verifierad
           info: Om du har lagt till DNS-posterna, vänta tills de har spridits. Försök igen senare.
+          not_verified: DNS-posterna har inte verifierats ännu. Vänta och försök igen.
       embed:
         new:
           embed_url: 'Ange webbadressen till din webbplats för inbäddning:'
@@ -500,6 +633,33 @@ sv:
         index:
           email: Skicka en kopia via e-post
           header: Fakturor från Makeplans
+          paid: Betald
+      mcp:
+        show:
+          claude_code: Claude-kod
+          enable: Aktivera API:et
+          endpoint: MCP-slutpunkt
+          header: MCP - AI-assistenter
+          info: Anslut AI-assistenter som Claude till ditt Makeplans-konto med hjälp av MCP (Model Context Protocol). Assistenten autentiserar sig med din API-nyckel och kan kontrollera tillgänglighet, lista bokningar och evenemang, hitta kunder samt skapa eller avboka bokningar.
+          info_html: Dokumentation finns tillgänglig på <a href="https://developer.makeplans.com/guide/mcp/" target="_blank" class="link-external">https://developer.makeplans.com/guide/mcp/</a> .
+          not_enabled: API:et måste vara aktiverat innan AI-assistenter kan ansluta.
+          other_clients: Andra MCP-klienter
+          other_clients_info: Lägg till en fjärransluten MCP-server med slutpunkten ovan och HTTP-headern "Authorization" med värdet "Bearer %{api_key}".
+      migrate_bookings:
+        edit:
+          deactivated: funktionshindrad
+          error_not_found: En eller båda resurserna hittades inte.
+          error_same_resource: Käll- och målresurs kan inte vara samma sak.
+          from_resource: Från resursen
+          header: Flytta reservationer
+          info: Flytta alla bokningar och händelser från en resurs till en annan. Detta inkluderar alla tidigare och framtida bokningar. Inga aviseringar skickas till kunder.
+          migrate: Flytta
+          processing: Godis
+          to_resource: Till resurs
+          warning: Är du säker på att du vill flytta alla reservationer och evenemang? Den här åtgärden kan inte enkelt ångras.
+        update:
+          header: Bokningarna har flyttats
+          result: "%{bookings_count} reservationer och %{events_count} händelser flyttades från %{from_resource} till %{to_resource}."
       promote:
         booking_button_html_info: För att infoga din bokningsknapp på din webbplats, vänligen kopiera HTML-koden nedan. Om du behöver hjälp, vänligen kontakta din webbdesigner.
         booking_button_html_preview: Förhandsvisning av bokningsknapp
@@ -527,15 +687,25 @@ sv:
         link:
           change_time_zone: Ändra tidszon
           feed: iCalendar-flöden
+          migrate_bookings: Flytta reservationer mellan resurser
           purge_data: Ta bort gamla data
           sms_all: Skicka SMS till alla dina kunder
+          sms_filter: Skicka SMS till filtrerade kunder
     coupons:
       form:
+        availability_placeholder: Obegränsat
         excluded_services: Undantagna tjänster
         included_services: Inkluderade tjänster
         services_info: 'Rabattkoden kommer att vara tillgänglig för alla tjänster om du inte begränsar användningen till tjänsterna nedan:'
       index:
         header: Rabattkoder
+        not_redeemable: Kan inte lösas in
+        redeemable: Inlösbar
+      show:
+        details: Detaljer
+        not_redeemable: Kan inte lösas in
+        orders: Order
+        redeemable: Inlösbar
     events:
       check_in:
         check_in: Checka in
@@ -549,6 +719,8 @@ sv:
         headline: Skicka e-post till alla deltagare
         open_email_client: Öppna e-postprogram
       form:
+        cancellation_info: Avbokningar kan endast göras före avbokningsfristens utgång. Bokningar som har förbetalats kan inte avbokas.
+        cancellation_period_info: 'Ange på engelska. Tiden avser bokningens starttid. Exempel: ''24 timmar före'' (endast möjligt att avboka 24 timmar innan bokningen börjar). Om ingen avbokningsdatum anges kan kunden avboka ända fram till bokningens början.'
         headline_create: Lägg till ny händelse
         headline_create_recurring: Skapa ett nytt evenemang
         headline_edit: Redigera händelser
@@ -560,10 +732,14 @@ sv:
           one: en bokning
           other: 'bokningar: <strong>%{count}</strong>'
           zero: inga bokningar
+        check_in: Incheckning
         copy: Kopiera till ny händelse
         download_attendance_csv: Ladda ner deltagarlista som CSV
         email_confirm: Deltagarlistan skickas till dig via e-post. Vill du fortsätta?
         fully_booked: Evenemanget är fullbokat
+        fully_booked_with_waitlist: Evenemanget är fullbokat · %{count} på väntelistan
+        promote: Flytta upp
+        promote_confirm: Flytta upp %{name} från väntelistan?
         qr_code: QR-kod för kunder
         recurring_member: Denna händelse är en del av ett upprepat mönster.
         send_email_to_all: Skicka e-post till alla deltagare
@@ -573,6 +749,10 @@ sv:
         show_only_active_html: Listan inkluderar %{count} inaktiva bokningar. <a href="%{href}">Vill du endast visa aktiva bokningar?</a>
         signup_link: Registreringslänk
         sms_all_participants: Skicka SMS till alla deltagare
+        waitlist_html:
+          one: 'väntelista: <strong>%{count}</strong>'
+          other: 'väntelista: <strong>%{count}</strong>'
+        waitlist_position: Väntelistans position %{position}
         zoom:
           join_meeting: Gå med i möteslänk
           join_webinar: Gå med i webbinariet länk
@@ -591,6 +771,21 @@ sv:
       widget_list:
         no_events: Inga befintliga händelser på %{start}
         no_events_range: Inga befintliga händelser från %{start} till %{end}
+    gift_cards:
+      index:
+        header: Presentkort
+        header_for_person: Presentkort för %{name}
+      show:
+        active: Aktiv
+        current_balance: Återstående värde
+        details: Detaljer
+        inactive: Begagnad
+        initial_value: Ursprungligt värde
+        orders: Order
+        purchase_order: Inköpsorder
+        purchased_by: Köpt av
+        redeemed_by: Inlöst av
+        valid_until: Giltig till
     integrations:
       account_connected: Ansluten till det här kontot.
       bestrx:
@@ -616,6 +811,7 @@ sv:
         activate_settings_2: Aktivera inställningar för Extensor Online-bokning version 2
         activate_settings_3: Aktivera inställningar för Extensor onlinebokning version 3
         activate_settings_4: Aktivera Extensor Online-bokningsversion 4-inställningar
+        activate_settings_5: Aktivera inställningar för Extensor Online Booking version 5
         info: För att möjliggöra synkronisering med Extensor krävs installation av Extensor Online-bokning. Klicka på länken nedan för att starta processen. Du kommer att kontaktas av Extensor.
         reactive_settings: Återaktivera inställningarna för onlinebokning för Extensor.
         version: Makeplans är inställd på att fungera med version %{version} av Extensor Online Booking.
@@ -633,6 +829,16 @@ sv:
         service_links: 'Varje tjänst måste vara länkad till en produkt i Fiken för att det ska vara möjligt att skapa en faktura. OBS: Priset erhålls från Fiken - inte från Makeplans. Du måste se till att priset i båda systemen är identiskt.'
         service_not_linked: INTE ansluten till produkten i Fiken
         vat_type: Moms typ
+      fiken_v2:
+        active: Aktiv
+        connected_bank_account: Bankkonto
+        connected_company: Företag
+        select_bank_account: Välj det bankkonto som ska visas för betalning på fakturan
+        select_company: Välj företag
+        service_linked: Länkad till produkt i Fiken
+        service_links: 'Varje tjänst måste vara kopplad till en produkt i Fiken för att kunna skapa en faktura. OBS: Priserna hämtas från Fiken - inte från Makeplans. Du måste se till att priserna i båda systemen är identiska.'
+      frontgo:
+        api_key: API-nyckel
       headline: Integration med %{integration}
       highrise:
         account: Subdomän (DITTKONTO.highrisehq.com - fyll endast i DITTKONTO)
@@ -642,6 +848,8 @@ sv:
         api: API
         header: Integrationer
         web_hooks: Webhooks
+      klaviyo:
+        select_list: 'Välj listan där nya kunder ska läggas till som prenumeranter:'
       mailchimp:
         account: Lista över ID
         connect_info: 'Välj e-postlista där nya kunder läggs till som prenumeration:'
@@ -680,21 +888,41 @@ sv:
         invoice_payment_time: 'Betalningstid:'
         invoice_state: 'Orderstatus:'
         invoice_states:
+          Confirmed: Bekräftad
           Draft: Förslag
           ForInvoicing: För fakturering
           Invoice: Faktureras
+          Invoiced: Fakturerad
           Offer: Erbjudande
+          Web: Web
         password: API-lösenord
         service_linked: Ansluten till produkten i 24SevenOffice
         service_links: 'Varje tjänst måste vara länkad till en produkt i 24SevenOffice för att kunna skapa en faktura. OBS: Priset erhålls från 24SevenOffice - inte från Makeplans. Du måste se till att priset i båda systemen är identiskt. Gå till en tjänst och definiera produkt-ID från 24SevenOffice.'
         service_not_linked: INTE ansluten till produkten i 24SevenOffice
         type_groups: 'Försäljningstyp för beställning:'
         username: API-användarnamn
+      unloc:
+        client_id: Klient-ID
+        client_secret: Klienthemlighet
+        info: Ange API-nycklarna från Unloc Control Center för att ansluta till dina digitala dörrlås.
+        locks: Tillgängliga lås
+        locks_info: Välj lås för en resurs på sidan för resursinställningar. När en bokning är bekräftad får kunden automatiskt en mobilnyckel som är giltig för den bokade perioden.
+        project_id: Projekt
       vipps:
         client_id: Klient ID
         client_secret: Kundhemlighet
         merchant_serial_nr: Handlarens serienummer
+        non_partner_mode: Använd mina egna Vipps-avtalsnycklar istället för MakePlans partnernycklar
+        partner_keys_info: Om din Vipps-kassa skapades via MakePlans behöver du bara fylla i handlarens serienummer. Klient-ID, klienthemlighet och prenumerationsnyckel krävs endast om du har ett eget Vipps-avtal.
+        push_message: Skicka betalningsförfrågningar till kundens Vipps-app (kräver att push-notiser är aktiverade för Vipps-kassan)
+        setup_webhooks: Kontrollera och konfigurera webhooks
+        verify: Verifiera anslutningen
+        verify_error: 'Vipps avvisade nycklarna: %{message}'
+        verify_success: Vipps är korrekt konfigurerat och autentiserat.
         vipps_subscription_key: Vipps prenumerationsnyckel
+        webhook_active: Betalningswebbhook har registrerats.
+        webhook_setup_failed: 'Webhook-installationen misslyckades: %{error}'
+        webhook_setup_missing_fields: Fyll i klient-ID, klienthemlighet, prenumerationsnyckel och handlarens serienummer innan du konfigurerar webhooks.
       visma_eaccounting:
         active: Aktiva
         connect_info: Länkat till konto %{name}
@@ -704,6 +932,10 @@ sv:
         service_linked: Ansluten till produkten i Visma eAccounting
         service_links: 'Varje tjänst måste vara länkad till en produkt i Visma eAccounting för att kunna skapa en faktura. OBS: Priset erhålls från Visma eAccounting - inte från Makeplans. Du måste se till att priset i båda systemen är identiskt.'
         service_not_linked: INTE ansluten till produkten i Visma eAccounting
+      whatsapp:
+        connect: Anslut till WhatsApp
+        connected: WhatsApp är kopplat till nummer %{number}.
+        info: Anslut till WhatsApp för att skicka bekräftelser och påminnelser och chatta med dina kunder. Du behöver ett Meta-företagskonto och ett telefonnummer som inte redan används med WhatsApp. Klicka på knappen nedan för att logga in med Meta och slutföra installationen.
       whereby:
         connect_info: Ansluten
         setup_info: Ett Whereby-möte skapas automatiskt för alla tjänster där Whereby är aktiverat.
@@ -720,17 +952,86 @@ sv:
         immediately: omedelbart
         services: Tjänster
         services_info: 'Meddelandemallen kommer att skickas för alla tjänster såvida du inte begränsar dig till specifika tjänster nedan:'
+        settings:
+          skip_if_in_past: Skicka inte om leveranstiden har passerat
+          twilio_content_sid: WhatsApp-mall SID
+          twilio_content_sid_info: ID:t (HX...) för denna mall som godkänts av Meta. Registrera dig hos MakePlans support - meddelandet kan inte skickas förrän mallen är godkänd.
         template_info_html: Du kan slå samman inn dynamiska värden. Se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> för detaljer.
+        whatsapp_approval_status: Meta-godkännande
+        whatsapp_approval_statuses:
+          approved: Godkänd – den här mallen kan skickas in
+          error: Inlämningen misslyckades
+          pending: Väntar på godkännande från Meta
+          rejected: Avvisad av Meta
+        whatsapp_info: WhatsApp-meddelanden måste godkännas av Meta innan de kan skickas. Skriv meddelandet som vanligt – texten som ska godkännas visas nedan efter att du har sparat. Sammanfogningskoder är tillåtna, men inte logiska koder.
+        whatsapp_meta_template: Meta-godkännandemalltext
+        whatsapp_meta_template_info: Vänligen skicka in exakt denna text för godkännande (sammanslagningskoder konverteras automatiskt). Om du ändrar meddelandetexten måste mallen godkännas på nytt och SID:t uppdateras.
       index:
         header: Meddelandemallar
         immediately: omedelbart
         intro: Det är här du hittar mer komplexa meddelandemallar som kan skickas ut efter att en bokning är bekräftad, innan den startar eller efter att den är klar. Observera att dessa meddelanden skickas utöver standardmeddelanden som bekräftelse och påminnelse. Använd endast denna funktion om du till exempel vill skicka en extra påminnelse, flera bekräftelsemeddelanden (som e-post utöver SMS) eller ett uppföljningsmeddelande.
       show:
         immediately: omedelbart
+    orders:
+      index:
+        all_states: Alla statusar
+        created_at: Skapad
+        customer: Kund
+        do_filtering: Filtrera
+        filter: Filtrera
+        headline: Order
+        order_id: Beställning
+        status: Status
+        total: Total
+      refund:
+        already_refunded: Denna beställning har redan återbetalats.
+        failed: 'Återbetalning misslyckades: %{message}'
+        nothing_to_refund: Det finns ingen återbetalning för denna beställning.
+        success: Beställningen återbetalad.
+      show:
+        amount: Belopp
+        balance: Utestående
+        coupon: Rabattkod
+        created_at: Skapad
+        customer: Kund
+        date: Datum
+        details: Detaljer
+        generated_gift_card: 'Genererat presentkort: %{code}'
+        gift_card_used: Presentkort %{code}
+        gift_cards: Presentkort
+        invoice: Faktura
+        invoice_number: 'Faktura #%{nr}'
+        item: Punkt
+        line_items: Orderrader
+        order_number: 'Beställning #%{id}'
+        quantity: Antal
+        refund: Återbetalning
+        refund_confirm: Vill du återbetala hela beställningen? Detta återkallar alla betalningar och kan inte ångras.
+        subtotal: Delsumma
+        total: Total
+        transaction_type: Typ
+        transactions: Betalningar
+      states:
+        cancelled: Avbruten
+        confirmed: Bekräftad
+        pending: Väntan
+      transaction_types:
+        gift_card: Presentkort
+        payment: Betalning
+        refund: Återbetalning
+        subscription: Prenumeration
     people:
       children:
         index:
+          add_existing: Lägg till befintlig kund
           headline: "%{parent} kan boka för dessa personer:"
+        new:
+          add_selected: Lägg till i valda
+          headline: Lägg till associerade kunder för %{parent}
+          no_results: Inga matchande kunder hittades
+          no_results_hint: Endast kunder utan befintlig anslutning visas
+          search: Söka
+          search_placeholder: Sök efter namn, e-postadress eller telefonnummer
       form:
         block: Blockera kund för bokning
         booking_site_locale_default: Använd standardspråket på bokningssidan
@@ -748,8 +1049,10 @@ sv:
         filter: Filtrering
         headline: Kunder
         send_sms: Skicka sms
+        whatsapp_replies: WhatsApp-svar
       show:
         add_child: Lägg till associerad kund
+        all_day: Hela dagen
         bookings_for: Bokningar för %{name}
         can_book_for: Kan boka för %{children} andra
         card_saved_with:
@@ -757,13 +1060,21 @@ sv:
         change_tfso_customer: Ändra 24SO kundnummer.
         export: Skicka export av data till kund
         export_executed: Exportfilen skickas nu till kunden.
+        fiken:
+          create_customer: Skapa kund i Fiken
+          processing: Skapa en kund i Fiken...
+          show_customer: Visa kund i Fiken
         filter_bookings:
           active: Visa endast aktiva bokningar
           all: Visa alla reservationer inklusive borttagna
           visible: Visa endast synliga reservationer
+        gift_cards:
+          one: Presentkort med %{count}
+          other: Presentkort med %{count}
         no_reservations: Hittade inga bokningar
         parent_info: Administreras av
         send_sms: Skicka sms
+        whatsapp_chat: WhatsApp-chatt
       tfso_connect_company:
         create: Skapa ett nytt företag i 24SevenOffice
         header: Anslut till kund från 24SevenOffice
@@ -780,6 +1091,10 @@ sv:
       deactivate_rotp:
         deactivate_rotp: Inaktivera 2FA
         verify_code: 'Ange verifieringskod:'
+      edit:
+        theme_auto: Auto (följ systemet)
+        theme_dark: Mörk
+        theme_light: Ljus
       edit_password:
         verify_code: 'Ange verifieringskod:'
       no_access:
@@ -818,11 +1133,243 @@ sv:
         purge_3: All historik relaterad till denna information kommer också att raderas.
         purge_before: Radera data före datum
         warning: Är du säker på att du vill ta bort all data före det angivna datumet? Det är inte möjligt att ångra denna åtgärd.
+    reports:
+      bookings:
+        attendees: Deltagare
+        bookings: Bokningar
+        by_hour: Bokningar per timme
+        by_weekday: Bokningar per vardag
+        date: Datum
+        per_day: Bokningar per dag
+        per_month: Bokningar per månad
+        per_week: Bokningar per vecka
+        title: Bokningar
+      breakdown:
+        attendees: Deltagare
+        bookings: Bokningar
+        inactive: inaktiv
+        name: Namn
+        revenue: Beställt värde
+        without_resource: Utan resurs
+        without_service: Utan service
+      customers:
+        booked_value: Beställt värde
+        bookings: Bokningar
+        created_before_period: Existerade före perioden
+        created_in_period: Skapad under perioden
+        date: Datum
+        last_visit: Senaste besök
+        name: Namn
+        new_customers: Nya kunder
+        new_vs_returning: Nya och återkommande kunder
+        not_rebooked: Inte beställt igen
+        of_customers: av %{count} kunder
+        per_day: Nya kunder per dag
+        per_month: Nya kunder per månad
+        per_period_hint: Efter registreringsdatum
+        per_week: Nya kunder per vecka
+        rebooked: Omordnad
+        rebooking: Ombeställningsfrekvens
+        rebooking_hint: Ny bokning inom %{weeks} veckor efter första besöket under perioden
+        returning_customers: Återkommande kunder
+        title: Kunder
+        top_customers: Toppkunder
+        total: Nya kunder
+      events:
+        attendees: Deltagare
+        bookings: Bokningar
+        capacity: Kapacitet
+        event: Arrangemang
+        events_count:
+          one: 1 evenemang
+          other: "%{count} händelser"
+        fill: Fyllningsnivå
+        fill_curve: När evenemangen fylls upp
+        fill_curve_hint: Bokningar efter antal dagar innan evenemanget börjar
+        minimum_not_reached: minimum inte uppnått
+        starts_at: Startande
+        title: Händelser
+        waitlist_summary: "%{waitlisted} på väntelistan · %{conversions} flyttades från väntelistan under perioden"
+        waitlisted: På väntelistan
+      filters:
+        all_resources: Alla resurser
+        all_services: Alla tjänster
+        apply: Visa
+        download_csv: Ladda ner CSV-filen
+        filter: Filtrera
+        from: Från datum
+        granularity_day: Dag
+        granularity_label: Visa per
+        granularity_month: Månad
+        granularity_week: Vecka
+        period: Period
+        to: Hittills
+      granularity:
+        day: Datum
+        month: Månad
+        week: Vecka
+      index:
+        ahead: Fram
+        ahead_of_previous_period: "%{change} % före föregående period"
+        all_clear: Allt ser bra ut.
+        behind_pace: Enligt formulär
+        below_previous_period: "%{change} % under föregående period"
+        booking_activity: Bokningsaktivitet
+        bookings: Bokningar
+        bookings_count:
+          one: 1 reservation
+          other: "%{count} bokningar"
+        bookings_per_day: Bokningar per dag
+        cancellation_rate: Avbokningsfrekvens
+        cancellations: Avbokningar
+        compared_with_last_year: jämfört med samma period föregående år
+        compared_with_previous: jämfört med föregående period
+        confirmed_bookings: bekräftade bokningar
+        custom: Beställnings
+        days:
+          one: 1 dag
+          other: "%{count} dagar"
+        demand_by_time: Trafik per dag och tid
+        forward_note: Intäkter, nya kunder, missade möten och recensioner finns bara för perioder som redan har inträffat, så dessa fält lämnas tomma för en framtida period.
+        forward_note_title: Fram
+        from_previous_period: från föregående period
+        higher: Högre
+        last_month: Förra månaden
+        latest_activity: Senaste bokningarna
+        lower: Lägre
+        needs_attention: Kräver uppföljning
+        new_customers: Nya kunder
+        new_period: Ny aktivitet
+        next_days:
+          one: Nästa dag
+          other: Nästa %{count} dagar
+        next_month: Nästa månad
+        no_attention: Inga avvikelser registrerade
+        no_previous_period: Ingen tidigare period att jämföra med
+        no_shows: Inte uppfyllt
+        on_track: På väg
+        open_report: Se rapport
+        overall_pace: Framsteg
+        previous_value: "%{value} under föregående period"
+        resource_pace: Resurser
+        revenue: Omsättning
+        revenue_all_scope: alla resurser och tjänster
+        revenue_by_service: Beställt värde per tjänst
+        scope_note: Reservationer räknar bekräftade reservationer per reservationsdatum. Intäkter räknar betalningar per det datum de gjordes.
+        scope_note_title: Rapportens omfattning
+        service: Service
+        this_month: Denna månad
+        this_year: I år
+        title: Rapportera
+        today: I dag
+        total_count: "%{count} totalt"
+        when: När
+      no_shows:
+        bookings: Bokningar
+        by_hour: Inte träffat per timme
+        by_resource: Inte uppfyllt per resurs
+        by_service: Inte uppfyllt per tjänst
+        by_weekday: Inte träffad per vardag
+        name: Namn
+        no_shows: Inte uppfyllt
+        offenders: Kunder med flest missade möten
+        per_day: Inte träffad per dag
+        per_month: Inte träffat per månad
+        per_week: Inte träffade per vecka
+        rate: Dela
+        title: Inte uppfyllt
+        total: Inte uppfyllt
+      ratings:
+        average: Genomsnittligt betyg
+        booked: Bokning
+        bookings: Bokningar
+        by_resource: Genomsnitt per resurs
+        by_service: Genomsnitt per tjänst
+        distribution: Fördelning av betygen
+        lowest: Lägst rankade bokningar
+        name: Namn
+        no_ratings: Inga recensioner för denna period
+        per_day: Genomsnitt per dag
+        per_month: Genomsnitt per månad
+        per_week: Genomsnitt per vecka
+        rating: Gradering
+        ratings: Recensioner
+        resource: Resurs
+        response_rate: Svarsfrekvens
+        responses:
+          one: "%{count} svar"
+          other: "%{count} svar"
+        service: Service
+        title: Recensioner
+      resources:
+        title: Resurser
+      revenue:
+        amount: Belopp
+        date: Datum
+        per_day: Betald omsättning per dag
+        per_month: Betalda intäkter per månad
+        per_period_hint: Efter betalningsdatumet, inte bokningsdatumet
+        per_week: Betald omsättning per vecka
+        title: Omsättning
+        total: Total
+      services:
+        title: Tjänster
+      subnav:
+        bookings: Bokningar
+        customers: Kunder
+        events: Händelser
+        no_shows: Inte uppfyllt
+        overview: Översikt
+        past_only: Denna rapport omfattar endast perioder som redan har
+        ratings: Recensioner
+        resources: Resurser
+        revenue: Omsättning
+        services: Tjänster
+        timing: Tidsanvändning
+        utilization: Utnyttjande
+      timing:
+        bookings: Bokningar
+        buckets:
+          after_start: Efter start
+          four_seven_days: 4–7 dagar
+          four_weeks: 2–4 veckor
+          longer: Över 2 månader
+          next_day: Nästa dag
+          same_day: Samma dag
+          two_months: 1–2 månader
+          two_three_days: 2–3 dagar
+          two_weeks: 1–2 veckor
+        by_created_hour: Skapade bokningar per timme
+        by_created_weekday: Bokningar skapade per vardag
+        cancellation_lead_time: Tid före avbokning
+        cancellation_lead_time_hint: Tid mellan avbokning och reserverad tid
+        cancellations: Avbokningar
+        lead_time: Orderhorisont
+        lead_time_hint: Tiden mellan när reservationen skapades och den reserverade tiden
+        median_lead: medianorderhorisont %{days} dagar
+        title: Tidsanvändning
+      utilization:
+        booked_hours: Bokade timmar
+        coverage_ahead: Framtida täckning per resurs
+        coverage_hint: Bokad mot öppettider för en period som ännu inte har
+        hours: "%{booked} av %{open} timmar"
+        open_hours: Öppettider
+        per_resource: Utnyttjande per resurs
+        resource: Resurs
+        title: Utnyttjande
+        total: Total
+        unbooked_hours: Tillgängliga timmar
+        utilization: Utnyttjande
     resources:
       form:
         availability: Standardläge för tillgänglighet
+        delete_warning:
+          one: Den här resursen har 1 framtida bokning. Om du tar bort den tas resursen och alla bokningar bort. Klicka på radera igen för att bekräfta.
+          other: Den här resursen har %{count} framtida bokningar. Om du tar bort den tas resursen och alla bokningar bort. Klicka på ta bort igen för att bekräfta.
         external_info:
           microsoft_office365_user_id: Microsoft Office 365-användare
+          unloc_lock_ids: Lås upp lås
+          unloc_lock_ids_info: Kunder med en bekräftad beställning får automatiskt en mobilnyckel för utvalda lås, giltig under den beställda perioden.
           zoom_user_id: Zooma användare
         from: från
         mail_notification_info: För att skicka varningar till flera personer, använd semikolon för att separera e-postadresser.
@@ -857,6 +1404,16 @@ sv:
           past_html: 'Tidigare beställningar: %{link}'
         icalfeed: 'iCalendar-feed:'
         offers: 'Erbjuder följande tjänster på bokningssidan:'
+        room_display:
+          activated: Mötesrumsvyn är aktiverad.
+          code: Koda
+          disable: Inaktivera vy över mötesrummet
+          enable: Aktivera mötesrumsvy
+          generate_code: Generera installationskod
+          header: Mötesrumsvy
+          info: En offentlig vy för detta rum som visar status och kommande bokningar. Lämplig för en skärm monterad utanför rummet.
+          not_activated: Inte aktiverad
+          show_link: Visa länken för mötesrumsvy
     services:
       availability:
         header: Tillgänglighet för %{title}
@@ -898,11 +1455,14 @@ sv:
           hide_all_available: Måste välja specifik resurs ('visa alla tillgängliga' är dolda)
           hide_resources: Göm knappen för att välja resurs (kommer slumpmässigt att välja bland de tillgängliga resurser)
           hide_slot_end: Göm sluttid
+          overnight: Till nästa dag (endast dagsbokning)
           return_occupied: Visa upptagna platser
           return_past: Se slott förr i tiden
           select_count: Extra steg för att ange kvantitet
           select_resource: Extra steg för val av resurser
           show_free_capacity: Visa tillgänglig kapacitet
+          standalone: Fristående tjänst
+          waitlist_enabled: Aktivera väntelista (åsidosätter kontoinställningar)
       form_attendance:
         booking_site_settings: Inställningar för bokningssidan
         days: Dagar
@@ -913,6 +1473,19 @@ sv:
         settings:
           hide_slot_end: Dölj sluttid
           show_free_capacity: Visa tillgänglig kapacitet
+          waitlist_enabled: Aktivera väntelista (åsidosätter kontoinställningar)
+      form_sellable:
+        billing_periods:
+          month: Månad
+          week: Vecka
+          year: År
+        booking_site_settings: Inställningar för bokningssidan
+        linked_services:
+          addon: Tillgängligt vid bokning av följande tjänster
+          pass: Gäller följande tjänster
+          subscription: Gäller följande tjänster
+        linked_services_info: Om ingen är vald är den tillgänglig för alla tjänster.
+        validity_days_unlimited: Går aldrig ut
       index:
         appointment:
           header: Tjänster
@@ -921,6 +1494,9 @@ sv:
         days: dagar
         header: Tjänster
         minutes: minuter
+        priority_button: Beställa
+        product:
+          header: Produkter
       integrations:
         external_info:
           fiken_create_order: Skapa ordrar automatiskt i Fiken
@@ -946,22 +1522,32 @@ sv:
           weights_invalid: "⚠ Vikterna summeras till %{total}, ska vara 100"
           weights_valid: "✓ Vikterna summeras till 100"
         weight: Vikt
+      service_priority:
+        description: Dra och släpp tjänster för att ändra ordningen de visas på bokningssidan. Tjänster utan ett sekvensvärde visas sist, sorterade alfabetiskt.
+        header: Tjänstgöringsordning
       show:
         availability: Tillgänglighet per leverantör
+        billing_period: 'Förnyelseperiod:'
         custom_data: 'Anpassade fält:'
         days: dagar
         description: 'Beskrivning:'
         interval: 'Bokningens längd:'
+        linked_services_all: Alla tjänster
         manage_priority: Hantera prioritet
         minutes: minuter
+        never_expires: Går aldrig ut
         no_providers: 'OBS: Denna tjänst erbjuds inte av några resurser och visas därför inte på bokningssidan. Klicka här för att lägga till leverantörer.'
         not_in_category: OBS! Du använder kategorier på bokningssidan och den här tjänsten läggs inte till i en kategori. Denna tjänst visas därför inte på bokningssidan. Klicka här för att hantera kategorier.
         offered: 'Erbjuds av följande resurser:'
         price: 'Pris:'
         qr_code: QR-kod för kunder
+        quota: 'Antal bokningar inkluderade:'
         show_on_booking_site: Öppna bokningssidan för den här tjänsten
+        unlimited: Obegränsat
+        validity: 'Giltighet:'
       slots:
         available: 'Tillgängliga tider:'
+        next_available: 'Nästa tillgängliga datum:'
         none_available: Inga tillgängliga tider.
       update_priority:
         priority_updated: Prioritetsinställningarna har uppdaterats.
@@ -1005,6 +1591,7 @@ sv:
         header_html: Välkommen till Makeplans.<br>Börja med att lägga till dina tjänster
     shared:
       recurring:
+        booking_window_fixed: Använd samma registreringsdatum för alla repetitioner
         enabled: Upprepa flera gånger med ett mönster
         freq:
           monthly: En gång i månaden
@@ -1028,14 +1615,34 @@ sv:
     sms:
       create:
         header: SMS skickat
+        queued: Skickar SMS till %{recipents_count} mottagare...
         sms_sent: 'Följande meddelande skickades till %{recipents_count}-mottagare:'
         to_booking: Tillbaka till bokningen
       insufficient_credits:
         buy: Köp mer SMS
         info: Du måste förköpa %{needed} SMS för att skicka. Du har %{credits}.
       new:
+        filter:
+          all: Alla
+          calculate: Hitta mottagare
+          change: Ändra filter
+          date_hint: Valfritt. Lämna tomt om du inte vill ha datumbegränsning.
+          from: Bokningar från
+          header: Skicka SMS till filtrerade kunder
+          instructions: Välj ett datumintervall, en tjänst och/eller en resurs för att hitta kunder med matchande bokningar. Minst ett filter krävs.
+          no_limit: Ingen begränsning
+          no_recipients: Inga kunder matchar det valda filtret. Justera filtret och försök igen.
+          none: Välj minst ett filter (datumintervall, tjänst eller resurs) innan du skickar in.
+          one_sms_per_person: Varje kund får ett SMS, även om de har flera bokningar som matchar filtret.
+          resources: Resurser
+          resources_hint: Lämna tomt för att inkludera kunder med reservationer för alla resurser.
+          services: Tjänster
+          services_hint: Lämna tomt för att inkludera kunder med reservationer för alla tjänster.
+          to: Bokningar fram till
         header: Skicka SMS till %{recipents_count}-mottagare
+        liquid_hint: Anpassa meddelandet med taggar som {{ person.name }}, {{ person.first_name }} eller {{ person.email }}.
         message: Meddelande
+        message_error: Meddelandet kunde inte bearbetas. Kontrollera anpassningstaggarna och försök igen.
         processing: Skickar ...
         send: Skicka
         sms_info: För meddelanden på mer än 160 tecken beräknas kostnaden per 160 tecken. Kostnaden för text på 200 tecken blir då 2 SMS per meddelande. Mottagaren kommer att få detta som ett SMS.

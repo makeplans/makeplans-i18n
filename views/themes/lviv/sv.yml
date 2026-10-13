@@ -18,8 +18,10 @@ sv:
         terms: Villkor
         title: Bokning för
       payment_stripe:
+        make_payment: Gör betalning
         title: Ange betalningsuppgifter
       pre_payment:
+        make_payment: Gör betalning
         title: Välj betalningsmetod
       show:
         add_to_calendar: Lägg till i kalendern
@@ -40,6 +42,11 @@ sv:
       alt:
         go_back: Gå tillbaka
       step: Steg %{step} / %{steps}
+    gift_cards:
+      new:
+        description: Köp ett presentkort till någon du älskar. Välj belopp nedan.
+        value_label: Belopp
+        value_placeholder: Ange belopp
     layouts:
       application:
         about_makeplans: Om Makeplans
@@ -47,6 +54,7 @@ sv:
         alt:
           account: Konto
           cancel: Avboka
+          cart: Kundvagn
           menu: Meny
         booking_site_footer: Bokningssystem för %{name}
         close: Nära
@@ -55,6 +63,35 @@ sv:
         privacy_policy: Integritetspolicy
         terms_conditions: Villkor
         title: Onlinebokning för %{name}
+    order_cart:
+      checkout:
+        coupon_code_placeholder: Ange kod
+        header: Kassa
+        order_total: Totalbelopp
+    order_payments:
+      failure:
+        message: Tyvärr kunde din betalning inte behandlas.
+      pay_later:
+        payment:
+          description: Din beställning kommer att bekräftas. Betalning kan göras senare.
+      stripe:
+        payment:
+          payment_details_html: Betalning behandlas säkert via %{provider}. Alla belopp är i %{currency}.
+      vipps:
+        awaiting_payment:
+          body: Vänta medan vi verifierar transaktionen.
+          error: Vi kan inte verifiera din betalning. Vänligen kontakta kundtjänst med referensnummer %{order_id}.
+          title: Verifierar din betalning
+    orders:
+      index:
+        header: Mina beställningar
+        no_orders: Du har inga beställningar än.
+      payment:
+        no_payment_methods: Inga betalningsmetoder tillgängliga.
+        stripe: Bankkort
+      show:
+        back_to_orders: Tillbaka till beställningar
+        each: st
     person_sessions:
       enter_perishable_token:
         confirm_booking: Bekräfta bokningen
@@ -72,15 +109,30 @@ sv:
         submit: Skicka verifieringsmejl
       verification_method_sms:
         submit: Skicka verifieringskod
+    products:
+      show:
+        price: Pris
     profile:
+      children:
+        index:
+          add_person: Lägg till person
+          alt:
+            right: Rätt
+          no_children: Du har inte lagt till någon att beställa för ännu.
+        new:
+          subtitle: Vänligen fyll i informationen för den person du vill boka åt.
+      credit_card_list:
+        title: Betalningsmetoder
       index:
         book_again: Reservera igen
         canceled: Avbruten
+        my_profile: Min profil
         tabs:
           all: Alla
           cancelled: Avbruten
           completed: Utförde
           upcoming: Framtida
+        waiting: Väntan
       new:
         errors_header: 'Ett fel uppstod:'
         register: Register
@@ -93,6 +145,7 @@ sv:
           right: Rätt
         change_language: Ändra språk
         logout: Logga ut
+        my_bookings: Mina reservationer
     services:
       available_dates:
         title: Välj datum och tid
