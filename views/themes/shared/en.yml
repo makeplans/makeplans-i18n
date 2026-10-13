@@ -87,7 +87,7 @@ en:
       free_capacity:
         one: "%{count} available"
         other: "%{count} available"
-        zero: Fully booked
+      full: Fully booked
       fully_booked: This event is fully booked. No spots are available.
       join_waitlist: Join Waitlist
       past: Past
