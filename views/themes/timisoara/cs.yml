@@ -1,0 +1,176 @@
+---
+cs:
+  timisoara:
+    bookings:
+      authenticate:
+        info: Potřebujeme informace k ověření vaší rezervace
+        submit: Odeslat kód
+        title: Ověřování telefonního čísla
+      awaiting_confirmation:
+        body: Odeslali jste požadavek na rezervaci. Počkejte prosím, až administrátor vaši rezervaci potvrdí.
+      cancelled:
+        title: Vaše rezervace byla zrušena
+        update_calendar: Aktualizovat můj kalendář
+      new:
+        accept: Souhlasím s podmínkami
+        edit: Upravit
+        edit_profile: Upravit
+        notice: Vaše rezervace ještě není potvrzena. Zkontrolujte prosím podrobnosti a stiskněte tlačítko níže.
+        page_title: Potvrďte svou rezervaci
+        step_label: Poslední krok
+        submit: Dokončit rezervaci
+        title: Rezervace %{service}
+      payment_stripe:
+        title: Platba
+      pre_payment:
+        info: Pro dokončení rezervace %{service} %{booking} musíte provést platbu.
+        submit: K platbě
+        title: Platba
+      show:
+        add_to_calendar: Přidat tuto rezervaci do mého kalendáře
+        all: Zobrazit mé další rezervace
+        cancel: Zrušit
+        cancel_confirmation: Jste si jisti, že chcete tuto rezervaci zrušit?
+        info: Rezervace pro %{title} %{time} je potvrzena.
+        new_reservation: Provést další rezervaci
+        title: Vaše rezervace je potvrzena!
+    categories:
+      index:
+        all_categories: Všechny kategorie
+        select_category: Vyberte kategorii
+    events:
+      index:
+        all_events: Všechny události
+      show:
+        all_services: Všechny služby
+        continue: Pokračovat
+      week_calendar:
+        all_events: Všechny události
+        next_week: Příští týden
+        none_this_week: Žádné události tento týden
+        prev_week: Předchozí týden
+        this_week: Tento týden
+    generic:
+      all_day: Celý den
+      alt:
+        time: Čas
+      continue: Pokračovat
+    gift_cards:
+      new:
+        description: Kupte dárkovou kartu pro někoho výjimečného. Vyberte níže uvedenou částku.
+        value_label: Hodnota
+        value_placeholder: Zadejte částku
+    layouts:
+      application:
+        alt:
+          footer_logo: Logo v zápatí
+        booking_site_footer: Rezervační stránka pro %{name}
+        login: Přihlášení
+        made_by_tagline: Uživatelsky přívětivý systém pro plánování, rezervaci schůzek a registraci na akce.
+        made_by_title: Rezervace schůzek, plánování a registrace na akce/kurzy
+        privacy: Zásady ochrany osobních údajů
+        profile: Profil
+        support: Podpora
+        title: Online rezervace pro %{name}
+    order_cart:
+      checkout:
+        credit_card: Kreditní karta
+        header: Pokladna
+        invoice: Faktura
+        order_total: Celkem objednávky
+        pay_now: Zaplatit nyní
+      show:
+        amount: Množství
+        continue_shopping: Přidat další dárkové karty
+        item: Položka
+    order_payments:
+      failure:
+        message: Vaši platbu bohužel nebylo možné zpracovat.
+      fiken:
+        payment:
+          back: Zadní
+          create_invoice: Vytvořit fakturu
+          header: Platba faktury
+      pay_later:
+        payment:
+          description: Vaše objednávka bude potvrzena. Platbu lze provést později.
+      stripe:
+        payment:
+          payment_details_html: Platba je zpracována bezpečně pomocí %{provider}. Všechny částky jsou v %{currency}.
+      vipps:
+        awaiting_payment:
+          body: Prosím, vyčkejte, než ověříme transakci.
+          error: Nepodařilo se nám ověřit vaši platbu. Kontaktujte prosím zákaznický servis s referenčním číslem %{order_id}.
+          title: Ověřování vaší platby
+    orders:
+      index:
+        header: Moje objednávky
+        no_orders: Zatím nemáte žádné objednávky.
+      payment:
+        header: Vyberte způsob platby
+        no_payment_methods: Žádné platební metody nejsou k dispozici.
+        select_payment_method: Jak byste chtěl/a platit?
+        stripe: Kreditní karta
+      show:
+        amount: Množství
+        back_to_orders: Zpět k objednávkám
+        each: každý
+        item: Položka
+        my_reservations: Moje rezervace
+    person_sessions:
+      enter_perishable_token:
+        info_html: Ověřovací kód jsme odeslali na adresu <b>%{recipient}.</b> Zadejte prosím kód pro ověření vašich údajů.
+        perishable_token: Kód
+        submit: Pokračovat
+        title: Ověřte svou rezervaci
+      perishable_token_form:
+        alt:
+          checkbox: Zaškrtávací políčko
+        submit: Odeslat kód
+        terms_conditions: Obchodní podmínky
+        title: Přihlášení
+    products:
+      index:
+        buy: Nakoupit
+    profile:
+      children:
+        new:
+          cancel: Zrušit
+      credit_card_list:
+        add_card: Přidat kartu
+        body: Vaše uložené platební metody
+        card_info: "%{brand} končící na %{last_4} (platnost vyprší %{expire_month}/%{expire_year})"
+        remove_card: Odstranit
+        title: Platební metody
+      gift_card_list:
+        body: Vaše dárkové karty
+      index:
+        alt:
+          calendar: Kalendář
+        awaiting_approval: Čeká na schválení
+        cancel: Zrušit
+        logout: Odhlásit se
+        my_details: Moje údaje
+        my_orders: Moje objednávky
+        title: Moje rezervace
+      new:
+        header: Informace o účtu
+      show:
+        header: Vaše uložené informace
+    services:
+      available_dates:
+        select_date: Dostupné termíny
+      count:
+        select_count: Kolik lidí?
+      index:
+        all_categories: Všechny kategorie
+        all_services: Všechny služby
+        buy: Nakoupit
+        continue: Provést rezervaci
+      show:
+        all_services: Všechny služby
+        continue: Provést rezervaci
+      week_available:
+        next_week: Příští týden
+        prev_week: Předchozí týden
+        select_date: Vyberte datum

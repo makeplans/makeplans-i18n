@@ -21,6 +21,9 @@ cs:
         verification_delivery_not_processed: V současné době dochází k určitým zpožděním v našich systémech. Počkejte prosím, dokud nevybereme váš e-mail.
         verification_sent_body: Poslali jsme e-mail na %{email}. Postupujte podle toho a ověřte svou rezervaci. Pomáhá nám ujistit se, že nejste robot.
         verification_sent_title: Prosím potvrďte vaší emailovou adresu
+      cancelled:
+        body: Tato rezervace byla zrušena.
+        title: Vaše rezervace byla zrušena
       declined:
         body: Litujeme, ale nemohli jsme vaši žádost o rezervaci schválit. Zkuste prosím jiný časový rozvrh nebo nás kontaktujte.
         title: Vaše rezervace nebyla schválena
@@ -35,11 +38,24 @@ cs:
           login_with_facebook_html: Případně můžete %{fb_link}.
           login_with_facebook_link: ověřit automaticky pomocí Facebooku
           not_current_person_html: Nejste <span data-name="">%{person}?</span> ?
+          remember_me: Chcete, abychom si vás na tomto počítači pamatovali pomocí souboru cookie?
+        book_for_child: Udělat rezervaci pro někoho jiného?
+        book_for_me: Rezervuj si raději pro sebe
+        contact_support_message: Ve vašem zákaznickém profilu chybí informace. Kontaktujte prosím podporu.
         enter_info: Zadejte informace
         errors_header: Vyplňte prosím povinná pole.
         form_info_html: To bude použito k ověření vaší rezervace %{service}, %{booking}.
+        mismatch_ignore: Nebo klikněte sem a toto varování ignorujte.
+        mismatch_ignore_confirm: Váš zákaznický profil nebude aktualizován s těmito novými hodnotami. Chcete-li změnit svůj zákaznický profil, kontaktujte prosím podporu. Chcete pokračovat v rezervaci bez aktualizace profilu?
+        mismatch_info_html: 'Následující hodnoty neodpovídají vašemu zákaznickému profilu: %{attributes}. Rezervujete pro někoho jiného? Pokud ano, nejprve se prosím <a href="%{login_path}">přihlaste</a> . Pokud chcete upravit svůj zákaznický profil, kontaktujte prosím podporu.'
+        new_child: Pro někoho jiného
         price_info: 'Cena: %{price}'
         reserve_resource: Rezervace pro %{resource}
+        select_child: 'Proveďte tuto rezervaci pro:'
+        terms: Podmínky rezervace
+      no_person:
+        body: 'Pro více informací nás kontaktujte. Chyba: Spojení zákazníka bylo odstraněno.'
+        title: Chyba
       payment:
         fields:
           cvc: CVC
@@ -53,24 +69,55 @@ cs:
         form_header: Tento formulář je odeslán šifrovaný.
         header: Způsob platby
         info: Pro dokončení rezervace %{service} musíte zaplatit kreditní kartou.
+      payment_invoice:
+        form_footer_html: Faktura bude zaúčtována na <span class="payment-amount">částku %{amount}</span> .
+        form_header: Fakturu vystavíme na základě následujících informací
+        header: Platba fakturou
+        info: Pro dokončení rezervace %{service} %{booking} musíte souhlasit s fakturací.
+        payment_details_html: Zobrazená částka je v %{currency}.
+      pre_payment:
+        form_footer_html: 'Částka k úhradě: <span class="payment-amount">%{amount}</span> .'
+        providers:
+          braintree: Kreditní/debetní karta
+          fiken: Faktura
+          frontgo: Přední Go
+          stripe: Kreditní/debetní karta, Google Pay nebo Apple Pay
+          tfso: Faktura
+          vipps: VIPP
+          visma_eaccounting: Faktura
+        select_provider: Jak byste chtěl/a platit?
       show:
         add_card: Přidejte svou kreditní kartu k automatickému zaplacení po rezervaci
         add_to_calendar: Přidejte rezervaci do svého kalendáře
         body: Jsi hotový. Rezervace byla provedena.
+        booked_for_child: Tato rezervace je pro %{name}.
+        booking_count:
+          one: Rezervováno pro %{count} osob.
+          other: Rezervováno pro %{count} osob.
         cancel: Zrušit rezervaci
         cancel_confirmation: Opravdu chcete zrušit tuto rezervaci?
+        invoiced: Byla vám vystavena faktura.
         paid: Máte předplacenou %{paid_amount}.
+        pay: Platit
+        price: Cena rezervace je %{amount}.
         remember_me: Chcete, abychom si vás na tomto stroji pamatovali pomocí cookie?
+        reschedule: Přeplánovat
         title: Vaše rezervace je potvrzena!
       verification_code:
         header: Potvrdit rezervaci
         incorrect_code: nesprávný kód
+        remember_me: Zapamatovat si mě na tomto zařízení
         verify_verification_code: Poslali jsme SMS na %{recipient} s ověřovacím kódem. Pro ověření rezervace zadejte kód do formuláře. To je nutné pro dokončení rezervace.
     events:
       index:
+        free_capacity:
+          one: "%{count} k dispozici"
+          other: "%{count} k dispozici"
         none_available: Nejsou k dispozici žádné události.
+        title: Události
       show:
         before_first_booking: Není možné se zaregistrovat na tuto událost před %{first_booking_at}.
+        book: Přihlaste se na tuto událost
         full: Tato událost je plná.
         past_last_booking: K této události již není možné se zaregistrovat.
         started: Tato událost je již dokončena.
@@ -78,16 +125,30 @@ cs:
       dateselector: Vyberte datum
       earlier: dříve
       payment:
+        add_card_details_html: Údaje o vaší kartě nebudou u nás uloženy, ale budou za účelem zabezpečené transakce a uložení zašifrovány na adresu %{provider}.
+        add_card_footer_html: Vaše karta nyní nebude stržena
+        add_card_header: Uložit kartu
+        add_card_info: Přidejte svou platební kartu, abyste mohli snadno a automaticky platit po rezervaci.
+        add_card_submit: Uložit kartu
+        awaiting:
+          body: Počkejte prosím na potvrzení transakce.
+          error: Nepodařilo se nám potvrdit, že platba byla dokončena. Kontaktujte prosím zákaznický servis prostřednictvím https://makeplans.no a uveďte referenční číslo %{booking_id}.
+          title: Běžná platba
         form_footer_html: Na vaši kreditní kartu bude účtováno <span class="payment-amount">%{amount}</span> .
         form_header: Tento formulář je odeslán šifrovaný.
         header: Způsob platby
         info: Pro dokončení rezervace %{service} musíte zaplatit kreditní kartou.
+        new_card: Zadejte novou kartu
         payment_details_html: Zobrazená částka je v %{currency}. Údaje o vaší kreditní kartě neuchováváme, ale zašleme je zašifrovanou do %{provider} pro bezpečné zpracování a uložení.
+        payment_received: Částka %{paid_amount} byla zaplacena dne %{paid_at}.
+        save_card: Uložit kartu
       step:
         cancel: zrušení
         completed: Dokončeno!
         hotstepper: Krok %{step} %{steps}
+        next: Další
         next_confirm: 'Další: Potvrzení'
+        next_form: 'Další: Přidat podrobnosti'
         next_payment: Platit
         next_time: 'Další: Vyberte čas'
         next_verify: Potvrdit rezervaci
@@ -99,6 +160,7 @@ cs:
         authenticated: 'Přihlášen jako: %{name}'
         demo_ended: Ukázka Makeplans vypršela.
         footer:
+          change_language: 'Změnit jazyk:'
           privacy_policy: Zásady ochrany osobních údajů
           support: Podpěra, podpora
         login: Vaše rezervace
@@ -121,22 +183,51 @@ cs:
         info_html: Nejste zaregistrováni jako zákazník. Nejprve dokončete <a href="/">rezervaci</a> .
       perishable_token_action_required:
         info_html: Poslali jsme vám e-mail. Kliknutím na odkaz se přihlaste.
+        title: Ověřte svou e-mailovou adresu
       perishable_token_form:
+        not_available_for_this_verification_method: Není k dispozici.
         submit: Přijmout kód
     profile:
+      children:
+        index:
+          header: Pro další lidi, pro které můžete vytvořit knihu
+      credit_card_list:
+        add_card: Přidat novou kartu
+        body: Toto jsou vaše uložené platební karty. Pokud chcete, můžete přidat novou kartu nebo smazat kteroukoli ze stávajících.
+        card_info: "%{brand} s číslem končícím na %{last_4} a platností do %{expire_month}/%{expire_year}."
+        remove_card: Odebrat tuto kartu
+        title: Vaše uložené platební metody
       index:
+        children: Pro další lidi můžete vytvořit knihu.
+        feed: iCalendar-feed
         header: Vaše rezervace
         logout: Odhlásit se
+        my_details: Mé uložené informace
         new_booking: Nová rezervace
+        payment_methods: Uložené platební metody
+      show:
+        header: Vaše uložené informace
     providers:
       index:
+        none_available: Nejsou k dispozici žádní poskytovatelé.
         show_all_available: Zobrazit vše k dispozici
         show_only_selected: 'Nebo zobrazit pouze z vybraného kalendáře:'
     services:
+      available_dates:
+        none_available: Žádné dostupné termíny
+      index:
+        none_available: Žádné služby nejsou k dispozici.
+      show:
+        book: Provést rezervaci
+      slots:
+        try_another_template: Zkuste prosím jinou šablonu.
       time_day_available:
         any_resource: První k dispozici
         dateselector: Vyberte datum
         earlier: Dříve
+        free_capacity:
+          one: "%{count} k dispozici"
+          other: "%{count} k dispozici"
         gap_warning: Pro výběr více slotů musí být tyto sloty bez mezer.
         later: Později
         max_slots_warning: Nelze rezervovat více než %{max_slots} timeslots
@@ -148,6 +239,9 @@ cs:
         select_time: "%{service} - vyberte dostupný čas"
       weekday_available:
         dateselector: Vyberte datum
+        free_capacity:
+          one: "%{count} k dispozici"
+          other: "%{count} k dispozici"
         gap_warning: Pro výběr více slotů musí být tyto sloty bez mezer.
         max_slots_warning: Nelze rezervovat více než %{max_slots} timeslots
         multiple_slots_info: Chcete-li vybrat více slotů, nejprve vyberte počáteční čas a pak koncový slot.

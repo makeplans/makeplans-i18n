@@ -1,0 +1,792 @@
+---
+cs:
+  activerecord:
+    attributes:
+      booking:
+        booked_by_person_id: rezervováno uživatelem
+        booked_from: z
+        booked_to: na
+        count: počítat
+        coupon_code: slevový kód
+        event_id: událost
+        external_id: externí ID
+        notes: poznámky
+        person: zákazník
+        person_id: zákazník
+        reminder_at: připomínka na
+        resource: zdroj
+        resource_id: zdroj
+        service: servis
+        service_id: servis
+        state: stát
+        status: postavení
+        terms_accepted: podmínky přijaty
+        title: titul
+        verification_code: ověřovací kód
+      booking/state:
+        awaiting_confirmation: Čeká se na potvrzení
+        awaiting_payment: Čeká se na platbu
+        awaiting_verification: Čeká se na ověření
+        cancelled: Zrušeno
+        confirmed: Potvrzeno
+        declined: Odmítnuto
+        deleted: Smazáno
+        verification_expired: Ověření vypršelo
+        waitlisted: Čekací listina
+      booking/status:
+        checked_in: Ohlášen/a
+        completed: Dokončeno
+        in_progress: Zahájeno
+        no_show: Žádné představení
+      category:
+        title: titul
+      client:
+        future_bookable_period: budoucí rezervovatelné období
+        mail_notification_recipient: e-mailová adresa (adresy) pro oznámení
+        mailer_sender: adresa odesílatele e-mailu
+        phone_number: telefonní číslo
+        purge_data_period: období automatického mazání
+        sms_notification_recipient: telefonní číslo (čísla) pro oznámení
+        terms: podmínky
+      client/slot_generation:
+        dynamic: dynamický
+        fixed: pevná
+      client_user_link:
+        role: úroveň přístupu
+      client_user_link/role:
+        admin: plný přístup
+        manager: základní nastavení
+        staff: pouze kalendář
+      coupon/value_type:
+        amount: množství
+        percentage: procento
+      event:
+        booking_capacity: maximální počet osob povolených na jednu rezervaci
+        booking_minimum: minimální počet osob na rezervaci
+        capacity: maximální povolený počet osob
+        description: popis
+        ends_at: končí v
+        first_booking_at: žádná rezervace předem
+        last_booking_at: poslední rezervace před
+        resource_id: zdroj
+        service_id: servis
+        starts_at: začíná v
+        title: titul
+      message_template:
+        active: aktivní
+        delivery_timing: doručit v
+        delivery_type: typ doručení
+        message_type: typ zprávy
+        subject: podrobit
+        template: šablona
+      message_template/delivery_type:
+        email: e-mail
+        sms: SMS
+        whatsapp: WhatsApp
+      message_template/message_type:
+        confirmation: potvrzení
+        follow_up: následná opatření
+        reminder: připomínka
+      person:
+        address: adresa
+        blocked: Zablokováno pro rezervace
+        city: město
+        country_code: země
+        created_at: registrovaný
+        date_of_birth: datum narození
+        email: e-mail
+        locale: lokalita
+        name: jméno
+        national_id_no: národní identifikační číslo
+        notes: poznámky
+        opt_in_marketing: přihlásit se k odběru marketingových materiálů
+        phonenumber: telefonní číslo
+        postal_code: poštovní směrovací číslo
+        state: stát
+        street: ulice
+      resource:
+        capacity: kapacita
+        mail_notification_recipient: e-mailová adresa (adresy) pro oznámení
+        sms_notification_recipient: telefonní číslo (čísla) pro oznámení
+        title: titul
+      service:
+        allow_invoice: povolit fakturu
+        billing_period: období obnovy
+        payment_required: požadovat platbu
+        price: cena
+        quota: počet zahrnutých rezervací
+        terms: podmínky
+        title: titul
+        unlimited: neomezený
+        validity_days: počet dní platnosti po zakoupení
+      service/availability_type:
+        provider: poskytovatel
+        resource: zdroj
+      service/priority_strategy:
+        order: objednávka
+        random: náhodný
+        weight: hmotnost
+      user:
+        current_password: aktuální heslo
+        password: heslo
+        password_confirmation: potvrzení hesla
+        rotp_verification_code: ověřovací kód
+        theme: Téma
+      web_hook:
+        event: Událost
+        target_url: Cílová URL adresa
+    errors:
+      messages:
+        chronic_syntax_error: syntaktická chyba, viz https://github.com/mojombo/chronic#examples
+        denied: Vaše žádost byla zamítnuta
+        icalendar_invalid: Žádné výskyty nebo neplatný vzor iCalendar
+        icalendar_over_limit: Příliš mnoho výskytů. Maximum je 731.
+        illegal: ilegální
+        invalid: je neplatný
+        phone_invalid: není platné telefonní číslo
+        phone_not_norwegian: musí to být norské telefonní číslo
+        time_not_available: Momentálně není k dispozici pro rezervaci
+      models:
+        booking:
+          active_bookings_limit: Maximální počet aktivních rezervací je %{count}
+          attributes:
+            count:
+              below_minimum_count: Méně než minimální požadovaný počet osob na rezervaci
+              over_booking_capacity: Více než maximální povolený počet osob na rezervaci
+            event_id:
+              already_booked: již má aktivní rezervaci na tuto událost
+              time_not_available: je plně obsazeno
+            person_id:
+              blocked: zablokováno pro rezervaci
+              taken: již se na tuto akci přihlásil(a)
+            resource_id:
+              no_availability: není k dispozici v požadovaném čase
+            service_id:
+              attendance_only: je pouze pro registrace
+              not_offered: nenabízí se vybraným zdrojem
+            state:
+              invalid_transition: Neplatná změna stavu
+          exceeds_max_slots: Délka rezervace překračuje maximální povolený počet časových úseků.
+          fully_booked: Není k dispozici ve vybraném čase.
+          mismatch: Hodnoty neodpovídají existujícímu profilu.
+          no_parent_takeover: Pro provedení této rezervace kontaktujte prosím podporu.
+          prevent_new_signups: rezervace je možná pouze pro stávající zákazníky
+          time_after_future_bookable_period: Příliš daleko v budoucnosti
+        client:
+          attributes:
+            base:
+              denied: Zamítnuto
+        client_user_link:
+          admin_needed: Na účtu je potřeba alespoň jeden administrátorský uživatel.
+        message_template:
+          attributes:
+            template:
+              whatsapp_liquid_logic: Nemůže obsahovat logické tagy ({% %}), pokud je typ doručení WhatsApp - povoleny jsou pouze tagy personalizace
+        order:
+          attributes:
+            base:
+              must_have_line_items: Objednávka musí obsahovat alespoň jednu položku
+              payment_incomplete: Platba musí být dokončena před potvrzením objednávky
+        order_line_item:
+          attributes:
+            booking:
+              invalid: již není k dispozici k platbě
+        person:
+          attributes:
+            national_id_no:
+              invalid_syntax_no: Zadejte své norské fødselsnummer – 11 číslic.
+          blocked: Váš účet neumožňuje provádět žádné rezervace.
+          missing: není uloženo ve vašem zákaznickém profilu. Kontaktujte nás prosím pro jeho opravu.
+          no_values_present: Jméno, telefonní číslo nebo e-mail jsou povinné.
+          prevent_new_signups: rezervace je možná pouze pro stávající zákazníky
+        resource:
+          has_bookings: Tento zdroj má rezervace. Nelze jej smazat. Kontaktujte prosím podporu.
+        service:
+          attributes:
+            price:
+              below_minimum: musí být vyšší než 1 USD, pokud chcete požadovat platbu
+              payment_price_required: musí být nastaveno, pokud chcete požadovat platbu
+        user:
+          attributes:
+            password:
+              incorrect: Nesprávné heslo
+          current_password_incorrect: Aktuální heslo se neshoduje
+      template:
+        body: 'Operace nebyla dokončena z důvodu následujících chyb:'
+        header: Došlo k chybám
+    models:
+      booking: jmenování
+      category: kategorie
+      coupon: kupón
+      event: událost
+      external_credential: integrace
+      gift_card: dárková karta
+      message_template: šablona zprávy
+      person: zákazník
+      resource: zdroj
+      service: servis
+      service_addon: doplněk
+      service_appointment: servis
+      service_attendance: typ události
+      service_gift_card: dárková karta
+      service_pass: přihrávka
+      service_product: produkt
+      service_subscription: předplatné
+      tag: štítek
+      user: uživatel
+      web_hook: webhook
+  datetime:
+    distance_in_words:
+      x_hours:
+        one: 1 hodina
+        other: "%{count} hodin"
+  errors:
+    messages:
+      date_format: 'Zadejte platný formát data: %{format}'
+      date_of_birth: Rok narození mimo povolený rozsah
+      no_values_present: Jméno, telefonní číslo nebo e-mail jsou povinné.
+      not_authenticated: Byli jste odhlášeni.
+      not_found: Nelze najít data. Zkuste stránku znovu načíst.
+      offline: Nelze se připojit k Makeplans. Zkontrolujte prosím, zda jste online.
+      server_error: Chyba v Makeplans
+      syntax_error: Chyba v zadané syntaxi.
+      unknown: Neznámá chyba. Zkuste stránku znovu načíst.
+    models:
+      person:
+        perishable_token:
+          captcha: Kontrola spamu se nedokončila. Zkuste to prosím znovu.
+          expired: Platnost kódu vypršela. Zkuste to prosím znovu.
+          invalid: Nesprávný kód
+          invalid_value: Neplatný formát
+          no_identifier: Chybí e-mail nebo telefonní číslo.
+    stripe:
+      booking:
+        already_refunded: Již vráceno.
+        invalid: Rezervace vypršela nebo je neplatná. Transakce nebyla zpracována.
+        paid: Rezervace již byla zaplacena. Zkuste obnovit stránku.
+      card:
+        missing: Nepodařilo se získat informace o kartě
+      payment_intent_unexpected_state: Platbu nelze ověřit. Zkuste to prosím znovu.
+      processor: 'Chyba od našeho platebního procesoru: %{error}'
+      unknown: Transakci nelze zpracovat. Neznámá chyba.
+    vipps:
+      booking:
+        already_requested: Žádost o platbu již odeslána.
+        inactive: Rezervace již není aktivní.
+        invalid: Rezervace vypršela nebo je neplatná. Transakce nebyla zpracována.
+        no_person: Rezervace nemá žádného zákazníka.
+        no_phone_number: Zákazník nemá telefonní číslo.
+        paid: Rezervace již byla zaplacena. Zkuste obnovit stránku.
+      no_reference: Pro tuto rezervaci nebyla nalezena žádná platební transakce.
+      processor: 'Chyba od našeho platebního procesoru: %{error}'
+      refund_failed: Nelze vrátit peníze za transakci.
+      unknown: Transakci nelze zpracovat. Neznámá chyba.
+  generic:
+    account_default: Výchozí nastavení účtu
+    all: vše
+    at: na
+    born_abbreviation: b. %{date_of_birth}
+    country_locale: cs
+    default: Výchozí nastavení systému
+    dictate:
+      start: Diktovat
+      stop: Zastavit diktování
+      unsupported: Diktování není k dispozici
+    'false': Zakázáno
+    from: z
+    optional: volitelný
+    search: Vyhledávání
+    to: na
+    today: dnes
+    tomorrow: zítra
+    'true': Povoleno
+  helpers:
+    booking:
+      action:
+        cancel: Zrušit
+        confirm: Potvrdit
+        decline: Pokles
+        promote: Podporovat
+        remove_from_waitlist: Odebrat z čekací listiny
+        remove_from_waitlist_confirm: Opravdu chcete tuto rezervaci odstranit ze seznamu čekatelů?
+        verify: Ověřit
+      state:
+        awaiting_confirmation: Čeká se na potvrzení
+        awaiting_payment: Čeká se na platbu
+        awaiting_verification: Čeká se na ověření
+        cancelled: Zrušeno
+        confirmed: Potvrzeno
+        declined: Odmítnuto
+        deleted: Smazáno
+        verification_expired: Ověření vypršelo
+        waitlisted: Čekací listina
+    booking_state_transitions:
+      events:
+        modified: Upraveno
+    boolean:
+      'false': Žádný
+      'true': Ano
+    datepicker:
+      next_month: Příští měsíc
+      prev_month: Předchozí měsíc
+    label:
+      booking:
+        all_day: Celý den
+        booked_by_person_id: Rezervováno uživatelem
+        booked_from: Rezervováno od
+        booked_to: Rezervováno pro
+        count: Počet osob
+        coupon_code: Slevový kód
+        external_id: Externí ID
+        invoiced_at: Fakturováno
+        notes: Poznámky
+        paid_at: Placené
+        person_id: Zákazník
+        rating: Hodnocení
+        reminded_at: Odesláno připomenutí
+        reminder_at: Připomínka
+        resource_id: Zdroj
+        service_id: Servis
+        state: Postavení
+        status: Postavení
+        terms_accept: Schvaluji
+        terms_accepted: Schvaluji podmínky
+        terms_close: Blízko
+        terms_link: podmínky pro rezervaci
+        title: Titul
+        verification_code: Ověřovací kód
+      category:
+        parent_id: Nadřazená kategorie
+        title: Titul
+      client:
+        account_form: Vlastní pole účtu
+        address: Návštěvní adresa
+        allow_cancellation: Povolit zrušení zákazníkem
+        api_key: API klíč (pro externí integrace)
+        app_secret: Tajemství účtu
+        appointment_form: Vlastní pole rezervace
+        awaiting_confirmation_text: Text zobrazený při čekání na potvrzení rezervace
+        billing_city: Město
+        billing_country_code: Země
+        billing_email: E-mailová adresa pro fakturu
+        billing_id: ID ve fakturačním systému
+        billing_invoice: Zašlete fakturu místo kreditní karty
+        billing_name: Název společnosti
+        billing_order_ref: Referenční číslo vaší faktury
+        billing_payment_id: ID v platebním systému
+        billing_period: Měsíce do fakturace
+        billing_postal_code: Poštovní směrovací číslo
+        billing_state: Stát
+        billing_street: Adresa ulice
+        billing_vat_no: DIČ
+        booking_form: Vlastní rezervační formulář
+        booking_site_locale: Jazyk (Také ovládá formátování čísel a dat)
+        booking_site_person_form: Registrační formulář pro vlastní osobu
+        calendar_event_text: Zobrazit text pro rezervaci v kalendáři
+        cancellation_period: Lhůta pro zrušení
+        category_form: Vlastní pole kategorií
+        closed_for_holidays: Zavřeno o státních svátcích
+        confirm_manually: Rezervace musí být schválena administrátorem
+        country_code: Země
+        coupon_form: Pole pro vlastní kód kupónu
+        css_url: Vlastní CSS (URL musí být HTTPS)
+        currency: Měna
+        email: E-mailová adresa
+        email_notification: Dostávejte e-mailová upozornění na každou novou rezervaci
+        event_first_booking_period: Nepovolujte registrace na události, dokud
+        event_form: Vlastní pole událostí
+        event_last_booking_period: Nepovolovat registrace na události po
+        first_bookable_period: Neumožňovat rezervace do
+        footer: Zápatí
+        future_bookable_period: Neumožňovat rezervace po
+        gift_card_form: Vlastní pole dárkových karet
+        google_analytics: ID sledování Google Analytics
+        ical_description: Popis
+        ical_summary: Titul
+        interval_rounding: Výchozí zaokrouhlení na další dostupný čas rezervace
+        locale: Jazyk (Definuje také formátování čísel a data)
+        logo: Logo
+        mail_awating_confirmation: Odeslat SMS s potvrzením v e-mailu
+        mail_awating_confirmation_subject: Předmět v e-mailu s potvrzením čeká na odpověď
+        mail_cancellation: Text v e-mailu o zrušení
+        mail_cancellation_subject: Předmět e-mailu o zrušení
+        mail_confirmation: Text v potvrzovacím e-mailu
+        mail_confirmation_subject: Předmět v potvrzovacím e-mailu
+        mail_declined: SMS v odmítnutém e-mailu
+        mail_declined_subject: Předmět v odmítnutém e-mailu
+        mail_modification: Text v e-mailu s úpravami
+        mail_modification_subject: Předmět v e-mailu s úpravami
+        mail_notification_cancellation: Text v e-mailu s oznámením o zrušení
+        mail_notification_confirmation: Text v potvrzovacím e-mailu s oznámením
+        mail_notification_modification: Text v e-mailu s oznámením o úpravě
+        mail_notification_recipient: E-mailová adresa (adresy) pro oznámení
+        mail_request_payment: Text v e-mailu s žádostí o platbu
+        mail_request_payment_subject: Předmět v e-mailu s žádostí o platbu
+        mail_verification: Text v ověřovacím e-mailu
+        mail_verification_subject: Předmět v ověřovacím e-mailu
+        mailer_sender: Odesílatel e-mailu
+        message_template_form: Šablona zprávy
+        name: Název společnosti (zobrazený na rezervačním webu)
+        new_booking_text: Text zobrazený na potvrzovací stránce
+        next_invoice_nr: Další číslo faktury
+        no_availability_text: Text zobrazený, když není k dispozici
+        order_form: Vlastní pole objednávky
+        payment_provider: Výchozí poskytovatel plateb
+        person_form: Vlastní pole zákazníka
+        phone_number: Telefonní číslo
+        public_access: Rezervační stránka je veřejně dostupná
+        purge_data_period: Automatické mazání osobních údajů
+        reminder_sms: Posílat SMS připomenutí
+        require_terms_acceptance: Vyžadovat přijetí podmínek
+        reservation_form_text: Text zobrazený před rezervačním formulářem
+        resource_form: Vlastní pole zdrojů
+        service_form: Vlastní pole služeb
+        service_template: Styl kalendáře
+        slot_generation: Generování dostupných slotů
+        sms_awaiting_confirmation: SMS s textem čekajícím na potvrzení
+        sms_cancellation: Text v SMS zprávě o zrušení
+        sms_confirmation: Text v potvrzovací SMS
+        sms_declined: Text v odmítnuté SMS
+        sms_modification: Text v modifikační SMS
+        sms_notification: Dostávat SMS pro každou novou rezervaci
+        sms_notification_recipient: Telefonní číslo (čísla) pro oznámení
+        sms_reminder: Připomenutí v SMS zprávě
+        sms_reminder_time: Čas na SMS připomenutí
+        sms_request_payment: Text v SMS s požadavkem na platbu
+        sms_verification: Text v ověřovací SMS
+        subdomain: URL (subdoména)
+        template: Téma designu
+        templates:
+          amsterdam: Amsterdam
+          lviv: Lvov
+          timisoara: Temešvár
+        terms: Obchodní podmínky
+        time_zone: Časové pásmo
+        verification_method: Způsob ověření nových rezervací
+        website: Webové stránky
+        whatsapp_nr: Číslo odesílatele WhatsApp
+      client/slot_generation:
+        dynamic: Dynamické (výchozí)
+        fixed: Opraveno
+      client_user_link:
+        role: Úroveň přístupu
+      client_user_link/role:
+        admin: Plný přístup
+        manager: Základní nastavení
+        staff: Pouze kalendář
+      coupon:
+        active: Aktivní
+        allowed_booking_end_at: Nejzazší čas zahájení rezervace
+        allowed_booking_start_at: Nejbližší čas zahájení rezervace
+        availability: Dostupné kupóny
+        code: Kód
+        max_count: Maximální počet osob
+        max_order_amount: Maximální částka objednávky
+        min_count: Minimální počet osob
+        min_order_amount: Minimální částka objednávky
+        title: Titul
+        valid_from: Platné od
+        valid_until: Platné do
+        value: Hodnota slevy
+        value_type: Typ slevy
+      event:
+        all_day: Celý den
+        allow_invoice: povolit fakturu
+        booking_capacity: Maximální počet doprovodných osob povolených na rezervaci
+        booking_minimum: Minimální počet doprovodných osob požadovaných na rezervaci
+        capacity: Maximální počet obsluhy
+        description: Popis
+        ends_at: Končí v
+        first_booking_at: Žádné předchozí registrace
+        last_booking_at: Žádné registrace po
+        payment_required: Vyžaduje se platba předem
+        price: Cena včetně všech daní
+        published: Viditelné na rezervačním webu
+        resource_id: Zdroj
+        service_id: Typ události
+        starts_at: Začíná v
+        title_html: Zadaný název <small>je volitelný</small>
+      gift_card:
+        active: Aktivní
+        code: Kód
+        initial_value: Počáteční hodnota
+        person_id: Zákazník
+        valid_until: Platné do
+        value: Aktuální hodnota
+      message_template:
+        active: Aktivní
+        delivery_timing: Doručit v
+        delivery_type: Typ doručení
+        message_type: Typ zprávy
+        subject: Podrobit
+        template: Šablona
+      message_template/delivery_type:
+        email: E-mail
+        sms: SMS
+        whatsapp: WhatsApp
+      message_template/message_type:
+        confirmation: Potvrzení
+        follow_up: Následná opatření
+        reminder: Připomínka
+      person:
+        address: Adresa
+        blocked: Zablokováno pro rezervace
+        city: Město
+        country_code: Země
+        created_at: Registrováno v
+        date_of_birth: Datum narození (dd.mm.rrrr)
+        deactivated: Deaktivováno
+        email: E-mail
+        locale: Jazyk
+        name: Jméno
+        national_id_no: Číslo národního průkazu totožnosti
+        notes: Poznámky
+        opt_in_marketing: Získejte od nás informace
+        phonenumber: Číslo mobilního telefonu
+        postal_code: Poštovní směrovací číslo
+        provider: Připojeno k externímu účtu
+        state: Stát
+        street: Adresa ulice
+        tfso_company_id: ID zákazníka 24SO
+      resource:
+        capacity: Maximální počet rezervací najednou
+        mail_notification_recipient: E-mailová adresa (adresy) pro oznámení
+        sms_notification_recipient: Telefonní číslo (čísla) pro oznámení
+        title: Titul
+      service:
+        active_bookings_limit: Maximální počet aktivních rezervací
+        allow_cancellation: Povolit zrušení zákazníkem
+        allow_invoice: Povolit fakturu
+        availability_type: Dostupnost je definována
+        billing_period: Obnovuje se každých
+        block_resource: Rezervace zablokuje zdroj
+        booking_capacity: Maximální počet osob povolených na rezervaci
+        booking_form: Vlastní rezervační formulář
+        booking_minimum: Minimální počet osob potřebných k rezervaci
+        cancellation_period: Lhůta pro zrušení
+        capacity: Maximální počet obsluhy
+        confirm_manually: Rezervace musí být schválena administrátorem
+        description: Popis
+        has_day_booking: Denní rezervace
+        has_day_booking_label:
+          'false': min.
+          'true':
+            many: dny
+            one: den
+        interval: Trvání
+        interval_rounding: Zaokrouhlování na další dostupný čas
+        mail_awaiting_confirmation: Odeslat SMS s potvrzením v e-mailu
+        mail_cancellation: Text v e-mailu o zrušení
+        mail_confirmation: Text v potvrzovacím e-mailu
+        mail_declined: SMS v odmítnutém e-mailu
+        mail_modification: Text v e-mailu s úpravami
+        mail_request_payment: Text v e-mailu s žádostí o platbu
+        mail_verification: Text v ověřovacím e-mailu
+        max_slots: Maximální počet slotů na rezervaci
+        new_booking_text: Text zobrazený na potvrzovací stránce
+        next_interval: Volný slot každý
+        payment_required: Vyžaduje se platba předem
+        price: Cena včetně daní
+        priority_strategy: Prioritní strategie
+        published: Zobrazit na rezervačním webu
+        quota: Počet zahrnutých rezervací
+        reservation_form_text: Text zobrazený před rezervačním formulářem
+        same_day: Povolit rezervaci na více dní
+        slot_generation: Generování času
+        sms_awaiting_confirmation: SMS s textem čekajícím na potvrzení
+        sms_cancellation: Text v SMS zprávě o zrušení
+        sms_confirmation: Text v potvrzovací SMS
+        sms_declined: Text v odmítnuté SMS
+        sms_modification: Text v modifikační SMS
+        sms_reminder: Text v SMS připomínkách
+        sms_request_payment: Text v SMS s požadavkem na platbu
+        sms_verification: Text v ověřovací SMS
+        template: Šablona kalendáře
+        templates:
+          default: Výchozí
+          list: Seznam
+          month: Měsíc
+          resources: Zdroje
+          time_day_available: Den
+          week_available: Celý týden
+          week_calendar: Týdenní kalendář
+          weekday_available: Všední dny
+        terms: Obchodní podmínky
+        title: Titul
+        unlimited: Neomezený
+        validity_days: Počet dní platnosti po zakoupení
+      service/availability_type:
+        provider: Poskytovatel
+        resource: Zdroj (výchozí)
+      service/priority_strategy:
+        order: Objednávka
+        random: Náhodné (výchozí)
+        weight: Hmotnost
+      user:
+        current_password: Aktuální heslo
+        email: E-mail
+        name: Jméno
+        password: Heslo
+        password_confirmation: Potvrzení hesla
+        phonenumber: Telefonní číslo
+        rotp_verification_code: Ověřovací kód
+      web_hook:
+        event: Událost
+        target_url: Cílová URL adresa
+    link:
+      add: Přidat
+      back: Zadní
+      booking:
+        new: Nová rezervace
+      cancel_confirm: Jste si jisti, že chcete zrušit?
+      category:
+        new: Nová kategorie
+      confirm: Jsi si jistý/á?
+      coupon:
+        new: Nový kupón
+      create: Vytvořit
+      delete: Vymazat
+      delete_confirm: Jste si jisti, že chcete smazat?
+      edit: Upravit
+      event:
+        new: Nová událost
+        new_attendant: Přidat obsluhu
+      gift_card:
+        new: Nová dárková karta
+      message_template:
+        new: Nová šablona zprávy
+      person:
+        new: Nový zákazník
+        new_child: Nový zákazník
+      resource:
+        new: Nový zdroj
+      service:
+        new_addon: Nový doplněk
+        new_addon_title: Nový %{title}
+        new_appointment: Nová služba
+        new_attendance: Nový typ události
+        new_gift_card: Nová dárková karta
+        new_gift_card_title: Nový %{title}
+        new_pass: Nový průkaz
+        new_pass_title: Nový %{title}
+        new_product: Nový produkt
+        new_product_title: Nový %{title}
+        new_subscription: Nové předplatné
+        new_subscription_title: Nový %{title}
+      setup:
+        skip: Ruční nastavení
+        step_html: "<strong>Krok %{step}</strong> z %{max_steps}"
+      undelete: Obnovit
+      undelete_confirm: Jste si jisti, že chcete obnovit smazání?
+      user:
+        new: Nový uživatel
+      view: Pohled
+      web_hook:
+        new: Nový webhook
+    menu:
+      agenda: Program
+      calendar: Kalendář
+      logout: Odhlásit se
+      new_badge: Nový
+      orders: Objednávky
+      people: Zákazníci
+      profile: Profil
+      reports: Zprávy
+      setup: Nastavení
+      user_menu: Uživatelské menu
+    menu_setup:
+      addons: Doplňky
+      billing: Fakturace
+      bookingsite: Rezervační web
+      categories: Kategorie
+      communication: Sdělení
+      company: Účet
+      coupons: Kupóny
+      developer: Vývojář
+      export: Vývozní
+      fields: Vlastní pole
+      gift_cards: Dárkové karty
+      import: Importovat
+      integrations: Integrace
+      message_templates: Šablony zpráv
+      person_notifications: Oznámení - zákazník
+      products: Produkty
+      promote: Podporovat
+      resources: Zdroje
+      service_appointments: Služby
+      service_attendances: Typy událostí
+      sms_credits: SMS kredity
+      tools: Nástroje
+      user_notifications: Oznámení - uživatel
+      users: Uživatelé
+      ux: Uživatelská zkušenost
+    payment:
+      fields:
+        cvc: CVC
+        errors:
+          cvc: CVC kód není platný.
+          expiration: Datum expirace není platné.
+          number: Číslo karty není platné.
+        expiration_html: Platnost vyprší <small>(MM/RR)</small>
+        number: Číslo karty
+      header: Tento formulář bude zašifrován a bezpečně odeslán
+    person:
+      history:
+        last_visit: Poslední návštěva
+        new_customer: Nový zákazník
+        no_shows: Neúčastníci
+        since: od %{date}
+        summary:
+          last_visit: 'Poslední návštěva: %{date}'
+          no_shows:
+            one: "%{count} nedostavení se"
+            other: "%{count} neúčastí"
+          total_paid: 'Celkem zaplaceno: %{amount}'
+          visits_since: 'Návštěvy od %{date}: %{count}'
+        total_paid: Celkem zaplaceno
+        visits: Návštěvy
+    select:
+      prompt: Vyberte prosím
+    submit:
+      cancel: Zrušit
+      create: Vytvořit %{model}
+      submit: Uložit %{model}
+      submit_default: Uložit
+      update: Aktualizace %{model}
+      update_password: Změnit heslo
+  profile:
+    update:
+      locked_field_changed: Ověřená pole nelze změnit
+      success: Profil aktualizován
+  service:
+    admin:
+      invoice_client:
+        errors:
+          nothing_to_invoice: Účet není připraven k fakturaci. Ujistěte se prosím, že máte alespoň jeden zdroj.
+  title:
+    actions:
+      edit: Upravit
+      update: Aktualizovat
+  user:
+    password_reset:
+      expired: Platnost vypršela
+      no_email_found: Nenalezen žádný e-mail
+  valid_email:
+    validations:
+      email:
+        invalid: je neplatný
+  worker:
+    integration_slack:
+      fallback: V Makeplans byla provedena nová schůzka.
+      footer: Rozhraní API pro plánování
+      pretext: "%{person} si domluvil/a schůzku na %{booked_from}"
+      title: Zobrazit schůzku v Makeplans
+    integration_tfso_list_companies:
+      errors:
+        no_results: Nebyli nalezeni žádní stávající zákazníci.
+    integration_tfso_order:
+      errors:
+        already_created: Již vytvořeno.
+        no_company: Zákazník byl v aplikaci 24SevenOffice smazán. Pro pokračování je nutné zákazníka v aplikaci 24SevenOffice znovu aktivovat.
+        no_product: Produkt byl v aplikaci 24SevenOffice smazán. Než budete moci pokračovat, musíte produkt v aplikaci 24SevenOffice znovu aktivovat nebo službu propojit s novým produktem z Makeplans.
+        product_not_defined_on_service: Tato služba není propojena s žádným produktem v 24SevenOffice.

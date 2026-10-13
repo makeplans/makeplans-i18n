@@ -1,0 +1,87 @@
+---
+cs:
+  bookings:
+    awaiting_payment:
+      vipps_payment_failed: Platba byla zrušena. Zkuste to prosím znovu.
+    process_promote_waitlist:
+      slot_no_longer_available: Místo je nám líto, ale již není k dispozici. Stále jste na čekací listině.
+    verification_code:
+      incorrect_code: Nesprávný kód
+  clients:
+    new:
+      accept_terms_html: Registrací souhlasíte s podmínkami %{link}.
+      benefit_booking_site: Vaše vlastní online rezervační stránka, otevřená nepřetržitě.
+      benefit_calendar: Všechny vaše služby, zaměstnanci a schůzky v jednom kalendáři.
+      benefit_notifications: Automatická potvrzení a připomenutí e-mailem a SMS.
+      captcha_missing: Kontrola spamu se nedokončila. Odešlete prosím formulář znovu.
+      change: Přeměna
+      first_user: Toto je vaše osobní heslo. Později můžete přidat další uživatele.
+      free_trial_info: 14denní bezplatná zkušební verze. Bez závazků. Není vyžadována kreditní karta.
+      headline: Začněte s online rezervací
+      logged_in_as: Jste přihlášeni jako %{name}.
+      newsletter: Souhlasím se zasíláním aktualizací produktů e-mailem.
+      recaptcha: Omlouváme se za obtěžování, ale musíme ověřit vaši registraci pomocí Google ReCAPTCHA. Vyplňte prosím znovu heslo a poté formulář odešlete.
+      social_proof_caption: rezervace provedené od roku 2010
+      social_proof_figure: Více než 7 milionů
+      subdomain_info: Vaše unikátní adresa (URL), kde si vaši zákazníci mohou rezervovat online.
+      subdomain_label: Adresa vašeho rezervačního webu
+      subdomain_not_website_warning: 'Jejda: Toto je adresa vašeho nového rezervačního webu. NEZADÁVEJTE URL adresu vašeho stávajícího webu. V případě pochybností zde zadejte název vaší společnosti.'
+      submit: Vytvořit mou rezervační stránku
+      terms_link: obchodní podmínky
+      test_env_info_html: Vytvoříte si testovací účet? Informace o našem testovacím prostředí naleznete na %{link}.
+      title: Zaregistrujte si svůj online rezervační účet
+      user_email: Pracovní e-mail
+      user_info: Vaše uživatelské přihlášení
+      your_booking_site: 'Vaše rezervační stránka:'
+    rejected:
+      headline: Registrace zamítnuta
+      info: Omlouváme se, ale náš systém označil vaši registraci jako spam. Kontaktujte nás prosím pro registraci účtu.
+      title: Registrace zamítnuta
+  oauth:
+    callback:
+      header: Připojit k účtu
+  room_display:
+    setup:
+      header: Nastavení displeje v místnosti
+      instruction: Zadejte prosím instalační kód vygenerovaný v administrátorském panelu.
+      invalid_code: Neplatný kód
+      placeholder: Zadejte kód
+      submit: Aktivovat
+      title: Nastavení displeje v místnosti
+    show:
+      book: Rezervovat
+      find_room: Najít pokoj
+      free_all_day: Zdarma celý den
+      free_for: Zdarma pro %{duration}
+      occupied: Obsazený
+  user:
+    select_client:
+      header: Vyberte účet
+  user_password_resets:
+    create:
+      header: Obnovte si heslo
+      info: Nyní jsme vám odeslali e-mail. Pro potvrzení obnovení hesla musíte kliknout na odkaz v e-mailu.
+      signup_html: Nemáte účet? <a href="%{url}">Začněte hned.</a>
+    edit:
+      header: Zadejte prosím své nové heslo
+      signup_html: Nemáte účet? <a href="%{url}">Začněte hned.</a>
+      submit: Uložit heslo
+    new:
+      header: Zapomněli jste heslo?
+      signup_html: Nemáte účet? <a href="%{url}">Začněte hned.</a>
+      submit: Odeslat e-mail
+  user_sessions:
+    handle_authenticated_user:
+      success: Úspěšně přihlášen/a
+    new:
+      forgot_link: Zapomněli jste heslo?
+      header: Přihlášení
+      incorrect: Nesprávné přihlašovací údaje
+      login: Přihlášení
+      remember_me: Zapamatuj si mě
+      signup_html: Nemáte účet? <a href="%{url}">Začněte hned.</a>
+      title: Přihlášení
+    rotp_verification_code:
+      header: Přihlášení s dvoufaktorovým ověřováním
+      info: Použijte kód vygenerovaný vaší 2FA aplikací.
+      submit: Přihlášení

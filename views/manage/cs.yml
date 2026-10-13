@@ -1,0 +1,1673 @@
+---
+cs:
+  layouts:
+    design:
+      activate_account_footer: Zbývá %{days_left} dní zkušební verze. Kliknutím aktivujete.
+      trial_expired: Tvůj soudní proces skončil.
+  manage:
+    agenda:
+      calendar:
+        availability: Upravit dostupnost pro toto období
+        ignore_capacity_confirm: V tomto časovém rámci již existuje jiná rezervace. Opravdu ji chcete uložit?
+        listWeek: seznam
+        opening_hours:
+          add: "+ přidat"
+          add_to_existing: "+ přidat"
+          all_resources: Vše %{resources}
+          closed_all_week: Zavřeno po celou dobu
+          dates: Data
+          from: Z
+          no_items: Aktuálnímu filtru neodpovídají žádné zdroje.
+          open: OTEVŘENO
+          remove_existing: odstranit
+          reset: Obnovit
+          resource_default: "%{resource} (výchozí)"
+          title: Upravit dostupnost
+          to: Na
+        resourceTimeGridDay: den (rozdělený)
+        resourceTimelineDay: časová osa
+        resources: Zdroje
+        services: Služby
+      list:
+        all_day: Celý den
+        awaiting_status:
+          one: Chybí stav rezervace %{count}.
+          other: Chybí stav rezervací %{count}.
+        busy: Zaneprázdněný
+        filter: Filtrování
+        nav:
+          day: Den
+          list: Seznam
+          month: Měsíc
+          next: Další
+          previous: Předchozí
+          today: Dnes
+          week: Týden
+        no_reservations: Žádné rezervace
+        overview: Přehled
+        period: Období
+        reset_filter: Obnovit filtr
+        resources: Zdroje
+        services: Služby
+        sort_latest: Nejnovější změny
+        sort_newest: Nové rezervace
+        state: Stát
+        status: Stav docházky
+        tab_awaiting_confirmation: Čeká se na potvrzení
+        tab_waitlist: Pořadník
+        waitlist_note: "+%{count} na čekací listině"
+    billing:
+      charge:
+        charge_details: Na základě aktuálního využití vám budeme každý měsíc strhávat částku %{price} z kreditní karty.
+        charge_details_default: Měsíční cena za zdroj je %{price}.
+        charge_details_sms: 'Také vám bude účtováno za využití SMS: %{price}.'
+        process: Dokončit platbu
+        processing: Prosím, čekejte...
+      credit_card_form:
+        billing_info: Po přidání údajů o vaší kreditní kartě vám budeme každý měsíc strhávat platbu na základě cen uvedených na našich webových stránkách. První transakce bude provedena okamžitě. Předplatné můžete kdykoli zrušit.
+        header: Platební informace
+        trial_expired: Vaše zkušební doba vypršela. Aktivujte si prosím účet, abyste mohli Makeplans nadále používat.
+      credit_card_info:
+        header: Zadejte údaje o kreditní kartě
+        submit: Uložit kreditní kartu
+      edit_invoice_info:
+        activate_info: Pro dokončení aktivace účtu prosím vyplňte tento formulář
+        billing_email_info: Pokud chcete, abychom fakturu zaslali e-mailem na jinou e-mailovou adresu než %{email}, zadejte prosím e-mailovou adresu zde.
+        billing_name_info: Pokud chcete, abychom fakturovali jiné společnosti než %{name}, zadejte prosím její název zde.
+        header: Vaše fakturační údaje
+      info:
+        add_link: Aktivace účtu - Zadejte údaje o kreditní kartě
+        add_new_link: Chcete aktualizovat údaje o své kreditní kartě?
+        billing_info: Obdržíte od nás fakturu, kterou musíte ručně uhradit.
+        billing_order_ref: 'Faktura bude obsahovat vaši referenci: %{billing_order_ref}'
+        billing_period_info: Bude vám účtováno %{period} měsíců.
+        change_from_invoice: Zadejte údaje o své kreditní kartě, abyste nemuseli platit ručně pokaždé, když vám fakturujeme účet.
+        charge_details: Na základě aktuálního využití vám budeme každý měsíc strhávat částku %{price} z kreditní karty.
+        charge_details_default: Měsíční cena za zdroj je %{price}.
+        charge_details_sms: 'Také vám bude účtováno za využití SMS: %{price}.'
+        current_info: Údaje o vaší kreditní kartě jsou bezpečně uloženy u našeho fakturačního partnera Stripe. Vaše uložená karta je %{brand} s číslem končícím na %{last_4} a její platnost vyprší %{expire_month}/%{expire_year}.
+        demo_ends_at: Váš účet bude automaticky deaktivován dne %{demo_ends_at}.
+        edit_info_link: Chcete upravit své fakturační údaje?
+        edit_link: Chcete aktualizovat údaje o své kreditní kartě?
+        email_recipent: Fakturu zašleme e-mailem na adresu %{email}.
+        header: Platební údaje
+        info_header: 'Vaše fakturační údaje:'
+        invoice_history: Zobrazit minulé faktury
+        paid_until: Váš účet je zaplacen do %{paid_until}.
+        pause: Pozastavit účet po skončení aktuálního předplatného.
+        pause_confirm: Opravdu chcete účet pozastavit? Účet bude automaticky deaktivován dne %{paid_until}.
+        reactivate: Váš účet je momentálně ve zkušebním režimu. Abyste mohli Makeplans nadále používat, musíte jej znovu aktivovat.
+        reactivate_confirm: Jste si jisti, že chcete znovu aktivovat účet, který jste pozastavili? Z účtu bude příště stržena částka %{paid_until}.
+        reactivate_link: Znovu aktivovat účet
+        reseller_billing_info: Fakturaci za váš účet spravuje váš prodejce.
+        sms_credits_available: Máte zůstatek %{credits} SMS.
+        vat_no: DIČ je %{vat_no}
+        vat_no_missing: Zadáno DIČ.
+      paying_account_required:
+        activate_account: Aktivujte účet nyní
+        info: Tato funkce vyžaduje aktivaci vašeho účtu.
+      processing:
+        activated: Váš účet je nyní aktivován :) Děkujeme, že používáte Makeplans.
+        error: Platbu nelze ověřit. Kontaktujte prosím zákaznický servis.
+        info: Počkejte prosím, než vám strhneme platbu z platební karty. Může to trvat až jednu minutu. Po dokončení procesu od nás obdržíte e-mail.
+    bookings:
+      cancel_recurring:
+        headline: Všechny budoucí rezervace v rámci tohoto opakujícího se vzoru byly odstraněny.
+        list_recurring: Viz seznam rezervací v rámci tohoto opakujícího se vzoru.
+      create_recurring:
+        headline: Generování %{count} rezervací...
+        link: Zobrazit seznam
+      delivery_status:
+        channel:
+          email: e-mail
+          sms: SMS
+        failed: 'Odeslání od %{channel} selhalo %{time}: %{error}'
+        sent: Odeslal(a) %{channel} %{time}
+      destroy_recurring:
+        headline: Všechny rezervace v rámci tohoto opakujícího se vzoru byly odstraněny.
+      feed:
+        info:
+          header: iCalendar-feedy
+          ical:
+            activated: Přístup k událostem ve vašem účtu s iCalendarem je aktivován. Odkazy na kanály iCalendaru jsou k dispozici. Nesdílejte odkazy.
+            disable: Deaktivace účtu iCalendar-feedy
+            enable: Aktivace účtu iCalendar-feedy
+            future_html: 'Budoucí rezervace: %{link}'
+            info: iCalendar-feed zobrazí schůzky z vašeho účtu v jiných kalendářových aplikacích, jako je Microsoft Outlook, Google Calendar, iPhone nebo Android. Pouze pro čtení, všechny změny musí být provedeny v Makeplans.
+            not_activated: Neaktivováno
+            past_html: 'Minulé rezervace: %{link}'
+      fiken:
+        delayed_info: Vytvoření objednávky ve Fikenu bude nějakou dobu trvat. Pokud v Makeplans nejsou viditelné žádné informace z Fikenu, nepokoušejte se objednávku znovu generovat.
+        header: Kontaktování Fikena...
+        to_booking: Zobrazit rezervaci
+      form_appointment:
+        add_reminder_sms: Odeslat SMS připomenutí
+        confirmation_send_email: Odeslat potvrzovací e-mail
+        confirmation_send_sms: Odeslat potvrzovací SMS
+        customer_info: Údaje o zákazníkovi
+        email: E-mail
+        first_available: První k dispozici
+        headline_create: Přidat novou rezervaci
+        headline_create_recurring: Přidat novou rezervaci
+        headline_edit: Upravit rezervaci
+        headline_new: Přidat novou rezervaci
+        headline_update: Upravit rezervaci
+        ignore_capacity: Uložte, i když je obsazeno
+        modification_send_email: Odeslat úpravu e-mailu
+        modification_send_sms: Odeslat SMS s úpravou
+        no_customer: |-
+          Není zadán žádný zákazník!
+           Tuto rezervaci jste nastavili jako rezervaci zákazníka, ale neurčili jste zákazníka.
+           OK: Pokračujte a nastavte tuto rezervaci jako rezervaci bez objednání.
+          Zrušit: Vraťte se zpět a zadejte zákazníka.
+        no_service: Nebyla vybrána žádná služba
+        notification_send_email: Odeslat e-mailové oznámení
+        notification_send_sms: Odeslat SMS oznámení
+        person_create_info: Vyhledejte stávajícího zákazníka nebo vytvořte nového zadáním jména.
+        person_none_selected: Žádný zákazník nebyl vybrán
+        recurring_enabled: Opakujte se vzorem
+        recurring_member: Tato rezervace je součástí opakujícího se vzorce.
+        reservation_type_drop_in: Bezbariérový přístup
+        reservation_type_other: Zaneprázdněný
+        reservation_type_person: Rezervace zákazníka
+        send_confirmation: 'Potvrzení:'
+        send_modification: 'Modifikace:'
+        send_notification: 'Oznámení:'
+        send_reminder: 'Připomínka:'
+        sms: SMS
+      form_attendance:
+        add_reminder_sms: Odeslat SMS připomenutí
+        confirmation_send_email: Odeslat potvrzovací e-mail
+        confirmation_send_sms: Odeslat potvrzovací SMS
+        email: E-mail
+        headline_create: Přidat obsluhu
+        headline_edit: Upravit rezervaci
+        headline_new: Přidat obsluhu
+        headline_update: Upravit rezervaci
+        modification_send_email: Odeslat úpravu e-mailu
+        modification_send_sms: Odeslat SMS s úpravou
+        notification_send_email: Odeslat e-mailové oznámení
+        notification_send_sms: Odeslat SMS oznámení
+        person_create_info: Vyhledejte stávajícího zákazníka nebo vytvořte nového zadáním jména.
+        person_none_selected: Žádný zákazník nebyl vybrán
+        send_confirmation: 'Potvrzení:'
+        send_modification: 'Modifikace:'
+        send_notification: 'Oznámení:'
+        send_reminder: 'Připomínka:'
+        sms: SMS
+      no_status:
+        headline: Seznam rezervací bez statusu
+        no_reservations: Žádné rezervace bez statusu
+      promote:
+        promote_failed: Nelze propagovat rezervaci z čekací listiny
+      show:
+        amount: Celková cena
+        audit:
+          changed_attributes: 'Změněné atributy: %{attributes}'
+          execution_mode:
+            api: pomocí API
+            automated: automatizovaný
+            customer: zákazníkem
+            gui: v grafickém rozhraní
+        booked_from: Z
+        booked_to: Na
+        count: Počet osob
+        created_by: Vytvořil(a) %{user}
+        fiken:
+          create_invoice: Vytvořit fakturu ve Fikenu
+          created: Faktura je vytvořena ve Fikenu
+          open_invoice: Otevřená faktura ve Fikenu
+          processing: Ve Fikenu se vytváří faktura. Může to trvat několik minut.
+        log: Protokol
+        message:
+          enqueued: zařazeno do fronty
+          failed: selhal
+          sent: odesláno
+          state: stát
+        messages: Zprávy
+        order: Objednávka
+        paid_with:
+          braintree: Placeno přes Braintree
+          frontgo: Placeno přes FrontGO
+          stripe: Placeno přes Stripe
+          vipps: Placeno s VIPPs
+        performed_by: od uživatele %{name}
+        person:
+          address: Adresa
+          email: E-mail
+          history: Dějiny
+          phone_number: Telefonní číslo
+        recurring_member: Tato rezervace je součástí opakujícího se vzorce.
+        refund: Vrácená zaplacená částka
+        refunded_with:
+          frontgo: Vráceno přes FrontGO
+          stripe: Vráceno přes Stripe
+          vipps: Vráceno přes VIPPS
+        request_card:
+          processing: Žádost o kartu se odesílá zákazníkovi
+          send: Odeslat žádost o kartu zákazníkovi
+        request_payment:
+          processing: Platební odkaz je odesílán zákazníkovi
+          send: Odeslat zákazníkovi platební odkaz
+        send_sms: Odeslat SMS
+        show_in_calendar: Zobrazit v kalendáři
+        stripe:
+          pay: Plaťte se Stripe
+          processing: Transakce se zpracovává. Může to trvat až 1–2 minuty.
+        tfso:
+          create_invoice: Vytvořte objednávku v 24SevenOffice
+          open_invoice: Otevřít objednávku v 24SevenOffice
+          processing: Objednávka se vytváří v 24SevenOffice. Může to trvat několik minut.
+        vipps:
+          awaiting: Žádost o platbu VIPPS odeslána. Čeká se na odpověď.
+          processing: Zpracování
+          send_request: Odeslat žádost o platbu VIPP
+        visma_eaccounting:
+          create_invoice: Vytvořte objednávku ve Visma eAccounting
+          created: Faktura je vytvořena ve Visma eAccounting
+          processing: Objednávka se vytváří ve Visma eAccounting. Může to trvat několik minut.
+        whereby:
+          start_meeting: Zahájení schůze Whereby
+        zoom:
+          start_meeting: Zahájit schůzku na Zoomu
+      show_recurring:
+        cancel_all_future: Zrušit všechny budoucí schůzky
+        delete_all: Smazat vše
+        headline: Všechny opakující se rezervace v rámci tohoto vzoru
+      state_changer:
+        state: Stát
+      status_changer:
+        cancel: Zrušit rezervaci
+        status: Nastavit stav
+      unconfirmed:
+        headline: Seznam výhrad ke schválení
+        no_reservations: Žádné rezervace vyžadující schválení
+      widget:
+        booked_from: Z
+        booked_to: Na
+        description: Popis
+        person:
+          address: Adresa
+          email: E-mail
+          phone_number: Telefonní číslo
+      widget_list:
+        busy: Zaneprázdněný
+        no_bookings: Žádné existující rezervace pro %{start}.
+        no_bookings_range: Žádné existující rezervace od %{start} do %{end}.
+    categories:
+      blank:
+        get_started: Momentálně jste nevytvořili žádné kategorie. Všechny služby jsou proto uvedeny v seznamu na rezervačním webu. Pokud chcete své služby kategorizovat, začněte vytvořením kategorie.
+        header: Kategorie
+        info: Pokud nabízíte mnoho služeb, je možné je kategorizovat do několika úrovní. Kategorie se zobrazí na rezervačním webu, takže si zákazník musí vybrat kategorii, než se mu zobrazí služby v dané kategorii. Službu je možné zobrazit ve více kategoriích.
+        no_categories: Žádné kategorie nebyly přidány
+      category_order:
+        description: Přetažením kategorií nastavíte pořadí jejich zobrazení na rezervačním webu. Kategorie bez hodnoty objednávky se zobrazí jako poslední a budou seřazeny abecedně.
+        header: Řazení kategorií
+        parent_category: Nadřazená kategorie
+      form:
+        booking_type_appointment: Schůzky
+        booking_type_attendance: Účast
+        booking_type_gift_card: Dárkové karty
+        booking_type_pass: Průkazy
+        booking_type_product: Produkty
+        booking_type_subscription: Předplatné
+        has_services: Zobrazuje tyto služby
+        no_parent_id: NEJVYŠŠÍ ÚROVEŇ
+        settings:
+          standalone: Samostatná kategorie
+      index:
+        header: Kategorie
+        order_button: Objednávka
+        order_subcategories: Objednat podkategorie
+      list_menu:
+        list: Kategorie
+      priority:
+        description: Přetažením služeb nastavíte pořadí jejich zobrazení na rezervačním webu. Služby bez hodnoty objednávky se zobrazí jako poslední a budou seřazeny abecedně.
+        header: Objednávka služby pro %{title}
+      show:
+        custom_data: 'Vlastní data:'
+        has_services: 'Zobrazuje tyto služby:'
+        priority_button: Objednávka
+        qr_code: QR kód pro zákazníky
+        show_on_booking_site: Otevřená služba na rezervačním webu
+    chats:
+      form:
+        credit_info: Každá zpráva stojí 1 SMS kredit.
+        send: Poslat
+        window_closed: WhatsApp umožňuje odpovědi pouze do 24 hodin od poslední zprávy zákazníka. Požádejte zákazníka, aby vám znovu napsal přes WhatsApp, nebo ho kontaktujte SMS zprávou, e-mailem či telefonicky.
+      index:
+        headline: Odpovědi na WhatsAppu
+      replies:
+        empty: Zatím jsem neobdržel žádné odpovědi na WhatsApp.
+      show:
+        headline: Chat na WhatsAppu s %{name}
+      thread:
+        booking: Rezervace
+        empty: S tímto zákazníkem zatím žádné zprávy.
+    client:
+      addons:
+        addons:
+          custom_domain: Vlastní doména
+          custom_email_sender: Vlastní odesílatel e-mailů
+          custom_sms_sender: Vlastní ID odesílatele SMS
+        header: Doplňky
+        info: Nabízíme různé placené doplňky, které si můžete aktivovat. V případě jakýchkoli dotazů nás prosím kontaktujte.
+      api:
+        disable: Chcete API deaktivovat?
+        disable_warning: Jste si jisti, že chcete API deaktivovat? Klíč API se stane neplatným a API nebude k dispozici.
+        enable: Chcete povolit API?
+        enable_warning: Jste si jisti, že chcete aktivovat API? Klíč API vám poskytuje plný programový přístup k vašemu účtu.
+        enabled: API je povoleno.
+        header: API
+        info_html: Pro pomoc kontaktujte zákaznický servis. Dokumentace je k dispozici na adrese <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a> .
+        not_enabled: API není povoleno.
+      cancel:
+        confirm_message: Poslední šance. Jste si naprosto jistý/á, že chcete smazat svůj účet i se všemi daty?
+        disable_link: Ano, prosím smažte všechna moje data.
+        header: Jste si jisti, že chcete smazat svůj účet?
+        i_love_makeplans: Ne, chci Makeplans používat i nadále.
+        info: Všechna data ve vašem účtu budou smazána. Opravdu chcete pokračovat?
+        pause: Raději byste si pozastavili účet? Nebudete platit žádný měsíční poplatek a váš účet bude k dispozici, až budete chtít Makeplans znovu používat.
+        pause_link: Svůj účet můžete pozastavit na stránce fakturace.
+      change_time_zone:
+        edit:
+          header: Změnit časové pásmo
+          info: 'POZNÁMKA: Tato funkce aktualizuje časy všech rezervací a zpráv na základě nového časového pásma. Používání je na vlastní nebezpečí.'
+        in_process:
+          header: Probíhá změna časového pásma
+          info: Všechny rezervace a zprávy budou brzy aktualizovány. Tuto funkci *nespouštíjte* znovu.
+      configuration:
+        header: Nastavení plánů
+        intro: Zde si můžete nakonfigurovat Makeplans a zjistit, jak by měl pro vás fungovat. Můžete přidávat služby a kategorie, které nabízíte na rezervačním webu, upravovat dostupnost, měnit odesílané zprávy (SMS a e-mail), přidávat další uživatele a upravovat mnoho dalších nastavení v Makeplans.
+        menu_info: Vyberte z nabídky na levé straně. Máte-li jakékoli dotazy ohledně provedení úprav, kontaktujte zákaznický servis.
+        trial_info: Toto je zkušební účet - klikněte sem pro aktivaci
+      developer:
+        show:
+          api: API
+          embed: Vložit
+          mcp: MCP - Asistenti umělé inteligence
+          web_hooks: Webhooky
+      domains:
+        cname:
+          cancel: Zrušit tuto žádost o doménu
+          header: Přidat DNS záznam
+          info: Prosím, přidejte do své domény následující DNS záznam.
+          record: CNAME %{domain} s hodnotou %{cname}
+          verify: Ověření DNS
+        info:
+          add: Přidejte svou doménu
+          header: Používejte svou vlastní doménu
+          info: Pro rezervační web můžete použít vlastní doménu. Měsíční poplatek je %{price}
+        new:
+          domain: Vaše doména
+        show:
+          delete: Přestat používat tuto vlastní doménu
+          header: Používáte vlastní doménu
+          info: Vaše rezervační stránka je k dispozici na adrese %{domain}
+      edit:
+        custom_messages_info_html: Zde můžete sloučit relevantní data. Více informací naleznete na <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">adrese https://github.com/makeplans/makeplans-custom-messages</a> .
+      edit_booking_site:
+        booking_form_info_html: Pro pomoc kontaktujte zákaznický servis. Dokumentace je k dispozici na<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">adrese https://github.com/makeplans/makeplans-custom-forms</a> .
+        booking_site_info_html: Vaše rezervační stránka je k dispozici na adrese %{url}.
+        booking_site_locale_default: Použít jazyk účtu
+        booking_site_locale_mode_multiple: Povolit více jazyků (návštěvníci si mohou přepínat)
+        booking_site_locales_info: Vyberte, mezi jakými jazyky mohou návštěvníci na rezervačním webu přepínat
+        booking_site_person_form_info_html: Přizpůsobte si registrační formulář pro osoby pro témata Temešvár a Lvov. Používá stejnou syntaxi jako rezervační formulář.
+        cancellation: Zrušení
+        cancellation_info: Storno rezervace lze provést pouze před uplynutím lhůty pro zrušení rezervace. Rezervace s platbou předem stornovat nelze.
+        cancellation_period_info: 'Příklad: „24 hodin předem“ (storno rezervace možné pouze 24 hodin před začátkem). Při nastavování data je nutné zadat celý rok.'
+        event_first_booking_period_info: 'Pouze pro události. Čas se vztahuje k zahájení události. Příklad: „2 týdny před“ (registrace se otevírají dva týdny před začátkem události). Používá se jako výchozí nastavení při vytváření nových událostí. Každou událost lze přepsat nebo odstranit.'
+        event_last_booking_period_info: 'Pouze pro události. Čas se vztahuje k začátku události. Příklad: „2 hodiny před“ (registrace se uzavírají dvě hodiny před začátkem události). Používá se jako výchozí nastavení při vytváření nových událostí. Každou událost lze přepsat nebo odstranit.'
+        first_bookable_period_info: 'Příklad: „za dvě hodiny“ (první dostupný čas bude za dvě hodiny) nebo „zítra v 8:00“ (první dostupný čas bude zítra ráno v 8:00). Při nastavování data je nutné zadat celý rok.'
+        future_bookable_period_info: 'Příklad: „za dva měsíce“ (rezervace možná pouze na následující dva měsíce) nebo „v pátek o půlnoci“ (rezervace možná pouze před páteční půlnocí). Při nastavování data je nutné zadat celý rok.'
+        header: Aktualizace rezervačního webu
+        interval_rounding:
+          default: Výchozí nastavení systému (nejbližší půlhodina)
+          five: Nejbližší 5minutová hranice
+          halfhour: Nejbližší půlhodina
+          hour: Nejbližší hodina
+          none: Bez zaokrouhlování (nedoporučuje se)
+          quarter: Nejbližší čtvrtina
+          ten: Nejbližší desetiminutová hranice
+          twenty: Nejbližší 20minutová hranice
+        remove_logo: Odebrat logo
+        settings:
+          active_bookings_limit: Maximální počet aktivních rezervací pro zákazníka
+          disable_person_cookie: Nedovolit zákazníkovi zůstat přihlášeným pomocí cookies
+          event_template: Šablona kalendáře pro události
+          fully_booked_text: Text pro plně obsazené termíny
+          google_tag_manager: ID kontejneru Správce značek Google
+          past_text: Text pro sloty v minulosti
+          person_oauth_auto_create: Automaticky vytvořit profil zákazníka z přihlašovacích údajů poskytovatele třetí strany (přeskočit registrační formulář)
+          plausible: Povolit věrohodnou analýzu
+          prevent_new_signups: Povolit rezervace pouze od stávajících zákazníků
+          rating_scale: Hodnotící stupnice
+          rating_scale_default: Výchozí (1-%{scale})
+          rating_scale_info: Kolik kroků si zákazník může vybrat při hodnocení rezervace. Již udělená hodnocení se ukládají jako zvolené číslo, takže změna stupnice ovlivňuje význam starších hodnocení.
+          rating_scale_option: 1-%{scale}
+          show_all_events_calendar: Zobrazit všechny události v jednom kalendáři
+          waitlist_enabled: Povolit čekací listinu pro plně obsazené termíny a události
+          waitlist_promotion_mode: Režim propagace na čekací listině
+          waitlist_promotion_modes:
+            auto: Automaticky propagovat prvního v pořadí
+            default: Výchozí nastavení systému (automaticky povýšit prvního v pořadí)
+            notify_all: Upozornit všechny na čekací listině
+          waitlist_text: Text pro časové úseky s čekací listinou
+        verification_methods:
+          email: E-mail
+          facebook: Také povolte ověření pomocí Facebook Connect.
+          id_porten: ID port (BankID)
+          none: Bez ověření (nedoporučuje se)
+          sms: SMS (doporučeno)
+          vipps: VIPP
+        verification_methods_alt: 'Další metody:'
+      edit_communication:
+        email: E-mail
+        header: Úprava odchozí komunikace
+        ical: iKalendář
+        mailer_sender_valid_domain: Ověřili jste doménu %{domain} a Makeplans bude vaším jménem odesílat e-maily na této doméně. Ostatní e-mailové adresy budou uvedeny jako adresy pro odpověď.
+        message_template_info: Toto jsou vestavěné starší zprávy. Pro podporu více zpráv a větší kontrolu použijte funkci deseti zpráv.
+        settings:
+          custom_email_sending: Zcela přepsat e-maily níže uvedeným obsahem (jinak se obsah pouze vloží do standardního e-mailu)
+          custom_sms_sending: Úplně přepsat SMS níže uvedeným obsahem (jinak se obsah pouze vloží do standardní SMS)
+          dont_include_icalendar_attachment: Nepřidávat přílohu iCalendar
+        sms: SMS
+        whatsapp: WhatsApp
+        whatsapp_info: Odesílejte potvrzení rezervací a připomínky na WhatsApp a dostávejte odpovědi od svých zákazníků. WhatsApp je nastaven ve spolupráci s podporou MakePlans – kontaktujte nás, abyste mohli začít. Šablony zpráv musí být schváleny společností Meta a jsou registrovány v každé šabloně zprávy.
+      edit_company:
+        delete_account_html: Jste si jisti, že chcete smazat svůj účet? <a href="%{link}">Ano, pokračovat.</a>
+        delete_label: Smazat účet
+        domain_info: Je možné použít vlastní URL adresu, například booking.VAŠEDOMÉNA.com, pro více informací kontaktujte zákaznický servis.
+        header: Upravit informace o účtu
+        payment_provider:
+          info_html: Před dokončením rezervace na rezervačním webu je možné požadovat platbu pomocí jednoho z integrovaných poskytovatelů plateb. Doporučujeme <a href="https://stripe.com" target="_blank" class="link-external">Stripe</a> , což je dobrá služba, se kterou můžete rychle začít bez jakýchkoli fixních nákladů. V sekci „Integrace“ je také nutné zadat požadované informace o vybraném poskytovateli plateb.
+          none: Žádný
+        purge_data_info: 'Tato funkce automaticky smaže staré osobní identifikační údaje (zákazníky a rezervace). Zadejte text pro datum smazání vzhledem k aktuálnímu datu. Příklad: „před 6 měsíci“ nebo „před 2 lety“.'
+        subdomain_info: Vaše unikátní adresa (URL), kde si vaši zákazníci mohou rezervovat
+      edit_fields:
+        appointment_form_info: Tento formulář je určen pouze pro ruční zadávání rezervací. Chcete-li upravit rezervační formulář na rezervačním webu, proveďte to v nastavení „Rezervační web“. Pokud vlastní rezervační formulář používá vlastní pole, měla by být tato pole zahrnuta i zde.
+        booking_form_info: Pro úpravu přejděte do nastavení rezervačního webu.
+        custom_form_info_html: Pro pomoc kontaktujte zákaznický servis. Dokumentace je k dispozici na<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">adrese https://github.com/makeplans/makeplans-custom-forms</a> .
+        header: Upravit vlastní pole
+      edit_person_notifications:
+        automatic_messages: Automatické zprávy (v administračním systému a API)
+        automatic_messages_booking_site: Automatické zprávy (na rezervačním webu)
+        awaiting_confirmation_email: Odeslat e-mail, když je nutné rezervaci potvrdit
+        awaiting_confirmation_sms: Odeslat SMS, když rezervace vyžaduje potvrzení
+        booking_site_manual_confirmation_message: Odeslat zprávu ohledně ručního potvrzení
+        booking_site_message: Odeslat zprávu na rezervačním webu
+        booking_site_outgoing_messages_info: Makeplans ve výchozím nastavení odešle zprávu o důležitých událostech, například potvrzovací zprávu, s použitím ověřovací metody, například SMS s ověřením SMS, nebo pomocí e-mailu, pokud používáte jiné/žádné ověření.
+        cancellation_email: Odeslat e-mail při zrušení rezervace
+        cancellation_sms: Odeslat SMS při zrušení rezervace
+        confirmation_email: Odeslat e-mail při vytváření rezervace
+        confirmation_sms: Odeslat SMS při vytváření rezervace
+        default: Automatické na základě metody ověření
+        default_reminder_sms: Automatické na základě nastavení pro odesílání připomenutí
+        disable: Deaktivovat
+        enable: Aktivovat
+        header: Oznámení zákazníkům
+        manual_confirmation: Odeslat zprávu po ověření rezervace
+        manual_confirmation_message: Odeslat zprávu ohledně ručního potvrzení
+        message_template_info: Toto je vestavěná starší připomínka. Pro více připomínek a větší kontrolu použijte funkci deseti plat pro zprávy.
+        modification_email: Odeslat e-mail při úpravě rezervace
+        modification_sms: Odeslat SMS při úpravě rezervace
+        outgoing_messages_info: 'Makeplans vám při vytváření, úpravě nebo zrušení rezervace navrhne odeslání e-mailu/SMS (ať už nastavíte jako metodu ověření). Některé zprávy, například o zrušení, se odesílají automaticky. Automatické zprávy můžete deaktivovat (například při přesunutí rezervace přetažením v kalendáři, zrušení nebo vytvoření nové rezervace pomocí API) nebo deaktivovat návrh na odesílání zpráv ve formuláři změnou níže uvedeného nastavení. Poznámka: Toto se netýká rezervačního webu. Rezervační web bude vždy automaticky odesílat zprávy na základě vámi zvolené metody ověření.'
+        reminder_sms: Odeslat SMS s připomínkou
+        reminder_sms_info: Výchozí jméno odesílatele je „Makeplans“. Chcete-li jméno odesílatele změnit, přejděte do sekce „Doplňky“.
+        sms_reminder_time_info: 'SMS s připomenutím se standardně odesílá v poledne den před rezervací. Pokud chcete toto změnit, upravte prosím pole níže. Příklad: „dvě hodiny před“ (SMS se odesílá dvě hodiny před rezervací) nebo „8:00 včera“ (SMS s připomenutím bude odeslána v 8:00 den před rezervací).'
+      edit_user_notifications:
+        approvement_email: E-mailové upozornění na nové žádosti o rezervaci
+        approvement_sms: SMS upozornění na nové požadavky na rezervaci
+        automatic_messages: Automatické zprávy
+        custom_content: Vlastní obsah oznámení
+        default: Aktivní (výchozí)
+        disable: Zakázáno
+        email: E-mail
+        header: Oznámení uživatelů
+        mail_notification_confirmation: E-mail s potvrzením oznámení
+        mail_notification_info: Chcete-li upozornit více než jednu osobu, oddělte prosím e-mailové adresy středníkem.
+        notification_email: E-mailové upozornění na novou rezervaci
+        notification_sms: SMS upozornění na novou rezervaci
+        outgoing_messages_info: Pokud jste si nastavili ruční schvalování nových rezervací z rezervačního webu, budete o každé nové žádosti o rezervaci informováni e-mailem. Pokud si nepřejete tato oznámení dostávat nebo pokud se schvalování provádí pomocí externí aplikace (API), je možné tuto funkci níže deaktivovat.
+        settings:
+          custom_email_user_sending: Zcela přepsat e-maily níže uvedeným obsahem (jinak se obsah pouze vloží do standardního e-mailu)
+        sms: SMS
+        sms_notification_info: Chcete-li upozornit více osob, oddělte telefonní čísla středníkem.
+      edit_ux:
+        calendar: Kalendář
+        header: Uživatelská zkušenost
+        info: Vizuální nastavení
+        misc: Smíšený
+        naming: Vlastní tituly
+        settings:
+          booking_requires_status: Zobrazit odkaz na rezervace bez statusu v agendě
+          booking_site_order_flow: Použijte nový proces objednávek na rezervačním webu
+          calendar_hide_weekends: Skrýt víkendy
+          calendar_prevent_slot_event_overlap: Zabránění překrývání událostí
+          calendar_slot_duration: Délka slotu
+          calendar_slot_label_interval: Interval označení slotu
+          no_show_warning_threshold: Upozornit, když se zákazník nedostaví tolikkrát
+          resource_title: Název vlastního zdroje
+          service_addon_title: Vlastní název doplňku
+          service_appointment_title: Název vlastní služby
+          service_attendance_title: Název vlastního typu události
+          service_gift_card_title: Název vlastní dárkové karty
+          service_pass_title: Název vlastního průkazu
+          service_product_title: Vlastní název produktu
+          service_subscription_title: Vlastní název předplatného
+      email_sender:
+        create:
+          dns: Podívejte se na hodnoty DNS.
+          header: Zpracováváme váš požadavek
+          invalid_domain: Zadejte prosím platný název domény.
+        dns:
+          cancel: Odebrat e-mailovou doménu
+          copied: Zkopírováno!
+          copy: Kopie
+          dkim: Chcete-li povolit aplikaci Makeplans odesílat zprávy s e-mailovou adresou na %{domain}, přidejte následující záznam TXT.
+          dkim_cname: Chcete-li povolit aplikaci Makeplans odesílat zprávy s e-mailovou adresou na %{domain}, přidejte následující záznamy CNAME.
+          dkim_host: Hostitel
+          dkim_value: Hodnota
+          header: Přidat DNS záznamy
+          info: Pro dokončení ověření odesílatele e-mailu přidejte prosím následující záznamy DNS. Provedení změn může trvat až 24 hodin.
+          priority: Přednost
+          return_path: Pro zlepšení doručitelnosti přidejte následující záznam pro doménu zpáteční cesty %{domain}.
+          type: Typ
+          verify: Ověření DNS záznamů
+        info:
+          add: Přidejte svou doménu pro odesílání e-mailů
+          header: Odesílejte e-maily pomocí své vlastní e-mailové adresy
+          info: Ve výchozím nastavení jsou všechny e-maily odesílány z %{default_email}. Za %{price} měsíčně můžete použít e-mailovou adresu na vaší vlastní doméně. Aby Makeplans mohl odesílat e-maily vaším jménem, je třeba přidat nějaké DNS záznamy. Upozorňujeme, že to vyžaduje technickou změnu na vaší doméně a že to Makeplans umožní odesílat e-maily s použitím jakékoli adresy na vybrané doméně. Z bezpečnostních důvodů doporučujeme použít subdoménu, tedy booking.example.org místo example.org.
+        new:
+          domain: Doména
+          header: Přidejte si vlastní doménu pro odesílání e-mailů
+          return_path_domain: Doména zpáteční cesty
+          return_path_domain_hint: Volitelné. Subdoména pro zpracování nedoručených zpráv, např. bounces.example.com. Zlepšuje doručitelnost.
+        show:
+          delete: Odebrat e-mailovou doménu
+          header: Ověřili jste svou doménu pro odesílání e-mailů
+          info: Makeplans bude moci odesílat e-maily z jakékoli e-mailové adresy ve vaší doméně %{domain}
+        verify:
+          cancel: Odebrat e-mailovou doménu
+          header: Neověřeno
+          info: Pokud jste přidali DNS záznamy, počkejte prosím, než se rozšíří. Zkuste to prosím znovu později.
+          not_verified: DNS záznamy ještě nebyly ověřeny. Počkejte a zkuste to znovu.
+      embed:
+        new:
+          embed_url: 'Zadejte URL adresu vašeho webu pro vložení:'
+        show:
+          add_embed_url: Chcete vložit rezervační web na externí web?
+          custom_info: Rezervační web můžete vložit pomocí iframe nebo provést API požadavek na %{url}.
+          delete: Odstraňte adresu URL pro vložení.
+          header: Vložte rezervační web na doménu třetí strany
+          info: Abyste mohli přidat rezervační web na svůj web jako iframe nebo provádět veřejné API požadavky z vašeho webu, musíte z bezpečnostních důvodů přidat URL adresu vašeho webu.
+      export_info:
+        data_types:
+          bookings: Rezervace
+          bookings_all: Rezervace (všechny)
+          bookings_visible: Rezervace (včetně zrušení)
+          categories: Kategorie
+          coupons: Kupóny
+          events: Události
+          gift_cards: Dárkové karty
+          message_templates: Šablony zpráv
+          orders: Objednávky
+          people: Zákazníci
+          resources: Zdroje
+          services: Služby
+        executed: Export se nyní odesílá na vaši e-mailovou adresu. Pokud exportujete velké množství dat, může to trvat až 10 minut.
+        header: Export dat z Makeplans
+        info: Obdržíte e-mail s přílohou ve formátu CSV.
+      import:
+        header: Import dat
+        info: Do Makeplans je možné importovat data, jako jsou zákazníci. Pro více informací kontaktujte podporu.
+      invoices:
+        index:
+          email: Poslat kopii na váš e-mail
+          header: Faktury od Makeplans
+          paid: Placené
+      mcp:
+        show:
+          claude_code: Claude Code
+          enable: Povolit API
+          endpoint: Koncový bod MCP
+          header: MCP - Asistenti umělé inteligence
+          info: Propojte asistenty s umělou inteligencí, jako je Claude, se svým účtem Makeplans pomocí MCP (Model Context Protocol). Asistent se ověřuje pomocí vašeho API klíče a může kontrolovat dostupnost, vypisovat rezervace a události, vyhledávat zákazníky a vytvářet nebo rušit rezervace.
+          info_html: Dokumentace je k dispozici na <a href="https://developer.makeplans.com/guide/mcp/" target="_blank" class="link-external">adrese https://developer.makeplans.com/guide/mcp/</a> .
+          not_enabled: Před připojením asistentů s umělou inteligencí musí být povoleno rozhraní API.
+          other_clients: Další klienti MCP
+          other_clients_info: Přidejte vzdálený MCP server s výše uvedeným koncovým bodem a HTTP hlavičkou „Authorization“ s hodnotou „Bearer %{api_key}“.
+      migrate_bookings:
+        edit:
+          deactivated: deaktivováno
+          error_not_found: Jeden nebo oba zdroje se nepodařilo nalézt.
+          error_same_resource: Zdrojový a cílový zdroj nemohou být stejné.
+          from_resource: Ze zdroje
+          header: Migrace rezervací
+          info: Přesunout všechny rezervace a události z jednoho zdroje do druhého. To zahrnuje všechny minulé i budoucí rezervace. Zákazníkům nebudou zasílána žádná oznámení.
+          migrate: Migrovat
+          processing: Zpracování
+          to_resource: K zdrojům
+          warning: Jste si jisti, že chcete migrovat všechny rezervace a události? Tuto operaci nelze snadno vrátit zpět.
+        update:
+          header: Rezervace migrovány
+          result: Rezervace %{bookings_count} a události %{events_count} byly migrovány z %{from_resource} do %{to_resource}.
+      promote:
+        booking_button_html_info: Chcete-li vložit tlačítko rezervace na váš web, zkopírujte prosím níže uvedený HTML kód. Pokud potřebujete pomoc, kontaktujte prosím svého webdesignéra.
+        booking_button_html_preview: Náhled tlačítka rezervace
+        booking_button_text: Text tlačítka
+        booking_button_text_default_value: Online rezervace
+        booking_iframe: Iframe pro rezervační web
+        booking_link: Odkaz na rezervační web
+        booking_link_title: Online rezervace a plánování schůzek
+        booking_site_info_html: Vaše rezervační stránka je k dispozici na adrese %{url}.
+        generate_booking_button: Vygenerujte rezervační tlačítko pro váš web
+        header: Propagujte svůj rezervační web
+        qr_code: QR kód
+      sms_sender:
+        new:
+          sms_sender_name: Jméno odesílatele SMS
+        show:
+          add_custom_sender: Chcete použít vlastní ID odesílatele SMS?
+          cost: Měsíční náklady jsou %{price}.
+          custom_info: Všechny SMS zprávy budou odeslány pomocí %{sms_sender}.
+          delete: Odebrat vlastní ID odesílatele SMS.
+          header: ID odesílatele SMS
+          info: Všechny SMS zprávy budou odesílány z Makeplans.
+      tools:
+        header: Nástroje pro váš účet
+        link:
+          change_time_zone: Změnit časové pásmo
+          feed: iCalendar-feedy
+          migrate_bookings: Migrace rezervací mezi zdroji
+          purge_data: Smazat stará data
+          sms_all: Poslat SMS všem zákazníkům
+          sms_filter: Odeslat SMS filtrovaným zákazníkům
+    coupons:
+      form:
+        availability_placeholder: Neomezený
+        excluded_services: Vyloučené služby
+        included_services: Zahrnuté služby
+        services_info: 'Slevový kód bude k dispozici pro všechny služby, pokud se neomezíte na konkrétní služby níže:'
+      index:
+        header: Slevové kódy
+        not_redeemable: Nelze uplatnit
+        redeemable: Uplatnitelné
+      show:
+        details: Podrobnosti
+        not_redeemable: Nelze uplatnit
+        orders: Objednávky
+        redeemable: Uplatnitelné
+    events:
+      check_in:
+        check_in: Check-in
+      create_recurring:
+        headline: Generování událostí %{count}...
+        link: Zobrazit seznam
+      destroy_recurring:
+        headline: Všechny opakující se události v rámci tohoto vzoru byly odstraněny.
+      email_participants:
+        copy_info: 'Nebo můžete níže uvedené adresy zkopírovat a vložit je do pole Skrytá kopie v nové e-mailové zprávě:'
+        headline: Poslat e-mail všem účastníkům
+        open_email_client: Otevřít e-mailového klienta
+      form:
+        cancellation_info: Storno rezervace lze provést pouze před uplynutím lhůty pro zrušení rezervace. Rezervace s platbou předem stornovat nelze.
+        cancellation_period_info: 'Příklad: „24 hodin předem“ (storno rezervace možné pouze 24 hodin před začátkem). Při nastavování data je nutné zadat celý rok.'
+        headline_create: Přidat novou událost
+        headline_create_recurring: Přidat novou událost
+        headline_edit: Upravit událost
+        headline_new: Přidat novou událost
+        recurring_enabled: Opakujte se vzorem
+        recurring_member: Tato událost je součástí opakujícího se vzorce.
+      show:
+        attendants_html:
+          one: jedna rezervace
+          other: 'rezervace: <strong>%{count}</strong>'
+          zero: žádné rezervace
+        check_in: Check-in
+        copy: Klonovat tuto událost
+        download_attendance_csv: Exportovat seznam prezenčních účastníků ve formátu CSV
+        email_confirm: Seznam účastníků vám bude zaslán e-mailem. Chcete pokračovat?
+        fully_booked: Akce je plně rezervována
+        fully_booked_with_waitlist: Akce je plně obsazena · %{count} na čekací listině
+        promote: Podporovat
+        promote_confirm: Povýšit %{name} z čekací listiny?
+        qr_code: QR kód pro zákazníky
+        recurring_member: Tato událost je součástí opakujícího se vzorce.
+        send_email_to_all: Poslat e-mail všem účastníkům
+        send_sms: Odeslat SMS
+        show_in_calendar: Zobrazit v kalendáři
+        show_inactive_html: Nezobrazuje se %{count} neaktivních rezervací. <a href="%{href}">Chcete je zobrazit?</a>
+        show_only_active_html: Seznam obsahuje %{count} neaktivních rezervací. <a href="%{href}">Chcete zobrazit pouze aktivní rezervace?</a>
+        signup_link: Odkaz pro registraci
+        sms_all_participants: Poslat SMS všem účastníkům
+        waitlist_html:
+          one: 'čekací listina: <strong>%{count}</strong>'
+          other: 'čekací listina: <strong>%{count}</strong>'
+        waitlist_position: Pozice na čekací listině %{position}
+        zoom:
+          join_meeting: Odkaz na připojení ke schůzce
+          join_webinar: Odkaz na připojení k webináři
+          start_meeting: Zahájit schůzku Zoom jako hostitel
+          start_webinar: Spustit webinář Zoom jako hostitel
+      show_recurring:
+        delete_all: Smazat vše
+        headline: Všechny opakující se události v rámci tohoto vzoru
+      widget:
+        capacity_details:
+          one: Jeden účastník z celkového počtu %{capacity} možných.
+          other: "%{count} účastníků z celkového počtu možných %{capacity}."
+          zero: Žádní účastníci. %{capacity} možné.
+        end: Končí
+        start: Začíná
+      widget_list:
+        no_events: Žádné existující události na %{start}
+        no_events_range: Žádné existující události od %{start} do %{end}
+    gift_cards:
+      index:
+        header: Dárkové karty
+        header_for_person: Dárkové karty pro %{name}
+      show:
+        active: Aktivní
+        current_balance: Aktuální zůstatek
+        details: Podrobnosti
+        inactive: Použitý
+        initial_value: Počáteční hodnota
+        orders: Objednávky
+        purchase_order: Objednávka
+        purchased_by: Zakoupeno uživatelem
+        redeemed_by: Uplatněno kým
+        valid_until: Platné do
+    integrations:
+      account_connected: Připojte se k tomuto účtu.
+      always_opt_in: Vždy se přihlásit
+      bento:
+        publishable_key: Publikovatelný klíč
+        secret_key: Tajný klíč
+        site_uuid: UUID webu
+      bestrx:
+        api_key: Klíč API je %{api_key}
+        api_url: URL adresa API je %{api_url}
+        enable: Umožnit
+      braintree:
+        cse_key: Klíč CSE
+        environment: Prostředí
+        merchant_id: Obchodník
+        private_key: Soukromý klíč
+        production: Výroba
+        public_key: Veřejný klíč
+        sandbox: Pískoviště
+      campaign_monitor:
+        api_key: API klíč
+        connect_info: 'Vyberte e-mailový seznam, kam budou přidáváni noví zákazníci jako odběratelé:'
+        list_id: ID seznamu
+      connect_error: Integraci nelze dokončit. Smažte prosím integraci a zkuste to znovu.
+      connected: Tato služba je propojená.
+      extensor:
+        activate: Začněte používat integraci Extensor Online Booking
+        activate_settings_2: Aktivace nastavení pro Extensor Online Booking verze 2
+        activate_settings_3: Aktivace nastavení pro Extensor Online Booking verze 3
+        activate_settings_4: Aktivace nastavení pro Extensor Online Booking verze 4
+        activate_settings_5: Aktivace nastavení pro Extensor Online Booking verze 5
+        info: Pro aktivaci synchronizace s Extensorem je nutné nainstalovat Extensor Online Booking. Kliknutím na odkaz níže spusťte proces. Budete kontaktováni společností Extensor.
+        reactive_settings: Znovu aktivujte nastavení pro online rezervace Extensor.
+        version: Aplikace Makeplans je nakonfigurována pro práci s verzí %{version} programu Extensor Online Booking.
+      fiken:
+        active: Aktivní
+        api_not_activated: Musíte aktivovat API ve Fikenu.
+        connected_bank_account: Bankovní účet
+        connected_company: Společnost
+        email: Uživatelské jméno (e-pošta)
+        income_account: Účet příjmů
+        password: Heslo
+        select_bank_account: Vyberte bankovní účet, který se má zobrazit na faktuře
+        select_company: Vyberte společnost
+        service_linked: Připojení k produktu ve Fikenu
+        service_links: 'Aby bylo možné vytvořit objednávku ve Fikenu, musí být každá služba propojena s produktem ve Fikenu. Upozornění: Cena se načítá z Fikenu, nikoli z Makeplans. Musíte se ujistit, že cena v obou aplikacích je shodná.'
+        service_not_linked: NENÍ propojeno s produktem ve Fikenu.
+        vat_type: Typ DPH
+      fiken_v2:
+        active: Aktivní
+        connected_bank_account: Bankovní účet
+        connected_company: Společnost
+        select_bank_account: Vyberte bankovní účet, který se má zobrazit na faktuře
+        select_company: Vyberte společnost
+        service_linked: Připojení k produktu ve Fikenu
+        service_links: 'Aby bylo možné vytvořit objednávku ve Fikenu, musí být každá služba propojena s produktem ve Fikenu. Upozornění: Cena se načítá z Fikenu, nikoli z Makeplans. Musíte se ujistit, že cena v obou aplikacích je shodná.'
+      frontgo:
+        api_key: Klíč API
+      headline: Integrace s %{integration}
+      highrise:
+        account: Subdoména (VÁŠ ÚČET.highrisehq.com - zadejte prosím pouze VÁŠ ÚČET)
+        connect_info: 'Vyberte účet, kam se přidávají noví zákazníci:'
+        password: API klíč
+      index:
+        api: API
+        header: Integrace
+        web_hooks: Webhooky
+      klaviyo:
+        select_list: 'Vyberte seznam, kam budou noví zákazníci přidáni jako odběratelé:'
+      mailchimp:
+        account: ID seznamu
+        connect_info: 'Vyberte e-mailový seznam, kam budou přidáváni noví zákazníci jako odběratelé:'
+        password: API klíč
+      mailerlite:
+        api_key: API klíč
+        select_group: Vyberte skupinu, do které budou přidáni noví zákazníci.
+      mailmojo:
+        account: ID seznamu
+        username: Uživatelské jméno účtu
+      not_authenticated: Nelze se připojit. Zkontrolujte své přihlašovací údaje.
+      notion:
+        connected_to: Připojeno k databázi s ID %{database_id}
+        database_info: 'Databáze musí být nastavena s následujícími vlastnostmi: Jméno, E-mail (typ: email), Telefon (typ: phone).'
+        select_database: Vyberte databázi
+        sharing_info: Sdílejte prosím alespoň jednu databázi s integrací Makeplans.
+      oauth_connect: Připojení ke službě
+      selected_option: Vybraný
+      sendy:
+        connect_info_html: Noví zákazníci budou při instalaci %{api_url} přihlášeni k odběru seznamu s ID <em>%{list_id}</em> .
+      slack:
+        connect_info: Každá nová rezervace v Makeplans bude zveřejněna jako zpráva v kanálu %{channel} na Slacku.
+      stripe:
+        disable_customer_saving: Neukládat zákazníka do Stripe
+        payment_info: Za všechny transakce společnost Makeplans strhává poplatek platformy ve výši %{application_fee_percent} %.
+        receipt_email: Odeslání účtenky zákazníkovi ze Stripe
+        save_card_billing_details: Uložit fakturační údaje pro transakci
+      tfso:
+        add_to_crm_manually: Ruční přidání zákazníka do CRM
+        distribution_method: 'Způsob distribuce:'
+        distribution_methods:
+          EMail: E-mail
+          ElectronicInvoice: EHF
+          Print: Vytisknout
+          Unchanged: Beze změny
+        invoice_payment_time: 'Doba platby:'
+        invoice_state: 'Stav objednávky:'
+        invoice_states:
+          Confirmed: Potvrzeno
+          Draft: Návrh
+          ForInvoicing: Pro fakturaci
+          Invoice: Fakturováno
+          Invoiced: Fakturováno
+          Offer: Nabídka
+          Web: Web
+        password: Heslo API
+        service_linked: Připojení k produktu v 24SevenOffice
+        service_links: Každá služba v Makeplans musí být propojena s produktem v 24SevenOffice, aby bylo možné fakturovat. Upozorňujeme, že cena se načítá z produktu v 24SevenOffice, nikoli z Makeplans. Musíte se ujistit, že tyto dvě ceny jsou shodné. Přejděte do služby a definujte ID produktu z 24SevenOffice.
+        service_not_linked: NENÍ připojeno k produktu v 24SevenOffice
+        type_groups: 'Typ prodeje pro objednávku:'
+        username: Uživatelské jméno API
+      unloc:
+        client_id: ID klienta
+        client_secret: Tajemství klienta
+        info: Zadejte své přihlašovací údaje API z Unloc Control Center pro připojení digitálních dveřních zámků.
+        locks: Dostupné zámky
+        locks_info: Na stránce nastavení zdroje přiřaďte zámky ke zdroji. Po potvrzení rezervace zákazník automaticky obdrží mobilní klíč platný pro rezervovaný čas.
+        project_id: Projekt
+      vipps:
+        client_id: ID klienta
+        client_secret: Tajemství klienta
+        merchant_serial_nr: Sériové číslo obchodníka
+        non_partner_mode: Použít mé vlastní klíče smlouvy VIPPS místo partnerských klíčů MakePlans
+        partner_keys_info: Pokud byla vaše prodejní jednotka Vipps nastavena prostřednictvím MakePlans, stačí zadat pouze sériové číslo obchodníka. ID klienta, tajný kód klienta a klíč předplatného jsou vyžadovány pouze v případě, že máte vlastní smlouvu Vipps.
+        push_message: Odesílejte žádosti o platbu do aplikace Vipps zákazníka (vyžaduje povolení push zpráv pro vaši prodejní jednotku Vipps)
+        setup_webhooks: Kontrola a nastavení webhooků
+        verify: Ověření připojení
+        verify_error: 'Vipps odmítl přihlašovací údaje: %{message}'
+        verify_success: Vipps je správně nakonfigurován a ověřen.
+        vipps_subscription_key: Předplatitelský klíč Vipps
+        webhook_active: Platební webhook je zaregistrován.
+        webhook_setup_failed: 'Nastavení webhooku se nezdařilo: %{error}'
+        webhook_setup_missing_fields: Před nastavením webhooků zadejte ID klienta, tajný kód klienta, klíč předplatného a sériové číslo obchodníka.
+      visma_eaccounting:
+        active: Aktivní
+        connect_info: Připojeno k %{name}
+        connected_payment_id: 'Platební podmínky: %{name}'
+        customer_attributes_info: 'Upozornění: Visma eAccounting vyžaduje pro registraci nového zákazníka PSČ a město. Pokud tyto hodnoty nejsou uvedeny, není možné z rezervace vygenerovat objednávku.'
+        select_terms_of_payment: 'Zvolte prosím standardní platební podmínky pro nové zákazníky:'
+        service_linked: Propojeno s produktem ve Visma eAccounting
+        service_links: Každá služba v Makeplans musí být propojena s produktem ve Visma eAccount, aby bylo možné fakturovat. Upozorňujeme, že cena se získává z Visma eAccounting, nikoli z Makeplans. Musíte zajistit, aby cena byla v obou systémech shodná.
+        service_not_linked: NENÍ připojeno k produktu ve Visma eAccounting
+      whatsapp:
+        connect: Připojte se k WhatsAppu
+        connected: WhatsApp je propojen s číslem %{number}.
+        info: Pro zasílání potvrzení rezervací a připomenutí a pro chatování se zákazníky si připojte WhatsApp. Potřebujete firemní účet Meta a telefonní číslo, které ještě nepoužíváte ve WhatsAppu. Kliknutím na tlačítko níže se přihlaste pomocí Meta a dokončete nastavení.
+      whereby:
+        connect_info: Připojeno
+        setup_info: Schůzka Whereby bude automaticky vytvořena pro každou službu, u které je Whereby aktivován.
+      zapier:
+        info_html: Pro propojení Makeplans se Zapierem si prosím vytvořte <a href="%{url}" target="_blank">nový Zap na Zapieru</a> .
+      zoom:
+        connect_info: Připojeno
+        info: Aby tato integrace fungovala, musíte připojit zdroj k uživateli v Zoomu a mít alespoň jednu službu se zapnutým Zoomem.
+        registration_type: Typ registrace
+        session_type: Typ relace Zoom pro události
+    message_templates:
+      form:
+        delivery_timing_info: 'Pište srozumitelnou angličtinou. Příklad: „dvě hodiny před“ (zpráva bude odeslána dvě hodiny předem) nebo „zítra v 8:00“ (den poté v 8:00). Doba doručení je relativní a závisí na typu zprávy: potvrzení - rezervace vytvořena v, připomenutí - rezervace rezervována od, následná zpráva - rezervace rezervována do.'
+        immediately: ihned
+        services: Služby
+        services_info: 'Šablona zprávy bude odeslána pro všechny služby, pokud se neomezíte na konkrétní služby níže:'
+        settings:
+          skip_if_in_past: Neodesílat, pokud je dodací lhůta v minulosti
+          twilio_content_sid: Šablona SID pro WhatsApp
+          twilio_content_sid_info: ID (HX...) této šablony schválené službou Meta. Registrováno společně s podporou MakePlans - zprávu nelze odeslat před schválením šablony.
+        template_info_html: Můžete sloučit dynamické hodnoty. Podrobnosti naleznete na <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> .
+        whatsapp_approval_status: Schválení metadat
+        whatsapp_approval_statuses:
+          approved: Schváleno - tuto šablonu lze odeslat
+          error: Odeslání se nezdařilo
+          pending: Čeká se na schválení od Mety
+          rejected: Odmítnuto společností Meta
+        whatsapp_info: Zprávy WhatsApp musí být před odesláním schváleny společností Meta. Napište zprávu jako obvykle – text ke schválení se po uložení zobrazí níže. Povoleny jsou štítky pro personalizaci, nikoli však logické štítky.
+        whatsapp_meta_template: Šablona textu pro schválení metadat
+        whatsapp_meta_template_info: Odešlete přesně tento text ke schválení (personalizační tagy se převedou automaticky). Pokud změníte text zprávy, šablonu je nutné znovu schválit a aktualizovat SID.
+      index:
+        header: Šablony zpráv
+        immediately: ihned
+        intro: Zde najdete složitější šablony zpráv, které lze odeslat po potvrzení rezervace, před jejím zahájením nebo po jejím dokončení. Upozorňujeme, že tyto zprávy se odesílají navíc ke standardním zprávám, jako je potvrzení a připomenutí. Tuto funkci použijte pouze v případě, že chcete například odeslat další připomenutí, více potvrzovacích zpráv (například e-mail a SMS) nebo následnou zprávu.
+      show:
+        immediately: ihned
+    orders:
+      index:
+        all_states: Všechny stavy
+        created_at: Vytvořeno
+        customer: Zákazník
+        do_filtering: Filtr
+        filter: Filtr
+        headline: Objednávky
+        order_id: Objednávka
+        status: Postavení
+        total: Celkový
+      refund:
+        already_refunded: Tato objednávka již byla vrácena.
+        failed: 'Vrácení peněz se nezdařilo: %{message}'
+        nothing_to_refund: Za tuto objednávku se nevrací nic.
+        success: Platba za objednávku vrácena.
+      show:
+        amount: Množství
+        balance: Zbývající částka
+        coupon: Slevový kód
+        created_at: Vytvořeno
+        customer: Zákazník
+        date: Datum
+        details: Podrobnosti
+        generated_gift_card: 'Vygenerovaná dárková karta: %{code}'
+        gift_card_used: Dárková karta %{code}
+        gift_cards: Dárkové karty
+        invoice: Faktura
+        invoice_number: Faktura č. %{nr}
+        item: Položka
+        line_items: Položky objednávky
+        order_number: Objednávka č. %{id}
+        quantity: Množství
+        refund: Vrácení platby
+        refund_confirm: Vrátit celou objednávku? Tato akce stornuje všechny platby a nelze ji vrátit zpět.
+        subtotal: Mezisoučet
+        total: Celkový
+        transaction_type: Typ
+        transactions: Platby
+      states:
+        cancelled: Zrušeno
+        confirmed: Potvrzeno
+        pending: Čeká na vyřízení
+      transaction_types:
+        gift_card: Dárková karta
+        payment: Platba
+        refund: Vrácení peněz
+        subscription: Předplatné
+    people:
+      children:
+        index:
+          add_existing: Přidat stávajícího zákazníka
+          headline: "%{parent} může provádět rezervace pro:"
+        new:
+          add_selected: Přidat vybrané
+          headline: Přidat připojené zákazníky pro %{parent}
+          no_results: Nenaleženi žádní odpovídající zákazníci
+          no_results_hint: Zobrazují se pouze zákazníci bez existujícího připojení.
+          search: Vyhledávání
+          search_placeholder: Hledat podle jména, e-mailu nebo telefonu
+      form:
+        block: Blokovat zákazníka na rezervačním webu
+        booking_site_locale_default: Použít výchozí nastavení pro rezervační web
+        managed_by: Tento zákazník bude spravován uživatelem %{parent}.
+        merge_action: Sloučit tyto dva zákazníky
+        merge_action_email: Tato e-mailová adresa je již uložena u jiného zákazníka. Chcete tyto dva zákazníky sloučit tak, aby jako e-mailová adresa byla použita adresa %{email}?
+        merge_action_info: Všechny rezervace budou zachovány, ale jeden ze zákazníků bude smazán. Můžete si vybrat, které informace o zákaznících budou zachovány.
+        merge_action_national_id_no: Toto číslo sociálního zabezpečení je již uloženo u jiného zákazníka. Chcete tyto zákazníky sloučit tak, aby se aktuálním číslem sociálního zabezpečení stalo %{national_id_no}?
+        merge_action_phone_number: Toto telefonní číslo je již uloženo u jiného zákazníka. Chcete tyto dva zákazníky sloučit, aby jako telefonní číslo bylo použito číslo %{phone_number}?
+        merge_button: Sloučit a uložit
+        merge_info: 'Místo toho použijte:'
+        unblock: Odebrat blok na rezervačním webu
+      index:
+        delete_warning: Jste si jisti, že chcete smazat %{person}?
+        filter: Filtrování
+        headline: Zákazníci
+        send_sms: Odeslat SMS
+        whatsapp_replies: Odpovědi na WhatsAppu
+      show:
+        add_child: Přidat připojeného zákazníka
+        all_day: Celý den
+        bookings_for: Rezervace pro %{name}
+        can_book_for: Můžeme provádět rezervace pro %{children} dalších osob.
+        card_saved_with:
+          stripe: Platební karta uložená pomocí Stripe
+        change_tfso_customer: Změňte ID zákazníka 24SevenOffice.
+        export: Export dat e-mailem zákazníkovi
+        export_executed: Exportní soubor byl odeslán zákazníkovi.
+        fiken:
+          create_customer: Vytvořit zákazníka ve Fikenu
+          processing: Vytváření zákazníka ve Fikenu...
+          show_customer: Zobrazit zákazníka ve Fikenu
+        filter_bookings:
+          active: Zobrazit pouze aktivní rezervace
+          all: Zobrazit všechny rezervace včetně smazaných
+          visible: Zobrazit všechny viditelné rezervace
+        gift_cards:
+          one: Dárková karta %{count}
+          other: Dárkové karty %{count}
+        no_reservations: Nenalezeny žádné rezervace
+        parent_info: Spravováno společností
+        send_sms: Odeslat SMS
+        whatsapp_chat: Chat na WhatsAppu
+      tfso_connect_company:
+        create: Vytvořte nového zákazníka v 24SevenOffice
+        header: Spojte se se zákazníkem v 24SevenOffice
+        search: Nebo hledejte mezi stávajícími zákazníky
+        search_matched_headline: V aplikaci 24SevenOffice CRM byli nalezeni stávající zákazníci. Kliknutím na jméno propojíte tohoto zákazníka v aplikaci Makeplans se zákazníkem v aplikaci 24SevenOffice CRM.
+        search_query: Hledání jména
+        stream_placeholder: Vyhledávání v 24SevenOffice CRM. Čekejte prosím. Může to trvat až 1–2 minuty.
+    profile:
+      activate_rotp:
+        enable_rotp: Aktivace 2FA
+        generate_header: Aktivace dvoufázového ověřování (2FA)
+        generate_info: Naskenujte níže uvedený QR kód mobilním telefonem pomocí aplikace Google Authenticator nebo jiné aplikace 2FA.
+        verify_code: 'Zadejte kód pro ověření:'
+      deactivate_rotp:
+        deactivate_rotp: Odebrat 2FA
+        verify_code: 'Zadejte kód pro ověření:'
+      edit:
+        theme_auto: Automaticky (sleduje systém)
+        theme_dark: Tmavý
+        theme_light: Světlo
+      edit_password:
+        verify_code: 'Zadejte kód pro ověření:'
+      no_access:
+        header: Bez přístupu
+        info: Pro přístup k této funkci kontaktujte prosím administrátora svého účtu.
+      show:
+        change_password: Změnit heslo
+        rotp:
+          disable_link: Deaktivace dvoufázového ověření
+          disable_warning: Opravdu chcete deaktivovat dvoufázové ověření?
+          enable_link: Aktivace dvoufázového ověření
+          enable_warning: Pokud aktivujete dvoufázové ověření, musíte vždy ověřit každé přihlášení kódem z aplikace v mobilním telefonu. Jste si jisti, že chcete tuto funkci povolit?
+          regenerate_link: Obnovte klíč pro dvoufázové ověřování
+          regenerate_warning: Pokud si znovu vygenerujete klíč pro dvoufázové ověřování, stávající klíč již nebude fungovat a budete muset nastavit aplikaci s novým kódem. Opravdu chcete pokračovat?
+          submit_button: Přihlášení
+          verification_code_header: Dvoufázové ověření
+      update_password:
+        updated: Heslo aktualizováno. Přihlaste se prosím s novým heslem.
+    providers:
+      form:
+        availability: "%{resource} - dostupnost pro %{service}"
+        from: z
+        to: na
+    purge_data:
+      destroy:
+        header: Stará data se nyní mažou.
+        processing: Data budou nyní smazána. Jejich zpracování může trvat několik minut.
+      index:
+        header: Smazat stará data
+        info: 'Tato funkce smaže staré osobní údaje. Můžete zadat datum smazání. Budou smazány následující údaje:'
+        not_deleted: Smazání dat nespustí externí integrace.
+        processing: Zpracování
+        purge: SMAZAT DATA
+        purge_1: Všechny rezervace končící před uvedeným datem.
+        purge_2: Všichni zákazníci, kteří neprovedli aktualizaci před uvedeným datem a kteří po uvedeném datu nemají žádné rezervace.
+        purge_3: Všechny protokoly a metadata související s těmito daty budou také smazány.
+        purge_before: Smazat data před datem
+        warning: Opravdu chcete smazat všechna data před zadaným datem? Tuto operaci nelze vrátit zpět.
+    reports:
+      bookings:
+        attendees: Účastníci
+        bookings: Rezervace
+        by_hour: Rezervace za hodinu
+        by_weekday: Rezervace za všední den
+        date: Datum
+        per_day: Rezervace za den
+        per_month: Rezervace za měsíc
+        per_week: Rezervace za týden
+        title: Rezervace
+      breakdown:
+        attendees: Účastníci
+        bookings: Rezervace
+        inactive: neaktivní
+        name: Jméno
+        revenue: Zaúčtovaná hodnota
+        without_resource: Bez zdroje
+        without_service: Bez obsluhy
+      customers:
+        booked_value: Zaúčtovaná hodnota
+        bookings: Rezervace
+        created_before_period: Existovalo před obdobím
+        created_in_period: Vytvořeno v období
+        date: Datum
+        last_visit: Poslední návštěva
+        name: Jméno
+        new_customers: Noví zákazníci
+        new_vs_returning: Noví a vracející se zákazníci
+        not_rebooked: Nepřerezervováno
+        of_customers: z %{count} zákazníků
+        per_day: Noví zákazníci denně
+        per_month: Noví zákazníci za měsíc
+        per_period_hint: Podle data registrace
+        per_week: Noví zákazníci týdně
+        rebooked: Znovu rezervováno
+        rebooking: Míra změn rezervací
+        rebooking_hint: Nová rezervace do %{weeks} týdnů od první návštěvy v daném období
+        returning_customers: Vracející se zákazníci
+        title: Zákazníci
+        top_customers: Nejlepší zákazníci
+        total: Noví zákazníci
+      events:
+        attendees: Účastníci
+        bookings: Rezervace
+        capacity: Kapacita
+        event: Událost
+        events_count:
+          one: 1 událost
+          other: "%{count} událostí"
+        fill: Míra naplnění
+        fill_curve: Když se akce zaplní
+        fill_curve_hint: Rezervace několik dní před začátkem akce
+        minimum_not_reached: minimum nebylo dosaženo
+        starts_at: Začíná
+        title: Události
+        waitlist_summary: "%{waitlisted} na čekací listině · %{conversions} povýšen z čekací listiny v daném období"
+        waitlisted: Čekací listina
+      filters:
+        all_resources: Všechny zdroje
+        all_services: Všechny služby
+        apply: Show
+        download_csv: Stáhnout CSV
+        filter: Filtr
+        from: Od data
+        granularity_day: Den
+        granularity_label: Zobrazit za
+        granularity_month: Měsíc
+        granularity_week: Týden
+        period: Období
+        to: K dnešnímu dni
+      granularity:
+        day: Datum
+        month: Měsíc
+        week: Týden
+      index:
+        ahead: Napřed
+        ahead_of_previous_period: O %{change} % více než v předchozím období
+        all_clear: Všechno čisté
+        behind_pace: Za tempem
+        below_previous_period: "%{change} % pod předchozím obdobím"
+        booking_activity: Aktivita rezervací
+        bookings: Rezervace
+        bookings_count:
+          one: 1 rezervace
+          other: "%{count} rezervací"
+        bookings_per_day: Rezervace za den
+        cancellation_rate: Míra zrušení
+        cancellations: Zrušení
+        compared_with_last_year: ve srovnání se stejným obdobím loňského roku
+        compared_with_previous: ve srovnání s předchozím obdobím
+        confirmed_bookings: potvrzené rezervace
+        custom: Zvyk
+        days:
+          one: 1 den
+          other: "%{count} dní"
+        demand_by_time: Poptávka podle dne a času
+        forward_note: Příjmy, noví zákazníci, nedostavení se a hodnocení existují pouze pro období, která již proběhla, takže tyto panely zůstanou v budoucím období prázdné.
+        forward_note_title: Pohled do budoucna
+        from_previous_period: z předchozího období
+        higher: Vyšší
+        last_month: Minulý měsíc
+        latest_activity: Nejnovější rezervace
+        lower: Spodní
+        needs_attention: Vyžaduje pozornost
+        new_customers: Noví zákazníci
+        new_period: Nová aktivita
+        next_days:
+          one: Následující den
+          other: Dalších %{count} dní
+        next_month: Příští měsíc
+        no_attention: Žádné provozní problémy nebyly zjištěny
+        no_previous_period: Žádné předchozí období k porovnání
+        no_shows: Neúčastníci
+        on_track: Na dobré cestě
+        open_report: Zobrazit zprávu
+        overall_pace: Celkové tempo
+        previous_value: "%{value} v předchozím období"
+        resource_pace: Tempo zdrojů
+        revenue: Příjmy
+        revenue_all_scope: všechny zdroje a služby
+        revenue_by_service: Zaúčtovaná hodnota podle služby
+        scope_note: Čísla rezervací počítají potvrzené rezervace podle data jejich rezervace. Výnosy počítají platby podle data jejich zpracování.
+        scope_note_title: Rozsah zprávy
+        service: Servis
+        this_month: Tento měsíc
+        this_year: Letos
+        title: Zprávy
+        today: Dnes
+        total_count: Celkem %{count}
+        when: Když
+      no_shows:
+        bookings: Rezervace
+        by_hour: Počet nedostavených za hodinu
+        by_resource: Nedostavení se na zdroj
+        by_service: Nedostavení se na službu
+        by_weekday: Nedostavení se za všední den
+        name: Jméno
+        no_shows: Neúčastníci
+        offenders: Zákazníci s největším počtem nedostavených zákazníků
+        per_day: Nedostavení se za den
+        per_month: Nedostavení se za měsíc
+        per_week: Nedostavení se za týden
+        rate: Hodnotit
+        title: Neúčastníci
+        total: Neúčastníci
+      ratings:
+        average: Průměrné hodnocení
+        booked: Rezervace
+        bookings: Rezervace
+        by_resource: Průměr podle zdroje
+        by_service: Průměr podle služby
+        distribution: Jak se skóre rozděluje
+        lowest: Nejnižší hodnocení rezervací
+        name: Jméno
+        no_ratings: Za toto období zatím žádná hodnocení
+        per_day: Průměr za den
+        per_month: Průměrně za měsíc
+        per_week: Průměrně za týden
+        rating: Hodnocení
+        ratings: Hodnocení
+        resource: Zdroj
+        response_rate: Míra odezvy
+        responses:
+          one: Odpověď %{count}
+          other: "%{count} odpovědí"
+        service: Servis
+        title: Hodnocení
+      resources:
+        title: Zdroje
+      revenue:
+        amount: Množství
+        date: Datum
+        per_day: Denní příjem
+        per_month: Příjmy vybrané za měsíc
+        per_period_hint: K datu zpracování platby, nikoli k rezervovanému datu
+        per_week: Příjmy vybrané za týden
+        title: Příjmy
+        total: Celkový
+      services:
+        title: Služby
+      subnav:
+        bookings: Rezervace
+        customers: Zákazníci
+        events: Události
+        no_shows: Neúčastníci
+        overview: Přehled
+        past_only: Tato zpráva se týká pouze období, která již proběhla
+        ratings: Hodnocení
+        resources: Zdroje
+        revenue: Příjmy
+        services: Služby
+        timing: Načasování
+        utilization: Využití
+      timing:
+        bookings: Rezervace
+        buckets:
+          after_start: Po startu
+          four_seven_days: 4–7 dní
+          four_weeks: 2–4 týdny
+          longer: Více než 2 měsíce
+          next_day: Následující den
+          same_day: Ve stejný den
+          two_months: 1–2 měsíce
+          two_three_days: 2–3 dny
+          two_weeks: 1–2 týdny
+        by_created_hour: Rezervace provedené za hodinu
+        by_created_weekday: Rezervace provedené ve všední dny
+        cancellation_lead_time: Doba trvání zrušení
+        cancellation_lead_time_hint: Doba mezi zrušením a rezervovaným časem
+        cancellations: Zrušení
+        lead_time: Dodací lhůta
+        lead_time_hint: Doba mezi provedením rezervace a rezervovaným časem
+        median_lead: střední dodací lhůta %{days} dní
+        title: Načasování
+      utilization:
+        booked_hours: Rezervované hodiny
+        coverage_ahead: Pokrytí dopředu na zdroj
+        coverage_hint: Rezervováno oproti otevírací době na období, které se ještě neuskutečnilo
+        hours: "%{booked} z %{open} hodin"
+        open_hours: Otevírací doba
+        per_resource: Využití na zdroj
+        resource: Zdroj
+        title: Využití
+        total: Celkový
+        unbooked_hours: Nerezervované hodiny
+        utilization: Využití
+    resources:
+      form:
+        availability: Výchozí dostupnost
+        delete_warning:
+          one: Tento zdroj má 1 budoucí rezervaci. Smazáním odstraníte zdroj i všechny jeho rezervace. Potvrďte dalším kliknutím na smazat.
+          other: Tento zdroj má %{count} budoucích rezervací. Smazáním odstraníte zdroj i všechny jeho rezervace. Potvrďte dalším kliknutím na Smazat.
+        external_info:
+          microsoft_office365_user_id: Uživatel Microsoft Office 365
+          unloc_lock_ids: Odemknout zámky
+          unloc_lock_ids_info: Zákazníci s potvrzenou rezervací automaticky obdrží mobilní klíč k vybraným zámkům, platný pro rezervovaný čas.
+          zoom_user_id: Uživatel Zoomu
+        from: z
+        mail_notification_info: Chcete-li upozornit více než jednu osobu, oddělte prosím e-mailové adresy středníkem.
+        offers: Nabízí následující služby na rezervačním webu
+        sms_notification_info: Chcete-li upozornit více než jednu osobu, oddělte prosím telefonní čísla středníkem.
+        to: na
+      index:
+        header: Zdroje
+      integrations:
+        external_info:
+          microsoft_office365_user_id: Uživatel Microsoft Office 365
+          zoom_user_id: Uživatel Zoomu
+      list_menu:
+        list: Zdroje
+      show:
+        availability: 'Výchozí dostupnost:'
+        capacity: 'Kapacita:'
+        closed: Není k dispozici pro online rezervaci.
+        copy:
+          header: Klon
+          info: Vytvořte nový zdroj založený na tomto zdroji. Upozorňujeme, že poskytované služby jsou klonovány.
+          link: Klonovat tento zdroj
+        custom_data: 'Vlastní pole:'
+        ical:
+          activated: Přístup k tomuto zdroji pomocí iCalendaru je aktivován. Odkazy na iCalendar feed jsou k dispozici. Nesdílejte odkaz.
+          activated_html: Přístup k tomuto zdroji přes iCalendar je povolen. Odkaz na kanál iCalendar je %{link}
+          disable: Deaktivace iCalendar feedu
+          enable: Aktivovat iCalendar-feed
+          future_html: 'Budoucí rezervace: %{link}'
+          info: iCalendar-feed zobrazí schůzky z tohoto zdroje v aplikaci Makeplans i v jiných kalendářových aplikacích, jako je Microsoft Outlook, Google Calendar, iPhone nebo Android. Pouze pro čtení, všechny změny musí být provedeny v aplikaci Makeplans.
+          not_activated: Neaktivováno
+          past_html: 'Minulé rezervace: %{link}'
+        icalfeed: 'iCalendar-feed:'
+        offers: 'Na rezervačním webu nabízí následující služby:'
+        room_display:
+          activated: Zobrazení místnosti je povoleno.
+          code: Kód
+          disable: Zakázat zobrazení místnosti
+          enable: Povolit zobrazení místnosti
+          generate_code: Generovat instalační kód
+          header: Výstava v místnosti
+          info: Veřejný displej pro tuto místnost, který zobrazuje aktuální stav a nadcházející rezervace. Vhodný pro tablet umístěný mimo místnost.
+          not_activated: Neaktivováno
+          show_link: Odkaz na zobrazení výstavní místnosti
+    services:
+      availability:
+        header: Dostupnost pro %{title}
+      custom_communication:
+        custom_communication_info: Zde můžete zadat vlastní obsah, který se odešle pro každou novou rezervaci tohoto typu události. Pokud je zadán obsah, přepíše výchozí obsah v části „Komunikace“. Prázdná pole použijí výchozí obsah.
+        custom_communication_show: Zobrazit obsah pro odchozí komunikaci
+      custom_form:
+        custom_form_info_html: Pro tuto službu můžete zadat vlastní rezervační formulář. Tento formulář přepíše výchozí formulář definovaný v části „Rezervační web“. Dokumentaci naleznete na<a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">adrese https://github.com/makeplans/makeplans-custom-forms</a> , případně se obraťte na zákaznický servis.
+        custom_form_show: Zobrazit vlastní rezervační formulář
+      custom_new_booking_text:
+        custom_new_booking_text_info_html: Na stránce s potvrzením pro tuto službu můžete zadat vlastní text. Tento text přepíše výchozí vlastní text nové rezervace definovaný v části „Rezervační web“. Dokumentaci naleznete na adrese <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> , případně se obraťte na zákaznický servis.
+        custom_new_booking_text_show: Zobrazit vlastní potvrzovací text
+      custom_reservation_form_text:
+        custom_reservation_form_text_info_html: Můžete zadat vlastní text, který se zobrazí před rezervačním formulářem pro tuto službu. Tento text přepíše výchozí text vlastního rezervačního formuláře definovaný v části „Rezervační web“. Dokumentaci naleznete na <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">adrese https://github.com/makeplans/makeplans-custom-messages</a> , případně se obraťte na zákaznický servis.
+        custom_reservation_form_text_show: Zobrazit text vlastního rezervačního formuláře
+      custom_terms:
+        custom_terms_info_html: Pro tuto službu můžete zadat vlastní podmínky. Tento text přepíše výchozí podmínky definované v části „Rezervační web“. Dokumentaci naleznete na <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">adrese https://github.com/makeplans/makeplans-custom-messages</a> , případně se obraťte na zákaznický servis.
+        custom_terms_show: Zobrazit vlastní výrazy
+      form_appointment:
+        account_default: Výchozí nastavení účtu
+        booking_site_settings: Nastavení pro rezervační web
+        days: dny
+        interval_rounding:
+          default: Výchozí nastavení účtu
+          five: Nejbližších pět minut
+          halfhour: Nejbližší půlhodina
+          hour: Nejbližší hodina
+          none: Bez zaokrouhlování (nedoporučuje se)
+          quarter: Nejbližší čtvrtina
+          ten: Nejbližších deset minut
+          twenty: Nejbližší 20minutová hranice
+        max_slots_default: Neomezený
+        minutes: zápis
+        next_interval_default: Podle doby trvání
+        offered_by: Nabízeno následujícími zdroji
+        payment: Platba
+        price_placeholder: Bez ceny
+        settings:
+          hide_all_available: Musíte vybrat konkrétní zdroj (možnost „zobrazit vše dostupné“ bude skryta)
+          hide_resources: Skrýt tlačítko pro výběr zdroje (bude náhodně vybrán z dostupných zdrojů)
+          hide_slot_end: Skrýt čas ukončení
+          overnight: Nocleh (pouze pro denní rezervace)
+          return_occupied: Zobrazit obsazené sloty
+          return_past: Zobrazit sloty v minulosti
+          select_count: Další krok pro zadání počtu
+          select_resource: Další krok pro výběr zdroje
+          show_free_capacity: Zobrazit dostupnou kapacitu
+          standalone: Samostatná služba
+          waitlist_enabled: Povolit čekací listinu (přepíše nastavení účtu)
+      form_attendance:
+        booking_site_settings: Nastavení pro rezervační web
+        days: Dny
+        default_values: Níže naleznete výchozí nastavení, která lze změnit pro každou událost, kterou vytvoříte.
+        minutes: Zápis
+        offered_by: Může být nabízeno pomocí následujících kalendářů
+        payment: Platba
+        settings:
+          hide_slot_end: Skrýt čas ukončení
+          show_free_capacity: Zobrazit dostupnou kapacitu
+          waitlist_enabled: Povolit čekací listinu (přepíše nastavení účtu)
+      form_sellable:
+        billing_periods:
+          month: Měsíc
+          week: Týden
+          year: Rok
+        booking_site_settings: Nastavení pro rezervační web
+        linked_services:
+          addon: K dispozici při rezervaci následujících služeb
+          pass: Platí pro následující služby
+          subscription: Platí pro následující služby
+        linked_services_info: Pokud není vybrána žádná možnost, je k dispozici pro všechny služby.
+        validity_days_unlimited: Nikdy nevyprší
+      index:
+        appointment:
+          header: Služby
+        attendance:
+          header: Typy událostí
+        days: dny
+        header: Služby
+        minutes: zápis
+        priority_button: Objednávka
+        product:
+          header: Produkty
+      integrations:
+        external_info:
+          fiken_create_order: Automatické vytváření objednávek ve Fikenu
+          fiken_product_href: Připojení k produktu ve Fikenu
+          microsoft_teams_create_meeting: Automaticky vytvořit schůzku Microsoft Teams pro tuto službu
+          tfso_create_order: Automatické generování objednávek v 24SevenOffice
+          tfso_product_id: ID produktu 24SevenOffice
+          visma_eaccounting_article_id: Připojení k produktu ve Visma eAccounting
+          visma_eaccounting_create_order: Automatické vytváření objednávek ve Visma eAccounting
+          whereby_create_meeting: Automaticky vytvořit schůzku Whereby pro tuto službu
+          zoom_create_session: Automaticky vytvořit schůzku Zoom pro tuto službu
+      list_menu:
+        list_appointment: Služby
+        list_attendance: Typy událostí
+      priority:
+        description:
+          order: Pořadí poskytovatelů můžete změnit přetažením nebo pomocí tlačítek se šipkami. První poskytovatel bude mít nejvyšší prioritu.
+          weight: Nastavte váhy (0–100) pro každého poskytovatele. Vyšší hodnoty mají vyšší prioritu. Součet všech vah musí být roven 100.
+        header: Spravovat prioritu - %{title}
+        resource: Zdroj
+        save: Uložit nastavení priority
+        validation:
+          weights_invalid: "⚠ Součet vah je %{total}, mělo by být 100"
+          weights_valid: "✓ Součet vah je 100"
+        weight: Hmotnost
+      service_priority:
+        description: Přetažením služeb nastavíte pořadí jejich zobrazení na rezervačním webu. Služby bez hodnoty objednávky se zobrazí jako poslední a budou seřazeny abecedně.
+        header: Objednávání služeb
+      show:
+        availability: Poskytovatel PR dostupnosti
+        billing_period: 'Období obnovení:'
+        custom_data: 'Vlastní data:'
+        days: dny
+        description: 'Popis:'
+        interval: 'Trvání:'
+        linked_services_all: Všechny služby
+        manage_priority: Spravovat priority
+        minutes: zápis
+        never_expires: Nikdy nevyprší
+        no_providers: 'Důležité: Tuto službu nenabízejí žádné zdroje a nebude zobrazena na rezervačním webu. Kliknutím sem přidáte poskytovatele.'
+        not_in_category: Na rezervačním webu používáte kategorie a tato služba není propojena s žádnou kategorií. V důsledku toho tato služba momentálně na rezervačním webu není viditelná. Klikněte zde pro správu kategorií.
+        offered: 'Nabízeno následujícími zdroji:'
+        price: 'Cena:'
+        qr_code: QR kód pro zákazníky
+        quota: 'Počet zahrnutých rezervací:'
+        show_on_booking_site: Otevřená služba na rezervačním webu
+        unlimited: Neomezený
+        validity: 'Platnost:'
+      slots:
+        available: 'Dostupné sloty:'
+        next_available: 'Další dostupný termín:'
+        none_available: Žádné volné sloty.
+      update_priority:
+        priority_updated: Nastavení priorit bylo úspěšně aktualizováno.
+    setup:
+      appointment_services:
+        add: Přidat další
+        footer_html: Služba pro <strong>sjednávání schůzek</strong> má pevnou dobu trvání, například 30 minut, a lze ji rezervovat v rámci pevně stanovené otevírací doby, například od 9:00 do 15:00 od pondělí do pátku. Příkladem je konzultace a pronájem.
+        header_html: Skvělé, pojďme na to!<br> Nejprve přidejte služby pro sjednávání schůzek.
+        minutes: zápis
+        submit: Pokračovat
+      attendance_services:
+        add: Přidat další
+        footer_html: "<strong>Účast</strong> na akcích, kurzech a přednáškách. Konání v určitém čase, například 14. září od 15:00 do 19:00 nebo každé úterý v 19:30. Datum a čas budou upřesněny později."
+        header_html: Skvělé, pojďme na to!<br> Nejprve přidejme služby pro docházku.
+        submit: Pokračovat
+      completed:
+        header_html: Gratulujeme – vaše rezervační stránka je nyní online!
+      completed_appointment:
+        info_html: Vaše rezervační stránka je nyní nakonfigurována na %{href}. Zde si vaši zákazníci mohou rezervovat online. Také jsme vám zaslali e-mail s těmito informacemi. Kromě rezervační stránky si můžete také ručně zadávat schůzky do kalendáře.
+        to_calendar: Přejít do kalendáře
+      completed_attendance:
+        info_html: Vaše rezervační stránka bude dostupná na adrese %{href}. Nejprve ale musíte přidat první událost, kterou bude možné rezervovat.
+        new_event: Dobře, pojďme vytvořit mou první událost.
+      resources:
+        add: Přidat další
+        footer_html: Zdroj může být zaměstnanec, místnost nebo objekt. Název zdroje je jméno zaměstnance nebo křestní jméno, například „Malá zasedací místnost“ nebo „Projektor č. 4“. Každá rezervace patří jednomu zdroji.
+        from: z
+        header_html: Téměř hotovo!</br> Stačí přidat nějaké zdroje a jste připraveni.
+        save: Uložit
+        submit: Hotovo!
+        to: na
+        working_hours: Dostupnost
+        working_hours_header: ''
+      start:
+        add_services_for: Definovat služby pro
+        appointments: Schůzky
+        appointments_info_html: Například konzultace u chiropraktika, kadeřnictví, masáže, půjčovna nebo jiné služby s pevnou otevírací dobou.
+        attendances: Účast
+        attendances_info_html: Pro účast na akcích, kurzech, přednáškách nebo jiné docházky v určitých časech. Buď jednorázově, nebo opakovaně, například každé úterý.
+        footer_html: Služba je něco, co nabízíte svým zákazníkům a bude zobrazeno na rezervačním webu. Definujte služby pro schůzky s pevnou otevírací dobou nebo pro účast, která probíhá v konkrétním čase.
+        header_html: Vítejte na Makeplans.<br> Začněte přidáním svých služeb
+    shared:
+      recurring:
+        booking_window_fixed: Používejte stejná data registrace pro všechny výskyty
+        enabled: Opakujte několikrát se vzorem
+        freq:
+          monthly: Měsíc
+          weekly: Týden
+          yearly: Rok
+        freq_label: Období
+        interval:
+          '1': Každý
+          '2': Každou vteřinu
+          '3': Každý třetí
+          '4': Každý čtvrtý
+          '5': Každý pátý
+          '6': Každý šestý
+          '7': Každý sedmý
+          '8': Každých osm
+        interval_label: Frekvence
+        length:
+          count: Události
+          until: Před datem
+        length_label: Až
+    sms:
+      create:
+        queued: Odesílání SMS %{recipents_count} příjemcům...
+      insufficient_credits:
+        buy: Nákup SMS
+        info: Abyste mohli odesílat zprávy, musíte si předplatit %{needed} SMS kreditů. Máte %{credits} kreditů.
+      new:
+        filter:
+          all: Vše
+          calculate: Najít příjemce
+          change: Změnit filtr
+          date_hint: Volitelné. Pokud chcete datum neomezit, ponechte pole prázdné.
+          from: Rezervace na nebo později
+          header: Odeslat SMS filtrovaným zákazníkům
+          instructions: Vyberte rozsah dat, službu a/nebo zdroj pro nalezení zákazníků s odpovídajícími rezervacemi. Je vyžadován alespoň jeden filtr.
+          no_limit: Bez omezení
+          no_recipients: Vybranému filtru neodpovídají žádní zákazníci. Upravte filtr a zkuste to znovu.
+          none: Před odesláním prosím vyberte alespoň jeden filtr (rozsah dat, službu nebo zdroj).
+          one_sms_per_person: Každý zákazník obdrží jednu SMS, i když má více rezervací odpovídajících filtru.
+          resources: Zdroje
+          resources_hint: Nechte prázdné, chcete-li zahrnout zákazníky s rezervacemi pro jakýkoli zdroj.
+          services: Služby
+          services_hint: Nechte pole prázdné, pokud chcete zahrnout zákazníky s rezervacemi na jakoukoli službu.
+          to: Rezervace na nebo dříve
+        header: 'Odeslat SMS příjemcům %{recipents_count}:'
+        liquid_hint: Personalizujte zprávu pomocí tagů, jako například {{ person.name }}, {{ person.first_name }} nebo {{ person.email }}.
+        message: Zpráva
+        message_error: Zprávu se nepodařilo zpracovat. Zkontrolujte prosím personalizační štítky a zkuste to znovu.
+        processing: Odesílání...
+        send: Poslat
+        sms_info: U zpráv delších než 160 znaků se cena vypočítává za každých 160 znaků. Cena za zprávu o délce 200 znaků je 2 SMS. Zákazník obdrží 1 SMS.
+        warning:
+          all: 'DŮLEŽITÉ: Nyní budete odesílat VŠEM svým zákazníkům.'
+          confirm: Jste si jistý/á, že chcete odeslat tuto zprávu?
+          event: 'DŮLEŽITÉ: Nyní odešlete všem účastníkům této události.'
+    sms_credits:
+      charge:
+        info: Nákup %{sms_credits} SMS kreditů.
+        process: Dokončit nákup
+        processing: Prosím, čekejte...
+      index:
+        buy: Kupte si další SMS kredity
+        header: Zůstatek na SMS
+        sms_credits_available: Máte k dispozici %{credits} SMS kreditů.
+      purchase_form:
+        buy: Nákup
+        header: Nákup SMS kreditů
+        offer: Sleva %{discount} %.
+        quantity: SMS zpráva %{quantity}.
+        total: 'Celkem: %{sum}'
+    users:
+      index:
+        header: Uživatelé
+      list_menu:
+        list: Uživatelé
+      show:
+        remove_access: Odebrat přístup
+        remove_access_confirm: Opravdu chcete tomuto uživateli odebrat přístup k tomuto účtu?
+    web_hooks:
+      index:
+        app_secret_info_html: Tajný kód aplikace pro ověřování webhooků. Podrobnosti naleznete <a href="https://developer.makeplans.com" target="_blank" class="link-external">v dokumentaci</a> .
+        header: Webhooky

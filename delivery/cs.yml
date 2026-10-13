@@ -1,0 +1,145 @@
+---
+cs:
+  booking_ical:
+    summary: "%{service} na %{client}"
+  booking_mailer:
+    awaiting_confirmation:
+      body: |-
+        Dobrý den,
+         Vaše žádost o rezervaci %{title} %{time_range} byla zaznamenána.
+         Rezervace nebude potvrzena, dokud nebude schválena.
+        Po zpracování rezervace obdržíte e-mail.
+      subject: Nová žádost o rezervaci
+    cancellation:
+      header: Ahoj %{name}
+      info: Vaše rezervace pro %{title} v %{time_range} byla zrušena.
+      subject: Rezervace zrušena
+    confirmation:
+      booking_count:
+        one: Rezervováno pro %{count} osob.
+        other: Rezervováno pro %{count} osob.
+      header: Ahoj %{name}
+      info: Rezervovali jste %{title} %{time_range}.
+      link: Více informací o vaší rezervaci
+      link_cancellation_info: a možnosti zrušení
+      resource_info: 'Rezervace u: %{resource}.'
+      subject: Nová rezervace
+      subject_service: Rezervace pro %{service}
+    declined:
+      header: Ahoj %{name}
+      info: Vaše žádost o rezervaci %{title} %{time_range} nebyla schválena. Rezervace není potvrzena. Zkuste to prosím jindy.
+      subject: Rezervace nebyla potvrzena
+    modification:
+      header: Ahoj %{name}
+      info: 'Vaše rezervace byla změněna na: %{title} %{time_range}.'
+      link: Více informací o vaší rezervaci
+      link_cancellation_info: a možnosti zrušení
+      resource_info: 'Rezervace u: %{resource}.'
+      subject: Rezervace upravena
+    request_card:
+      header: Ahoj %{name}
+      info: Pro snadnou úhradu rezervace prosím zadejte údaje o své kreditní kartě.
+      link: Přidat platební kartu
+      subject: Přidejte své platební údaje
+    request_payment:
+      header: Ahoj %{name}
+      info: Rezervaci můžete zaplatit pomocí níže uvedeného odkazu.
+      link: Zaplatit rezervaci
+      subject: Platba za vaši rezervaci
+    verification:
+      footer: 'Důležité: Rezervace ještě není dokončena. Pokud ji neověříte do %{expires_in} minut, může vaše rezervace vypršet.'
+      header: Pro dokončení rezervace %{title} %{time_range} musíte ověřit svou rezervaci pomocí níže uvedeného kódu.
+      link: Potvrdit rezervaci
+      subject: Prosím, ověřte si svou rezervaci
+    waitlist_available:
+      confirm_button: Potvrdit rezervaci
+      header: Ahoj %{name}
+      info: Dobrá zpráva! Uvolnilo se místo pro %{title} %{time_range}.
+      resource_info: 'Rezervace u: %{resource}.'
+      subject: Pro vaši rezervaci na čekací listině je k dispozici místo
+    waitlist_joined:
+      header: Ahoj %{name}
+      info: Byli jste přidáni na čekací listinu pro %{title} %{time_range}. Dáme vám vědět, jakmile se uvolní místo.
+      link: Zobrazit rezervaci na čekací listině
+      resource_info: 'Rezervace u: %{resource}.'
+      subject: Jste na čekací listině
+    waitlist_payment:
+      footer: 'Důležité: Pokud platbu nedokončíte do %{expires_in} minut, vaše rezervace může vypršet.'
+      header: Ahoj %{name}
+      info: Dobrá zpráva! Uvolnilo se místo pro %{title} %{time_range}. Potvrďte svou rezervaci platbou.
+      pay_button: Zaplatit a potvrdit rezervaci
+      resource_info: 'Rezervace u: %{resource}.'
+      subject: Místo je k dispozici - pro potvrzení rezervace dokončete platbu
+  booking_occurrence_mailer:
+    cancel:
+      body: 'Vaše rezervace u %{title} na následující časy byly zrušeny:'
+      subject: Zrušené rezervace
+    create:
+      body: 'Rezervovali jste si %{title} na následující časy:'
+      subject: Nové rezervace
+  booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        POTŘEBNÁ AKCE: Žádost o rezervaci od {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} dne {{ booking.time_range }}
+         {{ booking.client.manage_unconfirmed_bookings_link }}
+         Plánování
+      booking_type_attendance: |-
+        POTŘEBNÁ AKCE: Žádost o registraci od {{ booking.person.name }} pro {{ booking.event.full_title }} {{ booking.time_range }}.
+         {{ booking.client.manage_unconfirmed_bookings_link }}
+         Vytvořit plány
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        ZRUŠENÍ: {{ booking.person.name }} zrušil(a) svou rezervaci {{ booking.resource.title }} - {{ booking.title }} na {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        ZRUŠENÍ: {{ booking.person.name }} zrušil(a) svou registraci pro {{ booking.event.full_title }} {{ booking.time_range }}.
+        Makeplans
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Nová rezervace {{ booking.resource.title }} od {{ booking.person.name }}. {{ booking.title }} na {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        Nová registrace pro {{ booking.event.full_title }} {{ booking.time_range }} od {{ booking.person.name }}.
+        Vytvořte plány
+    admin_notification_modification:
+      booking_type_appointment: |-
+        Změna rezervace pro {{ booking.resource.title }} uživatelem {{ booking.person.name }}. {{ booking.title }} dne {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        Registrace pro {{ booking.event.full_title }} {{ booking.time_range }} byla změněna uživatelem {{ booking.person.name }}.
+        Vytvořit plány
+    admin_notification_resource_change:
+      booking_type_appointment: |-
+        Změna zdroje na {{ booking.resource.title }} pro {{ booking.person.name }} {{ booking.title }} na {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        Registrace pro {{ booking.event.full_title }} {{ booking.time_range }} byla změněna uživatelem {{ booking.person.name }}.
+        Vytvořit plány
+    awaiting_confirmation: Odeslali jste žádost o rezervaci {{ booking.title }} {{ booking.booked_from }}. Po zpracování vaší žádosti vám zašleme zprávu.
+    cancellation: Vaše rezervace na {{ booking.booked_from }} byla zrušena.
+    confirmation: Provedli jste rezervaci pro {{ booking.title }} {{ booking.booked_from }}.
+    declined: Vaše žádost o rezervaci {{ booking.title }} {{ booking.booked_from }} nebyla schválena. Zkuste to prosím znovu.
+    modification: 'Vaše rezervace byla upravena: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Připomínka: Rezervace {% if booking.service != nil %} z {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: Prosím, přidejte své platební údaje na %{url}
+    request_payment: 'Rezervaci {% if booking.service != nil %} z {{ booking.title }} {% endif %}{{ booking.booked_from }} můžete uhradit zde: {{ booking.payment_link }}'
+    signature: |2-
+
+      {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} je váš ověřovací kód pro rezervaci {{ booking.title }}."
+    waitlist_available: Místo je nyní k dispozici pro {{ booking.title }} {{ booking.booked_from }}. Klikněte na odkaz pro potvrzení rezervace.
+    waitlist_joined: Jste na čekací listině pro {{ booking.title }} {{ booking.booked_from }}. Dáme vám vědět, jakmile se uvolní místo.
+    waitlist_payment: 'Místo je nyní k dispozici pro {{ booking.title }} {{ booking.booked_from }}. Zaplaťte zde pro potvrzení rezervace: {{ booking.payment_link }}'
+  person_mailer:
+    export:
+      subject: Export dat
+    perishable_token:
+      body: |-
+        Pro dokončení ověření použijte níže uvedený kód:
+         %{perishable_token}
+      subject: Přihlášení pro %{client}
+  person_sms:
+    perishable_token: "{{ perishable_token }} je váš kód pro ověřování."
+    signature: |2-
+
+      {{ client.name }}

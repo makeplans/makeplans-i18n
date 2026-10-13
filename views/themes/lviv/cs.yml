@@ -1,0 +1,160 @@
+---
+cs:
+  lviv:
+    bookings:
+      authenticate:
+        email: E-mail
+        phone_number: Telefonní číslo
+        title: Potvrdit rezervaci
+      cancelled:
+        title: Vaše rezervace je zrušena
+      new:
+        agree_with: Souhlasím s podmínkami
+        errors_header: Vyplňte prosím povinná pole.
+        optional: Volitelný
+        submit: Dokončit rezervaci
+        subtitle: Vaše rezervace ještě není potvrzena. Zkontrolujte prosím podrobnosti a stiskněte tlačítko níže.
+        title: Potvrďte svou rezervaci
+      payment_stripe:
+        make_payment: Provést platbu
+        title: Zadejte platební údaje
+      pre_payment:
+        make_payment: Provést platbu
+        title: Vyberte způsob platby
+      show:
+        add_to_calendar: Přidat do kalendáře
+        alt:
+          calendar: Přidat do kalendáře
+          profile: Profil
+        cancel_booking: Zrušit rezervaci
+        title: Podrobnosti o rezervaci
+    categories:
+      index:
+        title: Vyberte kategorii
+    events:
+      index:
+        title: Vyberte datum a čas
+      show:
+        book_event: Rezervovat tuto událost
+    generic:
+      step: Krok %{step} / %{steps}
+    gift_cards:
+      new:
+        description: Kupte dárkovou kartu pro někoho výjimečného. Vyberte níže uvedenou částku.
+        value_label: Hodnota
+        value_placeholder: Zadejte částku
+    layouts:
+      application:
+        about_makeplans: O Makeplans
+        account: Účet
+        alt:
+          account: Účet
+          cancel: Zrušit
+          cart: Vozík
+          menu: Menu
+        booking_site_footer: Rezervační stránka pro %{name}
+        close: Blízko
+        get_support: Získejte podporu
+        menu: Menu
+        privacy_policy: Zásady ochrany osobních údajů
+        terms_conditions: Obchodní podmínky
+        title: Online rezervace pro %{name}
+    order_cart:
+      checkout:
+        coupon_code_placeholder: Zadejte kód
+        header: Pokladna
+        order_total: Celkem objednávky
+    order_payments:
+      failure:
+        message: Vaši platbu bohužel nebylo možné zpracovat.
+      pay_later:
+        payment:
+          description: Vaše objednávka bude potvrzena. Platbu lze provést později.
+      stripe:
+        payment:
+          payment_details_html: Platba je zpracována bezpečně pomocí %{provider}. Všechny částky jsou v %{currency}.
+      vipps:
+        awaiting_payment:
+          body: Prosím, vyčkejte, než ověříme transakci.
+          error: Nepodařilo se nám ověřit vaši platbu. Kontaktujte prosím zákaznický servis s referenčním číslem %{order_id}.
+          title: Ověřování vaší platby
+    orders:
+      index:
+        header: Moje objednávky
+        no_orders: Zatím nemáte žádné objednávky.
+      payment:
+        no_payment_methods: Žádné platební metody nejsou k dispozici.
+        stripe: Kreditní karta
+      show:
+        back_to_orders: Zpět k objednávkám
+        each: každý
+    person_sessions:
+      enter_perishable_token:
+        confirm_booking: Potvrdit rezervaci
+        no_code: Nedostáváte kód?
+        send_again: Poslat znovu
+        verify_login: Ověření přihlášení
+      perishable_token_action_required:
+        body: Poslali jsme e-mail na adresu %{recipient}. Sledujte jej pro ověření vaší rezervace. Pomůže nám to ujistit se, že nejste robot.
+        delivery_error: Nepodařilo se nám vám poslat e-mail. Jste si jistý/á, že jste zadal/a správnou e-mailovou adresu?
+        delivery_not_processed: V našich systémech momentálně dochází ke zpoždění. Prosím, vyčkejte, než váš e-mail doručíme.
+        title: Potvrďte prosím svou e-mailovou adresu
+      perishable_token_form:
+        title: Přihlášení
+      verification_method_email:
+        submit: Odeslat ověřovací e-mail
+      verification_method_sms:
+        submit: Odeslat ověřovací kód
+    products:
+      show:
+        price: Cena
+    profile:
+      children:
+        index:
+          add_person: Přidat osobu
+          alt:
+            right: Právo
+          no_children: Zatím jste nikoho nepřidali k rezervaci.
+        new:
+          subtitle: Vyplňte prosím údaje osoby, pro kterou chcete rezervaci provést.
+      credit_card_list:
+        title: Platební metody
+      index:
+        book_again: Rezervujte znovu
+        canceled: Zrušeno
+        my_profile: Můj profil
+        waiting: Čekání
+      new:
+        subtitle: Vyplňte prosím údaje požadované k registraci.
+        title: Nový profil
+      show:
+        alt:
+          language: Jazyk
+          logout: Odhlásit se
+          right: Právo
+        change_language: Změnit jazyk
+        logout: Odhlásit se
+        my_bookings: Moje rezervace
+    services:
+      available_dates:
+        title: Vyberte datum a čas
+      count:
+        title: Vyberte počet osob
+      index:
+        title: Vyberte službu
+      location:
+        title: Vyberte místo
+      show:
+        book_service: Rezervovat tuto službu
+      slots:
+        available_times: Dostupné časy
+        continue: Pokračovat
+        estimated_time: Odhadovaná doba služby - %{duration} min.
+        free_capacity: "%{count} k dispozici"
+        next_available_date_html: Další dostupný termín je %{next_available_date}
+        no_availability: V daný den není k dispozici. Zkuste prosím jiný termín.
+        title: Vyberte datum a čas
+      success:
+        add_to_calendar: Přidat rezervaci do kalendáře
+        book_another: Rezervovat další službu
+        title: Úspěšně jste si rezervovali službu

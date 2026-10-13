@@ -1,0 +1,275 @@
+---
+cs:
+  booking_ical:
+    summary_admin: "%{person} - %{service}"
+  booking_user_mailer:
+    booking_info:
+      customer_info: Informace o zákazníkovi
+    notification_cancellation:
+      body: "%{name} zrušil(a) rezervaci uživatele %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Zrušení pro %{resource}
+      booking_type_attendance:
+        subject_resource: Zrušení pro %{title}
+      link: Chcete-li si prohlédnout tuto rezervaci, přejděte prosím na
+    notification_confirmation:
+      appointment:
+        body: "%{name} rezervoval %{title} %{time_range}."
+      attendance:
+        body: "%{name} se zaregistroval/a na %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Nová rezervace pro %{resource}
+      booking_type_attendance:
+        subject_resource: Nová registrace pro %{title}
+      link: Chcete-li si prohlédnout tuto rezervaci, přejděte prosím na
+    notification_modification:
+      appointment:
+        body: "%{name} změnil %{title} %{time_range}."
+      attendance:
+        body: "%{name} upravil registraci %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Upravená rezervace pro %{resource}
+      booking_type_attendance:
+        subject_resource: Upravená registrace pro %{title}
+      link: Chcete-li si prohlédnout tuto rezervaci, přejděte prosím na
+    notification_resource_change:
+      appointment:
+        body: "%{name} změnil %{title} %{time_range}."
+      attendance:
+        body: "%{name} upravil registraci %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Upravený zdroj pro %{resource}
+      booking_type_attendance:
+        subject_resource: Upravený zdroj pro %{title}
+      link: Chcete-li si prohlédnout tuto rezervaci, přejděte prosím na
+    notification_waitlist_joined:
+      appointment:
+        body: "%{name} se připojil(a) na čekací listinu pro %{title} %{time_range}."
+      attendance:
+        body: "%{name} se připojil(a) na čekací listinu pro %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Registrace na čekací listinu pro %{resource}
+      booking_type_attendance:
+        subject_resource: Registrace na čekací listinu pro %{title}
+      link: Chcete-li si prohlédnout tuto rezervaci, přejděte prosím na
+    request_approvement:
+      body: "%{name} chce rezervovat %{title} %{time_range}."
+      link: Chcete-li tuto rezervaci schválit nebo zamítnout, přejděte prosím na
+      subject_resource: Nový požadavek pro %{resource}
+  client_mailer:
+    activated:
+      body: |-
+        Ahoj,
+         Vaše předplatné Makeplans bylo úspěšně aktivováno.
+        Ceník naleznete na adrese https://makeplans.com/en/pricing/
+        Podmínky naleznete na adrese https://terms.makeplans.com
+         Váš účet: %{subdomain}
+         Děkujeme, že používáte Makeplans :D
+         Máte-li jakékoli dotazy, odpovězte na tento e-mail.
+      subject: Váš účet je aktivován
+    api_enabled:
+      body: |-
+        Ahoj,
+         Vypadá to, že jste povolili API na svém účtu Makeplans %{subdomain}. To je skvělé!
+         Pokud víte, co děláte, můžete tento e-mail ignorovat.
+         Pokud ale s API Makeplans teprve začínáte, podívejte se prosím na dokumentaci na adrese https://developer.makeplans.com.
+        Najdete zde informace o ověřování, všech koncových bodech, webhookech a také příklady.
+        Máte nějaké otázky? Kontaktujte nás, rádi vám pomůžeme.
+         Pokud experimentujete, mohlo by být vhodné vytvořit si vývojářský účet API v našem testovacím prostředí. Existují zde určitá omezení, ale obecně je lepší vyvíjet v samostatném prostředí a účtu než ve vašem skutečném účtu.
+        Odkaz na testovací prostředí najdete v dokumentaci k API.
+         Přeji vám šťastné programování!
+      subject: API je povoleno na vašem účtu Makeplans
+    charge_failed:
+      body: |-
+        Dobrý den,
+         Pokusili jsme se zpracovat vaši platbu za použití Makeplans, ale zobrazila se nám následující chyba: %{error}
+         Přihlaste se prosím do svého účtu Makeplans a ověřte si platnost karty.
+         %{url}
+         Pokud platba nebude úspěšná, váš účet bude brzy deaktivován.
+         Děkujeme,
+        Makeplans
+      subject: 'VYŽADOVANÁ AKCE: Problém se zpracováním vaší platby'
+    charge_give_up:
+      body: |-
+        Ahoj,
+         VAROVÁNÍ: Váš účet je nyní deaktivován.
+         Pokusili jsme se zpracovat vaši platbu za použití Makeplans, ale zobrazila se nám následující chyba: %{error}
+         Přihlaste se prosím do svého účtu Makeplans a ověřte, zda je vaše karta platná, abyste mohli svůj účet znovu aktivovat:
+         %{url}
+         Děkujeme,
+        Makeplans
+      subject: 'VYŽADOVANÁ AKCE: Účet deaktivován'
+    charge_requires_action:
+      body: |-
+        Dobrý den,
+         Pokusili jsme se zpracovat vaši platební kartu pro použití Makeplans, ale k dokončení platby potřebujeme vaši autorizaci. Důvodem jsou požadavky vaší banky.
+         Váš účet Makeplans bude brzy deaktivován, pokud nebude platba potvrzena.
+         %{url}
+         Děkujeme,
+        Makeplans
+      subject: 'POŽADOVANÁ AKCE: Potvrďte prosím platbu'
+    charge_succeded:
+      body: |-
+        Z vaší kreditní karty jsme strhli platbu za používání Makeplans. Pro platbu faktury č. %{invoice_nr} se prosím podívejte do přiloženého dokladu.
+         Upozorňujeme, že tato faktura je již zaplacena. Není nutná žádná další akce.
+         Váš účet: %{subdomain}
+         Děkujeme, že používáte Makeplans.
+      filename: Plány jako %{invoice_date} účtenka č. %{invoice_nr}
+      subject: Váš doklad o použití Makeplans
+    deactivated:
+      body: |-
+        Ahoj,
+         jsem Espen, zakladatel Makeplans. Je mi líto, že jste si deaktivoval/a účet Makeplans.
+         Chyběly vám nějaké funkce nebo proč jste se rozhodl/a Makeplans již nepoužívat? Pokud máte pro nás nějakou zpětnou vazbu, rád/a si ji poslechnu, abychom mohli náš produkt vylepšit. Nebo vám Makeplans připadal trochu složitý na nastavení či používání? Mohu vám s nastavením účtu pomoci. Navíc vám mohu poskytnout dva měsíce bezplatného používání, pokud jste ochotni Makeplans znovu zkusit.
+         Odpovězte na tento e-mail a já se vám ozvu.
+         Váš deaktivovaný účet: %{subdomain}.
+         Bez ohledu na to, přeji hezký den a děkuji, že jste Makeplans vyzkoušeli.
+      subject: 'KRITICKÉ: Účet Makeplans deaktivován'
+    inactive_warning:
+      body: |-
+        Dobrý den,
+         Jelikož vaše zkušební doba vypršela a od %{latest_booking_change_at} nebyla na vašem účtu žádná aktivita, deaktivujeme váš účet do 30 dnů.
+         Chcete-li si účet zachovat, přihlaste se prosím do %{url}.
+         Pokud nepodniknete žádné kroky, deaktivujeme váš účet do jednoho měsíce. Poté bude váš účet a všechna vaše data smazána do čtyř měsíců.
+         Děkujeme, že jste vyzkoušeli Makeplans :)
+      subject: 'KRITICKÉ: Účet Makeplans bude deaktivován.'
+    no_bookings:
+      body: |-
+        Ahoj,
+         Minulý týden jsi se zaregistroval/a do Makeplans. Je to služba pro online rezervaci schůzek.
+         Všiml/a jsem si, že na tvém účtu zatím nemáš žádné rezervace. Proč si nepřidáš zkušební rezervaci v administračním systému a nezjistíš, zda ti Makeplans vyhovuje?
+        Chceš-li přidat rezervaci, přejdi na %{url}.
+          Pokud si nejsi jistý/á, jak nakonfigurovat svůj účet, nebo máš-li jakékoli dotazy ohledně fungování procesu rezervace, odpověz na tento e-mail a my ti pomůžeme :)
+      subject: Zatím žádné rezervace
+    not_setup:
+      body: |-
+        Ahoj,
+         Včera jsi se zaregistroval/a do Makeplans. Je to služba pro online rezervaci schůzek.
+         Všiml/a jsem si, že jsi nedokončil/a nastavení svého účtu. Možná jsi na to neměl/a čas, pokud ano, proč to nedokončit hned teď?
+        Pro dokončení nastavení přejdi na %{url} - trvá to jen 45 sekund.
+         Nebo máš nějaké dotazy ohledně používání Makeplans nebo jak nejlépe nakonfigurovat svůj účet? Odpověz na tento e-mail a my ti pomůžeme :)
+      subject: Dokončete nastavení Makeplans
+    paused:
+      body: |-
+        Dobrý den,
+         Vaše předplatné Makeplans bude na konci tohoto fakturačního období (%{demo_ends_at}) pozastaveno.
+        Upozorňujeme, že vám budou účtovány veškeré transakční poplatky, jako například SMS, dokud bude váš účet aktivní.
+         Pokud je vaše předplatné pozastaveno, můžete svůj účet v budoucnu snadno znovu aktivovat.
+         Váš účet: %{subdomain}
+         Pokud máte potíže s fungováním Makeplans pro váš uživatelský případ, odpovězte prosím na tento e-mail, abychom vám mohli pomoci s konfigurací vašeho účtu a vysvětlit vám, jak můžete Makeplans nejlépe používat na základě vašich požadavků.
+      subject: Váš účet bude pozastaven
+    setup_completed:
+      contact_us_html: A pokud máte jakékoli dotazy, napište nám na %{mail}
+      footer: Vytvořte plány
+      header: Vaši zákazníci si nyní mohou rezervovat online!
+      info: Nyní jste si nakonfigurovali účet Makeplans a jste připraveni přijímat online rezervace od svých zákazníků.
+      next_steps: 'Další kroky:'
+      step_1: Proveďte zkušební rezervaci, abyste ověřili, že všechny textové zprávy a odeslané zprávy jsou správné.
+      step_2: Až budete připraveni, vložte na svůj web odkaz na rezervační systém.
+      step_3: Dejte také vědět ostatním zákazníkům, že si nyní mohou rezervovat online.
+      subject: Vaši zákazníci si nyní mohou rezervovat online s Makeplans
+    signup:
+      contact_us_html: Pokud máte jakékoli dotazy, kontaktujte nás prosím na adrese %{mail} nebo jednoduše odpovězte na tento e-mail.
+      extra: Další funkce v Makeplans
+      extra_info: 'Je skvělé, že chcete svým klientům nabídnout online rezervaci. Makeplans vám a vašim klientům navíc může nabídnout mnoho dalších funkcí:'
+      feature_1: Vaši klienti mohou před schůzkou obdržet připomínkovou SMS.
+      feature_2: Při rezervaci požadujte platbu kreditní kartou.
+      feature_3: Uložte si další informace o rezervaci nebo zákazníkovi pomocí vlastních polí.
+      feature_4: Makeplans je integrován s mnoha aplikacemi třetích stran, jako jsou CRM a aplikace pro e-mailové newslettery.
+      footer: Doufám, že se vám používání Makeplans bude líbit
+      header: Vítejte na Makeplans!
+      link_info: Zde najdete svůj kalendář s přehledem všech rezervací a také si můžete nastavit svůj účet.
+      registered: 'Nyní jste se zaregistrovali k bezplatnému testovacímu účtu na adrese:'
+      subject: Vítejte v Makeplans
+    sms_credits_balance_reached:
+      body: |-
+        Ahoj,
+         Váš účet Makeplans má limit pro odesílání %{sms_balance_limit} SMS. Tento limit jste nyní překročili.
+         SMS se z vašeho účtu již neodesílají.
+         Zakoupení SMS kreditů:
+        %{url}
+         Případně se můžete přihlásit ke svému účtu a změnit metodu ověřování z SMS na e-mail a zakázat SMS připomenutí.
+      subject: 'VYŽADOVANÁ AKCE: Vyčerpali jste veškerý svůj kredit za SMS.'
+    sms_credits_balance_warning:
+      body: |-
+        Ahoj,
+         Tvůj účet Makeplans má limit pro odesílání %{sms_balance_limit} SMS. Aktuálně jsi odeslal/a %{sms_balance}.
+         Po dosažení počtu zpráv %{sms_balance_limit} tvůj účet přestane odesílat SMS, dokud si nezakoupíš další SMS kredity.
+         Zakoupení SMS kreditů:
+        %{url}
+         Případně se můžeš přihlásit ke svému účtu a změnit metodu ověřování z SMS na e-mail a zakázat SMS připomenutí.
+      subject: Vaše SMS kredity docházejí
+    trial_expire_warning:
+      body: |-
+        Ahoj,
+         Jen ti oznamuji, že tvoje zkušební verze Makeplans vyprší za 3 dny.
+         Aby tvoji zákazníci mohli rezervovat online bez přerušení, aktivuj si prosím svůj účet.
+         Aktivovat účet:
+        %{url}
+         Ještě jsi neměl/a možnost si službu pořádně vyzkoušet? Odpověz na tento e-mail a my ti můžeme zkušební verzi prodloužit.
+      subject: Zkušební verze brzy končí – aktivujte prosím účet.
+    trial_expired:
+      body: |-
+        Ahoj,
+         Vaše zkušební verze Makeplans nyní skončila.
+         Vaši zákazníci již nemohou provádět rezervace. Pro aktivaci rezervačního webu musíte aktivovat svůj účet.
+         Aktivovat účet:
+        %{url}
+         Ještě jste neměli možnost si službu pořádně vyzkoušet? Odpovězte na tento e-mail a my vám můžeme zkušební verzi prodloužit.
+      subject: Váš zkušební účet Makeplans skončil
+    trial_sms_credits_balance_reached:
+      body: |-
+        Ahoj,
+         Vaše zkušební verze Makeplans má limit pro odesílání %{sms_balance_limit} SMS. Tento limit jste nyní překročili.
+         Chcete-li Makeplans nadále používat, aktivujte si prosím účet.
+         Aktivovat účet:
+        %{url}
+         Případně se můžete přihlásit ke svému účtu a změnit metodu ověřování z SMS na e-mail a zakázat SMS připomenutí.
+      subject: 'VYŽADOVANÁ AKCE: Vyčerpali jste veškerý svůj kredit za SMS.'
+    trial_sms_credits_balance_warning:
+      body: |-
+        Ahoj,
+         Vaše zkušební verze Makeplans má limit odesílání %{sms_balance_limit} SMS. Aktuálně jste odeslali %{sms_balance}.
+         Pokud chcete zajistit, aby se SMS odesílaly, aktivujte si prosím účet.
+        Po dosažení %{sms_balance_limit} zpráv váš účet již nebude odesílat SMS, dokud si účet neaktivujete.
+         Aktivovat účet:
+        %{url}
+         Případně se můžete přihlásit ke svému účtu a změnit metodu ověřování z SMS na e-mail a zakázat SMS připomenutí.
+      subject: Vaše SMS kredity docházejí
+  layouts:
+    booking_user_mailer:
+      footer: Automaticky generováno programem Makeplans.
+  user_mailer:
+    add_user:
+      body: |-
+        Ahoj,
+         Vítej na Makeplans.
+         Klikni na odkaz níže a definuj heslo.
+         %{link}
+      subject: Přidán jako uživatel v Makeplans
+    email_modified:
+      footer: Vytvořte plány
+      info: Vaše e-mailová adresa byla změněna na %{new_email}. Pokud jste tuto akci neprovedli, ihned nás kontaktujte.
+      subject: E-mailová adresa upravena
+    export:
+      body: |-
+        Ahoj,
+         Exportovaná data z Makeplans naleznete v přiloženém souboru.
+         Děkujeme, že používáte Makeplans
+      subject: Exportovat z Makeplans
+    link_user:
+      body: |-
+        Ahoj,
+         Nyní máš přístup k účtu %{client} v Makeplans.
+         Přihlas se na %{link}.
+         Makeplans
+      subject: Přístup k účtu v Makeplans
+    password_modified:
+      footer: Vytvořte plány
+      info: Vaše heslo bylo změněno. Pokud jste tuto akci neprovedli, ihned nás kontaktujte.
+      subject: Heslo upraveno
+    password_reset:
+      footer: Vytvořte plány
+      info: Vy nebo někdo jiný jste požádal o resetování hesla k Makeplans. Chcete-li resetování hesla dokončit, klikněte prosím na odkaz níže.
+      link: Obnovit heslo k Makeplans.
+      subject: Obnovit heslo
