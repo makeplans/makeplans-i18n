@@ -183,14 +183,6 @@ nb:
           attributes:
             template:
               whatsapp_liquid_logic: kan ikke inneholde logikk-koder ({% %}) når leveringstype er WhatsApp - kun flettekoder er tillatt
-        person:
-          attributes:
-            national_id_no:
-              invalid_syntax_no: Fyll inn gyldig fødselsnummer - 11 siffer.
-          blocked: Ikke mulig å gjøre reservasjoner med denne kontoen.
-          missing: er ikke lagret på din kundeprofil. Kontakt oss for å rette opp i dette.
-          no_values_present: Navn, telefonnummer eller epost er påkrevd.
-          prevent_new_signups: booking er kun tilgjengelig for eksisterende kunder
         order:
           attributes:
             base:
@@ -200,6 +192,14 @@ nb:
           attributes:
             booking:
               invalid: er ikke lenger tilgjengelig for betaling
+        person:
+          attributes:
+            national_id_no:
+              invalid_syntax_no: Fyll inn gyldig fødselsnummer - 11 siffer.
+          blocked: Ikke mulig å gjøre reservasjoner med denne kontoen.
+          missing: er ikke lagret på din kundeprofil. Kontakt oss for å rette opp i dette.
+          no_values_present: Navn, telefonnummer eller epost er påkrevd.
+          prevent_new_signups: booking er kun tilgjengelig for eksisterende kunder
         resource:
           has_bookings: Denne ressursen har aktive reservasjoner og kan dermed ikke slettes. Kontakt kundeservice.
         service:
@@ -277,6 +277,7 @@ nb:
           captcha: Spamkontrollen ble ikke fullført. Prøv på nytt.
           expired: Koden har utløpt. Prøv på nytt.
           invalid: Feil kode
+          invalid_value: Ugyldig format
           no_identifier: Mangler e-post eller telefonnummer.
     stripe:
       booking:
@@ -319,10 +320,6 @@ nb:
     today: i dag
     tomorrow: i morgen
     'true': Aktivert
-  profile:
-    update:
-      success: Profilen er oppdatert
-      locked_field_changed: Verifiserte felt kan ikke endres
   helpers:
     booking:
       action:
@@ -412,7 +409,6 @@ nb:
         confirm_manually: Reservasjon må godkjennes av administrator
         country_code: Land
         coupon_form: Egendefinerte rabattkodefelter
-        gift_card_form: Egendefinerte gavekortfelter
         css_url: Egen CSS (URL må være HTTPS)
         currency: Valuta
         email: Epost-adresse
@@ -423,6 +419,7 @@ nb:
         first_bookable_period: Begrensing for første ledige tidspunkt
         footer: Bunntekst på hver side
         future_bookable_period: Begrensing for hvor langt frem i tid man kan reservere
+        gift_card_form: Egendefinerte gavekortfelter
         google_analytics: Google Analytics tracking ID
         ical_description: Beskrivelse
         ical_summary: Tittel
@@ -431,6 +428,8 @@ nb:
         logo: Logo
         mail_awaiting_confirmation: Tekst i epost som blir sendt når reservasjon trenger godkjenning
         mail_awaiting_confirmation_subject: Tittel i epost som blir sendt når reservasjon trenger godkjenning
+        mail_awating_confirmation: Tekst i ventende bekreftelses-e-post
+        mail_awating_confirmation_subject: Emne venter på bekreftelses-e-post
         mail_cancellation: Tekst i epost som blir sendt ved kansellering
         mail_cancellation_subject: Tittel i epost som blir sendt ved kansellering
         mail_confirmation: Tekst i epost som blir sendt ved bekreftelse
@@ -450,8 +449,8 @@ nb:
         mailer_sender: Epost-avsender
         message_template_form: Egendefinerte meldingsmalfelter
         name: Firmanavn (vises på bookingsiden)
-        next_invoice_nr: Neste fakturanummer
         new_booking_text: Tekst som vises på bekreftelsesiden
+        next_invoice_nr: Neste fakturanummer
         no_availability_text: Tekst som vises når det ikke er ledige tidspunkt
         order_form: Egendefinerte ordrefelter
         payment_provider: Standard betalingsløsning
@@ -512,13 +511,6 @@ nb:
         valid_until: Gyldig til
         value: Rabattverdi
         value_type: Rabatttype
-      gift_card:
-        active: Aktiv
-        code: Kode
-        initial_value: Opprinnelig verdi
-        person_id: Kunde
-        valid_until: Gyldig til
-        value: Nåværende verdi
       event:
         all_day: Hele dagen
         allow_cancellation: Tillatt avbestilling av kunden
@@ -537,6 +529,13 @@ nb:
         service_id: Arrangementstype
         starts_at: Starter
         title_html: Spesifisert tittel <small>valgfritt</small>
+      gift_card:
+        active: Aktiv
+        code: Kode
+        initial_value: Opprinnelig verdi
+        person_id: Kunde
+        valid_until: Gyldig til
+        value: Nåværende verdi
       message_template:
         active: Aktiv
         delivery_timing: Leveringstidspunkt
@@ -583,11 +582,11 @@ nb:
         allow_invoice: Kan betales med faktura
         availability_type: Tilgjengelighet er definert av
         billing_period: Fornyes hver
-        cancellation_period: Avbestillingsfrist
         block_resource: Reservasjon blokkerer ressursen
         booking_capacity: Maks antall personer per reservasjon
         booking_form: Egendefinert reservasjonskjema
         booking_minimum: Min antall personer per reservasjon
+        cancellation_period: Avbestillingsfrist
         capacity: Maks antall deltagere
         confirm_manually: Reservasjon må godkjennes av administrator
         description: Beskrivelse
@@ -595,8 +594,8 @@ nb:
         has_day_booking_label:
           'false': min
           'true':
-            one: dag
             many: dager
+            one: dag
         interval: Varighet
         interval_rounding: Avrunding til neste ledige tidspunkt
         mail_awaiting_confirmation: Tekst i epost som blir sendt når reservasjon trenger godkjenning kreves
@@ -668,8 +667,6 @@ nb:
       confirm: Er du sikker?
       coupon:
         new: Ny rabattkode
-      gift_card:
-        new: Nytt gavekort
       create: Opprett
       delete: Slett
       delete_confirm: Er du sikker på at du vil slette?
@@ -677,6 +674,8 @@ nb:
       event:
         new: Nytt arrangement
         new_attendant: Legg til reservasjon
+      gift_card:
+        new: Nytt gavekort
       message_template:
         new: Ny meldingsmal
       person:
@@ -726,10 +725,10 @@ nb:
       communication: Kommunikasjon
       company: Konto
       coupons: Rabattkoder
-      gift_cards: Gavekort
       developer: Utvikler
       export: Eksport
       fields: Egendefinerte felter
+      gift_cards: Gavekort
       import: Import
       integrations: Integrasjoner
       message_templates: Meldingsmaler
@@ -761,12 +760,12 @@ nb:
         no_shows: Ikke møtt
         since: siden %{date}
         summary:
-          last_visit: "Siste besøk: %{date}"
+          last_visit: 'Siste besøk: %{date}'
           no_shows:
             one: "%{count} gang ikke møtt"
             other: "%{count} ganger ikke møtt"
-          total_paid: "Totalt betalt: %{amount}"
-          visits_since: "Besøk siden %{date}: %{count}"
+          total_paid: 'Totalt betalt: %{amount}'
+          visits_since: 'Besøk siden %{date}: %{count}'
         total_paid: Totalt betalt
         visits: Besøk
     select:
@@ -778,6 +777,10 @@ nb:
       submit_default: Lagre
       update: Endre %{model}
       update_password: Endre passord
+  profile:
+    update:
+      locked_field_changed: Verifiserte felt kan ikke endres
+      success: Profilen er oppdatert
   service:
     admin:
       invoice_client:

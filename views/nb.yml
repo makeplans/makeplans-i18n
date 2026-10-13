@@ -47,13 +47,10 @@ nb:
       headline: Registrering blokkert
       info: Beklager men vårt system har blokkert din registrering som spam. Kontakt oss for å registrere en konto.
       title: Registrering blokkert
+  oauth:
+    callback:
+      header: Knytt til konto
   room_display:
-    show:
-      book: "Bestill"
-      free_all_day: "Ledig hele dagen"
-      free_for: "Ledig i %{duration}"
-      find_room: "Finn et rom"
-      occupied: "Opptatt"
     setup:
       header: Oppsett av møteromsvisning
       instruction: Vennligst skriv inn oppsettskoden generert i administrasjonspanelet.
@@ -61,9 +58,12 @@ nb:
       placeholder: Skriv inn kode
       submit: Aktiver
       title: Oppsett av møteromsvisning
-  oauth:
-    callback:
-      header: Knytt til konto
+    show:
+      book: Bestill
+      find_room: Finn et rom
+      free_all_day: Ledig hele dagen
+      free_for: Ledig i %{duration}
+      occupied: Opptatt
   user:
     select_client:
       header: Velg konto

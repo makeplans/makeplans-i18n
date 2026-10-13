@@ -29,6 +29,12 @@ nb:
         terms: Les vilkår for reservasjonen
         who_is_booking_for: Hvem er denne bestillingen for?
         yourself: Deg selv
+      payment_invoice:
+        form_footer_html: Fakturaen din vil være for <span class="payment-amount">%{amount}</span> .
+        form_header: Fakturainformasjon
+        header: Betaling med faktura
+        info: Bestillingen din for %{service} %{booking} vil bli betalt med faktura.
+        payment_details_html: Du vil motta en faktura for det viste beløpet i %{currency} fra oss når du bestiller.
       payment_stripe:
         submit: Betal
       promote_waitlist:
@@ -87,7 +93,24 @@ nb:
       past: Passert
       past_last_booking: Det er ikke lenger mulig å melde seg på dette arrangementet.
       payment:
+        add_card_details_html: Kortopplysningene dine lagres ikke hos oss, men sendes kryptert til %{provider} for sikker transaksjon og lagring.
+        add_card_footer_html: Kortet ditt blir ikke belastet nå
+        add_card_header: Lagre kort
+        add_card_info: Legg til betalingskortet ditt slik at du enkelt og automatisk kan betale etter bestillingen.
+        add_card_submit: Lagre kort
+        awaiting:
+          body: Vent mens transaksjonen bekreftes.
+          error: Vi kunne ikke bekrefte at betalingen var fullført. Vennligst kontakt kundeservice via https://makeplans.no og oppgi referansenummer %{booking_id}.
+          title: Sjekker betalingen
         card: Kort
+        form_footer_html: Kredittkortet ditt vil bli belastet med <span class="payment-amount">%{amount}</span> .
+        form_header: Dette skjemaet sendes kryptert.
+        header: Betaling
+        info: For å fullføre reservasjonen av %{service} %{booking} må du betale med kredittkortet ditt.
+        new_card: Legg inn nytt kort
+        payment_details_html: Det viste beløpet er i %{currency}. Vi lagrer ikke kredittkortopplysningene dine, men sender dem kryptert til %{provider} for sikker behandling og lagring.
+        payment_received: "%{paid_amount} ble betalt på %{paid_at}."
+        save_card: Lagre kort
       registration_closed: Påmeldingen til dette arrangementet er stengt.
       waitlist: Venteliste
       waitlist_notice: Dette tidspunktet er fullt booket. Du vil bli satt på venteliste og bli varslet når en plass blir ledig.
@@ -233,6 +256,12 @@ nb:
           errors_header: 'Det oppstod feil:'
           submit: Lagre og fortsett
           title: Legg til person
+      credit_card_list:
+        add_card: Legg til nytt kort
+        body: Dette er dine lagrede betalingskort. Hvis du vil, kan du legge til et nytt kort eller slette et av de eksisterende.
+        card_info: "%{brand} med tall som slutter på %{last_4} og utløper %{expire_month}/%{expire_year}."
+        remove_card: Fjern dette kortet
+        title: Dine lagrede betalingsmåter
       edit:
         cancel: Avbryt
         errors_header: 'Det oppstod feil:'
@@ -255,6 +284,8 @@ nb:
       new:
         errors_header: 'Det oppstod feil:'
         register: Registrer
+      show:
+        header: Din lagrede informasjon
     providers:
       index:
         all_services: Alle tjenester

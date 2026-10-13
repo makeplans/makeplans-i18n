@@ -200,6 +200,8 @@ nb:
       no_status:
         headline: Liste over reservasjoner uten status
         no_reservations: Fant ingen reservasjoner uten status
+      promote:
+        promote_failed: Kunne ikke forfremme booking fra venteliste
       show:
         amount: Total pris
         audit:
@@ -274,8 +276,6 @@ nb:
         cancel_all_future: Kansellerer alle fremtidige reservasjoner
         delete_all: Slett alle
         headline: Alle gjentagende reservasjoner innenfor dette mønsteret
-      promote:
-        promote_failed: Kunne ikke forfremme booking fra venteliste
       state_changer:
         state: Status
       status_changer:
@@ -378,21 +378,6 @@ nb:
         in_process:
           header: Tidssoneendring pågår
           info: Alle reservasjoner og meldinger vil bli oppdatert snart. Kjør *ikke* denne funksjonen igjen.
-      migrate_bookings:
-        edit:
-          deactivated: deaktivert
-          error_not_found: En eller begge ressursene ble ikke funnet.
-          error_same_resource: Kilde- og målressurs kan ikke være den samme.
-          from_resource: Fra ressurs
-          header: Flytt reservasjoner
-          info: Flytt alle reservasjoner og arrangementer fra en ressurs til en annen. Dette inkluderer alle tidligere og fremtidige reservasjoner. Det vil ikke bli sendt noen varsler til kundene.
-          migrate: Flytt
-          processing: Behandler
-          to_resource: Til ressurs
-          warning: Er du sikker på at du vil flytte alle reservasjoner og arrangementer? Denne operasjonen kan ikke enkelt angres.
-        update:
-          header: Reservasjoner er flyttet
-          result: "%{bookings_count} reservasjoner og %{events_count} arrangementer ble flyttet fra %{from_resource} til %{to_resource}."
       configuration:
         header: Oppsett av Makeplans
         intro: Her kan du endre oppsettet på kontoen din og hvordan Makeplans skal fungere for deg. Du kan legge til tjenester og kategorier som du tilbyr på bookingsiden, endre åpningstider, justere utgående meldinger (SMS og epost), legge til flere brukere og justere flere andre innstillinger i Makeplans.
@@ -425,11 +410,11 @@ nb:
         custom_messages_info_html: Her kan du flette inn relevant informasjon. For mer informasjon se <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a>.
       edit_booking_site:
         booking_form_info_html: Det du fyller ut her vil i sin helhet erstatte standard skjema som benyttes på bookingsiden. For å endre skjemaet som vises ved manuell oppretting av reservasjoner så gjøres det under "Egendefinerte felter". Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://github.com/makeplans/makeplans-custom-forms" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-forms</a>. Husk å legge til nødvendige felter til verifisering som navn og epost/telefonnummer.
-        booking_site_person_form_info_html: Tilpass registreringsskjema for kunde for Timisoara og Lviv tema. Bruker samme syntaks som reservasjonsskjema.
         booking_site_info_html: Deres bookingside er tilgjengelig på %{url}.
         booking_site_locale_default: Bruk språk på konto
         booking_site_locale_mode_multiple: Aktiver flere språk (besøkende kan bytte)
         booking_site_locales_info: Velg hvilke språk besøkende kan bytte mellom på bookingsiden
+        booking_site_person_form_info_html: Tilpass registreringsskjema for kunde for Timisoara og Lviv tema. Bruker samme syntaks som reservasjonsskjema.
         cancellation: Avbestillling
         cancellation_info: Avbestilling kan kun utføres før avbestillingsfristen. Reservasjoner som er forhåndsbetalt kan ikke avbestilles.
         cancellation_period_info: 'Skriv inn på engelsk. Tid er relatert til starttidspunkt for reservasjonen. Eks.: ''24 hours before'' (kun mulig å avbestille 24 timer før reservasjonen begynner). Hvis ingen avbestillingsfrist er spesifisert kan kunden avbestille helt frem til reservasjonen starter.'
@@ -460,7 +445,7 @@ nb:
           prevent_new_signups: Tillatt kun booking for eksisterende kunder
           rating_scale: Vurderingsskala
           rating_scale_default: Standard (1-%{scale})
-          rating_scale_info: 'Hvor mange trinn kunden kan velge mellom når en reservasjon vurderes. Vurderinger som allerede er gitt lagres som tallet kunden valgte, så endrer du skalaen endrer du også hva eldre vurderinger betyr.'
+          rating_scale_info: Hvor mange trinn kunden kan velge mellom når en reservasjon vurderes. Vurderinger som allerede er gitt lagres som tallet kunden valgte, så endrer du skalaen endrer du også hva eldre vurderinger betyr.
           rating_scale_option: 1-%{scale}
           show_all_events_calendar: Vis alle arrangementer i én kalender
           waitlist_enabled: Aktiver venteliste for fullbookede slotter og arrangementer
@@ -470,7 +455,6 @@ nb:
             default: Systemstandard (Forfrem første på venteliste automatisk)
             notify_all: Varsle alle på ventelisten
           waitlist_text: Tekst for tidspunkt med venteliste
-        verification_methods_alt: 'Alternative metoder:'
         verification_methods:
           email: Epost
           facebook: Tillatt også verifisering med Facebook Connect.
@@ -478,6 +462,7 @@ nb:
           none: Ingen verifisering (anbefales ikke)
           sms: SMS (anbefales)
           vipps: Vipps
+        verification_methods_alt: 'Alternative metoder:'
       edit_communication:
         email: Epost
         header: Endre utgående kommunikasjon
@@ -509,11 +494,11 @@ nb:
       edit_person_notifications:
         automatic_messages: Automatiske utsendelser (Administrasjonsystem og API)
         automatic_messages_booking_site: Automatiske utsendelser (På bookingsiden)
+        awaiting_confirmation_email: Utsendelse av epost når reservasjon krever godkjenning
+        awaiting_confirmation_sms: Utsendelse av SMS når reservasjon krever godkjenning
         booking_site_manual_confirmation_message: Send melding om at reservasjon må behandles manuelt
         booking_site_message: Send melding på bookingsiden
         booking_site_outgoing_messages_info: Som standard vil Makeplans sende en melding ved viktige hendelser som bekreftelse via valgt verifiseringsmetode, for eksempel SMS for SMS-verifisering, or epost hvis man har annen eller ingen verifisering.
-        awaiting_confirmation_email: Utsendelse av epost når reservasjon krever godkjenning
-        awaiting_confirmation_sms: Utsendelse av SMS når reservasjon krever godkjenning
         cancellation_email: Utsendelse av epost ved kansellering av reservasjon
         cancellation_sms: Utsendelse av SMS ved kansellering av reservasjon
         confirmation_email: Utsendelse av epost ved opprettelse av reservasjon
@@ -578,19 +563,19 @@ nb:
           header: Vi behandler forespørselen din
           invalid_domain: Vennligst skriv inn et gyldig domenenavn.
         dns:
+          cancel: Fjern e-postdomene
+          copied: Kopiert!
+          copy: Kopier
           dkim: For å la Makeplans sende med en e-postadresse på %{domain}, legg til følgende TXT-post.
           dkim_cname: For å la Makeplans sende med en e-postadresse på %{domain}, legg til følgende CNAME-poster.
           dkim_host: Vert
           dkim_value: Verdi
           header: Legg til DNS-poster
           info: Vennligst legg til følgende DNS-poster for å fullføre e-postavsender-verifiseringen. Det kan ta opptil 24 timer før endringene dine er aktive.
+          priority: Prioritet
           return_path: Legg til følgende post for retursti-domenet %{domain} for å forbedre leveringsevnen.
           type: Type
           verify: Verifiser DNS-poster
-          cancel: Fjern e-postdomene
-          copy: Kopier
-          priority: Prioritet
-          copied: Kopiert!
         info:
           add: Legg til ditt e-postdomene for sending
           header: Send e-post med din egen e-postadresse
@@ -623,8 +608,15 @@ nb:
           bookings: Reservasjoner (kun aktive)
           bookings_all: Reservasjoner (alle)
           bookings_visible: Reservasjoner (inkludert kansellerte)
+          categories: Kategorier
+          coupons: Kuponger
           events: Arrangementer
+          gift_cards: Gavekort
+          message_templates: Meldingsmaler
+          orders: Bestillinger
           people: Kunder
+          resources: Ressurser
+          services: Tjenester
         executed: Eksportfilen sendes nå til din epost-adresse. Dette kan ta opp til 10 minutter hvis det eksporteres mye data.
         header: Eksporter data fra Makeplans
         info: Du vil motta en epost med CSV-fil som vedlegg.
@@ -647,6 +639,21 @@ nb:
           not_enabled: API-et må være aktivert før AI-assistenter kan koble til.
           other_clients: Andre MCP-klienter
           other_clients_info: Legg til en ekstern MCP-server med endepunktet ovenfor og HTTP-headeren "Authorization" med verdien "Bearer %{api_key}".
+      migrate_bookings:
+        edit:
+          deactivated: deaktivert
+          error_not_found: En eller begge ressursene ble ikke funnet.
+          error_same_resource: Kilde- og målressurs kan ikke være den samme.
+          from_resource: Fra ressurs
+          header: Flytt reservasjoner
+          info: Flytt alle reservasjoner og arrangementer fra en ressurs til en annen. Dette inkluderer alle tidligere og fremtidige reservasjoner. Det vil ikke bli sendt noen varsler til kundene.
+          migrate: Flytt
+          processing: Behandler
+          to_resource: Til ressurs
+          warning: Er du sikker på at du vil flytte alle reservasjoner og arrangementer? Denne operasjonen kan ikke enkelt angres.
+        update:
+          header: Reservasjoner er flyttet
+          result: "%{bookings_count} reservasjoner og %{events_count} arrangementer ble flyttet fra %{from_resource} til %{to_resource}."
       promote:
         booking_button_html_info: Kopier HTML-koden nedenfor til din nettside. Ta eventuelt kontakt med din web-designer for hjelp.
         booking_button_html_preview: Forhåndsvisning
@@ -693,69 +700,6 @@ nb:
         not_redeemable: Ikke innløsbar
         orders: Ordrer
         redeemable: Innløsbar
-    gift_cards:
-      index:
-        header: Gavekort
-        header_for_person: Gavekort for %{name}
-      show:
-        active: Aktivt
-        current_balance: Gjenstående verdi
-        details: Detaljer
-        inactive: Brukt
-        initial_value: Opprinnelig verdi
-        orders: Ordrer
-        purchase_order: Kjøpsordre
-        purchased_by: Kjøpt av
-        redeemed_by: Innløst av
-        valid_until: Gyldig til
-    orders:
-      index:
-        all_states: Alle statuser
-        created_at: Opprettet
-        customer: Kunde
-        do_filtering: Filtrer
-        filter: Filter
-        headline: Bestillinger
-        order_id: Bestilling
-        status: Status
-        total: Totalt
-      refund:
-        already_refunded: Denne bestillingen er allerede refundert.
-        failed: 'Refusjon feilet: %{message}'
-        nothing_to_refund: Det er ingenting å refundere på denne bestillingen.
-        success: Bestilling refundert.
-      show:
-        amount: Beløp
-        balance: Utestående
-        coupon: Rabattkode
-        created_at: Opprettet
-        customer: Kunde
-        date: Dato
-        details: Detaljer
-        generated_gift_card: "Generert gavekort: %{code}"
-        gift_card_used: "Gavekort %{code}"
-        gift_cards: Gavekort
-        invoice: Faktura
-        invoice_number: "Faktura #%{nr}"
-        item: Vare
-        line_items: Ordrelinjer
-        order_number: "Bestilling #%{id}"
-        quantity: Antall
-        refund: Refunder betaling
-        refund_confirm: Refundere hele denne bestillingen? Dette reverserer alle betalinger og kan ikke angres.
-        subtotal: Delsum
-        total: Totalt
-        transaction_type: Type
-        transactions: Betalinger
-      states:
-        cancelled: Kansellert
-        confirmed: Bekreftet
-        pending: Venter
-      transaction_types:
-        gift_card: Gavekort
-        payment: Betaling
-        refund: Refusjon
-        subscription: Abonnement
     events:
       check_in:
         check_in: Sjekk inn
@@ -787,7 +731,7 @@ nb:
         download_attendance_csv: Eksporter deltagerliste som CSV
         email_confirm: Deltagerliste vil bli sendt på epost til deg. Vil du fortsette?
         fully_booked: Arrangementet er fullbooket
-        fully_booked_with_waitlist: 'Arrangementet er fullbooket · %{count} på venteliste'
+        fully_booked_with_waitlist: Arrangementet er fullbooket · %{count} på venteliste
         promote: Flytt opp
         promote_confirm: Flytte %{name} opp fra ventelisten?
         qr_code: QR-kode for kunder
@@ -802,7 +746,7 @@ nb:
         waitlist_html:
           one: 'venteliste: <strong>%{count}</strong>'
           other: 'venteliste: <strong>%{count}</strong>'
-        waitlist_position: 'Ventelisteposisjon %{position}'
+        waitlist_position: Ventelisteposisjon %{position}
         zoom:
           join_meeting: Bli med på møtelenke
           join_webinar: Bli med på webinar-lenken
@@ -821,8 +765,28 @@ nb:
       widget_list:
         no_events: Ingen arrangementer på %{start}
         no_events_range: Ingen arrangementer fra %{start} til %{end}
+    gift_cards:
+      index:
+        header: Gavekort
+        header_for_person: Gavekort for %{name}
+      show:
+        active: Aktivt
+        current_balance: Gjenstående verdi
+        details: Detaljer
+        inactive: Brukt
+        initial_value: Opprinnelig verdi
+        orders: Ordrer
+        purchase_order: Kjøpsordre
+        purchased_by: Kjøpt av
+        redeemed_by: Innløst av
+        valid_until: Gyldig til
     integrations:
       account_connected: Connected to this account.
+      always_opt_in: Alltid påmelding
+      bento:
+        publishable_key: Publiserbar nøkkel
+        secret_key: Hemmelig nøkkel
+        site_uuid: Nettsteds-UUID
       bestrx:
         api_key: API-nøkkelen er %{api_key}
         api_url: URL-en til API-en er %{api_url}
@@ -879,12 +843,12 @@ nb:
         account: Subdomain (DINKONTO.highrisehq.com - fyll inn kun DINKONTO)
         connect_info: 'Velg konto hvor nye kunder blir lagt til:'
         password: API-key
-      klaviyo:
-        select_list: 'Velg liste som nye kunder blir lagt til som abonnenter:'
       index:
         api: API
         header: Integrasjoner
         web_hooks: Webhooks
+      klaviyo:
+        select_list: 'Velg liste som nye kunder blir lagt til som abonnenter:'
       mailchimp:
         account: List ID
         connect_info: 'Velg epost-liste hvor nye kunder blir lagt til som abbonnement:'
@@ -1007,6 +971,54 @@ nb:
         intro: 'Her finner du mer avanserte meldingsmaler som kan sendes ut etter at en reservasjon er bekreftet, før den starter eller etter den er gjennomført. Merk at disse meldingene sendes i tillegg til de som er satt opp som vanlige meldinger feks bekreftelse og påminnelse. Bruk kun denne funksjonen hvis du f.eks. ønsker å sende en påminnelse #2, flere typer bekreftelse (epost i tillegg til SMS) eller en melding for oppfølgning.'
       show:
         immediately: øyeblikkelig
+    orders:
+      index:
+        all_states: Alle statuser
+        created_at: Opprettet
+        customer: Kunde
+        do_filtering: Filtrer
+        filter: Filter
+        headline: Bestillinger
+        order_id: Bestilling
+        status: Status
+        total: Totalt
+      refund:
+        already_refunded: Denne bestillingen er allerede refundert.
+        failed: 'Refusjon feilet: %{message}'
+        nothing_to_refund: Det er ingenting å refundere på denne bestillingen.
+        success: Bestilling refundert.
+      show:
+        amount: Beløp
+        balance: Utestående
+        coupon: Rabattkode
+        created_at: Opprettet
+        customer: Kunde
+        date: Dato
+        details: Detaljer
+        generated_gift_card: 'Generert gavekort: %{code}'
+        gift_card_used: Gavekort %{code}
+        gift_cards: Gavekort
+        invoice: Faktura
+        invoice_number: 'Faktura #%{nr}'
+        item: Vare
+        line_items: Ordrelinjer
+        order_number: 'Bestilling #%{id}'
+        quantity: Antall
+        refund: Refunder betaling
+        refund_confirm: Refundere hele denne bestillingen? Dette reverserer alle betalinger og kan ikke angres.
+        subtotal: Delsum
+        total: Totalt
+        transaction_type: Type
+        transactions: Betalinger
+      states:
+        cancelled: Kansellert
+        confirmed: Bekreftet
+        pending: Venter
+      transaction_types:
+        gift_card: Gavekort
+        payment: Betaling
+        refund: Refusjon
+        subscription: Abonnement
     people:
       children:
         index:
@@ -1014,7 +1026,7 @@ nb:
           headline: "%{parent} kan booke for disse personene:"
         new:
           add_selected: Legg til valgte
-          headline: "Legg til tilknyttede kunder for %{parent}"
+          headline: Legg til tilknyttede kunder for %{parent}
           no_results: Ingen matchende kunder funnet
           no_results_hint: Kun kunder uten eksisterende tilknytning vises
           search: Søk
@@ -1229,7 +1241,7 @@ nb:
         new_period: Ny aktivitet
         next_days:
           one: Neste dag
-          other: "Neste %{count} dager"
+          other: Neste %{count} dager
         next_month: Neste måned
         no_attention: Ingen avvik registrert
         no_previous_period: Ingen forrige periode å sammenligne med
@@ -1351,8 +1363,8 @@ nb:
       form:
         availability: Standard tilgjengelighet
         delete_warning:
-          one: "Denne ressursen har 1 fremtidig bestilling. Sletting vil fjerne ressursen og alle bestillingene. Klikk slett igjen for å bekrefte."
-          other: "Denne ressursen har %{count} fremtidige bestillinger. Sletting vil fjerne ressursen og alle bestillingene. Klikk slett igjen for å bekrefte."
+          one: Denne ressursen har 1 fremtidig bestilling. Sletting vil fjerne ressursen og alle bestillingene. Klikk slett igjen for å bekrefte.
+          other: Denne ressursen har %{count} fremtidige bestillinger. Sletting vil fjerne ressursen og alle bestillingene. Klikk slett igjen for å bekrefte.
         external_info:
           microsoft_office365_user_id: Microsoft Office 365 bruker
           unloc_lock_ids: Unloc-låser
@@ -1439,16 +1451,16 @@ nb:
         payment: Betaling
         price_placeholder: Ingen pris
         settings:
-          standalone: Frittstående tjeneste
           hide_all_available: Må velge spesifikk ressurs ('vis all ledige' skjules)
           hide_resources: Skjul knappen for å velge ressurs (vilkårlig ledig ressurs blir automatisk valgt)
           hide_slot_end: Skjul slutt-tid
+          overnight: Til neste dag (Kun dagbooking)
           return_occupied: Vis slotter som er opptatt
           return_past: Vis slotter i fortiden
           select_count: Ekstra steg for å spesifisere antall
           select_resource: Ekstra steg for valg av ressurs
           show_free_capacity: Vis ledig kapasitet
-          overnight: Til neste dag (Kun dagbooking)
+          standalone: Frittstående tjeneste
           waitlist_enabled: Aktiver venteliste (overstyrer kontoinnstilling)
       form_attendance:
         booking_site_settings: Innstillinger for bookingsiden
@@ -1478,12 +1490,12 @@ nb:
           header: Tjenester
         attendance:
           header: Arrangementstyper
-        product:
-          header: Produkter
         days: dager
         header: Tjenester
         minutes: minutter
         priority_button: Rekkefølge
+        product:
+          header: Produkter
       integrations:
         external_info:
           fiken_create_order: Opprett ordre i Fiken automatisk
@@ -1606,30 +1618,30 @@ nb:
         buy: Kjøp flere SMS
         info: Du må forhåndskjøpe %{needed} SMS for å sende. Du har %{credits}.
       new:
+        filter:
+          all: Alle
+          calculate: Finn mottagere
+          change: Endre filter
+          date_hint: Valgfritt. La stå tomt for ingen datobegrensning.
+          from: Reservasjoner fra og med
+          header: Send SMS til filtrerte kunder
+          instructions: Velg en datoperiode, tjeneste og/eller ressurs for å finne kunder med reservasjoner som matcher. Minst ett filter er påkrevd.
+          no_limit: Ingen begrensning
+          no_recipients: Ingen kunder matcher det valgte filteret. Juster filteret og prøv igjen.
+          none: Velg minst ett filter (datoperiode, tjeneste eller ressurs) før du sender.
+          one_sms_per_person: Hver kunde mottar én SMS, selv om de har flere reservasjoner som matcher filteret.
+          resources: Ressurser
+          resources_hint: La stå tomt for å inkludere kunder med reservasjoner for alle ressurser.
+          services: Tjenester
+          services_hint: La stå tomt for å inkludere kunder med reservasjoner for alle tjenester.
+          to: Reservasjoner til og med
         header: Send SMS til %{recipents_count} mottagere
+        liquid_hint: Personaliser meldingen med tagger som {{ person.name }}, {{ person.first_name }} eller {{ person.email }}.
         message: Melding
         message_error: Meldingen kunne ikke behandles. Sjekk personaliseringstaggene og prøv igjen.
-        liquid_hint: 'Personaliser meldingen med tagger som {{ person.name }}, {{ person.first_name }} eller {{ person.email }}.'
         processing: Sender...
         send: Send
         sms_info: For meldinger på mer enn 160 tegn så blir det kalkulert kostnad pr 160 tegn. Kostnad for tekst på 200 tegn blir da 2 SMS pr melding. Mottageren vil motta dette som 1 SMS.
-        filter:
-          header: Send SMS til filtrerte kunder
-          instructions: 'Velg en datoperiode, tjeneste og/eller ressurs for å finne kunder med reservasjoner som matcher. Minst ett filter er påkrevd.'
-          from: Reservasjoner fra og med
-          to: Reservasjoner til og med
-          date_hint: Valgfritt. La stå tomt for ingen datobegrensning.
-          services: Tjenester
-          services_hint: La stå tomt for å inkludere kunder med reservasjoner for alle tjenester.
-          resources: Ressurser
-          resources_hint: La stå tomt for å inkludere kunder med reservasjoner for alle ressurser.
-          calculate: Finn mottagere
-          all: Alle
-          no_limit: Ingen begrensning
-          one_sms_per_person: Hver kunde mottar én SMS, selv om de har flere reservasjoner som matcher filteret.
-          none: 'Velg minst ett filter (datoperiode, tjeneste eller ressurs) før du sender.'
-          no_recipients: Ingen kunder matcher det valgte filteret. Juster filteret og prøv igjen.
-          change: Endre filter
         warning:
           all: 'OBS: Du vil nå sende til ALLE kunder.'
           confirm: Er du helt sikker på at du vil sende?
