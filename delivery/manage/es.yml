@@ -42,6 +42,16 @@ es:
       booking_type_attendance:
         subject_resource: Recurso modificado para %{title}
       link: Para ver esta reserva por favor vaya a
+    notification_waitlist_joined:
+      appointment:
+        body: "%{name} se ha unido a la lista de espera para %{title} %{time_range}."
+      attendance:
+        body: "%{name} se ha unido a la lista de espera para %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Inscripción en la lista de espera para %{resource}
+      booking_type_attendance:
+        subject_resource: Inscripción en la lista de espera para %{title}
+      link: Para ver esta reserva, diríjase a
     request_approvement:
       body: "%{name} quiere reservar %{title} %{time_range}."
       link: Para aprobar o rechazar esta reservación, vaya a

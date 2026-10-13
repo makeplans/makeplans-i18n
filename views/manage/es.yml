@@ -13,12 +13,15 @@ es:
         opening_hours:
           add: "+ añadir"
           add_to_existing: "+ añadir"
+          all_resources: Todos %{resources}
           closed_all_week: Cerrado todo el período
           dates: fechas
           from: Desde
+          no_items: No se encontraron recursos que coincidan con el filtro actual.
           open: Abierto
           remove_existing: eliminar
           reset: Reiniciar
+          resource_default: "%{resource} (predeterminado)"
           title: Ajustar disponibilidad
           to: A
         resourceTimeGridDay: día (seccionado)
@@ -38,12 +41,29 @@ es:
         filter: Filtración
         headline: Visualización de citas
         month: Mostrar mes
+        nav:
+          day: Día
+          list: Lista
+          month: Mes
+          next: Próximo
+          previous: Anterior
+          today: Hoy
+          week: Semana
         no_reservations: No reservaciones
+        overview: Descripción general
+        period: Período
         reset_filter: Restablecer filtro
         resources: Recursos
         services: Servicios
+        sort_latest: Últimos cambios
+        sort_newest: Nuevas reservas
+        state: Estado
+        status: Estado de asistencia
+        tab_awaiting_confirmation: A la espera de confirmación
+        tab_waitlist: Lista de espera
         this_and_next_month: Desde hoy hasta finales del próximo mes
         this_and_next_week: Desde hoy hasta finales de la semana que viene
+        waitlist_note: "+%{count} en lista de espera"
     billing:
       charge:
         charge_details: Según el uso actual, cargaremos %{price} en su tarjeta de crédito cada mes.
@@ -105,6 +125,12 @@ es:
       create_recurring:
         headline: Generando reservas %{count} ...
         link: Mostrar lista
+      delivery_status:
+        channel:
+          email: correo electrónico
+          sms: SMS
+        failed: 'El envío por parte de %{channel} falló %{time}: %{error}'
+        sent: Enviado por %{channel} %{time}
       destroy_recurring:
         headline: Se eliminaron todas las reservas repetidas dentro de este patrón
       feed:
@@ -182,6 +208,8 @@ es:
       no_status:
         headline: Lista de reservas sin estado
         no_reservations: No se admiten reservas sin estatus
+      promote:
+        promote_failed: No se puede promocionar la reserva desde la lista de espera.
       show:
         amount: Precio total
         audit:
@@ -217,6 +245,7 @@ es:
         person:
           address: Habla a
           email: Email
+          history: Historia
           phone_number: Número de teléfono
         recurring_member: Esta reservación es parte de un patrón recurrente.
         refund:
@@ -291,7 +320,9 @@ es:
         booking_type_appointment: Equipo
         booking_type_attendance: Asistencia
         booking_type_gift_card: Tarjetas de regalo
+        booking_type_pass: Pases
         booking_type_product: Productos
+        booking_type_subscription: Suscripciones
         has_services: Muestra estos servicios
         no_parent_id: NIVEL SUPERIOR
         settings:
@@ -311,6 +342,20 @@ es:
         priority_button: Orden
         qr_code: Código QR para clientes
         show_on_booking_site: Servicio abierto en el sitio de reservas
+    chats:
+      form:
+        credit_info: Cada mensaje cuesta 1 crédito SMS.
+        send: Enviar
+        window_closed: WhatsApp solo permite respuestas dentro de las 24 horas posteriores al último mensaje del cliente. Pídele al cliente que te escriba de nuevo por WhatsApp o contáctalo por SMS, correo electrónico o teléfono.
+      index:
+        headline: Respuestas de WhatsApp
+      replies:
+        empty: Aún no hemos recibido respuesta por WhatsApp.
+      show:
+        headline: Chat de WhatsApp con %{name}
+      thread:
+        booking: Reserva
+        empty: Aún no hay mensajes de este cliente.
     client:
       addons:
         addons:
@@ -352,6 +397,7 @@ es:
         show:
           api: API
           embed: Empotrar
+          mcp: MCP - Asistentes de IA
           web_hooks: Webhooks
       domains:
         cname:
@@ -382,6 +428,8 @@ es:
         cancellation: Cancelación
         cancellation_info: La cancelación solo se puede realizar antes del período de cancelación. Las reservas prepagas no se pueden cancelar.
         cancellation_period_info: 'Ejemplo: ''24 horas antes ''(solo es posible cancelar 24 horas antes de que comience la reservación).'
+        event_first_booking_period_info: 'Solo para eventos. El tiempo se refiere al inicio del evento. Ejemplo: «2 semanas antes» (las inscripciones se abren dos semanas antes del inicio del evento). Se utiliza por defecto al crear nuevos eventos. Cada evento puede modificarlo o eliminarlo.'
+        event_last_booking_period_info: 'Solo para eventos. La hora se refiere al inicio del evento. Ejemplo: «2 horas antes» (las inscripciones cierran dos horas antes del inicio del evento). Se utiliza por defecto al crear nuevos eventos. Cada evento puede modificarlo o eliminarlo.'
         first_bookable_period_info: 'Ejemplo: ''en dos horas'' (la primera hora disponible es en dos horas) o ''08: 00 mañana ''(la primera hora disponible es mañana a las 8 a. M.).'
         future_bookable_period_info: 'Ejemplo: ''en dos meses'' (solo es posible reservar los próximos dos meses) o ''viernes a medianoche'' (solo es posible reservar antes de la medianoche del viernes).'
         header: Actualizar sitio de reservas
@@ -399,11 +447,26 @@ es:
           active_bookings_limit: Número máximo de reservas activas por cliente
           allow_person_cookie: Permita la posibilidad de recordar al cliente verificado hasta la próxima visita con el uso de cookies.
           disable_person_cookie: No permitir que el cliente permanezca conectado con cookies
+          event_template: Plantilla de calendario para eventos
+          fully_booked_text: Texto para espacios completamente reservados
           google_tag_manager: ID de contenedor de Google Tag Manager
+          past_text: Texto para ranuras en el pasado
           person_oauth_auto_create: Crear automáticamente el perfil del cliente desde el inicio de sesión del proveedor externo (omitir el formulario de registro).
           plausible: Habilitar análisis plausibles
           prevent_new_signups: Permitir únicamente reservas de clientes existentes
+          rating_scale: Escala de calificación
+          rating_scale_default: Predeterminado (1-%{scale})
+          rating_scale_info: "¿Cuántos pasos puede elegir el cliente al calificar una reserva? Las calificaciones ya otorgadas se almacenan según el número seleccionado, por lo que cambiar la escala modifica el significado de las calificaciones anteriores."
+          rating_scale_option: 1-%{scale}
           select_resource: Paso adicional para seleccionar un recurso
+          show_all_events_calendar: Mostrar todos los eventos en un calendario
+          waitlist_enabled: Habilitar la lista de espera para los espacios y eventos completamente reservados.
+          waitlist_promotion_mode: Modo de promoción de lista de espera
+          waitlist_promotion_modes:
+            auto: Ascenso automático al primero de la fila
+            default: Configuración predeterminada del sistema (Ascenso automático al primero en la fila)
+            notify_all: Notificar a todos los que estén en la lista de espera.
+          waitlist_text: Texto para espacios con lista de espera
         verification_methods:
           email: Email
           facebook: También permite la verificación con Facebook Connect.
@@ -423,6 +486,8 @@ es:
           custom_sms_sending: Anule completamente los SMS con el contenido a continuación (de lo contrario, el contenido solo se inserta en los SMS estándar)
           dont_include_icalendar_attachment: No incluya el archivo adjunto de iCalendar
         sms: SMS
+        whatsapp: WhatsApp
+        whatsapp_info: Envía confirmaciones y recordatorios de reservas por WhatsApp y recibe respuestas de tus clientes. WhatsApp se configura junto con el soporte de MakePlans; contáctanos para empezar. Las plantillas de mensajes deben ser aprobadas por Meta y se registran individualmente.
       edit_company:
         api:
           enable: Activar API
@@ -501,12 +566,15 @@ es:
           calendar_prevent_slot_event_overlap: Prevenir la superposición de eventos
           calendar_slot_duration: Duración de la ranura
           calendar_slot_label_interval: Intervalo de etiqueta de ranura
+          no_show_warning_threshold: Avisar cuando un cliente tenga tantas ausencias sin previo aviso.
           resource_title: Título de recurso personalizado
           service_addon_title: Título del complemento personalizado
           service_appointment_title: Título del servicio personalizado
           service_attendance_title: Título de tipo de evento personalizado
           service_gift_card_title: Título de tarjeta de regalo personalizada
+          service_pass_title: Título de pase personalizado
           service_product_title: Título del producto personalizado
+          service_subscription_title: Título de suscripción personalizado
       email_sender:
         create:
           dns: Vea sus valores DNS.
@@ -578,6 +646,17 @@ es:
           email: Envía una copia a tu correo electrónico
           header: Facturas de Makeplans
           paid: Pagado
+      mcp:
+        show:
+          claude_code: Código Claude
+          enable: Habilitar la API
+          endpoint: Punto final MCP
+          header: MCP - Asistentes de IA
+          info: Conecta asistentes de IA como Claude a tu cuenta de Makeplans con MCP (Protocolo de Contexto de Modelo). El asistente se autentica con tu clave API y puede consultar la disponibilidad, listar reservas y eventos, buscar clientes y crear o cancelar reservas.
+          info_html: La documentación está disponible en <a href="https://developer.makeplans.com/guide/mcp/" target="_blank" class="link-external">https://developer.makeplans.com/guide/mcp/</a> .
+          not_enabled: La API debe estar habilitada antes de que los asistentes de IA puedan conectarse.
+          other_clients: Otros clientes de MCP
+          other_clients_info: Agregue un servidor MCP remoto con el punto final mencionado anteriormente y el encabezado HTTP "Authorization" con el valor "Bearer %{api_key}".
       migrate_bookings:
         edit:
           deactivated: desactivado
@@ -670,6 +749,9 @@ es:
         download_attendance_csv: Exportar lista de asistencia como CSV
         email_confirm: Se le enviará por correo electrónico la lista de asistencia. ¿Quieres continuar?
         fully_booked: El evento está completo
+        fully_booked_with_waitlist: El evento está completo · %{count} en la lista de espera
+        promote: Promover
+        promote_confirm: "¿Ascender a %{name} de la lista de espera?"
         qr_code: Código QR para clientes
         recurring_member: Este evento es parte de un patrón repetitivo.
         send_email_to_all: Envíe un correo electrónico a todos los asistentes
@@ -679,6 +761,10 @@ es:
         show_only_active_html: La lista incluye %{count} reservas inactivas. <a href="%{href}">¿Solo quieres mostrar reservas activas?</a>
         signup_link: Enlace de registro
         sms_all_participants: Enviar SMS a todos los participantes
+        waitlist_html:
+          one: 'lista de espera: <strong>%{count}</strong>'
+          other: 'lista de espera: <strong>%{count}</strong>'
+        waitlist_position: Posición en la lista de espera %{position}
         zoom:
           join_meeting: Unirse al enlace de la reunión
           join_webinar: Únase al enlace del seminario web
@@ -832,6 +918,13 @@ es:
         service_not_linked: NO conectado a un producto en 24SevenOffice
         type_groups: 'Tipo de venta por pedido:'
         username: API-Nombre de usuario
+      unloc:
+        client_id: ID de cliente
+        client_secret: secreto del cliente
+        info: Introduce tus credenciales API del Centro de Control de Unloc para conectar tus cerraduras digitales.
+        locks: Cerraduras disponibles
+        locks_info: Asigne bloqueos a un recurso en la página de configuración del recurso. Cuando se confirma una reserva, el cliente recibe automáticamente una llave móvil válida para el tiempo reservado.
+        project_id: Proyecto
       vipps:
         client_id: Identificación del cliente
         client_secret: Secreto del cliente
@@ -856,6 +949,10 @@ es:
         service_linked: Conectado a un producto en Visma eAccounting
         service_links: Cada servicio en Makeplans debe estar conectado a un producto en Visma eAccount para permitir la facturación. Tenga en cuenta que el precio se obtiene de Visma eAccounting, no de Makeplans. Debe asegurarse de que el precio sea idéntico en ambos sistemas.
         service_not_linked: NO conectado a un producto en Visma eAccounting
+      whatsapp:
+        connect: Conéctate a WhatsApp
+        connected: WhatsApp está conectado con el número %{number}.
+        info: Conecta WhatsApp para enviar confirmaciones y recordatorios de reservas, y chatear con tus clientes. Necesitas una cuenta de Meta Business y un número de teléfono que no esté registrado en WhatsApp. Haz clic en el botón de abajo para iniciar sesión en Meta y completar la configuración.
       whereby:
         connect_info: Conectado
         setup_info: Se creará automáticamente una reunión Whereby para cada servicio que tenga Whereby activado.
@@ -874,7 +971,18 @@ es:
         services_info: 'La plantilla de mensaje se enviará para todos los servicios a menos que restrinja los servicios específicos a continuación:'
         settings:
           skip_if_in_past: No envíe si el plazo de entrega ya ha pasado.
+          twilio_content_sid: Plantilla de WhatsApp SID
+          twilio_content_sid_info: El ID (HX...) de esta plantilla ha sido aprobado por Meta. Registrada junto con el soporte de MakePlans; el mensaje no se puede enviar antes de que la plantilla sea aprobada.
         template_info_html: Puede fusionar valores dinámicos inn. Consulte <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> para obtener más detalles.
+        whatsapp_approval_status: Meta aprobación
+        whatsapp_approval_statuses:
+          approved: 'Aprobado: esta plantilla se puede enviar.'
+          error: El envío falló.
+          pending: En espera de aprobación de Meta
+          rejected: Rechazado por Meta
+        whatsapp_info: Los mensajes de WhatsApp deben ser aprobados por Meta antes de poder enviarse. Escribe tu mensaje como de costumbre; el texto para su aprobación se muestra a continuación después de guardarlo. Se permiten etiquetas de personalización, pero no etiquetas lógicas.
+        whatsapp_meta_template: Texto de plantilla para aprobación de Meta
+        whatsapp_meta_template_info: Envíe este texto tal cual para su aprobación (las etiquetas de personalización se convierten automáticamente). Si modifica el texto del mensaje, deberá aprobar la plantilla nuevamente y actualizar el SID.
       index:
         header: Plantillas de mensajes
         immediately: inmediatamente
@@ -958,6 +1066,7 @@ es:
         filter: Filtración
         headline: Clientes
         send_sms: Enviar SMS
+        whatsapp_replies: Respuestas de WhatsApp
       show:
         add_child: Agregar cliente conectado
         all_day: Todo el día
@@ -982,6 +1091,7 @@ es:
         no_reservations: No se encontraron reservas
         parent_info: Administrado por
         send_sms: Enviar SMS
+        whatsapp_chat: Chat de WhatsApp
       tfso_connect_company:
         create: Crear nuevo cliente en 24SevenOffice
         header: Conéctese con el cliente en 24SevenOffice
@@ -998,6 +1108,10 @@ es:
       deactivate_rotp:
         deactivate_rotp: Quitar 2FA
         verify_code: 'Ingrese el código para verificar:'
+      edit:
+        theme_auto: Automático (seguimiento del sistema)
+        theme_dark: Oscuro
+        theme_light: Luz
       edit_password:
         verify_code: 'Ingrese el código para verificar:'
       no_access:
@@ -1036,6 +1150,233 @@ es:
         purge_3: También se eliminarán todos los registros y metadatos relacionados con estos datos.
         purge_before: Eliminar datos antes de la fecha
         warning: "¿Está seguro de que desea eliminar todos los datos anteriores a la fecha especificada? Esta operación no se puede deshacer."
+    reports:
+      bookings:
+        attendees: Asistentes
+        bookings: Reservas
+        by_hour: Reservas por hora
+        by_weekday: Reservas por día laborable
+        date: Fecha
+        per_day: Reservas por día
+        per_month: Reservas por mes
+        per_week: Reservas por semana
+        title: Reservas
+      breakdown:
+        attendees: Asistentes
+        bookings: Reservas
+        inactive: inactivo
+        name: Nombre
+        revenue: Valor contable
+        without_resource: Sin recursos
+        without_service: Sin servicio
+      customers:
+        booked_value: Valor contable
+        bookings: Reservas
+        created_before_period: Existía antes del período
+        created_in_period: Creado en el período
+        date: Fecha
+        last_visit: Última visita
+        name: Nombre
+        new_customers: Nuevos clientes
+        new_vs_returning: Clientes nuevos y recurrentes
+        not_rebooked: No se ha vuelto a reservar
+        of_customers: de %{count} clientes
+        per_day: Nuevos clientes por día
+        per_month: Nuevos clientes por mes
+        per_period_hint: Por fecha de inscripción
+        per_week: Nuevos clientes por semana
+        rebooked: Reservado de nuevo
+        rebooking: Tasa de re-reserva
+        rebooking_hint: Nueva reserva dentro de %{weeks} semanas de la primera visita en el período
+        returning_customers: Clientes recurrentes
+        title: Clientes
+        top_customers: Clientes principales
+        total: Nuevos clientes
+      events:
+        attendees: Asistentes
+        bookings: Reservas
+        capacity: Capacidad
+        event: Evento
+        events_count:
+          one: 1 evento
+          other: Eventos %{count}
+        fill: Tasa de llenado
+        fill_curve: Cuando los eventos se llenan
+        fill_curve_hint: Reservas con días de antelación al inicio del evento.
+        minimum_not_reached: mínimo no alcanzado
+        starts_at: Comienza
+        title: Eventos
+        waitlist_summary: "%{waitlisted} en lista de espera · %{conversions} ascendido de la lista de espera en el período"
+        waitlisted: Lista de espera
+      filters:
+        all_resources: Todos los recursos
+        all_services: Todos los servicios
+        apply: Espectáculo
+        download_csv: Descargar CSV
+        filter: Filtrar
+        from: Desde fecha
+        granularity_day: Día
+        granularity_label: Mostrar por
+        granularity_month: Mes
+        granularity_week: Semana
+        period: Período
+        to: Hasta la fecha
+      granularity:
+        day: Fecha
+        month: Mes
+        week: Semana
+      index:
+        ahead: Adelante
+        ahead_of_previous_period: "%{change}% por delante del período anterior"
+        all_clear: Todo despejado
+        behind_pace: Detrás del ritmo
+        below_previous_period: "%{change}% por debajo del período anterior"
+        booking_activity: Actividad de reserva
+        bookings: Reservas
+        bookings_count:
+          one: 1 reserva
+          other: "%{count} reservas"
+        bookings_per_day: Reservas por día
+        cancellation_rate: Tasa de cancelación
+        cancellations: Cancelaciones
+        compared_with_last_year: en comparación con el mismo período del año pasado
+        compared_with_previous: en comparación con el período anterior
+        confirmed_bookings: reservas confirmadas
+        custom: Costumbre
+        days:
+          one: 1 día
+          other: "%{count} días"
+        demand_by_time: Demanda por día y hora
+        forward_note: Los ingresos, los nuevos clientes, las ausencias y las calificaciones solo existen para períodos que ya han ocurrido, por lo que esos paneles permanecen vacíos en un período futuro.
+        forward_note_title: Mirando hacia adelante
+        from_previous_period: del período anterior
+        higher: Más alto
+        last_month: Mes pasado
+        latest_activity: Últimas reservas
+        lower: Más bajo
+        needs_attention: Necesita atención
+        new_customers: Nuevos clientes
+        new_period: Nueva actividad
+        next_days:
+          one: Al día siguiente
+          other: Próximos %{count} días
+        next_month: Mes próximo
+        no_attention: No se detectaron problemas operativos.
+        no_previous_period: No hay ningún período anterior para comparar
+        no_shows: Ausencias
+        on_track: En buen camino
+        open_report: Ver informe
+        overall_pace: ritmo general
+        previous_value: "%{value} en el período anterior"
+        resource_pace: ritmo de los recursos
+        revenue: Ganancia
+        revenue_all_scope: todos los recursos y servicios
+        revenue_by_service: Valor reservado por servicio
+        scope_note: Las cifras de reservas contabilizan las reservas confirmadas según la fecha de reserva. Los ingresos contabilizan los pagos según la fecha en que se procesaron.
+        scope_note_title: Alcance del informe
+        service: Servicio
+        this_month: Este mes
+        this_year: Este año
+        title: Informes
+        today: Hoy
+        total_count: "%{count} total"
+        when: Cuando
+      no_shows:
+        bookings: Reservas
+        by_hour: Ausencias por hora
+        by_resource: Ausencias por recurso
+        by_service: Ausencias por servicio
+        by_weekday: Ausencias por día laborable
+        name: Nombre
+        no_shows: Ausencias
+        offenders: Clientes con mayor número de ausencias
+        per_day: Ausencias por día
+        per_month: Ausencias por mes
+        per_week: Ausencias por semana
+        rate: Tasa
+        title: Ausencias
+        total: Ausencias
+      ratings:
+        average: Calificación promedio
+        booked: Reserva
+        bookings: Reservas
+        by_resource: Promedio por recurso
+        by_service: Promedio por servicio
+        distribution: Cómo se distribuyen las puntuaciones
+        lowest: Reservas con la calificación más baja
+        name: Nombre
+        no_ratings: Aún no hay calificaciones para este período.
+        per_day: Promedio por día
+        per_month: Promedio por mes
+        per_week: Promedio por semana
+        rating: Clasificación
+        ratings: Calificaciones
+        resource: Recurso
+        response_rate: Tasa de respuesta
+        responses:
+          one: Respuesta %{count}
+          other: "%{count} respuestas"
+        service: Servicio
+        title: Calificaciones
+      resources:
+        title: Recursos
+      revenue:
+        amount: Cantidad
+        date: Fecha
+        per_day: Ingresos recaudados por día
+        per_month: Ingresos recaudados por mes
+        per_period_hint: Por la fecha en que se procesó el pago, no la fecha reservada.
+        per_week: Ingresos recaudados por semana
+        title: Ganancia
+        total: Total
+      services:
+        title: Servicios
+      subnav:
+        bookings: Reservas
+        customers: Clientes
+        events: Eventos
+        no_shows: Ausencias
+        overview: Descripción general
+        past_only: Este informe solo cubre períodos que ya han ocurrido.
+        ratings: Calificaciones
+        resources: Recursos
+        revenue: Ganancia
+        services: Servicios
+        timing: Momento
+        utilization: Utilización
+      timing:
+        bookings: Reservas
+        buckets:
+          after_start: Después de empezar
+          four_seven_days: 4–7 días
+          four_weeks: 2–4 semanas
+          longer: Más de 2 meses
+          next_day: Al día siguiente
+          same_day: El mismo día
+          two_months: 1-2 meses
+          two_three_days: 2-3 días
+          two_weeks: 1-2 semanas
+        by_created_hour: Reservas realizadas por hora
+        by_created_weekday: Reservas realizadas por día laborable
+        cancellation_lead_time: Plazo de preaviso de cancelación
+        cancellation_lead_time_hint: Tiempo transcurrido entre la cancelación y la hora reservada.
+        cancellations: Cancelaciones
+        lead_time: Plazo de entrega
+        lead_time_hint: Tiempo transcurrido entre el momento en que se realizó la reserva y la hora reservada.
+        median_lead: Plazo de entrega medio %{days} días
+        title: Momento
+      utilization:
+        booked_hours: Horas reservadas
+        coverage_ahead: Cobertura por adelantado según el recurso
+        coverage_hint: Reserva realizada en horario de apertura para un período que aún no ha ocurrido.
+        hours: "%{booked} de %{open} horas"
+        open_hours: Horario de apertura
+        per_resource: Utilización por recurso
+        resource: Recurso
+        title: Utilización
+        total: Total
+        unbooked_hours: Horas sin reserva
+        utilization: Utilización
     resources:
       form:
         availability: Disponibilidad predeterminada
@@ -1044,6 +1385,8 @@ es:
           other: Este recurso tiene %{count} reservas futuras. Al eliminarlo, se borrará el recurso y todas sus reservas. Haga clic en Eliminar de nuevo para confirmar.
         external_info:
           microsoft_office365_user_id: Usuario de Microsoft Office 365
+          unloc_lock_ids: Desbloquear cerraduras
+          unloc_lock_ids_info: Los clientes con una reserva confirmada reciben automáticamente una llave móvil para las cerraduras seleccionadas, válida durante el tiempo reservado.
           zoom_user_id: Usuario de zoom
         from: desde
         mail_notification_info: Para notificar a más de una persona, utilice punto y coma para separar las direcciones de correo electrónico.
@@ -1136,6 +1479,7 @@ es:
           select_resource: Paso adicional para seleccionar un recurso
           show_free_capacity: Mostrar capacidad disponible
           standalone: Servicio independiente
+          waitlist_enabled: Habilitar la lista de espera (anula la configuración de la cuenta)
       form_attendance:
         booking_site_settings: Configuración del sitio de reservas
         days: Dias
@@ -1146,10 +1490,23 @@ es:
         settings:
           hide_slot_end: Ocultar el fin de los tiempos
           show_free_capacity: Mostrar capacidad disponible
+          waitlist_enabled: Habilitar la lista de espera (anula la configuración de la cuenta)
       form_gift_card:
         booking_site_settings: Configuración del sitio de reservas
       form_product:
         booking_site_settings: Configuración del sitio de reservas
+      form_sellable:
+        billing_periods:
+          month: Mes
+          week: Semana
+          year: Año
+        booking_site_settings: Configuración del sitio de reservas
+        linked_services:
+          addon: Disponible al reservar los siguientes servicios
+          pass: Válido para los siguientes servicios
+          subscription: Válido para los siguientes servicios
+        linked_services_info: Si no se selecciona ninguna opción, estará disponible para todos los servicios.
+        validity_days_unlimited: Nunca caduca
       index:
         appointment:
           header: Servicios
@@ -1191,18 +1548,24 @@ es:
         header: Pedido de servicios
       show:
         availability: Proveedor de relaciones públicas de disponibilidad
+        billing_period: 'Periodo de renovación:'
         custom_data: 'Datos personalizados:'
         days: dias
         description: 'Descripción:'
         interval: 'Duración de la reservación:'
+        linked_services_all: Todos los servicios
         manage_priority: Gestionar prioridades
         minutes: minutos
+        never_expires: Nunca caduca
         no_providers: 'Importante: este servicio no es ofrecido por ningún recurso y no se mostrará en el sitio de reservación. Haga clic aquí para agregar proveedores.'
         not_in_category: Está utilizando categorías en el sitio de reservas y este servicio no está vinculado a ninguna categoría. Como resultado, este servicio no está visible en este momento en el sitio de reservas. Haga clic aquí para administrar sus categorías.
         offered: 'Ofrecido por los siguientes recursos:'
         price: 'Precio:'
         qr_code: Código QR para clientes
+        quota: 'Número de reservas incluidas:'
         show_on_booking_site: Servicio abierto en el sitio de reservas
+        unlimited: Ilimitado
+        validity: 'Validez:'
       slots:
         available: 'Ranuras disponibles:'
         next_available: 'Próxima fecha disponible:'
@@ -1249,6 +1612,7 @@ es:
         header_html: Bienvenido a Makeplans.<br> Comience agregando sus servicios
     shared:
       recurring:
+        booking_window_fixed: Utilice las mismas fechas de registro para todas las ocasiones.
         enabled: Repite varias veces con un patrón
         freq:
           monthly: Mensual

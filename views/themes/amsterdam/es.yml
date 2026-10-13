@@ -211,6 +211,7 @@ es:
         header: Su información almacenada
     providers:
       index:
+        none_available: No hay proveedores disponibles.
         show_all_available: Mostrar todos los disponibles
         show_only_selected: 'O solo mostrar desde el calendario seleccionado:'
     services:

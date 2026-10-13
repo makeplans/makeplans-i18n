@@ -32,6 +32,7 @@ es:
         declined: Rechazado
         deleted: Eliminado
         verification_expired: Verificación expirada
+        waitlisted: Lista de espera
       booking/status:
         checked_in: Registrado
         completed: Terminado
@@ -81,6 +82,7 @@ es:
       message_template/delivery_type:
         email: Email
         sms: SMS
+        whatsapp: WhatsApp
       message_template/message_type:
         confirmation: confirmación
         follow_up: hacer un seguimiento
@@ -109,10 +111,14 @@ es:
         title: título
       service:
         allow_invoice: permitir factura
+        billing_period: período de renovación
         payment_required: requerir prepago
         price: precio
+        quota: número de reservas incluidas
         terms: términos
         title: título
+        unlimited: ilimitado
+        validity_days: Número de días de validez después de la compra
       service/availability_type:
         provider: proveedor
         resource: recurso
@@ -125,6 +131,7 @@ es:
         password: contraseña
         password_confirmation: confirmación de contraseña
         rotp_verification_code: Código de verificación
+        theme: Tema
       web_hook:
         event: Evento
         target_url: URL de destino
@@ -147,6 +154,7 @@ es:
               below_minimum_count: Menos del mínimo requerido de personas por reserva
               over_booking_capacity: Más del máximo de personas permitidas por reservación
             event_id:
+              already_booked: ya tiene una reserva activa para este evento.
               time_not_available: está completamente reservado
             person_id:
               blocked: bloqueado para reservar
@@ -170,6 +178,10 @@ es:
               denied: Negado
         client_user_link:
           admin_needed: Necesita al menos un usuario administrador en la cuenta.
+        message_template:
+          attributes:
+            template:
+              whatsapp_liquid_logic: No puede contener etiquetas lógicas ({% %}) cuando el tipo de entrega es WhatsApp; solo se permiten etiquetas de personalización.
         order:
           attributes:
             base:
@@ -219,7 +231,9 @@ es:
       service_appointment: Servicio
       service_attendance: tipo de evento
       service_gift_card: tarjeta de regalo
+      service_pass: aprobar
       service_product: producto
+      service_subscription: suscripción
       tag: etiqueta
       user: usuario
       web_hook: webhook
@@ -254,6 +268,7 @@ es:
     models:
       person:
         perishable_token:
+          captcha: La comprobación de spam no se ha completado. Inténtelo de nuevo.
           expired: Código caducado. Inténtalo de nuevo.
           invalid: código incorrecto
           invalid_value: Formato no válido
@@ -305,6 +320,9 @@ es:
         cancel: Cancelar
         confirm: Confirmar
         decline: Disminución
+        promote: Promover
+        remove_from_waitlist: Eliminar de la lista de espera
+        remove_from_waitlist_confirm: "¿Está seguro de que desea eliminar esta reserva de la lista de espera?"
         verify: Verificar
       state:
         awaiting_confirmation: Pendiente de confirmación
@@ -315,6 +333,7 @@ es:
         declined: Rechazado
         deleted: Eliminado
         verification_expired: Verificación expirada
+        waitlisted: Lista de espera
     booking_state_transitions:
       events:
         modified: Modificado
@@ -337,6 +356,7 @@ es:
         notes: Notas
         paid_at: Pagado
         person_id: Cliente
+        rating: Clasificación
         reminded_at: Envió recordatorio
         reminder_at: Recordatorio
         resource_id: Recurso
@@ -353,6 +373,7 @@ es:
         parent_id: Categoría principal
         title: Título
       client:
+        account_form: campos de cuenta personalizados
         address: Dirección de visita
         allow_cancellation: Permitir cancelaciones por parte del cliente
         api_key: API-key (para integraciones externas)
@@ -386,7 +407,9 @@ es:
         currency: Moneda
         email: Dirección de correo electrónico
         email_notification: Reciba una notificación por correo electrónico para cada nueva reservación
+        event_first_booking_period: No permita inscripciones al evento hasta
         event_form: Campos de eventos personalizados
+        event_last_booking_period: No permita inscripciones al evento después de
         first_bookable_period: No permita reservas hasta
         footer: Pie de página
         future_bookable_period: No permita reservas después
@@ -458,6 +481,8 @@ es:
         terms: Términos y condiciones
         time_zone: Zona horaria
         verification_method: Método de verificación para nuevas reservas
+        website: Sitio web
+        whatsapp_nr: Número de remitente de WhatsApp
       client/slot_generation:
         dynamic: Dinámica
         fixed: Fijado
@@ -516,6 +541,7 @@ es:
       message_template/delivery_type:
         email: Correo electrónico
         sms: SMS
+        whatsapp: WhatsApp
       message_template/message_type:
         confirmation: Confirmación
         follow_up: Hacer un seguimiento
@@ -550,6 +576,7 @@ es:
         allow_cancellation: Permitir cancelaciones por parte del cliente
         allow_invoice: Permitir factura
         availability_type: La disponibilidad se define por
+        billing_period: Renovado cada
         block_resource: La reserva bloqueará el recurso
         booking_capacity: Número máximo de personas por reservación
         booking_form: Formulario de reservación personalizado
@@ -578,6 +605,7 @@ es:
         price: Precio con impuestos incluidos
         priority_strategy: Estrategia de prioridad
         published: Mostrar en el sitio de reservas
+        quota: Número de reservas incluidas
         reservation_form_text: Texto que se muestra antes del formulario de reserva
         same_day: Permitir reservas durante varios días
         slot_generation: Generación de tiempo
@@ -597,9 +625,12 @@ es:
           resources: Recursos
           time_day_available: Día
           week_available: Toda la semana
+          week_calendar: Calendario semanal
           weekday_available: Días laborables
         terms: Términos y condiciones
         title: Título
+        unlimited: Ilimitado
+        validity_days: Número de días de validez después de la compra
       service/availability_type:
         provider: Ofertas
         resource: Recurso
@@ -646,12 +677,18 @@ es:
       resource:
         new: Nuevo recurso
       service:
+        new_addon: Nuevo complemento
+        new_addon_title: Nuevo %{title}
         new_appointment: Nuevo servicio
         new_attendance: Nuevo tipo de evento
         new_gift_card: Nueva tarjeta de regalo
         new_gift_card_title: Nuevo %{title}
+        new_pass: Nuevo pase
+        new_pass_title: Nuevo %{title}
         new_product: Nuevo producto
         new_product_title: Nuevo %{title}
+        new_subscription: Nueva suscripción
+        new_subscription_title: Nuevo %{title}
       setup:
         skip: Configuración manual
         step_html: "<strong>Paso %{step}</strong> de %{max_steps}"
@@ -666,11 +703,13 @@ es:
       agenda: Agenda
       calendar: Calendario
       logout: Cerrar sesión
+      new_badge: Nuevo
       orders: Órdenes
       people: Clientes
       profile: Perfil
       reports: Informes
       setup: Preparar
+      user_menu: Menú de usuario
     menu_setup:
       addons: Complementos
       billing: Facturación
@@ -707,6 +746,21 @@ es:
         expiration_html: Caduca <small>(MM / AA)</small>
         number: Número de tarjeta
       header: Este formulario será encriptado y enviado de forma segura.
+    person:
+      history:
+        last_visit: Última visita
+        new_customer: Nuevo cliente
+        no_shows: Ausencias
+        since: ya que %{date}
+        summary:
+          last_visit: 'Última visita: %{date}'
+          no_shows:
+            one: "%{count} no se presenta"
+            other: "%{count} ausencias"
+          total_paid: 'Total pagado: %{amount}'
+          visits_since: 'Visitas desde %{date}: %{count}'
+        total_paid: Total pagado
+        visits: Visitas
     select:
       prompt: Por favor seleccione
     submit:

@@ -32,8 +32,10 @@ es:
         who_is_booking_for: "¿Para quién es esta reserva?"
         yourself: Tú mismo
       payment_stripe:
+        make_payment: Realizar el pago
         title: Introduzca los detalles del pago
       pre_payment:
+        make_payment: Realizar el pago
         title: Elija el método de pago
       show:
         add_to_calendar: Añadir al calendario

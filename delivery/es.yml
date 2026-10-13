@@ -51,6 +51,25 @@ es:
       header: Para completar su reservación de %{title} %{time_range} debe confirmar su reservación haciendo clic en el enlace de abajo.
       link: Confirmar reservación
       subject: Confirma tu reservación
+    waitlist_available:
+      confirm_button: Confirmar reserva
+      header: Hola %{name}
+      info: "¡Buenas noticias! Se ha liberado un espacio para %{title} %{time_range}."
+      resource_info: 'Reserva con: %{resource}.'
+      subject: Hay un lugar disponible para su reserva en lista de espera.
+    waitlist_joined:
+      header: Hola %{name}
+      info: Te hemos añadido a la lista de espera para %{title} %{time_range}. Te avisaremos cuando haya una plaza disponible.
+      link: Consulta tu reserva en lista de espera.
+      resource_info: 'Reserva con: %{resource}.'
+      subject: Estás en la lista de espera.
+    waitlist_payment:
+      footer: 'Importante: Si no completa el pago en %{expires_in} minutos, su reserva podría caducar.'
+      header: Hola %{name}
+      info: "¡Buenas noticias! Se ha liberado un cupo para %{title} %{time_range}. Complete su pago para confirmar su reserva."
+      pay_button: Pagar y confirmar la reserva
+      resource_info: 'Reserva con: %{resource}.'
+      subject: Hay una plaza disponible; complete el pago para confirmar su reserva.
   booking_occurrence_mailer:
     cancel:
       body: 'Se cancelaron sus reservas de %{title} para los siguientes horarios:'
@@ -112,6 +131,9 @@ es:
 
       {{booking.client.name}}
     verification: "{{booking.verification_code}} es su código de verificación para la reservación de {{booking.title}}."
+    waitlist_available: Ya hay una plaza disponible para {{ booking.title }} {{ booking.booked_from }}. Visita el enlace para confirmar tu reserva.
+    waitlist_joined: Estás en la lista de espera para {{ booking.title }} {{ booking.booked_from }}. Te avisaremos cuando haya una plaza disponible.
+    waitlist_payment: 'Ya hay una plaza disponible para {{ booking.title }} {{ booking.booked_from }}. Paga aquí para confirmar tu reserva: {{ booking.payment_link }}'
   person_mailer:
     export:
       subject: Exportación de datos

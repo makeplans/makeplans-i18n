@@ -2,6 +2,8 @@
 es:
   shared:
     bookings:
+      cancelled:
+        info: La reserva para %{title} %{time} fue cancelada.
       edit_profile:
         intro: Por favor, facilite algunos detalles más para continuar con su pago.
         submit: Continuar
@@ -11,8 +13,22 @@ es:
         title: La reserva ha caducado.
       new:
         accept: Acepto los términos y condiciones.
+        add_another_person: Añade otra persona
+        book_for_someone_else: Reserva para otra persona
+        booking_for: 'Esta reserva es para:'
+        booking_for_label: Reserva para
+        cancel: Cancelar
+        change: Cambiar
         email_suggestion_html: "<p>¿Te referías a <span>%{suggestions}</span> ?</p>"
+        logged_in_as: Reservando como %{person}
+        logged_in_as_short: Sesión iniciada como
+        logout: Finalizar la sesión
+        myself: Mí mismo
+        not_you_logout: "¿No eres tú? Cierra sesión."
+        someone_else: Otra persona (añadir nuevo)
         terms: Lea los términos y condiciones de la reserva.
+        who_is_booking_for: "¿Para quién es esta reserva?"
+        yourself: Tú mismo
       payment_invoice:
         form_footer_html: Su factura será por <span class="payment-amount">%{amount}</span> .
         form_header: Información de facturación
@@ -21,12 +37,28 @@ es:
         payment_details_html: Recibirás una factura por el importe mostrado en %{currency} de nuestra parte en el momento de tu reserva.
       payment_stripe:
         submit: Pagar
+      promote_waitlist:
+        confirm: Confirmar reserva
+        info: Se ha liberado un cupo para tu reserva en lista de espera. Confirma ahora para asegurar tu lugar.
+        title: "¡Hay una plaza disponible!"
+      rate:
+        error: Por favor, elija una calificación.
+        info: "¿Cómo fue tu experiencia?"
+        rating_1: Pobre
+        rating_2: DE ACUERDO
+        rating_3: Excelente
+        title: Valora tu reserva
+      rated:
+        info: Gracias por valorar tu experiencia.
+        title: "¡Gracias por tus comentarios!"
       show:
         booked_for_child: Esta reserva es para %{name}.
         count: Reservado para %{count} personas.
         invoiced: Se le ha facturado.
         paid: Has prepagado %{paid_amount}.
+        pay: Pagar
         price: El precio de la reserva es %{amount}.
+        reschedule: Reprogramar
       verification_method_email:
         email: Correo electrónico
         info: Debes verificar tu dirección de correo electrónico para completar tu reserva.
@@ -40,10 +72,26 @@ es:
         phone_number: Número de teléfono móvil
         submit: Continuar
         title: Verifica tu número de teléfono
+      waitlisted:
+        confirm: Confirmar reserva
+        info: Te hemos añadido a la lista de espera. Te avisaremos cuando haya una plaza disponible.
+        leave_confirmation: "¿Estás seguro de que quieres salir de la lista de espera?"
+        leave_waitlist: Abandonar la lista de espera
+        spot_available: "¡Ya hay una plaza disponible! Confirma tu reserva ahora."
+        title: Estás en la lista de espera.
     generic:
       alt:
         go_back: Volver
+      before_first_booking: No es posible inscribirse en este evento antes de %{first_booking_at}.
       close: cerca
+      free_capacity:
+        one: "%{count} disponible"
+        other: "%{count} disponible"
+      full: Completamente reservado
+      fully_booked: Este evento está completo. No hay plazas disponibles.
+      join_waitlist: Únete a la lista de espera
+      past: Pasado
+      past_last_booking: Ya no es posible inscribirse en este evento.
       payment:
         add_card_details_html: Los datos de su tarjeta no se almacenarán con nosotros, sino que se enviarán cifrados a %{provider} para garantizar la seguridad de la transacción y el almacenamiento.
         add_card_footer_html: Su tarjeta no será cargada ahora
@@ -63,37 +111,151 @@ es:
         payment_details_html: El importe mostrado está en %{currency}. No almacenamos los datos de su tarjeta de crédito, sino que los enviamos cifrados a %{provider} para su procesamiento y almacenamiento seguros.
         payment_received: "%{paid_amount} se pagó el %{paid_at}."
         save_card: Tarjeta de ahorro
+      registration_closed: El plazo de inscripción para este evento ha finalizado.
+      waitlist: Lista de espera
+      waitlist_notice: Este horario está completo. Se le añadirá a la lista de espera y se le notificará cuando haya un hueco disponible.
+    gift_cards:
+      index:
+        buy: Comprar
+        header: Tarjetas de regalo
+      new:
+        add_to_cart: Añadir a la cesta
+        header: Comprar tarjeta de regalo
+    layouts:
+      application:
+        cart: Carrito (%{count})
     order_cart:
       checkout:
+        applied_coupon: Descuento aplicado
+        applied_gift_cards: Tarjetas de regalo aplicadas
+        apply: Aplicar
         cannot_use_coupon_for_gift_card: Los códigos de descuento no se pueden utilizar para la compra de tarjetas de regalo.
         cannot_use_gift_card_for_gift_card: Las tarjetas de regalo no se pueden usar para comprar tarjetas de regalo.
+        complete_order: Completar pedido
+        continue_to_payment: Continuar con el pago
         coupon_above_maximum: El total del pedido supera el máximo permitido para este código de descuento.
         coupon_below_minimum: El total del pedido no alcanza el mínimo para este código de descuento.
+        coupon_code: Código de descuento
         coupon_no_eligible_items: Este código de descuento no se aplica a los artículos de su carrito.
         coupon_not_redeemable: Este código de descuento no es válido.
+        discount: Descuento
+        empty_cart: Carro vacío
+        gift_card_code: Código de tarjeta de regalo
+        gift_card_code_placeholder: XXXX-0000-XXXX
         invalid_cart_item: Valor de artículo no válido
         invalid_coupon: Código de descuento no válido
         invalid_gift_card: Tarjeta de regalo no válida o ya utilizada
+        payment_method: Método de pago
+        remaining_total: Total restante
+        remove: Eliminar
+        use_coupon: Código de descuento
+        use_gift_card: Utilizar tarjeta de regalo
+        your_gift_cards: Tus tarjetas de regalo
+      show:
+        clear_cart: Carro vacío
+        confirm_order: Confirmar pedido
+        empty_cart: Tu carrito está vacío.
+        header: Carro de la compra
+        remove: Eliminar
+        total: Total
     order_payments:
       edit_profile:
         intro: Por favor, facilite algunos detalles más para continuar con su pago.
         submit: Continuar
         title: Completa tu perfil para continuar.
+      failure:
+        header: Pago fallido
+        message: Lamentablemente, no se pudo procesar su pago.
+        try_again: Intentar otra vez
+      front_go:
+        awaiting_payment:
+          body: Por favor, espere mientras verificamos la transacción.
+          error: No podemos verificar su pago. Por favor, póngase en contacto con el servicio de atención al cliente e indique el número de referencia %{order_id}.
+          title: Verificando su pago
+        payment:
+          back: Atrás
+          header: Pago con FrontGo
+          pay_now: Paga ahora
       pay_later:
         gift_cards_not_allowed: Las tarjetas de regalo no se pueden usar con la opción de pago posterior.
+        payment:
+          back: Atrás
+          complete_order: Completar pedido
+          header: Pagar después
       processing:
         message: Por favor, espere mientras procesamos su pago...
         title: Procesamiento de pagos
+      stripe:
+        awaiting_payment:
+          header: Procesamiento de pagos
+          message: Por favor, espere mientras procesamos su pago...
+        payment:
+          back: Atrás
+          header: Pago con tarjeta
+          new_card: Utiliza una tarjeta nueva
+          pay_now: Paga ahora
+          save_card: Guarda esta tarjeta para futuros pagos.
+          select_card: Seleccione una tarjeta guardada
+      vipps:
+        payment:
+          back: Atrás
+          header: Pago Vipps
+          pay_now: Paga con Vipps
+    orders:
+      index:
+        order_number: Pedido n.º %{number}
+      payment:
+        amount_to_pay: Cantidad a pagar
+        fiken: Factura (Fiken)
+        front_go: FrontGo
+        pay_later: Pagar después
+        vipps: Vipps
+      show:
+        confirmation_message: "¡Gracias por su pedido!"
+        discount_code: Descuento (%{code})
+        gift_card_code: Código de tarjeta de regalo
+        gift_card_value: Valor
+        gift_cards: Tarjetas de regalo
+        header: Confirmación del pedido
+        order_details: Detalles del pedido
+        payment_details: Pago
+        total: Total
+        transaction_gift_card: Tarjeta de regalo (%{code})
+        transaction_payment: Pago
+        transaction_refund: Reembolso
     person_sessions:
+      oauth_callback:
+        profile_exists: Ya existe un perfil con tus datos. Inicia sesión con tu correo electrónico para continuar.
       perishable_token_form:
         login_with_email: Iniciar sesión con correo electrónico
         login_with_id_porten: Inicia sesión con BankID.
         login_with_sms: Iniciar sesión con SMS
         login_with_vipps: Inicia sesión con Vipps
+    products:
+      index:
+        add_to_cart: Añadir a la cesta
+        header: Productos
+        per_billing_period:
+          month: por mes
+          week: por semana
+          year: por año
+        quota:
+          one: Reserva %{count}
+          other: "%{count} reservas"
+        quota_unlimited: Reservas ilimitadas
+        validity_days:
+          one: Válido por %{count} días
+          other: Válido por %{count} días
+      show:
+        add_to_cart: Añadir a la cesta
     profile:
       children:
         index:
           header: Otras personas para las que puedes hacer un libro
+        new:
+          errors_header: 'Se produjeron errores:'
+          submit: Guardar y continuar
+          title: Agregar persona
       credit_card_list:
         add_card: Agregar nueva tarjeta
         body: Estas son tus tarjetas de pago guardadas. Si lo deseas, puedes añadir una nueva tarjeta o eliminar cualquiera de las existentes.
@@ -106,6 +268,22 @@ es:
         header: Editar perfil
         save: Ahorrar
         verified: Verificado
+      gift_card_list:
+        balance: Balance
+        code: Código
+        no_gift_cards: No tienes tarjetas de regalo.
+        purchased_body: Tarjetas de regalo que hayas comprado y que aún no hayas canjeado.
+        purchased_title: Tarjetas de regalo compradas
+        title: Mis tarjetas de regalo
+      index:
+        tabs:
+          all: Todo
+          cancelled: Cancelado
+          completed: Terminado
+          upcoming: Próximamente
+      new:
+        errors_header: 'Se produjeron errores:'
+        register: Registro
       show:
         header: Su información almacenada
     providers:

@@ -3,10 +3,18 @@ es:
   bookings:
     awaiting_payment:
       vipps_payment_failed: El pago fue cancelado. Inténtalo de nuevo.
+    process_promote_waitlist:
+      slot_no_longer_available: Lo sentimos, la plaza ya no está disponible. Sigues en la lista de espera.
     verification_code:
       incorrect_code: código incorrecto
   clients:
     new:
+      accept_terms_html: Al registrarte aceptas %{link}.
+      benefit_booking_site: Tu propia plataforma de reservas online, abierta las 24 horas.
+      benefit_calendar: Todos sus servicios, personal y citas en un solo calendario.
+      benefit_notifications: Confirmaciones y recordatorios automáticos por correo electrónico y SMS.
+      captcha_missing: La comprobación de spam no se ha completado. Por favor, envíe el formulario de nuevo.
+      change: Cambiar
       first_user: Esta es su contraseña personal. Puede agregar más usuarios más tarde.
       free_trial_info: Prueba gratuita de 14 días. Sin obligaciones. No se requiere tarjeta de crédito.
       headline: Empiece con la reservación online
@@ -14,12 +22,18 @@ es:
       newsletter: Acepto recibir actualizaciones de productos por correo electrónico.
       read_legal: Términos y condiciones para el uso de este servicio
       recaptcha: Lamento molestarlo, pero tenemos que verificar su registro con Google Recaptcha. Por favor, ingrese su contraseña nuevamente y luego envíe el formulario.
+      social_proof_caption: Reservas realizadas desde 2010
+      social_proof_figure: Más de 7 millones
       subdomain_info: Su dirección única (URL) donde sus clientes pueden reservar en línea.
+      subdomain_label: Dirección de su sitio de reservas
       subdomain_not_website_warning: 'OOPS: esta es la dirección de su nuevo sitio de reserva. NO ingrese la URL de su sitio web existente. Si tiene alguna duda, introduzca aquí el nombre de su empresa.'
       submit: Registrar mi cuenta
+      terms_link: Términos y condiciones
+      test_env_info_html: "¿Quieres crear una cuenta de prueba? Consulta %{link} para obtener información sobre nuestro entorno de prueba."
       title: Regístrese para obtener su cuenta de reservación en línea
       user_email: Correo electrónico de trabajo
       user_info: Nombre del usuario
+      your_booking_site: 'Su sitio de reservas:'
     rejected:
       headline: Registro rechazado
       info: Lo sentimos, pero nuestro sistema ha marcado su registro como spam. Por favor contáctenos para registrar una cuenta.
