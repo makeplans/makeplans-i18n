@@ -192,7 +192,7 @@ it:
         delivery_not_processed: Al momento stiamo riscontrando alcuni ritardi nei nostri sistemi. Attendi mentre consegniamo la tua email.
         title: Conferma il tuo indirizzo email
       perishable_token_form:
-        title: Login
+        title: Accedi
       verification_method_email:
         submit: Invia l'email di verifica
       verification_method_sms:

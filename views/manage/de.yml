@@ -394,7 +394,7 @@ de:
       developer:
         show:
           api: API
-          embed: Einbetten
+          embed: Embed
           mcp: MCP – KI-Assistenten
           web_hooks: Webhooks
       domains:
@@ -1116,7 +1116,7 @@ de:
           enable_warning: Wenn Sie die Zwei-Faktor-Authentifizierung aktivieren, müssen Sie jede Anmeldung mit einem Code aus Ihrer mobilen App bestätigen. Möchten Sie diese Funktion wirklich aktivieren?
           regenerate_link: Neugenerieren des 2-Schritt-Verifizierungsschlüssels
           regenerate_warning: Wenn Sie den Zwei-Faktor-Authentifizierungsschlüssel neu generieren, ist der bestehende Schlüssel ungültig und Sie müssen Ihre App mit dem neuen Code einrichten. Möchten Sie fortfahren?
-          submit_button: Login
+          submit_button: Anmelden
           verification_code_header: 2-stufige Verifizierung
       update_password:
         updated: Passwort aktualisiert. Bitte melden Sie sich mit Ihrem neuen Passwort an.
@@ -1201,7 +1201,7 @@ de:
       filters:
         all_resources: Alle Ressourcen
         all_services: Alle Dienstleistungen
-        apply: Zeigen
+        apply: Anwenden
         download_csv: CSV herunterladen
         filter: Filter
         from: Ab Datum
@@ -1283,7 +1283,7 @@ de:
         per_day: Nichterscheinen pro Tag
         per_month: Nichterscheinen pro Monat
         per_week: Nichterscheinen pro Woche
-        rate: Rate
+        rate: Quote
         title: Nichterscheinen
         total: Nichterscheinen
       ratings:

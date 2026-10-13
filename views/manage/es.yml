@@ -396,7 +396,7 @@ es:
       developer:
         show:
           api: API
-          embed: Empotrar
+          embed: Embed
           mcp: MCP - Asistentes de IA
           web_hooks: Webhooks
       domains:

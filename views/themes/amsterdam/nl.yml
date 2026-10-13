@@ -38,5 +38,5 @@ nl:
       weekday_available:
         dateselector: Selecteer een datum
         next_week: Volgende week
-        prev_week: Previous week
+        prev_week: Vorige week
         select_time: "%{service}  - selecteer een beschikbare tijd"

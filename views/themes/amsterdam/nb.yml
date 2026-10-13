@@ -179,7 +179,7 @@ nb:
       enter_perishable_token:
         perishable_token: Verifiseringskode
         remember_me: Husk meg på denne maskinen.
-        submit: Login
+        submit: Logg inn
       not_found:
         info_html: Du er ikke registrert som kunde. For å bli kunde må du <a href="/">gjennomføre en booking</a>.
       perishable_token_action_required:

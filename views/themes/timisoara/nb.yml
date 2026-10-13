@@ -65,7 +65,7 @@ nb:
         alt:
           footer_logo: Bunntekst logo
         booking_site_footer: Bookingside for %{name}
-        login: Login
+        login: Logg inn
         made_by_tagline: Brukervennlig system for timebestilling og påmelding.
         made_by_title: Timebestilling og påmeldinger
         privacy: Personvernpolicy
@@ -128,7 +128,7 @@ nb:
           checkbox: Avkryssingsboks
         submit: Send kode
         terms_conditions: Vilkår og betingelser
-        title: Login
+        title: Logg inn
     products:
       index:
         buy: Kjøp

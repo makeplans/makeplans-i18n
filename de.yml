@@ -285,7 +285,7 @@ de:
     account_default: Standardeinstellung des Kontos
     all: alle
     at: um
-    born_abbreviation: b. %{date_of_birth}
+    born_abbreviation: geb. %{date_of_birth}
     country_locale: de
     default: Systemstandard
     dictate:
@@ -717,7 +717,7 @@ de:
       service_appointments: Dienstleistungen
       service_attendances: Ereignistypen
       sms_credits: SMS-Guthaben
-      tools: Tools
+      tools: Werkzeuge
       user_notifications: Benachrichtigungen - Benutzer
       users: Benutzer
       ux: UX

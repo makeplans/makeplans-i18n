@@ -194,7 +194,7 @@ de:
         delivery_not_processed: Aktuell kommt es in unseren Systemen zu Verzögerungen. Bitte haben Sie etwas Geduld, während wir Ihre E-Mail zustellen.
         title: Bitte bestätigen Sie Ihre E-Mail-Adresse.
       perishable_token_form:
-        title: Login
+        title: Anmelden
       verification_method_email:
         submit: Bestätigungs-E-Mail senden
       verification_method_sms:

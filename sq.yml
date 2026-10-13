@@ -270,7 +270,7 @@ sq:
     account_default: Parazgjedhja e llogarisë
     all: të gjithë
     at: në
-    born_abbreviation: b. %{date_of_birth}
+    born_abbreviation: lindur %{date_of_birth}
     country_locale: en
     default: Parazgjedhja e sistemit
     dictate:

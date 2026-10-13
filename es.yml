@@ -37,7 +37,7 @@ es:
         checked_in: Registrado
         completed: Terminado
         in_progress: Empezado
-        no_show: No show
+        no_show: Ausencia
       category:
         title: título
       client:
@@ -299,7 +299,7 @@ es:
     account_default: Predeterminado de la cuenta
     all: todas
     at: a
-    born_abbreviation: segundo. %{date_of_birth}
+    born_abbreviation: n. %{date_of_birth}
     country_locale: en
     default: Sistema por defecto
     dictate:

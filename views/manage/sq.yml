@@ -347,7 +347,7 @@ sq:
       developer:
         show:
           api: API
-          embed: Vendos
+          embed: Embed
           web_hooks: Webhook-e
       domains:
         cname:

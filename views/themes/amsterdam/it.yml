@@ -180,7 +180,7 @@ it:
       enter_perishable_token:
         perishable_token: Codice di verifica
         remember_me: Ricordami su questo dispositivo.
-        submit: Login
+        submit: Accedi
       not_found:
         info_html: Non sei registrato come cliente. Completa prima <a href="/">una prenotazione</a>.
       perishable_token_action_required:

@@ -269,7 +269,7 @@ es:
         save: Ahorrar
         verified: Verificado
       gift_card_list:
-        balance: Balance
+        balance: Saldo
         code: Código
         no_gift_cards: No tienes tarjetas de regalo.
         purchased_body: Tarjetas de regalo que hayas comprado y que aún no hayas canjeado.

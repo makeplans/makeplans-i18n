@@ -254,7 +254,7 @@ sv:
           upcoming: Framtida
       new:
         errors_header: 'Ett fel uppstod:'
-        register: Register
+        register: Registrera
     providers:
       index:
         all_services: Alla tjänster

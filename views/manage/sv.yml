@@ -397,7 +397,7 @@ sv:
       developer:
         show:
           api: API
-          embed: Bädda in
+          embed: Embed
           mcp: MCP - AI-assistenter
           web_hooks: Webhooks
       domains:

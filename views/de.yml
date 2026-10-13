@@ -76,13 +76,13 @@ de:
       success: Erfolgreich angemeldet.
     new:
       forgot_link: Passwort vergessen?
-      header: Login
+      header: Anmelden
       incorrect: Falsche Anmeldeinformationen
-      login: Login
+      login: Anmelden
       remember_me: Angemeldet bleiben
       signup_html: Noch kein Konto? <a href="%{url}">Jetzt loslegen.</a>
-      title: Login
+      title: Anmelden
     rotp_verification_code:
       header: Anmeldung mit Zwei-Faktor-Authentifizierung
       info: Verwenden Sie den von Ihrer 2FA-Anwendung generierten Code.
-      submit: Login
+      submit: Anmelden

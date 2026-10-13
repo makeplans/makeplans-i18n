@@ -270,7 +270,7 @@ it:
     account_default: Predefinito dell'account
     all: Tutto
     at: alle
-    born_abbreviation: b. %{date_of_birth}
+    born_abbreviation: n. %{date_of_birth}
     country_locale: it
     default: Impostazioni predefinite del sistema
     dictate:

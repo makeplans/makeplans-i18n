@@ -384,7 +384,7 @@ cs:
       developer:
         show:
           api: API
-          embed: Vložit
+          embed: Embed
           mcp: MCP - Asistenti umělé inteligence
           web_hooks: Webhooky
       domains:
@@ -1191,7 +1191,7 @@ cs:
       filters:
         all_resources: Všechny zdroje
         all_services: Všechny služby
-        apply: Show
+        apply: Zobrazit
         download_csv: Stáhnout CSV
         filter: Filtr
         from: Od data
@@ -1273,7 +1273,7 @@ cs:
         per_day: Nedostavení se za den
         per_month: Nedostavení se za měsíc
         per_week: Nedostavení se za týden
-        rate: Hodnotit
+        rate: Míra
         title: Neúčastníci
         total: Neúčastníci
       ratings:

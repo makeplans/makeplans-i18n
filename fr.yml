@@ -188,7 +188,7 @@ fr:
   generic:
     all: tout
     at: à
-    born_abbreviation: b. %{date_of_birth}
+    born_abbreviation: né(e) le %{date_of_birth}
     default: Défaut du système
     optional: optionnel
     search: Chercher

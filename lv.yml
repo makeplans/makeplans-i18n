@@ -338,7 +338,7 @@ lv:
         starts_at: Sākas
         title_html: Norādītais nosaukums <small>nav obligāts</small>
       message_template:
-        active: Active
+        active: Aktīvs
         delivery_timing: Piegādāt
         delivery_type: Piegādes veids
         message_type: Ziņojuma veids

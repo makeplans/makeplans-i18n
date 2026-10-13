@@ -394,7 +394,7 @@ da:
       developer:
         show:
           api: API'en
-          embed: Integrer
+          embed: Embed
           mcp: MCP - AI-assistenter
           web_hooks: Webhooks
       domains:

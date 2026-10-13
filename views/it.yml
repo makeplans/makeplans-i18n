@@ -62,13 +62,13 @@ it:
       success: Accesso effettuato con successo
     new:
       forgot_link: Hai dimenticato la password?
-      header: Login
+      header: Accedi
       incorrect: Credenziali errate
-      login: Login
+      login: Accedi
       remember_me: Ricordami
       signup_html: Non hai un account? <a href="%{url}">Creane uno ora.</a>
-      title: Login
+      title: Accedi
     rotp_verification_code:
       header: Accedi con autenticazione a due fattori
       info: Utilizza il codice generato dalla tua applicazione di autenticazione a due fattori (2FA).
-      submit: Login
+      submit: Accedi

@@ -349,7 +349,7 @@ it:
       developer:
         show:
           api: API
-          embed: Incorpora
+          embed: Embed
           web_hooks: webhook
       domains:
         cname:
@@ -1002,7 +1002,7 @@ it:
           enable_warning: Se attivi la verifica in due passaggi, dovrai sempre verificare ogni accesso con un codice generato dall'app sul tuo telefono. Sei sicuro di voler attivare questa funzione?
           regenerate_link: Rigenera la chiave di verifica in due passaggi
           regenerate_warning: Se rigeneri la chiave di verifica in due passaggi, la chiave esistente non funzionerà più e dovrai configurare l'app con il nuovo codice. Sei sicuro di voler continuare?
-          submit_button: Login
+          submit_button: Accedi
           verification_code_header: Verifica in due passaggi
       update_password:
         updated: Password aggiornata. Effettua il login con la nuova password.
@@ -1053,7 +1053,7 @@ it:
         capacity: 'Capacità:'
         closed: Non disponibile per la prenotazione online.
         copy:
-          header: Clone
+          header: Clona
           info: Crea una nuova risorsa basata su questa risorsa. Tieni presente che i servizi forniti vengono clonati.
           link: Clona questa risorsa
         custom_data: 'Campi personalizzati:'

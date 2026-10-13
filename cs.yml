@@ -285,7 +285,7 @@ cs:
     account_default: Výchozí nastavení účtu
     all: vše
     at: na
-    born_abbreviation: b. %{date_of_birth}
+    born_abbreviation: nar. %{date_of_birth}
     country_locale: cs
     default: Výchozí nastavení systému
     dictate:

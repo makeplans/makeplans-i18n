@@ -188,7 +188,7 @@ lt:
   generic:
     all: visi
     at: prie
-    born_abbreviation: b. %{date_of_birth}
+    born_abbreviation: gim. %{date_of_birth}
     default: Numatyta sistema
     optional: neprivaloma
     search: Paieška

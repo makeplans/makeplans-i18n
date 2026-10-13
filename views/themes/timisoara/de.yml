@@ -91,7 +91,7 @@ de:
           footer_logo: Footer-Logo
         booking_site_footer: Buchungsseite für %{name}
         cart: Warenkorb (%{count})
-        login: Login
+        login: Anmelden
         made_by_tagline: Benutzerfreundliches System für Terminplanung, Terminbuchung und Veranstaltungsregistrierung.
         made_by_title: Terminbuchung, Terminplanung und Anmeldung zu Veranstaltungen/Kursen
         privacy: Datenschutzerklärung
@@ -221,7 +221,7 @@ de:
           checkbox: Kontrollkästchen
         submit: Code senden
         terms_conditions: Geschäftsbedingungen
-        title: Login
+        title: Anmelden
     products:
       index:
         buy: Kaufen

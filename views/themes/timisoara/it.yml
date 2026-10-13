@@ -80,7 +80,7 @@ it:
           footer_logo: Logo a piè di pagina
         booking_site_footer: Sito di prenotazione per %{name}
         cart: Carrello (%{count})
-        login: Login
+        login: Accedi
         made_by_tagline: Sistema intuitivo per la pianificazione, la prenotazione di appuntamenti e la registrazione agli eventi.
         made_by_title: Prenotazione appuntamenti, programmazione e iscrizioni a eventi/corsi
         privacy: Informativa sulla privacy
@@ -210,7 +210,7 @@ it:
           checkbox: Casella di controllo
         submit: Invia il codice
         terms_conditions: Termini e Condizioni
-        title: Login
+        title: Accedi
     products:
       index:
         buy: Acquista

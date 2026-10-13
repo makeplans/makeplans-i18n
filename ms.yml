@@ -188,7 +188,7 @@ ms:
   generic:
     all: semua
     at: di
-    born_abbreviation: b. %{date_of_birth}
+    born_abbreviation: lahir %{date_of_birth}
     default: Lalai sistem
     optional: pilihan
     search: Cari
@@ -425,7 +425,7 @@ ms:
       create: Buat
       delete: Padam
       delete_confirm: Adakah anda pasti ingin memadam?
-      edit: Edit
+      edit: Sunting
       event:
         new: Acara baru
         new_attendant: Tambah petugas
@@ -499,7 +499,7 @@ ms:
           nothing_to_invoice: Akaun belum siap untuk penginvoisan. Pastikan anda mempunyai sekurang-kurangnya satu sumber.
   title:
     actions:
-      edit: Edit
+      edit: Sunting
       update: Kemas kini
   user:
     password_reset:

@@ -85,9 +85,9 @@ nb:
       success: Innlogging vellykket
     new:
       forgot_link: Har du glemt passordet?
-      header: Login
+      header: Logg inn
       incorrect: Feil epost eller passord
-      login: Login
+      login: Logg inn
       remember_me: Husk meg
       signup_html: Har du ikke konto? <a href="%{url}">Kom i gang nå.</a>
       title: Logg inn
