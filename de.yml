@@ -32,6 +32,7 @@ de:
         declined: Abgelehnt
         deleted: Gelöscht
         verification_expired: Verifizierung abgelaufen
+        waitlisted: Auf der Warteliste
       booking/status:
         checked_in: Eingecheckt
         completed: Abgeschlossen
@@ -81,6 +82,7 @@ de:
       message_template/delivery_type:
         email: E-Mail
         sms: SMS
+        whatsapp: WhatsApp
       message_template/message_type:
         confirmation: Bestätigung
         follow_up: Follow-up
@@ -109,10 +111,14 @@ de:
         title: Titel
       service:
         allow_invoice: Rechnung zulassen
+        billing_period: Erneuerungszeitraum
         payment_required: Zahlung erforderlich
         price: Preis
+        quota: Anzahl der enthaltenen Reservierungen
         terms: Bedingungen
         title: Titel
+        unlimited: unbegrenzt
+        validity_days: Anzahl der Tage, die ab dem Kauf gültig sind
       service/availability_type:
         provider: Anbieter
         resource: Ressource
@@ -125,6 +131,7 @@ de:
         password: Passwort
         password_confirmation: Passwortbestätigung
         rotp_verification_code: Bestätigungscode
+        theme: Thema
       web_hook:
         event: Ereignis
         target_url: Ziel-URL
@@ -147,6 +154,7 @@ de:
               below_minimum_count: Weniger als die Mindestanzahl an Personen pro Buchung
               over_booking_capacity: Mehr als die maximal zulässige Personenzahl pro Buchung
             event_id:
+              already_booked: Für diese Veranstaltung liegt bereits eine aktive Buchung vor.
               time_not_available: ist ausgebucht
             person_id:
               blocked: Für die Buchung gesperrt
@@ -170,6 +178,10 @@ de:
               denied: Abgelehnt
         client_user_link:
           admin_needed: Es wird mindestens ein Administratorbenutzer für das Konto benötigt.
+        message_template:
+          attributes:
+            template:
+              whatsapp_liquid_logic: Logische Tags ({% %}) sind bei der Zustellungsart WhatsApp nicht zulässig – nur Personalisierungs-Tags sind erlaubt.
         order:
           attributes:
             base:
@@ -217,7 +229,9 @@ de:
       service_appointment: Service
       service_attendance: Ereignistyp
       service_gift_card: Geschenkgutschein
+      service_pass: passieren
       service_product: Produkt
+      service_subscription: Abonnement
       tag: Etikett
       user: Benutzer
       web_hook: Webhook
@@ -240,6 +254,7 @@ de:
     models:
       person:
         perishable_token:
+          captcha: Die Spamprüfung ist fehlgeschlagen. Bitte versuchen Sie es erneut.
           expired: Der Code ist abgelaufen. Bitte versuchen Sie es erneut.
           invalid: Falscher Code
           invalid_value: Ungültiges Format
@@ -291,6 +306,9 @@ de:
         cancel: Stornieren
         confirm: Bestätigen
         decline: Ablehnen
+        promote: Fördern
+        remove_from_waitlist: Von der Warteliste entfernen
+        remove_from_waitlist_confirm: Möchten Sie diese Reservierung wirklich von der Warteliste entfernen?
         verify: Verifizieren
       state:
         awaiting_confirmation: Warte auf Bestätigung
@@ -301,6 +319,7 @@ de:
         declined: Abgelehnt
         deleted: Gelöscht
         verification_expired: Verifizierung abgelaufen
+        waitlisted: Auf der Warteliste
     booking_state_transitions:
       events:
         modified: Geändert
@@ -323,6 +342,7 @@ de:
         notes: Anmerkungen
         paid_at: Bezahlt
         person_id: Kunde
+        rating: Bewertung
         reminded_at: Erinnerung gesendet
         reminder_at: Erinnerung
         resource_id: Ressource
@@ -339,6 +359,7 @@ de:
         parent_id: Übergeordnete Kategorie
         title: Titel
       client:
+        account_form: Benutzerdefinierte Kontofelder
         address: Besucheradresse
         allow_cancellation: Stornierungen durch den Kunden zulassen
         api_key: API-Schlüssel (für externe Integrationen)
@@ -372,7 +393,9 @@ de:
         currency: Währung
         email: E-Mail-Adresse
         email_notification: Sie erhalten eine E-Mail-Benachrichtigung für jede neue Reservierung.
+        event_first_booking_period: Anmeldungen zu Veranstaltungen dürfen erst zugelassen werden
         event_form: Benutzerdefinierte Ereignisfelder
+        event_last_booking_period: Anmeldungen zu Veranstaltungen dürfen nach
         first_bookable_period: Keine Reservierungen zulassen vor
         footer: Fußzeile
         future_bookable_period: Keine Reservierungen zulassen nach
@@ -440,6 +463,8 @@ de:
         terms: Geschäftsbedingungen
         time_zone: Zeitzone
         verification_method: Verifizierungsmethode für neue Reservierungen
+        website: Webseite
+        whatsapp_nr: WhatsApp-Absendernummer
       client/slot_generation:
         dynamic: Dynamisch (Standard)
         fixed: Fest
@@ -498,6 +523,7 @@ de:
       message_template/delivery_type:
         email: E-Mail
         sms: SMS
+        whatsapp: WhatsApp
       message_template/message_type:
         confirmation: Bestätigung
         follow_up: Follow-up
@@ -532,6 +558,7 @@ de:
         allow_cancellation: Stornierungen durch den Kunden zulassen
         allow_invoice: Rechnung zulassen
         availability_type: Die Verfügbarkeit wird definiert durch
+        billing_period: Wird jeden Tag erneuert
         block_resource: Die Reservierung blockiert die Ressource
         booking_capacity: Maximale Personenzahl pro Reservierung
         booking_form: Benutzerdefiniertes Reservierungsformular
@@ -563,6 +590,7 @@ de:
         price: Preis inklusive Steuern
         priority_strategy: Prioritätenstrategie
         published: Auf der Buchungsseite anzeigen
+        quota: Anzahl der enthaltenen Reservierungen
         reservation_form_text: Text, der vor dem Reservierungsformular angezeigt wird
         same_day: Reservierung über mehrere Tage möglich
         slot_generation: Zeiterzeugung
@@ -582,9 +610,12 @@ de:
           resources: Ressourcen
           time_day_available: Tag
           week_available: Die ganze Woche
+          week_calendar: Wochenkalender
           weekday_available: Wochentage
         terms: Geschäftsbedingungen
         title: Titel
+        unlimited: Unbegrenzt
+        validity_days: Anzahl der Tage, in denen die Gültigkeit nach dem Kauf gegeben ist
       service/availability_type:
         provider: Anbieter
         resource: Ressource (Standard)
@@ -631,12 +662,18 @@ de:
       resource:
         new: Neue Ressource
       service:
+        new_addon: Neues Add-on
+        new_addon_title: Neues %{title}
         new_appointment: Neuer Service
         new_attendance: Neuer Ereignistyp
         new_gift_card: Neue Geschenkkarte
         new_gift_card_title: Neues %{title}
+        new_pass: Neuer Pass
+        new_pass_title: Neues %{title}
         new_product: Neues Produkt
         new_product_title: Neues %{title}
+        new_subscription: Neues Abonnement
+        new_subscription_title: Neues %{title}
       setup:
         skip: Manuelle Einrichtung
         step_html: "<strong>Schritt %{step}</strong> von %{max_steps}"
@@ -651,11 +688,13 @@ de:
       agenda: Agenda
       calendar: Kalender
       logout: Abmelden
+      new_badge: Neu
       orders: Bestellungen
       people: Kunden
       profile: Profil
       reports: Berichte
       setup: Einstellungen
+      user_menu: Benutzermenü
     menu_setup:
       addons: Add-ons
       billing: Abrechnung
@@ -692,6 +731,21 @@ de:
         expiration_html: Ablaufdatum <small>(MM/JJ)</small>
         number: Kartennummer
       header: Dieses Formular wird verschlüsselt und sicher versendet.
+    person:
+      history:
+        last_visit: Letzter Besuch
+        new_customer: Neukunde
+        no_shows: Nichterscheinen
+        since: seit %{date}
+        summary:
+          last_visit: 'Letzter Besuch: %{date}'
+          no_shows:
+            one: "%{count} Nichterscheinen"
+            other: "%{count} Nichterscheinen"
+          total_paid: 'Gesamtbetrag: %{amount}'
+          visits_since: 'Besuche seit %{date}: %{count}'
+        total_paid: Gesamtbetrag bezahlt
+        visits: Besuche
     select:
       prompt: Bitte wählen Sie aus
     submit:

@@ -209,6 +209,7 @@ de:
         header: Ihre gespeicherten Informationen
     providers:
       index:
+        none_available: Es sind keine Anbieter verfügbar.
         show_all_available: Alle Verfügbarkeiten anzeigen
         show_only_selected: 'Oder nur ausgewählte %{resource_title} anzeigen:'
     services:

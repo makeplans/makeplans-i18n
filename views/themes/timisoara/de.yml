@@ -60,10 +60,21 @@ de:
       index:
         all_events: Alle Veranstaltungen
         continue: Weiter
+      show:
+        all_services: Alle Dienstleistungen
+        continue: Weitermachen
+      week_calendar:
+        all_events: Alle Veranstaltungen
+        next_week: Nächste Woche
+        none_this_week: Diese Woche finden keine Veranstaltungen statt.
+        prev_week: Vorwoche
+        this_week: Diese Woche
     generic:
+      all_day: Den ganzen Tag
       alt:
         go_back: Zurück
         time: Uhrzeit
+      continue: Weitermachen
     gift_cards:
       index:
         buy: Kaufen
@@ -273,3 +284,7 @@ de:
       show:
         all_services: Alle Dienstleistungen
         continue: Jetzt buchen
+      week_available:
+        next_week: Nächste Woche
+        prev_week: Vorwoche
+        select_date: Datum auswählen

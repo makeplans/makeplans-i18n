@@ -32,8 +32,10 @@ de:
         who_is_booking_for: Für wen ist diese Buchung?
         yourself: Selbst
       payment_stripe:
+        make_payment: Zahlung leisten
         title: Zahlungsdetails eingeben
       pre_payment:
+        make_payment: Zahlung leisten
         title: Zahlungsmethode auswählen
       show:
         add_to_calendar: Zum Kalender hinzufügen

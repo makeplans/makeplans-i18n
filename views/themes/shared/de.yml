@@ -2,6 +2,8 @@
 de:
   shared:
     bookings:
+      cancelled:
+        info: Die Buchung für %{title} %{time} wurde storniert.
       edit_profile:
         intro: Bitte geben Sie noch einige weitere Details an, um mit Ihrer Zahlung fortfahren zu können.
         submit: Weiter
@@ -11,8 +13,22 @@ de:
         title: Buchung abgelaufen
       new:
         accept: Ich akzeptiere die Allgemeinen Geschäftsbedingungen.
+        add_another_person: Füge eine weitere Person hinzu
+        book_for_someone_else: Buchen Sie für jemand anderen
+        booking_for: 'Diese Buchung ist für:'
+        booking_for_label: Buchung für
+        cancel: Stornieren
+        change: Ändern
         email_suggestion_html: "<p>Meinten Sie <span>%{suggestions}</span>?</p>"
+        logged_in_as: Buchung als %{person}
+        logged_in_as_short: Angemeldet als
+        logout: Abmelden
+        myself: Ich selbst
+        not_you_logout: Nicht du? Dann melde dich ab.
+        someone_else: Jemand anderes (neu hinzufügen)
         terms: Bitte lesen Sie die Reservierungsbedingungen.
+        who_is_booking_for: Für wen ist diese Buchung?
+        yourself: Selbst
       payment_invoice:
         form_footer_html: Ihre Rechnung wird sich auf <span class="payment-amount">%{amount}</span> belaufen.
         form_header: Rechnungsinformationen
@@ -21,12 +37,28 @@ de:
         payment_details_html: Sie erhalten von uns zum Zeitpunkt Ihrer Buchung eine Rechnung über den in %{currency} angezeigten Betrag.
       payment_stripe:
         submit: Zahlen
+      promote_waitlist:
+        confirm: Buchung bestätigen
+        info: Für Ihre Buchung auf der Warteliste ist ein Platz frei geworden. Bestätigen Sie jetzt, um sich Ihren Platz zu sichern.
+        title: Ein Platz ist frei!
+      rate:
+        error: Bitte geben Sie eine Bewertung ab.
+        info: Wie war Ihre Erfahrung?
+        rating_1: Arm
+        rating_2: OK
+        rating_3: Großartig
+        title: Bewerten Sie Ihre Buchung
+      rated:
+        info: Vielen Dank für Ihre Bewertung.
+        title: Vielen Dank für Ihr Feedback!
       show:
         booked_for_child: Diese Buchung ist für %{name}.
         count: Gebucht für %{count} Personen.
         invoiced: Sie haben eine Rechnung erhalten.
         paid: Sie haben %{paid_amount} im Voraus bezahlt.
+        pay: Zahlen
         price: Der Buchungspreis beträgt %{amount}.
+        reschedule: Neu terminieren
       verification_method_email:
         email: E-Mail
         info: Sie müssen Ihre E-Mail-Adresse bestätigen, um Ihre Reservierung abzuschließen.
@@ -40,10 +72,26 @@ de:
         phone_number: Handynummer
         submit: Weiter
         title: Bestätigen Sie Ihre Telefonnummer
+      waitlisted:
+        confirm: Buchung bestätigen
+        info: Sie wurden auf die Warteliste gesetzt. Wir benachrichtigen Sie, sobald ein Platz frei wird.
+        leave_confirmation: Möchten Sie die Warteliste wirklich verlassen?
+        leave_waitlist: Verlassen Sie die Warteliste
+        spot_available: Ein Platz ist jetzt frei! Jetzt bestätigen und buchen.
+        title: Sie stehen auf der Warteliste
     generic:
       alt:
         go_back: Zurück
+      before_first_booking: Eine Anmeldung zu dieser Veranstaltung ist vor dem %{first_booking_at} nicht möglich.
       close: schließen
+      free_capacity:
+        one: "%{count} verfügbar"
+        other: "%{count} verfügbar"
+      full: Ausgebucht
+      fully_booked: Diese Veranstaltung ist ausgebucht. Es sind keine Plätze mehr verfügbar.
+      join_waitlist: Auf die Warteliste setzen
+      past: Vergangenheit
+      past_last_booking: Eine Anmeldung zu dieser Veranstaltung ist nicht mehr möglich.
       payment:
         add_card_details_html: Ihre Kartendaten werden nicht bei uns gespeichert, sondern verschlüsselt an %{provider} gesendet, um eine sichere Transaktion und Speicherung zu gewährleisten.
         add_card_footer_html: Ihre Karte wird jetzt nicht belastet.
@@ -63,37 +111,151 @@ de:
         payment_details_html: Der angezeigte Betrag ist in %{currency}. Wir speichern Ihre Kreditkartendaten nicht, sondern senden sie verschlüsselt an %{provider} zur sicheren Verarbeitung und Speicherung.
         payment_received: "%{paid_amount} wurde am %{paid_at} bezahlt."
         save_card: Karte speichern
+      registration_closed: Die Anmeldung für diese Veranstaltung ist geschlossen.
+      waitlist: Warteliste
+      waitlist_notice: Dieser Termin ist bereits ausgebucht. Sie werden auf die Warteliste gesetzt und benachrichtigt, sobald ein Platz frei wird.
+    gift_cards:
+      index:
+        buy: Kaufen
+        header: Geschenkgutscheine
+      new:
+        add_to_cart: In den Warenkorb legen
+        header: Geschenkkarte kaufen
+    layouts:
+      application:
+        cart: Warenkorb (%{count})
     order_cart:
       checkout:
+        applied_coupon: Angewendeter Rabatt
+        applied_gift_cards: Angewandte Geschenkkarten
+        apply: Anwenden
         cannot_use_coupon_for_gift_card: Gutscheincodes können nicht für den Kauf von Geschenkgutscheinen verwendet werden.
         cannot_use_gift_card_for_gift_card: Geschenkkarten können nicht zum Kauf von Geschenkkarten verwendet werden.
+        complete_order: Vollständige Bestellung
+        continue_to_payment: Weiter zur Zahlung
         coupon_above_maximum: Der Bestellwert überschreitet den Höchstbetrag für diesen Rabattcode.
         coupon_below_minimum: Der Bestellwert erfüllt nicht den Mindestbestellwert für diesen Rabattcode.
+        coupon_code: Rabattcode
         coupon_no_eligible_items: Dieser Rabattcode gilt nicht für Artikel in Ihrem Warenkorb.
         coupon_not_redeemable: Dieser Rabattcode ist ungültig.
+        discount: Rabatt
+        empty_cart: Leerer Warenkorb
+        gift_card_code: Geschenkkartencode
+        gift_card_code_placeholder: XXXX-0000-XXXX
         invalid_cart_item: Ungültiger Artikelwert
         invalid_coupon: Ungültiger Rabattcode
         invalid_gift_card: Ungültige oder bereits verwendete Geschenkkarte
+        payment_method: Zahlungsmethode
+        remaining_total: Restbetrag
+        remove: Entfernen
+        use_coupon: Rabattcode
+        use_gift_card: Geschenkkarte verwenden
+        your_gift_cards: Ihre Geschenkkarten
+      show:
+        clear_cart: Leerer Warenkorb
+        confirm_order: Bestellung bestätigen
+        empty_cart: Ihr Warenkorb ist leer.
+        header: Warenkorb
+        remove: Entfernen
+        total: Gesamt
     order_payments:
       edit_profile:
         intro: Bitte geben Sie noch einige weitere Details an, um mit Ihrer Zahlung fortfahren zu können.
         submit: Weiter
         title: Vervollständigen Sie Ihr Profil, um fortzufahren.
+      failure:
+        header: Zahlung fehlgeschlagen
+        message: Ihre Zahlung konnte leider nicht verarbeitet werden.
+        try_again: Versuchen Sie es erneut
+      front_go:
+        awaiting_payment:
+          body: Bitte warten Sie, während wir die Transaktion überprüfen.
+          error: Wir können Ihre Zahlung nicht verifizieren. Bitte kontaktieren Sie unseren Kundenservice unter Angabe der Referenznummer %{order_id}.
+          title: Wir überprüfen Ihre Zahlung.
+        payment:
+          back: Zurück
+          header: FrontGo-Zahlung
+          pay_now: Jetzt bezahlen
       pay_later:
         gift_cards_not_allowed: Geschenkkarten können nicht mit „Später bezahlen“ verwendet werden.
+        payment:
+          back: Zurück
+          complete_order: Vollständige Bestellung
+          header: Später bezahlen
       processing:
         message: Bitte warten Sie, während wir Ihre Zahlung bearbeiten...
         title: Zahlungsabwicklung
+      stripe:
+        awaiting_payment:
+          header: Zahlungsabwicklung
+          message: Bitte warten Sie, während wir Ihre Zahlung bearbeiten...
+        payment:
+          back: Zurück
+          header: Kartenzahlung
+          new_card: Verwenden Sie eine neue Karte
+          pay_now: Jetzt bezahlen
+          save_card: Bewahren Sie diese Karte für zukünftige Zahlungen auf.
+          select_card: Wählen Sie eine gespeicherte Karte aus
+      vipps:
+        payment:
+          back: Zurück
+          header: Vipps-Zahlung
+          pay_now: Bezahlen Sie mit Vipps.
+    orders:
+      index:
+        order_number: Bestellung Nr. %{number}
+      payment:
+        amount_to_pay: Zu zahlender Betrag
+        fiken: Rechnung (Fiken)
+        front_go: FrontGo
+        pay_later: Später bezahlen
+        vipps: Vipps
+      show:
+        confirmation_message: Vielen Dank für Ihre Bestellung!
+        discount_code: Rabatt (%{code})
+        gift_card_code: Geschenkkartencode
+        gift_card_value: Wert
+        gift_cards: Geschenkgutscheine
+        header: Auftragsbestätigung
+        order_details: Bestelldetails
+        payment_details: Zahlung
+        total: Gesamt
+        transaction_gift_card: Geschenkkarte (%{code})
+        transaction_payment: Zahlung
+        transaction_refund: Erstattung
     person_sessions:
+      oauth_callback:
+        profile_exists: Ein Profil mit Ihren Daten existiert bereits. Bitte melden Sie sich mit Ihrer E-Mail-Adresse an, um fortzufahren.
       perishable_token_form:
         login_with_email: Mit E-Mail anmelden
         login_with_id_porten: Mit BankID anmelden
         login_with_sms: Mit SMS anmelden
         login_with_vipps: Mit Vipps anmelden
+    products:
+      index:
+        add_to_cart: In den Warenkorb legen
+        header: Produkte
+        per_billing_period:
+          month: pro Monat
+          week: pro Woche
+          year: pro Jahr
+        quota:
+          one: "%{count} Reservierung"
+          other: "%{count} Reservierungen"
+        quota_unlimited: Unbegrenzte Reservierungen
+        validity_days:
+          one: Gültig für %{count} Tage
+          other: Gültig für %{count} Tage
+      show:
+        add_to_cart: In den Warenkorb legen
     profile:
       children:
         index:
           header: Andere Personen, für die Sie buchen können
+        new:
+          errors_header: 'Es sind Fehler aufgetreten:'
+          submit: Speichern und fortfahren
+          title: Person hinzufügen
       credit_card_list:
         add_card: Neue Karte hinzufügen
         body: Dies sind Ihre gespeicherten Zahlungskarten. Sie können bei Bedarf eine neue Karte hinzufügen oder eine der vorhandenen löschen.
@@ -106,6 +268,22 @@ de:
         header: Profil bearbeiten
         save: Speichern
         verified: Verifiziert
+      gift_card_list:
+        balance: Gleichgewicht
+        code: Code
+        no_gift_cards: Sie besitzen keine Geschenkgutscheine.
+        purchased_body: Sie haben Geschenkgutscheine gekauft, die noch nicht eingelöst wurden.
+        purchased_title: Gekaufte Geschenkkarten
+        title: Meine Geschenkkarten
+      index:
+        tabs:
+          all: Alle
+          cancelled: Abgesagt
+          completed: Vollendet
+          upcoming: Demnächst
+      new:
+        errors_header: 'Es sind Fehler aufgetreten:'
+        register: Registrieren
       show:
         header: Ihre gespeicherten Informationen
     providers:

@@ -53,6 +53,25 @@ de:
       header: Um Ihre Buchung von %{title} %{time_range} abzuschließen, müssen Sie Ihre Reservierung mit dem unten stehenden Code verifizieren.
       link: Reservierung bestätigen
       subject: Bitte verifizieren Sie Ihre Reservierung
+    waitlist_available:
+      confirm_button: Buchung bestätigen
+      header: Hallo %{name}
+      info: Gute Neuigkeiten! Ein Platz für %{title} %{time_range} ist frei geworden.
+      resource_info: 'Reservierung bei: %{resource}.'
+      subject: Für Ihre Buchung auf der Warteliste ist ein Platz frei geworden.
+    waitlist_joined:
+      header: Hallo %{name}
+      info: Sie wurden auf die Warteliste für %{title} %{time_range} gesetzt. Wir benachrichtigen Sie, sobald ein Platz frei wird.
+      link: Ihre Wartelistenbuchung ansehen
+      resource_info: 'Reservierung bei: %{resource}.'
+      subject: Sie stehen auf der Warteliste
+    waitlist_payment:
+      footer: 'Wichtig: Wenn Sie die Zahlung nicht innerhalb von %{expires_in} Minuten abschließen, kann Ihre Reservierung verfallen.'
+      header: Hallo %{name}
+      info: Gute Neuigkeiten! Für %{title} %{time_range} ist ein Platz frei geworden. Schließen Sie Ihre Zahlung ab, um Ihre Buchung zu bestätigen.
+      pay_button: Bezahlen und Buchung bestätigen
+      resource_info: 'Reservierung bei: %{resource}.'
+      subject: Es ist noch ein Platz frei – schließen Sie die Zahlung ab, um Ihre Buchung zu bestätigen.
   booking_occurrence_mailer:
     cancel:
       body: 'Ihre Buchung von %{title} für die folgenden Zeiten wurde storniert:'
@@ -114,6 +133,9 @@ de:
 
       {{ booking.client.name }}
     verification: "{{ booking.verification_code }} ist Ihr Bestätigungscode für die Reservierung von {{ booking.title }}."
+    waitlist_available: Für {{ booking.title }} {{ booking.booked_from }} ist jetzt ein Platz frei. Klicken Sie auf den Link, um Ihre Buchung zu bestätigen.
+    waitlist_joined: Sie stehen auf der Warteliste für {{ booking.title }} {{ booking.booked_from }}. Wir benachrichtigen Sie, sobald ein Platz frei wird.
+    waitlist_payment: 'Für {{ booking.title }} {{ booking.booked_from }} ist nun ein Platz frei. Bezahlen Sie hier, um Ihre Buchung zu bestätigen: {{ booking.payment_link }}'
   person_mailer:
     export:
       subject: Datenexport

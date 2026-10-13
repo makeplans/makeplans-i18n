@@ -13,12 +13,15 @@ de:
         opening_hours:
           add: "+ hinzufügen"
           add_to_existing: "+ hinzufügen"
+          all_resources: Alle %{resources}
           closed_all_week: Für den gesamten Zeitraum geschlossen.
           dates: Termine
           from: Von
+          no_items: Es wurden keine Ressourcen gefunden, die dem aktuellen Filter entsprechen.
           open: Offen
           remove_existing: entfernen
           reset: Zurücksetzen
+          resource_default: "%{resource} (Standard)"
           title: Verfügbarkeit anpassen
           to: Bis
         resourceTimeGridDay: Tag (geteilt)
@@ -38,12 +41,29 @@ de:
         filter: Filterung
         headline: Termine anzeigen
         month: Monat anzeigen
+        nav:
+          day: Tag
+          list: Liste
+          month: Monat
+          next: Nächste
+          previous: Vorherige
+          today: Heute
+          week: Woche
         no_reservations: Keine Reservierungen
+        overview: Überblick
+        period: Zeitraum
         reset_filter: Filter zurücksetzen
         resources: Ressourcen
         services: Dienstleistungen
+        sort_latest: Neueste Änderungen
+        sort_newest: Neue Reservierungen
+        state: Zustand
+        status: Anwesenheitsstatus
+        tab_awaiting_confirmation: Warte auf Bestätigung
+        tab_waitlist: Warteliste
         this_and_next_month: Von heute bis Ende des nächsten Monats
         this_and_next_week: Von heute bis Ende nächster Woche
+        waitlist_note: "+%{count} auf der Warteliste"
     billing:
       charge:
         charge_details: Basierend auf Ihrem aktuellen Verbrauch belasten wir Ihre Kreditkarte monatlich mit %{price}.
@@ -105,6 +125,12 @@ de:
       create_recurring:
         headline: Generiere %{count} Reservierungen...
         link: Liste anzeigen
+      delivery_status:
+        channel:
+          email: E-Mail
+          sms: SMS
+        failed: 'Senden über %{channel} fehlgeschlagen %{time}: %{error}'
+        sent: Gesendet von %{channel} %{time}
       destroy_recurring:
         headline: Alle Reservierungen innerhalb dieses sich wiederholenden Musters wurden entfernt.
       feed:
@@ -182,6 +208,8 @@ de:
       no_status:
         headline: Liste der Reservierungen ohne Status
         no_reservations: Keine Reservierungen ohne Status vorhanden.
+      promote:
+        promote_failed: Buchung von der Warteliste konnte nicht übernommen werden.
       show:
         amount: Gesamtpreis
         audit:
@@ -217,6 +245,7 @@ de:
         person:
           address: Adresse
           email: E-Mail
+          history: Geschichte
           phone_number: Telefonnummer
         recurring_member: Diese Reservierung ist Teil eines wiederkehrenden Musters.
         refund: Rückerstattungsbetrag
@@ -289,7 +318,9 @@ de:
         booking_type_appointment: Termine
         booking_type_attendance: Teilnahme
         booking_type_gift_card: Geschenkgutscheine
+        booking_type_pass: Pässe
         booking_type_product: Produkte
+        booking_type_subscription: Abonnements
         has_services: Zeigt diese Dienste
         no_parent_id: OBERSTE EBENE
         settings:
@@ -309,6 +340,20 @@ de:
         priority_button: Reihenfolge
         qr_code: QR-Code für Kunden
         show_on_booking_site: Service auf der Buchungsseite öffnen
+    chats:
+      form:
+        credit_info: Jede Nachricht kostet 1 SMS-Guthaben.
+        send: Schicken
+        window_closed: WhatsApp erlaubt nur Antworten innerhalb von 24 Stunden nach der letzten Nachricht des Kunden. Bitten Sie den Kunden, Ihnen erneut über WhatsApp zu schreiben, oder kontaktieren Sie ihn per SMS, E-Mail oder Telefon.
+      index:
+        headline: WhatsApp-Antworten
+      replies:
+        empty: Bisher keine WhatsApp-Antworten erhalten.
+      show:
+        headline: WhatsApp-Chat mit %{name}
+      thread:
+        booking: Buchung
+        empty: Bisher keine Nachrichten mit diesem Kunden.
     client:
       addons:
         addons:
@@ -350,6 +395,7 @@ de:
         show:
           api: API
           embed: Einbetten
+          mcp: MCP – KI-Assistenten
           web_hooks: Webhooks
       domains:
         cname:
@@ -380,6 +426,8 @@ de:
         cancellation: Stornierung
         cancellation_info: Eine Stornierung ist nur vor Ablauf der Stornierungsfrist möglich. Bereits bezahlte Reservierungen können nicht storniert werden.
         cancellation_period_info: 'Beispiel: „24 Stunden vorher“ (Stornierung nur bis 24 Stunden vor Reservierungsbeginn möglich). Bei der Datumsangabe muss das vollständige Jahr eingegeben werden.'
+        event_first_booking_period_info: 'Nur für Veranstaltungen. Die Zeitangabe bezieht sich auf den Veranstaltungsbeginn. Beispiel: „2 Wochen vorher“ (Anmeldungen sind zwei Wochen vor Veranstaltungsbeginn möglich). Wird als Standardeinstellung beim Erstellen neuer Veranstaltungen verwendet. Jede Veranstaltung kann diese Einstellung überschreiben oder entfernen.'
+        event_last_booking_period_info: 'Nur für Veranstaltungen. Die Zeitangabe bezieht sich auf den Veranstaltungsbeginn. Beispiel: „2 Stunden vorher“ (Anmeldungen schließen zwei Stunden vor Veranstaltungsbeginn). Wird als Standardeinstellung beim Erstellen neuer Veranstaltungen verwendet. Jede Veranstaltung kann diese Einstellung überschreiben oder entfernen.'
         first_bookable_period_info: 'Beispiel: „in zwei Stunden“ (frühester verfügbarer Termin ist in zwei Stunden) oder „morgen um 8:00 Uhr“ (frühester verfügbarer Termin ist morgen früh um 8:00 Uhr). Bei der Datumsangabe muss das vollständige Jahr eingegeben werden.'
         future_bookable_period_info: 'Beispiel: „in zwei Monaten“ (Buchung nur für die nächsten zwei Monate möglich) oder „Freitag um Mitternacht“ (Reservierung nur bis Freitag Mitternacht möglich). Bei der Datumsangabe muss das ganze Jahr eingegeben werden.'
         header: Buchungsseite aktualisieren
@@ -396,10 +444,25 @@ de:
         settings:
           active_bookings_limit: Maximale Anzahl aktiver Reservierungen für den Kunden
           disable_person_cookie: Verhindern Sie, dass Kunden mit einem Cookie angemeldet bleiben.
+          event_template: Kalendervorlage für Ereignisse
+          fully_booked_text: SMS für ausgebuchte Termine
           google_tag_manager: Google Tag Manager Container-ID
+          past_text: Text für Slots in der Vergangenheit
           person_oauth_auto_create: Automatische Erstellung eines Kundenprofils aus dem Login eines Drittanbieters (Registrierungsformular überspringen)
           plausible: Plausible Analysen ermöglichen
           prevent_new_signups: Reservierungen nur von Bestandskunden zulassen
+          rating_scale: Bewertungsskala
+          rating_scale_default: Standard (1-%{scale})
+          rating_scale_info: Wie viele Stufen der Kunde bei der Bewertung einer Reservierung auswählen kann. Bereits abgegebene Bewertungen werden entsprechend der gewählten Zahl gespeichert; eine Änderung der Skala beeinflusst daher die Bedeutung älterer Bewertungen.
+          rating_scale_option: 1-%{scale}
+          show_all_events_calendar: Alle Ereignisse in einem Kalender anzeigen
+          waitlist_enabled: Warteliste für ausgebuchte Plätze und Veranstaltungen aktivieren
+          waitlist_promotion_mode: Wartelisten-Aktionsmodus
+          waitlist_promotion_modes:
+            auto: Automatische Beförderung des ersten in der Reihe
+            default: Systemvorgabe (Automatische Beförderung des ersten Kandidaten in der Reihe)
+            notify_all: Benachrichtige alle auf der Warteliste
+          waitlist_text: Text für Plätze mit Warteliste
         verification_methods:
           email: E-Mail
           facebook: Erlauben Sie außerdem die Verifizierung mit Facebook Connect.
@@ -419,6 +482,8 @@ de:
           custom_sms_sending: Die SMS wird vollständig mit dem unten stehenden Inhalt überschrieben (ansonsten wird der Inhalt einfach in die Standard-SMS eingefügt).
           dont_include_icalendar_attachment: iCalendar-Anhang nicht beifügen
         sms: SMS
+        whatsapp: WhatsApp
+        whatsapp_info: Senden Sie Buchungsbestätigungen und Erinnerungen per WhatsApp und erhalten Sie Antworten von Ihren Kunden. WhatsApp wird in Zusammenarbeit mit dem MakePlans-Support eingerichtet – kontaktieren Sie uns, um loszulegen. Nachrichtenvorlagen müssen von Meta genehmigt und in jeder Vorlage registriert werden.
       edit_company:
         delete_account_html: Möchten Sie Ihr Konto wirklich löschen? <a href="%{link}">Ja, weiter</a>
         delete_label: Konto löschen
@@ -491,12 +556,15 @@ de:
           calendar_prevent_slot_event_overlap: Überschneidungen von Ereignissen vermeiden
           calendar_slot_duration: Slotdauer
           calendar_slot_label_interval: Slot-Beschriftungsintervall
+          no_show_warning_threshold: Warnen Sie, wenn ein Kunde so viele Nichterscheinen hat.
           resource_title: Benutzerdefinierter Ressourcentitel
           service_addon_title: Benutzerdefinierter Zusatztitel
           service_appointment_title: Kundenspezifischer Servicetitel
           service_attendance_title: Benutzerdefinierter Ereignistyptitel
           service_gift_card_title: Benutzerdefinierter Geschenkkartentitel
+          service_pass_title: Benutzerdefinierter Passworttitel
           service_product_title: Benutzerdefinierter Produkttitel
+          service_subscription_title: Benutzerdefinierter Abonnementtitel
       email_sender:
         create:
           dns: Sehen Sie sich Ihre DNS-Werte an.
@@ -568,6 +636,17 @@ de:
           email: Senden Sie eine Kopie an Ihre E-Mail-Adresse.
           header: Rechnungen von Makeplans
           paid: Bezahlt
+      mcp:
+        show:
+          claude_code: Claude Code
+          enable: API aktivieren
+          endpoint: MCP-Endpunkt
+          header: MCP – KI-Assistenten
+          info: Verbinden Sie KI-Assistenten wie Claude mit Ihrem Makeplans-Konto über MCP (Model Context Protocol). Der Assistent authentifiziert sich mit Ihrem API-Schlüssel und kann Verfügbarkeiten prüfen, Buchungen und Veranstaltungen auflisten, Kunden suchen sowie Buchungen erstellen oder stornieren.
+          info_html: Die Dokumentation ist unter <a href="https://developer.makeplans.com/guide/mcp/" target="_blank" class="link-external">https://developer.makeplans.com/guide/mcp/</a> verfügbar.
+          not_enabled: Die API muss aktiviert sein, bevor KI-Assistenten eine Verbindung herstellen können.
+          other_clients: Andere MCP-Kunden
+          other_clients_info: Fügen Sie einen Remote-MCP-Server mit dem oben genannten Endpunkt und dem HTTP-Header „Authorization“ mit dem Wert „Bearer %{api_key}“ hinzu.
       migrate_bookings:
         edit:
           deactivated: deaktiviert
@@ -660,6 +739,9 @@ de:
         download_attendance_csv: Teilnehmerliste als CSV exportieren
         email_confirm: Die Anwesenheitsliste wird Ihnen per E-Mail zugesandt. Möchten Sie fortfahren?
         fully_booked: Die Veranstaltung ist ausgebucht
+        fully_booked_with_waitlist: Die Veranstaltung ist ausgebucht · %{count} auf der Warteliste
+        promote: Fördern
+        promote_confirm: "%{name} von der Warteliste befördern?"
         qr_code: QR-Code für Kunden
         recurring_member: Dieses Ereignis ist Teil eines sich wiederholenden Musters.
         send_email_to_all: E-Mail an alle Teilnehmer
@@ -669,6 +751,10 @@ de:
         show_only_active_html: Die Liste enthält %{count} inaktive Reservierungen. <a href="%{href}">Möchten Sie nur aktive Reservierungen anzeigen?</a>
         signup_link: Anmeldelink
         sms_all_participants: Sende eine SMS an alle Teilnehmer
+        waitlist_html:
+          one: 'Warteliste: <strong>%{count}</strong>'
+          other: 'Warteliste: <strong>%{count}</strong>'
+        waitlist_position: Wartelistenposition %{position}
         zoom:
           join_meeting: Link zum Meeting
           join_webinar: Link zum Webinar
@@ -822,6 +908,13 @@ de:
         service_not_linked: Nicht mit einem Produkt in 24SevenOffice verbunden.
         type_groups: 'Verkaufsart für die Bestellung:'
         username: API-Benutzername
+      unloc:
+        client_id: Client-ID
+        client_secret: Kundengeheimnis
+        info: Geben Sie Ihre API-Zugangsdaten aus dem Unloc Control Center ein, um Ihre digitalen Türschlösser zu verbinden.
+        locks: Verfügbare Schlösser
+        locks_info: Auf der Seite „Ressourceneinstellungen“ können Sie Ressourcen mit Sperren versehen. Nach Bestätigung einer Buchung erhält der Kunde automatisch einen mobilen Schlüssel, der für den gebuchten Zeitraum gültig ist.
+        project_id: Projekt
       vipps:
         client_id: Client-ID
         client_secret: Kundengeheimnis
@@ -846,6 +939,10 @@ de:
         service_linked: Verbunden mit einem Produkt in Visma eAccounting
         service_links: Jeder Service in Makeplans muss mit einem Produkt in Visma eAccount verknüpft sein, um die Rechnungsstellung zu ermöglichen. Bitte beachten Sie, dass die Preise aus Visma eAccounting und nicht aus Makeplans stammen. Stellen Sie sicher, dass die Preise in beiden Systemen identisch sind.
         service_not_linked: NICHT mit einem Produkt in Visma eAccounting verbunden
+      whatsapp:
+        connect: Verbinde dich mit WhatsApp
+        connected: WhatsApp ist mit der Nummer %{number} verbunden.
+        info: Verbinden Sie WhatsApp, um Buchungsbestätigungen und Erinnerungen zu versenden und mit Ihren Kunden zu chatten. Sie benötigen ein Meta-Geschäftskonto und eine Telefonnummer, die noch nicht für WhatsApp verwendet wird. Klicken Sie unten auf die Schaltfläche, um sich bei Meta anzumelden und die Einrichtung abzuschließen.
       whereby:
         connect_info: Verbunden
         setup_info: Für jeden Dienst, bei dem Whereby aktiviert ist, wird automatisch ein Whereby-Meeting erstellt.
@@ -864,7 +961,18 @@ de:
         services_info: 'Die Nachrichtenvorlage wird für alle Dienste versendet, es sei denn, Sie beschränken sie unten auf bestimmte Dienste:'
         settings:
           skip_if_in_past: Bitte nicht absenden, wenn die Lieferzeit bereits verstrichen ist.
+          twilio_content_sid: WhatsApp-Vorlage SID
+          twilio_content_sid_info: Die ID (HX...) dieser Vorlage wurde von Meta genehmigt. Sie wurde zusammen mit dem MakePlans-Support registriert – die Nachricht kann erst nach Genehmigung der Vorlage versendet werden.
         template_info_html: Sie können dynamische Werte einbinden. Weitere Informationen finden Sie <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">unter https://github.com/makeplans/makeplans-custom-messages</a> .
+        whatsapp_approval_status: Meta-Zulassung
+        whatsapp_approval_statuses:
+          approved: Genehmigt – diese Vorlage kann versendet werden
+          error: Einreichung fehlgeschlagen
+          pending: Wartet auf die Genehmigung von Meta
+          rejected: Von Meta abgelehnt
+        whatsapp_info: WhatsApp-Nachrichten müssen von Meta freigegeben werden, bevor sie gesendet werden können. Schreiben Sie Ihre Nachricht wie gewohnt – der Freigabetext wird nach dem Speichern unten angezeigt. Personalisierungs-Tags sind erlaubt, Logik-Tags jedoch nicht.
+        whatsapp_meta_template: Vorlagentext für die Meta-Genehmigung
+        whatsapp_meta_template_info: Bitte reichen Sie diesen Text exakt zur Genehmigung ein (Personalisierungs-Tags werden automatisch umgewandelt). Wenn Sie den Nachrichtentext ändern, muss die Vorlage erneut genehmigt und die SID aktualisiert werden.
       index:
         header: Nachrichtenvorlagen
         immediately: sofort
@@ -948,6 +1056,7 @@ de:
         filter: Filterung
         headline: Kunden
         send_sms: SMS senden
+        whatsapp_replies: WhatsApp-Antworten
       show:
         add_child: Vernetzten Kunden hinzufügen
         all_day: Den ganzen Tag
@@ -972,6 +1081,7 @@ de:
         no_reservations: Keine Reservierungen gefunden
         parent_info: Verwaltet von
         send_sms: SMS senden
+        whatsapp_chat: WhatsApp-Chat
       tfso_connect_company:
         create: Neuen Kunden in 24SevenOffice anlegen
         header: Verbinden Sie sich mit dem Kunden in 24SevenOffice
@@ -988,6 +1098,10 @@ de:
       deactivate_rotp:
         deactivate_rotp: Zwei-Faktor-Authentifizierung entfernen
         verify_code: 'Geben Sie den Code zur Überprüfung ein:'
+      edit:
+        theme_auto: Auto (Folgesystem)
+        theme_dark: Dunkel
+        theme_light: Licht
       edit_password:
         verify_code: 'Geben Sie den Code zur Überprüfung ein:'
       no_access:
@@ -1026,6 +1140,233 @@ de:
         purge_3: Sämtliche Protokolle und Metadaten, die mit diesen Daten in Zusammenhang stehen, werden ebenfalls gelöscht.
         purge_before: Daten vor dem Datum löschen
         warning: Sind Sie sicher, dass Sie alle Daten vor dem angegebenen Datum löschen möchten? Dieser Vorgang kann nicht rückgängig gemacht werden.
+    reports:
+      bookings:
+        attendees: Teilnehmer
+        bookings: Reservierungen
+        by_hour: Reservierungen pro Stunde
+        by_weekday: Reservierungen pro Wochentag
+        date: Datum
+        per_day: Reservierungen pro Tag
+        per_month: Reservierungen pro Monat
+        per_week: Reservierungen pro Woche
+        title: Reservierungen
+      breakdown:
+        attendees: Teilnehmer
+        bookings: Reservierungen
+        inactive: inaktiv
+        name: Name
+        revenue: Buchwert
+        without_resource: Ohne Ressourcen
+        without_service: Ohne Service
+      customers:
+        booked_value: Buchwert
+        bookings: Reservierungen
+        created_before_period: Existierte vor dem Zeitraum
+        created_in_period: Erstellt in der Zeit
+        date: Datum
+        last_visit: Letzter Besuch
+        name: Name
+        new_customers: Neukunden
+        new_vs_returning: Neu- und Stammkunden
+        not_rebooked: Nicht umgebucht
+        of_customers: von %{count} Kunden
+        per_day: Neue Kunden pro Tag
+        per_month: Neue Kunden pro Monat
+        per_period_hint: Bis zum Anmeldedatum
+        per_week: Neue Kunden pro Woche
+        rebooked: Umgebucht
+        rebooking: Umbuchungsrate
+        rebooking_hint: Neue Reservierung innerhalb von %{weeks} Wochen nach dem ersten Besuch im Zeitraum
+        returning_customers: Wiederkehrende Kunden
+        title: Kunden
+        top_customers: Top-Kunden
+        total: Neukunden
+      events:
+        attendees: Teilnehmer
+        bookings: Reservierungen
+        capacity: Kapazität
+        event: Ereignis
+        events_count:
+          one: 1 Ereignis
+          other: "%{count} Ereignisse"
+        fill: Auslastungsgrad
+        fill_curve: Wenn Veranstaltungen ausgebucht sind
+        fill_curve_hint: Reservierungen bis Ende der Woche vor Veranstaltungsbeginn
+        minimum_not_reached: Mindestwert nicht erreicht
+        starts_at: Beginnt
+        title: Veranstaltungen
+        waitlist_summary: "%{waitlisted} auf der Warteliste · %{conversions} wurde im Berichtszeitraum von der Warteliste befördert"
+        waitlisted: Auf der Warteliste
+      filters:
+        all_resources: Alle Ressourcen
+        all_services: Alle Dienstleistungen
+        apply: Zeigen
+        download_csv: CSV herunterladen
+        filter: Filter
+        from: Ab Datum
+        granularity_day: Tag
+        granularity_label: Anzeige pro
+        granularity_month: Monat
+        granularity_week: Woche
+        period: Zeitraum
+        to: Miteinander ausgehen
+      granularity:
+        day: Datum
+        month: Monat
+        week: Woche
+      index:
+        ahead: Voraus
+        ahead_of_previous_period: "%{change} % über dem Wert der Vorperiode"
+        all_clear: Alles klar
+        behind_pace: Hinter dem Tempo
+        below_previous_period: "%{change}% unter dem Wert der Vorperiode"
+        booking_activity: Buchungsaktivität
+        bookings: Reservierungen
+        bookings_count:
+          one: 1 Reservierung
+          other: "%{count} Reservierungen"
+        bookings_per_day: Reservierungen pro Tag
+        cancellation_rate: Stornoquote
+        cancellations: Stornierungen
+        compared_with_last_year: im Vergleich zum gleichen Zeitraum des Vorjahres
+        compared_with_previous: im Vergleich zum vorherigen Zeitraum
+        confirmed_bookings: bestätigte Reservierungen
+        custom: Brauch
+        days:
+          one: 1 Tag
+          other: "%{count} Tage"
+        demand_by_time: Nachfrage nach Tag und Uhrzeit
+        forward_note: Umsatz, Neukunden, Nichterscheinen und Einschaltquoten existieren nur für bereits vergangene Zeiträume, daher bleiben diese Felder für zukünftige Zeiträume leer.
+        forward_note_title: Blicken wir nach vorn
+        from_previous_period: aus der vorherigen Periode
+        higher: Höher
+        last_month: Letzten Monat
+        latest_activity: Aktuelle Reservierungen
+        lower: Untere
+        needs_attention: Aufmerksamkeit erforderlich
+        new_customers: Neukunden
+        new_period: Neue Aktivität
+        next_days:
+          one: Nächster Tag
+          other: Nächste %{count} Tage
+        next_month: Nächsten Monat
+        no_attention: Es wurden keine Betriebsstörungen festgestellt.
+        no_previous_period: Kein Vergleichszeitraum vorhanden
+        no_shows: Nichterscheinen
+        on_track: Auf der Strecke
+        open_report: Bericht ansehen
+        overall_pace: Gesamttempo
+        previous_value: "%{value} in der vorherigen Periode"
+        resource_pace: Ressourcentempo
+        revenue: Einnahmen
+        revenue_all_scope: alle Ressourcen und Dienstleistungen
+        revenue_by_service: Gebuchter Wert pro Service
+        scope_note: Die Reservierungszahlen erfassen bestätigte Reservierungen nach Reservierungsdatum. Die Umsatzerlöse erfassen Zahlungen nach dem Datum ihrer Verarbeitung.
+        scope_note_title: Berichtsumfang
+        service: Service
+        this_month: Diesen Monat
+        this_year: Dieses Jahr
+        title: Berichte
+        today: Heute
+        total_count: "%{count} Gesamt"
+        when: Wann
+      no_shows:
+        bookings: Reservierungen
+        by_hour: Nichterscheinen pro Stunde
+        by_resource: Nichterscheinen laut Ressource
+        by_service: Nichterscheinen pro Service
+        by_weekday: Nichterscheinen pro Wochentag
+        name: Name
+        no_shows: Nichterscheinen
+        offenders: Kunden mit den meisten Nichterscheinen
+        per_day: Nichterscheinen pro Tag
+        per_month: Nichterscheinen pro Monat
+        per_week: Nichterscheinen pro Woche
+        rate: Rate
+        title: Nichterscheinen
+        total: Nichterscheinen
+      ratings:
+        average: Durchschnittliche Bewertung
+        booked: Reservierung
+        bookings: Reservierungen
+        by_resource: Durchschnitt nach Ressource
+        by_service: Durchschnitt pro Service
+        distribution: Wie sich die Ergebnisse verteilen
+        lowest: Reservierungen mit den niedrigsten Bewertungen
+        name: Name
+        no_ratings: Für diesen Zeitraum liegen noch keine Bewertungen vor.
+        per_day: Durchschnitt pro Tag
+        per_month: Durchschnitt pro Monat
+        per_week: Durchschnitt pro Woche
+        rating: Bewertung
+        ratings: Bewertungen
+        resource: Ressource
+        response_rate: Antwortrate
+        responses:
+          one: "%{count}-Antwort"
+          other: "%{count} Antworten"
+        service: Service
+        title: Bewertungen
+      resources:
+        title: Ressourcen
+      revenue:
+        amount: Menge
+        date: Datum
+        per_day: Einnahmen pro Tag
+        per_month: Einnahmen pro Monat
+        per_period_hint: Zum Datum der Zahlungsabwicklung, nicht zum reservierten Datum.
+        per_week: wöchentliche Einnahmen
+        title: Einnahmen
+        total: Gesamt
+      services:
+        title: Dienstleistungen
+      subnav:
+        bookings: Reservierungen
+        customers: Kunden
+        events: Veranstaltungen
+        no_shows: Nichterscheinen
+        overview: Überblick
+        past_only: Dieser Bericht umfasst nur Zeiträume, die bereits vergangen sind.
+        ratings: Bewertungen
+        resources: Ressourcen
+        revenue: Einnahmen
+        services: Dienstleistungen
+        timing: Timing
+        utilization: Verwendung
+      timing:
+        bookings: Reservierungen
+        buckets:
+          after_start: Nach dem Start
+          four_seven_days: 4–7 Tage
+          four_weeks: 2–4 Wochen
+          longer: Über 2 Monate
+          next_day: Nächster Tag
+          same_day: Am selben Tag
+          two_months: 1–2 Monate
+          two_three_days: 2–3 Tage
+          two_weeks: 1–2 Wochen
+        by_created_hour: Reservierungen pro Stunde
+        by_created_weekday: Reservierungen werden pro Wochentag vorgenommen
+        cancellation_lead_time: Stornierungsfrist
+        cancellation_lead_time_hint: Zeit zwischen der Stornierung und der reservierten Zeit
+        cancellations: Stornierungen
+        lead_time: Lieferzeit
+        lead_time_hint: Zeitspanne zwischen der Reservierung und der reservierten Zeit
+        median_lead: mittlere Lieferzeit %{days} Tage
+        title: Timing
+      utilization:
+        booked_hours: Gebuchte Stunden
+        coverage_ahead: Berichterstattung im Voraus pro Ressource
+        coverage_hint: Buchung innerhalb der Öffnungszeiten für einen Zeitraum, der noch nicht stattgefunden hat
+        hours: "%{booked} von %{open} Stunden"
+        open_hours: Öffnungszeiten
+        per_resource: Auslastung pro Ressource
+        resource: Ressource
+        title: Verwendung
+        total: Gesamt
+        unbooked_hours: Nicht gebuchte Stunden
+        utilization: Verwendung
     resources:
       form:
         availability: Standardverfügbarkeit
@@ -1034,6 +1375,8 @@ de:
           other: Diese Ressource hat %{count} zukünftige Buchungen. Durch Löschen werden die Ressource und alle zugehörigen Buchungen entfernt. Klicken Sie zur Bestätigung erneut auf „Löschen“.
         external_info:
           microsoft_office365_user_id: Microsoft Office 365-Benutzer
+          unloc_lock_ids: Entsperren
+          unloc_lock_ids_info: Kunden mit einer bestätigten Buchung erhalten automatisch einen mobilen Schlüssel für die ausgewählten Schlösser, der für die gebuchte Zeit gültig ist.
           zoom_user_id: Zoom-Nutzer
         from: Von
         mail_notification_info: Um mehr als eine Person zu benachrichtigen, trennen Sie bitte die E-Mail-Adressen durch ein Semikolon.
@@ -1126,6 +1469,7 @@ de:
           select_resource: Zusätzlicher Schritt zur Ressourcenauswahl
           show_free_capacity: Verfügbare Kapazität anzeigen
           standalone: Eigenständiger Dienst
+          waitlist_enabled: Warteliste aktivieren (überschreibt die Kontoeinstellungen)
       form_attendance:
         booking_site_settings: Einstellungen für die Buchungsseite
         days: Tage
@@ -1136,10 +1480,23 @@ de:
         settings:
           hide_slot_end: Endzeit ausblenden
           show_free_capacity: Verfügbare Kapazität anzeigen
+          waitlist_enabled: Warteliste aktivieren (überschreibt die Kontoeinstellungen)
       form_gift_card:
         booking_site_settings: Einstellungen für die Buchungsseite
       form_product:
         booking_site_settings: Einstellungen für die Buchungsseite
+      form_sellable:
+        billing_periods:
+          month: Monat
+          week: Woche
+          year: Jahr
+        booking_site_settings: Einstellungen für die Buchungsseite
+        linked_services:
+          addon: Verfügbar bei Buchung der folgenden Dienstleistungen
+          pass: Gültig für folgende Dienstleistungen
+          subscription: Gültig für folgende Dienstleistungen
+        linked_services_info: Wenn keine Auswahl getroffen wird, steht es für alle Dienste zur Verfügung.
+        validity_days_unlimited: Läuft nie ab
       index:
         appointment:
           header: Dienstleistungen
@@ -1181,18 +1538,24 @@ de:
         header: Servicereihenfolge
       show:
         availability: Verfügbarkeitsanbieter
+        billing_period: 'Verlängerungszeitraum:'
         custom_data: 'Benutzerdefinierte Daten:'
         days: Tage
         description: 'Beschreibung:'
         interval: 'Dauer:'
+        linked_services_all: Alle Dienstleistungen
         manage_priority: Prioritäten verwalten
         minutes: Minuten
+        never_expires: Läuft nie ab
         no_providers: 'Wichtig: Dieser Service wird von keinem Anbieter angeboten und erscheint nicht auf der Buchungsseite. Klicken Sie hier, um Anbieter hinzuzufügen.'
         not_in_category: Sie verwenden Kategorien auf der Buchungsseite, und dieser Service ist keiner Kategorie zugeordnet. Daher ist er momentan nicht auf der Buchungsseite sichtbar. Klicken Sie hier, um Ihre Kategorien zu verwalten.
         offered: 'Angeboten von folgenden Anbietern:'
         price: 'Preis:'
         qr_code: QR-Code für Kunden
+        quota: 'Anzahl der enthaltenen Reservierungen:'
         show_on_booking_site: Service auf der Buchungsseite öffnen
+        unlimited: Unbegrenzt
+        validity: 'Gültigkeit:'
       slots:
         available: 'Verfügbare Plätze:'
         next_available: 'Nächstmöglicher Termin:'
@@ -1239,6 +1602,7 @@ de:
         header_html: Willkommen bei Makeplans.<br> Beginnen Sie damit, Ihre Dienste hinzuzufügen.
     shared:
       recurring:
+        booking_window_fixed: Verwenden Sie für alle Veranstaltungen die gleichen Anmeldedaten.
         enabled: Wiederholen Sie dies mehrmals mit einem Muster
         freq:
           monthly: Monat

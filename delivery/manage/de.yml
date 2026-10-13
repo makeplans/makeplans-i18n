@@ -42,6 +42,16 @@ de:
       booking_type_attendance:
         subject_resource: Geänderte Ressource für %{title}
       link: Um diese Reservierung einzusehen, gehen Sie bitte zu
+    notification_waitlist_joined:
+      appointment:
+        body: "%{name} wurde auf die Warteliste für %{title} %{time_range} gesetzt."
+      attendance:
+        body: "%{name} wurde auf die Warteliste für %{title} %{time_range} gesetzt."
+      booking_type_appointment:
+        subject_resource: Anmeldung zur Warteliste für %{resource}
+      booking_type_attendance:
+        subject_resource: Anmeldung zur Warteliste für %{title}
+      link: Um diese Reservierung einzusehen, gehen Sie bitte zu
     request_approvement:
       body: "%{name} möchte %{title} %{time_range} reservieren."
       link: Um diese Reservierung zu bestätigen oder abzulehnen, gehen Sie bitte zu
