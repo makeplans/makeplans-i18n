@@ -42,6 +42,16 @@ da:
       booking_type_attendance:
         subject_resource: Ændret ressource for %{title}
       link: For at se denne reservation, gå til
+    notification_waitlist_joined:
+      appointment:
+        body: "%{name} har meldt seg på ventelisten for %{title} %{time_range}."
+      attendance:
+        body: "%{name} har meldt seg på ventelisten for %{title} %{time_range}."
+      booking_type_appointment:
+        subject_resource: Venteliste for %{resource}
+      booking_type_attendance:
+        subject_resource: Venteliste for %{title}
+      link: For å vise denne reservasjonen gå til
     request_approvement:
       body: "%{name} ønsker at reservere %{title} %{time_range}."
       link: For at acceptere eller afvise denne reservation, gå til

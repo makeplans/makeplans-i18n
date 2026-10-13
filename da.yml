@@ -32,6 +32,7 @@ da:
         declined: Afvist
         deleted: Slettet
         verification_expired: Udløbet
+        waitlisted: Venteliste
       booking/status:
         checked_in: Tjekket ind
         completed: Færdiggjort
@@ -82,6 +83,7 @@ da:
       message_template/delivery_type:
         email: e-mail
         sms: SMS
+        whatsapp: WhatsApp
       message_template/message_type:
         confirmation: bekræftelse
         follow_up: opfølgning
@@ -110,10 +112,14 @@ da:
         title: titel
       service:
         allow_invoice: kan betales via faktura
+        billing_period: fornyelsesperiode
         payment_required: kræver forudbetaling
         price: pris
+        quota: antall reservasjoner inkludert
         terms: betingelser
         title: titel
+        unlimited: ubegrenset
+        validity_days: antall dager gyldig etter kjøp
       service/availability_type:
         provider: udbyder
         resource: ressource
@@ -126,6 +132,7 @@ da:
         password: adgangskode
         password_confirmation: Kodeords bekræftelse
         rotp_verification_code: verifikationskode
+        theme: Tema
       web_hook:
         event: Begivenhed
         target_url: Mål-URL
@@ -138,6 +145,7 @@ da:
         illegal: ulovlig
         invalid: er ugyldig
         phone_invalid: er ikke et gyldigt telefonnummer
+        phone_not_norwegian: må være et norsk telefonnummer
         time_not_available: ikke tilgængelig på det valgte tidspunkt
       models:
         booking:
@@ -147,6 +155,7 @@ da:
               below_minimum_count: Mindre end nødvendigt antal personer
               over_booking_capacity: Mere end det maksimale antal personer
             event_id:
+              already_booked: har allerede en aktiv reservasjon for dette arrangementet
               time_not_available: er fuld
             person_id:
               blocked: spærret for booking
@@ -170,6 +179,10 @@ da:
               denied: Afvist
         client_user_link:
           admin_needed: Brug for mindst én administratorbruger på kontoen.
+        message_template:
+          attributes:
+            template:
+              whatsapp_liquid_logic: kan ikke inneholde logikk-koder ({% %}) når leveringstype er WhatsApp - kun flettekoder er tillatt
         order:
           attributes:
             base:
@@ -219,7 +232,9 @@ da:
       service_appointment: service
       service_attendance: arrangementstype
       service_gift_card: gavekort
+      service_pass: klippekort
       service_product: produkt
+      service_subscription: abonnement
       tag: mærke
       user: Bruger
       web_hook: webhook
@@ -254,6 +269,7 @@ da:
     models:
       person:
         perishable_token:
+          captcha: Spamkontrollen ble ikke fullført. Prøv på nytt.
           expired: Koden er udløbet. Prøv igen.
           invalid: Forkert kode
           no_identifier: Mangler email eller telefonnummer.
@@ -267,6 +283,18 @@ da:
       payment_intent_unexpected_state: Betalingen kunne ikke bekræftes. Prøv igen.
       processor: 'Fejlmeddelelse fra vores betalingspartner: %{error}'
       unknown: Transaktionen kunne ikke gennemføres. Ukendt fejl.
+    vipps:
+      booking:
+        already_requested: Betalingsforespørsel er allerede sendt.
+        inactive: Reservasjonen er ikke lenger aktiv.
+        invalid: Reservasjonen er utløpt eller ugyldig. Transaksjon ikke gjennomført.
+        no_person: Reservasjonen har ingen kunde.
+        no_phone_number: Kunden mangler telefonnummer.
+        paid: Reservasjonen er allerede betalt. Prøv å refreshe siden.
+      no_reference: Fant ingen betalingstransaksjon for denne reservasjonen.
+      processor: 'Feilmelding fra vår betalingspartner: %{error}'
+      refund_failed: Klarte ikke å refundere transaksjon.
+      unknown: Klarte ikke å fullføre transaksjon. Ukjent feil.
   generic:
     account_default: Standardkontoindstilling
     all: alle sammen
@@ -274,7 +302,12 @@ da:
     born_abbreviation: f. %{date_of_birth}
     country_locale: nb
     default: Systemstandard
+    dictate:
+      start: Diktér
+      stop: Stopp diktering
+      unsupported: Diktering er ikke tilgjengelig
     'false': Ikke aktiveret
+    from: fra
     optional: valgfri
     search: Søg
     to: til
@@ -287,6 +320,9 @@ da:
         cancel: Afbestille
         confirm: Godkende
         decline: Afvise
+        promote: Forfrem
+        remove_from_waitlist: Fjern fra venteliste
+        remove_from_waitlist_confirm: Er du sikker på at du vil fjerne reservasjonen fra ventelisten?
         verify: Verificere
       state:
         awaiting_confirmation: Venter på godkendelse
@@ -297,6 +333,7 @@ da:
         declined: Afvist
         deleted: Fjernet
         verification_expired: Bekræftelsen er udløbet
+        waitlisted: Venteliste
     booking_state_transitions:
       events:
         modified: Ændret
@@ -319,6 +356,7 @@ da:
         notes: Bemærkninger
         paid_at: Betalt
         person_id: Kunde
+        rating: Vurdering
         reminded_at: Påmindelse sendt
         reminder_at: Påmindelse
         resource_id: Ressource
@@ -335,6 +373,7 @@ da:
         parent_id: Underkategori til
         title: Titel
       client:
+        account_form: Egendefinerte kontofelter
         address: besøgsadresse
         allow_cancellation: Tilladt annullering af kunden
         api_key: API-nøgle (til eksterne integrationer)
@@ -368,7 +407,9 @@ da:
         currency: Betalingsmiddel
         email: Email adresse
         email_notification: Modtag besked via e-mail for hver nye reservation
+        event_first_booking_period: Ikke tillat påmelding til arrangement før
         event_form: Brugerdefinerede begivenhedsfelter
+        event_last_booking_period: Ikke tillat påmelding til arrangement etter
         first_bookable_period: Begrænsning for første tilgængelige tid
         footer: Sidefod på hver side
         future_bookable_period: Begrænsning på hvor langt i forvejen du kan reservere
@@ -393,13 +434,17 @@ da:
         mail_notification_confirmation: Tekst i e-mail, der sendes som en besked ved bekræftelse
         mail_notification_modification: Tekst i e-mail, der sendes som en besked, når der sker en ændring
         mail_notification_recipient: E-mail-adresser til underretning
+        mail_request_payment: Tekst i epost som blir sendt ved betalingsforespørsel
+        mail_request_payment_subject: Tittel i epost som blir sendt ved betalingsforespørsel
         mail_verification: Tekst i e-mail sendt under bekræftelse
         mail_verification_subject: Titel på e-mail sendt ved bekræftelse
         mailer_sender: E-mail-afsender
+        message_template_form: Egendefinerte meldingsmalfelter
         name: Firmanavn (vises på reservationssiden)
         new_booking_text: Tekst vises på bekræftelsessiden
         next_invoice_nr: Næste fakturanummer
         no_availability_text: Tekst der vises, når der ikke er ledige tider
+        order_form: Egendefinerte ordrefelter
         payment_provider: Betalingsløsning (For forudbetaling af reservationer)
         person_form: Brugerdefinerede kundefelter
         phone_number: Mobilnummer til underretning
@@ -425,6 +470,7 @@ da:
         sms_notification_recipient: Telefonnummer for underretning
         sms_reminder: Tekst i SMS sendt med påmindelse
         sms_reminder_time: Tid til SMS-påmindelse
+        sms_request_payment: Tekst i SMS som blir sendt ved betalingsforespørsel
         sms_verification: Tekst i SMS, der sendes under verifikation
         subdomain: Konto-adresse (underdomæne)
         template: Design skabelon
@@ -435,6 +481,8 @@ da:
         terms: Vilkår og betingelser
         time_zone: Tidszone
         verification_method: Verifikationsmetode til ny reservation
+        website: Nettside
+        whatsapp_nr: WhatsApp-avsendernummer
       client/slot_generation:
         dynamic: Dynamisk (standard)
         fixed: Solid
@@ -494,6 +542,7 @@ da:
       message_template/delivery_type:
         email: E-mail
         sms: SMS
+        whatsapp: WhatsApp
       message_template/message_type:
         confirmation: Bekræftelse
         follow_up: Opfølgning
@@ -528,6 +577,7 @@ da:
         allow_cancellation: Kundens annullering er tilladt
         allow_invoice: Kan betales med faktura
         availability_type: Tilgængelighed er defineret af
+        billing_period: Fornyes hver
         block_resource: Reservationen blokerer ressourcen
         booking_capacity: Maksimalt antal personer pr. reservation
         booking_form: Brugerdefineret reservationsformular
@@ -547,6 +597,7 @@ da:
         mail_confirmation: Tekst i e-mail, der sendes ved bekræftelse
         mail_declined: Tekst i afvist e-mail
         mail_modification: Tekst i e-mail, der sendes, når den ændres
+        mail_request_payment: Tekst i epost som blir sendt ved betalingsforespørsel
         mail_verification: Tekst i e-mail sendt under bekræftelse
         max_slots: Maksimalt antal slotte pr. reservation
         new_booking_text: Tekst vist på bekræftelsessiden
@@ -555,6 +606,7 @@ da:
         price: Pris inklusive moms.
         priority_strategy: Prioriteringsstrategi
         published: Kan ses på reservationssiden
+        quota: Antall reservasjoner inkludert
         reservation_form_text: Tekst, der vises før reservationsformularen
         same_day: Reservation kan ikke gå over flere dage
         slot_generation: Tidsgenerering
@@ -564,6 +616,7 @@ da:
         sms_declined: Tekst i afvist SMS
         sms_modification: Tekst i SMS, der sendes ved ændring
         sms_reminder: Tekst i SMS sendt med påmindelse
+        sms_request_payment: Tekst i SMS som blir sendt ved betalingsforespørsel
         sms_verification: Tekst i SMS, der sendes under verifikation
         template: Kalender skabelon
         templates:
@@ -573,9 +626,12 @@ da:
           resources: Ressourcer
           time_day_available: Dag
           week_available: Hele ugen
+          week_calendar: Ukekalender
           weekday_available: Hverdage
         terms: Vilkår
         title: Titel
+        unlimited: Ubegrenset
+        validity_days: Antall dager gyldig etter kjøp
       service/availability_type:
         provider: Tilbud
         resource: Ressource (standard)
@@ -622,12 +678,18 @@ da:
       resource:
         new: Ny ressource
       service:
+        new_addon: Nytt tillegg
+        new_addon_title: Nytt %{title}
         new_appointment: Ny service
         new_attendance: Ny begivenhedstype
         new_gift_card: Nyt gavekort
         new_gift_card_title: Ny %{title}
+        new_pass: Nytt klippekort
+        new_pass_title: Nytt %{title}
         new_product: Nyt produkt
         new_product_title: Ny %{title}
+        new_subscription: Nytt abonnement
+        new_subscription_title: Nytt %{title}
       setup:
         skip: Manuel opsætning
         step_html: "<strong>Trin %{step}</strong> af %{max_steps}"
@@ -642,11 +704,13 @@ da:
       agenda: Agenda
       calendar: Kalender
       logout: Log ud
+      new_badge: Ny
       orders: Bestille
       people: Kunder
       profile: Profil
       reports: Rapporter
       setup: Opsætning
+      user_menu: Brukermeny
     menu_setup:
       addons: Supplement
       billing: Betaling
@@ -683,6 +747,21 @@ da:
         expiration_html: Udløber <small>(MM / ÅÅ)</small>
         number: Kortnummer
       header: Denne formular sendes krypteret
+    person:
+      history:
+        last_visit: Siste besøk
+        new_customer: Ny kunde
+        no_shows: Ikke møtt
+        since: siden %{date}
+        summary:
+          last_visit: 'Siste besøk: %{date}'
+          no_shows:
+            one: "%{count} gang ikke møtt"
+            other: "%{count} ganger ikke møtt"
+          total_paid: 'Totalt betalt: %{amount}'
+          visits_since: 'Besøk siden %{date}: %{count}'
+        total_paid: Totalt betalt
+        visits: Besøk
     select:
       prompt: Vælg venligst
     submit:

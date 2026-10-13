@@ -41,11 +41,35 @@ da:
       info: For nemt at betale for din reservation kan du tilføje dine kortoplysninger.
       link: Tilføj debetkort
       subject: Betal din reservation
+    request_payment:
+      header: Hei %{name}
+      info: Du kan betale for din reservasjon ved å bruke lenken under.
+      link: Betal reservasjon
+      subject: Betaling for din reservasjon
     verification:
       footer: 'BEMÆRK: Reservationen er ikke gennemført. Hvis du ikke klikker på linket ovenfor inden for %{expires_in} minutter, annulleres din reservation.'
       header: For at gennemføre din reservation af %{title} %{time_range} skal du bekræfte din reservation ved at klikke på nedenstående link.
       link: Bekræft reservation
       subject: Bekræft din reservation
+    waitlist_available:
+      confirm_button: Bekreft reservasjon
+      header: Hei %{name}
+      info: Gode nyheter! En plass har blitt ledig for %{title} %{time_range}.
+      resource_info: 'Reservasjon hos: %{resource}.'
+      subject: En plass er ledig for din ventelisteregistrering
+    waitlist_joined:
+      header: Hei %{name}
+      info: Du er satt på venteliste for %{title} %{time_range}. Vi vil varsle deg når en plass blir ledig.
+      link: Se din ventelisteregistrering
+      resource_info: 'Reservasjon hos: %{resource}.'
+      subject: Du er på ventelisten
+    waitlist_payment:
+      footer: 'OBS: Hvis du ikke fullfører betalingen i løpet av %{expires_in} minutter kan reservasjonen din kanselleres.'
+      header: Hei %{name}
+      info: Gode nyheter! En plass har blitt ledig for %{title} %{time_range}. Fullfør betalingen for å bekrefte din reservasjon.
+      pay_button: Betal og bekreft reservasjon
+      resource_info: 'Reservasjon hos: %{resource}.'
+      subject: En plass er ledig - fullfør betaling for å bekrefte din reservasjon
   booking_occurrence_mailer:
     cancel:
       body: 'Dine reservationer på %{title} til følgende tidspunkter er blevet annulleret:'
@@ -102,10 +126,14 @@ da:
     modification: 'Din reservation hos os er ændret: {{booking.title}} {{booking.booked_from}}.'
     reminder: 'Påmindelse: Reservation {% if booking.service != nil %} af {{booking.title}} {% endif%} {{booking.booked_from}}.'
     request_card: 'Du kan registrere dine betalingsoplysninger her: %{url}'
+    request_payment: 'Du kan betale for din reservasjon {% if booking.service != nil %}av {{ booking.title }} {% endif %}{{ booking.booked_from }} her: {{ booking.payment_link }}'
     signature: |2-
 
       Venligst {{booking.client.name}}
     verification: "{{booking.verification_code}} er din kode til bekræftelse af reservationen af {{booking.title}}."
+    waitlist_available: En plass er nå ledig for {{ booking.title }} {{ booking.booked_from }}. Gå til lenken for å bekrefte din reservasjon.
+    waitlist_joined: Du er på ventelisten for {{ booking.title }} {{ booking.booked_from }}. Vi vil varsle deg når en plass blir ledig.
+    waitlist_payment: 'En plass er nå ledig for {{ booking.title }} {{ booking.booked_from }}. Betal her for å bekrefte din reservasjon: {{ booking.payment_link }}'
   person_mailer:
     export:
       subject: Eksport fra Makeplans

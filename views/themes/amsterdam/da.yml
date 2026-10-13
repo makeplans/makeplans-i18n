@@ -82,6 +82,7 @@ da:
         providers:
           braintree: Kreditkort eller debetkort
           fiken: Faktura
+          frontgo: Front Go
           stripe: Kreditkort, debetkort, Google Pay eller Apple Pay
           tfso: Faktura
           vipps: Vips
@@ -97,6 +98,7 @@ da:
         cancel_confirmation: Er du sikker på, at du vil annullere denne reservation?
         invoiced: Du er blevet faktureret.
         paid: Du har forudbetalt %{paid_amount}.
+        pay: Betal
         price: 'Pris: %{amount}.'
         remember_me: Vil du have os til at huske dig på denne maskine indtil næste gang du bestiller her?
         reschedule: Skift tid
@@ -207,6 +209,7 @@ da:
         header: Dine gemte oplysninger
     providers:
       index:
+        none_available: Ingen tilbydere tilgjengelig.
         show_all_available: Vis alle tilgængelige
         show_only_selected: 'Eller vis kun fra den ønskede kalender:'
     services:

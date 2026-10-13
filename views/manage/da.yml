@@ -13,12 +13,15 @@ da:
         opening_hours:
           add: "+ tilføj"
           add_to_existing: "+ tilføj"
+          all_resources: Alle %{resources}
           closed_all_week: Lukket hele perioden
           dates: Dato
           from: Fra
+          no_items: Ingen ressurser samsvarer med valgt filter.
           open: Åben
           remove_existing: fjern
           reset: Nulstil
+          resource_default: "%{resource} (standard)"
           title: Juster tilgængelighed
           to: Til
         resourceTimeGridDay: Dag (delt)
@@ -38,12 +41,29 @@ da:
         filter: Filtrering
         headline: Viser kalenderposter
         month: Vis den valgte måned
+        nav:
+          day: Dag
+          list: Liste
+          month: Måned
+          next: Neste
+          previous: Forrige
+          today: I dag
+          week: Uke
         no_reservations: Ingen reservationer fundet
+        overview: Oversikt
+        period: Periode
         reset_filter: Nulstil filtrering
         resources: Ressourcer
         services: Tjenester
+        sort_latest: Siste endringer
+        sort_newest: Nye reservasjoner
+        state: Status
+        status: Oppmøtestatus
+        tab_awaiting_confirmation: Venter på bekreftelse
+        tab_waitlist: Venteliste
         this_and_next_month: Fra i dag og måneden ud
         this_and_next_week: Fra i dag til næste uge ud
+        waitlist_note: "+%{count} på venteliste"
     billing:
       charge:
         charge_details: Baseret på aktuelle indstillinger er den månedlige pris %{price}.
@@ -105,6 +125,12 @@ da:
       create_recurring:
         headline: Genererer %{count}-reservationer ...
         link: Vis liste
+      delivery_status:
+        channel:
+          email: e-post
+          sms: SMS
+        failed: 'Sending via %{channel} feilet %{time}: %{error}'
+        sent: Sendt via %{channel} %{time}
       destroy_recurring:
         headline: Alle aftaler i dette mønster blev slettet
       feed:
@@ -180,6 +206,8 @@ da:
       no_status:
         headline: Liste over reservationer uden status
         no_reservations: Ingen reservationer fundet uden status
+      promote:
+        promote_failed: Kunne ikke forfremme booking fra venteliste
       show:
         amount: Total pris
         audit:
@@ -215,6 +243,7 @@ da:
         person:
           address: Adresse
           email: E-mail
+          history: Historikk
           phone_number: Telefon
         recurring_member: Denne reservation er en del af et tilbagevendende mønster.
         refund:
@@ -226,6 +255,9 @@ da:
         request_card:
           processing: Betalingslink sendes til kunden
           send: Send betalingslink til kunden
+        request_payment:
+          processing: Betalingslink sendes til kunde
+          send: Send betalingslink til kunde
         send_sms: Send SMS
         show_in_calendar: Vis i kalenderen
         stripe:
@@ -286,7 +318,9 @@ da:
         booking_type_appointment: Tidsbestilling
         booking_type_attendance: Registrering
         booking_type_gift_card: Gavekort
+        booking_type_pass: Klippekort
         booking_type_product: Produkter
+        booking_type_subscription: Abonnement
         has_services: Viser følgende tjenester
         no_parent_id: HØJESTE NIVEAU
         settings:
@@ -306,6 +340,20 @@ da:
         priority_button: Bestille
         qr_code: QR-kode til kunder
         show_on_booking_site: Åbn denne tjeneste på bookingsiden
+    chats:
+      form:
+        credit_info: Hver melding koster 1 SMS-kreditt.
+        send: Send
+        window_closed: WhatsApp tillater kun svar innen 24 timer etter kundens siste melding. Be kunden skrive til deg igjen på WhatsApp, eller kontakt kunden på SMS, epost eller telefon.
+      index:
+        headline: WhatsApp-svar
+      replies:
+        empty: Ingen WhatsApp-svar mottatt ennå.
+      show:
+        headline: WhatsApp-chat med %{name}
+      thread:
+        booking: Reservasjon
+        empty: Ingen meldinger med denne kunden ennå.
     client:
       addons:
         addons:
@@ -347,6 +395,7 @@ da:
         show:
           api: API'en
           embed: Integrer
+          mcp: MCP - AI-assistenter
           web_hooks: Webhooks
       domains:
         cname:
@@ -377,6 +426,8 @@ da:
         cancellation: Aflysning
         cancellation_info: Afbestilling kan kun foretages inden afbestillingsfristen. Forudbetalte reservationer kan ikke annulleres.
         cancellation_period_info: 'Indtast på engelsk. Tid er relateret til starttidspunktet for reservationen. Eksempel: ''24 hours before'' (kun muligt at annullere 24 timer før reservationen begynder). Hvis der ikke er angivet nogen afbestillingsfrist, kan kunden annullere, indtil reservationen starter.'
+        event_first_booking_period_info: 'Gjelder kun arrangementer. Skriv inn på engelsk. Tid er relatert til starttidspunkt for arrangementet. Eks.: ''2 weeks before'' (påmelding åpner to uker før arrangementet starter). Brukes som standard når nye arrangementer opprettes. Kan overstyres eller fjernes på hvert arrangement.'
+        event_last_booking_period_info: 'Gjelder kun arrangementer. Skriv inn på engelsk. Tid er relatert til starttidspunkt for arrangementet. Eks.: ''2 hours before'' (påmelding stenger to timer før arrangementet starter). Brukes som standard når nye arrangementer opprettes. Kan overstyres eller fjernes på hvert arrangement.'
         first_bookable_period_info: 'Indtast på engelsk. Eks: ''in two hours'' (første tilgængelige tid er om to timer) eller ''08:00 tomorrow'' (første ledige tid er kl. 8 i morgen formiddag).'
         future_bookable_period_info: 'Indtast på engelsk. Eks: ''in two months'' (kun muligt at bestille de næste to måneder) eller ''friday at midnight'' (kun muligt at bestille inden midnat på fredag).'
         header: Skift booking side
@@ -394,11 +445,26 @@ da:
           active_bookings_limit: Maksimalt antal aktive bookinger for kunden
           allow_person_cookie: Tilladt mulighed for at huske verificeret kunde til næste besøg ved hjælp af cookies.
           disable_person_cookie: Kunden må ikke forblive logget ind med cookie
+          event_template: Kalendermal for arrangementer
+          fully_booked_text: Tekst for fullbookede tidspunkt
           google_tag_manager: Google Tag Manager-container-id
+          past_text: Tekst for passerte tidspunkt
           person_oauth_auto_create: Opret kundeprofil automatisk fra tredjepartslogin (spring registreringsformular over)
           plausible: Aktivér plausibel analyse
           prevent_new_signups: Kun bookinger tilladt for eksisterende kunder
+          rating_scale: Vurderingsskala
+          rating_scale_default: Standard (1-%{scale})
+          rating_scale_info: Hvor mange trinn kunden kan velge mellom når en reservasjon vurderes. Vurderinger som allerede er gitt lagres som tallet kunden valgte, så endrer du skalaen endrer du også hva eldre vurderinger betyr.
+          rating_scale_option: 1-%{scale}
           select_resource: Ekstra trin til ressourcevalg
+          show_all_events_calendar: Vis alle arrangementer i én kalender
+          waitlist_enabled: Aktiver venteliste for fullbookede slotter og arrangementer
+          waitlist_promotion_mode: Venteliste-forfremmelse
+          waitlist_promotion_modes:
+            auto: Forfrem første på venteliste automatisk
+            default: Systemstandard (Forfrem første på venteliste automatisk)
+            notify_all: Varsle alle på ventelisten
+          waitlist_text: Tekst for tidspunkt med venteliste
         verification_methods:
           email: E-mail
           facebook: Tilladt også verifikation med Facebook Connect.
@@ -406,6 +472,7 @@ da:
           none: Ingen verifikation (anbefales ikke)
           sms: SMS (anbefales)
           vipps: Vips
+        verification_methods_alt: 'Alternative metoder:'
       edit_communication:
         email: E-mail
         header: Skift udgående kommunikation
@@ -417,6 +484,8 @@ da:
           custom_sms_sending: Tilsidesæt hele SMS med nedenstående indhold (ellers vil indhold kun blive indtastet i standard SMS-skabelonen)
           dont_include_icalendar_attachment: Medtag ikke iCalendar-vedhæftede filer
         sms: SMS
+        whatsapp: WhatsApp
+        whatsapp_info: Send bekreftelser og påminnelser på WhatsApp, og motta svar fra kundene dine. WhatsApp settes opp sammen med MakePlans support - kontakt oss for å komme i gang. Meldingsmaler må godkjennes av Meta og registreres på hver enkelt meldingsmal.
       edit_company:
         api:
           enable: Aktivér API
@@ -443,6 +512,7 @@ da:
         automatic_messages_booking_site: Automatiske forsendelser (på bookingsiden)
         awaiting_confirmation_email: Afsendelse af en e-mail, når en reservation kræver godkendelse
         awaiting_confirmation_sms: Sender SMS, når reservationen kræver godkendelse
+        booking_site_manual_confirmation_message: Send melding om at reservasjon må behandles manuelt
         booking_site_message: Send besked på bookingsiden
         booking_site_outgoing_messages_info: Som standard sender Makeplans en notifikation om vigtige begivenheder som bekræftelse via den valgte bekræftelsesmetode, f.eks. SMS til SMS-bekræftelse eller e-mail, hvis du har anden eller ingen bekræftelse.
         cancellation_email: Afsendelse af en e-mail, når du annullerer en reservation
@@ -454,6 +524,8 @@ da:
         disable: Deaktiver
         enable: Aktivér
         header: Send advarsler til kunden
+        manual_confirmation: Send melding når reservasjon er behandlet manuelt
+        manual_confirmation_message: Send melding om at reservasjon må behandles manuelt
         message_template_info: Dette er den indbyggede funktion til afsendelse. Brug funktionen til beskedskabeloner for at få flere påmindelser og mere kontrol.
         modification_email: Afsendelse af en e-mail, når du ændrer en reservation
         modification_sms: Afsendelse af en SMS, når du ændrer en reservation
@@ -492,12 +564,15 @@ da:
           calendar_prevent_slot_event_overlap: Undgå visuel overlapning af reservationer
           calendar_slot_duration: Spillets varighed (minutter)
           calendar_slot_label_interval: Tidsvisning for slot hvert X minut
+          no_show_warning_threshold: Varsle når en kunde har uteblitt så mange ganger
           resource_title: Tilpasset ressourcetitel
           service_addon_title: Tilpasset yderligere titel
           service_appointment_title: Brugerdefineret jobtitel
           service_attendance_title: Brugerdefineret titel på begivenhedstype
           service_gift_card_title: Brugerdefineret gavekorttitel
+          service_pass_title: Egendefinert klippekorttittel
           service_product_title: Brugerdefineret produkttitel
+          service_subscription_title: Egendefinert abonnementtittel
       email_sender:
         create:
           dns: Se dine DNS-værdier.
@@ -561,6 +636,18 @@ da:
         index:
           email: Send en kopi via e-mail
           header: Fakturaer fra Makeplans
+          paid: Betalt
+      mcp:
+        show:
+          claude_code: Claude Code
+          enable: Aktiver API-et
+          endpoint: MCP-endepunkt
+          header: MCP - AI-assistenter
+          info: Koble AI-assistenter som Claude til Makeplans-kontoen din med MCP (Model Context Protocol). Assistenten autentiserer med API-nøkkelen din og kan sjekke ledige tider, liste reservasjoner og arrangementer, finne kunder og opprette eller kansellere reservasjoner.
+          info_html: Dokumentation er tilgængelig på <a href="https://developer.makeplans.com/guide/mcp/" target="_blank" class="link-external">https://developer.makeplans.com/guide/mcp/</a> .
+          not_enabled: API-et må være aktivert før AI-assistenter kan koble til.
+          other_clients: Andre MCP-klienter
+          other_clients_info: Legg til en ekstern MCP-server med endepunktet ovenfor og HTTP-headeren "Authorization" med verdien "Bearer %{api_key}".
       migrate_bookings:
         edit:
           deactivated: handicappet
@@ -606,6 +693,7 @@ da:
           migrate_bookings: Flyt reservationer mellem ressourcer
           purge_data: Slet gamle data
           sms_all: Send SMS til alle dine kunder
+          sms_filter: Send SMS til filtrerte kunder
     coupons:
       form:
         availability_placeholder: Ubegrænset
@@ -652,6 +740,9 @@ da:
         download_attendance_csv: Eksportér deltagerlisten som CSV
         email_confirm: Liste over deltagere vil blive sendt til dig via e-mail. Vil du fortsætte?
         fully_booked: Arrangementet er fuldt booket
+        fully_booked_with_waitlist: Arrangementet er fullbooket · %{count} på venteliste
+        promote: Flytt opp
+        promote_confirm: Flytte %{name} opp fra ventelisten?
         qr_code: QR-kode til kunder
         recurring_member: Denne begivenhed er en del af et tilbagevendende mønster.
         send_email_to_all: Send e-mail til alle deltagere
@@ -661,6 +752,10 @@ da:
         show_only_active_html: Listen inkluderer %{count} inaktive reservationer. <a href="%{href}">Vil du kun vise dem, der er aktive?</a>
         signup_link: Link til registrering for kunder
         sms_all_participants: Send SMS til alle deltagere
+        waitlist_html:
+          one: 'venteliste: <strong>%{count}</strong>'
+          other: 'venteliste: <strong>%{count}</strong>'
+        waitlist_position: Ventelisteposisjon %{position}
         zoom:
           join_meeting: Deltag i mødelink
           join_webinar: Deltag i webinar link
@@ -737,6 +832,16 @@ da:
         service_links: 'Hver tjeneste skal være knyttet til et produkt i Fiken for at det er muligt at oprette en faktura. BEMÆRK: Prisen fås fra Fiken - ikke fra Makeplans. Du skal sikre dig, at prisen i begge systemer er identisk.'
         service_not_linked: IKKE tilsluttet produkt i Fiken
         vat_type: Moms-type
+      fiken_v2:
+        active: Aktiv
+        connected_bank_account: Bankkonto
+        connected_company: Firma
+        select_bank_account: Velg bankkonto som skal vises for innbetaling på faktura
+        select_company: Velg foretak
+        service_linked: Koblet mot produkt i Fiken
+        service_links: 'Hver tjeneste må kobles mot et produkt i Fiken for at det skal bli mulig å opprette faktura. OBS: Pris hentes fra Fiken - ikke fra Makeplans. Du må selv passe på at pris i begge systemer er identiske.'
+      frontgo:
+        api_key: API-nøkkel
       headline: Integration med %{integration}
       highrise:
         account: Underdomæne (DINKONTO.highrisehq.com - udfyld kun DINKONTO)
@@ -799,11 +904,28 @@ da:
         service_not_linked: IKKE tilsluttet produktet i 24SevenOffice
         type_groups: 'Salgstype for ordre:'
         username: API-brugernavn
+      unloc:
+        client_id: Client ID
+        client_secret: Client secret
+        info: Legg inn API-nøklene fra Unloc Control Center for å koble til dine digitale dørlåser.
+        locks: Tilgjengelige låser
+        locks_info: Velg låser for en ressurs på innstillingssiden for ressursen. Når en bestilling er bekreftet får kunden automatisk en mobilnøkkel som er gyldig i det bestilte tidsrommet.
+        project_id: Prosjekt
       vipps:
         client_id: Klient-id
         client_secret: Klienthemmelighed
         merchant_serial_nr: Handelsserienr
+        non_partner_mode: Bruk mine egne Vipps-avtalenøkler i stedet for MakePlans partnernøkler
+        partner_keys_info: Hvis Vipps-salgsstedet ditt ble opprettet gjennom MakePlans trenger du bare å fylle inn merchant serial number. Client ID, client secret og subscription key er kun nødvendig hvis du har din egen Vipps-avtale.
+        push_message: Send betalingsforespørsler til kundens Vipps-app (krever at push-meldinger er aktivert for Vipps-salgsstedet)
+        setup_webhooks: Sjekk og sett opp webhooks
+        verify: Verifiser tilkobling
+        verify_error: 'Vipps avviste nøklene: %{message}'
+        verify_success: Vipps er riktig konfigurert og autentisert.
         vipps_subscription_key: Vipps-abonnementsnøgle
+        webhook_active: Betalingswebhook er registrert.
+        webhook_setup_failed: 'Oppsett av webhook feilet: %{error}'
+        webhook_setup_missing_fields: Fyll inn client ID, client secret, subscription key og merchant serial number før du setter opp webhooks.
       visma_eaccounting:
         active: Aktiv
         connect_info: Linket til konto %{name}
@@ -813,6 +935,10 @@ da:
         service_linked: Forbundet til produkt i Visma eAccounting
         service_links: 'Hver tjeneste skal være knyttet til et produkt i Visma eAccounting for at kunne oprette en faktura. BEMÆRK: Prisen opnås fra Visma eAccounting - ikke fra Makeplans. Du skal sikre dig, at prisen i begge systemer er identisk.'
         service_not_linked: IKKE tilsluttet produktet i Visma eAccounting
+      whatsapp:
+        connect: Koble til WhatsApp
+        connected: WhatsApp er tilkoblet med nummer %{number}.
+        info: Koble til WhatsApp for å sende bekreftelser og påminnelser og chatte med kundene dine. Du trenger en Meta-bedriftskonto og et telefonnummer som ikke allerede brukes med WhatsApp. Klikk på knappen under for å logge inn med Meta og fullføre oppsettet.
       whereby:
         connect_info: Forbundet
         setup_info: Et Whereby-møde oprettes automatisk for alle tjenester, hvor Whereby er aktiveret.
@@ -829,7 +955,20 @@ da:
         immediately: straks
         services: Tjenester
         services_info: 'Meddelelsesskabelonen sendes for alle tjenester, medmindre du begrænser dig til specifikke tjenester nedenfor:'
+        settings:
+          skip_if_in_past: Ikke send hvis leveringstidspunkt er passert
+          twilio_content_sid: WhatsApp-mal-SID
+          twilio_content_sid_info: ID-en (HX...) for denne malen slik den er godkjent av Meta. Registreres sammen med MakePlans support - meldingen kan ikke sendes før malen er godkjent.
         template_info_html: Du kan flette inn dynamiske værdier. Se venligst <a href="https://github.com/makeplans/makeplans-custom-messages" target="_blank" class="link-external">https://github.com/makeplans/makeplans-custom-messages</a> for detaljer.
+        whatsapp_approval_status: Meta-godkjenning
+        whatsapp_approval_statuses:
+          approved: Godkjent - denne malen kan sendes
+          error: Innsending feilet
+          pending: Venter på godkjenning fra Meta
+          rejected: Avvist av Meta
+        whatsapp_info: WhatsApp-meldinger må godkjennes av Meta før de kan sendes. Skriv meldingen som vanlig - teksten som skal godkjennes vises under etter lagring. Flettekoder er tillatt, men ikke logikk-koder.
+        whatsapp_meta_template: Maltekst for Meta-godkjenning
+        whatsapp_meta_template_info: Send inn nøyaktig denne teksten for godkjenning (flettekoder konverteres automatisk). Hvis du endrer meldingsteksten må malen godkjennes på nytt og SID-en oppdateres.
       index:
         header: Besked skabeloner
         immediately: straks
@@ -847,6 +986,11 @@ da:
         order_id: Bestilling
         status: Status
         total: Total
+      refund:
+        already_refunded: Denne bestillingen er allerede refundert.
+        failed: 'Refusjon feilet: %{message}'
+        nothing_to_refund: Det er ingenting å refundere på denne bestillingen.
+        success: Bestilling refundert.
       show:
         amount: Beløb
         balance: Udestående
@@ -864,6 +1008,8 @@ da:
         line_items: Ordrelinjer
         order_number: 'Ordre #%{id}'
         quantity: Antal
+        refund: Refunder betaling
+        refund_confirm: Refundere hele denne bestillingen? Dette reverserer alle betalinger og kan ikke angres.
         subtotal: Subtotal
         total: Total
         transaction_type: Type
@@ -880,7 +1026,15 @@ da:
     people:
       children:
         index:
+          add_existing: Legg til eksisterende kunde
           headline: "%{parent} kan booke for disse personer:"
+        new:
+          add_selected: Legg til valgte
+          headline: Legg til tilknyttede kunder for %{parent}
+          no_results: Ingen matchende kunder funnet
+          no_results_hint: Kun kunder uten eksisterende tilknytning vises
+          search: Søk
+          search_placeholder: Søk på navn, epost eller telefon
       form:
         block: Bloker kunde for booking
         booking_site_locale_default: Brug standardsproget på bookingsiden
@@ -898,6 +1052,7 @@ da:
         filter: Filtrering
         headline: Kunder
         send_sms: Send SMS
+        whatsapp_replies: WhatsApp-svar
       show:
         add_child: Tilføj tilknyttet kunde
         all_day: Hele dagen
@@ -908,6 +1063,10 @@ da:
         change_tfso_customer: Skift 24SO kundenr.
         export: Send eksport af data til kunden
         export_executed: Eksportfilen sendes nu til kunden.
+        fiken:
+          create_customer: Opprett kunde i Fiken
+          processing: Oppretter kunde i Fiken...
+          show_customer: Vis kunde i Fiken
         filter_bookings:
           active: Vis kun aktive reservationer
           all: Vis alle reservationer, inklusive slettede
@@ -918,6 +1077,7 @@ da:
         no_reservations: Ingen reservationer fundet
         parent_info: Administreret af
         send_sms: Send SMS
+        whatsapp_chat: WhatsApp-chat
       tfso_connect_company:
         create: Opret en ny virksomhed i 24SevenOffice
         header: Opret forbindelse med kunden fra 24SevenOffice
@@ -934,6 +1094,10 @@ da:
       deactivate_rotp:
         deactivate_rotp: Deaktiver 2FA
         verify_code: 'Indsæt verifikations kode:'
+      edit:
+        theme_auto: Auto (følg systemet)
+        theme_dark: Mørk
+        theme_light: Lys
       edit_password:
         verify_code: 'Indtast kode for at bekræfte:'
       no_access:
@@ -972,6 +1136,233 @@ da:
         purge_3: Al historik relateret til disse data slettes også.
         purge_before: Slet data inden datoen
         warning: Er du sikker på, at du vil slette alle data inden den angivne dato? Det er ikke muligt at fortryde denne handling.
+    reports:
+      bookings:
+        attendees: Deltakere
+        bookings: Reservasjoner
+        by_hour: Reservasjoner per time
+        by_weekday: Reservasjoner per ukedag
+        date: Dato
+        per_day: Reservasjoner per dag
+        per_month: Reservasjoner per måned
+        per_week: Reservasjoner per uke
+        title: Reservasjoner
+      breakdown:
+        attendees: Deltakere
+        bookings: Reservasjoner
+        inactive: inaktiv
+        name: Navn
+        revenue: Bestilt verdi
+        without_resource: Uten ressurs
+        without_service: Uten tjeneste
+      customers:
+        booked_value: Bestilt verdi
+        bookings: Reservasjoner
+        created_before_period: Eksisterte før perioden
+        created_in_period: Opprettet i perioden
+        date: Dato
+        last_visit: Siste besøk
+        name: Navn
+        new_customers: Nye kunder
+        new_vs_returning: Nye og tilbakevendende kunder
+        not_rebooked: Ikke bestilt på nytt
+        of_customers: av %{count} kunder
+        per_day: Nye kunder per dag
+        per_month: Nye kunder per måned
+        per_period_hint: Etter registreringsdato
+        per_week: Nye kunder per uke
+        rebooked: Bestilt på nytt
+        rebooking: Gjenbestillingsrate
+        rebooking_hint: Ny reservasjon innen %{weeks} uker etter første besøk i perioden
+        returning_customers: Tilbakevendende kunder
+        title: Kunder
+        top_customers: Toppkunder
+        total: Nye kunder
+      events:
+        attendees: Deltakere
+        bookings: Reservasjoner
+        capacity: Kapasitet
+        event: Arrangement
+        events_count:
+          one: 1 arrangement
+          other: "%{count} arrangementer"
+        fill: Fyllingsgrad
+        fill_curve: Når arrangementer fylles opp
+        fill_curve_hint: Reservasjoner etter antall dager før arrangementet starter
+        minimum_not_reached: minimum ikke nådd
+        starts_at: Starter
+        title: Arrangementer
+        waitlist_summary: "%{waitlisted} på venteliste · %{conversions} flyttet fra venteliste i perioden"
+        waitlisted: På venteliste
+      filters:
+        all_resources: Alle ressurser
+        all_services: Alle tjenester
+        apply: Vis
+        download_csv: Last ned CSV
+        filter: Filter
+        from: Fra dato
+        granularity_day: Dag
+        granularity_label: Vis per
+        granularity_month: Måned
+        granularity_week: Uke
+        period: Periode
+        to: Til dato
+      granularity:
+        day: Dato
+        month: Måned
+        week: Uke
+      index:
+        ahead: Fremover
+        ahead_of_previous_period: "%{change}% foran forrige periode"
+        all_clear: Alt ser bra ut
+        behind_pace: Etter skjema
+        below_previous_period: "%{change}% under forrige periode"
+        booking_activity: Reservasjonsaktivitet
+        bookings: Reservasjoner
+        bookings_count:
+          one: 1 reservasjon
+          other: "%{count} reservasjoner"
+        bookings_per_day: Reservasjoner per dag
+        cancellation_rate: Kanselleringsrate
+        cancellations: Kanselleringer
+        compared_with_last_year: sammenlignet med samme periode i fjor
+        compared_with_previous: sammenlignet med forrige periode
+        confirmed_bookings: bekreftede reservasjoner
+        custom: Egendefinert
+        days:
+          one: 1 dag
+          other: "%{count} dager"
+        demand_by_time: Pågang per dag og tid
+        forward_note: Omsetning, nye kunder, ikke møtt og vurderinger finnes bare for perioder som allerede har vært, så disse feltene står tomme for en fremtidig periode.
+        forward_note_title: Fremover
+        from_previous_period: fra forrige periode
+        higher: Høyere
+        last_month: Forrige måned
+        latest_activity: Siste reservasjoner
+        lower: Lavere
+        needs_attention: Krever oppfølging
+        new_customers: Nye kunder
+        new_period: Ny aktivitet
+        next_days:
+          one: Neste dag
+          other: Neste %{count} dager
+        next_month: Neste måned
+        no_attention: Ingen avvik registrert
+        no_previous_period: Ingen forrige periode å sammenligne med
+        no_shows: Ikke møtt
+        on_track: I rute
+        open_report: Se rapport
+        overall_pace: Fremdrift
+        previous_value: "%{value} i forrige periode"
+        resource_pace: Ressurser
+        revenue: Omsetning
+        revenue_all_scope: alle ressurser og tjenester
+        revenue_by_service: Bestilt verdi per tjeneste
+        scope_note: Reservasjonstall teller bekreftede reservasjoner etter reservert dato. Omsetning teller betalinger etter datoen de ble gjennomført.
+        scope_note_title: Rapportomfang
+        service: Tjeneste
+        this_month: Denne måneden
+        this_year: I år
+        title: Rapporter
+        today: I dag
+        total_count: "%{count} totalt"
+        when: Når
+      no_shows:
+        bookings: Reservasjoner
+        by_hour: Ikke møtt per time
+        by_resource: Ikke møtt per ressurs
+        by_service: Ikke møtt per tjeneste
+        by_weekday: Ikke møtt per ukedag
+        name: Navn
+        no_shows: Ikke møtt
+        offenders: Kunder med flest ikke møtt
+        per_day: Ikke møtt per dag
+        per_month: Ikke møtt per måned
+        per_week: Ikke møtt per uke
+        rate: Andel
+        title: Ikke møtt
+        total: Ikke møtt
+      ratings:
+        average: Gjennomsnittlig vurdering
+        booked: Reservasjon
+        bookings: Reservasjoner
+        by_resource: Gjennomsnitt per ressurs
+        by_service: Gjennomsnitt per tjeneste
+        distribution: Fordeling av vurderingene
+        lowest: Lavest vurderte reservasjoner
+        name: Navn
+        no_ratings: Ingen vurderinger for denne perioden
+        per_day: Gjennomsnitt per dag
+        per_month: Gjennomsnitt per måned
+        per_week: Gjennomsnitt per uke
+        rating: Vurdering
+        ratings: Vurderinger
+        resource: Ressurs
+        response_rate: Svarandel
+        responses:
+          one: "%{count} svar"
+          other: "%{count} svar"
+        service: Tjeneste
+        title: Vurderinger
+      resources:
+        title: Ressurser
+      revenue:
+        amount: Beløp
+        date: Dato
+        per_day: Innbetalt omsetning per dag
+        per_month: Innbetalt omsetning per måned
+        per_period_hint: Etter datoen betalingen ble gjennomført, ikke reservasjonsdatoen
+        per_week: Innbetalt omsetning per uke
+        title: Omsetning
+        total: Totalt
+      services:
+        title: Tjenester
+      subnav:
+        bookings: Reservasjoner
+        customers: Kunder
+        events: Arrangementer
+        no_shows: Ikke møtt
+        overview: Oversikt
+        past_only: Denne rapporten dekker bare perioder som allerede har vært
+        ratings: Vurderinger
+        resources: Ressurser
+        revenue: Omsetning
+        services: Tjenester
+        timing: Tidsbruk
+        utilization: Utnyttelse
+      timing:
+        bookings: Reservasjoner
+        buckets:
+          after_start: Etter start
+          four_seven_days: 4–7 dager
+          four_weeks: 2–4 uker
+          longer: Over 2 måneder
+          next_day: Dagen etter
+          same_day: Samme dag
+          two_months: 1–2 måneder
+          two_three_days: 2–3 dager
+          two_weeks: 1–2 uker
+        by_created_hour: Reservasjoner opprettet per time
+        by_created_weekday: Reservasjoner opprettet per ukedag
+        cancellation_lead_time: Tid før kansellering
+        cancellation_lead_time_hint: Tid mellom kanselleringen og det reserverte tidspunktet
+        cancellations: Kanselleringer
+        lead_time: Bestillingshorisont
+        lead_time_hint: Tid mellom når reservasjonen ble opprettet og det reserverte tidspunktet
+        median_lead: median bestillingshorisont %{days} dager
+        title: Tidsbruk
+      utilization:
+        booked_hours: Bestilte timer
+        coverage_ahead: Dekning fremover per ressurs
+        coverage_hint: Bestilte mot åpne timer for en periode som ikke har vært ennå
+        hours: "%{booked} av %{open} timer"
+        open_hours: Åpne timer
+        per_resource: Utnyttelse per ressurs
+        resource: Ressurs
+        title: Utnyttelse
+        total: Totalt
+        unbooked_hours: Ledige timer
+        utilization: Utnyttelse
     resources:
       form:
         availability: Standard tilgængelighed
@@ -980,6 +1371,8 @@ da:
           other: Denne ressource har %{count} fremtidige bookinger. Sletning vil fjerne ressourcen og alle bookinger. Klik på slet igen for at bekræfte.
         external_info:
           microsoft_office365_user_id: Microsoft Office 365-bruger
+          unloc_lock_ids: Unloc-låser
+          unloc_lock_ids_info: Kunder med bekreftet bestilling får automatisk en mobilnøkkel til valgte låser, gyldig i det bestilte tidsrommet.
           zoom_user_id: Zoom bruger
         from: fra
         mail_notification_info: For at sende alarmer til flere personer skal du bruge semikolon til at adskille e-mail-adresser.
@@ -1065,12 +1458,14 @@ da:
           hide_all_available: Skal vælge en specifik ressource ('vis alle tilgængelige' er skjult)
           hide_resources: Skjul knappen for at vælge en ressource (enhver tilgængelig ressource vælges automatisk)
           hide_slot_end: Skjul sluttid
+          overnight: Til neste dag (Kun dagbooking)
           return_occupied: Vis pladser, der er optaget
           return_past: Se slotte i fortiden
           select_count: Ekstra trin for at angive mængde
           select_resource: Ekstra trin til ressourcevalg
           show_free_capacity: Vis tilgængelig kapacitet
           standalone: Selvstændig tjeneste
+          waitlist_enabled: Aktiver venteliste (overstyrer kontoinnstilling)
       form_attendance:
         booking_site_settings: Indstillinger for reservationssiden
         days: Dage
@@ -1081,10 +1476,23 @@ da:
         settings:
           hide_slot_end: Skjul sluttidspunkt
           show_free_capacity: Vis tilgængelig kapacitet
+          waitlist_enabled: Aktiver venteliste (overstyrer kontoinnstilling)
       form_gift_card:
         booking_site_settings: Indstillinger for bookingside
       form_product:
         booking_site_settings: Indstillinger for bookingside
+      form_sellable:
+        billing_periods:
+          month: Måned
+          week: Uke
+          year: År
+        booking_site_settings: Innstillinger for bookingsiden
+        linked_services:
+          addon: Tilgjengelig ved reservasjon av følgende tjenester
+          pass: Gjelder for følgende tjenester
+          subscription: Gjelder for følgende tjenester
+        linked_services_info: Hvis ingen er valgt er den tilgjengelig for alle tjenester.
+        validity_days_unlimited: Utløper aldri
       index:
         appointment:
           header: Tjenester
@@ -1126,18 +1534,24 @@ da:
         header: Rækkefølge for tjenesten
       show:
         availability: Tilgængelighed pr. udbyder
+        billing_period: 'Fornyelsesperiode:'
         custom_data: 'Brugerdefinerede felter:'
         days: dage
         description: 'Beskrivelse:'
         interval: Varighed
+        linked_services_all: Alle tjenester
         manage_priority: Administrer prioritet
         minutes: minutter
+        never_expires: Utløper aldri
         no_providers: 'BEMÆRK: Denne service tilbydes ikke af nogen ressourcer og vises derfor ikke på reservationssiden. Klik her for at tilføje udbydere.'
         not_in_category: 'BEMÆRK: Du bruger kategorier på reservationssiden, og denne service føjes ikke til en kategori. Denne service er derfor ikke synlig på reservationssiden. Klik her for at administrere kategorier.'
         offered: 'Tilbydes af følgende ressourcer:'
         price: 'Pris:'
         qr_code: QR-kode til kunder
+        quota: 'Antall reservasjoner inkludert:'
         show_on_booking_site: Åbn reservationssiden for denne service
+        unlimited: Ubegrenset
+        validity: 'Gyldighet:'
       slots:
         available: 'Tilgængelige tider:'
         next_available: 'Næste ledige dato:'
@@ -1184,6 +1598,7 @@ da:
         header_html: 'Velkommen til Makeplans.<br> Start med at tilføje tjenester:'
     shared:
       recurring:
+        booking_window_fixed: Bruk samme påmeldingsdatoer for alle gjentagelser
         enabled: Gentag flere gange med et mønster
         freq:
           monthly: Månedlige
@@ -1207,14 +1622,34 @@ da:
     sms:
       create:
         header: SMS sendt
+        queued: Sender SMS til %{recipents_count} mottagere...
         sms_sent: 'Følgende besked blev sendt til %{recipents_count}-modtagere:'
         to_booking: Tilbage til reservation
       insufficient_credits:
         buy: Køb mere SMS
         info: Du skal forudkøbe %{needed} SMS for at sende. Du har %{credits}.
       new:
+        filter:
+          all: Alle
+          calculate: Finn mottagere
+          change: Endre filter
+          date_hint: Valgfritt. La stå tomt for ingen datobegrensning.
+          from: Reservasjoner fra og med
+          header: Send SMS til filtrerte kunder
+          instructions: Velg en datoperiode, tjeneste og/eller ressurs for å finne kunder med reservasjoner som matcher. Minst ett filter er påkrevd.
+          no_limit: Ingen begrensning
+          no_recipients: Ingen kunder matcher det valgte filteret. Juster filteret og prøv igjen.
+          none: Velg minst ett filter (datoperiode, tjeneste eller ressurs) før du sender.
+          one_sms_per_person: Hver kunde mottar én SMS, selv om de har flere reservasjoner som matcher filteret.
+          resources: Ressurser
+          resources_hint: La stå tomt for å inkludere kunder med reservasjoner for alle ressurser.
+          services: Tjenester
+          services_hint: La stå tomt for å inkludere kunder med reservasjoner for alle tjenester.
+          to: Reservasjoner til og med
         header: Send SMS til %{recipents_count}-modtagere
+        liquid_hint: Personaliser meldingen med tagger som {{ person.name }}, {{ person.first_name }} eller {{ person.email }}.
         message: Besked
+        message_error: Meldingen kunne ikke behandles. Sjekk personaliseringstaggene og prøv igjen.
         processing: Afsender ...
         send: Sende
         sms_info: For meddelelser på mere end 160 tegn beregnes prisen pr. 160 tegn. Prisen for tekst på 200 tegn vil derefter være 2 SMS pr. Besked. Modtageren modtager dette som 1 SMS.

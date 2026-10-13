@@ -32,8 +32,10 @@ da:
         who_is_booking_for: Hvem er denne ordre til?
         yourself: Dig selv
       payment_stripe:
+        make_payment: Utfør betaling
         title: Indtast betalingsoplysninger
       pre_payment:
+        make_payment: Utfør betaling
         title: Vælg betalingsmetode
       show:
         add_to_calendar: Tilføj til kalender

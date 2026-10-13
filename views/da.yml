@@ -1,10 +1,20 @@
 ---
 da:
   bookings:
+    awaiting_payment:
+      vipps_payment_failed: Betalingen ble avbrutt. Vennligst prøv igjen.
+    process_promote_waitlist:
+      slot_no_longer_available: Beklager, plassen er ikke lenger tilgjengelig. Du er fortsatt på ventelisten.
     verification_code:
       incorrect_code: Forkert kode
   clients:
     new:
+      accept_terms_html: Ved at registrere dig accepterer du %{link}.
+      benefit_booking_site: Din egen bookingside på nett, åpen hele døgnet.
+      benefit_calendar: Alle tjenester, ansatte og avtaler i én kalender.
+      benefit_notifications: Automatiske bekreftelser og påminnelser på epost og SMS.
+      captcha_missing: Spamkontrollen ble ikke fullført. Send inn skjemaet på nytt.
+      change: Endre
       first_user: Dette er din personlige adgangskode. Du kan tilføje flere brugere senere.
       free_trial_info: 14-dages gratis prøveversion af den fulde version af Makeplans. Ingen forpligtelser.
       headline: Kom godt i gang med online aftale booking
@@ -12,12 +22,18 @@ da:
       newsletter: Jeg accepterer at modtage produktopdateringer via e-mail.
       read_legal: Læs servicevilkårene
       recaptcha: Vi er nødt til at bekræfte din registrering hos Google Recaptcha. Indtast din adgangskode igen, og tryk på knappen Registrer igen.
+      social_proof_caption: bookinger siden 2010
+      social_proof_figure: Over 7 millioner
       subdomain_info: Din unikke adresse (URL), hvor dine kunder kan booke.
+      subdomain_label: Adressen til din bookingside
       subdomain_not_website_warning: 'OOPS: Dette er adressen til din nye bookingside. Indtast IKKE URL''en til dit eksisterende websted. Hvis du er i tvivl, skal du blot indtaste dit firmanavn her.'
       submit: Opret konto
+      terms_link: vilkårene for bruk av tjenesten
+      test_env_info_html: Skal du oprette en testkonto? Se %{link} for information om vores testmiljø.
       title: Registrer din egen online reservationsside
       user_email: Arbejds email
       user_info: Din bruger skal logge ind
+      your_booking_site: 'Din bookingside:'
     rejected:
       headline: Registrering blokeret
       info: Beklager, men vores system har blokeret din registrering som spam. Kontakt os for at registrere en konto.
