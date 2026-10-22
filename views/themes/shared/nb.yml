@@ -107,10 +107,11 @@ nb:
         form_header: Dette skjemaet sendes kryptert.
         header: Betaling
         info: For å fullføre reservasjonen av %{service} %{booking} må du betale med kredittkortet ditt.
-        new_card: Legg inn nytt kort
+        new_card: Bruk et nytt kort
         payment_details_html: Det viste beløpet er i %{currency}. Vi lagrer ikke kredittkortopplysningene dine, men sender dem kryptert til %{provider} for sikker behandling og lagring.
         payment_received: "%{paid_amount} ble betalt på %{paid_at}."
-        save_card: Lagre kort
+        save_card: Lagre dette kortet for fremtidige betalinger
+        select_card: Velg et lagret kort
       registration_closed: Påmeldingen til dette arrangementet er stengt.
       waitlist: Venteliste
       waitlist_notice: Dette tidspunktet er fullt booket. Du vil bli satt på venteliste og bli varslet når en plass blir ledig.
@@ -207,10 +208,7 @@ nb:
         payment:
           back: Tilbake
           header: Kortbetaling
-          new_card: Bruk et nytt kort
           pay_now: Betal nå
-          save_card: Lagre dette kortet for fremtidige betalinger
-          select_card: Velg et lagret kort
       vipps:
         payment:
           back: Tilbake

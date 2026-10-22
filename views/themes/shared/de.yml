@@ -107,10 +107,11 @@ de:
         form_header: Dieses Formular wird verschlüsselt übermittelt.
         header: Zahlung
         info: Um die Reservierung von %{service} %{booking} abzuschließen, müssen Sie mit Ihrer Kreditkarte bezahlen.
-        new_card: Neue Karte eingeben
+        new_card: Verwenden Sie eine neue Karte
         payment_details_html: Der angezeigte Betrag ist in %{currency}. Wir speichern Ihre Kreditkartendaten nicht, sondern senden sie verschlüsselt an %{provider} zur sicheren Verarbeitung und Speicherung.
         payment_received: "%{paid_amount} wurde am %{paid_at} bezahlt."
-        save_card: Karte speichern
+        save_card: Bewahren Sie diese Karte für zukünftige Zahlungen auf.
+        select_card: Wählen Sie eine gespeicherte Karte aus
       registration_closed: Die Anmeldung für diese Veranstaltung ist geschlossen.
       waitlist: Warteliste
       waitlist_notice: Dieser Termin ist bereits ausgebucht. Sie werden auf die Warteliste gesetzt und benachrichtigt, sobald ein Platz frei wird.
@@ -192,10 +193,7 @@ de:
         payment:
           back: Zurück
           header: Kartenzahlung
-          new_card: Verwenden Sie eine neue Karte
           pay_now: Jetzt bezahlen
-          save_card: Bewahren Sie diese Karte für zukünftige Zahlungen auf.
-          select_card: Wählen Sie eine gespeicherte Karte aus
       vipps:
         payment:
           back: Zurück

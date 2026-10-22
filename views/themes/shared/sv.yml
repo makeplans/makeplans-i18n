@@ -88,6 +88,9 @@ sv:
       past_last_booking: Det är inte längre möjligt att anmäla sig till detta evenemang.
       payment:
         card: Kort
+        new_card: Använd ett nytt kort
+        save_card: Spara detta kort för framtida betalningar
+        select_card: Välj ett sparat kort
       registration_closed: Anmälan till detta evenemang är stängd.
       waitlist: Väntelista
       waitlist_notice: Denna tidslucka är fullbokad. Du kommer att placeras på en väntelista och meddelas när en plats blir ledig.
@@ -169,10 +172,7 @@ sv:
         payment:
           back: Tillbaka
           header: Kortbetalning
-          new_card: Använd ett nytt kort
           pay_now: Betala nu
-          save_card: Spara detta kort för framtida betalningar
-          select_card: Välj ett sparat kort
       vipps:
         payment:
           back: Tillbaka

@@ -139,10 +139,10 @@ nb:
         form_header: Dette skjemaet sendes kryptert.
         header: Betaling
         info: For å gjennomføre reservasjon av %{service} %{booking} må du forhåndsbetale.
-        new_card: Legg til nytt kort
+        new_card: Bruk et nytt kort
         payment_details_html: Beløpet er oppgitt i %{currency} og inkluderer merverdiavgift. Din kortinformasjon lagres ikke hos oss men sendes kryptert over til %{provider} for sikker gjennomføring av transaksjon og lagring.
         payment_received: "%{paid_amount} ble betalt %{paid_at}."
-        save_card: Lagre kort
+        save_card: Lagre dette kortet for fremtidige betalinger
       step:
         cancel: Avbryt
         completed: Ferdig!

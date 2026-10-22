@@ -169,10 +169,7 @@ da:
         payment:
           back: Tilbake
           header: Kortbetaling
-          new_card: Bruk et nytt kort
           pay_now: Betal nå
-          save_card: Lagre dette kortet for fremtidige betalinger
-          select_card: Velg et lagret kort
       vipps:
         payment:
           back: Tilbake

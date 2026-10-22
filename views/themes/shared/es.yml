@@ -107,10 +107,11 @@ es:
         form_header: Este formulario se envía cifrado.
         header: Pago
         info: Para completar la reserva de %{service} %{booking} debe pagar con su tarjeta de crédito.
-        new_card: Introduzca una nueva tarjeta
+        new_card: Utiliza una tarjeta nueva
         payment_details_html: El importe mostrado está en %{currency}. No almacenamos los datos de su tarjeta de crédito, sino que los enviamos cifrados a %{provider} para su procesamiento y almacenamiento seguros.
         payment_received: "%{paid_amount} se pagó el %{paid_at}."
-        save_card: Tarjeta de ahorro
+        save_card: Guarda esta tarjeta para futuros pagos.
+        select_card: Seleccione una tarjeta guardada
       registration_closed: El plazo de inscripción para este evento ha finalizado.
       waitlist: Lista de espera
       waitlist_notice: Este horario está completo. Se le añadirá a la lista de espera y se le notificará cuando haya un hueco disponible.
@@ -192,10 +193,7 @@ es:
         payment:
           back: Atrás
           header: Pago con tarjeta
-          new_card: Utiliza una tarjeta nueva
           pay_now: Paga ahora
-          save_card: Guarda esta tarjeta para futuros pagos.
-          select_card: Seleccione una tarjeta guardada
       vipps:
         payment:
           back: Atrás

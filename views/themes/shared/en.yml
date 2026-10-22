@@ -107,10 +107,11 @@ en:
         form_header: This form is sent encrypted.
         header: Payment
         info: To complete the reservation of %{service} %{booking} you must pay with your credit card.
-        new_card: Enter new card
+        new_card: Use a new card
         payment_details_html: The displayed amount is in %{currency}. We do not store your credit card details but send it encrypted over to %{provider} for secure processing and storage.
         payment_received: "%{paid_amount} was paid on %{paid_at}."
-        save_card: Save card
+        save_card: Save this card for future payments
+        select_card: Select a saved card
       registration_closed: Registration for this event has closed.
       waitlist: Waitlist
       waitlist_notice: This time slot is fully booked. You will be added to the waitlist and notified when a spot becomes available.
@@ -207,10 +208,7 @@ en:
         payment:
           back: Back
           header: Card Payment
-          new_card: Use a new card
           pay_now: Pay Now
-          save_card: Save this card for future payments
-          select_card: Select a saved card
       vipps:
         payment:
           back: Back

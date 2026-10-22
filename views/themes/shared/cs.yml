@@ -107,10 +107,11 @@ cs:
         form_header: Tento formulář je odeslán zašifrovaný.
         header: Platba
         info: Pro dokončení rezervace %{service} %{booking} musíte zaplatit kreditní kartou.
-        new_card: Zadejte novou kartu
+        new_card: Použijte novou kartu
         payment_details_html: Zobrazená částka je v %{currency}. Údaje o vaší kreditní kartě neukládáme, ale zasíláme je zašifrované na %{provider} pro bezpečné zpracování a uložení.
         payment_received: Částka %{paid_amount} byla zaplacena dne %{paid_at}.
-        save_card: Uložit kartu
+        save_card: Uložte si tuto kartu pro budoucí platby
+        select_card: Vyberte uloženou kartu
       registration_closed: Registrace na tuto akci byla uzavřena.
       waitlist: Čekací listina
       waitlist_notice: Tento časový úsek je plně obsazen. Budete přidáni na čekací listinu a budete informováni, jakmile se uvolní místo.
@@ -192,10 +193,7 @@ cs:
         payment:
           back: Zadní
           header: Platba kartou
-          new_card: Použijte novou kartu
           pay_now: Zaplatit nyní
-          save_card: Uložte si tuto kartu pro budoucí platby
-          select_card: Vyberte uloženou kartu
       vipps:
         payment:
           back: Zadní
