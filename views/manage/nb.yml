@@ -57,6 +57,9 @@ nb:
         tab_waitlist: Venteliste
         waitlist_note: "+%{count} på venteliste"
     billing:
+      add_payment_customer:
+        card_not_accepted: Vi kunne ikke godta dette kortet. Prøv et annet kort, eller kontakt oss på %{email} så hjelper vi deg.
+        card_not_authenticated: Banken din verifiserte ikke kortet med 3D Secure. Vi krever 3D Secure-verifisering når du lagrer et kort. Prøv et annet kort, eller kontakt oss på %{email} så hjelper vi deg.
       charge:
         charge_details: Basert på nåværende innstillinger så er månedlig pris %{price}.
         charge_details_default: Månedlig pris er %{price} per ressurs.
