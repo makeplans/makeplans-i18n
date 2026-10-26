@@ -34,6 +34,7 @@ en:
           one: "%{count} reservation missing status."
           other: "%{count} reservations missing status."
         busy: Busy
+        extensor_unconfirmed_warning: Extensor Online Booking syncs these reservations. Do not confirm them manually.
         filter: Filtering
         nav:
           day: Day

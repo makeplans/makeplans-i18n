@@ -34,6 +34,7 @@ nb:
           one: "%{count} reservasjon mangler status."
           other: "%{count} reservasjoner mangler status."
         busy: Opptatt
+        extensor_unconfirmed_warning: Extensor Online Booking synkroniserer disse reservasjonene. Ikke bekreft dem manuelt.
         filter: Filtrering
         nav:
           day: Dag
