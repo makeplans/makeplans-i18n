@@ -59,7 +59,7 @@ en:
     billing:
       add_payment_customer:
         card_not_accepted: We could not accept this card. Try another card, or contact us at %{email} and we can help you.
-        card_not_authenticated: Your bank did not verify this card with 3D Secure. We require 3D Secure verification when you save a card. Try another card, or contact us at %{email} and we can help you.
+        card_not_authenticated: Your bank could not verify this card. We require verification when you save a card. Try another card, or contact us at %{email} and we can help you.
       charge:
         charge_details: Based on current usage we will charge your credit card %{price} each month.
         charge_details_default: Monthly price is %{price} per resource.
