@@ -343,10 +343,13 @@ nb:
         window_closed: WhatsApp tillater kun svar innen 24 timer etter kundens siste melding. Be kunden skrive til deg igjen på WhatsApp, eller kontakt kunden på SMS, epost eller telefon.
       index:
         headline: WhatsApp-svar
+        headline_sms: SMS-svar
       replies:
         empty: Ingen WhatsApp-svar mottatt ennå.
+        empty_sms: Ingen SMS-svar mottatt ennå.
       show:
         headline: WhatsApp-chat med %{name}
+        headline_sms: SMS-chat med %{name}
       thread:
         booking: Reservasjon
         empty: Ingen meldinger med denne kunden ennå.
@@ -1148,6 +1151,7 @@ nb:
         filter: Filtrering
         headline: Kunder
         send_sms: Send SMS
+        sms_replies: SMS-svar
         whatsapp_replies: WhatsApp-svar
       show:
         add_child: Legg til tilknyttet kunde
@@ -1176,6 +1180,7 @@ nb:
           one: "%{count} klippekort"
           other: "%{count} klippekort"
         send_sms: Send SMS
+        sms_chat: SMS-chat
         subscriptions:
           one: "%{count} abonnement"
           other: "%{count} abonnementer"

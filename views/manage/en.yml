@@ -343,10 +343,13 @@ en:
         window_closed: WhatsApp only allows replies within 24 hours of the customer's last message. Ask the customer to write to you again on WhatsApp, or contact them by SMS, email or phone.
       index:
         headline: WhatsApp replies
+        headline_sms: SMS replies
       replies:
         empty: No WhatsApp replies received yet.
+        empty_sms: No SMS replies received yet.
       show:
         headline: WhatsApp chat with %{name}
+        headline_sms: SMS chat with %{name}
       thread:
         booking: Booking
         empty: No messages with this customer yet.
@@ -1085,6 +1088,7 @@ en:
         filter: Filtering
         headline: Customers
         send_sms: Send SMS
+        sms_replies: SMS replies
         whatsapp_replies: WhatsApp replies
       show:
         add_child: Add connected customer
@@ -1113,6 +1117,7 @@ en:
           one: "%{count} pass"
           other: "%{count} passes"
         send_sms: Send SMS
+        sms_chat: SMS chat
         subscriptions:
           one: "%{count} subscription"
           other: "%{count} subscriptions"
