@@ -584,6 +584,7 @@ en:
       resource:
         capacity: Max number of reservations at the same time
         mail_notification_recipient: Email address(es) for notification
+        max_workload_points: Max workload points per day
         sms_notification_recipient: Phone number(s) for notification
         title: Title
       service:
@@ -649,6 +650,7 @@ en:
         title: Title
         unlimited: Unlimited
         validity_days: Number of days valid after purchase
+        workload_points: Workload points
       service/availability_type:
         provider: Provider
         resource: Resource (default)

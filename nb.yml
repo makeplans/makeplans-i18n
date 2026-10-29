@@ -581,6 +581,7 @@ nb:
       resource:
         capacity: Maks antall reservasjoner på samme tidspunkt
         mail_notification_recipient: Epost-adresser for varsling
+        max_workload_points: Maks belastningspoeng per dag
         sms_notification_recipient: Telefonnummer for varsling
         title: Tittel
       service:
@@ -647,6 +648,7 @@ nb:
         title: Tittel
         unlimited: Ubegrenset
         validity_days: Antall dager gyldig etter kjøp
+        workload_points: Belastningspoeng
       service/availability_type:
         provider: Tilbyder
         resource: Ressurs (standard)
