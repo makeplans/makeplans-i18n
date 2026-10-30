@@ -331,11 +331,16 @@ en:
         description: Drag and drop services to set their display order on the booking site. Services without an order value will appear last, sorted alphabetically.
         header: Service ordering for %{title}
       show:
-        custom_data: 'Custom data:'
-        has_services: 'Shows these services:'
+        booking_site: Booking site
+        custom_data: Custom data
+        has_services: Shows
+        link: Link
+        none: None
+        priority: Priority
         priority_button: Order
         qr_code: QR code for customers
-        show_on_booking_site: Open service on booking site
+        services: Services
+        show_on_booking_site: Open category on booking site
     chats:
       form:
         credit_info: Each message costs 1 SMS credit.
@@ -1149,6 +1154,8 @@ en:
         info: Please contact the administrator of your account to access this feature.
       show:
         change_password: Modify password
+        contact: Contact
+        none: None
         rotp:
           disable_link: Deactivate 2-step verification
           disable_warning: Are you sure you want to deactivate 2-step verification?
@@ -1158,6 +1165,9 @@ en:
           regenerate_warning: If you regenerate the 2-step verification key the existing key will no longer work and you have to set up your app with the new code. Are you sure you want to continue?
           submit_button: Login
           verification_code_header: 2-step verification
+        security: Security
+        settings: Settings
+        theme: Theme
       update_password:
         updated: Password updated. Please login with your new password.
     providers:
@@ -1432,35 +1442,65 @@ en:
       list_menu:
         list: Resources
       show:
-        availability: 'Default availability:'
-        capacity: 'Capacity:'
-        closed: Not available for online booking.
+        account_default: 'Account default: %{value}'
+        activated: Activated
+        availability: Default availability
+        booking: Booking
+        capacity: Capacity
+        closed: Closed
+        copied: Copied!
         copy:
+          confirm: Clone this resource?
           header: Clone
           info: Create a new resource based on this resource. Note that provided services are cloned.
           link: Clone this resource
-        custom_data: 'Custom fields:'
+        copy_url: Copy
+        custom_data: Custom fields
+        external_id: External ID
         ical:
           activated: Access to this resource with iCalendar is activated. The links to the iCalendar-feed are available. Do not share the link.
           activated_html: Access to this resource via iCalendar is enabled. Link to iCalendar feed is %{link}
           disable: Deactivate iCalendar-feed
+          disable_confirm: Deactivate iCalendar-feed? Calendars using the link will stop updating.
           enable: Activate iCalendar-feed
+          enable_confirm: Activate iCalendar-feed? Anyone with the link can see the reservations for this resource.
+          future: Future reservations
           future_html: 'Future reservations: %{link}'
           info: iCalendar-feed will show appointments from this resource in Makeplans in other calendar applications such as Microsoft Oulook, Google Calendar, iPhone eller Android. Read-only, all changes must be performed in Makeplans.
           not_activated: Not activated
+          past: Past reservations
           past_html: 'Past reservations: %{link}'
-        icalfeed: 'iCalendar-feed:'
+        icalfeed: iCalendar-feed
+        integrations: Integrations
+        mail_notification: Email
+        max_workload_points: Max workload
+        max_workload_points_unit: points per day
+        none: None
+        notifications: Notifications
         offers: 'Offers the following services on the booking site:'
+        provider_opening_hours: own opening hours
         room_display:
           activated: Room display is enabled.
           code: Code
           disable: Disable room display
+          disable_confirm: Disable room display? Screens showing this room will stop working.
           enable: Enable room display
+          enable_confirm: Enable room display? The display will be publicly available.
           generate_code: Generate Setup Code
+          generate_code_confirm: Generate a new setup code?
           header: Room display
           info: A public display for this room that shows current status and upcoming reservations. Suitable for a tablet mounted outside the room.
           not_activated: Not activated
           show_link: Show Room Display Link
+        services: Services
+        sharing: Sharing and display
+        sms_notification: SMS
+        timestamps: Created %{created} · Last updated %{updated}
+        unlimited: Unlimited
+        unloc_locks:
+          one: 1 lock
+          other: "%{count} locks"
+        zoom_user_selected: Selected
     services:
       availability:
         header: Availability for %{title}
@@ -1569,28 +1609,42 @@ en:
         description: Drag and drop services to set their display order on the booking site. Services without an order value will appear last, sorted alphabetically.
         header: Service ordering
       show:
+        account_value: "(account setting)"
+        automatic: Automatic
         availability: Availability pr provider
-        billing_period: 'Renewal period:'
-        custom_data: 'Custom data:'
+        billing_period: Renewal period
+        booking: Booking
+        booking_site: Booking site
+        capacity: Capacity
+        custom_data: Custom data
         days:
           one: day
           other: days
-        description: 'Description:'
-        interval: 'Duration:'
+        description: Description
+        integrations: Integrations
+        interval: Duration
+        link: Link
         linked_services_all: All services
         manage_priority: Manage priority
         minutes: minutes
         never_expires: Never expires
         no_providers: 'Important: This service is not offered by any resources and will not be shown on the booking site. Click here to add providers.'
+        none: None
         not_in_category: You are using categories on the booking site and this service is not linked to a category. As a result this service is at the moment not visible on the booking site. Click here to manage your categories.
-        offered: 'Offered by the following resources:'
-        price: 'Price:'
+        offered: Offered by
+        options: Options
+        ordering: Booking and cancellation
+        price: Price
+        price_and_terms: Price and terms
+        priority: Priority
         qr_code: QR code for customers
-        quota: 'Number of reservations included:'
-        renewal_price: 'Renewal price:'
+        quota: Number of reservations included
+        renewal_price: Renewal price
+        resources: Resources
         show_on_booking_site: Open service on booking site
         unlimited: Unlimited
-        validity: 'Validity:'
+        validity: Validity
+        waitlist: Waitlist
       slots:
         available: 'Available slots:'
         next_available: 'Next available date:'
@@ -1721,9 +1775,16 @@ en:
       list_menu:
         list: Users
       show:
+        added: Added %{date}
         remove_access: Remove access
         remove_access_confirm: Are you sure you want to remove access to this account for this user?
+        user: User
     web_hooks:
       index:
         app_secret_info_html: App secret for verifying webhooks. See <a href="https://developer.makeplans.com" target="_blank" class="link-external">documentation</a> for details.
         header: Webhooks
+      show:
+        active: Active
+        last_failure: Last failure
+        timestamps: Created %{created} · Last updated %{updated}
+        web_hook: Webhook

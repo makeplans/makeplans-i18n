@@ -331,11 +331,16 @@ nb:
         description: Dra og slipp tjenester for å endre rekkefølgen de vises på bookingsiden. Tjenester uten rekkefølgeverdi vil vises sist, sortert alfabetisk.
         header: Tjenesterekkefølge for %{title}
       show:
-        custom_data: 'Egendefinerte felter:'
-        has_services: 'Viser følgende tjenester:'
+        booking_site: Bookingside
+        custom_data: Egendefinerte felter
+        has_services: Viser
+        link: Lenke
+        none: Ingen
+        priority: Prioritet
         priority_button: Rekkefølge
         qr_code: QR-kode til kunder
-        show_on_booking_site: Åpne denne tjenesten på bookingsiden
+        services: Tjenester
+        show_on_booking_site: Åpne kategorien på bookingsiden
     chats:
       form:
         credit_info: Hver melding koster 1 SMS-kreditt.
@@ -1212,6 +1217,8 @@ nb:
         info: Kontakt administratoren for kontoen din for å få tilgang til denne funksjonen.
       show:
         change_password: Endre passord
+        contact: Kontakt
+        none: Ingen
         rotp:
           disable_link: Dekativer 2-trinns bekreftelse
           disable_warning: Er du sikker på at du vil deaktivere 2-trinns bekreftelse?
@@ -1221,6 +1228,9 @@ nb:
           regenerate_warning: Hvis du regenerer 2-trinns bekreftelse vil den eksisterende nøkkelen slutte å fungere og du må sette opp dette på nytt på din mobil. Er du sikker på at du vil dette?
           submit_button: Logg inn
           verification_code_header: 2-trinns bekreftelse
+        security: Sikkerhet
+        settings: Innstillinger
+        theme: Tema
       update_password:
         updated: Passord oppdatert. Login på nytt med ditt nye passord.
     providers:
@@ -1495,35 +1505,65 @@ nb:
       list_menu:
         list: Ressurser
       show:
-        availability: 'Standard tilgjengelighet:'
-        capacity: 'Kapasitet:'
-        closed: Ikke tilgjengelig for online timebestilling.
+        account_default: 'Kontoens standard: %{value}'
+        activated: Aktivert
+        availability: Standard tilgjengelighet
+        booking: Booking
+        capacity: Kapasitet
+        closed: Stengt
+        copied: Kopiert!
         copy:
+          confirm: Klone denne ressursen?
           header: Klon
           info: Opprett en ny ressurs basert på denne ressursen. Merk at de angitte tjenestene er klonet.
           link: Klon denne ressursen
-        custom_data: 'Egendefinerte felter:'
+        copy_url: Kopier
+        custom_data: Egendefinerte felter
+        external_id: Ekstern ID
         ical:
           activated: Tilgang til denne ressursen med iCalendar er aktivert. Lenkene til iCalendar-feeden er tilgjengelige. Ikke del lenken.
           activated_html: Tilgang til denne ressursen via iCalendar er aktivert. Link til iCalendar-feed er %{link}
           disable: Deaktiver iCalendar-feed
+          disable_confirm: Deaktivere iCalendar-feed? Kalendere som bruker lenken slutter å oppdateres.
           enable: Aktiver iCalendar-feed
+          enable_confirm: Aktivere iCalendar-feed? Alle med lenken kan se bestillingene til ressursen.
+          future: Fremtidige bestillinger
           future_html: 'Fremtidige bestillinger: %{link}'
           info: En iCalendar-feed gjør at du kan vise reservasjoner fra denne ressursen i Makeplans i andre kalenderprogrammer som for eksempel Microsoft Oulook, Google Calendar, iPhone eller Android. Kun lesetilgang - alle endringer må gjøres i Makeplans.
           not_activated: Ikke aktivert
+          past: Tidligere bestillinger
           past_html: 'Tidligere bestillinger: %{link}'
-        icalfeed: 'iCalendar-feed:'
+        icalfeed: iCalendar-feed
+        integrations: Integrasjoner
+        mail_notification: E-post
+        max_workload_points: Maks belastning
+        max_workload_points_unit: poeng per dag
+        none: Ingen
+        notifications: Varsler
         offers: 'Tilbyr følgende tjenester på bookingsiden:'
+        provider_opening_hours: egne åpningstider
         room_display:
           activated: Møteromsvisning er aktivert.
           code: Kode
           disable: Deaktiver møteromsvisning
+          disable_confirm: Deaktivere møteromsvisning? Skjermer som viser rommet slutter å virke.
           enable: Aktiver møteromsvisning
+          enable_confirm: Aktivere møteromsvisning? Visningen blir offentlig tilgjengelig.
           generate_code: Generer oppsettskode
+          generate_code_confirm: Generere ny oppsettskode?
           header: Møteromsvisning
           info: En offentlig visning for dette rommet som viser status og kommende reservasjoner. Passer for en skjerm montert utenfor rommet.
           not_activated: Ikke aktivert
           show_link: Vis møteromsvisning lenke
+        services: Tjenester
+        sharing: Deling og visning
+        sms_notification: SMS
+        timestamps: Opprettet %{created} · Sist endret %{updated}
+        unlimited: Ubegrenset
+        unloc_locks:
+          one: 1 lås
+          other: "%{count} låser"
+        zoom_user_selected: Valgt
     services:
       availability:
         header: Tilgjengelighet for %{title}
@@ -1632,28 +1672,42 @@ nb:
         description: Dra og slipp tjenester for å endre rekkefølgen de vises på bookingsiden. Tjenester uten rekkefølgeverdi vil vises sist, sortert alfabetisk.
         header: Tjenesterekkefølge
       show:
+        account_value: "(kontoinnstilling)"
+        automatic: Automatisk
         availability: Tilgjengelighet pr tilbyder
-        billing_period: 'Fornyelsesperiode:'
-        custom_data: 'Egendefinerte felter:'
+        billing_period: Fornyelsesperiode
+        booking: Booking
+        booking_site: Bookingside
+        capacity: Kapasitet
+        custom_data: Egendefinerte felter
         days:
           one: dag
           other: dager
-        description: 'Beskrivelse:'
+        description: Beskrivelse
+        integrations: Integrasjoner
         interval: Varighet
+        link: Lenke
         linked_services_all: Alle tjenester
         manage_priority: Administrer prioritet
         minutes: minutter
         never_expires: Utløper aldri
         no_providers: 'OBS: Denne tjenesten tilbys ikke av noen ressurser og vil derfor ikke vises på bookingsiden. Klikk her for å legge til tilbydere.'
+        none: Ingen
         not_in_category: 'OBS: Du benytter kategorier på bookingsiden og denne tjenesten er ikke lagt til i en kategori. Denne tjenesten er derfor ikke synlig på bookingsiden. Klikk her for å administrere kategorier.'
-        offered: 'Tilbys av følgende ressurser:'
-        price: 'Pris:'
+        offered: Tilbys av
+        options: Valg
+        ordering: Bestilling og avbestilling
+        price: Pris
+        price_and_terms: Pris og vilkår
+        priority: Prioritet
         qr_code: QR-kode for kunder
-        quota: 'Antall reservasjoner inkludert:'
-        renewal_price: 'Fornyelsespris:'
+        quota: Antall reservasjoner inkludert
+        renewal_price: Fornyelsespris
+        resources: Ressurser
         show_on_booking_site: Åpne bookingsiden for denne tjenesten
         unlimited: Ubegrenset
-        validity: 'Gyldighet:'
+        validity: Gyldighet
+        waitlist: Venteliste
       slots:
         available: 'Ledige tidspunkt:'
         next_available: 'Neste ledige dato:'
@@ -1784,9 +1838,16 @@ nb:
       list_menu:
         list: Brukere
       show:
+        added: Lagt til %{date}
         remove_access: Fjern bruker
         remove_access_confirm: Er du sikker på at du vil fjerne tilgangen til denne brukeren?
+        user: Bruker
     web_hooks:
       index:
         app_secret_info_html: Hemmelige kode for å verifisere webhooks
         header: Webhooks
+      show:
+        active: Aktiv
+        last_failure: Siste feil
+        timestamps: Opprettet %{created} · Sist endret %{updated}
+        web_hook: Webhook
