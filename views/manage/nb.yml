@@ -375,6 +375,21 @@ nb:
         header: API
         info_html: Kontakt kundeservice for hjelp. Dokumentasjon finnes på <a href="https://developer.makeplans.com" target="_blank" class="link-external">https://developer.makeplans.com</a>.
         not_enabled: Ikke aktivert
+      booking_site:
+        edit:
+          headers:
+            design: Design for bookingsiden
+            forms: Skjema for bookingsiden
+            general: Generelle innstillinger for bookingsiden
+            rules: Regler for booking
+            texts: Tekster for bookingsiden
+        show:
+          descriptions:
+            design: Tema, logo og egen CSS
+            forms: Reservasjonsskjema og registreringsskjema for kunder
+            general: Tilgang, språk, verifisering og sporing
+            rules: Bookingperioder, venteliste, avbestilling og vilkår
+            texts: Bunntekst og meldinger på bookingsiden
       cancel:
         confirm_message: Siste sjanse. Er du helt sikker på at du vil slette kontoen med alle dine data?
         disable_link: Ja, jeg vil at alle mine data skal bli slettet.
@@ -430,12 +445,6 @@ nb:
         cancellation: Avbestillling
         cancellation_info: Avbestilling kan kun utføres før avbestillingsfristen. Reservasjoner som er forhåndsbetalt kan ikke avbestilles.
         cancellation_period_info: 'Skriv inn på engelsk. Tid er relatert til starttidspunkt for reservasjonen. Eks.: ''24 hours before'' (kun mulig å avbestille 24 timer før reservasjonen begynner). Hvis ingen avbestillingsfrist er spesifisert kan kunden avbestille helt frem til reservasjonen starter.'
-        descriptions:
-          design: Tema, logo og egen CSS
-          forms: Reservasjonsskjema og registreringsskjema for kunder
-          general: Tilgang, språk, verifisering og sporing
-          rules: Bookingperioder, venteliste, avbestilling og vilkår
-          texts: Bunntekst og meldinger på bookingsiden
         event_first_booking_period_info: 'Gjelder kun arrangementer. Skriv inn på engelsk. Tid er relatert til starttidspunkt for arrangementet. Eks.: ''2 weeks before'' (påmelding åpner to uker før arrangementet starter). Brukes som standard når nye arrangementer opprettes. Kan overstyres eller fjernes på hvert arrangement.'
         event_last_booking_period_info: 'Gjelder kun arrangementer. Skriv inn på engelsk. Tid er relatert til starttidspunkt for arrangementet. Eks.: ''2 hours before'' (påmelding stenger to timer før arrangementet starter). Brukes som standard når nye arrangementer opprettes. Kan overstyres eller fjernes på hvert arrangement.'
         first_bookable_period_info: 'Skriv inn på engelsk. Eks.: ''in two hours'' (første ledige tidspunkt er om to timer) eller ''08:00 tomorrow'' (første ledige tidspunkt er kl. 8 i morgen tidlig).'
@@ -481,16 +490,6 @@ nb:
           sms: SMS (anbefales)
           vipps: Vipps
         verification_methods_alt: 'Alternative metoder:'
-      edit_booking_site_design:
-        header: Design for bookingsiden
-      edit_booking_site_forms:
-        header: Skjema for bookingsiden
-      edit_booking_site_general:
-        header: Generelle innstillinger for bookingsiden
-      edit_booking_site_rules:
-        header: Regler for booking
-      edit_booking_site_texts:
-        header: Tekster for bookingsiden
       edit_communication:
         email: Epost
         header: Endre utgående kommunikasjon
