@@ -731,6 +731,12 @@ nb:
     menu_setup:
       addons: Tillegg
       billing: Betaling
+      booking_site:
+        design: Design
+        forms: Skjema
+        general: Generelt
+        rules: Regler
+        texts: Tekster
       bookingsite: Bookingside
       categories: Kategorier
       communication: Kommunikasjon

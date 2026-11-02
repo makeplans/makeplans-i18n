@@ -445,6 +445,12 @@ en:
         cancellation: Cancellation
         cancellation_info: Cancellation can only be performed before the cancellation period. Reservations that are prepaid cannot be cancelled.
         cancellation_period_info: 'Example: ''24 hours before'' (only possible to cancel 24 hours before the reservation starts). When setting a date you must enter the full year.'
+        descriptions:
+          design: Theme, logo and custom CSS
+          forms: Reservation form and customer registration form
+          general: Access, languages, verification and tracking
+          rules: Booking periods, waitlist, cancellation and terms
+          texts: Footer and messages on the booking site
         event_first_booking_period_info: 'For events only. Time is related to the start of the event. Example: ''2 weeks before'' (signups open two weeks before the event starts). Used as a default when creating new events. Each event can override or remove it.'
         event_last_booking_period_info: 'For events only. Time is related to the start of the event. Example: ''2 hours before'' (signups close two hours before the event starts). Used as a default when creating new events. Each event can override or remove it.'
         first_bookable_period_info: 'Example: ''in two hours'' (first available time is in two hours) or ''08:00 tomorrow'' (first available time is at 8AM tomorrow morning). When setting a date you must enter the full year.'
@@ -490,6 +496,16 @@ en:
           none: No verification (not recommended)
           sms: SMS (Recommended)
           vipps: Vipps
+      edit_booking_site_design:
+        header: Booking site design
+      edit_booking_site_forms:
+        header: Booking site forms
+      edit_booking_site_general:
+        header: General booking site settings
+      edit_booking_site_rules:
+        header: Booking rules
+      edit_booking_site_texts:
+        header: Booking site texts
       edit_communication:
         email: Email
         header: Modify outgoing comminication

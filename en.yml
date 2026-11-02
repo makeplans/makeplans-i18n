@@ -733,6 +733,12 @@ en:
     menu_setup:
       addons: Addons
       billing: Billing
+      booking_site:
+        design: Design
+        forms: Forms
+        general: General
+        rules: Rules
+        texts: Texts
       bookingsite: Booking site
       categories: Categories
       communication: Communication
