@@ -77,7 +77,6 @@ es:
           cancel: Cancelar
           cart: Carro
           menu: Menú
-        booking_site_footer: Sitio de reservas para %{name}
         cart: Carrito (%{count})
         close: Cerca
         get_support: Obtenga ayuda

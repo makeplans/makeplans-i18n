@@ -56,7 +56,6 @@ sv:
           cancel: Avboka
           cart: Kundvagn
           menu: Meny
-        booking_site_footer: Bokningssystem för %{name}
         close: Nära
         get_support: Få stöd
         menu: Meny

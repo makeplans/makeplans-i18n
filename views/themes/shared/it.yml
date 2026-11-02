@@ -63,6 +63,13 @@ it:
         payment_details_html: L'importo visualizzato è in %{currency}. Non memorizziamo i dati della tua carta di credito, ma li inviamo crittografati a %{provider} per l'elaborazione e l'archiviazione sicure.
         payment_received: "%{paid_amount} è stato pagato il %{paid_at}."
         save_card: Salva carta
+    layouts:
+      application:
+        alt:
+          footer_logo: Logo a piè di pagina
+        booking_site_footer: Sito di prenotazione per %{name}
+        made_by_tagline: Sistema intuitivo per la pianificazione, la prenotazione di appuntamenti e la registrazione agli eventi.
+        made_by_title: Prenotazione appuntamenti, programmazione e iscrizioni a eventi/corsi
     order_cart:
       checkout:
         cannot_use_coupon_for_gift_card: I codici sconto non possono essere utilizzati per l'acquisto di carte regalo.

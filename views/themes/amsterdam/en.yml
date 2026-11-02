@@ -161,8 +161,6 @@ en:
         demo_ended: The Makeplans demo has expired.
         footer:
           change_language: 'Change language:'
-          privacy_policy: Privacy policy
-          support: Support
         login: Your reservations
         meta:
           description: Online appointment booking and scheduling for %{name}

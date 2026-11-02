@@ -48,7 +48,6 @@ fr:
           account: Compte
           cancel: Annuler
           menu: Menu
-        booking_site_footer: Site de réservation pour %{name}
         close: Fermer
         get_support: Obtenir de l'aide
         menu: Menu

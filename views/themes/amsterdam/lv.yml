@@ -113,8 +113,6 @@ lv:
         authenticated: 'Esat pieteikušies kā: %{name}'
         demo_ended: Makeplans demonstrācijas termiņš ir beidzies.
         footer:
-          privacy_policy: Privātuma politika
-          support: Atbalsts
         login: Jūsu pieraksti
         meta:
           description: Tiešsaistes rezervācija %{name}

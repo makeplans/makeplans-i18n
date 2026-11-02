@@ -75,7 +75,6 @@ sq:
           cancel: Anulo
           cart: Shportë
           menu: Menu
-        booking_site_footer: Faqe rezervimesh për %{name}
         cart: Shportë (%{count})
         close: Mbyll
         get_support: Merrni mbështetje

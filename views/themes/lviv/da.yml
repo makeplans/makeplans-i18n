@@ -76,7 +76,6 @@ da:
           cancel: Ophæve
           cart: Indkøbskurv
           menu: Menu
-        booking_site_footer: Reservationssystem for %{name}
         cart: Indkøbskurv (%{count})
         close: Tæt
         get_support: Få støtte

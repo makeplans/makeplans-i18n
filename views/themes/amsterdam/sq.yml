@@ -161,8 +161,6 @@ sq:
         demo_ended: Demoja e Makeplans ka skaduar.
         footer:
           change_language: 'Ndrysho gjuhën:'
-          privacy_policy: Politika e privatësisë
-          support: Mbështetje
         login: Rezervimet tuaja
         meta:
           description: Rezervimi dhe caktimi i takimeve online për %{name}

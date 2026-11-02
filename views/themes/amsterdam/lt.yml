@@ -113,8 +113,6 @@ lt:
         authenticated: 'Prisijungėte kaip: %{name}'
         demo_ended: Makeplans demonstracinės versijos galiojimas baigėsi.
         footer:
-          privacy_policy: Privatumo politika
-          support: Parama
         login: Jūsų rezervacijos
         meta:
           description: Internetinis susitikimų rezervavimas %{name}

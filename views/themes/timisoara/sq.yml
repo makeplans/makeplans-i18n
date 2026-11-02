@@ -76,13 +76,8 @@ sq:
         value_placeholder: Jepni shumën
     layouts:
       application:
-        alt:
-          footer_logo: Logoja në fund të faqes
-        booking_site_footer: Faqe rezervimesh për %{name}
         cart: Shportë (%{count})
         login: Hyrje
-        made_by_tagline: Sistem i lehtë për t’u përdorur për caktimin e orareve, rezervimin e takimeve dhe regjistrimin në ngjarje.
-        made_by_title: Rezervimi i takimeve, caktimi i orareve dhe regjistrimet në evente/klasa
         privacy: Politika e privatësisë
         profile: Profili
         support: Mbështetje

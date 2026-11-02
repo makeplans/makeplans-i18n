@@ -75,7 +75,6 @@ it:
           cancel: Annulla
           cart: Carrello
           menu: Menu
-        booking_site_footer: Sito di prenotazione per %{name}
         cart: Carrello (%{count})
         close: Chiudi
         get_support: Ottieni supporto

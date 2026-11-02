@@ -103,7 +103,12 @@ sv:
         header: Köp presentkort
     layouts:
       application:
+        alt:
+          footer_logo: Sidfotslogotyp
+        booking_site_footer: Bokningssida för %{name}
         cart: Kundvagn (%{count})
+        made_by_tagline: Användarvänligt system för bokning av tider och registrering.
+        made_by_title: Tidsbokning och registreringar
     order_cart:
       checkout:
         applied_coupon: Använd rabattkod

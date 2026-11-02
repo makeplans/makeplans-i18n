@@ -124,7 +124,12 @@ es:
         header: Comprar tarjeta de regalo
     layouts:
       application:
+        alt:
+          footer_logo: Logotipo de pie de página
+        booking_site_footer: Sitio de reservas para %{name}
         cart: Carrito (%{count})
+        made_by_tagline: Sistema fácil de usar para programación, reserva de citas y registro de eventos.
+        made_by_title: Reserva de citas, programación e inscripciones a eventos/clases
     order_cart:
       checkout:
         applied_coupon: Descuento aplicado

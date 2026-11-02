@@ -62,12 +62,7 @@ cs:
         value_placeholder: Zadejte částku
     layouts:
       application:
-        alt:
-          footer_logo: Logo v zápatí
-        booking_site_footer: Rezervační stránka pro %{name}
         login: Přihlášení
-        made_by_tagline: Uživatelsky přívětivý systém pro plánování, rezervaci schůzek a registraci na akce.
-        made_by_title: Rezervace schůzek, plánování a registrace na akce/kurzy
         privacy: Zásady ochrany osobních údajů
         profile: Profil
         support: Podpora

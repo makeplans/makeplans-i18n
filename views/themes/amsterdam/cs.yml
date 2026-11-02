@@ -161,8 +161,6 @@ cs:
         demo_ended: Ukázka Makeplans vypršela.
         footer:
           change_language: 'Změnit jazyk:'
-          privacy_policy: Zásady ochrany osobních údajů
-          support: Podpěra, podpora
         login: Vaše rezervace
         meta:
           description: Online rezervace schůzek pro %{name}

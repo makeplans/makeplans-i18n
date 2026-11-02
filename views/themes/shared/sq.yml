@@ -63,6 +63,13 @@ sq:
         payment_details_html: Shuma e shfaqur është në %{currency}. Ne nuk i ruajmë të dhënat e kartës suaj të kreditit, por i dërgojmë të koduara te %{provider} për përpunim dhe ruajtje të sigurt.
         payment_received: "%{paid_amount} u pagua më %{paid_at}."
         save_card: Ruaj kartën
+    layouts:
+      application:
+        alt:
+          footer_logo: Logoja në fund të faqes
+        booking_site_footer: Faqe rezervimesh për %{name}
+        made_by_tagline: Sistem i lehtë për t’u përdorur për caktimin e orareve, rezervimin e takimeve dhe regjistrimin në ngjarje.
+        made_by_title: Rezervimi i takimeve, caktimi i orareve dhe regjistrimet në evente/klasa
     order_cart:
       checkout:
         cannot_use_coupon_for_gift_card: Kodet e zbritjes nuk mund të përdoren për blerjet me kartë dhurate

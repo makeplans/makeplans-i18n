@@ -95,13 +95,8 @@ es:
         value_placeholder: Introduzca la cantidad
     layouts:
       application:
-        alt:
-          footer_logo: Logotipo de pie de página
-        booking_site_footer: Sitio de reservas para %{name}
         cart: Carrito (%{count})
         login: Acceso
-        made_by_tagline: Sistema fácil de usar para programación, reserva de citas y registro de eventos.
-        made_by_title: Reserva de citas, programación e inscripciones a eventos/clases
         privacy: Política de privacidad
         profile: Perfil
         support: Apoyo

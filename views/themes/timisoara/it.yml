@@ -76,13 +76,8 @@ it:
         value_placeholder: Inserisci l'importo
     layouts:
       application:
-        alt:
-          footer_logo: Logo a piè di pagina
-        booking_site_footer: Sito di prenotazione per %{name}
         cart: Carrello (%{count})
         login: Accedi
-        made_by_tagline: Sistema intuitivo per la pianificazione, la prenotazione di appuntamenti e la registrazione agli eventi.
-        made_by_title: Prenotazione appuntamenti, programmazione e iscrizioni a eventi/corsi
         privacy: Informativa sulla privacy
         profile: Profilo
         support: Supporto

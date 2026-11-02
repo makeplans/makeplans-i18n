@@ -124,7 +124,12 @@ de:
         header: Geschenkkarte kaufen
     layouts:
       application:
+        alt:
+          footer_logo: Footer-Logo
+        booking_site_footer: Buchungsseite für %{name}
         cart: Warenkorb (%{count})
+        made_by_tagline: Benutzerfreundliches System für Terminplanung, Terminbuchung und Veranstaltungsregistrierung.
+        made_by_title: Terminbuchung, Terminplanung und Anmeldung zu Veranstaltungen/Kursen
     order_cart:
       checkout:
         applied_coupon: Angewendeter Rabatt

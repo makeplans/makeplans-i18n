@@ -52,7 +52,6 @@ nb:
           cancel: Kanseller
           cart: Handlekurv
           menu: Meny
-        booking_site_footer: Reservasjonssystem for %{name}
         close: Lukk
         get_support: Få støtte
         menu: Meny

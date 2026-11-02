@@ -100,7 +100,12 @@ da:
         header: Kjøp gavekort
     layouts:
       application:
+        alt:
+          footer_logo: Fodtekstlogo
+        booking_site_footer: Bookingside for %{name}
         cart: Handlekurv (%{count})
+        made_by_tagline: Brugervenligt system til booking af aftaler og tilmelding.
+        made_by_title: Tidsbestilling og registreringer
     order_cart:
       checkout:
         applied_coupon: Brukt rabattkode

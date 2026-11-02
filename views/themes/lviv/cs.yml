@@ -52,7 +52,6 @@ cs:
           cancel: Zrušit
           cart: Vozík
           menu: Menu
-        booking_site_footer: Rezervační stránka pro %{name}
         close: Blízko
         get_support: Získejte podporu
         menu: Menu

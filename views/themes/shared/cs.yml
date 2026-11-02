@@ -124,7 +124,12 @@ cs:
         header: Koupit dárkovou kartu
     layouts:
       application:
+        alt:
+          footer_logo: Logo v zápatí
+        booking_site_footer: Rezervační stránka pro %{name}
         cart: Košík (%{count})
+        made_by_tagline: Uživatelsky přívětivý systém pro plánování, rezervaci schůzek a registraci na akce.
+        made_by_title: Rezervace schůzek, plánování a registrace na akce/kurzy
     order_cart:
       checkout:
         applied_coupon: Uplatněná sleva

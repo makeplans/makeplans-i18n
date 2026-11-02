@@ -53,12 +53,7 @@ fr:
         time: Temps
     layouts:
       application:
-        alt:
-          footer_logo: Logo de pied de page
-        booking_site_footer: Site de réservation pour %{name}
         login: Se connecter
-        made_by_tagline: Système convivial de planification, de prise de rendez-vous et d'inscription à des événements.
-        made_by_title: Prise de rendez-vous, planification et inscriptions aux événements/cours
         privacy: Politique de confidentialité
         profile: Profil
         support: Soutien

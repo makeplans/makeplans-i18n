@@ -162,8 +162,6 @@ nb:
         demo_ended: Prøveperioden for Makeplans er over.
         footer:
           change_language: 'Endre språk:'
-          privacy_policy: Personvern
-          support: Kundeservice
         login: Din side
         meta:
           description: Nettbasert timebestilling for %{name}

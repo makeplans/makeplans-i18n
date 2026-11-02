@@ -163,8 +163,6 @@ it:
         demo_ended: La demo di Makeplans è scaduta.
         footer:
           change_language: 'Cambia lingua:'
-          privacy_policy: Informativa sulla privacy
-          support: Supporto
         login: Le tue prenotazioni
         meta:
           description: Prenotazione e pianificazione di appuntamenti online per %{name}

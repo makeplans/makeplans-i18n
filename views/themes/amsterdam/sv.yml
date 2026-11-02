@@ -163,8 +163,6 @@ sv:
         demo_ended: Provperioden hos Makeplans har upphört.
         footer:
           change_language: 'Ändra språk:'
-          privacy_policy: Personuppgiftsbehandling
-          support: Kundservice
         login: Din sida
         meta:
           description: Onlinebokning for %{name}

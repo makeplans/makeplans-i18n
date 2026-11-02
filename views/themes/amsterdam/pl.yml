@@ -110,8 +110,6 @@ pl:
         authenticated: 'Zalogowano jako: %{name}'
         demo_ended: Wersja demo Makeplans wygasła.
         footer:
-          privacy_policy: Polityka prywatności
-          support: Pomoc
         login: Twoje rezerwacje
         meta:
           description: Rezerwacja terminów online dla %{name}

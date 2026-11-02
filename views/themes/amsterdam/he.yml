@@ -113,8 +113,6 @@ he:
         authenticated: 'מחובר כ: %{name}'
         demo_ended: ההפגנה של Makeplans פג.
         footer:
-          privacy_policy: מדיניות הפרטיות
-          support: תמיכה
         login: ההזמנות שלך
         meta:
           description: הזמנת פגישה מקוונת עבור %{name}

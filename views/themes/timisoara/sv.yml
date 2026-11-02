@@ -74,12 +74,7 @@ sv:
         value_placeholder: Ange belopp
     layouts:
       application:
-        alt:
-          footer_logo: Sidfotslogotyp
-        booking_site_footer: Bokningssida för %{name}
         login: Inloggning
-        made_by_tagline: Användarvänligt system för bokning av tider och registrering.
-        made_by_title: Tidsbokning och registreringar
         privacy: Integritetspolicy
         profile: Profil
         support: Kundservice

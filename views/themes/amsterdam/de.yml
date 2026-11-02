@@ -161,8 +161,6 @@ de:
         demo_ended: Die Makeplans-Demoversion ist abgelaufen.
         footer:
           change_language: 'Sprache ändern:'
-          privacy_policy: Datenschutzerklärung
-          support: Support
         login: Ihre Reservierungen
         meta:
           description: Online-Terminbuchung und -planung für %{name}

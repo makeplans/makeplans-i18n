@@ -87,13 +87,8 @@ de:
         value_placeholder: Betrag eingeben
     layouts:
       application:
-        alt:
-          footer_logo: Footer-Logo
-        booking_site_footer: Buchungsseite für %{name}
         cart: Warenkorb (%{count})
         login: Anmelden
-        made_by_tagline: Benutzerfreundliches System für Terminplanung, Terminbuchung und Veranstaltungsregistrierung.
-        made_by_title: Terminbuchung, Terminplanung und Anmeldung zu Veranstaltungen/Kursen
         privacy: Datenschutzerklärung
         profile: Profil
         support: Support

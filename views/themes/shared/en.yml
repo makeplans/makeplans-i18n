@@ -124,7 +124,14 @@ en:
         header: Buy Gift Card
     layouts:
       application:
+        alt:
+          footer_logo: Footer logo
+        booking_site_footer: Booking site for %{name}
         cart: Cart (%{count})
+        footer:
+          terms: Terms
+        made_by_tagline: User-friendly system for scheduling, appointment booking and event registration.
+        made_by_title: Appointment booking, scheduling and event/class signups
     order_cart:
       checkout:
         applied_coupon: Applied Discount
@@ -340,3 +347,8 @@ en:
         no_availability: No availability
         no_selection: Please select an available time.
         time_zone_differ_info: All times are shown in %{time_zone}.
+    terms:
+      show:
+        makeplans_info: This booking site is provided by MakePlans.
+        makeplans_terms: MakePlans terms and privacy policy
+        title: Terms

@@ -124,7 +124,14 @@ nb:
         header: Kjøp gavekort
     layouts:
       application:
+        alt:
+          footer_logo: Bunntekst logo
+        booking_site_footer: Bookingside for %{name}
         cart: Handlekurv (%{count})
+        footer:
+          terms: Vilkår
+        made_by_tagline: Brukervennlig system for timebestilling og påmelding.
+        made_by_title: Timebestilling og påmeldinger
     order_cart:
       checkout:
         applied_coupon: Brukt rabattkode
@@ -340,3 +347,8 @@ nb:
         no_availability: Ingen tilgjengelige tidspunkt
         no_selection: Vennligst velg et ledig tidspunkt.
         time_zone_differ_info: Alle tidspunkt er i tidssone %{time_zone}.
+    terms:
+      show:
+        makeplans_info: Denne bookingsiden leveres av MakePlans.
+        makeplans_terms: Vilkår og personvern for MakePlans
+        title: Vilkår

@@ -94,13 +94,8 @@ da:
         value_placeholder: Indtast beløb
     layouts:
       application:
-        alt:
-          footer_logo: Fodtekstlogo
-        booking_site_footer: Bookingside for %{name}
         cart: Indkøbskurv (%{count})
         login: Log ind
-        made_by_tagline: Brugervenligt system til booking af aftaler og tilmelding.
-        made_by_title: Tidsbestilling og registreringer
         privacy: Privatlivspolitik
         profile: Profil
         support: Kundeservice

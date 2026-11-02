@@ -154,8 +154,6 @@ fr:
         demo_ended: La démo Makeplans a expiré.
         footer:
           change_language: 'Changer de langue :'
-          privacy_policy: Politique de confidentialité
-          support: Soutien
         login: Vos réservations
         meta:
           description: Prise de rendez-vous en ligne pour %{name}

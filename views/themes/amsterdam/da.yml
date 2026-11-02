@@ -161,8 +161,6 @@ da:
         demo_ended: Prøveperioden for Makeplans er forbi.
         footer:
           change_language: 'Skift sprog:'
-          privacy_policy: Privatliv
-          support: Kundeservice
         login: Din side
         meta:
           description: Online tidsbestilling til %{name}

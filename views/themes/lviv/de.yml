@@ -77,7 +77,6 @@ de:
           cancel: Abbrechen
           cart: Warenkorb
           menu: Menü
-        booking_site_footer: Buchungsseite für %{name}
         cart: Warenkorb (%{count})
         close: Schließen
         get_support: Hilfe erhalten

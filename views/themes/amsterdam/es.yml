@@ -163,8 +163,6 @@ es:
         demo_ended: La demostración de Makeplans ha expirado.
         footer:
           change_language: 'Cambiar idioma:'
-          privacy_policy: Política de privacidad
-          support: Apoyo
         login: Tus reservas
         meta:
           description: Reserva de cita online para %{name}
