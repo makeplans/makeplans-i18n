@@ -33,9 +33,6 @@ da:
         awaiting_confirmation:
           one: "%{count}-reservation afventer godkendelse."
           other: reservationer på %{count} afventer godkendelse.
-        awaiting_status:
-          one: "%{count} reservation mangler status."
-          other: "%{count} reservationer mangler status."
         busy: Optaget
         do_filtering: Aktivér filtrering
         filter: Filtrering
@@ -1052,7 +1049,6 @@ da:
         filter: Filtrering
         headline: Kunder
         send_sms: Send SMS
-        whatsapp_replies: WhatsApp-svar
       show:
         add_child: Tilføj tilknyttet kunde
         all_day: Hele dagen

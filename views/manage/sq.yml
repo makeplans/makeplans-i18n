@@ -30,9 +30,6 @@ sq:
         awaiting_confirmation:
           one: "%{count} rezervim për miratim."
           other: "%{count} rezervime për miratim."
-        awaiting_status:
-          one: "%{count} rezervim pa status."
-          other: "%{count} rezervime nuk kanë status."
         busy: I zënë
         do_filtering: Aktivizo filtrin
         filter: Filtrim

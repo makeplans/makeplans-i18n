@@ -30,9 +30,6 @@ cs:
         services: Služby
       list:
         all_day: Celý den
-        awaiting_status:
-          one: Chybí stav rezervace %{count}.
-          other: Chybí stav rezervací %{count}.
         busy: Zaneprázdněný
         filter: Filtrování
         nav:
@@ -1046,7 +1043,6 @@ cs:
         filter: Filtrování
         headline: Zákazníci
         send_sms: Odeslat SMS
-        whatsapp_replies: Odpovědi na WhatsAppu
       show:
         add_child: Přidat připojeného zákazníka
         all_day: Celý den

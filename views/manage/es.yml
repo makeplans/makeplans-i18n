@@ -33,9 +33,6 @@ es:
         awaiting_confirmation:
           one: "%{count} reservación para aprobación."
           other: "%{count} reservas para aprobación."
-        awaiting_status:
-          one: "%{count} estado de reserva faltante."
-          other: "%{count} reservas sin estado."
         busy: Ocupado
         do_filtering: Activar filtro
         filter: Filtración
@@ -1066,7 +1063,6 @@ es:
         filter: Filtración
         headline: Clientes
         send_sms: Enviar SMS
-        whatsapp_replies: Respuestas de WhatsApp
       show:
         add_child: Agregar cliente conectado
         all_day: Todo el día

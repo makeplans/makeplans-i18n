@@ -30,9 +30,6 @@ en:
         services: Services
       list:
         all_day: All day
-        awaiting_status:
-          one: "%{count} reservation missing status."
-          other: "%{count} reservations missing status."
         busy: Busy
         extensor_unconfirmed_warning: Extensor Online Booking syncs these reservations. Do not confirm them manually.
         filter: Filtering
@@ -55,6 +52,7 @@ en:
         state: State
         status: Attendance status
         tab_awaiting_confirmation: Awaiting confirmation
+        tab_missing_status: Missing status
         tab_waitlist: Waiting list
         waitlist_note: "+%{count} on waiting list"
     billing:
@@ -347,6 +345,8 @@ en:
         send: Send
         window_closed: WhatsApp only allows replies within 24 hours of the customer's last message. Ask the customer to write to you again on WhatsApp, or contact them by SMS, email or phone.
       index:
+        do_filtering: Filter
+        filter: Channel
         headline: WhatsApp replies
         headline_sms: SMS replies
       replies:
@@ -744,12 +744,14 @@ en:
         valid_until: Valid until
     orders:
       index:
+        activate_order_flow: Turn on order flow
         all_states: All statuses
         created_at: Created
         customer: Customer
         do_filtering: Filter
         filter: Filter
         headline: Orders
+        order_flow_disabled: Order flow is not turned on, so customers cannot place orders on the booking site.
         order_id: Order
         status: Status
         total: Total
@@ -1108,8 +1110,6 @@ en:
         filter: Filtering
         headline: Customers
         send_sms: Send SMS
-        sms_replies: SMS replies
-        whatsapp_replies: WhatsApp replies
       show:
         add_child: Add connected customer
         all_day: All day

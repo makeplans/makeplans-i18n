@@ -33,9 +33,6 @@ sv:
         awaiting_confirmation:
           one: "%{count}-reservation väntar på godkännande."
           other: "%{count}-reservationer väntar på godkännande."
-        awaiting_status:
-          one: Status för %{count}-reservationen saknas.
-          other: "%{count} reservationer saknar status."
         busy: Upptagen
         do_filtering: Aktivera filter
         filter: Filtrering
@@ -1049,7 +1046,6 @@ sv:
         filter: Filtrering
         headline: Kunder
         send_sms: Skicka sms
-        whatsapp_replies: WhatsApp-svar
       show:
         add_child: Lägg till associerad kund
         all_day: Hela dagen

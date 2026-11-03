@@ -30,9 +30,6 @@ nb:
         services: Tjenester
       list:
         all_day: Hele dagen
-        awaiting_status:
-          one: "%{count} reservasjon mangler status."
-          other: "%{count} reservasjoner mangler status."
         busy: Opptatt
         extensor_unconfirmed_warning: Extensor Online Booking synkroniserer disse reservasjonene. Ikke bekreft dem manuelt.
         filter: Filtrering
@@ -55,6 +52,7 @@ nb:
         state: Status
         status: Oppmøtestatus
         tab_awaiting_confirmation: Venter på bekreftelse
+        tab_missing_status: Mangler status
         tab_waitlist: Venteliste
         waitlist_note: "+%{count} på venteliste"
     billing:
@@ -347,6 +345,8 @@ nb:
         send: Send
         window_closed: WhatsApp tillater kun svar innen 24 timer etter kundens siste melding. Be kunden skrive til deg igjen på WhatsApp, eller kontakt kunden på SMS, epost eller telefon.
       index:
+        do_filtering: Filtrer
+        filter: Kanal
         headline: WhatsApp-svar
         headline_sms: SMS-svar
       replies:
@@ -744,12 +744,14 @@ nb:
         valid_until: Gyldig til
     orders:
       index:
+        activate_order_flow: Slå på ordreflyt
         all_states: Alle statuser
         created_at: Opprettet
         customer: Kunde
         do_filtering: Filtrer
         filter: Filter
-        headline: Bestillinger
+        headline: Ordre
+        order_flow_disabled: Ordreflyt er ikke slått på, så kunder kan ikke legge inn bestillinger på bookingsiden.
         order_id: Bestilling
         status: Status
         total: Totalt
@@ -1096,12 +1098,14 @@ nb:
         immediately: øyeblikkelig
     orders:
       index:
+        activate_order_flow: Slå på ordreflyt
         all_states: Alle statuser
         created_at: Opprettet
         customer: Kunde
         do_filtering: Filtrer
         filter: Filter
-        headline: Bestillinger
+        headline: Ordre
+        order_flow_disabled: Ordreflyt er ikke slått på, så kunder kan ikke legge inn bestillinger på bookingsiden.
         order_id: Bestilling
         status: Status
         total: Totalt
@@ -1171,8 +1175,6 @@ nb:
         filter: Filtrering
         headline: Kunder
         send_sms: Send SMS
-        sms_replies: SMS-svar
-        whatsapp_replies: WhatsApp-svar
       show:
         add_child: Legg til tilknyttet kunde
         all_day: Hele dagen

@@ -33,9 +33,6 @@ de:
         awaiting_confirmation:
           one: "%{count} Reservierung zur Genehmigung."
           other: "%{count} Reservierungen zur Genehmigung."
-        awaiting_status:
-          one: "%{count} Reservierungsstatus fehlt."
-          other: "%{count} Reservierungen haben keinen Status."
         busy: Beschäftigt
         do_filtering: Filter aktivieren
         filter: Filterung
@@ -1056,7 +1053,6 @@ de:
         filter: Filterung
         headline: Kunden
         send_sms: SMS senden
-        whatsapp_replies: WhatsApp-Antworten
       show:
         add_child: Vernetzten Kunden hinzufügen
         all_day: Den ganzen Tag

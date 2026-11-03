@@ -30,9 +30,6 @@ it:
         awaiting_confirmation:
           one: "%{count} prenotazione in attesa di approvazione."
           other: "%{count} prenotazioni in attesa di approvazione."
-        awaiting_status:
-          one: "%{count} prenotazione con stato mancante."
-          other: "%{count} prenotazioni senza stato."
         busy: Occupato
         do_filtering: Attiva filtro
         filter: Filtraggio
