@@ -7,11 +7,10 @@ en:
       body: |-
         Hi,
 
-        Your request for reservation of %{title} %{time_range} has been recorded.
+        We have received your request to reserve %{title} %{time_range}.
 
-        The reservation is not confirmed until it has been approved.
-        You will receive an e-mail when the reservation is processed.
-      subject: New request for reservation
+        Your reservation is not confirmed yet. You will receive an email when we have processed your request.
+      subject: We have received your request
     cancellation:
       header: Hi %{name}
       info: Your reservation for %{title} at %{time_range} has been cancelled.
@@ -121,7 +120,7 @@ en:
       booking_type_attendance: |-
         Signup changed for {{ booking.event.full_title }} {{ booking.time_range }} by {{ booking.person.name }}.
         Makeplans
-    awaiting_confirmation: You have made a request for reservation of {{ booking.title }} {{ booking.booked_from }}. We will message you when we process your request.
+    awaiting_confirmation: We have received your request to reserve {{ booking.title }} {{ booking.booked_from }}. Your reservation is not confirmed yet. We will message you when we have processed your request.
     cancellation: Your reservation on {{ booking.booked_from }} has been cancelled.
     confirmation: You have made a reservation for {{ booking.title }} {{ booking.booked_from }}.
     declined: Your request for reservation of {{ booking.title }} {{ booking.booked_from }} was not approved. Please try again.

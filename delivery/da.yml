@@ -6,10 +6,11 @@ da:
     awaiting_confirmation:
       body: |-
         Hej,
-         Din anmodning om at reservere %{title} %{time_range} er blevet registreret.
-         Din reservation er ikke bekræftet, før den er godkendt.
-        Du modtager en e-mail, når din anmodning er blevet behandlet.
-      subject: Ny anmodning om reservation
+
+        Vi har modtaget din anmodning om at reservere %{title} %{time_range}.
+
+        Din reservation er ikke bekræftet endnu. Du modtager en e-mail, når vi har behandlet din anmodning.
+      subject: Vi har modtaget din anmodning
     cancellation:
       header: Hej %{name}
       info: Din reservation hos os %{title} %{time_range} er blevet annulleret.
@@ -119,7 +120,7 @@ da:
       booking_type_attendance: |-
         Ændring af registrering for {{ booking.event.full_title }} {{ booking.time_range }} af {{ booking.person.name }}.
         Lav planer
-    awaiting_confirmation: Du har indsendt en reservationsanmodning for {{ booking.title }} {{ booking.booked_from }}. Du vil modtage en sms, når den er blevet behandlet.
+    awaiting_confirmation: Vi har modtaget din anmodning om at reservere {{ booking.title }} {{ booking.booked_from }}. Din reservation er ikke bekræftet endnu. Du modtager en sms, når vi har behandlet din anmodning.
     cancellation: Din reservation hos os {{booking.booked_from}} er blevet annulleret.
     confirmation: Du har reserveret {{booking.title}} {{booking.booked_from}}.
     declined: Din anmodning om reservation {{booking.title}} {{booking.booked_from}} blev desværre ikke godkendt. Prøv en anden gang.

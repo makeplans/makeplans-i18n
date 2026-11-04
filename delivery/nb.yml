@@ -7,11 +7,10 @@ nb:
       body: |-
         Hei,
 
-        Din forespørsel for å reservere %{title} %{time_range} har blitt registert.
+        Vi har mottatt forespørselen din om å reservere %{title} %{time_range}.
 
-        Din reservasjon er ikke bekrefted før den er godkjent.
-        Du vil motta e-post når din forespørsel er behandlet.
-      subject: Ny forespørsel for å reservere
+        Reservasjonen er ikke bekreftet ennå. Du får en e-post når vi har behandlet forespørselen.
+      subject: Vi har mottatt forespørselen din
     cancellation:
       header: Hei %{name}
       info: Din reservasjon hos oss %{title} %{time_range} har blitt kansellert.
@@ -121,7 +120,7 @@ nb:
       booking_type_attendance: |-
         Endring av påmelding for {{ booking.event.full_title }} {{ booking.time_range }} av {{ booking.person.name }}.
         Makeplans
-    awaiting_confirmation: Du har lagt inn forespørsel for reservasjon av {{ booking.title }} {{ booking.booked_from }}. Du vil motta SMS når den er ferdig behandlet.
+    awaiting_confirmation: Vi har mottatt forespørselen din om å reservere {{ booking.title }} {{ booking.booked_from }}. Reservasjonen er ikke bekreftet ennå. Du får en SMS når vi har behandlet forespørselen.
     cancellation: Din reservasjon hos oss {{ booking.booked_from }} har blitt kansellert.
     confirmation: Du har reservert {{ booking.title }} {{ booking.booked_from }}.
     declined: Din forespørsel for reservasjon av {{ booking.title }} {{ booking.booked_from }} ble dessverre ikke godkjent. Prøv et annet tidspunkt.

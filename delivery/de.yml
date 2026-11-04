@@ -7,11 +7,10 @@ de:
       body: |-
         Hallo,
 
-        Ihre Reservierungsanfrage für %{title} %{time_range} wurde erfasst.
+        wir haben Ihre Reservierungsanfrage für %{title} %{time_range} erhalten.
 
-        Die Reservierung ist erst nach Genehmigung bestätigt.
-        Sie erhalten eine E-Mail, sobald die Reservierung bearbeitet wurde.
-      subject: Neue Reservierungsanfrage
+        Ihre Reservierung ist noch nicht bestätigt. Sie erhalten eine E-Mail, sobald wir Ihre Anfrage bearbeitet haben.
+      subject: Wir haben Ihre Anfrage erhalten
     cancellation:
       header: Hallo %{name}
       info: Ihre Reservierung für %{title} am %{time_range} wurde storniert.
@@ -121,7 +120,7 @@ de:
       booking_type_attendance: |-
         Anmeldung geändert für {{ booking.event.full_title }} {{ booking.time_range }} durch {{ booking.person.name }}.
         Makeplans
-    awaiting_confirmation: Sie haben eine Reservierungsanfrage für {{ booking.title }} {{ booking.booked_from }} gestellt. Wir werden Sie benachrichtigen, sobald wir Ihre Anfrage bearbeitet haben.
+    awaiting_confirmation: Wir haben Ihre Reservierungsanfrage für {{ booking.title }} {{ booking.booked_from }} erhalten. Ihre Reservierung ist noch nicht bestätigt. Wir benachrichtigen Sie, sobald wir Ihre Anfrage bearbeitet haben.
     cancellation: Ihre Reservierung am {{ booking.booked_from }} wurde storniert.
     confirmation: Sie haben eine Reservierung für {{ booking.title }} {{ booking.booked_from }} vorgenommen.
     declined: Ihre Reservierungsanfrage für {{ booking.title }} {{ booking.booked_from }} wurde nicht genehmigt. Bitte versuchen Sie es erneut.

@@ -7,11 +7,10 @@ it:
       body: |-
         Ciao,
 
-        La tua richiesta di prenotazione di %{title} %{time_range} è stata registrata.
+        Abbiamo ricevuto la tua richiesta di prenotazione di %{title} %{time_range}.
 
-        La prenotazione non è confermata finché non viene approvata.
-        Riceverai un'email quando la prenotazione sarà elaborata.
-      subject: Nuova richiesta di prenotazione
+        La tua prenotazione non è ancora confermata. Riceverai un'email quando avremo elaborato la tua richiesta.
+      subject: Abbiamo ricevuto la tua richiesta
     cancellation:
       header: Ciao %{name}
       info: La tua prenotazione per %{title} al %{time_range} è stata annullata.
@@ -102,7 +101,7 @@ it:
       booking_type_attendance: |-
         Iscrizione modificata per {{ booking.event.full_title }} {{ booking.time_range }} da {{ booking.person.name }}.
         Makeplans
-    awaiting_confirmation: Hai effettuato una richiesta di prenotazione per {{ booking.title }} {{ booking.booked_from }}. Ti invieremo un messaggio non appena la tua richiesta sarà elaborata.
+    awaiting_confirmation: Abbiamo ricevuto la tua richiesta di prenotazione per {{ booking.title }} {{ booking.booked_from }}. La tua prenotazione non è ancora confermata. Ti invieremo un messaggio quando avremo elaborato la tua richiesta.
     cancellation: La tua prenotazione del {{ booking.booked_from }} è stata annullata.
     confirmation: Hai effettuato una prenotazione per {{ booking.title }} {{ booking.booked_from }}.
     declined: La tua richiesta di prenotazione di {{ booking.title }} {{ booking.booked_from }} non è stata approvata. Riprova.

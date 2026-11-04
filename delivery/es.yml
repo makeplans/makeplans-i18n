@@ -6,10 +6,11 @@ es:
     awaiting_confirmation:
       body: |-
         Hola,
-         Su solicitud de reserva de %{title} %{time_range} ha sido registrada.
-         La reserva no está confirmada hasta que haya sido aprobada.
-        Recibirá un correo electrónico cuando se procese la reserva.
-      subject: Nueva solicitud de reserva
+
+        Hemos recibido su solicitud de reserva de %{title} %{time_range}.
+
+        Su reserva aún no está confirmada. Recibirá un correo electrónico cuando hayamos procesado su solicitud.
+      subject: Hemos recibido su solicitud
     cancellation:
       header: Hola %{name}
       info: Su reservación para %{title} en %{time_range} ha sido cancelada.
@@ -119,7 +120,7 @@ es:
       booking_type_attendance: |-
         El registro se modificó para {{ booking.event.full_title }} {{ booking.time_range }} por {{ booking.person.name }}.
         Makeplans
-    awaiting_confirmation: Has solicitado la reserva de {{ booking.title }} {{ booking.booked_from }}. Te enviaremos un mensaje cuando procesemos tu solicitud.
+    awaiting_confirmation: Hemos recibido tu solicitud de reserva de {{ booking.title }} {{ booking.booked_from }}. Tu reserva aún no está confirmada. Te enviaremos un mensaje cuando hayamos procesado tu solicitud.
     cancellation: Su reservación en {{booking.booked_from}} ha sido cancelada.
     confirmation: Ha hecho una reservación para {{booking.title}} {{booking.booked_from}}.
     declined: Su solicitud de reservación de {{booking.title}} {{booking.booked_from}} no fue aprobada. Inténtalo de nuevo.

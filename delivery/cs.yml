@@ -6,10 +6,11 @@ cs:
     awaiting_confirmation:
       body: |-
         Dobrý den,
-         Vaše žádost o rezervaci %{title} %{time_range} byla zaznamenána.
-         Rezervace nebude potvrzena, dokud nebude schválena.
-        Po zpracování rezervace obdržíte e-mail.
-      subject: Nová žádost o rezervaci
+
+        obdrželi jsme vaši žádost o rezervaci %{title} %{time_range}.
+
+        Vaše rezervace zatím není potvrzena. Po zpracování vaší žádosti obdržíte e-mail.
+      subject: Obdrželi jsme vaši žádost
     cancellation:
       header: Ahoj %{name}
       info: Vaše rezervace pro %{title} v %{time_range} byla zrušena.
@@ -115,7 +116,7 @@ cs:
       booking_type_attendance: |-
         Registrace pro {{ booking.event.full_title }} {{ booking.time_range }} byla změněna uživatelem {{ booking.person.name }}.
         Vytvořit plány
-    awaiting_confirmation: Odeslali jste žádost o rezervaci {{ booking.title }} {{ booking.booked_from }}. Po zpracování vaší žádosti vám zašleme zprávu.
+    awaiting_confirmation: Obdrželi jsme vaši žádost o rezervaci {{ booking.title }} {{ booking.booked_from }}. Vaše rezervace zatím není potvrzena. Po zpracování vaší žádosti vám zašleme zprávu.
     cancellation: Vaše rezervace na {{ booking.booked_from }} byla zrušena.
     confirmation: Provedli jste rezervaci pro {{ booking.title }} {{ booking.booked_from }}.
     declined: Vaše žádost o rezervaci {{ booking.title }} {{ booking.booked_from }} nebyla schválena. Zkuste to prosím znovu.
