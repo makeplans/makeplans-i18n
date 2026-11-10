@@ -177,6 +177,7 @@ en:
           attributes:
             base:
               denied: Denied
+              renewal_notice_days_invalid: The number of days for the subscription renewal notice must be a whole number above 0.
         client_user_link:
           admin_needed: Need at least one admin user on the account.
         message_template:
@@ -206,6 +207,7 @@ en:
         service:
           has_redeemable_passes: This service has valid passes held by customers. It cannot be deleted.
           has_redeemable_subscriptions: This service has active subscriptions held by customers. It cannot be deleted.
+          renewal_notice_days_invalid: The number of days for the renewal notice must be a whole number above 0.
           attributes:
             price:
               below_minimum: must be more than 1 USD if you want to require payment

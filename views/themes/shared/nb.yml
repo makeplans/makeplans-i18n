@@ -319,8 +319,13 @@ nb:
         used_up: Oppbrukt
         valid_until: Gyldig til %{date}
       subscription_list:
+        cancel: Si opp abonnement
+        cancelled: Sagt opp
+        ends_on: Avsluttes %{date}
         expired: Utløpt
         no_subscriptions: Du har ingen abonnementer.
+        renews_on: Fornyes %{date}
+        resume: Behold abonnement
         title: Mine abonnementer
         used_up: Oppbrukt denne perioden
         valid_until: Gyldig til %{date}

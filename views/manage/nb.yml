@@ -474,6 +474,8 @@ nb:
           rating_scale_default: Standard (1-%{scale})
           rating_scale_info: Hvor mange trinn kunden kan velge mellom når en reservasjon vurderes. Vurderinger som allerede er gitt lagres som tallet kunden valgte, så endrer du skalaen endrer du også hva eldre vurderinger betyr.
           rating_scale_option: 1-%{scale}
+          renewal_notice_days: Antall dager før en abonnementsfornyelse som fornyelsesvarselet sendes
+          renewal_notice_days_none: Ingen varsel
           show_all_events_calendar: Vis alle arrangementer i én kalender
           waitlist_enabled: Aktiver venteliste for fullbookede slotter og arrangementer
           waitlist_promotion_mode: Venteliste-forfremmelse
@@ -808,6 +810,9 @@ nb:
         services: Kan brukes til
         valid_until: Gyldig til
     subscriptions:
+      cancel:
+        failed: Dette abonnementet er ikke aktivt.
+        success: Abonnementet avsluttes når nåværende periode er over.
       index:
         balance_of_quota: "%{remaining} av %{quota} igjen"
         header: Abonnementer
@@ -817,13 +822,21 @@ nb:
           cancelled: Kansellert
           expired: Utløpt
         unlimited: Ubegrenset
+      resume:
+        failed: Dette abonnementet er ikke aktivt.
+        success: Abonnementet fornyes igjen.
       show:
         all_periods: Vis alle perioder
         balance: Saldo denne perioden
+        cancel: Si opp ved periodeslutt
+        cancel_confirm: Abonnementet avsluttes når nåværende periode er over. Ingenting refunderes. Fortsette?
         current_period: Nåværende periode
         current_period_only: Vis nåværende periode
+        ends_at_period_end: Avsluttes når perioden er over
         owner: Eier
         purchase_order: Kjøpsordre
+        renews_at_period_end: Fornyes når perioden er over
+        resume: Angre oppsigelse
         services: Kan brukes til
     events:
       check_in:
@@ -1648,6 +1661,8 @@ nb:
           pass: Gjelder for følgende tjenester
           subscription: Gjelder for følgende tjenester
         linked_services_info: Hvis ingen er valgt er den tilgjengelig for alle tjenester.
+        settings:
+          renewal_notice_days: Antall dager før fornyelse som fornyelsesvarselet sendes
         validity_days_unlimited: Utløper aldri
       index:
         appointment:
@@ -1719,6 +1734,7 @@ nb:
         priority: Prioritet
         qr_code: QR-kode for kunder
         quota: Antall reservasjoner inkludert
+        renewal_notice_days: Fornyelsesvarsel sendes før fornyelse
         renewal_price: Fornyelsespris
         resources: Ressurser
         show_on_booking_site: Åpne bookingsiden for denne tjenesten

@@ -489,6 +489,8 @@ en:
           rating_scale_default: Default (1-%{scale})
           rating_scale_info: 'How many steps the customer can choose from when rating a reservation. Ratings already given are stored as the number chosen, so changing the scale changes what older ratings mean.'
           rating_scale_option: 1-%{scale}
+          renewal_notice_days: Days before a subscription renewal to send the renewal notice
+          renewal_notice_days_none: No notice
           show_all_events_calendar: Show all events in one calendar
           waitlist_enabled: Enable waitlist for fully booked slots and events
           waitlist_promotion_mode: Waitlist promotion mode
@@ -808,6 +810,9 @@ en:
         services: Can be used for
         valid_until: Valid until
     subscriptions:
+      cancel:
+        failed: This subscription is not active.
+        success: The subscription ends when the current period ends.
       index:
         balance_of_quota: "%{remaining} of %{quota} left"
         header: Subscriptions
@@ -817,13 +822,21 @@ en:
           cancelled: Cancelled
           expired: Expired
         unlimited: Unlimited
+      resume:
+        failed: This subscription is not active.
+        success: The subscription renews again.
       show:
         all_periods: Show all periods
         balance: Balance this period
+        cancel: Cancel at period end
+        cancel_confirm: The subscription ends when the current period ends. No refund is made. Continue?
         current_period: Current period
         current_period_only: Show current period
+        ends_at_period_end: Ends when the period ends
         owner: Owner
         purchase_order: Purchase order
+        renews_at_period_end: Renews when the period ends
+        resume: Undo cancellation
         services: Can be used for
     events:
       check_in:
@@ -1583,6 +1596,8 @@ en:
           pass: Valid for the following services
           subscription: Valid for the following services
         linked_services_info: If none are selected it is available for all services.
+        settings:
+          renewal_notice_days: Days before renewal to send the renewal notice
         validity_days_unlimited: Never expires
       index:
         appointment:
@@ -1654,6 +1669,7 @@ en:
         priority: Priority
         qr_code: QR code for customers
         quota: Number of reservations included
+        renewal_notice_days: Renewal notice sent before renewal
         renewal_price: Renewal price
         resources: Resources
         show_on_booking_site: Open service on booking site

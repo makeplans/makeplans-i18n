@@ -319,8 +319,13 @@ en:
       show:
         header: Your stored information
       subscription_list:
+        cancel: Cancel subscription
+        cancelled: Cancelled
+        ends_on: Ends on %{date}
         expired: Expired
         no_subscriptions: You have no subscriptions.
+        renews_on: Renews on %{date}
+        resume: Keep subscription
         title: My Subscriptions
         used_up: Used up this period
         valid_until: Valid until %{date}

@@ -149,3 +149,18 @@ nb:
     signature: |2-
 
       Mvh {{ client.name }}
+  subscription_mailer:
+    renewal_notice:
+      header: Hei %{name}
+      info: Abonnementet ditt %{title} fornyes %{date} for %{amount}. Vi belaster det lagrede kortet ditt noen dager før denne datoen. Hvis vi ikke kan belaste et kort, sender vi deg en betalingslenke.
+      link: Administrer abonnementet
+      subject: Abonnementet ditt %{title} fornyes snart
+    renewal_payment:
+      header: Hei %{name}
+      info: Vi kunne ikke belaste fornyelsen av abonnementet ditt %{title} automatisk. Betal %{amount} før %{date} for å beholde abonnementet.
+      link: Betal abonnement
+      subject: Betaling for abonnementet ditt %{title}
+    renewal_receipt:
+      header: Hei %{name}
+      info: Abonnementet ditt %{title} er fornyet. Vi har mottatt %{amount}. Abonnementet er gyldig til %{date}.
+      subject: Abonnementet ditt %{title} er fornyet

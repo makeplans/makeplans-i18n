@@ -178,6 +178,7 @@ nb:
           attributes:
             base:
               denied: Avvist
+              renewal_notice_days_invalid: Antall dager for varsel om abonnementsfornyelse må være et heltall over 0.
         client_user_link:
           admin_needed: Trenger minst én admin-bruker på kontoen.
         message_template:
@@ -207,6 +208,7 @@ nb:
         service:
           has_redeemable_passes: Denne tjenesten har gyldige klippekort hos kunder og kan derfor ikke slettes.
           has_redeemable_subscriptions: Denne tjenesten har aktive abonnementer hos kunder og kan derfor ikke slettes.
+          renewal_notice_days_invalid: Antall dager for fornyelsesvarsel må være et heltall over 0.
           attributes:
             price:
               below_minimum: må være høyere enn 3 NOK hvis du skal kreve forhåndsbetaling.

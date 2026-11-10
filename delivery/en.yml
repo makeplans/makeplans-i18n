@@ -149,3 +149,18 @@ en:
     signature: |2-
 
       {{ client.name }}
+  subscription_mailer:
+    renewal_notice:
+      header: Hi %{name}
+      info: Your subscription %{title} renews on %{date} for %{amount}. We charge your saved card a few days before that date. If we cannot charge a card, we send you a payment link.
+      link: Manage your subscription
+      subject: Your subscription %{title} renews soon
+    renewal_payment:
+      header: Hi %{name}
+      info: We could not charge the renewal of your subscription %{title} automatically. Pay %{amount} before %{date} to keep the subscription.
+      link: Pay subscription
+      subject: Payment for your subscription %{title}
+    renewal_receipt:
+      header: Hi %{name}
+      info: Your subscription %{title} is renewed. We received %{amount}. The subscription is valid until %{date}.
+      subject: Your subscription %{title} is renewed
