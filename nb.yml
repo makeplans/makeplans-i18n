@@ -113,6 +113,7 @@ nb:
       service:
         allow_invoice: kan betales med faktura
         billing_period: fornyelsesperiode
+        billing_period_unit: enhet for fornyelsesperiode
         payment_required: krev betaling
         price: pris
         quota: antall reservasjoner inkludert
@@ -210,6 +211,8 @@ nb:
           has_redeemable_subscriptions: Denne tjenesten har aktive abonnementer hos kunder og kan derfor ikke slettes.
           renewal_notice_days_invalid: Antall dager for fornyelsesvarsel må være et heltall over 0.
           attributes:
+            billing_period_unit:
+              has_redeemable_subscriptions: kan ikke endres mens kunder har aktive abonnementer
             price:
               below_minimum: må være høyere enn 3 NOK hvis du skal kreve forhåndsbetaling.
               below_minimum_charge: må være høyere enn minstebeløpet for betaling
@@ -591,7 +594,7 @@ nb:
         allow_cancellation: Tillatt avbestilling av kunden
         allow_invoice: Kan betales med faktura
         availability_type: Tilgjengelighet er definert av
-        billing_period: Fornyelsesperiode (dager)
+        billing_period: Fornyelsesperiode
         cancellation_period: Avbestillingsfrist
         block_resource: Reservasjon blokkerer ressursen
         booking_capacity: Maks antall personer per reservasjon
@@ -654,6 +657,11 @@ nb:
       service/availability_type:
         provider: Tilbyder
         resource: Ressurs (standard)
+      service/billing_period_unit:
+        day: Dager
+        month: Måneder
+        week: Uker
+        year: År
       service/priority_strategy:
         order: Rekkefølge
         random: Tilfeldig (standard)

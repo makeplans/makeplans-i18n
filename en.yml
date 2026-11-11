@@ -112,6 +112,7 @@ en:
       service:
         allow_invoice: allow invoice
         billing_period: renewal period
+        billing_period_unit: renewal period unit
         payment_required: require payment
         price: price
         quota: number of reservations included
@@ -209,6 +210,8 @@ en:
           has_redeemable_subscriptions: This service has active subscriptions held by customers. It cannot be deleted.
           renewal_notice_days_invalid: The number of days for the renewal notice must be a whole number above 0.
           attributes:
+            billing_period_unit:
+              has_redeemable_subscriptions: cannot be changed while customers have active subscriptions
             price:
               below_minimum: must be more than 1 USD if you want to require payment
               below_minimum_charge: must be more than the minimum charge amount
@@ -594,7 +597,7 @@ en:
         allow_cancellation: Allow cancellations by customer
         allow_invoice: Allow invoice
         availability_type: Availability is defined by
-        billing_period: Renewal period (days)
+        billing_period: Renewal period
         cancellation_period: Cancellation period
         block_resource: Reservation will block resource
         booking_capacity: Max number of people allowed per reservation
@@ -656,6 +659,11 @@ en:
       service/availability_type:
         provider: Provider
         resource: Resource (default)
+      service/billing_period_unit:
+        day: Days
+        month: Months
+        week: Weeks
+        year: Years
       service/priority_strategy:
         order: Order
         random: Random (default)

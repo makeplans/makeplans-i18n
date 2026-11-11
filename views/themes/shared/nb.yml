@@ -263,6 +263,15 @@ nb:
         every_days:
           one: hver dag
           other: hver %{count}. dag
+        every_months:
+          one: hver måned
+          other: hver %{count}. måned
+        every_weeks:
+          one: hver uke
+          other: hver %{count}. uke
+        every_years:
+          one: hvert år
+          other: hvert %{count}. år
         header: Produkter
         quota:
           one: "%{count} reservasjon"

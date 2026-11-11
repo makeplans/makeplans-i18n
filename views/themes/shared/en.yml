@@ -263,6 +263,15 @@ en:
         every_days:
           one: every day
           other: every %{count} days
+        every_months:
+          one: every month
+          other: every %{count} months
+        every_weeks:
+          one: every week
+          other: every %{count} weeks
+        every_years:
+          one: every year
+          other: every %{count} years
         header: Products
         quota:
           one: "%{count} reservation"

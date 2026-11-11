@@ -1708,6 +1708,19 @@ nb:
         automatic: Automatisk
         availability: Tilgjengelighet pr tilbyder
         billing_period: Fornyelsesperiode
+        billing_period_units:
+          day:
+            one: dag
+            other: dager
+          month:
+            one: måned
+            other: måneder
+          week:
+            one: uke
+            other: uker
+          year:
+            one: år
+            other: år
         booking: Booking
         booking_site: Bookingside
         capacity: Kapasitet

@@ -1643,6 +1643,19 @@ en:
         automatic: Automatic
         availability: Availability pr provider
         billing_period: Renewal period
+        billing_period_units:
+          day:
+            one: day
+            other: days
+          month:
+            one: month
+            other: months
+          week:
+            one: week
+            other: weeks
+          year:
+            one: year
+            other: years
         booking: Booking
         booking_site: Booking site
         capacity: Capacity
