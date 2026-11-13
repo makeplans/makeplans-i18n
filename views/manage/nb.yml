@@ -1631,6 +1631,10 @@ nb:
         offered_by: Tilbys av følgende ressurser
         payment: Betaling
         price_placeholder: Ingen pris
+        price_rules: Priser på gitte tidspunkt
+        price_rules_add: Legg til pris
+        price_rules_hint: En booking som starter innenfor dagene og tidene under får denne prisen. Andre tidspunkt bruker standardprisen.
+        price_rules_remove: Fjern
         settings:
           hide_all_available: Må velge spesifikk ressurs ('vis all ledige' skjules)
           hide_resources: Skjul knappen for å velge ressurs (vilkårlig ledig ressurs blir automatisk valgt)
@@ -1744,6 +1748,7 @@ nb:
         ordering: Bestilling og avbestilling
         price: Pris
         price_and_terms: Pris og vilkår
+        price_rules: Priser på gitte tidspunkt
         priority: Prioritet
         qr_code: QR-kode for kunder
         quota: Antall reservasjoner inkludert

@@ -115,6 +115,7 @@ en:
         billing_period_unit: renewal period unit
         payment_required: require payment
         price: price
+        price_rules: prices at given times
         quota: number of reservations included
         renewal_price: renewal price
         terms: terms
@@ -124,6 +125,11 @@ en:
       service/availability_type:
         provider: provider
         resource: resource
+      service/price_rules:
+        ends_at: end time
+        price: price
+        starts_at: start time
+        weekdays: days
       service/priority_strategy:
         order: order
         random: random
@@ -203,6 +209,10 @@ en:
           attributes:
             booking:
               invalid: is no longer available for payment
+        price_rule:
+          attributes:
+            ends_at:
+              after_start: must be after the start time
         resource:
           has_bookings: This resource has bookings. Cannot be deleted. Please contact support.
         service:
@@ -216,6 +226,11 @@ en:
               below_minimum: must be more than 1 USD if you want to require payment
               below_minimum_charge: must be more than the minimum charge amount
               payment_price_required: must be set if you want to require payment
+            price_rules:
+              below_minimum: must be more than the minimum charge amount if you want to require payment
+              day_booking: cannot be used for day bookings
+              overlap: cannot overlap on the same day
+              price_required: need a standard price on the service
             renewal_price:
               below_minimum: must be more than the minimum charge amount
         user:
@@ -586,6 +601,10 @@ en:
         state: State
         street: Street address
         tfso_company_id: 24SO customer ID
+      price_rule:
+        ends_at: To
+        price: Price
+        starts_at: From
       resource:
         capacity: Max number of reservations at the same time
         mail_notification_recipient: Email address(es) for notification

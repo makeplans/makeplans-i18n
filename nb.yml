@@ -116,6 +116,7 @@ nb:
         billing_period_unit: enhet for fornyelsesperiode
         payment_required: krev betaling
         price: pris
+        price_rules: priser på gitte tidspunkt
         quota: antall reservasjoner inkludert
         renewal_price: fornyelsespris
         terms: vilkår
@@ -125,6 +126,11 @@ nb:
       service/availability_type:
         provider: tilbyder
         resource: ressurs
+      service/price_rules:
+        ends_at: sluttid
+        price: pris
+        starts_at: starttid
+        weekdays: dager
       service/priority_strategy:
         order: rekkefølge
         random: tilfeldig
@@ -204,6 +210,10 @@ nb:
           missing: er ikke lagret på din kundeprofil. Kontakt oss for å rette opp i dette.
           no_values_present: Navn, telefonnummer eller epost er påkrevd.
           prevent_new_signups: booking er kun tilgjengelig for eksisterende kunder
+        price_rule:
+          attributes:
+            ends_at:
+              after_start: må være etter starttid
         resource:
           has_bookings: Denne ressursen har aktive reservasjoner og kan dermed ikke slettes. Kontakt kundeservice.
         service:
@@ -217,6 +227,11 @@ nb:
               below_minimum: må være høyere enn 3 NOK hvis du skal kreve forhåndsbetaling.
               below_minimum_charge: må være høyere enn minstebeløpet for betaling
               payment_price_required: må være satt hvis du skal kreve forhåndsbetaling
+            price_rules:
+              below_minimum: må være høyere enn minstebeløpet for betaling hvis du skal kreve forhåndsbetaling
+              day_booking: kan ikke brukes for dagsbooking
+              overlap: kan ikke overlappe på samme dag
+              price_required: krever en standardpris på tjenesten
             renewal_price:
               below_minimum: må være høyere enn minstebeløpet for betaling
         user:
@@ -583,6 +598,10 @@ nb:
         state: Fylke/Stat
         street: Gateadresse
         tfso_company_id: 24SO kundenr.
+      price_rule:
+        ends_at: Til
+        price: Pris
+        starts_at: Fra
       resource:
         capacity: Maks antall reservasjoner på samme tidspunkt
         mail_notification_recipient: Epost-adresser for varsling
