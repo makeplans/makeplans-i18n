@@ -61,6 +61,7 @@ en:
         card_not_authenticated: Your bank could not verify this card. We require verification when you save a card. Try another card, or contact us at %{email} and we can help you.
       charge:
         charge_details: Based on current usage we will charge your credit card %{price} each month.
+        charge_details_auth: 'You will also be charged for Vipps and ID-porten logins: %{price}.'
         charge_details_default: Monthly price is %{price} per resource.
         charge_details_sms: 'You will also be charged for SMS usage: %{price}.'
         process: Complete payment
@@ -85,6 +86,7 @@ en:
         billing_period_info: You will be charged for %{period} months.
         change_from_invoice: Enter your credit card details so you do not have to pay manually every time we invoice your account
         charge_details: Based on current usage we will charge your credit card %{price} each month.
+        charge_details_auth: 'You will also be charged for Vipps and ID-porten logins: %{price}.'
         charge_details_default: Monthly price is %{price} per resource.
         charge_details_sms: 'You will also be charged for SMS usage: %{price}.'
         current_info: Your credit card details are securely stored with our billing partner Stripe. Your stored card is %{brand} with number ending in %{last_4} and expires %{expire_month}/%{expire_year}.
