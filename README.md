@@ -41,6 +41,7 @@ If you want to use English in the admin system but would like to use your local 
 * Latvian (lv)
 * Malay - Bahasa (ms)
 * Norwegian (nb)
+* Portuguese (pt)
 * Russian (ru)
 * Swedish (se)
 

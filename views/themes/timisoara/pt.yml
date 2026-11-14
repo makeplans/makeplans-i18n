@@ -1,0 +1,171 @@
+---
+pt:
+  timisoara:
+    bookings:
+      authenticate:
+        info: Precisamos de informações para verificar a sua reserva de
+        submit: Enviar código
+        title: Autenticação por número de telefone
+      awaiting_confirmation:
+        body: Fez um pedido de reserva. Aguarde até que o administrador confirme a sua reserva
+      cancelled:
+        title: A sua reserva foi cancelada
+        update_calendar: Atualizar o meu calendário
+      new:
+        accept: Aceito os termos e condições
+        edit: Editar
+        edit_profile: Editar
+        notice: A sua reserva ainda não está confirmada. Reveja os detalhes e prima o botão abaixo.
+        page_title: Confirme a sua reserva
+        step_label: Último passo
+        submit: Concluir reserva
+        title: Reserva de %{service}
+      payment_stripe:
+        title: Pagamento
+      pre_payment:
+        info: Para concluir a reserva de %{service} %{booking}, tem de efetuar um pagamento.
+        submit: Para o pagamento
+        title: Pagamento
+      show:
+        add_to_calendar: Adicionar esta reserva ao meu calendário
+        all: Ver as minhas outras reservas
+        cancel: Cancelar
+        cancel_confirmation: Tem a certeza de que quer cancelar esta reserva?
+        info: A reserva de %{title} %{time} está confirmada.
+        new_reservation: Fazer outra reserva
+        title: A sua reserva está confirmada!
+    categories:
+      index:
+        all_categories: Todas as categorias
+        select_category: Selecione a categoria
+    events:
+      index:
+        all_events: Todos os eventos
+      show:
+        all_services: Todos os serviços
+        continue: Continuar
+      week_calendar:
+        all_events: Todos os eventos
+        next_week: Semana seguinte
+        none_this_week: Não há eventos esta semana
+        prev_week: Semana anterior
+        this_week: Esta semana
+    generic:
+      all_day: Todo o dia
+      alt:
+        time: Horário
+      continue: Continuar
+    gift_cards:
+      new:
+        description: Compre um cartão-oferta para alguém especial. Escolha o valor abaixo.
+        value_label: Valor
+        value_placeholder: Introduza o valor
+    layouts:
+      application:
+        login: Iniciar sessão
+        privacy: Política de privacidade
+        profile: Perfil
+        support: Apoio
+        title: Reservas online para %{name}
+    order_cart:
+      checkout:
+        credit_card: Cartão de crédito
+        header: Finalizar compra
+        invoice: Fatura
+        order_total: Total da encomenda
+        pay_now: Pagar agora
+      show:
+        amount: Valor
+        continue_shopping: Adicionar mais cartões-oferta
+        item: Artigo
+    order_payments:
+      failure:
+        message: Infelizmente, não foi possível processar o seu pagamento.
+      fiken:
+        payment:
+          back: Voltar
+          create_invoice: Criar fatura
+          header: Pagamento por fatura
+      pay_later:
+        payment:
+          description: A sua encomenda será confirmada. O pagamento pode ser feito mais tarde.
+      stripe:
+        payment:
+          payment_details_html: O pagamento é processado de forma segura através de %{provider}. Todos os valores estão em %{currency}.
+      vipps:
+        awaiting_payment:
+          body: Aguarde enquanto verificamos a transação.
+          error: Não foi possível verificar o seu pagamento. Contacte o apoio ao cliente indicando o número de referência %{order_id}.
+          title: A verificar o seu pagamento
+    orders:
+      index:
+        header: As minhas encomendas
+        no_orders: Ainda não tem encomendas.
+      payment:
+        header: Selecione o método de pagamento
+        no_payment_methods: Não há métodos de pagamento disponíveis.
+        select_payment_method: Como gostaria de pagar?
+        stripe: Cartão de crédito
+      show:
+        amount: Valor
+        back_to_orders: Voltar às encomendas
+        each: cada
+        item: Artigo
+        my_reservations: As minhas reservas
+    person_sessions:
+      enter_perishable_token:
+        info_html: Enviámos um código de verificação para <b>%{recipient}</b> Introduza o código para verificar as suas informações.
+        perishable_token: Código
+        submit: Continuar
+        title: Verifique a sua reserva
+      perishable_token_form:
+        alt:
+          checkbox: Caixa de seleção
+        submit: Enviar código
+        terms_conditions: Termos e condições
+        title: Iniciar sessão
+    products:
+      index:
+        buy: Comprar
+    profile:
+      children:
+        new:
+          cancel: Cancelar
+      credit_card_list:
+        add_card: Adicionar cartão
+        body: Os seus métodos de pagamento guardados
+        card_info: "%{brand} terminado em %{last_4} (validade %{expire_month}/%{expire_year})"
+        remove_card: Remover
+        title: Métodos de pagamento
+      gift_card_list:
+        body: Os seus cartões-oferta
+      index:
+        alt:
+          calendar: Calendário
+        awaiting_approval: A aguardar aprovação
+        cancel: Cancelar
+        logout: Terminar sessão
+        my_details: As minhas informações
+        my_orders: As minhas encomendas
+        title: As minhas reservas
+      new:
+        header: Informações da conta
+      show:
+        header: As suas informações guardadas
+    services:
+      available_dates:
+        select_date: Datas disponíveis
+      count:
+        select_count: Quantas pessoas?
+      index:
+        all_categories: Todas as categorias
+        all_services: Todos os serviços
+        buy: Comprar
+        continue: Fazer uma reserva
+      show:
+        all_services: Todos os serviços
+        continue: Fazer uma reserva
+      week_available:
+        next_week: Semana seguinte
+        prev_week: Semana anterior
+        select_date: Selecionar data

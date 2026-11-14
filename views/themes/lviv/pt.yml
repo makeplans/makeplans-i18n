@@ -1,0 +1,159 @@
+---
+pt:
+  lviv:
+    bookings:
+      authenticate:
+        email: E-mail
+        phone_number: Número de telefone
+        title: Confirmar reserva
+      cancelled:
+        title: A sua reserva foi cancelada
+      new:
+        agree_with: Aceito os termos e condições
+        errors_header: Preencha os campos obrigatórios.
+        optional: Opcional
+        submit: Concluir reserva
+        subtitle: A sua reserva ainda não está confirmada. Reveja os detalhes e prima o botão abaixo.
+        title: Confirme a sua reserva
+      payment_stripe:
+        make_payment: Efetuar pagamento
+        title: Introduza os dados de pagamento
+      pre_payment:
+        make_payment: Efetuar pagamento
+        title: Escolha o método de pagamento
+      show:
+        add_to_calendar: Adicionar ao calendário
+        alt:
+          calendar: Adicionar ao calendário
+          profile: Perfil
+        cancel_booking: Cancelar reserva
+        title: Detalhes da reserva
+    categories:
+      index:
+        title: Selecione a categoria
+    events:
+      index:
+        title: Selecione a data e a hora
+      show:
+        book_event: Reservar este evento
+    generic:
+      step: Passo %{step} / %{steps}
+    gift_cards:
+      new:
+        description: Compre um cartão-oferta para alguém especial. Escolha o valor abaixo.
+        value_label: Valor
+        value_placeholder: Introduza o valor
+    layouts:
+      application:
+        about_makeplans: Sobre o Makeplans
+        account: Conta
+        alt:
+          account: Conta
+          cancel: Cancelar
+          cart: Carrinho
+          menu: Menu
+        close: Fechar
+        get_support: Obter apoio
+        menu: Menu
+        privacy_policy: Política de privacidade
+        terms_conditions: Termos e condições
+        title: Reservas online para %{name}
+    order_cart:
+      checkout:
+        coupon_code_placeholder: Introduza o código
+        header: Finalizar compra
+        order_total: Total da encomenda
+    order_payments:
+      failure:
+        message: Infelizmente, não foi possível processar o seu pagamento.
+      pay_later:
+        payment:
+          description: A sua encomenda será confirmada. O pagamento pode ser feito mais tarde.
+      stripe:
+        payment:
+          payment_details_html: O pagamento é processado de forma segura através de %{provider}. Todos os valores estão em %{currency}.
+      vipps:
+        awaiting_payment:
+          body: Aguarde enquanto verificamos a transação.
+          error: Não foi possível verificar o seu pagamento. Contacte o apoio ao cliente indicando o número de referência %{order_id}.
+          title: A verificar o seu pagamento
+    orders:
+      index:
+        header: As minhas encomendas
+        no_orders: Ainda não tem encomendas.
+      payment:
+        no_payment_methods: Não há métodos de pagamento disponíveis.
+        stripe: Cartão de crédito
+      show:
+        back_to_orders: Voltar às encomendas
+        each: cada
+    person_sessions:
+      enter_perishable_token:
+        confirm_booking: Confirmar reserva
+        no_code: Não recebeu o código?
+        send_again: Enviar novamente
+        verify_login: Verificar início de sessão
+      perishable_token_action_required:
+        body: Enviámos um e-mail para %{recipient}. Siga as instruções para verificar a sua reserva. Isto ajuda-nos a garantir que não é um robô.
+        delivery_error: Não foi possível enviar-lhe um e-mail. Tem a certeza de que introduziu o endereço de e-mail correto?
+        delivery_not_processed: Estamos a ter alguns atrasos nos nossos sistemas. Aguarde enquanto enviamos o seu e-mail.
+        title: Confirme o seu endereço de e-mail
+      perishable_token_form:
+        title: Iniciar sessão
+      verification_method_email:
+        submit: Enviar e-mail de verificação
+      verification_method_sms:
+        submit: Enviar código de verificação
+    products:
+      show:
+        price: Preço
+    profile:
+      children:
+        index:
+          add_person: Adicionar pessoa
+          alt:
+            right: Direita
+          no_children: Ainda não adicionou ninguém para quem reservar.
+        new:
+          subtitle: Preencha os dados da pessoa para quem quer reservar.
+      credit_card_list:
+        title: Métodos de pagamento
+      index:
+        book_again: Reservar novamente
+        canceled: Cancelada
+        my_profile: O meu perfil
+        waiting: Em espera
+      new:
+        subtitle: Preencha os dados necessários para se registar.
+        title: Novo perfil
+      show:
+        alt:
+          language: Idioma
+          logout: Terminar sessão
+          right: Direita
+        change_language: Alterar idioma
+        logout: Terminar sessão
+        my_bookings: As minhas reservas
+    services:
+      available_dates:
+        title: Selecione a data e a hora
+      count:
+        title: Selecione o número de pessoas
+      index:
+        title: Selecione o serviço
+      location:
+        title: Selecione o local
+      show:
+        book_service: Reservar este serviço
+      slots:
+        available_times: Horários disponíveis
+        continue: Continuar
+        estimated_time: Duração estimada do serviço - %{duration} min.
+        free_capacity: "%{count} disponíveis"
+        next_available_date_html: A próxima data disponível é %{next_available_date}
+        no_availability: Sem disponibilidade na data selecionada. Tente outra data.
+        title: Selecione a data e a hora
+      success:
+        add_to_calendar: Adicionar reserva ao calendário
+        book_another: Reservar outro serviço
+        title: Reservou o serviço com sucesso

@@ -1,0 +1,166 @@
+---
+pt:
+  booking_ical:
+    summary: "%{service} em %{client}"
+  booking_mailer:
+    awaiting_confirmation:
+      body: |-
+        Olá,
+
+        Recebemos o seu pedido de reserva de %{title} %{time_range}.
+
+        A sua reserva ainda não está confirmada. Receberá um e-mail quando tivermos processado o seu pedido.
+      subject: Recebemos o seu pedido
+    cancellation:
+      header: Olá %{name}
+      info: A sua reserva de %{title} em %{time_range} foi cancelada.
+      subject: Reserva cancelada
+    confirmation:
+      booking_count:
+        one: Reservado para %{count} pessoa.
+        other: Reservado para %{count} pessoas.
+      header: Olá %{name}
+      info: Reservou %{title} %{time_range}.
+      link: Mais informações sobre a sua reserva
+      link_cancellation_info: e opções de cancelamento
+      resource_info: 'Reserva com: %{resource}.'
+      subject: Nova reserva
+      subject_service: Reserva de %{service}
+    declined:
+      header: Olá %{name}
+      info: O seu pedido de reserva de %{title} %{time_range} não foi aprovado. A reserva não está confirmada. Tente outro horário.
+      subject: Reserva não confirmada
+    modification:
+      header: Olá %{name}
+      info: 'A sua reserva foi alterada para: %{title} %{time_range}.'
+      link: Mais informações sobre a sua reserva
+      link_cancellation_info: e opções de cancelamento
+      resource_info: 'Reserva com: %{resource}.'
+      subject: Reserva alterada
+    request_card:
+      header: Olá %{name}
+      info: Para pagar a sua reserva facilmente, adicione os dados do seu cartão de crédito.
+      link: Adicionar cartão de pagamento
+      subject: Adicione os seus dados de pagamento
+    request_payment:
+      header: Olá %{name}
+      info: Pode pagar a sua reserva através da ligação abaixo.
+      link: Pagar reserva
+      subject: Pagamento da sua reserva
+    verification:
+      footer: 'Importante: A reserva ainda não está concluída. Se não a verificar no prazo de %{expires_in} minutos, a sua reserva pode expirar.'
+      header: Para concluir a sua reserva de %{title} %{time_range}, tem de verificar a sua reserva com o código abaixo.
+      link: Confirmar reserva
+      subject: Verifique a sua reserva
+    waitlist_available:
+      confirm_button: Confirmar reserva
+      header: Olá %{name}
+      info: "Boas notícias! Ficou disponível uma vaga para %{title} %{time_range}."
+      resource_info: 'Reserva com: %{resource}.'
+      subject: Há uma vaga disponível para a sua reserva em lista de espera
+    waitlist_joined:
+      header: Olá %{name}
+      info: Foi adicionado à lista de espera de %{title} %{time_range}. Avisaremos quando ficar disponível uma vaga.
+      link: Ver a sua reserva em lista de espera
+      resource_info: 'Reserva com: %{resource}.'
+      subject: Está na lista de espera
+    waitlist_payment:
+      footer: 'Importante: Se não concluir o pagamento no prazo de %{expires_in} minutos, a sua reserva pode expirar.'
+      header: Olá %{name}
+      info: "Boas notícias! Ficou disponível uma vaga para %{title} %{time_range}. Conclua o pagamento para confirmar a sua reserva."
+      pay_button: Pagar e confirmar reserva
+      resource_info: 'Reserva com: %{resource}.'
+      subject: Há uma vaga disponível - conclua o pagamento para confirmar a sua reserva
+  booking_occurrence_mailer:
+    cancel:
+      body: 'As suas reservas de %{title} para os seguintes horários foram canceladas:'
+      subject: Reservas canceladas
+    create:
+      body: 'Reservou %{title} para os seguintes horários:'
+      subject: Novas reservas
+  booking_sms:
+    admin_notification_approvement:
+      booking_type_appointment: |-
+        AÇÃO NECESSÁRIA: Pedido de reserva de {{ booking.person.name }}. {{ booking.resource.title }} - {{ booking.title }} em {{ booking.time_range }}
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Makeplans
+      booking_type_attendance: |-
+        AÇÃO NECESSÁRIA: Pedido de inscrição de {{ booking.person.name }} em {{ booking.event.full_title }} {{ booking.time_range }}.
+
+        {{ booking.client.manage_unconfirmed_bookings_link }}
+
+        Makeplans
+    admin_notification_cancellation:
+      booking_type_appointment: |-
+        CANCELAMENTO: {{ booking.person.name }} cancelou a reserva de {{ booking.resource.title }} - {{ booking.title }} em {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        CANCELAMENTO: {{ booking.person.name }} cancelou a inscrição em {{ booking.event.full_title }} {{ booking.time_range }}.
+        Makeplans
+    admin_notification_confirmation:
+      booking_type_appointment: |-
+        Nova reserva de {{ booking.resource.title }} por {{ booking.person.name }}. {{ booking.title }} em {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        Nova inscrição em {{ booking.event.full_title }} {{ booking.time_range }} por {{ booking.person.name }}.
+        Makeplans
+    admin_notification_modification:
+      booking_type_appointment: |-
+        Alteração da reserva de {{ booking.resource.title }} por {{ booking.person.name }}. {{ booking.title }} em {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        Inscrição alterada em {{ booking.event.full_title }} {{ booking.time_range }} por {{ booking.person.name }}.
+        Makeplans
+    admin_notification_resource_change:
+      booking_type_appointment: |-
+        Alteração de recurso para {{ booking.resource.title }} de {{ booking.person.name }} {{ booking.title }} em {{ booking.time_range }}
+        Makeplans
+      booking_type_attendance: |-
+        Inscrição alterada em {{ booking.event.full_title }} {{ booking.time_range }} por {{ booking.person.name }}.
+        Makeplans
+    awaiting_confirmation: Recebemos o seu pedido de reserva de {{ booking.title }} {{ booking.booked_from }}. A sua reserva ainda não está confirmada. Enviaremos uma mensagem quando tivermos processado o seu pedido.
+    cancellation: A sua reserva de {{ booking.booked_from }} foi cancelada.
+    confirmation: Fez uma reserva de {{ booking.title }} {{ booking.booked_from }}.
+    declined: O seu pedido de reserva de {{ booking.title }} {{ booking.booked_from }} não foi aprovado. Tente novamente.
+    modification: 'A sua reserva foi alterada: {{ booking.title }} {{ booking.booked_from }}.'
+    reminder: 'Lembrete: Reserva {% if booking.service != nil %}de {{ booking.title }} {% endif %}{{ booking.booked_from }}.'
+    request_card: Adicione os seus dados de pagamento em %{url}
+    request_payment: 'Pode pagar a sua reserva {% if booking.service != nil %}de {{ booking.title }} {% endif %}{{ booking.booked_from }} aqui: {{ booking.payment_link }}'
+    signature: |2-
+
+      {{ booking.client.name }}
+    verification: "{{ booking.verification_code }} é o seu código de verificação para a reserva de {{ booking.title }}."
+    waitlist_available: "Ficou disponível uma vaga para {{ booking.title }} {{ booking.booked_from }}. Aceda à ligação para confirmar a sua reserva."
+    waitlist_joined: "Está na lista de espera de {{ booking.title }} {{ booking.booked_from }}. Avisaremos quando ficar disponível uma vaga."
+    waitlist_payment: 'Ficou disponível uma vaga para {{ booking.title }} {{ booking.booked_from }}. Pague aqui para confirmar a sua reserva: {{ booking.payment_link }}'
+  person_mailer:
+    export:
+      subject: Exportação de dados
+    perishable_token:
+      body: |-
+        Utilize o código abaixo para concluir a sua verificação:
+
+        %{perishable_token}
+      subject: Início de sessão em %{client}
+  person_sms:
+    perishable_token: "{{ perishable_token }} é o seu código de autenticação."
+    signature: |2-
+
+      {{ client.name }}
+  subscription_mailer:
+    renewal_notice:
+      header: Olá %{name}
+      info: A sua subscrição %{title} renova a %{date} por %{amount}. Cobramos o valor ao seu cartão guardado alguns dias antes dessa data. Se não conseguirmos cobrar um cartão, enviamos-lhe uma ligação de pagamento.
+      link: Gerir a sua subscrição
+      subject: A sua subscrição %{title} renova em breve
+    renewal_payment:
+      header: Olá %{name}
+      info: Não foi possível cobrar automaticamente a renovação da sua subscrição %{title}. Pague %{amount} antes de %{date} para manter a subscrição.
+      link: Pagar subscrição
+      subject: Pagamento da sua subscrição %{title}
+    renewal_receipt:
+      header: Olá %{name}
+      info: A sua subscrição %{title} foi renovada. Recebemos %{amount}. A subscrição é válida até %{date}.
+      subject: A sua subscrição %{title} foi renovada

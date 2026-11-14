@@ -1,0 +1,97 @@
+---
+pt:
+  admin:
+    clients:
+      assign_reseller:
+        current_reseller: Revendedor atual
+        header: Atribuir revendedor
+        no_reseller: Sem revendedor
+        none: Nenhum
+        reseller: Revendedor
+        save: Guardar
+        send_email: Enviar e-mail de notificação de registo ao revendedor
+  bookings:
+    awaiting_payment:
+      vipps_payment_failed: O pagamento foi cancelado. Tente novamente.
+    process_promote_waitlist:
+      slot_no_longer_available: Lamentamos, mas a vaga já não está disponível. Continua na lista de espera.
+    verification_code:
+      incorrect_code: Código incorreto
+  clients:
+    new:
+      accept_terms_html: Ao registar-se, aceita os %{link}.
+      benefit_booking_site: O seu próprio site de reservas online, aberto 24 horas por dia.
+      benefit_calendar: Todos os seus serviços, funcionários e marcações num só calendário.
+      benefit_notifications: Confirmações e lembretes automáticos por e-mail e SMS.
+      captcha_missing: A verificação anti-spam não foi concluída. Submeta o formulário novamente.
+      change: Alterar
+      first_user: Esta é a sua palavra-passe pessoal. Pode adicionar mais utilizadores mais tarde.
+      free_trial_info: 14 dias de teste gratuito. Sem compromisso. Não é necessário cartão de crédito.
+      headline: Comece com as reservas online
+      logged_in_as: Iniciou sessão como %{name}.
+      newsletter: Concordo em receber novidades sobre o produto por e-mail.
+      recaptcha: Lamentamos o incómodo, mas temos de verificar o seu registo com o Google Recaptcha. Introduza novamente a sua palavra-passe e submeta o formulário.
+      social_proof_caption: reservas feitas desde 2010
+      social_proof_figure: Mais de 7 milhões
+      subdomain_info: O seu endereço único (URL) onde os seus clientes podem reservar online.
+      subdomain_label: Endereço do seu site de reservas
+      subdomain_not_website_warning: 'ATENÇÃO: Este é o endereço do seu novo site de reservas. NÃO introduza o URL do seu site existente. Se tiver dúvidas, introduza apenas o nome da sua empresa.'
+      submit: Criar o meu site de reservas
+      terms_link: termos e condições
+      test_env_info_html: Está a criar uma conta de teste? Consulte %{link} para obter informações sobre o nosso ambiente de teste.
+      title: Registe-se para criar a sua conta de reservas online
+      user_email: E-mail de trabalho
+      user_info: O seu início de sessão de utilizador
+      your_booking_site: 'O seu site de reservas:'
+    rejected:
+      headline: Registo rejeitado
+      info: Lamentamos, mas o nosso sistema marcou o seu registo como spam. Contacte-nos para registar uma conta.
+      title: Registo rejeitado
+  room_display:
+    show:
+      book: "Reservar"
+      free_all_day: "Livre todo o dia"
+      free_for: "Livre durante %{duration}"
+      find_room: "Encontrar uma sala"
+      occupied: "Ocupada"
+    setup:
+      header: Configurar o ecrã da sala
+      instruction: Introduza o código de configuração gerado no painel de administração.
+      invalid_code: Código inválido
+      placeholder: Introduzir código
+      submit: Ativar
+      title: Configurar o ecrã da sala
+  oauth:
+    callback:
+      header: Ligar à conta
+  user:
+    select_client:
+      header: Selecionar conta
+  user_password_resets:
+    create:
+      header: Repor a sua palavra-passe
+      info: Enviámos-lhe agora um e-mail. Para confirmar a reposição da palavra-passe, tem de clicar na ligação do e-mail.
+      signup_html: Não tem conta? <a href="%{url}">Comece agora.</a>
+    edit:
+      header: Introduza a sua nova palavra-passe
+      signup_html: Não tem conta? <a href="%{url}">Comece agora.</a>
+      submit: Guardar palavra-passe
+    new:
+      header: Esqueceu-se da palavra-passe?
+      signup_html: Não tem conta? <a href="%{url}">Comece agora.</a>
+      submit: Enviar e-mail
+  user_sessions:
+    handle_authenticated_user:
+      success: Sessão iniciada com sucesso
+    new:
+      forgot_link: Esqueceu-se da palavra-passe?
+      header: Iniciar sessão
+      incorrect: Credenciais incorretas
+      login: Iniciar sessão
+      remember_me: Manter sessão iniciada
+      signup_html: Não tem conta? <a href="%{url}">Comece agora.</a>
+      title: Iniciar sessão
+    rotp_verification_code:
+      header: Iniciar sessão com autenticação de dois fatores
+      info: Utilize o código gerado pela sua aplicação 2FA.
+      submit: Iniciar sessão

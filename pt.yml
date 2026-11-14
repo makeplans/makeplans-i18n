@@ -1,0 +1,865 @@
+---
+pt:
+  activerecord:
+    attributes:
+      booking:
+        booked_by_person_id: reservado por
+        booked_from: de
+        booked_to: até
+        count: quantidade
+        coupon_code: código do cupão
+        event_id: evento
+        external_id: ID externo
+        notes: notas
+        person: cliente
+        person_id: cliente
+        reminder_at: lembrete em
+        resource: recurso
+        resource_id: recurso
+        service: serviço
+        service_id: serviço
+        state: estado
+        status: estado
+        terms_accepted: termos aceites
+        title: título
+        verification_code: código de verificação
+      booking/state:
+        awaiting_confirmation: A aguardar confirmação
+        awaiting_payment: A aguardar pagamento
+        awaiting_verification: A aguardar verificação
+        cancelled: Cancelada
+        confirmed: Confirmada
+        declined: Recusada
+        deleted: Eliminada
+        verification_expired: Verificação expirada
+        waitlisted: Em lista de espera
+      booking/status:
+        checked_in: Check-in efetuado
+        completed: Concluída
+        in_progress: Iniciada
+        no_show: Falta
+      category:
+        title: título
+      client:
+        future_bookable_period: período futuro disponível para reservas
+        mail_notification_recipient: endereço(s) de e-mail para notificação
+        mailer_sender: endereço de e-mail do remetente
+        phone_number: número de telefone
+        purge_data_period: período de eliminação automática
+        sms_notification_recipient: número(s) de telefone para notificação
+        terms: termos
+      client/slot_generation:
+        dynamic: dinâmica
+        fixed: fixa
+      client_user_link:
+        role: nível de acesso
+      client_user_link/role:
+        admin: acesso total
+        manager: configuração básica
+        staff: apenas calendário
+      coupon/value_type:
+        amount: montante
+        percentage: percentagem
+      event:
+        booking_capacity: máximo de pessoas permitidas por reserva
+        booking_minimum: mínimo de pessoas necessárias por reserva
+        capacity: máximo de pessoas permitidas
+        description: descrição
+        ends_at: termina em
+        first_booking_at: sem reservas antes de
+        last_booking_at: última reserva antes de
+        resource_id: recurso
+        service_id: serviço
+        starts_at: começa em
+        title: título
+      message_template:
+        active: ativo
+        delivery_timing: enviar em
+        delivery_type: tipo de envio
+        message_type: tipo de mensagem
+        subject: assunto
+        template: modelo
+      message_template/delivery_type:
+        email: e-mail
+        sms: SMS
+        whatsapp: WhatsApp
+      message_template/message_type:
+        confirmation: confirmação
+        follow_up: acompanhamento
+        reminder: lembrete
+      person:
+        address: morada
+        blocked: Bloqueado para reservas
+        city: cidade
+        country_code: país
+        created_at: registado
+        date_of_birth: data de nascimento
+        email: e-mail
+        locale: idioma
+        name: nome
+        national_id_no: número de identificação nacional
+        notes: notas
+        opt_in_marketing: aceita receber marketing
+        phonenumber: número de telefone
+        postal_code: código postal
+        state: estado
+        street: rua
+      resource:
+        capacity: capacidade
+        mail_notification_recipient: endereço(s) de e-mail para notificação
+        sms_notification_recipient: número(s) de telefone para notificação
+        title: título
+      service:
+        allow_invoice: permitir fatura
+        billing_period: período de renovação
+        billing_period_unit: unidade do período de renovação
+        payment_required: exigir pagamento
+        price: preço
+        price_rules: preços em determinados horários
+        quota: número de reservas incluídas
+        renewal_price: preço de renovação
+        terms: termos
+        title: título
+        unlimited: ilimitado
+        validity_days: número de dias de validade após a compra
+      service/availability_type:
+        provider: prestador
+        resource: recurso
+      service/price_rules:
+        ends_at: hora de fim
+        price: preço
+        starts_at: hora de início
+        weekdays: dias
+      service/priority_strategy:
+        order: ordem
+        random: aleatória
+        weight: peso
+      user:
+        current_password: palavra-passe atual
+        password: palavra-passe
+        password_confirmation: confirmação da palavra-passe
+        rotp_verification_code: código de verificação
+        theme: Tema
+      web_hook:
+        event: Evento
+        target_url: URL de destino
+    errors:
+      messages:
+        chronic_syntax_error: erro de sintaxe, consulte https://github.com/mojombo/chronic#examples
+        denied: O seu pedido foi recusado
+        icalendar_invalid: Sem ocorrências ou padrão iCalendar inválido
+        icalendar_over_limit: Demasiadas ocorrências. O máximo é 731.
+        illegal: ilegal
+        invalid: é inválido
+        phone_invalid: não é um número de telefone válido
+        phone_not_norwegian: tem de ser um número de telefone norueguês
+        time_not_available: Não disponível para reserva neste horário
+      models:
+        booking:
+          active_bookings_limit: O número máximo de reservas ativas é %{count}
+          attributes:
+            count:
+              below_minimum_count: Menos do que o mínimo de pessoas necessárias por reserva
+              over_booking_capacity: Mais do que o máximo de pessoas permitidas por reserva
+            event_id:
+              already_booked: já tem uma reserva ativa para este evento
+              time_not_available: está totalmente reservado
+            person_id:
+              blocked: bloqueado para reservas
+              taken: já inscrito neste evento
+            resource_id:
+              no_availability: não disponível no horário pedido
+            service_id:
+              attendance_only: é apenas para inscrições
+              not_offered: não é oferecido pelo recurso escolhido
+            state:
+              invalid_transition: Alteração de estado inválida
+          exceeds_max_slots: A duração da reserva excede o máximo de horários permitido.
+          fully_booked: Não disponível no horário selecionado.
+          mismatch: Os valores não coincidem com o perfil existente.
+          no_parent_takeover: Contacte o suporte para fazer esta reserva.
+          prevent_new_signups: a reserva só está disponível para clientes existentes
+          time_after_future_bookable_period: Demasiado distante no futuro
+        client:
+          attributes:
+            base:
+              denied: Recusado
+              renewal_notice_days_invalid: O número de dias do aviso de renovação da subscrição tem de ser um número inteiro superior a 0.
+        client_user_link:
+          admin_needed: É necessário pelo menos um utilizador administrador na conta.
+        message_template:
+          attributes:
+            template:
+              whatsapp_liquid_logic: não pode conter etiquetas de lógica ({% %}) quando o tipo de envio é WhatsApp - apenas são permitidas etiquetas de personalização
+        person:
+          attributes:
+            national_id_no:
+              invalid_syntax_no: Introduza o seu fødselsnummer norueguês - 11 dígitos.
+          blocked: A sua conta não pode fazer reservas.
+          missing: não está guardado no seu perfil de cliente. Contacte-nos para o corrigir.
+          no_values_present: O nome, o número de telefone ou o e-mail é obrigatório.
+          prevent_new_signups: a reserva só está disponível para clientes existentes
+        order:
+          attributes:
+            base:
+              already_subscribed: Já tem uma subscrição ativa para este serviço
+              must_have_line_items: A encomenda tem de ter pelo menos um artigo
+              payment_incomplete: O pagamento tem de ser concluído antes de confirmar a encomenda
+        order_line_item:
+          attributes:
+            booking:
+              invalid: já não está disponível para pagamento
+        price_rule:
+          attributes:
+            ends_at:
+              after_start: tem de ser posterior à hora de início
+        resource:
+          has_bookings: Este recurso tem reservas. Não pode ser eliminado. Contacte o suporte.
+        service:
+          has_redeemable_passes: Este serviço tem passes válidos na posse de clientes. Não pode ser eliminado.
+          has_redeemable_subscriptions: Este serviço tem subscrições ativas na posse de clientes. Não pode ser eliminado.
+          renewal_notice_days_invalid: O número de dias do aviso de renovação tem de ser um número inteiro superior a 0.
+          attributes:
+            billing_period_unit:
+              has_redeemable_subscriptions: não pode ser alterada enquanto os clientes tiverem subscrições ativas
+            price:
+              below_minimum: tem de ser superior a 1 USD se pretender exigir pagamento
+              below_minimum_charge: tem de ser superior ao valor mínimo de cobrança
+              payment_price_required: tem de ser definido se pretender exigir pagamento
+            price_rules:
+              below_minimum: tem de ser superior ao valor mínimo de cobrança se pretender exigir pagamento
+              day_booking: não pode ser utilizado em reservas de dia inteiro
+              overlap: não pode sobrepor-se no mesmo dia
+              price_required: é necessário um preço padrão no serviço
+            renewal_price:
+              below_minimum: tem de ser superior ao valor mínimo de cobrança
+        user:
+          attributes:
+            password:
+              incorrect: Palavra-passe incorreta
+          current_password_incorrect: A palavra-passe atual não coincide
+      template:
+        body: 'A operação não foi concluída devido aos seguintes erros:'
+        header: Ocorreram erros
+    models:
+      booking: marcação
+      category: categoria
+      coupon: cupão
+      event: evento
+      external_credential: integração
+      gift_card: cartão-oferta
+      message_template: modelo de mensagem
+      person: cliente
+      resource: recurso
+      service: serviço
+      service_addon: extra
+      service_appointment: serviço
+      service_attendance: tipo de evento
+      service_gift_card: cartão-oferta
+      service_pass: passe
+      service_product: produto
+      service_subscription: subscrição
+      tag: etiqueta
+      user: utilizador
+      web_hook: webhook
+  date:
+    formats:
+      date_month_name: "%e %B"
+      datepicker: "%d.%m.%Y"
+      day_name: "%A"
+      day_name_abbr: "%a"
+      full_date: "%A %e %B %Y"
+      month_name: "%B"
+      short_with_name: "%a %e %b"
+      short_with_name_and_year: "%a %e %b %Y"
+    moment_format: DD.MM.YYYY
+    moment_parse:
+    - DD.MM.YYYY
+    - D.M.YYYY
+    - DD.MM.YY
+    - D.M.YY
+  datetime:
+    distance_in_words:
+      x_hours:
+        one: 1 hora
+        other: "%{count} horas"
+  errors:
+    messages:
+      date_format: 'Introduza um formato de data válido: %{format}'
+      date_of_birth: Ano de nascimento fora do intervalo aceite
+      no_values_present: O nome, o número de telefone ou o e-mail é obrigatório.
+      not_authenticated: A sua sessão foi terminada.
+      not_found: Não foi possível encontrar os dados. Tente recarregar a página.
+      offline: Não foi possível ligar ao Makeplans. Verifique se está online.
+      server_error: Erro no Makeplans
+      syntax_error: Erro na sintaxe fornecida.
+      unknown: Erro desconhecido. Tente recarregar a página.
+    models:
+      person:
+        perishable_token:
+          captcha: A verificação anti-spam não foi concluída. Tente novamente.
+          expired: O código expirou. Tente novamente.
+          invalid: Código incorreto
+          invalid_value: Formato inválido
+          no_identifier: E-mail ou número de telefone em falta.
+    stripe:
+      booking:
+        already_refunded: Já reembolsado.
+        invalid: A reserva expirou ou é inválida. Transação não processada.
+        paid: Reserva já paga. Tente atualizar a página.
+      card:
+        missing: Não foi possível obter os dados do cartão
+      payment_intent_unexpected_state: Não foi possível autenticar o pagamento. Tente novamente.
+      processor: 'Erro do nosso processador de pagamentos: %{error}'
+      unknown: Não foi possível processar a transação. Erro desconhecido.
+    vipps:
+      booking:
+        already_requested: Pedido de pagamento já enviado.
+        inactive: A reserva já não está ativa.
+        invalid: A reserva expirou ou é inválida. Transação não processada.
+        no_person: A reserva não tem cliente.
+        no_phone_number: O cliente não tem número de telefone.
+        paid: Reserva já paga. Tente atualizar a página.
+      no_reference: Nenhuma transação de pagamento encontrada para esta reserva.
+      processor: 'Erro do nosso processador de pagamentos: %{error}'
+      refund_failed: Não foi possível reembolsar a transação.
+      unknown: Não foi possível processar a transação. Erro desconhecido.
+  generic:
+    account_default: Predefinição da conta
+    all: todos
+    at: às
+    born_abbreviation: n. %{date_of_birth}
+    country_locale: pt
+    default: Predefinição do sistema
+    dictate:
+      start: Ditar
+      stop: Parar ditado
+      unsupported: Ditado não disponível
+    'false': Desativado
+    from: de
+    optional: opcional
+    search: Pesquisar
+    to: até
+    today: hoje
+    tomorrow: amanhã
+    'true': Ativado
+  profile:
+    update:
+      success: Perfil atualizado
+      locked_field_changed: Os campos verificados não podem ser alterados
+  helpers:
+    booking:
+      action:
+        cancel: Cancelar
+        confirm: Confirmar
+        decline: Recusar
+        promote: Promover
+        remove_from_waitlist: Remover da lista de espera
+        remove_from_waitlist_confirm: Tem a certeza de que pretende remover esta reserva da lista de espera?
+        verify: Verificar
+      state:
+        awaiting_confirmation: A aguardar confirmação
+        awaiting_payment: A aguardar pagamento
+        awaiting_verification: A aguardar verificação
+        cancelled: Cancelada
+        confirmed: Confirmada
+        declined: Recusada
+        deleted: Eliminada
+        verification_expired: Verificação expirada
+        waitlisted: Em lista de espera
+    booking_state_transitions:
+      events:
+        modified: Modificada
+    boolean:
+      'false': 'Não'
+      'true': Sim
+    datepicker:
+      next_month: Mês seguinte
+      prev_month: Mês anterior
+    label:
+      booking:
+        all_day: Dia inteiro
+        booked_by_person_id: Reservado por
+        booked_from: Reservado de
+        booked_to: Reservado até
+        count: Número de pessoas
+        coupon_code: Código do cupão
+        external_id: ID externo
+        invoiced_at: Faturado
+        notes: Notas
+        paid_at: Pago
+        person_id: Cliente
+        rating: Avaliação
+        reminded_at: Lembrete enviado
+        reminder_at: Lembrete
+        resource_id: Recurso
+        service_id: Serviço
+        state: Estado
+        status: Estado
+        terms_accept: Aceito
+        terms_accepted: Aceito os termos
+        terms_close: Fechar
+        terms_link: termos da reserva
+        title: Título
+        verification_code: Código de verificação
+      category:
+        parent_id: Categoria principal
+        title: Título
+      client:
+        account_form: Campos personalizados da conta
+        address: Morada de visita
+        allow_cancellation: Permitir cancelamentos pelo cliente
+        api_key: Chave API (para integrações externas)
+        app_secret: Segredo da conta
+        appointment_form: Campos personalizados da reserva
+        awaiting_confirmation_text: Texto apresentado quando a reserva aguarda confirmação
+        billing_city: Cidade
+        billing_country_code: País
+        billing_email: Endereço de e-mail para fatura
+        billing_id: ID no sistema de faturação
+        billing_invoice: Enviar fatura em vez de cartão de crédito
+        billing_name: Nome da empresa
+        billing_order_ref: A sua referência de fatura
+        billing_payment_id: ID no sistema de pagamento
+        billing_period: Meses a faturar
+        billing_postal_code: Código postal
+        billing_state: Estado
+        billing_street: Morada
+        billing_vat_no: NIF
+        booking_form: Formulário de reserva personalizado
+        booking_site_locale: Idioma (controla também o formato de números e datas)
+        booking_site_person_form: Formulário de registo de cliente personalizado
+        calendar_event_text: Texto apresentado para a reserva no calendário
+        cancellation_period: Período de cancelamento
+        category_form: Campos personalizados da categoria
+        closed_for_holidays: Encerrado nos feriados
+        confirm_manually: As reservas têm de ser aprovadas por um administrador
+        country_code: País
+        coupon_form: Campos personalizados do código de cupão
+        gift_card_form: Campos personalizados do cartão-oferta
+        css_url: CSS personalizado (o URL tem de ser HTTPS)
+        currency: Moeda
+        email: Endereço de e-mail
+        email_notification: Receber notificação por e-mail para cada nova reserva
+        event_first_booking_period: Não permitir inscrições em eventos até
+        event_form: Campos personalizados do evento
+        event_last_booking_period: Não permitir inscrições em eventos depois de
+        first_bookable_period: Não permitir reservas até
+        footer: Rodapé
+        future_bookable_period: Não permitir reservas depois de
+        google_analytics: ID de acompanhamento do Google Analytics
+        ical_description: Descrição
+        ical_summary: Título
+        interval_rounding: Arredondamento predefinido para o próximo horário disponível para reserva
+        locale: Idioma (define também o formato de números e datas)
+        logo: Logótipo
+        mail_awating_confirmation: Texto do e-mail de aguarda confirmação
+        mail_awating_confirmation_subject: Assunto do e-mail de aguarda confirmação
+        mail_cancellation: Texto do e-mail de cancelamento
+        mail_cancellation_subject: Assunto do e-mail de cancelamento
+        mail_confirmation: Texto do e-mail de confirmação
+        mail_confirmation_subject: Assunto do e-mail de confirmação
+        mail_declined: Texto do e-mail de recusa
+        mail_declined_subject: Assunto do e-mail de recusa
+        mail_modification: Texto do e-mail de modificação
+        mail_modification_subject: Assunto do e-mail de modificação
+        mail_notification_cancellation: Texto do e-mail de notificação de cancelamento
+        mail_notification_confirmation: Texto do e-mail de notificação de confirmação
+        mail_notification_modification: Texto do e-mail de notificação de modificação
+        mail_notification_recipient: Endereço(s) de e-mail para notificação
+        mail_request_payment: Texto do e-mail de pedido de pagamento
+        mail_request_payment_subject: Assunto do e-mail de pedido de pagamento
+        mail_verification: Texto do e-mail de verificação
+        mail_verification_subject: Assunto do e-mail de verificação
+        mailer_sender: Remetente do e-mail
+        message_template_form: Formulário de modelo de mensagem
+        name: Nome da empresa (apresentado no site de reservas)
+        next_invoice_nr: Próximo número de fatura
+        new_booking_text: Texto apresentado na página de confirmação
+        no_availability_text: Texto apresentado quando não há disponibilidade
+        order_form: Campos personalizados da encomenda
+        payment_provider: Fornecedor de pagamento predefinido
+        person_form: Campos personalizados do cliente
+        phone_number: Número de telefone
+        public_access: O site de reservas está disponível ao público
+        purge_data_period: Eliminação automática de informações de identificação pessoal
+        reminder_sms: Enviar lembretes por SMS
+        require_terms_acceptance: Exigir a aceitação dos termos
+        reservation_form_text: Texto apresentado antes do formulário de reserva
+        resource_form: Campos personalizados do recurso
+        service_form: Campos personalizados do serviço
+        service_template: Estilo do calendário
+        slot_generation: Geração de horários disponíveis
+        sms_awaiting_confirmation: Texto do SMS de aguarda confirmação
+        sms_cancellation: Texto do SMS de cancelamento
+        sms_confirmation: Texto do SMS de confirmação
+        sms_declined: Texto do SMS de recusa
+        sms_modification: Texto do SMS de modificação
+        sms_notification: Receber SMS para cada nova reserva
+        sms_notification_recipient: Número(s) de telefone para notificação
+        sms_reminder: Texto do SMS de lembrete
+        sms_reminder_time: Hora do SMS de lembrete
+        sms_request_payment: Texto do SMS de pedido de pagamento
+        sms_verification: Texto do SMS de verificação
+        subdomain: URL (subdomínio)
+        template: Tema de design
+        templates:
+          amsterdam: Amsterdam
+          lviv: Lviv
+          timisoara: Timisoara
+        terms: Termos e condições
+        time_zone: Fuso horário
+        verification_method: Método de verificação para novas reservas
+        website: Website
+        whatsapp_nr: Número de remetente do WhatsApp
+      client/slot_generation:
+        dynamic: Dinâmica (predefinição)
+        fixed: Fixa
+      client_user_link:
+        role: Nível de acesso
+      client_user_link/role:
+        admin: Acesso total
+        manager: Configuração básica
+        staff: Apenas calendário
+      coupon:
+        active: Ativo
+        allowed_booking_end_at: Hora de início mais tardia da reserva
+        allowed_booking_start_at: Hora de início mais cedo da reserva
+        availability: Cupões disponíveis
+        code: Código
+        max_count: Número máximo de pessoas
+        max_order_amount: Montante máximo da encomenda
+        min_count: Número mínimo de pessoas
+        min_order_amount: Montante mínimo da encomenda
+        title: Título
+        valid_from: Válido a partir de
+        valid_until: Válido até
+        value: Valor do desconto
+        value_type: Tipo de desconto
+      gift_card:
+        active: Ativo
+        code: Código
+        initial_value: Valor inicial
+        person_id: Cliente
+        valid_until: Válido até
+        value: Valor atual
+      event:
+        all_day: Dia inteiro
+        allow_invoice: permitir fatura
+        booking_capacity: N.º máximo de participantes permitidos por reserva
+        booking_minimum: N.º mínimo de participantes necessários por reserva
+        capacity: N.º máximo de participantes
+        description: Descrição
+        ends_at: Termina em
+        first_booking_at: Sem inscrições antes de
+        last_booking_at: Sem inscrições depois de
+        payment_required: Pré-pagamento obrigatório
+        price: Preço com todos os impostos incluídos
+        published: Visível no site de reservas
+        resource_id: Recurso
+        service_id: Tipo de evento
+        starts_at: Começa em
+        title_html: Título específico <small>opcional</small>
+      message_template:
+        active: Ativo
+        delivery_timing: Enviar em
+        delivery_type: Tipo de envio
+        message_type: Tipo de mensagem
+        subject: Assunto
+        template: Modelo
+      message_template/delivery_type:
+        email: E-mail
+        sms: SMS
+        whatsapp: WhatsApp
+      message_template/message_type:
+        confirmation: Confirmação
+        follow_up: Acompanhamento
+        reminder: Lembrete
+      person:
+        address: Morada
+        blocked: Bloqueado para reservas
+        city: Cidade
+        country_code: País
+        created_at: Registado em
+        date_of_birth: Data de nascimento (dd.mm.aaaa)
+        deactivated: Desativado
+        email: E-mail
+        locale: Idioma
+        name: Nome
+        national_id_no: Número de identificação nacional
+        notes: Notas
+        opt_in_marketing: Receber informações da nossa parte
+        phonenumber: Número de telemóvel
+        postal_code: Código postal
+        provider: Ligado a conta externa
+        state: Estado
+        street: Morada
+        tfso_company_id: ID de cliente 24SO
+      price_rule:
+        ends_at: Até
+        price: Preço
+        starts_at: De
+      resource:
+        capacity: N.º máximo de reservas em simultâneo
+        mail_notification_recipient: Endereço(s) de e-mail para notificação
+        max_workload_points: Máximo de pontos de carga de trabalho por dia
+        sms_notification_recipient: Número(s) de telefone para notificação
+        title: Título
+      service:
+        active_bookings_limit: N.º máximo de reservas ativas
+        allow_cancellation: Permitir cancelamentos pelo cliente
+        allow_invoice: Permitir fatura
+        availability_type: A disponibilidade é definida por
+        billing_period: Período de renovação
+        cancellation_period: Período de cancelamento
+        block_resource: A reserva bloqueia o recurso
+        booking_capacity: N.º máximo de pessoas permitidas por reserva
+        booking_form: Formulário de reserva personalizado
+        booking_minimum: N.º mínimo de pessoas necessárias por reserva
+        capacity: N.º máximo de participantes
+        confirm_manually: As reservas têm de ser aprovadas por um administrador
+        description: Descrição
+        has_day_booking: Reserva de dia inteiro
+        has_day_booking_label:
+          'false': min
+          'true':
+            one: dia
+            many: dias
+        interval: Duração
+        interval_rounding: Arredondamento para o próximo horário disponível
+        mail_awaiting_confirmation: Texto do e-mail de aguarda confirmação
+        mail_cancellation: Texto do e-mail de cancelamento
+        mail_confirmation: Texto do e-mail de confirmação
+        mail_declined: Texto do e-mail de recusa
+        mail_modification: Texto do e-mail de modificação
+        mail_request_payment: Texto do e-mail de pedido de pagamento
+        mail_verification: Texto do e-mail de verificação
+        max_slots: N.º máximo de horários por reserva
+        new_booking_text: Texto apresentado na página de confirmação
+        next_interval: Horário disponível a cada
+        payment_required: Pré-pagamento obrigatório
+        price: Preço com impostos incluídos
+        priority_strategy: Estratégia de prioridade
+        published: Mostrar no site de reservas
+        quota: Número de reservas incluídas
+        renewal_price: Preço de renovação (vazio significa igual ao preço)
+        reservation_form_text: Texto apresentado antes do formulário de reserva
+        same_day: Permitir reserva ao longo de vários dias
+        slot_generation: Geração de horários
+        sms_awaiting_confirmation: Texto do SMS de aguarda confirmação
+        sms_cancellation: Texto do SMS de cancelamento
+        sms_confirmation: Texto do SMS de confirmação
+        sms_declined: Texto do SMS de recusa
+        sms_modification: Texto do SMS de modificação
+        sms_reminder: Texto do SMS de lembrete
+        sms_request_payment: Texto do SMS de pedido de pagamento
+        sms_verification: Texto do SMS de verificação
+        template: Modelo de calendário
+        templates:
+          default: Predefinição
+          list: Lista
+          month: Mês
+          resources: Recursos
+          time_day_available: Dia
+          week_available: Semana inteira
+          week_calendar: Calendário semanal
+          weekday_available: Dias úteis
+        terms: Termos e condições
+        title: Título
+        unlimited: Ilimitado
+        validity_days: Número de dias de validade após a compra
+        workload_points: Pontos de carga de trabalho
+      service/availability_type:
+        provider: Prestador
+        resource: Recurso (predefinição)
+      service/billing_period_unit:
+        day: Dias
+        month: Meses
+        week: Semanas
+        year: Anos
+      service/priority_strategy:
+        order: Ordem
+        random: Aleatória (predefinição)
+        weight: Peso
+      user:
+        current_password: Palavra-passe atual
+        email: E-mail
+        name: Nome
+        password: Palavra-passe
+        password_confirmation: Confirmação da palavra-passe
+        phonenumber: Número de telefone
+        rotp_verification_code: Código de verificação
+      web_hook:
+        event: Evento
+        target_url: URL de destino
+    link:
+      add: Adicionar
+      back: Voltar
+      booking:
+        new: Nova reserva
+      cancel_confirm: Tem a certeza de que pretende cancelar?
+      category:
+        new: Nova categoria
+      confirm: Tem a certeza?
+      coupon:
+        new: Novo cupão
+      gift_card:
+        new: Novo cartão-oferta
+      create: Criar
+      delete: Eliminar
+      delete_confirm: Tem a certeza de que pretende eliminar?
+      edit: Editar
+      event:
+        new: Novo evento
+        new_attendant: Adicionar participante
+      message_template:
+        new: Novo modelo de mensagem
+      person:
+        new: Novo cliente
+        new_child: Novo cliente
+      resource:
+        new: Novo recurso
+      service:
+        new_addon: Novo extra
+        new_addon_title: Novo %{title}
+        new_appointment: Novo serviço
+        new_attendance: Novo tipo de evento
+        new_gift_card: Novo cartão-oferta
+        new_gift_card_title: Novo %{title}
+        new_pass: Novo passe
+        new_pass_title: Novo %{title}
+        new_product: Novo produto
+        new_product_title: Novo %{title}
+        new_subscription: Nova subscrição
+        new_subscription_title: Novo %{title}
+      setup:
+        skip: Configuração manual
+        step_html: "<strong>Passo %{step}</strong> de %{max_steps}"
+      undelete: Restaurar
+      undelete_confirm: Tem a certeza de que pretende restaurar?
+      user:
+        new: Novo utilizador
+      view: Ver
+      web_hook:
+        new: Novo webhook
+    menu:
+      agenda: Agenda
+      calendar: Calendário
+      logout: Terminar sessão
+      messages: Mensagens
+      new_badge: Novo
+      orders: Encomendas
+      people: Clientes
+      profile: Perfil
+      reports: Relatórios
+      setup: Configuração
+      user_menu: Menu do utilizador
+    menu_setup:
+      addons: Extras
+      billing: Faturação
+      booking_site:
+        design: Design
+        forms: Formulários
+        general: Geral
+        rules: Regras
+        texts: Textos
+      bookingsite: Site de reservas
+      categories: Categorias
+      communication: Comunicação
+      company: Conta
+      coupons: Cupões
+      gift_cards: Cartões-oferta
+      developer: Programador
+      export: Exportar
+      fields: Campos personalizados
+      import: Importar
+      integrations: Integrações
+      message_templates: Modelos de mensagem
+      person_notifications: Notificações - cliente
+      products: Produtos
+      promote: Promover
+      resources: Recursos
+      service_appointments: Serviços
+      service_attendances: Tipos de evento
+      sms_credits: Créditos SMS
+      tools: Ferramentas
+      user_notifications: Notificações - utilizador
+      users: Utilizadores
+      ux: UX
+    payment:
+      fields:
+        cvc: CVC
+        errors:
+          cvc: O CVC não é válido.
+          expiration: A data de validade não é válida.
+          number: O número do cartão não é válido.
+        expiration_html: Validade <small>(MM/AA)</small>
+        number: Número do cartão
+      header: Este formulário será encriptado e enviado de forma segura
+    person:
+      history:
+        last_visit: Última visita
+        new_customer: Novo cliente
+        no_shows: Faltas
+        since: desde %{date}
+        summary:
+          last_visit: "Última visita: %{date}"
+          no_shows:
+            one: "%{count} falta"
+            other: "%{count} faltas"
+          total_paid: "Total pago: %{amount}"
+          visits_since: "Visitas desde %{date}: %{count}"
+        total_paid: Total pago
+        visits: Visitas
+    select:
+      prompt: Selecione
+    submit:
+      cancel: Cancelar
+      create: Criar %{model}
+      submit: Guardar %{model}
+      submit_default: Guardar
+      update: Atualizar %{model}
+      update_password: Alterar palavra-passe
+  service:
+    admin:
+      invoice_client:
+        errors:
+          nothing_to_invoice: Conta não preparada para faturação. Certifique-se de que tem pelo menos um recurso.
+  time:
+    24h: true
+    formats:
+      long_dayname: "%A, %e %B %Y, %H:%M"
+      short_mailer: "%e de %B às %H:%M"
+      shorter: "%-d. %b %Y, %H:%M"
+      time: "%H:%M"
+      time_with_word: às %H:%M
+      timepicker: "%H:%M"
+    moment_format: HH:mm
+    timepicker_format: H:i
+  title:
+    actions:
+      edit: Editar
+      update: Atualizar
+  user:
+    password_reset:
+      expired: Expirado
+      no_email_found: Nenhum e-mail encontrado
+  valid_email:
+    validations:
+      email:
+        invalid: é inválido
+  worker:
+    integration_slack:
+      fallback: Foi feita uma nova marcação no Makeplans
+      footer: Makeplans API
+      pretext: "%{person} fez uma marcação em %{booked_from}"
+      title: Ver a marcação no Makeplans
+    integration_tfso_list_companies:
+      errors:
+        no_results: Nenhum cliente existente encontrado.
+    integration_tfso_order:
+      errors:
+        already_created: Já criado.
+        no_company: O cliente foi eliminado no 24SevenOffice. Tem de reativar o cliente no 24SevenOffice para continuar.
+        no_product: O produto foi eliminado no 24SevenOffice. Tem de reativar o produto no 24SevenOffice ou ligar o serviço a um novo produto a partir do Makeplans antes de poder continuar.
+        product_not_defined_on_service: Este serviço não está ligado a um produto no 24SevenOffice.
