@@ -15,6 +15,8 @@ nb:
       vipps_payment_failed: Betalingen ble avbrutt. Vennligst prøv igjen.
     process_promote_waitlist:
       slot_no_longer_available: Beklager, plassen er ikke lenger tilgjengelig. Du er fortsatt på ventelisten.
+    reschedule:
+      unable_to_reschedule: Reservasjonen kunne ikke flyttes. Velg et annet tidspunkt.
     verification_code:
       incorrect_code: Feil kode
   clients:

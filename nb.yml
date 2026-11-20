@@ -175,6 +175,7 @@ nb:
               not_offered: tilbys ikke av valgt ressurs
             state:
               invalid_transition: Ugyldig endring av status
+          different_price: En betalt reservasjon kan bare flyttes til et tidspunkt med samme pris.
           exceeds_max_slots: Reservasjonen overskrider maks antall tillatte tidsblokker.
           fully_booked: Ikke ledig på valgt tidspunkt
           mismatch: Opplysninger stemmer ikke overens med din kundeprofil.
