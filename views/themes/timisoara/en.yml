@@ -29,9 +29,10 @@ en:
       show:
         add_to_calendar: Add this booking to my calendar
         all: View my other reservations
-        cancel: Cancel
+        cancel: Cancel reservation
         cancel_confirmation: Are you sure you want to cancel this booking?
         info: The booking for %{title} %{time} is confirmed.
+        map: Map
         new_reservation: Make another reservation
         title: Your Reservation is Confirmed!
     categories:

@@ -29,9 +29,10 @@ nb:
       show:
         add_to_calendar: Legg til i kalender
         all: Se mine andre reservasjoner
-        cancel: Kanseller
+        cancel: Kanseller reservasjonen
         cancel_confirmation: Er du sikker på at du vil kansellere denne reservasjonen?
         info: Reservasjonen av %{title} %{time} er bekreftet.
+        map: Kart
         new_reservation: Opprett en ny reservasjon
         title: Din reservasjon er bekreftet.
     categories:
